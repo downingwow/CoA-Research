@@ -64,7 +64,7 @@ def main():
                 "relationshipEvidence": relationship["evidence"]}
         if key in definitions:
             item["spellDefinition"] = definitions[key]
-            field_counts.update(definitions[key]["fields"])
+            field_counts.update(definitions[key]["fields"].keys())
         enriched[key] = item
     output = REL / "enriched-spells-by-id.json.gz"
     with gzip.open(output, "wt", encoding="utf-8", compresslevel=6) as f:

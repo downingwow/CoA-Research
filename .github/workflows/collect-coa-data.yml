@@ -31,7 +31,7 @@ jobs:
       - name: Download and index source records
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MAX_FILES: ${{ inputs.max_files || '160' }}
+          MAX_FILES: ${{ inputs.max_files || '600' }}
         run: python tools/collect_coa_data.py --max-files "$MAX_FILES"
       - name: Commit imported records
         run: |

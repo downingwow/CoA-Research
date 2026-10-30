@@ -89,6 +89,7 @@ def run(max_files):
     OUT.mkdir(parents=True, exist_ok=True)
     manifest = {"generatedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(), "sources": [], "errors": [], "schema": 1}
     processed = 0
+    per_category_cap = max(1, max_files // 8)
     for repo, ref, rules in SOURCES:
         try:
             entries = tree(repo, ref)
@@ -101,7 +102,7 @@ def run(max_files):
             record_count = 0
             paths = []
             for entry in selected:
-                if processed >= max_files:
+                if processed >= max_files or len(paths) >= per_category_cap:
                     break
                 if entry.get("size", 0) > 24_000_000:
                     manifest["errors"].append({"source": repo, "path": entry["path"], "error": "file exceeds 24MB safety limit"})

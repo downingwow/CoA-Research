@@ -1,0 +1,877 @@
+{
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "scope": "AtlasLoot CoA custom dungeons; Shadowbone unreleased",
+  "caveat": "Modern upstream rebuild evidence is not proof of original Conquest Reborn encounter behavior; Radiant Spring search produced no reliable dungeon mechanic source",
+  "files": [
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261017_63_pale_reach_shadowbone_depths_sins_beyond_mercy_givers.sql",
+      "sha": "2bfda48b6903645397d3aa47eaf40e83036e6469",
+      "lineCount": 11,
+      "excerpts": [
+        {
+          "line": 1,
+          "text": "-- Two Pale Reach quests nobody gave out or took back: Shadowbone Depths (175126) is given and taken by Deirdre, and"
+        },
+        {
+          "line": 2,
+          "text": "-- Sins Beyond Mercy (175200) by Confessor Mourn at Hallow Wind Abbey (from the user's server)."
+        },
+        {
+          "line": 3,
+          "text": "DELETE FROM `creature_queststarter` WHERE `quest` IN (175126, 175200);"
+        },
+        {
+          "line": 4,
+          "text": "INSERT INTO `creature_queststarter` (`id`, `quest`) VALUES"
+        },
+        {
+          "line": 5,
+          "text": "(164355, 175126),"
+        },
+        {
+          "line": 6,
+          "text": "(164556, 175200);"
+        },
+        {
+          "line": 7,
+          "text": "DELETE FROM `creature_questender` WHERE `quest` IN (175126, 175200);"
+        },
+        {
+          "line": 8,
+          "text": "INSERT INTO `creature_questender` (`id`, `quest`) VALUES"
+        },
+        {
+          "line": 9,
+          "text": "(164355, 175126),"
+        },
+        {
+          "line": 10,
+          "text": "(164556, 175200);"
+        },
+        {
+          "line": 11,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261029_80_coa_reopen_road_to_de_other_side.sql",
+      "sha": "c18aa1a8c0fc21751571967fa22010ed38c57a5d",
+      "lineCount": 5,
+      "excerpts": [
+        {
+          "line": 1,
+          "text": "-- Road to De Other Side (map 937) opens again: DestinyWeaver scales its Normal tier (finder entry 402, band 15-59)."
+        },
+        {
+          "line": 2,
+          "text": "-- Vaults of the Inquisition (map 936) too: live realms closed it by hand to players and the Dungeon Finder while its"
+        },
+        {
+          "line": 3,
+          "text": "-- per-difficulty rules and melee were wrong; it scales 15-59 on Normal (finder entry 401)."
+        },
+        {
+          "line": 4,
+          "text": "DELETE FROM `disables` WHERE `sourceType` IN (2, 8) AND `entry` IN (936, 937);"
+        },
+        {
+          "line": 5,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261029_82_coa_road_to_de_other_side_health_immunities.sql",
+      "sha": "2b4b40af0e95ce90bd1ef9c22a32340888d758dc",
+      "lineCount": 85,
+      "excerpts": [
+        {
+          "line": 1,
+          "text": "-- Road to De Other Side (map 937): what was agreed after #8715 and never reached main (its last commits came after the"
+        },
+        {
+          "line": 2,
+          "text": "-- merge): boss crowd-control immunities and health true to Ascension's logs."
+        },
+        {
+          "line": 3,
+          "text": ""
+        },
+        {
+          "line": 4,
+          "text": "-- The three bosses take the crowd-control immunities of the other rank 3 dungeon bosses (charm, fear, polymorph, root,"
+        },
+        {
+          "line": 5,
+          "text": "-- silence, sleep, stun and the rest of set -273, as Mograine, Whitemane or Ironaya)."
+        },
+        {
+          "line": 6,
+          "text": "UPDATE `creature_template` SET `CreatureImmunitiesId` = -273 WHERE `entry` IN (162711, 162715, 162716);"
+        },
+        {
+          "line": 7,
+          "text": ""
+        },
+        {
+          "line": 8,
+          "text": "-- Road to De Other Side (map 937): health true to Ascension's logs. Mythic is the 2026-08-05 Mythic log, Heroic is"
+        },
+        {
+          "line": 9,
+          "text": "-- Mythic / 1.3 and Normal at level 60 Heroic / 2.33 (Destiny Weaver scales it down with the character), as in Vaults"
+        },
+        {
+          "line": 10,
+          "text": "-- of the Inquisition. The 2026-08-24 Normal log is not a level 60 run. Every creature, summons included, takes the"
+        },
+        {
+          "line": 11,
+          "text": "-- dungeon multiplier of 2.5 (CoA.CreatureScaling)."
+        },
+        {
+          "line": 12,
+          "text": ""
+        },
+        {
+          "line": 13,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 37.954 WHERE `entry` = 162711; -- Muzah, the Shadow Hunter, about 289.6k"
+        },
+        {
+          "line": 14,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 46.76 WHERE `entry` = 162715; -- Drak'math the Sinister King, about 285.5k"
+        },
+        {
+          "line": 15,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 38.572 WHERE `entry` = 162716; -- Chimeric Embryo, about 294.3k"
+        },
+        {
+          "line": 16,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 3.748 WHERE `entry` = 162743; -- Spider, about 28.6k"
+        },
+        {
+          "line": 17,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 8.441 WHERE `entry` = 162765; -- Interstitial Wanderer, about 64.4k"
+        },
+        {
+          "line": 18,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 2.38 WHERE `entry` = 162766; -- Bat of the Other Side, about 18.2k"
+        },
+        {
+          "line": 19,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 2.38 WHERE `entry` = 162767; -- Bat of the Other Side, about 18.2k"
+        },
+        {
+          "line": 20,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 8.442 WHERE `entry` = 162769; -- Deathweaver Matriarch, about 64.4k"
+        },
+        {
+          "line": 21,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 3.16 WHERE `entry` = 162770; -- Spider of the Other Side, about 24.1k"
+        },
+        {
+          "line": 22,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 24.036 WHERE `entry` = 162773; -- Gutdevourer, about 183.4k"
+        },
+        {
+          "line": 23,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 8.44 WHERE `entry` = 162775; -- Gutdevourer, about 64.4k"
+        },
+        {
+          "line": 24,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 8.44 WHERE `entry` = 162776; -- Interstitial Wanderer, about 64.4k"
+        },
+        {
+          "line": 25,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 30.041 WHERE `entry` = 162780; -- Risen Cultist, about 183.4k"
+        },
+        {
+          "line": 26,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 10.55 WHERE `entry` = 162782; -- Hisser of the Other Side, about 64.4k"
+        },
+        {
+          "line": 27,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 10.548 WHERE `entry` = 162783; -- Interstitial Wanderer, about 64.4k"
+        },
+        {
+          "line": 28,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 3.16 WHERE `entry` = 162784; -- Violent Swarm, about 24.1k"
+        },
+        {
+          "line": 29,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 14.241 WHERE `entry` = 162785; -- Watcher of the Path, about 86.9k"
+        },
+        {
+          "line": 30,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 3.16 WHERE `entry` = 162979; -- Lifedrinker, about 24.1k"
+        },
+        {
+          "line": 31,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 3.16 WHERE `entry` = 162980; -- Lifedrinker, about 24.1k"
+        },
+        {
+          "line": 32,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 2.109 WHERE `entry` = 162981; -- Lifedrinker, about 16.1k"
+        },
+        {
+          "line": 33,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 24.037 WHERE `entry` = 162982; -- Risen Cultist, about 183.4k"
+        },
+        {
+          "line": 34,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 8.441 WHERE `entry` = 162983; -- Risen Cultist, about 64.4k"
+        },
+        {
+          "line": 35,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 29.53 WHERE `entry` = 162988; -- Vol’zeen, about 225.3k"
+        },
+        {
+          "line": 36,
+          "text": ""
+        },
+        {
+          "line": 37,
+          "text": "DELETE FROM `coa_dungeon_health` WHERE `map_id` = 937;"
+        },
+        {
+          "line": 38,
+          "text": "INSERT INTO `coa_dungeon_health` (`map_id`, `difficulty`, `creature_entry`, `max_health`, `evidence`, `source`) VALUES"
+        },
+        {
+          "line": 39,
+          "text": "(937, 1, 162711, 674735, 'log', 'Heroic from Mythic /1.3; Muzah, the Shadow Hunter'),"
+        },
+        {
+          "line": 40,
+          "text": "(937, 2, 162711, 877155, 'log', 'Mythic combat log 2026-08-05; Muzah, the Shadow Hunter'),"
+        },
+        {
+          "line": 41,
+          "text": "(937, 1, 162715, 665142, 'log', 'Heroic from Mythic /1.3; Drak''math the Sinister King'),"
+        },
+        {
+          "line": 42,
+          "text": "(937, 2, 162715, 864685, 'log', 'Mythic combat log 2026-08-05; Drak''math the Sinister King'),"
+        },
+        {
+          "line": 43,
+          "text": "(937, 1, 162716, 685735, 'log', 'Heroic from Mythic /1.3; Chimeric Embryo'),"
+        },
+        {
+          "line": 44,
+          "text": "(937, 2, 162716, 891455, 'log', 'Mythic combat log 2026-08-05; Chimeric Embryo'),"
+        },
+        {
+          "line": 45,
+          "text": "(937, 1, 162743, 66638, 'log', 'Heroic from Mythic /1.3; Spider'),"
+        },
+        {
+          "line": 46,
+          "text": "(937, 2, 162743, 86630, 'log', 'Mythic combat log 2026-08-05; Spider'),"
+        },
+        {
+          "line": 47,
+          "text": "(937, 1, 162765, 150060, 'log', 'Heroic from Mythic /1.3; Interstitial Wanderer'),"
+        },
+        {
+          "line": 48,
+          "text": "(937, 2, 162765, 195078, 'log', 'Mythic combat log 2026-08-05; Interstitial Wanderer'),"
+        },
+        {
+          "line": 49,
+          "text": "(937, 1, 162766, 42308, 'model', 'Heroic from Mythic /1.3; Bat of the Other Side'),"
+        },
+        {
+          "line": 50,
+          "text": "(937, 2, 162766, 55000, 'model', 'in-game estimate (2026-10-23); Bat of the Other Side'),"
+        },
+        {
+          "line": 51,
+          "text": "(937, 1, 162767, 42308, 'model', 'Heroic from Mythic /1.3; Bat of the Other Side'),"
+        },
+        {
+          "line": 52,
+          "text": "(937, 2, 162767, 55000, 'model', 'in-game estimate (2026-10-23); Bat of the Other Side'),"
+        },
+        {
+          "line": 53,
+          "text": "(937, 1, 162769, 150075, 'log', 'Heroic from Mythic /1.3; Deathweaver Matriarch'),"
+        },
+        {
+          "line": 54,
+          "text": "(937, 2, 162769, 195097, 'log', 'Mythic combat log 2026-08-05; Deathweaver Matriarch'),"
+        },
+        {
+          "line": 55,
+          "text": "(937, 1, 162770, 56177, 'log', 'Heroic from Mythic /1.3; Spider of the Other Side'),"
+        },
+        {
+          "line": 56,
+          "text": "(937, 2, 162770, 73030, 'log', 'Mythic combat log 2026-08-05; Spider of the Other Side'),"
+        },
+        {
+          "line": 57,
+          "text": "(937, 1, 162773, 427318, 'log', 'Heroic from Mythic /1.3; Gutdevourer'),"
+        },
+        {
+          "line": 58,
+          "text": "(937, 2, 162773, 555514, 'log', 'Mythic combat log 2026-08-05; Gutdevourer'),"
+        },
+        {
+          "line": 59,
+          "text": "(937, 1, 162775, 150041, 'log', 'Heroic from Mythic /1.3; Gutdevourer'),"
+        },
+        {
+          "line": 60,
+          "text": "(937, 2, 162775, 195053, 'log', 'Mythic combat log 2026-08-05; Gutdevourer'),"
+        },
+        {
+          "line": 61,
+          "text": "(937, 1, 162776, 150053, 'log', 'Heroic from Mythic /1.3; Interstitial Wanderer'),"
+        },
+        {
+          "line": 62,
+          "text": "(937, 2, 162776, 195069, 'log', 'Mythic combat log 2026-08-05; Interstitial Wanderer'),"
+        },
+        {
+          "line": 63,
+          "text": "(937, 1, 162780, 427319, 'log', 'Heroic from Mythic /1.3; Risen Cultist'),"
+        },
+        {
+          "line": 64,
+          "text": "(937, 2, 162780, 555515, 'log', 'Mythic combat log 2026-08-05; Risen Cultist'),"
+        },
+        {
+          "line": 65,
+          "text": "(937, 1, 162782, 150063, 'log', 'Heroic from Mythic /1.3; Hisser of the Other Side'),"
+        },
+        {
+          "line": 66,
+          "text": "(937, 2, 162782, 195082, 'log', 'Mythic combat log 2026-08-05; Hisser of the Other Side'),"
+        },
+        {
+          "line": 67,
+          "text": "(937, 1, 162783, 150046, 'log', 'Heroic from Mythic /1.3; Interstitial Wanderer'),"
+        },
+        {
+          "line": 68,
+          "text": "(937, 2, 162783, 195060, 'log', 'Mythic combat log 2026-08-05; Interstitial Wanderer'),"
+        },
+        {
+          "line": 69,
+          "text": "(937, 1, 162784, 56177, 'log', 'Heroic from Mythic /1.3; Violent Swarm'),"
+        },
+        {
+          "line": 70,
+          "text": "(937, 2, 162784, 73030, 'log', 'Mythic combat log 2026-08-05; Violent Swarm'),"
+        },
+        {
+          "line": 71,
+          "text": "(937, 1, 162785, 202568, 'log', 'Heroic from Mythic /1.3; Watcher of the Path'),"
+        },
+        {
+          "line": 72,
+          "text": "(937, 2, 162785, 263338, 'log', 'Mythic combat log 2026-08-05; Watcher of the Path'),"
+        },
+        {
+          "line": 73,
+          "text": "(937, 1, 162979, 56177, 'log', 'Heroic from Mythic /1.3; Lifedrinker'),"
+        },
+        {
+          "line": 74,
+          "text": "(937, 2, 162979, 73030, 'log', 'Mythic combat log 2026-08-05; Lifedrinker'),"
+        },
+        {
+          "line": 75,
+          "text": "(937, 1, 162980, 56177, 'log', 'Heroic from Mythic /1.3; Lifedrinker'),"
+        },
+        {
+          "line": 76,
+          "text": "(937, 2, 162980, 73030, 'log', 'Mythic combat log 2026-08-05; Lifedrinker'),"
+        },
+        {
+          "line": 77,
+          "text": "(937, 1, 162981, 37485, 'log', 'Heroic from Mythic /1.3; Lifedrinker'),"
+        },
+        {
+          "line": 78,
+          "text": "(937, 2, 162981, 48730, 'log', 'Mythic combat log 2026-08-05; Lifedrinker'),"
+        },
+        {
+          "line": 79,
+          "text": "(937, 1, 162982, 427319, 'log', 'Heroic from Mythic /1.3; Risen Cultist'),"
+        },
+        {
+          "line": 80,
+          "text": "(937, 2, 162982, 555515, 'log', 'Mythic combat log 2026-08-05; Risen Cultist'),"
+        },
+        {
+          "line": 81,
+          "text": "(937, 1, 162983, 150058, 'log', 'Heroic from Mythic /1.3; Risen Cultist'),"
+        },
+        {
+          "line": 82,
+          "text": "(937, 2, 162983, 195075, 'log', 'Mythic combat log 2026-08-05; Risen Cultist'),"
+        },
+        {
+          "line": 83,
+          "text": "(937, 1, 162988, 524988, 'log', 'Heroic from Mythic /1.3; Vol’zeen'),"
+        },
+        {
+          "line": 84,
+          "text": "(937, 2, 162988, 682485, 'log', 'Mythic combat log 2026-08-05; Vol’zeen');"
+        },
+        {
+          "line": 85,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261029_83_coa_vaults_respawn.sql",
+      "sha": "03caa64b6df0d175a09aa51f3cf8bca537a47218",
+      "lineCount": 6,
+      "excerpts": [
+        {
+          "line": 1,
+          "text": "-- Vaults of the Inquisition (map 936): every spawn was placed in game with `.npc add` / `.gobject add` and kept their"
+        },
+        {
+          "line": 2,
+          "text": "-- 300 s respawn, so trash and bosses came back while the group was still inside (#10038, #10047). One day, as the"
+        },
+        {
+          "line": 3,
+          "text": "-- vanilla dungeons."
+        },
+        {
+          "line": 4,
+          "text": "UPDATE `creature` SET `spawntimesecs` = 86400 WHERE `map` = 936 AND `spawntimesecs` = 300;"
+        },
+        {
+          "line": 5,
+          "text": "UPDATE `gameobject` SET `spawntimesecs` = 86400 WHERE `map` = 936 AND `spawntimesecs` = 300;"
+        },
+        {
+          "line": 6,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "path": "apps/coa-gameplay-test/scenarios/vaults-deceiver-emerge-and-tentacle-combat.json",
+      "sha": "d4402da3bf027482bfd59eea0fec9affe33cd639",
+      "lineCount": 92,
+      "excerpts": [
+        {
+          "line": 1,
+          "text": "{"
+        },
+        {
+          "line": 2,
+          "text": "  \"schema\": 1,"
+        },
+        {
+          "line": 3,
+          "text": "  \"name\": \"Vaults of the Inquisition: the Deceiver emerges and the Shadow Projections drop combat\","
+        },
+        {
+          "line": 4,
+          "text": "  \"contract\": \"The Deceiver's Presence (162704) lies sealed under the ground until his Holy Crystals (162705) break: he keeps the invisible display 11686 while sealed and emerges (native display 138704) during the awakening sequence. A Shadow Projection (162748), the rooted tentacle in the walls, lashes players within "
+        },
+        {
+          "line": 5,
+          "text": "  \"timeout_ms\": 90000,"
+        },
+        {
+          "line": 6,
+          "text": "  \"location\": {"
+        },
+        {
+          "line": 7,
+          "text": "    \"map\": 936,"
+        },
+        {
+          "line": 8,
+          "text": "    \"x\": -6658.51,"
+        },
+        {
+          "line": 9,
+          "text": "    \"y\": -5569.48,"
+        },
+        {
+          "line": 10,
+          "text": "    \"z\": 175.073,"
+        },
+        {
+          "line": 11,
+          "text": "    \"o\": 4.72967,"
+        },
+        {
+          "line": 12,
+          "text": "    \"ignore_access\": true"
+        },
+        {
+          "line": 13,
+          "text": "  },"
+        },
+        {
+          "line": 14,
+          "text": "  \"players\": ["
+        },
+        {
+          "line": 15,
+          "text": "    {"
+        },
+        {
+          "line": 16,
+          "text": "      \"id\": \"p\","
+        },
+        {
+          "line": 17,
+          "text": "      \"race\": 1,"
+        },
+        {
+          "line": 18,
+          "text": "      \"class\": 1,"
+        },
+        {
+          "line": 19,
+          "text": "      \"level\": 60"
+        },
+        {
+          "line": 20,
+          "text": "    }"
+        },
+        {
+          "line": 21,
+          "text": "  ],"
+        },
+        {
+          "line": 22,
+          "text": "  \"creatures\": ["
+        },
+        {
+          "line": 23,
+          "text": "    {"
+        },
+        {
+          "line": 24,
+          "text": "      \"id\": \"tentacle\","
+        },
+        {
+          "line": 25,
+          "text": "      \"owner\": \"p\","
+        },
+        {
+          "line": 26,
+          "text": "      \"entry\": 162748,"
+        },
+        {
+          "line": 27,
+          "text": "      \"level\": 60,"
+        },
+        {
+          "line": 28,
+          "text": "      \"health\": 100000,"
+        },
+        {
+          "line": 29,
+          "text": "      \"distance\": 5"
+        },
+        {
+          "line": 30,
+          "text": "    },"
+        },
+        {
+          "line": 31,
+          "text": "    {"
+        },
+        {
+          "line": 32,
+          "text": "      \"id\": \"deceiver\","
+        },
+        {
+          "line": 33,
+          "text": "      \"owner\": \"p\","
+        },
+        {
+          "line": 34,
+          "text": "      \"entry\": 162704,"
+        },
+        {
+          "line": 35,
+          "text": "      \"level\": 60,"
+        },
+        {
+          "line": 36,
+          "text": "      \"health\": 100000,"
+        },
+        {
+          "line": 37,
+          "text": "      \"distance\": 12"
+        },
+        {
+          "line": 38,
+          "text": "    }"
+        },
+        {
+          "line": 39,
+          "text": "  ],"
+        },
+        {
+          "line": 40,
+          "text": "  \"steps\": ["
+        },
+        {
+          "line": 41,
+          "text": "    {"
+        },
+        {
+          "line": 42,
+          "text": "      \"action\": \"set_health\","
+        },
+        {
+          "line": 43,
+          "text": "      \"label\": \"Survive the tentacle's lashes\","
+        },
+        {
+          "line": 44,
+          "text": "      \"actor\": \"p\","
+        },
+        {
+          "line": 45,
+          "text": "      \"maximum\": 1000000,"
+        },
+        {
+          "line": 46,
+          "text": "      \"value\": 1000000"
+        },
+        {
+          "line": 47,
+          "text": "    },"
+        },
+        {
+          "line": 48,
+          "text": "    {"
+        },
+        {
+          "line": 49,
+          "text": "      \"action\": \"assert\","
+        },
+        {
+          "line": 50,
+          "text": "      \"label\": \"The sealed Deceiver is still under the ground\","
+        },
+        {
+          "line": 51,
+          "text": "      \"actor\": \"deceiver\","
+        },
+        {
+          "line": 52,
+          "text": "      \"metric\": \"display_id\","
+        },
+        {
+          "line": 53,
+          "text": "      \"equals\": 11686,"
+        },
+        {
+          "line": 54,
+          "text": "      \"within_ms\": 3000"
+        },
+        {
+          "line": 55,
+          "text": "    },"
+        },
+        {
+          "line": 56,
+          "text": "    {"
+        },
+        {
+          "line": 57,
+          "text": "      \"action\": \"assert\","
+        },
+        {
+          "line": 58,
+          "text": "      \"label\": \"The tentacle engages the nearby player\","
+        },
+        {
+          "line": 59,
+          "text": "      \"actor\": \"p\","
+        },
+        {
+          "line": 60,
+          "text": "      \"metric\": \"combat\","
+        },
+        {
+          "line": 61,
+          "text": "      \"equals\": 1,"
+        },
+        {
+          "line": 62,
+          "text": "      \"within_ms\": 5000"
+        },
+        {
+          "line": 63,
+          "text": "    },"
+        },
+        {
+          "line": 64,
+          "text": "    {"
+        },
+        {
+          "line": 65,
+          "text": "      \"action\": \"relocate\","
+        },
+        {
+          "line": 66,
+          "text": "      \"actor\": \"p\","
+        },
+        {
+          "line": 67,
+          "text": "      \"dx\": -20"
+        },
+        {
+          "line": 68,
+          "text": "    },"
+        },
+        {
+          "line": 69,
+          "text": "    {"
+        },
+        {
+          "line": 70,
+          "text": "      \"action\": \"relocate\","
+        },
+        {
+          "line": 71,
+          "text": "      \"actor\": \"p\","
+        },
+        {
+          "line": 72,
+          "text": "      \"dx\": -20"
+        },
+        {
+          "line": 73,
+          "text": "    },"
+        },
+        {
+          "line": 74,
+          "text": "    {"
+        },
+        {
+          "line": 75,
+          "text": "      \"action\": \"assert\","
+        },
+        {
+          "line": 76,
+          "text": "      \"label\": \"Out of the tentacle's reach the player leaves combat\","
+        },
+        {
+          "line": 77,
+          "text": "      \"actor\": \"p\","
+        },
+        {
+          "line": 78,
+          "text": "      \"metric\": \"combat\","
+        },
+        {
+          "line": 79,
+          "text": "      \"equals\": 0,"
+        },
+        {
+          "line": 80,
+          "text": "      \"within_ms\": 5000"
+        },
+        {
+          "line": 81,
+          "text": "    },"
+        },
+        {
+          "line": 82,
+          "text": "    {"
+        },
+        {
+          "line": 83,
+          "text": "      \"action\": \"assert\","
+        },
+        {
+          "line": 84,
+          "text": "      \"label\": \"The Deceiver emerges with his own model\","
+        },
+        {
+          "line": 85,
+          "text": "      \"actor\": \"deceiver\","
+        },
+        {
+          "line": 86,
+          "text": "      \"metric\": \"display_id\","
+        },
+        {
+          "line": 87,
+          "text": "      \"equals\": 138704,"
+        },
+        {
+          "line": 88,
+          "text": "      \"within_ms\": 20000"
+        },
+        {
+          "line": 89,
+          "text": "    }"
+        },
+        {
+          "line": 90,
+          "text": "  ]"
+        },
+        {
+          "line": 91,
+          "text": "}"
+        },
+        {
+          "line": 92,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261029_87_coa_custom_dungeon_fierce_blow.sql",
+      "sha": "e912514b1566ee60f801ba64bff8e563a8413792",
+      "lineCount": 8,
+      "excerpts": [
+        {
+          "line": 1,
+          "text": "-- Vaults of the Inquisition (map 936) and Road to De Other Side (map 937): Fierce Blow (975011, 100 % weapon damage)"
+        },
+        {
+          "line": 2,
+          "text": "-- hits as hard as the caster's regular blow. As a spell it took DestinyWeaver's flat damage factor instead of the"
+        },
+        {
+          "line": 3,
+          "text": "-- weapon range a regular blow is mapped to, so below level 60 it hit for half a blow or less. The script only acts"
+        },
+        {
+          "line": 4,
+          "text": "-- on these two maps."
+        },
+        {
+          "line": 5,
+          "text": "DELETE FROM `spell_script_names` WHERE `spell_id` = 975011 AND `ScriptName` = 'spell_coa_custom_dungeon_fierce_blow';"
+        },
+        {
+          "line": 6,
+          "text": "INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES"
+        },
+        {
+          "line": 7,
+          "text": "(975011, 'spell_coa_custom_dungeon_fierce_blow');"
+        },
+        {
+          "line": 8,
+          "text": ""
+        }
+      ]
+    }
+  ]
+}

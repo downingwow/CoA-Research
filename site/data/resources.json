@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "title": "Verified class resource pools and specialization mechanics",
+  "classSource": {
+    "name": "RealWoW CoA class reference, sourced from game data",
+    "url": "https://realwow.net/classes",
+    "checked": "2026-10-30",
+    "note": "Used for each class's baseline power type. A specialization can replace or add a resource; where no specialization-specific check is recorded below, this is a class baseline rather than a claim that every specialization uses only that pool."
+  },
+  "specializationSource": {
+    "name": "Ascension Sidekick specialization guides",
+    "url": "https://ascensionsidekick.com/",
+    "checked": "2026-10-30",
+    "note": "Community specialization guides provide cross-checks for the explicit overrides below; the guides describe their content as planning heuristics to verify in play."
+  },
+  "classes": {
+    "Barbarian": {
+      "pools": [
+        "Energy"
+      ]
+    },
+    "Witch Doctor": {
+      "pools": [
+        "Mana"
+      ]
+    },
+    "Felsworn": {
+      "pools": [
+        "Energy"
+      ]
+    },
+    "Witch Hunter": {
+      "pools": [
+        "Mana"
+      ]
+    },
+    "Stormbringer": {
+      "pools": [
+        "Mana"
+      ]
+    },
+    "Knight of Xoroth": {
+      "pools": [
+        "Rage"
+      ]
+    },
+    "Guardian": {
+      "pools": [
+        "Energy"
+      ]
+    },
+    "Templar": {
+      "pools": [
+        "Energy"
+      ]
+    },
+    "Bloodmage": {
+      "pools": [
+        "Rage"
+      ]
+    },
+    "Ranger": {
+      "pools": [
+        "Focus"
+      ]
+    },
+    "Chronomancer": {
+      "pools": [
+        "Mana"
+      ]
+    },
+    "Necromancer": {
+      "pools": [
+        "Runic Power"
+      ]
+    },
+    "Pyromancer": {
+      "pools": [
+        "Mana"
+      ]
+    },
+    "Cultist": {
+      "pools": [
+        "Mana"
+      ]
+    },
+    "Starcaller": {
+      "pools": [
+        "Energy"
+      ]
+    },
+    "Sun Cleric": {
+      "pools": [
+        "Mana"
+      ]
+    },
+    "Tinker": {
+      "pools": [
+        "Mana"
+      ]
+    },
+    "Venomancer": {
+      "pools": [
+        "Mana"
+      ]
+    },
+    "Reaper": {
+      "pools": [
+        "Runic Power"
+      ]
+    },
+    "Primalist": {
+      "pools": [
+        "Mana"
+      ]
+    },
+    "Runemaster": {
+      "pools": [
+        "Mana"
+      ]
+    }
+  },
+  "specializations": {
+    "Barbarian|Headhunting": {
+      "pools": [
+        "Energy"
+      ],
+      "mechanics": [],
+      "source": "https://ascensionsidekick.com/barbarian/headhunting"
+    },
+    "Barbarian|Brutality": {
+      "pools": [
+        "Energy"
+      ],
+      "mechanics": [],
+      "source": "https://ascensionsidekick.com/barbarian/brutality"
+    },
+    "Barbarian|Ancestry": {
+      "pools": [
+        "Energy"
+      ],
+      "mechanics": [
+        {
+          "name": "Tankard fill level",
+          "kind": "Build-and-spend counter"
+        }
+      ],
+      "source": "https://ascensionsidekick.com/barbarian/ancestry"
+    },
+    "Witch Hunter|Boltslinger": {
+      "pools": [
+        "Rage",
+        "Mana"
+      ],
+      "mechanics": [],
+      "source": "https://ascensionsidekick.com/witch-hunter/boltslinger"
+    },
+    "Witch Hunter|Inquisition": {
+      "pools": [
+        "Mana",
+        "Rage"
+      ],
+      "mechanics": [
+        {
+          "name": "The Hunt",
+          "kind": "Small secondary Rage pool"
+        }
+      ],
+      "source": "https://ascensionsidekick.com/witch-hunter/inquisition"
+    },
+    "Witch Hunter|Black Knight": {
+      "pools": [
+        "Mana",
+        "Rage"
+      ],
+      "mechanics": [],
+      "source": "https://ascensionsidekick.com/witch-hunter/black-knight"
+    },
+    "Stormbringer|Wind": {
+      "pools": [
+        "Mana"
+      ],
+      "mechanics": [
+        {
+          "name": "Static",
+          "kind": "Secondary counter"
+        }
+      ],
+      "source": "https://ascensionsidekick.com/stormbringer/wind"
+    },
+    "Stormbringer|Lightning": {
+      "pools": [
+        "Mana"
+      ],
+      "mechanics": [
+        {
+          "name": "Static",
+          "kind": "Secondary counter"
+        }
+      ],
+      "source": "https://ascensionsidekick.com/stormbringer/lightning"
+    },
+    "Knight of Xoroth|Hellfire": {
+      "pools": [
+        "Rage"
+      ],
+      "mechanics": [
+        {
+          "name": "Demonfire",
+          "kind": "Build-and-spend mechanic"
+        }
+      ],
+      "source": "https://ascensionsidekick.com/knight-of-xoroth/hellfire"
+    },
+    "Knight of Xoroth|Defiance": {
+      "pools": [
+        "Rage"
+      ],
+      "mechanics": [
+        {
+          "name": "Demonfire",
+          "kind": "Build-and-spend mechanic"
+        },
+        {
+          "name": "Demon's Blood",
+          "kind": "Stack counter"
+        }
+      ],
+      "source": "https://ascensionsidekick.com/knight-of-xoroth/defiance"
+    },
+    "Knight of Xoroth|War": {
+      "pools": [
+        "Rage"
+      ],
+      "mechanics": [
+        {
+          "name": "Demonfire",
+          "kind": "Build-and-spend mechanic"
+        },
+        {
+          "name": "Demon's Blood",
+          "kind": "Stack counter"
+        }
+      ],
+      "source": "https://ascensionsidekick.com/knight-of-xoroth/war"
+    },
+    "Templar|Oathkeeper": {
+      "pools": [
+        "Energy"
+      ],
+      "mechanics": [
+        {
+          "name": "Oaths",
+          "kind": "Build-and-spend counter"
+        }
+      ],
+      "source": "https://ascensionsidekick.com/templar/oathkeeper"
+    },
+    "Templar|Zealot": {
+      "pools": [
+        "Energy"
+      ],
+      "mechanics": [
+        {
+          "name": "Oaths",
+          "kind": "Build-and-spend counter"
+        }
+      ],
+      "utilityPools": [
+        "Mana"
+      ],
+      "source": "https://ascensionsidekick.com/templar/zealot"
+    },
+    "Bloodmage|Sanguine": {
+      "pools": [
+        "Rage"
+      ],
+      "mechanics": [
+        {
+          "name": "Thirst",
+          "kind": "Stack counter"
+        }
+      ],
+      "costMechanics": [
+        "Health costs"
+      ],
+      "source": "https://ascensionsidekick.com/bloodmage/sanguine"
+    },
+    "Cultist|Heretic": {
+      "pools": [
+        "Mana"
+      ],
+      "mechanics": [
+        {
+          "name": "Insanity",
+          "kind": "Build-and-spend counter"
+        }
+      ],
+      "source": "https://ascensionsidekick.com/cultist/heretic"
+    },
+    "Starcaller|Moon Priest": {
+      "pools": [
+        "Energy",
+        "Mana"
+      ],
+      "mechanics": [
+        {
+          "name": "Scattered Stars",
+          "kind": "Build-and-spend counter"
+        }
+      ],
+      "source": "https://ascensionsidekick.com/starcaller/moon-priest"
+    },
+    "Starcaller|Moon Guard": {
+      "pools": [
+        "Energy",
+        "Mana"
+      ],
+      "mechanics": [
+        {
+          "name": "Scattered Stars",
+          "kind": "Build-and-spend counter"
+        }
+      ],
+      "source": "https://ascensionsidekick.com/starcaller/moon-guard"
+    },
+    "Primalist|Grovekeeper": {
+      "pools": [
+        "Mana",
+        "Rage"
+      ],
+      "mechanics": [],
+      "source": "https://ascensionsidekick.com/primalist/grovekeeper"
+    },
+    "Primalist|Geomancy": {
+      "pools": [
+        "Mana",
+        "Rage"
+      ],
+      "mechanics": [],
+      "source": "https://ascensionsidekick.com/primalist/geomancy"
+    },
+    "Primalist|Wildwalker": {
+      "pools": [
+        "Rage"
+      ],
+      "mechanics": [],
+      "utilityPools": [
+        "Pet Focus",
+        "Mana utility costs"
+      ],
+      "source": "https://ascensionsidekick.com/primalist/wildwalker"
+    },
+    "Felsworn|Tyrant": {
+      "pools": [
+        "Energy",
+        "Demonic Rage"
+      ],
+      "mechanics": [
+        {
+          "name": "Felfury",
+          "kind": "Stack counter"
+        }
+      ],
+      "source": "https://ascensionsidekick.com/felsworn/tyrant"
+    }
+  },
+  "rules": [
+    "Rage in an ability name or description does not prove the class has a Rage resource pool.",
+    "Resource pools, stack counters, and costs are shown as separate categories.",
+    "Unlisted specialization mechanics are not inferred from keyword matches in ability text."
+  ]
+}

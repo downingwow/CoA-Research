@@ -1,0 +1,187 @@
+# Dungeon normal, damage and tuning source signals
+
+Source: upstream Conquest-of-AzerothCore/azerothcore-wotlk-coa; deployment unverified.
+
+## src/server/coa/CoADungeonNormal.cpp
+SHA: `296b427d62e50c403853669e7a5f7bf5e89650ff` · 256 lines
+
+- L5: `#include "CoADungeonNormal.h"`
+- L22: `extern uint32 (*CoADungeonKitRepeatHook)(WorldObject const* source, uint32 eventId, uint32 repeat);`
+- L26: `    struct NormalSpell`
+- L28: `        uint32 normalSpell = 0;`
+- L32: `    constexpr uint32 KitFirstEventId = 9000;`
+- L33: `    constexpr uint8 NormalRankMaxCasterLevel = 49;`
+- L39: `    std::unordered_map<uint32, NormalSpell> Spells;`
+- L40: `    std::unordered_map<uint32, uint32> CastSpellOfVariant;`
+- L41: `    std::unordered_set<uint32> KitCasters;`
+- L43: `    Creature const* NormalDungeonCreature(WorldObject const* object)`
+- L49: `        if (!map || !map->IsNonRaidDungeon() || map->GetDifficulty() != DUNGEON_DIFFICULTY_NORMAL)`
+- L76: `    float NormalRankValue(SpellInfo const* spellInfo, SpellEffectInfo const& effect, int32 level)`
+- L84: `        return effect.Effect == SPELL_EFFECT_SCHOOL_DAMAGE || effect.Effect == SPELL_EFFECT_HEALTH_LEECH;`
+- L89: `        return effect.Effect == SPELL_EFFECT_APPLY_AURA && effect.Amplitude > 0`
+- L90: `            && (effect.ApplyAuraName == SPELL_AURA_PERIODIC_DAMAGE || effect.ApplyAuraName == SPELL_AURA_PERIODIC_LEECH);`
+- L94: `    float Damage(SpellInfo const* spellInfo, bool periodic, int32 level, Value value)`
+- L110: `        auto variant = CastSpellOfVariant.find(spellInfo->Id);`
+- L111: `        if (variant == CastSpellOfVariant.end() || caster->GetLevel() <= NormalRankMaxCasterLevel)`
+- L113: `        NormalSpell const& row = Spells.at(variant->second);`
+- L115: `        if (row.normalSpell == variant->second || !castInfo)`
+- L118: `        float const cast = Damage(castInfo, periodic, level, CastValue);`
+- L119: `        float const current = Damage(spellInfo, periodic, level, CastValue);`
+- L128: `        NormalSpell const& row = itr->second;`
+- L129: `        if (!row.normalSpell || caster->GetLevel() > NormalRankMaxCasterLevel)`
+- L131: `        if (row.normalSpell == spellInfo->Id)`
+- L133: `        SpellInfo const* normalInfo = sSpellMgr->GetSpellInfo(row.normalSpell);`
+- L134: `        if (!normalInfo)`
+- L137: `        float const current = Damage(spellInfo, periodic, level, CastValue);`
+- L138: `        float const normal = Damage(normalInfo, periodic, level, NormalRankValue);`
+- L139: `        return current > 0.0f && normal > 0.0f ? normal / current : row.high;`
+- L143: `    void Tune(Unit const* target, Unit const* attacker, T& damage, SpellInfo const* spellInfo, bool periodic)`
+- L145: `        if (damage <= 0 || !spellInfo || !CoADungeonNormal::TunesSpell(attacker, spellInfo))`
+- L147: `        float value = float(damage) * Factor(attacker->ToCreature(), spellInfo, periodic);`
+- L152: `                value = std::min(value, float(target->GetMaxHealth()) * capPct / 100.0f);`
+- L154: `        damage = T(std::max(1.0f, value));`
+- L157: `    uint32 SmartKitRepeat(WorldObject const* source, uint32 eventId, uint32 repeat)`
+- L159: `        return eventId >= KitFirstEventId ? CoADungeonNormal::KitRepeat(source, repeat) : repeat;`
+- L163: `bool CoADungeonNormal::TunesSpell(Unit const* attacker, SpellInfo const* spellInfo)`
+- L167: `    Creature const* creature = NormalDungeonCreature(attacker);`
+- L172: `    return CastSpellOfVariant.count(spellInfo->Id) && KitCasters.count(creature->GetEntry());`
+- L175: `uint32 CoADungeonNormal::KitRepeat(WorldObject const* source, uint32 repeat)`
+- L177: `    if (!repeat || RepeatFactor == 1.0f || !NormalDungeonCreature(source))`
+- L179: `    return uint32(float(repeat) * RepeatFactor + 0.5f);`
+- L182: `class CoADungeonNormalWorld final : public WorldScript`
+- L185: `    CoADungeonNormalWorld() : WorldScript("CoADungeonNormalWorld", { WORLDHOOK_ON_AFTER_CONFIG_LOAD, WORLDHOOK_ON_STARTUP }) { }`
+- L189: `        Enabled = sConfigMgr->GetOption<bool>("CoA.DungeonNormal.Enable", true);`
+- L190: `        RepeatFactor = std::max(0.1f, sConfigMgr->GetOption<float>("CoA.DungeonNormal.RepeatFactor", 1.1f));`
+- L191: `        AreaCapPct = sConfigMgr->GetOption<float>("CoA.DungeonNormal.AreaHitCapPct", 25.0f);`
+- L192: `        TargetCapPct = sConfigMgr->GetOption<float>("CoA.DungeonNormal.TargetHitCapPct", 40.0f);`
+- L199: `        if (QueryResult result = WorldDatabase.Query("SELECT spell_id, normal_spell_id, high FROM coa_dungeon_normal_spell_damage"))`
+- L204: `                NormalSpell& row = Spells[fields[0].Get<uint32>()];`
+- L205: `                row.normalSpell = fields[1].Get<uint32>();`
+- L209: `        CastSpellOfVariant.clear();`
+- L212: `            uint32 const castSpell = spell.first;`
+- L213: `            SpellDifficultyEntry const* difficulty = sSpellDifficultyStore.LookupEntry(sSpellMgr->GetSpellDifficultyId(castSpell));`
+- L214: `            if (!difficulty || difficulty->SpellID[REGULAR_DIFFICULTY] <= 0)`
+- L216: `            uint32 const normalVariant = uint32(difficulty->SpellID[REGULAR_DIFFICULTY]);`
+- L217: `            if (normalVariant != castSpell && !Spells.count(normalVariant))`
+- L218: `                CastSpellOfVariant.try_emplace(normalVariant, castSpell);`
+- L226: `                KitCasters.insert(result->Fetch()[0].Get<uint32>());`
+- L229: `        LOG_INFO("server.loading", ">> Loaded {} CoA Normal dungeon kit spells, {} cast as their Normal SpellDifficulty variant "`
+- L230: `            "by {} kit creatures", Spells.size(), CastSpellOfVariant.size(), KitCasters.size());`
+- L234: `class CoADungeonNormalDamage final : public UnitScript`
+- L237: `    CoADungeonNormalDamage() : UnitScript("CoADungeonNormalDamage", true,`
+- L238: `        { UNITHOOK_MODIFY_SPELL_DAMAGE_TAKEN, UNITHOOK_MODIFY_PERIODIC_DAMAGE_AURAS_TICK }) { }`
+- L240: `    void ModifySpellDamageTaken(Unit* target, Unit* attacker, int32& damage, SpellInfo const* spellInfo) override`
+- L242: `        Tune(target, attacker, damage, spellInfo, false);`
+- L245: `    void ModifyPeriodicDamageAurasTick(Unit* target, Unit* attacker, uint32& damage, SpellInfo const* spellInfo) override`
+- L247: `        Tune(target, attacker, damage, spellInfo, true);`
+- L251: `void AddSC_CoADungeonNormal()`
+- L253: `    new CoADungeonNormalWorld();`
+- L254: `    new CoADungeonNormalDamage();`
+
+## src/server/coa/CoADungeonSpellDamage.cpp
+SHA: `2c485a04fc9b9f81b9737873e93fd4284cf82406` · 164 lines
+
+- L20: `    std::unordered_map<uint32, float> Multipliers;`
+- L21: `    std::unordered_set<uint32> Bosses;`
+- L22: `    std::unordered_map<uint32, float> CreatureMultipliers;`
+- L23: `    std::unordered_map<uint32, float> HealShares;`
+- L25: `    constexpr int32 TrashCapHeroic = 460;`
+- L26: `    constexpr int32 TrashCapMythic = 600;`
+- L30: `        if (!attacker || !spellInfo || Multipliers.count(spellInfo->Id))`
+- L36: `        if (!map || !map->IsNonRaidDungeon() || map->GetDifficulty() == DUNGEON_DIFFICULTY_NORMAL)`
+- L38: `        return map->GetDifficulty() == DUNGEON_DIFFICULTY_HEROIC ? TrashCapHeroic : TrashCapMythic;`
+- L41: `    float Multiplier(Unit const* attacker, SpellInfo const* spellInfo)`
+- L43: `        if (Multipliers.empty() || !attacker || !spellInfo)`
+- L49: `        if (!map || !map->IsDungeon() || map->GetDifficulty() == DUNGEON_DIFFICULTY_NORMAL)`
+- L51: `        auto itr = Multipliers.find(spellInfo->Id);`
+- L52: `        return itr == Multipliers.end() ? 1.0f : itr->second;`
+- L55: `    float CreatureMultiplier(Unit const* attacker)`
+- L57: `        if (CreatureMultipliers.empty() || !attacker)`
+- L65: `        auto itr = CreatureMultipliers.find(creature->GetEntry());`
+- L66: `        return itr == CreatureMultipliers.end() ? 1.0f : itr->second;`
+- L70: `class CoADungeonSpellDamageWorld final : public WorldScript`
+- L73: `    CoADungeonSpellDamageWorld() : WorldScript("CoADungeonSpellDamageWorld", { WORLDHOOK_ON_STARTUP }) { }`
+- L77: `        Multipliers.clear();`
+- L78: `        if (QueryResult result = WorldDatabase.Query("SELECT spell_id, multiplier FROM coa_dungeon_spell_damage"))`
+- L83: `                Multipliers[fields[0].Get<uint32>()] = fields[1].Get<float>();`
+- L86: `        LOG_INFO("server.loading", ">> Loaded {} CoA dungeon spell damage multipliers", Multipliers.size());`
+- L92: `                Bosses.insert(result->Fetch()[0].Get<uint32>());`
+- L96: `        CreatureMultipliers.clear();`
+- L97: `        if (QueryResult result = WorldDatabase.Query("SELECT entry, multiplier FROM coa_dungeon_creature_damage"))`
+- L102: `                CreatureMultipliers[fields[0].Get<uint32>()] = fields[1].Get<float>();`
+- L105: `        LOG_INFO("server.loading", ">> Loaded {} CoA dungeon creature damage multipliers", CreatureMultipliers.size());`
+- L112: `                HealShares[fields[0].Get<uint32>()] = fields[1].Get<float>();`
+- L119: `class CoADungeonSpellDamage final : public UnitScript`
+- L122: `    CoADungeonSpellDamage() : UnitScript("CoADungeonSpellDamage", true,`
+- L123: `        { UNITHOOK_MODIFY_SPELL_DAMAGE_TAKEN, UNITHOOK_MODIFY_PERIODIC_DAMAGE_AURAS_TICK, UNITHOOK_MODIFY_MELEE_DAMAGE, UNITHOOK_MODIFY_HEAL_RECEIVED }) { }`
+- L125: `    void ModifyHealReceived(Unit* healer, Unit* receiver, uint32& gain, SpellInfo const*) override`
+- L135: `        gain = uint32(receiver->GetMaxHealth() * itr->second);`
+- L138: `    void ModifyMeleeDamage(Unit*, Unit* attacker, uint32& damage) override`
+- L140: `        if (float multiplier = CreatureMultiplier(attacker); multiplier != 1.0f)`
+- L141: `            damage = uint32(damage * multiplier);`
+- L144: `    void ModifySpellDamageTaken(Unit*, Unit* attacker, int32& damage, SpellInfo const* spellInfo) override`
+- L146: `        if (float multiplier = Multiplier(attacker, spellInfo) * CreatureMultiplier(attacker); multiplier != 1.0f)`
+- L147: `            damage = int32(damage * multiplier);`
+- L148: `        if (int32 cap = TrashCap(attacker, spellInfo); cap && damage > cap)`
+- L149: `            damage = cap + (damage - cap) / 20;`
+- L152: `    void ModifyPeriodicDamageAurasTick(Unit*, Unit* attacker, uint32& damage, SpellInfo const* spellInfo) override`
+- L154: `        if (float multiplier = Multiplier(attacker, spellInfo) * CreatureMultiplier(attacker); multiplier != 1.0f)`
+- L155: `            damage = uint32(damage * multiplier);`
+- L159: `void AddSC_CoADungeonSpellDamage()`
+- L161: `    new CoADungeonSpellDamageWorld();`
+- L162: `    new CoADungeonSpellDamage();`
+
+## src/server/coa/CoADungeonTuning.cpp
+SHA: `a09f0122e8b8e7ffc85e86ca165f16ca1a108f93` · 288 lines
+
+- L32: `        int32 health = 0;`
+- L37: `    std::unordered_map<uint32, Tuning> Tunings;`
+- L61: `    void ScaleHealth(Creature* creature, float factor)`
+- L65: `        float const pct = creature->GetMaxHealth() ? float(creature->GetHealth()) / creature->GetMaxHealth() : 1.0f;`
+- L66: `        uint32 const health = std::max<uint32>(1, uint32(creature->GetCreateHealth() * factor));`
+- L67: `        creature->SetCreateHealth(health);`
+- L68: `        creature->SetStatFlatModifier(UNIT_MOD_HEALTH, BASE_VALUE, float(health));`
+- L69: `        creature->UpdateMaxHealth();`
+- L71: `            creature->SetHealth(std::max<uint32>(1, uint32(creature->GetMaxHealth() * pct)));`
+- L74: `    float DamageFactor(Unit const* attacker, bool physical)`
+- L85: `        return !spellInfo || (spellInfo->GetSchoolMask() & SPELL_SCHOOL_MASK_NORMAL);`
+- L88: `    char const* DifficultyName(Map const* map)`
+- L90: `        switch (map->GetDifficulty())`
+- L92: `            case DUNGEON_DIFFICULTY_NORMAL: return "Normal";`
+- L93: `            case DUNGEON_DIFFICULTY_HEROIC: return "Heroic";`
+- L94: `            case DUNGEON_DIFFICULTY_EPIC:   return "Mythic";`
+- L102: `            if (entry && entry->MapID == map->GetId() && entry->Difficulty == uint32(map->GetDifficulty()) && entry->Name[0][0])`
+- L119: `class CoADungeonTuningDamage final : public UnitScript`
+- L122: `    CoADungeonTuningDamage() : UnitScript("CoADungeonTuningDamage", true,`
+- L123: `        { UNITHOOK_MODIFY_MELEE_DAMAGE, UNITHOOK_MODIFY_SPELL_DAMAGE_TAKEN, UNITHOOK_MODIFY_PERIODIC_DAMAGE_AURAS_TICK }) { }`
+- L125: `    void ModifyMeleeDamage(Unit*, Unit* attacker, uint32& damage) override`
+- L127: `        if (float f = DamageFactor(attacker, true); f != 1.0f)`
+- L128: `            damage = uint32(damage * f);`
+- L131: `    void ModifySpellDamageTaken(Unit*, Unit* attacker, int32& damage, SpellInfo const* spellInfo) override`
+- L133: `        if (float f = DamageFactor(attacker, IsPhysical(spellInfo)); f != 1.0f)`
+- L134: `            damage = int32(damage * f);`
+- L137: `    void ModifyPeriodicDamageAurasTick(Unit*, Unit* attacker, uint32& damage, SpellInfo const* spellInfo) override`
+- L139: `        if (float f = DamageFactor(attacker, IsPhysical(spellInfo)); f != 1.0f)`
+- L140: `            damage = uint32(damage * f);`
+- L144: `class CoADungeonTuningHealth final : public AllCreatureScript`
+- L147: `    CoADungeonTuningHealth() : AllCreatureScript("CoADungeonTuningHealth") { }`
+- L152: `        if (Tuned(creature->FindMap(), tuning) && tuning.health)`
+- L153: `            ScaleHealth(creature, Percent(tuning.health));`
+- L176: `        static ChatCommandTable mythicTable =`
+- L178: `            { "damage", HandleDamage, SEC_PLAYER, Console::No },`
+- L179: `            { "health", HandleHealth, SEC_PLAYER, Console::No },`
+- L183: `            { "mythic", mythicTable },`
+- L188: `    static bool HandleDamage(ChatHandler* handler, Optional<int32> percent, Optional<std::string> type)`
+- L220: `    static bool HandleHealth(ChatHandler* handler, Optional<int32> percent)`
+- L232: `            float const before = Percent(tuning.health);`
+- L233: `            tuning.health = std::clamp<int32>(*percent, -95, 1000);`
+- L234: `            ratio = Percent(tuning.health) / before;`
+- L237: `            ScaleHealth(creature, ratio);`
+- L264: `            "Test tuning {} ({}): physical {:+}% ({}%), magic {:+}% ({}%), health {:+}% ({}%)", DungeonName(map),`
+- L265: `            DifficultyName(map), tuning.physical, 100 + tuning.physical, tuning.magic, 100 + tuning.magic,`
+- L266: `            tuning.health, 100 + tuning.health);`
+- L273: `        LOG_INFO("server.dungeontuning", "TUNING map={} difficulty={} instance={} by={} physical={} magic={} health={}",`
+- L274: `            map->GetId(), uint32(map->GetDifficulty()), map->GetInstanceId(), handler->GetPlayer()->GetName(),`
+- L275: `            tuning.physical, tuning.magic, tuning.health);`
+- L283: `    new CoADungeonTuningDamage();`
+- L284: `    new CoADungeonTuningHealth();`

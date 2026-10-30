@@ -116,7 +116,8 @@
         "research/dbm/road-to-de-other-side-phase-timelines-v1-2026-10-30.json",
         "research/dbm/road-to-de-other-side-sql-difficulty-fixes-2026-10-30.md",
         "research/dbm/road-trash-abilities-source-v1-2026-10-30.json",
-        "research/dbm/road-vaults-boss-spell-registry-v1-2026-10-30.json"
+        "research/dbm/road-vaults-boss-spell-registry-v1-2026-10-30.json",
+        "research/dbm/road-vaults-phase-conditions-v1-2026-10-30.json"
       ],
       "healthSource": "data/sql/updates/pending_db_world/rev_20261029_82_coa_road_to_de_other_side_health_immunities.sql",
       "difficultyHealth": [
@@ -472,7 +473,8 @@
         "scheduledAbilityCount": 31,
         "source": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/blob/main/src/server/coa/CoAOtherSideTrash.cpp"
       },
-      "bossSpellRegistry": "research/dbm/road-vaults-boss-spell-registry-v1-2026-10-30.json"
+      "bossSpellRegistry": "research/dbm/road-vaults-boss-spell-registry-v1-2026-10-30.json",
+      "phaseConditionsSource": "research/dbm/road-vaults-phase-conditions-v1-2026-10-30.json"
     },
     {
       "name": "Vaults of the Inquisition",
@@ -778,7 +780,8 @@
         "research/dbm/vaults-of-the-inquisition-three-boss-source-audit-2026-10-30.md",
         "research/dbm/vaults-trash-and-deceiver-timing-audit-2026-10-30.md",
         "research/dbm/vaults-sql-binding-map-lfg-audit-2026-10-30.md",
-        "research/dbm/road-vaults-boss-spell-registry-v1-2026-10-30.json"
+        "research/dbm/road-vaults-boss-spell-registry-v1-2026-10-30.json",
+        "research/dbm/road-vaults-phase-conditions-v1-2026-10-30.json"
       ],
       "trashSource": "src/server/coa/CoAVaults.cpp",
       "cautions": [
@@ -1031,7 +1034,8 @@
         "finalBossNpcId": 162704
       },
       "healthSource": "data/sql/updates/pending_db_world/rev_20261028_60_vaults_of_the_inquisition.sql",
-      "bossSpellRegistry": "research/dbm/road-vaults-boss-spell-registry-v1-2026-10-30.json"
+      "bossSpellRegistry": "research/dbm/road-vaults-boss-spell-registry-v1-2026-10-30.json",
+      "phaseConditionsSource": "research/dbm/road-vaults-phase-conditions-v1-2026-10-30.json"
     },
     {
       "name": "Frozen Reach (custom map)",

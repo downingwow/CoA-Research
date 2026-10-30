@@ -108,6 +108,181 @@
       "references": [
         "research/dbm/road-to-de-other-side-three-boss-source-audit-2026-10-30.md",
         "research/dbm/road-to-de-other-side-phase-timelines-v1-2026-10-30.json"
+      ],
+      "healthSource": "data/sql/updates/pending_db_world/rev_20261029_82_coa_road_to_de_other_side_health_immunities.sql",
+      "difficultyHealth": [
+        {
+          "npcId": 162711,
+          "heroicHealth": 674735,
+          "heroicEvidence": "log",
+          "mythicHealth": 877155,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162715,
+          "heroicHealth": 665142,
+          "heroicEvidence": "log",
+          "mythicHealth": 864685,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162716,
+          "heroicHealth": 685735,
+          "heroicEvidence": "log",
+          "mythicHealth": 891455,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162743,
+          "heroicHealth": 66638,
+          "heroicEvidence": "log",
+          "mythicHealth": 86630,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162765,
+          "heroicHealth": 150060,
+          "heroicEvidence": "log",
+          "mythicHealth": 195078,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162766,
+          "heroicHealth": 42308,
+          "heroicEvidence": "model",
+          "mythicHealth": 55000,
+          "mythicEvidence": "model"
+        },
+        {
+          "npcId": 162767,
+          "heroicHealth": 42308,
+          "heroicEvidence": "model",
+          "mythicHealth": 55000,
+          "mythicEvidence": "model"
+        },
+        {
+          "npcId": 162769,
+          "heroicHealth": 150075,
+          "heroicEvidence": "log",
+          "mythicHealth": 195097,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162770,
+          "heroicHealth": 56177,
+          "heroicEvidence": "log",
+          "mythicHealth": 73030,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162773,
+          "heroicHealth": 427318,
+          "heroicEvidence": "log",
+          "mythicHealth": 555514,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162775,
+          "heroicHealth": 150041,
+          "heroicEvidence": "log",
+          "mythicHealth": 195053,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162776,
+          "heroicHealth": 150053,
+          "heroicEvidence": "log",
+          "mythicHealth": 195069,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162780,
+          "heroicHealth": 427319,
+          "heroicEvidence": "log",
+          "mythicHealth": 555515,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162782,
+          "heroicHealth": 150063,
+          "heroicEvidence": "log",
+          "mythicHealth": 195082,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162783,
+          "heroicHealth": 150046,
+          "heroicEvidence": "log",
+          "mythicHealth": 195060,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162784,
+          "heroicHealth": 56177,
+          "heroicEvidence": "log",
+          "mythicHealth": 73030,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162785,
+          "heroicHealth": 202568,
+          "heroicEvidence": "log",
+          "mythicHealth": 263338,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162979,
+          "heroicHealth": 56177,
+          "heroicEvidence": "log",
+          "mythicHealth": 73030,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162980,
+          "heroicHealth": 56177,
+          "heroicEvidence": "log",
+          "mythicHealth": 73030,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162981,
+          "heroicHealth": 37485,
+          "heroicEvidence": "log",
+          "mythicHealth": 48730,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162982,
+          "heroicHealth": 427319,
+          "heroicEvidence": "log",
+          "mythicHealth": 555515,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162983,
+          "heroicHealth": 150058,
+          "heroicEvidence": "log",
+          "mythicHealth": 195075,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162988,
+          "heroicHealth": 524988,
+          "heroicEvidence": "log",
+          "mythicHealth": 682485,
+          "mythicEvidence": "log"
+        }
+      ],
+      "bossImmunities": {
+        "creatureImmunitiesId": -273,
+        "npcIds": [
+          162711,
+          162715,
+          162716
+        ]
+      },
+      "cautions": [
+        "Health is from upstream log-derived or model-derived SQL, not confirmed current live values"
       ]
     },
     {

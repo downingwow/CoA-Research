@@ -1,0 +1,4562 @@
+{
+  "scope": "Classic only",
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "verification": "Upstream scripts not confirmed live",
+  "files": [
+    {
+      "path": "src/server/scripts/EasternKingdoms/Deadmines/instance_deadmines.cpp",
+      "sha": "2cd8195ac8237efd54eeccc1718bd1fa1804f002",
+      "lineCount": 122,
+      "signals": [
+        {
+          "line": 18,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 19,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 22,
+          "text": "class instance_deadmines : public InstanceMapScript"
+        },
+        {
+          "line": 25,
+          "text": "instance_deadmines() : InstanceMapScript(\"instance_deadmines\", MAP_DEADMINES) { }"
+        },
+        {
+          "line": 27,
+          "text": "struct instance_deadmines_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 29,
+          "text": "instance_deadmines_InstanceMapScript(Map* map) : InstanceScript(map)"
+        },
+        {
+          "line": 36,
+          "text": "memset(&_encounters, 0, sizeof(_encounters));"
+        },
+        {
+          "line": 39,
+          "text": "void OnGameObjectCreate(GameObject* gameobject) override"
+        },
+        {
+          "line": 43,
+          "text": "case GO_HEAVY_DOOR_1:"
+        },
+        {
+          "line": 44,
+          "text": "case GO_HEAVY_DOOR_2:"
+        },
+        {
+          "line": 45,
+          "text": "case GO_DOOR_LEVER_1:"
+        },
+        {
+          "line": 46,
+          "text": "case GO_DOOR_LEVER_2:"
+        },
+        {
+          "line": 47,
+          "text": "case GO_DOOR_LEVER_3:"
+        },
+        {
+          "line": 49,
+          "text": "case GO_FOUNDRY_DOOR:"
+        },
+        {
+          "line": 50,
+          "text": "case GO_MAST_ROOM_DOOR:"
+        },
+        {
+          "line": 51,
+          "text": "gameobject->AllowSaveToDB(true);"
+        },
+        {
+          "line": 53,
+          "text": "case GO_FACTORY_DOOR:"
+        },
+        {
+          "line": 54,
+          "text": "gameobject->AllowSaveToDB(true);"
+        },
+        {
+          "line": 55,
+          "text": "// GoState (Door opened) is restored during GO creation, but we need to set LootState to prevent Lever from closing it again"
+        },
+        {
+          "line": 56,
+          "text": "if (_encounters[TYPE_RHAHK_ZOR] == DONE)"
+        },
+        {
+          "line": 59,
+          "text": "case GO_IRON_CLAD_DOOR:"
+        },
+        {
+          "line": 60,
+          "text": "gameobject->AllowSaveToDB(true);"
+        },
+        {
+          "line": 68,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 74,
+          "text": "_encounters[type] = data;"
+        },
+        {
+          "line": 78,
+          "text": "if (data == DONE)"
+        },
+        {
+          "line": 79,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 82,
+          "text": "std::string GetSaveData() override"
+        },
+        {
+          "line": 84,
+          "text": "std::ostringstream saveStream;"
+        },
+        {
+          "line": 85,
+          "text": "saveStream << \"D E \" << _encounters[0] << ' ' << _encounters[1];"
+        },
+        {
+          "line": 86,
+          "text": "return saveStream.str();"
+        },
+        {
+          "line": 89,
+          "text": "void Load(char const* in) override"
+        },
+        {
+          "line": 95,
+          "text": "std::istringstream loadStream(in);"
+        },
+        {
+          "line": 96,
+          "text": "loadStream >> dataHead1 >> dataHead2;"
+        },
+        {
+          "line": 99,
+          "text": "for (uint8 i = 0; i < MAX_ENCOUNTERS; ++i)"
+        },
+        {
+          "line": 101,
+          "text": "loadStream >> _encounters[i];"
+        },
+        {
+          "line": 102,
+          "text": "if (_encounters[i] == IN_PROGRESS)"
+        },
+        {
+          "line": 103,
+          "text": "_encounters[i] = NOT_STARTED;"
+        },
+        {
+          "line": 109,
+          "text": "uint32 _encounters[MAX_ENCOUNTERS];"
+        },
+        {
+          "line": 112,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 114,
+          "text": "return new instance_deadmines_InstanceMapScript(map);"
+        },
+        {
+          "line": 118,
+          "text": "void AddSC_instance_deadmines()"
+        },
+        {
+          "line": 120,
+          "text": "new instance_deadmines();"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/Scholomance/instance_scholomance.cpp",
+      "sha": "49d74bdf7f53a97a34886b0e26afb37a665c3fcc",
+      "lineCount": 443,
+      "signals": [
+        {
+          "line": 20,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 21,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 26,
+          "text": "#include \"SpellScriptLoader.h\""
+        },
+        {
+          "line": 31,
+          "text": "class instance_scholomance : public InstanceMapScript"
+        },
+        {
+          "line": 34,
+          "text": "instance_scholomance() : InstanceMapScript(ScholomanceScriptName, MAP_SCHOLOMANCE) { }"
+        },
+        {
+          "line": 36,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 38,
+          "text": "return new instance_scholomance_InstanceMapScript(map);"
+        },
+        {
+          "line": 41,
+          "text": "struct instance_scholomance_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 43,
+          "text": "instance_scholomance_InstanceMapScript(Map* map) : InstanceScript(map)"
+        },
+        {
+          "line": 50,
+          "text": "void OnCreatureCreate(Creature* cr) override"
+        },
+        {
+          "line": 54,
+          "text": "case NPC_DARKMASTER_GANDLING:"
+        },
+        {
+          "line": 55,
+          "text": "GandlingGUID = cr->GetGUID();"
+        },
+        {
+          "line": 60,
+          "text": "void OnGameObjectCreate(GameObject* go) override"
+        },
+        {
+          "line": 65,
+          "text": "GateKirtonosGUID = go->GetGUID();"
+        },
+        {
+          "line": 67,
+          "text": "case GO_DOOR_OPENED_WITH_KEY:"
+        },
+        {
+          "line": 68,
+          "text": "go->AllowSaveToDB(true);"
+        },
+        {
+          "line": 71,
+          "text": "GandlingGatesGUID[0] = go->GetGUID();"
+        },
+        {
+          "line": 74,
+          "text": "GandlingGatesGUID[1] = go->GetGUID();"
+        },
+        {
+          "line": 77,
+          "text": "GandlingGatesGUID[2] = go->GetGUID();"
+        },
+        {
+          "line": 80,
+          "text": "GandlingGatesGUID[3] = go->GetGUID();"
+        },
+        {
+          "line": 83,
+          "text": "GandlingGatesGUID[4] = go->GetGUID();"
+        },
+        {
+          "line": 86,
+          "text": "GandlingGatesGUID[5] = go->GetGUID();"
+        },
+        {
+          "line": 89,
+          "text": "GandlingGatesGUID[6] = go->GetGUID();"
+        },
+        {
+          "line": 92,
+          "text": "BrazierKirtonosGUID = go->GetGUID();"
+        },
+        {
+          "line": 97,
+          "text": "ObjectGuid GetGuidData(uint32 type) const override"
+        },
+        {
+          "line": 102,
+          "text": "return GateKirtonosGUID;"
+        },
+        {
+          "line": 104,
+          "text": "return BrazierKirtonosGUID;"
+        },
+        {
+          "line": 106,
+          "text": "return GandlingGatesGUID[0];"
+        },
+        {
+          "line": 108,
+          "text": "return GandlingGatesGUID[1];"
+        },
+        {
+          "line": 110,
+          "text": "return GandlingGatesGUID[2];"
+        },
+        {
+          "line": 112,
+          "text": "return GandlingGatesGUID[3];"
+        },
+        {
+          "line": 114,
+          "text": "return GandlingGatesGUID[4];"
+        },
+        {
+          "line": 116,
+          "text": "return GandlingGatesGUID[5];"
+        },
+        {
+          "line": 118,
+          "text": "return GandlingGatesGUID[6];"
+        },
+        {
+          "line": 119,
+          "text": "case NPC_DARKMASTER_GANDLING:"
+        },
+        {
+          "line": 120,
+          "text": "return GandlingGUID;"
+        },
+        {
+          "line": 122,
+          "text": "return ObjectGuid::Empty;"
+        },
+        {
+          "line": 125,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 129,
+          "text": "case DATA_KIRTONOS_THE_HERALD:"
+        },
+        {
+          "line": 132,
+          "text": "case IN_PROGRESS:"
+        },
+        {
+          "line": 133,
+          "text": "// summon kirtonos and close door"
+        },
+        {
+          "line": 134,
+          "text": "if (_kirtonosState == NOT_STARTED)"
+        },
+        {
+          "line": 136,
+          "text": "if (Creature* kirtonos = instance->SummonCreature(NPC_KIRTONOS, KirtonosSpawn))"
+        },
+        {
+          "line": 138,
+          "text": "kirtonos->AI()->DoAction(IN_PROGRESS);"
+        },
+        {
+          "line": 140,
+          "text": "if (GameObject* gate = instance->GetGameObject(GetGuidData(GO_GATE_KIRTONOS)))"
+        },
+        {
+          "line": 148,
+          "text": "// open door and reset brazier"
+        },
+        {
+          "line": 149,
+          "text": "if (GameObject* gate = instance->GetGameObject(GetGuidData(GO_GATE_KIRTONOS)))"
+        },
+        {
+          "line": 154,
+          "text": "if (GameObject* brazier = instance->GetGameObject(GetGuidData(GO_BRAZIER_KIRTONOS)))"
+        },
+        {
+          "line": 160,
+          "text": "_kirtonosState = NOT_STARTED;"
+        },
+        {
+          "line": 162,
+          "text": "case DONE:"
+        },
+        {
+          "line": 163,
+          "text": "// open door"
+        },
+        {
+          "line": 164,
+          "text": "if (GameObject* gate = instance->GetGameObject(GetGuidData(GO_GATE_KIRTONOS)))"
+        },
+        {
+          "line": 174,
+          "text": "case DATA_MINI_BOSSES:"
+        },
+        {
+          "line": 178,
+          "text": "if (Creature* Gandling = instance->GetCreature(GandlingGUID))"
+        },
+        {
+          "line": 185,
+          "text": "case DATA_DARKMASTER_GANDLING:"
+        },
+        {
+          "line": 188,
+          "text": "case DONE:"
+        },
+        {
+          "line": 189,
+          "text": "case NOT_STARTED:"
+        },
+        {
+          "line": 191,
+          "text": "HandleGameObject(GandlingGatesGUID[6], true);"
+        },
+        {
+          "line": 193,
+          "text": "case IN_PROGRESS:"
+        },
+        {
+          "line": 194,
+          "text": "HandleGameObject(GandlingGatesGUID[6], false);"
+        },
+        {
+          "line": 198,
+          "text": "case DATA_RAS_HUMAN:"
+        },
+        {
+          "line": 202,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 205,
+          "text": "uint32 GetData(uint32 type) const override"
+        },
+        {
+          "line": 209,
+          "text": "case DATA_KIRTONOS_THE_HERALD:"
+        },
+        {
+          "line": 211,
+          "text": "case DATA_MINI_BOSSES:"
+        },
+        {
+          "line": 213,
+          "text": "case DATA_RAS_HUMAN:"
+        },
+        {
+          "line": 219,
+          "text": "void ReadSaveDataMore(std::istringstream& data) override"
+        },
+        {
+          "line": 225,
+          "text": "void WriteSaveDataMore(std::ostringstream& data) override"
+        },
+        {
+          "line": 231,
+          "text": "ObjectGuid GateKirtonosGUID;"
+        },
+        {
+          "line": 232,
+          "text": "ObjectGuid GateMiliciaGUID;"
+        },
+        {
+          "line": 233,
+          "text": "ObjectGuid GateTheolenGUID;"
+        },
+        {
+          "line": 234,
+          "text": "ObjectGuid GatePolkeltGUID;"
+        },
+        {
+          "line": 235,
+          "text": "ObjectGuid GateRavenianGUID;"
+        },
+        {
+          "line": 236,
+          "text": "ObjectGuid GateBarovGUID;"
+        },
+        {
+          "line": 237,
+          "text": "ObjectGuid GateIlluciaGUID;"
+        },
+        {
+          "line": 238,
+          "text": "ObjectGuid BrazierKirtonosGUID;"
+        },
+        {
+          "line": 240,
+          "text": "ObjectGuid GandlingGatesGUID[7]; // 6 is the entrance"
+        },
+        {
+          "line": 241,
+          "text": "ObjectGuid GandlingGUID; // boss"
+        },
+        {
+          "line": 249,
+          "text": "class spell_scholomance_fixate_aura : public AuraScript"
+        },
+        {
+          "line": 251,
+          "text": "PrepareAuraScript(spell_scholomance_fixate_aura);"
+        },
+        {
+          "line": 268,
+          "text": "OnEffectApply += AuraEffectApplyFn(spell_scholomance_fixate_aura::HandleEffectApply, EFFECT_0, SPELL_AURA_DUMMY, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 269,
+          "text": "OnEffectRemove += AuraEffectRemoveFn(spell_scholomance_fixate_aura::HandleEffectRemove, EFFECT_0, SPELL_AURA_DUMMY, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 273,
+          "text": "class spell_scholomance_boon_of_life_aura : public AuraScript"
+        },
+        {
+          "line": 275,
+          "text": "PrepareAuraScript(spell_scholomance_boon_of_life_aura);"
+        },
+        {
+          "line": 297,
+          "text": "if (InstanceScript* instance = creature->GetInstanceScript())"
+        },
+        {
+          "line": 298,
+          "text": "instance->SetData(DATA_RAS_HUMAN, 1);"
+        },
+        {
+          "line": 304,
+          "text": "OnEffectRemove += AuraEffectRemoveFn(spell_scholomance_boon_of_life_aura::OnRemove, EFFECT_0, SPELL_AURA_PERIODIC_TRIGGER_SPELL, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 305,
+          "text": "AfterEffectApply += AuraEffectApplyFn(spell_scholomance_boon_of_life_aura::OnApply, EFFECT_0, SPELL_AURA_PERIODIC_TRIGGER_SPELL, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 323,
+          "text": "class npc_scholomance_occultist : public CreatureScript"
+        },
+        {
+          "line": 326,
+          "text": "npc_scholomance_occultist() : CreatureScript(\"npc_scholomance_occultist\") { }"
+        },
+        {
+          "line": 328,
+          "text": "struct npc_scholomance_occultistAI: public ScriptedAI"
+        },
+        {
+          "line": 330,
+          "text": "npc_scholomance_occultistAI(Creature* creature) : ScriptedAI(creature)"
+        },
+        {
+          "line": 332,
+          "text": "instance = me->GetInstanceScript();"
+        },
+        {
+          "line": 337,
+          "text": "InstanceScript* instance;"
+        },
+        {
+          "line": 359,
+          "text": "me->UpdateEntry(CASTER_ENTRY, nullptr, false);"
+        },
+        {
+          "line": 374,
+          "text": "void UpdateAI(uint32 diff) override"
+        },
+        {
+          "line": 376,
+          "text": "if (!UpdateVictim())"
+        },
+        {
+          "line": 381,
+          "text": "events.Update(diff);"
+        },
+        {
+          "line": 387,
+          "text": "me->UpdateEntry(DARK_SHADE_ENTRY, nullptr, false);"
+        },
+        {
+          "line": 432,
+          "text": "return GetScholomanceAI<npc_scholomance_occultistAI>(creature);"
+        },
+        {
+          "line": 436,
+          "text": "void AddSC_instance_scholomance()"
+        },
+        {
+          "line": 438,
+          "text": "new instance_scholomance();"
+        },
+        {
+          "line": 439,
+          "text": "RegisterSpellScript(spell_scholomance_fixate_aura);"
+        },
+        {
+          "line": 440,
+          "text": "RegisterSpellScript(spell_scholomance_boon_of_life_aura);"
+        },
+        {
+          "line": 441,
+          "text": "new npc_scholomance_occultist();"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/Stratholme/instance_stratholme.cpp",
+      "sha": "f08571bb4ee146c198fe2b2425a03bdf54d5e7ea",
+      "lineCount": 727,
+      "signals": [
+        {
+          "line": 18,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 20,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 44,
+          "text": "NPC_PLAGUED_RAT, NPC_PLAGUED_MAGGOT, NPC_PLAGUED_INSECT"
+        },
+        {
+          "line": 60,
+          "text": "class instance_stratholme : public InstanceMapScript"
+        },
+        {
+          "line": 63,
+          "text": "instance_stratholme() : InstanceMapScript(\"instance_stratholme\", MAP_STRATHOLME) { }"
+        },
+        {
+          "line": 65,
+          "text": "struct instance_stratholme_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 67,
+          "text": "instance_stratholme_InstanceMapScript(Map* map) : InstanceScript(map)"
+        },
+        {
+          "line": 101,
+          "text": "_gatesLocked = IsServiceEntranceDungeon(sLFGMgr->GetDungeon(group->GetGUID()));"
+        },
+        {
+          "line": 106,
+          "text": "if (Aura* aura = player->AddAura(SPELL_BARON_ULTIMATUM, player))"
+        },
+        {
+          "line": 110,
+          "text": "void OnCreatureCreate(Creature* creature) override"
+        },
+        {
+          "line": 114,
+          "text": "case NPC_BARON_RIVENDARE:"
+        },
+        {
+          "line": 115,
+          "text": "_baronRivendareGUID = creature->GetGUID();"
+        },
+        {
+          "line": 117,
+          "text": "case NPC_VENOM_BELCHER:"
+        },
+        {
+          "line": 118,
+          "text": "case NPC_BILE_SPEWER:"
+        },
+        {
+          "line": 122,
+          "text": "case NPC_RAMSTEIN_THE_GORGER:"
+        },
+        {
+          "line": 126,
+          "text": "case NPC_MINDLESS_UNDEAD:"
+        },
+        {
+          "line": 130,
+          "text": "case NPC_BLACK_GUARD:"
+        },
+        {
+          "line": 134,
+          "text": "case NPC_BARTHILAS:"
+        },
+        {
+          "line": 135,
+          "text": "_barthilasGUID = creature->GetGUID();"
+        },
+        {
+          "line": 146,
+          "text": "if (Creature* baron = instance->GetCreature(_baronRivendareGUID))"
+        },
+        {
+          "line": 149,
+          "text": "instance->SummonCreature(NPC_RAMSTEIN_THE_GORGER, SlaughterPos);"
+        },
+        {
+          "line": 154,
+          "text": "events.ScheduleEvent(EVENT_SPAWN_MINDLESS, Milliseconds(5000 + i * 210));"
+        },
+        {
+          "line": 155,
+          "text": "if (Creature* baron = instance->GetCreature(_baronRivendareGUID))"
+        },
+        {
+          "line": 161,
+          "text": "events.ScheduleEvent(EVENT_SPAWN_BLACK_GUARD, 20s);"
+        },
+        {
+          "line": 165,
+          "text": "if (Creature* baron = instance->GetCreature(_baronRivendareGUID))"
+        },
+        {
+          "line": 167,
+          "text": "if (GameObject* gate = instance->GetGameObject(_zigguratDoorsGUID5))"
+        },
+        {
+          "line": 176,
+          "text": "case NPC_VENOM_BELCHER:"
+        },
+        {
+          "line": 177,
+          "text": "case NPC_BILE_SPEWER:"
+        },
+        {
+          "line": 178,
+          "text": "case NPC_RAMSTEIN_THE_GORGER:"
+        },
+        {
+          "line": 179,
+          "text": "case NPC_MINDLESS_UNDEAD:"
+        },
+        {
+          "line": 180,
+          "text": "case NPC_BLACK_GUARD:"
+        },
+        {
+          "line": 185,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 188,
+          "text": "case NPC_BARON_RIVENDARE:"
+        },
+        {
+          "line": 189,
+          "text": "events.CancelEvent(EVENT_BARON_TIME);"
+        },
+        {
+          "line": 190,
+          "text": "DoRemoveAurasDueToSpellOnPlayers(SPELL_BARON_ULTIMATUM);"
+        },
+        {
+          "line": 195,
+          "text": "void OnGameObjectCreate(GameObject* go) override"
+        },
+        {
+          "line": 199,
+          "text": "case GO_CRUSADER_SQUARE_DOOR:"
+        },
+        {
+          "line": 200,
+          "text": "case GO_HOARD_DOOR:"
+        },
+        {
+          "line": 202,
+          "text": "case GO_GAUNTLET_DOOR_1:"
+        },
+        {
+          "line": 203,
+          "text": "case GO_GAUNTLET_DOOR_2:"
+        },
+        {
+          "line": 204,
+          "text": "go->AllowSaveToDB(true);"
+        },
+        {
+          "line": 206,
+          "text": "case GO_ZIGGURAT_DOORS1:"
+        },
+        {
+          "line": 207,
+          "text": "go->AllowSaveToDB(true);"
+        },
+        {
+          "line": 208,
+          "text": "_zigguratDoorsGUID1 = go->GetGUID();"
+        },
+        {
+          "line": 209,
+          "text": "if (GetData(TYPE_ZIGGURAT1) >= 1)"
+        },
+        {
+          "line": 212,
+          "text": "case GO_ZIGGURAT_DOORS2:"
+        },
+        {
+          "line": 213,
+          "text": "go->AllowSaveToDB(true);"
+        },
+        {
+          "line": 214,
+          "text": "_zigguratDoorsGUID2 = go->GetGUID();"
+        },
+        {
+          "line": 215,
+          "text": "if (GetData(TYPE_ZIGGURAT2) >= 1)"
+        },
+        {
+          "line": 218,
+          "text": "case GO_ZIGGURAT_DOORS3:"
+        },
+        {
+          "line": 219,
+          "text": "go->AllowSaveToDB(true);"
+        },
+        {
+          "line": 220,
+          "text": "_zigguratDoorsGUID3 = go->GetGUID();"
+        },
+        {
+          "line": 221,
+          "text": "if (GetData(TYPE_ZIGGURAT3) >= 1)"
+        },
+        {
+          "line": 225,
+          "text": "go->AllowSaveToDB(true);"
+        },
+        {
+          "line": 226,
+          "text": "_gauntletGateGUID = go->GetGUID();"
+        },
+        {
+          "line": 230,
+          "text": "go->AllowSaveToDB(true);"
+        },
+        {
+          "line": 231,
+          "text": "_slaughterGateGUID = go->GetGUID();"
+        },
+        {
+          "line": 235,
+          "text": "_portcullisGUIDs[0] = go->GetGUID();"
+        },
+        {
+          "line": 239,
+          "text": "_portcullisGUIDs[1] = go->GetGUID();"
+        },
+        {
+          "line": 243,
+          "text": "_portcullisGUIDs[2] = go->GetGUID();"
+        },
+        {
+          "line": 247,
+          "text": "_portcullisGUIDs[3] = go->GetGUID();"
+        },
+        {
+          "line": 250,
+          "text": "case GO_ZIGGURAT_DOORS4:"
+        },
+        {
+          "line": 251,
+          "text": "go->AllowSaveToDB(true);"
+        },
+        {
+          "line": 252,
+          "text": "_zigguratDoorsGUID4 = go->GetGUID();"
+        },
+        {
+          "line": 256,
+          "text": "case GO_ZIGGURAT_DOORS5:"
+        },
+        {
+          "line": 257,
+          "text": "go->AllowSaveToDB(true);"
+        },
+        {
+          "line": 258,
+          "text": "_zigguratDoorsGUID5 = go->GetGUID();"
+        },
+        {
+          "line": 263,
+          "text": "go->AllowSaveToDB(true);"
+        },
+        {
+          "line": 268,
+          "text": "go->AllowSaveToDB(true);"
+        },
+        {
+          "line": 269,
+          "text": "_trapGatesGUIDs[0] = go->GetGUID();"
+        },
+        {
+          "line": 272,
+          "text": "go->AllowSaveToDB(true);"
+        },
+        {
+          "line": 273,
+          "text": "_trapGatesGUIDs[1] = go->GetGUID();"
+        },
+        {
+          "line": 276,
+          "text": "go->AllowSaveToDB(true);"
+        },
+        {
+          "line": 277,
+          "text": "_trapGatesGUIDs[2] = go->GetGUID();"
+        },
+        {
+          "line": 280,
+          "text": "go->AllowSaveToDB(true);"
+        },
+        {
+          "line": 281,
+          "text": "_trapGatesGUIDs[3] = go->GetGUID();"
+        },
+        {
+          "line": 292,
+          "text": "if (Creature* baron = instance->GetCreature(_baronRivendareGUID))"
+        },
+        {
+          "line": 295,
+          "text": "if (GameObject* gate = instance->GetGameObject(_gauntletGateGUID))"
+        },
+        {
+          "line": 297,
+          "text": "if (GameObject* gate = instance->GetGameObject(_slaughterGateGUID))"
+        },
+        {
+          "line": 318,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 324,
+          "text": "if (_baronRunProgress == DATA_BARON_RUN_NONE)"
+        },
+        {
+          "line": 326,
+          "text": "_baronRunProgress = DATA_BARON_RUN_GATE;"
+        },
+        {
+          "line": 328,
+          "text": "DoCastSpellOnPlayers(SPELL_BARON_ULTIMATUM);"
+        },
+        {
+          "line": 329,
+          "text": "events.ScheduleEvent(EVENT_BARON_TIME, 60s);"
+        },
+        {
+          "line": 331,
+          "text": "if (Creature* baron = instance->GetCreature(_baronRivendareGUID))"
+        },
+        {
+          "line": 342,
+          "text": "if (GameObject* ziggurat = instance->GetGameObject(_zigguratDoorsGUID1))"
+        },
+        {
+          "line": 354,
+          "text": "if (GameObject* ziggurat = instance->GetGameObject(_zigguratDoorsGUID2))"
+        },
+        {
+          "line": 366,
+          "text": "if (GameObject* ziggurat = instance->GetGameObject(_zigguratDoorsGUID3))"
+        },
+        {
+          "line": 374,
+          "text": "if (GameObject* gate = instance->GetGameObject(_zigguratDoorsGUID5))"
+        },
+        {
+          "line": 375,
+          "text": "gate->SetGoState(data == IN_PROGRESS ? GO_STATE_READY : GO_STATE_ACTIVE);"
+        },
+        {
+          "line": 387,
+          "text": "if (data == DONE)"
+        },
+        {
+          "line": 389,
+          "text": "if (Creature* barthilas = instance->GetCreature(_barthilasGUID))"
+        },
+        {
+          "line": 402,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 405,
+          "text": "void ReadSaveDataMore(std::istringstream& data) override"
+        },
+        {
+          "line": 417,
+          "text": "events.ScheduleEvent(EVENT_BARON_TIME, 60s);"
+        },
+        {
+          "line": 422,
+          "text": "events.ScheduleEvent(EVENT_FORCE_SLAUGHTER_EVENT, 5s);"
+        },
+        {
+          "line": 426,
+          "text": "void WriteSaveDataMore(std::ostringstream& data) override"
+        },
+        {
+          "line": 438,
+          "text": "uint32 GetData(uint32 type) const override"
+        },
+        {
+          "line": 456,
+          "text": "void Update(uint32 diff) override"
+        },
+        {
+          "line": 458,
+          "text": "events.Update(diff);"
+        },
+        {
+          "line": 460,
+          "text": "Map::PlayerList const& players = instance->GetPlayers();"
+        },
+        {
+          "line": 483,
+          "text": "if (_trapGatesGUIDs[2 * i])"
+        },
+        {
+          "line": 484,
+          "text": "DoUseDoorOrButton(_trapGatesGUIDs[2 * i]);"
+        },
+        {
+          "line": 485,
+          "text": "if (_trapGatesGUIDs[2 * i + 1])"
+        },
+        {
+          "line": 486,
+          "text": "DoUseDoorOrButton(_trapGatesGUIDs[2 * i + 1]);"
+        },
+        {
+          "line": 488,
+          "text": "_trappedPlayerGUID = player->GetGUID();"
+        },
+        {
+          "line": 493,
+          "text": "events.ScheduleEvent(EVENT_GATE1_TRAP, 1800s);"
+        },
+        {
+          "line": 495,
+          "text": "events.ScheduleEvent(EVENT_GATE1_DELAY, 20s);"
+        },
+        {
+          "line": 497,
+          "text": "events.ScheduleEvent(EVENT_GATE1_CRITTER_DELAY, 2s);"
+        },
+        {
+          "line": 502,
+          "text": "events.ScheduleEvent(EVENT_GATE2_TRAP, 1800s);"
+        },
+        {
+          "line": 504,
+          "text": "events.ScheduleEvent(EVENT_GATE2_DELAY, 20s);"
+        },
+        {
+          "line": 506,
+          "text": "events.ScheduleEvent(EVENT_GATE2_CRITTER_DELAY, 2s);"
+        },
+        {
+          "line": 518,
+          "text": "case EVENT_GATE1_TRAP:"
+        },
+        {
+          "line": 521,
+          "text": "case EVENT_GATE2_TRAP:"
+        },
+        {
+          "line": 524,
+          "text": "case EVENT_GATE1_DELAY:"
+        },
+        {
+          "line": 527,
+          "text": "case EVENT_GATE2_DELAY:"
+        },
+        {
+          "line": 530,
+          "text": "case EVENT_GATE1_CRITTER_DELAY:"
+        },
+        {
+          "line": 533,
+          "text": "case EVENT_GATE2_CRITTER_DELAY:"
+        },
+        {
+          "line": 536,
+          "text": "case EVENT_BARON_TIME:"
+        },
+        {
+          "line": 539,
+          "text": "Creature* baron = instance->GetCreature(_baronRivendareGUID);"
+        },
+        {
+          "line": 549,
+          "text": "if (Creature* ysida = baron->FindNearestCreature(NPC_YSIDA, 50.0f))"
+        },
+        {
+          "line": 550,
+          "text": "ysida->AI()->SetData(1, 1);"
+        },
+        {
+          "line": 554,
+          "text": "DoRemoveAurasDueToSpellOnPlayers(SPELL_BARON_ULTIMATUM);"
+        },
+        {
+          "line": 560,
+          "text": "events.ScheduleEvent(EVENT_BARON_TIME, 60s);"
+        },
+        {
+          "line": 562,
+          "text": "events.ScheduleEvent(EVENT_EXECUTE_PRISONER, 0ms);"
+        },
+        {
+          "line": 564,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 567,
+          "text": "case EVENT_EXECUTE_PRISONER:"
+        },
+        {
+          "line": 569,
+          "text": "Creature* baron = instance->GetCreature(_baronRivendareGUID);"
+        },
+        {
+          "line": 575,
+          "text": "if (Creature* ysida = baron->FindNearestCreature(NPC_YSIDA, 50.0f))"
+        },
+        {
+          "line": 579,
+          "text": "events.ScheduleEvent(EVENT_EXECUTE_PRISONER, 1s);"
+        },
+        {
+          "line": 583,
+          "text": "case EVENT_SPAWN_MINDLESS:"
+        },
+        {
+          "line": 585,
+          "text": "instance->SummonCreature(NPC_MINDLESS_UNDEAD, MindlessUndeadPos);"
+        },
+        {
+          "line": 588,
+          "text": "case EVENT_FORCE_SLAUGHTER_EVENT:"
+        },
+        {
+          "line": 590,
+          "text": "Map::PlayerList const& PlayerList = instance->GetPlayers();"
+        },
+        {
+          "line": 600,
+          "text": "events.ScheduleEvent(EVENT_FORCE_SLAUGHTER_EVENT, 3s);"
+        },
+        {
+          "line": 603,
+          "text": "case EVENT_SPAWN_BLACK_GUARD:"
+        },
+        {
+          "line": 606,
+          "text": "if (Creature* guard = instance->SummonCreature(NPC_BLACK_GUARD, BlackGuardPos[i]))"
+        },
+        {
+          "line": 615,
+          "text": "if (GameObject* gate = instance->GetGameObject(_zigguratDoorsGUID4))"
+        },
+        {
+          "line": 636,
+          "text": "ObjectGuid _zigguratDoorsGUID1;"
+        },
+        {
+          "line": 637,
+          "text": "ObjectGuid _zigguratDoorsGUID2;"
+        },
+        {
+          "line": 638,
+          "text": "ObjectGuid _zigguratDoorsGUID3;"
+        },
+        {
+          "line": 639,
+          "text": "ObjectGuid _zigguratDoorsGUID4;"
+        },
+        {
+          "line": 640,
+          "text": "ObjectGuid _zigguratDoorsGUID5;"
+        },
+        {
+          "line": 641,
+          "text": "ObjectGuid _slaughterGateGUID;"
+        },
+        {
+          "line": 642,
+          "text": "ObjectGuid _gauntletGateGUID;"
+        },
+        {
+          "line": 643,
+          "text": "ObjectGuid _baronRivendareGUID;"
+        },
+        {
+          "line": 644,
+          "text": "ObjectGuid _barthilasGUID;"
+        },
+        {
+          "line": 649,
+          "text": "ObjectGuid _portcullisGUIDs[4];  // large portcullis 01-04"
+        },
+        {
+          "line": 657,
+          "text": "bool ZigguratsDone() const"
+        },
+        {
+          "line": 672,
+          "text": "open = open || ZigguratsDone();"
+        },
+        {
+          "line": 683,
+          "text": "for (ObjectGuid const& guid : _portcullisGUIDs)"
+        },
+        {
+          "line": 684,
+          "text": "if (GameObject* go = instance->GetGameObject(guid))"
+        },
+        {
+          "line": 686,
+          "text": "for (ObjectGuid const& guid : { _gauntletGateGUID, _slaughterGateGUID })"
+        },
+        {
+          "line": 687,
+          "text": "if (GameObject* go = instance->GetGameObject(guid))"
+        },
+        {
+          "line": 690,
+          "text": "ObjectGuid _trappedPlayerGUID;"
+        },
+        {
+          "line": 691,
+          "text": "ObjectGuid _trapGatesGUIDs[4];"
+        },
+        {
+          "line": 695,
+          "text": "if (_trapGatesGUIDs[2 * gate])"
+        },
+        {
+          "line": 697,
+          "text": "DoUseDoorOrButton(_trapGatesGUIDs[2 * gate]);"
+        },
+        {
+          "line": 699,
+          "text": "if (_trapGatesGUIDs[2 * gate + 1])"
+        },
+        {
+          "line": 701,
+          "text": "DoUseDoorOrButton(_trapGatesGUIDs[2 * gate + 1]);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/ScarletMonastery/instance_scarlet_monastery.cpp",
+      "sha": "ab0ad14e3bce2b0d3b187baf892a80b8fd7af1dd",
+      "lineCount": 446,
+      "signals": [
+        {
+          "line": 18,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 22,
+          "text": "#include \"SpellScriptLoader.h\""
+        },
+        {
+          "line": 26,
+          "text": "NPC_COMMANDER_MOGRAINE         = 3976,"
+        },
+        {
+          "line": 27,
+          "text": "NPC_INQUISITOR_WHITEMANE       = 3977,"
+        },
+        {
+          "line": 28,
+          "text": "NPC_SCARLET_SORCERER           = 4294,"
+        },
+        {
+          "line": 29,
+          "text": "NPC_SCARLET_MYRIDON            = 4295,"
+        },
+        {
+          "line": 30,
+          "text": "NPC_SCARLET_DEFENDER           = 4298,"
+        },
+        {
+          "line": 31,
+          "text": "NPC_SCARLET_CHAPLAIN           = 4299,"
+        },
+        {
+          "line": 32,
+          "text": "NPC_SCARLET_WIZARD             = 4300,"
+        },
+        {
+          "line": 33,
+          "text": "NPC_SCARLET_CENTURION          = 4301,"
+        },
+        {
+          "line": 34,
+          "text": "NPC_SCARLET_CHAMPION           = 4302,"
+        },
+        {
+          "line": 35,
+          "text": "NPC_SCARLET_ABBOT              = 4303,"
+        },
+        {
+          "line": 36,
+          "text": "NPC_SCARLET_MONK               = 4540,"
+        },
+        {
+          "line": 37,
+          "text": "NPC_FAIRBANKS                  = 4542,"
+        },
+        {
+          "line": 38,
+          "text": "NPC_HIGHLORD_MOGRAINE          = 16062,"
+        },
+        {
+          "line": 40,
+          "text": "GO_CHAPEL_DOOR                 = 104591,"
+        },
+        {
+          "line": 41,
+          "text": "GO_HIGH_INQUISITOR_DOOR        = 104600"
+        },
+        {
+          "line": 47,
+          "text": "NPC_RABBIT = 721,"
+        },
+        {
+          "line": 50,
+          "text": "NPC_INTERROGATOR_VISHAS = 3983,"
+        },
+        {
+          "line": 51,
+          "text": "NPC_RAT = 4075,"
+        },
+        {
+          "line": 52,
+          "text": "NPC_SCARLET_SENTRY = 4283,"
+        },
+        {
+          "line": 53,
+          "text": "NPC_SCARLET_SCRYER = 4293,"
+        },
+        {
+          "line": 54,
+          "text": "NPC_UNFETTERED_SPIRIT = 4308,"
+        },
+        {
+          "line": 55,
+          "text": "NPC_SCARLET_TORTURER = 4306,"
+        },
+        {
+          "line": 56,
+          "text": "NPC_ANGUISHED_DEAD = 6426,"
+        },
+        {
+          "line": 57,
+          "text": "NPC_HAUNTING_PHANTASM = 6427,"
+        },
+        {
+          "line": 58,
+          "text": "NPC_FALLON_CHAMPION = 6488,"
+        },
+        {
+          "line": 59,
+          "text": "NPC_BLOODMAGE_THALNOS = 4543,"
+        },
+        {
+          "line": 60,
+          "text": "NPC_SUFFERING_VICTIM = 6547,"
+        },
+        {
+          "line": 68,
+          "text": "DATA_MOGRAINE                 = 3,"
+        },
+        {
+          "line": 69,
+          "text": "DATA_WHITEMANE                = 4,"
+        },
+        {
+          "line": 70,
+          "text": "DATA_DOOR_WHITEMANE           = 5,"
+        },
+        {
+          "line": 71,
+          "text": "DATA_HORSEMAN_EVENT           = 6,"
+        },
+        {
+          "line": 72,
+          "text": "DATA_VORREL                   = 7,"
+        },
+        {
+          "line": 73,
+          "text": "DATA_ARCANIST_DOAN            = 8,"
+        },
+        {
+          "line": 74,
+          "text": "DATA_DOOR_CHAPEL              = 9,"
+        },
+        {
+          "line": 75,
+          "text": "DATA_WHITEMANE_FAKE_DEATH     = 11,  // 1 while Whitemane lies \"dead\" waiting for Mograine"
+        },
+        {
+          "line": 80,
+          "text": "float constexpr CATHEDRAL_PULL_RANGE = 80.0f; // Distance from the Cathedral doors to where Mograine is standing"
+        },
+        {
+          "line": 82,
+          "text": "class instance_scarlet_monastery : public InstanceMapScript"
+        },
+        {
+          "line": 85,
+          "text": "instance_scarlet_monastery() : InstanceMapScript(\"instance_scarlet_monastery\", MAP_SCARLET_MONASTERY) {}"
+        },
+        {
+          "line": 87,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 89,
+          "text": "return new instance_scarlet_monastery_InstanceMapScript(map);"
+        },
+        {
+          "line": 92,
+          "text": "struct instance_scarlet_monastery_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 94,
+          "text": "instance_scarlet_monastery_InstanceMapScript(Map* map) : InstanceScript(map)"
+        },
+        {
+          "line": 99,
+          "text": "void OnGameObjectCreate(GameObject* go) override"
+        },
+        {
+          "line": 103,
+          "text": "// case ENTRY_PUMPKIN_SHRINE: PumpkinShrineGUID = go->GetGUID(); break;"
+        },
+        {
+          "line": 104,
+          "text": "case GO_HIGH_INQUISITOR_DOOR:"
+        },
+        {
+          "line": 105,
+          "text": "_doorHighInquisitorGUID = go->GetGUID();"
+        },
+        {
+          "line": 107,
+          "text": "case GO_CHAPEL_DOOR:"
+        },
+        {
+          "line": 108,
+          "text": "_doorChapelGUID = go->GetGUID();"
+        },
+        {
+          "line": 115,
+          "text": "void OnCreatureCreate(Creature* creature) override"
+        },
+        {
+          "line": 120,
+          "text": "case NPC_RABBIT:"
+        },
+        {
+          "line": 123,
+          "text": "case NPC_INTERROGATOR_VISHAS:"
+        },
+        {
+          "line": 124,
+          "text": "case NPC_RAT:"
+        },
+        {
+          "line": 125,
+          "text": "case NPC_SCARLET_SENTRY:"
+        },
+        {
+          "line": 126,
+          "text": "case NPC_SCARLET_SCRYER:"
+        },
+        {
+          "line": 127,
+          "text": "case NPC_UNFETTERED_SPIRIT:"
+        },
+        {
+          "line": 128,
+          "text": "case NPC_SCARLET_TORTURER:"
+        },
+        {
+          "line": 129,
+          "text": "case NPC_ANGUISHED_DEAD:"
+        },
+        {
+          "line": 130,
+          "text": "case NPC_HAUNTING_PHANTASM:"
+        },
+        {
+          "line": 131,
+          "text": "case NPC_FALLON_CHAMPION:"
+        },
+        {
+          "line": 132,
+          "text": "case NPC_BLOODMAGE_THALNOS:"
+        },
+        {
+          "line": 133,
+          "text": "case NPC_SUFFERING_VICTIM:"
+        },
+        {
+          "line": 135,
+          "text": "case NPC_COMMANDER_MOGRAINE:"
+        },
+        {
+          "line": 136,
+          "text": "_mograineGUID = creature->GetGUID();"
+        },
+        {
+          "line": 138,
+          "text": "case NPC_INQUISITOR_WHITEMANE:"
+        },
+        {
+          "line": 139,
+          "text": "_whitemaneGUID = creature->GetGUID();"
+        },
+        {
+          "line": 145,
+          "text": "_ashbringerNpcGUID.emplace(creature->GetGUID());"
+        },
+        {
+          "line": 148,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 153,
+          "text": "if (data == IN_PROGRESS)"
+        },
+        {
+          "line": 155,
+          "text": "if (Creature* mograine = instance->GetCreature(_mograineGUID))"
+        },
+        {
+          "line": 158,
+          "text": "GetCreatureListWithEntryInGrid(creatureList, mograine, NPC_SCARLET_MONK, CATHEDRAL_PULL_RANGE);"
+        },
+        {
+          "line": 159,
+          "text": "GetCreatureListWithEntryInGrid(creatureList, mograine, NPC_SCARLET_ABBOT, CATHEDRAL_PULL_RANGE);"
+        },
+        {
+          "line": 160,
+          "text": "GetCreatureListWithEntryInGrid(creatureList, mograine, NPC_SCARLET_CHAMPION, CATHEDRAL_PULL_RANGE);"
+        },
+        {
+          "line": 161,
+          "text": "GetCreatureListWithEntryInGrid(creatureList, mograine, NPC_SCARLET_CENTURION, CATHEDRAL_PULL_RANGE);"
+        },
+        {
+          "line": 162,
+          "text": "GetCreatureListWithEntryInGrid(creatureList, mograine, NPC_SCARLET_WIZARD, CATHEDRAL_PULL_RANGE);"
+        },
+        {
+          "line": 163,
+          "text": "GetCreatureListWithEntryInGrid(creatureList, mograine, NPC_SCARLET_CHAPLAIN, CATHEDRAL_PULL_RANGE);"
+        },
+        {
+          "line": 170,
+          "text": "_encounter = IN_PROGRESS;"
+        },
+        {
+          "line": 174,
+          "text": "Creature* whitemane = instance->GetCreature(_whitemaneGUID);"
+        },
+        {
+          "line": 178,
+          "text": "Creature* mograine = instance->GetCreature(_mograineGUID);"
+        },
+        {
+          "line": 189,
+          "text": "_encounter = NOT_STARTED;"
+        },
+        {
+          "line": 200,
+          "text": "_encounter = NOT_STARTED;"
+        },
+        {
+          "line": 208,
+          "text": "_encounter = data;"
+        },
+        {
+          "line": 215,
+          "text": "_encounter = data;"
+        },
+        {
+          "line": 219,
+          "text": "_encounter = data;"
+        },
+        {
+          "line": 221,
+          "text": "if (data == DONE)"
+        },
+        {
+          "line": 223,
+          "text": "_encounter = DONE;"
+        },
+        {
+          "line": 226,
+          "text": "if (Creature* whitemane = instance->GetCreature(_whitemaneGUID))"
+        },
+        {
+          "line": 233,
+          "text": "case DATA_WHITEMANE_FAKE_DEATH:"
+        },
+        {
+          "line": 235,
+          "text": "if (Creature* whitemane = instance->GetCreature(_whitemaneGUID))"
+        },
+        {
+          "line": 239,
+          "text": "if (data == IN_PROGRESS)"
+        },
+        {
+          "line": 242,
+          "text": "if (Creature* whitemane = instance->GetCreature(_whitemaneGUID))"
+        },
+        {
+          "line": 246,
+          "text": "if (GameObject* go = instance->GetGameObject(_doorChapelGUID))"
+        },
+        {
+          "line": 253,
+          "text": "for (auto const& scarletCathedralNpcGuid : _ashbringerNpcGUID)"
+        },
+        {
+          "line": 254,
+          "text": "if (Creature* scarletNpc = instance->GetCreature(scarletCathedralNpcGuid))"
+        },
+        {
+          "line": 258,
+          "text": "_ashencounter = data;"
+        },
+        {
+          "line": 260,
+          "text": "case DATA_HORSEMAN_EVENT:"
+        },
+        {
+          "line": 261,
+          "text": "_encounter = data;"
+        },
+        {
+          "line": 271,
+          "text": "void Update(uint32 diff) override"
+        },
+        {
+          "line": 282,
+          "text": "Creature* whitemane = instance->GetCreature(_whitemaneGUID);"
+        },
+        {
+          "line": 286,
+          "text": "Creature* mograine = instance->GetCreature(_mograineGUID);"
+        },
+        {
+          "line": 296,
+          "text": "ObjectGuid GetGuidData(uint32 type) const override"
+        },
+        {
+          "line": 300,
+          "text": "case DATA_MOGRAINE:"
+        },
+        {
+          "line": 301,
+          "text": "return _mograineGUID;"
+        },
+        {
+          "line": 302,
+          "text": "case DATA_WHITEMANE:"
+        },
+        {
+          "line": 303,
+          "text": "return _whitemaneGUID;"
+        },
+        {
+          "line": 304,
+          "text": "case DATA_DOOR_WHITEMANE:"
+        },
+        {
+          "line": 305,
+          "text": "return _doorHighInquisitorGUID;"
+        },
+        {
+          "line": 306,
+          "text": "case DATA_DOOR_CHAPEL:"
+        },
+        {
+          "line": 307,
+          "text": "return _doorChapelGUID;"
+        },
+        {
+          "line": 309,
+          "text": "return ObjectGuid::Empty;"
+        },
+        {
+          "line": 314,
+          "text": "uint32 GetData(uint32 type) const override"
+        },
+        {
+          "line": 319,
+          "text": "return _encounter;"
+        },
+        {
+          "line": 321,
+          "text": "case DATA_HORSEMAN_EVENT:"
+        },
+        {
+          "line": 322,
+          "text": "return _encounter;"
+        },
+        {
+          "line": 325,
+          "text": "return _ashencounter;"
+        },
+        {
+          "line": 327,
+          "text": "case DATA_WHITEMANE_FAKE_DEATH:"
+        },
+        {
+          "line": 365,
+          "text": "for (auto const& ref : instance->GetPlayers())"
+        },
+        {
+          "line": 376,
+          "text": "ObjectGuid _doorHighInquisitorGUID;"
+        },
+        {
+          "line": 377,
+          "text": "ObjectGuid _doorChapelGUID;"
+        },
+        {
+          "line": 378,
+          "text": "ObjectGuid _mograineGUID;"
+        },
+        {
+          "line": 379,
+          "text": "ObjectGuid _whitemaneGUID;"
+        },
+        {
+          "line": 380,
+          "text": "uint32 _encounter{};"
+        },
+        {
+          "line": 381,
+          "text": "uint32 _ashencounter{};"
+        },
+        {
+          "line": 382,
+          "text": "GuidSet _ashbringerNpcGUID;"
+        },
+        {
+          "line": 388,
+          "text": "SPELL_FORGIVENESS = 28697,"
+        },
+        {
+          "line": 389,
+          "text": "SPELL_FORGIVENESS_IMPACTKIT = 317,"
+        },
+        {
+          "line": 390,
+          "text": "SPELL_TRANSFORM_GHOST = 28443,"
+        },
+        {
+          "line": 391,
+          "text": "SPELL_TRANSFORM_IMPACTKIT=500"
+        },
+        {
+          "line": 394,
+          "text": "// SPELL_FORGIVENESS               = 28697"
+        },
+        {
+          "line": 395,
+          "text": "class spell_forgiveness_dummy_visual : public SpellScript"
+        },
+        {
+          "line": 397,
+          "text": "PrepareSpellScript(spell_forgiveness_dummy_visual);"
+        },
+        {
+          "line": 405,
+          "text": "target->SendPlaySpellVisual(SPELL_FORGIVENESS_IMPACTKIT);//SPELL_FORGIVENESS IMPACTKIT 317 SpellVisualEntry.ImpactKit can't be used"
+        },
+        {
+          "line": 416,
+          "text": "OnEffectHitTarget += SpellEffectFn(spell_forgiveness_dummy_visual::HandleDummy, EFFECT_0, SPELL_EFFECT_DUMMY);"
+        },
+        {
+          "line": 420,
+          "text": "// SPELL_TRANSFORM_GHOST           = 28443"
+        },
+        {
+          "line": 421,
+          "text": "class spell_transform_ghost_visual: public SpellScript"
+        },
+        {
+          "line": 423,
+          "text": "PrepareSpellScript(spell_transform_ghost_visual);"
+        },
+        {
+          "line": 431,
+          "text": "target->SendPlaySpellVisual(SPELL_TRANSFORM_IMPACTKIT); //SPELL_TRANSFORM_GHOST IMPACTKIT 500"
+        },
+        {
+          "line": 436,
+          "text": "AfterHit += SpellHitFn(spell_transform_ghost_visual::HandleAfterHit);"
+        },
+        {
+          "line": 440,
+          "text": "void AddSC_instance_scarlet_monastery()"
+        },
+        {
+          "line": 442,
+          "text": "new instance_scarlet_monastery();"
+        },
+        {
+          "line": 443,
+          "text": "RegisterSpellScript(spell_forgiveness_dummy_visual);"
+        },
+        {
+          "line": 444,
+          "text": "RegisterSpellScript(spell_transform_ghost_visual);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/ShadowfangKeep/instance_shadowfang_keep.cpp",
+      "sha": "fb999c7e4fa0019303b5fe5610df61c40da7d7f5",
+      "lineCount": 241,
+      "signals": [
+        {
+          "line": 18,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 19,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 20,
+          "text": "#include \"SpellScriptLoader.h\""
+        },
+        {
+          "line": 28,
+          "text": "SPELL_SUMMON_VALENTINE_ADD = 68610"
+        },
+        {
+          "line": 31,
+          "text": "class instance_shadowfang_keep : public InstanceMapScript"
+        },
+        {
+          "line": 34,
+          "text": "instance_shadowfang_keep() : InstanceMapScript(\"instance_shadowfang_keep\", MAP_SHADOWFANG_KEEP) { }"
+        },
+        {
+          "line": 36,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 38,
+          "text": "return new instance_shadowfang_keep_InstanceMapScript(map);"
+        },
+        {
+          "line": 41,
+          "text": "struct instance_shadowfang_keep_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 43,
+          "text": "instance_shadowfang_keep_InstanceMapScript(Map* map) : InstanceScript(map)"
+        },
+        {
+          "line": 50,
+          "text": "memset(&_encounters, 0, sizeof(_encounters));"
+        },
+        {
+          "line": 53,
+          "text": "void OnCreatureCreate(Creature* creature) override"
+        },
+        {
+          "line": 57,
+          "text": "case NPC_DND_CRAZED_APOTHECARY_GENERATOR:"
+        },
+        {
+          "line": 58,
+          "text": "_crazedApothecaryGeneratorGUIDs.push_back(creature->GetGUID());"
+        },
+        {
+          "line": 60,
+          "text": "case NPC_APOTHECARY_HUMMEL:"
+        },
+        {
+          "line": 61,
+          "text": "_apothecaryHummel = creature->GetGUID();"
+        },
+        {
+          "line": 63,
+          "text": "case NPC_CRAZED_APOTHECARY:"
+        },
+        {
+          "line": 64,
+          "text": "if (Creature* hummel = instance->GetCreature(_apothecaryHummel))"
+        },
+        {
+          "line": 74,
+          "text": "void OnGameObjectCreate(GameObject* gameobject) override"
+        },
+        {
+          "line": 78,
+          "text": "case GO_COURTYARD_DOOR:"
+        },
+        {
+          "line": 79,
+          "text": "if (_encounters[TYPE_COURTYARD] == DONE)"
+        },
+        {
+          "line": 80,
+          "text": "HandleGameObject(ObjectGuid::Empty, true, gameobject);"
+        },
+        {
+          "line": 82,
+          "text": "case GO_SORCERER_DOOR:"
+        },
+        {
+          "line": 83,
+          "text": "if (_encounters[TYPE_FENRUS_THE_DEVOURER] == DONE)"
+        },
+        {
+          "line": 84,
+          "text": "HandleGameObject(ObjectGuid::Empty, true, gameobject);"
+        },
+        {
+          "line": 86,
+          "text": "case GO_ARUGAL_DOOR:"
+        },
+        {
+          "line": 87,
+          "text": "if (_encounters[TYPE_WOLF_MASTER_NANDOS] == DONE)"
+        },
+        {
+          "line": 88,
+          "text": "HandleGameObject(ObjectGuid::Empty, true, gameobject);"
+        },
+        {
+          "line": 95,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 102,
+          "text": "_encounters[type] = data;"
+        },
+        {
+          "line": 104,
+          "text": "case DATA_SPAWN_VALENTINE_ADDS:"
+        },
+        {
+          "line": 105,
+          "text": "for (ObjectGuid guid : _crazedApothecaryGeneratorGUIDs)"
+        },
+        {
+          "line": 107,
+          "text": "if (Creature* generator = instance->GetCreature(guid))"
+        },
+        {
+          "line": 109,
+          "text": "generator->CastSpell(nullptr, SPELL_SUMMON_VALENTINE_ADD);"
+        },
+        {
+          "line": 117,
+          "text": "if (data == DONE)"
+        },
+        {
+          "line": 118,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 121,
+          "text": "void ReadSaveDataMore(std::istringstream& data) override"
+        },
+        {
+          "line": 123,
+          "text": "data >> _encounters[0];"
+        },
+        {
+          "line": 124,
+          "text": "data >> _encounters[1];"
+        },
+        {
+          "line": 125,
+          "text": "data >> _encounters[2];"
+        },
+        {
+          "line": 128,
+          "text": "void WriteSaveDataMore(std::ostringstream& data) override"
+        },
+        {
+          "line": 130,
+          "text": "data << _encounters[0] << ' ' << _encounters[1] << ' ' << _encounters[2];"
+        },
+        {
+          "line": 134,
+          "text": "uint32 _encounters[MAX_ENCOUNTERS];"
+        },
+        {
+          "line": 135,
+          "text": "GuidVector _crazedApothecaryGeneratorGUIDs;"
+        },
+        {
+          "line": 136,
+          "text": "ObjectGuid _apothecaryHummel;"
+        },
+        {
+          "line": 140,
+          "text": "class spell_shadowfang_keep_haunting_spirits_aura : public AuraScript"
+        },
+        {
+          "line": 142,
+          "text": "PrepareAuraScript(spell_shadowfang_keep_haunting_spirits_aura);"
+        },
+        {
+          "line": 155,
+          "text": "void HandleUpdatePeriodic(AuraEffect* aurEff)"
+        },
+        {
+          "line": 162,
+          "text": "DoEffectCalcPeriodic += AuraEffectCalcPeriodicFn(spell_shadowfang_keep_haunting_spirits_aura::CalcPeriodic, EFFECT_0, SPELL_AURA_DUMMY);"
+        },
+        {
+          "line": 163,
+          "text": "OnEffectPeriodic += AuraEffectPeriodicFn(spell_shadowfang_keep_haunting_spirits_aura::HandleDummyTick, EFFECT_0, SPELL_AURA_DUMMY);"
+        },
+        {
+          "line": 164,
+          "text": "OnEffectUpdatePeriodic += AuraEffectUpdatePeriodicFn(spell_shadowfang_keep_haunting_spirits_aura::HandleUpdatePeriodic, EFFECT_0, SPELL_AURA_DUMMY);"
+        },
+        {
+          "line": 170,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD          = 7038,"
+        },
+        {
+          "line": 171,
+          "text": "SPELL_FORSAKEN_SKILL_SHADOW         = 7053"
+        },
+        {
+          "line": 174,
+          "text": "class spell_shadowfang_keep_forsaken_skills_aura : public AuraScript"
+        },
+        {
+          "line": 176,
+          "text": "PrepareAuraScript(spell_shadowfang_keep_forsaken_skills_aura);"
+        },
+        {
+          "line": 182,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD,"
+        },
+        {
+          "line": 183,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD+1,"
+        },
+        {
+          "line": 184,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD+2,"
+        },
+        {
+          "line": 185,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD+3,"
+        },
+        {
+          "line": 186,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD+4,"
+        },
+        {
+          "line": 187,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD+5,"
+        },
+        {
+          "line": 188,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD+6,"
+        },
+        {
+          "line": 189,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD+7,"
+        },
+        {
+          "line": 190,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD+8,"
+        },
+        {
+          "line": 191,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD+9,"
+        },
+        {
+          "line": 192,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD+10,"
+        },
+        {
+          "line": 193,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD+11,"
+        },
+        {
+          "line": 194,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD+12,"
+        },
+        {
+          "line": 195,
+          "text": "SPELL_FORSAKEN_SKILL_SWORD+13,"
+        },
+        {
+          "line": 196,
+          "text": "// SPELL_FORSAKEN_SKILL_SHADOW-1, // not used"
+        },
+        {
+          "line": 197,
+          "text": "SPELL_FORSAKEN_SKILL_SHADOW,"
+        },
+        {
+          "line": 201,
+          "text": "bool Load() override"
+        },
+        {
+          "line": 209,
+          "text": "_forsakenSpell = urand(SPELL_FORSAKEN_SKILL_SWORD, SPELL_FORSAKEN_SKILL_SHADOW);"
+        },
+        {
+          "line": 210,
+          "text": "if (_forsakenSpell == SPELL_FORSAKEN_SKILL_SHADOW - 1)"
+        },
+        {
+          "line": 219,
+          "text": "_forsakenSpell = urand(SPELL_FORSAKEN_SKILL_SWORD, SPELL_FORSAKEN_SKILL_SHADOW);"
+        },
+        {
+          "line": 220,
+          "text": "if (_forsakenSpell == SPELL_FORSAKEN_SKILL_SHADOW - 1)"
+        },
+        {
+          "line": 227,
+          "text": "OnEffectApply += AuraEffectApplyFn(spell_shadowfang_keep_forsaken_skills_aura::OnApply, EFFECT_0, SPELL_AURA_PERIODIC_DUMMY, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 228,
+          "text": "OnEffectPeriodic += AuraEffectPeriodicFn(spell_shadowfang_keep_forsaken_skills_aura::HandleDummyTick, EFFECT_0, SPELL_AURA_PERIODIC_DUMMY);"
+        },
+        {
+          "line": 235,
+          "text": "void AddSC_instance_shadowfang_keep()"
+        },
+        {
+          "line": 237,
+          "text": "new instance_shadowfang_keep();"
+        },
+        {
+          "line": 238,
+          "text": "RegisterSpellScript(spell_shadowfang_keep_haunting_spirits_aura);"
+        },
+        {
+          "line": 239,
+          "text": "RegisterSpellScript(spell_shadowfang_keep_forsaken_skills_aura);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/Uldaman/instance_uldaman.cpp",
+      "sha": "928108e0d0df207e6209642ec329edd5f02e93df",
+      "lineCount": 219,
+      "signals": [
+        {
+          "line": 20,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 21,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 23,
+          "text": "#include \"SpellScriptLoader.h\""
+        },
+        {
+          "line": 28,
+          "text": "SPELL_ARCHAEDAS_AWAKEN      = 10347,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_AWAKEN_VAULT_WALKER   = 10258,"
+        },
+        {
+          "line": 34,
+          "text": "EVENT_SUB_BOSS_AGGRO        = 2228"
+        },
+        {
+          "line": 37,
+          "text": "class instance_uldaman : public InstanceMapScript"
+        },
+        {
+          "line": 40,
+          "text": "instance_uldaman() : InstanceMapScript(\"instance_uldaman\", MAP_ULDAMAN) { }"
+        },
+        {
+          "line": 42,
+          "text": "struct instance_uldaman_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 44,
+          "text": "instance_uldaman_InstanceMapScript(Map* map) : InstanceScript(map) { }"
+        },
+        {
+          "line": 49,
+          "text": "memset(&_encounters, 0, sizeof(_encounters));"
+        },
+        {
+          "line": 52,
+          "text": "void OnGameObjectCreate(GameObject* gameobject) override"
+        },
+        {
+          "line": 56,
+          "text": "case GO_IRONAYA_SEAL_DOOR:"
+        },
+        {
+          "line": 58,
+          "text": "if (_encounters[DATA_IRONAYA_DOORS] == DONE)"
+        },
+        {
+          "line": 60,
+          "text": "HandleGameObject(ObjectGuid::Empty, true, gameobject);"
+        },
+        {
+          "line": 64,
+          "text": "case GO_TEMPLE_DOOR:"
+        },
+        {
+          "line": 65,
+          "text": "if (_encounters[DATA_STONE_KEEPERS] == DONE)"
+        },
+        {
+          "line": 66,
+          "text": "HandleGameObject(ObjectGuid::Empty, true, gameobject);"
+        },
+        {
+          "line": 68,
+          "text": "case GO_ANCIENT_VAULT_DOOR:"
+        },
+        {
+          "line": 69,
+          "text": "ancientVaultDoorGUID = gameobject->GetGUID();"
+        },
+        {
+          "line": 70,
+          "text": "if (_encounters[DATA_ARCHAEDAS] == DONE)"
+        },
+        {
+          "line": 71,
+          "text": "HandleGameObject(ObjectGuid::Empty, true, gameobject);"
+        },
+        {
+          "line": 73,
+          "text": "case GO_ARCHAEDAS_TEMPLE_DOOR:"
+        },
+        {
+          "line": 74,
+          "text": "archaedasTempleDoorGUID = gameobject->GetGUID();"
+        },
+        {
+          "line": 79,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 83,
+          "text": "case DATA_IRONAYA_DOORS:"
+        },
+        {
+          "line": 84,
+          "text": "case DATA_STONE_KEEPERS:"
+        },
+        {
+          "line": 85,
+          "text": "_encounters[type] = data;"
+        },
+        {
+          "line": 87,
+          "text": "case DATA_ARCHAEDAS:"
+        },
+        {
+          "line": 88,
+          "text": "_encounters[type] = data;"
+        },
+        {
+          "line": 89,
+          "text": "HandleGameObject(ancientVaultDoorGUID, data == DONE, nullptr);"
+        },
+        {
+          "line": 90,
+          "text": "HandleGameObject(archaedasTempleDoorGUID, data != IN_PROGRESS, nullptr);"
+        },
+        {
+          "line": 94,
+          "text": "if (data == DONE)"
+        },
+        {
+          "line": 95,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 98,
+          "text": "uint32 GetData(uint32 data) const override"
+        },
+        {
+          "line": 100,
+          "text": "if (data < MAX_ENCOUNTERS)"
+        },
+        {
+          "line": 102,
+          "text": "return _encounters[data];"
+        },
+        {
+          "line": 107,
+          "text": "void ReadSaveDataMore(std::istringstream& data) override"
+        },
+        {
+          "line": 109,
+          "text": "data >> _encounters[DATA_IRONAYA_DOORS];"
+        },
+        {
+          "line": 110,
+          "text": "data >> _encounters[DATA_STONE_KEEPERS];"
+        },
+        {
+          "line": 111,
+          "text": "data >> _encounters[DATA_ARCHAEDAS];"
+        },
+        {
+          "line": 114,
+          "text": "void WriteSaveDataMore(std::ostringstream& data) override"
+        },
+        {
+          "line": 116,
+          "text": "data << _encounters[DATA_IRONAYA_DOORS] << ' '"
+        },
+        {
+          "line": 117,
+          "text": "<< _encounters[DATA_STONE_KEEPERS] << ' '"
+        },
+        {
+          "line": 118,
+          "text": "<< _encounters[DATA_ARCHAEDAS];"
+        },
+        {
+          "line": 121,
+          "text": "void OnCreatureCreate(Creature* creature) override"
+        },
+        {
+          "line": 125,
+          "text": "case NPC_STONE_KEEPER:"
+        },
+        {
+          "line": 126,
+          "text": "if (_encounters[DATA_STONE_KEEPERS] != DONE && !creature->IsAlive())"
+        },
+        {
+          "line": 133,
+          "text": "uint32 _encounters[MAX_ENCOUNTERS];"
+        },
+        {
+          "line": 134,
+          "text": "ObjectGuid archaedasTempleDoorGUID;"
+        },
+        {
+          "line": 135,
+          "text": "ObjectGuid ancientVaultDoorGUID;"
+        },
+        {
+          "line": 138,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 140,
+          "text": "return new instance_uldaman_InstanceMapScript(map);"
+        },
+        {
+          "line": 144,
+          "text": "class spell_uldaman_sub_boss_agro_keepers : public SpellScript"
+        },
+        {
+          "line": 146,
+          "text": "PrepareSpellScript(spell_uldaman_sub_boss_agro_keepers);"
+        },
+        {
+          "line": 150,
+          "text": "if (Creature* keeper = GetCaster()->FindNearestCreature(NPC_STONE_KEEPER, 100.0f, true))"
+        },
+        {
+          "line": 151,
+          "text": "keeper->AI()->SetData(1, 1);"
+        },
+        {
+          "line": 156,
+          "text": "OnEffectLaunch += SpellEffectFn(spell_uldaman_sub_boss_agro_keepers::HandleSendEvent, EFFECT_0, SPELL_EFFECT_SEND_EVENT);"
+        },
+        {
+          "line": 160,
+          "text": "class spell_uldaman_stoned_aura : public AuraScript"
+        },
+        {
+          "line": 162,
+          "text": "PrepareAuraScript(spell_uldaman_stoned_aura);"
+        },
+        {
+          "line": 164,
+          "text": "bool Load() override"
+        },
+        {
+          "line": 185,
+          "text": "OnEffectApply += AuraEffectApplyFn(spell_uldaman_stoned_aura::HandleEffectApply, EFFECT_0, SPELL_AURA_DUMMY, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 186,
+          "text": "OnEffectRemove += AuraEffectRemoveFn(spell_uldaman_stoned_aura::HandleEffectRemove, EFFECT_0, SPELL_AURA_DUMMY, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 190,
+          "text": "class spell_uldaman_boss_agro_archaedas : public SpellScript"
+        },
+        {
+          "line": 192,
+          "text": "PrepareSpellScript(spell_uldaman_boss_agro_archaedas);"
+        },
+        {
+          "line": 196,
+          "text": "InstanceScript* instance = GetCaster()->GetInstanceScript();"
+        },
+        {
+          "line": 198,
+          "text": "if (!instance || instance->GetData(DATA_ARCHAEDAS) == IN_PROGRESS || instance->GetData(DATA_ARCHAEDAS) == DONE)"
+        },
+        {
+          "line": 201,
+          "text": "instance->SetData(DATA_ARCHAEDAS, IN_PROGRESS);"
+        },
+        {
+          "line": 202,
+          "text": "if (Creature* archaedas = GetCaster()->FindNearestCreature(NPC_ARCHAEDAS, 100.0f, true))"
+        },
+        {
+          "line": 203,
+          "text": "archaedas->AI()->SetData(1, 1);"
+        },
+        {
+          "line": 208,
+          "text": "OnEffectLaunch += SpellEffectFn(spell_uldaman_boss_agro_archaedas::HandleSendEvent, EFFECT_0, SPELL_EFFECT_SEND_EVENT);"
+        },
+        {
+          "line": 212,
+          "text": "void AddSC_instance_uldaman()"
+        },
+        {
+          "line": 214,
+          "text": "new instance_uldaman();"
+        },
+        {
+          "line": 215,
+          "text": "RegisterSpellScript(spell_uldaman_sub_boss_agro_keepers);"
+        },
+        {
+          "line": 216,
+          "text": "RegisterSpellScript(spell_uldaman_stoned_aura);"
+        },
+        {
+          "line": 217,
+          "text": "RegisterSpellScript(spell_uldaman_boss_agro_archaedas);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/SunkenTemple/instance_sunken_temple.cpp",
+      "sha": "b778a1d96b4c4ec88dd8f0b6383fdc66693a8f41",
+      "lineCount": 452,
+      "signals": [
+        {
+          "line": 24,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 25,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 29,
+          "text": "#include \"SpellScriptLoader.h\""
+        },
+        {
+          "line": 44,
+          "text": "{ NPC_AVATAR_OF_HAKKAR, 0 },"
+        },
+        {
+          "line": 45,
+          "text": "{ NPC_JAMMAL_AN_THE_PROPHET, 1 },"
+        },
+        {
+          "line": 46,
+          "text": "{ NPC_OGOM_THE_WRETCHED, 1 },"
+        },
+        {
+          "line": 47,
+          "text": "{ NPC_DREAMSCYTHE, 2 },"
+        },
+        {
+          "line": 48,
+          "text": "{ NPC_WEAVER, 2 },"
+        },
+        {
+          "line": 49,
+          "text": "{ NPC_HAZZAS, 3 },"
+        },
+        {
+          "line": 50,
+          "text": "{ NPC_MORPHAZ, 3 },"
+        },
+        {
+          "line": 67,
+          "text": "class instance_sunken_temple : public InstanceMapScript"
+        },
+        {
+          "line": 70,
+          "text": "instance_sunken_temple() : InstanceMapScript(\"instance_sunken_temple\", MAP_SUNKEN_TEMPLE) { }"
+        },
+        {
+          "line": 72,
+          "text": "struct instance_sunken_temple_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 74,
+          "text": "instance_sunken_temple_InstanceMapScript(Map* map) : InstanceScript(map)"
+        },
+        {
+          "line": 84,
+          "text": "memset(&_encounters, 0, sizeof(_encounters));"
+        },
+        {
+          "line": 87,
+          "text": "void OnCreatureCreate(Creature* creature) override"
+        },
+        {
+          "line": 91,
+          "text": "case NPC_JAMMAL_AN_THE_PROPHET:"
+        },
+        {
+          "line": 92,
+          "text": "_jammalanGUID = creature->GetGUID();"
+        },
+        {
+          "line": 94,
+          "text": "case NPC_SHADE_OF_ERANIKUS:"
+        },
+        {
+          "line": 95,
+          "text": "_shadeOfEranikusGUID = creature->GetGUID();"
+        },
+        {
+          "line": 101,
+          "text": "if (creature->IsAlive() && creature->GetSpawnId() && creature->GetCreatureType() == CREATURE_TYPE_DRAGONKIN && creature->GetEntry() != NPC_SHADE_OF_ERANIKUS)"
+        },
+        {
+          "line": 102,
+          "text": "_dragonkinList.push_back(creature->GetGUID());"
+        },
+        {
+          "line": 107,
+          "text": "if (unit->IsCreature() && unit->GetCreatureType() == CREATURE_TYPE_DRAGONKIN && unit->GetEntry() != NPC_SHADE_OF_ERANIKUS)"
+        },
+        {
+          "line": 108,
+          "text": "_dragonkinList.remove(unit->GetGUID());"
+        },
+        {
+          "line": 111,
+          "text": "if (unit->GetEntry() == NPC_HAKKARI_BLOODKEEPER && GetData(TYPE_HAKKAR_EVENT) == IN_PROGRESS)"
+        },
+        {
+          "line": 118,
+          "text": "for (ObjectGuid const& guid : _eternalFlameGUIDs)"
+        },
+        {
+          "line": 120,
+          "text": "GameObject* flame = instance->GetGameObject(guid);"
+        },
+        {
+          "line": 131,
+          "text": "nearestFlame->UseDoorOrButton();"
+        },
+        {
+          "line": 132,
+          "text": "Map::PlayerList const& players = instance->GetPlayers();"
+        },
+        {
+          "line": 149,
+          "text": "if (Creature* eranikus = instance->GetCreature(_shadeOfEranikusGUID))"
+        },
+        {
+          "line": 152,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 173,
+          "text": "Creature* eranikus = instance->GetCreature(_shadeOfEranikusGUID);"
+        },
+        {
+          "line": 177,
+          "text": "instance->DoForAllPlayers([&](Player* player)"
+        },
+        {
+          "line": 181,
+          "text": "_playersToldEranikusSlumbers.erase(player->GetGUID());"
+        },
+        {
+          "line": 182,
+          "text": "else if (distance <= EranikusSlumberNoticeRange && _playersToldEranikusSlumbers.insert(player->GetGUID()).second)"
+        },
+        {
+          "line": 189,
+          "text": "if (GetData(TYPE_HAKKAR_EVENT) != NOT_STARTED)"
+        },
+        {
+          "line": 192,
+          "text": "if (TempSummon* summon = instance->SummonCreature(NPC_SHADE_OF_HAKKAR, ShadeOfHakkarSummonPosition))"
+        },
+        {
+          "line": 195,
+          "text": "SetData(TYPE_HAKKAR_EVENT, IN_PROGRESS);"
+        },
+        {
+          "line": 199,
+          "text": "void OnGameObjectCreate(GameObject* gameobject) override"
+        },
+        {
+          "line": 211,
+          "text": "instance->SummonGameObject(GO_ATALAI_LIGHT2, gameobject->GetPositionX(), gameobject->GetPositionY(), gameobject->GetPositionZ(), 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);"
+        },
+        {
+          "line": 221,
+          "text": "if (_encounters[TYPE_ATAL_ALARION] == DONE)"
+        },
+        {
+          "line": 225,
+          "text": "_forcefieldGUID = gameobject->GetGUID();"
+        },
+        {
+          "line": 226,
+          "text": "if (_encounters[TYPE_HAKKAR_EVENT] == DONE)"
+        },
+        {
+          "line": 233,
+          "text": "_eternalFlameGUIDs.push_back(gameobject->GetGUID());"
+        },
+        {
+          "line": 237,
+          "text": "_worshipAltarGUID = gameobject->GetGUID();"
+        },
+        {
+          "line": 238,
+          "text": "if (_encounters[TYPE_HAKKAR_EVENT] == DONE)"
+        },
+        {
+          "line": 244,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 248,
+          "text": "case DATA_STATUES:"
+        },
+        {
+          "line": 249,
+          "text": "_events.ScheduleEvent(DATA_STATUES, 0ms);"
+        },
+        {
+          "line": 251,
+          "text": "case DATA_AWAKEN_SOULFLAYER:"
+        },
+        {
+          "line": 254,
+          "text": "case DATA_DEFENDER_KILLED:"
+        },
+        {
+          "line": 257,
+          "text": "if (Creature* jammal = instance->GetCreature(_jammalanGUID))"
+        },
+        {
+          "line": 260,
+          "text": "case DATA_ERANIKUS_FIGHT:"
+        },
+        {
+          "line": 261,
+          "text": "for (ObjectGuid const& guid : _dragonkinList)"
+        },
+        {
+          "line": 263,
+          "text": "if (Creature* creature = instance->GetCreature(guid))"
+        },
+        {
+          "line": 264,
+          "text": "if (instance->IsGridLoaded(creature->GetPositionX(), creature->GetPositionY()))"
+        },
+        {
+          "line": 269,
+          "text": "_encounters[type] = data;"
+        },
+        {
+          "line": 270,
+          "text": "if (data == DONE)"
+        },
+        {
+          "line": 272,
+          "text": "if (GameObject* altar = instance->GetGameObject(_worshipAltarGUID))"
+        },
+        {
+          "line": 274,
+          "text": "if (GameObject* forcefield = instance->GetGameObject(_forcefieldGUID))"
+        },
+        {
+          "line": 280,
+          "text": "_encounters[type] = data;"
+        },
+        {
+          "line": 284,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 287,
+          "text": "uint32 GetData(uint32 type) const override"
+        },
+        {
+          "line": 291,
+          "text": "case DATA_STATUES:"
+        },
+        {
+          "line": 293,
+          "text": "case DATA_DEFENDER_KILLED:"
+        },
+        {
+          "line": 298,
+          "text": "return _encounters[type];"
+        },
+        {
+          "line": 304,
+          "text": "void Update(uint32 diff) override"
+        },
+        {
+          "line": 306,
+          "text": "_events.Update(diff);"
+        },
+        {
+          "line": 317,
+          "text": "case DATA_STATUES:"
+        },
+        {
+          "line": 320,
+          "text": "instance->SummonGameObject(GO_IDOL_OF_HAKKAR, -476.269317626953125f, 94.4119873046875f, -189.729660034179687f, 1.588248729705810546f, 0.0f, 0.0f, 0.713250160217285156f, 0.700909554958343505f, 0); // VerifiedBuild 50250"
+        },
+        {
+          "line": 326,
+          "text": "void ReadSaveDataMore(std::istringstream& data) override"
+        },
+        {
+          "line": 328,
+          "text": "data >> _encounters[0];"
+        },
+        {
+          "line": 329,
+          "text": "data >> _encounters[1];"
+        },
+        {
+          "line": 330,
+          "text": "data >> _encounters[2];"
+        },
+        {
+          "line": 336,
+          "text": "void WriteSaveDataMore(std::ostringstream& data) override"
+        },
+        {
+          "line": 338,
+          "text": "data << _encounters[0] << ' '"
+        },
+        {
+          "line": 339,
+          "text": "<< _encounters[1] << ' '"
+        },
+        {
+          "line": 340,
+          "text": "<< _encounters[2] << ' '"
+        },
+        {
+          "line": 351,
+          "text": "uint32 _encounters[MAX_ENCOUNTERS];"
+        },
+        {
+          "line": 352,
+          "text": "GuidSet _playersToldEranikusSlumbers;"
+        },
+        {
+          "line": 354,
+          "text": "ObjectGuid _forcefieldGUID;"
+        },
+        {
+          "line": 355,
+          "text": "ObjectGuid _worshipAltarGUID;"
+        },
+        {
+          "line": 356,
+          "text": "GuidVector _eternalFlameGUIDs;"
+        },
+        {
+          "line": 357,
+          "text": "ObjectGuid _jammalanGUID;"
+        },
+        {
+          "line": 358,
+          "text": "ObjectGuid _shadeOfEranikusGUID;"
+        },
+        {
+          "line": 359,
+          "text": "GuidList _dragonkinList;"
+        },
+        {
+          "line": 363,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 365,
+          "text": "return new instance_sunken_temple_InstanceMapScript(map);"
+        },
+        {
+          "line": 382,
+          "text": "if (player->GetInstanceScript() && !player->FindNearestCreature(NPC_MALFURION_STORMRAGE, 15.0f) &&"
+        },
+        {
+          "line": 384,
+          "text": "player->SummonCreature(NPC_MALFURION_STORMRAGE, player->GetPositionX(), player->GetPositionY(), player->GetPositionZ(), -1.52f, TEMPSUMMON_TIMED_OR_DEAD_DESPAWN, 100000);"
+        },
+        {
+          "line": 389,
+          "text": "class spell_temple_of_atal_hakkar_hex_of_jammal_an_aura : public AuraScript"
+        },
+        {
+          "line": 391,
+          "text": "PrepareAuraScript(spell_temple_of_atal_hakkar_hex_of_jammal_an_aura);"
+        },
+        {
+          "line": 410,
+          "text": "OnEffectRemove += AuraEffectRemoveFn(spell_temple_of_atal_hakkar_hex_of_jammal_an_aura::OnRemove, EFFECT_0, SPELL_AURA_DUMMY, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 414,
+          "text": "class spell_temple_of_atal_hakkar_awaken_the_soulflayer : public SpellScript"
+        },
+        {
+          "line": 416,
+          "text": "PrepareSpellScript(spell_temple_of_atal_hakkar_awaken_the_soulflayer);"
+        },
+        {
+          "line": 421,
+          "text": "if (InstanceScript* instanceScript = GetCaster()->GetInstanceScript())"
+        },
+        {
+          "line": 422,
+          "text": "instanceScript->SetData(DATA_AWAKEN_SOULFLAYER, 0);"
+        },
+        {
+          "line": 427,
+          "text": "OnEffectHit += SpellEffectFn(spell_temple_of_atal_hakkar_awaken_the_soulflayer::HandleSendEvent, EFFECT_0, SPELL_EFFECT_SEND_EVENT);"
+        },
+        {
+          "line": 438,
+          "text": "if (InstanceScript* instanceScript = go->GetInstanceScript())"
+        },
+        {
+          "line": 439,
+          "text": "instanceScript->SetData(DATA_AWAKEN_SOULFLAYER, 0);"
+        },
+        {
+          "line": 444,
+          "text": "void AddSC_instance_sunken_temple()"
+        },
+        {
+          "line": 446,
+          "text": "new instance_sunken_temple();"
+        },
+        {
+          "line": 449,
+          "text": "RegisterSpellScript(spell_temple_of_atal_hakkar_hex_of_jammal_an_aura);"
+        },
+        {
+          "line": 450,
+          "text": "RegisterSpellScript(spell_temple_of_atal_hakkar_awaken_the_soulflayer);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/Gnomeregan/instance_gnomeregan.cpp",
+      "sha": "c597aa0fdc307b6db35313c4cc4666dfd875da16",
+      "lineCount": 178,
+      "signals": [
+        {
+          "line": 19,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 20,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 24,
+          "text": "#include \"SpellScriptLoader.h\""
+        },
+        {
+          "line": 27,
+          "text": "class instance_gnomeregan : public InstanceMapScript"
+        },
+        {
+          "line": 30,
+          "text": "instance_gnomeregan() : InstanceMapScript(\"instance_gnomeregan\", MAP_GNOMEREGAN) { }"
+        },
+        {
+          "line": 32,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 34,
+          "text": "return new instance_gnomeregan_InstanceMapScript(map);"
+        },
+        {
+          "line": 37,
+          "text": "struct instance_gnomeregan_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 39,
+          "text": "instance_gnomeregan_InstanceMapScript(Map* map) : InstanceScript(map)"
+        },
+        {
+          "line": 44,
+          "text": "void OnCreatureCreate(Creature* creature) override"
+        },
+        {
+          "line": 48,
+          "text": "case NPC_EMI_SHORTFUSE:"
+        },
+        {
+          "line": 49,
+          "text": "if (_encounters[TYPE_GRUBBIS] == DONE)"
+        },
+        {
+          "line": 57,
+          "text": "void OnGameObjectCreate(GameObject* gameobject) override"
+        },
+        {
+          "line": 63,
+          "text": "case GO_WORKSHOP_DOOR:"
+        },
+        {
+          "line": 64,
+          "text": "case GO_FINAL_CHAMBER_DOOR:"
+        },
+        {
+          "line": 65,
+          "text": "gameobject->AllowSaveToDB(true);"
+        },
+        {
+          "line": 70,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 75,
+          "text": "_encounters[type] = data;"
+        },
+        {
+          "line": 79,
+          "text": "if (data == DONE)"
+        },
+        {
+          "line": 80,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 83,
+          "text": "void ReadSaveDataMore(std::istringstream& data) override"
+        },
+        {
+          "line": 85,
+          "text": "data >> _encounters[TYPE_GRUBBIS];"
+        },
+        {
+          "line": 88,
+          "text": "void WriteSaveDataMore(std::ostringstream& data) override"
+        },
+        {
+          "line": 90,
+          "text": "data << _encounters[TYPE_GRUBBIS];"
+        },
+        {
+          "line": 94,
+          "text": "uint32 _encounters[MAX_ENCOUNTERS];"
+        },
+        {
+          "line": 103,
+          "text": "class npc_kernobee : public CreatureScript"
+        },
+        {
+          "line": 106,
+          "text": "npc_kernobee() : CreatureScript(\"npc_kernobee\") { }"
+        },
+        {
+          "line": 110,
+          "text": "return GetGnomereganAI<npc_kernobeeAI>(creature);"
+        },
+        {
+          "line": 118,
+          "text": "creature->AI()->SetGUID(player->GetGUID(), 0);"
+        },
+        {
+          "line": 124,
+          "text": "struct npc_kernobeeAI : public PassiveAI"
+        },
+        {
+          "line": 126,
+          "text": "npc_kernobeeAI(Creature* creature) : PassiveAI(creature)"
+        },
+        {
+          "line": 132,
+          "text": "ObjectGuid playerGUID;"
+        },
+        {
+          "line": 134,
+          "text": "void SetGUID(ObjectGuid const& guid, int32) override"
+        },
+        {
+          "line": 136,
+          "text": "playerGUID = guid;"
+        },
+        {
+          "line": 139,
+          "text": "void UpdateAI(uint32 diff) override"
+        },
+        {
+          "line": 147,
+          "text": "if (Player* player = ObjectAccessor::GetPlayer(*me, playerGUID))"
+        },
+        {
+          "line": 156,
+          "text": "class spell_gnomeregan_radiation_bolt : public SpellScript"
+        },
+        {
+          "line": 158,
+          "text": "PrepareSpellScript(spell_gnomeregan_radiation_bolt);"
+        },
+        {
+          "line": 168,
+          "text": "OnEffectHit += SpellEffectFn(spell_gnomeregan_radiation_bolt::HandleTriggerSpell, EFFECT_1, SPELL_EFFECT_TRIGGER_SPELL);"
+        },
+        {
+          "line": 172,
+          "text": "void AddSC_instance_gnomeregan()"
+        },
+        {
+          "line": 174,
+          "text": "new instance_gnomeregan();"
+        },
+        {
+          "line": 175,
+          "text": "new npc_kernobee();"
+        },
+        {
+          "line": 176,
+          "text": "RegisterSpellScript(spell_gnomeregan_radiation_bolt);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Kalimdor/WailingCaverns/instance_wailing_caverns.cpp",
+      "sha": "0be5a79396ecde9de7ad020bd733f729494ba6b5",
+      "lineCount": 150,
+      "signals": [
+        {
+          "line": 18,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 20,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 25,
+          "text": "class instance_wailing_caverns : public InstanceMapScript"
+        },
+        {
+          "line": 28,
+          "text": "instance_wailing_caverns() : InstanceMapScript(\"instance_wailing_caverns\", MAP_WAILING_CAVERNS) { }"
+        },
+        {
+          "line": 30,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 32,
+          "text": "return new instance_wailing_caverns_InstanceMapScript(map);"
+        },
+        {
+          "line": 35,
+          "text": "struct instance_wailing_caverns_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 37,
+          "text": "instance_wailing_caverns_InstanceMapScript(Map* map) : InstanceScript(map) { }"
+        },
+        {
+          "line": 41,
+          "text": "memset(&_encounters, 0, sizeof(_encounters));"
+        },
+        {
+          "line": 44,
+          "text": "void OnCreatureCreate(Creature* creature) override"
+        },
+        {
+          "line": 46,
+          "text": "if (creature->GetEntry() == NPC_DISCIPLE_OF_NARALEX)"
+        },
+        {
+          "line": 47,
+          "text": "DiscipleOfNaralexGUID = creature->GetGUID();"
+        },
+        {
+          "line": 48,
+          "text": "else if (creature->GetEntry() == NPC_LORD_SERPENTIS)"
+        },
+        {
+          "line": 49,
+          "text": "SerpentisGUID = creature->GetGUID();"
+        },
+        {
+          "line": 52,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 61,
+          "text": "_encounters[type] = data;"
+        },
+        {
+          "line": 65,
+          "text": "if (data == DONE)"
+        },
+        {
+          "line": 66,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 68,
+          "text": "if (type == TYPE_LORD_COBRAHN && _encounters[TYPE_LORD_SERPENTIS] != DONE)"
+        },
+        {
+          "line": 70,
+          "text": "if (Creature* serpentis = instance->GetCreature(SerpentisGUID))"
+        },
+        {
+          "line": 74,
+          "text": "if (type != TYPE_MUTANUS && _encounters[TYPE_LORD_COBRAHN] == DONE && _encounters[TYPE_LORD_PYTHAS] == DONE &&"
+        },
+        {
+          "line": 75,
+          "text": "_encounters[TYPE_LADY_ANACONDRA] == DONE && _encounters[TYPE_LORD_SERPENTIS] == DONE)"
+        },
+        {
+          "line": 77,
+          "text": "if (Creature* disciple = instance->GetCreature(DiscipleOfNaralexGUID))"
+        },
+        {
+          "line": 82,
+          "text": "uint32 GetData(uint32 type) const override"
+        },
+        {
+          "line": 90,
+          "text": "return _encounters[type];"
+        },
+        {
+          "line": 91,
+          "text": "case TYPE_NARALEX_EVENT_BLOCKED:"
+        },
+        {
+          "line": 97,
+          "text": "void ReadSaveDataMore(std::istringstream& data) override"
+        },
+        {
+          "line": 99,
+          "text": "data >> _encounters[0];"
+        },
+        {
+          "line": 100,
+          "text": "data >> _encounters[1];"
+        },
+        {
+          "line": 101,
+          "text": "data >> _encounters[2];"
+        },
+        {
+          "line": 102,
+          "text": "data >> _encounters[3];"
+        },
+        {
+          "line": 103,
+          "text": "data >> _encounters[4];"
+        },
+        {
+          "line": 106,
+          "text": "void WriteSaveDataMore(std::ostringstream& data) override"
+        },
+        {
+          "line": 108,
+          "text": "data << _encounters[0] << ' '"
+        },
+        {
+          "line": 109,
+          "text": "<< _encounters[1] << ' '"
+        },
+        {
+          "line": 110,
+          "text": "<< _encounters[2] << ' '"
+        },
+        {
+          "line": 111,
+          "text": "<< _encounters[3] << ' '"
+        },
+        {
+          "line": 112,
+          "text": "<< _encounters[4] << ' ';"
+        },
+        {
+          "line": 118,
+          "text": "for (MapReference const& ref : instance->GetPlayers())"
+        },
+        {
+          "line": 128,
+          "text": "if (sLFGMgr->inLfgDungeonMap(group->GetGUID(), instance->GetId(), instance->GetDifficulty()))"
+        },
+        {
+          "line": 129,
+          "text": "return IsWingWithoutNaralexEvent(sLFGMgr->GetDungeon(group->GetGUID()));"
+        },
+        {
+          "line": 140,
+          "text": "uint32 _encounters[MAX_ENCOUNTERS];"
+        },
+        {
+          "line": 141,
+          "text": "ObjectGuid DiscipleOfNaralexGUID;"
+        },
+        {
+          "line": 142,
+          "text": "ObjectGuid SerpentisGUID;"
+        },
+        {
+          "line": 146,
+          "text": "void AddSC_instance_wailing_caverns()"
+        },
+        {
+          "line": 148,
+          "text": "new instance_wailing_caverns();"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Kalimdor/BlackfathomDeeps/instance_blackfathom_deeps.cpp",
+      "sha": "cfcb22076b4c7bf5e6634c47547f215f313dfb13",
+      "lineCount": 151,
+      "signals": [
+        {
+          "line": 18,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 19,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 22,
+          "text": "class instance_blackfathom_deeps : public InstanceMapScript"
+        },
+        {
+          "line": 25,
+          "text": "instance_blackfathom_deeps() : InstanceMapScript(\"instance_blackfathom_deeps\", MAP_BLACKFATHOM_DEEPS) { }"
+        },
+        {
+          "line": 27,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 29,
+          "text": "return new instance_blackfathom_deeps_InstanceMapScript(map);"
+        },
+        {
+          "line": 32,
+          "text": "struct instance_blackfathom_deeps_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 34,
+          "text": "instance_blackfathom_deeps_InstanceMapScript(Map* map) : InstanceScript(map) { }"
+        },
+        {
+          "line": 39,
+          "text": "memset(&_encounters, 0, sizeof(_encounters));"
+        },
+        {
+          "line": 43,
+          "text": "void OnCreatureCreate(Creature* creature) override"
+        },
+        {
+          "line": 45,
+          "text": "if (creature->IsSummon() && (creature->GetEntry() == NPC_BARBED_CRUSTACEAN || creature->GetEntry() == NPC_AKU_MAI_SERVANT ||"
+        },
+        {
+          "line": 46,
+          "text": "creature->GetEntry() == NPC_MURKSHALLOW_SOFTSHELL || creature->GetEntry() == NPC_AKU_MAI_SNAPJAW))"
+        },
+        {
+          "line": 52,
+          "text": "if (unit->IsSummon() && (unit->GetEntry() == NPC_BARBED_CRUSTACEAN || unit->GetEntry() == NPC_AKU_MAI_SERVANT ||"
+        },
+        {
+          "line": 53,
+          "text": "unit->GetEntry() == NPC_MURKSHALLOW_SOFTSHELL || unit->GetEntry() == NPC_AKU_MAI_SNAPJAW))"
+        },
+        {
+          "line": 57,
+          "text": "if (IsFireEventDone())"
+        },
+        {
+          "line": 59,
+          "text": "HandleGameObject(_akumaiPortalGUID, true);"
+        },
+        {
+          "line": 60,
+          "text": "_encounters[TYPE_AKU_MAI_EVENT] = DONE;"
+        },
+        {
+          "line": 66,
+          "text": "void OnGameObjectCreate(GameObject* gameobject) override"
+        },
+        {
+          "line": 74,
+          "text": "if (_encounters[TYPE_AKU_MAI_EVENT] == DONE)"
+        },
+        {
+          "line": 81,
+          "text": "if (_encounters[TYPE_GELIHAST] == DONE)"
+        },
+        {
+          "line": 85,
+          "text": "if (_encounters[TYPE_AKU_MAI] == DONE)"
+        },
+        {
+          "line": 88,
+          "text": "case GO_AKU_MAI_DOOR:"
+        },
+        {
+          "line": 89,
+          "text": "if (IsFireEventDone() && _encounters[TYPE_AKU_MAI_EVENT] == DONE)"
+        },
+        {
+          "line": 90,
+          "text": "HandleGameObject(ObjectGuid::Empty, true, gameobject);"
+        },
+        {
+          "line": 91,
+          "text": "_akumaiPortalGUID = gameobject->GetGUID();"
+        },
+        {
+          "line": 96,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 107,
+          "text": "_encounters[type] = data;"
+        },
+        {
+          "line": 111,
+          "text": "if (data == DONE)"
+        },
+        {
+          "line": 112,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 115,
+          "text": "void ReadSaveDataMore(std::istringstream& data) override"
+        },
+        {
+          "line": 117,
+          "text": "data >> _encounters[0];"
+        },
+        {
+          "line": 118,
+          "text": "data >> _encounters[1];"
+        },
+        {
+          "line": 119,
+          "text": "data >> _encounters[2];"
+        },
+        {
+          "line": 120,
+          "text": "data >> _encounters[3];"
+        },
+        {
+          "line": 121,
+          "text": "data >> _encounters[4];"
+        },
+        {
+          "line": 122,
+          "text": "data >> _encounters[5];"
+        },
+        {
+          "line": 125,
+          "text": "void WriteSaveDataMore(std::ostringstream& data) override"
+        },
+        {
+          "line": 127,
+          "text": "data << _encounters[0] << ' '"
+        },
+        {
+          "line": 128,
+          "text": "<< _encounters[1] << ' '"
+        },
+        {
+          "line": 129,
+          "text": "<< _encounters[2] << ' '"
+        },
+        {
+          "line": 130,
+          "text": "<< _encounters[3] << ' '"
+        },
+        {
+          "line": 131,
+          "text": "<< _encounters[4] << ' '"
+        },
+        {
+          "line": 132,
+          "text": "<< _encounters[5];"
+        },
+        {
+          "line": 135,
+          "text": "bool IsFireEventDone()"
+        },
+        {
+          "line": 137,
+          "text": "return _encounters[TYPE_FIRE1] == DONE && _encounters[TYPE_FIRE2] == DONE && _encounters[TYPE_FIRE3] == DONE && _encounters[TYPE_FIRE4] == DONE;"
+        },
+        {
+          "line": 141,
+          "text": "uint32 _encounters[MAX_ENCOUNTERS];"
+        },
+        {
+          "line": 142,
+          "text": "ObjectGuid _akumaiPortalGUID;"
+        },
+        {
+          "line": 147,
+          "text": "void AddSC_instance_blackfathom_deeps()"
+        },
+        {
+          "line": 149,
+          "text": "new instance_blackfathom_deeps();"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Kalimdor/Maraudon/instance_maraudon.cpp",
+      "sha": "9d816f53144ed58e1f54266633178c537b31f955",
+      "lineCount": 87,
+      "signals": [
+        {
+          "line": 18,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 19,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 22,
+          "text": "class instance_maraudon : public InstanceMapScript"
+        },
+        {
+          "line": 25,
+          "text": "instance_maraudon() : InstanceMapScript(\"instance_maraudon\", MAP_MARAUDON) { }"
+        },
+        {
+          "line": 27,
+          "text": "struct instance_maraudon_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 29,
+          "text": "instance_maraudon_InstanceMapScript(Map* map) : InstanceScript(map)"
+        },
+        {
+          "line": 36,
+          "text": "memset(&_encounters, 0, sizeof(_encounters));"
+        },
+        {
+          "line": 39,
+          "text": "void OnGameObjectCreate(GameObject* gameobject) override"
+        },
+        {
+          "line": 44,
+          "text": "if (_encounters[TYPE_NOXXION] == DONE)"
+        },
+        {
+          "line": 45,
+          "text": "HandleGameObject(ObjectGuid::Empty, true, gameobject);"
+        },
+        {
+          "line": 50,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 55,
+          "text": "_encounters[type] = data;"
+        },
+        {
+          "line": 59,
+          "text": "if (data == DONE)"
+        },
+        {
+          "line": 60,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 63,
+          "text": "void ReadSaveDataMore(std::istringstream& data) override"
+        },
+        {
+          "line": 65,
+          "text": "data >> _encounters[0];"
+        },
+        {
+          "line": 68,
+          "text": "void WriteSaveDataMore(std::ostringstream& data) override"
+        },
+        {
+          "line": 70,
+          "text": "data << _encounters[0];"
+        },
+        {
+          "line": 74,
+          "text": "uint32 _encounters[MAX_ENCOUNTERS];"
+        },
+        {
+          "line": 77,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 79,
+          "text": "return new instance_maraudon_InstanceMapScript(map);"
+        },
+        {
+          "line": 83,
+          "text": "void AddSC_instance_maraudon()"
+        },
+        {
+          "line": 85,
+          "text": "new instance_maraudon();"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Kalimdor/RazorfenDowns/instance_razorfen_downs.cpp",
+      "sha": "fa4ecca34f2a1cad521f45e41462be55b8afc790",
+      "lineCount": 100,
+      "signals": [
+        {
+          "line": 18,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 19,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 23,
+          "text": "class instance_razorfen_downs : public InstanceMapScript"
+        },
+        {
+          "line": 26,
+          "text": "instance_razorfen_downs() : InstanceMapScript(\"instance_razorfen_downs\", MAP_RAZORFEN_DOWNS) { }"
+        },
+        {
+          "line": 28,
+          "text": "struct instance_razorfen_downs_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 30,
+          "text": "instance_razorfen_downs_InstanceMapScript(Map* map) : InstanceScript(map)"
+        },
+        {
+          "line": 41,
+          "text": "void OnGameObjectCreate(GameObject* gameobject) override"
+        },
+        {
+          "line": 48,
+          "text": "if (_firesState == DONE)"
+        },
+        {
+          "line": 52,
+          "text": "if (_gongPhase == DONE)"
+        },
+        {
+          "line": 58,
+          "text": "uint32 GetData(uint32 type) const override"
+        },
+        {
+          "line": 65,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 70,
+          "text": "_firesState = DONE;"
+        },
+        {
+          "line": 71,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 74,
+          "text": "void ReadSaveDataMore(std::istringstream& data) override"
+        },
+        {
+          "line": 80,
+          "text": "void WriteSaveDataMore(std::ostringstream& data) override"
+        },
+        {
+          "line": 90,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 92,
+          "text": "return new instance_razorfen_downs_InstanceMapScript(map);"
+        },
+        {
+          "line": 96,
+          "text": "void AddSC_instance_razorfen_downs()"
+        },
+        {
+          "line": 98,
+          "text": "new instance_razorfen_downs();"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Kalimdor/RazorfenKraul/instance_razorfen_kraul.cpp",
+      "sha": "8b721c53f023eb35633dcbf6a15ae24bbf11aef2",
+      "lineCount": 41,
+      "signals": [
+        {
+          "line": 18,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 19,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 21,
+          "text": "class instance_razorfen_kraul : public InstanceMapScript"
+        },
+        {
+          "line": 24,
+          "text": "instance_razorfen_kraul() : InstanceMapScript(\"instance_razorfen_kraul\", MAP_RAZORFEN_KRAUL) { }"
+        },
+        {
+          "line": 26,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 28,
+          "text": "return new instance_razorfen_kraul_InstanceMapScript(map);"
+        },
+        {
+          "line": 31,
+          "text": "struct instance_razorfen_kraul_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 33,
+          "text": "instance_razorfen_kraul_InstanceMapScript(Map* map) : InstanceScript(map) { }"
+        },
+        {
+          "line": 37,
+          "text": "void AddSC_instance_razorfen_kraul()"
+        },
+        {
+          "line": 39,
+          "text": "new instance_razorfen_kraul();"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Kalimdor/ZulFarrak/instance_zulfarrak.cpp",
+      "sha": "d44b7c3ca8769cc18c68172a8793443d2a0910fb",
+      "lineCount": 532,
+      "signals": [
+        {
+          "line": 22,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 23,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 25,
+          "text": "#include \"SpellScriptLoader.h\""
+        },
+        {
+          "line": 50,
+          "text": "{ 1, NPC_SANDFURY_CRETIN,   { 1894.64f, 1206.29f } },"
+        },
+        {
+          "line": 51,
+          "text": "{ 1, NPC_SANDFURY_SLAVE,    { 1890.08f, 1218.68f } },"
+        },
+        {
+          "line": 52,
+          "text": "{ 1, NPC_SANDFURY_ACOLYTE,  { 1883.76f, 1222.30f } },"
+        },
+        {
+          "line": 53,
+          "text": "{ 1, NPC_SANDFURY_CRETIN,   { 1874.18f, 1221.24f } },"
+        },
+        {
+          "line": 54,
+          "text": "{ 1, NPC_SANDFURY_SLAVE,    { 1892.28f, 1225.49f } },"
+        },
+        {
+          "line": 55,
+          "text": "{ 1, NPC_SANDFURY_DRUDGE,   { 1889.94f, 1212.21f } },"
+        },
+        {
+          "line": 56,
+          "text": "{ 1, NPC_SANDFURY_SLAVE,    { 1879.02f, 1223.06f } },"
+        },
+        {
+          "line": 57,
+          "text": "{ 1, NPC_SANDFURY_CRETIN,   { 1874.45f, 1204.44f } },"
+        },
+        {
+          "line": 58,
+          "text": "{ 1, NPC_SANDFURY_ACOLYTE,  { 1898.23f, 1217.97f } },"
+        },
+        {
+          "line": 59,
+          "text": "{ 1, NPC_SANDFURY_SLAVE,    { 1882.07f, 1225.70f } },"
+        },
+        {
+          "line": 60,
+          "text": "{ 1, NPC_SANDFURY_ZEALOT,   { 1896.46f, 1205.62f } },"
+        },
+        {
+          "line": 61,
+          "text": "{ 1, NPC_SANDFURY_SLAVE,    { 1886.97f, 1225.86f } },"
+        },
+        {
+          "line": 62,
+          "text": "{ 1, NPC_SANDFURY_SLAVE,    { 1894.72f, 1221.91f } },"
+        },
+        {
+          "line": 63,
+          "text": "{ 1, NPC_SANDFURY_SLAVE,    { 1883.50f, 1218.25f } },"
+        },
+        {
+          "line": 64,
+          "text": "{ 1, NPC_SANDFURY_SLAVE,    { 1886.93f, 1221.40f } },"
+        },
+        {
+          "line": 65,
+          "text": "{ 1, NPC_SANDFURY_ACOLYTE,  { 1889.82f, 1222.51f } },"
+        },
+        {
+          "line": 66,
+          "text": "{ 1, NPC_SANDFURY_DRUDGE,   { 1893.07f, 1215.26f } },"
+        },
+        {
+          "line": 67,
+          "text": "{ 1, NPC_SANDFURY_DRUDGE,   { 1878.57f, 1214.16f } },"
+        },
+        {
+          "line": 68,
+          "text": "{ 1, NPC_SANDFURY_DRUDGE,   { 1883.74f, 1212.35f } },"
+        },
+        {
+          "line": 69,
+          "text": "{ 1, NPC_SANDFURY_ZEALOT,   { 1877.00f, 1207.27f } },"
+        },
+        {
+          "line": 70,
+          "text": "{ 1, NPC_SANDFURY_ZEALOT,   { 1873.63f, 1204.65f } },"
+        },
+        {
+          "line": 71,
+          "text": "{ 1, NPC_SANDFURY_ACOLYTE,  { 1877.40f, 1216.41f } },"
+        },
+        {
+          "line": 72,
+          "text": "{ 1, NPC_SANDFURY_ZEALOT,   { 1899.63f, 1202.52f } },"
+        },
+        {
+          "line": 73,
+          "text": "{ 2, NPC_SANDFURY_CRETIN,   { 1902.83f, 1223.41f } },"
+        },
+        {
+          "line": 74,
+          "text": "{ 2, NPC_SANDFURY_ACOLYTE,  { 1889.82f, 1222.51f } },"
+        },
+        {
+          "line": 75,
+          "text": "{ 2, NPC_SANDFURY_SLAVE,    { 1883.50f, 1218.25f } },"
+        },
+        {
+          "line": 76,
+          "text": "{ 2, NPC_SANDFURY_DRUDGE,   { 1883.74f, 1212.35f } },"
+        },
+        {
+          "line": 77,
+          "text": "{ 2, NPC_SANDFURY_ZEALOT,   { 1877.00f, 1207.27f } },"
+        },
+        {
+          "line": 78,
+          "text": "{ 2, NPC_SANDFURY_SLAVE,    { 1890.08f, 1218.68f } },"
+        },
+        {
+          "line": 79,
+          "text": "{ 2, NPC_SANDFURY_CRETIN,   { 1894.64f, 1206.29f } },"
+        },
+        {
+          "line": 80,
+          "text": "{ 2, NPC_SANDFURY_ACOLYTE,  { 1877.40f, 1216.41f } },"
+        },
+        {
+          "line": 81,
+          "text": "{ 2, NPC_SANDFURY_SLAVE,    { 1892.28f, 1225.49f } },"
+        },
+        {
+          "line": 82,
+          "text": "{ 2, NPC_SANDFURY_DRUDGE,   { 1893.07f, 1215.26f } },"
+        },
+        {
+          "line": 83,
+          "text": "{ 2, NPC_SANDFURY_ZEALOT,   { 1896.46f, 1205.62f } },"
+        },
+        {
+          "line": 84,
+          "text": "{ 2, NPC_SANDFURY_CRETIN,   { 1874.45f, 1204.44f } },"
+        },
+        {
+          "line": 85,
+          "text": "{ 2, NPC_SANDFURY_CRETIN,   { 1874.18f, 1221.24f } },"
+        },
+        {
+          "line": 86,
+          "text": "{ 2, NPC_SANDFURY_SLAVE,    { 1879.02f, 1223.06f } },"
+        },
+        {
+          "line": 87,
+          "text": "{ 2, NPC_SANDFURY_ACOLYTE,  { 1898.23f, 1217.97f } },"
+        },
+        {
+          "line": 88,
+          "text": "{ 2, NPC_SANDFURY_SLAVE,    { 1882.07f, 1225.70f } },"
+        },
+        {
+          "line": 89,
+          "text": "{ 2, NPC_SANDFURY_ZEALOT,   { 1873.63f, 1204.65f } },"
+        },
+        {
+          "line": 90,
+          "text": "{ 2, NPC_SANDFURY_SLAVE,    { 1886.97f, 1225.86f } },"
+        },
+        {
+          "line": 91,
+          "text": "{ 2, NPC_SANDFURY_DRUDGE,   { 1878.57f, 1214.16f } },"
+        },
+        {
+          "line": 92,
+          "text": "{ 2, NPC_SANDFURY_SLAVE,    { 1894.72f, 1221.91f } },"
+        },
+        {
+          "line": 93,
+          "text": "{ 2, NPC_SANDFURY_SLAVE,    { 1886.93f, 1221.40f } },"
+        },
+        {
+          "line": 94,
+          "text": "{ 2, NPC_SANDFURY_ACOLYTE,  { 1883.76f, 1222.30f } },"
+        },
+        {
+          "line": 95,
+          "text": "{ 2, NPC_SANDFURY_DRUDGE,   { 1889.94f, 1212.21f } },"
+        },
+        {
+          "line": 96,
+          "text": "{ 2, NPC_SANDFURY_ZEALOT,   { 1899.63f, 1202.52f } },"
+        },
+        {
+          "line": 97,
+          "text": "{ 3, NPC_SANDFURY_DRUDGE,   { 1878.57f, 1214.16f } },"
+        },
+        {
+          "line": 98,
+          "text": "{ 3, NPC_SANDFURY_SLAVE,    { 1894.72f, 1221.91f } },"
+        },
+        {
+          "line": 99,
+          "text": "{ 3, NPC_SANDFURY_SLAVE,    { 1886.93f, 1221.40f } },"
+        },
+        {
+          "line": 100,
+          "text": "{ 3, NPC_SANDFURY_ACOLYTE,  { 1883.76f, 1222.30f } },"
+        },
+        {
+          "line": 101,
+          "text": "{ 3, NPC_SANDFURY_DRUDGE,   { 1889.94f, 1212.21f } },"
+        },
+        {
+          "line": 102,
+          "text": "{ 3, NPC_SHADOWPRIEST_SEZZZIZ, { 1886.30f, 1199.65f } },"
+        },
+        {
+          "line": 103,
+          "text": "{ 3, NPC_NEKRUM_GUTCHEWER,  { 1881.06f, 1199.70f } }"
+        },
+        {
+          "line": 106,
+          "text": "class instance_zulfarrak : public InstanceMapScript"
+        },
+        {
+          "line": 109,
+          "text": "instance_zulfarrak() : InstanceMapScript(ZFScriptName, MAP_ZUL_FARRAK) {}"
+        },
+        {
+          "line": 111,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 113,
+          "text": "return new instance_zulfarrak_InstanceMapScript(map);"
+        },
+        {
+          "line": 116,
+          "text": "struct instance_zulfarrak_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 118,
+          "text": "instance_zulfarrak_InstanceMapScript(Map* map) : InstanceScript(map) { }"
+        },
+        {
+          "line": 120,
+          "text": "ObjectGuid EndDoorGUID;"
+        },
+        {
+          "line": 121,
+          "text": "ObjectGuid BlyGUID;"
+        },
+        {
+          "line": 122,
+          "text": "ObjectGuid WeegliGUID;"
+        },
+        {
+          "line": 123,
+          "text": "ObjectGuid OroGUID;"
+        },
+        {
+          "line": 124,
+          "text": "ObjectGuid RavenGUID;"
+        },
+        {
+          "line": 125,
+          "text": "ObjectGuid MurtaGUID;"
+        },
+        {
+          "line": 126,
+          "text": "ObjectGuid ShadowpriestGUID;"
+        },
+        {
+          "line": 128,
+          "text": "GuidList addsAtBase;"
+        },
+        {
+          "line": 129,
+          "text": "GuidList movedadds;"
+        },
+        {
+          "line": 141,
+          "text": "GahzrillaSummoned = NOT_STARTED;"
+        },
+        {
+          "line": 150,
+          "text": "void OnCreatureCreate(Creature* creature) override"
+        },
+        {
+          "line": 154,
+          "text": "case NPC_BLY:"
+        },
+        {
+          "line": 155,
+          "text": "BlyGUID = creature->GetGUID();"
+        },
+        {
+          "line": 158,
+          "text": "case NPC_RAVEN:"
+        },
+        {
+          "line": 159,
+          "text": "RavenGUID = creature->GetGUID();"
+        },
+        {
+          "line": 162,
+          "text": "case NPC_ORO:"
+        },
+        {
+          "line": 163,
+          "text": "OroGUID = creature->GetGUID();"
+        },
+        {
+          "line": 166,
+          "text": "case NPC_WEEGLI:"
+        },
+        {
+          "line": 167,
+          "text": "WeegliGUID = creature->GetGUID();"
+        },
+        {
+          "line": 170,
+          "text": "case NPC_MURTA:"
+        },
+        {
+          "line": 171,
+          "text": "MurtaGUID = creature->GetGUID();"
+        },
+        {
+          "line": 174,
+          "text": "case NPC_SHADOWPRIEST_SEZZZIZ:"
+        },
+        {
+          "line": 175,
+          "text": "ShadowpriestGUID = creature->GetGUID();"
+        },
+        {
+          "line": 182,
+          "text": "void OnGameObjectCreate(GameObject* gameobject) override"
+        },
+        {
+          "line": 186,
+          "text": "case GO_END_DOOR:"
+        },
+        {
+          "line": 187,
+          "text": "EndDoorGUID = gameobject->GetGUID();"
+        },
+        {
+          "line": 188,
+          "text": "if (PyramidPhase == PYRAMID_DONE)"
+        },
+        {
+          "line": 190,
+          "text": "HandleGameObject(gameobject->GetGUID(), true, gameobject);"
+        },
+        {
+          "line": 202,
+          "text": "case NPC_BLY:"
+        },
+        {
+          "line": 203,
+          "text": "PyramidPhase = PYRAMID_DONE;"
+        },
+        {
+          "line": 204,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 205,
+          "text": "HandleGameObject(EndDoorGUID, true);"
+        },
+        {
+          "line": 207,
+          "text": "case NPC_WEEGLI:"
+        },
+        {
+          "line": 210,
+          "text": "HandleGameObject(EndDoorGUID, true);"
+        },
+        {
+          "line": 217,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 221,
+          "text": "case DATA_PYRAMID:"
+        },
+        {
+          "line": 224,
+          "text": "case DATA_GAHZRILLA:"
+        },
+        {
+          "line": 231,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 234,
+          "text": "uint32 GetData(uint32 type) const override"
+        },
+        {
+          "line": 238,
+          "text": "case DATA_PYRAMID:"
+        },
+        {
+          "line": 240,
+          "text": "case DATA_GAHZRILLA:"
+        },
+        {
+          "line": 247,
+          "text": "ObjectGuid GetGuidData(uint32 data) const override"
+        },
+        {
+          "line": 251,
+          "text": "case NPC_BLY:"
+        },
+        {
+          "line": 252,
+          "text": "return BlyGUID;"
+        },
+        {
+          "line": 253,
+          "text": "case NPC_RAVEN:"
+        },
+        {
+          "line": 254,
+          "text": "return RavenGUID;"
+        },
+        {
+          "line": 255,
+          "text": "case NPC_ORO:"
+        },
+        {
+          "line": 256,
+          "text": "return OroGUID;"
+        },
+        {
+          "line": 257,
+          "text": "case NPC_WEEGLI:"
+        },
+        {
+          "line": 258,
+          "text": "return WeegliGUID;"
+        },
+        {
+          "line": 259,
+          "text": "case NPC_MURTA:"
+        },
+        {
+          "line": 260,
+          "text": "return MurtaGUID;"
+        },
+        {
+          "line": 261,
+          "text": "case NPC_SHADOWPRIEST_SEZZZIZ:"
+        },
+        {
+          "line": 262,
+          "text": "return ShadowpriestGUID;"
+        },
+        {
+          "line": 263,
+          "text": "case GO_END_DOOR:"
+        },
+        {
+          "line": 264,
+          "text": "return EndDoorGUID;"
+        },
+        {
+          "line": 267,
+          "text": "return ObjectGuid::Empty;"
+        },
+        {
+          "line": 270,
+          "text": "void Update(uint32 diff) override"
+        },
+        {
+          "line": 274,
+          "text": "case PYRAMID_NOT_STARTED:"
+        },
+        {
+          "line": 279,
+          "text": "case PYRAMID_DONE:"
+        },
+        {
+          "line": 283,
+          "text": "SetData(DATA_PYRAMID, PYRAMID_WAVE_1);"
+        },
+        {
+          "line": 291,
+          "text": "SetData(DATA_PYRAMID, PYRAMID_PRE_WAVE_2);"
+        },
+        {
+          "line": 312,
+          "text": "SetData(DATA_PYRAMID, PYRAMID_WAVE_2);"
+        },
+        {
+          "line": 325,
+          "text": "SetData(DATA_PYRAMID, PYRAMID_PRE_WAVE_3);"
+        },
+        {
+          "line": 345,
+          "text": "MoveNPCIfAlive(NPC_BLY, 1887.92f, 1228.179f, 9.98f, 4.78f);"
+        },
+        {
+          "line": 346,
+          "text": "MoveNPCIfAlive(NPC_MURTA, 1891.57f, 1228.68f, 9.69f, 4.78f);"
+        },
+        {
+          "line": 347,
+          "text": "MoveNPCIfAlive(NPC_ORO, 1897.23f, 1228.34f, 9.43f, 4.78f);"
+        },
+        {
+          "line": 348,
+          "text": "MoveNPCIfAlive(NPC_RAVEN, 1883.68f, 1227.95f, 9.543f, 4.78f);"
+        },
+        {
+          "line": 349,
+          "text": "MoveNPCIfAlive(NPC_WEEGLI, 1878.02f, 1227.65f, 9.485f, 4.78f);"
+        },
+        {
+          "line": 350,
+          "text": "SetData(DATA_PYRAMID, PYRAMID_WAVE_3);"
+        },
+        {
+          "line": 351,
+          "text": "if (Creature* sergeantBlye = instance->GetCreature(BlyGUID))"
+        },
+        {
+          "line": 364,
+          "text": "SetData(DATA_PYRAMID, PYRAMID_KILLED_ALL_TROLLS);"
+        },
+        {
+          "line": 365,
+          "text": "MoveNPCIfAlive(NPC_BLY, 1883.82f, 1200.83f, 8.87f, 1.32f);"
+        },
+        {
+          "line": 366,
+          "text": "MoveNPCIfAlive(NPC_MURTA, 1891.83f, 1201.45f, 8.87f, 1.32f);"
+        },
+        {
+          "line": 367,
+          "text": "MoveNPCIfAlive(NPC_ORO, 1894.50f, 1204.40f, 8.87f, 1.32f);"
+        },
+        {
+          "line": 368,
+          "text": "MoveNPCIfAlive(NPC_RAVEN, 1874.11f, 1206.17f, 8.87f, 1.32f);"
+        },
+        {
+          "line": 369,
+          "text": "MoveNPCIfAlive(NPC_WEEGLI, 1877.52f, 1199.63f, 8.87f, 1.32f);"
+        },
+        {
+          "line": 379,
+          "text": "if (Creature* npc = instance->GetCreature(GetGuidData(entry)))"
+        },
+        {
+          "line": 397,
+          "text": "if (pyramidSpawns[i].creatureID == NPC_SHADOWPRIEST_SEZZZIZ || pyramidSpawns[i].creatureID == NPC_NEKRUM_GUTCHEWER)"
+        },
+        {
+          "line": 403,
+          "text": "if (TempSummon* ts = instance->SummonCreature(pyramidSpawns[i].creatureID, pos))"
+        },
+        {
+          "line": 405,
+          "text": "addsAtBase.push_back(ts->GetGUID());"
+        },
+        {
+          "line": 407,
+          "text": "if (pyramidSpawns[i].creatureID != NPC_SHADOWPRIEST_SEZZZIZ && pyramidSpawns[i].creatureID != NPC_NEKRUM_GUTCHEWER)"
+        },
+        {
+          "line": 418,
+          "text": "for (GuidList::iterator itr = addsAtBase.begin(); itr != addsAtBase.end(); ++itr)"
+        },
+        {
+          "line": 420,
+          "text": "if (Creature* add = instance->GetCreature((*itr)))"
+        },
+        {
+          "line": 429,
+          "text": "for (GuidList::iterator itr = movedadds.begin(); itr != movedadds.end(); ++itr)"
+        },
+        {
+          "line": 431,
+          "text": "if (Creature* add = instance->GetCreature(((*itr))))"
+        },
+        {
+          "line": 448,
+          "text": "if (Creature* add = instance->GetCreature(*addsAtBase.begin()))"
+        },
+        {
+          "line": 451,
+          "text": "movedadds.push_back(add->GetGUID());"
+        },
+        {
+          "line": 458,
+          "text": "void ReadSaveDataMore(std::istringstream& data) override"
+        },
+        {
+          "line": 464,
+          "text": "void WriteSaveDataMore(std::ostringstream& data) override"
+        },
+        {
+          "line": 472,
+          "text": "class spell_zulfarrak_summon_zulfarrak_zombies : public SpellScript"
+        },
+        {
+          "line": 474,
+          "text": "PrepareSpellScript(spell_zulfarrak_summon_zulfarrak_zombies);"
+        },
+        {
+          "line": 495,
+          "text": "OnEffectHit += SpellEffectFn(spell_zulfarrak_summon_zulfarrak_zombies::HandleSummon, EFFECT_0, SPELL_EFFECT_SUMMON);"
+        },
+        {
+          "line": 496,
+          "text": "OnEffectHit += SpellEffectFn(spell_zulfarrak_summon_zulfarrak_zombies::HandleSummon, EFFECT_1, SPELL_EFFECT_SUMMON);"
+        },
+        {
+          "line": 501,
+          "text": "class spell_zulfarrak_unlocking : public SpellScript"
+        },
+        {
+          "line": 503,
+          "text": "PrepareSpellScript(spell_zulfarrak_unlocking);"
+        },
+        {
+          "line": 516,
+          "text": "go->UseDoorOrButton(0, false, GetCaster());"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Kalimdor/DireMaul/instance_dire_maul.cpp",
+      "sha": "bc4b9cc916d12a0916aa1ef5dd2f25a9265a18f3",
+      "lineCount": 185,
+      "signals": [
+        {
+          "line": 19,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 20,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 23,
+          "text": "class instance_dire_maul : public InstanceMapScript"
+        },
+        {
+          "line": 26,
+          "text": "instance_dire_maul() : InstanceMapScript(DMScriptName, MAP_DIRE_MAUL) { }"
+        },
+        {
+          "line": 28,
+          "text": "struct instance_dire_maul_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 30,
+          "text": "instance_dire_maul_InstanceMapScript(Map* map) : InstanceScript(map) { }"
+        },
+        {
+          "line": 43,
+          "text": "void OnCreatureCreate(Creature* creature) override"
+        },
+        {
+          "line": 47,
+          "text": "case NPC_IMMOL_THAR:"
+        },
+        {
+          "line": 48,
+          "text": "_immoltharGUID = creature->GetGUID();"
+        },
+        {
+          "line": 58,
+          "text": "case NPC_HIGHBORNE_SUMMONER:"
+        },
+        {
+          "line": 67,
+          "text": "HighborneSummoners.push_back(creature->GetGUID());"
+        },
+        {
+          "line": 72,
+          "text": "void OnGameObjectCreate(GameObject* gameobject) override"
+        },
+        {
+          "line": 92,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 114,
+          "text": "if (Creature* immol = instance->GetCreature(_immoltharGUID))"
+        },
+        {
+          "line": 117,
+          "text": "immol->GetAI()->SetData(1, 1);"
+        },
+        {
+          "line": 120,
+          "text": "for (auto const& guid : HighborneSummoners)"
+        },
+        {
+          "line": 122,
+          "text": "if (Creature* summoner = instance->GetCreature(guid))"
+        },
+        {
+          "line": 131,
+          "text": "SaveToDB();"
+        },
+        {
+          "line": 134,
+          "text": "uint32 GetData(uint32 type) const override"
+        },
+        {
+          "line": 146,
+          "text": "void ReadSaveDataMore(std::istringstream& data) override"
+        },
+        {
+          "line": 155,
+          "text": "void WriteSaveDataMore(std::ostringstream& data) override"
+        },
+        {
+          "line": 171,
+          "text": "ObjectGuid _immoltharGUID;"
+        },
+        {
+          "line": 172,
+          "text": "std::vector<ObjectGuid> HighborneSummoners;"
+        },
+        {
+          "line": 175,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 177,
+          "text": "return new instance_dire_maul_InstanceMapScript(map);"
+        },
+        {
+          "line": 181,
+          "text": "void AddSC_instance_dire_maul()"
+        },
+        {
+          "line": 183,
+          "text": "new instance_dire_maul();"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/TheStockade/instance_the_stockade.cpp",
+      "sha": "c6ab152e8974af8c78e75c0d25fac9c9667802b0",
+      "lineCount": 41,
+      "signals": [
+        {
+          "line": 18,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 19,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 21,
+          "text": "class instance_the_stockade : public InstanceMapScript"
+        },
+        {
+          "line": 24,
+          "text": "instance_the_stockade() : InstanceMapScript(\"instance_the_stockade\", MAP_STORMWIND_STOCKADE) { }"
+        },
+        {
+          "line": 26,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 28,
+          "text": "return new instance_the_stockade_InstanceMapScript(map);"
+        },
+        {
+          "line": 31,
+          "text": "struct instance_the_stockade_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 33,
+          "text": "instance_the_stockade_InstanceMapScript(Map* map) : InstanceScript(map) { }"
+        },
+        {
+          "line": 37,
+          "text": "void AddSC_instance_the_stockade()"
+        },
+        {
+          "line": 39,
+          "text": "new instance_the_stockade();"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Kalimdor/RagefireChasm/instance_ragefire_chasm.cpp",
+      "sha": "cba39a8c20867d57ab3e80e312147881c330fe8b",
+      "lineCount": 41,
+      "signals": [
+        {
+          "line": 18,
+          "text": "#include \"InstanceMapScript.h\""
+        },
+        {
+          "line": 19,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 21,
+          "text": "class instance_ragefire_chasm : public InstanceMapScript"
+        },
+        {
+          "line": 24,
+          "text": "instance_ragefire_chasm() : InstanceMapScript(\"instance_ragefire_chasm\", MAP_RAGEFIRE_CHASM) { }"
+        },
+        {
+          "line": 26,
+          "text": "InstanceScript* GetInstanceScript(InstanceMap* map) const override"
+        },
+        {
+          "line": 28,
+          "text": "return new instance_ragefire_chasm_InstanceMapScript(map);"
+        },
+        {
+          "line": 31,
+          "text": "struct instance_ragefire_chasm_InstanceMapScript : public InstanceScript"
+        },
+        {
+          "line": 33,
+          "text": "instance_ragefire_chasm_InstanceMapScript(Map* map) : InstanceScript(map) { }"
+        },
+        {
+          "line": 37,
+          "text": "void AddSC_instance_ragefire_chasm()"
+        },
+        {
+          "line": 39,
+          "text": "new instance_ragefire_chasm();"
+        }
+      ]
+    }
+  ]
+}

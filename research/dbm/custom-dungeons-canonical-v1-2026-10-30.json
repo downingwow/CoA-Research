@@ -114,7 +114,8 @@
       "references": [
         "research/dbm/road-to-de-other-side-three-boss-source-audit-2026-10-30.md",
         "research/dbm/road-to-de-other-side-phase-timelines-v1-2026-10-30.json",
-        "research/dbm/road-to-de-other-side-sql-difficulty-fixes-2026-10-30.md"
+        "research/dbm/road-to-de-other-side-sql-difficulty-fixes-2026-10-30.md",
+        "research/dbm/road-trash-abilities-source-v1-2026-10-30.json"
       ],
       "healthSource": "data/sql/updates/pending_db_world/rev_20261029_82_coa_road_to_de_other_side_health_immunities.sql",
       "difficultyHealth": [
@@ -463,7 +464,13 @@
         ]
       },
       "batKillCreditNpcId": 163814,
-      "lootStatus": "No Road boss loot rows established in examined pending SQL; do not infer absence in base DB"
+      "lootStatus": "No Road boss loot rows established in examined pending SQL; do not infer absence in base DB",
+      "trashAbilities": {
+        "sourceFile": "research/dbm/road-trash-abilities-source-v1-2026-10-30.json",
+        "npcCount": 16,
+        "scheduledAbilityCount": 31,
+        "source": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/blob/main/src/server/coa/CoAOtherSideTrash.cpp"
+      }
     },
     {
       "name": "Vaults of the Inquisition",

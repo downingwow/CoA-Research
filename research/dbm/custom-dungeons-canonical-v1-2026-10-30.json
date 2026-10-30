@@ -793,7 +793,10 @@
         "research/dbm/road-vaults-loot-and-spell-binding-audit-v1-2026-10-30.json",
         "research/dbm/road-vaults-difficulty-loot-runtime-audit-2026-10-30.md",
         "research/shared/dungeon-loot-runtime-validation-rules-2026-10-30.md",
-        "research/dbm/vaults-full-spell-sql-and-cpp-index-2026-10-30.json"
+        "research/dbm/vaults-full-spell-sql-and-cpp-index-2026-10-30.json",
+        "research/loot/vaults-complete-creature-loot-2026-10-30.json",
+        "research/dbm/vaults-complete-mechanics-source-evidence-2026-10-30.json",
+        "research/dbm/vaults-instance-difficulty-sql-index-2026-10-30.json"
       ],
       "trashSource": "src/server/coa/CoAVaults.cpp",
       "cautions": [
@@ -1051,7 +1054,9 @@
       "lootSpellAuditSource": "research/dbm/road-vaults-loot-and-spell-binding-audit-v1-2026-10-30.json",
       "difficultyLootRuntimeSource": "research/dbm/road-vaults-difficulty-loot-runtime-audit-2026-10-30.md",
       "sharedLootValidationRules": "research/shared/dungeon-loot-runtime-validation-rules-2026-10-30.md",
-      "fullSourceIndex": "research/dbm/vaults-full-spell-sql-and-cpp-index-2026-10-30.json"
+      "fullSourceIndex": "research/dbm/vaults-full-spell-sql-and-cpp-index-2026-10-30.json",
+      "fullCreatureLootSource": "research/loot/vaults-complete-creature-loot-2026-10-30.json",
+      "fullMechanicEvidenceSource": "research/dbm/vaults-complete-mechanics-source-evidence-2026-10-30.json"
     },
     {
       "name": "Frozen Reach (custom map)",

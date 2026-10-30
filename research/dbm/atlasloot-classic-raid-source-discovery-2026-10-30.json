@@ -1,0 +1,150 @@
+{
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "scope": "AtlasLoot Classic raids",
+  "verification": "Source discovery only, not boss mechanics verification",
+  "results": [
+    {
+      "q": "molten core",
+      "paths": [
+        "src/server/scripts/EasternKingdoms/BlackrockMountain/MoltenCore/molten_core.h",
+        "src/server/scripts/EasternKingdoms/BlackrockMountain/MoltenCore/molten_core.cpp",
+        "docs/coa/molten-core.md",
+        "data/sql/updates/pending_db_world/rev_20260930_84_molten_core_trash.sql",
+        "data/sql/updates/pending_db_world/rev_20260930_81_molten_core_health.sql",
+        "data/sql/updates/pending_db_world/rev_20260930_82_molten_core_access.sql",
+        "data/sql/updates/pending_db_world/rev_20260930_85_molten_core_boss_kits.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_70_molten_core_item_pool.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_12_molten_core_token_loot.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_17_molten_core_loot_fixes.sql",
+        "data/sql/updates/pending_db_world/rev_20260930_83_molten_core_damage_info.sql",
+        "data/sql/updates/pending_db_world/rev_20260930_86_molten_core_boss_scripts.sql",
+        "data/sql/updates/pending_db_world/rev_20260930_94_molten_core_health_pools.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_50_molten_core_tokens_per_boss.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_19_molten_core_fire_lord_cache.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_08_molten_core_majordomo_portal.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_40_molten_core_real_tier_tokens.sql",
+        "data/sql/updates/pending_db_world/rev_20260930_98_molten_core_lucifron_position.sql",
+        "data/sql/updates/pending_db_world/rev_20261005_10_molten_core_fierce_blow_windows.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_13_molten_core_restore_spawn_masks.sql",
+        "data/sql/updates/pending_db_world/rev_20260930_99_molten_core_trash_all_difficulties.sql",
+        "data/sql/updates/pending_db_world/rev_20260930_93_molten_core_trash_knockback_immunity.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_i1_molten_core_majordomo_portal_dynamic.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_16_molten_core_summon_knockback_immunity.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_81_molten_core_ragnaros_band_of_sulfuras.sql",
+        "data/sql/updates/pending_db_world/rev_20261005_11_molten_core_trash_fierce_blow.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_15_molten_core_variant_smart_scripts_audit.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_90_molten_core_majordomo_room_center_refine.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_11_molten_core_melee_damage_ladder.sql",
+        "data/sql/updates/pending_db_world/rev_20261001_41_molten_core_scaled_nonset_epics.sql"
+      ]
+    },
+    {
+      "q": "blackwing lair",
+      "paths": [
+        "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/blackwing_lair.h",
+        "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/instance_blackwing_lair.cpp",
+        "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_ebonroc.cpp",
+        "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_firemaw.cpp",
+        "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_flamegor.cpp",
+        "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_razorgore.cpp",
+        "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_chromaggus.cpp",
+        "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_broodlord_lashlayer.cpp",
+        "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_vaelastrasz.cpp",
+        "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_nefarian.cpp",
+        "src/server/scripts/EasternKingdoms/eastern_kingdoms_script_loader.cpp",
+        "data/sql/updates/pending_db_world/rev_20261010_97_coa_item_portals.sql",
+        "data/sql/updates/pending_db_world/rev_20261006_40_ascension_callboard_cache_points.sql",
+        "data/sql/updates/pending_db_world/zzzz_rev_20261025_100_manastorm_s9_classic_cache_progression.sql",
+        "data/sql/updates/pending_db_world/rev_20261023_03_vanity_store_prices.sql",
+        "data/sql/updates/pending_db_world/rev_20261024_01_vanity_unsold_zero_price.sql"
+      ]
+    },
+    {
+      "q": "zul gurub",
+      "paths": [
+        "src/server/scripts/EasternKingdoms/ZulGurub/instance_zulgurub.cpp",
+        "src/server/scripts/EasternKingdoms/ZulGurub/boss_hakkar.cpp",
+        "src/server/scripts/EasternKingdoms/ZulGurub/zulgurub.h",
+        "src/server/scripts/EasternKingdoms/ZulGurub/zulgurub.cpp",
+        "src/server/scripts/EasternKingdoms/ZulGurub/boss_jindo.cpp",
+        "src/server/scripts/EasternKingdoms/ZulGurub/boss_grilek.cpp",
+        "src/server/scripts/EasternKingdoms/ZulGurub/boss_arlokk.cpp",
+        "src/server/scripts/EasternKingdoms/ZulGurub/boss_hazzarah.cpp",
+        "src/server/scripts/EasternKingdoms/ZulGurub/boss_gahzranka.cpp",
+        "src/server/scripts/EasternKingdoms/ZulGurub/boss_wushoolay.cpp",
+        "src/server/scripts/EasternKingdoms/ZulGurub/boss_venoxis.cpp",
+        "src/server/scripts/EasternKingdoms/ZulGurub/boss_renataki.cpp",
+        "src/server/scripts/EasternKingdoms/ZulGurub/boss_mandokir.cpp",
+        "src/server/scripts/EasternKingdoms/ZulGurub/boss_jeklik.cpp",
+        "src/server/scripts/EasternKingdoms/ZulGurub/boss_marli.cpp",
+        "src/server/scripts/EasternKingdoms/eastern_kingdoms_script_loader.cpp",
+        "src/server/scripts/EasternKingdoms/ZulGurub/boss_thekal.cpp"
+      ]
+    },
+    {
+      "q": "onyxia",
+      "paths": [
+        "src/server/scripts/Kalimdor/OnyxiasLair/boss_onyxia.cpp",
+        "src/server/scripts/Kalimdor/OnyxiasLair/onyxias_lair.h",
+        "src/server/scripts/Kalimdor/OnyxiasLair/instance_onyxias_lair.cpp",
+        "src/server/scripts/Kalimdor/kalimdor_script_loader.cpp",
+        "src/server/scripts/Spells/spell_generic.cpp",
+        "src/server/scripts/Custom/spell_basalthane.cpp",
+        "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/instance_blackwing_lair.cpp",
+        "data/sql/updates/pending_db_world/rev_20261010_97_coa_item_portals.sql"
+      ]
+    },
+    {
+      "q": "ahnqiraj",
+      "paths": [
+        "src/server/scripts/Kalimdor/RuinsOfAhnQiraj/ruins_of_ahnqiraj.h",
+        "src/server/scripts/Kalimdor/TempleOfAhnQiraj/temple_of_ahnqiraj.h",
+        "src/server/scripts/Kalimdor/RuinsOfAhnQiraj/ruins_of_ahnqiraj.cpp",
+        "src/server/scripts/Kalimdor/TempleOfAhnQiraj/temple_of_ahnqiraj.cpp",
+        "src/server/scripts/Kalimdor/RuinsOfAhnQiraj/instance_ruins_of_ahnqiraj.cpp",
+        "src/server/scripts/Kalimdor/TempleOfAhnQiraj/instance_temple_of_ahnqiraj.cpp",
+        "src/server/scripts/Kalimdor/RuinsOfAhnQiraj/boss_kurinnaxx.cpp",
+        "src/server/scripts/Kalimdor/TempleOfAhnQiraj/boss_fankriss.cpp",
+        "src/server/scripts/Kalimdor/RuinsOfAhnQiraj/boss_buru.cpp",
+        "src/server/scripts/Kalimdor/TempleOfAhnQiraj/boss_sartura.cpp",
+        "src/server/scripts/Kalimdor/TempleOfAhnQiraj/boss_ouro.cpp",
+        "src/server/scripts/Kalimdor/RuinsOfAhnQiraj/boss_moam.cpp",
+        "src/server/scripts/Kalimdor/TempleOfAhnQiraj/boss_huhuran.cpp",
+        "src/server/scripts/Kalimdor/RuinsOfAhnQiraj/boss_ayamiss.cpp",
+        "src/server/scripts/Kalimdor/TempleOfAhnQiraj/boss_viscidus.cpp",
+        "src/server/scripts/Kalimdor/RuinsOfAhnQiraj/boss_rajaxx.cpp",
+        "src/server/scripts/Kalimdor/TempleOfAhnQiraj/boss_bug_trio.cpp",
+        "src/server/scripts/Kalimdor/TempleOfAhnQiraj/boss_cthun.cpp",
+        "src/server/scripts/Kalimdor/TempleOfAhnQiraj/boss_skeram.cpp",
+        "src/server/scripts/Kalimdor/TempleOfAhnQiraj/boss_twinemperors.cpp",
+        "src/server/scripts/Kalimdor/RuinsOfAhnQiraj/boss_ossirian.cpp",
+        "src/server/scripts/Kalimdor/kalimdor_script_loader.cpp"
+      ]
+    },
+    {
+      "q": "naxxramas",
+      "paths": [
+        "src/server/scripts/Northrend/Naxxramas/naxxramas.h",
+        "src/server/scripts/Northrend/Naxxramas/boss_faerlina.cpp",
+        "src/server/scripts/Northrend/Naxxramas/instance_naxxramas.cpp",
+        "src/server/scripts/Northrend/Naxxramas/boss_anubrekhan.cpp",
+        "src/server/scripts/Northrend/Naxxramas/boss_loatheb.cpp",
+        "src/server/scripts/Northrend/Naxxramas/boss_heigan.cpp",
+        "src/server/scripts/Northrend/Naxxramas/boss_patchwerk.cpp",
+        "src/server/scripts/Northrend/Naxxramas/boss_grobbulus.cpp",
+        "src/server/scripts/Northrend/Naxxramas/boss_maexxna.cpp",
+        "src/server/scripts/Northrend/Naxxramas/boss_noth.cpp",
+        "src/server/scripts/Northrend/Naxxramas/boss_gluth.cpp",
+        "src/server/scripts/Northrend/Naxxramas/boss_razuvious.cpp",
+        "src/server/scripts/Northrend/Naxxramas/boss_thaddius.cpp",
+        "src/server/scripts/Northrend/Naxxramas/boss_gothik.cpp",
+        "src/server/scripts/Northrend/Naxxramas/boss_sapphiron.cpp",
+        "src/server/scripts/Northrend/Naxxramas/boss_four_horsemen.cpp",
+        "src/server/scripts/Northrend/Naxxramas/boss_kelthuzad.cpp",
+        "src/server/scripts/Northrend/northrend_script_loader.cpp",
+        "src/server/scripts/Northrend/zone_dragonblight.cpp",
+        "src/server/scripts/World/scourge_invasion.h"
+      ]
+    }
+  ]
+}

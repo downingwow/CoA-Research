@@ -101,27 +101,33 @@ def run(max_files):
             category_ids = {}
             record_count = 0
             paths = []
+            new_in_category = 0
             for entry in selected:
-                if processed >= max_files or len(paths) >= per_category_cap:
+                if processed >= max_files or new_in_category >= per_category_cap:
                     break
                 if entry.get("size", 0) > 24_000_000:
                     manifest["errors"].append({"source": repo, "path": entry["path"], "error": "file exceeds 24MB safety limit"})
                     continue
                 url = "https://raw.githubusercontent.com/" + repo + "/" + ref + "/" + entry["path"]
                 try:
-                    raw = get(url)
-                    # Preserve complete upstream records in compressed, sharded form.
                     shard = OUT / repo.replace("/", "__") / entry["path"]
-                    shard.parent.mkdir(parents=True, exist_ok=True)
-                    with gzip.open(str(shard) + ".gz", "wb", compresslevel=6) as f:
-                        f.write(raw)
+                    saved = pathlib.Path(str(shard) + ".gz")
+                    if saved.exists():
+                        with gzip.open(saved, "rb") as f:
+                            raw = f.read()
+                    else:
+                        raw = get(url)
+                        shard.parent.mkdir(parents=True, exist_ok=True)
+                        with gzip.open(saved, "wb", compresslevel=6) as f:
+                            f.write(raw)
+                        new_in_category += 1
+                        processed += 1
                     paths.append({"path": entry["path"], "bytes": len(raw), "sha256": hashlib.sha256(raw).hexdigest()})
                     for record in parse_records(raw, entry["path"]):
                         record_count += 1
                         for ident, name in ids_from(record, category):
                             if ident not in category_ids:
                                 category_ids[ident] = name
-                    processed += 1
                 except Exception as exc:
                     manifest["errors"].append({"source": repo, "path": entry["path"], "error": str(exc)})
             index_dir = OUT / "indexes"

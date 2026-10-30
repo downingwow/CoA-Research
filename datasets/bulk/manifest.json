@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T07:59:49.728605+00:00",
+  "generatedAt": "2026-10-30T08:12:33.501024+00:00",
   "sources": [
     {
       "repository": "srhinos/coa-datamine",
@@ -105,13 +105,1398 @@
           "path": "data/spells/by-id/spells-1240000.jsonl",
           "bytes": 710212,
           "sha256": "9bdde34cfc4d3127d44febe9ab4d03e77c76caf31bfc6a566c97e6344486190e"
+        },
+        {
+          "path": "data/spells/by-id/spells-1250000.jsonl",
+          "bytes": 1037313,
+          "sha256": "a6ca819146c8f4742e03d28260e93716d72f6bd1bd86d47ccd4f8ecceaab9cca"
+        },
+        {
+          "path": "data/spells/by-id/spells-1260000.jsonl",
+          "bytes": 269570,
+          "sha256": "31f5032aaae84ea7d8f3d804e71c312708f7a3cac7279810b6978bd63c6b94e6"
+        },
+        {
+          "path": "data/spells/by-id/spells-1270000.jsonl",
+          "bytes": 8059,
+          "sha256": "2e8b126a002fd2363db0253227880d139b4e2d0e9be1b9532417c89f78186668"
+        },
+        {
+          "path": "data/spells/by-id/spells-1280000.jsonl",
+          "bytes": 58570,
+          "sha256": "d7b62c05e1f35533f39f80228dc50b98d9e4b039f813904eaa3eeeb2b9046be4"
+        },
+        {
+          "path": "data/spells/by-id/spells-1290000.jsonl",
+          "bytes": 71322,
+          "sha256": "0d0851e3d2075484f5c74ace92136b025c9eac22bfef9408ade1be728adcb3cf"
+        },
+        {
+          "path": "data/spells/by-id/spells-130000.jsonl",
+          "bytes": 5137,
+          "sha256": "cc5dc13a352cf11389e3e14e8fba1e53829e942409fcb62c12bd153ea123f9c5"
+        },
+        {
+          "path": "data/spells/by-id/spells-1390000.jsonl",
+          "bytes": 2432,
+          "sha256": "cfaa6727cfe3d49b98a5edc66fcbd4afe2f992bb5921e53bd0957043e6ba45a2"
+        },
+        {
+          "path": "data/spells/by-id/spells-150000.jsonl",
+          "bytes": 8449,
+          "sha256": "552991a01012da9e653ac99aadfd6759d9acdac52ed444fd50bac3bbd3d318be"
+        },
+        {
+          "path": "data/spells/by-id/spells-1560000.jsonl",
+          "bytes": 1772,
+          "sha256": "9e5baa1b77783a7ef0344344113d38b288e31c7b43d20c6594364e0b2a3478f0"
+        },
+        {
+          "path": "data/spells/by-id/spells-1570000.jsonl",
+          "bytes": 96314,
+          "sha256": "89fb09bb2f5cf358ee2286aa99fa1007a79321cc071e4c7a3b2d8a1d0660cb8c"
+        },
+        {
+          "path": "data/spells/by-id/spells-1580000.jsonl",
+          "bytes": 31974,
+          "sha256": "faac78b078475404132f67fef17d2e386c9d157d1dc47a131394abb1fc3a25b9"
+        },
+        {
+          "path": "data/spells/by-id/spells-1760000.jsonl",
+          "bytes": 11705,
+          "sha256": "6ebe4f28047554315f952b5359d5ca6a37c5fcb9dd5e32a6655c00f577a61a5f"
+        },
+        {
+          "path": "data/spells/by-id/spells-190000.jsonl",
+          "bytes": 446320,
+          "sha256": "1c91a3a26f71248e39f9f9b0dad4be15477bc502e9e0a471cb8fd5c91b0e2b94"
+        },
+        {
+          "path": "data/spells/by-id/spells-1950000.jsonl",
+          "bytes": 14500,
+          "sha256": "f5d6274b7e2fbc56cf49554f38036b91be72a0a5c5d9eb267ae10679edab2449"
+        },
+        {
+          "path": "data/spells/by-id/spells-20000.jsonl",
+          "bytes": 1665124,
+          "sha256": "1ff975decc3ecb61c07ed4f7f69a09dc521e28f0de4b581c5817d6571a0a1e59"
+        },
+        {
+          "path": "data/spells/by-id/spells-200000.jsonl",
+          "bytes": 2845,
+          "sha256": "a050f37e91860536eab853142faf532667c9bb04ee438ea88beb84c5036f501d"
+        },
+        {
+          "path": "data/spells/by-id/spells-210000.jsonl",
+          "bytes": 2706,
+          "sha256": "c42fa0f622fa95d8861ededc710bffbf79a67fad684c9d887119f8319f8a37d4"
+        },
+        {
+          "path": "data/spells/by-id/spells-2170000.jsonl",
+          "bytes": 55875,
+          "sha256": "09daaa5cbf7332482b3903bbedc97d91ec217268c087e674ec8e83d9596409aa"
+        },
+        {
+          "path": "data/spells/by-id/spells-2410000.jsonl",
+          "bytes": 3045,
+          "sha256": "865c97b779e5e6f5d3a5d3f24b8452f5d1927ead35a6ba35b638603c1e2b2cad"
+        },
+        {
+          "path": "data/spells/by-id/spells-250000.jsonl",
+          "bytes": 11334,
+          "sha256": "14fd3c39ce2b987adcca753234b1eed50f1dcdac1af2c34cccac72d7bcd7e90d"
+        },
+        {
+          "path": "data/spells/by-id/spells-260000.jsonl",
+          "bytes": 8522,
+          "sha256": "6931f6bc475d26995737a877cf58e08db62ca9e9affcf258f34f58ea43c3660e"
+        },
+        {
+          "path": "data/spells/by-id/spells-270000.jsonl",
+          "bytes": 99919,
+          "sha256": "0f519ded243012a16fbec8b10cd9e7eaf5c7199cf5a80020f921d6cb57dd4305"
+        },
+        {
+          "path": "data/spells/by-id/spells-280000.jsonl",
+          "bytes": 22937,
+          "sha256": "49c58aa02737d2c50e89ac9f4004959bd049c042be5e6c2ffc40fb43edaba60b"
+        },
+        {
+          "path": "data/spells/by-id/spells-290000.jsonl",
+          "bytes": 2051,
+          "sha256": "7c5bd7b21642440f7c619302bc7802997f5f794e2bef0d10e700aaa55e0059e8"
+        },
+        {
+          "path": "data/spells/by-id/spells-30000.jsonl",
+          "bytes": 1356321,
+          "sha256": "94b5df0dbc8abf85284f347a05b5b208a87559e71b2e1f8c98ab30a29f7851b5"
+        },
+        {
+          "path": "data/spells/by-id/spells-300000.jsonl",
+          "bytes": 1718053,
+          "sha256": "1a5fdf66ea102b5444746a9372b41ce18a281bd94c4064e6857a6ae971940068"
+        },
+        {
+          "path": "data/spells/by-id/spells-310000.jsonl",
+          "bytes": 2441,
+          "sha256": "7aef412d58168501c977fe37f7c106c3f8208fe1009c41b036536971c972a5e4"
+        },
+        {
+          "path": "data/spells/by-id/spells-350000.jsonl",
+          "bytes": 11377,
+          "sha256": "df69ab837d66e0146d7e716f0699b26b795a6ed5f2dcdb6242eae422fd7f9bc8"
+        },
+        {
+          "path": "data/spells/by-id/spells-40000.jsonl",
+          "bytes": 1939773,
+          "sha256": "40ca05f5981c9ffa13d29e8253d1f73cfc3aed406f2e957b4a3782d6a7754ec6"
+        },
+        {
+          "path": "data/spells/by-id/spells-410000.jsonl",
+          "bytes": 59569,
+          "sha256": "b0ae5ddc4968cb35c129ae6b5aa29318fbb9438111737aef03d36be24396d59b"
         }
       ],
-      "parsedRecords": 12164,
-      "distinctIds": 12164,
+      "parsedRecords": 16279,
+      "distinctIds": 16279,
       "index": "datasets/bulk/indexes/srhinos__coa-datamine__spells.json.gz"
+    },
+    {
+      "repository": "srhinos/coa-datamine",
+      "ref": "master",
+      "category": "npcs",
+      "files": [
+        {
+          "path": "data/creatures/creatures-0.jsonl",
+          "bytes": 236043,
+          "sha256": "6b7365ae745c02a064fe09b7985714ba8234c4105cd3cf4c55640e51b4d820ab"
+        },
+        {
+          "path": "data/creatures/creatures-10000.jsonl",
+          "bytes": 131489,
+          "sha256": "bb8236e53bd5ee52497c6876f944151d5defd599e165753e9192d77528dd3e64"
+        },
+        {
+          "path": "data/creatures/creatures-100000.jsonl",
+          "bytes": 45463,
+          "sha256": "70f089a31a68656550b43ae610df678983e83423406e3d3156ca748436ef59d0"
+        },
+        {
+          "path": "data/creatures/creatures-1000000.jsonl",
+          "bytes": 6846,
+          "sha256": "df3d1974ec3efe155afef3ed47d0a050e14e2b8dccc5affdd2dc988ac19f4b71"
+        },
+        {
+          "path": "data/creatures/creatures-1005000.jsonl",
+          "bytes": 11196,
+          "sha256": "5b1b24adad8291d70c6c4857d831f142889bc3fd23f2d98c6a935c1af042a4d4"
+        },
+        {
+          "path": "data/creatures/creatures-1010000.jsonl",
+          "bytes": 7208,
+          "sha256": "955bf60a29b80a5e9747d15219a4e5eb9d7bd3f4a927c460cb60941d141a0dab"
+        },
+        {
+          "path": "data/creatures/creatures-10110000.jsonl",
+          "bytes": 921,
+          "sha256": "9016fab4b6353fc20c22956cc5e6f70426bed3cc8d0de97a9d201e954753ee47"
+        },
+        {
+          "path": "data/creatures/creatures-1015000.jsonl",
+          "bytes": 12545,
+          "sha256": "c31c5acc8d9764039944c8146c61eba77579cf56f12763df0698dd5a6fb812d8"
+        },
+        {
+          "path": "data/creatures/creatures-10155000.jsonl",
+          "bytes": 914,
+          "sha256": "80161bbc67403934ba54ebbb3ffe16d88b218ca70160e85dd244e22c1a1ee8f4"
+        },
+        {
+          "path": "data/creatures/creatures-1020000.jsonl",
+          "bytes": 563,
+          "sha256": "5f25f290895c90872e3acaa97afba7fec4fab55c52e43afd723efd060a04303f"
+        },
+        {
+          "path": "data/creatures/creatures-1025000.jsonl",
+          "bytes": 1702,
+          "sha256": "7c35a509bd4d623c670856a6545ae292404d8922b9f5cca1fb3b67cc533624dd"
+        },
+        {
+          "path": "data/creatures/creatures-10250000.jsonl",
+          "bytes": 1094,
+          "sha256": "7a8ff95e41af7c1f0a184a4845fca6c59b240594e4bbaa62e6ae22fe83c9de91"
+        },
+        {
+          "path": "data/creatures/creatures-10255000.jsonl",
+          "bytes": 114,
+          "sha256": "0795ae68471c9473a39716ef4e3f959a02171a2d8fb7d7f227074a41919e5412"
+        },
+        {
+          "path": "data/creatures/creatures-1030000.jsonl",
+          "bytes": 769,
+          "sha256": "db99acdd1d9cd135568c6e27aeb93c7c770a4d605af62cec4c6deab86d53adac"
+        },
+        {
+          "path": "data/creatures/creatures-1035000.jsonl",
+          "bytes": 172,
+          "sha256": "d8423a33d7609b1c81a211adbd1d117766c0ea88bb07d13dfef4ffebbde470a0"
+        },
+        {
+          "path": "data/creatures/creatures-10350000.jsonl",
+          "bytes": 340,
+          "sha256": "0babcc891d9a2245df6fd601e2fc6e6a5408d7f4e2813659a186e4b90f6f1838"
+        },
+        {
+          "path": "data/creatures/creatures-1040000.jsonl",
+          "bytes": 53,
+          "sha256": "1529b5767efbf7320aae5b51bfaf1bf44727b393651e80eb36459e8bfdf5fc52"
+        },
+        {
+          "path": "data/creatures/creatures-10490000.jsonl",
+          "bytes": 60,
+          "sha256": "46ded76191a4a2fa57da30626056b5210c6791ca850e2cceb5d23bd77d5771c8"
+        },
+        {
+          "path": "data/creatures/creatures-105000.jsonl",
+          "bytes": 24119,
+          "sha256": "722d5d8046bee2b55712d2a287a4d5925949ff1de00e4419caa6941a58072a39"
+        },
+        {
+          "path": "data/creatures/creatures-1050000.jsonl",
+          "bytes": 3837,
+          "sha256": "9406ea9e6b3087051999a1eae5ac7addd4b95a5e53e6faa9b5b21d8d7da9aa07"
+        },
+        {
+          "path": "data/creatures/creatures-10500000.jsonl",
+          "bytes": 3673,
+          "sha256": "e214ae9fecb0002f8374923f88c49aad684e783229df3315f75227c531b7c338"
+        },
+        {
+          "path": "data/creatures/creatures-1060000.jsonl",
+          "bytes": 74,
+          "sha256": "a0ba1fce020c0b35e3cb489bb596f74e104cd78875d790f7ef57145030edeccd"
+        },
+        {
+          "path": "data/creatures/creatures-1065000.jsonl",
+          "bytes": 187,
+          "sha256": "816755018c4825a31b63aaee93a549589f121f3f4485b2f14bb891eb5349f760"
+        },
+        {
+          "path": "data/creatures/creatures-1070000.jsonl",
+          "bytes": 60,
+          "sha256": "1805d8f121d1a6d04a15937d1c07e4681570319769bbc7a9556af7f6e93d4fc1"
+        },
+        {
+          "path": "data/creatures/creatures-1080000.jsonl",
+          "bytes": 79404,
+          "sha256": "7e0e4c19704ff41c23097ee769945a4da4583df3b2f922a826ff2ddbeacea7c0"
+        },
+        {
+          "path": "data/creatures/creatures-1090000.jsonl",
+          "bytes": 1520,
+          "sha256": "6a126b14ae6b24c15a84ebcd73ce7572bdc6036e086813ddde96a011b809beef"
+        },
+        {
+          "path": "data/creatures/creatures-110000.jsonl",
+          "bytes": 34537,
+          "sha256": "031a6b95d331c1aaafda78723104056d932c5bf14028da2a062438d634e1f6ec"
+        },
+        {
+          "path": "data/creatures/creatures-1100000.jsonl",
+          "bytes": 6201,
+          "sha256": "e537624039e8bbad581206736aa149e41bf813894af629164ac18a8c907d90a7"
+        },
+        {
+          "path": "data/creatures/creatures-11000000.jsonl",
+          "bytes": 12187,
+          "sha256": "63036f9812f061b725b55560df5354733c1ac5312fcd256ec4f3c99752c9dd8b"
+        },
+        {
+          "path": "data/creatures/creatures-1105000.jsonl",
+          "bytes": 2201,
+          "sha256": "a4e9a337b571b0465983ec033b7062a725a64be2a04355b23da253ed5b5c11f7"
+        },
+        {
+          "path": "data/creatures/creatures-1110000.jsonl",
+          "bytes": 948,
+          "sha256": "d7bbe2dd45e985f3e619d26b55e5afe157878b11741abb1ec7bb72c1183dee0f"
+        },
+        {
+          "path": "data/creatures/creatures-1115000.jsonl",
+          "bytes": 8421,
+          "sha256": "592ef1ffdfafba6434525c9484e9af750b8ebe7d3b2d4497dbc1a1cade346961"
+        },
+        {
+          "path": "data/creatures/creatures-1120000.jsonl",
+          "bytes": 59,
+          "sha256": "08f70f27c6ab16a0c6c7b64fece04dfa149df7c09b668263e386b7533f53aa81"
+        },
+        {
+          "path": "data/creatures/creatures-1125000.jsonl",
+          "bytes": 968,
+          "sha256": "d7eeb4675121a8aef388ee25166522b6707edf07cb129a236533566117d64146"
+        },
+        {
+          "path": "data/creatures/creatures-1130000.jsonl",
+          "bytes": 2582,
+          "sha256": "477975a1ee22fa56e27bea5de7889315e73cfd199d174e4a1d121b3ea78c226b"
+        },
+        {
+          "path": "data/creatures/creatures-1135000.jsonl",
+          "bytes": 55,
+          "sha256": "ba30f4cc3ecf3258f3ef9410bac2110fcbada5bce8fed83cabe8a164824b08e4"
+        },
+        {
+          "path": "data/creatures/creatures-1140000.jsonl",
+          "bytes": 56,
+          "sha256": "33c78740d987b785a91583d9f0c495a400983799e44e3d3de92e881ee97bd5e5"
+        },
+        {
+          "path": "data/creatures/creatures-1145000.jsonl",
+          "bytes": 1515,
+          "sha256": "5b9a2157379f7a2f8414de86349da0f0e2bdffcb178ed01098f19581bf6b76c6"
+        },
+        {
+          "path": "data/creatures/creatures-115000.jsonl",
+          "bytes": 49236,
+          "sha256": "83f1703fbd087a1661ae19ab116626218a1f3dcb8cbbfb03ce6538ef4410e589"
+        },
+        {
+          "path": "data/creatures/creatures-1155000.jsonl",
+          "bytes": 115,
+          "sha256": "f039241ec0b99c4d2d7390920449307cd36b774110c5e978c7178932d5029f12"
+        },
+        {
+          "path": "data/creatures/creatures-1160000.jsonl",
+          "bytes": 58,
+          "sha256": "251e85cc61a548f4e5f6456c18c4c363a6e7ccf5427a4f151d96dd4b0c8d7861"
+        },
+        {
+          "path": "data/creatures/creatures-1165000.jsonl",
+          "bytes": 64,
+          "sha256": "3d2b3d846ff1ea37a20c32242366039b818894f7e20164dc00520b24ccb325e4"
+        },
+        {
+          "path": "data/creatures/creatures-1180000.jsonl",
+          "bytes": 57,
+          "sha256": "30f9b51f6e69cc9213b9f923e3b09db923804de309801dbd11f073a1e38490b0"
+        },
+        {
+          "path": "data/creatures/creatures-1190000.jsonl",
+          "bytes": 1462,
+          "sha256": "b4974dd443602da4e31068c39e36c053d6b35b0601d5fa028b4394cff9230e9b"
+        },
+        {
+          "path": "data/creatures/creatures-120000.jsonl",
+          "bytes": 28406,
+          "sha256": "71c7b52d3124478146e9f050da6114acad1696722bdb8185eff6038eb2bd876a"
+        },
+        {
+          "path": "data/creatures/creatures-1200000.jsonl",
+          "bytes": 2022,
+          "sha256": "10702b46dea043acc23f385700a00b7f36e5d069532c67e6cbaf72973f548119"
+        },
+        {
+          "path": "data/creatures/creatures-1210000.jsonl",
+          "bytes": 201,
+          "sha256": "8666baa29021883c107b03ee7099b84c23512e3e7a7374c2f6db3759c61ab23a"
+        },
+        {
+          "path": "data/creatures/creatures-1215000.jsonl",
+          "bytes": 75,
+          "sha256": "e3786adad3c22cb65cc66d5080a620f217db3a0aab552236cb0f9ae74c6b1c99"
+        },
+        {
+          "path": "data/creatures/creatures-1225000.jsonl",
+          "bytes": 124,
+          "sha256": "05344ef26655454385062aafeb5940883a3c155bfdd6f6fa7524ed7c98aeaf43"
+        },
+        {
+          "path": "data/creatures/creatures-1230000.jsonl",
+          "bytes": 155,
+          "sha256": "975af1e006a830ca1fb8e753cdd5f7d50a08bd6c12c61622f77bd3cc391f9a10"
+        }
+      ],
+      "parsedRecords": 13204,
+      "distinctIds": 13204,
+      "index": "datasets/bulk/indexes/srhinos__coa-datamine__npcs.json.gz"
+    },
+    {
+      "repository": "srhinos/coa-datamine",
+      "ref": "master",
+      "category": "items",
+      "files": [
+        {
+          "path": "data/items/statsByItem/statsByItem-0.jsonl",
+          "bytes": 341015,
+          "sha256": "8aa1f74f38502c8b18fd68ddc43ca97d3c34eeea817526e701f12a9b13bcdad7"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-10000.jsonl",
+          "bytes": 515900,
+          "sha256": "606bc1faa72a8757d0a665d55957c9a6a96ebd9fa9eb5921b097de3f394aa4b0"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-100000.jsonl",
+          "bytes": 314,
+          "sha256": "9eb54e8d2480726120d7b6f4d15b73dc6ac809d3bdf089bfc501a059752afc74"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-1200000.jsonl",
+          "bytes": 948,
+          "sha256": "0b068fb6faaa1b39574eee17971cb7c40f122a906b66430c156a5a3a6a7a5bcb"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-1250000.jsonl",
+          "bytes": 316,
+          "sha256": "92be06c92bcdcd988eee7f124de33dc70ce8dd1dbe23a5e068e9e8db669e67e4"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-135000.jsonl",
+          "bytes": 314,
+          "sha256": "104bafdb7f7a98ce4824e800b360e023de5447972ca1a91db8eeb637c8f2c12b"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-1395000.jsonl",
+          "bytes": 316,
+          "sha256": "1b41fede6d67e5f63aed6503c7ed57b39e752c42e8af101a3f6552c9d010481a"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-1410000.jsonl",
+          "bytes": 1264,
+          "sha256": "16a60f6226c711cf241e5a903e69def8c7eaf80a9d0a0e39202a503c6fac0b74"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-15000.jsonl",
+          "bytes": 312004,
+          "sha256": "ea845b55d2ec261c2ca199f57272b1bcd2a4a548f287ecea62b403a97b9da36f"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-1505000.jsonl",
+          "bytes": 316,
+          "sha256": "f181862a2d96dad94dd50582e7f1d7fd1df516c98364ec988463143939c5a864"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-155000.jsonl",
+          "bytes": 1884,
+          "sha256": "40d5a3345752feeb90cf1c6f25dc4cfc23085dc26ef1857cafc41a6c94451f7a"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-1615000.jsonl",
+          "bytes": 26544,
+          "sha256": "24dafa73ac831c73272c003e07bf086252d801faadcb7258c6c9a634a88cca31"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-190000.jsonl",
+          "bytes": 1256,
+          "sha256": "a1e5b1aa6a84ffbb6e214da81d35d83d9b674a9c59b7e986858456f32c2d6437"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-195000.jsonl",
+          "bytes": 314,
+          "sha256": "22435b123ceb4d456e9087c964d8fa1f3b9ba2e7f775978663c25f744b2a25a2"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-20000.jsonl",
+          "bytes": 198044,
+          "sha256": "aa2b76ac4c48b0c4719a66abf111f6cfb4f2096d59de8283ca1011a76fd4acab"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-200000.jsonl",
+          "bytes": 1884,
+          "sha256": "3dfb48947e96c85abc9f59409c0120df1cea9d88f7bda60dbf6d56c99a3ee0e3"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-2015000.jsonl",
+          "bytes": 632,
+          "sha256": "4d3f31315d8b91b25e34f2e99d09029a18555ccf403d86dd0f7afdc34881a333"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-2035000.jsonl",
+          "bytes": 2212,
+          "sha256": "ae4ca7297e490ec78cc23faa11599c67cf51728dfef70810a53a16ca39d1f28c"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-2045000.jsonl",
+          "bytes": 316,
+          "sha256": "458888eb725aeb31b5935a4eba131d4f3f201b1eb796ccf19d29d8009e0116ff"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-2060000.jsonl",
+          "bytes": 895860,
+          "sha256": "79f06bf699658ad13f7312a4cca01d3ccde8142d8ec8c9808c61046ed50b87bc"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-2065000.jsonl",
+          "bytes": 914188,
+          "sha256": "47d1eee626a352feaf5cfa669a178c76f8c66d3228ed0bb8b7e99147dbcebde6"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-2070000.jsonl",
+          "bytes": 926196,
+          "sha256": "6a94415d6ccdda920775ad7965d7d933a0aa921eaec3f51f6cee048067748648"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-2075000.jsonl",
+          "bytes": 608616,
+          "sha256": "94c9307fc273a44402fdf05d0d6448cba8cb5976b760af77fe4315e80bb6f271"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-2080000.jsonl",
+          "bytes": 316948,
+          "sha256": "4dde799151cea911fa27f3530c9e34d517906b125bff08b2030f1ee7e1723428"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-2085000.jsonl",
+          "bytes": 182332,
+          "sha256": "bb711dc8806a24b2c1695d8bee8d2c4abf7f01a907a45bb87f47659116ad86b7"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-210000.jsonl",
+          "bytes": 1570,
+          "sha256": "fa4bec2ca34df9869cac7870e75ddc6f143deed4401e385edaab501dd2e1f933"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-215000.jsonl",
+          "bytes": 2853,
+          "sha256": "c5a2d71f2914d8df3e90b95803f13e5027192aa327dd7ee9744ff21133a56fd1"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-220000.jsonl",
+          "bytes": 2512,
+          "sha256": "9a3f4b95d1457ef70f417a0b6f3adbbb3a46a1cc46a4a51b555669f13c2bac17"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-2215000.jsonl",
+          "bytes": 452,
+          "sha256": "601e017907de4a60d648dbe9d747f66f4a0f45ef3c26d2ea42879c74ae66de18"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-225000.jsonl",
+          "bytes": 314,
+          "sha256": "4ce5e7c0609a555bf76a8ba509ca7bbbcf3491a23c77b9661c5e24319f2d82e9"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-230000.jsonl",
+          "bytes": 1570,
+          "sha256": "9b1fa018d859ac246258f4107bd7a207a957cf22a42853c819cc75ee4f6fb050"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-2300000.jsonl",
+          "bytes": 22752,
+          "sha256": "e2af6fae2f9f005a76e122223ee80239bc61987c43841e09122684f502195838"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-240000.jsonl",
+          "bytes": 7850,
+          "sha256": "937f61dfba5066c828ca73621fab4c931abb6f5ec27fb9913dcc839655be4aef"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-245000.jsonl",
+          "bytes": 5966,
+          "sha256": "ab8f111be86a27a13699427029fdb86b2fe04dd6570c809f83d92c823903eb9e"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-25000.jsonl",
+          "bytes": 269192,
+          "sha256": "484fddfc19a2637fa1befb85e50c06f3b86e30b321ee11a384022502ec5b1305"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-250000.jsonl",
+          "bytes": 23864,
+          "sha256": "8bfe5349df8ab265521425a383c3ed0c985ec8947981fcaa679d6a594364882e"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-255000.jsonl",
+          "bytes": 11722,
+          "sha256": "4d061a613304614af43e73b3b99c85f2102f28e575f298e0c2969f9b4ab6f145"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-260000.jsonl",
+          "bytes": 942,
+          "sha256": "c8d004f17b45fe99506a1f8ee8336f8e3536322575170c6c76b777bcb036f705"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-265000.jsonl",
+          "bytes": 3454,
+          "sha256": "03f73eecb0a097bcf0fda2019a63c47664806a77d8d354048c7f85b03a9af091"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-270000.jsonl",
+          "bytes": 942,
+          "sha256": "293cf4c88277327be6203c4087fea0c595d80038edeb64d8806f93399cac2baa"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-275000.jsonl",
+          "bytes": 628,
+          "sha256": "f91caaf7171c72e4d2a940bf9bf82e176c3f2e6ea21a338ba0ec9fd081976afe"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-2960000.jsonl",
+          "bytes": 948,
+          "sha256": "f1dbc6d5244ae9558cc866471674800cc0334cd134f45071999ef1b7ea10b1b7"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-2965000.jsonl",
+          "bytes": 1580,
+          "sha256": "3061664f546a1b08277c9f2245da80a6898149455ecb472d243fa3fbd612121b"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-2970000.jsonl",
+          "bytes": 948,
+          "sha256": "3cb209d3c9eeea779b14e3ffebecb747e2357167372fb4685d08d3ab8a45d934"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-30000.jsonl",
+          "bytes": 104412,
+          "sha256": "175d8dde35e5de4f0b2cdaea8bf6416e340b6595448797a0a45bb5acf05641db"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-35000.jsonl",
+          "bytes": 38192,
+          "sha256": "3ef92947b2f7ca82d4e748e73cefce1a912b5cfb0209187b0fb56846bc7c82bf"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-350000.jsonl",
+          "bytes": 1451,
+          "sha256": "0e61da9e50ef50c86ac1497c6cf9a0beb1d8b24a44cc0be400ae25c0e50b0682"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-355000.jsonl",
+          "bytes": 7850,
+          "sha256": "24466f7ac5aa6a2a10d0a383fda9599326b5fe173c64e75c62cd2b74ce26bcb2"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-3595000.jsonl",
+          "bytes": 1078,
+          "sha256": "5d6f22a73a31d95c5ad6a881b71e05e955495ddb7b4add7f4b36cea4502bea9d"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-385000.jsonl",
+          "bytes": 314,
+          "sha256": "6e3f06b831fa0e46a568d2100b9f183aa591f00c66bf87cb4d4caeab1404fe76"
+        }
+      ],
+      "parsedRecords": 18403,
+      "distinctIds": 18403,
+      "index": "datasets/bulk/indexes/srhinos__coa-datamine__items.json.gz"
+    },
+    {
+      "repository": "srhinos/coa-datamine",
+      "ref": "master",
+      "category": "quests",
+      "files": [
+        {
+          "path": "data/quests/quests-0.jsonl",
+          "bytes": 665736,
+          "sha256": "a64f4385edf045b1729d77cbd251a33e39b9c0407d1c992f956074906b9319ed"
+        },
+        {
+          "path": "data/quests/quests-10000.jsonl",
+          "bytes": 1029502,
+          "sha256": "059be1f2b9fcd10da79b8d07a26594e789618525c5473c612ba5a9378eb13f69"
+        },
+        {
+          "path": "data/quests/quests-100000.jsonl",
+          "bytes": 29648,
+          "sha256": "dcdeea05948197c4ad12de256b0c390c760191a2946adf71181e8666044106e2"
+        },
+        {
+          "path": "data/quests/quests-1000000.jsonl",
+          "bytes": 518,
+          "sha256": "eea6339c8c8a8210f5423e21736459310878f60656aace0571f80f656d4811a2"
+        },
+        {
+          "path": "data/quests/quests-1005000.jsonl",
+          "bytes": 343286,
+          "sha256": "a152807ba3434f64b5dc6e01b9f20fc92e93e116a80aa6f9c584a76fc2c6c0d4"
+        },
+        {
+          "path": "data/quests/quests-1035000.jsonl",
+          "bytes": 31024,
+          "sha256": "20458656ad714beb8d048d397e14064aff910fb8dfd97091ff113ac19a0c72a2"
+        },
+        {
+          "path": "data/quests/quests-110000.jsonl",
+          "bytes": 2904,
+          "sha256": "c1439d086b428b2c917b211eee71efb6413b236b0a96d8182cc664db4ce66be7"
+        },
+        {
+          "path": "data/quests/quests-1100000.jsonl",
+          "bytes": 7074,
+          "sha256": "5e1a87824ce416460cbf4751071625377a96f72a5b023d11bf944377d57b8db8"
+        },
+        {
+          "path": "data/quests/quests-1105000.jsonl",
+          "bytes": 17529,
+          "sha256": "39a02f147205a49c5a45874207fc146d1fd7624e9466cb88ef683ef8fe28135e"
+        },
+        {
+          "path": "data/quests/quests-120000.jsonl",
+          "bytes": 520,
+          "sha256": "241a591a0f72205e7936b8792ae6978e1de963e99b98491e59f2a72b86bd38df"
+        },
+        {
+          "path": "data/quests/quests-1205000.jsonl",
+          "bytes": 4675,
+          "sha256": "2e93f607de390db11c221a390b254f9093275ba0966b0abe4915d2d3b49c7b0d"
+        },
+        {
+          "path": "data/quests/quests-1275000.jsonl",
+          "bytes": 2750,
+          "sha256": "c67a3a841cf959a9c58faecd9dd76d0831b40201fab95e475fa00f68b0b42107"
+        },
+        {
+          "path": "data/quests/quests-1280000.jsonl",
+          "bytes": 542,
+          "sha256": "a4bd2b9fe89ea771517f33db95ec1e62054cc9229868c39d8ce3e182a0e57baa"
+        },
+        {
+          "path": "data/quests/quests-1305000.jsonl",
+          "bytes": 3258,
+          "sha256": "dc7389c26e28f65278c13907b499c83620caf172a0c62b138bd19d20a175e0ac"
+        },
+        {
+          "path": "data/quests/quests-1310000.jsonl",
+          "bytes": 542,
+          "sha256": "136ee0ddb744672ee00a297492767014f921a94e16dd55605f06020500c0f3b0"
+        },
+        {
+          "path": "data/quests/quests-140000.jsonl",
+          "bytes": 524,
+          "sha256": "e97aea56e652093bdf4bb4eb50f7494f318e44160b877e7d490bdc863700f0dd"
+        },
+        {
+          "path": "data/quests/quests-1420000.jsonl",
+          "bytes": 2908,
+          "sha256": "1072caf153ab9888acbc3206165f4cd03ed1523dc30fcd599ca434d145b270c1"
+        },
+        {
+          "path": "data/quests/quests-145000.jsonl",
+          "bytes": 4579,
+          "sha256": "f157aef47686d0e6c29248734e279dc5a72547872f96b74146393119a19d7c83"
+        },
+        {
+          "path": "data/quests/quests-15000.jsonl",
+          "bytes": 85396,
+          "sha256": "01e360fd210b565d9837174de5eca44968aaa7cc717bb32248be318f5e29a3e5"
+        },
+        {
+          "path": "data/quests/quests-150000.jsonl",
+          "bytes": 6436,
+          "sha256": "c04d17fa6e2a3f00fa740ea2cc803e206af45fff035aac276cdbf9a0e300b04e"
+        },
+        {
+          "path": "data/quests/quests-1505000.jsonl",
+          "bytes": 1602,
+          "sha256": "3237eee0401d80a2822a29eb6c04a656850f7f936f3818509c9f0a384ace1781"
+        },
+        {
+          "path": "data/quests/quests-1595000.jsonl",
+          "bytes": 271,
+          "sha256": "1b80bfc1e3ecb72e30567c92a5b734bd843e9245be80ef82c5f5ceddd8396265"
+        },
+        {
+          "path": "data/quests/quests-1650000.jsonl",
+          "bytes": 34492,
+          "sha256": "d6ababb3d37de82558f9c9d85cb12156b517e5e7af01785549017c8adb4936a3"
+        },
+        {
+          "path": "data/quests/quests-1660000.jsonl",
+          "bytes": 34161,
+          "sha256": "4fabe331532a2dbbcbb0e3cdf4b1c416dde2ad1670dd5c52b15430e8e97b9f22"
+        },
+        {
+          "path": "data/quests/quests-170000.jsonl",
+          "bytes": 113343,
+          "sha256": "e1eb63e227b9fe207de93584266d5a5e8d7f1eff4ff58e2955692b5a038adf1f"
+        },
+        {
+          "path": "data/quests/quests-1700000.jsonl",
+          "bytes": 536,
+          "sha256": "fe7c62284561e6be64cf6a9bfec94339fdce1935f4a439ae1de5308f2db51759"
+        },
+        {
+          "path": "data/quests/quests-175000.jsonl",
+          "bytes": 98754,
+          "sha256": "42e846a9c4a9e96d03085719bcd6d1822d73b28d95b6dfdb364f105642e38f74"
+        },
+        {
+          "path": "data/quests/quests-180000.jsonl",
+          "bytes": 4262,
+          "sha256": "3787045a5534a11b59dde591be258d46f7f29a5bbbfe4af3370be0036dcc0f6d"
+        },
+        {
+          "path": "data/quests/quests-1845000.jsonl",
+          "bytes": 272,
+          "sha256": "d2503534d23adaab7f881d0203e76dc9c5e3852c112a6c4f2b87f7dd692794c4"
+        },
+        {
+          "path": "data/quests/quests-185000.jsonl",
+          "bytes": 254,
+          "sha256": "be4583a61befed0acb2b8bd0d3d78fd926d030129b8d3119931a26cbd21f464f"
+        },
+        {
+          "path": "data/quests/quests-190000.jsonl",
+          "bytes": 535,
+          "sha256": "d2bec62b035f3bfb0201bd4ab76587f4ca5d1a03f7e83d3a78cd06486ec6b8d9"
+        },
+        {
+          "path": "data/quests/quests-1900000.jsonl",
+          "bytes": 16575,
+          "sha256": "4ec7dce4f6c0c5e0c6b184b9db6e4f191278c8d76b007838df62f083a23d5255"
+        },
+        {
+          "path": "data/quests/quests-195000.jsonl",
+          "bytes": 260,
+          "sha256": "bc711107a41a427043c76e6ba36fc78ac36e62be4cc4869c6d50961e3b0113d8"
+        },
+        {
+          "path": "data/quests/quests-1965000.jsonl",
+          "bytes": 3724,
+          "sha256": "cb26e12d08178adec4b3647a8d9b428f1409999497ca3076734bb7503aa71b6d"
+        },
+        {
+          "path": "data/quests/quests-20000.jsonl",
+          "bytes": 62069,
+          "sha256": "8ce17e007352399e4c0ee3e9f615fd210ace484ad110cebafcd3963434652c5c"
+        },
+        {
+          "path": "data/quests/quests-200000.jsonl",
+          "bytes": 40061,
+          "sha256": "4de89a0811506b9b4305a9def5a542d98f2affc04ed31f560c18fb7ad9e11059"
+        },
+        {
+          "path": "data/quests/quests-2000000.jsonl",
+          "bytes": 73832,
+          "sha256": "d6bd1d9e6eb38b9b1977f050ece065137a6400d2b34b2f5a6dc3a42cdd7adc78"
+        },
+        {
+          "path": "data/quests/quests-205000.jsonl",
+          "bytes": 48332,
+          "sha256": "50daca581a35a6707eade58befe1ecfb98225cecd56449cb03476cb34f353390"
+        },
+        {
+          "path": "data/quests/quests-210000.jsonl",
+          "bytes": 1340,
+          "sha256": "d232efbab7cea5c3a43715ae4a8d8c7725008251d0d10f8e02f8392a55c06913"
+        },
+        {
+          "path": "data/quests/quests-215000.jsonl",
+          "bytes": 523,
+          "sha256": "7fcc66bae86bd3ba39e9da7e44e8cbcc4c2716de35f2606c379806b106de867b"
+        },
+        {
+          "path": "data/quests/quests-220000.jsonl",
+          "bytes": 520,
+          "sha256": "6bd640e4c75b2a0cc36c59685f479a1dd9d39e431b724e0949c5ee51c512c7f7"
+        },
+        {
+          "path": "data/quests/quests-245000.jsonl",
+          "bytes": 1548,
+          "sha256": "08144ce4e4417953d4b85ea34d71c8565681386904679558a60113182f6072e8"
+        },
+        {
+          "path": "data/quests/quests-25000.jsonl",
+          "bytes": 148412,
+          "sha256": "af5dc41cb865ab790b5bca2a5da4bcd8b27b16dff0b5b9d278493fae4922e0ad"
+        },
+        {
+          "path": "data/quests/quests-250000.jsonl",
+          "bytes": 28265,
+          "sha256": "c1cbeb9d25cf939cde49974283e9f9b9c8e04c05e34bcb24b7062372d157e54a"
+        },
+        {
+          "path": "data/quests/quests-255000.jsonl",
+          "bytes": 42775,
+          "sha256": "d61db03ebe1e7a5ec5dc4a7065f5ff93b22e77309d5768044e6ce3255727f042"
+        },
+        {
+          "path": "data/quests/quests-265000.jsonl",
+          "bytes": 3096,
+          "sha256": "688c7c1e2d05b43761c0f9d72e2ea6e23eb687868ac5998eaf447134bbb9d1e5"
+        },
+        {
+          "path": "data/quests/quests-275000.jsonl",
+          "bytes": 523,
+          "sha256": "84b6fc02c212427f478f52e59cd81c2c1f060d45daca6a8969060e5cd0099f9b"
+        },
+        {
+          "path": "data/quests/quests-30000.jsonl",
+          "bytes": 2120,
+          "sha256": "fedddd4da7fc51b59753a0623762dceb97f88ffd4bfa18a3b69ba8dae5d2a482"
+        },
+        {
+          "path": "data/quests/quests-300000.jsonl",
+          "bytes": 253,
+          "sha256": "5714d31a896d4f6b45cc64c4a9d4aecf66ae6adebe0a3288179987b5c7d550b0"
+        },
+        {
+          "path": "data/quests/quests-305000.jsonl",
+          "bytes": 3417,
+          "sha256": "f3ada66c4eb7fec2ac54f61602faed1b0478e2522567b55d3aa92b28777ecb74"
+        }
+      ],
+      "parsedRecords": 11334,
+      "distinctIds": 11334,
+      "index": "datasets/bulk/indexes/srhinos__coa-datamine__quests.json.gz"
+    },
+    {
+      "repository": "srhinos/coa-datamine",
+      "ref": "master",
+      "category": "abilities",
+      "files": [
+        {
+          "path": "data/abilities/01-warrior.json",
+          "bytes": 713080,
+          "sha256": "ed8440956a563147d22cffc55014dfe5cef4eae6a3db2c2ccec6c13fadd39e05"
+        },
+        {
+          "path": "data/abilities/02-paladin.json",
+          "bytes": 780584,
+          "sha256": "3c7c180c09de92546194d8840d83191d850ab897a1b5a1f0f308b8de049fc181"
+        },
+        {
+          "path": "data/abilities/03-hunter.json",
+          "bytes": 774872,
+          "sha256": "b6f316d416f7aa416add94945e2e5045e56cb9bce5bfa37e04994a9901b68f31"
+        },
+        {
+          "path": "data/abilities/04-rogue.json",
+          "bytes": 643917,
+          "sha256": "00657bac1d3cbd2f3b7bb83a04a9dd8bc903befc1f5751759c2b8799376350e0"
+        },
+        {
+          "path": "data/abilities/05-priest.json",
+          "bytes": 833384,
+          "sha256": "5a8820d496322ff0b2549ffcf68a8b2abcad965f3bb5d302c82b69be3853f31c"
+        },
+        {
+          "path": "data/abilities/06-death-knight.json",
+          "bytes": 321426,
+          "sha256": "9db21ecfb727258759902b4de77fa1f957d4fcf5278ae3a9b87aeae548bb40ac"
+        },
+        {
+          "path": "data/abilities/07-shaman.json",
+          "bytes": 879519,
+          "sha256": "d350e8efb65047de88c41f57e5833e2f4a31aadbec780851120bc30c3e26cf74"
+        },
+        {
+          "path": "data/abilities/08-mage.json",
+          "bytes": 924677,
+          "sha256": "7513e8ae1b0ac3cbae95d046435920f877e75edc8872faa4db1123d93e41fbdb"
+        },
+        {
+          "path": "data/abilities/09-warlock.json",
+          "bytes": 996284,
+          "sha256": "c30b1028dcd2535d91ff3065a99f9b9a7d5ae9604edcf1bbcf978016ae4ca286"
+        },
+        {
+          "path": "data/abilities/11-druid.json",
+          "bytes": 977163,
+          "sha256": "9c9f5a32c02eab2957b4d17884a85536b88badd21ba5cbec3be1d75c29541d8f"
+        },
+        {
+          "path": "data/abilities/12-barbarian.json",
+          "bytes": 296719,
+          "sha256": "aa6a18e0b338ac57b4c562b02af9176ddaa4d4381280b55d4cbc19ab037293bf"
+        },
+        {
+          "path": "data/abilities/13-witch-doctor.json",
+          "bytes": 311660,
+          "sha256": "50497624cdd35b4978b28d24aa1bd53be64454e789698e301c749684e8b736d1"
+        },
+        {
+          "path": "data/abilities/14-felsworn.json",
+          "bytes": 256705,
+          "sha256": "06e984ef024d912b9b6bd5676f957b5d41d40b65c9c00942196a3a9afd1d1810"
+        },
+        {
+          "path": "data/abilities/15-witch-hunter.json",
+          "bytes": 295095,
+          "sha256": "6cf1bf404a8437aafb6f7e8a8cc3772faa5a0463cd61f0f96180a806fdd618c4"
+        },
+        {
+          "path": "data/abilities/16-stormbringer.json",
+          "bytes": 292404,
+          "sha256": "8697a2fdf8c0bd3b4b605d4c807730351caa7939d9e75d35b704b10bab6d08f0"
+        },
+        {
+          "path": "data/abilities/17-knight-of-xoroth.json",
+          "bytes": 256967,
+          "sha256": "c67c255e5503e0146cf4753dd76ae813ca69f90bd342543dd73c955178517454"
+        },
+        {
+          "path": "data/abilities/18-guardian.json",
+          "bytes": 272704,
+          "sha256": "18f706faf76a776354bf635de534b87c602938619087bc4bd650bd34aafab5b3"
+        },
+        {
+          "path": "data/abilities/19-templar.json",
+          "bytes": 261221,
+          "sha256": "77e7b3e788a80509b4f2af85d744718e4f4fd586a4879ff7ada9b3833011d2db"
+        },
+        {
+          "path": "data/abilities/20-bloodmage.json",
+          "bytes": 316574,
+          "sha256": "8c729ae02f16c5907a2c849cb1d206f098c6f2a7809b5889002ce5751a5ffb24"
+        },
+        {
+          "path": "data/abilities/21-ranger.json",
+          "bytes": 284682,
+          "sha256": "f2b0713455fd764bf37ad889adf1e571280a13f8e6b1c702ab21166f4ede8f82"
+        },
+        {
+          "path": "data/abilities/22-chronomancer.json",
+          "bytes": 288187,
+          "sha256": "c60223953b38cc3fdfc91788a5c0128897c210767836a36d1b9cbb3e2dbe9aa0"
+        },
+        {
+          "path": "data/abilities/23-necromancer.json",
+          "bytes": 304660,
+          "sha256": "1cb32b9a4c926c708f88f4a2fdcca4014401f682a6913f3a2d81ef38755fb4b2"
+        },
+        {
+          "path": "data/abilities/24-pyromancer.json",
+          "bytes": 297317,
+          "sha256": "3d022e9d986f602d8e8c5bd812de3c3ce0a13e818ac44a1f07434a0926189d50"
+        },
+        {
+          "path": "data/abilities/25-cultist.json",
+          "bytes": 347883,
+          "sha256": "b1e5e82cc36485e74ca245199930d259e0da6b034f559468cbb4f2465ec72dcd"
+        },
+        {
+          "path": "data/abilities/26-starcaller.json",
+          "bytes": 327930,
+          "sha256": "846c11df83b8a00c5d5d5684b6d1158f4195d9cc61eacddc1ec2c99845cefe56"
+        },
+        {
+          "path": "data/abilities/27-sun-cleric.json",
+          "bytes": 332055,
+          "sha256": "d4d103c071659f7ffed1e8e876c5a0bdcc31d4232cf7231db43cf17607cdc237"
+        },
+        {
+          "path": "data/abilities/28-tinker.json",
+          "bytes": 301846,
+          "sha256": "55de56903dee4d2153d4f07fd30e4c4fc2e955fba7134e86d770a8e7849eccdd"
+        },
+        {
+          "path": "data/abilities/29-venomancer.json",
+          "bytes": 341103,
+          "sha256": "7b5d435e5019c787e980096541dbcc038626a2c83bc0268139ad8ff39bd213c2"
+        },
+        {
+          "path": "data/abilities/30-reaper.json",
+          "bytes": 253623,
+          "sha256": "95ea5678a22220a692943cfbd412a859ff0ddd3852033b6d902fe2eb7f171187"
+        },
+        {
+          "path": "data/abilities/31-primalist.json",
+          "bytes": 343391,
+          "sha256": "73338c162cb6329f09e75214f3cac7925731f675755ec6918087d3e1bb02f4db"
+        },
+        {
+          "path": "data/abilities/32-runemaster.json",
+          "bytes": 310757,
+          "sha256": "1e24b37e00f1843c52e8eedba5a0cd165f250b4c831b7bd015a75f36fd752974"
+        },
+        {
+          "path": "data/abilities/_meta.json",
+          "bytes": 28467,
+          "sha256": "34ba8202dbfb16eaf4c49de6f21f0e4a4a1b63c93d8fa2289c0a5d613b48d5f9"
+        },
+        {
+          "path": "data/abilities/_residual-0.json",
+          "bytes": 437835,
+          "sha256": "7c388b7a84d4378af79cc6946b8d8a5b10cd49eb5f286bc981724759582a0f5a"
+        },
+        {
+          "path": "data/abilities/_residual-100000.json",
+          "bytes": 257173,
+          "sha256": "dabd94b99787b3ca48b823a81bcdde789db7c1b167323f1a7d9253a93f48e38c"
+        },
+        {
+          "path": "data/abilities/_residual-1000000.json",
+          "bytes": 12458,
+          "sha256": "1553bd984f48bb79665a63de39690f19610dcacef68976ebde0d2b7eab7c2830"
+        },
+        {
+          "path": "data/abilities/_residual-1100000.json",
+          "bytes": 162768,
+          "sha256": "d3b5b92408a566d7eb7223fc9c14764410b247b2a9815b5c2fcd7f062815f0ee"
+        },
+        {
+          "path": "data/abilities/_residual-1200000.json",
+          "bytes": 8010,
+          "sha256": "34e5fd198c7b9f2044e326aa3a8644b56d7bbb775702390070181657f9cc77a5"
+        },
+        {
+          "path": "data/abilities/_residual-1300000.json",
+          "bytes": 2135,
+          "sha256": "26c73d2eca962a6d6589f193da3ae211fce88956d217dd8865e8451eca55078d"
+        },
+        {
+          "path": "data/abilities/_residual-13900000.json",
+          "bytes": 1516,
+          "sha256": "e35a7206d53384bbadb61194147e785fc24acc7dff0ee446303bd6af8ca0c5ba"
+        },
+        {
+          "path": "data/abilities/_residual-1700000.json",
+          "bytes": 1007,
+          "sha256": "d1ccf6e78879630aa40bc9738476bd5897c29801e01afc575f253840008d64b1"
+        },
+        {
+          "path": "data/abilities/_residual-1900000.json",
+          "bytes": 1856,
+          "sha256": "85c374985a4a021cc931d27fbb561029fe019bdc2e20c597b00f9a183d218d48"
+        },
+        {
+          "path": "data/abilities/_residual-200000.json",
+          "bytes": 205925,
+          "sha256": "9cf9c0d129a2971c57a21464febb294b22284445aac1df01e49da3276b41fcd5"
+        },
+        {
+          "path": "data/abilities/_residual-2000000.json",
+          "bytes": 6546,
+          "sha256": "a98d53cdfa67b20312a53fbe39c132d48677f2b72f3bf618c5399c5fabb4dfc2"
+        },
+        {
+          "path": "data/abilities/_residual-300000.json",
+          "bytes": 20205,
+          "sha256": "ef37427e82310839e878e46087dc831f58350a609a13be7e30191b3c1294d32d"
+        },
+        {
+          "path": "data/abilities/_residual-400000.json",
+          "bytes": 3458,
+          "sha256": "42594d66bd141e3e99a0d2a0b115b041bbfd7af05291659f9b2651086dec68d0"
+        },
+        {
+          "path": "data/abilities/_residual-500000.json",
+          "bytes": 125297,
+          "sha256": "dad6766d1a6ea5323555dcd795483de52f2cea0748f919cf9623b88dc202442e"
+        },
+        {
+          "path": "data/abilities/_residual-600000.json",
+          "bytes": 12340,
+          "sha256": "8540c298e4cf2ed88a5ee8fcf75400f8dbd4d0610f1e8fabba267a71d2fdb296"
+        },
+        {
+          "path": "data/abilities/_residual-700000.json",
+          "bytes": 19975,
+          "sha256": "67d97bd94b03e90440f310d985521a1fd145f0db65694bbf631a551f7a68bcd3"
+        },
+        {
+          "path": "data/abilities/_residual-800000.json",
+          "bytes": 53610,
+          "sha256": "8667baac79e2ea161321aa4dae7c9aa98b61b6de8b818657c4f6b16b90f04888"
+        },
+        {
+          "path": "data/abilities/_residual-900000.json",
+          "bytes": 464192,
+          "sha256": "32da70f3312a472ba97c508120af2178e55e34098bf219f33f250726485de60b"
+        }
+      ],
+      "parsedRecords": 50,
+      "distinctIds": 0,
+      "index": "datasets/bulk/indexes/srhinos__coa-datamine__abilities.json.gz"
+    },
+    {
+      "repository": "srhinos/coa-datamine",
+      "ref": "master",
+      "category": "talents",
+      "files": [
+        {
+          "path": "data/talents/coa/Barbarian.json",
+          "bytes": 191603,
+          "sha256": "2b809641cca26cd580ab346e4ef9358ad28ebd82e101f41bfaf03865bffa1f7b"
+        },
+        {
+          "path": "data/talents/coa/Chronomancer.json",
+          "bytes": 193354,
+          "sha256": "3a7fec6e36a9f55991cc26a4556937bef62f45e52ee9d408597d6d415297fe54"
+        },
+        {
+          "path": "data/talents/coa/Cultist.json",
+          "bytes": 239636,
+          "sha256": "870be297fa0b11d086ca05f9d0188a274c3318bf68a6ab8b520e25d25b35ad6a"
+        },
+        {
+          "path": "data/talents/coa/DemonHunter.json",
+          "bytes": 187964,
+          "sha256": "5399ce8a043a3f08af38fd9dfc1ceea9916618db50083e16f73f0f5f96590f57"
+        },
+        {
+          "path": "data/talents/coa/Guardian.json",
+          "bytes": 179560,
+          "sha256": "7182cbecd328b2c11257d05eefabebe6e630bb087b6b2819b205bed8af11bf31"
+        },
+        {
+          "path": "data/talents/coa/KnightOfXoroth.json",
+          "bytes": 193530,
+          "sha256": "5c60eff69541c4a6ee5feb17cc3bde2b86b34af3fbb9f6297949b23f0d16058e"
+        },
+        {
+          "path": "data/talents/coa/Monk.json",
+          "bytes": 192097,
+          "sha256": "44d81c21912dc7e2fa22d2057a3291a3661925b627ab148a948516cf1314afac"
+        },
+        {
+          "path": "data/talents/coa/Necromancer.json",
+          "bytes": 194666,
+          "sha256": "b9e4f9073ad5d6a0def3c56c314c19d93c0f55513ae6e0ea3a3bffab4553fb51"
+        },
+        {
+          "path": "data/talents/coa/Primalist.json",
+          "bytes": 245683,
+          "sha256": "f7b36fe3abf7418d6b26a9921472291e8e9c3c76a9c4459ba95390a0091760cc"
+        },
+        {
+          "path": "data/talents/coa/Pyromancer.json",
+          "bytes": 190409,
+          "sha256": "04e21980b92ef360c2c6dc83397694244201d6173a9a9fef4d70aa3931343631"
+        },
+        {
+          "path": "data/talents/coa/Ranger.json",
+          "bytes": 192408,
+          "sha256": "6e05b4e6cedb641f40fb7e7b7fe5bb7d30a9dd6e9cfe8ef0b00211663e01ea7a"
+        },
+        {
+          "path": "data/talents/coa/Reaper.json",
+          "bytes": 182982,
+          "sha256": "1f2f3812ee4b425b6b6b7add2573753801d13e5ec9514cae621c818ac445c0a6"
+        },
+        {
+          "path": "data/talents/coa/Runemaster.json",
+          "bytes": 191453,
+          "sha256": "a030dcc01de7768ae8f6d82c7c2e57f8bbc401c83fb0638b06c11d239e4aa514"
+        },
+        {
+          "path": "data/talents/coa/SonOfArugal.json",
+          "bytes": 248555,
+          "sha256": "ae0315ffde9109c6c4b82591b0e4e2763c7aa6ce11cb80b9885be2d12bae6720"
+        },
+        {
+          "path": "data/talents/coa/Starcaller.json",
+          "bytes": 219343,
+          "sha256": "71c9e0311219fdf4998d2243dad1a8f39517cf8115ac65a43cd55f27609d0c80"
+        },
+        {
+          "path": "data/talents/coa/Stormbringer.json",
+          "bytes": 185935,
+          "sha256": "4c4e2616b14c37c98d718c723eaa3b9e62847a4345ed9299a4fbc9d7010857f2"
+        },
+        {
+          "path": "data/talents/coa/SunCleric.json",
+          "bytes": 241092,
+          "sha256": "78e622c532c50faa62eef321f141f256f0827f7dbc16181e1aae0e9a87f959be"
+        },
+        {
+          "path": "data/talents/coa/Tinker.json",
+          "bytes": 198605,
+          "sha256": "b25f59e743a24d3a454466bcf3c995e125262552d474fb678dc7b4e4088b9cc0"
+        },
+        {
+          "path": "data/talents/coa/Venomancer.json",
+          "bytes": 253367,
+          "sha256": "c6e649bf4af05db625aad2b00b0c6563c167f30a3be510d2de0cd7359fb2e8e5"
+        },
+        {
+          "path": "data/talents/coa/WitchDoctor.json",
+          "bytes": 210809,
+          "sha256": "b01849b6988768caf995c7a605edf411e825bae1f1deea75455663ff519a9237"
+        },
+        {
+          "path": "data/talents/coa/WitchHunter.json",
+          "bytes": 225815,
+          "sha256": "bf9f021fc4990e603530de82ec0e1d4dc1734dbea74a3711c520163a81e24eb2"
+        },
+        {
+          "path": "data/talents/coa/_meta.json",
+          "bytes": 19433,
+          "sha256": "ad18813aeb1977ccee9fd58bb70b95af005e5d0a0d0eeb9eba0892318acfe931"
+        },
+        {
+          "path": "data/talents/coa/index.json",
+          "bytes": 2478,
+          "sha256": "2b1d7e204b33b0f9e10e0d1e1caff3949c1b81fd8c6359f02800089891db55af"
+        }
+      ],
+      "parsedRecords": 23,
+      "distinctIds": 3618,
+      "index": "datasets/bulk/indexes/srhinos__coa-datamine__talents.json.gz"
+    },
+    {
+      "repository": "Bharph/coa-preservation-data",
+      "ref": "main",
+      "category": "tooltips",
+      "files": [],
+      "parsedRecords": 0,
+      "distinctIds": 0,
+      "index": "datasets/bulk/indexes/Bharph__coa-preservation-data__tooltips.json.gz"
+    },
+    {
+      "repository": "Bharph/coa-preservation-data",
+      "ref": "main",
+      "category": "spellbooks",
+      "files": [
+        {
+          "path": "class-spellbooks/by-class.json",
+          "bytes": 230474,
+          "sha256": "8047885fcec4a0d026c78df29123be8908b608f2f1283bc9b814bcb96015af26"
+        }
+      ],
+      "parsedRecords": 1,
+      "distinctIds": 0,
+      "index": "datasets/bulk/indexes/Bharph__coa-preservation-data__spellbooks.json.gz"
+    },
+    {
+      "repository": "Bharph/coa-preservation-data",
+      "ref": "main",
+      "category": "changelog",
+      "files": [
+        {
+          "path": "changelog/changelog-entries.ndjson",
+          "bytes": 22130072,
+          "sha256": "5c4dd661b940db5ff482b37f4bbd77be2516ddc5e89e64913493be13e2e1c1b7"
+        }
+      ],
+      "parsedRecords": 70437,
+      "distinctIds": 70437,
+      "index": "datasets/bulk/indexes/Bharph__coa-preservation-data__changelog.json.gz"
+    },
+    {
+      "repository": "johnayoung/coa-arena",
+      "ref": "main",
+      "category": "arena-abilities",
+      "files": [
+        {
+          "path": "output/classified_tags.json",
+          "bytes": 608036,
+          "sha256": "62868dcea383567efc4f3a29b133fc9f5debfe850639b90dfb1e27a5994c6f90"
+        },
+        {
+          "path": "output/classified_tags_cerebras.json",
+          "bytes": 605781,
+          "sha256": "499ba7debb5f7ebb38170945bccf3de6121ff1112306c995fcefa7ce3e20fc0a"
+        },
+        {
+          "path": "output/threeway_review_queue.json",
+          "bytes": 366467,
+          "sha256": "7070c4ca5c7c0e8a18adc49a50c91a83a88ea0c037402212a2ee1641fea042b7"
+        }
+      ],
+      "parsedRecords": 3,
+      "distinctIds": 0,
+      "index": "datasets/bulk/indexes/johnayoung__coa-arena__arena-abilities.json.gz"
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "source": "Bharph/coa-preservation-data",
+      "path": "spell-tooltips/all-spell-tooltips-merged.ndjson",
+      "error": "file exceeds 24MB safety limit"
+    }
+  ],
   "schema": 1
 }

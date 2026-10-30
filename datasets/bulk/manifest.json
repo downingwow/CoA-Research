@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T08:24:55.436073+00:00",
+  "generatedAt": "2026-10-30T08:33:21.383716+00:00",
   "sources": [
     {
       "repository": "srhinos/coa-datamine",
@@ -3533,7 +3533,7 @@
         }
       ],
       "parsedRecords": 53,
-      "distinctIds": 0,
+      "distinctIds": 29776,
       "index": "datasets/bulk/indexes/srhinos__coa-datamine__abilities.json.gz"
     },
     {
@@ -3665,9 +3665,15 @@
       "repository": "Bharph/coa-preservation-data",
       "ref": "main",
       "category": "tooltips",
-      "files": [],
-      "parsedRecords": 0,
-      "distinctIds": 0,
+      "files": [
+        {
+          "path": "spell-tooltips/all-spell-tooltips-merged.ndjson",
+          "bytes": 24485228,
+          "sha256": "075b7adb6496851b014991d09482462344154ea2bf517a3e15114c6ffb66d1dd"
+        }
+      ],
+      "parsedRecords": 180282,
+      "distinctIds": 180282,
       "index": "datasets/bulk/indexes/Bharph__coa-preservation-data__tooltips.json.gz"
     },
     {
@@ -3726,12 +3732,6 @@
       "index": "datasets/bulk/indexes/johnayoung__coa-arena__arena-abilities.json.gz"
     }
   ],
-  "errors": [
-    {
-      "source": "Bharph/coa-preservation-data",
-      "path": "spell-tooltips/all-spell-tooltips-merged.ndjson",
-      "error": "file exceeds 24MB safety limit"
-    }
-  ],
+  "errors": [],
   "schema": 1
 }

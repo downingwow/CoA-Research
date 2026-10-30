@@ -1,0 +1,2475 @@
+{
+  "auditDate": "2026-10-30",
+  "sourceRepo": "hertigservices/ascension-data",
+  "sourceManifest": "datasets/cache.json",
+  "manifestBlobSha": "a22a46219ceca88cc9e300ffd6e37c5ca763f11a",
+  "sourceManifestUrl": "https://github.com/hertigservices/ascension-data/blob/main/datasets/cache.json",
+  "fileCount": 761,
+  "totalDeclaredBytes": 348687382,
+  "distinctReleasePacks": 242,
+  "groups": {
+    "cachedata/FILE-GUIDE.md": {
+      "files": 1,
+      "bytes": 10159
+    },
+    "cachedata/README.md": {
+      "files": 1,
+      "bytes": 5944
+    },
+    "cachedata/by-locale/enUS/by-mode": {
+      "files": 86,
+      "bytes": 57126235
+    },
+    "cachedata/by-locale/enUS/union": {
+      "files": 7,
+      "bytes": 19343685
+    },
+    "cachedata/by-locale/frFR/by-mode": {
+      "files": 5,
+      "bytes": 31590
+    },
+    "cachedata/by-locale/frFR/union": {
+      "files": 5,
+      "bytes": 31590
+    },
+    "cachedata/by-locale/ruRU/by-mode": {
+      "files": 4,
+      "bytes": 22852
+    },
+    "cachedata/by-locale/ruRU/union": {
+      "files": 4,
+      "bytes": 22852
+    },
+    "cachedata/by-locale/zhCN/by-mode": {
+      "files": 10,
+      "bytes": 139659
+    },
+    "cachedata/by-locale/zhCN/union": {
+      "files": 5,
+      "bytes": 113462
+    },
+    "cachedata/by-mode/coa-alpha/creaturecache.tsv.gz": {
+      "files": 1,
+      "bytes": 191683
+    },
+    "cachedata/by-mode/coa-alpha/gameobjectcache.tsv.gz": {
+      "files": 1,
+      "bytes": 116778
+    },
+    "cachedata/by-mode/coa-alpha/itemcache.tsv.gz": {
+      "files": 1,
+      "bytes": 1687528
+    },
+    "cachedata/by-mode/coa-alpha/itemnamecache.tsv.gz": {
+      "files": 1,
+      "bytes": 7426
+    },
+    "cachedata/by-mode/coa-alpha/npccache.tsv.gz": {
+      "files": 1,
+      "bytes": 51008
+    },
+    "cachedata/by-mode/coa-alpha/pagetextcache.tsv.gz": {
+      "files": 1,
+      "bytes": 4161
+    },
+    "cachedata/by-mode/coa-alpha/questcache.tsv.gz": {
+      "files": 1,
+      "bytes": 251601
+    },
+    "cachedata/by-mode/coa-beta/creaturecache.tsv.gz": {
+      "files": 1,
+      "bytes": 164086
+    },
+    "cachedata/by-mode/coa-beta/gameobjectcache.tsv.gz": {
+      "files": 1,
+      "bytes": 96758
+    },
+    "cachedata/by-mode/coa-beta/itemcache.tsv.gz": {
+      "files": 1,
+      "bytes": 872299
+    },
+    "cachedata/by-mode/coa-beta/itemnamecache.tsv.gz": {
+      "files": 1,
+      "bytes": 1567
+    },
+    "cachedata/by-mode/coa-beta/npccache.tsv.gz": {
+      "files": 1,
+      "bytes": 43695
+    },
+    "cachedata/by-mode/coa-beta/pagetextcache.tsv.gz": {
+      "files": 1,
+      "bytes": 6583
+    },
+    "cachedata/by-mode/coa-beta/questcache.tsv.gz": {
+      "files": 1,
+      "bytes": 204456
+    },
+    "cachedata/by-mode/coa-ptr/creaturecache.tsv.gz": {
+      "files": 1,
+      "bytes": 161919
+    },
+    "cachedata/by-mode/coa-ptr/gameobjectcache.tsv.gz": {
+      "files": 1,
+      "bytes": 101371
+    },
+    "cachedata/by-mode/coa-ptr/itemcache.tsv.gz": {
+      "files": 1,
+      "bytes": 1235674
+    },
+    "cachedata/by-mode/coa-ptr/itemnamecache.tsv.gz": {
+      "files": 1,
+      "bytes": 10756
+    },
+    "cachedata/by-mode/coa-ptr/npccache.tsv.gz": {
+      "files": 1,
+      "bytes": 23554
+    },
+    "cachedata/by-mode/coa-ptr/pagetextcache.tsv.gz": {
+      "files": 1,
+      "bytes": 1594
+    },
+    "cachedata/by-mode/coa-ptr/questcache.tsv.gz": {
+      "files": 1,
+      "bytes": 165692
+    },
+    "cachedata/by-mode/conquest-of-azeroth-backup/creaturecache.tsv.gz": {
+      "files": 1,
+      "bytes": 113395
+    },
+    "cachedata/by-mode/conquest-of-azeroth-backup/gameobjectcache.tsv.gz": {
+      "files": 1,
+      "bytes": 63910
+    },
+    "cachedata/by-mode/conquest-of-azeroth-backup/itemcache.tsv.gz": {
+      "files": 1,
+      "bytes": 1130419
+    },
+    "cachedata/by-mode/conquest-of-azeroth-backup/itemnamecache.tsv.gz": {
+      "files": 1,
+      "bytes": 7551
+    },
+    "cachedata/by-mode/conquest-of-azeroth-backup/npccache.tsv.gz": {
+      "files": 1,
+      "bytes": 8315
+    },
+    "cachedata/by-mode/conquest-of-azeroth-backup/pagetextcache.tsv.gz": {
+      "files": 1,
+      "bytes": 2689
+    },
+    "cachedata/by-mode/conquest-of-azeroth-backup/questcache.tsv.gz": {
+      "files": 1,
+      "bytes": 76578
+    },
+    "cachedata/by-mode/conquest-of-azeroth/creaturecache.tsv.gz": {
+      "files": 1,
+      "bytes": 1093481
+    },
+    "cachedata/by-mode/conquest-of-azeroth/gameobjectcache.tsv.gz": {
+      "files": 1,
+      "bytes": 227397
+    },
+    "cachedata/by-mode/conquest-of-azeroth/itemcache.tsv.gz": {
+      "files": 1,
+      "bytes": 11288992
+    },
+    "cachedata/by-mode/conquest-of-azeroth/itemnamecache.tsv.gz": {
+      "files": 1,
+      "bytes": 42574
+    },
+    "cachedata/by-mode/conquest-of-azeroth/npccache.tsv.gz": {
+      "files": 1,
+      "bytes": 325304
+    },
+    "cachedata/by-mode/conquest-of-azeroth/pagetextcache.tsv.gz": {
+      "files": 1,
+      "bytes": 106473
+    },
+    "cachedata/by-mode/conquest-of-azeroth/questcache.tsv.gz": {
+      "files": 1,
+      "bytes": 2637142
+    },
+    "cachedata/by-mode/free-pick/creaturecache.tsv.gz": {
+      "files": 1,
+      "bytes": 610519
+    },
+    "cachedata/by-mode/free-pick/gameobjectcache.tsv.gz": {
+      "files": 1,
+      "bytes": 286634
+    },
+    "cachedata/by-mode/free-pick/itemcache.tsv.gz": {
+      "files": 1,
+      "bytes": 4902807
+    },
+    "cachedata/by-mode/free-pick/itemnamecache.tsv.gz": {
+      "files": 1,
+      "bytes": 35495
+    },
+    "cachedata/by-mode/free-pick/npccache.tsv.gz": {
+      "files": 1,
+      "bytes": 262720
+    },
+    "cachedata/by-mode/free-pick/pagetextcache.tsv.gz": {
+      "files": 1,
+      "bytes": 55490
+    },
+    "cachedata/by-mode/free-pick/questcache.tsv.gz": {
+      "files": 1,
+      "bytes": 1093844
+    },
+    "cachedata/by-mode/live-qa/itemcache.tsv.gz": {
+      "files": 1,
+      "bytes": 12691
+    },
+    "cachedata/by-mode/live-qa/questcache.tsv.gz": {
+      "files": 1,
+      "bytes": 55290
+    },
+    "cachedata/by-mode/season-10-freepick/creaturecache.tsv.gz": {
+      "files": 1,
+      "bytes": 364569
+    },
+    "cachedata/by-mode/season-10-freepick/gameobjectcache.tsv.gz": {
+      "files": 1,
+      "bytes": 181652
+    },
+    "cachedata/by-mode/season-10-freepick/itemcache.tsv.gz": {
+      "files": 1,
+      "bytes": 14472891
+    },
+    "cachedata/by-mode/season-10-freepick/itemnamecache.tsv.gz": {
+      "files": 1,
+      "bytes": 11839
+    },
+    "cachedata/by-mode/season-10-freepick/npccache.tsv.gz": {
+      "files": 1,
+      "bytes": 100843
+    },
+    "cachedata/by-mode/season-10-freepick/pagetextcache.tsv.gz": {
+      "files": 1,
+      "bytes": 19451
+    },
+    "cachedata/by-mode/season-10-freepick/questcache.tsv.gz": {
+      "files": 1,
+      "bytes": 2634644
+    },
+    "cachedata/by-mode/season-10-wildcard/creaturecache.tsv.gz": {
+      "files": 1,
+      "bytes": 388924
+    },
+    "cachedata/by-mode/season-10-wildcard/gameobjectcache.tsv.gz": {
+      "files": 1,
+      "bytes": 200528
+    },
+    "cachedata/by-mode/season-10-wildcard/itemcache.tsv.gz": {
+      "files": 1,
+      "bytes": 2535354
+    },
+    "cachedata/by-mode/season-10-wildcard/itemnamecache.tsv.gz": {
+      "files": 1,
+      "bytes": 14422
+    },
+    "cachedata/by-mode/season-10-wildcard/npccache.tsv.gz": {
+      "files": 1,
+      "bytes": 119193
+    },
+    "cachedata/by-mode/season-10-wildcard/pagetextcache.tsv.gz": {
+      "files": 1,
+      "bytes": 14233
+    },
+    "cachedata/by-mode/season-10-wildcard/questcache.tsv.gz": {
+      "files": 1,
+      "bytes": 487195
+    },
+    "cachedata/by-mode/season-9/creaturecache.tsv.gz": {
+      "files": 1,
+      "bytes": 302844
+    },
+    "cachedata/by-mode/season-9/gameobjectcache.tsv.gz": {
+      "files": 1,
+      "bytes": 163999
+    },
+    "cachedata/by-mode/season-9/itemcache.tsv.gz": {
+      "files": 1,
+      "bytes": 2145602
+    },
+    "cachedata/by-mode/season-9/itemnamecache.tsv.gz": {
+      "files": 1,
+      "bytes": 14728
+    },
+    "cachedata/by-mode/season-9/npccache.tsv.gz": {
+      "files": 1,
+      "bytes": 58872
+    },
+    "cachedata/by-mode/season-9/pagetextcache.tsv.gz": {
+      "files": 1,
+      "bytes": 13604
+    },
+    "cachedata/by-mode/season-9/questcache.tsv.gz": {
+      "files": 1,
+      "bytes": 371596
+    },
+    "cachedata/by-mode/stress-test/creaturecache.tsv.gz": {
+      "files": 1,
+      "bytes": 78241
+    },
+    "cachedata/by-mode/stress-test/gameobjectcache.tsv.gz": {
+      "files": 1,
+      "bytes": 36357
+    },
+    "cachedata/by-mode/stress-test/itemcache.tsv.gz": {
+      "files": 1,
+      "bytes": 745066
+    },
+    "cachedata/by-mode/stress-test/itemnamecache.tsv.gz": {
+      "files": 1,
+      "bytes": 3234
+    },
+    "cachedata/by-mode/stress-test/npccache.tsv.gz": {
+      "files": 1,
+      "bytes": 13569
+    },
+    "cachedata/by-mode/stress-test/pagetextcache.tsv.gz": {
+      "files": 1,
+      "bytes": 2821
+    },
+    "cachedata/by-mode/stress-test/questcache.tsv.gz": {
+      "files": 1,
+      "bytes": 73199
+    },
+    "cachedata/by-mode/unknown/creaturecache.tsv.gz": {
+      "files": 1,
+      "bytes": 96579
+    },
+    "cachedata/by-mode/unknown/gameobjectcache.tsv.gz": {
+      "files": 1,
+      "bytes": 44973
+    },
+    "cachedata/by-mode/unknown/itemcache.tsv.gz": {
+      "files": 1,
+      "bytes": 620119
+    },
+    "cachedata/by-mode/unknown/itemnamecache.tsv.gz": {
+      "files": 1,
+      "bytes": 892
+    },
+    "cachedata/by-mode/unknown/npccache.tsv.gz": {
+      "files": 1,
+      "bytes": 24009
+    },
+    "cachedata/by-mode/unknown/pagetextcache.tsv.gz": {
+      "files": 1,
+      "bytes": 426
+    },
+    "cachedata/by-mode/unknown/questcache.tsv.gz": {
+      "files": 1,
+      "bytes": 149044
+    },
+    "cachedata/by-mode/warcraft-reborn/creaturecache.tsv.gz": {
+      "files": 1,
+      "bytes": 328025
+    },
+    "cachedata/by-mode/warcraft-reborn/gameobjectcache.tsv.gz": {
+      "files": 1,
+      "bytes": 192786
+    },
+    "cachedata/by-mode/warcraft-reborn/itemcache.tsv.gz": {
+      "files": 1,
+      "bytes": 3243140
+    },
+    "cachedata/by-mode/warcraft-reborn/itemnamecache.tsv.gz": {
+      "files": 1,
+      "bytes": 20931
+    },
+    "cachedata/by-mode/warcraft-reborn/npccache.tsv.gz": {
+      "files": 1,
+      "bytes": 100528
+    },
+    "cachedata/by-mode/warcraft-reborn/pagetextcache.tsv.gz": {
+      "files": 1,
+      "bytes": 17494
+    },
+    "cachedata/by-mode/warcraft-reborn/questcache.tsv.gz": {
+      "files": 1,
+      "bytes": 558070
+    },
+    "cachedata/catalogue/README.md": {
+      "files": 1,
+      "bytes": 6788
+    },
+    "cachedata/catalogue/creatures.tsv": {
+      "files": 1,
+      "bytes": 60548
+    },
+    "cachedata/catalogue/gameobjects.tsv": {
+      "files": 1,
+      "bytes": 1273558
+    },
+    "cachedata/contributions/005f1798c3e98e820d9fd6321100887da6f5ca5a2d4d4671b2f5197ca6ccd854.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/00bad3659518ac9ce08d899f37fefe1bd5d60512a66f4398d35811cbf8639286.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/00d3a371a0a5b2d52d93b689bfbbc01533b37f9d74962b35d8f50848ddf82b64.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/014925c90e7d4dbf1a48a401bde666ce7a970b5f31dd6648cdeb11d5213af2f6.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/0280560b67065368ade921bfa144ebe2b0df14ff719a9cc32f5feea5ac6c7467.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/037c7c5f3e344ce4b5aea92dffbd9f107b5b4193314463681a9f071cef6c84cb.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/03ec2f4bb0c33eea20edd23d713b8d507bdba9bbbb798e0ba651cb0328c262b8.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/04b901b3c550605ea346c6fb6e950c6636d58cdf7eec3b4acdf81d7f57bdb4b9.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/052c9d53f041e5cfa3c68129d6be8974284a2dfe448f9741056c8ff01116225e.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/07afe2ec6474a45aa4074308d326e4b575264aab30d30960aa1453a135a0c914.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/085f4ac918da455f2237f00571da4c90edf9f73174f6670fe12ebc34df9a4040.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/090c8e350bcc644ace4011ac78eb83b9dfa74e1436a42fe8fd80feb0a70e61e8.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/0a29d530aef6b43eb188e1322c73856a81beab0581fa16ebf546d998823e17b0.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/0a4b04995367cb01558f041ecb6055a178568cac4c386d17419e8147bae99b9a.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/0a68396017a56a1d953a4b95ded4528b1aa1411b425b242b7bc425a9d347e29b.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/0b7426791f3c602d7efcded52cdcab5d666bbea16a1e0a83ff60e10606375e88.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/0d3402b82e72c32b1f767909edc9ec63277a93bb774ee3b2812f52aa15c7ba71.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/0d6062a6f314f7ceb4c5e15c681fb8bcf17f37ef6d627c33b8af5015f9994fdc.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/0f043c7da717e3b2c6e84aa3c5c09a8577b4b6e7218b54031c19b60236578d7c.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/10451bc9610978546cfc981ba7bc29e7145489e932ebd36bb64e3c0147eb658a.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/106b2845d704a02bb2dfaa9c87010617f34e1ccd5a4189237f40e9478e1930b5.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/10f6e9b834e6a519e6b577ca1e726a17aec525065f9fb10f1a4fc76db7334987.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/115082d4fdfc3fcfabd1edb062bfc0c8d08724ef44658006996dd8c4e84081f9.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/121a7de7a63e097454671fa2bb48df47936c5415dcc4827e6da04c28efc04f7c.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/130a919a41b569046a087188114c1ca7f96c9be8660322d11700ad2b2327eeda.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/13ca9a07494f67c1539c6ac636c93da46894ba3db92c70718d63210e9bd261fd.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/14d13f4f937fb5bf76f19189a0140587a6f86d156edd2e4f6dd1c83e4329c45b.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/150eee1ae3aee0143d1aaf2397055b1949c8f7e9061bb62ef8fa273bc84d2d4d.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/15e4d6d7852429ecc8a66adb5c2e9e76b21a99831637e5935cda9218f761e8d4.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/16b8f71738d768e79f64b9b6f6cf5fe8cc453d1d5134a8825c7d32c69a6fea09.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/1778add5c6b8fe75b0b0a398c7341ac2bd05bf92dd5836b7dc354f3ce367af47.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/18188740093554f8f3268f2dfc99cefd14baecf57f9583eb2a50dbfa2c9f9081.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/1b75398bf47e7d6465ff396d014450216cdc6c65167c20930af9cf65e3a0045a.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/1bc270a8f6aed169cb834e6d1932e16b627f68981119bdf37be21484b54dd3c8.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/1bc62bbec4a214c2c4c0e91e51cefce667807fcebec5669e02a0027ad00a7a99.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/1e4fb2c086ad6940199fd0d69f743519c9d3065520f5bd76f0b9c944a5f5959c.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/1ef8f827f17c9eccd9ad205dbf22860da9e001d1e6109c9f7f467ab3c613f644.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/24662ead2bfaea92f8908f88aef0318c1f4b1aeb4750ef4b0f68ad1b5a28c2e7.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/247df07d49645817d36e42784fd5548b7398795c9d28de05f6d13f6c791565f5.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/263f7fb45b0bc6be20e5ddb470f405c3cf5346419072247d8678b0215dcea6f6.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/26c19213d429d3fcd2929c1c0b81841d1a9c2d8bdb2208fb604a1856a8b6065e.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/2752c402e0f710ff286bf0f83f6a3597aaa0af5ca0e49ba6c2454ab063a0e232.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/27704e806c31a7fbc8bec35b04a2a6cb11094117eca735f41a369ee02c6c1206.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/2a4a53ace5c4519fea73cc6d7f0dfdfc477be17edd3928154dadbaa7e2ac30c7.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/2c01b2741ab666fe59087f835a70bc77639a6586047787f0b9449d86353fadbe.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/2cc0df361891c40f7730f60af239cc2ac5feead04b93b7285e2f2983db62e8b0.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/2df52a698647da75fc22156d4abba6a04559b826e542d66a576fc315a1c2bbe2.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/2fcba79c30e1e716fb9bbe3ad1b2ffee189eea0a2fc590760a44733941c81c67.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/329c00e4c427a7c4707fd8f3654d54644e3cb86be8e97a6be05637ccb6afffcf.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/3455f429422fb3e24b8dd3d5aea23efcaa2a842ecf98ab25e038f2ad12312b27.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/35a4379981cbb4e146b633e28c427af13787343c450291fee776f2f5450b4d6f.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/3612c7e02158e4d3f13b9ee300c1087df23097ad0a29cd50e4e16105e9e05f68.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/372b8fbad88acd3a515f0e3feaf30528ce6c2abc35f5823b390cb55aabc63c53.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/38e8e960f1b45c3fe1ee35e6bd2523ccabb3e8a8a52fb60a66c6036efd844180.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/39161386c95434a675daf34710499b28bcd470c78257da736c1754b2c248fc59.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/39a0d600caa7faf2d88556e91caa59884db32b569b3a02c4ded2ac61a541e794.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/3a3dde293930b09b6462a2baae14f1fb7155a387e956284ddb60a341baa31906.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/3a8f339d5f872e5f16fdc31816d48d8d2f2cc9b6ce9c72ea59ed2b1c5d4ca82b.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/3b291b5f4397a8e202ec51e3d74b2e5a4000ce4d2c20f45757345754e79e659e.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/3b62f667f07ebd31f3a76e244f554549dd34debb7d21b20e394a8ce5f8e8d4d5.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/3c368652afbbe492e337307c7d5506aed2c2f22eb08f0b94547f366c4ab4fc40.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/3d6472166ddac8c4733e2297774d18432bd513e8174368d016a44bceff6746ed.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/3d9210f439de40dfd3e0bccc93413dde0759acd556cfac0aabe5ebbcb133d088.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/3de4fdb40cdf98e79271748e05808c96c6206a4497ad9acdd1d856544fc07391.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/40b2ca53a0ccd4c9c62d1fb42ce2ec0454d32fbbf474bb0df04ba8d58fec7046.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/4181f0851337a63376667e73aa03d80da183fe597c38fab9bdfc5077b1c6ca15.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/428ccc2e555e9a86d6b8bf233cd98bfc344df20c09b431aa37522cd6730213a9.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/42c7aa57a9793619192841aafbd76979fa7b398009a1a2bf60bccca27e528471.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/4341265f497306f06a3a657550a4dd3a7c11c8e8dcfcfe6bd27fad998d668c76.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/4526cd982488f4c9a081e4d1fff0eca8025cd3e192f2f4f9327ff38f3d99c96b.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/46a474207560b89d52d04c4d3f6e742bacd43da217ab1b1e61575e56b894d088.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/4a5210dd0a112ccc22904617b3d5e646ef90c81f51cf0116c7d6160894c71aa4.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/4bde36c7c939373424bf802bee7ed965c12a28531dfa6fe185124feaba60e3f0.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/4c88958cd6d034082dcc7446c0b6ce190d5bd65680bcc3e6fb6c855465f08c97.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/4e189019194a9c7357beaf42c4ee79b934e56139fd102c33e5df411528db95d9.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/51a1418cbc8abf613ffe7412f29bce533b4240541ed498dc7fc5f3586cd225a1.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/55954955d7dc8d9d27fb1f52df63a10a931e250d162e2b2c5ba2b60bb8a30580.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/5817cfe1a202ee1a787f76476e9d77c15e7df47503773f70e76cfd1af3e973d0.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/589681a971e80695c6bc4944437a60c9a464a96f67e4cceea6bfa173701c11a4.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/5b97845193e0f80ea3ec3482ca9633d6e638d9ccd2cd21751fb65552f0b8605b.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/5d0bb6a85012eb66f32430b6d0b59a53fbf56dac5aae4ed9d16aff06c8102342.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/5d18ae47388b48d8032c2fc21e618d00cb3b638e80459c21f69326cb9c45ef58.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/5ed07974c614c7c70e1f4fd18c6bf85b2538267561c1cab56925a78fd20e040b.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/5f4aa9eaf321c74139ab27f1bdbf250a629956655bc5f0fe589ed1c0fd631851.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/625d443fac94554c1eb288b38beb8478eebd01a05b01a8f7a29f5cc3abd67e44.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/639020a5670cc978e3613b9bcdda425cdbdfaf09be5f1ffaf871e2e11eccab9b.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/65c6a0a69778b8687e090bacda38d0a45ee5adf56f3e65be7570862f893c0dba.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/672a7f4a60cdb1692fac7d72f5d58d89ac042380be4cf2f16eb4cd454c3b719f.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/688baaaeb0765d82fc990cb64b12845778aa512b467ebd05760d896cb7b4b2ec.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/69b7403f3ceec6828f7cb8348c401f0f0b89baa522caa17fa0df825653120a44.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/6b0a7454c32d2b8c2c5680bb6ec6d2d415e67b16e52b8cefbc333a34703b9601.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/6e77178b3b54b27307eee70962b7fa66a736d2ed798cbe18e669c36119e82f21.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/70e757168ca1432768d07f225c126415123e4de4af2010f447b787336936da60.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/717b87ab3283038b8c71bb5233a96fd4dfaa3b1ba64cc397b8f0e299d0a32cbd.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/76e779f7726ce61fff9d77c08adb650e00a53e734a46076137ec433aa2d484d7.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/78598263b781761b6a1ee06e82fb099c6e52a89316c01ea88289fa257d529d0c.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/7affb88df15da4248ac6ac9201eb6b737fde5230610f9196ca03924f93775846.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/7bcb472b62d6a18cb1156d98f8357269ab56bb442b3e8cf59563fb0ef1f82481.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/7c5b70423b3c8c3fca12c83a827e92f0b9920e1f26ae821a0c7183c42f3fea3f.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/7c722871d97a9d4fd721906e88d69096b603dca799c51432695bcee589bf97b4.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/7d60fb53be44e91a7a08c3dab0bbe93b5dfcdc110692acb2ea572c8ef8d6f74a.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/7dc4805bcbdb2841adfd6963b7a246c1ccc0bc86972eff3edc1e841683973ed3.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/7fe2edb744f72e6e66e266b3cee7beb0ea4118de91195ba4ab3445c5f284c964.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/82ebd6bad8bfdc257cf184189cc673cad8995775f7514d08409e45ed91ade27e.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/835d3562d0bc69685daa287d5d94cc84ccc501399ec21697f34105211da87f1a.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/84550469201893cd61e47a82554747b2980e67a4a24d5879c9eacc9b6d7c4fef.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/8731c4f71fcea49e662d124a4027e0230b8dbcde0fa41e4997bc5ab00ec7f73b.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/873a768e5408608f86703fcefde285bacf14c4e481263229c903a6e034fb6c99.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/8acab294e9e01afffea3c335b2d30fd4578635dab2148b2458105140d10ae45d.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/8b2a64bc11203f1a8736a5370f85d498e555710e4efba44c3d119b9c887e11f4.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/8b9d51b166a90bc2aebb009ba40348a8fb5d06a6b7d67a0ad7ecdd7c93b06b31.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/8be919d742a28237e95845fec56bdb0b8ebc74edb03119d607660f21f8f99ab0.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/90a5766f4e02b570019ba3d6cf20fd0066e88d4638fd8da202dbc3f46a8048b1.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/936d3f323775dc34656d956df290b6843b07dde820f8dc74a8930c1a44190d90.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/94fcc3bd6e9312498d6cdfb8c10c4e74f77806a4b57ef6bffa8eb859f8cd94d0.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/96c3e982175f72b1ebcf81b8649de4116773e58a27db43243102d6b627200944.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/97a8ff4e2de10f2bc4c3fbfb84c8cfd92125d4a80ee09a4f84ac2b571e9aa9c3.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/985df8af3cc59d2beb047816c94c8cc6a6306d47cff2457ecdd130b56498de6b.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/98667ae514dcd0dcf00b21980979f6adabd3494413f6ace224386d00063a18b4.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/9a7a15abd8a8f45e699920f253ce5ffa8d8a3fc1383a6d44b0a35a3fc620687d.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/9a8a690efeb2fb8fa641c775061295e74480f5e4fa1902861054036b0e5bbe1c.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/9ab81b20362a0d1beb9628850d03cc92e5679af55c02704b6b4ecc6a22ba099f.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/9b07da8156990268bfd4052066711be6beb94a1441ec6e5f3829359d386029ea.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/9b2198efa7171383ee4729ba503108dc686a17c801f6cfd0b5ba4533f396d0f3.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/9cb88a6a9638b69e6b640b9369194b44ecad3e98fb35007e1b645afed223c67b.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/a088adf500dd243d17e099378b5862d92f22259f6a3b31daa0cf09db4318965e.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/a30fba275a6f991cb3fd85180e6e0602267b22042fd4508bd37744eab6d986f6.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/a499dfb0e4feb604908456af87f59d0f0284dfe1115259a54468473848aeb1fe.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/a8ebe0954ac8f97bf7a7853a4d4e674ba7b11370600cd840c3ce6b29d6efe8fc.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/adb60ac49618c8ec607efe8871d58cc150e0abddaac8117237a26eb31c22490b.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/af97028ab01a345b8ac5d418926eca44b305890798fbc1a4da349708261e3059.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/b4c174eec11da512a5a8aeb6af73c922ffc37e28f65a907fbec22d1021ee4cd7.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/b7409dee02ceb691bf1b730d58e17492de6c0c392c0ec7caff7416740b0a9af0.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/b79e5331463a3b1566f4583052bdfc5039b7ebf9a10bf175475059749c8a2c87.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/b79f60f34ac8c1bd73fd5eaf08b323fbed9e47e863ccadf544b7547960fd4755.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/b812c099e59deae6e7e166e3149f5ff743d2fdbe488063dc9c9e5b2007a28bb3.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/b9ddd0efc2e85dd1948b17c9b362cc1cc8162d59b96ad7febfb75b6cb3e2cae2.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/ba6d5483454923b0154f6dbae2ae667ad2ac452ef4c2e7792ccaa0203c870b58.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/bc08622b73305a1ec4594f1aaa1b6cc10b0d23acb77fc0ade95967e2d0c6e009.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/bc1c1fb0dc1237b0c920b8aed6d429b858cdfac2c3dc0466ebd0fa422d4cfadd.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/bf119d224f4e5c14bfa7b5077e3b5bf7058105d4d8d01f0199ebbd37dbe0a718.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/bf7bdfeecd27a201eef17199dc3a1b8252df2d2b8462672f491caa95d0271b49.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/bfe68c5d5b0a0b41ee1857b69c9448e390e797cdbbafff1d17f82e89144c8da0.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/c0b6454d7d5c5f0a49dec139ac749f61b9cfc1c26592315bffa07744cfca0a32.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/c0f441b91d32b217bd9f00d2526e679d7fcd795303a056e71b04f7d4f7f9d5b5.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/c1b2cfee48b94536d5baf3b3f4971dcce573d185ba2da9ed473359284dd236f7.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/c5d3c34292e29e74dc1111db682bf2b25d2b9aeaa3dc9b9630fcdcecc9a56d3e.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/c69657c779dc5906f9c44007e583af704ad33807c42a172df8c332f492b59db8.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/ca3c58b29f60bad0ac82220c502c6b8a3677a0a48d6942855cde386ea98db2ac.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/ca714e5d0eacae38b2f0c10e299dbec6a3e1ddd7fb041e4b07e117dbe8415ec9.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/cb493aecb64b3ed6f5f6a40b698ea34bfeb719898eac79743d919a96e905e307.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/cb790dabb8b99c6bf849d58d9809c4cbcb18b6559bb070265ae434c53a23fc50.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/ccf0932e8ae74ad57c1139e5172d67915b6477f7f9c72b0cc8ee402852dbbf05.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/ce86c74a19308500c8d59c06a863dd9e21cb5aa1f5f86777310bf71bdef5a311.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/d0f98a5d9a417be6f5035ffa2b72aa7491aeb181d66a0d5a1595b45c7651ebbe.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/d15ab198b16f2edc89e9a256c4d9e09dcf0cb067202b43e774d8e1693fb13a26.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/d36068ead2f9c6a4222d4d82daa67a915d7ca8ced8b30cb6e62046309f05aa6c.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/d4a3373e9109f86f95cb474b7e51ef50fb35cdb4e562c5b3544bff5ef50cb89b.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/d7d4c429329354e106dac11128151296b97232a8643eb321d3065d5b46011d74.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/d807ba8cb22c6b591a096f50a05c34fb6c2a04b39747ca112dcb7f3a66daddc6.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/d85e0c939c74c05abbb83d3f4a1e54588fc61f611d309d993e88dad7fb3426be.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/d890879cb357464427f3a73ba22f0b4e443f9bcd5b7af010339fc24a98679e94.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/d963a7f8dbd04e41a59f31353f62c2a2e4b1b11f1571e13ca0abcb27db2e5197.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/dcb7ced6bd925b872314504194801705cfb116c12909613e7be4993137c26e62.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/dd2231fa16ac70d8f45bc3e687734fe42867a1f4c5a6a30089159e1cc417f171.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/de6623d7a5d5a5af7b921c3a3f193e541eb2e4f59aa20c18b4ab2a60be289dff.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/e02cd325e570512f06a619472feadd9cfcdffc9d5be6757e3640f1f8861cbdd9.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/e0b0d6cbf84c1193a26b3f4e8056baa3b3fb0941b54e8c4cc3c4d9d17405a2a6.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/e1e68aa5bdd91fa511f952ae1ddee6e57ade8fe4171b0959b0ba8b49bb4a67f1.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/e440929549878992adfae8aa3f643fed307058eba35ed2b512aebb95f55b9b07.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/e486905c0c440c31f7cf6243bcc640fb329346dcec52b8b2104b8a21d140ecd4.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/e4d414400cf5c8b2f0a69e096b496d114fbd8c7d843240bb3404375e62e6a1ec.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/e9cf50ae88b39373d90c67e4550758d6dc152081e51b0f6734e88ad0ad2f493b.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/ee3c82ab1bdbdfabea9d659ac853acd5b761823229a08521dc5d3201303644ce.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/ee4d124e26dcdce8d31aa4fef53650e0f2181f8a232825f3c149813d7cbaf788.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/f1ff79f4f441f5f63665a81e6df58271ebb050803165d8a308cbc1c82181d65f.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/f5a23e1117e99073af9f280724697323db9f6dd7625229744ef3f25cff758c7d.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/f9768f083ec63b69d67356b2d93ac26c40bc48fb9f934ef6bab047e32479fb4a.json": {
+      "files": 1,
+      "bytes": 198
+    },
+    "cachedata/contributions/fa79bdb628fb3eccde9d73a7c62eb940ad90f989a9b7701fd8904ffc57cc5310.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/contributions/fb5bbd00da4753c5095415a2f286dbcf85619557e068904560f96556a3d8e0b9.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/fc083db5130b3babc6e8f0e3fc048817d7a022adf277daaddcb5ca96a5bbda6d.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/fd24475430c88342fd0155cae3bccfaa2b479a611e18317c9638d767dce632a7.json": {
+      "files": 1,
+      "bytes": 196
+    },
+    "cachedata/contributions/fe4f62a71f7f83900d3acf14efa1b16203d3c47d117c60e061e348a5a0d7589e.json": {
+      "files": 1,
+      "bytes": 197
+    },
+    "cachedata/dbc/item_display_icons.tsv.gz": {
+      "files": 1,
+      "bytes": 778432
+    },
+    "cachedata/lootcollector/README.md": {
+      "files": 1,
+      "bytes": 2467
+    },
+    "cachedata/lootcollector/items.tsv": {
+      "files": 1,
+      "bytes": 522360
+    },
+    "cachedata/lootcollector/pins.tsv": {
+      "files": 1,
+      "bytes": 1501347
+    },
+    "cachedata/lootcollector/sources.tsv": {
+      "files": 1,
+      "bytes": 2813
+    },
+    "cachedata/lua/ADDONS-PROVENANCE.md": {
+      "files": 1,
+      "bytes": 4949
+    },
+    "cachedata/lua/AIO_Client.lua": {
+      "files": 1,
+      "bytes": 1304485
+    },
+    "cachedata/lua/AIO_Client.variants.json": {
+      "files": 1,
+      "bytes": 8630
+    },
+    "cachedata/lua/Auctionator.observations.json": {
+      "files": 1,
+      "bytes": 141452
+    },
+    "cachedata/lua/Auctionator_Price_Database.lua": {
+      "files": 1,
+      "bytes": 1280861
+    },
+    "cachedata/lua/GatherMate2.lua": {
+      "files": 1,
+      "bytes": 1292845
+    },
+    "cachedata/lua/MobSpells.lua": {
+      "files": 1,
+      "bytes": 1783078
+    },
+    "cachedata/lua/addons/BC_Client.lua": {
+      "files": 1,
+      "bytes": 59488
+    },
+    "cachedata/lua/addons/Blizz_interface_improvements.lua": {
+      "files": 1,
+      "bytes": 20546
+    },
+    "cachedata/lua/addons/ButtonTemplates.lua": {
+      "files": 1,
+      "bytes": 2678
+    },
+    "cachedata/lua/addons/CAO_Client.lua": {
+      "files": 1,
+      "bytes": 248889
+    },
+    "cachedata/lua/addons/CAO_Client_Tutorial.lua": {
+      "files": 1,
+      "bytes": 83785
+    },
+    "cachedata/lua/addons/CalendarC.lua": {
+      "files": 1,
+      "bytes": 3314
+    },
+    "cachedata/lua/addons/CharFrameEdit.lua": {
+      "files": 1,
+      "bytes": 37818
+    },
+    "cachedata/lua/addons/ChatChannelsC.lua": {
+      "files": 1,
+      "bytes": 282
+    },
+    "cachedata/lua/addons/CheckpointDeathClient.lua": {
+      "files": 1,
+      "bytes": 2502
+    },
+    "cachedata/lua/addons/ClientCharacterAdvancement.lua": {
+      "files": 1,
+      "bytes": 141937
+    },
+    "cachedata/lua/addons/ClientEBB.lua": {
+      "files": 1,
+      "bytes": 36430
+    },
+    "cachedata/lua/addons/ClientResets.lua": {
+      "files": 1,
+      "bytes": 15110
+    },
+    "cachedata/lua/addons/ClientStatAllocation.lua": {
+      "files": 1,
+      "bytes": 13681
+    },
+    "cachedata/lua/addons/Client_LocalizationStuff.lua": {
+      "files": 1,
+      "bytes": 58739
+    },
+    "cachedata/lua/addons/CollectionController.lua": {
+      "files": 1,
+      "bytes": 11765
+    },
+    "cachedata/lua/addons/DraftMode_Client.lua": {
+      "files": 1,
+      "bytes": 79761
+    },
+    "cachedata/lua/addons/EnchantReRollC.lua": {
+      "files": 1,
+      "bytes": 66397
+    },
+    "cachedata/lua/addons/FriendsFrameC.lua": {
+      "files": 1,
+      "bytes": 1441
+    },
+    "cachedata/lua/addons/GetRiskClient.lua": {
+      "files": 1,
+      "bytes": 1199
+    },
+    "cachedata/lua/addons/HonorableCombatMapC.lua": {
+      "files": 1,
+      "bytes": 2379
+    },
+    "cachedata/lua/addons/HotBarSaverClient.lua": {
+      "files": 1,
+      "bytes": 4429
+    },
+    "cachedata/lua/addons/HybridScrollFrame.lua": {
+      "files": 1,
+      "bytes": 3282
+    },
+    "cachedata/lua/addons/IconSelector.lua": {
+      "files": 1,
+      "bytes": 6969
+    },
+    "cachedata/lua/addons/InspectClient.lua": {
+      "files": 1,
+      "bytes": 2028
+    },
+    "cachedata/lua/addons/ItemLoot.lua": {
+      "files": 1,
+      "bytes": 21453
+    },
+    "cachedata/lua/addons/LeaveGroup.lua": {
+      "files": 1,
+      "bytes": 143
+    },
+    "cachedata/lua/addons/LevelUpDisplay_Ascension_Client.lua": {
+      "files": 1,
+      "bytes": 28543
+    },
+    "cachedata/lua/addons/Misc_DeathResFrame.lua": {
+      "files": 1,
+      "bytes": 3014
+    },
+    "cachedata/lua/addons/NewbieHelp_Client.lua": {
+      "files": 1,
+      "bytes": 26129
+    },
+    "cachedata/lua/addons/PaperDollEdit.lua": {
+      "files": 1,
+      "bytes": 2490
+    },
+    "cachedata/lua/addons/PatchVersionCompareC.lua": {
+      "files": 1,
+      "bytes": 2000
+    },
+    "cachedata/lua/addons/PersonalBankClient.lua": {
+      "files": 1,
+      "bytes": 1318
+    },
+    "cachedata/lua/addons/PlayerFramePrestigeC.lua": {
+      "files": 1,
+      "bytes": 4255
+    },
+    "cachedata/lua/addons/PointOfInterestC.lua": {
+      "files": 1,
+      "bytes": 1523
+    },
+    "cachedata/lua/addons/PvPClient.lua": {
+      "files": 1,
+      "bytes": 9082
+    },
+    "cachedata/lua/addons/RandomMode_Client.lua": {
+      "files": 1,
+      "bytes": 20147
+    },
+    "cachedata/lua/addons/RangedBuff.lua": {
+      "files": 1,
+      "bytes": 2888
+    },
+    "cachedata/lua/addons/SafeSlotsClient.lua": {
+      "files": 1,
+      "bytes": 13382
+    },
+    "cachedata/lua/addons/SeasonalCollectionC.lua": {
+      "files": 1,
+      "bytes": 131503
+    },
+    "cachedata/lua/addons/StoreCollectionC.lua": {
+      "files": 1,
+      "bytes": 57312
+    },
+    "cachedata/lua/addons/SwitchSpecClient.lua": {
+      "files": 1,
+      "bytes": 8142
+    },
+    "cachedata/lua/addons/TomeCollectionsC.lua": {
+      "files": 1,
+      "bytes": 33610
+    },
+    "cachedata/lua/addons/TooltipCorrector.lua": {
+      "files": 1,
+      "bytes": 22380
+    },
+    "cachedata/lua/addons/UnlearnSkillClient.lua": {
+      "files": 1,
+      "bytes": 1713
+    },
+    "cachedata/lua/addons/unresolved": {
+      "files": 14,
+      "bytes": 158964
+    },
+    "cachedata/lua/coa-client-events.json": {
+      "files": 1,
+      "bytes": 462
+    },
+    "cachedata/lua/harvest/advancement.tsv": {
+      "files": 1,
+      "bytes": 9233744
+    },
+    "cachedata/lua/harvest/apiSurfaces.json": {
+      "files": 1,
+      "bytes": 63912
+    },
+    "cachedata/lua/harvest/battlegrounds.json": {
+      "files": 1,
+      "bytes": 6797
+    },
+    "cachedata/lua/harvest/byRealm.json": {
+      "files": 1,
+      "bytes": 4581942
+    },
+    "cachedata/lua/harvest/dungeons.json": {
+      "files": 1,
+      "bytes": 187471
+    },
+    "cachedata/lua/harvest/enums.json": {
+      "files": 1,
+      "bytes": 40937
+    },
+    "cachedata/lua/harvest/gossips.tsv": {
+      "files": 1,
+      "bytes": 10332
+    },
+    "cachedata/lua/harvest/observed.json": {
+      "files": 1,
+      "bytes": 2003
+    },
+    "cachedata/lua/harvest/roleRequirements.json": {
+      "files": 1,
+      "bytes": 160
+    },
+    "cachedata/lua/harvest/skillCards.json": {
+      "files": 1,
+      "bytes": 2816
+    },
+    "cachedata/lua/harvest/spells.json": {
+      "files": 1,
+      "bytes": 82989
+    },
+    "cachedata/lua/harvest/vendors.tsv": {
+      "files": 1,
+      "bytes": 574080
+    },
+    "cachedata/lua/reference-captures/ascension_coareader": {
+      "files": 1,
+      "bytes": 159838
+    },
+    "cachedata/lua/reference-captures/ascensionharvest": {
+      "files": 1,
+      "bytes": 949117
+    },
+    "cachedata/lua/stock-client/README.md": {
+      "files": 1,
+      "bytes": 3198
+    },
+    "cachedata/lua/stock-client/creatures-001.lua": {
+      "files": 1,
+      "bytes": 339964
+    },
+    "cachedata/lua/stock-client/creatures-002.lua": {
+      "files": 1,
+      "bytes": 339987
+    },
+    "cachedata/lua/stock-client/creatures-003.lua": {
+      "files": 1,
+      "bytes": 339994
+    },
+    "cachedata/lua/stock-client/creatures-004.lua": {
+      "files": 1,
+      "bytes": 339986
+    },
+    "cachedata/lua/stock-client/creatures-005.lua": {
+      "files": 1,
+      "bytes": 339930
+    },
+    "cachedata/lua/stock-client/creatures-006.lua": {
+      "files": 1,
+      "bytes": 339970
+    },
+    "cachedata/lua/stock-client/creatures-007.lua": {
+      "files": 1,
+      "bytes": 312851
+    },
+    "cachedata/lua/stock-client/init.lua": {
+      "files": 1,
+      "bytes": 3782
+    },
+    "cachedata/lua/stock-client/items-001.lua": {
+      "files": 1,
+      "bytes": 339991
+    },
+    "cachedata/lua/stock-client/items-002.lua": {
+      "files": 1,
+      "bytes": 339951
+    },
+    "cachedata/lua/stock-client/items-003.lua": {
+      "files": 1,
+      "bytes": 339964
+    },
+    "cachedata/lua/stock-client/items-004.lua": {
+      "files": 1,
+      "bytes": 339958
+    },
+    "cachedata/lua/stock-client/items-005.lua": {
+      "files": 1,
+      "bytes": 339948
+    },
+    "cachedata/lua/stock-client/items-006.lua": {
+      "files": 1,
+      "bytes": 339923
+    },
+    "cachedata/lua/stock-client/items-007.lua": {
+      "files": 1,
+      "bytes": 339970
+    },
+    "cachedata/lua/stock-client/items-008.lua": {
+      "files": 1,
+      "bytes": 339988
+    },
+    "cachedata/lua/stock-client/items-009.lua": {
+      "files": 1,
+      "bytes": 339917
+    },
+    "cachedata/lua/stock-client/items-010.lua": {
+      "files": 1,
+      "bytes": 339987
+    },
+    "cachedata/lua/stock-client/items-011.lua": {
+      "files": 1,
+      "bytes": 339975
+    },
+    "cachedata/lua/stock-client/items-012.lua": {
+      "files": 1,
+      "bytes": 339948
+    },
+    "cachedata/lua/stock-client/items-013.lua": {
+      "files": 1,
+      "bytes": 339989
+    },
+    "cachedata/lua/stock-client/items-014.lua": {
+      "files": 1,
+      "bytes": 339984
+    },
+    "cachedata/lua/stock-client/items-015.lua": {
+      "files": 1,
+      "bytes": 339972
+    },
+    "cachedata/lua/stock-client/items-016.lua": {
+      "files": 1,
+      "bytes": 339951
+    },
+    "cachedata/lua/stock-client/items-017.lua": {
+      "files": 1,
+      "bytes": 339985
+    },
+    "cachedata/lua/stock-client/items-018.lua": {
+      "files": 1,
+      "bytes": 339961
+    },
+    "cachedata/lua/stock-client/items-019.lua": {
+      "files": 1,
+      "bytes": 339961
+    },
+    "cachedata/lua/stock-client/items-020.lua": {
+      "files": 1,
+      "bytes": 339949
+    },
+    "cachedata/lua/stock-client/items-021.lua": {
+      "files": 1,
+      "bytes": 339958
+    },
+    "cachedata/lua/stock-client/items-022.lua": {
+      "files": 1,
+      "bytes": 339975
+    },
+    "cachedata/lua/stock-client/items-023.lua": {
+      "files": 1,
+      "bytes": 339962
+    },
+    "cachedata/lua/stock-client/items-024.lua": {
+      "files": 1,
+      "bytes": 339952
+    },
+    "cachedata/lua/stock-client/items-025.lua": {
+      "files": 1,
+      "bytes": 339935
+    },
+    "cachedata/lua/stock-client/items-026.lua": {
+      "files": 1,
+      "bytes": 339955
+    },
+    "cachedata/lua/stock-client/items-027.lua": {
+      "files": 1,
+      "bytes": 339967
+    },
+    "cachedata/lua/stock-client/items-028.lua": {
+      "files": 1,
+      "bytes": 339901
+    },
+    "cachedata/lua/stock-client/items-029.lua": {
+      "files": 1,
+      "bytes": 339985
+    },
+    "cachedata/lua/stock-client/items-030.lua": {
+      "files": 1,
+      "bytes": 339934
+    },
+    "cachedata/lua/stock-client/items-031.lua": {
+      "files": 1,
+      "bytes": 339956
+    },
+    "cachedata/lua/stock-client/items-032.lua": {
+      "files": 1,
+      "bytes": 339984
+    },
+    "cachedata/lua/stock-client/items-033.lua": {
+      "files": 1,
+      "bytes": 339993
+    },
+    "cachedata/lua/stock-client/items-034.lua": {
+      "files": 1,
+      "bytes": 339963
+    },
+    "cachedata/lua/stock-client/items-035.lua": {
+      "files": 1,
+      "bytes": 339989
+    },
+    "cachedata/lua/stock-client/items-036.lua": {
+      "files": 1,
+      "bytes": 339994
+    },
+    "cachedata/lua/stock-client/items-037.lua": {
+      "files": 1,
+      "bytes": 339947
+    },
+    "cachedata/lua/stock-client/items-038.lua": {
+      "files": 1,
+      "bytes": 339889
+    },
+    "cachedata/lua/stock-client/items-039.lua": {
+      "files": 1,
+      "bytes": 339989
+    },
+    "cachedata/lua/stock-client/items-040.lua": {
+      "files": 1,
+      "bytes": 339947
+    },
+    "cachedata/lua/stock-client/items-041.lua": {
+      "files": 1,
+      "bytes": 339953
+    },
+    "cachedata/lua/stock-client/items-042.lua": {
+      "files": 1,
+      "bytes": 339931
+    },
+    "cachedata/lua/stock-client/items-043.lua": {
+      "files": 1,
+      "bytes": 339957
+    },
+    "cachedata/lua/stock-client/items-044.lua": {
+      "files": 1,
+      "bytes": 339946
+    },
+    "cachedata/lua/stock-client/items-045.lua": {
+      "files": 1,
+      "bytes": 339957
+    },
+    "cachedata/lua/stock-client/items-046.lua": {
+      "files": 1,
+      "bytes": 339974
+    },
+    "cachedata/lua/stock-client/items-047.lua": {
+      "files": 1,
+      "bytes": 339990
+    },
+    "cachedata/lua/stock-client/items-048.lua": {
+      "files": 1,
+      "bytes": 339960
+    },
+    "cachedata/lua/stock-client/items-049.lua": {
+      "files": 1,
+      "bytes": 339964
+    },
+    "cachedata/lua/stock-client/items-050.lua": {
+      "files": 1,
+      "bytes": 339943
+    },
+    "cachedata/lua/stock-client/items-051.lua": {
+      "files": 1,
+      "bytes": 339942
+    },
+    "cachedata/lua/stock-client/items-052.lua": {
+      "files": 1,
+      "bytes": 339961
+    },
+    "cachedata/lua/stock-client/items-053.lua": {
+      "files": 1,
+      "bytes": 339996
+    },
+    "cachedata/lua/stock-client/items-054.lua": {
+      "files": 1,
+      "bytes": 339968
+    },
+    "cachedata/lua/stock-client/items-055.lua": {
+      "files": 1,
+      "bytes": 339984
+    },
+    "cachedata/lua/stock-client/items-056.lua": {
+      "files": 1,
+      "bytes": 339926
+    },
+    "cachedata/lua/stock-client/items-057.lua": {
+      "files": 1,
+      "bytes": 339934
+    },
+    "cachedata/lua/stock-client/items-058.lua": {
+      "files": 1,
+      "bytes": 339925
+    },
+    "cachedata/lua/stock-client/items-059.lua": {
+      "files": 1,
+      "bytes": 339979
+    },
+    "cachedata/lua/stock-client/items-060.lua": {
+      "files": 1,
+      "bytes": 339998
+    },
+    "cachedata/lua/stock-client/items-061.lua": {
+      "files": 1,
+      "bytes": 339996
+    },
+    "cachedata/lua/stock-client/items-062.lua": {
+      "files": 1,
+      "bytes": 339976
+    },
+    "cachedata/lua/stock-client/items-063.lua": {
+      "files": 1,
+      "bytes": 339954
+    },
+    "cachedata/lua/stock-client/items-064.lua": {
+      "files": 1,
+      "bytes": 339970
+    },
+    "cachedata/lua/stock-client/items-065.lua": {
+      "files": 1,
+      "bytes": 339996
+    },
+    "cachedata/lua/stock-client/items-066.lua": {
+      "files": 1,
+      "bytes": 339977
+    },
+    "cachedata/lua/stock-client/items-067.lua": {
+      "files": 1,
+      "bytes": 339910
+    },
+    "cachedata/lua/stock-client/items-068.lua": {
+      "files": 1,
+      "bytes": 339977
+    },
+    "cachedata/lua/stock-client/items-069.lua": {
+      "files": 1,
+      "bytes": 339990
+    },
+    "cachedata/lua/stock-client/items-070.lua": {
+      "files": 1,
+      "bytes": 339916
+    },
+    "cachedata/lua/stock-client/items-071.lua": {
+      "files": 1,
+      "bytes": 339996
+    },
+    "cachedata/lua/stock-client/items-072.lua": {
+      "files": 1,
+      "bytes": 339963
+    },
+    "cachedata/lua/stock-client/items-073.lua": {
+      "files": 1,
+      "bytes": 339959
+    },
+    "cachedata/lua/stock-client/items-074.lua": {
+      "files": 1,
+      "bytes": 339908
+    },
+    "cachedata/lua/stock-client/items-075.lua": {
+      "files": 1,
+      "bytes": 339961
+    },
+    "cachedata/lua/stock-client/items-076.lua": {
+      "files": 1,
+      "bytes": 339964
+    },
+    "cachedata/lua/stock-client/items-077.lua": {
+      "files": 1,
+      "bytes": 339955
+    },
+    "cachedata/lua/stock-client/items-078.lua": {
+      "files": 1,
+      "bytes": 339964
+    },
+    "cachedata/lua/stock-client/items-079.lua": {
+      "files": 1,
+      "bytes": 339936
+    },
+    "cachedata/lua/stock-client/items-080.lua": {
+      "files": 1,
+      "bytes": 339955
+    },
+    "cachedata/lua/stock-client/items-081.lua": {
+      "files": 1,
+      "bytes": 339934
+    },
+    "cachedata/lua/stock-client/items-082.lua": {
+      "files": 1,
+      "bytes": 339943
+    },
+    "cachedata/lua/stock-client/items-083.lua": {
+      "files": 1,
+      "bytes": 339959
+    },
+    "cachedata/lua/stock-client/items-084.lua": {
+      "files": 1,
+      "bytes": 339975
+    },
+    "cachedata/lua/stock-client/items-085.lua": {
+      "files": 1,
+      "bytes": 339989
+    },
+    "cachedata/lua/stock-client/items-086.lua": {
+      "files": 1,
+      "bytes": 339922
+    },
+    "cachedata/lua/stock-client/items-087.lua": {
+      "files": 1,
+      "bytes": 339965
+    },
+    "cachedata/lua/stock-client/items-088.lua": {
+      "files": 1,
+      "bytes": 339945
+    },
+    "cachedata/lua/stock-client/items-089.lua": {
+      "files": 1,
+      "bytes": 339955
+    },
+    "cachedata/lua/stock-client/items-090.lua": {
+      "files": 1,
+      "bytes": 339929
+    },
+    "cachedata/lua/stock-client/items-091.lua": {
+      "files": 1,
+      "bytes": 339943
+    },
+    "cachedata/lua/stock-client/items-092.lua": {
+      "files": 1,
+      "bytes": 339963
+    },
+    "cachedata/lua/stock-client/items-093.lua": {
+      "files": 1,
+      "bytes": 339973
+    },
+    "cachedata/lua/stock-client/items-094.lua": {
+      "files": 1,
+      "bytes": 339930
+    },
+    "cachedata/lua/stock-client/items-095.lua": {
+      "files": 1,
+      "bytes": 339964
+    },
+    "cachedata/lua/stock-client/items-096.lua": {
+      "files": 1,
+      "bytes": 339935
+    },
+    "cachedata/lua/stock-client/items-097.lua": {
+      "files": 1,
+      "bytes": 339963
+    },
+    "cachedata/lua/stock-client/items-098.lua": {
+      "files": 1,
+      "bytes": 339997
+    },
+    "cachedata/lua/stock-client/items-099.lua": {
+      "files": 1,
+      "bytes": 339968
+    },
+    "cachedata/lua/stock-client/items-100.lua": {
+      "files": 1,
+      "bytes": 339946
+    },
+    "cachedata/lua/stock-client/items-101.lua": {
+      "files": 1,
+      "bytes": 339936
+    },
+    "cachedata/lua/stock-client/items-102.lua": {
+      "files": 1,
+      "bytes": 339999
+    },
+    "cachedata/lua/stock-client/items-103.lua": {
+      "files": 1,
+      "bytes": 339958
+    },
+    "cachedata/lua/stock-client/items-104.lua": {
+      "files": 1,
+      "bytes": 339971
+    },
+    "cachedata/lua/stock-client/items-105.lua": {
+      "files": 1,
+      "bytes": 339975
+    },
+    "cachedata/lua/stock-client/items-106.lua": {
+      "files": 1,
+      "bytes": 339935
+    },
+    "cachedata/lua/stock-client/items-107.lua": {
+      "files": 1,
+      "bytes": 339967
+    },
+    "cachedata/lua/stock-client/items-108.lua": {
+      "files": 1,
+      "bytes": 339987
+    },
+    "cachedata/lua/stock-client/items-109.lua": {
+      "files": 1,
+      "bytes": 339940
+    },
+    "cachedata/lua/stock-client/items-110.lua": {
+      "files": 1,
+      "bytes": 339923
+    },
+    "cachedata/lua/stock-client/items-111.lua": {
+      "files": 1,
+      "bytes": 339997
+    },
+    "cachedata/lua/stock-client/items-112.lua": {
+      "files": 1,
+      "bytes": 339966
+    },
+    "cachedata/lua/stock-client/items-113.lua": {
+      "files": 1,
+      "bytes": 339931
+    },
+    "cachedata/lua/stock-client/items-114.lua": {
+      "files": 1,
+      "bytes": 339996
+    },
+    "cachedata/lua/stock-client/items-115.lua": {
+      "files": 1,
+      "bytes": 339932
+    },
+    "cachedata/lua/stock-client/items-116.lua": {
+      "files": 1,
+      "bytes": 339956
+    },
+    "cachedata/lua/stock-client/items-117.lua": {
+      "files": 1,
+      "bytes": 339964
+    },
+    "cachedata/lua/stock-client/items-118.lua": {
+      "files": 1,
+      "bytes": 339962
+    },
+    "cachedata/lua/stock-client/items-119.lua": {
+      "files": 1,
+      "bytes": 339958
+    },
+    "cachedata/lua/stock-client/items-120.lua": {
+      "files": 1,
+      "bytes": 339946
+    },
+    "cachedata/lua/stock-client/items-121.lua": {
+      "files": 1,
+      "bytes": 339995
+    },
+    "cachedata/lua/stock-client/items-122.lua": {
+      "files": 1,
+      "bytes": 339986
+    },
+    "cachedata/lua/stock-client/items-123.lua": {
+      "files": 1,
+      "bytes": 339982
+    },
+    "cachedata/lua/stock-client/items-124.lua": {
+      "files": 1,
+      "bytes": 339987
+    },
+    "cachedata/lua/stock-client/items-125.lua": {
+      "files": 1,
+      "bytes": 339950
+    },
+    "cachedata/lua/stock-client/items-126.lua": {
+      "files": 1,
+      "bytes": 339994
+    },
+    "cachedata/lua/stock-client/items-127.lua": {
+      "files": 1,
+      "bytes": 339973
+    },
+    "cachedata/lua/stock-client/items-128.lua": {
+      "files": 1,
+      "bytes": 339904
+    },
+    "cachedata/lua/stock-client/items-129.lua": {
+      "files": 1,
+      "bytes": 339964
+    },
+    "cachedata/lua/stock-client/items-130.lua": {
+      "files": 1,
+      "bytes": 339939
+    },
+    "cachedata/lua/stock-client/items-131.lua": {
+      "files": 1,
+      "bytes": 339973
+    },
+    "cachedata/lua/stock-client/items-132.lua": {
+      "files": 1,
+      "bytes": 339964
+    },
+    "cachedata/lua/stock-client/items-133.lua": {
+      "files": 1,
+      "bytes": 67407
+    },
+    "cachedata/lua/stock-client/quests-001.lua": {
+      "files": 1,
+      "bytes": 339962
+    },
+    "cachedata/lua/stock-client/quests-002.lua": {
+      "files": 1,
+      "bytes": 339967
+    },
+    "cachedata/lua/stock-client/quests-003.lua": {
+      "files": 1,
+      "bytes": 73217
+    },
+    "cachedata/mapdata/README.md": {
+      "files": 1,
+      "bytes": 1348
+    },
+    "cachedata/mapdata/dbc.tsv": {
+      "files": 1,
+      "bytes": 15184
+    },
+    "cachedata/mapdata/maps.tsv": {
+      "files": 1,
+      "bytes": 22774
+    },
+    "cachedata/raw/creaturecache.index.tsv.gz": {
+      "files": 1,
+      "bytes": 2262711
+    },
+    "cachedata/raw/creaturecache.pack.gz": {
+      "files": 1,
+      "bytes": 1220179
+    },
+    "cachedata/raw/gameobjectcache.index.tsv.gz": {
+      "files": 1,
+      "bytes": 497064
+    },
+    "cachedata/raw/gameobjectcache.pack.gz": {
+      "files": 1,
+      "bytes": 268664
+    },
+    "cachedata/raw/itemcache.index.tsv.gz": {
+      "files": 1,
+      "bytes": 23850183
+    },
+    "cachedata/raw/itemcache.pack.gz": {
+      "files": 1,
+      "bytes": 18489488
+    },
+    "cachedata/raw/itemnamecache.index.tsv.gz": {
+      "files": 1,
+      "bytes": 149110
+    },
+    "cachedata/raw/itemnamecache.pack.gz": {
+      "files": 1,
+      "bytes": 42709
+    },
+    "cachedata/raw/npccache.index.tsv.gz": {
+      "files": 1,
+      "bytes": 138012
+    },
+    "cachedata/raw/npccache.pack.gz": {
+      "files": 1,
+      "bytes": 409437
+    },
+    "cachedata/raw/pagetextcache.index.tsv.gz": {
+      "files": 1,
+      "bytes": 26516
+    },
+    "cachedata/raw/pagetextcache.pack.gz": {
+      "files": 1,
+      "bytes": 114626
+    },
+    "cachedata/raw/questcache.index.tsv.gz": {
+      "files": 1,
+      "bytes": 928822
+    },
+    "cachedata/raw/questcache.pack.gz": {
+      "files": 1,
+      "bytes": 3072638
+    },
+    "cachedata/sources.tsv": {
+      "files": 1,
+      "bytes": 2435129
+    },
+    "cachedata/union/creaturecache.tsv.gz": {
+      "files": 1,
+      "bytes": 1141160
+    },
+    "cachedata/union/gameobjectcache.tsv.gz": {
+      "files": 1,
+      "bytes": 299580
+    },
+    "cachedata/union/itemcache.tsv.gz": {
+      "files": 1,
+      "bytes": 14708438
+    },
+    "cachedata/union/itemnamecache.tsv.gz": {
+      "files": 1,
+      "bytes": 48861
+    },
+    "cachedata/union/npccache.tsv.gz": {
+      "files": 1,
+      "bytes": 395654
+    },
+    "cachedata/union/pagetextcache.tsv.gz": {
+      "files": 1,
+      "bytes": 116024
+    },
+    "cachedata/union/questcache.tsv.gz": {
+      "files": 1,
+      "bytes": 2639951
+    },
+    "cachedata/wdb/README.md": {
+      "files": 1,
+      "bytes": 2637
+    },
+    "cachedata/wdb/by-locale/frFR": {
+      "files": 5,
+      "bytes": 31449
+    },
+    "cachedata/wdb/by-locale/ruRU": {
+      "files": 4,
+      "bytes": 22216
+    },
+    "cachedata/wdb/by-locale/zhCN": {
+      "files": 10,
+      "bytes": 146583
+    },
+    "cachedata/wdb/coa-alpha/creaturecache.wdb.gz": {
+      "files": 1,
+      "bytes": 167411
+    },
+    "cachedata/wdb/coa-alpha/gameobjectcache.wdb.gz": {
+      "files": 1,
+      "bytes": 99323
+    },
+    "cachedata/wdb/coa-alpha/itemcache.wdb.gz": {
+      "files": 1,
+      "bytes": 1694658
+    },
+    "cachedata/wdb/coa-alpha/itemnamecache.wdb.gz": {
+      "files": 1,
+      "bytes": 6158
+    },
+    "cachedata/wdb/coa-alpha/npccache.wdb.gz": {
+      "files": 1,
+      "bytes": 50567
+    },
+    "cachedata/wdb/coa-alpha/pagetextcache.wdb.gz": {
+      "files": 1,
+      "bytes": 4081
+    },
+    "cachedata/wdb/coa-alpha/questcache.wdb.gz": {
+      "files": 1,
+      "bytes": 256330
+    },
+    "cachedata/wdb/coa-beta/creaturecache.wdb.gz": {
+      "files": 1,
+      "bytes": 139776
+    },
+    "cachedata/wdb/coa-beta/gameobjectcache.wdb.gz": {
+      "files": 1,
+      "bytes": 79645
+    },
+    "cachedata/wdb/coa-beta/itemcache.wdb.gz": {
+      "files": 1,
+      "bytes": 840163
+    },
+    "cachedata/wdb/coa-beta/itemnamecache.wdb.gz": {
+      "files": 1,
+      "bytes": 1235
+    },
+    "cachedata/wdb/coa-beta/npccache.wdb.gz": {
+      "files": 1,
+      "bytes": 42936
+    },
+    "cachedata/wdb/coa-beta/pagetextcache.wdb.gz": {
+      "files": 1,
+      "bytes": 6361
+    },
+    "cachedata/wdb/coa-beta/questcache.wdb.gz": {
+      "files": 1,
+      "bytes": 211122
+    },
+    "cachedata/wdb/coa-ptr/creaturecache.wdb.gz": {
+      "files": 1,
+      "bytes": 148213
+    },
+    "cachedata/wdb/coa-ptr/gameobjectcache.wdb.gz": {
+      "files": 1,
+      "bytes": 87236
+    },
+    "cachedata/wdb/coa-ptr/itemcache.wdb.gz": {
+      "files": 1,
+      "bytes": 1254972
+    },
+    "cachedata/wdb/coa-ptr/itemnamecache.wdb.gz": {
+      "files": 1,
+      "bytes": 8971
+    },
+    "cachedata/wdb/coa-ptr/npccache.wdb.gz": {
+      "files": 1,
+      "bytes": 22863
+    },
+    "cachedata/wdb/coa-ptr/pagetextcache.wdb.gz": {
+      "files": 1,
+      "bytes": 1496
+    },
+    "cachedata/wdb/coa-ptr/questcache.wdb.gz": {
+      "files": 1,
+      "bytes": 169145
+    },
+    "cachedata/wdb/conquest-of-azeroth-backup/creaturecache.wdb.gz": {
+      "files": 1,
+      "bytes": 97041
+    },
+    "cachedata/wdb/conquest-of-azeroth-backup/gameobjectcache.wdb.gz": {
+      "files": 1,
+      "bytes": 54545
+    },
+    "cachedata/wdb/conquest-of-azeroth-backup/itemcache.wdb.gz": {
+      "files": 1,
+      "bytes": 1107412
+    },
+    "cachedata/wdb/conquest-of-azeroth-backup/itemnamecache.wdb.gz": {
+      "files": 1,
+      "bytes": 6060
+    },
+    "cachedata/wdb/conquest-of-azeroth-backup/npccache.wdb.gz": {
+      "files": 1,
+      "bytes": 7764
+    },
+    "cachedata/wdb/conquest-of-azeroth-backup/pagetextcache.wdb.gz": {
+      "files": 1,
+      "bytes": 2598
+    },
+    "cachedata/wdb/conquest-of-azeroth-backup/questcache.wdb.gz": {
+      "files": 1,
+      "bytes": 77033
+    },
+    "cachedata/wdb/conquest-of-azeroth/creaturecache.wdb.gz": {
+      "files": 1,
+      "bytes": 1057740
+    },
+    "cachedata/wdb/conquest-of-azeroth/gameobjectcache.wdb.gz": {
+      "files": 1,
+      "bytes": 191710
+    },
+    "cachedata/wdb/conquest-of-azeroth/itemcache.wdb.gz": {
+      "files": 1,
+      "bytes": 11912404
+    },
+    "cachedata/wdb/conquest-of-azeroth/itemnamecache.wdb.gz": {
+      "files": 1,
+      "bytes": 37038
+    },
+    "cachedata/wdb/conquest-of-azeroth/npccache.wdb.gz": {
+      "files": 1,
+      "bytes": 326561
+    },
+    "cachedata/wdb/conquest-of-azeroth/pagetextcache.wdb.gz": {
+      "files": 1,
+      "bytes": 105125
+    },
+    "cachedata/wdb/conquest-of-azeroth/questcache.wdb.gz": {
+      "files": 1,
+      "bytes": 2766930
+    },
+    "cachedata/wdb/free-pick/creaturecache.wdb.gz": {
+      "files": 1,
+      "bytes": 540841
+    },
+    "cachedata/wdb/free-pick/gameobjectcache.wdb.gz": {
+      "files": 1,
+      "bytes": 247046
+    },
+    "cachedata/wdb/free-pick/itemcache.wdb.gz": {
+      "files": 1,
+      "bytes": 4926820
+    },
+    "cachedata/wdb/free-pick/itemnamecache.wdb.gz": {
+      "files": 1,
+      "bytes": 30132
+    },
+    "cachedata/wdb/free-pick/npccache.wdb.gz": {
+      "files": 1,
+      "bytes": 264572
+    },
+    "cachedata/wdb/free-pick/pagetextcache.wdb.gz": {
+      "files": 1,
+      "bytes": 54952
+    },
+    "cachedata/wdb/free-pick/questcache.wdb.gz": {
+      "files": 1,
+      "bytes": 1124797
+    },
+    "cachedata/wdb/live-qa/itemcache.wdb.gz": {
+      "files": 1,
+      "bytes": 12623
+    },
+    "cachedata/wdb/live-qa/questcache.wdb.gz": {
+      "files": 1,
+      "bytes": 56779
+    },
+    "cachedata/wdb/season-10-freepick/creaturecache.wdb.gz": {
+      "files": 1,
+      "bytes": 312295
+    },
+    "cachedata/wdb/season-10-freepick/gameobjectcache.wdb.gz": {
+      "files": 1,
+      "bytes": 151272
+    },
+    "cachedata/wdb/season-10-freepick/itemcache.wdb.gz": {
+      "files": 1,
+      "bytes": 15426521
+    },
+    "cachedata/wdb/season-10-freepick/itemnamecache.wdb.gz": {
+      "files": 1,
+      "bytes": 9576
+    },
+    "cachedata/wdb/season-10-freepick/npccache.wdb.gz": {
+      "files": 1,
+      "bytes": 99610
+    },
+    "cachedata/wdb/season-10-freepick/pagetextcache.wdb.gz": {
+      "files": 1,
+      "bytes": 19147
+    },
+    "cachedata/wdb/season-10-freepick/questcache.wdb.gz": {
+      "files": 1,
+      "bytes": 2766242
+    },
+    "cachedata/wdb/season-10-wildcard/creaturecache.wdb.gz": {
+      "files": 1,
+      "bytes": 332414
+    },
+    "cachedata/wdb/season-10-wildcard/gameobjectcache.wdb.gz": {
+      "files": 1,
+      "bytes": 166515
+    },
+    "cachedata/wdb/season-10-wildcard/itemcache.wdb.gz": {
+      "files": 1,
+      "bytes": 2497950
+    },
+    "cachedata/wdb/season-10-wildcard/itemnamecache.wdb.gz": {
+      "files": 1,
+      "bytes": 11816
+    },
+    "cachedata/wdb/season-10-wildcard/npccache.wdb.gz": {
+      "files": 1,
+      "bytes": 117992
+    },
+    "cachedata/wdb/season-10-wildcard/pagetextcache.wdb.gz": {
+      "files": 1,
+      "bytes": 13890
+    },
+    "cachedata/wdb/season-10-wildcard/questcache.wdb.gz": {
+      "files": 1,
+      "bytes": 496246
+    },
+    "cachedata/wdb/season-9/creaturecache.wdb.gz": {
+      "files": 1,
+      "bytes": 278558
+    },
+    "cachedata/wdb/season-9/gameobjectcache.wdb.gz": {
+      "files": 1,
+      "bytes": 141716
+    },
+    "cachedata/wdb/season-9/itemcache.wdb.gz": {
+      "files": 1,
+      "bytes": 2247470
+    },
+    "cachedata/wdb/season-9/itemnamecache.wdb.gz": {
+      "files": 1,
+      "bytes": 12366
+    },
+    "cachedata/wdb/season-9/npccache.wdb.gz": {
+      "files": 1,
+      "bytes": 59063
+    },
+    "cachedata/wdb/season-9/pagetextcache.wdb.gz": {
+      "files": 1,
+      "bytes": 13409
+    },
+    "cachedata/wdb/season-9/questcache.wdb.gz": {
+      "files": 1,
+      "bytes": 386281
+    },
+    "cachedata/wdb/stress-test/creaturecache.wdb.gz": {
+      "files": 1,
+      "bytes": 65980
+    },
+    "cachedata/wdb/stress-test/gameobjectcache.wdb.gz": {
+      "files": 1,
+      "bytes": 29735
+    },
+    "cachedata/wdb/stress-test/itemcache.wdb.gz": {
+      "files": 1,
+      "bytes": 721538
+    },
+    "cachedata/wdb/stress-test/itemnamecache.wdb.gz": {
+      "files": 1,
+      "bytes": 2750
+    },
+    "cachedata/wdb/stress-test/npccache.wdb.gz": {
+      "files": 1,
+      "bytes": 12854
+    },
+    "cachedata/wdb/stress-test/pagetextcache.wdb.gz": {
+      "files": 1,
+      "bytes": 2666
+    },
+    "cachedata/wdb/stress-test/questcache.wdb.gz": {
+      "files": 1,
+      "bytes": 74105
+    },
+    "cachedata/wdb/unknown/creaturecache.wdb.gz": {
+      "files": 1,
+      "bytes": 83832
+    },
+    "cachedata/wdb/unknown/gameobjectcache.wdb.gz": {
+      "files": 1,
+      "bytes": 37877
+    },
+    "cachedata/wdb/unknown/itemcache.wdb.gz": {
+      "files": 1,
+      "bytes": 654932
+    },
+    "cachedata/wdb/unknown/itemnamecache.wdb.gz": {
+      "files": 1,
+      "bytes": 684
+    },
+    "cachedata/wdb/unknown/npccache.wdb.gz": {
+      "files": 1,
+      "bytes": 23313
+    },
+    "cachedata/wdb/unknown/pagetextcache.wdb.gz": {
+      "files": 1,
+      "bytes": 380
+    },
+    "cachedata/wdb/unknown/questcache.wdb.gz": {
+      "files": 1,
+      "bytes": 150843
+    },
+    "cachedata/wdb/warcraft-reborn/creaturecache.wdb.gz": {
+      "files": 1,
+      "bytes": 280171
+    },
+    "cachedata/wdb/warcraft-reborn/gameobjectcache.wdb.gz": {
+      "files": 1,
+      "bytes": 159452
+    },
+    "cachedata/wdb/warcraft-reborn/itemcache.wdb.gz": {
+      "files": 1,
+      "bytes": 3262161
+    },
+    "cachedata/wdb/warcraft-reborn/itemnamecache.wdb.gz": {
+      "files": 1,
+      "bytes": 17305
+    },
+    "cachedata/wdb/warcraft-reborn/npccache.wdb.gz": {
+      "files": 1,
+      "bytes": 99164
+    },
+    "cachedata/wdb/warcraft-reborn/pagetextcache.wdb.gz": {
+      "files": 1,
+      "bytes": 17221
+    },
+    "cachedata/wdb/warcraft-reborn/questcache.wdb.gz": {
+      "files": 1,
+      "bytes": 570251
+    }
+  },
+  "notes": [
+    "This is a manifest inventory, not a completed independent backup.",
+    "All file checksums and release pack references remain in the linked upstream manifest.",
+    "Supplemental data is separate from the cache manifest and still needs independent inventory and backup.",
+    "Complete preservation requires downloading release assets, checking SHA-256, and storing redundant copies outside the upstream GitHub repository."
+  ],
+  "recommendedDownload": "python dataset.py download cache.json --out AscensionData"
+}

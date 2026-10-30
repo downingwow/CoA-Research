@@ -60,7 +60,7 @@ def main(path):
       "sourceNature":"contributor-supplied historical BisBeard gear planner export",
       "notBestInSlotRankings":True,
       "notVerifiedCurrentClient":True,
-      "rows":rows,"tables":len(tables),"variants":variants,
+      "rows":rows,"tablesWithRows":len(tables),"declaredTablesInSourceDocumentation":75,"variants":variants,
       "byTable":dict(sorted(tables.items())),"byPhase":dict(sorted(phases.items())),
       "bySlot":dict(sorted(slots.items())),"byClassTag":dict(sorted(classes.items())),
       "comparisonStatus":dict(sorted(statuses.items())),

@@ -14,9 +14,9 @@ $("class").addEventListener("change",()=>{shown=60;render()});
 $("defined").addEventListener("change",()=>{shown=60;render()});
 $("more").addEventListener("click",()=>{shown+=60;render()});
 (async()=>{try{
- const [index,registry]=await Promise.all([fetch("./data/spell-search-index.json").then(r=>{if(!r.ok)throw Error("Spell index unavailable");return r.json()}),fetch("../datasets/normalized/coa-class-spec-id-registry.json").then(r=>r.ok?r.json():null).catch(()=>null)]);
+ const index=await fetch("./data/spell-search-index.json").then(r=>{if(!r.ok)throw Error("Spell index unavailable");return r.json()});
  rows=index.records;
- if(registry)for(const s of registry.records)classes[s.classId]=s.className;
+ classes=index.classes||{};
  const ids=[...new Set(rows.flatMap(r=>r.c))].sort((a,b)=>a-b);
  $("class").innerHTML='<option value="">All classes</option>'+ids.map(id=>'<option value="'+id+'">'+esc(classes[id]||"Class "+id)+'</option>').join("");
  render();

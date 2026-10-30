@@ -5,7 +5,7 @@ from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 source=root/"datasets/relationships/enriched-spells-by-id.json.gz"
 with gzip.open(source,"rt",encoding="utf-8") as f:records=json.load(f)
-rows=[]
+registry=json.loads((root/"datasets/normalized/coa-class-spec-id-registry.json").read_text(encoding="utf-8"))\nclass_names={str(r["classId"]):r["className"] for r in registry["records"]}\nrows=[]
 for sid,record in records.items():
     definition=record.get("spellDefinition",{}).get("fields",{})
     evid=record.get("relationshipEvidence",[])
@@ -20,6 +20,6 @@ for sid,record in records.items():
 rows.sort(key=lambda r:r["id"])
 dest=root/"site/data/spell-search-index.json"
 dest.parent.mkdir(parents=True,exist_ok=True)
-dest.write_text(json.dumps({"schemaVersion":1,"versionStatus":"archived, not current-client verified","records":rows},ensure_ascii=False,separators=(",",":"))+"\n",encoding="utf-8")
+dest.write_text(json.dumps({"schemaVersion":1,"versionStatus":"archived, not current-client verified","classes":class_names,"records":rows},ensure_ascii=False,separators=(",",":"))+"\n",encoding="utf-8")
 print("Published",len(rows),"searchable spell records")
 assert len(rows)>9000

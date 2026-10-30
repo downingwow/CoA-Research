@@ -330,7 +330,9 @@
         "Rage"
       ],
       "mechanics": [],
-      "source": "https://ascensionsidekick.com/primalist/grovekeeper"
+      "source": "https://ascensionsidekick.com/primalist/grovekeeper",
+      "archiveStatus": "unmatched-archived-live-talent-tab",
+      "archiveWarning": "This Sidekick guide specialization name does not match the Primalist talent tabs in the archived class tree (Life, Geomancy, Primal, Mountain King). Do not apply to a current spec without version verification."
     },
     "Primalist|Geomancy": {
       "pools": [
@@ -349,7 +351,9 @@
         "Pet Focus",
         "Mana utility costs"
       ],
-      "source": "https://ascensionsidekick.com/primalist/wildwalker"
+      "source": "https://ascensionsidekick.com/primalist/wildwalker",
+      "archiveStatus": "unmatched-archived-live-talent-tab",
+      "archiveWarning": "This Sidekick guide specialization name does not match the Primalist talent tabs in the archived class tree (Life, Geomancy, Primal, Mountain King). Do not apply to a current spec without version verification."
     },
     "Felsworn|Tyrant": {
       "pools": [
@@ -369,5 +373,10 @@
     "Rage in an ability name or description does not prove the class has a Rage resource pool.",
     "Resource pools, stack counters, and costs are shown as separate categories.",
     "Unlisted specialization mechanics are not inferred from keyword matches in ability text."
-  ]
+  ],
+  "audit": {
+    "source": "datasets/normalized/coa-class-identity-audit.json",
+    "verifiedAgainst": "site/data/classes.json",
+    "note": "Resource guides may refer to different CoA versions; 2 Primalist specialization guide labels did not match archived live talent tabs. Baseline power types and specializations remain separately sourced."
+  }
 }

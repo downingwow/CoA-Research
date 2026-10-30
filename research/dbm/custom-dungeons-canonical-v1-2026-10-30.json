@@ -123,7 +123,9 @@
         "research/shared/dungeon-loot-runtime-validation-rules-2026-10-30.md",
         "research/dbm/road-boss-complete-scheduling-and-spell-index-2026-10-30.json",
         "research/dbm/road-vaults-sql-change-sequence-and-difficulty-templates-2026-10-30.json",
-        "research/dbm/road-vaults-combat-warning-source-candidates-2026-10-30.json"
+        "research/dbm/road-vaults-combat-warning-source-candidates-2026-10-30.json",
+        "research/dbm/road-vaults-melee-scaling-correction-source-audit-2026-10-30.json",
+        "research/dbm/road-vaults-boss-event-cast-cross-reference-2026-10-30.json"
       ],
       "healthSource": "data/sql/updates/pending_db_world/rev_20261029_82_coa_road_to_de_other_side_health_immunities.sql",
       "difficultyHealth": [
@@ -802,7 +804,9 @@
         "research/dbm/vaults-complete-mechanics-source-evidence-2026-10-30.json",
         "research/dbm/vaults-instance-difficulty-sql-index-2026-10-30.json",
         "research/dbm/road-vaults-sql-change-sequence-and-difficulty-templates-2026-10-30.json",
-        "research/dbm/road-vaults-combat-warning-source-candidates-2026-10-30.json"
+        "research/dbm/road-vaults-combat-warning-source-candidates-2026-10-30.json",
+        "research/dbm/road-vaults-melee-scaling-correction-source-audit-2026-10-30.json",
+        "research/dbm/road-vaults-boss-event-cast-cross-reference-2026-10-30.json"
       ],
       "trashSource": "src/server/coa/CoAVaults.cpp",
       "cautions": [

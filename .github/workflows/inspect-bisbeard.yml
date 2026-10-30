@@ -1,0 +1,24 @@
+name: Inspect BisBeard phase planner export
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/inspect-bisbeard.yml']
+  workflow_dispatch:
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect preserved planner row schema
+        run: |
+          python - <<'PY'
+          import urllib.request,gzip,json,collections
+          url="https://raw.githubusercontent.com/hertigservices/ascension-data/main/supplemental/bisbeard/7733de9bf573b62f451375ea09415f8de86b13c9c131cd6108a0e9a2e716d666/rows.jsonl.gz"
+          data=gzip.decompress(urllib.request.urlopen(url,timeout=120).read()).decode()
+          lines=data.splitlines()
+          print("ROW COUNT",len(lines))
+          for line in lines[:3]:
+              x=json.loads(line)
+              print("FIELDS",list(x))
+              print("ROW",str(x)[:1800])
+          PY

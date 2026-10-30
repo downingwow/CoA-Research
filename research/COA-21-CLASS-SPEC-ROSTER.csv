@@ -1,0 +1,71 @@
+class,class_id,node_count,specialization,spec_index,source
+Barbarian,12,138,Brutality,1,tmouchart/wow-ascension builder scrape
+Barbarian,12,138,Headhunting,2,tmouchart/wow-ascension builder scrape
+Barbarian,12,138,Ancestry,3,tmouchart/wow-ascension builder scrape
+Witch Doctor,13,129,Voodoo,1,tmouchart/wow-ascension builder scrape
+Witch Doctor,13,129,Brewing,2,tmouchart/wow-ascension builder scrape
+Witch Doctor,13,129,Shadowhunting,3,tmouchart/wow-ascension builder scrape
+Felsworn,14,130,Slayer,1,tmouchart/wow-ascension builder scrape
+Felsworn,14,130,Infernal,2,tmouchart/wow-ascension builder scrape
+Felsworn,14,130,Tyrant,3,tmouchart/wow-ascension builder scrape
+Witch Hunter,15,163,Boltslinger,1,tmouchart/wow-ascension builder scrape
+Witch Hunter,15,163,Houndmaster,2,tmouchart/wow-ascension builder scrape
+Witch Hunter,15,163,Black Knight,3,tmouchart/wow-ascension builder scrape
+Witch Hunter,15,163,Inquisition,4,tmouchart/wow-ascension builder scrape
+Stormbringer,16,132,Lightning,1,tmouchart/wow-ascension builder scrape
+Stormbringer,16,132,Wind,2,tmouchart/wow-ascension builder scrape
+Stormbringer,16,132,Maelstrom,3,tmouchart/wow-ascension builder scrape
+Knight of Xoroth,17,128,War,1,tmouchart/wow-ascension builder scrape
+Knight of Xoroth,17,128,Hellfire,2,tmouchart/wow-ascension builder scrape
+Knight of Xoroth,17,128,Defiance,3,tmouchart/wow-ascension builder scrape
+Guardian,18,134,Vanguard,1,tmouchart/wow-ascension builder scrape
+Guardian,18,134,Inspiration,2,tmouchart/wow-ascension builder scrape
+Guardian,18,134,Gladiator,3,tmouchart/wow-ascension builder scrape
+Templar,19,131,Zealot,1,tmouchart/wow-ascension builder scrape
+Templar,19,131,Oathkeeper,2,tmouchart/wow-ascension builder scrape
+Templar,19,131,Crusader,3,tmouchart/wow-ascension builder scrape
+Bloodmage,20,172,Sanguine,1,tmouchart/wow-ascension builder scrape
+Bloodmage,20,172,Accursed,2,tmouchart/wow-ascension builder scrape
+Bloodmage,20,172,Eternal,3,tmouchart/wow-ascension builder scrape
+Bloodmage,20,172,Fleshweaver,4,tmouchart/wow-ascension builder scrape
+Ranger,21,136,Archery,1,tmouchart/wow-ascension builder scrape
+Ranger,21,136,Brigand,2,tmouchart/wow-ascension builder scrape
+Ranger,21,136,Farstrider,3,tmouchart/wow-ascension builder scrape
+Chronomancer,22,136,Infinite,1,tmouchart/wow-ascension builder scrape
+Chronomancer,22,136,Time,2,tmouchart/wow-ascension builder scrape
+Chronomancer,22,136,Artificer,3,tmouchart/wow-ascension builder scrape
+Necromancer,23,133,Death,1,tmouchart/wow-ascension builder scrape
+Necromancer,23,133,Rime,2,tmouchart/wow-ascension builder scrape
+Necromancer,23,133,Animation,3,tmouchart/wow-ascension builder scrape
+Pyromancer,24,133,Incineration,1,tmouchart/wow-ascension builder scrape
+Pyromancer,24,133,Flameweaving,2,tmouchart/wow-ascension builder scrape
+Pyromancer,24,133,Draconic,3,tmouchart/wow-ascension builder scrape
+Cultist,25,163,Godblade,1,tmouchart/wow-ascension builder scrape
+Cultist,25,163,Corruption,2,tmouchart/wow-ascension builder scrape
+Cultist,25,163,Dreadnought,3,tmouchart/wow-ascension builder scrape
+Cultist,25,163,Heretic,4,tmouchart/wow-ascension builder scrape
+Starcaller,26,165,Moon Guard,1,tmouchart/wow-ascension builder scrape
+Starcaller,26,165,Sentinel,2,tmouchart/wow-ascension builder scrape
+Starcaller,26,165,Moon Priest,3,tmouchart/wow-ascension builder scrape
+Starcaller,26,165,Warden,4,tmouchart/wow-ascension builder scrape
+Sun Cleric,27,168,Piety,1,tmouchart/wow-ascension builder scrape
+Sun Cleric,27,168,Blessings,2,tmouchart/wow-ascension builder scrape
+Sun Cleric,27,168,Valkyrie,3,tmouchart/wow-ascension builder scrape
+Sun Cleric,27,168,Seraphim,4,tmouchart/wow-ascension builder scrape
+Tinker,28,131,Demolition,1,tmouchart/wow-ascension builder scrape
+Tinker,28,131,Invention,2,tmouchart/wow-ascension builder scrape
+Tinker,28,131,Mechanics,3,tmouchart/wow-ascension builder scrape
+Venomancer,29,166,Venom,1,tmouchart/wow-ascension builder scrape
+Venomancer,29,166,Stalking,2,tmouchart/wow-ascension builder scrape
+Venomancer,29,166,Fortitude,3,tmouchart/wow-ascension builder scrape
+Venomancer,29,166,Vizier,4,tmouchart/wow-ascension builder scrape
+Reaper,30,128,Harvest,1,tmouchart/wow-ascension builder scrape
+Reaper,30,128,Soul,2,tmouchart/wow-ascension builder scrape
+Reaper,30,128,Domination,3,tmouchart/wow-ascension builder scrape
+Primalist,31,164,Primal,1,tmouchart/wow-ascension builder scrape
+Primalist,31,164,Geomancy,2,tmouchart/wow-ascension builder scrape
+Primalist,31,164,Life,3,tmouchart/wow-ascension builder scrape
+Primalist,31,164,Mountain King,4,tmouchart/wow-ascension builder scrape
+Runemaster,32,133,Arcane,1,tmouchart/wow-ascension builder scrape
+Runemaster,32,133,Runic,2,tmouchart/wow-ascension builder scrape
+Runemaster,32,133,Riftblade,3,tmouchart/wow-ascension builder scrape

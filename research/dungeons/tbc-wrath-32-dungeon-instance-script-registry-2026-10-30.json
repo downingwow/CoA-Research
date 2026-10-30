@@ -1,0 +1,241 @@
+{
+  "title": "TBC and Wrath dungeon map-to-instance-script registry",
+  "generatedOn": "2026-10-30",
+  "source": {
+    "repository": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+    "path": "data/sql/base/db_world/instance_template.sql",
+    "table": "instance_template"
+  },
+  "method": "Parsed literal map,parent,script,allowMount tuples; expansion/dungeon classification manually curated; no claim of current live availability",
+  "counts": {
+    "tbc": 16,
+    "wrath": 16,
+    "total": 32
+  },
+  "entries": [
+    {
+      "mapId": 269,
+      "parentMapId": 1,
+      "instanceScript": "instance_the_black_morass",
+      "allowMount": 1,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 540,
+      "parentMapId": 530,
+      "instanceScript": "instance_shattered_halls",
+      "allowMount": 0,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 542,
+      "parentMapId": 530,
+      "instanceScript": "instance_blood_furnace",
+      "allowMount": 0,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 543,
+      "parentMapId": 530,
+      "instanceScript": "instance_hellfire_ramparts",
+      "allowMount": 0,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 545,
+      "parentMapId": 530,
+      "instanceScript": "instance_steam_vault",
+      "allowMount": 0,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 546,
+      "parentMapId": 530,
+      "instanceScript": "instance_the_underbog",
+      "allowMount": 0,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 547,
+      "parentMapId": 530,
+      "instanceScript": "instance_the_slave_pens",
+      "allowMount": 0,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 552,
+      "parentMapId": 530,
+      "instanceScript": "instance_arcatraz",
+      "allowMount": 0,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 553,
+      "parentMapId": 530,
+      "instanceScript": "instance_the_botanica",
+      "allowMount": 0,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 554,
+      "parentMapId": 530,
+      "instanceScript": "instance_mechanar",
+      "allowMount": 0,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 555,
+      "parentMapId": 530,
+      "instanceScript": "instance_shadow_labyrinth",
+      "allowMount": 0,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 556,
+      "parentMapId": 530,
+      "instanceScript": "instance_sethekk_halls",
+      "allowMount": 0,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 557,
+      "parentMapId": 530,
+      "instanceScript": "instance_mana_tombs",
+      "allowMount": 0,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 558,
+      "parentMapId": 530,
+      "instanceScript": "instance_auchenai_crypts",
+      "allowMount": 0,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 560,
+      "parentMapId": 1,
+      "instanceScript": "instance_old_hillsbrad",
+      "allowMount": 1,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 585,
+      "parentMapId": 530,
+      "instanceScript": "instance_magisters_terrace",
+      "allowMount": 0,
+      "expansion": "TBC"
+    },
+    {
+      "mapId": 574,
+      "parentMapId": 571,
+      "instanceScript": "instance_utgarde_keep",
+      "allowMount": 1,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 575,
+      "parentMapId": 571,
+      "instanceScript": "instance_utgarde_pinnacle",
+      "allowMount": 0,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 576,
+      "parentMapId": 571,
+      "instanceScript": "instance_nexus",
+      "allowMount": 0,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 578,
+      "parentMapId": 571,
+      "instanceScript": "instance_oculus",
+      "allowMount": 1,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 595,
+      "parentMapId": 1,
+      "instanceScript": "instance_culling_of_stratholme",
+      "allowMount": 1,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 599,
+      "parentMapId": 571,
+      "instanceScript": "instance_halls_of_stone",
+      "allowMount": 0,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 600,
+      "parentMapId": 571,
+      "instanceScript": "instance_drak_tharon_keep",
+      "allowMount": 1,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 601,
+      "parentMapId": 571,
+      "instanceScript": "instance_azjol_nerub",
+      "allowMount": 0,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 602,
+      "parentMapId": 571,
+      "instanceScript": "instance_halls_of_lightning",
+      "allowMount": 0,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 604,
+      "parentMapId": 571,
+      "instanceScript": "instance_gundrak",
+      "allowMount": 0,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 608,
+      "parentMapId": 571,
+      "instanceScript": "instance_violet_hold",
+      "allowMount": 0,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 619,
+      "parentMapId": 571,
+      "instanceScript": "instance_ahnkahet",
+      "allowMount": 0,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 632,
+      "parentMapId": 0,
+      "instanceScript": "instance_forge_of_souls",
+      "allowMount": 0,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 650,
+      "parentMapId": 571,
+      "instanceScript": "instance_trial_of_the_champion",
+      "allowMount": 0,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 658,
+      "parentMapId": 0,
+      "instanceScript": "instance_pit_of_saron",
+      "allowMount": 1,
+      "expansion": "Wrath"
+    },
+    {
+      "mapId": 668,
+      "parentMapId": 0,
+      "instanceScript": "instance_halls_of_reflection",
+      "allowMount": 1,
+      "expansion": "Wrath"
+    }
+  ]
+}

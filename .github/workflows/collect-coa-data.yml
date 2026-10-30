@@ -9,13 +9,13 @@ on:
       max_files:
         description: Maximum upstream source files to collect in this run
         required: false
-        default: '100'
+        default: '400'
 permissions:
   contents: write
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
         with:
@@ -26,7 +26,7 @@ jobs:
       - name: Download and index source records
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MAX_FILES: ${{ inputs.max_files || '20' }}
+          MAX_FILES: ${{ inputs.max_files || '400' }}
         run: python tools/collect_coa_data.py --max-files "$MAX_FILES"
       - name: Commit imported records
         run: |

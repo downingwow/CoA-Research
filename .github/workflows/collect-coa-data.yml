@@ -5,7 +5,7 @@ on:
     paths:
       - '.github/workflows/collect-coa-data.yml'
   schedule:
-    - cron: '17 */6 * * *'
+    - cron: '17 * * * *'
   workflow_dispatch:
     inputs:
       max_files:

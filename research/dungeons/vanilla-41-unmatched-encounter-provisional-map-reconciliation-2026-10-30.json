@@ -1,0 +1,427 @@
+{
+  "schema": "coa-research.vanilla-encounter-unmatched-reconciliation.v1",
+  "date": "2026-10-30",
+  "source": "research/dungeons/vanilla-19-map-boss-encounter-loot-crosswalk-2026-10-30.json",
+  "originalUnmatched": 41,
+  "proposedMapAssignments": [
+    {
+      "encounterId": 1140,
+      "creditType": 0,
+      "npcId": 8923,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Panzor the Invincible",
+      "proposedMapId": 230,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1141,
+      "creditType": 0,
+      "npcId": 16042,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Lord Valthalak",
+      "proposedMapId": 229,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1144,
+      "creditType": 0,
+      "npcId": 16080,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Mor Grayhoof",
+      "proposedMapId": 229,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1146,
+      "creditType": 0,
+      "npcId": 9718,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Ghok Bashguud",
+      "proposedMapId": 229,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1153,
+      "creditType": 0,
+      "npcId": 11058,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Fras Siabi",
+      "proposedMapId": 329,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1154,
+      "creditType": 0,
+      "npcId": 10393,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Skul",
+      "proposedMapId": 329,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1155,
+      "creditType": 0,
+      "npcId": 16097,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Isalien",
+      "proposedMapId": 429,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1159,
+      "creditType": 0,
+      "npcId": 14516,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Death Knight Darkreaver",
+      "proposedMapId": 289,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1230,
+      "creditType": 0,
+      "npcId": 10096,
+      "lastDungeon": 1030,
+      "name": "CoA Heroic DBC: Ring of Law",
+      "proposedMapId": 230,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1271,
+      "creditType": 0,
+      "npcId": 10584,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Urok Doomhowl",
+      "proposedMapId": 229,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1277,
+      "creditType": 0,
+      "npcId": 10264,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Solakar Flamewreath",
+      "proposedMapId": 229,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1472,
+      "creditType": 0,
+      "npcId": 10516,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: The Unforgiven",
+      "proposedMapId": 329,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1485,
+      "creditType": 0,
+      "npcId": 8580,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Atal'alarion",
+      "proposedMapId": 109,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1486,
+      "creditType": 0,
+      "npcId": 5721,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Dreamscythe",
+      "proposedMapId": 109,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1487,
+      "creditType": 0,
+      "npcId": 5720,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Weaver",
+      "proposedMapId": 109,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1492,
+      "creditType": 0,
+      "npcId": 8443,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Avatar of Hakkar",
+      "proposedMapId": 109,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1592,
+      "creditType": 0,
+      "npcId": 3654,
+      "lastDungeon": 1691,
+      "name": "CoA Heroic DBC: Mutanus the Devourer",
+      "proposedMapId": 43,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 1980,
+      "creditType": 0,
+      "npcId": 16118,
+      "lastDungeon": 0,
+      "name": "CoA Heroic DBC: Kormok",
+      "proposedMapId": 289,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2141,
+      "creditType": 0,
+      "npcId": 16042,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Lord Valthalak",
+      "proposedMapId": 229,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2144,
+      "creditType": 0,
+      "npcId": 16080,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Mor Grayhoof",
+      "proposedMapId": 229,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2146,
+      "creditType": 0,
+      "npcId": 9718,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Ghok Bashguud",
+      "proposedMapId": 229,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2153,
+      "creditType": 0,
+      "npcId": 11058,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Fras Siabi",
+      "proposedMapId": 329,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2154,
+      "creditType": 0,
+      "npcId": 10393,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Skul",
+      "proposedMapId": 329,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2155,
+      "creditType": 0,
+      "npcId": 16097,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Isalien Trigger",
+      "proposedMapId": 429,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2159,
+      "creditType": 0,
+      "npcId": 14516,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Death Knight Darkreaver",
+      "proposedMapId": 289,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2230,
+      "creditType": 0,
+      "npcId": 10096,
+      "lastDungeon": 2030,
+      "name": "CoA Mythic DBC: Ring of Law",
+      "proposedMapId": 230,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2472,
+      "creditType": 0,
+      "npcId": 10516,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: The Unforgiven",
+      "proposedMapId": 329,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2604,
+      "creditType": 0,
+      "npcId": 6231,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Techbot",
+      "proposedMapId": 90,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2605,
+      "creditType": 0,
+      "npcId": 6228,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Dark Iron Ambassador",
+      "proposedMapId": 90,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2608,
+      "creditType": 0,
+      "npcId": 14693,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Scorn",
+      "proposedMapId": 189,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2614,
+      "creditType": 0,
+      "npcId": 10080,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Sandarr Dunereaver",
+      "proposedMapId": 209,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2624,
+      "creditType": 0,
+      "npcId": 10081,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Dustwraith",
+      "proposedMapId": 209,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2980,
+      "creditType": 0,
+      "npcId": 16118,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Kormok",
+      "proposedMapId": 289,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2981,
+      "creditType": 0,
+      "npcId": 9027,
+      "lastDungeon": 2030,
+      "name": "CoA Mythic DBC: Gorosh the Dervish",
+      "proposedMapId": 230,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2982,
+      "creditType": 0,
+      "npcId": 9028,
+      "lastDungeon": 2030,
+      "name": "CoA Mythic DBC: Grizzle",
+      "proposedMapId": 230,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2983,
+      "creditType": 0,
+      "npcId": 9029,
+      "lastDungeon": 2030,
+      "name": "CoA Mythic DBC: Eviscerator",
+      "proposedMapId": 230,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2984,
+      "creditType": 0,
+      "npcId": 9030,
+      "lastDungeon": 2030,
+      "name": "CoA Mythic DBC: Okthor the Breaker",
+      "proposedMapId": 230,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2985,
+      "creditType": 0,
+      "npcId": 9031,
+      "lastDungeon": 2030,
+      "name": "CoA Mythic DBC: Anub'shiah",
+      "proposedMapId": 230,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 2986,
+      "creditType": 0,
+      "npcId": 9032,
+      "lastDungeon": 2030,
+      "name": "CoA Mythic DBC: Hedrum the Creeper",
+      "proposedMapId": 230,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 3321,
+      "creditType": 0,
+      "npcId": 3654,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Mutanus",
+      "proposedMapId": 43,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    },
+    {
+      "encounterId": 36050,
+      "creditType": 0,
+      "npcId": 8923,
+      "lastDungeon": 0,
+      "name": "CoA Mythic DBC: Panzor the Invincible",
+      "proposedMapId": 230,
+      "method": "named boss dungeon association (manual research classification); not independently confirmed from live spawns",
+      "confidence": "provisional"
+    }
+  ],
+  "stillUnknown": [],
+  "warning": "All 41 proposed assignments are provisional; do not silently promote to verified NPC spawn map associations. The original crosswalk remains unchanged.",
+  "verificationNext": [
+    "Check creature GUID map in installed world database",
+    "Check instance script and wing encounter assignments",
+    "Cross-reference LFG lastEncounterDungeon and DBC maps",
+    "Confirm in live dungeon combat logs"
+  ],
+  "note": "Provisional mapping is based on named dungeon-boss associations, not runtime map evidence."
+}

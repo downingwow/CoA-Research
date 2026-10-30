@@ -20,7 +20,7 @@ jobs:
           python-version: '3.11'
       - name: Generate spell and talent relationships from archived source shards
         run: python tools/build_spell_talent_graph.py
-      # Non-CoA original WoW class files are expected and excluded from the 21-class graph.
+      # Original WoW classes and unattributed residual/metadata shards are excluded from class-specific attribution.
       - name: Validate generated graph
         run: |
           python - <<'PY'

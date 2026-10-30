@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "title": "Class identities and Retail WoW playstyle references",
+  "method": "Original BoneArchive summaries synthesized from the archived CoA class and specialization trees, their recorded abilities and roles, and Blizzard's Retail class overview. Retail comparisons are broad playstyle signposts, not claims of shared rotations, abilities, balance, or resource rules.",
+  "retailSource": "https://worldofwarcraft.blizzard.com/en-us/game/classes",
+  "classes": {
+    "Barbarian": {
+      "description": "Barbarian is CoA's weapon-first fighter: its trees range from close-range strike chains to thrown-weapon hunting and a brawling support path. Choose it for a martial identity that can shift its distance and party job by specialization.",
+      "retailComparison": "Warrior is the clearest Retail starting point, especially if you like weapon-centered combat and a direct frontline feel. CoA's Barbarian stretches that familiar martial fantasy into medium-range weapon play and a support specialization, so the class covers a wider set of roles than a typical Retail Warrior."
+    },
+    "Bloodmage": {
+      "description": "Bloodmage turns blood, curses, predatory forms, and flesh-shaping into one class identity. Its four specializations span spell damage, melee, tanking, and support healing, making it a good fit if you like dark magic that can also become physical or protective.",
+      "retailComparison": "Death Knight and Druid are useful Retail reference points: the former for blood-and-death themes, the latter for feral transformation and durable forms. Bloodmage combines those motifs in a custom CoA class, with a blood-magic healer branch that has no direct Retail class counterpart."
+    },
+    "Chronomancer": {
+      "description": "Chronomancer bends time through anomalies, echoes, and temporal effects. Its trees let you take that theme into spell damage, ranged magic, or healing, so it suits players who want a caster identity with more than one party role.",
+      "retailComparison": "Mage is the closest broad Retail class reference for a time-focused caster, while Priest and Evoker provide useful comparisons for its healing side. CoA gives the time-manipulation theme its own damage and healing paths rather than mapping cleanly onto one Retail class."
+    },
+    "Cultist": {
+      "description": "Cultist draws on corruption, void-forged weapons, forbidden rites, and Old God power. You can express that identity as a damage-over-time caster, a melee fighter, a hybrid healer, or an armored tank.",
+      "retailComparison": "Warlock and Shadow Priest are the closest Retail references for Cultist's corrupting and void magic; Death Knight and Warrior help frame its weapon and shield paths. The CoA class deliberately combines caster, melee, support, and tank identities under one eldritch theme."
+    },
+    "Felsworn": {
+      "description": "Felsworn channels fel power through blades, destructive spells, and demonic resilience. Its three trees cover aggressive melee, ranged spell damage, and tanking while keeping a distinctly fel-bound identity.",
+      "retailComparison": "Demon Hunter is the nearest Retail class reference for fel-powered melee and demonic durability; Warlock is a useful comparison for its destructive caster path. Felsworn brings those themes together across its own CoA specializations."
+    },
+    "Guardian": {
+      "description": "Guardian is a martial class built around holding ground, striking with discipline, and rallying allies. Its trees offer a conventional tank, a battlefield-support leader, and a damage-focused gladiator.",
+      "retailComparison": "Warrior is the clearest Retail comparison for Guardian's weapons, armor, and frontline identity. CoA adds a dedicated group-support path and a distinct Gladiator tree, so the class is not simply a renamed Retail Warrior."
+    },
+    "Knight of Xoroth": {
+      "description": "Knight of Xoroth binds a knightly combat style to demonic power, hellfire, and an imp entourage. Its specializations divide that theme among spell damage, melee, and shield tanking.",
+      "retailComparison": "Warrior and Paladin are useful Retail foundations for the weapon and shield play, while Warlock and Demon Hunter evoke the demonic side. Knight of Xoroth combines those cues into a custom class rather than matching any single Retail kit."
+    },
+    "Necromancer": {
+      "description": "Necromancer explores death through undead servants, rot, and frost. Its specializations keep a caster role while letting you choose between commanding minions, spreading decay, or controlling the fight with ice.",
+      "retailComparison": "Warlock is the closest Retail class reference for dark spellcasting and an army of summons; Mage is a useful guide for the frost-focused tree. CoA's Necromancer centers those ideas on its own undead and decay themes."
+    },
+    "Primalist": {
+      "description": "Primalist draws on life, earth, and untamed nature. Its four paths cover healing support, earth-focused casting, primal melee, and a defensive mountain-themed tank, so the class is built around changing how nature magic enters combat.",
+      "retailComparison": "Druid and Shaman are the closest Retail class references: Primalist shares nature and life themes with Druid and elemental or earth themes with Shaman. CoA gathers healing, melee, caster, and tank paths under its own primal class identity."
+    },
+    "Pyromancer": {
+      "description": "Pyromancer makes fire the class's defining language, then applies it to different jobs: draconic support, restorative flame, or direct spell damage. Pick it if you like a strong elemental theme without being locked to one role.",
+      "retailComparison": "Fire Mage is the most familiar Retail comparison for Pyromancer's direct damage path. Its healing and support trees use fire and dragon motifs in ways that do not have a direct Retail Mage equivalent."
+    },
+    "Ranger": {
+      "description": "Ranger is a weapon specialist whose paths include archery, scouting and group utility, and close-range brigand fighting. It suits players who want a hunter-like identity with more room to trade distance for a rougher melee style.",
+      "retailComparison": "Hunter is the clearest Retail class reference for Ranger's bows and ranged weapons; Rogue helps frame its close-range Brigand path. CoA's Ranger also has a dedicated support-minded archer, extending beyond the usual Retail Hunter role."
+    },
+    "Reaper": {
+      "description": "Reaper brings the work of death into melee combat through harvesting weapons, soul-forged arms, and a defensive path built to hold the front line. Its three trees favor players drawn to grim weapon play and death magic.",
+      "retailComparison": "Death Knight is the closest Retail class reference for Reaper's death-centered melee and tank fantasy. Rogue and Warrior offer secondary comparisons for its weapon-focused paths, but Reaper's soul and harvest mechanics are specific to CoA."
+    },
+    "Runemaster": {
+      "description": "Runemaster turns runes, brands, glyphs, and rifts into a flexible spellblade class. Its trees range from close-range magical weapon fighting to arcane casting and a rift-infused melee path.",
+      "retailComparison": "Mage is a useful Retail reference for Runemaster's arcane casting, while Shaman and Death Knight help frame its elemental and runic melee styles. The class's spellblade blend is a CoA identity without a one-to-one Retail class match."
+    },
+    "Starcaller": {
+      "description": "Starcaller channels lunar and celestial power through a healer, ranged archer, melee Warden, and lunar tank. Choose it for a shared star-and-moon fantasy that can play at very different distances and roles.",
+      "retailComparison": "Priest and Druid are natural Retail references for lunar healing and celestial magic; Hunter, Rogue, and Paladin help explain its archer, melee, and guardian paths. Starcaller brings these playstyles together around a CoA-specific lunar theme."
+    },
+    "Stormbringer": {
+      "description": "Stormbringer commands wind, lightning, and tempest power. Its specializations use that storm identity for spell damage and group support, giving you different ways to shape a fight with elemental magic.",
+      "retailComparison": "Shaman is the closest Retail class reference, especially for elemental damage and storm magic. CoA separates lightning, wind support, and maelstrom casting into its own specialization identities and mechanics."
+    },
+    "Sun Cleric": {
+      "description": "Sun Cleric carries solar and sacred power into healing, spell damage, melee, and tanking. Its specializations share a radiant theme while offering very different ways to serve or lead a group.",
+      "retailComparison": "Paladin is a strong Retail reference for Sun Cleric's radiant armor, melee, and tank paths; Priest helps frame its healing and spellcasting. The class's solar identity and specialization mix remain distinct to CoA."
+    },
+    "Templar": {
+      "description": "Templar is a sacred martial class built around oaths, zeal, and close-quarters combat. It offers both tanking and multiple damage paths, including a staff-wielding protector and mobile weapon fighters.",
+      "retailComparison": "Paladin is the closest Retail class reference for Templar's sacred oaths and righteous attacks. Monk helps explain the staff-based defense and mobile martial feel found in some trees; the exact mix is unique to CoA."
+    },
+    "Tinker": {
+      "description": "Tinker solves combat problems with machinery: explosives, a powered suit, and restorative inventions. Its ranged damage and healer paths are for players who prefer gadgets, constructs, and field engineering over a traditional spellbook.",
+      "retailComparison": "Retail WoW has no direct engineer class. Hunter is a useful reference for ranged weapon play, while Mage or Shaman can help frame some area effects and healing roles; Tinker's gadgets and powered-suit identity are CoA-specific."
+    },
+    "Venomancer": {
+      "description": "Venomancer builds its identity around toxins, spores, and a living carapace. Its paths include ranged corruption, close-range stalking, fungal healing, and an insectoid tank, all tied to a biological theme.",
+      "retailComparison": "Rogue is a familiar Retail reference for poison-driven melee, while Druid helps frame fungal healing and resilient forms; Warlock offers a comparison for spreading harmful effects. Venomancer combines these themes in a custom CoA class."
+    },
+    "Witch Doctor": {
+      "description": "Witch Doctor blends Loa spirits, curses, shadow puppets, archery, and brewing. Choose between ritual spellcasting, a spirit-empowered ranged path, or a potion-focused healer.",
+      "retailComparison": "Shaman is the closest broad Retail reference for spirit and elemental traditions, while Warlock helps frame curses and shadow magic. Witch Doctor's Loa rituals and brewing toolkit are distinct CoA class features."
+    },
+    "Witch Hunter": {
+      "description": "Witch Hunter pursues supernatural threats with crossbows, shadow hounds, dusk blades, and dark chivalry. Its trees include ranged hunters, a melee path, and a defensive Black Knight, all focused on the hunt.",
+      "retailComparison": "Hunter is the clearest Retail reference for crossbows and companion hounds; Rogue and Death Knight help frame its dual-wield and dark-knight paths. Witch Hunter combines those cues under a CoA-specific anti-magic and shadow-hunting theme."
+    }
+  }
+}

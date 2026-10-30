@@ -1,1 +1,492 @@
-{"Barbarian — Brutality":{"comparison":"Fury Warrior","role":"melee","description":"A headlong melee fighter built around brutal weapon strikes and momentum. Commit to close range and shape the tree around your preferred attack chains.","focus":"A headlong melee fighter built around brutal weapon strikes and momentum."},"Barbarian — Headhunting":{"comparison":"Survival Hunter with thrown weapons","role":"ranged","description":"Take the hunt to medium range with axes, spears and bleeding wounds. A weapon-focused alternative to standing back and casting spells.","focus":"Take the hunt to medium range with axes, spears and bleeding wounds."},"Barbarian — Ancestry":{"comparison":"Brewmaster Monk with ancestral support","role":"support","description":"Bring kegs, ancestral power and a fighter’s presence to the group. This tree mixes a brawling identity with tools that help the party.","focus":"Bring kegs, ancestral power and a fighter’s presence to the group."},"Bloodmage — Sanguine":{"comparison":"Blood-themed caster","role":"caster","description":"Shape a blood-magic toolkit around vampiric attacks and supernatural power. Explore how the tree’s strikes and spell effects reinforce one another.","focus":"Shape a blood-magic toolkit around vampiric attacks and supernatural power."},"Bloodmage — Accursed":{"comparison":"Feral Druid with a worgen curse","role":"melee","description":"Lean into the curse and fight through fangs, reaving attacks and a transformed identity. The kit centers on predatory close-range pressure.","focus":"Lean into the curse and fight through fangs, reaving attacks and a transformed identity."},"Bloodmage — Eternal":{"comparison":"Blood Death Knight meets Guardian Druid","role":"tank","description":"Build a durable frontline around thick hide, blood magic and a relentless hunt. The fantasy is a cursed protector that stays in the fight.","focus":"Build a durable frontline around thick hide, blood magic and a relentless hunt."},"Bloodmage — Fleshweaver":{"comparison":"A blood-magic support healer","role":"support","description":"Work with sanguine essence and flesh-shaping magic rather than traditional holy healing. Read the preserved effects to build the balance of healing and aggression you want.","focus":"Work with sanguine essence and flesh-shaping magic rather than traditional holy healing."},"Chronomancer — Infinite":{"comparison":"Shadow Priest with time distortion","role":"caster","description":"Tear at time with Timerend, anomalies and reality-warping spells. Build around the interactions between temporal pressure and your chosen finishers.","focus":"Tear at time with Timerend, anomalies and reality-warping spells."},"Chronomancer — Artificer":{"comparison":"Arcane Mage with magical constructs","role":"caster","description":"Turn echoes, wands and temporal artistry into a spellcasting toolkit. A good starting point if you enjoy a magical-engineer interpretation of time magic.","focus":"Turn echoes, wands and temporal artistry into a spellcasting toolkit."},"Chronomancer — Time":{"comparison":"Restoration healer with time manipulation","role":"healer","description":"Use ripples and the sands of time to mend damage and correct mistakes. The healing fantasy is changing the outcome rather than simply adding more light.","focus":"Use ripples and the sands of time to mend damage and correct mistakes."},"Cultist — Godblade":{"comparison":"Enhancement-style fighter with void magic","role":"melee","description":"Take a voidforged blade into melee and build around eldritch weapon effects. Rifts and abyssal power give the martial kit an Old God identity.","focus":"Take a voidforged blade into melee and build around eldritch weapon effects."},"Cultist — Corruption":{"comparison":"Affliction Warlock","role":"caster","description":"Spread corruption and feed a growing web of dark effects. This tree favors the fantasy of wearing enemies down with forbidden magic.","focus":"Spread corruption and feed a growing web of dark effects."},"Cultist — Heretic":{"comparison":"Shadow-powered hybrid support","role":"hybrid-healer","description":"Combine malevolence, shadow weapons and forbidden rites in an unconventional hybrid toolkit. Inspect each talent to decide which supporting interactions anchor your build.","focus":"Combine malevolence, shadow weapons and forbidden rites in an unconventional hybrid toolkit."},"Cultist — Dreadnought":{"comparison":"Protection Warrior with Old God armor","role":"tank","description":"Carry a shield into the void and become an armored eldritch bulwark. Defensive choices sit alongside shield attacks and Old God boons.","focus":"Carry a shield into the void and become an armored eldritch bulwark."},"Felsworn — Slayer":{"comparison":"Havoc Demon Hunter","role":"melee","description":"Fight up close with demonic assaults, blades and an immolation aura. A fast, aggressive starting point for players who like a fel-powered melee identity.","focus":"Fight up close with demonic assaults, blades and an immolation aura."},"Felsworn — Infernal":{"comparison":"Destruction Warlock with a fel battlemage feel","role":"caster","description":"Build around ruin, chaos and the power of Sargeras. This is the spellcasting side of the Felsworn, with talent choices that reshape its destructive toolkit.","focus":"Build around ruin, chaos and the power of Sargeras."},"Felsworn — Tyrant":{"comparison":"Vengeance Demon Hunter","role":"tank","description":"Bring demonic will and carving attacks to the front line. The tree offers a durable fel-warrior fantasy rather than the Slayer’s pure aggression.","focus":"Bring demonic will and carving attacks to the front line."},"Guardian — Vanguard":{"comparison":"Protection Warrior","role":"tank","description":"A traditional shield-bearing defender built around heavy blows and iron resolve. Start here if you enjoy a clear frontline protector identity.","focus":"A traditional shield-bearing defender built around heavy blows and iron resolve."},"Guardian — Inspiration":{"comparison":"A battlefield captain and group buffer","role":"support","description":"Lead from the battlefield with inspiring abilities and coordinated strength. Your kit’s identity is making the group stronger through a martial support role.","focus":"Lead from the battlefield with inspiring abilities and coordinated strength."},"Guardian — Gladiator":{"comparison":"Arms Warrior with a duelist identity","role":"melee","description":"Trade the pure defensive focus for sword training and decisive melee attacks. Shape a disciplined weapon fighter around the preserved Gladiator talents.","focus":"Trade the pure defensive focus for sword training and decisive melee attacks."},"Knight of Xoroth — War":{"comparison":"Arms Warrior with demonic weapon magic","role":"melee","description":"Combine warlike weapon strikes with Xoroth’s demonic flavor. Gore, mutilation and martial aggression define the tree’s starting toolkit.","focus":"Combine warlike weapon strikes with Xoroth’s demonic flavor."},"Knight of Xoroth — Hellfire":{"comparison":"A fire-and-demon battlemage","role":"caster","description":"Bring hellfire into a knight’s toolkit through burning blades and demonic invasion. Build around the relationships between your fire effects and chosen attacks.","focus":"Bring hellfire into a knight’s toolkit through burning blades and demonic invasion."},"Knight of Xoroth — Defiance":{"comparison":"Protection Paladin with an imp entourage","role":"tank","description":"Anchor the front line with a shield and a distinctly demonic supporting cast. Imp-related talents add a different texture to a defensive knight.","focus":"Anchor the front line with a shield and a distinctly demonic supporting cast."},"Necromancer — Death":{"comparison":"Affliction Warlock with decay magic","role":"caster","description":"Work with rot, worms and the cycle of death to pressure enemies. A decay-centered caster fantasy for players who enjoy dark spell interactions.","focus":"Work with rot, worms and the cycle of death to pressure enemies."},"Necromancer — Rime":{"comparison":"Frost Mage","role":"caster","description":"Build around ice barrages, icicles and biting cold. This is the Necromancer’s frozen spellcasting path, with a colder identity than rot or minions.","focus":"Build around ice barrages, icicles and biting cold."},"Necromancer — Animation":{"comparison":"Demonology Warlock with undead minions","role":"caster","description":"Raise an undead force and invest in the talents that strengthen your summons. The core fantasy is directing a growing army rather than fighting alone.","focus":"Raise an undead force and invest in the talents that strengthen your summons."},"Primalist — Grovekeeper":{"comparison":"Restoration Shaman with earth-and-life magic","role":"support","description":"Use life magic, spiritual charge and the earth’s power to support allies. The archived tree calls this path Life; the roster calls it Grovekeeper.","focus":"Use life magic, spiritual charge and the earth’s power to support allies."},"Primalist — Geomancy":{"comparison":"Elemental Shaman focused on earth","role":"caster","description":"Call on tremors, stone and Therazane’s power. Build an earth-focused caster whose identity is grounded in seismic effects rather than fire or lightning.","focus":"Call on tremors, stone and Therazane’s power."},"Primalist — Wildwalker":{"comparison":"Enhancement Shaman with primal weapons","role":"melee","description":"Take primal bites, totemic strikes and the fury of the wild into melee. The archived tree labels this path Primal.","focus":"Take primal bites, totemic strikes and the fury of the wild into melee."},"Primalist — Mountain King":{"comparison":"An earth-armored frontline warrior","role":"tank","description":"Stand firm with stone, seismic force and an unyielding form. A defensive interpretation of primal power built for the front line.","focus":"Stand firm with stone, seismic force and an unyielding form."},"Pyromancer — Flameweaving":{"comparison":"A fire-themed restoration healer","role":"healer","description":"Turn cleansing and soothing flames into a healing toolkit. Phoenix abilities give this path a restorative fire identity.","focus":"Turn cleansing and soothing flames into a healing toolkit."},"Pyromancer — Incineration":{"comparison":"Fire Mage","role":"caster","description":"Lean into ignite, combustion and concentrated fire magic. Build your tree around the burning interactions you want to emphasize.","focus":"Lean into ignite, combustion and concentrated fire magic."},"Pyromancer — Draconic":{"comparison":"A dragon-aspect support caster","role":"support","description":"Draw on the dragon aspects and their different gifts. Explore how draconic blessings and fire effects combine in a supporting toolkit.","focus":"Draw on the dragon aspects and their different gifts."},"Ranger — Archery":{"comparison":"Marksmanship Hunter","role":"ranged","description":"Focus on precise shots, arrows and ranged weapon pressure. A direct starting point for players who want the bow itself to be the center of the kit.","focus":"Focus on precise shots, arrows and ranged weapon pressure."},"Ranger — Farstrider":{"comparison":"A scouting archer with group utility","role":"support","description":"Mix falcon-themed attacks, cunning and battlefield calls. This path puts a supportive ranger identity alongside its ranged weapon skills.","focus":"Mix falcon-themed attacks, cunning and battlefield calls."},"Ranger — Brigand":{"comparison":"Rogue with a rougher brawler feel","role":"melee","description":"Fight dirty with ravaging attacks, knuckledusters and jagged cuts. The Brigand is a close-range interpretation of the Ranger.","focus":"Fight dirty with ravaging attacks, knuckledusters and jagged cuts."},"Reaper — Harvest":{"comparison":"Unholy Death Knight with a harvesting weapon","role":"melee","description":"Build around doom-rending attacks and the harvest of death. A dark melee path with a strong scythe-and-grave fantasy.","focus":"Build around doom-rending attacks and the harvest of death."},"Reaper — Soul":{"comparison":"A soul-forged weapon duelist","role":"melee","description":"Use soulforged weaponry, marks and a death-chasing toolkit. Explore the connections between your weapon attacks and spectral effects.","focus":"Use soulforged weaponry, marks and a death-chasing toolkit."},"Reaper — Domination":{"comparison":"A dark-armored Death Knight tank","role":"tank","description":"Claim the front line through dread, fortitude and soul-taking power. This is the Reaper’s defensive path.","focus":"Claim the front line through dread, fortitude and soul-taking power."},"Runemaster — Engravement":{"comparison":"A runic melee spellblade","role":"melee","description":"Fight through runic brands and magical weapon interactions. The archived tree calls this path Runic; the roster calls it Engravement.","focus":"Fight through runic brands and magical weapon interactions."},"Runemaster — Glyphic":{"comparison":"Arcane Mage with elemental glyphs","role":"caster","description":"Assemble a spellcasting toolkit from glyphs, crystals and arcane effects. The archived tree uses the name Arcane for this path.","focus":"Assemble a spellcasting toolkit from glyphs, crystals and arcane effects."},"Runemaster — Riftblade":{"comparison":"Enhancement-style elemental spellblade","role":"melee","description":"Blend smoldering attacks, runic omens and unbound energy. Build a melee toolkit with a strong magical edge.","focus":"Blend smoldering attacks, runic omens and unbound energy."},"Starcaller — Moon Guard":{"comparison":"Protection Paladin with lunar magic","role":"tank","description":"Guard the party beneath a blanket of stars and a lunar shield of effects. This path turns the Starcaller’s celestial identity toward frontline defense.","focus":"Guard the party beneath a blanket of stars and a lunar shield of effects."},"Starcaller — Moon Priest":{"comparison":"Holy Priest with Elune’s lunar flavor","role":"healer","description":"Use Elune’s blessings, moonflow and prayers to restore allies. A recognizable healer fantasy expressed through lunar magic.","focus":"Use Elune’s blessings, moonflow and prayers to restore allies."},"Starcaller — Sentinel":{"comparison":"Marksmanship Hunter with arcane arrows","role":"ranged","description":"Channel Elune’s power through starfire shots and a celestial bow toolkit. This is the ranged-weapon side of the Starcaller.","focus":"Channel Elune’s power through starfire shots and a celestial bow toolkit."},"Starcaller — Warden":{"comparison":"Rogue with astral weapons","role":"melee","description":"Use knives, astral blades and relentless pursuit. The Warden combines a mobile assassin fantasy with the Starcaller’s celestial theme.","focus":"Use knives, astral blades and relentless pursuit."},"Stormbringer — Lightning":{"comparison":"Elemental Shaman","role":"caster","description":"Build around lightning, conductivity and Thorim’s power. A storm caster whose spell relationships are centered on electricity.","focus":"Build around lightning, conductivity and Thorim’s power."},"Stormbringer — Wind":{"comparison":"A wind-and-storm support caster","role":"support","description":"Shape the battlefield through tempest calling, flow and elemental bonds. This path offers a supporting storm identity.","focus":"Shape the battlefield through tempest calling, flow and elemental bonds."},"Stormbringer — Maelstrom":{"comparison":"A channeled storm battlemage","role":"caster","description":"Harness stormflow and torrential power in a tempest-centered toolkit. Inspect its abilities to plan the movement and casting rhythm you prefer.","focus":"Harness stormflow and torrential power in a tempest-centered toolkit."},"Sun Cleric — Piety":{"comparison":"A solar Shadow Priest-style caster","role":"caster","description":"Scorch enemies with radiant flame and sun magic. This is the Sun Cleric’s spellcasting damage path.","focus":"Scorch enemies with radiant flame and sun magic."},"Sun Cleric — Blessings":{"comparison":"Holy Priest with solar blessings","role":"healer","description":"Build a restorative toolkit around blessings and sanctified power. A direct route into the Sun Cleric’s supportive, healing identity.","focus":"Build a restorative toolkit around blessings and sanctified power."},"Sun Cleric — Seraphim":{"comparison":"Protection Paladin","role":"tank","description":"Take shining shields and royal hammers into the front line. The solar guardian fantasy pairs defensive tools with radiant strikes.","focus":"Take shining shields and royal hammers into the front line."},"Sun Cleric — Valkyrie":{"comparison":"Retribution Paladin with Odyn’s warrior flavor","role":"melee","description":"Fight through glorious executions, sunslams and a sun-sworn martial kit. A close-range path with a distinctly heroic solar identity.","focus":"Fight through glorious executions, sunslams and a sun-sworn martial kit."},"Templar — Oathkeeper":{"comparison":"Brewmaster-style tank with a sacred staff","role":"tank","description":"Build a sacred frontline fighter around staff defense and a sworn protector’s toolkit. The weapon-and-oath identity gives it a different feel from a shield tank.","focus":"Build a sacred frontline fighter around staff defense and a sworn protector’s toolkit."},"Templar — Zealot":{"comparison":"Retribution Paladin","role":"melee","description":"Press the attack with vindication and righteous upheaval. A determined sacred warrior built around aggressive melee choices.","focus":"Press the attack with vindication and righteous upheaval."},"Templar — Crusader":{"comparison":"Windwalker Monk with a sacred weapon identity","role":"melee","description":"Combine a righteous tempest, an argent blade and focused martial attacks. A mobile-feeling holy fighter fantasy to explore through the tree.","focus":"Combine a righteous tempest, an argent blade and focused martial attacks."},"Tinker — Demolition":{"comparison":"A ranged engineer and explosives specialist","role":"ranged","description":"Bring bombs, rockets and spider-bomb constructs to a fight. Build an explosive toolkit rather than a conventional spellcaster.","focus":"Bring bombs, rockets and spider-bomb constructs to a fight."},"Tinker — Invention":{"comparison":"A gadget-based restoration healer","role":"healer","description":"Keep the group alive with restorative beacons, repairs and field-medic tools. A technical take on healing through invention.","focus":"Keep the group alive with restorative beacons, repairs and field-medic tools."},"Tinker — Mechanics":{"comparison":"A mech-suit ranged engineer","role":"ranged","description":"Operate a mechanical toolkit of cogs, dynamite and a laser-equipped suit. Build around the ranged attacks and machine interactions you want to emphasize.","focus":"Enter the fight through a mechanical toolkit of cogs, dynamite and a laser-equipped suit."},"Venomancer — Rotweaver":{"comparison":"Affliction Warlock with spores and toxins","role":"caster","description":"Build a toxic spellcasting web around wilting effects, spores and fungal growth. The archived tree labels this path Venom.","focus":"Build a toxic spellcasting web around wilting effects, spores and fungal growth."},"Venomancer — Stalking":{"comparison":"Assassination Rogue","role":"melee","description":"Apply withering venom and stalking attacks at close range. A predatory poison-fighter identity rather than a distant caster.","focus":"Apply withering venom and stalking attacks at close range."},"Venomancer — Fortitude":{"comparison":"Guardian Druid with an insectoid carapace","role":"tank","description":"Use a reinforced exoskeleton and regenerative carapace to hold the front line. A defensive toolkit expressed through venomous biology.","focus":"Use a reinforced exoskeleton and regenerative carapace to hold the front line."},"Venomancer — Vizier":{"comparison":"Restoration Druid with fungal healing","role":"healer","description":"Mend allies through mycelial healing, mist and alchemical effects. The healer’s toolkit grows out of the Venomancer’s fungal and toxic theme.","focus":"Mend allies through mycelial healing, mist and alchemical effects."},"Witch Doctor — Voodoo":{"comparison":"A spirit-and-curse caster","role":"caster","description":"Command shadow puppets, Loa spirits and bad juju. The Voodoo path emphasizes the Witch Doctor’s ritual spellcasting identity.","focus":"Command shadow puppets, Loa spirits and bad juju."},"Witch Doctor — Brewing":{"comparison":"An alchemical restoration healer","role":"healer","description":"Gather ingredients, mix potions and toss restorative concoctions. A healer built around brewing rather than a traditional spell-school identity.","focus":"Gather ingredients, mix potions and toss restorative concoctions."},"Witch Doctor — Shadowhunting":{"comparison":"A Loa-empowered archer","role":"ranged","description":"Pair malefic arrows with Loa power and shadow-hunting magic. A weapon-driven path for players who like ritual flavor with their ranged attacks.","focus":"Pair malefic arrows with Loa power and shadow-hunting magic."},"Witch Hunter — Boltslinger":{"comparison":"A mobile crossbow-focused Hunter","role":"ranged","description":"Fire witchbane volleys and heartseeking bolts while developing your crossbow toolkit. An agile ranged identity with shadow-hunting flavor.","focus":"Fire witchbane volleys and heartseeking bolts while developing your crossbow toolkit."},"Witch Hunter — Houndmaster":{"comparison":"Beast Mastery Hunter with shadow hounds","role":"ranged","description":"Coordinate ranged attacks with a pack of supernatural hounds. Build around how your own shots and your companions reinforce one another.","focus":"Coordinate ranged attacks with a pack of supernatural hounds."},"Witch Hunter — Inquisition":{"comparison":"A dual-wielding fire-and-shadow fighter","role":"melee","description":"Bring the hunt into melee with dusk blades, flame sermons and holy judgment. A close-range interpretation of the Witch Hunter.","focus":"Bring the hunt into melee with dusk blades, flame sermons and holy judgment."},"Witch Hunter — Black Knight":{"comparison":"Blood Death Knight with a cursed duelist feel","role":"tank","description":"Hold the front line through shadow brands, dark chivalry and cursed weapon attacks. The kit presents a defensive knight with a strong shadow identity.","focus":"Hold the front line through shadow brands, dark chivalry and cursed weapon attacks."}}
+{
+  "Barbarian — Brutality": {
+    "comparison": "Fury Warrior",
+    "role": "melee",
+    "description": "A headlong melee fighter built around brutal weapon strikes and momentum. Commit to close range and shape the tree around your preferred attack chains.",
+    "focus": "A headlong melee fighter built around brutal weapon strikes and momentum.",
+    "retailExplanation": "Retail reference: Fury Warrior. The CoA Brutality tree focuses on a headlong melee fighter built around brutal weapon strikes and momentum. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Barbarian — Headhunting": {
+    "comparison": "Survival Hunter with thrown weapons",
+    "role": "ranged",
+    "description": "Take the hunt to medium range with axes, spears and bleeding wounds. A weapon-focused alternative to standing back and casting spells.",
+    "focus": "Take the hunt to medium range with axes, spears and bleeding wounds.",
+    "retailExplanation": "Retail reference: Survival Hunter with thrown weapons. The CoA Headhunting tree focuses on take the hunt to medium range with axes, spears and bleeding wounds. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Barbarian — Ancestry": {
+    "comparison": "Brewmaster Monk with ancestral support",
+    "role": "support",
+    "description": "Bring kegs, ancestral power and a fighter’s presence to the group. This tree mixes a brawling identity with tools that help the party.",
+    "focus": "Bring kegs, ancestral power and a fighter’s presence to the group.",
+    "retailExplanation": "Retail reference: Brewmaster Monk with ancestral support. The CoA Ancestry tree focuses on bring kegs, ancestral power and a fighter’s presence to the group. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Bloodmage — Sanguine": {
+    "comparison": "No one-to-one Retail match; Affliction Warlock or Shadow Priest are useful dark-caster references",
+    "role": "caster",
+    "description": "Shape a blood-magic toolkit around vampiric attacks and supernatural power. Explore how the tree’s strikes and spell effects reinforce one another.",
+    "focus": "Shape a blood-magic toolkit around vampiric attacks and supernatural power.",
+    "retailExplanation": "Retail reference: No one-to-one Retail match; Affliction Warlock or Shadow Priest are useful dark-caster references. The CoA Sanguine tree focuses on shape a blood-magic toolkit around vampiric attacks and supernatural power. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Bloodmage — Accursed": {
+    "comparison": "Feral Druid with a worgen curse",
+    "role": "melee",
+    "description": "Lean into the curse and fight through fangs, reaving attacks and a transformed identity. The kit centers on predatory close-range pressure.",
+    "focus": "Lean into the curse and fight through fangs, reaving attacks and a transformed identity.",
+    "retailExplanation": "Retail reference: Feral Druid with a worgen curse. The CoA Accursed tree focuses on lean into the curse and fight through fangs, reaving attacks and a transformed identity. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Bloodmage — Eternal": {
+    "comparison": "Blood Death Knight meets Guardian Druid",
+    "role": "tank",
+    "description": "Build a durable frontline around thick hide, blood magic and a relentless hunt. The fantasy is a cursed protector that stays in the fight.",
+    "focus": "Build a durable frontline around thick hide, blood magic and a relentless hunt.",
+    "retailExplanation": "Retail reference: Blood Death Knight meets Guardian Druid. The CoA Eternal tree focuses on build a durable frontline around thick hide, blood magic and a relentless hunt. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Bloodmage — Fleshweaver": {
+    "comparison": "No direct Retail counterpart; Discipline Priest is a loose hybrid-healing role reference",
+    "role": "support",
+    "description": "Work with sanguine essence and flesh-shaping magic rather than traditional holy healing. Read the preserved effects to build the balance of healing and aggression you want.",
+    "focus": "Work with sanguine essence and flesh-shaping magic rather than traditional holy healing.",
+    "retailExplanation": "Retail reference: No direct Retail counterpart; Discipline Priest is a loose hybrid-healing role reference. The CoA Fleshweaver tree focuses on work with sanguine essence and flesh-shaping magic rather than traditional holy healing. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Chronomancer — Infinite": {
+    "comparison": "Shadow Priest with time distortion",
+    "role": "caster",
+    "description": "Tear at time with Timerend, anomalies and reality-warping spells. Build around the interactions between temporal pressure and your chosen finishers.",
+    "focus": "Tear at time with Timerend, anomalies and reality-warping spells.",
+    "retailExplanation": "Retail reference: Shadow Priest with time distortion. The CoA Infinite tree focuses on tear at time with Timerend, anomalies and reality-warping spells. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Chronomancer — Artificer": {
+    "comparison": "Arcane Mage with magical constructs",
+    "role": "caster",
+    "description": "Turn echoes, wands and temporal artistry into a spellcasting toolkit. A good starting point if you enjoy a magical-engineer interpretation of time magic.",
+    "focus": "Turn echoes, wands and temporal artistry into a spellcasting toolkit.",
+    "retailExplanation": "Retail reference: Arcane Mage with magical constructs. The CoA Artificer tree focuses on turn echoes, wands and temporal artistry into a spellcasting toolkit. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Chronomancer — Time": {
+    "comparison": "No one-to-one match; Restoration Shaman or Preservation Evoker are healer-role references",
+    "role": "healer",
+    "description": "Use ripples and the sands of time to mend damage and correct mistakes. The healing fantasy is changing the outcome rather than simply adding more light.",
+    "focus": "Use ripples and the sands of time to mend damage and correct mistakes.",
+    "retailExplanation": "Retail reference: No one-to-one match; Restoration Shaman or Preservation Evoker are healer-role references. The CoA Time tree focuses on use ripples and the sands of time to mend damage and correct mistakes. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Cultist — Godblade": {
+    "comparison": "Enhancement Shaman as a melee spell-and-weapon reference, with a void theme",
+    "role": "melee",
+    "description": "Take a voidforged blade into melee and build around eldritch weapon effects. Rifts and abyssal power give the martial kit an Old God identity.",
+    "focus": "Take a voidforged blade into melee and build around eldritch weapon effects.",
+    "retailExplanation": "Retail reference: Enhancement Shaman as a melee spell-and-weapon reference, with a void theme. The CoA Godblade tree focuses on take a voidforged blade into melee and build around eldritch weapon effects. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Cultist — Corruption": {
+    "comparison": "Affliction Warlock",
+    "role": "caster",
+    "description": "Spread corruption and feed a growing web of dark effects. This tree favors the fantasy of wearing enemies down with forbidden magic.",
+    "focus": "Spread corruption and feed a growing web of dark effects.",
+    "retailExplanation": "Retail reference: Affliction Warlock. The CoA Corruption tree focuses on spread corruption and feed a growing web of dark effects. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Cultist — Heretic": {
+    "comparison": "No direct Retail counterpart; Discipline Priest and Shadow Priest are loose hybrid-support references",
+    "role": "hybrid-healer",
+    "description": "Combine malevolence, shadow weapons and forbidden rites in an unconventional hybrid toolkit. Inspect each talent to decide which supporting interactions anchor your build.",
+    "focus": "Combine malevolence, shadow weapons and forbidden rites in an unconventional hybrid toolkit.",
+    "retailExplanation": "Retail reference: No direct Retail counterpart; Discipline Priest and Shadow Priest are loose hybrid-support references. The CoA Heretic tree focuses on combine malevolence, shadow weapons and forbidden rites in an unconventional hybrid toolkit. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Cultist — Dreadnought": {
+    "comparison": "Protection Warrior with Old God armor",
+    "role": "tank",
+    "description": "Carry a shield into the void and become an armored eldritch bulwark. Defensive choices sit alongside shield attacks and Old God boons.",
+    "focus": "Carry a shield into the void and become an armored eldritch bulwark.",
+    "retailExplanation": "Retail reference: Protection Warrior with Old God armor. The CoA Dreadnought tree focuses on carry a shield into the void and become an armored eldritch bulwark. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Felsworn — Slayer": {
+    "comparison": "Havoc Demon Hunter",
+    "role": "melee",
+    "description": "Fight up close with demonic assaults, blades and an immolation aura. A fast, aggressive starting point for players who like a fel-powered melee identity.",
+    "focus": "Fight up close with demonic assaults, blades and an immolation aura.",
+    "retailExplanation": "Retail reference: Havoc Demon Hunter. The CoA Slayer tree focuses on fight up close with demonic assaults, blades and an immolation aura. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Felsworn — Infernal": {
+    "comparison": "Destruction Warlock with a fel battlemage feel",
+    "role": "caster",
+    "description": "Build around ruin, chaos and the power of Sargeras. This is the spellcasting side of the Felsworn, with talent choices that reshape its destructive toolkit.",
+    "focus": "Build around ruin, chaos and the power of Sargeras.",
+    "retailExplanation": "Retail reference: Destruction Warlock with a fel battlemage feel. The CoA Infernal tree focuses on build around ruin, chaos and the power of Sargeras. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Felsworn — Tyrant": {
+    "comparison": "Vengeance Demon Hunter",
+    "role": "tank",
+    "description": "Bring demonic will and carving attacks to the front line. The tree offers a durable fel-warrior fantasy rather than the Slayer’s pure aggression.",
+    "focus": "Bring demonic will and carving attacks to the front line.",
+    "retailExplanation": "Retail reference: Vengeance Demon Hunter. The CoA Tyrant tree focuses on bring demonic will and carving attacks to the front line. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Guardian — Vanguard": {
+    "comparison": "Protection Warrior",
+    "role": "tank",
+    "description": "A traditional shield-bearing defender built around heavy blows and iron resolve. Start here if you enjoy a clear frontline protector identity.",
+    "focus": "A traditional shield-bearing defender built around heavy blows and iron resolve.",
+    "retailExplanation": "Retail reference: Protection Warrior. The CoA Vanguard tree focuses on a traditional shield-bearing defender built around heavy blows and iron resolve. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Guardian — Inspiration": {
+    "comparison": "Warrior battlefield leadership and Augmentation Evoker-style group support",
+    "role": "support",
+    "description": "Lead from the battlefield with inspiring abilities and coordinated strength. Your kit’s identity is making the group stronger through a martial support role.",
+    "focus": "Lead from the battlefield with inspiring abilities and coordinated strength.",
+    "retailExplanation": "Retail reference: Warrior battlefield leadership and Augmentation Evoker-style group support. The CoA Inspiration tree focuses on lead from the battlefield with inspiring abilities and coordinated strength. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Guardian — Gladiator": {
+    "comparison": "Arms Warrior with a duelist identity",
+    "role": "melee",
+    "description": "Trade the pure defensive focus for sword training and decisive melee attacks. Shape a disciplined weapon fighter around the preserved Gladiator talents.",
+    "focus": "Trade the pure defensive focus for sword training and decisive melee attacks.",
+    "retailExplanation": "Retail reference: Arms Warrior with a duelist identity. The CoA Gladiator tree focuses on trade the pure defensive focus for sword training and decisive melee attacks. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Knight of Xoroth — War": {
+    "comparison": "Arms Warrior with demonic weapon magic",
+    "role": "melee",
+    "description": "Combine warlike weapon strikes with Xoroth’s demonic flavor. Gore, mutilation and martial aggression define the tree’s starting toolkit.",
+    "focus": "Combine warlike weapon strikes with Xoroth’s demonic flavor.",
+    "retailExplanation": "Retail reference: Arms Warrior with demonic weapon magic. The CoA War tree focuses on combine warlike weapon strikes with Xoroth’s demonic flavor. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Knight of Xoroth — Hellfire": {
+    "comparison": "Destruction Warlock or Fire Mage as a fire-and-demon magic reference",
+    "role": "caster",
+    "description": "Bring hellfire into a knight’s toolkit through burning blades and demonic invasion. Build around the relationships between your fire effects and chosen attacks.",
+    "focus": "Bring hellfire into a knight’s toolkit through burning blades and demonic invasion.",
+    "retailExplanation": "Retail reference: Destruction Warlock or Fire Mage as a fire-and-demon magic reference. The CoA Hellfire tree focuses on bring hellfire into a knight’s toolkit through burning blades and demonic invasion. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Knight of Xoroth — Defiance": {
+    "comparison": "Protection Paladin with an imp entourage",
+    "role": "tank",
+    "description": "Anchor the front line with a shield and a distinctly demonic supporting cast. Imp-related talents add a different texture to a defensive knight.",
+    "focus": "Anchor the front line with a shield and a distinctly demonic supporting cast.",
+    "retailExplanation": "Retail reference: Protection Paladin with an imp entourage. The CoA Defiance tree focuses on anchor the front line with a shield and a distinctly demonic supporting cast. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Necromancer — Death": {
+    "comparison": "Affliction Warlock with decay magic",
+    "role": "caster",
+    "description": "Work with rot, worms and the cycle of death to pressure enemies. A decay-centered caster fantasy for players who enjoy dark spell interactions.",
+    "focus": "Work with rot, worms and the cycle of death to pressure enemies.",
+    "retailExplanation": "Retail reference: Affliction Warlock with decay magic. The CoA Death tree focuses on work with rot, worms and the cycle of death to pressure enemies. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Necromancer — Rime": {
+    "comparison": "Frost Mage",
+    "role": "caster",
+    "description": "Build around ice barrages, icicles and biting cold. This is the Necromancer’s frozen spellcasting path, with a colder identity than rot or minions.",
+    "focus": "Build around ice barrages, icicles and biting cold.",
+    "retailExplanation": "Retail reference: Frost Mage. The CoA Rime tree focuses on build around ice barrages, icicles and biting cold. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Necromancer — Animation": {
+    "comparison": "Demonology Warlock with undead minions",
+    "role": "caster",
+    "description": "Raise an undead force and invest in the talents that strengthen your summons. The core fantasy is directing a growing army rather than fighting alone.",
+    "focus": "Raise an undead force and invest in the talents that strengthen your summons.",
+    "retailExplanation": "Retail reference: Demonology Warlock with undead minions. The CoA Animation tree focuses on raise an undead force and invest in the talents that strengthen your summons. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Primalist — Grovekeeper": {
+    "comparison": "Restoration Shaman with earth-and-life magic",
+    "role": "support",
+    "description": "Use life magic, spiritual charge and the earth’s power to support allies. The archived tree calls this path Life; the roster calls it Grovekeeper.",
+    "focus": "Use life magic, spiritual charge and the earth’s power to support allies.",
+    "retailExplanation": "Retail reference: Restoration Shaman with earth-and-life magic. The CoA Grovekeeper tree focuses on use life magic, spiritual charge and the earth’s power to support allies. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Primalist — Geomancy": {
+    "comparison": "Elemental Shaman focused on earth",
+    "role": "caster",
+    "description": "Call on tremors, stone and Therazane’s power. Build an earth-focused caster whose identity is grounded in seismic effects rather than fire or lightning.",
+    "focus": "Call on tremors, stone and Therazane’s power.",
+    "retailExplanation": "Retail reference: Elemental Shaman focused on earth. The CoA Geomancy tree focuses on call on tremors, stone and Therazane’s power. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Primalist — Wildwalker": {
+    "comparison": "Enhancement Shaman with primal weapons",
+    "role": "melee",
+    "description": "Take primal bites, totemic strikes and the fury of the wild into melee. The archived tree labels this path Primal.",
+    "focus": "Take primal bites, totemic strikes and the fury of the wild into melee.",
+    "retailExplanation": "Retail reference: Enhancement Shaman with primal weapons. The CoA Wildwalker tree focuses on take primal bites, totemic strikes and the fury of the wild into melee. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Primalist — Mountain King": {
+    "comparison": "Protection Warrior as a frontline-tank reference, with earth magic",
+    "role": "tank",
+    "description": "Stand firm with stone, seismic force and an unyielding form. A defensive interpretation of primal power built for the front line.",
+    "focus": "Stand firm with stone, seismic force and an unyielding form.",
+    "retailExplanation": "Retail reference: Protection Warrior as a frontline-tank reference, with earth magic. The CoA Mountain King tree focuses on stand firm with stone, seismic force and an unyielding form. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Pyromancer — Flameweaving": {
+    "comparison": "No direct Retail match; Restoration Druid is a healer-role reference, while fire is CoA-specific",
+    "role": "healer",
+    "description": "Turn cleansing and soothing flames into a healing toolkit. Phoenix abilities give this path a restorative fire identity.",
+    "focus": "Turn cleansing and soothing flames into a healing toolkit.",
+    "retailExplanation": "Retail reference: No direct Retail match; Restoration Druid is a healer-role reference, while fire is CoA-specific. The CoA Flameweaving tree focuses on turn cleansing and soothing flames into a healing toolkit. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Pyromancer — Incineration": {
+    "comparison": "Fire Mage",
+    "role": "caster",
+    "description": "Lean into ignite, combustion and concentrated fire magic. Build your tree around the burning interactions you want to emphasize.",
+    "focus": "Lean into ignite, combustion and concentrated fire magic.",
+    "retailExplanation": "Retail reference: Fire Mage. The CoA Incineration tree focuses on lean into ignite, combustion and concentrated fire magic. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Pyromancer — Draconic": {
+    "comparison": "Augmentation Evoker as a dragon-themed group-support reference",
+    "role": "support",
+    "description": "Draw on the dragon aspects and their different gifts. Explore how draconic blessings and fire effects combine in a supporting toolkit.",
+    "focus": "Draw on the dragon aspects and their different gifts.",
+    "retailExplanation": "Retail reference: Augmentation Evoker as a dragon-themed group-support reference. The CoA Draconic tree focuses on draw on the dragon aspects and their different gifts. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Ranger — Archery": {
+    "comparison": "Marksmanship Hunter",
+    "role": "ranged",
+    "description": "Focus on precise shots, arrows and ranged weapon pressure. A direct starting point for players who want the bow itself to be the center of the kit.",
+    "focus": "Focus on precise shots, arrows and ranged weapon pressure.",
+    "retailExplanation": "Retail reference: Marksmanship Hunter. The CoA Archery tree focuses on focus on precise shots, arrows and ranged weapon pressure. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Ranger — Farstrider": {
+    "comparison": "Marksmanship Hunter as a ranged-weapon reference, with added group utility",
+    "role": "support",
+    "description": "Mix falcon-themed attacks, cunning and battlefield calls. This path puts a supportive ranger identity alongside its ranged weapon skills.",
+    "focus": "Mix falcon-themed attacks, cunning and battlefield calls.",
+    "retailExplanation": "Retail reference: Marksmanship Hunter as a ranged-weapon reference, with added group utility. The CoA Farstrider tree focuses on mix falcon-themed attacks, cunning and battlefield calls. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Ranger — Brigand": {
+    "comparison": "Rogue with a rougher brawler feel",
+    "role": "melee",
+    "description": "Fight dirty with ravaging attacks, knuckledusters and jagged cuts. The Brigand is a close-range interpretation of the Ranger.",
+    "focus": "Fight dirty with ravaging attacks, knuckledusters and jagged cuts.",
+    "retailExplanation": "Retail reference: Rogue with a rougher brawler feel. The CoA Brigand tree focuses on fight dirty with ravaging attacks, knuckledusters and jagged cuts. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Reaper — Harvest": {
+    "comparison": "Unholy Death Knight with a harvesting weapon",
+    "role": "melee",
+    "description": "Build around doom-rending attacks and the harvest of death. A dark melee path with a strong scythe-and-grave fantasy.",
+    "focus": "Build around doom-rending attacks and the harvest of death.",
+    "retailExplanation": "Retail reference: Unholy Death Knight with a harvesting weapon. The CoA Harvest tree focuses on build around doom-rending attacks and the harvest of death. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Reaper — Soul": {
+    "comparison": "No one-to-one match; Arms Warrior and Death Knight are loose weapon-and-death references",
+    "role": "melee",
+    "description": "Use soulforged weaponry, marks and a death-chasing toolkit. Explore the connections between your weapon attacks and spectral effects.",
+    "focus": "Use soulforged weaponry, marks and a death-chasing toolkit.",
+    "retailExplanation": "Retail reference: No one-to-one match; Arms Warrior and Death Knight are loose weapon-and-death references. The CoA Soul tree focuses on use soulforged weaponry, marks and a death-chasing toolkit. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Reaper — Domination": {
+    "comparison": "Blood Death Knight as a dark frontline-tank reference",
+    "role": "tank",
+    "description": "Claim the front line through dread, fortitude and soul-taking power. This is the Reaper’s defensive path.",
+    "focus": "Claim the front line through dread, fortitude and soul-taking power.",
+    "retailExplanation": "Retail reference: Blood Death Knight as a dark frontline-tank reference. The CoA Domination tree focuses on claim the front line through dread, fortitude and soul-taking power. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Runemaster — Engravement": {
+    "comparison": "A runic melee spellblade",
+    "role": "melee",
+    "description": "Fight through runic brands and magical weapon interactions. The archived tree calls this path Runic; the roster calls it Engravement.",
+    "focus": "Fight through runic brands and magical weapon interactions.",
+    "retailExplanation": "Retail reference: A runic melee spellblade. The CoA Engravement tree focuses on fight through runic brands and magical weapon interactions. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Runemaster — Glyphic": {
+    "comparison": "Arcane Mage with elemental glyphs",
+    "role": "caster",
+    "description": "Assemble a spellcasting toolkit from glyphs, crystals and arcane effects. The archived tree uses the name Arcane for this path.",
+    "focus": "Assemble a spellcasting toolkit from glyphs, crystals and arcane effects.",
+    "retailExplanation": "Retail reference: Arcane Mage with elemental glyphs. The CoA Glyphic tree focuses on assemble a spellcasting toolkit from glyphs, crystals and arcane effects. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Runemaster — Riftblade": {
+    "comparison": "Enhancement-style elemental spellblade",
+    "role": "melee",
+    "description": "Blend smoldering attacks, runic omens and unbound energy. Build a melee toolkit with a strong magical edge.",
+    "focus": "Blend smoldering attacks, runic omens and unbound energy.",
+    "retailExplanation": "Retail reference: Enhancement-style elemental spellblade. The CoA Riftblade tree focuses on blend smoldering attacks, runic omens and unbound energy. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Starcaller — Moon Guard": {
+    "comparison": "Protection Paladin with lunar magic",
+    "role": "tank",
+    "description": "Guard the party beneath a blanket of stars and a lunar shield of effects. This path turns the Starcaller’s celestial identity toward frontline defense.",
+    "focus": "Guard the party beneath a blanket of stars and a lunar shield of effects.",
+    "retailExplanation": "Retail reference: Protection Paladin with lunar magic. The CoA Moon Guard tree focuses on guard the party beneath a blanket of stars and a lunar shield of effects. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Starcaller — Moon Priest": {
+    "comparison": "Holy Priest with Elune’s lunar flavor",
+    "role": "healer",
+    "description": "Use Elune’s blessings, moonflow and prayers to restore allies. A recognizable healer fantasy expressed through lunar magic.",
+    "focus": "Use Elune’s blessings, moonflow and prayers to restore allies.",
+    "retailExplanation": "Retail reference: Holy Priest with Elune’s lunar flavor. The CoA Moon Priest tree focuses on use Elune’s blessings, moonflow and prayers to restore allies. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Starcaller — Sentinel": {
+    "comparison": "Marksmanship Hunter with arcane arrows",
+    "role": "ranged",
+    "description": "Channel Elune’s power through starfire shots and a celestial bow toolkit. This is the ranged-weapon side of the Starcaller.",
+    "focus": "Channel Elune’s power through starfire shots and a celestial bow toolkit.",
+    "retailExplanation": "Retail reference: Marksmanship Hunter with arcane arrows. The CoA Sentinel tree focuses on channel Elune’s power through starfire shots and a celestial bow toolkit. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Starcaller — Warden": {
+    "comparison": "Rogue with astral weapons",
+    "role": "melee",
+    "description": "Use knives, astral blades and relentless pursuit. The Warden combines a mobile assassin fantasy with the Starcaller’s celestial theme.",
+    "focus": "Use knives, astral blades and relentless pursuit.",
+    "retailExplanation": "Retail reference: Rogue with astral weapons. The CoA Warden tree focuses on use knives, astral blades and relentless pursuit. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Stormbringer — Lightning": {
+    "comparison": "Elemental Shaman",
+    "role": "caster",
+    "description": "Build around lightning, conductivity and Thorim’s power. A storm caster whose spell relationships are centered on electricity.",
+    "focus": "Build around lightning, conductivity and Thorim’s power.",
+    "retailExplanation": "Retail reference: Elemental Shaman. The CoA Lightning tree focuses on build around lightning, conductivity and Thorim’s power. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Stormbringer — Wind": {
+    "comparison": "Restoration Shaman as a group-support reference, with a wind-focused CoA identity",
+    "role": "support",
+    "description": "Shape the battlefield through tempest calling, flow and elemental bonds. This path offers a supporting storm identity.",
+    "focus": "Shape the battlefield through tempest calling, flow and elemental bonds.",
+    "retailExplanation": "Retail reference: Restoration Shaman as a group-support reference, with a wind-focused CoA identity. The CoA Wind tree focuses on shape the battlefield through tempest calling, flow and elemental bonds. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Stormbringer — Maelstrom": {
+    "comparison": "Elemental Shaman as a storm-casting reference",
+    "role": "caster",
+    "description": "Harness stormflow and torrential power in a tempest-centered toolkit. Inspect its abilities to plan the movement and casting rhythm you prefer.",
+    "focus": "Harness stormflow and torrential power in a tempest-centered toolkit.",
+    "retailExplanation": "Retail reference: Elemental Shaman as a storm-casting reference. The CoA Maelstrom tree focuses on harness stormflow and torrential power in a tempest-centered toolkit. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Sun Cleric — Piety": {
+    "comparison": "Shadow Priest as a spell-damage reference, with solar rather than shadow magic",
+    "role": "caster",
+    "description": "Scorch enemies with radiant flame and sun magic. This is the Sun Cleric’s spellcasting damage path.",
+    "focus": "Scorch enemies with radiant flame and sun magic.",
+    "retailExplanation": "Retail reference: Shadow Priest as a spell-damage reference, with solar rather than shadow magic. The CoA Piety tree focuses on scorch enemies with radiant flame and sun magic. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Sun Cleric — Blessings": {
+    "comparison": "Holy Priest with solar blessings",
+    "role": "healer",
+    "description": "Build a restorative toolkit around blessings and sanctified power. A direct route into the Sun Cleric’s supportive, healing identity.",
+    "focus": "Build a restorative toolkit around blessings and sanctified power.",
+    "retailExplanation": "Retail reference: Holy Priest with solar blessings. The CoA Blessings tree focuses on build a restorative toolkit around blessings and sanctified power. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Sun Cleric — Seraphim": {
+    "comparison": "Protection Paladin",
+    "role": "tank",
+    "description": "Take shining shields and royal hammers into the front line. The solar guardian fantasy pairs defensive tools with radiant strikes.",
+    "focus": "Take shining shields and royal hammers into the front line.",
+    "retailExplanation": "Retail reference: Protection Paladin. The CoA Seraphim tree focuses on take shining shields and royal hammers into the front line. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Sun Cleric — Valkyrie": {
+    "comparison": "Retribution Paladin with Odyn’s warrior flavor",
+    "role": "melee",
+    "description": "Fight through glorious executions, sunslams and a sun-sworn martial kit. A close-range path with a distinctly heroic solar identity.",
+    "focus": "Fight through glorious executions, sunslams and a sun-sworn martial kit.",
+    "retailExplanation": "Retail reference: Retribution Paladin with Odyn’s warrior flavor. The CoA Valkyrie tree focuses on fight through glorious executions, sunslams and a sun-sworn martial kit. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Templar — Oathkeeper": {
+    "comparison": "Brewmaster Monk as a staff-based tanking reference, with a sacred oath theme",
+    "role": "tank",
+    "description": "Build a sacred frontline fighter around staff defense and a sworn protector’s toolkit. The weapon-and-oath identity gives it a different feel from a shield tank.",
+    "focus": "Build a sacred frontline fighter around staff defense and a sworn protector’s toolkit.",
+    "retailExplanation": "Retail reference: Brewmaster Monk as a staff-based tanking reference, with a sacred oath theme. The CoA Oathkeeper tree focuses on build a sacred frontline fighter around staff defense and a sworn protector’s toolkit. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Templar — Zealot": {
+    "comparison": "Retribution Paladin",
+    "role": "melee",
+    "description": "Press the attack with vindication and righteous upheaval. A determined sacred warrior built around aggressive melee choices.",
+    "focus": "Press the attack with vindication and righteous upheaval.",
+    "retailExplanation": "Retail reference: Retribution Paladin. The CoA Zealot tree focuses on press the attack with vindication and righteous upheaval. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Templar — Crusader": {
+    "comparison": "Windwalker Monk with a sacred weapon identity",
+    "role": "melee",
+    "description": "Combine a righteous tempest, an argent blade and focused martial attacks. A mobile-feeling holy fighter fantasy to explore through the tree.",
+    "focus": "Combine a righteous tempest, an argent blade and focused martial attacks.",
+    "retailExplanation": "Retail reference: Windwalker Monk with a sacred weapon identity. The CoA Crusader tree focuses on combine a righteous tempest, an argent blade and focused martial attacks. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Tinker — Demolition": {
+    "comparison": "Marksmanship Hunter as a ranged-damage reference; the explosives and gadgets are CoA-specific",
+    "role": "ranged",
+    "description": "Bring bombs, rockets and spider-bomb constructs to a fight. Build an explosive toolkit rather than a conventional spellcaster.",
+    "focus": "Bring bombs, rockets and spider-bomb constructs to a fight.",
+    "retailExplanation": "Retail reference: Marksmanship Hunter as a ranged-damage reference; the explosives and gadgets are CoA-specific. The CoA Demolition tree focuses on bring bombs, rockets and spider-bomb constructs to a fight. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Tinker — Invention": {
+    "comparison": "Restoration Shaman as a healer-role reference; the repair-and-gadget toolkit is CoA-specific",
+    "role": "healer",
+    "description": "Keep the group alive with restorative beacons, repairs and field-medic tools. A technical take on healing through invention.",
+    "focus": "Keep the group alive with restorative beacons, repairs and field-medic tools.",
+    "retailExplanation": "Retail reference: Restoration Shaman as a healer-role reference; the repair-and-gadget toolkit is CoA-specific. The CoA Invention tree focuses on keep the group alive with restorative beacons, repairs and field-medic tools. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Tinker — Mechanics": {
+    "comparison": "Marksmanship Hunter as a ranged-damage reference; the powered suit is CoA-specific",
+    "role": "ranged",
+    "description": "Operate a mechanical toolkit of cogs, dynamite and a laser-equipped suit. Build around the ranged attacks and machine interactions you want to emphasize.",
+    "focus": "Enter the fight through a mechanical toolkit of cogs, dynamite and a laser-equipped suit.",
+    "retailExplanation": "Retail reference: Marksmanship Hunter as a ranged-damage reference; the powered suit is CoA-specific. The CoA Mechanics tree focuses on operate a mechanical toolkit of cogs, dynamite and a laser-equipped suit. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Venomancer — Rotweaver": {
+    "comparison": "Affliction Warlock with spores and toxins",
+    "role": "caster",
+    "description": "Build a toxic spellcasting web around wilting effects, spores and fungal growth. The archived tree labels this path Venom.",
+    "focus": "Build a toxic spellcasting web around wilting effects, spores and fungal growth.",
+    "retailExplanation": "Retail reference: Affliction Warlock with spores and toxins. The CoA Rotweaver tree focuses on build a toxic spellcasting web around wilting effects, spores and fungal growth. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Venomancer — Stalking": {
+    "comparison": "Assassination Rogue",
+    "role": "melee",
+    "description": "Apply withering venom and stalking attacks at close range. A predatory poison-fighter identity rather than a distant caster.",
+    "focus": "Apply withering venom and stalking attacks at close range.",
+    "retailExplanation": "Retail reference: Assassination Rogue. The CoA Stalking tree focuses on apply withering venom and stalking attacks at close range. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Venomancer — Fortitude": {
+    "comparison": "Guardian Druid with an insectoid carapace",
+    "role": "tank",
+    "description": "Use a reinforced exoskeleton and regenerative carapace to hold the front line. A defensive toolkit expressed through venomous biology.",
+    "focus": "Use a reinforced exoskeleton and regenerative carapace to hold the front line.",
+    "retailExplanation": "Retail reference: Guardian Druid with an insectoid carapace. The CoA Fortitude tree focuses on use a reinforced exoskeleton and regenerative carapace to hold the front line. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Venomancer — Vizier": {
+    "comparison": "Restoration Druid with fungal healing",
+    "role": "healer",
+    "description": "Mend allies through mycelial healing, mist and alchemical effects. The healer’s toolkit grows out of the Venomancer’s fungal and toxic theme.",
+    "focus": "Mend allies through mycelial healing, mist and alchemical effects.",
+    "retailExplanation": "Retail reference: Restoration Druid with fungal healing. The CoA Vizier tree focuses on mend allies through mycelial healing, mist and alchemical effects. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Witch Doctor — Voodoo": {
+    "comparison": "Affliction Warlock or Shadow Priest as curse-and-spirit caster references",
+    "role": "caster",
+    "description": "Command shadow puppets, Loa spirits and bad juju. The Voodoo path emphasizes the Witch Doctor’s ritual spellcasting identity.",
+    "focus": "Command shadow puppets, Loa spirits and bad juju.",
+    "retailExplanation": "Retail reference: Affliction Warlock or Shadow Priest as curse-and-spirit caster references. The CoA Voodoo tree focuses on command shadow puppets, Loa spirits and bad juju. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Witch Doctor — Brewing": {
+    "comparison": "Mistweaver Monk as a healing-role reference; potion brewing is CoA-specific",
+    "role": "healer",
+    "description": "Gather ingredients, mix potions and toss restorative concoctions. A healer built around brewing rather than a traditional spell-school identity.",
+    "focus": "Gather ingredients, mix potions and toss restorative concoctions.",
+    "retailExplanation": "Retail reference: Mistweaver Monk as a healing-role reference; potion brewing is CoA-specific. The CoA Brewing tree focuses on gather ingredients, mix potions and toss restorative concoctions. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Witch Doctor — Shadowhunting": {
+    "comparison": "Marksmanship Hunter as a ranged-weapon reference, with Loa and shadow magic",
+    "role": "ranged",
+    "description": "Pair malefic arrows with Loa power and shadow-hunting magic. A weapon-driven path for players who like ritual flavor with their ranged attacks.",
+    "focus": "Pair malefic arrows with Loa power and shadow-hunting magic.",
+    "retailExplanation": "Retail reference: Marksmanship Hunter as a ranged-weapon reference, with Loa and shadow magic. The CoA Shadowhunting tree focuses on pair malefic arrows with Loa power and shadow-hunting magic. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Witch Hunter — Boltslinger": {
+    "comparison": "Marksmanship Hunter as a crossbow-and-ranged-weapon reference",
+    "role": "ranged",
+    "description": "Fire witchbane volleys and heartseeking bolts while developing your crossbow toolkit. An agile ranged identity with shadow-hunting flavor.",
+    "focus": "Fire witchbane volleys and heartseeking bolts while developing your crossbow toolkit.",
+    "retailExplanation": "Retail reference: Marksmanship Hunter as a crossbow-and-ranged-weapon reference. The CoA Boltslinger tree focuses on fire witchbane volleys and heartseeking bolts while developing your crossbow toolkit. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Witch Hunter — Houndmaster": {
+    "comparison": "Beast Mastery Hunter with shadow hounds",
+    "role": "ranged",
+    "description": "Coordinate ranged attacks with a pack of supernatural hounds. Build around how your own shots and your companions reinforce one another.",
+    "focus": "Coordinate ranged attacks with a pack of supernatural hounds.",
+    "retailExplanation": "Retail reference: Beast Mastery Hunter with shadow hounds. The CoA Houndmaster tree focuses on coordinate ranged attacks with a pack of supernatural hounds. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Witch Hunter — Inquisition": {
+    "comparison": "Outlaw Rogue or Retribution Paladin as dual-wield melee references, with fire and shadow themes",
+    "role": "melee",
+    "description": "Bring the hunt into melee with dusk blades, flame sermons and holy judgment. A close-range interpretation of the Witch Hunter.",
+    "focus": "Bring the hunt into melee with dusk blades, flame sermons and holy judgment.",
+    "retailExplanation": "Retail reference: Outlaw Rogue or Retribution Paladin as dual-wield melee references, with fire and shadow themes. The CoA Inquisition tree focuses on bring the hunt into melee with dusk blades, flame sermons and holy judgment. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  },
+  "Witch Hunter — Black Knight": {
+    "comparison": "Blood Death Knight with a cursed duelist feel",
+    "role": "tank",
+    "description": "Hold the front line through shadow brands, dark chivalry and cursed weapon attacks. The kit presents a defensive knight with a strong shadow identity.",
+    "focus": "Hold the front line through shadow brands, dark chivalry and cursed weapon attacks.",
+    "retailExplanation": "Retail reference: Blood Death Knight with a cursed duelist feel. The CoA Black Knight tree focuses on hold the front line through shadow brands, dark chivalry and cursed weapon attacks. Use the Retail parallel to recognize the broad role or theme; CoA abilities, resources, and rotation follow this tree's own design."
+  }
+}

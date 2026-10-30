@@ -111,6 +111,143 @@
       ]
     },
     {
+      "name": "Vaults of the Inquisition",
+      "mapId": 936,
+      "sourceConfidence": "high-upstream",
+      "liveConfidence": "unverified",
+      "bosses": [
+        {
+          "npcId": 162700,
+          "name": "Merciless Echo",
+          "source": "src/server/coa/CoAVaults.cpp",
+          "mechanics": [
+            {
+              "spellId": 256975,
+              "name": "Spectral Strike",
+              "firstMs": 15000,
+              "repeatMs": 37000
+            },
+            {
+              "spellId": 256805,
+              "name": "Spectral Destruction",
+              "firstMs": 25000,
+              "repeatMs": 37000
+            },
+            {
+              "spellId": 975011,
+              "name": "Fierce Blow",
+              "firstMs": 6000,
+              "repeatMinMs": 9000,
+              "repeatMaxMs": 11000
+            }
+          ],
+          "chainSummon": {
+            "npcId": 162702,
+            "firstMs": 5000,
+            "repeatByDifficultyMs": {
+              "normal": 10000,
+              "heroic": 4000,
+              "mythic": 2000
+            }
+          }
+        },
+        {
+          "npcId": 162703,
+          "name": "Darkandle",
+          "source": "src/server/coa/CoAVaults.cpp",
+          "mechanics": [
+            {
+              "spellId": 256814,
+              "name": "More Fire",
+              "firstMs": 5000,
+              "repeatMs": 20000,
+              "fireCirclesDelayMs": 3000
+            },
+            {
+              "spellId": 256819,
+              "name": "Earthquake",
+              "firstMs": 18500,
+              "repeatMs": 20000,
+              "cleanupDelayMs": 7000
+            },
+            {
+              "spellId": 975011,
+              "name": "Fierce Blow",
+              "firstMs": 9000,
+              "repeatMinMs": 6000,
+              "repeatMaxMs": 8000
+            }
+          ],
+          "escapeTriggerHealthPctByDifficulty": {
+            "normal": 15,
+            "heroic": 20,
+            "mythic": 30
+          }
+        },
+        {
+          "npcId": 162704,
+          "name": "Deceiver",
+          "source": "src/server/coa/CoAVaults.cpp",
+          "cycleMs": 40000,
+          "ringBurstDelayMs": 5000,
+          "mechanics": [
+            {
+              "spellId": 256927,
+              "name": "Voidflare",
+              "firstMs": 7000
+            },
+            {
+              "name": "Inner Ring",
+              "firstMs": 20000,
+              "burstDelayMs": 5000
+            },
+            {
+              "name": "Outer Ring",
+              "firstMs": 25000,
+              "burstDelayMs": 5000
+            },
+            {
+              "name": "Soak",
+              "firstMs": 30000
+            },
+            {
+              "name": "Holy Crystal",
+              "firstMs": 35000
+            },
+            {
+              "spellId": 256844,
+              "name": "Void Wrath",
+              "firstMs": 40000
+            },
+            {
+              "spellId": 975011,
+              "name": "Fierce Blow",
+              "firstMs": 10000,
+              "repeatMinMs": 10000,
+              "repeatMaxMs": 12000
+            }
+          ],
+          "awakeningEventOffsetsMs": {
+            "holyCracks": 12000,
+            "sealRing": 14000,
+            "roar": 15500,
+            "awake": 17000
+          },
+          "caution": "Awakening offsets are relative to seal-break sequence, not pull."
+        }
+      ],
+      "references": [
+        "research/dbm/vaults-of-the-inquisition-three-boss-source-audit-2026-10-30.md",
+        "research/dbm/vaults-trash-and-deceiver-timing-audit-2026-10-30.md"
+      ],
+      "trashSource": "src/server/coa/CoAVaults.cpp",
+      "cautions": [
+        "C++ source-derived; not live-verified",
+        "Timing may shift with casts and RP",
+        "Heroic/Mythic trash abilities differ"
+      ]
+    },
+    {
       "name": "Frozen Reach (custom map)",
       "mapId": 908,
       "sourceConfidence": "teleport and instance-template only",

@@ -328,15 +328,18 @@
         "baseItem": 559360,
         "heroicItem": 297650,
         "mythicItem": 297651
+      },
+      {
+        "baseItem": 559361,
+        "heroicItem": 297693,
+        "mythicItem": 297694
       }
     ],
     "validation": {
       "bossLootRows": 27,
       "uniqueBaseItems": 27,
-      "variantRows": 26,
-      "unmappedBaseItems": [
-        559361
-      ],
+      "variantRows": 27,
+      "unmappedBaseItems": [],
       "duplicateVariantBaseIds": 0
     },
     "warnings": [

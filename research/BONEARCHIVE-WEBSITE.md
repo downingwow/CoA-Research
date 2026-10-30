@@ -18,3 +18,7 @@ The archived capture is deliberately separate from current CoA-development state
 
 ## Verification
 The standalone model check exercises every specialization, budgets, max ranks, choices, dependent removal, full build restoration and malformed import rejection. JavaScript syntax checks run before deployment; browser checks verify the published site. No new paid infrastructure or purchases are required.
+
+## Independent visual identity
+
+The archive desk design uses bone-white reading surfaces, ink-green navigation and rust accents, a numbered collection index, and an on-demand class directory. The approved Uncle Bone dragon-skull logo is stored in `site/assets/uncle-bone-logo.webp`. The portal and research explorer share `site/archive.css`. This original presentation replaces the companion-style homepage and fixed class sidebar; source attribution and existing data tools remain available.

@@ -1,0 +1,831 @@
+{
+  "schema": "coa-research.boss-spell-registry.v1",
+  "date": "2026-10-30",
+  "scope": "Road to De Other Side and Vaults of the Inquisition",
+  "provenance": "Upstream C++ source; not confirmed live",
+  "notes": [
+    "Scheduling is syntactic extraction; schedules may occur in different phases or conditions and are not a unified timeline",
+    "Repeated events have no automatic linkage to specific spells in this dataset",
+    "Difficulty spell variants are included where declared; no retail assumptions"
+  ],
+  "encounters": [
+    {
+      "name": "vaults",
+      "npcIds": [
+        162700,
+        162703,
+        162704
+      ],
+      "source": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/blob/main/src/server/coa/CoAVaults.cpp",
+      "spells": [
+        {
+          "constant": "SPELL_FIERCE_BLOW",
+          "id": 975011
+        },
+        {
+          "constant": "SPELL_SPECTRAL_DESTRUCTION",
+          "id": 256805
+        },
+        {
+          "constant": "SPELL_SPECTRAL_DESTRUCTION_RP",
+          "id": 256937
+        },
+        {
+          "constant": "SPELL_RP_SHADOWBOLT",
+          "id": 256936
+        },
+        {
+          "constant": "SPELL_VOID_ESCAPE",
+          "id": 256811
+        },
+        {
+          "constant": "SPELL_CANDLE_HIT_ZONE",
+          "id": 256815
+        },
+        {
+          "constant": "SPELL_CANDLE_FIREBALL_HIT",
+          "id": 256817
+        },
+        {
+          "constant": "SPELL_HOLY_RING",
+          "id": 256806
+        },
+        {
+          "constant": "SPELL_HOLY_CHANNEL_LOOK",
+          "id": 47540
+        },
+        {
+          "constant": "SPELL_COSMETIC_CHAINS",
+          "id": 256843
+        },
+        {
+          "constant": "SPELL_GROUND_ZONE",
+          "id": 256852
+        },
+        {
+          "constant": "SPELL_QUAKE_ZONE",
+          "id": 256917
+        },
+        {
+          "constant": "SPELL_SPECTRAL_STRIKE",
+          "id": 256975
+        },
+        {
+          "constant": "SPELL_CHAIN_ZONE",
+          "id": 256803
+        },
+        {
+          "constant": "SPELL_SUBJUGATING_CHAINS",
+          "id": 256804
+        },
+        {
+          "constant": "SPELL_VISUAL_CANDLE_FLAME",
+          "id": 256812
+        },
+        {
+          "constant": "SPELL_CANDLES",
+          "id": 256813
+        },
+        {
+          "constant": "SPELL_MORE_FIRE",
+          "id": 256814
+        },
+        {
+          "constant": "SPELL_CANDLE_FIREBALL",
+          "id": 256816
+        },
+        {
+          "constant": "SPELL_DARKANDLE_FLAME",
+          "id": 256818
+        },
+        {
+          "constant": "SPELL_EARTHQUAKE",
+          "id": 256819
+        },
+        {
+          "constant": "SPELL_ABYSSAL_DEVOUR",
+          "id": 256820
+        },
+        {
+          "constant": "SPELL_SHADOWY_RING_VISUAL",
+          "id": 256822
+        },
+        {
+          "constant": "SPELL_SHADOWY_RING",
+          "id": 256823
+        },
+        {
+          "constant": "SPELL_VOID_PUNISHMENT",
+          "id": 256831
+        },
+        {
+          "constant": "SPELL_ENDLESS_AFFLICTION_BOSS",
+          "id": 256832
+        },
+        {
+          "constant": "SPELL_VOID_WRATH",
+          "id": 256844
+        },
+        {
+          "constant": "SPELL_GROUND_CRACKS",
+          "id": 255878
+        },
+        {
+          "constant": "SPELL_ECHO_GLOW",
+          "id": 256916
+        },
+        {
+          "constant": "SPELL_HOLY_SHELTER_ZONE",
+          "id": 256846
+        },
+        {
+          "constant": "SPELL_SHADOWY_RINGS",
+          "id": 256825
+        },
+        {
+          "constant": "SPELL_SHADOWY_RING_INNER",
+          "id": 256821
+        },
+        {
+          "constant": "SPELL_SHADOWY_RING_OUTER",
+          "id": 256824
+        },
+        {
+          "constant": "SPELL_VOID_CONSUMPTION",
+          "id": 257219
+        },
+        {
+          "constant": "SPELL_SOAK_ERUPTION",
+          "id": 256925
+        },
+        {
+          "constant": "SPELL_VOID_WRATH_TICK",
+          "id": 256926
+        },
+        {
+          "constant": "SPELL_HOLY_SHELTER",
+          "id": 256847
+        },
+        {
+          "constant": "SPELL_VOID_ZONE",
+          "id": 256827
+        },
+        {
+          "constant": "SPELL_VOIDFLARE",
+          "id": 256927
+        },
+        {
+          "constant": "SPELL_SWORD_STRIKE",
+          "id": 256918
+        },
+        {
+          "constant": "SPELL_MANA_BURN",
+          "id": 267007
+        },
+        {
+          "constant": "SPELL_SILENCE",
+          "id": 267008
+        },
+        {
+          "constant": "SPELL_PSYCHIC_SCREAM",
+          "id": 257166
+        },
+        {
+          "constant": "SPELL_MANIFEST",
+          "id": 257167
+        },
+        {
+          "constant": "SPELL_ENDLESS_AFFLICTION",
+          "id": 256891
+        },
+        {
+          "constant": "SPELL_HAUNTING_WRATH",
+          "id": 257171
+        },
+        {
+          "constant": "SPELL_PICKAXE_STRIKE",
+          "id": 257175
+        },
+        {
+          "constant": "SPELL_DARK_WAX_EXPLOSION",
+          "id": 256893
+        },
+        {
+          "constant": "SPELL_CHARGE_IMPACT",
+          "id": 257186
+        },
+        {
+          "constant": "SPELL_KOBOLD_FLAME",
+          "id": 256892
+        },
+        {
+          "constant": "SPELL_LASH_OF_THE_VOID",
+          "id": 256895
+        },
+        {
+          "constant": "SPELL_SHADOWFURY",
+          "id": 256491
+        },
+        {
+          "constant": "SPELL_MIND_BLAST",
+          "id": 256962
+        },
+        {
+          "constant": "SPELL_ABYSSAL_CRY",
+          "id": 256963
+        }
+      ],
+      "schedules": [
+        {
+          "event": "EVENT_ECHO_SECOND_LINE",
+          "initialMs": 6000
+        },
+        {
+          "event": "EVENT_ECHO_CHAINS",
+          "initialMs": 5000
+        },
+        {
+          "event": "EVENT_ECHO_FIERCE_BLOW",
+          "initialMs": 6000
+        },
+        {
+          "event": "EVENT_ECHO_STRIKE",
+          "initialMs": 15000
+        },
+        {
+          "event": "EVENT_ECHO_DESTRUCTION",
+          "initialMs": 25000
+        },
+        {
+          "event": "EVENT_DARK_MORE_FIRE",
+          "initialMs": 5000
+        },
+        {
+          "event": "EVENT_DARK_EARTHQUAKE",
+          "initialMs": 18500
+        },
+        {
+          "event": "EVENT_DARK_FIERCE_BLOW",
+          "initialMs": 9000
+        },
+        {
+          "event": "EVENT_DARK_FIRE_CIRCLES",
+          "initialMs": 3000
+        },
+        {
+          "event": "EVENT_DARK_FIRE_LINE",
+          "initialMs": 4000
+        },
+        {
+          "event": "EVENT_DARK_QUAKE_END",
+          "initialMs": 7000
+        },
+        {
+          "event": "EVENT_DARK_INTRO_LINE",
+          "initialMs": 4500
+        },
+        {
+          "event": "EVENT_DARK_READY",
+          "initialMs": 6500
+        },
+        {
+          "event": "EVENT_DEC_VOIDFLARE",
+          "initialMs": 7000
+        },
+        {
+          "event": "EVENT_DEC_INNER_RING",
+          "initialMs": 20000
+        },
+        {
+          "event": "EVENT_DEC_OUTER_RING",
+          "initialMs": 25000
+        },
+        {
+          "event": "EVENT_DEC_SOAK",
+          "initialMs": 30000
+        },
+        {
+          "event": "EVENT_DEC_CRYSTAL",
+          "initialMs": 35000
+        },
+        {
+          "event": "EVENT_DEC_VOID_WRATH",
+          "initialMs": 40000
+        },
+        {
+          "event": "EVENT_DEC_FIERCE_BLOW",
+          "initialMs": 10000
+        }
+      ],
+      "repeats": [
+        {
+          "minMs": 9000,
+          "maxMs": 11000
+        },
+        {
+          "minMs": 37000,
+          "maxMs": null
+        },
+        {
+          "minMs": 37000,
+          "maxMs": null
+        },
+        {
+          "minMs": 20000,
+          "maxMs": null
+        },
+        {
+          "minMs": 20000,
+          "maxMs": null
+        },
+        {
+          "minMs": 6000,
+          "maxMs": 8000
+        },
+        {
+          "minMs": 10000,
+          "maxMs": 12000
+        }
+      ]
+    },
+    {
+      "name": "muzah",
+      "npcIds": [
+        162711
+      ],
+      "source": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/blob/main/src/server/coa/CoAOtherSideMuzah.cpp",
+      "spells": [
+        {
+          "constant": "SPELL_WHIRLING_GLAIVES",
+          "id": 256887
+        },
+        {
+          "constant": "SPELL_GLAIVE_VISUAL",
+          "id": 256886
+        },
+        {
+          "constant": "SPELL_RIPPED_BY_THE_GLAIVES",
+          "id": 256888
+        },
+        {
+          "constant": "SPELL_RIPPED_BY_THE_GLAIVES_HC",
+          "id": 257036
+        },
+        {
+          "constant": "SPELL_RIPPED_BY_THE_GLAIVES_MYTHIC",
+          "id": 257037
+        },
+        {
+          "constant": "SPELL_COBRA_SHOT",
+          "id": 256929
+        },
+        {
+          "constant": "SPELL_COBRA_SHOT_HC",
+          "id": 257030
+        },
+        {
+          "constant": "SPELL_COBRA_SHOT_MYTHIC",
+          "id": 257031
+        },
+        {
+          "constant": "SPELL_ENTANGLING_WEB_HC",
+          "id": 257039
+        },
+        {
+          "constant": "SPELL_ENTANGLING_WEB_MYTHIC",
+          "id": 257040
+        },
+        {
+          "constant": "SPELL_BLOOD_EXPLOSION_HC",
+          "id": 257042
+        },
+        {
+          "constant": "SPELL_BLOOD_EXPLOSION_MYTHIC",
+          "id": 257043
+        },
+        {
+          "constant": "SPELL_MUZAHS_TARGET",
+          "id": 256964
+        },
+        {
+          "constant": "SPELL_ENTANGLING_WEB",
+          "id": 256834
+        },
+        {
+          "constant": "SPELL_GROUND_SWIRL",
+          "id": 256852
+        },
+        {
+          "constant": "SPELL_BAT_FLY_DOWN",
+          "id": 256896
+        },
+        {
+          "constant": "SPELL_BLOOD_EXPLOSION",
+          "id": 256903
+        },
+        {
+          "constant": "SPELL_SUMMON_BATS",
+          "id": 256904
+        },
+        {
+          "constant": "SPELL_FIERCE_BLOW",
+          "id": 975011
+        },
+        {
+          "constant": "SPELL_GLAIVE_STRIKE",
+          "id": 257029
+        }
+      ],
+      "schedules": [
+        {
+          "event": "EVENT_WEB",
+          "initialMs": 20000
+        },
+        {
+          "event": "EVENT_WEB_TICK",
+          "initialMs": 1000
+        },
+        {
+          "event": "EVENT_GLAIVE_STRIKE",
+          "initialMs": 15000
+        },
+        {
+          "event": "EVENT_COBRA_TANK_1",
+          "initialMs": 200
+        },
+        {
+          "event": "EVENT_SWIRLS",
+          "initialMs": 10000
+        },
+        {
+          "event": "EVENT_GLAIVE_STRIKE_SECOND",
+          "initialMs": 3000
+        },
+        {
+          "event": "EVENT_BATS_RETURN",
+          "initialMs": 5100
+        }
+      ],
+      "repeats": [
+        {
+          "minMs": 1000,
+          "maxMs": null
+        },
+        {
+          "minMs": 25000,
+          "maxMs": null
+        },
+        {
+          "minMs": 20000,
+          "maxMs": null
+        },
+        {
+          "minMs": 10000,
+          "maxMs": null
+        },
+        {
+          "minMs": 1000,
+          "maxMs": null
+        },
+        {
+          "minMs": 20000,
+          "maxMs": null
+        },
+        {
+          "minMs": 1000,
+          "maxMs": null
+        },
+        {
+          "minMs": 20000,
+          "maxMs": 30000
+        }
+      ]
+    },
+    {
+      "name": "drakmath",
+      "npcIds": [
+        162715
+      ],
+      "source": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/blob/main/src/server/coa/CoAOtherSideDrakmath.cpp",
+      "spells": [
+        {
+          "constant": "SPELL_ENCHANTED",
+          "id": 256839
+        },
+        {
+          "constant": "SPELL_PARASITISM",
+          "id": 256867
+        },
+        {
+          "constant": "SPELL_PARASITISM_HC",
+          "id": 257054
+        },
+        {
+          "constant": "SPELL_PARASITISM_MYTHIC",
+          "id": 257055
+        },
+        {
+          "constant": "SPELL_SUBMERGED",
+          "id": 256850
+        },
+        {
+          "constant": "SPELL_PILLAR_VISUAL",
+          "id": 256854
+        },
+        {
+          "constant": "SPELL_NECROTIC_EMERGE",
+          "id": 256021
+        },
+        {
+          "constant": "SPELL_ORB_VISUAL",
+          "id": 256853
+        },
+        {
+          "constant": "SPELL_ORB_CIRCLE",
+          "id": 256865
+        },
+        {
+          "constant": "SPELL_NECROTIC_EXPLOSION",
+          "id": 256857
+        },
+        {
+          "constant": "SPELL_NECROTIC_EXPLOSION_HC",
+          "id": 257057
+        },
+        {
+          "constant": "SPELL_NECROTIC_EXPLOSION_MYTHIC",
+          "id": 257058
+        },
+        {
+          "constant": "SPELL_DEATH_BEAM",
+          "id": 256858
+        },
+        {
+          "constant": "SPELL_DEATH_BEAM_HIT",
+          "id": 256859
+        },
+        {
+          "constant": "SPELL_DEATH_MISSILE",
+          "id": 256863
+        },
+        {
+          "constant": "SPELL_DEATH_MISSILE_HIT",
+          "id": 256864
+        },
+        {
+          "constant": "SPELL_DEATH_MISSILE_HIT_HC",
+          "id": 257051
+        },
+        {
+          "constant": "SPELL_DEATH_MISSILE_HIT_MYTHIC",
+          "id": 257052
+        },
+        {
+          "constant": "SPELL_IMPACT_ZONE",
+          "id": 256865
+        },
+        {
+          "constant": "SPELL_FIERCE_BLOW",
+          "id": 975011
+        },
+        {
+          "constant": "SPELL_COLOSSAL_SMASH",
+          "id": 256959
+        }
+      ],
+      "schedules": [
+        {
+          "event": "EVENT_PARASITISM",
+          "initialMs": 7000
+        },
+        {
+          "event": "EVENT_FIERCE_BLOW",
+          "initialMs": 9000
+        },
+        {
+          "event": "EVENT_SINK",
+          "initialMs": 15000
+        },
+        {
+          "event": "EVENT_SIDE_PILLARS",
+          "initialMs": 2000
+        },
+        {
+          "event": "EVENT_RISE",
+          "initialMs": 10000
+        },
+        {
+          "event": "EVENT_SIDE_PILLARS_FADE",
+          "initialMs": 4000
+        },
+        {
+          "event": "EVENT_BEAM_WALK",
+          "initialMs": 5000
+        },
+        {
+          "event": "EVENT_BEAM_PILLAR",
+          "initialMs": 5000
+        },
+        {
+          "event": "EVENT_DEATH_MISSILE",
+          "initialMs": 0
+        },
+        {
+          "event": "EVENT_SINK",
+          "initialMs": 500
+        },
+        {
+          "event": "EVENT_SUBMERGED",
+          "initialMs": 600
+        },
+        {
+          "event": "EVENT_BEAM",
+          "initialMs": 1000
+        },
+        {
+          "event": "EVENT_SINK",
+          "initialMs": 25000
+        }
+      ],
+      "repeats": [
+        {
+          "minMs": 1000,
+          "maxMs": null
+        },
+        {
+          "minMs": 55000,
+          "maxMs": null
+        },
+        {
+          "minMs": 45000,
+          "maxMs": null
+        },
+        {
+          "minMs": 500,
+          "maxMs": null
+        },
+        {
+          "minMs": 500,
+          "maxMs": null
+        },
+        {
+          "minMs": 3000,
+          "maxMs": null
+        },
+        {
+          "minMs": 1000,
+          "maxMs": null
+        }
+      ]
+    },
+    {
+      "name": "embryo",
+      "npcIds": [
+        162716
+      ],
+      "source": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/blob/main/src/server/coa/CoAOtherSideEmbryo.cpp",
+      "spells": [
+        {
+          "constant": "SPELL_SPIKES",
+          "id": 256878
+        },
+        {
+          "constant": "SPELL_SPIKES_HC",
+          "id": 257182
+        },
+        {
+          "constant": "SPELL_SPIKES_MYTHIC",
+          "id": 257183
+        },
+        {
+          "constant": "SPELL_SPIKE_MARK",
+          "id": 256852
+        },
+        {
+          "constant": "SPELL_SPIKE_VISUAL",
+          "id": 256922
+        },
+        {
+          "constant": "SPELL_SPIKE_HIT",
+          "id": 257161
+        },
+        {
+          "constant": "SPELL_POISON_BOLT",
+          "id": 256882
+        },
+        {
+          "constant": "SPELL_POISON_BOLT_HC",
+          "id": 257063
+        },
+        {
+          "constant": "SPELL_POISON_BOLT_MYTHIC",
+          "id": 257064
+        },
+        {
+          "constant": "SPELL_RITUAL",
+          "id": 256872
+        },
+        {
+          "constant": "SPELL_RITUAL_HC",
+          "id": 256965
+        },
+        {
+          "constant": "SPELL_RITUAL_MYTHIC",
+          "id": 256967
+        },
+        {
+          "constant": "SPELL_NOVA",
+          "id": 256873
+        },
+        {
+          "constant": "SPELL_CIRCLE",
+          "id": 256875
+        },
+        {
+          "constant": "SPELL_SWIRL",
+          "id": 256883
+        },
+        {
+          "constant": "SPELL_BLOB",
+          "id": 256874
+        },
+        {
+          "constant": "SPELL_WEB_MARK_VISUAL",
+          "id": 256879
+        },
+        {
+          "constant": "SPELL_WEB_ACTIVE",
+          "id": 256880
+        },
+        {
+          "constant": "SPELL_WEB_SHOT",
+          "id": 257135
+        },
+        {
+          "constant": "SPELL_POISON_WAVE",
+          "id": 256877
+        },
+        {
+          "constant": "SPELL_FIERCE_BLOW",
+          "id": 975011
+        }
+      ],
+      "schedules": [
+        {
+          "event": "EVENT_SPIKES",
+          "initialMs": 5000
+        },
+        {
+          "event": "EVENT_FIERCE_BLOW",
+          "initialMs": 10000
+        },
+        {
+          "event": "EVENT_EGG_PHASE_NOVA",
+          "initialMs": 0
+        },
+        {
+          "event": "EVENT_SPIKES",
+          "initialMs": 5000
+        },
+        {
+          "event": "EVENT_WEB_LINES",
+          "initialMs": 3000
+        },
+        {
+          "event": "EVENT_POISON_BOLT",
+          "initialMs": 8000
+        },
+        {
+          "event": "EVENT_FIERCE_BLOW",
+          "initialMs": 10000
+        }
+      ],
+      "repeats": [
+        {
+          "minMs": 20000,
+          "maxMs": null
+        },
+        {
+          "minMs": 10000,
+          "maxMs": null
+        },
+        {
+          "minMs": 14000,
+          "maxMs": null
+        },
+        {
+          "minMs": 10000,
+          "maxMs": null
+        },
+        {
+          "minMs": 3000,
+          "maxMs": null
+        },
+        {
+          "minMs": 3000,
+          "maxMs": null
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 let rows=[],shown=60,classes={};
 function render(){
  const q=$("q").value.trim().toLowerCase(),cl=$("class").value,def=$("defined").value;
- const matches=rows.filter(r=>(!cl||r.c.includes(Number(cl)))&&(!def||(def==="yes"===r.defined))&&(!q||String(r.id).includes(q)||String(r.n).toLowerCase().includes(q)||String(r.d).toLowerCase().includes(q)));
+ const matches=rows.filter(r=>(!cl||r.c.includes(Number(cl)))&&(!def||((def==="yes")===r.defined))&&(!q||String(r.id).includes(q)||String(r.n).toLowerCase().includes(q)||String(r.d).toLowerCase().includes(q)));
  $("status").textContent=matches.length.toLocaleString()+" matching spells · "+rows.length.toLocaleString()+" archived records";
  $("cards").innerHTML=matches.slice(0,shown).map(r=>'<article class="card"><div class="id">SPELL ID '+r.id+(r.defined?' · archived definition':' · definition unavailable')+'</div><h2>'+esc(r.n)+'</h2><div class="meta">Classes: '+r.c.map(c=>esc(classes[c]||c)).join(", ")+'<br>Candidate spec IDs: '+(r.s.join(", ")||"unassigned")+'<br>Cooldown: '+(r.cd==null?"unknown":esc(r.cd)+" ms")+' · Cast: '+(r.ct==null?"unknown":esc(r.ct)+" ms")+'<br>Duration: '+(r.du==null?"unknown":esc(r.du)+" ms")+' · Cost: '+(r.m==null?"unknown":esc(r.m))+'</div>'+(r.d?'<p class="desc">'+esc(r.d.replace(/<[^>]*>/g," ").replace(/&[a-z]+;/gi," "))+'</p>':'')+'</article>').join("");
  $("more").hidden=matches.length<=shown;

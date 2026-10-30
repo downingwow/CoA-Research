@@ -30,12 +30,12 @@
     ]
   },
   "unresolved": [
-    "Primalist Grovekeeper/Wildwalker to archived Life/Primal talent tab correspondence",
-    "All remaining current UI spec names to class-specific numeric spec IDs"
+    "Whether all 70 archived spec IDs and names match the current Conquest Reborn build"
   ],
   "sourceFiles": [
     "site/data/classes.json",
     "datasets/normalized/coa-custom-class-roster.json"
   ],
-  "notes": "The source files reflect archived client data and may not match current Conquest Reborn names."
+  "notes": "The archived datamine provides explicit class-specific spec IDs and names, including Primalist Grovekeeper=58 (Life tab) and Wildwalker=59 (Primal tab). These mappings are historically sourced, not verified current-game behavior.",
+  "registry": "datasets/normalized/coa-class-spec-id-registry.json"
 }

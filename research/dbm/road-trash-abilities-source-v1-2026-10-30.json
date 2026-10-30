@@ -1,0 +1,364 @@
+{
+  "schema": "coa-research.road-trash-abilities.v1",
+  "date": "2026-10-30",
+  "mapId": 937,
+  "source": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/blob/main/src/server/coa/CoAOtherSideTrash.cpp",
+  "confidence": "upstream C++ source; live unverified",
+  "difficultyMask": {
+    "DiffNormal": 1,
+    "DiffHeroic": 2,
+    "DiffMythic": 4,
+    "DiffAll": 7
+  },
+  "npcEntries": [
+    {
+      "npcId": 162765,
+      "npcConstant": "NPC_WANDERER_1",
+      "abilities": [
+        {
+          "spellId": 256905,
+          "spellConstant": "SPELL_DECAYING_HEMORRHAGE",
+          "firstMs": 4000,
+          "repeatMs": 7000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        },
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162776,
+      "npcConstant": "NPC_WANDERER_2",
+      "abilities": [
+        {
+          "spellId": 256905,
+          "spellConstant": "SPELL_DECAYING_HEMORRHAGE",
+          "firstMs": 4000,
+          "repeatMs": 7000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        },
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162783,
+      "npcConstant": "NPC_WANDERER_3",
+      "abilities": [
+        {
+          "spellId": 256905,
+          "spellConstant": "SPELL_DECAYING_HEMORRHAGE",
+          "firstMs": 4000,
+          "repeatMs": 7000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        },
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162769,
+      "npcConstant": "NPC_MATRIARCH",
+      "abilities": [
+        {
+          "spellId": 256909,
+          "spellConstant": "SPELL_STING",
+          "firstMs": 3000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        },
+        {
+          "spellId": 257200,
+          "spellConstant": "SPELL_BROOD_EMPOWERMENT",
+          "firstMs": 1000,
+          "repeatMs": 2500,
+          "aim": "Self",
+          "difficultyMask": "DiffAll"
+        },
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162770,
+      "npcConstant": "NPC_SPIDER",
+      "abilities": [
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162743,
+      "npcConstant": "NPC_SPIDER_ADD",
+      "abilities": [
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162773,
+      "npcConstant": "NPC_GUTDEVOURER_1",
+      "abilities": [
+        {
+          "spellId": 256906,
+          "spellConstant": "SPELL_BITE",
+          "firstMs": 3000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        },
+        {
+          "spellId": 256907,
+          "spellConstant": "SPELL_VENOMOUS_BREATH",
+          "firstMs": 10000,
+          "repeatMs": 26000,
+          "aim": "Self",
+          "difficultyMask": "DiffAll"
+        },
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162775,
+      "npcConstant": "NPC_GUTDEVOURER_2",
+      "abilities": [
+        {
+          "spellId": 256906,
+          "spellConstant": "SPELL_BITE",
+          "firstMs": 3000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        },
+        {
+          "spellId": 256907,
+          "spellConstant": "SPELL_VENOMOUS_BREATH",
+          "firstMs": 10000,
+          "repeatMs": 26000,
+          "aim": "Self",
+          "difficultyMask": "DiffAll"
+        },
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162780,
+      "npcConstant": "NPC_CULTIST_1",
+      "abilities": [
+        {
+          "spellId": 256938,
+          "spellConstant": "SPELL_REND_FLESH",
+          "firstMs": 4000,
+          "repeatMs": 9000,
+          "aim": "Self",
+          "difficultyMask": "DiffAll"
+        },
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162982,
+      "npcConstant": "NPC_CULTIST_2",
+      "abilities": [
+        {
+          "spellId": 256938,
+          "spellConstant": "SPELL_REND_FLESH",
+          "firstMs": 4000,
+          "repeatMs": 9000,
+          "aim": "Self",
+          "difficultyMask": "DiffAll"
+        },
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162983,
+      "npcConstant": "NPC_CULTIST_SHIELD",
+      "abilities": [
+        {
+          "spellId": 256939,
+          "spellConstant": "SPELL_SHIELD_BASH",
+          "firstMs": 5000,
+          "repeatMs": 9000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        },
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162782,
+      "npcConstant": "NPC_HISSER",
+      "abilities": [
+        {
+          "spellId": 257203,
+          "spellConstant": "SPELL_TOXIC_EXPULSION",
+          "firstMs": 4000,
+          "repeatMs": 8000,
+          "aim": "Self",
+          "difficultyMask": "DiffAll"
+        },
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162784,
+      "npcConstant": "NPC_SWARM",
+      "abilities": [
+        {
+          "spellId": 257202,
+          "spellConstant": "SPELL_BITING_CLOUD",
+          "firstMs": 1000,
+          "repeatMs": 2500,
+          "aim": "Self",
+          "difficultyMask": "DiffHeroic | DiffMythic"
+        },
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162785,
+      "npcConstant": "NPC_WATCHER",
+      "abilities": [
+        {
+          "spellId": 256110,
+          "spellConstant": "SPELL_FISSURE_STRIKE",
+          "firstMs": 5000,
+          "repeatMs": 8000,
+          "aim": "Self",
+          "difficultyMask": "DiffAll"
+        },
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162979,
+      "npcConstant": "NPC_LIFEDRINKER_1",
+      "abilities": [
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    },
+    {
+      "npcId": 162980,
+      "npcConstant": "NPC_LIFEDRINKER_2",
+      "abilities": [
+        {
+          "spellId": 975011,
+          "spellConstant": "SPELL_FIERCE_BLOW",
+          "firstMs": 6000,
+          "repeatMs": 8000,
+          "aim": "Victim",
+          "difficultyMask": "DiffAll"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "firstMs/repeatMs are source scheduling constants, not guaranteed observed cast times",
+    "Only abilities in the static Abilities table are included; scripted triggered mechanics may be additional",
+    "SpellDifficulty variants may change actual cast spell IDs"
+  ]
+}

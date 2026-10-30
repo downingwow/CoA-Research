@@ -1,0 +1,381 @@
+{
+  "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa issues label:Dungeon",
+  "status": "Unverified reports, not confirmed encounter behavior",
+  "items": [
+    {
+      "title": "Vault of Inquisition mobs and bosses respawn very fast",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10047",
+      "updated_at": null
+    },
+    {
+      "title": "Vault of the Inquisition - Respawns",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10038",
+      "updated_at": null
+    },
+    {
+      "title": "Vault bugged",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10190",
+      "updated_at": null
+    },
+    {
+      "title": "[Dungeon/Raid] donjon inquisition",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10189",
+      "updated_at": null
+    },
+    {
+      "title": "Vault problem",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10173",
+      "updated_at": null
+    },
+    {
+      "title": "RDF",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10167",
+      "updated_at": null
+    },
+    {
+      "title": "Lithic Lance  spams \"learned spell\" messages after Dungeon Finder",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9965",
+      "updated_at": null
+    },
+    {
+      "title": "Vaults of Inquisition trash respawn too fast",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10128",
+      "updated_at": null
+    },
+    {
+      "title": "Infernal Felsworn unable to roll need on Blue cloth caster gear",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9599",
+      "updated_at": null
+    },
+    {
+      "title": "gear not scaled",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10105",
+      "updated_at": null
+    },
+    {
+      "title": "Walking into dng gives 10+ sec lag",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10104",
+      "updated_at": null
+    },
+    {
+      "title": "Vaults of Inquisition keeps showing in RDF other dungeons does not work",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10082",
+      "updated_at": null
+    },
+    {
+      "title": "Dungeon Spoils bag cannot be opened",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10080",
+      "updated_at": null
+    },
+    {
+      "title": "Items Scaling from quests and dungeon drops are bugged (always lowest possible roll)",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9311",
+      "updated_at": null
+    },
+    {
+      "title": "All loot in dungeon was unusable",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9256",
+      "updated_at": null
+    },
+    {
+      "title": "Trash mobs on all dungeons still gives low lvl gear",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9900",
+      "updated_at": null
+    },
+    {
+      "title": "Level scaling in low lvl dungeons is always on",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9726",
+      "updated_at": null
+    },
+    {
+      "title": "Lord Alexei Barov is not casting his Veil of Darkness (healing reduction debuff)",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10061",
+      "updated_at": null
+    },
+    {
+      "title": "Threat issues",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10058",
+      "updated_at": null
+    },
+    {
+      "title": "Scaling seems off for Vaults of Inquisition",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10053",
+      "updated_at": null
+    },
+    {
+      "title": "Vault of Inquisition review",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10044",
+      "updated_at": null
+    },
+    {
+      "title": "Vault item is for 20 level",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10041",
+      "updated_at": null
+    },
+    {
+      "title": "Vault dungeon mobs too much HP",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10040",
+      "updated_at": null
+    },
+    {
+      "title": "Vault of the Inquisition - Chain CC from enemys/ Enemys too much HP",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10039",
+      "updated_at": null
+    },
+    {
+      "title": "Callboard progression and lack of dungeon quests",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10034",
+      "updated_at": null
+    },
+    {
+      "title": "Vaulst of the inquisition its bug",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10027",
+      "updated_at": null
+    },
+    {
+      "title": "[Dungeon/Raid] Donjon inquisition",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10005",
+      "updated_at": null
+    },
+    {
+      "title": "All enemies fall through floor",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10004",
+      "updated_at": null
+    },
+    {
+      "title": "Vault of the Inquisition - enemys sink into floor",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/10003",
+      "updated_at": null
+    },
+    {
+      "title": "High-Risk mode: Queing for dungeons and bgs",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9175",
+      "updated_at": null
+    },
+    {
+      "title": "Teleport through walls",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9987",
+      "updated_at": null
+    },
+    {
+      "title": "Razorfen Kraul Didn't Reset After Getting It Again in Dungeon Finder",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/7810",
+      "updated_at": null
+    },
+    {
+      "title": "[Dungeon/Raid] Doom'rel chest can be looted without boss kill",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/8243",
+      "updated_at": null
+    },
+    {
+      "title": "Level 60 RDF doesn't give rewards",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/6326",
+      "updated_at": null
+    },
+    {
+      "title": "No BG or Dungeons @​ 60",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/4861",
+      "updated_at": null
+    },
+    {
+      "title": "Dire Maul World buffs don't work",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9414",
+      "updated_at": null
+    },
+    {
+      "title": "Flying after Dungeon",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9587",
+      "updated_at": null
+    },
+    {
+      "title": "You can fly on a mount if you were previously in dungeon finder",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9818",
+      "updated_at": null
+    },
+    {
+      "title": "Flying after a dungeon",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9612",
+      "updated_at": null
+    },
+    {
+      "title": "Can't summon 1st boss Pyroguard Emberseer in UBRS",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/5420",
+      "updated_at": null
+    },
+    {
+      "title": "Ironaya doesn't scale to level",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/8849",
+      "updated_at": null
+    },
+    {
+      "title": "If Sergeant Bly's Group Dies, They Don't Respawn (At Least Quickly)",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/7917",
+      "updated_at": null
+    },
+    {
+      "title": "Ghostly Citizen doesn't reset on dance",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9896",
+      "updated_at": null
+    },
+    {
+      "title": "High risk/hardcore Dungeon queuing",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9598",
+      "updated_at": null
+    },
+    {
+      "title": "Maps",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9595",
+      "updated_at": null
+    },
+    {
+      "title": "Bugged mini map when inside dungeon or caves etc",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9573",
+      "updated_at": null
+    },
+    {
+      "title": "DM:E Locked Door Script",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9352",
+      "updated_at": null
+    },
+    {
+      "title": "Name of character Unknown",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/6582",
+      "updated_at": null
+    },
+    {
+      "title": "LFG is selecting all of the dungeons when you try to run specific dungeons",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9058",
+      "updated_at": null
+    },
+    {
+      "title": "heals are not scaling",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/8861",
+      "updated_at": null
+    },
+    {
+      "title": "templar aggro",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/8925",
+      "updated_at": null
+    },
+    {
+      "title": "Necromancer has no pets in dungeons",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/8746",
+      "updated_at": null
+    },
+    {
+      "title": "No mobs",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/8604",
+      "updated_at": null
+    },
+    {
+      "title": "Dungeon Map not accurate",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/7660",
+      "updated_at": null
+    },
+    {
+      "title": "Flay Corpse is pulling mobs from different floors of a dungeon.",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/7241",
+      "updated_at": null
+    },
+    {
+      "title": "Necromancer dont use summons in dungeons",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/6120",
+      "updated_at": null
+    },
+    {
+      "title": "Bot Pathing Issues in The Wailing Caverns (Not Dungeon)",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/6109",
+      "updated_at": null
+    },
+    {
+      "title": "CoA Bot Rangers Have Bow Drawn During Dungeon",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/5494",
+      "updated_at": null
+    },
+    {
+      "title": "Ragefire chasm not completing after killing everything",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/4482",
+      "updated_at": null
+    },
+    {
+      "title": "Crowd Pummeler 9-90 Crowd Pummeling spell go to whomever has aggro instead of going to everyone",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9677",
+      "updated_at": null
+    },
+    {
+      "title": "Uldaman - Olaf",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9641",
+      "updated_at": null
+    },
+    {
+      "title": "Mekgineer Thermaplugg is immune to taunts",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9673",
+      "updated_at": null
+    },
+    {
+      "title": "Fall through floor in SFK",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9570",
+      "updated_at": null
+    },
+    {
+      "title": "Earthborer acid does too much dmg",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9231",
+      "updated_at": null
+    },
+    {
+      "title": "BRD - Ghammo-ra",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9219",
+      "updated_at": null
+    },
+    {
+      "title": "Beacons",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/9173",
+      "updated_at": null
+    },
+    {
+      "title": "manastorm not completable",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/8620",
+      "updated_at": null
+    },
+    {
+      "title": "Scarlet Courtyard Door wont re-open",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/8451",
+      "updated_at": null
+    },
+    {
+      "title": "Manastorm RFD Ragglesnout doesnt lose Chaotic Links from nearby enemies.",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/8368",
+      "updated_at": null
+    },
+    {
+      "title": "[Dungeon/Raid] Manastorm The Temple of Atal'Hakkar : can't summon Avatar of Hakkar",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/8353",
+      "updated_at": null
+    },
+    {
+      "title": "Manastorms",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/8320",
+      "updated_at": null
+    },
+    {
+      "title": "Can't reach Magnus in BRD Manastorm; door closed",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/8242",
+      "updated_at": null
+    },
+    {
+      "title": "manastorm not displaying lvls completed and reseting to 1",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/8166",
+      "updated_at": null
+    },
+    {
+      "title": "Hedrum the Creeper Starting Evading Attacks (Might Be a Bot Problem)",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/7998",
+      "updated_at": null
+    },
+    {
+      "title": "Spore Cloud Dealing Crazy Damage",
+      "url": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/issues/7924",
+      "updated_at": null
+    }
+  ]
+}

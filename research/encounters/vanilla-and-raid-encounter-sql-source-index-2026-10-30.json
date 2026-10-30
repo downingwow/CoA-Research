@@ -1,0 +1,4197 @@
+{
+  "schema": "coa-research.encounter-sql-source-index.v1",
+  "date": "2026-10-30",
+  "sources": [
+    {
+      "source": "data/sql/updates/pending_db_world/rev_20260928_10_coa_mythic_instance_encounters.sql",
+      "rows": 189,
+      "records": [
+        {
+          "line": 14,
+          "text": "(918, 0, 17879, 0, 'CoA Mythic DBC: Chrono Lord Deja'),"
+        },
+        {
+          "line": 15,
+          "text": "(919, 0, 17880, 0, 'CoA Mythic DBC: Temporus'),"
+        },
+        {
+          "line": 16,
+          "text": "(920, 0, 17881, 263, 'CoA Mythic DBC: Aeonus'),"
+        },
+        {
+          "line": 17,
+          "text": "(921, 0, 16807, 0, 'CoA Mythic DBC: Grand Warlock Nethekurse'),"
+        },
+        {
+          "line": 18,
+          "text": "(922, 0, 20923, 0, 'CoA Mythic DBC: Blood Guard Porung'),"
+        },
+        {
+          "line": 19,
+          "text": "(923, 0, 16809, 0, 'CoA Mythic DBC: Warbringer O''mrogg'),"
+        },
+        {
+          "line": 20,
+          "text": "(924, 0, 16808, 270, 'CoA Mythic DBC: Warchief Kargath Bladefist'),"
+        },
+        {
+          "line": 21,
+          "text": "(925, 0, 17381, 0, 'CoA Mythic DBC: The Maker'),"
+        },
+        {
+          "line": 22,
+          "text": "(926, 0, 17380, 0, 'CoA Mythic DBC: Broggok'),"
+        },
+        {
+          "line": 23,
+          "text": "(927, 0, 17377, 268, 'CoA Mythic DBC: Keli''dan the Breaker'),"
+        },
+        {
+          "line": 24,
+          "text": "(928, 0, 17306, 0, 'CoA Mythic DBC: Watchkeeper Gargolmar'),"
+        },
+        {
+          "line": 25,
+          "text": "(929, 0, 17308, 0, 'CoA Mythic DBC: Omor the Unscarred'),"
+        },
+        {
+          "line": 26,
+          "text": "(930, 0, 17537, 269, 'CoA Mythic DBC: Vazruden the Herald'),"
+        },
+        {
+          "line": 27,
+          "text": "(931, 0, 17797, 0, 'CoA Mythic DBC: Hydromancer Thespia'),"
+        },
+        {
+          "line": 28,
+          "text": "(932, 0, 17796, 0, 'CoA Mythic DBC: Mekgineer Steamrigger'),"
+        },
+        {
+          "line": 29,
+          "text": "(933, 0, 17798, 266, 'CoA Mythic DBC: Warlord Kalithresh'),"
+        },
+        {
+          "line": 30,
+          "text": "(934, 0, 17770, 0, 'CoA Mythic DBC: Hungarfen'),"
+        },
+        {
+          "line": 31,
+          "text": "(935, 0, 18105, 0, 'CoA Mythic DBC: Ghaz''an'),"
+        },
+        {
+          "line": 32,
+          "text": "(936, 0, 17826, 0, 'CoA Mythic DBC: Swamplord Musel''ek'),"
+        },
+        {
+          "line": 33,
+          "text": "(937, 0, 17882, 267, 'CoA Mythic DBC: The Black Stalker'),"
+        },
+        {
+          "line": 34,
+          "text": "(938, 0, 17941, 0, 'CoA Mythic DBC: Mennu the Betrayer'),"
+        },
+        {
+          "line": 35,
+          "text": "(939, 0, 17991, 0, 'CoA Mythic DBC: Rokmar the Crackler'),"
+        },
+        {
+          "line": 36,
+          "text": "(940, 0, 17942, 265, 'CoA Mythic DBC: Quagmirran'),"
+        },
+        {
+          "line": 37,
+          "text": "(941, 0, 20870, 0, 'CoA Mythic DBC: Zereketh the Unbound'),"
+        },
+        {
+          "line": 38,
+          "text": "(942, 0, 20885, 0, 'CoA Mythic DBC: Dalliah the Doomsayer'),"
+        },
+        {
+          "line": 39,
+          "text": "(943, 0, 20886, 0, 'CoA Mythic DBC: Wrath-Scryer Soccothrates'),"
+        },
+        {
+          "line": 40,
+          "text": "(944, 0, 20912, 271, 'CoA Mythic DBC: Harbinger Skyriss'),"
+        },
+        {
+          "line": 41,
+          "text": "(945, 0, 17976, 0, 'CoA Mythic DBC: Commander Sarannis'),"
+        },
+        {
+          "line": 42,
+          "text": "(946, 0, 17975, 0, 'CoA Mythic DBC: High Botanist Freywinn'),"
+        },
+        {
+          "line": 43,
+          "text": "(947, 0, 17978, 0, 'CoA Mythic DBC: Thorngrin the Tender'),"
+        },
+        {
+          "line": 44,
+          "text": "(948, 0, 17980, 0, 'CoA Mythic DBC: Laj'),"
+        },
+        {
+          "line": 45,
+          "text": "(949, 0, 17977, 308, 'CoA Mythic DBC: Warp Splinter'),"
+        },
+        {
+          "line": 46,
+          "text": "(950, 0, 19219, 0, 'CoA Mythic DBC: Mechano-Lord Capacitus'),"
+        },
+        {
+          "line": 47,
+          "text": "(951, 0, 19221, 0, 'CoA Mythic DBC: Nethermancer Sepethrea'),"
+        },
+        {
+          "line": 48,
+          "text": "(952, 0, 19220, 309, 'CoA Mythic DBC: Pathaleon the Calculator'),"
+        },
+        {
+          "line": 49,
+          "text": "(953, 0, 18731, 0, 'CoA Mythic DBC: Ambassador Hellmaw'),"
+        },
+        {
+          "line": 50,
+          "text": "(954, 0, 18667, 0, 'CoA Mythic DBC: Blackheart the Inciter'),"
+        },
+        {
+          "line": 51,
+          "text": "(955, 0, 18732, 0, 'CoA Mythic DBC: Grandmaster Vorpil'),"
+        },
+        {
+          "line": 52,
+          "text": "(956, 0, 18708, 262, 'CoA Mythic DBC: Murmur'),"
+        },
+        {
+          "line": 53,
+          "text": "(957, 0, 18472, 0, 'CoA Mythic DBC: Darkweaver Syth'),"
+        },
+        {
+          "line": 54,
+          "text": "(958, 0, 23035, 0, 'CoA Mythic DBC: Anzu'),"
+        },
+        {
+          "line": 55,
+          "text": "(959, 0, 18473, 261, 'CoA Mythic DBC: Talon King Ikiss'),"
+        },
+        {
+          "line": 56,
+          "text": "(960, 0, 18341, 0, 'CoA Mythic DBC: Pandemonius'),"
+        },
+        {
+          "line": 57,
+          "text": "(961, 0, 18343, 0, 'CoA Mythic DBC: Tavarok'),"
+        },
+        {
+          "line": 58,
+          "text": "(962, 0, 22930, 0, 'CoA Mythic DBC: Yor'),"
+        },
+        {
+          "line": 59,
+          "text": "(963, 0, 18344, 260, 'CoA Mythic DBC: Nexus-Prince Shaffar'),"
+        },
+        {
+          "line": 60,
+          "text": "(964, 0, 18371, 0, 'CoA Mythic DBC: Shirrak the Dead Watcher'),"
+        },
+        {
+          "line": 61,
+          "text": "(965, 0, 18373, 259, 'CoA Mythic DBC: Exarch Maladaar'),"
+        },
+        {
+          "line": 62,
+          "text": "(966, 0, 17848, 0, 'CoA Mythic DBC: Lieutenant Drake'),"
+        },
+        {
+          "line": 63,
+          "text": "(967, 0, 17862, 0, 'CoA Mythic DBC: Captain Skarloc'),"
+        },
+        {
+          "line": 64,
+          "text": "(968, 0, 18096, 264, 'CoA Mythic DBC: Epoch Hunter'),"
+        },
+        {
+          "line": 65,
+          "text": "(969, 0, 24723, 0, 'CoA Mythic DBC: Selin Fireheart'),"
+        },
+        {
+          "line": 66,
+          "text": "(970, 0, 24744, 0, 'CoA Mythic DBC: Vexallus'),"
+        },
+        {
+          "line": 67,
+          "text": "(971, 0, 24560, 0, 'CoA Mythic DBC: Priestess Delrissa'),"
+        },
+        {
+          "line": 68,
+          "text": "(972, 0, 24664, 277, 'CoA Mythic DBC: Kael''thas Sunstrider'),"
+        },
+        {
+          "line": 69,
+          "text": "(2161, 0, 644, 0, 'CoA Mythic DBC: Rhahk''zor'),"
+        },
+        {
+          "line": 70,
+          "text": "(2162, 0, 643, 0, 'CoA Mythic DBC: Sneed'),"
+        },
+        {
+          "line": 71,
+          "text": "(2163, 0, 1763, 0, 'CoA Mythic DBC: Gilnid'),"
+        },
+        {
+          "line": 72,
+          "text": "(2164, 0, 646, 0, 'CoA Mythic DBC: Mr. Smite'),"
+        },
+        {
+          "line": 73,
+          "text": "(2165, 0, 645, 0, 'CoA Mythic DBC: Cookie'),"
+        },
+        {
+          "line": 74,
+          "text": "(2166, 0, 647, 0, 'CoA Mythic DBC: Captain Greenskin'),"
+        },
+        {
+          "line": 75,
+          "text": "(2167, 0, 639, 2696, 'CoA Mythic DBC: Edwin VanCleef'),"
+        },
+        {
+          "line": 76,
+          "text": "(2219, 0, 4887, 0, 'CoA Mythic DBC: Ghamoo-ra'),"
+        },
+        {
+          "line": 77,
+          "text": "(2220, 0, 4831, 0, 'CoA Mythic DBC: Lady Sarevess'),"
+        },
+        {
+          "line": 78,
+          "text": "(2221, 0, 6243, 0, 'CoA Mythic DBC: Gelihast'),"
+        },
+        {
+          "line": 79,
+          "text": "(2222, 0, 12902, 0, 'CoA Mythic DBC: Lorgus Jett'),"
+        },
+        {
+          "line": 80,
+          "text": "(2224, 0, 4830, 0, 'CoA Mythic DBC: Old Serra''kis'),"
+        },
+        {
+          "line": 81,
+          "text": "(2225, 0, 4832, 0, 'CoA Mythic DBC: Twilight Lord Kelris'),"
+        },
+        {
+          "line": 82,
+          "text": "(2226, 0, 4829, 2700, 'CoA Mythic DBC: Aku''mai'),"
+        },
+        {
+          "line": 83,
+          "text": "(2267, 0, 9196, 0, 'CoA Mythic DBC: Highlord Omokk'),"
+        },
+        {
+          "line": 84,
+          "text": "(2268, 0, 9236, 0, 'CoA Mythic DBC: Shadow Hunter Vosh''gajin'),"
+        },
+        {
+          "line": 85,
+          "text": "(2269, 0, 9237, 0, 'CoA Mythic DBC: War Master Voone'),"
+        },
+        {
+          "line": 86,
+          "text": "(2270, 0, 10596, 0, 'CoA Mythic DBC: Mother Smolderweb'),"
+        },
+        {
+          "line": 87,
+          "text": "(2271, 0, 10584, 0, 'CoA Mythic DBC: Urok Doomhowl'),"
+        },
+        {
+          "line": 88,
+          "text": "(2272, 0, 9736, 0, 'CoA Mythic DBC: Quartermaster Zigris'),"
+        },
+        {
+          "line": 89,
+          "text": "(2273, 0, 10268, 0, 'CoA Mythic DBC: Gizrul the Slavener'),"
+        },
+        {
+          "line": 90,
+          "text": "(2274, 0, 10220, 0, 'CoA Mythic DBC: Halycon'),"
+        },
+        {
+          "line": 91,
+          "text": "(2275, 0, 9568, 2032, 'CoA Mythic DBC: Overlord Wyrmthalak'),"
+        },
+        {
+          "line": 92,
+          "text": "(2276, 0, 9816, 0, 'CoA Mythic DBC: Pyroguard Emberseer'),"
+        },
+        {
+          "line": 93,
+          "text": "(2277, 0, 10264, 0, 'CoA Mythic DBC: Solakar Flamewreath'),"
+        },
+        {
+          "line": 94,
+          "text": "(2278, 0, 10429, 0, 'CoA Mythic DBC: Warchief Rend Blackhand'),"
+        },
+        {
+          "line": 95,
+          "text": "(2279, 0, 10430, 0, 'CoA Mythic DBC: The Beast'),"
+        },
+        {
+          "line": 96,
+          "text": "(2280, 0, 10363, 2032, 'CoA Mythic DBC: General Drakkisath'),"
+        },
+        {
+          "line": 97,
+          "text": "(2378, 0, 7079, 0, 'CoA Mythic DBC: Viscous Fallout'),"
+        },
+        {
+          "line": 98,
+          "text": "(2379, 0, 7361, 0, 'CoA Mythic DBC: Grubbis'),"
+        },
+        {
+          "line": 99,
+          "text": "(2380, 0, 6235, 0, 'CoA Mythic DBC: Electrocutioner 6000'),"
+        },
+        {
+          "line": 100,
+          "text": "(2381, 0, 6229, 0, 'CoA Mythic DBC: Crowd Pummeler 9-60'),"
+        },
+        {
+          "line": 101,
+          "text": "(2382, 0, 7800, 2704, 'CoA Mythic DBC: Mekgineer Thermaplugg'),"
+        },
+        {
+          "line": 102,
+          "text": "(2430, 0, 11517, 0, 'CoA Mythic DBC: Oggleflint'),"
+        },
+        {
+          "line": 103,
+          "text": "(2431, 0, 11520, 2694, 'CoA Mythic DBC: Taragaman the Hungerer'),"
+        },
+        {
+          "line": 104,
+          "text": "(2432, 0, 11518, 0, 'CoA Mythic DBC: Jergosh the Invoker'),"
+        },
+        {
+          "line": 105,
+          "text": "(2433, 0, 11519, 0, 'CoA Mythic DBC: Bazzalan'),"
+        },
+        {
+          "line": 106,
+          "text": "(2434, 0, 7355, 0, 'CoA Mythic DBC: Tuten''kash'),"
+        },
+        {
+          "line": 107,
+          "text": "(2435, 0, 7357, 0, 'CoA Mythic DBC: Mordresh Fire Eye'),"
+        },
+        {
+          "line": 108,
+          "text": "(2436, 0, 8567, 0, 'CoA Mythic DBC: Glutton'),"
+        },
+        {
+          "line": 109,
+          "text": "(2437, 0, 7358, 2710, 'CoA Mythic DBC: Amnennar the Coldbringer'),"
+        },
+        {
+          "line": 110,
+          "text": "(2438, 0, 6168, 0, 'CoA Mythic DBC: Roogug'),"
+        },
+        {
+          "line": 111,
+          "text": "(2439, 0, 4424, 0, 'CoA Mythic DBC: Aggem Thorncurse'),"
+        },
+        {
+          "line": 112,
+          "text": "(2440, 0, 4428, 0, 'CoA Mythic DBC: Death Speaker Jargba'),"
+        },
+        {
+          "line": 113,
+          "text": "(2441, 0, 4420, 0, 'CoA Mythic DBC: Overlord Ramtusk'),"
+        },
+        {
+          "line": 114,
+          "text": "(2443, 0, 4421, 2706, 'CoA Mythic DBC: Charlga Razorflank'),"
+        },
+        {
+          "line": 115,
+          "text": "(2485, 0, 8580, 0, 'CoA Mythic DBC: Atal''alarion'),"
+        },
+        {
+          "line": 116,
+          "text": "(2486, 0, 5721, 0, 'CoA Mythic DBC: Dreamscythe'),"
+        },
+        {
+          "line": 117,
+          "text": "(2487, 0, 5720, 0, 'CoA Mythic DBC: Weaver'),"
+        },
+        {
+          "line": 118,
+          "text": "(2488, 0, 5710, 0, 'CoA Mythic DBC: Jammal''an and Ogom'),"
+        },
+        {
+          "line": 119,
+          "text": "(2490, 0, 5719, 0, 'CoA Mythic DBC: Morphaz'),"
+        },
+        {
+          "line": 120,
+          "text": "(2491, 0, 5722, 0, 'CoA Mythic DBC: Hazzas'),"
+        },
+        {
+          "line": 121,
+          "text": "(2492, 0, 8443, 0, 'CoA Mythic DBC: Avatar of Hakkar'),"
+        },
+        {
+          "line": 122,
+          "text": "(2493, 0, 5709, 2718, 'CoA Mythic DBC: Shade of Eranikus'),"
+        },
+        {
+          "line": 123,
+          "text": "(2536, 0, 1696, 0, 'CoA Mythic DBC: Targorr the Dread'),"
+        },
+        {
+          "line": 124,
+          "text": "(2537, 0, 1666, 0, 'CoA Mythic DBC: Kam Deepfury'),"
+        },
+        {
+          "line": 125,
+          "text": "(2538, 0, 1717, 0, 'CoA Mythic DBC: Hamhock'),"
+        },
+        {
+          "line": 126,
+          "text": "(2539, 0, 1716, 2702, 'CoA Mythic DBC: Bazil Thredd'),"
+        },
+        {
+          "line": 127,
+          "text": "(2540, 0, 1663, 0, 'CoA Mythic DBC: Dextren Ward'),"
+        },
+        {
+          "line": 128,
+          "text": "(2547, 0, 6910, 0, 'CoA Mythic DBC: Revelosh'),"
+        },
+        {
+          "line": 129,
+          "text": "(2548, 0, 6906, 0, 'CoA Mythic DBC: The Lost Dwarves'),"
+        },
+        {
+          "line": 130,
+          "text": "(2549, 0, 7228, 0, 'CoA Mythic DBC: Ironaya'),"
+        },
+        {
+          "line": 131,
+          "text": "(2551, 0, 7206, 0, 'CoA Mythic DBC: Ancient Stone Keeper'),"
+        },
+        {
+          "line": 132,
+          "text": "(2552, 0, 7291, 0, 'CoA Mythic DBC: Galgann Firehammer'),"
+        },
+        {
+          "line": 133,
+          "text": "(2553, 0, 4854, 0, 'CoA Mythic DBC: Grimlok'),"
+        },
+        {
+          "line": 134,
+          "text": "(2554, 0, 2748, 2712, 'CoA Mythic DBC: Archaedas'),"
+        },
+        {
+          "line": 135,
+          "text": "(2593, 0, 7795, 0, 'CoA Mythic DBC: Hydromancer Velratha'),"
+        },
+        {
+          "line": 136,
+          "text": "(2594, 0, 7273, 0, 'CoA Mythic DBC: Ghaz''rilla'),"
+        },
+        {
+          "line": 137,
+          "text": "(2595, 0, 8127, 0, 'CoA Mythic DBC: Antu''sul'),"
+        },
+        {
+          "line": 138,
+          "text": "(2596, 0, 7272, 0, 'CoA Mythic DBC: Theka the Martyr'),"
+        },
+        {
+          "line": 139,
+          "text": "(2597, 0, 7271, 0, 'CoA Mythic DBC: Witch Doctor Zum''rah'),"
+        },
+        {
+          "line": 140,
+          "text": "(2598, 0, 7796, 0, 'CoA Mythic DBC: Nekrum Gutchewer'),"
+        },
+        {
+          "line": 141,
+          "text": "(2599, 0, 7275, 0, 'CoA Mythic DBC: Shadowpriest Sezz''ziz'),"
+        },
+        {
+          "line": 142,
+          "text": "(2600, 0, 7267, 2714, 'CoA Mythic DBC: Chief Ukorz Sandscalp &  Ruuzlu'),"
+        },
+        {
+          "line": 143,
+          "text": "(2883, 0, 4422, 0, 'CoA Mythic DBC: Agathelos the Raging'),"
+        },
+        {
+          "line": 144,
+          "text": "(2990, 1, 68574, 0, 'CoA Mythic DBC: Argent Champion'),"
+        },
+        {
+          "line": 145,
+          "text": "(2994, 0, 36497, 0, 'CoA Mythic DBC: Bronjahm'),"
+        },
+        {
+          "line": 146,
+          "text": "(2998, 0, 36502, 3303, 'CoA Mythic DBC: Devourer of Souls'),"
+        },
+        {
+          "line": 147,
+          "text": "(2999, 0, 29573, 0, 'CoA Mythic DBC: Drakkari Colossus'),"
+        },
+        {
+          "line": 148,
+          "text": "(3014, 1, 68572, 0, 'CoA Mythic DBC: Grand Champions'),"
+        },
+        {
+          "line": 149,
+          "text": "(3030, 0, 36476, 0, 'CoA Mythic DBC: Krick'),"
+        },
+        {
+          "line": 150,
+          "text": "(3061, 0, 24201, 0, 'CoA Mythic DBC: Skarvold & Dalronn'),"
+        },
+        {
+          "line": 151,
+          "text": "(3065, 1, 68663, 3304, 'CoA Mythic DBC: The Black Knight'),"
+        },
+        {
+          "line": 152,
+          "text": "(3071, 1, 59046, 0, 'CoA Mythic DBC: Tribunal of Ages'),"
+        },
+        {
+          "line": 153,
+          "text": "(4539, 1, 58630, 3290, 'CoA Mythic DBC: Mal''ganis'),"
+        },
+        {
+          "line": 154,
+          "text": "(4540, 1, 61863, 3294, 'CoA Mythic DBC: The Prophet Tharon''ja'),"
+        },
+        {
+          "line": 155,
+          "text": "(4544, 0, 31134, 3297, 'CoA Mythic DBC: Cyanigosa'),"
+        },
+        {
+          "line": 156,
+          "text": "(4547, 0, 23954, 3300, 'CoA Mythic DBC: Ingvar the Plunderer'),"
+        },
+        {
+          "line": 157,
+          "text": "(4550, 1, 72830, 3302, 'CoA Mythic DBC: Escaped from Arthas'),"
+        },
+        {
+          "line": 158,
+          "text": "(4551, 0, 29309, 0, 'CoA Mythic DBC: Elder Nadox'),"
+        },
+        {
+          "line": 159,
+          "text": "(4552, 0, 29308, 0, 'CoA Mythic DBC: Prince Taldaram'),"
+        },
+        {
+          "line": 160,
+          "text": "(4553, 0, 29310, 0, 'CoA Mythic DBC: Jedoga Shadowseeker'),"
+        },
+        {
+          "line": 161,
+          "text": "(4554, 0, 30258, 0, 'CoA Mythic DBC: Amanitar'),"
+        },
+        {
+          "line": 162,
+          "text": "(4555, 0, 29311, 3296, 'CoA Mythic DBC: Herald Volazj'),"
+        },
+        {
+          "line": 163,
+          "text": "(4556, 0, 28684, 0, 'CoA Mythic DBC: Krik''thir the Gatewatcher'),"
+        },
+        {
+          "line": 164,
+          "text": "(4557, 0, 28921, 0, 'CoA Mythic DBC: Hadronox'),"
+        },
+        {
+          "line": 165,
+          "text": "(4558, 0, 29120, 3299, 'CoA Mythic DBC: Anub''arak'),"
+        },
+        {
+          "line": 166,
+          "text": "(4559, 0, 26529, 0, 'CoA Mythic DBC: Meathook'),"
+        },
+        {
+          "line": 167,
+          "text": "(4560, 0, 26530, 0, 'CoA Mythic DBC: Salram the Fleshcrafter'),"
+        },
+        {
+          "line": 168,
+          "text": "(4561, 0, 26532, 0, 'CoA Mythic DBC: Chrono-Lord Epoch'),"
+        },
+        {
+          "line": 169,
+          "text": "(4562, 0, 26630, 0, 'CoA Mythic DBC: Trollgore'),"
+        },
+        {
+          "line": 170,
+          "text": "(4563, 0, 26631, 0, 'CoA Mythic DBC: Novos the Summoner'),"
+        },
+        {
+          "line": 171,
+          "text": "(4564, 0, 27483, 0, 'CoA Mythic DBC: King Dred'),"
+        },
+        {
+          "line": 172,
+          "text": "(4565, 0, 29304, 0, 'CoA Mythic DBC: Slad''ran'),"
+        },
+        {
+          "line": 173,
+          "text": "(4566, 0, 29305, 0, 'CoA Mythic DBC: Moorabi'),"
+        },
+        {
+          "line": 174,
+          "text": "(4567, 0, 29932, 0, 'CoA Mythic DBC: Eck the Ferocious'),"
+        },
+        {
+          "line": 175,
+          "text": "(4568, 0, 29306, 3295, 'CoA Mythic DBC: Gal''darah'),"
+        },
+        {
+          "line": 176,
+          "text": "(4569, 0, 26796, 0, 'CoA Mythic DBC: Frozen Commander'),"
+        },
+        {
+          "line": 177,
+          "text": "(4570, 0, 26731, 0, 'CoA Mythic DBC: Grand Magus Telestra'),"
+        },
+        {
+          "line": 178,
+          "text": "(4571, 0, 26763, 0, 'CoA Mythic DBC: Anomalus'),"
+        },
+        {
+          "line": 179,
+          "text": "(4572, 0, 26794, 0, 'CoA Mythic DBC: Ormrok the Tree-Shaper'),"
+        },
+        {
+          "line": 180,
+          "text": "(4573, 0, 26723, 3298, 'CoA Mythic DBC: Keristrasza'),"
+        },
+        {
+          "line": 181,
+          "text": "(4574, 0, 27654, 0, 'CoA Mythic DBC: Drakos the Interrogator'),"
+        },
+        {
+          "line": 182,
+          "text": "(4575, 0, 27447, 0, 'CoA Mythic DBC: Varos Cloudstrider'),"
+        },
+        {
+          "line": 183,
+          "text": "(4576, 0, 27655, 0, 'CoA Mythic DBC: Mage-Lord Urom'),"
+        },
+        {
+          "line": 184,
+          "text": "(4577, 0, 27656, 3291, 'CoA Mythic DBC: Ley-Guardian Eregos'),"
+        },
+        {
+          "line": 185,
+          "text": "(4578, 0, 29315, 0, 'CoA Mythic DBC: First Prisoner'),"
+        },
+        {
+          "line": 186,
+          "text": "(4579, 0, 29316, 0, 'CoA Mythic DBC: Second Prisoner'),"
+        },
+        {
+          "line": 187,
+          "text": "(4580, 0, 28586, 0, 'CoA Mythic DBC: General Bjarngrim'),"
+        },
+        {
+          "line": 188,
+          "text": "(4581, 0, 28587, 0, 'CoA Mythic DBC: Volkhan'),"
+        },
+        {
+          "line": 189,
+          "text": "(4582, 0, 28546, 0, 'CoA Mythic DBC: Ionar'),"
+        },
+        {
+          "line": 190,
+          "text": "(4583, 0, 28923, 3292, 'CoA Mythic DBC: Loken'),"
+        },
+        {
+          "line": 191,
+          "text": "(4584, 0, 27977, 0, 'CoA Mythic DBC: Krystallus'),"
+        },
+        {
+          "line": 192,
+          "text": "(4585, 0, 27975, 0, 'CoA Mythic DBC: Maiden of Grief'),"
+        },
+        {
+          "line": 193,
+          "text": "(4586, 0, 27978, 3293, 'CoA Mythic DBC: Sjonnir the Ironshaper'),"
+        },
+        {
+          "line": 194,
+          "text": "(4587, 0, 23953, 0, 'CoA Mythic DBC: Prince Keleseth'),"
+        },
+        {
+          "line": 195,
+          "text": "(4588, 0, 26668, 0, 'CoA Mythic DBC: Svala Sorrowgrave'),"
+        },
+        {
+          "line": 196,
+          "text": "(4589, 0, 26687, 0, 'CoA Mythic DBC: Gortok Palehoof'),"
+        },
+        {
+          "line": 197,
+          "text": "(4590, 0, 26693, 0, 'CoA Mythic DBC: Skadi the Ruthless'),"
+        },
+        {
+          "line": 198,
+          "text": "(4591, 0, 26861, 3289, 'CoA Mythic DBC: King Ymiron'),"
+        },
+        {
+          "line": 199,
+          "text": "(4592, 0, 36494, 0, 'CoA Mythic DBC: Forgemaster Garfrost'),"
+        },
+        {
+          "line": 200,
+          "text": "(4593, 0, 36658, 3301, 'CoA Mythic DBC: Overlrod Tyrannus'),"
+        },
+        {
+          "line": 201,
+          "text": "(4594, 0, 38113, 0, 'CoA Mythic DBC: Marwyn'),"
+        },
+        {
+          "line": 202,
+          "text": "(4595, 0, 38112, 0, 'CoA Mythic DBC: Falric');"
+        }
+      ],
+      "header": [
+        "-- CoA Mythic dungeon encounters from DungeonEncounter.dbc (difficulty 2). Credits repeat the same map's",
+        "-- Normal and Heroic encounters; the final encounter names its Mythic LFGDungeons entry.",
+        "DELETE FROM `instance_encounters` WHERE `entry` IN (918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930,",
+        "931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953,",
+        "954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 2161, 2162, 2163, 2164,",
+        "2165, 2166, 2167, 2219, 2220, 2221, 2222, 2224, 2225, 2226, 2267, 2268, 2269, 2270, 2271, 2272, 2273, 2274, 2275,"
+      ]
+    },
+    {
+      "source": "data/sql/updates/pending_db_world/rev_20260929_20_heroic_mythic_encounters.sql",
+      "rows": 345,
+      "records": [
+        {
+          "line": 8,
+          "text": "(1140, 0, 8923, 0, 'CoA Heroic DBC: Panzor the Invincible'),"
+        },
+        {
+          "line": 9,
+          "text": "(1141, 0, 16042, 0, 'CoA Heroic DBC: Lord Valthalak'),"
+        },
+        {
+          "line": 10,
+          "text": "(1142, 0, 10899, 0, 'CoA Heroic DBC: Goraluk Anvilcrack'),"
+        },
+        {
+          "line": 11,
+          "text": "(1143, 0, 10509, 0, 'CoA Heroic DBC: Jed Runewatcher'),"
+        },
+        {
+          "line": 12,
+          "text": "(1144, 0, 16080, 0, 'CoA Heroic DBC: Mor Grayhoof'),"
+        },
+        {
+          "line": 13,
+          "text": "(1145, 0, 10263, 0, 'CoA Heroic DBC: Burning Felguard'),"
+        },
+        {
+          "line": 14,
+          "text": "(1146, 0, 9718, 0, 'CoA Heroic DBC: Ghok Bashguud'),"
+        },
+        {
+          "line": 15,
+          "text": "(1147, 0, 10376, 0, 'CoA Heroic DBC: Crystal Fang'),"
+        },
+        {
+          "line": 16,
+          "text": "(1148, 0, 9596, 0, 'CoA Heroic DBC: Bannok Grimaxe'),"
+        },
+        {
+          "line": 17,
+          "text": "(1149, 0, 9217, 0, 'CoA Heroic DBC: Spirestone Lord Magus'),"
+        },
+        {
+          "line": 18,
+          "text": "(1150, 0, 9218, 0, 'CoA Heroic DBC: Spirestone Battle Lord'),"
+        },
+        {
+          "line": 19,
+          "text": "(1151, 0, 9219, 0, 'CoA Heroic DBC: Spirestone Butcher'),"
+        },
+        {
+          "line": 20,
+          "text": "(1152, 0, 10809, 0, 'CoA Heroic DBC: Stonespine'),"
+        },
+        {
+          "line": 21,
+          "text": "(1153, 0, 11058, 0, 'CoA Heroic DBC: Fras Siabi'),"
+        },
+        {
+          "line": 22,
+          "text": "(1154, 0, 10393, 0, 'CoA Heroic DBC: Skul'),"
+        },
+        {
+          "line": 23,
+          "text": "(1155, 0, 16097, 0, 'CoA Heroic DBC: Isalien'),"
+        },
+        {
+          "line": 24,
+          "text": "(1156, 0, 14506, 0, 'CoA Heroic DBC: Lord Hel''nurath'),"
+        },
+        {
+          "line": 25,
+          "text": "(1157, 0, 11467, 0, 'CoA Heroic DBC: Tsu''zee'),"
+        },
+        {
+          "line": 26,
+          "text": "(1158, 0, 14861, 0, 'CoA Heroic DBC: Blood Steward of Kirtonos'),"
+        },
+        {
+          "line": 27,
+          "text": "(1159, 0, 14516, 0, 'CoA Heroic DBC: Death Knight Darkreaver'),"
+        },
+        {
+          "line": 28,
+          "text": "(1161, 0, 644, 0, 'CoA Heroic DBC: Rhahk''zor'),"
+        },
+        {
+          "line": 29,
+          "text": "(1162, 0, 642, 0, 'CoA Heroic DBC: Sneed'),"
+        },
+        {
+          "line": 30,
+          "text": "(1163, 0, 1763, 0, 'CoA Heroic DBC: Gilnid'),"
+        },
+        {
+          "line": 31,
+          "text": "(1164, 0, 646, 0, 'CoA Heroic DBC: Mr. Smite'),"
+        },
+        {
+          "line": 32,
+          "text": "(1165, 0, 645, 0, 'CoA Heroic DBC: Cookie'),"
+        },
+        {
+          "line": 33,
+          "text": "(1166, 0, 647, 0, 'CoA Heroic DBC: Captain Greenskin'),"
+        },
+        {
+          "line": 34,
+          "text": "(1167, 0, 639, 1696, 'CoA Heroic DBC: Edwin VanCleef'),"
+        },
+        {
+          "line": 35,
+          "text": "(1219, 0, 4887, 0, 'CoA Heroic DBC: Ghamoo-ra'),"
+        },
+        {
+          "line": 36,
+          "text": "(1220, 0, 4831, 0, 'CoA Heroic DBC: Lady Sarevess'),"
+        },
+        {
+          "line": 37,
+          "text": "(1221, 0, 6243, 0, 'CoA Heroic DBC: Gelihast'),"
+        },
+        {
+          "line": 38,
+          "text": "(1222, 0, 12902, 0, 'CoA Heroic DBC: Lorgus Jett'),"
+        },
+        {
+          "line": 39,
+          "text": "(1224, 0, 4830, 0, 'CoA Heroic DBC: Old Serra''kis'),"
+        },
+        {
+          "line": 40,
+          "text": "(1225, 0, 4832, 0, 'CoA Heroic DBC: Twilight Lord Kelris'),"
+        },
+        {
+          "line": 41,
+          "text": "(1226, 0, 4829, 1700, 'CoA Heroic DBC: Aku''mai'),"
+        },
+        {
+          "line": 42,
+          "text": "(1227, 0, 9018, 0, 'CoA Heroic DBC: High Interrogator Gerstahn'),"
+        },
+        {
+          "line": 43,
+          "text": "(1228, 0, 9025, 0, 'CoA Heroic DBC: Lord Roccor'),"
+        },
+        {
+          "line": 44,
+          "text": "(1229, 0, 9319, 0, 'CoA Heroic DBC: Houndmaster Grebmar'),"
+        },
+        {
+          "line": 45,
+          "text": "(1230, 0, 10096, 1030, 'CoA Heroic DBC: Ring of Law'),"
+        },
+        {
+          "line": 46,
+          "text": "(1231, 0, 9024, 0, 'CoA Heroic DBC: Pyromancer Loregrain'),"
+        },
+        {
+          "line": 47,
+          "text": "(1232, 0, 9017, 0, 'CoA Heroic DBC: Lord Incendius'),"
+        },
+        {
+          "line": 48,
+          "text": "(1233, 0, 9041, 0, 'CoA Heroic DBC: Warder Stilgiss'),"
+        },
+        {
+          "line": 49,
+          "text": "(1234, 0, 9056, 0, 'CoA Heroic DBC: Fineous Darkvire'),"
+        },
+        {
+          "line": 50,
+          "text": "(1235, 0, 9016, 0, 'CoA Heroic DBC: Bael''Gar'),"
+        },
+        {
+          "line": 51,
+          "text": "(1236, 0, 9033, 0, 'CoA Heroic DBC: General Angerforge'),"
+        },
+        {
+          "line": 52,
+          "text": "(1237, 0, 8983, 602, 'CoA Heroic DBC: Golem Lord Argelmach'),"
+        },
+        {
+          "line": 53,
+          "text": "(1238, 0, 9537, 0, 'CoA Heroic DBC: Hurley Blackbreath'),"
+        },
+        {
+          "line": 54,
+          "text": "(1239, 0, 9502, 0, 'CoA Heroic DBC: Phalanx'),"
+        },
+        {
+          "line": 55,
+          "text": "(1240, 0, 9543, 0, 'CoA Heroic DBC: Ribbly Screwspigot'),"
+        },
+        {
+          "line": 56,
+          "text": "(1241, 0, 9499, 0, 'CoA Heroic DBC: Plugger Spazzring'),"
+        },
+        {
+          "line": 57,
+          "text": "(1242, 0, 9156, 0, 'CoA Heroic DBC: Ambassador Flamelash'),"
+        },
+        {
+          "line": 58,
+          "text": "(1243, 0, 9039, 0, 'CoA Heroic DBC: The Seven'),"
+        },
+        {
+          "line": 59,
+          "text": "(1244, 0, 9938, 0, 'CoA Heroic DBC: Magmus'),"
+        },
+        {
+          "line": 60,
+          "text": "(1245, 0, 9019, 1276, 'CoA Heroic DBC: Emperor Dagran Thaurissan'),"
+        },
+        {
+          "line": 61,
+          "text": "(1267, 0, 9196, 0, 'CoA Heroic DBC: Highlord Omokk'),"
+        },
+        {
+          "line": 62,
+          "text": "(1268, 0, 9236, 0, 'CoA Heroic DBC: Shadow Hunter Vosh''gajin'),"
+        },
+        {
+          "line": 63,
+          "text": "(1269, 0, 9237, 0, 'CoA Heroic DBC: War Master Voone'),"
+        },
+        {
+          "line": 64,
+          "text": "(1270, 0, 10596, 0, 'CoA Heroic DBC: Mother Smolderweb'),"
+        },
+        {
+          "line": 65,
+          "text": "(1271, 0, 10584, 0, 'CoA Heroic DBC: Urok Doomhowl'),"
+        },
+        {
+          "line": 66,
+          "text": "(1272, 0, 9736, 0, 'CoA Heroic DBC: Quartermaster Zigris'),"
+        },
+        {
+          "line": 67,
+          "text": "(1273, 0, 10268, 0, 'CoA Heroic DBC: Gizrul the Slavener'),"
+        },
+        {
+          "line": 68,
+          "text": "(1274, 0, 10220, 0, 'CoA Heroic DBC: Halycon'),"
+        },
+        {
+          "line": 69,
+          "text": "(1275, 0, 9568, 1032, 'CoA Heroic DBC: Overlord Wyrmthalak'),"
+        },
+        {
+          "line": 70,
+          "text": "(1276, 0, 9816, 0, 'CoA Heroic DBC: Pyroguard Emberseer'),"
+        },
+        {
+          "line": 71,
+          "text": "(1277, 0, 10264, 0, 'CoA Heroic DBC: Solakar Flamewreath'),"
+        },
+        {
+          "line": 72,
+          "text": "(1278, 0, 10429, 0, 'CoA Heroic DBC: Warchief Rend Blackhand'),"
+        },
+        {
+          "line": 73,
+          "text": "(1279, 0, 10430, 0, 'CoA Heroic DBC: The Beast'),"
+        },
+        {
+          "line": 74,
+          "text": "(1280, 0, 10363, 1044, 'CoA Heroic DBC: General Drakkisath'),"
+        },
+        {
+          "line": 75,
+          "text": "(1343, 0, 11490, 0, 'CoA Heroic DBC: Zevrim Thornhoof'),"
+        },
+        {
+          "line": 76,
+          "text": "(1344, 0, 13280, 0, 'CoA Heroic DBC: Hydrospawn'),"
+        },
+        {
+          "line": 77,
+          "text": "(1345, 0, 14327, 0, 'CoA Heroic DBC: Lethtendris'),"
+        },
+        {
+          "line": 78,
+          "text": "(1346, 0, 11492, 1034, 'CoA Heroic DBC: Alzzin the Wildshaper'),"
+        },
+        {
+          "line": 79,
+          "text": "(1347, 0, 11488, 0, 'CoA Heroic DBC: Illyanna Ravenoak'),"
+        },
+        {
+          "line": 80,
+          "text": "(1348, 0, 11487, 0, 'CoA Heroic DBC: Magister Kalendris'),"
+        },
+        {
+          "line": 81,
+          "text": "(1349, 0, 11496, 0, 'CoA Heroic DBC: Immol''thar'),"
+        },
+        {
+          "line": 82,
+          "text": "(1350, 0, 11489, 0, 'CoA Heroic DBC: Tendris Warpwood'),"
+        },
+        {
+          "line": 83,
+          "text": "(1361, 0, 11486, 1036, 'CoA Heroic DBC: Prince Tortheldrin'),"
+        },
+        {
+          "line": 84,
+          "text": "(1362, 0, 14326, 0, 'CoA Heroic DBC: Guard Mol''dar'),"
+        },
+        {
+          "line": 85,
+          "text": "(1363, 0, 14322, 0, 'CoA Heroic DBC: Stomper Kreeg'),"
+        },
+        {
+          "line": 86,
+          "text": "(1364, 0, 14321, 0, 'CoA Heroic DBC: Guard Fengus'),"
+        },
+        {
+          "line": 87,
+          "text": "(1365, 0, 14323, 0, 'CoA Heroic DBC: Guard Slip''kik'),"
+        },
+        {
+          "line": 88,
+          "text": "(1366, 0, 14325, 0, 'CoA Heroic DBC: Captain Kromcrush'),"
+        },
+        {
+          "line": 89,
+          "text": "(1367, 0, 14324, 0, 'CoA Heroic DBC: Cho''Rush the Observer'),"
+        },
+        {
+          "line": 90,
+          "text": "(1368, 0, 11501, 1038, 'CoA Heroic DBC: King Gordok'),"
+        },
+        {
+          "line": 91,
+          "text": "(1378, 0, 7079, 0, 'CoA Heroic DBC: Viscous Fallout'),"
+        },
+        {
+          "line": 92,
+          "text": "(1379, 0, 7361, 0, 'CoA Heroic DBC: Grubbis'),"
+        },
+        {
+          "line": 93,
+          "text": "(1380, 0, 6235, 0, 'CoA Heroic DBC: Electrocutioner 6000'),"
+        },
+        {
+          "line": 94,
+          "text": "(1381, 0, 6229, 2727, 'CoA Heroic DBC: Crowd Pummeler 9-60'),"
+        },
+        {
+          "line": 95,
+          "text": "(1382, 0, 7800, 1704, 'CoA Heroic DBC: Mekgineer Thermaplugg'),"
+        },
+        {
+          "line": 96,
+          "text": "(1422, 0, 13282, 0, 'CoA Heroic DBC: Noxxion'),"
+        },
+        {
+          "line": 97,
+          "text": "(1423, 0, 12258, 1716, 'CoA Heroic DBC: Razorlash'),"
+        },
+        {
+          "line": 98,
+          "text": "(1424, 0, 12236, 1962, 'CoA Heroic DBC: Lord Vyletongue'),"
+        },
+        {
+          "line": 99,
+          "text": "(1425, 0, 12225, 0, 'CoA Heroic DBC: Celebras the Cursed'),"
+        },
+        {
+          "line": 100,
+          "text": "(1426, 0, 12203, 0, 'CoA Heroic DBC: Landslide'),"
+        },
+        {
+          "line": 101,
+          "text": "(1427, 0, 13601, 0, 'CoA Heroic DBC: Tinkerer Gizlock'),"
+        },
+        {
+          "line": 102,
+          "text": "(1428, 0, 13596, 0, 'CoA Heroic DBC: Rotgrip'),"
+        },
+        {
+          "line": 103,
+          "text": "(1429, 0, 12201, 1963, 'CoA Heroic DBC: Princess Theradras'),"
+        },
+        {
+          "line": 104,
+          "text": "(1430, 0, 11517, 0, 'CoA Heroic DBC: Oggleflint'),"
+        },
+        {
+          "line": 105,
+          "text": "(1431, 0, 11520, 1694, 'CoA Heroic DBC: Taragaman the Hungerer'),"
+        },
+        {
+          "line": 106,
+          "text": "(1432, 0, 11518, 0, 'CoA Heroic DBC: Jergosh the Invoker'),"
+        },
+        {
+          "line": 107,
+          "text": "(1433, 0, 11519, 0, 'CoA Heroic DBC: Bazzalan'),"
+        },
+        {
+          "line": 108,
+          "text": "(1434, 0, 7355, 0, 'CoA Heroic DBC: Tuten''kash'),"
+        },
+        {
+          "line": 109,
+          "text": "(1435, 0, 7357, 0, 'CoA Heroic DBC: Mordresh Fire Eye'),"
+        },
+        {
+          "line": 110,
+          "text": "(1436, 0, 8567, 0, 'CoA Heroic DBC: Glutton'),"
+        },
+        {
+          "line": 111,
+          "text": "(1437, 0, 7358, 1710, 'CoA Heroic DBC: Amnennar the Coldbringer'),"
+        },
+        {
+          "line": 112,
+          "text": "(1438, 0, 6168, 0, 'CoA Heroic DBC: Roogug'),"
+        },
+        {
+          "line": 113,
+          "text": "(1439, 0, 4424, 0, 'CoA Heroic DBC: Aggem Thorncurse'),"
+        },
+        {
+          "line": 114,
+          "text": "(1440, 0, 4428, 0, 'CoA Heroic DBC: Death Speaker Jargba'),"
+        },
+        {
+          "line": 115,
+          "text": "(1441, 0, 4420, 0, 'CoA Heroic DBC: Overlord Ramtusk'),"
+        },
+        {
+          "line": 116,
+          "text": "(1443, 0, 4421, 1706, 'CoA Heroic DBC: Charlga Razorflank'),"
+        },
+        {
+          "line": 117,
+          "text": "(1444, 0, 3983, 0, 'CoA Heroic DBC: Interrogator Vishas'),"
+        },
+        {
+          "line": 118,
+          "text": "(1445, 0, 4543, 1708, 'CoA Heroic DBC: Bloodmage Thalnos'),"
+        },
+        {
+          "line": 119,
+          "text": "(1446, 0, 3974, 0, 'CoA Heroic DBC: Houndmaster Loksey'),"
+        },
+        {
+          "line": 120,
+          "text": "(1447, 0, 6487, 1855, 'CoA Heroic DBC: Arcanist Doan'),"
+        },
+        {
+          "line": 121,
+          "text": "(1448, 0, 3975, 1853, 'CoA Heroic DBC: Herod'),"
+        },
+        {
+          "line": 122,
+          "text": "(1449, 0, 4542, 0, 'CoA Heroic DBC: High Inquisitor Fairbanks'),"
+        },
+        {
+          "line": 123,
+          "text": "(1450, 0, 3977, 1854, 'CoA Heroic DBC: High Inquisitor Whitemane'),"
+        },
+        {
+          "line": 124,
+          "text": "(1451, 0, 10506, 0, 'CoA Heroic DBC: Kirtonos the Herald'),"
+        },
+        {
+          "line": 125,
+          "text": "(1452, 0, 10503, 0, 'CoA Heroic DBC: Jandice Barov'),"
+        },
+        {
+          "line": 126,
+          "text": "(1453, 0, 11622, 0, 'CoA Heroic DBC: Rattlegore'),"
+        },
+        {
+          "line": 127,
+          "text": "(1454, 0, 10433, 0, 'CoA Heroic DBC: Marduk Blackpool'),"
+        },
+        {
+          "line": 128,
+          "text": "(1455, 0, 10432, 0, 'CoA Heroic DBC: Vectus'),"
+        },
+        {
+          "line": 129,
+          "text": "(1457, 0, 10505, 0, 'CoA Heroic DBC: Instructor Malicia'),"
+        },
+        {
+          "line": 130,
+          "text": "(1458, 0, 11261, 0, 'CoA Heroic DBC: Doctor Theolen Krastinov'),"
+        },
+        {
+          "line": 131,
+          "text": "(1459, 0, 10901, 0, 'CoA Heroic DBC: Lorekeeper Polkelt'),"
+        },
+        {
+          "line": 132,
+          "text": "(1460, 0, 10507, 0, 'CoA Heroic DBC: The Ravenian'),"
+        },
+        {
+          "line": 133,
+          "text": "(1461, 0, 10504, 0, 'CoA Heroic DBC: Lord Alexei Barov'),"
+        },
+        {
+          "line": 134,
+          "text": "(1462, 0, 10502, 0, 'CoA Heroic DBC: Lady Illucia Barov'),"
+        },
+        {
+          "line": 135,
+          "text": "(1463, 0, 1853, 52, 'CoA Heroic DBC: Darkmaster Gandling'),"
+        },
+        {
+          "line": 136,
+          "text": "(1464, 0, 3914, 0, 'CoA Heroic DBC: Rethilgore'),"
+        },
+        {
+          "line": 137,
+          "text": "(1465, 0, 3886, 0, 'CoA Heroic DBC: Razorclaw the Butcher'),"
+        },
+        {
+          "line": 138,
+          "text": "(1466, 0, 3887, 0, 'CoA Heroic DBC: Baron Silverlaine'),"
+        },
+        {
+          "line": 139,
+          "text": "(1467, 0, 4278, 0, 'CoA Heroic DBC: Commander Springvale'),"
+        },
+        {
+          "line": 140,
+          "text": "(1468, 0, 4279, 0, 'CoA Heroic DBC: Odo the Blindwatcher'),"
+        },
+        {
+          "line": 141,
+          "text": "(1469, 0, 4274, 0, 'CoA Heroic DBC: Fenrus the Devourer'),"
+        },
+        {
+          "line": 142,
+          "text": "(1470, 0, 3927, 0, 'CoA Heroic DBC: Wolf Master Nandos'),"
+        },
+        {
+          "line": 143,
+          "text": "(1471, 0, 4275, 1008, 'CoA Heroic DBC: Archmage Arugal'),"
+        },
+        {
+          "line": 144,
+          "text": "(1472, 0, 10516, 0, 'CoA Heroic DBC: The Unforgiven'),"
+        },
+        {
+          "line": 145,
+          "text": "(1473, 0, 10558, 0, 'CoA Heroic DBC: Hearthsinger Forresten'),"
+        },
+        {
+          "line": 146,
+          "text": "(1474, 0, 10808, 0, 'CoA Heroic DBC: Timmy the Cruel'),"
+        },
+        {
+          "line": 147,
+          "text": "(1475, 0, 10997, 0, 'CoA Heroic DBC: Cannon Master Willey'),"
+        },
+        {
+          "line": 148,
+          "text": "(1476, 0, 11032, 0, 'CoA Heroic DBC: Malor the Zealous'),"
+        },
+        {
+          "line": 149,
+          "text": "(1477, 0, 10811, 0, 'CoA Heroic DBC: Archivist Galford'),"
+        },
+        {
+          "line": 150,
+          "text": "(1478, 0, 10813, 1040, 'CoA Heroic DBC: Balnazzar'),"
+        },
+        {
+          "line": 151,
+          "text": "(1479, 0, 10436, 0, 'CoA Heroic DBC: Baroness Anastari'),"
+        },
+        {
+          "line": 152,
+          "text": "(1480, 0, 10437, 0, 'CoA Heroic DBC: Nerub''enkan'),"
+        },
+        {
+          "line": 153,
+          "text": "(1481, 0, 10438, 0, 'CoA Heroic DBC: Maleki the Pallid'),"
+        },
+        {
+          "line": 154,
+          "text": "(1482, 0, 10435, 0, 'CoA Heroic DBC: Magistrate Barthilas'),"
+        },
+        {
+          "line": 155,
+          "text": "(1483, 0, 10439, 0, 'CoA Heroic DBC: Ramnstein the Gorger'),"
+        },
+        {
+          "line": 156,
+          "text": "(1484, 0, 10440, 1274, 'CoA Heroic DBC: Baron Rivendare'),"
+        },
+        {
+          "line": 157,
+          "text": "(1485, 0, 8580, 0, 'CoA Heroic DBC: Atal''alarion'),"
+        },
+        {
+          "line": 158,
+          "text": "(1486, 0, 5721, 0, 'CoA Heroic DBC: Dreamscythe'),"
+        },
+        {
+          "line": 159,
+          "text": "(1487, 0, 5720, 0, 'CoA Heroic DBC: Weaver'),"
+        },
+        {
+          "line": 160,
+          "text": "(1488, 0, 5710, 0, 'CoA Heroic DBC: Jammal''an and Ogom'),"
+        },
+        {
+          "line": 161,
+          "text": "(1490, 0, 5719, 0, 'CoA Heroic DBC: Morphaz'),"
+        },
+        {
+          "line": 162,
+          "text": "(1491, 0, 5722, 0, 'CoA Heroic DBC: Hazzas'),"
+        },
+        {
+          "line": 163,
+          "text": "(1492, 0, 8443, 0, 'CoA Heroic DBC: Avatar of Hakkar'),"
+        },
+        {
+          "line": 164,
+          "text": "(1493, 0, 5709, 1718, 'CoA Heroic DBC: Shade of Eranikus'),"
+        },
+        {
+          "line": 165,
+          "text": "(1536, 0, 1696, 0, 'CoA Heroic DBC: Targorr the Dread'),"
+        },
+        {
+          "line": 166,
+          "text": "(1537, 0, 1666, 0, 'CoA Heroic DBC: Kam Deepfury'),"
+        },
+        {
+          "line": 167,
+          "text": "(1538, 0, 1717, 0, 'CoA Heroic DBC: Hamhock'),"
+        },
+        {
+          "line": 168,
+          "text": "(1539, 0, 1716, 1702, 'CoA Heroic DBC: Bazil Thredd'),"
+        },
+        {
+          "line": 169,
+          "text": "(1540, 0, 1663, 0, 'CoA Heroic DBC: Dextren Ward'),"
+        },
+        {
+          "line": 170,
+          "text": "(1547, 0, 6910, 0, 'CoA Heroic DBC: Revelosh'),"
+        },
+        {
+          "line": 171,
+          "text": "(1548, 0, 6906, 0, 'CoA Heroic DBC: The Lost Dwarves'),"
+        },
+        {
+          "line": 172,
+          "text": "(1549, 0, 7228, 0, 'CoA Heroic DBC: Ironaya'),"
+        },
+        {
+          "line": 173,
+          "text": "(1551, 0, 7206, 0, 'CoA Heroic DBC: Ancient Stone Keeper'),"
+        },
+        {
+          "line": 174,
+          "text": "(1552, 0, 7291, 0, 'CoA Heroic DBC: Galgann Firehammer'),"
+        },
+        {
+          "line": 175,
+          "text": "(1553, 0, 4854, 0, 'CoA Heroic DBC: Grimlok'),"
+        },
+        {
+          "line": 176,
+          "text": "(1554, 0, 2748, 1712, 'CoA Heroic DBC: Archaedas'),"
+        },
+        {
+          "line": 177,
+          "text": "(1585, 0, 3671, 0, 'CoA Heroic DBC: Lady Anacondra'),"
+        },
+        {
+          "line": 178,
+          "text": "(1586, 0, 3669, 2693, 'CoA Heroic DBC: Lord Cobrahn'),"
+        },
+        {
+          "line": 179,
+          "text": "(1587, 0, 3653, 0, 'CoA Heroic DBC: Kresh'),"
+        },
+        {
+          "line": 180,
+          "text": "(1588, 0, 3670, 0, 'CoA Heroic DBC: Lord Pythas'),"
+        },
+        {
+          "line": 181,
+          "text": "(1589, 0, 3674, 2721, 'CoA Heroic DBC: Skum'),"
+        },
+        {
+          "line": 182,
+          "text": "(1590, 0, 3673, 0, 'CoA Heroic DBC: Lord Serpentis'),"
+        },
+        {
+          "line": 183,
+          "text": "(1591, 0, 5775, 2725, 'CoA Heroic DBC: Verdan the Everliving'),"
+        },
+        {
+          "line": 184,
+          "text": "(1592, 0, 3654, 1691, 'CoA Heroic DBC: Mutanus the Devourer'),"
+        },
+        {
+          "line": 185,
+          "text": "(1593, 0, 7795, 0, 'CoA Heroic DBC: Hydromancer Velratha'),"
+        },
+        {
+          "line": 186,
+          "text": "(1594, 0, 7273, 0, 'CoA Heroic DBC: Ghaz''rilla'),"
+        },
+        {
+          "line": 187,
+          "text": "(1595, 0, 8127, 0, 'CoA Heroic DBC: Antu''sul'),"
+        },
+        {
+          "line": 188,
+          "text": "(1596, 0, 7272, 0, 'CoA Heroic DBC: Theka the Martyr'),"
+        },
+        {
+          "line": 189,
+          "text": "(1597, 0, 7271, 0, 'CoA Heroic DBC: Witch Doctor Zum''rah'),"
+        },
+        {
+          "line": 190,
+          "text": "(1598, 0, 7796, 0, 'CoA Heroic DBC: Nekrum Gutchewer'),"
+        },
+        {
+          "line": 191,
+          "text": "(1599, 0, 7275, 0, 'CoA Heroic DBC: Shadowpriest Sezz''ziz'),"
+        },
+        {
+          "line": 192,
+          "text": "(1600, 0, 7267, 1714, 'CoA Heroic DBC: Chief Ukorz Sandscalp &  Ruuzlu'),"
+        },
+        {
+          "line": 193,
+          "text": "(1883, 0, 4422, 0, 'CoA Heroic DBC: Agathelos the Raging'),"
+        },
+        {
+          "line": 194,
+          "text": "(1980, 0, 16118, 0, 'CoA Heroic DBC: Kormok'),"
+        },
+        {
+          "line": 195,
+          "text": "(1985, 0, 17830, 0, 'CoA Heroic DBC: Zelemar the Wrathful'),"
+        },
+        {
+          "line": 196,
+          "text": "(2141, 0, 16042, 0, 'CoA Mythic DBC: Lord Valthalak'),"
+        },
+        {
+          "line": 197,
+          "text": "(2142, 0, 10899, 0, 'CoA Mythic DBC: Goraluk Anvilcrack'),"
+        },
+        {
+          "line": 198,
+          "text": "(2143, 0, 10509, 0, 'CoA Mythic DBC: Jed Runewatcher'),"
+        },
+        {
+          "line": 199,
+          "text": "(2144, 0, 16080, 0, 'CoA Mythic DBC: Mor Grayhoof'),"
+        },
+        {
+          "line": 200,
+          "text": "(2145, 0, 10263, 0, 'CoA Mythic DBC: Burning Felguard'),"
+        },
+        {
+          "line": 201,
+          "text": "(2146, 0, 9718, 0, 'CoA Mythic DBC: Ghok Bashguud'),"
+        },
+        {
+          "line": 202,
+          "text": "(2147, 0, 10376, 0, 'CoA Mythic DBC: Crystal Fang'),"
+        },
+        {
+          "line": 203,
+          "text": "(2148, 0, 9596, 0, 'CoA Mythic DBC: Bannok Grimaxe'),"
+        },
+        {
+          "line": 204,
+          "text": "(2149, 0, 9217, 0, 'CoA Mythic DBC: Spirestone Lord Magus'),"
+        },
+        {
+          "line": 205,
+          "text": "(2150, 0, 9218, 0, 'CoA Mythic DBC: Spirestone Battle Lord'),"
+        },
+        {
+          "line": 206,
+          "text": "(2151, 0, 9219, 0, 'CoA Mythic DBC: Spirestone Butcher'),"
+        },
+        {
+          "line": 207,
+          "text": "(2152, 0, 10809, 0, 'CoA Mythic DBC: Stonespine'),"
+        },
+        {
+          "line": 208,
+          "text": "(2153, 0, 11058, 0, 'CoA Mythic DBC: Fras Siabi'),"
+        },
+        {
+          "line": 209,
+          "text": "(2154, 0, 10393, 0, 'CoA Mythic DBC: Skul'),"
+        },
+        {
+          "line": 210,
+          "text": "(2155, 0, 16097, 0, 'CoA Mythic DBC: Isalien Trigger'),"
+        },
+        {
+          "line": 211,
+          "text": "(2156, 0, 14506, 0, 'CoA Mythic DBC: Lord Hel''nurath'),"
+        },
+        {
+          "line": 212,
+          "text": "(2157, 0, 11467, 0, 'CoA Mythic DBC: Tsu''zee'),"
+        },
+        {
+          "line": 213,
+          "text": "(2158, 0, 14861, 0, 'CoA Mythic DBC: Blood Steward of Kirtonos'),"
+        },
+        {
+          "line": 214,
+          "text": "(2159, 0, 14516, 0, 'CoA Mythic DBC: Death Knight Darkreaver'),"
+        },
+        {
+          "line": 215,
+          "text": "(2227, 0, 9018, 0, 'CoA Mythic DBC: High Interrogator Gerstahn'),"
+        },
+        {
+          "line": 216,
+          "text": "(2228, 0, 9025, 0, 'CoA Mythic DBC: Lord Roccor'),"
+        },
+        {
+          "line": 217,
+          "text": "(2229, 0, 9319, 0, 'CoA Mythic DBC: Houndmaster Grebmar'),"
+        },
+        {
+          "line": 218,
+          "text": "(2230, 0, 10096, 2030, 'CoA Mythic DBC: Ring of Law'),"
+        },
+        {
+          "line": 219,
+          "text": "(2231, 0, 9024, 0, 'CoA Mythic DBC: Pyromancer Loregrain'),"
+        },
+        {
+          "line": 220,
+          "text": "(2232, 0, 9017, 0, 'CoA Mythic DBC: Lord Incendius'),"
+        },
+        {
+          "line": 221,
+          "text": "(2233, 0, 9041, 0, 'CoA Mythic DBC: Warder Stilgiss'),"
+        },
+        {
+          "line": 222,
+          "text": "(2234, 0, 9056, 0, 'CoA Mythic DBC: Fineous Darkvire'),"
+        },
+        {
+          "line": 223,
+          "text": "(2235, 0, 9016, 0, 'CoA Mythic DBC: Bael''Gar'),"
+        },
+        {
+          "line": 224,
+          "text": "(2236, 0, 9033, 0, 'CoA Mythic DBC: General Angerforge'),"
+        },
+        {
+          "line": 225,
+          "text": "(2237, 0, 8983, 603, 'CoA Mythic DBC: Golem Lord Argelmach'),"
+        },
+        {
+          "line": 226,
+          "text": "(2242, 0, 9156, 0, 'CoA Mythic DBC: Ambassador Flamelash'),"
+        },
+        {
+          "line": 227,
+          "text": "(2244, 0, 9938, 0, 'CoA Mythic DBC: Magmus'),"
+        },
+        {
+          "line": 228,
+          "text": "(2245, 0, 9019, 276, 'CoA Mythic DBC: Emperor Dagran Thaurissan'),"
+        },
+        {
+          "line": 229,
+          "text": "(2343, 0, 11490, 0, 'CoA Mythic DBC: Zevrim Thornhoof'),"
+        },
+        {
+          "line": 230,
+          "text": "(2344, 0, 13280, 0, 'CoA Mythic DBC: Hydrospawn'),"
+        },
+        {
+          "line": 231,
+          "text": "(2345, 0, 14327, 0, 'CoA Mythic DBC: Lethtendris'),"
+        },
+        {
+          "line": 232,
+          "text": "(2346, 0, 11492, 2034, 'CoA Mythic DBC: Alzzin the Wildshaper'),"
+        },
+        {
+          "line": 233,
+          "text": "(2347, 0, 11488, 0, 'CoA Mythic DBC: Illyanna Ravenoak'),"
+        },
+        {
+          "line": 234,
+          "text": "(2348, 0, 11487, 0, 'CoA Mythic DBC: Magister Kalendris'),"
+        },
+        {
+          "line": 235,
+          "text": "(2349, 0, 11496, 0, 'CoA Mythic DBC: Immol''thar'),"
+        },
+        {
+          "line": 236,
+          "text": "(2350, 0, 11489, 0, 'CoA Mythic DBC: Tendris Warpwood'),"
+        },
+        {
+          "line": 237,
+          "text": "(2361, 0, 11486, 2036, 'CoA Mythic DBC: Prince Tortheldrin'),"
+        },
+        {
+          "line": 238,
+          "text": "(2362, 0, 14326, 0, 'CoA Mythic DBC: Guard Mol''dar'),"
+        },
+        {
+          "line": 239,
+          "text": "(2363, 0, 14322, 0, 'CoA Mythic DBC: Stomper Kreeg'),"
+        },
+        {
+          "line": 240,
+          "text": "(2364, 0, 14321, 0, 'CoA Mythic DBC: Guard Fengus'),"
+        },
+        {
+          "line": 241,
+          "text": "(2365, 0, 14323, 0, 'CoA Mythic DBC: Guard Slip''kik'),"
+        },
+        {
+          "line": 242,
+          "text": "(2366, 0, 14325, 0, 'CoA Mythic DBC: Captain Kromcrush'),"
+        },
+        {
+          "line": 243,
+          "text": "(2367, 0, 14324, 0, 'CoA Mythic DBC: Cho''Rush the Observer'),"
+        },
+        {
+          "line": 244,
+          "text": "(2368, 0, 11501, 2038, 'CoA Mythic DBC: King Gordok'),"
+        },
+        {
+          "line": 245,
+          "text": "(2422, 0, 13282, 0, 'CoA Mythic DBC: Noxxion'),"
+        },
+        {
+          "line": 246,
+          "text": "(2423, 0, 12258, 2716, 'CoA Mythic DBC: Razorlash'),"
+        },
+        {
+          "line": 247,
+          "text": "(2424, 0, 12236, 2962, 'CoA Mythic DBC: Lord Vyletongue'),"
+        },
+        {
+          "line": 248,
+          "text": "(2425, 0, 12225, 0, 'CoA Mythic DBC: Celebras the Cursed'),"
+        },
+        {
+          "line": 249,
+          "text": "(2426, 0, 12203, 0, 'CoA Mythic DBC: Landslide'),"
+        },
+        {
+          "line": 250,
+          "text": "(2427, 0, 13601, 0, 'CoA Mythic DBC: Tinkerer Gizlock'),"
+        },
+        {
+          "line": 251,
+          "text": "(2428, 0, 13596, 0, 'CoA Mythic DBC: Rotgrip'),"
+        },
+        {
+          "line": 252,
+          "text": "(2429, 0, 12201, 2963, 'CoA Mythic DBC: Princess Theradras'),"
+        },
+        {
+          "line": 253,
+          "text": "(2444, 0, 3983, 0, 'CoA Mythic DBC: Interrogator Vishas'),"
+        },
+        {
+          "line": 254,
+          "text": "(2445, 0, 4543, 2708, 'CoA Mythic DBC: Bloodmage Thalnos'),"
+        },
+        {
+          "line": 255,
+          "text": "(2446, 0, 3974, 0, 'CoA Mythic DBC: Houndmaster Loksey'),"
+        },
+        {
+          "line": 256,
+          "text": "(2447, 0, 6487, 2855, 'CoA Mythic DBC: Arcanist Doan'),"
+        },
+        {
+          "line": 257,
+          "text": "(2448, 0, 3975, 2853, 'CoA Mythic DBC: Herod'),"
+        },
+        {
+          "line": 258,
+          "text": "(2449, 0, 4542, 0, 'CoA Mythic DBC: High Inquisitor Fairbanks'),"
+        },
+        {
+          "line": 259,
+          "text": "(2450, 0, 3977, 2854, 'CoA Mythic DBC: High Inquisitor Whitemane'),"
+        },
+        {
+          "line": 260,
+          "text": "(2451, 0, 10506, 0, 'CoA Mythic DBC: Kirtonos the Herald'),"
+        },
+        {
+          "line": 261,
+          "text": "(2452, 0, 10503, 0, 'CoA Mythic DBC: Jandice Barov'),"
+        },
+        {
+          "line": 262,
+          "text": "(2453, 0, 11622, 0, 'CoA Mythic DBC: Rattlegore'),"
+        },
+        {
+          "line": 263,
+          "text": "(2454, 0, 10433, 0, 'CoA Mythic DBC: Marduk Blackpool'),"
+        },
+        {
+          "line": 264,
+          "text": "(2455, 0, 10432, 0, 'CoA Mythic DBC: Vectus'),"
+        },
+        {
+          "line": 265,
+          "text": "(2456, 0, 10508, 56, 'CoA Mythic DBC: Ras Frostwhisper'),"
+        },
+        {
+          "line": 266,
+          "text": "(2457, 0, 10505, 0, 'CoA Mythic DBC: Instructor Malicia'),"
+        },
+        {
+          "line": 267,
+          "text": "(2458, 0, 11261, 0, 'CoA Mythic DBC: Doctor Theolen Krastinov'),"
+        },
+        {
+          "line": 268,
+          "text": "(2459, 0, 10901, 0, 'CoA Mythic DBC: Lorekeeper Polkelt'),"
+        },
+        {
+          "line": 269,
+          "text": "(2460, 0, 10507, 0, 'CoA Mythic DBC: The Ravenian'),"
+        },
+        {
+          "line": 270,
+          "text": "(2461, 0, 10504, 0, 'CoA Mythic DBC: Lord Alexei Barov'),"
+        },
+        {
+          "line": 271,
+          "text": "(2462, 0, 10502, 0, 'CoA Mythic DBC: Lady Illucia Barov'),"
+        },
+        {
+          "line": 272,
+          "text": "(2463, 0, 1853, 53, 'CoA Mythic DBC: Darkmaster Gandling'),"
+        },
+        {
+          "line": 273,
+          "text": "(2464, 0, 3914, 0, 'CoA Mythic DBC: Rethilgore'),"
+        },
+        {
+          "line": 274,
+          "text": "(2465, 0, 3886, 0, 'CoA Mythic DBC: Razorclaw the Butcher'),"
+        },
+        {
+          "line": 275,
+          "text": "(2466, 0, 3887, 0, 'CoA Mythic DBC: Baron Silverlaine'),"
+        },
+        {
+          "line": 276,
+          "text": "(2467, 0, 4278, 0, 'CoA Mythic DBC: Commander Springvale'),"
+        },
+        {
+          "line": 277,
+          "text": "(2468, 0, 4279, 0, 'CoA Mythic DBC: Odo the Blindwatcher'),"
+        },
+        {
+          "line": 278,
+          "text": "(2469, 0, 4274, 0, 'CoA Mythic DBC: Fenrus the Devourer'),"
+        },
+        {
+          "line": 279,
+          "text": "(2470, 0, 3927, 0, 'CoA Mythic DBC: Wolf Master Nandos'),"
+        },
+        {
+          "line": 280,
+          "text": "(2471, 0, 4275, 2008, 'CoA Mythic DBC: Archmage Arugal'),"
+        },
+        {
+          "line": 281,
+          "text": "(2472, 0, 10516, 0, 'CoA Mythic DBC: The Unforgiven'),"
+        },
+        {
+          "line": 282,
+          "text": "(2473, 0, 10558, 0, 'CoA Mythic DBC: Hearthsinger Forresten'),"
+        },
+        {
+          "line": 283,
+          "text": "(2474, 0, 10808, 0, 'CoA Mythic DBC: Timmy the Cruel'),"
+        },
+        {
+          "line": 284,
+          "text": "(2475, 0, 10997, 0, 'CoA Mythic DBC: Cannon Master Willey'),"
+        },
+        {
+          "line": 285,
+          "text": "(2476, 0, 11032, 0, 'CoA Mythic DBC: Malor the Zealous'),"
+        },
+        {
+          "line": 286,
+          "text": "(2477, 0, 10811, 0, 'CoA Mythic DBC: Archivist Galford'),"
+        },
+        {
+          "line": 287,
+          "text": "(2478, 0, 10813, 2040, 'CoA Mythic DBC: Balnazzar'),"
+        },
+        {
+          "line": 288,
+          "text": "(2479, 0, 10436, 0, 'CoA Mythic DBC: Baroness Anastari'),"
+        },
+        {
+          "line": 289,
+          "text": "(2480, 0, 10437, 0, 'CoA Mythic DBC: Nerub''enkan'),"
+        },
+        {
+          "line": 290,
+          "text": "(2481, 0, 10438, 0, 'CoA Mythic DBC: Maleki the Pallid'),"
+        },
+        {
+          "line": 291,
+          "text": "(2482, 0, 10435, 0, 'CoA Mythic DBC: Magistrate Barthilas'),"
+        },
+        {
+          "line": 292,
+          "text": "(2483, 0, 10439, 0, 'CoA Mythic DBC: Ramnstein the Gorger'),"
+        },
+        {
+          "line": 293,
+          "text": "(2484, 0, 10440, 2274, 'CoA Mythic DBC: Baron Rivendare'),"
+        },
+        {
+          "line": 294,
+          "text": "(2602, 0, 3586, 0, 'CoA Mythic DBC: Miner Johnson'),"
+        },
+        {
+          "line": 295,
+          "text": "(2603, 0, 14682, 0, 'CoA Mythic DBC: Sever'),"
+        },
+        {
+          "line": 296,
+          "text": "(2604, 0, 6231, 0, 'CoA Mythic DBC: Techbot'),"
+        },
+        {
+          "line": 297,
+          "text": "(2605, 0, 6228, 0, 'CoA Mythic DBC: Dark Iron Ambassador'),"
+        },
+        {
+          "line": 298,
+          "text": "(2606, 0, 6489, 0, 'CoA Mythic DBC: Ironspine'),"
+        },
+        {
+          "line": 299,
+          "text": "(2607, 0, 6490, 0, 'CoA Mythic DBC: Azshir the Sleepless'),"
+        },
+        {
+          "line": 300,
+          "text": "(2608, 0, 14693, 0, 'CoA Mythic DBC: Scorn'),"
+        },
+        {
+          "line": 301,
+          "text": "(2609, 0, 4425, 0, 'CoA Mythic DBC: Blind Hunter'),"
+        },
+        {
+          "line": 302,
+          "text": "(2610, 0, 3872, 0, 'CoA Mythic DBC: Deathsworn Captain'),"
+        },
+        {
+          "line": 303,
+          "text": "(2611, 0, 13738, 0, 'CoA Mythic DBC: Veng'),"
+        },
+        {
+          "line": 304,
+          "text": "(2612, 0, 13739, 0, 'CoA Mythic DBC: Maraudos'),"
+        },
+        {
+          "line": 305,
+          "text": "(2613, 0, 10082, 0, 'CoA Mythic DBC: Zerillis'),"
+        },
+        {
+          "line": 306,
+          "text": "(2614, 0, 10080, 0, 'CoA Mythic DBC: Sandarr Dunereaver'),"
+        },
+        {
+          "line": 307,
+          "text": "(2615, 0, 4842, 0, 'CoA Mythic DBC: Earthcaller Halmgar'),"
+        },
+        {
+          "line": 308,
+          "text": "(2616, 0, 3976, 0, 'CoA Mythic DBC: Scarlet Commander Mograine'),"
+        },
+        {
+          "line": 309,
+          "text": "(2617, 0, 7023, 0, 'CoA Mythic DBC: Obsidian Sentinel'),"
+        },
+        {
+          "line": 310,
+          "text": "(2618, 0, 7356, 0, 'CoA Mythic DBC: Plaguemaw the Rotting'),"
+        },
+        {
+          "line": 311,
+          "text": "(2619, 0, 7354, 0, 'CoA Mythic DBC: Ragglesnout'),"
+        },
+        {
+          "line": 312,
+          "text": "(2620, 0, 12225, 0, 'CoA Mythic DBC: Celebras the Cursed'),"
+        },
+        {
+          "line": 313,
+          "text": "(2621, 0, 12237, 0, 'CoA Mythic DBC: Meshlok the Harvester'),"
+        },
+        {
+          "line": 314,
+          "text": "(2622, 0, 1720, 0, 'CoA Mythic DBC: Bruegal Ironknuckle'),"
+        },
+        {
+          "line": 315,
+          "text": "(2623, 0, 6488, 0, 'CoA Mythic DBC: Fallen Champion'),"
+        },
+        {
+          "line": 316,
+          "text": "(2624, 0, 10081, 0, 'CoA Mythic DBC: Dustwraith'),"
+        },
+        {
+          "line": 317,
+          "text": "(2626, 0, 7604, 0, 'CoA Mythic DBC: Sergeant Bly'),"
+        },
+        {
+          "line": 318,
+          "text": "(2980, 0, 16118, 0, 'CoA Mythic DBC: Kormok'),"
+        },
+        {
+          "line": 319,
+          "text": "(2981, 0, 9027, 2030, 'CoA Mythic DBC: Gorosh the Dervish'),"
+        },
+        {
+          "line": 320,
+          "text": "(2982, 0, 9028, 2030, 'CoA Mythic DBC: Grizzle'),"
+        },
+        {
+          "line": 321,
+          "text": "(2983, 0, 9029, 2030, 'CoA Mythic DBC: Eviscerator'),"
+        },
+        {
+          "line": 322,
+          "text": "(2984, 0, 9030, 2030, 'CoA Mythic DBC: Okthor the Breaker'),"
+        },
+        {
+          "line": 323,
+          "text": "(2985, 0, 9031, 2030, 'CoA Mythic DBC: Anub''shiah'),"
+        },
+        {
+          "line": 324,
+          "text": "(2986, 0, 9032, 2030, 'CoA Mythic DBC: Hedrum the Creeper'),"
+        },
+        {
+          "line": 325,
+          "text": "(3318, 0, 3669, 3318, 'CoA Mythic DBC: Lord Cobrahn'),"
+        },
+        {
+          "line": 326,
+          "text": "(3319, 0, 5775, 3319, 'CoA Mythic DBC: Verdan the Everliving'),"
+        },
+        {
+          "line": 327,
+          "text": "(3320, 0, 3653, 0, 'CoA Mythic DBC: Kresh'),"
+        },
+        {
+          "line": 328,
+          "text": "(3321, 0, 3654, 0, 'CoA Mythic DBC: Mutanus'),"
+        },
+        {
+          "line": 329,
+          "text": "(3322, 0, 3671, 0, 'CoA Mythic DBC: Lady Anacondra'),"
+        },
+        {
+          "line": 330,
+          "text": "(3323, 0, 3670, 0, 'CoA Mythic DBC: Lord Pythas'),"
+        },
+        {
+          "line": 331,
+          "text": "(3324, 0, 3674, 0, 'CoA Mythic DBC: Skum'),"
+        },
+        {
+          "line": 332,
+          "text": "(3325, 0, 5912, 0, 'CoA Mythic DBC: Brightwing'),"
+        },
+        {
+          "line": 333,
+          "text": "(3326, 0, 3673, 0, 'CoA Mythic DBC: Lord Serpentis'),"
+        },
+        {
+          "line": 334,
+          "text": "(3456, 0, 10508, 55, 'CoA Heroic DBC: Ras Frostwhisper'),"
+        },
+        {
+          "line": 335,
+          "text": "(3985, 0, 17830, 0, 'CoA Mythic DBC: Zelemar the Wrathful'),"
+        },
+        {
+          "line": 336,
+          "text": "(15030, 0, 3914, 0, 'CoA Mythic DBC: Rethilgore'),"
+        },
+        {
+          "line": 337,
+          "text": "(15031, 0, 3886, 0, 'CoA Mythic DBC: Razorclaw the Butcher'),"
+        },
+        {
+          "line": 338,
+          "text": "(15032, 0, 3887, 0, 'CoA Mythic DBC: Baron Silverlaine'),"
+        },
+        {
+          "line": 339,
+          "text": "(15033, 0, 4278, 0, 'CoA Mythic DBC: Commander Springvale'),"
+        },
+        {
+          "line": 340,
+          "text": "(15034, 0, 4279, 3320, 'CoA Mythic DBC: Odo the Blindwatcher'),"
+        },
+        {
+          "line": 341,
+          "text": "(15035, 0, 14682, 0, 'CoA Mythic DBC: Sever'),"
+        },
+        {
+          "line": 342,
+          "text": "(15036, 0, 4278, 0, 'CoA Mythic DBC: Commander Springvale'),"
+        },
+        {
+          "line": 343,
+          "text": "(15037, 0, 4279, 0, 'CoA Mythic DBC: Odo the Blindwatcher'),"
+        },
+        {
+          "line": 344,
+          "text": "(15038, 0, 4274, 0, 'CoA Mythic DBC: Fenrus the Devourer'),"
+        },
+        {
+          "line": 345,
+          "text": "(15039, 0, 3927, 0, 'CoA Mythic DBC: Wolf Master Nandos'),"
+        },
+        {
+          "line": 346,
+          "text": "(15040, 0, 4275, 3321, 'CoA Mythic DBC: Archmage Arugal'),"
+        },
+        {
+          "line": 347,
+          "text": "(15041, 0, 3872, 0, 'CoA Mythic DBC: Captain Midwinter'),"
+        },
+        {
+          "line": 348,
+          "text": "(36050, 0, 8923, 0, 'CoA Mythic DBC: Panzor the Invincible'),"
+        },
+        {
+          "line": 349,
+          "text": "(36051, 0, 9156, 0, 'CoA Mythic DBC: Ambassador Flamelash'),"
+        },
+        {
+          "line": 350,
+          "text": "(36052, 0, 9039, 0, 'CoA Mythic DBC: The Seven'),"
+        },
+        {
+          "line": 351,
+          "text": "(36053, 0, 9938, 0, 'CoA Mythic DBC: Magmus'),"
+        },
+        {
+          "line": 352,
+          "text": "(36054, 0, 9019, 2276, 'CoA Mythic DBC: Emperor Dagran Thaurissan');"
+        }
+      ],
+      "header": [
+        "-- Heroic and Mythic encounters of the vanilla dungeons: boss credit for the server (only VanCleef Mythic before).",
+        "-- Source: the client's DungeonEncounter.dbc + DungeonEncounterExtra.dbc (creature and the wing it ends).",
+        "-- Without these rows a Heroic/Mythic boss does not count as an encounter and a Heroic/Mythic wing run through",
+        "-- the Dungeon Finder is not completed at its last boss. Includes the extra Mythic bosses (Ironspine, Azshir,",
+        "-- Fallen Champion, Scorn, Scarlet Commander Mograine, ...).",
+        "DELETE FROM `instance_encounters` WHERE `entry` IN (1140, 1141, 1142, 1143, 1144, 1145, 1146, 1147, 1148, 1149, 1150, 1151, 1152, 1153, 1154, 1155, 1156, 1157, 1158, 1159, 1161, 1162, 1163, 1164, 1165, 1166, 1167, 1219, 1220, 1221, 1222, 1224, 1225, 1226, 1227, 1228, 1229, 1230, 1231, 1232, 1233, 1234, 1235, 1236, 1237, 1238, 1239, 1240, 1241, 1242, 1243, 1244, 1245, 1267, 1268, 1269, 1270, 1271, 1272, 1273, 1274, 1275, 1276, 1277, 1278, 1279, 1280, 1343, 1344, 1345, 1346, 1347, 1348, 1349, 1350, 1361, 1362, 1363, 1364, 1365, 1366, 1367, 1368, 1378, 1379, 1380, 1381, 1382, 1422, 1423, 1424, 1425, 1426, 1427, 1428, 1429, 1430, 1431, 1432, 1433, 1434, 1435, 1436, 1437, 1438, 1439, 1440, 1441, 1443, 1444, 1445, 1446, 1447, 1448, 1449, 1450, 1451, 1452, 1453, 1454, 1455, 1457, 1458, 1459, 1460, 1461, 1462, 1463, 1464, 1465, 1466, 1467, 1468, 1469, 1470, 1471, 1472, 1473, 1474, 1475, 1476, 1477, 1478, 1479, 1480, 1481, 1482, 1483, 1484, 1485, 1486, 1487, 1488, 1490, 1491, 1492, 1493, 1536, 1537, 1538, 1539, 1540, 1547, 1548, 1549, 1551, 1552, 1553, 1554, 1585, 1586, 1587, 1588, 1589, 1590, 1591, 1592, 1593, 1594, 1595, 1596, 1597, 1598, 1599, 1600, 1883, 1980, 1985, 2141, 2142, 2143, 2144, 2145, 2146, 2147, 2148, 2149, 2150, 2151, 2152, 2153, 2154, 2155, 2156, 2157, 2158, 2159, 2227, 2228, 2229, 2230, 2231, 2232, 2233, 2234, 2235, 2236, 2237, 2242, 2244, 2245, 2343, 2344, 2345, 2346, 2347, 2348, 2349, 2350, 2361, 2362, 2363, 2364, 2365, 2366, 2367, 2368, 2422, 2423, 2424, 2425, 2426, 2427, 2428, 2429, 2444, 2445, 2446, 2447, 2448, 2449, 2450, 2451, 2452, 2453, 2454, 2455, 2456, 2457, 2458, 2459, 2460, 2461, 2462, 2463, 2464, 2465, 2466, 2467, 2468, 2469, 2470, 2471, 2472, 2473, 2474, 2475, 2476, 2477, 2478, 2479, 2480, 2481, 2482, 2483, 2484, 2602, 2603, 2604, 2605, 2606, 2607, 2608, 2609, 2610, 2611, 2612, 2613, 2614, 2615, 2616, 2617, 2618, 2619, 2620, 2621, 2622, 2623, 2624, 2626, 2980, 2981, 2982, 2983, 2984, 2985, 2986, 3318, 3319, 3320, 3321, 3322, 3323, 3324, 3325, 3326, 3456, 3985, 15030, 15031, 15032, 15033, 15034, 15035, 15036, 15037, 15038, 15039, 15040, 15041, 36050, 36051, 36052, 36053, 36054);"
+      ]
+    },
+    {
+      "source": "data/sql/updates/pending_db_world/rev_20261024_07_coa_raid_instance_encounters.sql",
+      "rows": 502,
+      "records": [
+        {
+          "line": 42,
+          "text": "(900, 0, 15348, 0, 'Kurinnaxx (CoA DBC map 509 diff 1, was 718)'),"
+        },
+        {
+          "line": 43,
+          "text": "(2992, 0, 39751, 0, 'Baltharus the Warborn (CoA DBC map 724 diff 2, was 889)'),"
+        },
+        {
+          "line": 44,
+          "text": "(4001, 0, 22887, 0, 'High Warlord Naj''entus (CoA DBC map 564 diff 0, was 601)'),"
+        },
+        {
+          "line": 45,
+          "text": "(4002, 0, 22898, 0, 'Supremus (CoA DBC map 564 diff 0, was 602)'),"
+        },
+        {
+          "line": 46,
+          "text": "(4003, 0, 22841, 0, 'Shade of Akama (CoA DBC map 564 diff 0, was 603)'),"
+        },
+        {
+          "line": 47,
+          "text": "(4004, 0, 22871, 0, 'Teron Gorefiend (CoA DBC map 564 diff 0, was 604)'),"
+        },
+        {
+          "line": 48,
+          "text": "(4005, 0, 22948, 0, 'Gurtogg Bloodboil (CoA DBC map 564 diff 0, was 605)'),"
+        },
+        {
+          "line": 49,
+          "text": "(4006, 0, 23420, 0, 'Reliquary of Souls (CoA DBC map 564 diff 0, was 606)'),"
+        },
+        {
+          "line": 50,
+          "text": "(4007, 0, 22947, 0, 'Mother Shahraz (CoA DBC map 564 diff 0, was 607)'),"
+        },
+        {
+          "line": 51,
+          "text": "(4008, 0, 22917, 430, 'Illidan Stormrage (CoA DBC map 564 diff 0, was 609)'),"
+        },
+        {
+          "line": 52,
+          "text": "(4009, 0, 12435, 0, 'Razorgore the Untamed (CoA DBC map 469 diff 0, was 610)'),"
+        },
+        {
+          "line": 53,
+          "text": "(4010, 0, 13020, 0, 'Vaelastrasz the Corrupt (CoA DBC map 469 diff 0, was 611)'),"
+        },
+        {
+          "line": 54,
+          "text": "(4011, 0, 12017, 0, 'Broodlord Lashlayer (CoA DBC map 469 diff 0, was 612)'),"
+        },
+        {
+          "line": 55,
+          "text": "(4012, 0, 11983, 0, 'Firemaw (CoA DBC map 469 diff 0, was 613)'),"
+        },
+        {
+          "line": 56,
+          "text": "(4013, 0, 14020, 0, 'Chromaggus (CoA DBC map 469 diff 0, was 616)'),"
+        },
+        {
+          "line": 57,
+          "text": "(4014, 0, 11583, 422, 'Nefarian (CoA DBC map 469 diff 0, was 617)'),"
+        },
+        {
+          "line": 58,
+          "text": "(4015, 0, 21216, 0, 'Hydross the Unstable (CoA DBC map 548 diff 0, was 623)'),"
+        },
+        {
+          "line": 59,
+          "text": "(4016, 0, 21215, 0, 'Leotheras the Blind (CoA DBC map 548 diff 0, was 625)'),"
+        },
+        {
+          "line": 60,
+          "text": "(4017, 0, 21214, 0, 'Fathom-Lord Karathress (CoA DBC map 548 diff 0, was 626)'),"
+        },
+        {
+          "line": 61,
+          "text": "(4018, 0, 21213, 0, 'Morogrim Tidewalker (CoA DBC map 548 diff 0, was 627)'),"
+        },
+        {
+          "line": 62,
+          "text": "(4019, 0, 21212, 429, 'Lady Vashj (CoA DBC map 548 diff 0, was 628)'),"
+        },
+        {
+          "line": 63,
+          "text": "(4020, 0, 18831, 0, 'High King Maulgar (CoA DBC map 565 diff 0, was 649)'),"
+        },
+        {
+          "line": 64,
+          "text": "(4021, 0, 19044, 427, 'Gruul the Dragonkiller (CoA DBC map 565 diff 0, was 650)'),"
+        },
+        {
+          "line": 65,
+          "text": "(4022, 0, 17257, 426, 'Magtheridon (CoA DBC map 544 diff 0, was 651)'),"
+        },
+        {
+          "line": 66,
+          "text": "(4023, 0, 15687, 0, 'Moroes (CoA DBC map 532 diff 0, was 653)'),"
+        },
+        {
+          "line": 67,
+          "text": "(4024, 0, 16457, 0, 'Maiden of the Virtue (CoA DBC map 532 diff 0, was 654)'),"
+        },
+        {
+          "line": 68,
+          "text": "(4025, 0, 15691, 0, 'The Curator (CoA DBC map 532 diff 0, was 656)'),"
+        },
+        {
+          "line": 69,
+          "text": "(4026, 0, 15688, 0, 'Terestian Illhoof (CoA DBC map 532 diff 0, was 657)'),"
+        },
+        {
+          "line": 70,
+          "text": "(4027, 0, 16524, 0, 'Shade of Aran (CoA DBC map 532 diff 0, was 658)'),"
+        },
+        {
+          "line": 71,
+          "text": "(4028, 0, 15689, 0, 'Netherspite (CoA DBC map 532 diff 0, was 659)'),"
+        },
+        {
+          "line": 72,
+          "text": "(4029, 0, 15690, 425, 'Prince Malchezaar (CoA DBC map 532 diff 0, was 661)'),"
+        },
+        {
+          "line": 73,
+          "text": "(4030, 0, 17225, 0, 'Nightbane (CoA DBC map 532 diff 0, was 662)'),"
+        },
+        {
+          "line": 74,
+          "text": "(4031, 0, 12118, 0, 'Lucifron (CoA DBC map 409 diff 0, was 663)'),"
+        },
+        {
+          "line": 75,
+          "text": "(4032, 0, 11982, 0, 'Magmadar (CoA DBC map 409 diff 0, was 664)'),"
+        },
+        {
+          "line": 76,
+          "text": "(4033, 0, 12259, 0, 'Gehennas (CoA DBC map 409 diff 0, was 665)'),"
+        },
+        {
+          "line": 77,
+          "text": "(4034, 0, 12057, 0, 'Garr (CoA DBC map 409 diff 0, was 666)'),"
+        },
+        {
+          "line": 78,
+          "text": "(4035, 0, 12264, 0, 'Shazzrah (CoA DBC map 409 diff 0, was 667)'),"
+        },
+        {
+          "line": 79,
+          "text": "(4036, 0, 12056, 0, 'Baron Geddon (CoA DBC map 409 diff 0, was 668)'),"
+        },
+        {
+          "line": 80,
+          "text": "(4037, 0, 12098, 0, 'Sulfuron Harbinger (CoA DBC map 409 diff 0, was 669)'),"
+        },
+        {
+          "line": 81,
+          "text": "(4038, 0, 11988, 0, 'Golemagg the Incinerator (CoA DBC map 409 diff 0, was 670)'),"
+        },
+        {
+          "line": 82,
+          "text": "(4039, 0, 11502, 421, 'Ragnaros (CoA DBC map 409 diff 0, was 672)'),"
+        },
+        {
+          "line": 83,
+          "text": "(4040, 0, 15956, 0, 'Anub''Rekhan (CoA DBC map 533 diff 0, was 673/674)'),"
+        },
+        {
+          "line": 84,
+          "text": "(4041, 0, 15953, 0, 'Grand Widow Faerlina (CoA DBC map 533 diff 0, was 677/678)'),"
+        },
+        {
+          "line": 85,
+          "text": "(4042, 0, 15952, 0, 'Maexxna (CoA DBC map 533 diff 0, was 679/680)'),"
+        },
+        {
+          "line": 86,
+          "text": "(4043, 0, 15954, 0, 'Noth the Plaguebringer (CoA DBC map 533 diff 0, was 681/682)'),"
+        },
+        {
+          "line": 87,
+          "text": "(4044, 0, 15936, 0, 'Heigan the Unclean (CoA DBC map 533 diff 0, was 683/684)'),"
+        },
+        {
+          "line": 88,
+          "text": "(4045, 0, 16011, 0, 'Loatheb (CoA DBC map 533 diff 0, was 685/686)'),"
+        },
+        {
+          "line": 89,
+          "text": "(4046, 0, 16061, 0, 'Instructor Razuvious (CoA DBC map 533 diff 0, was 687/689)'),"
+        },
+        {
+          "line": 90,
+          "text": "(4047, 0, 16060, 0, 'Gothik the Harvester (CoA DBC map 533 diff 0, was 690/691)'),"
+        },
+        {
+          "line": 91,
+          "text": "(4048, 0, 16028, 0, 'Patchwerk (CoA DBC map 533 diff 0, was 694/695)'),"
+        },
+        {
+          "line": 92,
+          "text": "(4049, 0, 15931, 0, 'Grobbulus (CoA DBC map 533 diff 0, was 696/697)'),"
+        },
+        {
+          "line": 93,
+          "text": "(4050, 0, 15932, 0, 'Gluth (CoA DBC map 533 diff 0, was 698/699)'),"
+        },
+        {
+          "line": 94,
+          "text": "(4051, 0, 15928, 0, 'Thaddius (CoA DBC map 533 diff 0, was 700/701)'),"
+        },
+        {
+          "line": 95,
+          "text": "(4052, 0, 15989, 0, 'Sapphiron (CoA DBC map 533 diff 0, was 702/703)'),"
+        },
+        {
+          "line": 96,
+          "text": "(4053, 0, 15990, 433, 'Kel''Thuzad (CoA DBC map 533 diff 0, was 704/706)'),"
+        },
+        {
+          "line": 97,
+          "text": "(4054, 0, 10184, 434, 'Onyxia (CoA DBC map 249 diff 0, was 707/708)'),"
+        },
+        {
+          "line": 98,
+          "text": "(4055, 0, 15263, 0, 'The Prophet Skeram (CoA DBC map 531 diff 0, was 709)'),"
+        },
+        {
+          "line": 99,
+          "text": "(4056, 0, 15544, 0, 'Silithid Royalty (CoA DBC map 531 diff 0, was 710)'),"
+        },
+        {
+          "line": 100,
+          "text": "(4057, 0, 15516, 0, 'Battleguard Sartura (CoA DBC map 531 diff 0, was 711)'),"
+        },
+        {
+          "line": 101,
+          "text": "(4058, 0, 15510, 0, 'Fankriss the Unyielding (CoA DBC map 531 diff 0, was 712)'),"
+        },
+        {
+          "line": 102,
+          "text": "(4059, 0, 15299, 0, 'Viscidus (CoA DBC map 531 diff 0, was 713)'),"
+        },
+        {
+          "line": 103,
+          "text": "(4060, 0, 15509, 0, 'Princess Huhuran (CoA DBC map 531 diff 0, was 714)'),"
+        },
+        {
+          "line": 104,
+          "text": "(4061, 0, 15275, 0, 'Twin Emperors (CoA DBC map 531 diff 0, was 715)'),"
+        },
+        {
+          "line": 105,
+          "text": "(4062, 0, 15517, 0, 'Ouro (CoA DBC map 531 diff 0, was 716)'),"
+        },
+        {
+          "line": 106,
+          "text": "(4063, 0, 15727, 424, 'C''thun (CoA DBC map 531 diff 0, was 717)'),"
+        },
+        {
+          "line": 107,
+          "text": "(4064, 0, 15348, 0, 'Kurinnaxx (CoA DBC map 509 diff 0, was 718)'),"
+        },
+        {
+          "line": 108,
+          "text": "(4065, 0, 15341, 0, 'General Rajaxx (CoA DBC map 509 diff 0, was 719)'),"
+        },
+        {
+          "line": 109,
+          "text": "(4066, 0, 15340, 0, 'Moam (CoA DBC map 509 diff 0, was 720)'),"
+        },
+        {
+          "line": 110,
+          "text": "(4067, 0, 15370, 0, 'Buru the Gorger (CoA DBC map 509 diff 0, was 721)'),"
+        },
+        {
+          "line": 111,
+          "text": "(4068, 0, 15369, 0, 'Ayamiss the Hunter (CoA DBC map 509 diff 0, was 722)'),"
+        },
+        {
+          "line": 112,
+          "text": "(4069, 0, 15339, 423, 'Ossirian the Unscarred (CoA DBC map 509 diff 0, was 723)'),"
+        },
+        {
+          "line": 113,
+          "text": "(4070, 0, 24892, 0, 'Kalecgos (CoA DBC map 580 diff 0, was 724)'),"
+        },
+        {
+          "line": 114,
+          "text": "(4071, 0, 24882, 0, 'Brutallus (CoA DBC map 580 diff 0, was 725)'),"
+        },
+        {
+          "line": 115,
+          "text": "(4072, 0, 25038, 0, 'Felmyst (CoA DBC map 580 diff 0, was 726)'),"
+        },
+        {
+          "line": 116,
+          "text": "(4073, 0, 25165, 0, 'Eredar Twins (CoA DBC map 580 diff 0, was 727)'),"
+        },
+        {
+          "line": 117,
+          "text": "(4074, 0, 25840, 0, 'M''uru (CoA DBC map 580 diff 0, was 728)'),"
+        },
+        {
+          "line": 118,
+          "text": "(4075, 0, 25315, 432, 'Kil''jaeden (CoA DBC map 580 diff 0, was 729)'),"
+        },
+        {
+          "line": 119,
+          "text": "(4076, 0, 19514, 0, 'Al''ar (CoA DBC map 550 diff 0, was 730)'),"
+        },
+        {
+          "line": 120,
+          "text": "(4077, 0, 19516, 0, 'Void Reaver (CoA DBC map 550 diff 0, was 731)'),"
+        },
+        {
+          "line": 121,
+          "text": "(4078, 0, 18805, 0, 'High Astromancer Solarian (CoA DBC map 550 diff 0, was 732)'),"
+        },
+        {
+          "line": 122,
+          "text": "(4079, 0, 19622, 428, 'Kael''thas Sunstrider (CoA DBC map 550 diff 0, was 733)'),"
+        },
+        {
+          "line": 123,
+          "text": "(4080, 0, 23574, 0, 'Akil''zon (CoA DBC map 568 diff 0, was 778)'),"
+        },
+        {
+          "line": 124,
+          "text": "(4081, 0, 23576, 0, 'Nalorakk (CoA DBC map 568 diff 0, was 779)'),"
+        },
+        {
+          "line": 125,
+          "text": "(4082, 0, 23578, 0, 'Jan''alai (CoA DBC map 568 diff 0, was 780)'),"
+        },
+        {
+          "line": 126,
+          "text": "(4083, 0, 23577, 0, 'Halazzi (CoA DBC map 568 diff 0, was 781)'),"
+        },
+        {
+          "line": 127,
+          "text": "(4084, 0, 24239, 0, 'Hex Lord Malacrass (CoA DBC map 568 diff 0, was 782)'),"
+        },
+        {
+          "line": 128,
+          "text": "(4085, 0, 23863, 431, 'Zul''jin (CoA DBC map 568 diff 0, was 783)'),"
+        },
+        {
+          "line": 129,
+          "text": "(4086, 0, 14507, 0, 'High Priest Venoxis (CoA DBC map 309 diff 0, was 784)'),"
+        },
+        {
+          "line": 130,
+          "text": "(4087, 0, 14517, 0, 'High Priestess Jeklik (CoA DBC map 309 diff 0, was 785)'),"
+        },
+        {
+          "line": 131,
+          "text": "(4088, 0, 14510, 0, 'High Priestess Mar''li (CoA DBC map 309 diff 0, was 786)'),"
+        },
+        {
+          "line": 132,
+          "text": "(4089, 0, 11382, 0, 'Bloodlord Mandokir (CoA DBC map 309 diff 0, was 787)'),"
+        },
+        {
+          "line": 133,
+          "text": "(4090, 0, 28859, 0, 'Malygos (CoA DBC map 616 diff 0, was 734/735)'),"
+        },
+        {
+          "line": 134,
+          "text": "(4091, 0, 14509, 0, 'High Priest Thekal (CoA DBC map 309 diff 0, was 789)'),"
+        },
+        {
+          "line": 135,
+          "text": "(4092, 0, 15114, 0, 'Gahz''ranka (CoA DBC map 309 diff 0, was 790)'),"
+        },
+        {
+          "line": 136,
+          "text": "(4093, 0, 14515, 0, 'High Priestess Arlokk (CoA DBC map 309 diff 0, was 791)'),"
+        },
+        {
+          "line": 137,
+          "text": "(4094, 0, 11380, 0, 'Jin''do the Hexxer (CoA DBC map 309 diff 0, was 792)'),"
+        },
+        {
+          "line": 138,
+          "text": "(4095, 0, 14834, 420, 'Hakkar (CoA DBC map 309 diff 0, was 793)'),"
+        },
+        {
+          "line": 139,
+          "text": "(4096, 0, 22887, 0, 'High Warlord Naj''entus (CoA DBC map 564 diff 1, was 601)'),"
+        },
+        {
+          "line": 140,
+          "text": "(4097, 0, 22898, 0, 'Supremus (CoA DBC map 564 diff 1, was 602)'),"
+        },
+        {
+          "line": 141,
+          "text": "(4098, 0, 22841, 0, 'Shade of Akama (CoA DBC map 564 diff 1, was 603)'),"
+        },
+        {
+          "line": 142,
+          "text": "(4099, 0, 22871, 0, 'Teron Gorefiend (CoA DBC map 564 diff 1, was 604)'),"
+        },
+        {
+          "line": 143,
+          "text": "(4100, 0, 22948, 0, 'Gurtogg Bloodboil (CoA DBC map 564 diff 1, was 605)'),"
+        },
+        {
+          "line": 144,
+          "text": "(4101, 0, 23420, 0, 'Reliquary of Souls (CoA DBC map 564 diff 1, was 606)'),"
+        },
+        {
+          "line": 145,
+          "text": "(4102, 0, 22947, 0, 'Mother Shahraz (CoA DBC map 564 diff 1, was 607)'),"
+        },
+        {
+          "line": 146,
+          "text": "(4103, 0, 22917, 196, 'Illidan Stormrage (CoA DBC map 564 diff 1, was 609)'),"
+        },
+        {
+          "line": 147,
+          "text": "(4104, 0, 12435, 0, 'Razorgore the Untamed (CoA DBC map 469 diff 1, was 610)'),"
+        },
+        {
+          "line": 148,
+          "text": "(4105, 0, 13020, 0, 'Vaelastrasz the Corrupt (CoA DBC map 469 diff 1, was 611)'),"
+        },
+        {
+          "line": 149,
+          "text": "(4106, 0, 12017, 0, 'Broodlord Lashlayer (CoA DBC map 469 diff 1, was 612)'),"
+        },
+        {
+          "line": 150,
+          "text": "(4107, 0, 11983, 0, 'Firemaw (CoA DBC map 469 diff 1, was 613)'),"
+        },
+        {
+          "line": 151,
+          "text": "(4108, 0, 14020, 0, 'Chromaggus (CoA DBC map 469 diff 1, was 616)'),"
+        },
+        {
+          "line": 152,
+          "text": "(4109, 0, 11583, 50, 'Nefarian (CoA DBC map 469 diff 1, was 617)'),"
+        },
+        {
+          "line": 153,
+          "text": "(4110, 0, 21216, 0, 'Hydross the Unstable (CoA DBC map 548 diff 1, was 623)'),"
+        },
+        {
+          "line": 154,
+          "text": "(4111, 0, 21215, 0, 'Leotheras the Blind (CoA DBC map 548 diff 1, was 625)'),"
+        },
+        {
+          "line": 155,
+          "text": "(4112, 0, 21214, 0, 'Fathom-Lord Karathress (CoA DBC map 548 diff 1, was 626)'),"
+        },
+        {
+          "line": 156,
+          "text": "(4113, 0, 21213, 0, 'Morogrim Tidewalker (CoA DBC map 548 diff 1, was 627)'),"
+        },
+        {
+          "line": 157,
+          "text": "(4114, 0, 21212, 194, 'Lady Vashj (CoA DBC map 548 diff 1, was 628)'),"
+        },
+        {
+          "line": 158,
+          "text": "(4115, 0, 18831, 0, 'High King Maulgar (CoA DBC map 565 diff 1, was 649)'),"
+        },
+        {
+          "line": 159,
+          "text": "(4116, 0, 19044, 177, 'Gruul the Dragonkiller (CoA DBC map 565 diff 1, was 650)'),"
+        },
+        {
+          "line": 160,
+          "text": "(4117, 0, 17257, 176, 'Magtheridon (CoA DBC map 544 diff 1, was 651)'),"
+        },
+        {
+          "line": 161,
+          "text": "(4118, 0, 15687, 0, 'Moroes (CoA DBC map 532 diff 1, was 653)'),"
+        },
+        {
+          "line": 162,
+          "text": "(4119, 0, 16457, 0, 'Maiden of the Virtue (CoA DBC map 532 diff 1, was 654)'),"
+        },
+        {
+          "line": 163,
+          "text": "(4120, 0, 15691, 0, 'The Curator (CoA DBC map 532 diff 1, was 656)'),"
+        },
+        {
+          "line": 164,
+          "text": "(4121, 0, 15688, 0, 'Terestian Illhoof (CoA DBC map 532 diff 1, was 657)'),"
+        },
+        {
+          "line": 165,
+          "text": "(4122, 0, 16524, 0, 'Shade of Aran (CoA DBC map 532 diff 1, was 658)'),"
+        },
+        {
+          "line": 166,
+          "text": "(4123, 0, 15689, 0, 'Netherspite (CoA DBC map 532 diff 1, was 659)'),"
+        },
+        {
+          "line": 167,
+          "text": "(4124, 0, 15690, 175, 'Prince Malchezaar (CoA DBC map 532 diff 1, was 661)'),"
+        },
+        {
+          "line": 168,
+          "text": "(4125, 0, 17225, 0, 'Nightbane (CoA DBC map 532 diff 1, was 662)'),"
+        },
+        {
+          "line": 169,
+          "text": "(4126, 0, 12118, 0, 'Lucifron (CoA DBC map 409 diff 1, was 663)'),"
+        },
+        {
+          "line": 170,
+          "text": "(4127, 0, 11982, 0, 'Magmadar (CoA DBC map 409 diff 1, was 664)'),"
+        },
+        {
+          "line": 171,
+          "text": "(4128, 0, 12259, 0, 'Gehennas (CoA DBC map 409 diff 1, was 665)'),"
+        },
+        {
+          "line": 172,
+          "text": "(4129, 0, 12057, 0, 'Garr (CoA DBC map 409 diff 1, was 666)'),"
+        },
+        {
+          "line": 173,
+          "text": "(4130, 0, 12264, 0, 'Shazzrah (CoA DBC map 409 diff 1, was 667)'),"
+        },
+        {
+          "line": 174,
+          "text": "(4131, 0, 12056, 0, 'Baron Geddon (CoA DBC map 409 diff 1, was 668)'),"
+        },
+        {
+          "line": 175,
+          "text": "(4132, 0, 12098, 0, 'Sulfuron Harbinger (CoA DBC map 409 diff 1, was 669)'),"
+        },
+        {
+          "line": 176,
+          "text": "(4133, 0, 11988, 0, 'Golemagg the Incinerator (CoA DBC map 409 diff 1, was 670)'),"
+        },
+        {
+          "line": 177,
+          "text": "(4134, 0, 11502, 48, 'Ragnaros (CoA DBC map 409 diff 1, was 672)'),"
+        },
+        {
+          "line": 178,
+          "text": "(4135, 0, 15956, 0, 'Anub''Rekhan (CoA DBC map 533 diff 1, was 673/674)'),"
+        },
+        {
+          "line": 179,
+          "text": "(4136, 0, 15953, 0, 'Grand Widow Faerlina (CoA DBC map 533 diff 1, was 677/678)'),"
+        },
+        {
+          "line": 180,
+          "text": "(4137, 0, 15952, 0, 'Maexxna (CoA DBC map 533 diff 1, was 679/680)'),"
+        },
+        {
+          "line": 181,
+          "text": "(4138, 0, 15954, 0, 'Noth the Plaguebringer (CoA DBC map 533 diff 1, was 681/682)'),"
+        },
+        {
+          "line": 182,
+          "text": "(4139, 0, 15936, 0, 'Heigan the Unclean (CoA DBC map 533 diff 1, was 683/684)'),"
+        },
+        {
+          "line": 183,
+          "text": "(4140, 0, 16011, 0, 'Loatheb (CoA DBC map 533 diff 1, was 685/686)'),"
+        },
+        {
+          "line": 184,
+          "text": "(4141, 0, 16061, 0, 'Instructor Razuvious (CoA DBC map 533 diff 1, was 687/689)'),"
+        },
+        {
+          "line": 185,
+          "text": "(4142, 0, 16060, 0, 'Gothik the Harvester (CoA DBC map 533 diff 1, was 690/691)'),"
+        },
+        {
+          "line": 186,
+          "text": "(4143, 0, 16028, 0, 'Patchwerk (CoA DBC map 533 diff 1, was 694/695)'),"
+        },
+        {
+          "line": 187,
+          "text": "(4144, 0, 15931, 0, 'Grobbulus (CoA DBC map 533 diff 1, was 696/697)'),"
+        },
+        {
+          "line": 188,
+          "text": "(4145, 0, 15932, 0, 'Gluth (CoA DBC map 533 diff 1, was 698/699)'),"
+        },
+        {
+          "line": 189,
+          "text": "(4146, 0, 15928, 0, 'Thaddius (CoA DBC map 533 diff 1, was 700/701)'),"
+        },
+        {
+          "line": 190,
+          "text": "(4147, 0, 15989, 0, 'Sapphiron (CoA DBC map 533 diff 1, was 702/703)'),"
+        },
+        {
+          "line": 191,
+          "text": "(4148, 0, 15990, 227, 'Kel''Thuzad (CoA DBC map 533 diff 1, was 704/706)'),"
+        },
+        {
+          "line": 192,
+          "text": "(4149, 0, 10184, 257, 'Onyxia (CoA DBC map 249 diff 1, was 707/708)'),"
+        },
+        {
+          "line": 193,
+          "text": "(4150, 0, 15263, 0, 'The Prophet Skeram (CoA DBC map 531 diff 1, was 709)'),"
+        },
+        {
+          "line": 194,
+          "text": "(4151, 0, 15544, 0, 'Silithid Royalty (CoA DBC map 531 diff 1, was 710)'),"
+        },
+        {
+          "line": 195,
+          "text": "(4152, 0, 15516, 0, 'Battleguard Sartura (CoA DBC map 531 diff 1, was 711)'),"
+        },
+        {
+          "line": 196,
+          "text": "(4153, 0, 15510, 0, 'Fankriss the Unyielding (CoA DBC map 531 diff 1, was 712)'),"
+        },
+        {
+          "line": 197,
+          "text": "(4154, 0, 15299, 0, 'Viscidus (CoA DBC map 531 diff 1, was 713)'),"
+        },
+        {
+          "line": 198,
+          "text": "(4155, 0, 15509, 0, 'Princess Huhuran (CoA DBC map 531 diff 1, was 714)'),"
+        },
+        {
+          "line": 199,
+          "text": "(4156, 0, 15275, 0, 'Twin Emperors (CoA DBC map 531 diff 1, was 715)'),"
+        },
+        {
+          "line": 200,
+          "text": "(4157, 0, 15517, 0, 'Ouro (CoA DBC map 531 diff 1, was 716)'),"
+        },
+        {
+          "line": 201,
+          "text": "(4158, 0, 15727, 161, 'C''thun (CoA DBC map 531 diff 1, was 717)'),"
+        },
+        {
+          "line": 202,
+          "text": "(4159, 0, 15348, 0, 'Kurinnaxx (CoA DBC map 509 diff 1, was 718)'),"
+        },
+        {
+          "line": 203,
+          "text": "(4160, 0, 15341, 0, 'General Rajaxx (CoA DBC map 509 diff 1, was 719)'),"
+        },
+        {
+          "line": 204,
+          "text": "(4161, 0, 15340, 0, 'Moam (CoA DBC map 509 diff 1, was 720)'),"
+        },
+        {
+          "line": 205,
+          "text": "(4162, 0, 15370, 0, 'Buru the Gorger (CoA DBC map 509 diff 1, was 721)'),"
+        },
+        {
+          "line": 206,
+          "text": "(4163, 0, 15369, 0, 'Ayamiss the Hunter (CoA DBC map 509 diff 1, was 722)'),"
+        },
+        {
+          "line": 207,
+          "text": "(4164, 0, 15339, 160, 'Ossirian the Unscarred (CoA DBC map 509 diff 1, was 723)'),"
+        },
+        {
+          "line": 208,
+          "text": "(4165, 0, 24892, 0, 'Kalecgos (CoA DBC map 580 diff 1, was 724)'),"
+        },
+        {
+          "line": 209,
+          "text": "(4166, 0, 24882, 0, 'Brutallus (CoA DBC map 580 diff 1, was 725)'),"
+        },
+        {
+          "line": 210,
+          "text": "(4167, 0, 25038, 0, 'Felmyst (CoA DBC map 580 diff 1, was 726)'),"
+        },
+        {
+          "line": 211,
+          "text": "(4168, 0, 25165, 0, 'Eredar Twins (CoA DBC map 580 diff 1, was 727)'),"
+        },
+        {
+          "line": 212,
+          "text": "(4169, 0, 25840, 0, 'M''uru (CoA DBC map 580 diff 1, was 728)'),"
+        },
+        {
+          "line": 213,
+          "text": "(4170, 0, 25315, 199, 'Kil''jaeden (CoA DBC map 580 diff 1, was 729)'),"
+        },
+        {
+          "line": 214,
+          "text": "(4171, 0, 19514, 0, 'Al''ar (CoA DBC map 550 diff 1, was 730)'),"
+        },
+        {
+          "line": 215,
+          "text": "(4172, 0, 19516, 0, 'Void Reaver (CoA DBC map 550 diff 1, was 731)'),"
+        },
+        {
+          "line": 216,
+          "text": "(4173, 0, 18805, 0, 'High Astromancer Solarian (CoA DBC map 550 diff 1, was 732)'),"
+        },
+        {
+          "line": 217,
+          "text": "(4174, 0, 19622, 193, 'Kael''thas Sunstrider (CoA DBC map 550 diff 1, was 733)'),"
+        },
+        {
+          "line": 218,
+          "text": "(4175, 0, 23574, 0, 'Akil''zon (CoA DBC map 568 diff 1, was 778)'),"
+        },
+        {
+          "line": 219,
+          "text": "(4176, 0, 23576, 0, 'Nalorakk (CoA DBC map 568 diff 1, was 779)'),"
+        },
+        {
+          "line": 220,
+          "text": "(4177, 0, 23578, 0, 'Jan''alai (CoA DBC map 568 diff 1, was 780)'),"
+        },
+        {
+          "line": 221,
+          "text": "(4178, 0, 23577, 0, 'Halazzi (CoA DBC map 568 diff 1, was 781)'),"
+        },
+        {
+          "line": 222,
+          "text": "(4179, 0, 24239, 0, 'Hex Lord Malacrass (CoA DBC map 568 diff 1, was 782)'),"
+        },
+        {
+          "line": 223,
+          "text": "(4180, 0, 23863, 197, 'Zul''jin (CoA DBC map 568 diff 1, was 783)'),"
+        },
+        {
+          "line": 224,
+          "text": "(4181, 0, 14507, 0, 'High Priest Venoxis (CoA DBC map 309 diff 1, was 784)'),"
+        },
+        {
+          "line": 225,
+          "text": "(4182, 0, 14517, 0, 'High Priestess Jeklik (CoA DBC map 309 diff 1, was 785)'),"
+        },
+        {
+          "line": 226,
+          "text": "(4183, 0, 14510, 0, 'High Priestess Mar''li (CoA DBC map 309 diff 1, was 786)'),"
+        },
+        {
+          "line": 227,
+          "text": "(4184, 0, 11382, 0, 'Bloodlord Mandokir (CoA DBC map 309 diff 1, was 787)'),"
+        },
+        {
+          "line": 228,
+          "text": "(4185, 0, 28859, 237, 'Malygos (CoA DBC map 616 diff 1, was 734/735)'),"
+        },
+        {
+          "line": 229,
+          "text": "(4186, 0, 14509, 0, 'High Priest Thekal (CoA DBC map 309 diff 1, was 789)'),"
+        },
+        {
+          "line": 230,
+          "text": "(4187, 0, 15114, 0, 'Gahz''ranka (CoA DBC map 309 diff 1, was 790)'),"
+        },
+        {
+          "line": 231,
+          "text": "(4188, 0, 14515, 0, 'High Priestess Arlokk (CoA DBC map 309 diff 1, was 791)'),"
+        },
+        {
+          "line": 232,
+          "text": "(4189, 0, 11380, 0, 'Jin''do the Hexxer (CoA DBC map 309 diff 1, was 792)'),"
+        },
+        {
+          "line": 233,
+          "text": "(4190, 0, 14834, 42, 'Hakkar (CoA DBC map 309 diff 1, was 793)'),"
+        },
+        {
+          "line": 234,
+          "text": "(4191, 0, 22887, 0, 'High Warlord Naj''entus (CoA DBC map 564 diff 2, was 601)'),"
+        },
+        {
+          "line": 235,
+          "text": "(4192, 0, 22898, 0, 'Supremus (CoA DBC map 564 diff 2, was 602)'),"
+        },
+        {
+          "line": 236,
+          "text": "(4193, 0, 22841, 0, 'Shade of Akama (CoA DBC map 564 diff 2, was 603)'),"
+        },
+        {
+          "line": 237,
+          "text": "(4194, 0, 22871, 0, 'Teron Gorefiend (CoA DBC map 564 diff 2, was 604)'),"
+        },
+        {
+          "line": 238,
+          "text": "(4195, 0, 22948, 0, 'Gurtogg Bloodboil (CoA DBC map 564 diff 2, was 605)'),"
+        },
+        {
+          "line": 239,
+          "text": "(4196, 0, 23420, 0, 'Reliquary of Souls (CoA DBC map 564 diff 2, was 606)'),"
+        },
+        {
+          "line": 240,
+          "text": "(4197, 0, 22947, 0, 'Mother Shahraz (CoA DBC map 564 diff 2, was 607)'),"
+        },
+        {
+          "line": 241,
+          "text": "(4198, 0, 22917, 445, 'Illidan Stormrage (CoA DBC map 564 diff 2, was 609)'),"
+        },
+        {
+          "line": 242,
+          "text": "(4199, 0, 12435, 0, 'Razorgore the Untamed (CoA DBC map 469 diff 2, was 610)'),"
+        },
+        {
+          "line": 243,
+          "text": "(4200, 0, 13020, 0, 'Vaelastrasz the Corrupt (CoA DBC map 469 diff 2, was 611)'),"
+        },
+        {
+          "line": 244,
+          "text": "(4201, 0, 12017, 0, 'Broodlord Lashlayer (CoA DBC map 469 diff 2, was 612)'),"
+        },
+        {
+          "line": 245,
+          "text": "(4202, 0, 11983, 0, 'Firemaw (CoA DBC map 469 diff 2, was 613)'),"
+        },
+        {
+          "line": 246,
+          "text": "(4203, 0, 14020, 0, 'Chromaggus (CoA DBC map 469 diff 2, was 616)'),"
+        },
+        {
+          "line": 247,
+          "text": "(4204, 0, 11583, 437, 'Nefarian (CoA DBC map 469 diff 2, was 617)'),"
+        },
+        {
+          "line": 248,
+          "text": "(4205, 0, 21216, 0, 'Hydross the Unstable (CoA DBC map 548 diff 2, was 623)'),"
+        },
+        {
+          "line": 249,
+          "text": "(4206, 0, 21215, 0, 'Leotheras the Blind (CoA DBC map 548 diff 2, was 625)'),"
+        },
+        {
+          "line": 250,
+          "text": "(4207, 0, 21214, 0, 'Fathom-Lord Karathress (CoA DBC map 548 diff 2, was 626)'),"
+        },
+        {
+          "line": 251,
+          "text": "(4208, 0, 21213, 0, 'Morogrim Tidewalker (CoA DBC map 548 diff 2, was 627)'),"
+        },
+        {
+          "line": 252,
+          "text": "(4209, 0, 21212, 444, 'Lady Vashj (CoA DBC map 548 diff 2, was 628)'),"
+        },
+        {
+          "line": 253,
+          "text": "(4210, 0, 18831, 0, 'High King Maulgar (CoA DBC map 565 diff 2, was 649)'),"
+        },
+        {
+          "line": 254,
+          "text": "(4211, 0, 19044, 442, 'Gruul the Dragonkiller (CoA DBC map 565 diff 2, was 650)'),"
+        },
+        {
+          "line": 255,
+          "text": "(4212, 0, 17257, 441, 'Magtheridon (CoA DBC map 544 diff 2, was 651)'),"
+        },
+        {
+          "line": 256,
+          "text": "(4213, 0, 15687, 0, 'Moroes (CoA DBC map 532 diff 2, was 653)'),"
+        },
+        {
+          "line": 257,
+          "text": "(4214, 0, 16457, 0, 'Maiden of the Virtue (CoA DBC map 532 diff 2, was 654)'),"
+        },
+        {
+          "line": 258,
+          "text": "(4215, 0, 15691, 0, 'The Curator (CoA DBC map 532 diff 2, was 656)'),"
+        },
+        {
+          "line": 259,
+          "text": "(4216, 0, 15688, 0, 'Terestian Illhoof (CoA DBC map 532 diff 2, was 657)'),"
+        },
+        {
+          "line": 260,
+          "text": "(4217, 0, 16524, 0, 'Shade of Aran (CoA DBC map 532 diff 2, was 658)'),"
+        },
+        {
+          "line": 261,
+          "text": "(4218, 0, 15689, 0, 'Netherspite (CoA DBC map 532 diff 2, was 659)'),"
+        },
+        {
+          "line": 262,
+          "text": "(4219, 0, 15690, 440, 'Prince Malchezaar (CoA DBC map 532 diff 2, was 661)'),"
+        },
+        {
+          "line": 263,
+          "text": "(4220, 0, 17225, 0, 'Nightbane (CoA DBC map 532 diff 2, was 662)'),"
+        },
+        {
+          "line": 264,
+          "text": "(4221, 0, 12118, 0, 'Lucifron (CoA DBC map 409 diff 2, was 663)'),"
+        },
+        {
+          "line": 265,
+          "text": "(4222, 0, 11982, 0, 'Magmadar (CoA DBC map 409 diff 2, was 664)'),"
+        },
+        {
+          "line": 266,
+          "text": "(4223, 0, 12259, 0, 'Gehennas (CoA DBC map 409 diff 2, was 665)'),"
+        },
+        {
+          "line": 267,
+          "text": "(4224, 0, 12057, 0, 'Garr (CoA DBC map 409 diff 2, was 666)'),"
+        },
+        {
+          "line": 268,
+          "text": "(4225, 0, 12264, 0, 'Shazzrah (CoA DBC map 409 diff 2, was 667)'),"
+        },
+        {
+          "line": 269,
+          "text": "(4226, 0, 12056, 0, 'Baron Geddon (CoA DBC map 409 diff 2, was 668)'),"
+        },
+        {
+          "line": 270,
+          "text": "(4227, 0, 12098, 0, 'Sulfuron Harbinger (CoA DBC map 409 diff 2, was 669)'),"
+        },
+        {
+          "line": 271,
+          "text": "(4228, 0, 11988, 0, 'Golemagg the Incinerator (CoA DBC map 409 diff 2, was 670)'),"
+        },
+        {
+          "line": 272,
+          "text": "(4229, 0, 11502, 436, 'Ragnaros (CoA DBC map 409 diff 2, was 672)'),"
+        },
+        {
+          "line": 273,
+          "text": "(4230, 0, 15956, 0, 'Anub''Rekhan (CoA DBC map 533 diff 2, was 673/674)'),"
+        },
+        {
+          "line": 274,
+          "text": "(4231, 0, 15953, 0, 'Grand Widow Faerlina (CoA DBC map 533 diff 2, was 677/678)'),"
+        },
+        {
+          "line": 275,
+          "text": "(4232, 0, 15952, 0, 'Maexxna (CoA DBC map 533 diff 2, was 679/680)'),"
+        },
+        {
+          "line": 276,
+          "text": "(4233, 0, 15954, 0, 'Noth the Plaguebringer (CoA DBC map 533 diff 2, was 681/682)'),"
+        },
+        {
+          "line": 277,
+          "text": "(4234, 0, 15936, 0, 'Heigan the Unclean (CoA DBC map 533 diff 2, was 683/684)'),"
+        },
+        {
+          "line": 278,
+          "text": "(4235, 0, 16011, 0, 'Loatheb (CoA DBC map 533 diff 2, was 685/686)'),"
+        },
+        {
+          "line": 279,
+          "text": "(4236, 0, 16061, 0, 'Instructor Razuvious (CoA DBC map 533 diff 2, was 687/689)'),"
+        },
+        {
+          "line": 280,
+          "text": "(4237, 0, 16060, 0, 'Gothik the Harvester (CoA DBC map 533 diff 2, was 690/691)'),"
+        },
+        {
+          "line": 281,
+          "text": "(4238, 0, 16028, 0, 'Patchwerk (CoA DBC map 533 diff 2, was 694/695)'),"
+        },
+        {
+          "line": 282,
+          "text": "(4239, 0, 15931, 0, 'Grobbulus (CoA DBC map 533 diff 2, was 696/697)'),"
+        },
+        {
+          "line": 283,
+          "text": "(4240, 0, 15932, 0, 'Gluth (CoA DBC map 533 diff 2, was 698/699)'),"
+        },
+        {
+          "line": 284,
+          "text": "(4241, 0, 15928, 0, 'Thaddius (CoA DBC map 533 diff 2, was 700/701)'),"
+        },
+        {
+          "line": 285,
+          "text": "(4242, 0, 15989, 0, 'Sapphiron (CoA DBC map 533 diff 2, was 702/703)'),"
+        },
+        {
+          "line": 286,
+          "text": "(4243, 0, 15990, 448, 'Kel''Thuzad (CoA DBC map 533 diff 2, was 704/706)'),"
+        },
+        {
+          "line": 287,
+          "text": "(4244, 0, 10184, 449, 'Onyxia (CoA DBC map 249 diff 2, was 707/708)'),"
+        },
+        {
+          "line": 288,
+          "text": "(4245, 0, 15263, 0, 'The Prophet Skeram (CoA DBC map 531 diff 2, was 709)'),"
+        },
+        {
+          "line": 289,
+          "text": "(4246, 0, 15544, 0, 'Silithid Royalty (CoA DBC map 531 diff 2, was 710)'),"
+        },
+        {
+          "line": 290,
+          "text": "(4247, 0, 15516, 0, 'Battleguard Sartura (CoA DBC map 531 diff 2, was 711)'),"
+        },
+        {
+          "line": 291,
+          "text": "(4248, 0, 15510, 0, 'Fankriss the Unyielding (CoA DBC map 531 diff 2, was 712)'),"
+        },
+        {
+          "line": 292,
+          "text": "(4249, 0, 15299, 0, 'Viscidus (CoA DBC map 531 diff 2, was 713)'),"
+        },
+        {
+          "line": 293,
+          "text": "(4250, 0, 15509, 0, 'Princess Huhuran (CoA DBC map 531 diff 2, was 714)'),"
+        },
+        {
+          "line": 294,
+          "text": "(4251, 0, 15275, 0, 'Twin Emperors (CoA DBC map 531 diff 2, was 715)'),"
+        },
+        {
+          "line": 295,
+          "text": "(4252, 0, 15517, 0, 'Ouro (CoA DBC map 531 diff 2, was 716)'),"
+        },
+        {
+          "line": 296,
+          "text": "(4253, 0, 15727, 439, 'C''thun (CoA DBC map 531 diff 2, was 717)'),"
+        },
+        {
+          "line": 297,
+          "text": "(4254, 0, 15348, 0, 'Kurinnaxx (CoA DBC map 509 diff 2, was 718)'),"
+        },
+        {
+          "line": 298,
+          "text": "(4255, 0, 15341, 0, 'General Rajaxx (CoA DBC map 509 diff 2, was 719)'),"
+        },
+        {
+          "line": 299,
+          "text": "(4256, 0, 15340, 0, 'Moam (CoA DBC map 509 diff 2, was 720)'),"
+        },
+        {
+          "line": 300,
+          "text": "(4257, 0, 15370, 0, 'Buru the Gorger (CoA DBC map 509 diff 2, was 721)'),"
+        },
+        {
+          "line": 301,
+          "text": "(4258, 0, 15369, 0, 'Ayamiss the Hunter (CoA DBC map 509 diff 2, was 722)'),"
+        },
+        {
+          "line": 302,
+          "text": "(4259, 0, 15339, 438, 'Ossirian the Unscarred (CoA DBC map 509 diff 2, was 723)'),"
+        },
+        {
+          "line": 303,
+          "text": "(4260, 0, 24892, 0, 'Kalecgos (CoA DBC map 580 diff 2, was 724)'),"
+        },
+        {
+          "line": 304,
+          "text": "(4261, 0, 24882, 0, 'Brutallus (CoA DBC map 580 diff 2, was 725)'),"
+        },
+        {
+          "line": 305,
+          "text": "(4262, 0, 25038, 0, 'Felmyst (CoA DBC map 580 diff 2, was 726)'),"
+        },
+        {
+          "line": 306,
+          "text": "(4263, 0, 25165, 0, 'Eredar Twins (CoA DBC map 580 diff 2, was 727)'),"
+        },
+        {
+          "line": 307,
+          "text": "(4264, 0, 25840, 0, 'M''uru (CoA DBC map 580 diff 2, was 728)'),"
+        },
+        {
+          "line": 308,
+          "text": "(4265, 0, 25315, 447, 'Kil''jaeden (CoA DBC map 580 diff 2, was 729)'),"
+        },
+        {
+          "line": 309,
+          "text": "(4266, 0, 19514, 0, 'Al''ar (CoA DBC map 550 diff 2, was 730)'),"
+        },
+        {
+          "line": 310,
+          "text": "(4267, 0, 19516, 0, 'Void Reaver (CoA DBC map 550 diff 2, was 731)'),"
+        },
+        {
+          "line": 311,
+          "text": "(4268, 0, 18805, 0, 'High Astromancer Solarian (CoA DBC map 550 diff 2, was 732)'),"
+        },
+        {
+          "line": 312,
+          "text": "(4269, 0, 19622, 443, 'Kael''thas Sunstrider (CoA DBC map 550 diff 2, was 733)'),"
+        },
+        {
+          "line": 313,
+          "text": "(4270, 0, 23574, 0, 'Akil''zon (CoA DBC map 568 diff 2, was 778)'),"
+        },
+        {
+          "line": 314,
+          "text": "(4271, 0, 23576, 0, 'Nalorakk (CoA DBC map 568 diff 2, was 779)'),"
+        },
+        {
+          "line": 315,
+          "text": "(4272, 0, 23578, 0, 'Jan''alai (CoA DBC map 568 diff 2, was 780)'),"
+        },
+        {
+          "line": 316,
+          "text": "(4273, 0, 23577, 0, 'Halazzi (CoA DBC map 568 diff 2, was 781)'),"
+        },
+        {
+          "line": 317,
+          "text": "(4274, 0, 24239, 0, 'Hex Lord Malacrass (CoA DBC map 568 diff 2, was 782)'),"
+        },
+        {
+          "line": 318,
+          "text": "(4275, 0, 23863, 446, 'Zul''jin (CoA DBC map 568 diff 2, was 783)'),"
+        },
+        {
+          "line": 319,
+          "text": "(4276, 0, 14507, 0, 'High Priest Venoxis (CoA DBC map 309 diff 2, was 784)'),"
+        },
+        {
+          "line": 320,
+          "text": "(4277, 0, 14517, 0, 'High Priestess Jeklik (CoA DBC map 309 diff 2, was 785)'),"
+        },
+        {
+          "line": 321,
+          "text": "(4278, 0, 14510, 0, 'High Priestess Mar''li (CoA DBC map 309 diff 2, was 786)'),"
+        },
+        {
+          "line": 322,
+          "text": "(4279, 0, 11382, 0, 'Bloodlord Mandokir (CoA DBC map 309 diff 2, was 787)'),"
+        },
+        {
+          "line": 323,
+          "text": "(4280, 0, 28859, 0, 'Malygos (CoA DBC map 616 diff 2, was 734/735)'),"
+        },
+        {
+          "line": 324,
+          "text": "(4281, 0, 14509, 0, 'High Priest Thekal (CoA DBC map 309 diff 2, was 789)'),"
+        },
+        {
+          "line": 325,
+          "text": "(4282, 0, 15114, 0, 'Gahz''ranka (CoA DBC map 309 diff 2, was 790)'),"
+        },
+        {
+          "line": 326,
+          "text": "(4283, 0, 14515, 0, 'High Priestess Arlokk (CoA DBC map 309 diff 2, was 791)'),"
+        },
+        {
+          "line": 327,
+          "text": "(4284, 0, 11380, 0, 'Jin''do the Hexxer (CoA DBC map 309 diff 2, was 792)'),"
+        },
+        {
+          "line": 328,
+          "text": "(4285, 0, 14834, 435, 'Hakkar (CoA DBC map 309 diff 2, was 793)'),"
+        },
+        {
+          "line": 329,
+          "text": "(4286, 0, 22887, 0, 'High Warlord Naj''entus (CoA DBC map 564 diff 3, was 601)'),"
+        },
+        {
+          "line": 330,
+          "text": "(4287, 0, 22898, 0, 'Supremus (CoA DBC map 564 diff 3, was 602)'),"
+        },
+        {
+          "line": 331,
+          "text": "(4288, 0, 22841, 0, 'Shade of Akama (CoA DBC map 564 diff 3, was 603)'),"
+        },
+        {
+          "line": 332,
+          "text": "(4289, 0, 22871, 0, 'Teron Gorefiend (CoA DBC map 564 diff 3, was 604)'),"
+        },
+        {
+          "line": 333,
+          "text": "(4290, 0, 22948, 0, 'Gurtogg Bloodboil (CoA DBC map 564 diff 3, was 605)'),"
+        },
+        {
+          "line": 334,
+          "text": "(4291, 0, 23420, 0, 'Reliquary of Souls (CoA DBC map 564 diff 3, was 606)'),"
+        },
+        {
+          "line": 335,
+          "text": "(4292, 0, 22947, 0, 'Mother Shahraz (CoA DBC map 564 diff 3, was 607)'),"
+        },
+        {
+          "line": 336,
+          "text": "(4293, 0, 22917, 460, 'Illidan Stormrage (CoA DBC map 564 diff 3, was 609)'),"
+        },
+        {
+          "line": 337,
+          "text": "(4294, 0, 12435, 0, 'Razorgore the Untamed (CoA DBC map 469 diff 3, was 610)'),"
+        },
+        {
+          "line": 338,
+          "text": "(4295, 0, 13020, 0, 'Vaelastrasz the Corrupt (CoA DBC map 469 diff 3, was 611)'),"
+        },
+        {
+          "line": 339,
+          "text": "(4296, 0, 12017, 0, 'Broodlord Lashlayer (CoA DBC map 469 diff 3, was 612)'),"
+        },
+        {
+          "line": 340,
+          "text": "(4297, 0, 11983, 0, 'Firemaw (CoA DBC map 469 diff 3, was 613)'),"
+        },
+        {
+          "line": 341,
+          "text": "(4298, 0, 14020, 0, 'Chromaggus (CoA DBC map 469 diff 3, was 616)'),"
+        },
+        {
+          "line": 342,
+          "text": "(4299, 0, 11583, 452, 'Nefarian (CoA DBC map 469 diff 3, was 617)'),"
+        },
+        {
+          "line": 343,
+          "text": "(4300, 0, 21216, 0, 'Hydross the Unstable (CoA DBC map 548 diff 3, was 623)'),"
+        },
+        {
+          "line": 344,
+          "text": "(4301, 0, 21215, 0, 'Leotheras the Blind (CoA DBC map 548 diff 3, was 625)'),"
+        },
+        {
+          "line": 345,
+          "text": "(4302, 0, 21214, 0, 'Fathom-Lord Karathress (CoA DBC map 548 diff 3, was 626)'),"
+        },
+        {
+          "line": 346,
+          "text": "(4303, 0, 21213, 0, 'Morogrim Tidewalker (CoA DBC map 548 diff 3, was 627)'),"
+        },
+        {
+          "line": 347,
+          "text": "(4304, 0, 21212, 459, 'Lady Vashj (CoA DBC map 548 diff 3, was 628)'),"
+        },
+        {
+          "line": 348,
+          "text": "(4305, 0, 18831, 0, 'High King Maulgar (CoA DBC map 565 diff 3, was 649)'),"
+        },
+        {
+          "line": 349,
+          "text": "(4306, 0, 19044, 457, 'Gruul the Dragonkiller (CoA DBC map 565 diff 3, was 650)'),"
+        },
+        {
+          "line": 350,
+          "text": "(4307, 0, 17257, 456, 'Magtheridon (CoA DBC map 544 diff 3, was 651)'),"
+        },
+        {
+          "line": 351,
+          "text": "(4308, 0, 15687, 0, 'Moroes (CoA DBC map 532 diff 3, was 653)'),"
+        },
+        {
+          "line": 352,
+          "text": "(4309, 0, 16457, 0, 'Maiden of the Virtue (CoA DBC map 532 diff 3, was 654)'),"
+        },
+        {
+          "line": 353,
+          "text": "(4310, 0, 15691, 0, 'The Curator (CoA DBC map 532 diff 3, was 656)'),"
+        },
+        {
+          "line": 354,
+          "text": "(4311, 0, 15688, 0, 'Terestian Illhoof (CoA DBC map 532 diff 3, was 657)'),"
+        },
+        {
+          "line": 355,
+          "text": "(4312, 0, 16524, 0, 'Shade of Aran (CoA DBC map 532 diff 3, was 658)'),"
+        },
+        {
+          "line": 356,
+          "text": "(4313, 0, 15689, 0, 'Netherspite (CoA DBC map 532 diff 3, was 659)'),"
+        },
+        {
+          "line": 357,
+          "text": "(4314, 0, 15690, 455, 'Prince Malchezaar (CoA DBC map 532 diff 3, was 661)'),"
+        },
+        {
+          "line": 358,
+          "text": "(4315, 0, 17225, 0, 'Nightbane (CoA DBC map 532 diff 3, was 662)'),"
+        },
+        {
+          "line": 359,
+          "text": "(4316, 0, 12118, 0, 'Lucifron (CoA DBC map 409 diff 3, was 663)'),"
+        },
+        {
+          "line": 360,
+          "text": "(4317, 0, 11982, 0, 'Magmadar (CoA DBC map 409 diff 3, was 664)'),"
+        },
+        {
+          "line": 361,
+          "text": "(4318, 0, 12259, 0, 'Gehennas (CoA DBC map 409 diff 3, was 665)'),"
+        },
+        {
+          "line": 362,
+          "text": "(4319, 0, 12057, 0, 'Garr (CoA DBC map 409 diff 3, was 666)'),"
+        },
+        {
+          "line": 363,
+          "text": "(4320, 0, 12264, 0, 'Shazzrah (CoA DBC map 409 diff 3, was 667)'),"
+        },
+        {
+          "line": 364,
+          "text": "(4321, 0, 12056, 0, 'Baron Geddon (CoA DBC map 409 diff 3, was 668)'),"
+        },
+        {
+          "line": 365,
+          "text": "(4322, 0, 12098, 0, 'Sulfuron Harbinger (CoA DBC map 409 diff 3, was 669)'),"
+        },
+        {
+          "line": 366,
+          "text": "(4323, 0, 11988, 0, 'Golemagg the Incinerator (CoA DBC map 409 diff 3, was 670)'),"
+        },
+        {
+          "line": 367,
+          "text": "(4324, 0, 11502, 451, 'Ragnaros (CoA DBC map 409 diff 3, was 672)'),"
+        },
+        {
+          "line": 368,
+          "text": "(4325, 0, 15956, 0, 'Anub''Rekhan (CoA DBC map 533 diff 3, was 673/674)'),"
+        },
+        {
+          "line": 369,
+          "text": "(4326, 0, 15953, 0, 'Grand Widow Faerlina (CoA DBC map 533 diff 3, was 677/678)'),"
+        },
+        {
+          "line": 370,
+          "text": "(4327, 0, 15952, 0, 'Maexxna (CoA DBC map 533 diff 3, was 679/680)'),"
+        },
+        {
+          "line": 371,
+          "text": "(4328, 0, 15954, 0, 'Noth the Plaguebringer (CoA DBC map 533 diff 3, was 681/682)'),"
+        },
+        {
+          "line": 372,
+          "text": "(4329, 0, 15936, 0, 'Heigan the Unclean (CoA DBC map 533 diff 3, was 683/684)'),"
+        },
+        {
+          "line": 373,
+          "text": "(4330, 0, 16011, 0, 'Loatheb (CoA DBC map 533 diff 3, was 685/686)'),"
+        },
+        {
+          "line": 374,
+          "text": "(4331, 0, 16061, 0, 'Instructor Razuvious (CoA DBC map 533 diff 3, was 687/689)'),"
+        },
+        {
+          "line": 375,
+          "text": "(4332, 0, 16060, 0, 'Gothik the Harvester (CoA DBC map 533 diff 3, was 690/691)'),"
+        },
+        {
+          "line": 376,
+          "text": "(4333, 0, 16028, 0, 'Patchwerk (CoA DBC map 533 diff 3, was 694/695)'),"
+        },
+        {
+          "line": 377,
+          "text": "(4334, 0, 15931, 0, 'Grobbulus (CoA DBC map 533 diff 3, was 696/697)'),"
+        },
+        {
+          "line": 378,
+          "text": "(4335, 0, 15932, 0, 'Gluth (CoA DBC map 533 diff 3, was 698/699)'),"
+        },
+        {
+          "line": 379,
+          "text": "(4336, 0, 15928, 0, 'Thaddius (CoA DBC map 533 diff 3, was 700/701)'),"
+        },
+        {
+          "line": 380,
+          "text": "(4337, 0, 15989, 0, 'Sapphiron (CoA DBC map 533 diff 3, was 702/703)'),"
+        },
+        {
+          "line": 381,
+          "text": "(4338, 0, 15990, 463, 'Kel''Thuzad (CoA DBC map 533 diff 3, was 704/706)'),"
+        },
+        {
+          "line": 382,
+          "text": "(4339, 0, 10184, 464, 'Onyxia (CoA DBC map 249 diff 3, was 707/708)'),"
+        },
+        {
+          "line": 383,
+          "text": "(4340, 0, 15263, 0, 'The Prophet Skeram (CoA DBC map 531 diff 3, was 709)'),"
+        },
+        {
+          "line": 384,
+          "text": "(4341, 0, 15544, 0, 'Silithid Royalty (CoA DBC map 531 diff 3, was 710)'),"
+        },
+        {
+          "line": 385,
+          "text": "(4342, 0, 15516, 0, 'Battleguard Sartura (CoA DBC map 531 diff 3, was 711)'),"
+        },
+        {
+          "line": 386,
+          "text": "(4343, 0, 15510, 0, 'Fankriss the Unyielding (CoA DBC map 531 diff 3, was 712)'),"
+        },
+        {
+          "line": 387,
+          "text": "(4344, 0, 15299, 0, 'Viscidus (CoA DBC map 531 diff 3, was 713)'),"
+        },
+        {
+          "line": 388,
+          "text": "(4345, 0, 15509, 0, 'Princess Huhuran (CoA DBC map 531 diff 3, was 714)'),"
+        },
+        {
+          "line": 389,
+          "text": "(4346, 0, 15275, 0, 'Twin Emperors (CoA DBC map 531 diff 3, was 715)'),"
+        },
+        {
+          "line": 390,
+          "text": "(4347, 0, 15517, 0, 'Ouro (CoA DBC map 531 diff 3, was 716)'),"
+        },
+        {
+          "line": 391,
+          "text": "(4348, 0, 15727, 454, 'C''thun (CoA DBC map 531 diff 3, was 717)'),"
+        },
+        {
+          "line": 392,
+          "text": "(4349, 0, 15348, 0, 'Kurinnaxx (CoA DBC map 509 diff 3, was 718)'),"
+        },
+        {
+          "line": 393,
+          "text": "(4350, 0, 15341, 0, 'General Rajaxx (CoA DBC map 509 diff 3, was 719)'),"
+        },
+        {
+          "line": 394,
+          "text": "(4351, 0, 15340, 0, 'Moam (CoA DBC map 509 diff 3, was 720)'),"
+        },
+        {
+          "line": 395,
+          "text": "(4352, 0, 15370, 0, 'Buru the Gorger (CoA DBC map 509 diff 3, was 721)'),"
+        },
+        {
+          "line": 396,
+          "text": "(4353, 0, 15369, 0, 'Ayamiss the Hunter (CoA DBC map 509 diff 3, was 722)'),"
+        },
+        {
+          "line": 397,
+          "text": "(4354, 0, 15339, 453, 'Ossirian the Unscarred (CoA DBC map 509 diff 3, was 723)'),"
+        },
+        {
+          "line": 398,
+          "text": "(4355, 0, 24892, 0, 'Kalecgos (CoA DBC map 580 diff 3, was 724)'),"
+        },
+        {
+          "line": 399,
+          "text": "(4356, 0, 24882, 0, 'Brutallus (CoA DBC map 580 diff 3, was 725)'),"
+        },
+        {
+          "line": 400,
+          "text": "(4357, 0, 25038, 0, 'Felmyst (CoA DBC map 580 diff 3, was 726)'),"
+        },
+        {
+          "line": 401,
+          "text": "(4358, 0, 25165, 0, 'Eredar Twins (CoA DBC map 580 diff 3, was 727)'),"
+        },
+        {
+          "line": 402,
+          "text": "(4359, 0, 25840, 0, 'M''uru (CoA DBC map 580 diff 3, was 728)'),"
+        },
+        {
+          "line": 403,
+          "text": "(4360, 0, 25315, 462, 'Kil''jaeden (CoA DBC map 580 diff 3, was 729)'),"
+        },
+        {
+          "line": 404,
+          "text": "(4361, 0, 19514, 0, 'Al''ar (CoA DBC map 550 diff 3, was 730)'),"
+        },
+        {
+          "line": 405,
+          "text": "(4362, 0, 19516, 0, 'Void Reaver (CoA DBC map 550 diff 3, was 731)'),"
+        },
+        {
+          "line": 406,
+          "text": "(4363, 0, 18805, 0, 'High Astromancer Solarian (CoA DBC map 550 diff 3, was 732)'),"
+        },
+        {
+          "line": 407,
+          "text": "(4364, 0, 19622, 458, 'Kael''thas Sunstrider (CoA DBC map 550 diff 3, was 733)'),"
+        },
+        {
+          "line": 408,
+          "text": "(4365, 0, 23574, 0, 'Akil''zon (CoA DBC map 568 diff 3, was 778)'),"
+        },
+        {
+          "line": 409,
+          "text": "(4366, 0, 23576, 0, 'Nalorakk (CoA DBC map 568 diff 3, was 779)'),"
+        },
+        {
+          "line": 410,
+          "text": "(4367, 0, 23578, 0, 'Jan''alai (CoA DBC map 568 diff 3, was 780)'),"
+        },
+        {
+          "line": 411,
+          "text": "(4368, 0, 23577, 0, 'Halazzi (CoA DBC map 568 diff 3, was 781)'),"
+        },
+        {
+          "line": 412,
+          "text": "(4369, 0, 24239, 0, 'Hex Lord Malacrass (CoA DBC map 568 diff 3, was 782)'),"
+        },
+        {
+          "line": 413,
+          "text": "(4370, 0, 23863, 461, 'Zul''jin (CoA DBC map 568 diff 3, was 783)'),"
+        },
+        {
+          "line": 414,
+          "text": "(4371, 0, 14507, 0, 'High Priest Venoxis (CoA DBC map 309 diff 3, was 784)'),"
+        },
+        {
+          "line": 415,
+          "text": "(4372, 0, 14517, 0, 'High Priestess Jeklik (CoA DBC map 309 diff 3, was 785)'),"
+        },
+        {
+          "line": 416,
+          "text": "(4373, 0, 14510, 0, 'High Priestess Mar''li (CoA DBC map 309 diff 3, was 786)'),"
+        },
+        {
+          "line": 417,
+          "text": "(4374, 0, 11382, 0, 'Bloodlord Mandokir (CoA DBC map 309 diff 3, was 787)'),"
+        },
+        {
+          "line": 418,
+          "text": "(4375, 0, 28859, 0, 'Malygos (CoA DBC map 616 diff 3, was 734/735)'),"
+        },
+        {
+          "line": 419,
+          "text": "(4376, 0, 14509, 0, 'High Priest Thekal (CoA DBC map 309 diff 3, was 789)'),"
+        },
+        {
+          "line": 420,
+          "text": "(4377, 0, 15114, 0, 'Gahz''ranka (CoA DBC map 309 diff 3, was 790)'),"
+        },
+        {
+          "line": 421,
+          "text": "(4378, 0, 14515, 0, 'High Priestess Arlokk (CoA DBC map 309 diff 3, was 791)'),"
+        },
+        {
+          "line": 422,
+          "text": "(4379, 0, 11380, 0, 'Jin''do the Hexxer (CoA DBC map 309 diff 3, was 792)'),"
+        },
+        {
+          "line": 423,
+          "text": "(4380, 0, 14834, 450, 'Hakkar (CoA DBC map 309 diff 3, was 793)'),"
+        },
+        {
+          "line": 424,
+          "text": "(4381, 0, 21217, 0, 'The Lurker Below (CoA DBC map 548 diff 0, was 624)'),"
+        },
+        {
+          "line": 425,
+          "text": "(4382, 0, 22520, 0, 'Chess Event (CoA DBC map 532 diff 0, was 660)'),"
+        },
+        {
+          "line": 426,
+          "text": "(4383, 0, 12018, 0, 'Majordomo Executus (CoA DBC map 409 diff 0, was 671)'),"
+        },
+        {
+          "line": 427,
+          "text": "(4384, 1, 59450, 0, 'The Four Horsemen (CoA DBC map 533 diff 0, was 692/693)'),"
+        },
+        {
+          "line": 428,
+          "text": "(4385, 0, 21217, 0, 'The Lurker Below (CoA DBC map 548 diff 1, was 624)'),"
+        },
+        {
+          "line": 429,
+          "text": "(4386, 0, 22520, 0, 'Chess Event (CoA DBC map 532 diff 1, was 660)'),"
+        },
+        {
+          "line": 430,
+          "text": "(4387, 0, 12018, 0, 'Majordomo Executus (CoA DBC map 409 diff 1, was 671)'),"
+        },
+        {
+          "line": 431,
+          "text": "(4388, 1, 59450, 0, 'The Four Horsemen (CoA DBC map 533 diff 1, was 692/693)'),"
+        },
+        {
+          "line": 432,
+          "text": "(4389, 0, 21217, 0, 'The Lurker Below (CoA DBC map 548 diff 2, was 624)'),"
+        },
+        {
+          "line": 433,
+          "text": "(4390, 0, 22520, 0, 'Chess Event (CoA DBC map 532 diff 2, was 660)'),"
+        },
+        {
+          "line": 434,
+          "text": "(4391, 0, 12018, 0, 'Majordomo Executus (CoA DBC map 409 diff 2, was 671)'),"
+        },
+        {
+          "line": 435,
+          "text": "(4392, 1, 59450, 0, 'The Four Horsemen (CoA DBC map 533 diff 2, was 692/693)'),"
+        },
+        {
+          "line": 436,
+          "text": "(4393, 0, 21217, 0, 'The Lurker Below (CoA DBC map 548 diff 3, was 624)'),"
+        },
+        {
+          "line": 437,
+          "text": "(4394, 0, 22520, 0, 'Chess Event (CoA DBC map 532 diff 3, was 660)'),"
+        },
+        {
+          "line": 438,
+          "text": "(4395, 0, 12018, 0, 'Majordomo Executus (CoA DBC map 409 diff 3, was 671)'),"
+        },
+        {
+          "line": 439,
+          "text": "(4396, 1, 59450, 0, 'The Four Horsemen (CoA DBC map 533 diff 3, was 692/693)'),"
+        },
+        {
+          "line": 440,
+          "text": "(4397, 0, 15083, 0, 'The Edge of Madness (CoA DBC map 309 diff 0, was 788)'),"
+        },
+        {
+          "line": 441,
+          "text": "(4401, 0, 15083, 0, 'The Edge of Madness (CoA DBC map 309 diff 1, was 788)'),"
+        },
+        {
+          "line": 442,
+          "text": "(4405, 0, 15083, 0, 'The Edge of Madness (CoA DBC map 309 diff 2, was 788)'),"
+        },
+        {
+          "line": 443,
+          "text": "(4409, 0, 15083, 0, 'The Edge of Madness (CoA DBC map 309 diff 3, was 788)'),"
+        },
+        {
+          "line": 444,
+          "text": "(4413, 0, 28860, 0, 'Sartharion (CoA DBC map 615 diff 0, was 742/743)'),"
+        },
+        {
+          "line": 445,
+          "text": "(4414, 0, 28860, 238, 'Sartharion (CoA DBC map 615 diff 1, was 742/743)'),"
+        },
+        {
+          "line": 446,
+          "text": "(4415, 0, 28860, 0, 'Sartharion (CoA DBC map 615 diff 2, was 742/743)'),"
+        },
+        {
+          "line": 447,
+          "text": "(4416, 0, 28860, 0, 'Sartharion (CoA DBC map 615 diff 3, was 742/743)'),"
+        },
+        {
+          "line": 448,
+          "text": "(4417, 0, 31125, 0, 'Archavon the Stone Watcher (CoA DBC map 624 diff 0, was 772/773)'),"
+        },
+        {
+          "line": 449,
+          "text": "(4418, 0, 31125, 0, 'Archavon the Stone Watcher (CoA DBC map 624 diff 1, was 772/773)'),"
+        },
+        {
+          "line": 450,
+          "text": "(4419, 0, 31125, 0, 'Archavon the Stone Watcher (CoA DBC map 624 diff 2, was 772/773)'),"
+        },
+        {
+          "line": 451,
+          "text": "(4420, 0, 31125, 0, 'Archavon the Stone Watcher (CoA DBC map 624 diff 3, was 772/773)'),"
+        },
+        {
+          "line": 452,
+          "text": "(4437, 0, 32930, 0, 'Kologarn (CoA DBC map 603 diff 0, was 749/763)'),"
+        },
+        {
+          "line": 453,
+          "text": "(4438, 0, 32930, 0, 'Kologarn (CoA DBC map 603 diff 1, was 749/763)'),"
+        },
+        {
+          "line": 454,
+          "text": "(4439, 0, 32930, 0, 'Kologarn (CoA DBC map 603 diff 2, was 749/763)'),"
+        },
+        {
+          "line": 455,
+          "text": "(4440, 0, 32930, 0, 'Kologarn (CoA DBC map 603 diff 3, was 749/763)'),"
+        },
+        {
+          "line": 456,
+          "text": "(4441, 0, 33113, 0, 'Flame Leviathan (CoA DBC map 603 diff 0, was 744/758)'),"
+        },
+        {
+          "line": 457,
+          "text": "(4442, 0, 33113, 0, 'Flame Leviathan (CoA DBC map 603 diff 1, was 744/758)'),"
+        },
+        {
+          "line": 458,
+          "text": "(4443, 0, 33113, 0, 'Flame Leviathan (CoA DBC map 603 diff 2, was 744/758)'),"
+        },
+        {
+          "line": 459,
+          "text": "(4444, 0, 33113, 0, 'Flame Leviathan (CoA DBC map 603 diff 3, was 744/758)'),"
+        },
+        {
+          "line": 460,
+          "text": "(4445, 0, 33118, 0, 'Ignis the Furnace Master (CoA DBC map 603 diff 0, was 745/759)'),"
+        },
+        {
+          "line": 461,
+          "text": "(4446, 0, 33118, 0, 'Ignis the Furnace Master (CoA DBC map 603 diff 1, was 745/759)'),"
+        },
+        {
+          "line": 462,
+          "text": "(4447, 0, 33118, 0, 'Ignis the Furnace Master (CoA DBC map 603 diff 2, was 745/759)'),"
+        },
+        {
+          "line": 463,
+          "text": "(4448, 0, 33118, 0, 'Ignis the Furnace Master (CoA DBC map 603 diff 3, was 745/759)'),"
+        },
+        {
+          "line": 464,
+          "text": "(4449, 0, 33186, 0, 'Razorscale (CoA DBC map 603 diff 0, was 746/760)'),"
+        },
+        {
+          "line": 465,
+          "text": "(4450, 0, 33186, 0, 'Razorscale (CoA DBC map 603 diff 1, was 746/760)'),"
+        },
+        {
+          "line": 466,
+          "text": "(4451, 0, 33186, 0, 'Razorscale (CoA DBC map 603 diff 2, was 746/760)'),"
+        },
+        {
+          "line": 467,
+          "text": "(4452, 0, 33186, 0, 'Razorscale (CoA DBC map 603 diff 3, was 746/760)'),"
+        },
+        {
+          "line": 468,
+          "text": "(4453, 0, 33271, 0, 'General Vezax (CoA DBC map 603 diff 0, was 755/769)'),"
+        },
+        {
+          "line": 469,
+          "text": "(4454, 0, 33271, 0, 'General Vezax (CoA DBC map 603 diff 1, was 755/769)'),"
+        },
+        {
+          "line": 470,
+          "text": "(4455, 0, 33271, 0, 'General Vezax (CoA DBC map 603 diff 2, was 755/769)'),"
+        },
+        {
+          "line": 471,
+          "text": "(4456, 0, 33271, 0, 'General Vezax (CoA DBC map 603 diff 3, was 755/769)'),"
+        },
+        {
+          "line": 472,
+          "text": "(4457, 0, 33288, 0, 'Yogg-Saron (CoA DBC map 603 diff 0, was 756/770)'),"
+        },
+        {
+          "line": 473,
+          "text": "(4458, 0, 33288, 0, 'Yogg-Saron (CoA DBC map 603 diff 1, was 756/770)'),"
+        },
+        {
+          "line": 474,
+          "text": "(4459, 0, 33288, 0, 'Yogg-Saron (CoA DBC map 603 diff 2, was 756/770)'),"
+        },
+        {
+          "line": 475,
+          "text": "(4460, 0, 33288, 0, 'Yogg-Saron (CoA DBC map 603 diff 3, was 756/770)'),"
+        },
+        {
+          "line": 476,
+          "text": "(4461, 0, 33293, 0, 'XT-002 Deconstructor (CoA DBC map 603 diff 0, was 747/761)'),"
+        },
+        {
+          "line": 477,
+          "text": "(4462, 0, 33293, 0, 'XT-002 Deconstructor (CoA DBC map 603 diff 1, was 747/761)'),"
+        },
+        {
+          "line": 478,
+          "text": "(4463, 0, 33293, 0, 'XT-002 Deconstructor (CoA DBC map 603 diff 2, was 747/761)'),"
+        },
+        {
+          "line": 479,
+          "text": "(4464, 0, 33293, 0, 'XT-002 Deconstructor (CoA DBC map 603 diff 3, was 747/761)'),"
+        },
+        {
+          "line": 480,
+          "text": "(4469, 0, 33515, 0, 'Auriaya (CoA DBC map 603 diff 0, was 750/764)'),"
+        },
+        {
+          "line": 481,
+          "text": "(4470, 0, 33515, 0, 'Auriaya (CoA DBC map 603 diff 1, was 750/764)'),"
+        },
+        {
+          "line": 482,
+          "text": "(4471, 0, 33515, 0, 'Auriaya (CoA DBC map 603 diff 2, was 750/764)'),"
+        },
+        {
+          "line": 483,
+          "text": "(4472, 0, 33515, 0, 'Auriaya (CoA DBC map 603 diff 3, was 750/764)'),"
+        },
+        {
+          "line": 484,
+          "text": "(4473, 0, 33993, 0, 'Emalon the Storm Watcher (CoA DBC map 624 diff 0, was 774/775)'),"
+        },
+        {
+          "line": 485,
+          "text": "(4474, 0, 33993, 0, 'Emalon the Storm Watcher (CoA DBC map 624 diff 1, was 774/775)'),"
+        },
+        {
+          "line": 486,
+          "text": "(4475, 0, 33993, 0, 'Emalon the Storm Watcher (CoA DBC map 624 diff 2, was 774/775)'),"
+        },
+        {
+          "line": 487,
+          "text": "(4476, 0, 33993, 0, 'Emalon the Storm Watcher (CoA DBC map 624 diff 3, was 774/775)'),"
+        },
+        {
+          "line": 488,
+          "text": "(4477, 0, 34564, 0, 'Anub''arak (CoA DBC map 649 diff 0, was 645/646/647/648)'),"
+        },
+        {
+          "line": 489,
+          "text": "(4478, 0, 34564, 248, 'Anub''arak (CoA DBC map 649 diff 1, was 645/646/647/648)'),"
+        },
+        {
+          "line": 490,
+          "text": "(4479, 0, 34564, 247, 'Anub''arak (CoA DBC map 649 diff 2, was 645/646/647/648)'),"
+        },
+        {
+          "line": 491,
+          "text": "(4480, 0, 34564, 250, 'Anub''arak (CoA DBC map 649 diff 3, was 645/646/647/648)'),"
+        },
+        {
+          "line": 492,
+          "text": "(4481, 0, 34780, 0, 'Lord Jaraxxus (CoA DBC map 649 diff 0, was 633/634/635/636)'),"
+        },
+        {
+          "line": 493,
+          "text": "(4482, 0, 34780, 0, 'Lord Jaraxxus (CoA DBC map 649 diff 1, was 633/634/635/636)'),"
+        },
+        {
+          "line": 494,
+          "text": "(4483, 0, 34780, 0, 'Lord Jaraxxus (CoA DBC map 649 diff 2, was 633/634/635/636)'),"
+        },
+        {
+          "line": 495,
+          "text": "(4484, 0, 34780, 0, 'Lord Jaraxxus (CoA DBC map 649 diff 3, was 633/634/635/636)'),"
+        },
+        {
+          "line": 496,
+          "text": "(4485, 0, 35013, 0, 'Koralon the Flame Watcher (CoA DBC map 624 diff 0, was 776/777)'),"
+        },
+        {
+          "line": 497,
+          "text": "(4486, 0, 35013, 0, 'Koralon the Flame Watcher (CoA DBC map 624 diff 1, was 776/777)'),"
+        },
+        {
+          "line": 498,
+          "text": "(4487, 0, 35013, 0, 'Koralon the Flame Watcher (CoA DBC map 624 diff 2, was 776/777)'),"
+        },
+        {
+          "line": 499,
+          "text": "(4488, 0, 35013, 0, 'Koralon the Flame Watcher (CoA DBC map 624 diff 3, was 776/777)'),"
+        },
+        {
+          "line": 500,
+          "text": "(4489, 0, 36597, 0, 'The Lich King (CoA DBC map 631 diff 0, was 856/868)'),"
+        },
+        {
+          "line": 501,
+          "text": "(4490, 0, 36597, 280, 'The Lich King (CoA DBC map 631 diff 1, was 856/868)'),"
+        },
+        {
+          "line": 502,
+          "text": "(4491, 0, 36597, 0, 'The Lich King (CoA DBC map 631 diff 2, was 856/868)'),"
+        },
+        {
+          "line": 503,
+          "text": "(4492, 0, 36597, 0, 'The Lich King (CoA DBC map 631 diff 3, was 856/868)'),"
+        },
+        {
+          "line": 504,
+          "text": "(4493, 0, 36612, 0, 'Lord Marrowgar (CoA DBC map 631 diff 0, was 845/857)'),"
+        },
+        {
+          "line": 505,
+          "text": "(4494, 0, 36612, 0, 'Lord Marrowgar (CoA DBC map 631 diff 1, was 845/857)'),"
+        },
+        {
+          "line": 506,
+          "text": "(4495, 0, 36612, 0, 'Lord Marrowgar (CoA DBC map 631 diff 2, was 845/857)'),"
+        },
+        {
+          "line": 507,
+          "text": "(4496, 0, 36612, 0, 'Lord Marrowgar (CoA DBC map 631 diff 3, was 845/857)'),"
+        },
+        {
+          "line": 508,
+          "text": "(4497, 0, 36626, 0, 'Festergut (CoA DBC map 631 diff 0, was 849/861)'),"
+        },
+        {
+          "line": 509,
+          "text": "(4498, 0, 36626, 0, 'Festergut (CoA DBC map 631 diff 1, was 849/861)'),"
+        },
+        {
+          "line": 510,
+          "text": "(4499, 0, 36626, 0, 'Festergut (CoA DBC map 631 diff 2, was 849/861)'),"
+        },
+        {
+          "line": 511,
+          "text": "(4500, 0, 36626, 0, 'Festergut (CoA DBC map 631 diff 3, was 849/861)'),"
+        },
+        {
+          "line": 512,
+          "text": "(4501, 0, 36627, 0, 'Rotface (CoA DBC map 631 diff 0, was 850/862)'),"
+        },
+        {
+          "line": 513,
+          "text": "(4502, 0, 36627, 0, 'Rotface (CoA DBC map 631 diff 1, was 850/862)'),"
+        },
+        {
+          "line": 514,
+          "text": "(4503, 0, 36627, 0, 'Rotface (CoA DBC map 631 diff 2, was 850/862)'),"
+        },
+        {
+          "line": 515,
+          "text": "(4504, 0, 36627, 0, 'Rotface (CoA DBC map 631 diff 3, was 850/862)'),"
+        },
+        {
+          "line": 516,
+          "text": "(4505, 0, 36678, 0, 'Professor Putricide (CoA DBC map 631 diff 0, was 851/863)'),"
+        },
+        {
+          "line": 517,
+          "text": "(4506, 0, 36678, 0, 'Professor Putricide (CoA DBC map 631 diff 1, was 851/863)'),"
+        },
+        {
+          "line": 518,
+          "text": "(4507, 0, 36678, 0, 'Professor Putricide (CoA DBC map 631 diff 2, was 851/863)'),"
+        },
+        {
+          "line": 519,
+          "text": "(4508, 0, 36678, 0, 'Professor Putricide (CoA DBC map 631 diff 3, was 851/863)'),"
+        },
+        {
+          "line": 520,
+          "text": "(4513, 0, 36853, 0, 'Sindragosa (CoA DBC map 631 diff 0, was 855/867)'),"
+        },
+        {
+          "line": 521,
+          "text": "(4514, 0, 36853, 0, 'Sindragosa (CoA DBC map 631 diff 1, was 855/867)'),"
+        },
+        {
+          "line": 522,
+          "text": "(4515, 0, 36853, 0, 'Sindragosa (CoA DBC map 631 diff 2, was 855/867)'),"
+        },
+        {
+          "line": 523,
+          "text": "(4516, 0, 36853, 0, 'Sindragosa (CoA DBC map 631 diff 3, was 855/867)'),"
+        },
+        {
+          "line": 524,
+          "text": "(4517, 0, 36855, 0, 'Lady Deathwhisper (CoA DBC map 631 diff 0, was 846/858)'),"
+        },
+        {
+          "line": 525,
+          "text": "(4518, 0, 36855, 0, 'Lady Deathwhisper (CoA DBC map 631 diff 1, was 846/858)'),"
+        },
+        {
+          "line": 526,
+          "text": "(4519, 0, 36855, 0, 'Lady Deathwhisper (CoA DBC map 631 diff 2, was 846/858)'),"
+        },
+        {
+          "line": 527,
+          "text": "(4520, 0, 36855, 0, 'Lady Deathwhisper (CoA DBC map 631 diff 3, was 846/858)'),"
+        },
+        {
+          "line": 528,
+          "text": "(4521, 0, 37813, 0, 'Deathbringer Saurfang (CoA DBC map 631 diff 0, was 848/860)'),"
+        },
+        {
+          "line": 529,
+          "text": "(4522, 0, 37813, 0, 'Deathbringer Saurfang (CoA DBC map 631 diff 1, was 848/860)'),"
+        },
+        {
+          "line": 530,
+          "text": "(4523, 0, 37813, 0, 'Deathbringer Saurfang (CoA DBC map 631 diff 2, was 848/860)'),"
+        },
+        {
+          "line": 531,
+          "text": "(4524, 0, 37813, 0, 'Deathbringer Saurfang (CoA DBC map 631 diff 3, was 848/860)'),"
+        },
+        {
+          "line": 532,
+          "text": "(4525, 0, 37955, 0, 'Blood-Queen Lana''thel (CoA DBC map 631 diff 0, was 853/865)'),"
+        },
+        {
+          "line": 533,
+          "text": "(4526, 0, 37955, 0, 'Blood-Queen Lana''thel (CoA DBC map 631 diff 1, was 853/865)'),"
+        },
+        {
+          "line": 534,
+          "text": "(4527, 0, 37955, 0, 'Blood-Queen Lana''thel (CoA DBC map 631 diff 2, was 853/865)'),"
+        },
+        {
+          "line": 535,
+          "text": "(4528, 0, 37955, 0, 'Blood-Queen Lana''thel (CoA DBC map 631 diff 3, was 853/865)'),"
+        },
+        {
+          "line": 536,
+          "text": "(4529, 0, 38433, 0, 'Toravon the Ice Watcher (CoA DBC map 624 diff 0, was 885)'),"
+        },
+        {
+          "line": 537,
+          "text": "(4530, 0, 38433, 240, 'Toravon the Ice Watcher (CoA DBC map 624 diff 1, was 886)'),"
+        },
+        {
+          "line": 538,
+          "text": "(4531, 0, 38433, 0, 'Toravon the Ice Watcher (CoA DBC map 624 diff 2, was 887)'),"
+        },
+        {
+          "line": 539,
+          "text": "(4532, 0, 38433, 0, 'Toravon the Ice Watcher (CoA DBC map 624 diff 3, was 888)'),"
+        },
+        {
+          "line": 540,
+          "text": "(4533, 0, 39863, 0, 'Halion (CoA DBC map 724 diff 0, was 888)'),"
+        },
+        {
+          "line": 541,
+          "text": "(4534, 0, 39863, 294, 'Halion (CoA DBC map 724 diff 1, was 888)'),"
+        },
+        {
+          "line": 542,
+          "text": "(4535, 0, 39863, 0, 'Halion (CoA DBC map 724 diff 2, was 888)'),"
+        },
+        {
+          "line": 543,
+          "text": "(4536, 0, 39863, 0, 'Halion (CoA DBC map 724 diff 3, was 888)');"
+        }
+      ],
+      "header": [
+        "-- CoA DungeonEncounter.dbc ids for the raid encounters; each final boss carries the LFGDungeons id",
+        "-- of its map and difficulty.",
+        "DELETE FROM `instance_encounters` WHERE `entry` IN (",
+        "    456, 601, 602, 603, 604, 605, 606, 607, 609, 610, 611, 612, 613, 614, 615, 616, 617, 623, 624, 625, 626, 627,",
+        "    628, 633, 634, 635, 636, 645, 646, 647, 648, 649, 650, 651, 653, 654, 656, 657, 658, 659, 660, 661, 662, 663,",
+        "    664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687,"
+      ]
+    }
+  ],
+  "notes": [
+    "Records preserve source SQL and line number; do not assume all rows apply to live server",
+    "Raid encounter data is indexed separately from the Vanilla dungeon difficulty mechanism",
+    "Sources can overlap or supersede earlier entries; do not add counts as unique encounters"
+  ]
+}

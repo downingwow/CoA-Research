@@ -1,0 +1,34 @@
+name: Import BisBeard planner research
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/import-bisbeard-research.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download preserved original planner rows
+        run: |
+          curl -fLsS --retry 3 https://raw.githubusercontent.com/hertigservices/ascension-data/main/supplemental/bisbeard/7733de9bf573b62f451375ea09415f8de86b13c9c131cd6108a0e9a2e716d666/rows.jsonl.gz -o /tmp/bisbeard-rows.jsonl.gz
+      - name: Build normalized historical planner catalog
+        run: python tools/import_bisbeard_planner.py /tmp/bisbeard-rows.jsonl.gz
+      - name: Commit normalized data and coverage
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datasets/gear/bisbeard-* research/COA-BISBEARD-TABLE-COVERAGE.csv
+          if ! git diff --cached --quiet; then
+            git commit -m "data: preserve complete BisBeard planner catalog and phase coverage"
+            git pull --rebase origin main
+            git push
+          fi

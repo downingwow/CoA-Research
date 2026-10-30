@@ -1,0 +1,2668 @@
+{
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "verification": "Upstream implementation, not confirmed live",
+  "files": [
+    {
+      "path": "src/server/coa/CoADungeonBossKit.cpp",
+      "sha": "068909d584d50251cf552376fd22656ea4e70442",
+      "lineCount": 230,
+      "signals": [
+        {
+          "line": 5,
+          "text": "#include \"AllCreatureScript.h\""
+        },
+        {
+          "line": 6,
+          "text": "#include \"CoADungeonNormal.h\""
+        },
+        {
+          "line": 7,
+          "text": "#include \"Creature.h\""
+        },
+        {
+          "line": 8,
+          "text": "#include \"CreatureAI.h\""
+        },
+        {
+          "line": 15,
+          "text": "#include \"SpellInfo.h\""
+        },
+        {
+          "line": 16,
+          "text": "#include \"SpellMgr.h\""
+        },
+        {
+          "line": 23,
+          "text": "enum KitEvent : uint8"
+        },
+        {
+          "line": 25,
+          "text": "KIT_TIMER = 0,"
+        },
+        {
+          "line": 26,
+          "text": "KIT_HEALTH = 2,"
+        },
+        {
+          "line": 39,
+          "text": "enum KitCastFlags : uint8"
+        },
+        {
+          "line": 41,
+          "text": "KIT_CAST_INTERRUPT = 0x01,"
+        },
+        {
+          "line": 42,
+          "text": "KIT_CAST_TRIGGERED = 0x02,"
+        },
+        {
+          "line": 43,
+          "text": "KIT_CAST_AURA_NOT_PRESENT = 0x20,"
+        },
+        {
+          "line": 47,
+          "text": "constexpr uint8 KIT_ONLY_MYTHIC = 0x08;"
+        },
+        {
+          "line": 51,
+          "text": "uint32 spell = 0;"
+        },
+        {
+          "line": 52,
+          "text": "uint8 event = KIT_TIMER;"
+        },
+        {
+          "line": 53,
+          "text": "uint8 difficulty = 0;"
+        },
+        {
+          "line": 55,
+          "text": "uint8 healthPct = 0;"
+        },
+        {
+          "line": 57,
+          "text": "uint8 castFlags = 0;"
+        },
+        {
+          "line": 66,
+          "text": "std::vector<int32> timers;"
+        },
+        {
+          "line": 74,
+          "text": "Unit* SelectKitTarget(Creature* me, KitEntry const& kit)"
+        },
+        {
+          "line": 95,
+          "text": "bool CastKit(Creature* me, KitEntry const& kit)"
+        },
+        {
+          "line": 97,
+          "text": "SpellInfo const* spellInfo = sSpellMgr->GetSpellInfo(kit.spell);"
+        },
+        {
+          "line": 98,
+          "text": "if (!spellInfo)"
+        },
+        {
+          "line": 100,
+          "text": "bool triggered = kit.castFlags & KIT_CAST_TRIGGERED;"
+        },
+        {
+          "line": 101,
+          "text": "if (!triggered && me->HasUnitState(UNIT_STATE_CASTING) && !(kit.castFlags & KIT_CAST_INTERRUPT))"
+        },
+        {
+          "line": 106,
+          "text": "if ((kit.castFlags & KIT_CAST_AURA_NOT_PRESENT) && target->HasAura(kit.spell))"
+        },
+        {
+          "line": 108,
+          "text": "if (kit.castFlags & KIT_CAST_INTERRUPT)"
+        },
+        {
+          "line": 109,
+          "text": "me->InterruptNonMeleeSpells(false);"
+        },
+        {
+          "line": 110,
+          "text": "SpellCastResult result;"
+        },
+        {
+          "line": 113,
+          "text": "CustomSpellValues values;"
+        },
+        {
+          "line": 114,
+          "text": "values.AddSpellMod(SPELLVALUE_BASE_POINT0, kit.basePoints);"
+        },
+        {
+          "line": 115,
+          "text": "result = me->CastCustomSpell(spellInfo, values, target, triggered ? TRIGGERED_FULL_MASK : TRIGGERED_NONE);"
+        },
+        {
+          "line": 118,
+          "text": "result = me->CastSpell(target, kit.spell, triggered ? TRIGGERED_FULL_MASK : TRIGGERED_NONE);"
+        },
+        {
+          "line": 119,
+          "text": "return result != SPELL_FAILED_SPELL_IN_PROGRESS && result != SPELL_FAILED_NOT_READY;"
+        },
+        {
+          "line": 123,
+          "text": "class CoADungeonBossKitWorld final : public WorldScript"
+        },
+        {
+          "line": 126,
+          "text": "CoADungeonBossKitWorld() : WorldScript(\"CoADungeonBossKitWorld\", { WORLDHOOK_ON_STARTUP }) { }"
+        },
+        {
+          "line": 132,
+          "text": "if (QueryResult result = WorldDatabase.Query(\"SELECT entry, spell, event, difficulty, initial_min, initial_max, repeat_min, \""
+        },
+        {
+          "line": 133,
+          "text": "\"repeat_max, health_pct, target, cast_flags, base_points FROM coa_dungeon_boss_kit ORDER BY entry, id\"))"
+        },
+        {
+          "line": 139,
+          "text": "kit.spell = f[1].Get<uint32>();"
+        },
+        {
+          "line": 140,
+          "text": "kit.event = f[2].Get<uint8>();"
+        },
+        {
+          "line": 141,
+          "text": "kit.difficulty = f[3].Get<uint8>();"
+        },
+        {
+          "line": 146,
+          "text": "kit.healthPct = f[8].Get<uint8>();"
+        },
+        {
+          "line": 148,
+          "text": "kit.castFlags = f[10].Get<uint8>();"
+        },
+        {
+          "line": 154,
+          "text": "LOG_INFO(\"server.loading\", \">> Loaded {} CoA dungeon boss kit rows for {} scripted bosses\", count, Kits.size());"
+        },
+        {
+          "line": 158,
+          "text": "class CoADungeonBossKit final : public AllCreatureScript"
+        },
+        {
+          "line": 161,
+          "text": "CoADungeonBossKit() : AllCreatureScript(\"CoADungeonBossKit\") { }"
+        },
+        {
+          "line": 163,
+          "text": "void OnAllCreatureUpdate(Creature* me, uint32 diff) override"
+        },
+        {
+          "line": 171,
+          "text": "if (!map || !map->IsNonRaidDungeon() || me->IsCharmedOwnedByPlayerOrPlayer())"
+        },
+        {
+          "line": 177,
+          "text": "if (KitState* state = me->CustomData.Get<KitState>(\"coa_boss_kit\"))"
+        },
+        {
+          "line": 182,
+          "text": "bool mythic = map->GetDifficulty() == DUNGEON_DIFFICULTY_EPIC;"
+        },
+        {
+          "line": 183,
+          "text": "KitState* state = me->CustomData.GetDefault<KitState>(\"coa_boss_kit\");"
+        },
+        {
+          "line": 187,
+          "text": "state->timers.assign(kits.size(), -1);"
+        },
+        {
+          "line": 191,
+          "text": "if ((kit.difficulty & KIT_ONLY_HEROIC && mythic) || (kit.difficulty & KIT_ONLY_MYTHIC && !mythic))"
+        },
+        {
+          "line": 193,
+          "text": "if (kit.event == KIT_PULL)"
+        },
+        {
+          "line": 194,
+          "text": "state->timers[i] = 0;"
+        },
+        {
+          "line": 195,
+          "text": "else if (kit.event == KIT_TIMER)"
+        },
+        {
+          "line": 196,
+          "text": "state->timers[i] = int32(KitRoll(kit.initialMin, kit.initialMax));"
+        },
+        {
+          "line": 197,
+          "text": "else if (kit.event == KIT_HEALTH)"
+        },
+        {
+          "line": 198,
+          "text": "state->timers[i] = 0;"
+        },
+        {
+          "line": 204,
+          "text": "int32& timer = state->timers[i];"
+        },
+        {
+          "line": 205,
+          "text": "if (timer < 0)"
+        },
+        {
+          "line": 208,
+          "text": "if (kit.event == KIT_HEALTH && kit.healthPct && !me->HealthBelowPct(kit.healthPct + 1))"
+        },
+        {
+          "line": 210,
+          "text": "timer -= int32(diff);"
+        },
+        {
+          "line": 211,
+          "text": "if (timer > 0)"
+        },
+        {
+          "line": 213,
+          "text": "if (!CastKit(me, kit))"
+        },
+        {
+          "line": 215,
+          "text": "timer = 250;"
+        },
+        {
+          "line": 218,
+          "text": "timer = kit.repeatMin ? int32(CoADungeonNormal::KitRepeat(me, KitRoll(kit.repeatMin, kit.repeatMax))) : -1;"
+        },
+        {
+          "line": 219,
+          "text": "if (kit.event == KIT_HEALTH && kit.repeatMin)"
+        },
+        {
+          "line": 220,
+          "text": "timer = std::max(timer, 1);"
+        },
+        {
+          "line": 225,
+          "text": "void AddSC_CoADungeonBossKit()"
+        },
+        {
+          "line": 227,
+          "text": "new CoADungeonBossKitWorld();"
+        },
+        {
+          "line": 228,
+          "text": "new CoADungeonBossKit();"
+        }
+      ]
+    },
+    {
+      "path": "src/server/coa/CoADungeonNormal.cpp",
+      "sha": "296b427d62e50c403853669e7a5f7bf5e89650ff",
+      "lineCount": 256,
+      "signals": [
+        {
+          "line": 5,
+          "text": "#include \"CoADungeonNormal.h\""
+        },
+        {
+          "line": 7,
+          "text": "#include \"Creature.h\""
+        },
+        {
+          "line": 14,
+          "text": "#include \"SpellInfo.h\""
+        },
+        {
+          "line": 15,
+          "text": "#include \"SpellMgr.h\""
+        },
+        {
+          "line": 22,
+          "text": "extern uint32 (*CoADungeonKitRepeatHook)(WorldObject const* source, uint32 eventId, uint32 repeat);"
+        },
+        {
+          "line": 26,
+          "text": "struct NormalSpell"
+        },
+        {
+          "line": 28,
+          "text": "uint32 normalSpell = 0;"
+        },
+        {
+          "line": 32,
+          "text": "constexpr uint32 KitFirstEventId = 9000;"
+        },
+        {
+          "line": 33,
+          "text": "constexpr uint8 NormalRankMaxCasterLevel = 49;"
+        },
+        {
+          "line": 39,
+          "text": "std::unordered_map<uint32, NormalSpell> Spells;"
+        },
+        {
+          "line": 40,
+          "text": "std::unordered_map<uint32, uint32> CastSpellOfVariant;"
+        },
+        {
+          "line": 41,
+          "text": "std::unordered_set<uint32> KitCasters;"
+        },
+        {
+          "line": 43,
+          "text": "Creature const* NormalDungeonCreature(WorldObject const* object)"
+        },
+        {
+          "line": 45,
+          "text": "Creature const* creature = object ? object->ToCreature() : nullptr;"
+        },
+        {
+          "line": 46,
+          "text": "if (!Enabled || !creature || creature->IsCharmedOwnedByPlayerOrPlayer())"
+        },
+        {
+          "line": 48,
+          "text": "Map const* map = creature->FindMap();"
+        },
+        {
+          "line": 49,
+          "text": "if (!map || !map->IsNonRaidDungeon() || map->GetDifficulty() != DUNGEON_DIFFICULTY_NORMAL)"
+        },
+        {
+          "line": 51,
+          "text": "return creature;"
+        },
+        {
+          "line": 54,
+          "text": "float DieAverage(SpellEffectInfo const& effect)"
+        },
+        {
+          "line": 63,
+          "text": "float CastValue(SpellInfo const* spellInfo, SpellEffectInfo const& effect, int32 level)"
+        },
+        {
+          "line": 68,
+          "text": "if (level > int32(spellInfo->MaxLevel) && spellInfo->MaxLevel > 0)"
+        },
+        {
+          "line": 69,
+          "text": "level = int32(spellInfo->MaxLevel);"
+        },
+        {
+          "line": 70,
+          "text": "else if (level < int32(spellInfo->BaseLevel))"
+        },
+        {
+          "line": 71,
+          "text": "level = int32(spellInfo->BaseLevel);"
+        },
+        {
+          "line": 72,
+          "text": "level -= int32(std::max(spellInfo->BaseLevel, spellInfo->SpellLevel));"
+        },
+        {
+          "line": 76,
+          "text": "float NormalRankValue(SpellInfo const* spellInfo, SpellEffectInfo const& effect, int32 level)"
+        },
+        {
+          "line": 79,
+          "text": "+ effect.RealPointsPerLevel * float(std::max<int32>(0, level - int32(spellInfo->SpellLevel)));"
+        },
+        {
+          "line": 82,
+          "text": "bool IsDirect(SpellEffectInfo const& effect)"
+        },
+        {
+          "line": 84,
+          "text": "return effect.Effect == SPELL_EFFECT_SCHOOL_DAMAGE || effect.Effect == SPELL_EFFECT_HEALTH_LEECH;"
+        },
+        {
+          "line": 87,
+          "text": "bool IsPeriodic(SpellEffectInfo const& effect)"
+        },
+        {
+          "line": 89,
+          "text": "return effect.Effect == SPELL_EFFECT_APPLY_AURA && effect.Amplitude > 0"
+        },
+        {
+          "line": 90,
+          "text": "&& (effect.ApplyAuraName == SPELL_AURA_PERIODIC_DAMAGE || effect.ApplyAuraName == SPELL_AURA_PERIODIC_LEECH);"
+        },
+        {
+          "line": 94,
+          "text": "float Damage(SpellInfo const* spellInfo, bool periodic, int32 level, Value value)"
+        },
+        {
+          "line": 97,
+          "text": "for (SpellEffectInfo const& effect : spellInfo->GetEffects())"
+        },
+        {
+          "line": 101,
+          "text": "float const amount = value(spellInfo, effect, level);"
+        },
+        {
+          "line": 108,
+          "text": "float VariantFactor(Creature const* caster, SpellInfo const* spellInfo, bool periodic)"
+        },
+        {
+          "line": 110,
+          "text": "auto variant = CastSpellOfVariant.find(spellInfo->Id);"
+        },
+        {
+          "line": 111,
+          "text": "if (variant == CastSpellOfVariant.end() || caster->GetLevel() <= NormalRankMaxCasterLevel)"
+        },
+        {
+          "line": 113,
+          "text": "NormalSpell const& row = Spells.at(variant->second);"
+        },
+        {
+          "line": 114,
+          "text": "SpellInfo const* castInfo = sSpellMgr->GetSpellInfo(variant->second);"
+        },
+        {
+          "line": 115,
+          "text": "if (row.normalSpell == variant->second || !castInfo)"
+        },
+        {
+          "line": 117,
+          "text": "int32 const level = int32(caster->GetLevel());"
+        },
+        {
+          "line": 118,
+          "text": "float const cast = Damage(castInfo, periodic, level, CastValue);"
+        },
+        {
+          "line": 119,
+          "text": "float const current = Damage(spellInfo, periodic, level, CastValue);"
+        },
+        {
+          "line": 120,
+          "text": "return cast > 0.0f && current > 0.0f ? row.high * cast / current : row.high;"
+        },
+        {
+          "line": 123,
+          "text": "float Factor(Creature const* caster, SpellInfo const* spellInfo, bool periodic)"
+        },
+        {
+          "line": 125,
+          "text": "auto itr = Spells.find(spellInfo->Id);"
+        },
+        {
+          "line": 126,
+          "text": "if (itr == Spells.end())"
+        },
+        {
+          "line": 127,
+          "text": "return VariantFactor(caster, spellInfo, periodic);"
+        },
+        {
+          "line": 128,
+          "text": "NormalSpell const& row = itr->second;"
+        },
+        {
+          "line": 129,
+          "text": "if (!row.normalSpell || caster->GetLevel() > NormalRankMaxCasterLevel)"
+        },
+        {
+          "line": 131,
+          "text": "if (row.normalSpell == spellInfo->Id)"
+        },
+        {
+          "line": 133,
+          "text": "SpellInfo const* normalInfo = sSpellMgr->GetSpellInfo(row.normalSpell);"
+        },
+        {
+          "line": 136,
+          "text": "int32 const level = int32(caster->GetLevel());"
+        },
+        {
+          "line": 137,
+          "text": "float const current = Damage(spellInfo, periodic, level, CastValue);"
+        },
+        {
+          "line": 143,
+          "text": "void Tune(Unit const* target, Unit const* attacker, T& damage, SpellInfo const* spellInfo, bool periodic)"
+        },
+        {
+          "line": 145,
+          "text": "if (damage <= 0 || !spellInfo || !CoADungeonNormal::TunesSpell(attacker, spellInfo))"
+        },
+        {
+          "line": 147,
+          "text": "float value = float(damage) * Factor(attacker->ToCreature(), spellInfo, periodic);"
+        },
+        {
+          "line": 150,
+          "text": "float const capPct = spellInfo->IsAffectingArea() ? AreaCapPct : TargetCapPct;"
+        },
+        {
+          "line": 152,
+          "text": "value = std::min(value, float(target->GetMaxHealth()) * capPct / 100.0f);"
+        },
+        {
+          "line": 157,
+          "text": "uint32 SmartKitRepeat(WorldObject const* source, uint32 eventId, uint32 repeat)"
+        },
+        {
+          "line": 159,
+          "text": "return eventId >= KitFirstEventId ? CoADungeonNormal::KitRepeat(source, repeat) : repeat;"
+        },
+        {
+          "line": 163,
+          "text": "bool CoADungeonNormal::TunesSpell(Unit const* attacker, SpellInfo const* spellInfo)"
+        },
+        {
+          "line": 165,
+          "text": "if (!spellInfo)"
+        },
+        {
+          "line": 167,
+          "text": "Creature const* creature = NormalDungeonCreature(attacker);"
+        },
+        {
+          "line": 168,
+          "text": "if (!creature)"
+        },
+        {
+          "line": 170,
+          "text": "if (Spells.count(spellInfo->Id))"
+        },
+        {
+          "line": 172,
+          "text": "return CastSpellOfVariant.count(spellInfo->Id) && KitCasters.count(creature->GetEntry());"
+        },
+        {
+          "line": 175,
+          "text": "uint32 CoADungeonNormal::KitRepeat(WorldObject const* source, uint32 repeat)"
+        },
+        {
+          "line": 177,
+          "text": "if (!repeat || RepeatFactor == 1.0f || !NormalDungeonCreature(source))"
+        },
+        {
+          "line": 182,
+          "text": "class CoADungeonNormalWorld final : public WorldScript"
+        },
+        {
+          "line": 185,
+          "text": "CoADungeonNormalWorld() : WorldScript(\"CoADungeonNormalWorld\", { WORLDHOOK_ON_AFTER_CONFIG_LOAD, WORLDHOOK_ON_STARTUP }) { }"
+        },
+        {
+          "line": 189,
+          "text": "Enabled = sConfigMgr->GetOption<bool>(\"CoA.DungeonNormal.Enable\", true);"
+        },
+        {
+          "line": 190,
+          "text": "RepeatFactor = std::max(0.1f, sConfigMgr->GetOption<float>(\"CoA.DungeonNormal.RepeatFactor\", 1.1f));"
+        },
+        {
+          "line": 191,
+          "text": "AreaCapPct = sConfigMgr->GetOption<float>(\"CoA.DungeonNormal.AreaHitCapPct\", 25.0f);"
+        },
+        {
+          "line": 192,
+          "text": "TargetCapPct = sConfigMgr->GetOption<float>(\"CoA.DungeonNormal.TargetHitCapPct\", 40.0f);"
+        },
+        {
+          "line": 193,
+          "text": "CoADungeonKitRepeatHook = &SmartKitRepeat;"
+        },
+        {
+          "line": 198,
+          "text": "Spells.clear();"
+        },
+        {
+          "line": 199,
+          "text": "if (QueryResult result = WorldDatabase.Query(\"SELECT spell_id, normal_spell_id, high FROM coa_dungeon_normal_spell_damage\"))"
+        },
+        {
+          "line": 204,
+          "text": "NormalSpell& row = Spells[fields[0].Get<uint32>()];"
+        },
+        {
+          "line": 205,
+          "text": "row.normalSpell = fields[1].Get<uint32>();"
+        },
+        {
+          "line": 209,
+          "text": "CastSpellOfVariant.clear();"
+        },
+        {
+          "line": 210,
+          "text": "for (auto const& spell : Spells)"
+        },
+        {
+          "line": 212,
+          "text": "uint32 const castSpell = spell.first;"
+        },
+        {
+          "line": 213,
+          "text": "SpellDifficultyEntry const* difficulty = sSpellDifficultyStore.LookupEntry(sSpellMgr->GetSpellDifficultyId(castSpell));"
+        },
+        {
+          "line": 214,
+          "text": "if (!difficulty || difficulty->SpellID[REGULAR_DIFFICULTY] <= 0)"
+        },
+        {
+          "line": 216,
+          "text": "uint32 const normalVariant = uint32(difficulty->SpellID[REGULAR_DIFFICULTY]);"
+        },
+        {
+          "line": 217,
+          "text": "if (normalVariant != castSpell && !Spells.count(normalVariant))"
+        },
+        {
+          "line": 218,
+          "text": "CastSpellOfVariant.try_emplace(normalVariant, castSpell);"
+        },
+        {
+          "line": 220,
+          "text": "KitCasters.clear();"
+        },
+        {
+          "line": 222,
+          "text": "\"AND entryorguid > 0 AND id >= {} UNION SELECT DISTINCT entry FROM coa_dungeon_boss_kit\", KitFirstEventId))"
+        },
+        {
+          "line": 226,
+          "text": "KitCasters.insert(result->Fetch()[0].Get<uint32>());"
+        },
+        {
+          "line": 229,
+          "text": "LOG_INFO(\"server.loading\", \">> Loaded {} CoA Normal dungeon kit spells, {} cast as their Normal SpellDifficulty variant \""
+        },
+        {
+          "line": 230,
+          "text": "\"by {} kit creatures\", Spells.size(), CastSpellOfVariant.size(), KitCasters.size());"
+        },
+        {
+          "line": 234,
+          "text": "class CoADungeonNormalDamage final : public UnitScript"
+        },
+        {
+          "line": 237,
+          "text": "CoADungeonNormalDamage() : UnitScript(\"CoADungeonNormalDamage\", true,"
+        },
+        {
+          "line": 238,
+          "text": "{ UNITHOOK_MODIFY_SPELL_DAMAGE_TAKEN, UNITHOOK_MODIFY_PERIODIC_DAMAGE_AURAS_TICK }) { }"
+        },
+        {
+          "line": 240,
+          "text": "void ModifySpellDamageTaken(Unit* target, Unit* attacker, int32& damage, SpellInfo const* spellInfo) override"
+        },
+        {
+          "line": 242,
+          "text": "Tune(target, attacker, damage, spellInfo, false);"
+        },
+        {
+          "line": 245,
+          "text": "void ModifyPeriodicDamageAurasTick(Unit* target, Unit* attacker, uint32& damage, SpellInfo const* spellInfo) override"
+        },
+        {
+          "line": 247,
+          "text": "Tune(target, attacker, damage, spellInfo, true);"
+        },
+        {
+          "line": 251,
+          "text": "void AddSC_CoADungeonNormal()"
+        },
+        {
+          "line": 253,
+          "text": "new CoADungeonNormalWorld();"
+        },
+        {
+          "line": 254,
+          "text": "new CoADungeonNormalDamage();"
+        }
+      ]
+    },
+    {
+      "path": "src/server/coa/CoADungeonSpellDamage.cpp",
+      "sha": "2c485a04fc9b9f81b9737873e93fd4284cf82406",
+      "lineCount": 164,
+      "signals": [
+        {
+          "line": 5,
+          "text": "#include \"Creature.h\""
+        },
+        {
+          "line": 11,
+          "text": "#include \"SpellInfo.h\""
+        },
+        {
+          "line": 21,
+          "text": "std::unordered_set<uint32> Bosses;"
+        },
+        {
+          "line": 22,
+          "text": "std::unordered_map<uint32, float> CreatureMultipliers;"
+        },
+        {
+          "line": 26,
+          "text": "constexpr int32 TrashCapMythic = 600;"
+        },
+        {
+          "line": 28,
+          "text": "int32 TrashCap(Unit const* attacker, SpellInfo const* spellInfo)"
+        },
+        {
+          "line": 30,
+          "text": "if (!attacker || !spellInfo || Multipliers.count(spellInfo->Id))"
+        },
+        {
+          "line": 32,
+          "text": "Creature const* creature = attacker->ToCreature();"
+        },
+        {
+          "line": 33,
+          "text": "if (!creature || creature->GetCharmerOrOwnerPlayerOrPlayerItself() || creature->IsSummon() || Bosses.count(creature->GetEntry()))"
+        },
+        {
+          "line": 35,
+          "text": "Map const* map = creature->GetMap();"
+        },
+        {
+          "line": 36,
+          "text": "if (!map || !map->IsNonRaidDungeon() || map->GetDifficulty() == DUNGEON_DIFFICULTY_NORMAL)"
+        },
+        {
+          "line": 38,
+          "text": "return map->GetDifficulty() == DUNGEON_DIFFICULTY_HEROIC ? TrashCapHeroic : TrashCapMythic;"
+        },
+        {
+          "line": 41,
+          "text": "float Multiplier(Unit const* attacker, SpellInfo const* spellInfo)"
+        },
+        {
+          "line": 43,
+          "text": "if (Multipliers.empty() || !attacker || !spellInfo)"
+        },
+        {
+          "line": 45,
+          "text": "Creature const* creature = attacker->ToCreature();"
+        },
+        {
+          "line": 46,
+          "text": "if (!creature || creature->GetCharmerOrOwnerPlayerOrPlayerItself())"
+        },
+        {
+          "line": 48,
+          "text": "Map const* map = creature->GetMap();"
+        },
+        {
+          "line": 49,
+          "text": "if (!map || !map->IsDungeon() || map->GetDifficulty() == DUNGEON_DIFFICULTY_NORMAL)"
+        },
+        {
+          "line": 51,
+          "text": "auto itr = Multipliers.find(spellInfo->Id);"
+        },
+        {
+          "line": 55,
+          "text": "float CreatureMultiplier(Unit const* attacker)"
+        },
+        {
+          "line": 57,
+          "text": "if (CreatureMultipliers.empty() || !attacker)"
+        },
+        {
+          "line": 59,
+          "text": "Creature const* creature = attacker->ToCreature();"
+        },
+        {
+          "line": 60,
+          "text": "if (!creature || creature->GetCharmerOrOwnerPlayerOrPlayerItself())"
+        },
+        {
+          "line": 62,
+          "text": "Map const* map = creature->GetMap();"
+        },
+        {
+          "line": 63,
+          "text": "if (!map || !map->IsDungeon())"
+        },
+        {
+          "line": 65,
+          "text": "auto itr = CreatureMultipliers.find(creature->GetEntry());"
+        },
+        {
+          "line": 66,
+          "text": "return itr == CreatureMultipliers.end() ? 1.0f : itr->second;"
+        },
+        {
+          "line": 70,
+          "text": "class CoADungeonSpellDamageWorld final : public WorldScript"
+        },
+        {
+          "line": 73,
+          "text": "CoADungeonSpellDamageWorld() : WorldScript(\"CoADungeonSpellDamageWorld\", { WORLDHOOK_ON_STARTUP }) { }"
+        },
+        {
+          "line": 78,
+          "text": "if (QueryResult result = WorldDatabase.Query(\"SELECT spell_id, multiplier FROM coa_dungeon_spell_damage\"))"
+        },
+        {
+          "line": 86,
+          "text": "LOG_INFO(\"server.loading\", \">> Loaded {} CoA dungeon spell damage multipliers\", Multipliers.size());"
+        },
+        {
+          "line": 87,
+          "text": "Bosses.clear();"
+        },
+        {
+          "line": 88,
+          "text": "if (QueryResult result = WorldDatabase.Query(\"SELECT entry FROM coa_dungeon_bosses\"))"
+        },
+        {
+          "line": 92,
+          "text": "Bosses.insert(result->Fetch()[0].Get<uint32>());"
+        },
+        {
+          "line": 95,
+          "text": "LOG_INFO(\"server.loading\", \">> Loaded {} CoA dungeon boss entries (trash spell cap exempt)\", Bosses.size());"
+        },
+        {
+          "line": 96,
+          "text": "CreatureMultipliers.clear();"
+        },
+        {
+          "line": 97,
+          "text": "if (QueryResult result = WorldDatabase.Query(\"SELECT entry, multiplier FROM coa_dungeon_creature_damage\"))"
+        },
+        {
+          "line": 102,
+          "text": "CreatureMultipliers[fields[0].Get<uint32>()] = fields[1].Get<float>();"
+        },
+        {
+          "line": 105,
+          "text": "LOG_INFO(\"server.loading\", \">> Loaded {} CoA dungeon creature damage multipliers\", CreatureMultipliers.size());"
+        },
+        {
+          "line": 107,
+          "text": "if (QueryResult result = WorldDatabase.Query(\"SELECT entry, heal_pct FROM coa_dungeon_creature_heal\"))"
+        },
+        {
+          "line": 115,
+          "text": "LOG_INFO(\"server.loading\", \">> Loaded {} CoA dungeon creature heal shares\", HealShares.size());"
+        },
+        {
+          "line": 119,
+          "text": "class CoADungeonSpellDamage final : public UnitScript"
+        },
+        {
+          "line": 122,
+          "text": "CoADungeonSpellDamage() : UnitScript(\"CoADungeonSpellDamage\", true,"
+        },
+        {
+          "line": 123,
+          "text": "{ UNITHOOK_MODIFY_SPELL_DAMAGE_TAKEN, UNITHOOK_MODIFY_PERIODIC_DAMAGE_AURAS_TICK, UNITHOOK_MODIFY_MELEE_DAMAGE, UNITHOOK_MODIFY_HEAL_RECEIVED }) { }"
+        },
+        {
+          "line": 125,
+          "text": "void ModifyHealReceived(Unit* healer, Unit* receiver, uint32& gain, SpellInfo const*) override"
+        },
+        {
+          "line": 129,
+          "text": "Creature const* creature = healer->ToCreature();"
+        },
+        {
+          "line": 130,
+          "text": "if (!creature || creature->GetCharmerOrOwnerPlayerOrPlayerItself() || !creature->GetMap() || !creature->GetMap()->IsDungeon())"
+        },
+        {
+          "line": 132,
+          "text": "auto itr = HealShares.find(creature->GetEntry());"
+        },
+        {
+          "line": 135,
+          "text": "gain = uint32(receiver->GetMaxHealth() * itr->second);"
+        },
+        {
+          "line": 140,
+          "text": "if (float multiplier = CreatureMultiplier(attacker); multiplier != 1.0f)"
+        },
+        {
+          "line": 144,
+          "text": "void ModifySpellDamageTaken(Unit*, Unit* attacker, int32& damage, SpellInfo const* spellInfo) override"
+        },
+        {
+          "line": 146,
+          "text": "if (float multiplier = Multiplier(attacker, spellInfo) * CreatureMultiplier(attacker); multiplier != 1.0f)"
+        },
+        {
+          "line": 148,
+          "text": "if (int32 cap = TrashCap(attacker, spellInfo); cap && damage > cap)"
+        },
+        {
+          "line": 152,
+          "text": "void ModifyPeriodicDamageAurasTick(Unit*, Unit* attacker, uint32& damage, SpellInfo const* spellInfo) override"
+        },
+        {
+          "line": 154,
+          "text": "if (float multiplier = Multiplier(attacker, spellInfo) * CreatureMultiplier(attacker); multiplier != 1.0f)"
+        },
+        {
+          "line": 159,
+          "text": "void AddSC_CoADungeonSpellDamage()"
+        },
+        {
+          "line": 161,
+          "text": "new CoADungeonSpellDamageWorld();"
+        },
+        {
+          "line": 162,
+          "text": "new CoADungeonSpellDamage();"
+        }
+      ]
+    },
+    {
+      "path": "src/server/coa/CoADungeonCompletion.cpp",
+      "sha": "b2c35b64f49aaacf3cfb01ce7292c89d742b77fe",
+      "lineCount": 43,
+      "signals": [
+        {
+          "line": 5,
+          "text": "#include \"CoADungeonCompletion.h\""
+        },
+        {
+          "line": 21,
+          "text": "LOG_INFO(\"module\", \"Dungeon complete: {} resurrected on map {} instance {}\", player->GetName(), map->GetId(),"
+        },
+        {
+          "line": 22,
+          "text": "map->GetInstanceId());"
+        },
+        {
+          "line": 26,
+          "text": "class CoADungeonCompletion final : public GlobalScript"
+        },
+        {
+          "line": 29,
+          "text": "CoADungeonCompletion() : GlobalScript(\"CoADungeonCompletion\", { GLOBALHOOK_ON_AFTER_UPDATE_ENCOUNTER_STATE }) { }"
+        },
+        {
+          "line": 31,
+          "text": "void OnAfterUpdateEncounterState(Map* map, EncounterCreditType, uint32, Unit*, Difficulty,"
+        },
+        {
+          "line": 32,
+          "text": "std::list<DungeonEncounter const*> const*, uint32 dungeonCompleted, bool) override"
+        },
+        {
+          "line": 34,
+          "text": "if (dungeonCompleted && map && map->IsNonRaidDungeon())"
+        },
+        {
+          "line": 39,
+          "text": "void AddSC_CoADungeonCompletion()"
+        },
+        {
+          "line": 41,
+          "text": "new CoADungeonCompletion();"
+        }
+      ]
+    },
+    {
+      "path": "modules/mod-coa-mythic-plus/src/MythicPlus.cpp",
+      "sha": "43f79fc6db54a6b56502f95d58a35c597b01da43",
+      "lineCount": 3068,
+      "signals": [
+        {
+          "line": 2,
+          "text": "* Mythic+ keystone runs, spoken in Ascension's own protocol so the client's"
+        },
+        {
+          "line": 3,
+          "text": "* Ascension_MythicPlus addon (tracker, timer, banner, keystone socket) runs"
+        },
+        {
+          "line": 5,
+          "text": "* mythic-plus-recherche/protokoll-20260926.md."
+        },
+        {
+          "line": 8,
+          "text": "*  1. The group leader uses a keystone anywhere inside its dungeon (Mythic"
+        },
+        {
+          "line": 9,
+          "text": "*     difficulty). Only then the socket window opens (SMSG 0x0906, window 5);"
+        },
+        {
+          "line": 11,
+          "text": "*  2. Everybody is put at the wing's start point, the dungeon's creatures are"
+        },
+        {
+          "line": 12,
+          "text": "*     scaled to the key level, the week's affixes go on (creature affixes on the"
+        },
+        {
+          "line": 15,
+          "text": "*  3. Timer, enemy forces and encounters go out as the run goes on. Creatures"
+        },
+        {
+          "line": 17,
+          "text": "*  4. Done when the required encounters, the final boss and 100 % enemy"
+        },
+        {
+          "line": 20,
+          "text": "*     dungeon."
+        },
+        {
+          "line": 24,
+          "text": "* The first key: killing the final boss of a Mythic dungeon hands every"
+        },
+        {
+          "line": 28,
+          "text": "* to show them (Extensions.dll 0x102bb0c0), and MythicAffixes.dbc gives the"
+        },
+        {
+          "line": 31,
+          "text": "* Numbers come from the client tables (MythicPlusData.h). What the client does"
+        },
+        {
+          "line": 32,
+          "text": "* not hold and the logs cannot tell (enemy forces per creature, cache"
+        },
+        {
+          "line": 33,
+          "text": "* contents) sits in coa_mythic_forces and coa_mythic_reward."
+        },
+        {
+          "line": 36,
+          "text": "#include \"MythicPlusData.h\""
+        },
+        {
+          "line": 41,
+          "text": "#include \"Creature.h\""
+        },
+        {
+          "line": 48,
+          "text": "#include \"DungeonHealth.h\""
+        },
+        {
+          "line": 53,
+          "text": "#include \"InstanceScript.h\""
+        },
+        {
+          "line": 63,
+          "text": "#include \"ScriptedCreature.h\""
+        },
+        {
+          "line": 64,
+          "text": "#include \"Spell.h\""
+        },
+        {
+          "line": 65,
+          "text": "#include \"SpellInfo.h\""
+        },
+        {
+          "line": 69,
+          "text": "#include \"AscensionDungeonRelease.h\""
+        },
+        {
+          "line": 71,
+          "text": "#include \"CoADungeonCompletion.h\""
+        },
+        {
+          "line": 72,
+          "text": "#include \"SpellAuras.h\""
+        },
+        {
+          "line": 73,
+          "text": "#include \"SpellMgr.h\""
+        },
+        {
+          "line": 74,
+          "text": "#include \"SpellScript.h\""
+        },
+        {
+          "line": 76,
+          "text": "#include \"Timer.h\""
+        },
+        {
+          "line": 94,
+          "text": "using namespace CoaMythicPlus;"
+        },
+        {
+          "line": 97,
+          "text": "constexpr uint16 CMSG_CUSTOM_MYTHIC_PLUS_ACTIVATE = 0x0527;"
+        },
+        {
+          "line": 99,
+          "text": "constexpr uint16 SMSG_MYTHIC_PLUS_DUNGEON_STATE_CHANGED = 0x0908;"
+        },
+        {
+          "line": 100,
+          "text": "constexpr uint16 SMSG_MYTHIC_PLUS_PROGRESS_UPDATE = 0x0909;"
+        },
+        {
+          "line": 101,
+          "text": "constexpr uint16 SMSG_MYTHIC_PLUS_TIMER_UPDATE = 0x090A;"
+        },
+        {
+          "line": 102,
+          "text": "constexpr uint16 SMSG_INSTANCE_INFO = 0x09C1;"
+        },
+        {
+          "line": 104,
+          "text": "constexpr uint16 SMSG_PATCH_MYTHIC_AFFIXES = 0x056C;"
+        },
+        {
+          "line": 105,
+          "text": "constexpr uint16 SMSG_PATCH_TIMED_DUNGEON = 0x0572;"
+        },
+        {
+          "line": 114,
+          "text": "// MapDifficulty.dbc names DUNGEON_DIFFICULTY_5PLAYER_EPIC for Mythic, which the client's GlobalStrings.dbc lacks;"
+        },
+        {
+          "line": 117,
+          "text": "{ 9700001, \"DUNGEON_DIFFICULTY_5PLAYER_EPIC\", \"5 Player (Mythic)\" },"
+        },
+        {
+          "line": 133,
+          "text": "OWNER_LEFT_INSTANCE,"
+        },
+        {
+          "line": 138,
+          "text": "constexpr uint32 TIMER_PACKET_MS = IN_MILLISECONDS;"
+        },
+        {
+          "line": 139,
+          "text": "constexpr uint32 BASE_ENTRY_STEP = 100000;   // E, E+100000 Heroic, E+200000 Mythic, ..."
+        },
+        {
+          "line": 140,
+          "text": "constexpr uint32 MYTHIC_DIFFICULTY = 2;      // DungeonEncounter.dbc difficulty of Mythic"
+        },
+        {
+          "line": 141,
+          "text": "constexpr uint32 SPELL_ACTIVATE_KEYSTONE = 161;"
+        },
+        {
+          "line": 142,
+          "text": "constexpr uint32 SPELL_MYTHIC_PLUS_PREPARATION = 9931349;"
+        },
+        {
+          "line": 144,
+          "text": "// Affix spells as MythicAffixes.dbc names them. Most go on the enemies as"
+        },
+        {
+          "line": 147,
+          "text": "// spells (Rallying Cry 250 / 500 / 1000 by expansion); the logs of vanilla"
+        },
+        {
+          "line": 148,
+          "text": "// dungeons show 2191077's Rallying Cry 2191074 and 2191080."
+        },
+        {
+          "line": 155,
+          "text": "uint32 instanceId = 0;"
+        },
+        {
+          "line": 162,
+          "text": "TimedDungeon dungeon;"
+        },
+        {
+          "line": 168,
+          "text": "uint32 timerPacketMs = 0;"
+        },
+        {
+          "line": 171,
+          "text": "std::vector<uint32> affixes;    // MythicAffixes.dbc ids for this week and level"
+        },
+        {
+          "line": 177,
+          "text": "std::set<uint32> encounters;    // client encounter ids (DungeonEncounterExtra.dbc)"
+        },
+        {
+          "line": 179,
+          "text": "uint32 champions = 0;           // Mythic Champions killed"
+        },
+        {
+          "line": 186,
+          "text": "uint32 TimeLeftMs() const { return elapsedMs >= dungeon.timeLimitMs ? 0 : dungeon.timeLimitMs - elapsedMs; }"
+        },
+        {
+          "line": 198,
+          "text": "std::unordered_map<uint32, Run> g_runs;             // by instance id"
+        },
+        {
+          "line": 199,
+          "text": "std::unordered_map<uint32, uint32> g_forces;        // creature entry -> enemy forces"
+        },
+        {
+          "line": 205,
+          "text": "bool Enabled() { return sConfigMgr->GetOption<bool>(\"MythicPlus.Enable\", true); }"
+        },
+        {
+          "line": 206,
+          "text": "int32 RequiredDifficulty() { return sConfigMgr->GetOption<int32>(\"MythicPlus.RequiredDifficulty\", 2); }"
+        },
+        {
+          "line": 207,
+          "text": "uint32 MaxExpansion() { return sConfigMgr->GetOption<uint32>(\"MythicPlus.MaxExpansion\", 0); }"
+        },
+        {
+          "line": 213,
+          "text": "LOG_INFO(\"module\", \"Mythic+: keystone socket window {} for {} on map {}\", visible ? \"shown\" : \"hidden\","
+        },
+        {
+          "line": 220,
+          "text": "void SendInstanceInfo(Player* player, uint32 instanceId)"
+        },
+        {
+          "line": 222,
+          "text": "WorldPacket data(SMSG_INSTANCE_INFO, 4);"
+        },
+        {
+          "line": 223,
+          "text": "data << uint32(instanceId);"
+        },
+        {
+          "line": 229,
+          "text": "WorldPacket data(SMSG_MYTHIC_PLUS_DUNGEON_STATE_CHANGED, 17);"
+        },
+        {
+          "line": 233,
+          "text": "data << uint32(run.instanceId);     // must match SMSG_INSTANCE_INFO"
+        },
+        {
+          "line": 239,
+          "text": "WorldPacket data(SMSG_MYTHIC_PLUS_PROGRESS_UPDATE, 12 + 4 * run.encounters.size());"
+        },
+        {
+          "line": 240,
+          "text": "data << uint32(run.encounters.size());"
+        },
+        {
+          "line": 241,
+          "text": "for (uint32 id : run.encounters)"
+        },
+        {
+          "line": 243,
+          "text": "data << uint32(std::min(run.forces, run.dungeon.forcesTotal ? run.dungeon.forcesTotal : run.forces));"
+        },
+        {
+          "line": 248,
+          "text": "void SendTimer(Player* player, Run const& run)"
+        },
+        {
+          "line": 250,
+          "text": "WorldPacket data(SMSG_MYTHIC_PLUS_TIMER_UPDATE, 4);"
+        },
+        {
+          "line": 258,
+          "text": "SendInstanceInfo(player, run.instanceId);"
+        },
+        {
+          "line": 261,
+          "text": "SendTimer(player, run);"
+        },
+        {
+          "line": 280,
+          "text": "if (Data::Instance().IsKeystone(item->GetEntry()))"
+        },
+        {
+          "line": 286,
+          "text": "if (Data::Instance().IsKeystone(item->GetEntry()))"
+        },
+        {
+          "line": 290,
+          "text": "if (Data::Instance().IsKeystone(item->GetEntry()))"
+        },
+        {
+          "line": 301,
+          "text": "if (item && Data::Instance().IsKeystone(item->GetEntry()))"
+        },
+        {
+          "line": 334,
+          "text": "LOG_ERROR(\"module\", \"Mythic+: item {} x{} for {} has no item template\", item, count, player->GetName());"
+        },
+        {
+          "line": 337,
+          "text": "if (Data::Instance().IsKeystone(item))"
+        },
+        {
+          "line": 340,
+          "text": "ChatHandler(player->GetSession()).PSendSysMessage(\"Mythic+: your bags are full, {} x item {} was lost.\", count, item);"
+        },
+        {
+          "line": 343,
+          "text": "// LFG dungeons new keys never point at (MythicPlus.ExcludedDungeons), e.g."
+        },
+        {
+          "line": 345,
+          "text": "std::set<uint32> ExcludedDungeons()"
+        },
+        {
+          "line": 347,
+          "text": "std::string list = sConfigMgr->GetOption<std::string>(\"MythicPlus.ExcludedDungeons\", \"2045 2046\");"
+        },
+        {
+          "line": 356,
+          "text": "// A random keystone at this level. 0 when no dungeon has a key for it."
+        },
+        {
+          "line": 359,
+          "text": "std::vector<uint32> pool = Data::Instance().GetKeyPool(level, MaxExpansion());"
+        },
+        {
+          "line": 360,
+          "text": "std::set<uint32> const excluded = ExcludedDungeons();"
+        },
+        {
+          "line": 364,
+          "text": "return Data::Instance().GetKeystoneItem(pool[urand(0, uint32(pool.size()) - 1)], level);"
+        },
+        {
+          "line": 374,
+          "text": "// ---------------------------------------------------------------- creatures"
+        },
+        {
+          "line": 381,
+          "text": "// The encounter a kill completes, as the client numbers it: the Mythic row"
+        },
+        {
+          "line": 382,
+          "text": "// of DungeonEncounter.dbc for the same map and encounter index. Credit is"
+        },
+        {
+          "line": 383,
+          "text": "// matched on the kill credit in instance_encounters, for the instance's"
+        },
+        {
+          "line": 384,
+          "text": "// difficulty or, where that has none, Normal."
+        },
+        {
+          "line": 385,
+          "text": "DungeonEncounter const* FindEncounter(Creature* creature, uint32& clientId)"
+        },
+        {
+          "line": 387,
+          "text": "Map* map = creature->GetMap();"
+        },
+        {
+          "line": 388,
+          "text": "DungeonEncounterList const* list = sObjectMgr->GetDungeonEncounterList(map->GetId(), map->GetDifficulty());"
+        },
+        {
+          "line": 390,
+          "text": "list = sObjectMgr->GetDungeonEncounterList(map->GetId(), REGULAR_DIFFICULTY);"
+        },
+        {
+          "line": 394,
+          "text": "uint32 entry = creature->GetEntry();"
+        },
+        {
+          "line": 396,
+          "text": "// Ring of Law ends with one of six arena bosses. Their own encounters"
+        },
+        {
+          "line": 401,
+          "text": "for (DungeonEncounter const* encounter : *list)"
+        },
+        {
+          "line": 403,
+          "text": "if (encounter->creditType != ENCOUNTER_CREDIT_KILL_CREATURE)"
+        },
+        {
+          "line": 405,
+          "text": "if (encounter->creditEntry != entry && encounter->creditEntry != base)"
+        },
+        {
+          "line": 408,
+          "text": "clientId = encounter->dbcEntry->id;"
+        },
+        {
+          "line": 409,
+          "text": "for (DungeonEncounterEntry const* e : sDungeonEncounterStore)"
+        },
+        {
+          "line": 410,
+          "text": "if (e->mapId == encounter->dbcEntry->mapId && e->difficulty == MYTHIC_DIFFICULTY"
+        },
+        {
+          "line": 411,
+          "text": "&& e->encounterIndex == encounter->dbcEntry->encounterIndex)"
+        },
+        {
+          "line": 416,
+          "text": "return encounter;"
+        },
+        {
+          "line": 421,
+          "text": "// Enemy forces for a kill. coa_mythic_forces wins; otherwise creatures"
+        },
+        {
+          "line": 423,
+          "text": "// give per-dungeon totals). Summons count only through the table, which"
+        },
+        {
+          "line": 425,
+          "text": "uint32 ForcesFor(Creature* creature)"
+        },
+        {
+          "line": 427,
+          "text": "auto itr = g_forces.find(creature->GetEntry());"
+        },
+        {
+          "line": 429,
+          "text": "itr = g_forces.find(BaseEntry(creature->GetEntry()));"
+        },
+        {
+          "line": 433,
+          "text": "if (!creature->GetSpawnId() || creature->IsCritter() || creature->IsTotem() || creature->IsCivilian())"
+        },
+        {
+          "line": 435,
+          "text": "if (creature->IsControlledByPlayer())"
+        },
+        {
+          "line": 437,
+          "text": "return creature->isElite() ? sConfigMgr->GetOption<uint32>(\"MythicPlus.DefaultForces.Elite\", 2)"
+        },
+        {
+          "line": 438,
+          "text": ": sConfigMgr->GetOption<uint32>(\"MythicPlus.DefaultForces.Normal\", 1);"
+        },
+        {
+          "line": 441,
+          "text": "// The boss of the run's wing this kill completes, as the client lists it"
+        },
+        {
+          "line": 442,
+          "text": "// in DungeonEncounterExtra.dbc, or nullptr. The Ring of Law ends with one"
+        },
+        {
+          "line": 443,
+          "text": "// of six arena bosses, and the client lists each with its own encounter"
+        },
+        {
+          "line": 445,
+          "text": "// the progress packet carries the killed boss's own id, as on Ascension."
+        },
+        {
+          "line": 446,
+          "text": "WingEncounter const* FindWingEncounter(Run const& run, Creature* creature)"
+        },
+        {
+          "line": 448,
+          "text": "std::vector<WingEncounter> const* list = Data::Instance().GetWingEncounters(run.lfgId);"
+        },
+        {
+          "line": 451,
+          "text": "uint32 const base = BaseEntry(creature->GetEntry());"
+        },
+        {
+          "line": 452,
+          "text": "for (WingEncounter const& encounter : *list)"
+        },
+        {
+          "line": 453,
+          "text": "if (encounter.creature == base || encounter.creature == creature->GetEntry())"
+        },
+        {
+          "line": 454,
+          "text": "return &encounter;"
+        },
+        {
+          "line": 459,
+          "text": "uint32 ForcesForSpawn(CreatureData const& data)"
+        },
+        {
+          "line": 464,
+          "text": "CreatureTemplate const* info = sObjectMgr->GetCreatureTemplate(data.id);"
+        },
+        {
+          "line": 465,
+          "text": "if (!info || info->type == CREATURE_TYPE_CRITTER"
+        },
+        {
+          "line": 466,
+          "text": "|| (info->flags_extra & (CREATURE_FLAG_EXTRA_TRIGGER | CREATURE_FLAG_EXTRA_CIVILIAN)))"
+        },
+        {
+          "line": 471,
+          "text": "return info->rank ? sConfigMgr->GetOption<uint32>(\"MythicPlus.DefaultForces.Elite\", 2)"
+        },
+        {
+          "line": 472,
+          "text": ": sConfigMgr->GetOption<uint32>(\"MythicPlus.DefaultForces.Normal\", 1);"
+        },
+        {
+          "line": 475,
+          "text": "// TimedDungeons.dbc sets the forces a wing needs, but not what each"
+        },
+        {
+          "line": 476,
+          "text": "// creature is worth; with 1 per creature and 2 per elite some wings ran"
+        },
+        {
+          "line": 479,
+          "text": "// scaled up so that killing MythicPlus.Forces.ClearShare of the trash the"
+        },
+        {
+          "line": 483,
+          "text": "// A creature belongs to the wing of the nearest boss the client lists for"
+        },
+        {
+          "line": 485,
+          "text": "// MythicPlus.Forces.WingFactor: \"lfgId:factor\" pairs that correct single wings to what live runs showed."
+        },
+        {
+          "line": 488,
+          "text": "std::istringstream in(sConfigMgr->GetOption<std::string>(\"MythicPlus.Forces.WingFactor\", \"3320:0.626\"));"
+        },
+        {
+          "line": 499,
+          "text": "void ScaleForces(uint32 mapId, uint32 difficulty, Run& run, std::string* missingBosses = nullptr)"
+        },
+        {
+          "line": 501,
+          "text": "std::map<uint32, std::set<uint32>> wingsOfBoss;   // boss entry -> LFG dungeons listing it"
+        },
+        {
+          "line": 502,
+          "text": "for (auto const& [lfgId, dungeon] : Data::Instance().Dungeons())"
+        },
+        {
+          "line": 503,
+          "text": "if (dungeon.mapId == mapId)"
+        },
+        {
+          "line": 504,
+          "text": "if (std::vector<WingEncounter> const* list = Data::Instance().GetWingEncounters(lfgId))"
+        },
+        {
+          "line": 505,
+          "text": "for (WingEncounter const& encounter : *list)"
+        },
+        {
+          "line": 506,
+          "text": "wingsOfBoss[encounter.creature].insert(lfgId);"
+        },
+        {
+          "line": 508,
+          "text": "// Spawns from the database: far parts of the instance may not be"
+        },
+        {
+          "line": 510,
+          "text": "uint32 const spawnBit = 1u << difficulty;"
+        },
+        {
+          "line": 511,
+          "text": "std::set<uint32> spawnedBosses;"
+        },
+        {
+          "line": 512,
+          "text": "std::vector<std::pair<Position, std::set<uint32> const*>> bosses;"
+        },
+        {
+          "line": 514,
+          "text": "for (auto const& [spawnId, data] : sObjectMgr->GetAllCreatureData())"
+        },
+        {
+          "line": 522,
+          "text": "auto boss = wingsOfBoss.find(credit);"
+        },
+        {
+          "line": 523,
+          "text": "if (boss != wingsOfBoss.end())"
+        },
+        {
+          "line": 525,
+          "text": "bosses.emplace_back(pos, &boss->second);"
+        },
+        {
+          "line": 526,
+          "text": "spawnedBosses.insert(credit);"
+        },
+        {
+          "line": 537,
+          "text": "for (auto const& [bossPos, bossWings] : bosses)"
+        },
+        {
+          "line": 539,
+          "text": "float const dist = pos.GetExactDistSq(&bossPos);"
+        },
+        {
+          "line": 542,
+          "text": "wings = bossWings;"
+        },
+        {
+          "line": 550,
+          "text": "float const share = sConfigMgr->GetOption<float>(\"MythicPlus.Forces.ClearShare\", 0.58f);"
+        },
+        {
+          "line": 552,
+          "text": "run.forcesScale = available && run.dungeon.forcesTotal && share > 0.0f"
+        },
+        {
+          "line": 553,
+          "text": "? std::max(1.0f, float(run.dungeon.forcesTotal) / (available * share)) : 1.0f;"
+        },
+        {
+          "line": 555,
+          "text": "if (missingBosses)"
+        },
+        {
+          "line": 556,
+          "text": "if (std::vector<WingEncounter> const* list = Data::Instance().GetWingEncounters(run.lfgId))"
+        },
+        {
+          "line": 557,
+          "text": "for (WingEncounter const& encounter : *list)"
+        },
+        {
+          "line": 558,
+          "text": "if (!spawnedBosses.count(encounter.creature))"
+        },
+        {
+          "line": 559,
+          "text": "*missingBosses += Acore::StringFormat(\" {}{}\", encounter.creature, encounter.final ? \"(final)\" : \"\");"
+        },
+        {
+          "line": 560,
+          "text": "LOG_INFO(\"module\", \"Mythic+: lfg {} on map {}: {} forces in the wing, {} needed, each kill x{:.2f}\","
+        },
+        {
+          "line": 561,
+          "text": "run.lfgId, mapId, available, run.dungeon.forcesTotal, run.forcesScale);"
+        },
+        {
+          "line": 564,
+          "text": "bool IsScalable(Creature* creature)"
+        },
+        {
+          "line": 566,
+          "text": "return creature && !creature->IsPet() && !creature->IsControlledByPlayer() && !creature->IsTotem();"
+        },
+        {
+          "line": 569,
+          "text": "void ScaleHealthBy(Creature* creature, float factor)"
+        },
+        {
+          "line": 571,
+          "text": "if (!IsScalable(creature) || factor <= 0.0f || factor == 1.0f)"
+        },
+        {
+          "line": 573,
+          "text": "float pct = creature->GetMaxHealth() ? float(creature->GetHealth()) / creature->GetMaxHealth() : 1.0f;"
+        },
+        {
+          "line": 574,
+          "text": "uint32 health = std::max<uint32>(1, uint32(creature->GetCreateHealth() * factor));"
+        },
+        {
+          "line": 575,
+          "text": "creature->SetCreateHealth(health);"
+        },
+        {
+          "line": 576,
+          "text": "creature->SetStatFlatModifier(UNIT_MOD_HEALTH, BASE_VALUE, float(health));"
+        },
+        {
+          "line": 577,
+          "text": "creature->UpdateMaxHealth();"
+        },
+        {
+          "line": 578,
+          "text": "if (creature->IsAlive())"
+        },
+        {
+          "line": 579,
+          "text": "creature->SetHealth(std::max<uint32>(1, uint32(creature->GetMaxHealth() * pct)));"
+        },
+        {
+          "line": 582,
+          "text": "void ScaleHealth(Creature* creature, Scaling const& scaling)"
+        },
+        {
+          "line": 584,
+          "text": "if (scaling.health > 1.0f)"
+        },
+        {
+          "line": 585,
+          "text": "ScaleHealthBy(creature, scaling.health);"
+        },
+        {
+          "line": 590,
+          "text": "if (!map || !map->IsDungeon())"
+        },
+        {
+          "line": 592,
+          "text": "auto itr = g_runs.find(map->GetInstanceId());"
+        },
+        {
+          "line": 598,
+          "text": "int32 g_weekOverride = -1;      // .mythic week; -1 follows the calendar"
+        },
+        {
+          "line": 602,
+          "text": "int32 forced = g_weekOverride >= 0 ? g_weekOverride : sConfigMgr->GetOption<int32>(\"MythicPlus.Week\", -1);"
+        },
+        {
+          "line": 608,
+          "text": "uint32 CreatureAffixSpell(uint32 affix, uint32 expansion)"
+        },
+        {
+          "line": 617,
+          "text": "uint32 PlayerAffixSpell(uint32 affix)"
+        },
+        {
+          "line": 627,
+          "text": "SpellInfo const* info = sSpellMgr->GetSpellInfo(id);"
+        },
+        {
+          "line": 630,
+          "text": "std::string name = info && info->SpellName[0] ? info->SpellName[0] : std::to_string(id);"
+        },
+        {
+          "line": 638,
+          "text": "bool TakesAffixes(Creature* creature)"
+        },
+        {
+          "line": 640,
+          "text": "return IsScalable(creature) && creature->IsAlive() && !creature->IsCritter() && !creature->IsTrigger()"
+        },
+        {
+          "line": 641,
+          "text": "&& !creature->IsCivilian() && creature->IsHostileToPlayers();"
+        },
+        {
+          "line": 644,
+          "text": "void ApplyCreatureAffixes(Creature* creature, Run const& run)"
+        },
+        {
+          "line": 646,
+          "text": "if (!creature->IsInWorld() || !TakesAffixes(creature))"
+        },
+        {
+          "line": 649,
+          "text": "if (uint32 spell = CreatureAffixSpell(affix, run.dungeon.expansion))"
+        },
+        {
+          "line": 650,
+          "text": "if (!creature->HasAura(spell) && sSpellMgr->GetSpellInfo(spell))"
+        },
+        {
+          "line": 651,
+          "text": "creature->AddAura(spell, creature);"
+        },
+        {
+          "line": 657,
+          "text": "if (uint32 spell = PlayerAffixSpell(affix))"
+        },
+        {
+          "line": 658,
+          "text": "if (!player->HasAura(spell))"
+        },
+        {
+          "line": 659,
+          "text": "player->AddAura(spell, player);"
+        },
+        {
+          "line": 665,
+          "text": "if (uint32 spell = PlayerAffixSpell(affix))"
+        },
+        {
+          "line": 666,
+          "text": "player->RemoveAurasDueToSpell(spell);"
+        },
+        {
+          "line": 671,
+          "text": "std::string DungeonName(uint32 lfgId)"
+        },
+        {
+          "line": 673,
+          "text": "LFGDungeonEntry const* entry = sLFGDungeonStore.LookupEntry(lfgId);"
+        },
+        {
+          "line": 679,
+          "text": "char const* CheckKeystone(Player* player, uint32 item, Keystone const*& key, TimedDungeon const*& dungeon,"
+        },
+        {
+          "line": 683,
+          "text": "key = Data::Instance().GetKeystone(item);"
+        },
+        {
+          "line": 684,
+          "text": "dungeon = key ? Data::Instance().GetDungeon(key->lfgId) : nullptr;"
+        },
+        {
+          "line": 685,
+          "text": "if (!key || !dungeon)"
+        },
+        {
+          "line": 687,
+          "text": "if (!map || !map->IsDungeon() || map->IsRaid())"
+        },
+        {
+          "line": 688,
+          "text": "return \"Use your keystone inside its dungeon.\";"
+        },
+        {
+          "line": 689,
+          "text": "if (dungeon->mapId != map->GetId())"
+        },
+        {
+          "line": 691,
+          "text": "detail = DungeonName(key->lfgId);"
+        },
+        {
+          "line": 692,
+          "text": "return \"This keystone is for another dungeon:\";"
+        },
+        {
+          "line": 694,
+          "text": "if (RequiredDifficulty() >= 0 && int32(map->GetDifficulty()) != RequiredDifficulty())"
+        },
+        {
+          "line": 695,
+          "text": "return \"Keystones only work on Mythic difficulty.\";"
+        },
+        {
+          "line": 700,
+          "text": "if (group->isLFGGroup() && !sConfigMgr->GetOption<bool>(\"MythicPlus.AllowInDungeonFinder\", true))"
+        },
+        {
+          "line": 701,
+          "text": "return \"Keystones cannot be used in a Dungeon Finder group.\";"
+        },
+        {
+          "line": 704,
+          "text": "return \"A keystone was already used in this instance.\";"
+        },
+        {
+          "line": 705,
+          "text": "if (InstanceScript* script = map->ToInstanceMap()->GetInstanceScript())"
+        },
+        {
+          "line": 706,
+          "text": "if (script->GetCompletedEncounterMask())"
+        },
+        {
+          "line": 707,
+          "text": "return \"A boss in this instance is already dead. Reset the instance first.\";"
+        },
+        {
+          "line": 715,
+          "text": "constexpr uint32 ITEM_SPOILS_MYTHIC = 1027965;"
+        },
+        {
+          "line": 716,
+          "text": "// \"Mythical Cache\" for Mythic 1 to 12 (item description @Mythic N@)."
+        },
+        {
+          "line": 717,
+          "text": "constexpr std::array<uint32, 12> MYTHICAL_CACHES = { 2093952, 2093963, 2093964, 2093965, 2093966, 2093967,"
+        },
+        {
+          "line": 722,
+          "text": "return MYTHICAL_CACHES[std::clamp<uint32>(level, 1, MYTHICAL_CACHES.size()) - 1];"
+        },
+        {
+          "line": 740,
+          "text": "if (QueryResult result = CharacterDatabase.Query(\"SELECT coins, caches FROM coa_mythic_weekly WHERE guid = {} AND week = {}\","
+        },
+        {
+          "line": 751,
+          "text": "CharacterDatabase.DirectExecute(\"INSERT INTO coa_mythic_weekly (guid, week, coins, caches) VALUES ({}, {}, {}, {}) \""
+        },
+        {
+          "line": 756,
+          "text": "uint32 WeeklyCoinCap() { return sConfigMgr->GetOption<uint32>(\"MythicPlus.Coins.WeeklyCap\", 5500); }"
+        },
+        {
+          "line": 757,
+          "text": "uint32 WeeklyCacheCap() { return sConfigMgr->GetOption<uint32>(\"MythicPlus.Caches.WeeklyCap\", 80); }"
+        },
+        {
+          "line": 762,
+          "text": "if (QueryResult result = CharacterDatabase.Query(\"SELECT level FROM coa_mythic_best WHERE guid = {}\", guid.GetCounter()))"
+        },
+        {
+          "line": 769,
+          "text": "CharacterDatabase.DirectExecute(\"INSERT INTO coa_mythic_best (guid, level) VALUES ({}, {}) \""
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261028_60_vaults_of_the_inquisition.sql",
+      "sha": "bc5c0f7c5789b40715df1e420413e48764d08b39",
+      "lineCount": 1089,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Vaults of the Inquisition (map 936): Ascension's dungeon under Northshire Abbey, restored from combat logs, the Exiles"
+        },
+        {
+          "line": 2,
+          "text": "-- dump and video. Templates (with Heroic/Mythic templates at +100000/+200000), spawns (creature and gameobject guids"
+        },
+        {
+          "line": 3,
+          "text": "-- 9360001-9360999), paths, texts, loot, spell scripts and the Heroic/Mythic data of the Classic dungeon rules."
+        },
+        {
+          "line": 6,
+          "text": "-- lfg_dungeon_template"
+        },
+        {
+          "line": 7,
+          "text": "DELETE FROM `lfg_dungeon_template` WHERE `dungeonId` IN (401, 1401, 2401);"
+        },
+        {
+          "line": 8,
+          "text": "INSERT INTO `lfg_dungeon_template` (`dungeonId`, `name`, `position_x`, `position_y`, `position_z`, `orientation`, `VerifiedBuild`) VALUES"
+        },
+        {
+          "line": 11,
+          "text": "(2401,'Vaults of the Inquisition (Mythic)',-6658.51,-5569.48,175.073,4.72967,12340);"
+        },
+        {
+          "line": 18,
+          "text": "-- creature_template"
+        },
+        {
+          "line": 19,
+          "text": "INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed"
+        },
+        {
+          "line": 20,
+          "text": "(162700,262700,362700,0,0,0,'Merciless Echo','Jailer of the Inquisition',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,0.456,2000,0,1,1,1,0,0,0,0,6,8,162700,0,0,0,0,0,0,'',0,1,38.271,1,1,1,0,0,1,-273,0,'boss_coa_vaults_echo',12340),"
+        },
+        {
+          "line": 23,
+          "text": "(162703,262703,362703,0,0,0,'His Majesty Darkandle','',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,0.57,2000,0,1,1,1,0,0,0,0,7,8,162703,0,0,0,0,0,0,'',0,1,37.97,1,1,1,0,0,1,-273,0,'boss_coa_vaults_darkandle',12340),"
+        },
+        {
+          "line": 24,
+          "text": "(162704,262704,362704,0,81042,0,'The Deceiver\\'s Presence','',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,0.695,2000,0,1,1,2,0,0,0,0,15,8,162704,0,0,0,0,0,0,'',0,1,47.455,1,1,1,0,0,1,-273,0,'boss_coa_vaults_deceiver',12340),"
+        },
+        {
+          "line": 37,
+          "text": "(162745,0,0,0,0,0,'Instance Inquisitoinal','Sound Helper',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,0,0,1,2000,0,1,1,1,33554434,0,0,0,0,0,0,0,0,0,0,0,0,'',0,1,1,1,1,1,0,0,0,0,128,'npc_coa_vaults_helper',12340),"
+        },
+        {
+          "line": 51,
+          "text": "(262700,0,0,0,0,0,'Merciless Echo','Jailer of the Inquisition',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,0.684,2000,0,1,1,1,0,0,0,0,6,8,162700,0,0,0,0,0,0,'',0,1,38.271,1,1,1,0,0,1,-273,0,'boss_coa_vaults_echo',12340),"
+        },
+        {
+          "line": 52,
+          "text": "(262703,0,0,0,0,0,'His Majesty Darkandle','',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,1.11,2000,0,1,1,1,0,0,0,0,7,8,162703,0,0,0,0,0,0,'',0,1,37.97,1,1,1,0,0,1,-273,0,'boss_coa_vaults_darkandle',12340),"
+        },
+        {
+          "line": 53,
+          "text": "(262704,0,0,0,81042,0,'The Deceiver\\'s Presence','',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,1.042,2000,0,1,1,2,0,0,0,0,15,8,162704,0,0,0,0,0,0,'',0,1,47.455,1,1,1,0,0,1,-273,0,'boss_coa_vaults_deceiver',12340),"
+        },
+        {
+          "line": 66,
+          "text": "(362700,0,0,0,0,0,'Merciless Echo','Jailer of the Inquisition',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,1.471,2000,0,1,1,1,0,0,0,0,6,8,162700,0,0,0,0,0,0,'',0,1,38.271,1,1,1,0,0,1,-273,0,'boss_coa_vaults_echo',12340),"
+        },
+        {
+          "line": 67,
+          "text": "(362703,0,0,0,0,0,'His Majesty Darkandle','',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,2.386,2000,0,1,1,1,0,0,0,0,7,8,162703,0,0,0,0,0,0,'',0,1,37.97,1,1,1,0,0,1,-273,0,'boss_coa_vaults_darkandle',12340),"
+        },
+        {
+          "line": 68,
+          "text": "(362704,0,0,0,81042,0,'The Deceiver\\'s Presence','',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,2.241,2000,0,1,1,2,0,0,0,0,15,8,162704,0,0,0,0,0,0,'',0,1,47.455,1,1,1,0,0,1,-273,0,'boss_coa_vaults_deceiver',12340),"
+        },
+        {
+          "line": 80,
+          "text": "(363813,0,0,0,162737,0,'Darkandle Kobold','',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,1,0,0.398,2000,0,1,1,1,0,0,0,0,7,0,163813,0,0,0,0,19,85,'',0,1,2.213,1,1,1,0,0,1,0,0,'npc_coa_vaults_trash',12340) ON DUPLICATE KEY UPDATE `difficulty_entry_1` = VALUES(`difficul"
+        },
+        {
+          "line": 82,
+          "text": "-- creature_template_addon"
+        },
+        {
+          "line": 83,
+          "text": "DELETE FROM `creature_template_addon` WHERE `entry` IN (162700, 162701, 162702, 162703, 162704, 162705, 162706, 162707, 162710, 162723, 162724, 162733, 162734, 162735, 162736, 162737, 162738, 162745, 162747, 162748, 162759, 162761, 162762, 162763, 162932, 1629"
+        },
+        {
+          "line": 84,
+          "text": "INSERT INTO `creature_template_addon` (`entry`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `visibilityDistanceType`, `auras`) VALUES"
+        },
+        {
+          "line": 87,
+          "text": "-- creature_template_model"
+        },
+        {
+          "line": 88,
+          "text": "DELETE FROM `creature_template_model` WHERE `CreatureID` IN (162700, 162701, 162702, 162703, 162704, 162705, 162706, 162707, 162710, 162723, 162724, 162733, 162734, 162735, 162736, 162737, 162738, 162745, 162747, 162748, 162759, 162761, 162762, 162763, 162932,"
+        },
+        {
+          "line": 89,
+          "text": "INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`, `DisplayScale`, `Probability`, `VerifiedBuild`) VALUES"
+        },
+        {
+          "line": 157,
+          "text": "-- creature_model_info"
+        },
+        {
+          "line": 158,
+          "text": "DELETE FROM `creature_model_info` WHERE `DisplayID` IN (42635, 94426, 94480, 132245, 132246, 138704, 140824, 140839, 140977, 141028, 141034, 141830, 141854, 141855);"
+        },
+        {
+          "line": 159,
+          "text": "INSERT INTO `creature_model_info` (`DisplayID`, `BoundingRadius`, `CombatReach`, `Gender`, `DisplayID_Other_Gender`, `VerifiedBuild`) VALUES"
+        },
+        {
+          "line": 175,
+          "text": "-- creature_display_preset"
+        },
+        {
+          "line": 176,
+          "text": "DELETE FROM `creature_display_preset` WHERE `entry` IN (162700, 162701, 162702, 162703, 162704, 162705, 162706, 162707, 162710, 162723, 162724, 162733, 162734, 162735, 162736, 162737, 162738, 162745, 162747, 162748, 162759, 162761, 162762, 162763, 162932, 1629"
+        },
+        {
+          "line": 177,
+          "text": "INSERT INTO `creature_display_preset` (`entry`, `display_id`, `race`, `gender`, `class`, `skin`, `face`, `hair`, `haircolor`, `facialhair`, `guild_id`, `item_head`, `item_shoulders`, `item_body`, `item_chest`, `item_waist`, `item_legs`, `item_feet`, `item_wris"
+        },
+        {
+          "line": 180,
+          "text": "-- creature_equip_template"
+        },
+        {
+          "line": 181,
+          "text": "DELETE FROM `creature_equip_template` WHERE `CreatureID` IN (162700, 162701, 162702, 162703, 162704, 162705, 162706, 162707, 162710, 162723, 162724, 162733, 162734, 162735, 162736, 162737, 162738, 162745, 162747, 162748, 162759, 162761, 162762, 162763, 162932,"
+        },
+        {
+          "line": 182,
+          "text": "INSERT INTO `creature_equip_template` (`CreatureID`, `ID`, `ItemID1`, `ItemID2`, `ItemID3`, `VerifiedBuild`) VALUES"
+        },
+        {
+          "line": 188,
+          "text": "-- npc_spellclick_spells"
+        },
+        {
+          "line": 189,
+          "text": "DELETE FROM `npc_spellclick_spells` WHERE `npc_entry` IN (162700, 162701, 162702, 162703, 162704, 162705, 162706, 162707, 162710, 162723, 162724, 162733, 162734, 162735, 162736, 162737, 162738, 162745, 162747, 162748, 162759, 162761, 162762, 162763, 162932, 16"
+        },
+        {
+          "line": 190,
+          "text": "INSERT INTO `npc_spellclick_spells` (`npc_entry`, `spell_id`, `cast_flags`, `user_type`) VALUES"
+        },
+        {
+          "line": 197,
+          "text": "INSERT INTO `vehicle_template_accessory` (`entry`, `accessory_entry`, `seat_id`, `minion`, `description`, `summontype`, `summontimer`) VALUES"
+        },
+        {
+          "line": 200,
+          "text": "-- creature_text"
+        },
+        {
+          "line": 201,
+          "text": "DELETE FROM `creature_text` WHERE `CreatureID` IN (162700, 162701, 162702, 162703, 162704, 162705, 162706, 162707, 162710, 162723, 162724, 162733, 162734, 162735, 162736, 162737, 162738, 162745, 162747, 162748, 162759, 162761, 162762, 162763, 162932, 162978, 1"
+        },
+        {
+          "line": 202,
+          "text": "INSERT INTO `creature_text` (`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Language`, `Probability`, `Emote`, `Duration`, `Sound`, `BroadcastTextId`, `TextRange`, `comment`) VALUES"
+        },
+        {
+          "line": 260,
+          "text": "INSERT INTO `npc_text` (`ID`, `text0_0`, `text0_1`, `BroadcastTextID0`, `lang0`, `Probability0`, `em0_0`, `em0_1`, `em0_2`, `em0_3`, `em0_4`, `em0_5`, `text1_0`, `text1_1`, `BroadcastTextID1`, `lang1`, `Probability1`, `em1_0`, `em1_1`, `em1_2`, `em1_3`, `em1_4"
+        },
+        {
+          "line": 268,
+          "text": "-- creature_queststarter"
+        },
+        {
+          "line": 269,
+          "text": "DELETE FROM `creature_queststarter` WHERE `id` = 162932;"
+        },
+        {
+          "line": 270,
+          "text": "INSERT INTO `creature_queststarter` (`id`, `quest`) VALUES"
+        },
+        {
+          "line": 273,
+          "text": "-- creature_questender"
+        },
+        {
+          "line": 274,
+          "text": "DELETE FROM `creature_questender` WHERE `id` = 162932;"
+        },
+        {
+          "line": 275,
+          "text": "INSERT INTO `creature_questender` (`id`, `quest`) VALUES"
+        },
+        {
+          "line": 279,
+          "text": "INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `IconName`, `castBarCaption`, `unk1`, `size`, `Data0`, `Data1`, `Data2`, `Data3`, `Data4`, `Data5`, `Data6`, `Data7`, `Data8`, `Data9`, `Data10`, `Data11`, `Data12`, `Data13`, `Data14`, `"
+        },
+        {
+          "line": 280,
+          "text": "(2300559,0,300453,'Inquisitorial Dungeon Jail Door','','','',1,0,86,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'','go_coa_vaults_jail_door',12340),"
+        },
+        {
+          "line": 281,
+          "text": "(2300560,0,300454,'Inquisitorial Dungeon TowerBoss Door','','','',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'','go_coa_vaults_boss_gate',12340),"
+        },
+        {
+          "line": 282,
+          "text": "(2300561,0,300455,'Inquisitorial Dungeon TowerBoss Barrier','','','',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'','go_coa_vaults_boss_gate',12340),"
+        },
+        {
+          "line": 283,
+          "text": "(2300562,0,300456,'Inquisitorial Dungeon Kobold Wax Door','','','',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'','go_coa_vaults_boss_gate',12340),"
+        },
+        {
+          "line": 284,
+          "text": "(2300576,0,300455,'Inquisitorial Dungeon TowerBoss Barrier','','','',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'','go_coa_vaults_boss_gate',12340),"
+        },
+        {
+          "line": 285,
+          "text": "(2300577,0,300456,'Inquisitorial Dungeon Kobold Wax Door','','','',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'','go_coa_vaults_boss_gate',12340) ON DUPLICATE KEY UPDATE `type` = VALUES(`type`), `displayId` = VALUES(`displayId`), `name` = VALUES(`name`)"
+        },
+        {
+          "line": 297,
+          "text": "-- creature"
+        },
+        {
+          "line": 298,
+          "text": "DELETE FROM `creature` WHERE `map` = 936 AND `guid` BETWEEN 9360001 AND 9360999;"
+        },
+        {
+          "line": 299,
+          "text": "INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `"
+        },
+        {
+          "line": 487,
+          "text": "-- creature_addon"
+        },
+        {
+          "line": 488,
+          "text": "DELETE FROM `creature_addon` WHERE `guid` IN (9360001, 9360002, 9360003, 9360004, 9360005, 9360006, 9360007, 9360008, 9360009, 9360010, 9360011, 9360012, 9360013, 9360014, 9360015, 9360016, 9360017, 9360018, 9360019, 9360020, 9360021, 9360022, 9360023, 9360024"
+        },
+        {
+          "line": 489,
+          "text": "INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `visibilityDistanceType`, `auras`) VALUES"
+        },
+        {
+          "line": 501,
+          "text": "INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `ScriptName`, `V"
+        },
+        {
+          "line": 673,
+          "text": "-- spell_script_names"
+        },
+        {
+          "line": 674,
+          "text": "DELETE FROM `spell_script_names` WHERE `ScriptName` IN ('spell_coa_vaults_damage', 'spell_coa_vaults_void_wrath', 'spell_coa_vaults_void_wrath_tick');"
+        },
+        {
+          "line": 675,
+          "text": "INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES"
+        },
+        {
+          "line": 676,
+          "text": "(256491,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 677,
+          "text": "(256499,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 678,
+          "text": "(256500,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 679,
+          "text": "(256501,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 680,
+          "text": "(256804,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 681,
+          "text": "(256805,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 682,
+          "text": "(256818,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 683,
+          "text": "(256819,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 684,
+          "text": "(256831,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 685,
+          "text": "(256832,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 686,
+          "text": "(256844,'spell_coa_vaults_void_wrath'),"
+        },
+        {
+          "line": 687,
+          "text": "(256848,'spell_coa_vaults_void_wrath_tick'),"
+        },
+        {
+          "line": 688,
+          "text": "(256891,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 689,
+          "text": "(256892,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 690,
+          "text": "(256893,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 691,
+          "text": "(256895,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 692,
+          "text": "(256927,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 693,
+          "text": "(256963,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 694,
+          "text": "(257102,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 695,
+          "text": "(257103,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 696,
+          "text": "(257104,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 697,
+          "text": "(257105,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 698,
+          "text": "(257106,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 699,
+          "text": "(257107,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 700,
+          "text": "(257111,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 701,
+          "text": "(257112,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 702,
+          "text": "(257113,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 703,
+          "text": "(257114,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 704,
+          "text": "(257115,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 705,
+          "text": "(257116,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 706,
+          "text": "(257120,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 707,
+          "text": "(257121,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 708,
+          "text": "(257122,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 709,
+          "text": "(257126,'spell_coa_vaults_void_wrath_tick'),"
+        },
+        {
+          "line": 710,
+          "text": "(257127,'spell_coa_vaults_void_wrath_tick'),"
+        },
+        {
+          "line": 711,
+          "text": "(257128,'spell_coa_vaults_void_wrath_tick'),"
+        },
+        {
+          "line": 712,
+          "text": "(257142,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 713,
+          "text": "(257143,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 714,
+          "text": "(257144,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 715,
+          "text": "(257168,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 716,
+          "text": "(257169,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 717,
+          "text": "(257170,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 718,
+          "text": "(257172,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 719,
+          "text": "(257173,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 720,
+          "text": "(257174,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 721,
+          "text": "(257175,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 722,
+          "text": "(257176,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 723,
+          "text": "(257177,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 724,
+          "text": "(257178,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 725,
+          "text": "(257179,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 726,
+          "text": "(257180,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 727,
+          "text": "(257181,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 728,
+          "text": "(257186,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 729,
+          "text": "(257187,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 730,
+          "text": "(257188,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 731,
+          "text": "(257189,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 732,
+          "text": "(257195,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 733,
+          "text": "(257196,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 734,
+          "text": "(257197,'spell_coa_vaults_damage');"
+        },
+        {
+          "line": 736,
+          "text": "-- creature_loot_template"
+        },
+        {
+          "line": 737,
+          "text": "DELETE FROM `creature_loot_template` WHERE `Entry` IN (162700, 162703, 162704, 162733, 162734, 162735, 162736, 162737, 162738, 162748, 162759, 162761, 162762, 162763, 162999, 163813);"
+        },
+        {
+          "line": 738,
+          "text": "INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES"
+        },
+        {
+          "line": 979,
+          "text": "-- coa_dungeon_loot_variant"
+        },
+        {
+          "line": 980,
+          "text": "DELETE FROM `coa_dungeon_loot_variant` WHERE `base_item` IN (559300, 559301, 559305, 559306, 559309, 559310, 559311, 559315, 559317, 559319, 559320, 559323, 559324, 559326, 559332, 559335, 559337, 559339, 559341, 559342, 559346, 559347, 559349, 559351, 559352,"
+        },
+        {
+          "line": 981,
+          "text": "INSERT INTO `coa_dungeon_loot_variant` (`base_item`, `heroic_item`, `mythic_item`) VALUES"
+        },
+        {
+          "line": 1010,
+          "text": "-- instance_encounters"
+        },
+        {
+          "line": 1011,
+          "text": "DELETE FROM `instance_encounters` WHERE `entry` BETWEEN 15000 AND 15002 OR `entry` BETWEEN 15008 AND 15010 OR `entry` BETWEEN 15014 AND 15016;"
+        },
+        {
+          "line": 1012,
+          "text": "INSERT INTO `instance_encounters` (`entry`, `creditType`, `creditEntry`, `lastEncounterDungeon`, `comment`) VALUES"
+        },
+        {
+          "line": 1019,
+          "text": "(15014,0,162700,0,'Vaults of the Inquisition Mythic: Merciless Echo'),"
+        },
+        {
+          "line": 1020,
+          "text": "(15015,0,162703,0,'Vaults of the Inquisition Mythic: His Majesty Darkandle'),"
+        },
+        {
+          "line": 1021,
+          "text": "(15016,0,162704,2401,'Vaults of the Inquisition Mythic: The Deceiver\\'s Presence');"
+        },
+        {
+          "line": 1023,
+          "text": "-- coa_dungeon_health"
+        },
+        {
+          "line": 1024,
+          "text": "DELETE FROM `coa_dungeon_health` WHERE `map_id` = 936;"
+        },
+        {
+          "line": 1025,
+          "text": "INSERT INTO `coa_dungeon_health` (`map_id`, `difficulty`, `creature_entry`, `max_health`, `evidence`, `source`) VALUES"
+        },
+        {
+          "line": 1026,
+          "text": "(936,1,162700,680375,'log','Heroic from Mythic /1.3; Merciless Echo'),"
+        },
+        {
+          "line": 1027,
+          "text": "(936,1,162703,675027,'log','Heroic from Mythic /1.3; His Majesty Darkandle'),"
+        },
+        {
+          "line": 1028,
+          "text": "(936,1,162704,675026,'log','Heroic from Mythic /1.3; The Deceiver\\'s Presence'),"
+        },
+        {
+          "line": 1029,
+          "text": "(936,1,162733,56177,'log','Heroic from Mythic /1.3; Inquisitorial Torturer'),"
+        },
+        {
+          "line": 1030,
+          "text": "(936,1,162734,150035,'log','Heroic from Mythic /1.3; Phantasmal Bound'),"
+        },
+        {
+          "line": 1031,
+          "text": "(936,1,162735,36766,'log','Heroic from Mythic /1.3; Freed Prisoner'),"
+        },
+        {
+          "line": 1032,
+          "text": "(936,1,162736,150019,'log','Heroic from Mythic /1.3; Wrathful Torment'),"
+        },
+        {
+          "line": 1033,
+          "text": "(936,1,162737,56177,'log','Heroic from Mythic /1.3; Darkandle Kobold'),"
+        },
+        {
+          "line": 1034,
+          "text": "(936,1,162738,150030,'log','Heroic from Mythic /1.3; Darkandle Brute'),"
+        },
+        {
+          "line": 1035,
+          "text": "(936,1,162748,43458,'log','Heroic from Mythic /1.3; Shadow Projection'),"
+        },
+        {
+          "line": 1036,
+          "text": "(936,1,162761,150021,'log','Heroic from Mythic /1.3; Corporeal Shadow'),"
+        },
+        {
+          "line": 1037,
+          "text": "(936,1,162762,115052,'log','Heroic from Mythic /1.3; Darkandle Kobold'),"
+        },
+        {
+          "line": 1038,
+          "text": "(936,1,162763,246596,'log','Heroic from Mythic /1.3; Darkandle Brute'),"
+        },
+        {
+          "line": 1039,
+          "text": "(936,1,162999,367520,'log','Heroic from Mythic /1.3; Inquisitorial Confessor Konrad'),"
+        },
+        {
+          "line": 1040,
+          "text": "(936,1,163813,39342,'log','Heroic from Mythic /1.3; Darkandle Kobold'),"
+        },
+        {
+          "line": 1041,
+          "text": "(936,2,162700,884488,'log','Mythic combat log 2026-08-05; Merciless Echo'),"
+        },
+        {
+          "line": 1042,
+          "text": "(936,2,162703,877535,'log','Mythic combat log 2026-08-05; His Majesty Darkandle'),"
+        },
+        {
+          "line": 1043,
+          "text": "(936,2,162704,877534,'log','Mythic combat log 2026-08-05; The Deceiver\\'s Presence'),"
+        },
+        {
+          "line": 1044,
+          "text": "(936,2,162733,73030,'log','Mythic combat log 2026-08-05; Inquisitorial Torturer'),"
+        },
+        {
+          "line": 1045,
+          "text": "(936,2,162734,195046,'log','Mythic combat log 2026-08-05; Phantasmal Bound'),"
+        },
+        {
+          "line": 1046,
+          "text": "(936,2,162735,47796,'log','Mythic combat log 2026-08-05 (R2), dies to its own Manifest; Freed Prisoner'),"
+        },
+        {
+          "line": 1047,
+          "text": "(936,2,162736,195025,'log','Mythic combat log 2026-08-05; Wrathful Torment'),"
+        },
+        {
+          "line": 1048,
+          "text": "(936,2,162737,73030,'log','Mythic combat log 2026-08-05; Darkandle Kobold'),"
+        },
+        {
+          "line": 1049,
+          "text": "(936,2,162738,195039,'log','Mythic combat log 2026-08-05; Darkandle Brute'),"
+        },
+        {
+          "line": 1050,
+          "text": "(936,2,162748,56495,'log','Normal log 2026-06-06 x Torturer Mythic/Normal; Shadow Projection'),"
+        },
+        {
+          "line": 1051,
+          "text": "(936,2,162761,195027,'log','Mythic combat log 2026-08-05; Corporeal Shadow'),"
+        },
+        {
+          "line": 1052,
+          "text": "(936,2,162762,149567,'log','Mythic combat log 2026-08-05; Darkandle Kobold'),"
+        },
+        {
+          "line": 1053,
+          "text": "(936,2,162763,320575,'log','Mythic combat log 2026-08-05; Darkandle Brute'),"
+        },
+        {
+          "line": 1054,
+          "text": "(936,2,162999,477776,'log','Mythic combat log 2026-08-05 (R2); Inquisitorial Confessor Konrad'),"
+        },
+        {
+          "line": 1055,
+          "text": "(936,2,163813,51145,'log','Mythic combat log 2026-08-05; Darkandle Kobold');"
+        },
+        {
+          "line": 1057,
+          "text": "-- coa_dungeon_mark_bosses"
+        },
+        {
+          "line": 1058,
+          "text": "DELETE FROM `coa_dungeon_mark_bosses` WHERE `entry` IN (162700, 162703, 162704);"
+        },
+        {
+          "line": 1059,
+          "text": "INSERT INTO `coa_dungeon_mark_bosses` (`entry`) VALUES"
+        },
+        {
+          "line": 1064,
+          "text": "-- coa_dungeon_bosses"
+        },
+        {
+          "line": 1065,
+          "text": "DELETE FROM `coa_dungeon_bosses` WHERE `entry` IN (162700, 162703, 162704);"
+        },
+        {
+          "line": 1066,
+          "text": "INSERT INTO `coa_dungeon_bosses` (`entry`) VALUES"
+        },
+        {
+          "line": 1071,
+          "text": "-- coa_dungeon_spell_damage"
+        },
+        {
+          "line": 1072,
+          "text": "DELETE FROM `coa_dungeon_spell_damage` WHERE `comment` LIKE 'Vaults of the Inquisition:%';"
+        },
+        {
+          "line": 1073,
+          "text": "INSERT INTO `coa_dungeon_spell_damage` (`spell_id`, `multiplier`, `comment`) VALUES"
+        },
+        {
+          "line": 1087,
+          "text": "-- Dungeon Finder: the Vaults are populated now."
+        }
+      ]
+    }
+  ]
+}

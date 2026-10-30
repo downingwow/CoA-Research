@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      # Rebuild after fixing the generator's JSON line termination.
+      # Rebuild with unified historical spell evidence.
       - name: Export searchable spell database
         run: python tools/build_site_spell_index.py
       - name: Verify browser index
@@ -38,5 +38,10 @@ jobs:
           git add site/data/spell-search-index.json
           if ! git diff --cached --quiet; then
             git commit -m "data: publish browser-searchable CoA spell index"
-            git push
+            for attempt in 1 2 3 4 5; do
+              git pull --rebase origin main
+              if git push; then exit 0; fi
+              sleep 3
+            done
+            exit 1
           fi

@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-30",
+  "upstream": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "observedMainHead": "18b15e4f8bb2a28e975d578884727cd338c323af",
+  "livePromotion": {
+    "date": "2026-10-29",
+    "workflow": "Promote to live #10",
+    "status": "success",
+    "deployedSha": "unverified",
+    "source": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/actions"
+  },
+  "ptr": {
+    "deployedSha": "unverified",
+    "branch": "unverified"
+  },
+  "data": [
+    {
+      "type": "primalist_spell_mechanic",
+      "ids": [
+        806559,
+        806561,
+        806562
+      ],
+      "names": [
+        "Rexxar Might",
+        "Rexxar Ready",
+        "Rexxar Bleed"
+      ],
+      "details": "Primalist Wildwalker pet proc; Rexxar Bleed periodic damage includes 15% owner's melee AP",
+      "sourcePath": "src/server/coa/AscensionPrimalistRexxarMight.cpp"
+    },
+    {
+      "type": "creature_spawn_correction",
+      "creatureId": 161835,
+      "guid": 9008006,
+      "coordinates": {
+        "x": -5885.02,
+        "y": 490.635,
+        "z": 533.03,
+        "orientation": 1.59942
+      },
+      "sourcePath": "data/sql/updates/pending_db_world/rev_20261025_91_coa_radiance_right_hand_position.sql"
+    },
+    {
+      "type": "bazaar_vendor_changes",
+      "itemIds": [
+        818059,
+        818046
+      ],
+      "details": "Aura of Experience 250 to 350 tokens; Potion of Experience 35 to 100 tokens",
+      "sourcePath": "data/sql/updates/pending_db_world/rev_20261023_00_bazaar_vanity_prices.sql"
+    }
+  ],
+  "caveats": [
+    "GitHub main is not automatically identical to live Rexxar or PTR.",
+    "Source records are confirmed in upstream repository, not runtime verified.",
+    "Rexxar Might is a Primalist spell mechanic, not proof of the Rexxar realm deployment."
+  ]
+}

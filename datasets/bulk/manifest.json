@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T08:12:33.501024+00:00",
+  "generatedAt": "2026-10-30T08:14:00.513207+00:00",
   "sources": [
     {
       "repository": "srhinos/coa-datamine",
@@ -255,10 +255,110 @@
           "path": "data/spells/by-id/spells-410000.jsonl",
           "bytes": 59569,
           "sha256": "b0ae5ddc4968cb35c129ae6b5aa29318fbb9438111737aef03d36be24396d59b"
+        },
+        {
+          "path": "data/spells/by-id/spells-420000.jsonl",
+          "bytes": 71655,
+          "sha256": "365b9922520ee25a38da67e24cf0422b720c5c5c03d49d615a9d02172bfa338a"
+        },
+        {
+          "path": "data/spells/by-id/spells-430000.jsonl",
+          "bytes": 27773,
+          "sha256": "2583a97b062539144212f5c4e667f9509c152074f6db9ea8143267fa03630dbd"
+        },
+        {
+          "path": "data/spells/by-id/spells-440000.jsonl",
+          "bytes": 31401,
+          "sha256": "4ef4a976fcaf97252bf958a63bc21c74aac0a168afa0b1ec8f58b65253ad97be"
+        },
+        {
+          "path": "data/spells/by-id/spells-450000.jsonl",
+          "bytes": 3423,
+          "sha256": "800072b18102a1e9709c0c95777c7685e5111ea066bb61a79442f8055a7d59d8"
+        },
+        {
+          "path": "data/spells/by-id/spells-460000.jsonl",
+          "bytes": 5297,
+          "sha256": "6551c11935d9ed9dadaecb10ee60bb1cf3c70e3e0ce693c6c0338e875efd4622"
+        },
+        {
+          "path": "data/spells/by-id/spells-50000.jsonl",
+          "bytes": 2263304,
+          "sha256": "c4405631bc839a70412dbc4f4457daeb2c02ddb02fe52248dea7a9c5a6cac472"
+        },
+        {
+          "path": "data/spells/by-id/spells-500000.jsonl",
+          "bytes": 6992855,
+          "sha256": "ed43662d6ab3b69216882d048b57084015d9cbb851848689ed465680acbc4cc6"
+        },
+        {
+          "path": "data/spells/by-id/spells-510000.jsonl",
+          "bytes": 9741,
+          "sha256": "f3ee769830800fc1e60afd4d0fc65f571793d33d660f4a001017bf7944ef3811"
+        },
+        {
+          "path": "data/spells/by-id/spells-520000.jsonl",
+          "bytes": 1120398,
+          "sha256": "eb40e85530f855bad608ce77c028f0ed12229f89f31efbae405b73dc49bc3bb6"
+        },
+        {
+          "path": "data/spells/by-id/spells-530000.jsonl",
+          "bytes": 82776,
+          "sha256": "af60f1f3102adb81f181d0eed12e8a1475f46a87fb203655a8c415d3c56a45b1"
+        },
+        {
+          "path": "data/spells/by-id/spells-540000.jsonl",
+          "bytes": 49613,
+          "sha256": "444097e55dedb35f572899192c74adbe4cc35d49f5d88a84ed6074ae6bab1439"
+        },
+        {
+          "path": "data/spells/by-id/spells-550000.jsonl",
+          "bytes": 64775,
+          "sha256": "46b1c34bc0bd07ed115c925c9edc6886e243215fedb31804507bc5f85ec99a5d"
+        },
+        {
+          "path": "data/spells/by-id/spells-560000.jsonl",
+          "bytes": 1440131,
+          "sha256": "bde705964cf9e449707134348be9b71a00389d0086039aa4b9472683b2113838"
+        },
+        {
+          "path": "data/spells/by-id/spells-570000.jsonl",
+          "bytes": 1176617,
+          "sha256": "29caed377b13aa8aa68bf9a00a1601108f26517e7a0e7619ee614a41d33cd47e"
+        },
+        {
+          "path": "data/spells/by-id/spells-580000.jsonl",
+          "bytes": 91740,
+          "sha256": "a13560f96d4b8b9272e1664d702d6b5ce47782722aab9382e0bc872b1cb67b2b"
+        },
+        {
+          "path": "data/spells/by-id/spells-590000.jsonl",
+          "bytes": 7232,
+          "sha256": "ef8fee220a6dbbbd908acbeed996bbcdb7a1c2ba64abd3526b69c8515d49a47f"
+        },
+        {
+          "path": "data/spells/by-id/spells-60000.jsonl",
+          "bytes": 644646,
+          "sha256": "50d7fd6c1511203e6ea163ea8907062c2322eb12646265212344118ae4ba6977"
+        },
+        {
+          "path": "data/spells/by-id/spells-600000.jsonl",
+          "bytes": 6634,
+          "sha256": "6e994921546bc4860f89747e64216207a03b9b1c83814cf435f9dc23de38b0de"
+        },
+        {
+          "path": "data/spells/by-id/spells-610000.jsonl",
+          "bytes": 1710,
+          "sha256": "357ab693df51e50f534af3a111f91ffc770dbfb2354e9e64957f9776eaa471ff"
+        },
+        {
+          "path": "data/spells/by-id/spells-620000.jsonl",
+          "bytes": 16362,
+          "sha256": "f302975bbdae529a6ae944036a6af671a03213411903bfeba1bc3944806b4eaa"
         }
       ],
-      "parsedRecords": 16279,
-      "distinctIds": 16279,
+      "parsedRecords": 22500,
+      "distinctIds": 22500,
       "index": "datasets/bulk/indexes/srhinos__coa-datamine__spells.json.gz"
     },
     {
@@ -515,10 +615,110 @@
           "path": "data/creatures/creatures-1230000.jsonl",
           "bytes": 155,
           "sha256": "975af1e006a830ca1fb8e753cdd5f7d50a08bd6c12c61622f77bd3cc391f9a10"
+        },
+        {
+          "path": "data/creatures/creatures-125000.jsonl",
+          "bytes": 26222,
+          "sha256": "ea71551962a15f81fdf383dae7a9ada1c8946a9bebe6657cc474c416c9de599a"
+        },
+        {
+          "path": "data/creatures/creatures-1275000.jsonl",
+          "bytes": 1925,
+          "sha256": "97cca70fdef40946f5650a6db1b961798f02b466fded73f5f0a82eaa3d7654ed"
+        },
+        {
+          "path": "data/creatures/creatures-1285000.jsonl",
+          "bytes": 113,
+          "sha256": "5dbb9dbbf357e5b71957b1d5ea3e3fefa976ffbd83b6485ff551f5fd0f2933d8"
+        },
+        {
+          "path": "data/creatures/creatures-130000.jsonl",
+          "bytes": 50871,
+          "sha256": "1187b042c9201ee35d50451de6a72fb55b8dd9fc69923e3130d9be29d650dd3b"
+        },
+        {
+          "path": "data/creatures/creatures-1300000.jsonl",
+          "bytes": 2075,
+          "sha256": "1f6546476a6c8f0516aaccc93b9da407eba2beac2836ca183631cd13edde8210"
+        },
+        {
+          "path": "data/creatures/creatures-1325000.jsonl",
+          "bytes": 63,
+          "sha256": "7b2f80e11a00912a79532bfd7749ec70e2aa756be5feb44b1f28471dfba326c2"
+        },
+        {
+          "path": "data/creatures/creatures-1340000.jsonl",
+          "bytes": 54,
+          "sha256": "483250257fdbbba95413120f4e77fd8b57f892f4e146ad634dc0be31afdb8605"
+        },
+        {
+          "path": "data/creatures/creatures-135000.jsonl",
+          "bytes": 12155,
+          "sha256": "9871186b63917b91561b046e163055fe857254d9845f80c57befbb054118ae75"
+        },
+        {
+          "path": "data/creatures/creatures-1375000.jsonl",
+          "bytes": 199,
+          "sha256": "c4545d368197d3462d873525bd68effbfa7fe38e1af9674a06bd861783b2e1a6"
+        },
+        {
+          "path": "data/creatures/creatures-1395000.jsonl",
+          "bytes": 128,
+          "sha256": "555474bf02d338750e380f807fa8bf4bd5bc5210a15194b6d22e0a81db9353ba"
+        },
+        {
+          "path": "data/creatures/creatures-140000.jsonl",
+          "bytes": 169121,
+          "sha256": "bef8444873c1b412d57dbdba3e394b926e435d61bbfc96398c649f878e2d42c1"
+        },
+        {
+          "path": "data/creatures/creatures-1400000.jsonl",
+          "bytes": 58,
+          "sha256": "1abf90f20f36a792b6cf8d17f274c50d746fb6859a1e64aa987c390c0b4a634a"
+        },
+        {
+          "path": "data/creatures/creatures-1405000.jsonl",
+          "bytes": 60,
+          "sha256": "789bc415d3d77665d65e44734013a8d4b6a6e8d43eae86aae51c1050e7c07175"
+        },
+        {
+          "path": "data/creatures/creatures-1410000.jsonl",
+          "bytes": 140,
+          "sha256": "17010bf4b11875e83c04a8a4a908d6b8e3c257e31b5db93d491e8ff644d9d649"
+        },
+        {
+          "path": "data/creatures/creatures-1420000.jsonl",
+          "bytes": 64,
+          "sha256": "5c7001d0ab0b97d5a95db947bc680149d7c1ad58f4c8b84e8be519d6612d9930"
+        },
+        {
+          "path": "data/creatures/creatures-1425000.jsonl",
+          "bytes": 31025,
+          "sha256": "fdb3e0dd11945e3e2fd4e23b3d800d8dee247a127e8517d22677a5b8fb7878c6"
+        },
+        {
+          "path": "data/creatures/creatures-1430000.jsonl",
+          "bytes": 106,
+          "sha256": "47ddaa73889fe354726bbe2509e3a6927d2a816b12275f09b839939623dca6e2"
+        },
+        {
+          "path": "data/creatures/creatures-1435000.jsonl",
+          "bytes": 58,
+          "sha256": "d67d4919f8f4ad3cf8b469cbd96ea4aff805607f1fe9c131db8f8c5f3b94146b"
+        },
+        {
+          "path": "data/creatures/creatures-145000.jsonl",
+          "bytes": 124226,
+          "sha256": "f91b6fa92ec94bdde4d71ba1611e734fffcd37fd2471456ac1310d846193a86b"
+        },
+        {
+          "path": "data/creatures/creatures-1460000.jsonl",
+          "bytes": 480,
+          "sha256": "5c9610abea829b3f1061159342bd3f282816e35b4c6f98510a2cddb991f79f3c"
         }
       ],
-      "parsedRecords": 13204,
-      "distinctIds": 13204,
+      "parsedRecords": 20583,
+      "distinctIds": 20583,
       "index": "datasets/bulk/indexes/srhinos__coa-datamine__npcs.json.gz"
     },
     {
@@ -775,10 +975,110 @@
           "path": "data/items/statsByItem/statsByItem-385000.jsonl",
           "bytes": 314,
           "sha256": "6e3f06b831fa0e46a568d2100b9f183aa591f00c66bf87cb4d4caeab1404fe76"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-390000.jsonl",
+          "bytes": 314,
+          "sha256": "b0dbc4708eea7b64490faa36687acd9bd72e6ecc60c638ca24834a357b254a17"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-395000.jsonl",
+          "bytes": 1570,
+          "sha256": "bb3ba78a8a301d2e63616691e725fe8d0bd085f60215b4eaa03fc931fc02e6ee"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-40000.jsonl",
+          "bytes": 1232,
+          "sha256": "79b0e1cb2b6d22696fa0dd1c5a4f630babd3c7eac9125a7c36087987f4c6e28b"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-405000.jsonl",
+          "bytes": 3768,
+          "sha256": "e91570402d601450f536ceabc129a081787eecd6d483fa90a519e5563cd4890e"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-4050000.jsonl",
+          "bytes": 82476,
+          "sha256": "4dc8c3e487476218d76a6b3d42abda428c7e1b28aaba2d0d7bb99f1738587f36"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-410000.jsonl",
+          "bytes": 628,
+          "sha256": "59377e2bdf63b5cfada8e8087d380287c9b85a9bb78b0a610215d4982ba4e6a4"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-45000.jsonl",
+          "bytes": 3388,
+          "sha256": "547a5b37a6a742ac12fd2bab81e9fc68eb81fd7697d5a3ce8405e1aec95b8514"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-450000.jsonl",
+          "bytes": 1530,
+          "sha256": "36374d752925d734834de6ef42ab2301a3a6b0eac63d067e78b63190ac863025"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-5000.jsonl",
+          "bytes": 403398,
+          "sha256": "e4dec73813f14ce42822be8655321acfedb55fb0e518e0266b163324bd2a070b"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-50000.jsonl",
+          "bytes": 5928,
+          "sha256": "7df902a372389fb39dceddea40ce7d7490e1e7cbf6a5246b25529729fc53010f"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-500000.jsonl",
+          "bytes": 8553,
+          "sha256": "d13653676067413970c7381adffbde092d8324a5079e86079b7826f004e2936d"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-515000.jsonl",
+          "bytes": 125,
+          "sha256": "c46d90e3a596cdcefc278788e04ca4e770c7fcd2ad75a8e5e73b78cc304b3de2"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-55000.jsonl",
+          "bytes": 624,
+          "sha256": "61190f764fac8a7975c1e35beab4669589e229983013e6162563c3d465dbb47c"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-555000.jsonl",
+          "bytes": 23056,
+          "sha256": "cac28792be23a14b863aad5f41a44b73743a728482d4966a41394c40c8e34062"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-65000.jsonl",
+          "bytes": 312,
+          "sha256": "843a2642fa67d0767eddc4e1bbc8fd373fc301a89bdafa00091d2faa8b96398a"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-650000.jsonl",
+          "bytes": 134,
+          "sha256": "7875ac7d8a8bed6bee7484778abe7f2b5587b0298525a3ec5ad72d6b5323dd45"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-730000.jsonl",
+          "bytes": 127,
+          "sha256": "7a811eb64dfb6716f5193f587934b2a77ee8166e920b1daef846a8c972f7f713"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-820000.jsonl",
+          "bytes": 110,
+          "sha256": "021a074b97eb9461254045fadd05021a59ec5e380c40c4b91b9d8c0b4e59b044"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-875000.jsonl",
+          "bytes": 8792,
+          "sha256": "d056364e67ab8819dc20d39921641473cd6d33d4830b9e864e514b769f846770"
+        },
+        {
+          "path": "data/items/statsByItem/statsByItem-9200000.jsonl",
+          "bytes": 6394,
+          "sha256": "c062c92a23466c50d1a5fd9113949cdb63adeaadce783ee65aaa5f7881db2891"
         }
       ],
-      "parsedRecords": 18403,
-      "distinctIds": 18403,
+      "parsedRecords": 20234,
+      "distinctIds": 20234,
       "index": "datasets/bulk/indexes/srhinos__coa-datamine__items.json.gz"
     },
     {
@@ -1035,10 +1335,110 @@
           "path": "data/quests/quests-305000.jsonl",
           "bytes": 3417,
           "sha256": "f3ada66c4eb7fec2ac54f61602faed1b0478e2522567b55d3aa92b28777ecb74"
+        },
+        {
+          "path": "data/quests/quests-310000.jsonl",
+          "bytes": 1340,
+          "sha256": "eb9c85a5746720353b11ff03d71e9a61f95bf6c7c1151aa717e64921c45cc69e"
+        },
+        {
+          "path": "data/quests/quests-315000.jsonl",
+          "bytes": 523,
+          "sha256": "1e7ae335d1a5cee90a6bd63ed31656b926ad2c578c9a9dd555fad85baee96ead"
+        },
+        {
+          "path": "data/quests/quests-320000.jsonl",
+          "bytes": 520,
+          "sha256": "b482a4690ed3fab7b10a1d6142df359aaa851564221d250d6d56fadba64fca50"
+        },
+        {
+          "path": "data/quests/quests-350000.jsonl",
+          "bytes": 38465,
+          "sha256": "90cb11ba7bc283eedfa2019499a3ae877d5756162fc77ae8d414663ffb24e786"
+        },
+        {
+          "path": "data/quests/quests-375000.jsonl",
+          "bytes": 3255,
+          "sha256": "580889a1ae63bf9800c03c40a37a340c4d6e6303a4c3d8e6ae21fc36acd5a19f"
+        },
+        {
+          "path": "data/quests/quests-380000.jsonl",
+          "bytes": 1034,
+          "sha256": "dabf35c71ba6431f494f86d510f4e905270cc56444c5d8608a96b79dd737d4ba"
+        },
+        {
+          "path": "data/quests/quests-40000.jsonl",
+          "bytes": 2349,
+          "sha256": "82ad441298dc47b1c7d1521e3432171c8462cd1b4cc01ef3a4d62c07e3ce01bb"
+        },
+        {
+          "path": "data/quests/quests-405000.jsonl",
+          "bytes": 1298,
+          "sha256": "b789823e97f96f7b68bf4c74817bfe4a4ff16da0448a35690ac71d03e3cd9ef4"
+        },
+        {
+          "path": "data/quests/quests-410000.jsonl",
+          "bytes": 17999,
+          "sha256": "8e2fe0d48b19ccaaf25a71a4fb45f496c68621821bcb56e3d31d99be0c1fb418"
+        },
+        {
+          "path": "data/quests/quests-415000.jsonl",
+          "bytes": 526,
+          "sha256": "883702797e9be05f64ffc76de5ee162af63c14af5f5a8b0e0d78b7f4797dce3c"
+        },
+        {
+          "path": "data/quests/quests-420000.jsonl",
+          "bytes": 8534,
+          "sha256": "f3b16042a4cfb195d557c81db13081aa969d5e722a21b4c176996c6e25218a04"
+        },
+        {
+          "path": "data/quests/quests-430000.jsonl",
+          "bytes": 54600,
+          "sha256": "ae579a8a5e7f99d914780dc4b88c067cc6f186588cea927af3c512d5291a01e3"
+        },
+        {
+          "path": "data/quests/quests-4420000.jsonl",
+          "bytes": 6188,
+          "sha256": "c0a386045be96ec466833505a6db4b758d643c9250a1d9f63751c4c75116b1d2"
+        },
+        {
+          "path": "data/quests/quests-445000.jsonl",
+          "bytes": 50232,
+          "sha256": "6a6b649c40961cc5f93776980c4951b456ad12458f1d31dcdbc358834a44f8e7"
+        },
+        {
+          "path": "data/quests/quests-45000.jsonl",
+          "bytes": 4106,
+          "sha256": "b5eb6f96b0580f6739b00e0782002c571bee879edd37f4cb45ce2617ef22e71e"
+        },
+        {
+          "path": "data/quests/quests-475000.jsonl",
+          "bytes": 524,
+          "sha256": "0f9b94f999e5af0a551b1587ee1a2ba946a152a90ebc2323040e3ff7c44e415d"
+        },
+        {
+          "path": "data/quests/quests-480000.jsonl",
+          "bytes": 254,
+          "sha256": "26e27c3c178e30f97f9c51346d262ffa616e79b3503be9bb2f51400de2a0eb49"
+        },
+        {
+          "path": "data/quests/quests-495000.jsonl",
+          "bytes": 1354,
+          "sha256": "29e30edc7ffc6feb889e5dce2f5fb67a1f1517b1e4808507b93aa0ec97677489"
+        },
+        {
+          "path": "data/quests/quests-5000.jsonl",
+          "bytes": 765767,
+          "sha256": "ef529aecc6001be2d75935620cf9c6750edc3df27fab6e6bede1e5fe9c7f2274"
+        },
+        {
+          "path": "data/quests/quests-50000.jsonl",
+          "bytes": 92945,
+          "sha256": "5c0fbe6ccc0d3e38b6a4822b635904495348200c20ffc156362715d65dab75b1"
         }
       ],
-      "parsedRecords": 11334,
-      "distinctIds": 11334,
+      "parsedRecords": 15293,
+      "distinctIds": 15293,
       "index": "datasets/bulk/indexes/srhinos__coa-datamine__quests.json.gz"
     },
     {
@@ -1295,9 +1695,24 @@
           "path": "data/abilities/_residual-900000.json",
           "bytes": 464192,
           "sha256": "32da70f3312a472ba97c508120af2178e55e34098bf219f33f250726485de60b"
+        },
+        {
+          "path": "data/abilities/_residual-9900000.json",
+          "bytes": 432,
+          "sha256": "88eade64cd90b7b349811b3e20f201590fe650d9765fb5c368a39002299e7630"
+        },
+        {
+          "path": "data/abilities/_residual-index.json",
+          "bytes": 1075,
+          "sha256": "b19288408ee6c91cad6413cdfbc2cf496909b31eb010a411696c66bb9fd8cdb7"
+        },
+        {
+          "path": "data/abilities/index.json",
+          "bytes": 4964,
+          "sha256": "a22f5fe99e6864dbcaf55d6ca35257455f384603927bb6cea43c7340436cb7f0"
         }
       ],
-      "parsedRecords": 50,
+      "parsedRecords": 53,
       "distinctIds": 0,
       "index": "datasets/bulk/indexes/srhinos__coa-datamine__abilities.json.gz"
     },

@@ -293,144 +293,144 @@
       ],
       "meleeDamageModifiers": [
         {
-          "npcId": 62711,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
+          "npcId": 162711,
+          "normal": 1.562,
+          "heroic": 3.132,
+          "mythic": 6.736
         },
         {
-          "npcId": 62715,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
+          "npcId": 162715,
+          "normal": 1.495,
+          "heroic": 2.963,
+          "mythic": 6.372
         },
         {
-          "npcId": 62716,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
+          "npcId": 162716,
+          "normal": 2.393,
+          "heroic": 4.798,
+          "mythic": 10.316
         },
         {
-          "npcId": 62743,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
+          "npcId": 162743,
+          "normal": 0.253,
+          "heroic": 0.377,
+          "mythic": 0.941
         },
         {
-          "npcId": 62765,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62769,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62770,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62773,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62775,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62776,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62780,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62782,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62783,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62784,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62785,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62979,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62980,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62981,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62982,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62983,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62988,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
+          "npcId": 162765,
+          "normal": 1.818,
+          "heroic": 2.711,
+          "mythic": 6.778
         },
         {
           "npcId": 162766,
           "normal": null,
           "heroic": 1.206,
           "mythic": 3.015,
-          "notes": "Normal modifier sourced from separate SQL; Heroic/Mythic extrapolated from other trash, not measured bat hits"
+          "notes": "Heroic/Mythic bat melee modeled; normal sourced elsewhere"
         },
         {
           "npcId": 162767,
           "normal": null,
           "heroic": 1.206,
           "mythic": 3.015,
-          "notes": "Normal modifier sourced from separate SQL; Heroic/Mythic extrapolated from other trash, not measured bat hits"
+          "notes": "Heroic/Mythic bat melee modeled; normal sourced elsewhere"
+        },
+        {
+          "npcId": 162769,
+          "normal": 1.514,
+          "heroic": 2.629,
+          "mythic": 6.571
+        },
+        {
+          "npcId": 162770,
+          "normal": 0.758,
+          "heroic": 1.551,
+          "mythic": 3.878
+        },
+        {
+          "npcId": 162773,
+          "normal": 1.191,
+          "heroic": 1.751,
+          "mythic": 4.38
+        },
+        {
+          "npcId": 162775,
+          "normal": 1.343,
+          "heroic": 1.974,
+          "mythic": 4.932
+        },
+        {
+          "npcId": 162776,
+          "normal": 1.767,
+          "heroic": 2.598,
+          "mythic": 6.495
+        },
+        {
+          "npcId": 162780,
+          "normal": 0.911,
+          "heroic": 1.556,
+          "mythic": 3.89
+        },
+        {
+          "npcId": 162782,
+          "normal": 1.533,
+          "heroic": 2.623,
+          "mythic": 6.558
+        },
+        {
+          "npcId": 162783,
+          "normal": 1.787,
+          "heroic": 2.761,
+          "mythic": 6.903
+        },
+        {
+          "npcId": 162784,
+          "normal": 0.454,
+          "heroic": 1.396,
+          "mythic": 3.489
+        },
+        {
+          "npcId": 162785,
+          "normal": 1.118,
+          "heroic": 1.907,
+          "mythic": 4.768
+        },
+        {
+          "npcId": 162979,
+          "normal": 0.898,
+          "heroic": 1.32,
+          "mythic": 3.299
+        },
+        {
+          "npcId": 162980,
+          "normal": 0.909,
+          "heroic": 1.381,
+          "mythic": 3.452
+        },
+        {
+          "npcId": 162981,
+          "normal": 0.591,
+          "heroic": 0.876,
+          "mythic": 2.189
+        },
+        {
+          "npcId": 162982,
+          "normal": 0.927,
+          "heroic": 1.43,
+          "mythic": 3.573
+        },
+        {
+          "npcId": 162983,
+          "normal": 1.391,
+          "heroic": 2.223,
+          "mythic": 5.557
+        },
+        {
+          "npcId": 162988,
+          "normal": 0.843,
+          "heroic": 1.428,
+          "mythic": 3.568
         }
       ],
       "meleeDamageSource": "data/sql/updates/pending_db_world/rev_20261029_85_coa_custom_dungeons_melee.sql",
@@ -792,106 +792,106 @@
       "lootSource": "data/sql/updates/pending_db_world/rev_20261028_60_vaults_of_the_inquisition.sql",
       "meleeDamageModifiers": [
         {
-          "npcId": 62700,
-          "normal": null,
+          "npcId": 162700,
+          "normal": 3.371,
+          "heroic": 4.956,
+          "mythic": 10.658
+        },
+        {
+          "npcId": 162703,
+          "normal": 5.471,
+          "heroic": 8.042,
+          "mythic": 17.287
+        },
+        {
+          "npcId": 162704,
+          "normal": 5.403,
+          "heroic": 7.946,
+          "mythic": 17.089
+        },
+        {
+          "npcId": 162733,
+          "normal": 0.801,
+          "heroic": 1.623,
+          "mythic": 4.05
+        },
+        {
+          "npcId": 162734,
+          "normal": 2.074,
+          "heroic": 3.05,
+          "mythic": 7.625
+        },
+        {
+          "npcId": 162735,
+          "normal": 0.703,
+          "heroic": 1.413,
+          "mythic": 3.528
+        },
+        {
+          "npcId": 162736,
+          "normal": 1.525,
+          "heroic": 2.242,
+          "mythic": 5.612
+        },
+        {
+          "npcId": 162737,
+          "normal": 0.927,
+          "heroic": 1.362,
+          "mythic": 3.405
+        },
+        {
+          "npcId": 162738,
+          "normal": 2.203,
+          "heroic": 3.239,
+          "mythic": 8.093
+        },
+        {
+          "npcId": 162748,
+          "normal": 1.262,
+          "heroic": 3.95,
+          "mythic": 9.883
+        },
+        {
+          "npcId": 162761,
+          "normal": 1.359,
+          "heroic": 1.998,
+          "mythic": 4.995
+        },
+        {
+          "npcId": 162762,
+          "normal": 0.571,
+          "heroic": 0.84,
+          "mythic": 2.108
+        },
+        {
+          "npcId": 162763,
+          "normal": 0.956,
+          "heroic": 1.406,
+          "mythic": 3.514
+        },
+        {
+          "npcId": 162766,
+          "normal": 0.781,
           "heroic": null,
           "mythic": null
         },
         {
-          "npcId": 62703,
-          "normal": null,
+          "npcId": 162767,
+          "normal": 0.781,
           "heroic": null,
           "mythic": null
         },
         {
-          "npcId": 62704,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
+          "npcId": 162999,
+          "normal": 0.91,
+          "heroic": 1.464,
+          "mythic": 3.66
         },
         {
-          "npcId": 62733,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62734,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62735,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62736,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62737,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62738,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62748,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62761,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62762,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62763,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62766,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62767,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 62999,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
-        },
-        {
-          "npcId": 63813,
-          "normal": null,
-          "heroic": null,
-          "mythic": null
+          "npcId": 163813,
+          "normal": 0.784,
+          "heroic": 1.152,
+          "mythic": 2.884
         }
       ],
       "meleeDamageSource": "data/sql/updates/pending_db_world/rev_20261029_85_coa_custom_dungeons_melee.sql"

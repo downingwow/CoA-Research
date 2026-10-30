@@ -331,8 +331,7 @@
       ],
       "mechanics": [],
       "source": "https://ascensionsidekick.com/primalist/grovekeeper",
-      "archiveStatus": "unmatched-archived-live-talent-tab",
-      "archiveWarning": "This Sidekick guide specialization name does not match the Primalist talent tabs in the archived class tree (Life, Geomancy, Primal, Mountain King). Do not apply to a current spec without version verification."
+      "archiveStatus": "player-facing-spec-name; archived talent-tab correspondence not yet resolved"
     },
     "Primalist|Geomancy": {
       "pools": [
@@ -352,8 +351,7 @@
         "Mana utility costs"
       ],
       "source": "https://ascensionsidekick.com/primalist/wildwalker",
-      "archiveStatus": "unmatched-archived-live-talent-tab",
-      "archiveWarning": "This Sidekick guide specialization name does not match the Primalist talent tabs in the archived class tree (Life, Geomancy, Primal, Mountain King). Do not apply to a current spec without version verification."
+      "archiveStatus": "player-facing-spec-name; archived talent-tab correspondence not yet resolved"
     },
     "Felsworn|Tyrant": {
       "pools": [
@@ -377,6 +375,6 @@
   "audit": {
     "source": "datasets/normalized/coa-class-identity-audit.json",
     "verifiedAgainst": "site/data/classes.json",
-    "note": "Resource guides may refer to different CoA versions; 2 Primalist specialization guide labels did not match archived live talent tabs. Baseline power types and specializations remain separately sourced."
+    "note": "Current player-facing specialization names may differ from archived talent-tab labels. Primalist — Wildwalker is confirmed in-game. Do not flag Grovekeeper or Wildwalker as invalid because they do not literally match older tab labels."
   }
 }

@@ -34,6 +34,10 @@ jobs:
           git add datasets/relationships/additional-spell-source-* research/COA-ADDITIONAL-SPELL-RECOVERY.csv
           if ! git diff --cached --quiet; then
             git commit -m "research: preserve additional archived spell evidence across three databases"
-            git pull --rebase origin main
-            git push
+            for attempt in 1 2 3 4 5; do
+              git pull --rebase origin main
+              if git push; then exit 0; fi
+              sleep 3
+            done
+            exit 1
           fi

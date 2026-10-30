@@ -1,0 +1,14 @@
+{
+  "source": "Bharph/coa-preservation-data spell-tooltips/all-spell-tooltips-merged.ndjson",
+  "versionStatus": "historical archive, not current Conquest Reborn",
+  "missingDefinitionIds": 880,
+  "tooltipRecordsScanned": 180282,
+  "missingIdsWithHistoricalTooltip": 516,
+  "stillWithoutDefinitionOrHistoricalTooltip": 364,
+  "sourceFieldSample": {
+    "id": 180282,
+    "name": 180282,
+    "tt": 180282
+  },
+  "caution": "Historical tooltips are fallback evidence only, never treated as current spell effects."
+}

@@ -1,0 +1,613 @@
+{
+  "schemaVersion": 1,
+  "source": "srhinos/coa-datamine",
+  "sourceCommit": "5078f9ac22541c45c17a866c23aac6c12073de23",
+  "extracted": "2026-10-30",
+  "warning": "Derived class and spec facts from CoA client; clientPowerType does not prove specialization-specific resource usage.",
+  "classCount": 21,
+  "classes": [
+    {
+      "classId": 12,
+      "name": "Barbarian",
+      "aliases": [],
+      "clientPowerType": 3,
+      "specIds": [
+        1,
+        2,
+        3
+      ],
+      "roles": [
+        "DPS"
+      ],
+      "liveTabs": [
+        "Brutality",
+        "Headhunting",
+        "Ancestry",
+        "Class"
+      ],
+      "catalogTabs": [
+        "Ancestry",
+        "Brutality",
+        "Class",
+        "Tactics"
+      ],
+      "liveAbilityCount": 171,
+      "unresolvedCatalogCount": 11,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 22,
+      "name": "Chronomancer",
+      "aliases": [],
+      "clientPowerType": 0,
+      "specIds": [
+        31,
+        32,
+        33
+      ],
+      "roles": [
+        "Healer",
+        "DPS"
+      ],
+      "liveTabs": [
+        "Infinite",
+        "Artificer",
+        "Class",
+        "Time",
+        "Blessings"
+      ],
+      "catalogTabs": [
+        "Class",
+        "Displacement",
+        "Duality",
+        "Time"
+      ],
+      "liveAbilityCount": 163,
+      "unresolvedCatalogCount": 18,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 25,
+      "name": "Cultist",
+      "aliases": [],
+      "clientPowerType": 0,
+      "specIds": [
+        40,
+        41,
+        42,
+        96
+      ],
+      "roles": [
+        "Tank",
+        "Healer",
+        "DPS"
+      ],
+      "liveTabs": [
+        "Corruption",
+        "Godblade",
+        "Heretic",
+        "Dreadnought",
+        "Class"
+      ],
+      "catalogTabs": [
+        "Class",
+        "Corruption",
+        "Godblade",
+        "Influence"
+      ],
+      "liveAbilityCount": 163,
+      "unresolvedCatalogCount": 27,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 14,
+      "name": "DemonHunter",
+      "aliases": [],
+      "clientPowerType": 3,
+      "specIds": [],
+      "roles": [],
+      "liveTabs": [
+        "Slayer",
+        "Infernal",
+        "Tyrant",
+        "Class"
+      ],
+      "catalogTabs": [
+        "Class",
+        "Demonology",
+        "Felblood",
+        "Slaying"
+      ],
+      "liveAbilityCount": 197,
+      "unresolvedCatalogCount": 23,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 18,
+      "name": "Guardian",
+      "aliases": [],
+      "clientPowerType": 3,
+      "specIds": [
+        19,
+        20,
+        21
+      ],
+      "roles": [
+        "Tank",
+        "DPS"
+      ],
+      "liveTabs": [
+        "Vanguard",
+        "Inspiration",
+        "Gladiator",
+        "Class",
+        "None"
+      ],
+      "catalogTabs": [
+        "Class",
+        "Gladiator",
+        "Inspiration",
+        "Protection"
+      ],
+      "liveAbilityCount": 179,
+      "unresolvedCatalogCount": 16,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 17,
+      "name": "KnightOfXoroth",
+      "aliases": [
+        "FLESHWARDEN"
+      ],
+      "clientPowerType": 1,
+      "specIds": [],
+      "roles": [],
+      "liveTabs": [
+        "Hellfire",
+        "War",
+        "Defiance",
+        "Class"
+      ],
+      "catalogTabs": [
+        "Class",
+        "Defiance",
+        "Hellfire",
+        "War"
+      ],
+      "liveAbilityCount": 158,
+      "unresolvedCatalogCount": 18,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 19,
+      "name": "Monk",
+      "aliases": [],
+      "clientPowerType": 3,
+      "specIds": [],
+      "roles": [],
+      "liveTabs": [
+        "Zealot",
+        "Oathkeeper",
+        "Crusader",
+        "Class"
+      ],
+      "catalogTabs": [
+        "Class",
+        "Discipline",
+        "Fighting",
+        "Runes"
+      ],
+      "liveAbilityCount": 158,
+      "unresolvedCatalogCount": 9,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 23,
+      "name": "Necromancer",
+      "aliases": [],
+      "clientPowerType": 6,
+      "specIds": [
+        34,
+        35,
+        36
+      ],
+      "roles": [
+        "DPS"
+      ],
+      "liveTabs": [
+        "Animation",
+        "Class",
+        "Death",
+        "Rime"
+      ],
+      "catalogTabs": [
+        "Animation",
+        "Class",
+        "Death",
+        "Rime"
+      ],
+      "liveAbilityCount": 149,
+      "unresolvedCatalogCount": 27,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 31,
+      "name": "Primalist",
+      "aliases": [
+        "WILDWALKER"
+      ],
+      "clientPowerType": 0,
+      "specIds": [
+        58,
+        59,
+        60,
+        95
+      ],
+      "roles": [
+        "Tank",
+        "DPS"
+      ],
+      "liveTabs": [
+        "Life",
+        "Geomancy",
+        "Primal",
+        "Mountain King",
+        "Class"
+      ],
+      "catalogTabs": [
+        "Class",
+        "Geomancy",
+        "Life",
+        "Primal"
+      ],
+      "liveAbilityCount": 159,
+      "unresolvedCatalogCount": 12,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 24,
+      "name": "Pyromancer",
+      "aliases": [],
+      "clientPowerType": 0,
+      "specIds": [
+        37,
+        38,
+        39
+      ],
+      "roles": [
+        "Healer",
+        "DPS"
+      ],
+      "liveTabs": [
+        "Draconic",
+        "Flameweaving",
+        "Incineration",
+        "Class",
+        "None"
+      ],
+      "catalogTabs": [
+        "Class",
+        "Destruction",
+        "Draconic",
+        "Incineration"
+      ],
+      "liveAbilityCount": 136,
+      "unresolvedCatalogCount": 24,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 21,
+      "name": "Ranger",
+      "aliases": [],
+      "clientPowerType": 2,
+      "specIds": [
+        28,
+        29,
+        30
+      ],
+      "roles": [
+        "DPS"
+      ],
+      "liveTabs": [
+        "Brigand",
+        "Class",
+        "Farstrider",
+        "Archery"
+      ],
+      "catalogTabs": [
+        "Archery",
+        "Class",
+        "Dueling",
+        "Survival"
+      ],
+      "liveAbilityCount": 137,
+      "unresolvedCatalogCount": 15,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 30,
+      "name": "Reaper",
+      "aliases": [],
+      "clientPowerType": 6,
+      "specIds": [
+        55,
+        56,
+        57
+      ],
+      "roles": [
+        "Tank",
+        "DPS"
+      ],
+      "liveTabs": [
+        "Harvest",
+        "Soul",
+        "Domination",
+        "Class"
+      ],
+      "catalogTabs": [
+        "Class",
+        "Domination",
+        "Reaping",
+        "Soul"
+      ],
+      "liveAbilityCount": 162,
+      "unresolvedCatalogCount": 18,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 32,
+      "name": "Runemaster",
+      "aliases": [
+        "SPIRITMAGE"
+      ],
+      "clientPowerType": 0,
+      "specIds": [
+        61,
+        62,
+        63
+      ],
+      "roles": [
+        "DPS"
+      ],
+      "liveTabs": [
+        "Runic",
+        "Arcane",
+        "Riftblade",
+        "Class"
+      ],
+      "catalogTabs": [
+        "Arcane",
+        "Class",
+        "Riftblade",
+        "Runic"
+      ],
+      "liveAbilityCount": 142,
+      "unresolvedCatalogCount": 53,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 20,
+      "name": "SonOfArugal",
+      "aliases": [],
+      "clientPowerType": 1,
+      "specIds": [],
+      "roles": [],
+      "liveTabs": [
+        "Sanguine",
+        "Accursed",
+        "Eternal",
+        "Fleshweaver",
+        "Class"
+      ],
+      "catalogTabs": [
+        "Blood",
+        "Class",
+        "Ferocity",
+        "Packleader"
+      ],
+      "liveAbilityCount": 184,
+      "unresolvedCatalogCount": 22,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 26,
+      "name": "Starcaller",
+      "aliases": [],
+      "clientPowerType": 3,
+      "specIds": [
+        43,
+        44,
+        45,
+        100
+      ],
+      "roles": [
+        "Tank",
+        "Healer",
+        "DPS"
+      ],
+      "liveTabs": [
+        "Moon Guard",
+        "Sentinel",
+        "Moon Priest",
+        "Warden",
+        "Class"
+      ],
+      "catalogTabs": [
+        "AstralWarfare",
+        "Class",
+        "Moonbow",
+        "Tides"
+      ],
+      "liveAbilityCount": 174,
+      "unresolvedCatalogCount": 11,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 16,
+      "name": "Stormbringer",
+      "aliases": [],
+      "clientPowerType": 0,
+      "specIds": [
+        13,
+        14,
+        15
+      ],
+      "roles": [
+        "DPS"
+      ],
+      "liveTabs": [
+        "Lightning",
+        "Wind",
+        "Maelstrom",
+        "Class"
+      ],
+      "catalogTabs": [
+        "Class",
+        "Gifts",
+        "Lightning",
+        "Wind"
+      ],
+      "liveAbilityCount": 167,
+      "unresolvedCatalogCount": 14,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 27,
+      "name": "SunCleric",
+      "aliases": [],
+      "clientPowerType": 0,
+      "specIds": [],
+      "roles": [],
+      "liveTabs": [
+        "Seraphim",
+        "Piety",
+        "Valkyrie",
+        "Blessings",
+        "Class",
+        "None"
+      ],
+      "catalogTabs": [
+        "Blessings",
+        "Class",
+        "Piety",
+        "Seraphim"
+      ],
+      "liveAbilityCount": 209,
+      "unresolvedCatalogCount": 20,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 28,
+      "name": "Tinker",
+      "aliases": [],
+      "clientPowerType": 0,
+      "specIds": [
+        49,
+        50,
+        51
+      ],
+      "roles": [
+        "Healer",
+        "DPS"
+      ],
+      "liveTabs": [
+        "Class",
+        "Mechanics",
+        "Invention",
+        "Demolition"
+      ],
+      "catalogTabs": [
+        "Class",
+        "Firearms",
+        "Invention",
+        "Mechanics"
+      ],
+      "liveAbilityCount": 105,
+      "unresolvedCatalogCount": 35,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 29,
+      "name": "Venomancer",
+      "aliases": [
+        "PROPHET"
+      ],
+      "clientPowerType": 0,
+      "specIds": [
+        52,
+        53,
+        54,
+        101
+      ],
+      "roles": [
+        "Tank",
+        "Healer",
+        "DPS"
+      ],
+      "liveTabs": [
+        "Vizier",
+        "Venom",
+        "Stalking",
+        "Fortitude",
+        "Class"
+      ],
+      "catalogTabs": [
+        "Class",
+        "Fortitude",
+        "Stalking",
+        "Venom"
+      ],
+      "liveAbilityCount": 191,
+      "unresolvedCatalogCount": 27,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 13,
+      "name": "WitchDoctor",
+      "aliases": [],
+      "clientPowerType": 0,
+      "specIds": [],
+      "roles": [],
+      "liveTabs": [
+        "Shadowhunting",
+        "Voodoo",
+        "Brewing",
+        "Class"
+      ],
+      "catalogTabs": [
+        "Brewing",
+        "Class",
+        "Shadowhunting",
+        "Voodoo"
+      ],
+      "liveAbilityCount": 143,
+      "unresolvedCatalogCount": 55,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    },
+    {
+      "classId": 15,
+      "name": "WitchHunter",
+      "aliases": [],
+      "clientPowerType": 0,
+      "specIds": [],
+      "roles": [],
+      "liveTabs": [
+        "Boltslinger",
+        "Houndmaster",
+        "Inquisition",
+        "Black Knight",
+        "Class",
+        "None"
+      ],
+      "catalogTabs": [
+        "Boltslinger",
+        "Class",
+        "Darkness",
+        "Inquisition"
+      ],
+      "liveAbilityCount": 169,
+      "unresolvedCatalogCount": 24,
+      "sourceRealm": "Rexxar/Vol'jin - Conquest of Azeroth"
+    }
+  ]
+}

@@ -1,0 +1,2808 @@
+{
+ "perClass": {
+  "Barbarian": [
+   1,
+   2,
+   3
+  ],
+  "Bloodmage": [
+   25,
+   26,
+   27,
+   99
+  ],
+  "Chronomancer": [
+   31,
+   32,
+   33
+  ],
+  "Cultist": [
+   40,
+   41,
+   42,
+   96
+  ],
+  "Death Knight": [
+   79,
+   80,
+   81
+  ],
+  "Druid": [
+   91,
+   92,
+   93
+  ],
+  "Felsworn": [
+   7,
+   8,
+   9
+  ],
+  "Guardian": [
+   19,
+   20,
+   21
+  ],
+  "Hero": [
+   94
+  ],
+  "Hunter": [
+   70,
+   71,
+   72
+  ],
+  "Knight of Xoroth": [
+   16,
+   17,
+   18
+  ],
+  "Mage": [
+   85,
+   86,
+   87
+  ],
+  "Necromancer": [
+   34,
+   35,
+   36
+  ],
+  "Paladin": [
+   67,
+   68,
+   69
+  ],
+  "Priest": [
+   76,
+   77,
+   78
+  ],
+  "Primalist": [
+   58,
+   59,
+   60,
+   95
+  ],
+  "Pyromancer": [
+   37,
+   38,
+   39
+  ],
+  "Ranger": [
+   28,
+   29,
+   30
+  ],
+  "Reaper": [
+   55,
+   56,
+   57
+  ],
+  "Rogue": [
+   73,
+   74,
+   75
+  ],
+  "Runemaster": [
+   61,
+   62,
+   63
+  ],
+  "Shaman": [
+   82,
+   83,
+   84
+  ],
+  "Starcaller": [
+   43,
+   44,
+   45,
+   100
+  ],
+  "Stormbringer": [
+   13,
+   14,
+   15
+  ],
+  "Sun Cleric": [
+   46,
+   47,
+   48,
+   98
+  ],
+  "Templar": [
+   22,
+   23,
+   24
+  ],
+  "Tinker": [
+   49,
+   50,
+   51
+  ],
+  "Venomancer": [
+   52,
+   53,
+   54,
+   101
+  ],
+  "Warlock": [
+   88,
+   89,
+   90
+  ],
+  "Warrior": [
+   64,
+   65,
+   66
+  ],
+  "Witch Doctor": [
+   4,
+   5,
+   6
+  ],
+  "Witch Hunter": [
+   10,
+   11,
+   12,
+   97
+  ]
+ },
+ "roles": {
+  "Barbarian": [
+   "DPS"
+  ],
+  "Bloodmage": [
+   "Tank",
+   "DPS"
+  ],
+  "Chronomancer": [
+   "Healer",
+   "DPS"
+  ],
+  "Cultist": [
+   "Tank",
+   "Healer",
+   "DPS"
+  ],
+  "Death Knight": [
+   "Tank",
+   "DPS"
+  ],
+  "Druid": [
+   "Tank",
+   "Healer",
+   "DPS"
+  ],
+  "Felsworn": [
+   "Tank",
+   "DPS"
+  ],
+  "Guardian": [
+   "Tank",
+   "DPS"
+  ],
+  "Hero": [
+   "Tank",
+   "Healer",
+   "DPS"
+  ],
+  "Hunter": [
+   "DPS"
+  ],
+  "Knight of Xoroth": [
+   "Tank",
+   "DPS"
+  ],
+  "Mage": [
+   "DPS"
+  ],
+  "Necromancer": [
+   "DPS"
+  ],
+  "Paladin": [
+   "Tank",
+   "Healer",
+   "DPS"
+  ],
+  "Priest": [
+   "Healer",
+   "DPS"
+  ],
+  "Primalist": [
+   "Tank",
+   "DPS"
+  ],
+  "Pyromancer": [
+   "Healer",
+   "DPS"
+  ],
+  "Ranger": [
+   "DPS"
+  ],
+  "Reaper": [
+   "Tank",
+   "DPS"
+  ],
+  "Rogue": [
+   "DPS"
+  ],
+  "Runemaster": [
+   "DPS"
+  ],
+  "Shaman": [
+   "Healer",
+   "DPS"
+  ],
+  "Starcaller": [
+   "Tank",
+   "Healer",
+   "DPS"
+  ],
+  "Stormbringer": [
+   "DPS"
+  ],
+  "Sun Cleric": [
+   "Tank",
+   "Healer",
+   "DPS"
+  ],
+  "Templar": [
+   "Tank",
+   "DPS"
+  ],
+  "Tinker": [
+   "Healer",
+   "DPS"
+  ],
+  "Venomancer": [
+   "Tank",
+   "Healer",
+   "DPS"
+  ],
+  "Warlock": [
+   "Tank",
+   "DPS"
+  ],
+  "Warrior": [
+   "Tank",
+   "DPS"
+  ],
+  "Witch Doctor": [
+   "Healer",
+   "DPS"
+  ],
+  "Witch Hunter": [
+   "Tank",
+   "DPS"
+  ]
+ },
+ "specialAbilities": {
+  "Bloodmage": {
+   "name": "Pooled Vitality",
+   "spellId": 681078
+  },
+  "Primalist": {
+   "name": "Grove Training",
+   "spellId": 92150
+  },
+  "Shaman": {
+   "name": "Earthen Guardian",
+   "spellId": 1182001
+  }
+ },
+ "specs": [
+  {
+   "armorType": "Leather",
+   "classId": 12,
+   "className": "Barbarian",
+   "classToken": "BARBARIAN",
+   "description": "Rain a storm of steel upon your prey, pinning foes with bone-crushing spears before finishing them with a flurry of expertly thrown axes.",
+   "difficulty": "Medium",
+   "f63": 2,
+   "id": 1,
+   "name": "Headhunting",
+   "powerType": "ENERGY",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Tactics",
+    "liveTab": "Headhunting",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "TACTICS"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 12,
+   "className": "Barbarian",
+   "classToken": "BARBARIAN",
+   "description": "Embrace true barbarism and devastate your enemies with a powerful two-handed weapon.",
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 2,
+   "name": "Brutality",
+   "powerType": "ENERGY",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Brutality",
+    "liveTab": "Brutality",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "BRUTALITY"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 12,
+   "className": "Barbarian",
+   "classToken": "BARBARIAN",
+   "description": "Invoke the power of the North and your thirst for alcohol to support allies with short boons or powerful auras.",
+   "difficulty": "Medium",
+   "f63": 3,
+   "id": 3,
+   "name": "Ancestry",
+   "powerType": "ENERGY",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Ancestry",
+    "liveTab": "Ancestry",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "ANCESTRY"
+  },
+  {
+   "armorType": null,
+   "classId": 13,
+   "className": "Witch Doctor",
+   "classToken": "WITCHDOCTOR",
+   "description": "Embrace the teachings of Bwonsamdi and become the living embodiment of the Loa's wrath with powerful ranged attacks and shadow magic.",
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 4,
+   "name": "Shadowhunting",
+   "powerType": "MANA",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Shadowhunting",
+    "liveTab": "Shadowhunting",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "SHADOWHUNTING"
+  },
+  {
+   "armorType": null,
+   "classId": 13,
+   "className": "Witch Doctor",
+   "classToken": "WITCHDOCTOR",
+   "description": "Embrace da voodoo, cripple and enfeeble your enemies with powerful manipulation spells.",
+   "difficulty": "Medium",
+   "f63": 1,
+   "id": 5,
+   "name": "Voodoo",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": "Spirit",
+   "tabStatus": {
+    "cadTab": "Voodoo",
+    "liveTab": "Voodoo",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "VOODOO"
+  },
+  {
+   "armorType": null,
+   "classId": 13,
+   "className": "Witch Doctor",
+   "classToken": "WITCHDOCTOR",
+   "description": "Harness the shadows of dark alchemy to concoct potent brews and potions, channeling healing energies to empower your allies.",
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 6,
+   "name": "Brewing",
+   "powerType": "MANA",
+   "primaryStat": "Spirit",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Brewing",
+    "liveTab": "Brewing",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "BREWING"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 14,
+   "className": "Felsworn",
+   "classToken": "DEMONHUNTER",
+   "description": "Empower yourself with unbound fel sorcery to rain ruin from afar, incinerating foes with volatile blasts and relentless demonic assault.",
+   "difficulty": "Medium",
+   "f63": 2,
+   "id": 7,
+   "name": "Infernal",
+   "powerType": "ENERGY",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": "Spirit",
+   "tabStatus": {
+    "cadTab": "Felblood",
+    "liveTab": "Infernal",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "FELBLOOD"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 14,
+   "className": "Felsworn",
+   "classToken": "DEMONHUNTER",
+   "description": "Empower your weapons with fel magic and engage in close quarters combat with enemies.",
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 8,
+   "name": "Slayer",
+   "powerType": "ENERGY",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Slaying",
+    "liveTab": "Slayer",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "SLAYING"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 14,
+   "className": "Felsworn",
+   "classToken": "DEMONHUNTER",
+   "description": "Bolster your demon form, heft twin colossal blades, and use your hulking mass to dominate the battlefield as an unbreakable tank.",
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 9,
+   "name": "Tyrant",
+   "powerType": "ENERGY",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "Demonology",
+    "liveTab": "Tyrant",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "DEMONOLOGY"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 15,
+   "className": "Witch Hunter",
+   "classToken": "WITCHHUNTER",
+   "description": "Use crossbows to strike down enemies at a medium distance with unparalleled mobility.",
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 10,
+   "name": "Boltslinger",
+   "powerType": "MANA",
+   "primaryStat": "Agility",
+   "secondaryPowerType": "RAGE",
+   "secondaryStat": "Intellect",
+   "tabStatus": {
+    "cadTab": "Boltslinger",
+    "liveTab": "Boltslinger",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "BOLTSLINGER"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 15,
+   "className": "Witch Hunter",
+   "classToken": "WITCHHUNTER",
+   "description": "Use guns and a shadowhound companion to blast enemies into oblivion from across the battlefield.",
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 11,
+   "name": "Houndmaster",
+   "powerType": "MANA",
+   "primaryStat": "Agility",
+   "secondaryPowerType": "RAGE",
+   "secondaryStat": "Intellect",
+   "tabStatus": {
+    "cadTab": "Darkness",
+    "liveTab": "Houndmaster",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "DARKNESS"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 15,
+   "className": "Witch Hunter",
+   "classToken": "WITCHHUNTER",
+   "description": "Use dual weapons to hunt the evil doers of Azeroth, burning them in searing flames of judgement.",
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 12,
+   "name": "Inquisition",
+   "powerType": "MANA",
+   "primaryStat": "Agility",
+   "secondaryPowerType": "RAGE",
+   "secondaryStat": "Intellect",
+   "tabStatus": {
+    "cadTab": "Inquisition",
+    "liveTab": "Inquisition",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "INQUISITION"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 16,
+   "className": "Stormbringer",
+   "classToken": "STORMBRINGER",
+   "description": "Support your allies with powerful boons and control enemies using a wind servant to aid you.",
+   "difficulty": "Hard",
+   "f63": 2,
+   "id": 13,
+   "name": "Wind",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Wind",
+    "liveTab": "Wind",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "WIND"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 16,
+   "className": "Stormbringer",
+   "classToken": "STORMBRINGER",
+   "description": "Invoke the power of storms, utilizing powerful water and lightning magic in conjunction to electrocute enemies.",
+   "difficulty": "Medium",
+   "f63": 3,
+   "id": 14,
+   "name": "Maelstrom",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Gifts",
+    "liveTab": "Maelstrom",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "GIFTS"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 16,
+   "className": "Stormbringer",
+   "classToken": "STORMBRINGER",
+   "description": "Obliterate the enemy through the force of lightning itself, unleashing massive bursts of energy and chaining electricity across the battlefield.",
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 15,
+   "name": "Lightning",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Lightning",
+    "liveTab": "Lightning",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "LIGHTNING"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 17,
+   "className": "Knight of Xoroth",
+   "classToken": "FLESHWARDEN",
+   "description": "Beckon forth hellfire from the distant world of Xoroth to incinerate enemies with powerful burst attacks as an effective melee fire hybrid.",
+   "difficulty": "Medium",
+   "f63": 2,
+   "id": 16,
+   "name": "Hellfire",
+   "powerType": "RAGE",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": "Intellect",
+   "tabStatus": {
+    "cadTab": "Hellfire",
+    "liveTab": "Hellfire",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "HELLFIRE"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 17,
+   "className": "Knight of Xoroth",
+   "classToken": "FLESHWARDEN",
+   "description": "Command an army of Xorothian demons to both augment your own prowess in battle, and defend your allies, as a juggernaut from hell.",
+   "difficulty": "Hard",
+   "f63": 3,
+   "id": 17,
+   "name": "Defiance",
+   "powerType": "RAGE",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "Defiance",
+    "liveTab": "Defiance",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "DEFIANCE"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 17,
+   "className": "Knight of Xoroth",
+   "classToken": "FLESHWARDEN",
+   "description": "Butcher your enemies with savage slashes and brutal cleaves, tearing through flesh as a relentless, blood-soaked juggernaut.",
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 18,
+   "name": "War",
+   "powerType": "RAGE",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "War",
+    "liveTab": "War",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "WAR"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 18,
+   "className": "Guardian",
+   "classToken": "GUARDIAN",
+   "description": "Destroy enemies using a shield as a master of the arena, devastating your opponents with powerful kicks and trapping them in nets.",
+   "difficulty": "Medium",
+   "f63": 3,
+   "id": 19,
+   "name": "Gladiator",
+   "powerType": "ENERGY",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Gladiator",
+    "liveTab": "Gladiator",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "GLADIATOR"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 18,
+   "className": "Guardian",
+   "classToken": "GUARDIAN",
+   "description": "Lead from the front with rousing speeches, war banners, and heroic ballads that embolden allies and shatter enemy resolve.",
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 20,
+   "name": "Inspiration",
+   "powerType": "ENERGY",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Inspiration",
+    "liveTab": "Inspiration",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "INSPIRATION"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 18,
+   "className": "Guardian",
+   "classToken": "GUARDIAN",
+   "description": "Charge into the fray and protect your allies from harm with a massive shield and heavy defensive capability.",
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 21,
+   "name": "Vanguard",
+   "powerType": "ENERGY",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "Protection",
+    "liveTab": "Vanguard",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "PROTECTION"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 19,
+   "className": "Templar",
+   "classToken": "MONK",
+   "description": "Guard allies with disciplined martial mastery, parrying blows and staggering incoming damage before answering with decisive counterattacks.",
+   "difficulty": "Hard",
+   "f63": 2,
+   "id": 22,
+   "name": "Oathkeeper",
+   "powerType": "ENERGY",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "Discipline",
+    "liveTab": "Oathkeeper",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "DISCIPLINE"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 19,
+   "className": "Templar",
+   "classToken": "MONK",
+   "description": "Overwhelm enemies in a chain of zealous strikes of growing potency that shatter even the most steadfast defenses.",
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 23,
+   "name": "Zealot",
+   "powerType": "ENERGY",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Fighting",
+    "liveTab": "Zealot",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "FIGHTING"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 19,
+   "className": "Templar",
+   "classToken": "MONK",
+   "description": "Cleave through enemies in a tempest of righteous steel, unleashing your oaths to crush multiple foes at once.",
+   "difficulty": "Medium",
+   "f63": 3,
+   "id": 24,
+   "name": "Crusader",
+   "powerType": "ENERGY",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Runes",
+    "liveTab": "Crusader",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "RUNES"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 20,
+   "className": "Bloodmage",
+   "classToken": "SONOFARUGAL",
+   "description": "Weave flesh and blood into empowering rites, bolstering allies with potent boons while mending wounds in critical moments.",
+   "difficulty": "Medium",
+   "f63": 3,
+   "id": 25,
+   "name": "Fleshweaver",
+   "powerType": "RAGE",
+   "primaryStat": "Spirit",
+   "secondaryPowerType": "HEALTH",
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": null,
+    "liveTab": "Fleshweaver",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "FLESHWEAVER"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 20,
+   "className": "Bloodmage",
+   "classToken": "SONOFARUGAL",
+   "description": "Embrace the Curse of the Vampyr as a shadow caster, feeding an insatiable thirst that empowers your blood magic at ever-rising cost.",
+   "difficulty": "Hard",
+   "f63": 1,
+   "id": 26,
+   "name": "Sanguine",
+   "powerType": "RAGE",
+   "primaryStat": "Spirit",
+   "secondaryPowerType": "HEALTH",
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "Blood",
+    "liveTab": "Sanguine",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "BLOOD"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 20,
+   "className": "Bloodmage",
+   "classToken": "SONOFARUGAL",
+   "description": "Utilize an enhanced cursed form to weave in and out of battle as both a melee damage dealer and a caster simultaneously.",
+   "difficulty": "Hard",
+   "f63": 2,
+   "id": 27,
+   "name": "Accursed",
+   "powerType": "RAGE",
+   "primaryStat": "Agility",
+   "secondaryPowerType": "HEALTH",
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Ferocity",
+    "liveTab": "Accursed",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "FEROCITY"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 21,
+   "className": "Ranger",
+   "classToken": "RANGER",
+   "description": "Assault enemies from a distance with ranged weapons utilizing various powerful quivers to take down your foes.",
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 28,
+   "name": "Archery",
+   "powerType": "FOCUS",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Archery",
+    "liveTab": "Archery",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "ARCHERY"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 21,
+   "className": "Ranger",
+   "classToken": "RANGER",
+   "description": "Dominate the battlefield with ease with powerful ranged spells and utility, all while supporting your allies with horns and calling falcons into the fray.",
+   "difficulty": "Medium",
+   "f63": 3,
+   "id": 29,
+   "name": "Farstrider",
+   "powerType": "FOCUS",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Survival",
+    "liveTab": "Farstrider",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "SURVIVAL"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 21,
+   "className": "Ranger",
+   "classToken": "RANGER",
+   "description": "Stalk your prey with ruthless precision, assaulting them from close range, opening grievous wounds to bleed them out.",
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 30,
+   "name": "Brigand",
+   "powerType": "FOCUS",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Dueling",
+    "liveTab": "Brigand",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "DUELING"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 22,
+   "className": "Chronomancer",
+   "classToken": "CHRONOMANCER",
+   "description": "Bend the flow of aeons to mend wounds, delay incoming damage, and outmaneuver fate itself with elegant temporal mastery.",
+   "difficulty": "Medium",
+   "f63": 2,
+   "id": 31,
+   "name": "Time",
+   "powerType": "MANA",
+   "primaryStat": "Spirit",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Displacement",
+    "liveTab": "Time",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "DISPLACEMENT"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 22,
+   "className": "Chronomancer",
+   "classToken": "CHRONOMANCER",
+   "description": "Rampant chaotic energies flow through you as you channel the power of the Infinite Dragonflight and use them with purpose to unmake your enemies.",
+   "difficulty": "Hard",
+   "f63": 1,
+   "id": 32,
+   "name": "Infinite",
+   "powerType": "MANA",
+   "primaryStat": "Spirit",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Duality",
+    "liveTab": "Infinite",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "DUALITY"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 22,
+   "className": "Chronomancer",
+   "classToken": "CHRONOMANCER",
+   "description": "Weave fragmented echoes of time into your wand attacks to continually empower them or unleash single bursts of magic damage.",
+   "difficulty": "Medium",
+   "f63": 3,
+   "id": 33,
+   "name": "Artificer",
+   "powerType": "MANA",
+   "primaryStat": "Spirit",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Time",
+    "liveTab": "Artificer",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "TIME"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 23,
+   "className": "Necromancer",
+   "classToken": "NECROMANCER",
+   "description": "Spread foul plagues upon enemies to wither them over time and rot your foes with devastating diseases.",
+   "difficulty": "Medium",
+   "f63": 1,
+   "id": 34,
+   "name": "Death",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": "RUNIC_POWER",
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Death",
+    "liveTab": "Death",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "DEATH"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 23,
+   "className": "Necromancer",
+   "classToken": "NECROMANCER",
+   "description": "Raise vast hordes of expendable undead minions, increase the power of your horde, and use their command effects to destroy your enemies.",
+   "difficulty": "Hard",
+   "f63": 3,
+   "id": 35,
+   "name": "Animation",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": "RUNIC_POWER",
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Animation",
+    "liveTab": "Animation",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "ANIMATION"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 23,
+   "className": "Necromancer",
+   "classToken": "NECROMANCER",
+   "description": "Unleash your inner Lich. Utilize frost magic to damage and control enemies, chilling them to the bone alongside undead giants.",
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 36,
+   "name": "Rime",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": "RUNIC_POWER",
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Rime",
+    "liveTab": "Rime",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "RIME"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 24,
+   "className": "Pyromancer",
+   "classToken": "PYROMANCER",
+   "description": "Find solace in the caress of flames, where healing ignites the spirit and rekindles the hope in the heart of battle.",
+   "difficulty": "Medium",
+   "f63": 2,
+   "id": 37,
+   "name": "Flameweaving",
+   "powerType": "MANA",
+   "primaryStat": "Spirit",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Destruction",
+    "liveTab": "Flameweaving",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "DESTRUCTION"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 24,
+   "className": "Pyromancer",
+   "classToken": "PYROMANCER",
+   "description": "Stoke incinerating flames, burning enemies to a crisp, and leaving them writhing in agony.",
+   "difficulty": "Medium",
+   "f63": 1,
+   "id": 38,
+   "name": "Incineration",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Incineration",
+    "liveTab": "Incineration",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "INCINERATION"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 24,
+   "className": "Pyromancer",
+   "classToken": "PYROMANCER",
+   "description": "Ascend into an empowered state and obliterate enemies with powerful magic granted to you by the Dragon Aspects.",
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 39,
+   "name": "Draconic",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Draconic",
+    "liveTab": "Draconic",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "DRACONIC"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 25,
+   "className": "Cultist",
+   "classToken": "CULTIST",
+   "description": "Embrace insanity on the battlefield, healing allies with the power of Yogg-Saron in a crazed melee fervor.",
+   "difficulty": "Medium",
+   "f63": 3,
+   "id": 40,
+   "name": "Heretic",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": "Strength",
+   "tabStatus": {
+    "cadTab": "Influence",
+    "liveTab": "Heretic",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "INFLUENCE"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 25,
+   "className": "Cultist",
+   "classToken": "CULTIST",
+   "description": "Channel C'thun's destructive gaze, unleashing devastating void magics upon the battlefield.",
+   "difficulty": "Medium",
+   "f63": 2,
+   "id": 41,
+   "name": "Corruption",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Corruption",
+    "liveTab": "Corruption",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "CORRUPTION"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 25,
+   "className": "Cultist",
+   "classToken": "CULTIST",
+   "description": "Imbue your weapon with the power of N'Zoth, acting as a forceful herald of his plans.",
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 42,
+   "name": "Godblade",
+   "powerType": "MANA",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Godblade",
+    "liveTab": "Godblade",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "GODBLADE"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 26,
+   "className": "Starcaller",
+   "classToken": "STARCALLER",
+   "description": "Embrace the Lunar Cycles, harnessing their power influencing magical waters to heal allies.",
+   "difficulty": "Medium",
+   "f63": 3,
+   "id": 43,
+   "name": "Moon Priest",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Tides",
+    "liveTab": "Moon Priest",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "TIDES"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 26,
+   "className": "Starcaller",
+   "classToken": "STARCALLER",
+   "description": "Join the Sentinels to unleash enchanted arrows lit by the Moon's everpresent glow.",
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 44,
+   "name": "Sentinel",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Moonbow",
+    "liveTab": "Sentinel",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "MOONBOW"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 26,
+   "className": "Starcaller",
+   "classToken": "STARCALLER",
+   "description": "Become an avatar of Elune’s wrath, sundering foes with relentless lunar strikes and dispensing indiscriminate justice.",
+   "difficulty": "Medium",
+   "f63": 3,
+   "id": 45,
+   "name": "Warden",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": "ENERGY",
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": null,
+    "liveTab": "Warden",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "HYDROMANCY"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 27,
+   "className": "Sun Cleric",
+   "classToken": "SUNCLERIC",
+   "description": "Wield sanctified flame and holy wrath in tandem, searing corruption away and reducing enemies into purified ash.",
+   "difficulty": "Hard",
+   "f63": 1,
+   "id": 46,
+   "name": "Piety",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Piety",
+    "liveTab": "Piety",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "PIETY"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 27,
+   "className": "Sun Cleric",
+   "classToken": "SUNCLERIC",
+   "description": "Become the Light’s wrath made flesh, carving through foes with a greatblade in each hand as a storm of merciless holy steel.",
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 47,
+   "name": "Valkyrie",
+   "powerType": "MANA",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": null,
+    "liveTab": "Valkyrie",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "VALKYR"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 27,
+   "className": "Sun Cleric",
+   "classToken": "SUNCLERIC",
+   "description": "Swear a radiant oath to guard your allies, standing as an unyielding bulwark that turns aside harm beneath the sun.",
+   "difficulty": "Medium",
+   "f63": 3,
+   "id": 48,
+   "name": "Seraphim",
+   "powerType": "MANA",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "Seraphim",
+    "liveTab": "Seraphim",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "SERAPHIM"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 28,
+   "className": "Tinker",
+   "classToken": "TINKER",
+   "description": "Detonate powerful explosives, launch rockets, and build deadly contraptions to sow chaos and destruction amongst your enemies.",
+   "difficulty": "Medium",
+   "f63": 1,
+   "id": 49,
+   "name": "Demolition",
+   "powerType": "MANA",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": "Intellect",
+   "tabStatus": {
+    "cadTab": "Firearms",
+    "liveTab": "Demolition",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "FIREARMS"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 28,
+   "className": "Tinker",
+   "classToken": "TINKER",
+   "description": "Upgrade your turrets and clockwork allies while collecting scrap to build a jet-fueled mechsuit, unlocking enhanced abilities.",
+   "difficulty": "Hard",
+   "f63": 3,
+   "id": 50,
+   "name": "Mechanics",
+   "powerType": "MANA",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": "Intellect",
+   "tabStatus": {
+    "cadTab": "Mechanics",
+    "liveTab": "Mechanics",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "MECHANICS"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 28,
+   "className": "Tinker",
+   "classToken": "TINKER",
+   "description": "Heal yourself and allies with a vast array of nanobots and modules, and build powerful beacons to empower your allies.",
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 51,
+   "name": "Invention",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Invention",
+    "liveTab": "Invention",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "INVENTION"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 29,
+   "className": "Venomancer",
+   "classToken": "PROPHET",
+   "description": "Harden your form with a regenerating chitinous exoskeleton, fortifying your weak points to endure punishing enemy assaults.",
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 52,
+   "name": "Fortitude",
+   "powerType": "MANA",
+   "primaryStat": "Agility",
+   "secondaryPowerType": "RAGE",
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "Fortitude",
+    "liveTab": "Fortitude",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "FORTITUDE"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 29,
+   "className": "Venomancer",
+   "classToken": "PROPHET",
+   "description": "Take on the form of a spider to strike down foes from the shadows with powerful Nature and Shadow magic.",
+   "difficulty": "Medium",
+   "f63": 2,
+   "id": 53,
+   "name": "Stalking",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": "RAGE",
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Stalking",
+    "liveTab": "Stalking",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "STALKING"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 29,
+   "className": "Venomancer",
+   "classToken": "PROPHET",
+   "description": "Weave together poisons and fungal blights that rot your enemies from within, leaving behind volatile growths that erupt in their wake.",
+   "difficulty": "Hard",
+   "f63": 1,
+   "id": 54,
+   "name": "Rot",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": "RAGE",
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Venom",
+    "liveTab": "Venom",
+    "match": "cadTabMapping:sameName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "VENOM"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 30,
+   "className": "Reaper",
+   "classToken": "REAPER",
+   "description": "Skulk around in the realm of shadows, bringing the cold chill of death upon enemies.",
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 55,
+   "name": "Soul",
+   "powerType": "RUNIC_POWER",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Soul",
+    "liveTab": "Soul",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "SOUL"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 30,
+   "className": "Reaper",
+   "classToken": "REAPER",
+   "description": "Reap the life essence of your foes to empower crushing two-handed strikes, sustaining your onslaught through stolen vitality.",
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 56,
+   "name": "Harvest",
+   "powerType": "RUNIC_POWER",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Reaping",
+    "liveTab": "Harvest",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "REAPING"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 30,
+   "className": "Reaper",
+   "classToken": "REAPER",
+   "description": "Crush your foes with powerful soul magic while parrying their attacks and dominate those who come before you with spectral scythes and spectral wardens.",
+   "difficulty": "Medium",
+   "f63": 3,
+   "id": 57,
+   "name": "Domination",
+   "powerType": "RUNIC_POWER",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "Domination",
+    "liveTab": "Domination",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "DOMINATION"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 31,
+   "className": "Primalist",
+   "classToken": "WILDWALKER",
+   "description": "Invoke untamed nature into restorative surges, healing wounds and fortifying allies with bark, bloom, and primal vigor.",
+   "difficulty": "Medium",
+   "f63": 3,
+   "id": 58,
+   "name": "Grovekeeper",
+   "powerType": "MANA",
+   "primaryStat": "Strength",
+   "secondaryPowerType": "RAGE",
+   "secondaryStat": "Intellect",
+   "tabStatus": {
+    "cadTab": "Life",
+    "liveTab": "Life",
+    "match": "cadTabMapping:sameName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "LIFE"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 31,
+   "className": "Primalist",
+   "classToken": "WILDWALKER",
+   "description": "Walk with the animal spirits of Azeroth as a proud totem warrior, mauling foes and invoking the fury of the wild.",
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 59,
+   "name": "Wildwalker",
+   "powerType": "MANA",
+   "primaryStat": "Strength",
+   "secondaryPowerType": "RAGE",
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Primal",
+    "liveTab": "Primal",
+    "match": "cadTabMapping:sameName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "PRIMAL"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 31,
+   "className": "Primalist",
+   "classToken": "WILDWALKER",
+   "description": "Move stone and turn the earth wielding two powerful weapons to defend you and your allies from harm.",
+   "difficulty": "Medium",
+   "f63": 2,
+   "id": 60,
+   "name": "Mountain King",
+   "powerType": "MANA",
+   "primaryStat": "Strength",
+   "secondaryPowerType": "RAGE",
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": null,
+    "liveTab": "Mountain King",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "MOUNTAINKING"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 32,
+   "className": "Runemaster",
+   "classToken": "SPIRITMAGE",
+   "description": "Wield two one-handed weapons and use them in conjunction with powerful engravings to pummel your foes with wild primordial magic.",
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 61,
+   "name": "Engravement",
+   "powerType": "MANA",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Runic",
+    "liveTab": "Runic",
+    "match": "cadTabMapping:sameName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "RUNIC"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 32,
+   "className": "Runemaster",
+   "classToken": "SPIRITMAGE",
+   "description": "Invoke frost, flame, and arcane glyphs in rapid succession, bombarding foes with layered elemental power and primordial force.",
+   "difficulty": "Hard",
+   "f63": 1,
+   "id": 62,
+   "name": "Glyphic",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": "Spirit",
+   "tabStatus": {
+    "cadTab": "Arcane",
+    "liveTab": "Arcane",
+    "match": "cadTabMapping:sameName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "ARCANE"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 32,
+   "className": "Runemaster",
+   "classToken": "SPIRITMAGE",
+   "description": "Bring destruction upon your enemies with grace while wielding a two-handed weapon and powerful devastating magical attacks.",
+   "difficulty": "Medium",
+   "f63": 3,
+   "id": 63,
+   "name": "Riftblade",
+   "powerType": "MANA",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Riftblade",
+    "liveTab": "Riftblade",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "RIFTBLADE"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 1,
+   "className": "Warrior",
+   "classToken": "WARRIOR",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 64,
+   "name": "Arms",
+   "powerType": "RAGE",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Arms",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "ARMS"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 1,
+   "className": "Warrior",
+   "classToken": "WARRIOR",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 65,
+   "name": "Fury",
+   "powerType": "RAGE",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Fury",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "FURY"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 1,
+   "className": "Warrior",
+   "classToken": "WARRIOR",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 66,
+   "name": "Protection",
+   "powerType": "RAGE",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "Protection",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "PROTECTION"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 2,
+   "className": "Paladin",
+   "classToken": "PALADIN",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 67,
+   "name": "Holy",
+   "powerType": "MANA",
+   "primaryStat": "Spirit",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Holy",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "HOLY"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 2,
+   "className": "Paladin",
+   "classToken": "PALADIN",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 68,
+   "name": "Protection",
+   "powerType": "MANA",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "Protection",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "PROTECTION"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 2,
+   "className": "Paladin",
+   "classToken": "PALADIN",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 69,
+   "name": "Retribution",
+   "powerType": "MANA",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Retribution",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "RETRIBUTION"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 3,
+   "className": "Hunter",
+   "classToken": "HUNTER",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 70,
+   "name": "Beast Mastery",
+   "powerType": "MANA",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "BeastMastery",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "BEASTMASTERY"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 3,
+   "className": "Hunter",
+   "classToken": "HUNTER",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 71,
+   "name": "Marksmanship",
+   "powerType": "MANA",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Marksmanship",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "MARKSMANSHIP"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 3,
+   "className": "Hunter",
+   "classToken": "HUNTER",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 72,
+   "name": "Survival",
+   "powerType": "MANA",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Survival",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "SURVIVAL"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 4,
+   "className": "Rogue",
+   "classToken": "ROGUE",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 73,
+   "name": "Assassination",
+   "powerType": "ENERGY",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Assassination",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "ASSASSINATION"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 4,
+   "className": "Rogue",
+   "classToken": "ROGUE",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 74,
+   "name": "Combat",
+   "powerType": "ENERGY",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Combat",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "COMBAT"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 4,
+   "className": "Rogue",
+   "classToken": "ROGUE",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 75,
+   "name": "Subtlety",
+   "powerType": "ENERGY",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Subtlety",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "SUBTLETY"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 5,
+   "className": "Priest",
+   "classToken": "PRIEST",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 76,
+   "name": "Discipline",
+   "powerType": "MANA",
+   "primaryStat": "Spirit",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Discipline",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "DISCIPLINE"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 5,
+   "className": "Priest",
+   "classToken": "PRIEST",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 77,
+   "name": "Holy",
+   "powerType": "MANA",
+   "primaryStat": "Spirit",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Holy",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "HOLY"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 5,
+   "className": "Priest",
+   "classToken": "PRIEST",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 78,
+   "name": "Shadow",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Shadow",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "SHADOW"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 6,
+   "className": "Death Knight",
+   "classToken": "DEATHKNIGHT",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 79,
+   "name": "Blood",
+   "powerType": "RUNES",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "Blood",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "BLOOD"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 6,
+   "className": "Death Knight",
+   "classToken": "DEATHKNIGHT",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 80,
+   "name": "Frost",
+   "powerType": "RUNES",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "Frost",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "FROST"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 6,
+   "className": "Death Knight",
+   "classToken": "DEATHKNIGHT",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 81,
+   "name": "Unholy",
+   "powerType": "RUNES",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Unholy",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "UNHOLY"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 7,
+   "className": "Shaman",
+   "classToken": "SHAMAN",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 82,
+   "name": "Elemental",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Elemental",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "ELEMENTAL"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 7,
+   "className": "Shaman",
+   "classToken": "SHAMAN",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 83,
+   "name": "Enhancement",
+   "powerType": "MANA",
+   "primaryStat": "Agility",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Enhancement",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "ENHANCEMENT"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 7,
+   "className": "Shaman",
+   "classToken": "SHAMAN",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 84,
+   "name": "Restoration",
+   "powerType": "MANA",
+   "primaryStat": "Spirit",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Restoration",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "RESTORATION"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 8,
+   "className": "Mage",
+   "classToken": "MAGE",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 85,
+   "name": "Arcane",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Arcane",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "ARCANE"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 8,
+   "className": "Mage",
+   "classToken": "MAGE",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 86,
+   "name": "Fire",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Fire",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "FIRE"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 8,
+   "className": "Mage",
+   "classToken": "MAGE",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 87,
+   "name": "Frost",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Frost",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "FROST"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 9,
+   "className": "Warlock",
+   "classToken": "WARLOCK",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 88,
+   "name": "Affliction",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Affliction",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "AFFLICTION"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 9,
+   "className": "Warlock",
+   "classToken": "WARLOCK",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 89,
+   "name": "Destruction",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Destruction",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "DESTRUCTION"
+  },
+  {
+   "armorType": "Cloth",
+   "classId": 9,
+   "className": "Warlock",
+   "classToken": "WARLOCK",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 90,
+   "name": "Demonology",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Demonology",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "DEMONOLOGY"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 11,
+   "className": "Druid",
+   "classToken": "DRUID",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 91,
+   "name": "Balance",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Balance",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "BALANCE"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 11,
+   "className": "Druid",
+   "classToken": "DRUID",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 2,
+   "id": 92,
+   "name": "Feral",
+   "powerType": "ENERGY",
+   "primaryStat": "Agility",
+   "secondaryPowerType": "RAGE",
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "Feral",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "FERAL"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 11,
+   "className": "Druid",
+   "classToken": "DRUID",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 93,
+   "name": "Restoration",
+   "powerType": "MANA",
+   "primaryStat": "Spirit",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Restoration",
+    "liveTab": null,
+    "match": "tabToken",
+    "renamed": null,
+    "status": "noLiveGeometry"
+   },
+   "tabToken": "RESTORATION"
+  },
+  {
+   "armorType": null,
+   "classId": 10,
+   "className": "Hero",
+   "classToken": "HERO",
+   "description": null,
+   "difficulty": "Normal",
+   "f63": 1,
+   "id": 94,
+   "name": "Hero",
+   "powerType": "MANA",
+   "primaryStat": "Strength",
+   "secondaryPowerType": "RAGE",
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": null,
+    "liveTab": null,
+    "match": null,
+    "renamed": null,
+    "status": "noCadClass"
+   },
+   "tabToken": "HERO"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 31,
+   "className": "Primalist",
+   "classToken": "WILDWALKER",
+   "description": "Summon the power of the earth from the depths of Azeroth to unleash devastating magic upon enemies.",
+   "difficulty": "Hard",
+   "f63": 2,
+   "id": 95,
+   "name": "Geomancy",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": "RAGE",
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Geomancy",
+    "liveTab": "Geomancy",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "GEOMANCY"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 25,
+   "className": "Cultist",
+   "classToken": "CULTIST",
+   "description": "Become overtaken by the might of Y'shaarj, transforming into an immovable bulwark of eldritch magic that absorbs incoming attacks.",
+   "difficulty": "Hard",
+   "f63": 2,
+   "id": 96,
+   "name": "Dreadnought",
+   "powerType": "MANA",
+   "primaryStat": "Strength",
+   "secondaryPowerType": null,
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": null,
+    "liveTab": "Dreadnought",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "BULWARK"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 15,
+   "className": "Witch Hunter",
+   "classToken": "WITCHHUNTER",
+   "description": "Don your witchmail and wield a two-handed sword to deflect attacks and defend allies.",
+   "difficulty": "Medium",
+   "f63": 2,
+   "id": 97,
+   "name": "Black Knight",
+   "powerType": "MANA",
+   "primaryStat": "Agility",
+   "secondaryPowerType": "RAGE",
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": null,
+    "liveTab": "Black Knight",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "WITCHKNIGHT"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 27,
+   "className": "Sun Cleric",
+   "classToken": "SUNCLERIC",
+   "description": "Bathe your companions in radiant sunlight, mending grievous wounds and empowering them with steadfast hope and divine blessings.",
+   "difficulty": "Medium",
+   "f63": 2,
+   "id": 98,
+   "name": "Blessings",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": "Blessings",
+    "liveTab": "Blessings",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "BLESSINGS"
+  },
+  {
+   "armorType": "Leather",
+   "classId": 20,
+   "className": "Bloodmage",
+   "classToken": "SONOFARUGAL",
+   "description": "Transform into a monstrosity that is able to attract the attention of devastingly powerful foes.",
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 99,
+   "name": "Eternal",
+   "powerType": "RAGE",
+   "primaryStat": "Agility",
+   "secondaryPowerType": "HEALTH",
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "Packleader",
+    "liveTab": "Eternal",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "PACKLEADER"
+  },
+  {
+   "armorType": "Plate",
+   "classId": 26,
+   "className": "Starcaller",
+   "classToken": "STARCALLER",
+   "description": "Become a mana infused bulwark shielding the secrets of the cosmos from unwelcome influences.",
+   "difficulty": "Hard",
+   "f63": 1,
+   "id": 100,
+   "name": "Moon Guard",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": null,
+   "secondaryStat": "Stamina",
+   "tabStatus": {
+    "cadTab": "AstralWarfare",
+    "liveTab": "Moon Guard",
+    "match": "specName",
+    "renamed": true,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "ASTRALWARFARE"
+  },
+  {
+   "armorType": "Mail",
+   "classId": 29,
+   "className": "Venomancer",
+   "classToken": "PROPHET",
+   "description": "Master the art of rejuvenation through poisons and venom, creating a delicate balance between life and death.",
+   "difficulty": "Normal",
+   "f63": 3,
+   "id": 101,
+   "name": "Vizier",
+   "powerType": "MANA",
+   "primaryStat": "Intellect",
+   "secondaryPowerType": "RAGE",
+   "secondaryStat": null,
+   "tabStatus": {
+    "cadTab": null,
+    "liveTab": "Vizier",
+    "match": "specName",
+    "renamed": false,
+    "status": "inLiveBuilder"
+   },
+   "tabToken": "VIZIER"
+  }
+ ],
+ "tabStatusSummary": {
+  "cadOnly": [],
+  "counts": {
+   "inLiveBuilder": 70,
+   "noCadClass": 1,
+   "noLiveGeometry": 30
+  },
+  "renameNote": "25 of the 70 inLiveBuilder specs have a live tree name DIFFERENT from their CAD tab name - CAD tab names and live tab names are different generations of the same tree slots (Starcaller CAD 'Tides' is live 'Moon Priest'). The mapping and its per-pair evidence live in data/classes/_live_summary.json's tabMapping.",
+  "renamedInLiveBuilder": [
+   [
+    1,
+    "Barbarian",
+    "Tactics",
+    "Headhunting"
+   ],
+   [
+    7,
+    "Felsworn",
+    "Felblood",
+    "Infernal"
+   ],
+   [
+    8,
+    "Felsworn",
+    "Slaying",
+    "Slayer"
+   ],
+   [
+    9,
+    "Felsworn",
+    "Demonology",
+    "Tyrant"
+   ],
+   [
+    11,
+    "Witch Hunter",
+    "Darkness",
+    "Houndmaster"
+   ],
+   [
+    14,
+    "Stormbringer",
+    "Gifts",
+    "Maelstrom"
+   ],
+   [
+    21,
+    "Guardian",
+    "Protection",
+    "Vanguard"
+   ],
+   [
+    22,
+    "Templar",
+    "Discipline",
+    "Oathkeeper"
+   ],
+   [
+    23,
+    "Templar",
+    "Fighting",
+    "Zealot"
+   ],
+   [
+    24,
+    "Templar",
+    "Runes",
+    "Crusader"
+   ],
+   [
+    26,
+    "Bloodmage",
+    "Blood",
+    "Sanguine"
+   ],
+   [
+    27,
+    "Bloodmage",
+    "Ferocity",
+    "Accursed"
+   ],
+   [
+    29,
+    "Ranger",
+    "Survival",
+    "Farstrider"
+   ],
+   [
+    30,
+    "Ranger",
+    "Dueling",
+    "Brigand"
+   ],
+   [
+    31,
+    "Chronomancer",
+    "Displacement",
+    "Time"
+   ],
+   [
+    32,
+    "Chronomancer",
+    "Duality",
+    "Infinite"
+   ],
+   [
+    33,
+    "Chronomancer",
+    "Time",
+    "Artificer"
+   ],
+   [
+    37,
+    "Pyromancer",
+    "Destruction",
+    "Flameweaving"
+   ],
+   [
+    40,
+    "Cultist",
+    "Influence",
+    "Heretic"
+   ],
+   [
+    43,
+    "Starcaller",
+    "Tides",
+    "Moon Priest"
+   ],
+   [
+    44,
+    "Starcaller",
+    "Moonbow",
+    "Sentinel"
+   ],
+   [
+    49,
+    "Tinker",
+    "Firearms",
+    "Demolition"
+   ],
+   [
+    56,
+    "Reaper",
+    "Reaping",
+    "Harvest"
+   ],
+   [
+    99,
+    "Bloodmage",
+    "Packleader",
+    "Eternal"
+   ],
+   [
+    100,
+    "Starcaller",
+    "AstralWarfare",
+    "Moon Guard"
+   ]
+  ],
+  "sec11Correction": "The source request cited '7 of 70 specs have no CAD tab' (presumably unreleased); 5 of the 7 had in fact shipped in the live builder. All 7 resolve here by MECHANISM rather than a pinned token table: a spec's own `name` is the live-generation label, so VALKYR->Valkyrie, WITCHKNIGHT->Black Knight, HYDROMANCY->Warden and BULWARK->Dreadnought all resolve by name against the live tab list (the last two previously recorded as 'unmatchedExtraTabs', now attributed). 0 specs remain unreleased by this re-derivation.",
+  "statusMeanings": {
+   "cadOnly": "the tree exists only in the CAD catalog - no live tab maps to it",
+   "inLiveBuilder": "this spec's tree is in the live builder payload (liveTab names it; renamed=true means the CAD tab is called something else)",
+   "noCadClass": "class has no data/classes/ directory at all (structural)",
+   "noLiveGeometry": "class has a CAD tab layer but no builder capture - liveness NOT claimed",
+   "unreleased": "named by neither layer"
+  },
+  "supersedes": "the earlier catalog-only states (live/shippedExternal/unreleased/noTabLayer). 'live' there meant only 'a CAD tab with this token exists' - a claim about the catalog, not the game - and covered 93/101 specs including Starcaller/TIDES, whose tree does not exist in game.",
+  "unreleased": []
+ }
+}

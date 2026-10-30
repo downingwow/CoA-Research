@@ -33,7 +33,7 @@ SOURCES = [
 USER_AGENT = "CoA-Research-public-archive/1.0"
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
-def get(url, max_bytes=25_000_000):
+def get(url, max_bytes=36_000_000):
     headers = {"User-Agent": USER_AGENT, "Accept": "application/vnd.github+json"}
     if TOKEN and "api.github.com" in url:
         headers["Authorization"] = "Bearer " + TOKEN
@@ -76,11 +76,11 @@ def ids_from(value, category):
         for child in value:
             yield from ids_from(child, category)
     elif isinstance(value, dict):
-        field = "itemId" if category == "items" else "id"
-        candidate = value.get(field)
+        fields = ("itemId", "id") if category == "items" else (("spellId", "spellID", "id") if category == "tooltips" else ("id",))
+        candidate = next((value[k] for k in fields if isinstance(value.get(k), int) and value[k] > 0), None)
         if isinstance(candidate, int) and candidate > 0:
             yield candidate, value.get("name")
-        for key in ("records", "spells", "abilities", "nodes", "talents", "items", "entries"):
+        for key in ("records", "spells", "abilities", "nodes", "talents", "items", "entries", "members", "classes", "specs"):
             child = value.get(key)
             if isinstance(child, (list, dict)):
                 yield from ids_from(child, category)
@@ -105,8 +105,8 @@ def run(max_files):
             for entry in selected:
                 if processed >= max_files or new_in_category >= per_category_cap:
                     break
-                if entry.get("size", 0) > 24_000_000:
-                    manifest["errors"].append({"source": repo, "path": entry["path"], "error": "file exceeds 24MB safety limit"})
+                if entry.get("size", 0) > 35_000_000:
+                    manifest["errors"].append({"source": repo, "path": entry["path"], "error": "file exceeds 35MB safety limit"})
                     continue
                 url = "https://raw.githubusercontent.com/" + repo + "/" + ref + "/" + entry["path"]
                 try:

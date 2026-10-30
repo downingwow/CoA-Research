@@ -7,14 +7,21 @@ source=root/"datasets/relationships/enriched-spells-by-id.json.gz"
 with gzip.open(source,"rt",encoding="utf-8") as f:records=json.load(f)
 registry=json.loads((root/"datasets/normalized/coa-class-spec-id-registry.json").read_text(encoding="utf-8"))
 class_names={str(r["classId"]):r["className"] for r in registry["records"]}
+unified_path=root/"datasets/relationships/unified-spell-research-index.json.gz"
+unified={}
+if unified_path.exists():
+    with gzip.open(unified_path,"rt",encoding="utf-8") as f:unified=json.load(f)
 rows=[]
 for sid,record in records.items():
     definition=record.get("spellDefinition",{}).get("fields",{})
     evid=record.get("relationshipEvidence",[])
     names=sorted({str(e.get("spellName") or e.get("abilityName") or e.get("nodeName")) for e in evid if e.get("spellName") or e.get("abilityName") or e.get("nodeName")})
-    name=definition.get("name") or (names[0] if names else "Unknown spell")
+    supplemental=unified.get(str(sid),{})
+    name=supplemental.get("displayName") or definition.get("name") or (names[0] if names else "Unknown spell")
     rows.append({"id":int(sid),"n":name,"c":record["classIds"],"s":record["candidateSpecIds"],
-                 "d":definition.get("description") or "",
+                 "d":definition.get("description") or supplemental.get("description") or "",
+                 "sources":supplemental.get("sources") or [],
+                 "nameConflict":supplemental.get("hasNameConflict",False),
                  "cd":definition.get("cooldownMs"),"ct":definition.get("castTimeMs"),
                  "du":definition.get("durationMs"),"p":definition.get("powerType"),
                  "m":definition.get("manaCost"),"defined":bool(definition),

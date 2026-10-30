@@ -1,0 +1,63 @@
+{
+  "title": "DBM-CoA authoritative research scope from user-provided AtlasLoot Ascension screenshot",
+  "date": "2026-10-30",
+  "source": "User screenshot AtlasLoot Ascension categories; Shadowbone Depths and The Radiant Spring explicitly added by user",
+  "status": "Scope inventory only, not verification of mechanics or release status",
+  "raids": [
+    "Zul'Gurub",
+    "Molten Core",
+    "Onyxia's Lair",
+    "Blackwing Lair",
+    "Ruins of Ahn'Qiraj",
+    "Temple of Ahn'Qiraj",
+    "Naxxramas",
+    "World Bosses"
+  ],
+  "dungeons": [
+    "All Dungeon Items",
+    "Blackfathom Deeps",
+    "Blackrock Depths",
+    "Blackrock Caverns",
+    "Lower Blackrock Spire",
+    "Upper Blackrock Spire",
+    "The Deadmines",
+    "Dire Maul North",
+    "Dire Maul East",
+    "Dire Maul West",
+    "Gnomeregan",
+    "The Karazhan Crypts",
+    "Maraudon",
+    "Ragefire Chasm",
+    "Razorfen Downs",
+    "Razorfen Kraul",
+    "Scarlet Monastery - Armory",
+    "Scarlet Monastery - Cathedral",
+    "Scarlet Monastery - Graveyard",
+    "Scarlet Monastery - Library",
+    "Scholomance",
+    "Shadowfang Keep",
+    "The Stockade",
+    "Stratholme",
+    "Sunken Temple",
+    "Uldaman",
+    "Wailing Caverns",
+    "Zul'Farrak",
+    "Vaults of the Inquisition",
+    "Road to De Other Side",
+    "Shared Dungeon Loot"
+  ],
+  "unreleasedDungeons": [
+    "Shadowbone Depths",
+    "The Radiant Spring"
+  ],
+  "manastorm": [
+    "Frozen Reach"
+  ],
+  "notes": [
+    "All Dungeon Items and Shared Dungeon Loot are loot categories, not encounter-bearing dungeons.",
+    "World Bosses is a raid-category grouping, not an instanced raid.",
+    "Keep user-provided labels verbatim, including CoA custom dungeon names.",
+    "Outland and Northrend dungeon research excluded unless explicitly present on this screenshot or later authorized.",
+    "Research fields per dungeon: map/wing, NPC and encounter IDs, boss order, spells, cast timers, phases, summons, difficulty changes, reset/completion, loot provenance and confidence."
+  ]
+}

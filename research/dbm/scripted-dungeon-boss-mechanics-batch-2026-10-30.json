@@ -1,0 +1,626 @@
+{
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "verification": "Upstream script evidence, not verified on live server",
+  "files": [
+    {
+      "path": "src/server/scripts/EasternKingdoms/Scholomance/boss_darkmaster_gandling.cpp",
+      "sha": "415bdcbcd6fec3bd2d706fb0cec1a50beebec715",
+      "lineCount": 422,
+      "signals": [
+        {
+          "line": 27,
+          "text": "SPELL_ARCANE_MISSILES = 15790,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_CURSE_DARKMASTER = 18702,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_SHADOW_SHIELD = 12040,"
+        },
+        {
+          "line": 30,
+          "text": "SPELL_SHADOW_PORTAL = 17950"
+        },
+        {
+          "line": 49,
+          "text": "SPELL_SHADOW_PORTAL_UP_NORTH    = 17863,"
+        },
+        {
+          "line": 50,
+          "text": "SPELL_SHADOW_PORTAL_UP_EAST     = 17939,"
+        },
+        {
+          "line": 51,
+          "text": "SPELL_SHADOW_PORTAL_UP_SOUTH    = 17943,"
+        },
+        {
+          "line": 52,
+          "text": "SPELL_SHADOW_PORTAL_DOWN_NORTH  = 17944,"
+        },
+        {
+          "line": 53,
+          "text": "SPELL_SHADOW_PORTAL_DOWN_EAST   = 17946,"
+        },
+        {
+          "line": 54,
+          "text": "SPELL_SHADOW_PORTAL_DOWN_SOUTH  = 17948"
+        },
+        {
+          "line": 61,
+          "text": "const uint32 GandlingPortalSpells[] = {SPELL_SHADOW_PORTAL_DOWN_NORTH, SPELL_SHADOW_PORTAL_DOWN_EAST, SPELL_SHADOW_PORTAL_DOWN_SOUTH,"
+        },
+        {
+          "line": 62,
+          "text": "SPELL_SHADOW_PORTAL_UP_NORTH, SPELL_SHADOW_PORTAL_UP_EAST, SPELL_SHADOW_PORTAL_UP_SOUTH};"
+        },
+        {
+          "line": 186,
+          "text": "instance->SetData(DATA_DARKMASTER_GANDLING, IN_PROGRESS);"
+        },
+        {
+          "line": 188,
+          "text": "events.ScheduleEvent(SPELL_ARCANE_MISSILES, TIMER_ARCANE_MIN);"
+        },
+        {
+          "line": 189,
+          "text": "events.ScheduleEvent(SPELL_CURSE_DARKMASTER, TIMER_CURSE_MIN);"
+        },
+        {
+          "line": 190,
+          "text": "events.ScheduleEvent(SPELL_SHADOW_SHIELD, TIMER_SHIELD_MIN);"
+        },
+        {
+          "line": 191,
+          "text": "events.ScheduleEvent(SPELL_SHADOW_PORTAL, TIMER_PORTAL);"
+        },
+        {
+          "line": 194,
+          "text": "void JustDied(Unit* /*killer*/) override"
+        },
+        {
+          "line": 196,
+          "text": "instance->SetData(DATA_DARKMASTER_GANDLING, DONE);"
+        },
+        {
+          "line": 200,
+          "text": "void SetData(uint32 type, uint32 data) override"
+        },
+        {
+          "line": 239,
+          "text": "instance->SetData(DATA_DARKMASTER_GANDLING, NOT_STARTED);"
+        },
+        {
+          "line": 285,
+          "text": "if (Creature* summon = me->SummonCreature(NPC_RISEN_GUARDIAN, SummonPos[room*3 + i], TEMPSUMMON_TIMED_OR_CORPSE_DESPAWN, 120000))"
+        },
+        {
+          "line": 296,
+          "text": "if (spellinfo && spellinfo->Id == SPELL_SHADOW_PORTAL && target)"
+        },
+        {
+          "line": 301,
+          "text": "DoCast(target, GandlingPortalSpells[room], true); // needs triggered somehow."
+        },
+        {
+          "line": 333,
+          "text": "case SPELL_ARCANE_MISSILES:"
+        },
+        {
+          "line": 334,
+          "text": "DoCastVictim(SPELL_ARCANE_MISSILES);"
+        },
+        {
+          "line": 335,
+          "text": "events.ScheduleEvent(SPELL_ARCANE_MISSILES, TIMER_ARCANE_MIN, TIMER_ARCANE_MAX);"
+        },
+        {
+          "line": 337,
+          "text": "case SPELL_CURSE_DARKMASTER:"
+        },
+        {
+          "line": 340,
+          "text": "DoCast(target, SPELL_CURSE_DARKMASTER);"
+        },
+        {
+          "line": 342,
+          "text": "events.ScheduleEvent(SPELL_ARCANE_MISSILES, TIMER_ARCANE_MIN, TIMER_ARCANE_MAX);"
+        },
+        {
+          "line": 344,
+          "text": "case SPELL_SHADOW_SHIELD:"
+        },
+        {
+          "line": 345,
+          "text": "DoCastSelf(SPELL_SHADOW_SHIELD);"
+        },
+        {
+          "line": 346,
+          "text": "events.ScheduleEvent(SPELL_ARCANE_MISSILES, TIMER_ARCANE_MIN, TIMER_ARCANE_MAX);"
+        },
+        {
+          "line": 349,
+          "text": "case SPELL_SHADOW_PORTAL:"
+        },
+        {
+          "line": 355,
+          "text": "SetData(GANDLING_ROOM_TO_USE, room);"
+        },
+        {
+          "line": 356,
+          "text": "DoCast(target, SPELL_SHADOW_PORTAL); // don't use triggered here"
+        },
+        {
+          "line": 359,
+          "text": "events.ScheduleEvent(SPELL_SHADOW_PORTAL, TIMER_PORTAL);"
+        },
+        {
+          "line": 405,
+          "text": "Gandling->GetAI()->SetData(DATA_PLAYER_KILLED, room);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/Gundrak/boss_eck.cpp",
+      "sha": "e21b5835cb28767942167eea9f4a2305ab39de6a",
+      "lineCount": 97,
+      "signals": [
+        {
+          "line": 25,
+          "text": "SPELL_ECK_BERSERK                   = 55816,"
+        },
+        {
+          "line": 26,
+          "text": "SPELL_ECK_BITE                      = 55813,"
+        },
+        {
+          "line": 27,
+          "text": "SPELL_ECK_SPIT                      = 55814,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_ECK_SPRING                    = 55815,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_ECK_SPRING_INIT               = 55837"
+        },
+        {
+          "line": 35,
+          "text": "EVENT_ECK_BERSERK                   = 1,"
+        },
+        {
+          "line": 36,
+          "text": "EVENT_ECK_CRAZED_EMOTE              = 2,"
+        },
+        {
+          "line": 60,
+          "text": "me->CastSpell(me, SPELL_ECK_SPRING_INIT, true);"
+        },
+        {
+          "line": 67,
+          "text": "if (spell->Id == SPELL_ECK_SPRING)"
+        },
+        {
+          "line": 78,
+          "text": "Talk(EMOTE_CRAZED);"
+        },
+        {
+          "line": 79,
+          "text": "}, EVENT_ECK_CRAZED_EMOTE);"
+        },
+        {
+          "line": 81,
+          "text": "DoCastVictim(SPELL_ECK_BITE);"
+        },
+        {
+          "line": 84,
+          "text": "DoCastVictim(SPELL_ECK_SPIT);"
+        },
+        {
+          "line": 87,
+          "text": "DoCastRandomTarget(SPELL_ECK_SPRING, 0, 30.0f, true);"
+        },
+        {
+          "line": 89,
+          "text": "ScheduleEnrageTimer(SPELL_ECK_BERSERK, 90s);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/Nexus/Oculus/boss_drakos.cpp",
+      "sha": "b6f9e9462c0cb061c0118679128bb4a6b523ebdb",
+      "lineCount": 259,
+      "signals": [
+        {
+          "line": 24,
+          "text": "SPELL_MAGIC_PULL                    = 51336,"
+        },
+        {
+          "line": 25,
+          "text": "SPELL_THUNDERING_STOMP              = 50774,"
+        },
+        {
+          "line": 27,
+          "text": "SPELL_UNSTABLE_SPHERE_PASSIVE       = 50756,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_UNSTABLE_SPHERE_PULSE         = 50757,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_UNSTABLE_SPHERE_TIMER         = 50758,"
+        },
+        {
+          "line": 30,
+          "text": "SPELL_TELEPORT_VISUAL               = 52096,"
+        },
+        {
+          "line": 40,
+          "text": "EVENT_MAGIC_PULL                    = 1,"
+        },
+        {
+          "line": 41,
+          "text": "EVENT_THUNDERING_STOMP              = 2,"
+        },
+        {
+          "line": 42,
+          "text": "EVENT_SUMMON                        = 3,"
+        },
+        {
+          "line": 43,
+          "text": "EVENT_SUMMON_x4                     = 4,"
+        },
+        {
+          "line": 78,
+          "text": "pInstance->SetData(DATA_DRAKOS, NOT_STARTED);"
+        },
+        {
+          "line": 85,
+          "text": "Talk(SAY_AGGRO);"
+        },
+        {
+          "line": 88,
+          "text": "pInstance->SetData(DATA_DRAKOS, IN_PROGRESS);"
+        },
+        {
+          "line": 92,
+          "text": "events.RescheduleEvent(EVENT_MAGIC_PULL, 10s, 15s);"
+        },
+        {
+          "line": 93,
+          "text": "events.RescheduleEvent(EVENT_THUNDERING_STOMP, 3s, 6s);"
+        },
+        {
+          "line": 94,
+          "text": "events.RescheduleEvent(EVENT_SUMMON, 2s);"
+        },
+        {
+          "line": 97,
+          "text": "void JustDied(Unit*  /*killer*/) override"
+        },
+        {
+          "line": 99,
+          "text": "Talk(SAY_DEATH);"
+        },
+        {
+          "line": 103,
+          "text": "pInstance->SetData(DATA_DRAKOS, DONE);"
+        },
+        {
+          "line": 117,
+          "text": "Talk(SAY_KILL);"
+        },
+        {
+          "line": 139,
+          "text": "case EVENT_MAGIC_PULL:"
+        },
+        {
+          "line": 141,
+          "text": "Talk(SAY_PULL);"
+        },
+        {
+          "line": 144,
+          "text": "me->CastSpell(me, SPELL_MAGIC_PULL, false);"
+        },
+        {
+          "line": 146,
+          "text": "events.ScheduleEvent(EVENT_SUMMON_x4, 1500ms);"
+        },
+        {
+          "line": 149,
+          "text": "case EVENT_THUNDERING_STOMP:"
+        },
+        {
+          "line": 151,
+          "text": "Talk(SAY_STOMP);"
+        },
+        {
+          "line": 153,
+          "text": "me->CastSpell(me, SPELL_THUNDERING_STOMP, false);"
+        },
+        {
+          "line": 157,
+          "text": "case EVENT_SUMMON:"
+        },
+        {
+          "line": 162,
+          "text": "me->SummonCreature(NPC_UNSTABLE_SPHERE, me->GetPositionX() + 5.0f * cos(angle), me->GetPositionY() + 5.0f * std::sin(angle), me->GetPositionZ(), 0.0f, TEMPSUMMON_TIMED_DESPAWN, 18000);"
+        },
+        {
+          "line": 167,
+          "text": "case EVENT_SUMMON_x4:"
+        },
+        {
+          "line": 171,
+          "text": "me->SummonCreature(NPC_UNSTABLE_SPHERE, me->GetPositionX() + 5.0f * cos(angle), me->GetPositionY() + 5.0f * std::sin(angle), me->GetPositionZ(), 0.0f, TEMPSUMMON_TIMED_DESPAWN, 18000);"
+        },
+        {
+          "line": 217,
+          "text": "me->CastSpell(me, SPELL_UNSTABLE_SPHERE_PASSIVE, true);"
+        },
+        {
+          "line": 218,
+          "text": "me->CastSpell(me, SPELL_UNSTABLE_SPHERE_TIMER, true);"
+        },
+        {
+          "line": 232,
+          "text": "me->CastSpell(me, SPELL_TELEPORT_VISUAL, true);"
+        },
+        {
+          "line": 241,
+          "text": "me->CastSpell(me, SPELL_UNSTABLE_SPHERE_PULSE, true);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/ShadowfangKeep/boss_apothecary_hummel.cpp",
+      "sha": "456956e318762221b36989d85c3ef7dcbdc7790d",
+      "lineCount": 530,
+      "signals": [
+        {
+          "line": 33,
+          "text": "SPELL_ALLURING_PERFUME      = 68589,"
+        },
+        {
+          "line": 34,
+          "text": "SPELL_PERFUME_SPRAY         = 68607,"
+        },
+        {
+          "line": 35,
+          "text": "SPELL_CHAIN_REACTION        = 68821,"
+        },
+        {
+          "line": 36,
+          "text": "SPELL_SUMMON_TABLE          = 69218,"
+        },
+        {
+          "line": 37,
+          "text": "SPELL_PERMANENT_FEIGN_DEATH = 29266,"
+        },
+        {
+          "line": 38,
+          "text": "SPELL_QUIET_SUICIDE         = 3617,"
+        },
+        {
+          "line": 39,
+          "text": "SPELL_COLOGNE_SPRAY         = 68948,"
+        },
+        {
+          "line": 40,
+          "text": "SPELL_VALIDATE_AREA         = 68644,"
+        },
+        {
+          "line": 41,
+          "text": "SPELL_THROW_COLOGNE         = 68841,"
+        },
+        {
+          "line": 42,
+          "text": "SPELL_BUNNY_LOCKDOWN        = 69039,"
+        },
+        {
+          "line": 43,
+          "text": "SPELL_THROW_PERFUME         = 68799,"
+        },
+        {
+          "line": 44,
+          "text": "SPELL_PERFUME_SPILL         = 68798,"
+        },
+        {
+          "line": 45,
+          "text": "SPELL_COLOGNE_SPILL         = 68614,"
+        },
+        {
+          "line": 46,
+          "text": "SPELL_PERFUME_SPILL_DAMAGE  = 68927,"
+        },
+        {
+          "line": 47,
+          "text": "SPELL_COLOGNE_SPILL_DAMAGE  = 68934"
+        },
+        {
+          "line": 109,
+          "text": "me->SummonCreatureGroup(1);"
+        },
+        {
+          "line": 121,
+          "text": "Talk(SAY_INTRO_0);"
+        },
+        {
+          "line": 125,
+          "text": "Talk(SAY_INTRO_1);"
+        },
+        {
+          "line": 129,
+          "text": "Talk(SAY_INTRO_2);"
+        },
+        {
+          "line": 139,
+          "text": "Talk(SAY_CALL_BAXTER);"
+        },
+        {
+          "line": 146,
+          "text": "Talk(SAY_CALL_FRYE);"
+        },
+        {
+          "line": 152,
+          "text": "DoCastVictim(SPELL_PERFUME_SPRAY);"
+        },
+        {
+          "line": 157,
+          "text": "DoCastVictim(SPELL_SUMMON_TABLE, true);"
+        },
+        {
+          "line": 158,
+          "text": "DoCastAOE(SPELL_CHAIN_REACTION);"
+        },
+        {
+          "line": 163,
+          "text": "Talk(SAY_SUMMON_ADDS);"
+        },
+        {
+          "line": 167,
+          "text": "instance->SetData(DATA_SPAWN_VALENTINE_ADDS, 0);"
+        },
+        {
+          "line": 195,
+          "text": "me->RemoveAurasDueToSpell(SPELL_ALLURING_PERFUME);"
+        },
+        {
+          "line": 196,
+          "text": "DoCastSelf(SPELL_PERMANENT_FEIGN_DEATH, true);"
+        },
+        {
+          "line": 198,
+          "text": "Talk(SAY_HUMMEL_DEATH);"
+        },
+        {
+          "line": 211,
+          "text": "if (me->HasAura(SPELL_PERMANENT_FEIGN_DEATH) && _deadCount == 2)"
+        },
+        {
+          "line": 213,
+          "text": "DoCastSelf(SPELL_QUIET_SUICIDE, true);"
+        },
+        {
+          "line": 217,
+          "text": "void JustDied(Unit* /*killer*/) override"
+        },
+        {
+          "line": 221,
+          "text": "Talk(SAY_HUMMEL_DEATH);"
+        },
+        {
+          "line": 224,
+          "text": "_JustDied();"
+        },
+        {
+          "line": 312,
+          "text": "void JustDied(Unit* /*killer*/) override"
+        },
+        {
+          "line": 314,
+          "text": "Talk(SAY_FRYE_DEATH);"
+        },
+        {
+          "line": 333,
+          "text": "DoCastVictim(SPELL_COLOGNE_SPRAY);"
+        },
+        {
+          "line": 338,
+          "text": "DoCastVictim(SPELL_SUMMON_TABLE);"
+        },
+        {
+          "line": 339,
+          "text": "DoCastVictim(SPELL_CHAIN_REACTION);"
+        },
+        {
+          "line": 344,
+          "text": "void JustDied(Unit* /*killer*/) override"
+        },
+        {
+          "line": 346,
+          "text": "Talk(SAY_BAXTER_DEATH);"
+        },
+        {
+          "line": 390,
+          "text": "caster->CastSpell(GetHitUnit(), SPELL_VALIDATE_AREA, true);"
+        },
+        {
+          "line": 396,
+          "text": "OnEffectHitTarget += SpellEffectFn(spell_apothecary_lingering_fumes::HandleScript, EFFECT_0, SPELL_EFFECT_DUMMY);"
+        },
+        {
+          "line": 407,
+          "text": "return ValidateSpellInfo({ SPELL_BUNNY_LOCKDOWN, SPELL_THROW_COLOGNE, SPELL_THROW_PERFUME });"
+        },
+        {
+          "line": 412,
+          "text": "targets.remove_if(Acore::UnitAuraCheck(true, SPELL_BUNNY_LOCKDOWN));"
+        },
+        {
+          "line": 423,
+          "text": "GetHitUnit()->CastSpell(GetHitUnit(), SPELL_BUNNY_LOCKDOWN, true);"
+        },
+        {
+          "line": 424,
+          "text": "GetCaster()->CastSpell(GetHitUnit(), RAND(SPELL_THROW_COLOGNE, SPELL_THROW_PERFUME), true);"
+        },
+        {
+          "line": 430,
+          "text": "OnEffectHitTarget += SpellEffectFn(spell_apothecary_validate_area::HandleScript, EFFECT_0, SPELL_EFFECT_DUMMY);"
+        },
+        {
+          "line": 441,
+          "text": "return ValidateSpellInfo({ SPELL_COLOGNE_SPILL });"
+        },
+        {
+          "line": 446,
+          "text": "GetHitUnit()->CastSpell(GetHitUnit(), SPELL_COLOGNE_SPILL, true);"
+        },
+        {
+          "line": 451,
+          "text": "OnEffectHitTarget += SpellEffectFn(spell_apothecary_throw_cologne::HandleScript, EFFECT_0, SPELL_EFFECT_DUMMY);"
+        },
+        {
+          "line": 462,
+          "text": "return ValidateSpellInfo({ SPELL_PERFUME_SPILL });"
+        },
+        {
+          "line": 467,
+          "text": "GetHitUnit()->CastSpell(GetHitUnit(), SPELL_PERFUME_SPILL, true);"
+        },
+        {
+          "line": 472,
+          "text": "OnEffectHitTarget += SpellEffectFn(spell_apothecary_throw_perfume::HandleScript, EFFECT_0, SPELL_EFFECT_DUMMY);"
+        },
+        {
+          "line": 483,
+          "text": "return ValidateSpellInfo({ SPELL_PERFUME_SPILL_DAMAGE });"
+        },
+        {
+          "line": 488,
+          "text": "GetTarget()->CastSpell(GetTarget(), SPELL_PERFUME_SPILL_DAMAGE, true);"
+        },
+        {
+          "line": 493,
+          "text": "OnEffectPeriodic += AuraEffectPeriodicFn(spell_apothecary_perfume_spill::OnPeriodic, EFFECT_0, SPELL_AURA_PERIODIC_DUMMY);"
+        },
+        {
+          "line": 504,
+          "text": "return ValidateSpellInfo({ SPELL_COLOGNE_SPILL_DAMAGE });"
+        },
+        {
+          "line": 509,
+          "text": "GetTarget()->CastSpell(GetTarget(), SPELL_COLOGNE_SPILL_DAMAGE, true);"
+        },
+        {
+          "line": 514,
+          "text": "OnEffectPeriodic += AuraEffectPeriodicFn(spell_apothecary_cologne_spill::OnPeriodic, EFFECT_0, SPELL_AURA_PERIODIC_DUMMY);"
+        }
+      ]
+    }
+  ]
+}

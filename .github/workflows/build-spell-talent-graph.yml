@@ -1,0 +1,46 @@
+name: Build CoA spell and talent graph
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-spell-talent-graph.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Generate spell and talent relationships from archived source shards
+        run: python tools/build_spell_talent_graph.py
+      - name: Validate generated graph
+        run: |
+          python - <<'PY'
+          import gzip,json,pathlib
+          base=pathlib.Path("datasets/relationships")
+          report=json.loads((base/"quality-report.json").read_text())
+          with gzip.open(base/"spells-by-id.json.gz","rt") as f: spells=json.load(f)
+          with gzip.open(base/"talent-nodes.json.gz","rt") as f: talents=json.load(f)
+          assert len(spells)>1000, "Too few linked spells"
+          assert len(talents)>1000, "Too few talent nodes"
+          assert len(spells)==report["uniqueLinkedSpellIds"]
+          assert len(talents)==report["counts"]["talentNodes"]
+          assert not report["unresolvedFiles"], report["unresolvedFiles"][:10]
+          print("Validated",len(spells),"spells and",len(talents),"talent nodes")
+          PY
+      - name: Commit validated graph
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datasets/relationships
+          if ! git diff --cached --quiet; then
+            git commit -m "data: publish validated CoA spell and talent relationships"
+            git push
+          fi

@@ -1,0 +1,32 @@
+name: Inspect Ascension preservation spell catalogs
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/inspect-preservation-spells.yml']
+  workflow_dispatch:
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch source snapshots and print safe schema samples
+        run: |
+          python - <<'PY'
+          import urllib.request,gzip,json
+          base="https://raw.githubusercontent.com/hertigservices/ascension-data/main/"
+          sources={
+          "exiles":"supplemental/exiles-db/6bcecd0faa6c2e7084d8015e1d931431c30e3013a9122810d593868196a3578b/spells.jsonl.gz",
+          "databank":"supplemental/coa-databank/166001399306e4fb022116fe1e3cfbbd7bd4bf37/databank/palette/spells.jsonl.gz",
+          "buildhub":"supplemental/coa-databank/166001399306e4fb022116fe1e3cfbbd7bf37/coabuildhub/spells/master_index.json.gz"}
+          sources["buildhub"]=sources["buildhub"].replace("166001399306e4fb022116fe1e3cfbbd7bf37","166001399306e4fb022116fe1e3cfbbd7bd4bf37")
+          for label,path in sources.items():
+            try:
+              print("FETCH",label,flush=True)
+              raw=urllib.request.urlopen(base+path,timeout=120).read()
+              data=gzip.decompress(raw).decode("utf-8")
+              obj=json.loads(data.splitlines()[0]) if path.endswith(".jsonl.gz") else json.loads(data)
+              print("SAMPLE",label,"bytes",len(raw),"type",type(obj).__name__,"keys",list(obj)[:20] if isinstance(obj,dict) else "array")
+              print("VALUE",label,str(obj)[:1300])
+            except Exception as exc:
+              print("ERROR",label,type(exc).__name__,str(exc))
+          PY

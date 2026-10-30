@@ -1,0 +1,54 @@
+{
+  "source_repository": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "source_path": "data/sql/updates/pending_db_world/rev_20260930_02_basalthane_spell_script_names.sql",
+  "source_ref": "main (retrieved 2026-10-30)",
+  "record_type": "spell_script_names",
+  "scope": "Basalthane encounter mechanics; not class talent records",
+  "count": 11,
+  "records": [
+    {
+      "spell_id": 2105077,
+      "script_name": "spell_basalthane_eruption_explosion"
+    },
+    {
+      "spell_id": 2105078,
+      "script_name": "spell_basalthane_eruption_explosion"
+    },
+    {
+      "spell_id": 2105079,
+      "script_name": "spell_basalthane_eruption_explosion"
+    },
+    {
+      "spell_id": 2105080,
+      "script_name": "spell_basalthane_eruption_explosion"
+    },
+    {
+      "spell_id": 2108206,
+      "script_name": "spell_basalthane_annihilation_strike"
+    },
+    {
+      "spell_id": 2108217,
+      "script_name": "spell_basalthane_inferno_trail"
+    },
+    {
+      "spell_id": 2108219,
+      "script_name": "spell_basalthane_inferno_trail_hit_visual_only"
+    },
+    {
+      "spell_id": 2108220,
+      "script_name": "spell_basalthane_inferno_trail_hit_visual_only"
+    },
+    {
+      "spell_id": 2108221,
+      "script_name": "spell_basalthane_inferno_trail_hit_visual_only"
+    },
+    {
+      "spell_id": 2108222,
+      "script_name": "spell_basalthane_inferno_trail_hit_visual_only"
+    },
+    {
+      "spell_id": 2108227,
+      "script_name": "spell_basalthane_eruption"
+    }
+  ]
+}

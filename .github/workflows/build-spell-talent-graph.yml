@@ -20,7 +20,7 @@ jobs:
           python-version: '3.11'
       - name: Generate spell and talent relationships from archived source shards
         run: python tools/build_spell_talent_graph.py
-      # Original WoW classes and unattributed residual/metadata shards are excluded from class-specific attribution.
+      # Original WoW classes and upstream index, metadata, and residual shards are excluded from class-specific attribution.
       - name: Validate generated graph
         run: |
           python - <<'PY'

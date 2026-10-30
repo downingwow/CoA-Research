@@ -18,6 +18,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      # Count the presence of fields, not their underlying object values.
       - name: Enrich and validate archived CoA spell records
         run: python tools/enrich_spell_relationships.py
       - name: Commit verified enrichment

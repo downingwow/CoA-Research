@@ -43,6 +43,12 @@ Last cataloged: 2026-10-29. Dates/counts below describe prior inspections, not a
 ## Combat, raid and UI reference projects
 | Project | URL |
 | --- | --- |
+| CoA Molten Core restoration notes (published evidence from a 54-log live CoA corpus; raw logs excluded from public repo) | https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/blob/main/docs/coa/molten-core.md#evidence-live-combat-logs |
+| Reddit CoA Mythic record-count snapshot (community transcription, Aug 2 2026; not raw reports) | https://www.reddit.com/r/ProjectAscension/comments/1vdlzds/class_statistics/ |
+| Reddit Week 1 Molten Core Normal Lucifron class/spec parse counts (Aug 12 2026; source total mismatch is flagged on BoneArchive) | https://www.reddit.com/r/ProjectAscension/comments/1vm1c7o/week_1_molten_core_normal_class_statistics/ |
+| FangYuanWoW Ascension Logs Uploader / Companion (upload and combatant-metadata tooling; not a public log dump) | https://github.com/FangYuanWoW/ascension-logs-uploader |
+| CoA Build Hub community-vote meta announcement (37 builds reported Jul 17 2026; not log-derived) | https://www.reddit.com/r/ProjectAscension/comments/1uz0jox/coa_build_hub_update_meta_tier_list_is_live_37/ |
+| Preserved CoA Build Hub scrape mirror (128 identity-stripped builds; captured Jul 31 2026) | https://github.com/hertigservices/ascension-data/tree/main/supplemental/coa-databank/166001399306e4fb022116fe1e3cfbbd7bd4bf37/coabuildhub/builds |
 | Method Raid Tools (community CoA) | https://github.com/ArgonautCaptain/Method-Raid-Tools-Ascension-CoA |
 | CoAAnalytics | https://github.com/265ada/CoAAnalytics |
 | CoA Raid Tool | https://github.com/Voxikai/CoA-Raid-Tool |

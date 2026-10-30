@@ -34,5 +34,15 @@ An accessible public README describes background inspection of raid equipment/ta
 4. Identify old phases whose records remain accessible; do not assert complete historic logs without enumeration.
 5. Respect attribution and prohibition on bulk redistribution; store methods, links, schemas and authorized small examples only.
 
+## Historic CoA event-log discovery (2026-10-30)
+
+The public CoA AzerothCore Molten Core restoration notes cite a separate real event-level corpus: 54 live CoA combat logs, about 10 million event rows, and no unparsed records. The write-up says parsed rows cover per-pull fights, casts, auras and damage. It reports Ragnaros at 33 pulls (mostly wipes), Majordomo Sacrificial Chains in 48/49 pulls, and only three Mythic/Ascended Sulfuron disciple pulls. It also explicitly states the log files and detailed coverage summary reside in a gitignored local folder; the public repository is evidence about the corpus, not a public download of the raw logs.
+
+Known limits: difficulty is inferred because difficulty offsets do not survive in GUIDs; there are no coordinates; cast counts for some adds are unreliable. The public summary describes the corpus as Aug–Sep 2026 but does not publish the complete file list/date range. Four individual MC files cited in a public code comment are dated Aug 25, 2026.
+
+Related public log-backed evidence: July 27 2026 CoA guide says its rankings covered 39,481 logged fights; Aug 2 Reddit post transcribes community-submitted Mythic dungeon record counts; Aug 12 third-party snapshot provides derived tier rows; public spec pages through Aug 29 cite individual report dates to Aug 22. These are snapshots/examples, not a full report archive or weekly series. Full status and page integration are documented in [LOGS-ARCHIVE-STATUS.md](LOGS-ARCHIVE-STATUS.md).
+
+GitHub search of FangYuanWoW's public account found the Companion and Uploader projects. They describe embedding player gear/talents in logs and uploading the player's local `WoWCombatLog.txt`; neither repository contains a public archive of submitted CoA reports. CoA Build Hub's July 17 Reddit post describes its then-live meta list as community voting across 37 builds, not log-derived rankings. A separately preserved mirror later captured 128 identity-stripped CoA Build Hub builds on July 31; those guides belong in the build library and are not combat performance evidence.
+
 ## Potential addon use
 Details! — guardian owner and absorb edge cases; DBM-CoA/MRT — encounter classification; BoneBiS — observed player builds as corroborating evidence, not proof of theoretical optimality; BoneBuilds — talent popularity, with encounter/sample filters.

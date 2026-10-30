@@ -1,0 +1,1305 @@
+{
+  "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "path": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+  "sha": "c64becc0e943d542a4c23a18c92cb7d86882fcc6",
+  "verification": "Upstream SQL, not confirmed live",
+  "units": "milliseconds",
+  "eventMap": {
+    "0": "timer",
+    "2": "health",
+    "4": "pull"
+  },
+  "targetMap": {
+    "1": "self",
+    "2": "victim",
+    "5": "random",
+    "6": "random non tank",
+    "7": "farthest"
+  },
+  "difficultyFlags": {
+    "4": "heroic only",
+    "8": "mythic only"
+  },
+  "records": [
+    {
+      "npc": 9156,
+      "id": 0,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Ambassador Flamelash - Fierce Blow (log)"
+    },
+    {
+      "npc": 9039,
+      "id": 0,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        7000,
+        9000
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Doom'rel - Fierce Blow (log)"
+    },
+    {
+      "npc": 9039,
+      "id": 1,
+      "spell": 505347,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        5000,
+        8000
+      ],
+      "repeatMs": [
+        20000,
+        22000
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Doom'rel - Mystic Thunder (Exiles)"
+    },
+    {
+      "npc": 9019,
+      "id": 0,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Emperor Dagran Thaurissan - Fierce Blow (log)"
+    },
+    {
+      "npc": 9019,
+      "id": 1,
+      "spell": 92603,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        10000,
+        12000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "target": 5,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Emperor Dagran Thaurissan - Dark Iron Hammer (log)"
+    },
+    {
+      "npc": 9019,
+      "id": 2,
+      "spell": 92606,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        15000,
+        17000
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "target": 5,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Emperor Dagran Thaurissan - Fiery Charge (log)"
+    },
+    {
+      "npc": 9019,
+      "id": 3,
+      "spell": 381251,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        8000,
+        12000
+      ],
+      "repeatMs": [
+        18000,
+        22000
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Emperor Dagran Thaurissan - Frost Nova (Exiles)"
+    },
+    {
+      "npc": 9019,
+      "id": 4,
+      "spell": 815637,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        5000,
+        8000
+      ],
+      "repeatMs": [
+        20000,
+        22000
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Emperor Dagran Thaurissan - Chilled Armor (Exiles)"
+    },
+    {
+      "npc": 9033,
+      "id": 0,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        7449,
+        9450
+      ],
+      "repeatMs": [
+        10000,
+        11000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "General Angerforge - Fierce Blow (log)"
+    },
+    {
+      "npc": 9037,
+      "id": 0,
+      "spell": 13737,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        2050,
+        4050
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Gloom'rel - Mortal Strike (log)"
+    },
+    {
+      "npc": 9037,
+      "id": 1,
+      "spell": 15284,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        1549,
+        2050
+      ],
+      "repeatMs": [
+        4300,
+        4800
+      ],
+      "healthPct": 0,
+      "target": 5,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Gloom'rel - Cleave (log)"
+    },
+    {
+      "npc": 9037,
+      "id": 2,
+      "spell": 13847,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        3750,
+        5750
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Gloom'rel - Recklessness (log)"
+    },
+    {
+      "npc": 9037,
+      "id": 3,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        7300,
+        9300
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Gloom'rel - Fierce Blow (log)"
+    },
+    {
+      "npc": 9018,
+      "id": 0,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        9000,
+        11000
+      ],
+      "repeatMs": [
+        9000,
+        10000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "High Interrogator Gerstahn - Fierce Blow (log)"
+    },
+    {
+      "npc": 9018,
+      "id": 1,
+      "spell": 14033,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        3000,
+        4000
+      ],
+      "repeatMs": [
+        4000,
+        4500
+      ],
+      "healthPct": 0,
+      "target": 5,
+      "flags": 0,
+      "basePoints": 0,
+      "comment": "High Interrogator Gerstahn - Mana Burn (manual)"
+    },
+    {
+      "npc": 9938,
+      "id": 0,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Magmus - Fierce Blow (log)"
+    },
+    {
+      "npc": 9502,
+      "id": 0,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Phalanx - Fierce Blow (log)"
+    },
+    {
+      "npc": 9502,
+      "id": 1,
+      "spell": 17203,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 0,
+      "basePoints": 0,
+      "comment": "Phalanx - Fireball Volley (manual)"
+    },
+    {
+      "npc": 8929,
+      "id": 0,
+      "spell": 10894,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        1300,
+        3300
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "target": 5,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Princess Moira Bronzebeard - Shadow Word: Pain (log)"
+    },
+    {
+      "npc": 8929,
+      "id": 1,
+      "spell": 10934,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        4500,
+        6500
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 0,
+      "basePoints": 0,
+      "comment": "Princess Moira Bronzebeard - Smite (log)"
+    },
+    {
+      "npc": 8929,
+      "id": 2,
+      "spell": 10917,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        22800,
+        24800
+      ],
+      "repeatMs": [
+        25000,
+        27000
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 0,
+      "basePoints": 0,
+      "comment": "Princess Moira Bronzebeard - Flash Heal (log)"
+    },
+    {
+      "npc": 8929,
+      "id": 3,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Princess Moira Bronzebeard - Fierce Blow (log)"
+    },
+    {
+      "npc": 10363,
+      "id": 0,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        8500,
+        10500
+      ],
+      "repeatMs": [
+        9000,
+        10000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "General Drakkisath - Fierce Blow (log)"
+    },
+    {
+      "npc": 10363,
+      "id": 1,
+      "spell": 2102619,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        14600,
+        16600
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "General Drakkisath - Thunder Clap (log)"
+    },
+    {
+      "npc": 10363,
+      "id": 2,
+      "spell": 2102203,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        22000,
+        24000
+      ],
+      "repeatMs": [
+        25000,
+        27000
+      ],
+      "healthPct": 0,
+      "target": 5,
+      "flags": 0,
+      "basePoints": 0,
+      "comment": "General Drakkisath - Heatwave (log)"
+    },
+    {
+      "npc": 10363,
+      "id": 3,
+      "spell": 2102552,
+      "event": 2,
+      "difficulty": 0,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": 30,
+      "target": 1,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "General Drakkisath - Enrage (Exiles)"
+    },
+    {
+      "npc": 10220,
+      "id": 0,
+      "spell": 2100428,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        4000,
+        6000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Halycon - Furious Howl (log)"
+    },
+    {
+      "npc": 10220,
+      "id": 1,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        7000,
+        9000
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Halycon - Fierce Blow (log)"
+    },
+    {
+      "npc": 9196,
+      "id": 0,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        7000,
+        9000
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Highlord Omokk - Fierce Blow (log)"
+    },
+    {
+      "npc": 9196,
+      "id": 1,
+      "spell": 2100148,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        13600,
+        15600
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Highlord Omokk - Crush Armor (log)"
+    },
+    {
+      "npc": 9568,
+      "id": 0,
+      "spell": 2100345,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        10000,
+        12000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Overlord Wyrmthalak - Pierce Armor (log)"
+    },
+    {
+      "npc": 9568,
+      "id": 1,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        7000,
+        9000
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Overlord Wyrmthalak - Fierce Blow (log)"
+    },
+    {
+      "npc": 9816,
+      "id": 0,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Pyroguard Emberseer - Fierce Blow (log)"
+    },
+    {
+      "npc": 9816,
+      "id": 1,
+      "spell": 2102189,
+      "event": 4,
+      "difficulty": 0,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 34,
+      "basePoints": 0,
+      "comment": "Pyroguard Emberseer - Gathering Heat (Exiles)"
+    },
+    {
+      "npc": 9816,
+      "id": 2,
+      "spell": 2102825,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        8000,
+        12000
+      ],
+      "repeatMs": [
+        12000,
+        16000
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Pyroguard Emberseer - Immolation (Exiles)"
+    },
+    {
+      "npc": 9736,
+      "id": 0,
+      "spell": 2102850,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        1000,
+        3000
+      ],
+      "repeatMs": [
+        20000,
+        22000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 0,
+      "basePoints": 0,
+      "comment": "Quartermaster Zigris - Auto Shot (log)"
+    },
+    {
+      "npc": 9736,
+      "id": 1,
+      "spell": 2100255,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        2600,
+        4600
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Quartermaster Zigris - Throw Net (log)"
+    },
+    {
+      "npc": 9736,
+      "id": 2,
+      "spell": 2102851,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        5000,
+        7000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 0,
+      "basePoints": 0,
+      "comment": "Quartermaster Zigris - Throw Proximity Mine (log)"
+    },
+    {
+      "npc": 9736,
+      "id": 3,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        7000,
+        9000
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Quartermaster Zigris - Fierce Blow (log)"
+    },
+    {
+      "npc": 10430,
+      "id": 0,
+      "spell": 2102192,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        1000,
+        3000
+      ],
+      "repeatMs": [
+        20000,
+        22000
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 0,
+      "basePoints": 0,
+      "comment": "The Beast - Flame Breath (log)"
+    },
+    {
+      "npc": 10430,
+      "id": 1,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        9000,
+        11000
+      ],
+      "repeatMs": [
+        9000,
+        10000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "The Beast - Fierce Blow (log)"
+    },
+    {
+      "npc": 10430,
+      "id": 2,
+      "spell": 2102159,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        29000,
+        31000
+      ],
+      "repeatMs": [
+        35000,
+        37000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 0,
+      "basePoints": 0,
+      "comment": "The Beast - Overrun (log)"
+    },
+    {
+      "npc": 10430,
+      "id": 3,
+      "spell": 2100205,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        8000,
+        12000
+      ],
+      "repeatMs": [
+        10000,
+        14000
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 0,
+      "basePoints": 0,
+      "comment": "The Beast - Blast Wave (Exiles)"
+    },
+    {
+      "npc": 10430,
+      "id": 4,
+      "spell": 2100439,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        5000,
+        8000
+      ],
+      "repeatMs": [
+        20000,
+        22000
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "The Beast - Bellowing Roar (Exiles)"
+    },
+    {
+      "npc": 9237,
+      "id": 0,
+      "spell": 2100465,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        3550,
+        5550
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "War Master Voone - Counter Kick (log)"
+    },
+    {
+      "npc": 9237,
+      "id": 1,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        7449,
+        9450
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "War Master Voone - Fierce Blow (log)"
+    },
+    {
+      "npc": 9237,
+      "id": 2,
+      "spell": 15284,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "War Master Voone - Cleave (manual)"
+    },
+    {
+      "npc": 9237,
+      "id": 3,
+      "spell": 15615,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        10000,
+        12000
+      ],
+      "repeatMs": [
+        16000,
+        18000
+      ],
+      "healthPct": 0,
+      "target": 5,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "War Master Voone - Pummel (manual)"
+    },
+    {
+      "npc": 9237,
+      "id": 4,
+      "spell": 10966,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        12000,
+        14000
+      ],
+      "repeatMs": [
+        14000,
+        16000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "War Master Voone - Uppercut (manual)"
+    },
+    {
+      "npc": 646,
+      "id": 0,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        7550,
+        9550
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Mr. Smite - Fierce Blow (log)"
+    },
+    {
+      "npc": 646,
+      "id": 1,
+      "spell": 2102553,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        15000,
+        17000
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Mr. Smite - Stunning Strike (log)"
+    },
+    {
+      "npc": 646,
+      "id": 2,
+      "spell": 2102580,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        2600,
+        4600
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Mr. Smite - Rupture (log)"
+    },
+    {
+      "npc": 646,
+      "id": 3,
+      "spell": 2102576,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        5000,
+        8000
+      ],
+      "repeatMs": [
+        65000,
+        67000
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Mr. Smite - Smite Rush (Exiles)"
+    },
+    {
+      "npc": 646,
+      "id": 4,
+      "spell": 2102577,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        5000,
+        8000
+      ],
+      "repeatMs": [
+        20000,
+        22000
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Mr. Smite - Retaliation (Exiles)"
+    },
+    {
+      "npc": 1853,
+      "id": 0,
+      "spell": 2100397,
+      "event": 2,
+      "difficulty": 0,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": 52,
+      "target": 1,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Darkmaster Gandling - Rise! (log)"
+    },
+    {
+      "npc": 1853,
+      "id": 1,
+      "spell": 2100398,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        1500,
+        2000
+      ],
+      "repeatMs": [
+        3000,
+        3500
+      ],
+      "healthPct": 0,
+      "target": 1,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Darkmaster Gandling - Rise! (log)"
+    },
+    {
+      "npc": 1853,
+      "id": 2,
+      "spell": 2100389,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        1000,
+        1500
+      ],
+      "repeatMs": [
+        2900,
+        3400
+      ],
+      "healthPct": 0,
+      "target": 5,
+      "flags": 0,
+      "basePoints": 0,
+      "comment": "Darkmaster Gandling - Incinerate (log)"
+    },
+    {
+      "npc": 1853,
+      "id": 3,
+      "spell": 2100393,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        10000,
+        12000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "target": 5,
+      "flags": 0,
+      "basePoints": 0,
+      "comment": "Darkmaster Gandling - Immolate (log)"
+    },
+    {
+      "npc": 10506,
+      "id": 0,
+      "spell": 2100034,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        3100,
+        3600
+      ],
+      "repeatMs": [
+        3100,
+        3600
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 0,
+      "basePoints": 0,
+      "comment": "Kirtonos the Herald - Shadow Bolt (log)"
+    },
+    {
+      "npc": 10506,
+      "id": 1,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Kirtonos the Herald - Fierce Blow (log)"
+    },
+    {
+      "npc": 10506,
+      "id": 2,
+      "spell": 2100004,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        10000,
+        12000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "target": 5,
+      "flags": 2,
+      "basePoints": 0,
+      "comment": "Kirtonos the Herald - Cleave (log)"
+    },
+    {
+      "npc": 10436,
+      "id": 0,
+      "spell": 816867,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        10000,
+        12000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "target": 5,
+      "flags": 0,
+      "basePoints": 0,
+      "comment": "Baroness Anastari - Curse of the Baroness (log)"
+    },
+    {
+      "npc": 10436,
+      "id": 1,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Baroness Anastari - Fierce Blow (log)"
+    },
+    {
+      "npc": 7604,
+      "id": 0,
+      "spell": 975011,
+      "event": 0,
+      "difficulty": 0,
+      "initialMs": [
+        5800,
+        7800
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "target": 2,
+      "flags": 2,
+      "basePoints": 200,
+      "comment": "Sergeant Bly - Fierce Blow (log)"
+    }
+  ]
+}

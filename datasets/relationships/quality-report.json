@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "sourceManifestGeneratedAt": "2026-10-30T08:33:21.383716+00:00",
+  "source": "srhinos/coa-datamine archived abilities and talent trees",
+  "versionStatus": "not verified for current Conquest Reborn",
+  "note": "Candidate specialization relationships are derived from matching archived tab names; never claim confirmed current spec ownership. Class-wide talent tabs may have no spec assignment.",
+  "counts": {
+    "abilitySpellEdges": 9754,
+    "talentNodes": 3618,
+    "talentSpellEdges": 3933
+  },
+  "uniqueLinkedSpellIds": 9656,
+  "missingPrerequisiteCount": 0,
+  "missingPrerequisiteExamples": [],
+  "unresolvedFiles": [],
+  "skippedNonCoAClassFiles": [
+    {
+      "path": "data/abilities/01-warrior.json",
+      "classId": 1
+    },
+    {
+      "path": "data/abilities/02-paladin.json",
+      "classId": 2
+    },
+    {
+      "path": "data/abilities/03-hunter.json",
+      "classId": 3
+    },
+    {
+      "path": "data/abilities/04-rogue.json",
+      "classId": 4
+    },
+    {
+      "path": "data/abilities/05-priest.json",
+      "classId": 5
+    },
+    {
+      "path": "data/abilities/06-death-knight.json",
+      "classId": 6
+    },
+    {
+      "path": "data/abilities/07-shaman.json",
+      "classId": 7
+    },
+    {
+      "path": "data/abilities/08-mage.json",
+      "classId": 8
+    },
+    {
+      "path": "data/abilities/09-warlock.json",
+      "classId": 9
+    },
+    {
+      "path": "data/abilities/11-druid.json",
+      "classId": 11
+    },
+    {
+      "path": "data/abilities/_meta.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-0.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-100000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-1000000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-1100000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-1200000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-1300000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-13900000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-1700000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-1900000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-200000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-2000000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-300000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-400000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-500000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-600000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-700000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-800000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-900000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-9900000.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/_residual-index.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/abilities/index.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/talents/coa/_meta.json",
+      "reason": "unattributed-residual-or-metadata"
+    },
+    {
+      "path": "data/talents/coa/index.json",
+      "reason": "unattributed-residual-or-metadata"
+    }
+  ]
+}

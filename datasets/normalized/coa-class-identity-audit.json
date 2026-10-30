@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "kind": "manual cross-reference; not automated",
   "generated": "2026-10-30",
-  "warning": "Class IDs and live talent tabs are from archived CoA client data; source snapshots and resource claims require in-game Conquest Reborn confirmation. Client class token is not necessarily the player-facing class name.",
+  "warning": "Archived talent-tab names and player-facing specialization names are separate namespaces. Differences are not errors. Use class-specific IDs and current CoA Development names for display; preserve internal and historical aliases. Do not infer spec equivalence from matching slot numbers.",
   "sources": [
     "site/data/classes.json",
     "datasets/normalized/coa-custom-class-roster.json",
@@ -333,7 +333,7 @@
           ],
           "mechanics": [],
           "source": "https://ascensionsidekick.com/primalist/grovekeeper",
-          "tabStatus": "NOT_IN_ARCHIVED_LIVE_TABS"
+          "tabStatus": "display-name-vs-archived-tab-unresolved-alias"
         },
         "Geomancy": {
           "pools": [
@@ -354,7 +354,7 @@
             "Mana utility costs"
           ],
           "source": "https://ascensionsidekick.com/primalist/wildwalker",
-          "tabStatus": "NOT_IN_ARCHIVED_LIVE_TABS"
+          "tabStatus": "display-name-vs-archived-tab-unresolved-alias"
         }
       }
     },
@@ -734,5 +734,12 @@
         }
       }
     }
-  ]
+  ],
+  "namingPolicy": {
+    "display": "Current CoA Development / in-game player-facing names",
+    "identity": "Client class tokens and class-specific numeric IDs",
+    "aliases": "Retain historical, internal and website labels for lookup",
+    "rule": "A missing literal match between a website specialization name and archived talent tab is not a mismatch or evidence of invalid specialization",
+    "confirmedExample": "Primalist — Wildwalker is a valid player-facing class/spec identity reported in-game"
+  }
 }

@@ -145,7 +145,8 @@
         "Teleport location names are not verified bosses",
         "Empty instance_template script is not proof of absent encounter AI",
         "FrozenReach_908 appears in earlier 2026-10-25 teleport SQL, not in updated 2026-10-26 teleport rows",
-        "Do not conflate with Northrend Frozen Reach map 571"
+        "Do not conflate with Northrend Frozen Reach map 571",
+        "Searches for map 908 and Alva did not establish creature spawn-to-script bindings"
       ]
     },
     {
@@ -155,8 +156,18 @@
       "liveConfidence": "unverified",
       "bosses": [],
       "cautions": [
-        "Do not import SoD map 2875 or standard Karazhan boss roster without CoA-specific evidence"
-      ]
+        "Do not import SoD map 2875 or standard Karazhan boss roster without CoA-specific evidence",
+        "Teleport ID 233 is an Eastern Kingdoms crypt location, not proof of a CoA custom instance"
+      ],
+      "location": {
+        "teleportId": 233,
+        "mapId": 0,
+        "x": -11069.7,
+        "y": -1795.77,
+        "z": 53.7318,
+        "classification": "world location only; not dungeon map or encounter proof",
+        "source": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/blob/main/data/sql/base/db_world/game_tele.sql"
+      }
     }
   ],
   "sources": [

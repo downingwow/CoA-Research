@@ -1,0 +1,41 @@
+name: Publish BoneArchive spell search index
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-spell-index.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Export searchable spell database
+        run: python tools/build_site_spell_index.py
+      - name: Verify browser index
+        run: |
+          python - <<'PY'
+          import json
+          x=json.load(open("site/data/spell-search-index.json"))
+          assert len(x["records"])==9656
+          assert len(x["classes"])==21
+          assert all(isinstance(r["id"],int) for r in x["records"])
+          print("Verified",len(x["records"]),"searchable spells")
+          PY
+      - name: Commit searchable index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/spell-search-index.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: publish browser-searchable CoA spell index"
+            git push
+          fi

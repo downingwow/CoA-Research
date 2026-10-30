@@ -1,0 +1,23 @@
+name: Inspect Exiles CoA talent trees
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/inspect-exiles-talents.yml']
+  workflow_dispatch:
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect preserved talent tree record schema
+        run: |
+          python - <<'PY'
+          import urllib.request,gzip,json
+          url="https://raw.githubusercontent.com/hertigservices/ascension-data/main/supplemental/exiles-db/6bcecd0faa6c2e7084d8015e1d931431c30e3013a9122810d593868196a3578b/talents.jsonl.gz"
+          rows=gzip.decompress(urllib.request.urlopen(url,timeout=60).read()).decode().splitlines()
+          print("TALENT ROWS",len(rows))
+          for line in rows[:3]:
+              x=json.loads(line)
+              print("FIELDS",list(x))
+              print("ROW",str(x)[:2400])
+          PY

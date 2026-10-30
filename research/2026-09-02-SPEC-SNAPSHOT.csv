@@ -1,0 +1,26 @@
+class_code,spec_index,spec_name,talent_nodes,rank_capacity,source_date
+BARBARIAN,0,"Forbidden Arts",24,81,2026-09-02
+BARBARIAN,1,"Forbearance",22,70,2026-09-02
+BARBARIAN,2,"Acuity",22,71,2026-09-02
+BARBARIAN,activeGroup,"",0,0,2026-09-02
+CHRONOMANCER,activeGroup,"",0,0,2026-09-02
+CULTIST,activeGroup,"",0,0,2026-09-02
+DEMONHUNTER,activeGroup,"",0,0,2026-09-02
+FLESHWARDEN,activeGroup,"",0,0,2026-09-02
+GUARDIAN,activeGroup,"",0,0,2026-09-02
+MONK,activeGroup,"",0,0,2026-09-02
+NECROMANCER,activeGroup,"",0,0,2026-09-02
+PROPHET,activeGroup,"",0,0,2026-09-02
+PYROMANCER,activeGroup,"",0,0,2026-09-02
+RANGER,activeGroup,"",0,0,2026-09-02
+REAPER,activeGroup,"",0,0,2026-09-02
+SONOFARUGAL,activeGroup,"",0,0,2026-09-02
+SPIRITMAGE,activeGroup,"",0,0,2026-09-02
+STARCALLER,activeGroup,"",0,0,2026-09-02
+STORMBRINGER,activeGroup,"",0,0,2026-09-02
+SUNCLERIC,activeGroup,"",0,0,2026-09-02
+TINKER,activeGroup,"",0,0,2026-09-02
+WILDWALKER,activeGroup,"",0,0,2026-09-02
+WITCHDOCTOR,0,"Conjurer",0,0,2026-09-02
+WITCHDOCTOR,activeGroup,"",0,0,2026-09-02
+WITCHHUNTER,activeGroup,"",0,0,2026-09-02

@@ -1,0 +1,3841 @@
+{
+  "schema": "coa-research.base-world-instance-encounters.v1",
+  "date": "2026-10-30",
+  "source": "data/sql/base/db_world/instance_encounters.sql",
+  "sourceStatus": "upstream base world SQL; not confirmed installed/live",
+  "rows": [
+    {
+      "encounterId": 162,
+      "creditType": 0,
+      "creditEntry": 643,
+      "lastEncounterDungeon": 0,
+      "name": "Sneed"
+    },
+    {
+      "encounterId": 163,
+      "creditType": 0,
+      "creditEntry": 1763,
+      "lastEncounterDungeon": 0,
+      "name": "Gilnid"
+    },
+    {
+      "encounterId": 164,
+      "creditType": 0,
+      "creditEntry": 646,
+      "lastEncounterDungeon": 0,
+      "name": "Mr. Smite"
+    },
+    {
+      "encounterId": 165,
+      "creditType": 0,
+      "creditEntry": 645,
+      "lastEncounterDungeon": 0,
+      "name": "Cookie"
+    },
+    {
+      "encounterId": 166,
+      "creditType": 0,
+      "creditEntry": 647,
+      "lastEncounterDungeon": 0,
+      "name": "Captain Greenskin"
+    },
+    {
+      "encounterId": 167,
+      "creditType": 0,
+      "creditEntry": 639,
+      "lastEncounterDungeon": 6,
+      "name": "Edwin VanCleef"
+    },
+    {
+      "encounterId": 201,
+      "creditType": 0,
+      "creditEntry": 18371,
+      "lastEncounterDungeon": 0,
+      "name": "Shirrak the Dead Watcher"
+    },
+    {
+      "encounterId": 202,
+      "creditType": 0,
+      "creditEntry": 18373,
+      "lastEncounterDungeon": 149,
+      "name": "Exarch Maladaar"
+    },
+    {
+      "encounterId": 203,
+      "creditType": 0,
+      "creditEntry": 18341,
+      "lastEncounterDungeon": 0,
+      "name": "Pandemonius"
+    },
+    {
+      "encounterId": 204,
+      "creditType": 0,
+      "creditEntry": 18343,
+      "lastEncounterDungeon": 0,
+      "name": "Tavarok"
+    },
+    {
+      "encounterId": 205,
+      "creditType": 0,
+      "creditEntry": 18344,
+      "lastEncounterDungeon": 148,
+      "name": "Nexus-Prince Shaffar"
+    },
+    {
+      "encounterId": 206,
+      "creditType": 0,
+      "creditEntry": 18472,
+      "lastEncounterDungeon": 0,
+      "name": "Darkweaver Syth"
+    },
+    {
+      "encounterId": 207,
+      "creditType": 0,
+      "creditEntry": 18473,
+      "lastEncounterDungeon": 150,
+      "name": "Talon King Ikiss"
+    },
+    {
+      "encounterId": 208,
+      "creditType": 0,
+      "creditEntry": 18731,
+      "lastEncounterDungeon": 0,
+      "name": "Ambassador Hellmaw"
+    },
+    {
+      "encounterId": 209,
+      "creditType": 0,
+      "creditEntry": 18667,
+      "lastEncounterDungeon": 0,
+      "name": "Blackheart the Inciter"
+    },
+    {
+      "encounterId": 210,
+      "creditType": 0,
+      "creditEntry": 18732,
+      "lastEncounterDungeon": 0,
+      "name": "Grandmaster Vorpil"
+    },
+    {
+      "encounterId": 211,
+      "creditType": 0,
+      "creditEntry": 18708,
+      "lastEncounterDungeon": 151,
+      "name": "Murmur"
+    },
+    {
+      "encounterId": 212,
+      "creditType": 0,
+      "creditEntry": 29309,
+      "lastEncounterDungeon": 0,
+      "name": "Elder Nadox"
+    },
+    {
+      "encounterId": 213,
+      "creditType": 0,
+      "creditEntry": 29308,
+      "lastEncounterDungeon": 0,
+      "name": "Prince Taldaram"
+    },
+    {
+      "encounterId": 214,
+      "creditType": 0,
+      "creditEntry": 29310,
+      "lastEncounterDungeon": 0,
+      "name": "Jedoga Shadowseeker"
+    },
+    {
+      "encounterId": 215,
+      "creditType": 0,
+      "creditEntry": 29311,
+      "lastEncounterDungeon": 218,
+      "name": "Herald Volazj"
+    },
+    {
+      "encounterId": 217,
+      "creditType": 0,
+      "creditEntry": 28921,
+      "lastEncounterDungeon": 0,
+      "name": "Hadronox"
+    },
+    {
+      "encounterId": 219,
+      "creditType": 0,
+      "creditEntry": 4887,
+      "lastEncounterDungeon": 0,
+      "name": "Ghamoo-ra"
+    },
+    {
+      "encounterId": 220,
+      "creditType": 0,
+      "creditEntry": 4831,
+      "lastEncounterDungeon": 0,
+      "name": "Lady Sarevess"
+    },
+    {
+      "encounterId": 221,
+      "creditType": 0,
+      "creditEntry": 6243,
+      "lastEncounterDungeon": 0,
+      "name": "Gelihast"
+    },
+    {
+      "encounterId": 222,
+      "creditType": 0,
+      "creditEntry": 12902,
+      "lastEncounterDungeon": 0,
+      "name": "Lorgus Jett"
+    },
+    {
+      "encounterId": 225,
+      "creditType": 0,
+      "creditEntry": 4832,
+      "lastEncounterDungeon": 0,
+      "name": "Twilight Lord Kelris"
+    },
+    {
+      "encounterId": 227,
+      "creditType": 0,
+      "creditEntry": 9018,
+      "lastEncounterDungeon": 30,
+      "name": "High Interrogator Gerstahn"
+    },
+    {
+      "encounterId": 228,
+      "creditType": 0,
+      "creditEntry": 9025,
+      "lastEncounterDungeon": 0,
+      "name": "Lord Roccor"
+    },
+    {
+      "encounterId": 229,
+      "creditType": 0,
+      "creditEntry": 9319,
+      "lastEncounterDungeon": 0,
+      "name": "Houndmaster Grebmar"
+    },
+    {
+      "encounterId": 230,
+      "creditType": 0,
+      "creditEntry": 10096,
+      "lastEncounterDungeon": 0,
+      "name": "Ring of Law"
+    },
+    {
+      "encounterId": 231,
+      "creditType": 0,
+      "creditEntry": 9024,
+      "lastEncounterDungeon": 0,
+      "name": "Pyromancer Loregrain"
+    },
+    {
+      "encounterId": 232,
+      "creditType": 0,
+      "creditEntry": 9017,
+      "lastEncounterDungeon": 0,
+      "name": "Lord Incendius"
+    },
+    {
+      "encounterId": 233,
+      "creditType": 0,
+      "creditEntry": 9041,
+      "lastEncounterDungeon": 0,
+      "name": "Warder Stilgiss"
+    },
+    {
+      "encounterId": 234,
+      "creditType": 0,
+      "creditEntry": 9056,
+      "lastEncounterDungeon": 0,
+      "name": "Fineous Darkvire"
+    },
+    {
+      "encounterId": 236,
+      "creditType": 0,
+      "creditEntry": 9033,
+      "lastEncounterDungeon": 0,
+      "name": "General Angerforge"
+    },
+    {
+      "encounterId": 237,
+      "creditType": 0,
+      "creditEntry": 8983,
+      "lastEncounterDungeon": 0,
+      "name": "Golem Lord Argelmach"
+    },
+    {
+      "encounterId": 238,
+      "creditType": 0,
+      "creditEntry": 9537,
+      "lastEncounterDungeon": 0,
+      "name": "Hurley Blackbreath"
+    },
+    {
+      "encounterId": 239,
+      "creditType": 0,
+      "creditEntry": 9502,
+      "lastEncounterDungeon": 0,
+      "name": "Phalanx"
+    },
+    {
+      "encounterId": 240,
+      "creditType": 0,
+      "creditEntry": 9543,
+      "lastEncounterDungeon": 0,
+      "name": "Ribbly Screwspigot"
+    },
+    {
+      "encounterId": 241,
+      "creditType": 0,
+      "creditEntry": 9499,
+      "lastEncounterDungeon": 0,
+      "name": "Plugger Spazzring"
+    },
+    {
+      "encounterId": 242,
+      "creditType": 0,
+      "creditEntry": 9156,
+      "lastEncounterDungeon": 0,
+      "name": "Ambassador Flamelash"
+    },
+    {
+      "encounterId": 243,
+      "creditType": 0,
+      "creditEntry": 9035,
+      "lastEncounterDungeon": 0,
+      "name": "The Seven"
+    },
+    {
+      "encounterId": 244,
+      "creditType": 0,
+      "creditEntry": 9938,
+      "lastEncounterDungeon": 0,
+      "name": "Magmus"
+    },
+    {
+      "encounterId": 245,
+      "creditType": 0,
+      "creditEntry": 9019,
+      "lastEncounterDungeon": 276,
+      "name": "Emperor Dagran Thaurissan"
+    },
+    {
+      "encounterId": 246,
+      "creditType": 0,
+      "creditEntry": 18371,
+      "lastEncounterDungeon": 0,
+      "name": "Shirrak the Dead Watcher"
+    },
+    {
+      "encounterId": 247,
+      "creditType": 0,
+      "creditEntry": 18373,
+      "lastEncounterDungeon": 178,
+      "name": "Exarch Maladaar"
+    },
+    {
+      "encounterId": 248,
+      "creditType": 0,
+      "creditEntry": 18341,
+      "lastEncounterDungeon": 0,
+      "name": "Pandemonius"
+    },
+    {
+      "encounterId": 249,
+      "creditType": 0,
+      "creditEntry": 18343,
+      "lastEncounterDungeon": 0,
+      "name": "Tavarok"
+    },
+    {
+      "encounterId": 250,
+      "creditType": 0,
+      "creditEntry": 22930,
+      "lastEncounterDungeon": 0,
+      "name": "Yor"
+    },
+    {
+      "encounterId": 251,
+      "creditType": 0,
+      "creditEntry": 18344,
+      "lastEncounterDungeon": 179,
+      "name": "Nexus-Prince Shaffar"
+    },
+    {
+      "encounterId": 252,
+      "creditType": 0,
+      "creditEntry": 18472,
+      "lastEncounterDungeon": 0,
+      "name": "Darkweaver Syth"
+    },
+    {
+      "encounterId": 253,
+      "creditType": 0,
+      "creditEntry": 23035,
+      "lastEncounterDungeon": 0,
+      "name": "Anzu"
+    },
+    {
+      "encounterId": 254,
+      "creditType": 0,
+      "creditEntry": 18473,
+      "lastEncounterDungeon": 180,
+      "name": "Talon King Ikiss"
+    },
+    {
+      "encounterId": 255,
+      "creditType": 0,
+      "creditEntry": 18731,
+      "lastEncounterDungeon": 0,
+      "name": "Ambassador Hellmaw"
+    },
+    {
+      "encounterId": 256,
+      "creditType": 0,
+      "creditEntry": 18667,
+      "lastEncounterDungeon": 0,
+      "name": "Blackheart the Inciter"
+    },
+    {
+      "encounterId": 257,
+      "creditType": 0,
+      "creditEntry": 18732,
+      "lastEncounterDungeon": 0,
+      "name": "Grandmaster Vorpil"
+    },
+    {
+      "encounterId": 258,
+      "creditType": 0,
+      "creditEntry": 18708,
+      "lastEncounterDungeon": 181,
+      "name": "Murmur"
+    },
+    {
+      "encounterId": 259,
+      "creditType": 0,
+      "creditEntry": 29309,
+      "lastEncounterDungeon": 0,
+      "name": "Elder Nadox"
+    },
+    {
+      "encounterId": 260,
+      "creditType": 0,
+      "creditEntry": 29308,
+      "lastEncounterDungeon": 0,
+      "name": "Prince Taldaram"
+    },
+    {
+      "encounterId": 261,
+      "creditType": 0,
+      "creditEntry": 29310,
+      "lastEncounterDungeon": 0,
+      "name": "Jedoga Shadowseeker"
+    },
+    {
+      "encounterId": 262,
+      "creditType": 0,
+      "creditEntry": 30258,
+      "lastEncounterDungeon": 0,
+      "name": "Amanitar"
+    },
+    {
+      "encounterId": 263,
+      "creditType": 0,
+      "creditEntry": 29311,
+      "lastEncounterDungeon": 219,
+      "name": "Herald Volazj"
+    },
+    {
+      "encounterId": 265,
+      "creditType": 0,
+      "creditEntry": 28921,
+      "lastEncounterDungeon": 0,
+      "name": "Hadronox"
+    },
+    {
+      "encounterId": 267,
+      "creditType": 0,
+      "creditEntry": 9196,
+      "lastEncounterDungeon": 0,
+      "name": "Highlord Omokk"
+    },
+    {
+      "encounterId": 269,
+      "creditType": 0,
+      "creditEntry": 9237,
+      "lastEncounterDungeon": 0,
+      "name": "War Master Voone"
+    },
+    {
+      "encounterId": 270,
+      "creditType": 0,
+      "creditEntry": 10596,
+      "lastEncounterDungeon": 0,
+      "name": "Mother Smolderweb"
+    },
+    {
+      "encounterId": 271,
+      "creditType": 0,
+      "creditEntry": 10584,
+      "lastEncounterDungeon": 0,
+      "name": "Urok Doomhowl"
+    },
+    {
+      "encounterId": 272,
+      "creditType": 0,
+      "creditEntry": 9736,
+      "lastEncounterDungeon": 0,
+      "name": "Quartermaster Zigris"
+    },
+    {
+      "encounterId": 273,
+      "creditType": 0,
+      "creditEntry": 10268,
+      "lastEncounterDungeon": 0,
+      "name": "Gizrul the Slavener"
+    },
+    {
+      "encounterId": 274,
+      "creditType": 0,
+      "creditEntry": 10220,
+      "lastEncounterDungeon": 0,
+      "name": "Halycon"
+    },
+    {
+      "encounterId": 275,
+      "creditType": 0,
+      "creditEntry": 9568,
+      "lastEncounterDungeon": 32,
+      "name": "Overlord Wyrmthalak"
+    },
+    {
+      "encounterId": 276,
+      "creditType": 0,
+      "creditEntry": 9816,
+      "lastEncounterDungeon": 0,
+      "name": "Pyroguard Emberseer"
+    },
+    {
+      "encounterId": 277,
+      "creditType": 0,
+      "creditEntry": 10264,
+      "lastEncounterDungeon": 0,
+      "name": "Solakar Flamewreath"
+    },
+    {
+      "encounterId": 278,
+      "creditType": 0,
+      "creditEntry": 10429,
+      "lastEncounterDungeon": 0,
+      "name": "Warchief Rend Blackhand"
+    },
+    {
+      "encounterId": 279,
+      "creditType": 0,
+      "creditEntry": 10430,
+      "lastEncounterDungeon": 0,
+      "name": "The Beast"
+    },
+    {
+      "encounterId": 280,
+      "creditType": 0,
+      "creditEntry": 10363,
+      "lastEncounterDungeon": 44,
+      "name": "General Drakkisath"
+    },
+    {
+      "encounterId": 281,
+      "creditType": 0,
+      "creditEntry": 18096,
+      "lastEncounterDungeon": 170,
+      "name": "Epoch Hunter"
+    },
+    {
+      "encounterId": 282,
+      "creditType": 0,
+      "creditEntry": 18096,
+      "lastEncounterDungeon": 183,
+      "name": "Epoch Hunter"
+    },
+    {
+      "encounterId": 283,
+      "creditType": 0,
+      "creditEntry": 17862,
+      "lastEncounterDungeon": 0,
+      "name": "Captain Skarloc"
+    },
+    {
+      "encounterId": 284,
+      "creditType": 0,
+      "creditEntry": 17862,
+      "lastEncounterDungeon": 0,
+      "name": "Captain Skarloc"
+    },
+    {
+      "encounterId": 285,
+      "creditType": 0,
+      "creditEntry": 17848,
+      "lastEncounterDungeon": 0,
+      "name": "Lieutenant Drake"
+    },
+    {
+      "encounterId": 286,
+      "creditType": 0,
+      "creditEntry": 17848,
+      "lastEncounterDungeon": 0,
+      "name": "Lieutenant Drake"
+    },
+    {
+      "encounterId": 287,
+      "creditType": 0,
+      "creditEntry": 17879,
+      "lastEncounterDungeon": 0,
+      "name": "Chrono Lord Deja"
+    },
+    {
+      "encounterId": 288,
+      "creditType": 0,
+      "creditEntry": 17879,
+      "lastEncounterDungeon": 0,
+      "name": "Chrono Lord Deja"
+    },
+    {
+      "encounterId": 289,
+      "creditType": 0,
+      "creditEntry": 17880,
+      "lastEncounterDungeon": 0,
+      "name": "Temporus"
+    },
+    {
+      "encounterId": 290,
+      "creditType": 0,
+      "creditEntry": 17880,
+      "lastEncounterDungeon": 0,
+      "name": "Temporus"
+    },
+    {
+      "encounterId": 291,
+      "creditType": 0,
+      "creditEntry": 17881,
+      "lastEncounterDungeon": 171,
+      "name": "Aeonus"
+    },
+    {
+      "encounterId": 292,
+      "creditType": 0,
+      "creditEntry": 17881,
+      "lastEncounterDungeon": 182,
+      "name": "Aeonus"
+    },
+    {
+      "encounterId": 293,
+      "creditType": 0,
+      "creditEntry": 26529,
+      "lastEncounterDungeon": 0,
+      "name": "Meathook"
+    },
+    {
+      "encounterId": 294,
+      "creditType": 0,
+      "creditEntry": 26530,
+      "lastEncounterDungeon": 0,
+      "name": "Salram the Fleshcrafter"
+    },
+    {
+      "encounterId": 295,
+      "creditType": 0,
+      "creditEntry": 26532,
+      "lastEncounterDungeon": 0,
+      "name": "Chrono-Lord Epoch"
+    },
+    {
+      "encounterId": 297,
+      "creditType": 0,
+      "creditEntry": 26529,
+      "lastEncounterDungeon": 0,
+      "name": "Meathook"
+    },
+    {
+      "encounterId": 298,
+      "creditType": 0,
+      "creditEntry": 26530,
+      "lastEncounterDungeon": 0,
+      "name": "Salram the Fleshcrafter"
+    },
+    {
+      "encounterId": 299,
+      "creditType": 0,
+      "creditEntry": 26532,
+      "lastEncounterDungeon": 0,
+      "name": "Chrono-Lord Epoch"
+    },
+    {
+      "encounterId": 301,
+      "creditType": 0,
+      "creditEntry": 17941,
+      "lastEncounterDungeon": 0,
+      "name": "Mennu the Betrayer"
+    },
+    {
+      "encounterId": 302,
+      "creditType": 0,
+      "creditEntry": 17991,
+      "lastEncounterDungeon": 0,
+      "name": "Rokmar the Crackler"
+    },
+    {
+      "encounterId": 303,
+      "creditType": 0,
+      "creditEntry": 17942,
+      "lastEncounterDungeon": 140,
+      "name": "Quagmirran"
+    },
+    {
+      "encounterId": 304,
+      "creditType": 0,
+      "creditEntry": 17941,
+      "lastEncounterDungeon": 0,
+      "name": "Mennu the Betrayer"
+    },
+    {
+      "encounterId": 305,
+      "creditType": 0,
+      "creditEntry": 17991,
+      "lastEncounterDungeon": 0,
+      "name": "Rokmar the Crackler"
+    },
+    {
+      "encounterId": 306,
+      "creditType": 0,
+      "creditEntry": 17942,
+      "lastEncounterDungeon": 184,
+      "name": "Quagmirran"
+    },
+    {
+      "encounterId": 314,
+      "creditType": 0,
+      "creditEntry": 17797,
+      "lastEncounterDungeon": 0,
+      "name": "Hydromancer Thespia"
+    },
+    {
+      "encounterId": 315,
+      "creditType": 0,
+      "creditEntry": 17797,
+      "lastEncounterDungeon": 0,
+      "name": "Hydromancer Thespia"
+    },
+    {
+      "encounterId": 316,
+      "creditType": 0,
+      "creditEntry": 17796,
+      "lastEncounterDungeon": 0,
+      "name": "Mekgineer Steamrigger"
+    },
+    {
+      "encounterId": 317,
+      "creditType": 0,
+      "creditEntry": 17796,
+      "lastEncounterDungeon": 0,
+      "name": "Mekgineer Steamrigger"
+    },
+    {
+      "encounterId": 318,
+      "creditType": 0,
+      "creditEntry": 17798,
+      "lastEncounterDungeon": 147,
+      "name": "Warlord Kalithresh"
+    },
+    {
+      "encounterId": 319,
+      "creditType": 0,
+      "creditEntry": 17798,
+      "lastEncounterDungeon": 185,
+      "name": "Warlord Kalithresh"
+    },
+    {
+      "encounterId": 320,
+      "creditType": 0,
+      "creditEntry": 17770,
+      "lastEncounterDungeon": 0,
+      "name": "Hungarfen"
+    },
+    {
+      "encounterId": 321,
+      "creditType": 0,
+      "creditEntry": 17770,
+      "lastEncounterDungeon": 0,
+      "name": "Hungarfen"
+    },
+    {
+      "encounterId": 331,
+      "creditType": 0,
+      "creditEntry": 17882,
+      "lastEncounterDungeon": 146,
+      "name": "The Black Stalker"
+    },
+    {
+      "encounterId": 332,
+      "creditType": 0,
+      "creditEntry": 17882,
+      "lastEncounterDungeon": 186,
+      "name": "The Black Stalker"
+    },
+    {
+      "encounterId": 334,
+      "creditType": 1,
+      "creditEntry": 68572,
+      "lastEncounterDungeon": 0,
+      "name": "Grand Champions"
+    },
+    {
+      "encounterId": 336,
+      "creditType": 1,
+      "creditEntry": 68572,
+      "lastEncounterDungeon": 0,
+      "name": "Grand Champions"
+    },
+    {
+      "encounterId": 338,
+      "creditType": 1,
+      "creditEntry": 68574,
+      "lastEncounterDungeon": 0,
+      "name": "Argent Champion"
+    },
+    {
+      "encounterId": 339,
+      "creditType": 1,
+      "creditEntry": 68574,
+      "lastEncounterDungeon": 0,
+      "name": "Argent Champion"
+    },
+    {
+      "encounterId": 340,
+      "creditType": 1,
+      "creditEntry": 68663,
+      "lastEncounterDungeon": 245,
+      "name": "The Black Knight"
+    },
+    {
+      "encounterId": 341,
+      "creditType": 1,
+      "creditEntry": 68663,
+      "lastEncounterDungeon": 249,
+      "name": "The Black Knight"
+    },
+    {
+      "encounterId": 343,
+      "creditType": 0,
+      "creditEntry": 11490,
+      "lastEncounterDungeon": 0,
+      "name": "Zevrim Thornhoof"
+    },
+    {
+      "encounterId": 344,
+      "creditType": 0,
+      "creditEntry": 13280,
+      "lastEncounterDungeon": 0,
+      "name": "Hydrospawn"
+    },
+    {
+      "encounterId": 345,
+      "creditType": 0,
+      "creditEntry": 14327,
+      "lastEncounterDungeon": 0,
+      "name": "Lethtendris"
+    },
+    {
+      "encounterId": 346,
+      "creditType": 0,
+      "creditEntry": 11492,
+      "lastEncounterDungeon": 34,
+      "name": "Alzzin the Wildshaper"
+    },
+    {
+      "encounterId": 347,
+      "creditType": 0,
+      "creditEntry": 11488,
+      "lastEncounterDungeon": 0,
+      "name": "Illyanna Ravenoak"
+    },
+    {
+      "encounterId": 348,
+      "creditType": 0,
+      "creditEntry": 11487,
+      "lastEncounterDungeon": 0,
+      "name": "Magister Kalendris"
+    },
+    {
+      "encounterId": 350,
+      "creditType": 0,
+      "creditEntry": 11489,
+      "lastEncounterDungeon": 0,
+      "name": "Tendris Warpwood"
+    },
+    {
+      "encounterId": 361,
+      "creditType": 0,
+      "creditEntry": 11486,
+      "lastEncounterDungeon": 36,
+      "name": "Prince Tortheldrin"
+    },
+    {
+      "encounterId": 363,
+      "creditType": 0,
+      "creditEntry": 14322,
+      "lastEncounterDungeon": 0,
+      "name": "Stomper Kreeg"
+    },
+    {
+      "encounterId": 364,
+      "creditType": 0,
+      "creditEntry": 14321,
+      "lastEncounterDungeon": 0,
+      "name": "Guard Fengus"
+    },
+    {
+      "encounterId": 366,
+      "creditType": 0,
+      "creditEntry": 14325,
+      "lastEncounterDungeon": 0,
+      "name": "Captain Kromcrush"
+    },
+    {
+      "encounterId": 368,
+      "creditType": 0,
+      "creditEntry": 11501,
+      "lastEncounterDungeon": 38,
+      "name": "King Gordok"
+    },
+    {
+      "encounterId": 369,
+      "creditType": 0,
+      "creditEntry": 26630,
+      "lastEncounterDungeon": 0,
+      "name": "Trollgore"
+    },
+    {
+      "encounterId": 370,
+      "creditType": 0,
+      "creditEntry": 26630,
+      "lastEncounterDungeon": 0,
+      "name": "Trollgore"
+    },
+    {
+      "encounterId": 371,
+      "creditType": 0,
+      "creditEntry": 26631,
+      "lastEncounterDungeon": 0,
+      "name": "Novos the Summoner"
+    },
+    {
+      "encounterId": 372,
+      "creditType": 0,
+      "creditEntry": 26631,
+      "lastEncounterDungeon": 0,
+      "name": "Novos the Summoner"
+    },
+    {
+      "encounterId": 373,
+      "creditType": 0,
+      "creditEntry": 27483,
+      "lastEncounterDungeon": 0,
+      "name": "King Dred"
+    },
+    {
+      "encounterId": 374,
+      "creditType": 0,
+      "creditEntry": 27483,
+      "lastEncounterDungeon": 0,
+      "name": "King Dred"
+    },
+    {
+      "encounterId": 378,
+      "creditType": 0,
+      "creditEntry": 7079,
+      "lastEncounterDungeon": 0,
+      "name": "Viscous Fallout"
+    },
+    {
+      "encounterId": 379,
+      "creditType": 0,
+      "creditEntry": 7361,
+      "lastEncounterDungeon": 0,
+      "name": "Grubbis"
+    },
+    {
+      "encounterId": 380,
+      "creditType": 0,
+      "creditEntry": 6235,
+      "lastEncounterDungeon": 0,
+      "name": "Electrocutioner 6000"
+    },
+    {
+      "encounterId": 381,
+      "creditType": 0,
+      "creditEntry": 6229,
+      "lastEncounterDungeon": 0,
+      "name": "Crowd Pummeler 9-60"
+    },
+    {
+      "encounterId": 382,
+      "creditType": 0,
+      "creditEntry": 7800,
+      "lastEncounterDungeon": 14,
+      "name": "Mekgineer Thermaplugg"
+    },
+    {
+      "encounterId": 385,
+      "creditType": 0,
+      "creditEntry": 29573,
+      "lastEncounterDungeon": 0,
+      "name": "Drakkari Colossus"
+    },
+    {
+      "encounterId": 386,
+      "creditType": 0,
+      "creditEntry": 29573,
+      "lastEncounterDungeon": 0,
+      "name": "Drakkari Colossus"
+    },
+    {
+      "encounterId": 387,
+      "creditType": 0,
+      "creditEntry": 29305,
+      "lastEncounterDungeon": 0,
+      "name": "Moorabi"
+    },
+    {
+      "encounterId": 388,
+      "creditType": 0,
+      "creditEntry": 29305,
+      "lastEncounterDungeon": 0,
+      "name": "Moorabi"
+    },
+    {
+      "encounterId": 389,
+      "creditType": 0,
+      "creditEntry": 29932,
+      "lastEncounterDungeon": 0,
+      "name": "Eck the Ferocious"
+    },
+    {
+      "encounterId": 392,
+      "creditType": 0,
+      "creditEntry": 17306,
+      "lastEncounterDungeon": 0,
+      "name": "Watchkeeper Gargolmar"
+    },
+    {
+      "encounterId": 393,
+      "creditType": 0,
+      "creditEntry": 17306,
+      "lastEncounterDungeon": 0,
+      "name": "Watchkeeper Gargolmar"
+    },
+    {
+      "encounterId": 394,
+      "creditType": 0,
+      "creditEntry": 17308,
+      "lastEncounterDungeon": 0,
+      "name": "Omor the Unscarred"
+    },
+    {
+      "encounterId": 395,
+      "creditType": 0,
+      "creditEntry": 17308,
+      "lastEncounterDungeon": 0,
+      "name": "Omor the Unscarred"
+    },
+    {
+      "encounterId": 396,
+      "creditType": 0,
+      "creditEntry": 17537,
+      "lastEncounterDungeon": 136,
+      "name": "Vazruden the Herald"
+    },
+    {
+      "encounterId": 397,
+      "creditType": 0,
+      "creditEntry": 17537,
+      "lastEncounterDungeon": 188,
+      "name": "Vazruden the Herald"
+    },
+    {
+      "encounterId": 401,
+      "creditType": 0,
+      "creditEntry": 17381,
+      "lastEncounterDungeon": 0,
+      "name": "The Maker"
+    },
+    {
+      "encounterId": 402,
+      "creditType": 0,
+      "creditEntry": 17381,
+      "lastEncounterDungeon": 0,
+      "name": "The Maker"
+    },
+    {
+      "encounterId": 403,
+      "creditType": 0,
+      "creditEntry": 17380,
+      "lastEncounterDungeon": 0,
+      "name": "Broggok"
+    },
+    {
+      "encounterId": 404,
+      "creditType": 0,
+      "creditEntry": 17380,
+      "lastEncounterDungeon": 0,
+      "name": "Broggok"
+    },
+    {
+      "encounterId": 407,
+      "creditType": 0,
+      "creditEntry": 16807,
+      "lastEncounterDungeon": 0,
+      "name": "Grand Warlock Nethekurse"
+    },
+    {
+      "encounterId": 408,
+      "creditType": 0,
+      "creditEntry": 16807,
+      "lastEncounterDungeon": 0,
+      "name": "Grand Warlock Nethekurse"
+    },
+    {
+      "encounterId": 409,
+      "creditType": 0,
+      "creditEntry": 20923,
+      "lastEncounterDungeon": 0,
+      "name": "Blood Guard Porung"
+    },
+    {
+      "encounterId": 412,
+      "creditType": 0,
+      "creditEntry": 16808,
+      "lastEncounterDungeon": 138,
+      "name": "Warchief Kargath Bladefist"
+    },
+    {
+      "encounterId": 413,
+      "creditType": 0,
+      "creditEntry": 16808,
+      "lastEncounterDungeon": 189,
+      "name": "Warchief Kargath Bladefist"
+    },
+    {
+      "encounterId": 414,
+      "creditType": 0,
+      "creditEntry": 24723,
+      "lastEncounterDungeon": 0,
+      "name": "Selin Fireheart"
+    },
+    {
+      "encounterId": 415,
+      "creditType": 0,
+      "creditEntry": 24723,
+      "lastEncounterDungeon": 0,
+      "name": "Selin Fireheart"
+    },
+    {
+      "encounterId": 416,
+      "creditType": 0,
+      "creditEntry": 24744,
+      "lastEncounterDungeon": 0,
+      "name": "Vexallus"
+    },
+    {
+      "encounterId": 417,
+      "creditType": 0,
+      "creditEntry": 24744,
+      "lastEncounterDungeon": 0,
+      "name": "Vexallus"
+    },
+    {
+      "encounterId": 418,
+      "creditType": 0,
+      "creditEntry": 24560,
+      "lastEncounterDungeon": 0,
+      "name": "Priestess Delrissa"
+    },
+    {
+      "encounterId": 419,
+      "creditType": 0,
+      "creditEntry": 24560,
+      "lastEncounterDungeon": 0,
+      "name": "Priestess Delrissa"
+    },
+    {
+      "encounterId": 422,
+      "creditType": 0,
+      "creditEntry": 13282,
+      "lastEncounterDungeon": 0,
+      "name": "Noxxion"
+    },
+    {
+      "encounterId": 423,
+      "creditType": 0,
+      "creditEntry": 12258,
+      "lastEncounterDungeon": 26,
+      "name": "Razorlash"
+    },
+    {
+      "encounterId": 424,
+      "creditType": 0,
+      "creditEntry": 12236,
+      "lastEncounterDungeon": 272,
+      "name": "Lord Vyletongue"
+    },
+    {
+      "encounterId": 425,
+      "creditType": 0,
+      "creditEntry": 12225,
+      "lastEncounterDungeon": 0,
+      "name": "Celebras the Cursed"
+    },
+    {
+      "encounterId": 426,
+      "creditType": 0,
+      "creditEntry": 12203,
+      "lastEncounterDungeon": 0,
+      "name": "Landslide"
+    },
+    {
+      "encounterId": 427,
+      "creditType": 0,
+      "creditEntry": 13601,
+      "lastEncounterDungeon": 0,
+      "name": "Tinkerer Gizlock"
+    },
+    {
+      "encounterId": 428,
+      "creditType": 0,
+      "creditEntry": 13596,
+      "lastEncounterDungeon": 0,
+      "name": "Rotgrip"
+    },
+    {
+      "encounterId": 429,
+      "creditType": 0,
+      "creditEntry": 12201,
+      "lastEncounterDungeon": 273,
+      "name": "Princess Theradras"
+    },
+    {
+      "encounterId": 430,
+      "creditType": 0,
+      "creditEntry": 11517,
+      "lastEncounterDungeon": 0,
+      "name": "Oggleflint"
+    },
+    {
+      "encounterId": 431,
+      "creditType": 0,
+      "creditEntry": 11520,
+      "lastEncounterDungeon": 4,
+      "name": "Taragaman the Hungerer"
+    },
+    {
+      "encounterId": 432,
+      "creditType": 0,
+      "creditEntry": 11518,
+      "lastEncounterDungeon": 0,
+      "name": "Jergosh the Invoker"
+    },
+    {
+      "encounterId": 433,
+      "creditType": 0,
+      "creditEntry": 11519,
+      "lastEncounterDungeon": 0,
+      "name": "Bazzalan"
+    },
+    {
+      "encounterId": 435,
+      "creditType": 0,
+      "creditEntry": 7357,
+      "lastEncounterDungeon": 0,
+      "name": "Mordresh Fire Eye"
+    },
+    {
+      "encounterId": 436,
+      "creditType": 0,
+      "creditEntry": 8567,
+      "lastEncounterDungeon": 0,
+      "name": "Glutton"
+    },
+    {
+      "encounterId": 437,
+      "creditType": 0,
+      "creditEntry": 7358,
+      "lastEncounterDungeon": 20,
+      "name": "Amnennar the Coldbringer"
+    },
+    {
+      "encounterId": 438,
+      "creditType": 0,
+      "creditEntry": 6168,
+      "lastEncounterDungeon": 0,
+      "name": "Roogug"
+    },
+    {
+      "encounterId": 439,
+      "creditType": 0,
+      "creditEntry": 4424,
+      "lastEncounterDungeon": 0,
+      "name": "Aggem Thorncurse"
+    },
+    {
+      "encounterId": 440,
+      "creditType": 0,
+      "creditEntry": 4428,
+      "lastEncounterDungeon": 0,
+      "name": "Death Speaker Jargba"
+    },
+    {
+      "encounterId": 441,
+      "creditType": 0,
+      "creditEntry": 4420,
+      "lastEncounterDungeon": 0,
+      "name": "Overlord Ramtusk"
+    },
+    {
+      "encounterId": 443,
+      "creditType": 0,
+      "creditEntry": 4421,
+      "lastEncounterDungeon": 16,
+      "name": "Charlga Razorflank"
+    },
+    {
+      "encounterId": 444,
+      "creditType": 0,
+      "creditEntry": 3983,
+      "lastEncounterDungeon": 0,
+      "name": "Interrogator Vishas"
+    },
+    {
+      "encounterId": 445,
+      "creditType": 0,
+      "creditEntry": 4543,
+      "lastEncounterDungeon": 18,
+      "name": "Bloodmage Thalnos"
+    },
+    {
+      "encounterId": 446,
+      "creditType": 0,
+      "creditEntry": 3974,
+      "lastEncounterDungeon": 0,
+      "name": "Houndmaster Loksey"
+    },
+    {
+      "encounterId": 447,
+      "creditType": 0,
+      "creditEntry": 6487,
+      "lastEncounterDungeon": 165,
+      "name": "Arcanist Doan"
+    },
+    {
+      "encounterId": 448,
+      "creditType": 0,
+      "creditEntry": 3975,
+      "lastEncounterDungeon": 163,
+      "name": "Herod"
+    },
+    {
+      "encounterId": 449,
+      "creditType": 0,
+      "creditEntry": 4542,
+      "lastEncounterDungeon": 0,
+      "name": "High Inquisitor Fairbanks"
+    },
+    {
+      "encounterId": 450,
+      "creditType": 0,
+      "creditEntry": 3977,
+      "lastEncounterDungeon": 164,
+      "name": "High Inquisitor Whitemane"
+    },
+    {
+      "encounterId": 451,
+      "creditType": 0,
+      "creditEntry": 10506,
+      "lastEncounterDungeon": 0,
+      "name": "Kirtonos the Herald"
+    },
+    {
+      "encounterId": 452,
+      "creditType": 0,
+      "creditEntry": 10503,
+      "lastEncounterDungeon": 0,
+      "name": "Jandice Barov"
+    },
+    {
+      "encounterId": 453,
+      "creditType": 0,
+      "creditEntry": 11622,
+      "lastEncounterDungeon": 0,
+      "name": "Rattlegore"
+    },
+    {
+      "encounterId": 454,
+      "creditType": 0,
+      "creditEntry": 10433,
+      "lastEncounterDungeon": 0,
+      "name": "Marduk Blackpool"
+    },
+    {
+      "encounterId": 455,
+      "creditType": 0,
+      "creditEntry": 10432,
+      "lastEncounterDungeon": 0,
+      "name": "Vectus"
+    },
+    {
+      "encounterId": 456,
+      "creditType": 0,
+      "creditEntry": 10508,
+      "lastEncounterDungeon": 0,
+      "name": "Ras Frostwhisper"
+    },
+    {
+      "encounterId": 457,
+      "creditType": 0,
+      "creditEntry": 10505,
+      "lastEncounterDungeon": 0,
+      "name": "Instructor Malicia"
+    },
+    {
+      "encounterId": 458,
+      "creditType": 0,
+      "creditEntry": 11261,
+      "lastEncounterDungeon": 0,
+      "name": "Doctor Theolen Krastinov"
+    },
+    {
+      "encounterId": 459,
+      "creditType": 0,
+      "creditEntry": 10901,
+      "lastEncounterDungeon": 0,
+      "name": "Lorekeeper Polkelt"
+    },
+    {
+      "encounterId": 460,
+      "creditType": 0,
+      "creditEntry": 10507,
+      "lastEncounterDungeon": 0,
+      "name": "The Ravenian"
+    },
+    {
+      "encounterId": 461,
+      "creditType": 0,
+      "creditEntry": 10504,
+      "lastEncounterDungeon": 0,
+      "name": "Lord Alexei Barov"
+    },
+    {
+      "encounterId": 462,
+      "creditType": 0,
+      "creditEntry": 10502,
+      "lastEncounterDungeon": 0,
+      "name": "Lady Illucia Barov"
+    },
+    {
+      "encounterId": 463,
+      "creditType": 0,
+      "creditEntry": 1853,
+      "lastEncounterDungeon": 2,
+      "name": "Darkmaster Gandling"
+    },
+    {
+      "encounterId": 464,
+      "creditType": 0,
+      "creditEntry": 3914,
+      "lastEncounterDungeon": 0,
+      "name": "Rethilgore"
+    },
+    {
+      "encounterId": 465,
+      "creditType": 0,
+      "creditEntry": 3886,
+      "lastEncounterDungeon": 0,
+      "name": "Razorclaw the Butcher"
+    },
+    {
+      "encounterId": 466,
+      "creditType": 0,
+      "creditEntry": 3887,
+      "lastEncounterDungeon": 0,
+      "name": "Baron Silverlaine"
+    },
+    {
+      "encounterId": 467,
+      "creditType": 0,
+      "creditEntry": 4278,
+      "lastEncounterDungeon": 0,
+      "name": "Commander Springvale"
+    },
+    {
+      "encounterId": 468,
+      "creditType": 0,
+      "creditEntry": 4279,
+      "lastEncounterDungeon": 0,
+      "name": "Odo the Blindwatcher"
+    },
+    {
+      "encounterId": 469,
+      "creditType": 0,
+      "creditEntry": 4274,
+      "lastEncounterDungeon": 0,
+      "name": "Fenrus the Devourer"
+    },
+    {
+      "encounterId": 470,
+      "creditType": 0,
+      "creditEntry": 3927,
+      "lastEncounterDungeon": 0,
+      "name": "Wolf Master Nandos"
+    },
+    {
+      "encounterId": 471,
+      "creditType": 0,
+      "creditEntry": 4275,
+      "lastEncounterDungeon": 8,
+      "name": "Archmage Arugal"
+    },
+    {
+      "encounterId": 472,
+      "creditType": 0,
+      "creditEntry": 10516,
+      "lastEncounterDungeon": 0,
+      "name": "The Unforgiven"
+    },
+    {
+      "encounterId": 473,
+      "creditType": 0,
+      "creditEntry": 10558,
+      "lastEncounterDungeon": 0,
+      "name": "Hearthsinger Forresten"
+    },
+    {
+      "encounterId": 474,
+      "creditType": 0,
+      "creditEntry": 10808,
+      "lastEncounterDungeon": 0,
+      "name": "Timmy the Cruel"
+    },
+    {
+      "encounterId": 475,
+      "creditType": 0,
+      "creditEntry": 10997,
+      "lastEncounterDungeon": 0,
+      "name": "Cannon Master Willey"
+    },
+    {
+      "encounterId": 476,
+      "creditType": 0,
+      "creditEntry": 11032,
+      "lastEncounterDungeon": 0,
+      "name": "Malor the Zealous"
+    },
+    {
+      "encounterId": 477,
+      "creditType": 0,
+      "creditEntry": 10811,
+      "lastEncounterDungeon": 0,
+      "name": "Archivist Galford"
+    },
+    {
+      "encounterId": 478,
+      "creditType": 0,
+      "creditEntry": 10813,
+      "lastEncounterDungeon": 40,
+      "name": "Balnazzar"
+    },
+    {
+      "encounterId": 479,
+      "creditType": 0,
+      "creditEntry": 10436,
+      "lastEncounterDungeon": 0,
+      "name": "Baroness Anastari"
+    },
+    {
+      "encounterId": 481,
+      "creditType": 0,
+      "creditEntry": 10438,
+      "lastEncounterDungeon": 0,
+      "name": "Maleki the Pallid"
+    },
+    {
+      "encounterId": 482,
+      "creditType": 0,
+      "creditEntry": 10435,
+      "lastEncounterDungeon": 0,
+      "name": "Magistrate Barthilas"
+    },
+    {
+      "encounterId": 483,
+      "creditType": 0,
+      "creditEntry": 10439,
+      "lastEncounterDungeon": 0,
+      "name": "Ramnstein the Gorger"
+    },
+    {
+      "encounterId": 484,
+      "creditType": 0,
+      "creditEntry": 10440,
+      "lastEncounterDungeon": 274,
+      "name": "Baron Rivendare"
+    },
+    {
+      "encounterId": 486,
+      "creditType": 0,
+      "creditEntry": 5721,
+      "lastEncounterDungeon": 0,
+      "name": "Dreamscythe"
+    },
+    {
+      "encounterId": 487,
+      "creditType": 0,
+      "creditEntry": 5720,
+      "lastEncounterDungeon": 0,
+      "name": "Weaver"
+    },
+    {
+      "encounterId": 490,
+      "creditType": 0,
+      "creditEntry": 5719,
+      "lastEncounterDungeon": 0,
+      "name": "Morphaz"
+    },
+    {
+      "encounterId": 491,
+      "creditType": 0,
+      "creditEntry": 5722,
+      "lastEncounterDungeon": 0,
+      "name": "Hazzas"
+    },
+    {
+      "encounterId": 492,
+      "creditType": 0,
+      "creditEntry": 8443,
+      "lastEncounterDungeon": 0,
+      "name": "Avatar of Hakkar"
+    },
+    {
+      "encounterId": 493,
+      "creditType": 0,
+      "creditEntry": 5709,
+      "lastEncounterDungeon": 28,
+      "name": "Shade of Eranikus"
+    },
+    {
+      "encounterId": 494,
+      "creditType": 0,
+      "creditEntry": 20870,
+      "lastEncounterDungeon": 0,
+      "name": "Zereketh the Unbound"
+    },
+    {
+      "encounterId": 495,
+      "creditType": 0,
+      "creditEntry": 20870,
+      "lastEncounterDungeon": 0,
+      "name": "Zereketh the Unbound"
+    },
+    {
+      "encounterId": 496,
+      "creditType": 0,
+      "creditEntry": 20885,
+      "lastEncounterDungeon": 0,
+      "name": "Dalliah the Doomsayer"
+    },
+    {
+      "encounterId": 497,
+      "creditType": 0,
+      "creditEntry": 20885,
+      "lastEncounterDungeon": 0,
+      "name": "Dalliah the Doomsayer"
+    },
+    {
+      "encounterId": 498,
+      "creditType": 0,
+      "creditEntry": 20886,
+      "lastEncounterDungeon": 0,
+      "name": "Wrath-Scryer Soccothrates"
+    },
+    {
+      "encounterId": 499,
+      "creditType": 0,
+      "creditEntry": 20886,
+      "lastEncounterDungeon": 0,
+      "name": "Wrath-Scryer Soccothrates"
+    },
+    {
+      "encounterId": 500,
+      "creditType": 0,
+      "creditEntry": 20912,
+      "lastEncounterDungeon": 174,
+      "name": "Harbinger Skyriss"
+    },
+    {
+      "encounterId": 501,
+      "creditType": 0,
+      "creditEntry": 20912,
+      "lastEncounterDungeon": 190,
+      "name": "Harbinger Skyriss"
+    },
+    {
+      "encounterId": 502,
+      "creditType": 0,
+      "creditEntry": 17976,
+      "lastEncounterDungeon": 0,
+      "name": "Commander Sarannis"
+    },
+    {
+      "encounterId": 504,
+      "creditType": 0,
+      "creditEntry": 17976,
+      "lastEncounterDungeon": 0,
+      "name": "Commander Sarannis"
+    },
+    {
+      "encounterId": 505,
+      "creditType": 0,
+      "creditEntry": 17975,
+      "lastEncounterDungeon": 0,
+      "name": "High Botanist Freywinn"
+    },
+    {
+      "encounterId": 506,
+      "creditType": 0,
+      "creditEntry": 17975,
+      "lastEncounterDungeon": 0,
+      "name": "High Botanist Freywinn"
+    },
+    {
+      "encounterId": 507,
+      "creditType": 0,
+      "creditEntry": 17978,
+      "lastEncounterDungeon": 0,
+      "name": "Thorngrin the Tender"
+    },
+    {
+      "encounterId": 508,
+      "creditType": 0,
+      "creditEntry": 17978,
+      "lastEncounterDungeon": 0,
+      "name": "Thorngrin the Tender"
+    },
+    {
+      "encounterId": 509,
+      "creditType": 0,
+      "creditEntry": 17980,
+      "lastEncounterDungeon": 0,
+      "name": "Laj"
+    },
+    {
+      "encounterId": 510,
+      "creditType": 0,
+      "creditEntry": 17980,
+      "lastEncounterDungeon": 0,
+      "name": "Laj"
+    },
+    {
+      "encounterId": 511,
+      "creditType": 0,
+      "creditEntry": 17977,
+      "lastEncounterDungeon": 173,
+      "name": "Warp Splinter"
+    },
+    {
+      "encounterId": 512,
+      "creditType": 0,
+      "creditEntry": 17977,
+      "lastEncounterDungeon": 191,
+      "name": "Warp Splinter"
+    },
+    {
+      "encounterId": 513,
+      "creditType": 0,
+      "creditEntry": 19219,
+      "lastEncounterDungeon": 0,
+      "name": "Mechano-Lord Capacitus"
+    },
+    {
+      "encounterId": 514,
+      "creditType": 0,
+      "creditEntry": 19219,
+      "lastEncounterDungeon": 0,
+      "name": "Mechano-Lord Capacitus"
+    },
+    {
+      "encounterId": 515,
+      "creditType": 0,
+      "creditEntry": 19221,
+      "lastEncounterDungeon": 0,
+      "name": "Nethermancer Sepethrea"
+    },
+    {
+      "encounterId": 516,
+      "creditType": 0,
+      "creditEntry": 19221,
+      "lastEncounterDungeon": 0,
+      "name": "Nethermancer Sepethrea"
+    },
+    {
+      "encounterId": 517,
+      "creditType": 0,
+      "creditEntry": 19220,
+      "lastEncounterDungeon": 172,
+      "name": "Pathaleon the Calculator"
+    },
+    {
+      "encounterId": 518,
+      "creditType": 0,
+      "creditEntry": 19220,
+      "lastEncounterDungeon": 192,
+      "name": "Pathaleon the Calculator"
+    },
+    {
+      "encounterId": 519,
+      "creditType": 0,
+      "creditEntry": 26796,
+      "lastEncounterDungeon": 0,
+      "name": "Frozen Commander"
+    },
+    {
+      "encounterId": 520,
+      "creditType": 0,
+      "creditEntry": 26731,
+      "lastEncounterDungeon": 0,
+      "name": "Grand Magus Telestra"
+    },
+    {
+      "encounterId": 521,
+      "creditType": 0,
+      "creditEntry": 26731,
+      "lastEncounterDungeon": 0,
+      "name": "Grand Magus Telestra"
+    },
+    {
+      "encounterId": 522,
+      "creditType": 0,
+      "creditEntry": 26763,
+      "lastEncounterDungeon": 0,
+      "name": "Anomalus"
+    },
+    {
+      "encounterId": 523,
+      "creditType": 0,
+      "creditEntry": 26763,
+      "lastEncounterDungeon": 0,
+      "name": "Anomalus"
+    },
+    {
+      "encounterId": 524,
+      "creditType": 0,
+      "creditEntry": 26794,
+      "lastEncounterDungeon": 0,
+      "name": "Ormorok the Tree-Shaper"
+    },
+    {
+      "encounterId": 525,
+      "creditType": 0,
+      "creditEntry": 26794,
+      "lastEncounterDungeon": 0,
+      "name": "Ormrok the Tree-Shaper"
+    },
+    {
+      "encounterId": 526,
+      "creditType": 0,
+      "creditEntry": 26723,
+      "lastEncounterDungeon": 225,
+      "name": "Keristrasza"
+    },
+    {
+      "encounterId": 527,
+      "creditType": 0,
+      "creditEntry": 26723,
+      "lastEncounterDungeon": 226,
+      "name": "Keristrasza"
+    },
+    {
+      "encounterId": 528,
+      "creditType": 0,
+      "creditEntry": 27654,
+      "lastEncounterDungeon": 0,
+      "name": "Drakos the Interrogator"
+    },
+    {
+      "encounterId": 529,
+      "creditType": 0,
+      "creditEntry": 27654,
+      "lastEncounterDungeon": 0,
+      "name": "Drakos the Interrogator"
+    },
+    {
+      "encounterId": 530,
+      "creditType": 0,
+      "creditEntry": 27447,
+      "lastEncounterDungeon": 0,
+      "name": "Varos Cloudstrider"
+    },
+    {
+      "encounterId": 531,
+      "creditType": 0,
+      "creditEntry": 27447,
+      "lastEncounterDungeon": 0,
+      "name": "Varos Cloudstrider"
+    },
+    {
+      "encounterId": 532,
+      "creditType": 0,
+      "creditEntry": 27655,
+      "lastEncounterDungeon": 0,
+      "name": "Mage-Lord Urom"
+    },
+    {
+      "encounterId": 533,
+      "creditType": 0,
+      "creditEntry": 27655,
+      "lastEncounterDungeon": 0,
+      "name": "Mage-Lord Urom"
+    },
+    {
+      "encounterId": 534,
+      "creditType": 0,
+      "creditEntry": 27656,
+      "lastEncounterDungeon": 206,
+      "name": "Ley-Guardian Eregos"
+    },
+    {
+      "encounterId": 535,
+      "creditType": 0,
+      "creditEntry": 27656,
+      "lastEncounterDungeon": 211,
+      "name": "Ley-Guardian Eregos"
+    },
+    {
+      "encounterId": 536,
+      "creditType": 0,
+      "creditEntry": 1696,
+      "lastEncounterDungeon": 0,
+      "name": "Targorr the Dread"
+    },
+    {
+      "encounterId": 537,
+      "creditType": 0,
+      "creditEntry": 1666,
+      "lastEncounterDungeon": 0,
+      "name": "Kam Deepfury"
+    },
+    {
+      "encounterId": 538,
+      "creditType": 0,
+      "creditEntry": 1717,
+      "lastEncounterDungeon": 0,
+      "name": "Hamhock"
+    },
+    {
+      "encounterId": 539,
+      "creditType": 0,
+      "creditEntry": 1716,
+      "lastEncounterDungeon": 12,
+      "name": "Bazil Thredd"
+    },
+    {
+      "encounterId": 540,
+      "creditType": 0,
+      "creditEntry": 1663,
+      "lastEncounterDungeon": 0,
+      "name": "Dextren Ward"
+    },
+    {
+      "encounterId": 541,
+      "creditType": 0,
+      "creditEntry": 29315,
+      "lastEncounterDungeon": 0,
+      "name": "First Prisoner"
+    },
+    {
+      "encounterId": 542,
+      "creditType": 0,
+      "creditEntry": 29315,
+      "lastEncounterDungeon": 0,
+      "name": "First Prisoner"
+    },
+    {
+      "encounterId": 543,
+      "creditType": 0,
+      "creditEntry": 29316,
+      "lastEncounterDungeon": 0,
+      "name": "Second Prisoner"
+    },
+    {
+      "encounterId": 544,
+      "creditType": 0,
+      "creditEntry": 29316,
+      "lastEncounterDungeon": 0,
+      "name": "Second Prisoner"
+    },
+    {
+      "encounterId": 545,
+      "creditType": 0,
+      "creditEntry": 31134,
+      "lastEncounterDungeon": 220,
+      "name": "Cyanigosa"
+    },
+    {
+      "encounterId": 546,
+      "creditType": 0,
+      "creditEntry": 31134,
+      "lastEncounterDungeon": 221,
+      "name": "Cyanigosa"
+    },
+    {
+      "encounterId": 547,
+      "creditType": 0,
+      "creditEntry": 6910,
+      "lastEncounterDungeon": 0,
+      "name": "Revelosh"
+    },
+    {
+      "encounterId": 548,
+      "creditType": 0,
+      "creditEntry": 6906,
+      "lastEncounterDungeon": 0,
+      "name": "The Lost Dwarves"
+    },
+    {
+      "encounterId": 549,
+      "creditType": 0,
+      "creditEntry": 7228,
+      "lastEncounterDungeon": 0,
+      "name": "Ironaya"
+    },
+    {
+      "encounterId": 551,
+      "creditType": 0,
+      "creditEntry": 7206,
+      "lastEncounterDungeon": 0,
+      "name": "Ancient Stone Keeper"
+    },
+    {
+      "encounterId": 552,
+      "creditType": 0,
+      "creditEntry": 7291,
+      "lastEncounterDungeon": 0,
+      "name": "Galgann Firehammer"
+    },
+    {
+      "encounterId": 553,
+      "creditType": 0,
+      "creditEntry": 4854,
+      "lastEncounterDungeon": 0,
+      "name": "Grimlok"
+    },
+    {
+      "encounterId": 554,
+      "creditType": 0,
+      "creditEntry": 2748,
+      "lastEncounterDungeon": 22,
+      "name": "Archaedas"
+    },
+    {
+      "encounterId": 555,
+      "creditType": 0,
+      "creditEntry": 28586,
+      "lastEncounterDungeon": 0,
+      "name": "General Bjarngrim"
+    },
+    {
+      "encounterId": 556,
+      "creditType": 0,
+      "creditEntry": 28586,
+      "lastEncounterDungeon": 0,
+      "name": "General Bjarngrim"
+    },
+    {
+      "encounterId": 557,
+      "creditType": 0,
+      "creditEntry": 28587,
+      "lastEncounterDungeon": 0,
+      "name": "Volkhan"
+    },
+    {
+      "encounterId": 558,
+      "creditType": 0,
+      "creditEntry": 28587,
+      "lastEncounterDungeon": 0,
+      "name": "Volkhan"
+    },
+    {
+      "encounterId": 559,
+      "creditType": 0,
+      "creditEntry": 28546,
+      "lastEncounterDungeon": 0,
+      "name": "Ionar"
+    },
+    {
+      "encounterId": 560,
+      "creditType": 0,
+      "creditEntry": 28546,
+      "lastEncounterDungeon": 0,
+      "name": "Ionar"
+    },
+    {
+      "encounterId": 561,
+      "creditType": 0,
+      "creditEntry": 28923,
+      "lastEncounterDungeon": 207,
+      "name": "Loken"
+    },
+    {
+      "encounterId": 562,
+      "creditType": 0,
+      "creditEntry": 28923,
+      "lastEncounterDungeon": 212,
+      "name": "Loken"
+    },
+    {
+      "encounterId": 563,
+      "creditType": 0,
+      "creditEntry": 27977,
+      "lastEncounterDungeon": 0,
+      "name": "Krystallus"
+    },
+    {
+      "encounterId": 564,
+      "creditType": 0,
+      "creditEntry": 27977,
+      "lastEncounterDungeon": 0,
+      "name": "Krystallus"
+    },
+    {
+      "encounterId": 565,
+      "creditType": 0,
+      "creditEntry": 27975,
+      "lastEncounterDungeon": 0,
+      "name": "Maiden of Grief"
+    },
+    {
+      "encounterId": 566,
+      "creditType": 0,
+      "creditEntry": 27975,
+      "lastEncounterDungeon": 0,
+      "name": "Maiden of Grief"
+    },
+    {
+      "encounterId": 567,
+      "creditType": 1,
+      "creditEntry": 59046,
+      "lastEncounterDungeon": 0,
+      "name": "Tribunal of Ages"
+    },
+    {
+      "encounterId": 568,
+      "creditType": 1,
+      "creditEntry": 59046,
+      "lastEncounterDungeon": 0,
+      "name": "Tribunal of Ages"
+    },
+    {
+      "encounterId": 569,
+      "creditType": 0,
+      "creditEntry": 27978,
+      "lastEncounterDungeon": 208,
+      "name": "Sjonnir the Ironshaper"
+    },
+    {
+      "encounterId": 570,
+      "creditType": 0,
+      "creditEntry": 27978,
+      "lastEncounterDungeon": 213,
+      "name": "Sjonnir the Ironshaper"
+    },
+    {
+      "encounterId": 571,
+      "creditType": 0,
+      "creditEntry": 23953,
+      "lastEncounterDungeon": 0,
+      "name": "Prince Keleseth"
+    },
+    {
+      "encounterId": 572,
+      "creditType": 0,
+      "creditEntry": 23953,
+      "lastEncounterDungeon": 0,
+      "name": "Prince Keleseth"
+    },
+    {
+      "encounterId": 573,
+      "creditType": 0,
+      "creditEntry": 24201,
+      "lastEncounterDungeon": 0,
+      "name": "Skarvold & Dalronn"
+    },
+    {
+      "encounterId": 574,
+      "creditType": 0,
+      "creditEntry": 24201,
+      "lastEncounterDungeon": 0,
+      "name": "Skarvold & Dalronn"
+    },
+    {
+      "encounterId": 575,
+      "creditType": 0,
+      "creditEntry": 23954,
+      "lastEncounterDungeon": 202,
+      "name": "Ingvar the Plunderer"
+    },
+    {
+      "encounterId": 576,
+      "creditType": 0,
+      "creditEntry": 23954,
+      "lastEncounterDungeon": 242,
+      "name": "Ingvar the Plunderer"
+    },
+    {
+      "encounterId": 577,
+      "creditType": 0,
+      "creditEntry": 26668,
+      "lastEncounterDungeon": 0,
+      "name": "Svala Sorrowgrave"
+    },
+    {
+      "encounterId": 578,
+      "creditType": 0,
+      "creditEntry": 26668,
+      "lastEncounterDungeon": 0,
+      "name": "Svala Sorrowgrave"
+    },
+    {
+      "encounterId": 579,
+      "creditType": 0,
+      "creditEntry": 26687,
+      "lastEncounterDungeon": 0,
+      "name": "Gortok Palehoof"
+    },
+    {
+      "encounterId": 580,
+      "creditType": 0,
+      "creditEntry": 26687,
+      "lastEncounterDungeon": 0,
+      "name": "Gortok Palehoof"
+    },
+    {
+      "encounterId": 581,
+      "creditType": 0,
+      "creditEntry": 26693,
+      "lastEncounterDungeon": 0,
+      "name": "Skadi the Ruthless"
+    },
+    {
+      "encounterId": 582,
+      "creditType": 0,
+      "creditEntry": 26693,
+      "lastEncounterDungeon": 0,
+      "name": "Skadi the Ruthless"
+    },
+    {
+      "encounterId": 583,
+      "creditType": 0,
+      "creditEntry": 26861,
+      "lastEncounterDungeon": 203,
+      "name": "King Ymiron"
+    },
+    {
+      "encounterId": 584,
+      "creditType": 0,
+      "creditEntry": 26861,
+      "lastEncounterDungeon": 205,
+      "name": "King Ymiron"
+    },
+    {
+      "encounterId": 585,
+      "creditType": 0,
+      "creditEntry": 3671,
+      "lastEncounterDungeon": 0,
+      "name": "Lady Anacondra"
+    },
+    {
+      "encounterId": 586,
+      "creditType": 0,
+      "creditEntry": 3669,
+      "lastEncounterDungeon": 0,
+      "name": "Lord Cobrahn"
+    },
+    {
+      "encounterId": 587,
+      "creditType": 0,
+      "creditEntry": 3653,
+      "lastEncounterDungeon": 0,
+      "name": "Kresh"
+    },
+    {
+      "encounterId": 588,
+      "creditType": 0,
+      "creditEntry": 3670,
+      "lastEncounterDungeon": 0,
+      "name": "Lord Pythas"
+    },
+    {
+      "encounterId": 589,
+      "creditType": 0,
+      "creditEntry": 3674,
+      "lastEncounterDungeon": 0,
+      "name": "Skum"
+    },
+    {
+      "encounterId": 590,
+      "creditType": 0,
+      "creditEntry": 3673,
+      "lastEncounterDungeon": 0,
+      "name": "Lord Serpentis"
+    },
+    {
+      "encounterId": 591,
+      "creditType": 0,
+      "creditEntry": 5775,
+      "lastEncounterDungeon": 0,
+      "name": "Verdan the Everliving"
+    },
+    {
+      "encounterId": 592,
+      "creditType": 0,
+      "creditEntry": 3654,
+      "lastEncounterDungeon": 1,
+      "name": "Mutanus the Devourer"
+    },
+    {
+      "encounterId": 593,
+      "creditType": 0,
+      "creditEntry": 7795,
+      "lastEncounterDungeon": 0,
+      "name": "Hydromancer Velratha"
+    },
+    {
+      "encounterId": 596,
+      "creditType": 0,
+      "creditEntry": 7272,
+      "lastEncounterDungeon": 0,
+      "name": "Theka the Martyr"
+    },
+    {
+      "encounterId": 598,
+      "creditType": 0,
+      "creditEntry": 7796,
+      "lastEncounterDungeon": 0,
+      "name": "Nekrum Gutchewer"
+    },
+    {
+      "encounterId": 600,
+      "creditType": 0,
+      "creditEntry": 7267,
+      "lastEncounterDungeon": 24,
+      "name": "Chief Ukorz Sandscalp"
+    },
+    {
+      "encounterId": 602,
+      "creditType": 0,
+      "creditEntry": 22898,
+      "lastEncounterDungeon": 0,
+      "name": "Supremus"
+    },
+    {
+      "encounterId": 603,
+      "creditType": 0,
+      "creditEntry": 22841,
+      "lastEncounterDungeon": 0,
+      "name": "Shade of Akama"
+    },
+    {
+      "encounterId": 604,
+      "creditType": 0,
+      "creditEntry": 22871,
+      "lastEncounterDungeon": 0,
+      "name": "Teron Gorefiend"
+    },
+    {
+      "encounterId": 605,
+      "creditType": 0,
+      "creditEntry": 22948,
+      "lastEncounterDungeon": 0,
+      "name": "Gurtogg Bloodboil"
+    },
+    {
+      "encounterId": 606,
+      "creditType": 0,
+      "creditEntry": 23420,
+      "lastEncounterDungeon": 0,
+      "name": "Reliquary of Souls"
+    },
+    {
+      "encounterId": 607,
+      "creditType": 0,
+      "creditEntry": 22947,
+      "lastEncounterDungeon": 0,
+      "name": "Mother Shahraz"
+    },
+    {
+      "encounterId": 608,
+      "creditType": 0,
+      "creditEntry": 23426,
+      "lastEncounterDungeon": 0,
+      "name": "The Illidari Council"
+    },
+    {
+      "encounterId": 609,
+      "creditType": 0,
+      "creditEntry": 22917,
+      "lastEncounterDungeon": 196,
+      "name": "Illidan Stormrage"
+    },
+    {
+      "encounterId": 610,
+      "creditType": 0,
+      "creditEntry": 12435,
+      "lastEncounterDungeon": 0,
+      "name": "Razorgore the Untamed"
+    },
+    {
+      "encounterId": 611,
+      "creditType": 0,
+      "creditEntry": 13020,
+      "lastEncounterDungeon": 0,
+      "name": "Vaelastrasz the Corrupt"
+    },
+    {
+      "encounterId": 612,
+      "creditType": 0,
+      "creditEntry": 12017,
+      "lastEncounterDungeon": 0,
+      "name": "Broodlord Lashlayer"
+    },
+    {
+      "encounterId": 613,
+      "creditType": 0,
+      "creditEntry": 11983,
+      "lastEncounterDungeon": 0,
+      "name": "Firemaw"
+    },
+    {
+      "encounterId": 614,
+      "creditType": 0,
+      "creditEntry": 14601,
+      "lastEncounterDungeon": 0,
+      "name": "Ebonroc"
+    },
+    {
+      "encounterId": 615,
+      "creditType": 0,
+      "creditEntry": 11981,
+      "lastEncounterDungeon": 0,
+      "name": "Flamegor"
+    },
+    {
+      "encounterId": 616,
+      "creditType": 0,
+      "creditEntry": 14020,
+      "lastEncounterDungeon": 0,
+      "name": "Chromaggus"
+    },
+    {
+      "encounterId": 617,
+      "creditType": 0,
+      "creditEntry": 11583,
+      "lastEncounterDungeon": 50,
+      "name": "Nefarian"
+    },
+    {
+      "encounterId": 618,
+      "creditType": 0,
+      "creditEntry": 17767,
+      "lastEncounterDungeon": 0,
+      "name": "Rage Winterchill"
+    },
+    {
+      "encounterId": 619,
+      "creditType": 0,
+      "creditEntry": 17808,
+      "lastEncounterDungeon": 0,
+      "name": "Anetheron"
+    },
+    {
+      "encounterId": 621,
+      "creditType": 0,
+      "creditEntry": 17842,
+      "lastEncounterDungeon": 0,
+      "name": "Azgalor"
+    },
+    {
+      "encounterId": 622,
+      "creditType": 0,
+      "creditEntry": 17968,
+      "lastEncounterDungeon": 195,
+      "name": "Archimonde"
+    },
+    {
+      "encounterId": 623,
+      "creditType": 0,
+      "creditEntry": 21216,
+      "lastEncounterDungeon": 0,
+      "name": "Hydross the Unstable"
+    },
+    {
+      "encounterId": 624,
+      "creditType": 0,
+      "creditEntry": 21217,
+      "lastEncounterDungeon": 0,
+      "name": "The Lurker Below"
+    },
+    {
+      "encounterId": 625,
+      "creditType": 0,
+      "creditEntry": 21215,
+      "lastEncounterDungeon": 0,
+      "name": "Leotheras the Blind"
+    },
+    {
+      "encounterId": 626,
+      "creditType": 0,
+      "creditEntry": 21214,
+      "lastEncounterDungeon": 0,
+      "name": "Fathom-Lord Karathress"
+    },
+    {
+      "encounterId": 627,
+      "creditType": 0,
+      "creditEntry": 21213,
+      "lastEncounterDungeon": 0,
+      "name": "Morogrim Tidewalker"
+    },
+    {
+      "encounterId": 628,
+      "creditType": 0,
+      "creditEntry": 21212,
+      "lastEncounterDungeon": 194,
+      "name": "Lady Vashj"
+    },
+    {
+      "encounterId": 629,
+      "creditType": 0,
+      "creditEntry": 34797,
+      "lastEncounterDungeon": 0,
+      "name": "Northrend Beasts"
+    },
+    {
+      "encounterId": 630,
+      "creditType": 0,
+      "creditEntry": 34797,
+      "lastEncounterDungeon": 0,
+      "name": "Northrend Beasts"
+    },
+    {
+      "encounterId": 631,
+      "creditType": 0,
+      "creditEntry": 34797,
+      "lastEncounterDungeon": 0,
+      "name": "Northrend Beasts"
+    },
+    {
+      "encounterId": 632,
+      "creditType": 0,
+      "creditEntry": 34797,
+      "lastEncounterDungeon": 0,
+      "name": "Northrend Beasts"
+    },
+    {
+      "encounterId": 633,
+      "creditType": 0,
+      "creditEntry": 34780,
+      "lastEncounterDungeon": 0,
+      "name": "Lord Jaraxxus"
+    },
+    {
+      "encounterId": 634,
+      "creditType": 0,
+      "creditEntry": 34780,
+      "lastEncounterDungeon": 0,
+      "name": "Lord Jaraxxus"
+    },
+    {
+      "encounterId": 635,
+      "creditType": 0,
+      "creditEntry": 34780,
+      "lastEncounterDungeon": 0,
+      "name": "Lord Jaraxxus"
+    },
+    {
+      "encounterId": 636,
+      "creditType": 0,
+      "creditEntry": 34780,
+      "lastEncounterDungeon": 0,
+      "name": "Lord Jaraxxus"
+    },
+    {
+      "encounterId": 637,
+      "creditType": 1,
+      "creditEntry": 68184,
+      "lastEncounterDungeon": 0,
+      "name": "Faction Champions"
+    },
+    {
+      "encounterId": 638,
+      "creditType": 1,
+      "creditEntry": 68184,
+      "lastEncounterDungeon": 0,
+      "name": "Faction Champions"
+    },
+    {
+      "encounterId": 639,
+      "creditType": 1,
+      "creditEntry": 68184,
+      "lastEncounterDungeon": 0,
+      "name": "Faction Champions"
+    },
+    {
+      "encounterId": 640,
+      "creditType": 1,
+      "creditEntry": 68184,
+      "lastEncounterDungeon": 0,
+      "name": "Faction Champions"
+    },
+    {
+      "encounterId": 649,
+      "creditType": 0,
+      "creditEntry": 18831,
+      "lastEncounterDungeon": 0,
+      "name": "High King Maulgar"
+    },
+    {
+      "encounterId": 650,
+      "creditType": 0,
+      "creditEntry": 19044,
+      "lastEncounterDungeon": 177,
+      "name": "Gruul the Dragonkiller"
+    },
+    {
+      "encounterId": 651,
+      "creditType": 0,
+      "creditEntry": 17257,
+      "lastEncounterDungeon": 176,
+      "name": "Magtheridon"
+    },
+    {
+      "encounterId": 652,
+      "creditType": 0,
+      "creditEntry": 16152,
+      "lastEncounterDungeon": 0,
+      "name": "Attumen the Huntsman"
+    },
+    {
+      "encounterId": 653,
+      "creditType": 0,
+      "creditEntry": 15687,
+      "lastEncounterDungeon": 0,
+      "name": "Moroes"
+    },
+    {
+      "encounterId": 654,
+      "creditType": 0,
+      "creditEntry": 16457,
+      "lastEncounterDungeon": 0,
+      "name": "Maiden of the Virtue"
+    },
+    {
+      "encounterId": 655,
+      "creditType": 0,
+      "creditEntry": 16812,
+      "lastEncounterDungeon": 0,
+      "name": "Opera Event"
+    },
+    {
+      "encounterId": 656,
+      "creditType": 0,
+      "creditEntry": 15691,
+      "lastEncounterDungeon": 0,
+      "name": "The Curator"
+    },
+    {
+      "encounterId": 657,
+      "creditType": 0,
+      "creditEntry": 15688,
+      "lastEncounterDungeon": 0,
+      "name": "Terestian Illhoof"
+    },
+    {
+      "encounterId": 658,
+      "creditType": 0,
+      "creditEntry": 16524,
+      "lastEncounterDungeon": 0,
+      "name": "Shade of Aran"
+    },
+    {
+      "encounterId": 659,
+      "creditType": 0,
+      "creditEntry": 15689,
+      "lastEncounterDungeon": 0,
+      "name": "Netherspite"
+    },
+    {
+      "encounterId": 660,
+      "creditType": 0,
+      "creditEntry": 22520,
+      "lastEncounterDungeon": 0,
+      "name": "Chess Event"
+    },
+    {
+      "encounterId": 661,
+      "creditType": 0,
+      "creditEntry": 15690,
+      "lastEncounterDungeon": 175,
+      "name": "Prince Malchezaar"
+    },
+    {
+      "encounterId": 662,
+      "creditType": 0,
+      "creditEntry": 17225,
+      "lastEncounterDungeon": 0,
+      "name": "Nightbane"
+    },
+    {
+      "encounterId": 663,
+      "creditType": 0,
+      "creditEntry": 12118,
+      "lastEncounterDungeon": 0,
+      "name": "Lucifron"
+    },
+    {
+      "encounterId": 664,
+      "creditType": 0,
+      "creditEntry": 11982,
+      "lastEncounterDungeon": 0,
+      "name": "Magmadar"
+    },
+    {
+      "encounterId": 665,
+      "creditType": 0,
+      "creditEntry": 12259,
+      "lastEncounterDungeon": 0,
+      "name": "Gehennas"
+    },
+    {
+      "encounterId": 666,
+      "creditType": 0,
+      "creditEntry": 12057,
+      "lastEncounterDungeon": 0,
+      "name": "Garr"
+    },
+    {
+      "encounterId": 667,
+      "creditType": 0,
+      "creditEntry": 12264,
+      "lastEncounterDungeon": 0,
+      "name": "Shazzrah"
+    },
+    {
+      "encounterId": 668,
+      "creditType": 0,
+      "creditEntry": 12056,
+      "lastEncounterDungeon": 0,
+      "name": "Baron Geddon"
+    },
+    {
+      "encounterId": 669,
+      "creditType": 0,
+      "creditEntry": 12098,
+      "lastEncounterDungeon": 0,
+      "name": "Sulfuron Harbinger"
+    },
+    {
+      "encounterId": 670,
+      "creditType": 0,
+      "creditEntry": 11988,
+      "lastEncounterDungeon": 0,
+      "name": "Golemagg the Incinerator"
+    },
+    {
+      "encounterId": 671,
+      "creditType": 0,
+      "creditEntry": 12018,
+      "lastEncounterDungeon": 0,
+      "name": "Majordomo Executus"
+    },
+    {
+      "encounterId": 672,
+      "creditType": 0,
+      "creditEntry": 11502,
+      "lastEncounterDungeon": 48,
+      "name": "Ragnaros"
+    },
+    {
+      "encounterId": 677,
+      "creditType": 0,
+      "creditEntry": 15953,
+      "lastEncounterDungeon": 0,
+      "name": "Grand Widow Faerlina"
+    },
+    {
+      "encounterId": 678,
+      "creditType": 0,
+      "creditEntry": 15953,
+      "lastEncounterDungeon": 0,
+      "name": "Grand Widow Faerlina"
+    },
+    {
+      "encounterId": 679,
+      "creditType": 0,
+      "creditEntry": 15952,
+      "lastEncounterDungeon": 0,
+      "name": "Maexxna"
+    },
+    {
+      "encounterId": 680,
+      "creditType": 0,
+      "creditEntry": 15952,
+      "lastEncounterDungeon": 0,
+      "name": "Maexxna"
+    },
+    {
+      "encounterId": 681,
+      "creditType": 0,
+      "creditEntry": 15954,
+      "lastEncounterDungeon": 0,
+      "name": "Noth the Plaguebringer"
+    },
+    {
+      "encounterId": 682,
+      "creditType": 0,
+      "creditEntry": 15954,
+      "lastEncounterDungeon": 0,
+      "name": "Noth the Plaguebringer"
+    },
+    {
+      "encounterId": 683,
+      "creditType": 0,
+      "creditEntry": 15936,
+      "lastEncounterDungeon": 0,
+      "name": "Heigan the Unclean"
+    },
+    {
+      "encounterId": 684,
+      "creditType": 0,
+      "creditEntry": 15936,
+      "lastEncounterDungeon": 0,
+      "name": "Heigan the Unclean "
+    },
+    {
+      "encounterId": 685,
+      "creditType": 0,
+      "creditEntry": 16011,
+      "lastEncounterDungeon": 0,
+      "name": "Loatheb"
+    },
+    {
+      "encounterId": 686,
+      "creditType": 0,
+      "creditEntry": 16011,
+      "lastEncounterDungeon": 0,
+      "name": "Loatheb"
+    },
+    {
+      "encounterId": 687,
+      "creditType": 0,
+      "creditEntry": 16061,
+      "lastEncounterDungeon": 0,
+      "name": "Instructor Razuvious"
+    },
+    {
+      "encounterId": 689,
+      "creditType": 0,
+      "creditEntry": 16061,
+      "lastEncounterDungeon": 0,
+      "name": "Instructor Razuvious"
+    },
+    {
+      "encounterId": 690,
+      "creditType": 0,
+      "creditEntry": 16060,
+      "lastEncounterDungeon": 0,
+      "name": "Gothik the Harvester"
+    },
+    {
+      "encounterId": 691,
+      "creditType": 0,
+      "creditEntry": 16060,
+      "lastEncounterDungeon": 0,
+      "name": "Gothik the Harvester"
+    },
+    {
+      "encounterId": 692,
+      "creditType": 1,
+      "creditEntry": 59450,
+      "lastEncounterDungeon": 0,
+      "name": "The Four Horsemen"
+    },
+    {
+      "encounterId": 693,
+      "creditType": 1,
+      "creditEntry": 59450,
+      "lastEncounterDungeon": 0,
+      "name": "The Four Horsemen"
+    },
+    {
+      "encounterId": 694,
+      "creditType": 0,
+      "creditEntry": 16028,
+      "lastEncounterDungeon": 0,
+      "name": "Patchwerk"
+    },
+    {
+      "encounterId": 695,
+      "creditType": 0,
+      "creditEntry": 16028,
+      "lastEncounterDungeon": 0,
+      "name": "Patchwerk "
+    },
+    {
+      "encounterId": 696,
+      "creditType": 0,
+      "creditEntry": 15931,
+      "lastEncounterDungeon": 0,
+      "name": "Grobbulus"
+    },
+    {
+      "encounterId": 697,
+      "creditType": 0,
+      "creditEntry": 15931,
+      "lastEncounterDungeon": 0,
+      "name": "Grobbulus"
+    },
+    {
+      "encounterId": 698,
+      "creditType": 0,
+      "creditEntry": 15932,
+      "lastEncounterDungeon": 0,
+      "name": "Gluth"
+    },
+    {
+      "encounterId": 699,
+      "creditType": 0,
+      "creditEntry": 15932,
+      "lastEncounterDungeon": 0,
+      "name": "Gluth"
+    },
+    {
+      "encounterId": 700,
+      "creditType": 0,
+      "creditEntry": 15928,
+      "lastEncounterDungeon": 0,
+      "name": "Thaddius"
+    },
+    {
+      "encounterId": 701,
+      "creditType": 0,
+      "creditEntry": 15928,
+      "lastEncounterDungeon": 0,
+      "name": "Thaddius"
+    },
+    {
+      "encounterId": 702,
+      "creditType": 0,
+      "creditEntry": 15989,
+      "lastEncounterDungeon": 0,
+      "name": "Sapphiron"
+    },
+    {
+      "encounterId": 703,
+      "creditType": 0,
+      "creditEntry": 15989,
+      "lastEncounterDungeon": 0,
+      "name": "Sapphiron"
+    },
+    {
+      "encounterId": 707,
+      "creditType": 0,
+      "creditEntry": 10184,
+      "lastEncounterDungeon": 46,
+      "name": "Onyxia"
+    },
+    {
+      "encounterId": 708,
+      "creditType": 0,
+      "creditEntry": 10184,
+      "lastEncounterDungeon": 257,
+      "name": "Onyxia"
+    },
+    {
+      "encounterId": 709,
+      "creditType": 0,
+      "creditEntry": 15263,
+      "lastEncounterDungeon": 0,
+      "name": "The Prophet Skeram"
+    },
+    {
+      "encounterId": 710,
+      "creditType": 0,
+      "creditEntry": 15544,
+      "lastEncounterDungeon": 0,
+      "name": "Silithid Royalty"
+    },
+    {
+      "encounterId": 711,
+      "creditType": 0,
+      "creditEntry": 15516,
+      "lastEncounterDungeon": 0,
+      "name": "Battleguard Sartura"
+    },
+    {
+      "encounterId": 712,
+      "creditType": 0,
+      "creditEntry": 15510,
+      "lastEncounterDungeon": 0,
+      "name": "Fankriss the Unyielding"
+    },
+    {
+      "encounterId": 713,
+      "creditType": 0,
+      "creditEntry": 15299,
+      "lastEncounterDungeon": 0,
+      "name": "Viscidus"
+    },
+    {
+      "encounterId": 714,
+      "creditType": 0,
+      "creditEntry": 15509,
+      "lastEncounterDungeon": 0,
+      "name": "Princess Huhuran"
+    },
+    {
+      "encounterId": 715,
+      "creditType": 0,
+      "creditEntry": 15275,
+      "lastEncounterDungeon": 0,
+      "name": "Twin Emperors"
+    },
+    {
+      "encounterId": 716,
+      "creditType": 0,
+      "creditEntry": 15517,
+      "lastEncounterDungeon": 0,
+      "name": "Ouro"
+    },
+    {
+      "encounterId": 718,
+      "creditType": 0,
+      "creditEntry": 15348,
+      "lastEncounterDungeon": 0,
+      "name": "Kurinnaxx"
+    },
+    {
+      "encounterId": 719,
+      "creditType": 0,
+      "creditEntry": 15341,
+      "lastEncounterDungeon": 0,
+      "name": "General Rajaxx"
+    },
+    {
+      "encounterId": 720,
+      "creditType": 0,
+      "creditEntry": 15340,
+      "lastEncounterDungeon": 0,
+      "name": "Moam"
+    },
+    {
+      "encounterId": 721,
+      "creditType": 0,
+      "creditEntry": 15370,
+      "lastEncounterDungeon": 0,
+      "name": "Buru the Gorger"
+    },
+    {
+      "encounterId": 722,
+      "creditType": 0,
+      "creditEntry": 15369,
+      "lastEncounterDungeon": 0,
+      "name": "Ayamiss the Hunter"
+    },
+    {
+      "encounterId": 723,
+      "creditType": 0,
+      "creditEntry": 15339,
+      "lastEncounterDungeon": 160,
+      "name": "Ossirian the Unscarred"
+    },
+    {
+      "encounterId": 724,
+      "creditType": 0,
+      "creditEntry": 24892,
+      "lastEncounterDungeon": 0,
+      "name": "Kalecgos"
+    },
+    {
+      "encounterId": 725,
+      "creditType": 0,
+      "creditEntry": 24882,
+      "lastEncounterDungeon": 0,
+      "name": "Brutallus"
+    },
+    {
+      "encounterId": 726,
+      "creditType": 0,
+      "creditEntry": 25038,
+      "lastEncounterDungeon": 0,
+      "name": "Felmyst"
+    },
+    {
+      "encounterId": 727,
+      "creditType": 0,
+      "creditEntry": 25165,
+      "lastEncounterDungeon": 0,
+      "name": "Eredar Twins"
+    },
+    {
+      "encounterId": 731,
+      "creditType": 0,
+      "creditEntry": 19516,
+      "lastEncounterDungeon": 0,
+      "name": "Void Reaver"
+    },
+    {
+      "encounterId": 732,
+      "creditType": 0,
+      "creditEntry": 18805,
+      "lastEncounterDungeon": 0,
+      "name": "High Astromancer Solarian"
+    },
+    {
+      "encounterId": 734,
+      "creditType": 0,
+      "creditEntry": 28859,
+      "lastEncounterDungeon": 223,
+      "name": "Malygos"
+    },
+    {
+      "encounterId": 735,
+      "creditType": 0,
+      "creditEntry": 28859,
+      "lastEncounterDungeon": 237,
+      "name": "Malygos"
+    },
+    {
+      "encounterId": 736,
+      "creditType": 0,
+      "creditEntry": 30452,
+      "lastEncounterDungeon": 0,
+      "name": "Tenebron"
+    },
+    {
+      "encounterId": 737,
+      "creditType": 0,
+      "creditEntry": 30452,
+      "lastEncounterDungeon": 0,
+      "name": "Tenebron"
+    },
+    {
+      "encounterId": 738,
+      "creditType": 0,
+      "creditEntry": 30451,
+      "lastEncounterDungeon": 0,
+      "name": "Shadron"
+    },
+    {
+      "encounterId": 739,
+      "creditType": 0,
+      "creditEntry": 30451,
+      "lastEncounterDungeon": 0,
+      "name": "Shadron"
+    },
+    {
+      "encounterId": 740,
+      "creditType": 0,
+      "creditEntry": 30449,
+      "lastEncounterDungeon": 0,
+      "name": "Vesperon"
+    },
+    {
+      "encounterId": 741,
+      "creditType": 0,
+      "creditEntry": 30449,
+      "lastEncounterDungeon": 0,
+      "name": "Vesperon"
+    },
+    {
+      "encounterId": 742,
+      "creditType": 0,
+      "creditEntry": 28860,
+      "lastEncounterDungeon": 224,
+      "name": "Sartharion"
+    },
+    {
+      "encounterId": 743,
+      "creditType": 0,
+      "creditEntry": 28860,
+      "lastEncounterDungeon": 238,
+      "name": "Sartharion"
+    },
+    {
+      "encounterId": 744,
+      "creditType": 0,
+      "creditEntry": 33113,
+      "lastEncounterDungeon": 0,
+      "name": "Flame Leviathan"
+    },
+    {
+      "encounterId": 745,
+      "creditType": 0,
+      "creditEntry": 33118,
+      "lastEncounterDungeon": 0,
+      "name": "Ignis the Furnace Master"
+    },
+    {
+      "encounterId": 746,
+      "creditType": 0,
+      "creditEntry": 33186,
+      "lastEncounterDungeon": 0,
+      "name": "Razorscale"
+    },
+    {
+      "encounterId": 747,
+      "creditType": 0,
+      "creditEntry": 33293,
+      "lastEncounterDungeon": 0,
+      "name": "XT-002 Deconstructor"
+    },
+    {
+      "encounterId": 748,
+      "creditType": 1,
+      "creditEntry": 65195,
+      "lastEncounterDungeon": 0,
+      "name": "The Iron Council"
+    },
+    {
+      "encounterId": 749,
+      "creditType": 0,
+      "creditEntry": 32930,
+      "lastEncounterDungeon": 0,
+      "name": "Kologarn"
+    },
+    {
+      "encounterId": 750,
+      "creditType": 0,
+      "creditEntry": 33515,
+      "lastEncounterDungeon": 0,
+      "name": "Auriaya"
+    },
+    {
+      "encounterId": 751,
+      "creditType": 1,
+      "creditEntry": 64899,
+      "lastEncounterDungeon": 0,
+      "name": "Hodir"
+    },
+    {
+      "encounterId": 752,
+      "creditType": 1,
+      "creditEntry": 64985,
+      "lastEncounterDungeon": 0,
+      "name": "Thorim"
+    },
+    {
+      "encounterId": 753,
+      "creditType": 1,
+      "creditEntry": 65074,
+      "lastEncounterDungeon": 0,
+      "name": "Freya"
+    },
+    {
+      "encounterId": 754,
+      "creditType": 0,
+      "creditEntry": 33432,
+      "lastEncounterDungeon": 0,
+      "name": "Mimiron"
+    },
+    {
+      "encounterId": 755,
+      "creditType": 0,
+      "creditEntry": 33271,
+      "lastEncounterDungeon": 0,
+      "name": "General Vezax"
+    },
+    {
+      "encounterId": 756,
+      "creditType": 0,
+      "creditEntry": 33288,
+      "lastEncounterDungeon": 0,
+      "name": "Yogg-Saron"
+    },
+    {
+      "encounterId": 757,
+      "creditType": 1,
+      "creditEntry": 65184,
+      "lastEncounterDungeon": 243,
+      "name": "Algalon the Observer"
+    },
+    {
+      "encounterId": 758,
+      "creditType": 0,
+      "creditEntry": 33113,
+      "lastEncounterDungeon": 0,
+      "name": "Flame Leviathan"
+    },
+    {
+      "encounterId": 759,
+      "creditType": 0,
+      "creditEntry": 33118,
+      "lastEncounterDungeon": 0,
+      "name": "Ignis the Furnace Master"
+    },
+    {
+      "encounterId": 760,
+      "creditType": 0,
+      "creditEntry": 33186,
+      "lastEncounterDungeon": 0,
+      "name": "Razorscale"
+    },
+    {
+      "encounterId": 761,
+      "creditType": 0,
+      "creditEntry": 33293,
+      "lastEncounterDungeon": 0,
+      "name": "XT-002 Deconstructor"
+    },
+    {
+      "encounterId": 762,
+      "creditType": 1,
+      "creditEntry": 65195,
+      "lastEncounterDungeon": 0,
+      "name": "The Iron Council"
+    },
+    {
+      "encounterId": 763,
+      "creditType": 0,
+      "creditEntry": 32930,
+      "lastEncounterDungeon": 0,
+      "name": "Kologarn"
+    },
+    {
+      "encounterId": 764,
+      "creditType": 0,
+      "creditEntry": 33515,
+      "lastEncounterDungeon": 0,
+      "name": "Auriaya"
+    },
+    {
+      "encounterId": 765,
+      "creditType": 1,
+      "creditEntry": 64899,
+      "lastEncounterDungeon": 0,
+      "name": "Hodir"
+    },
+    {
+      "encounterId": 766,
+      "creditType": 1,
+      "creditEntry": 64985,
+      "lastEncounterDungeon": 0,
+      "name": "Thorim"
+    },
+    {
+      "encounterId": 767,
+      "creditType": 1,
+      "creditEntry": 65074,
+      "lastEncounterDungeon": 0,
+      "name": "Freya"
+    },
+    {
+      "encounterId": 768,
+      "creditType": 0,
+      "creditEntry": 33432,
+      "lastEncounterDungeon": 0,
+      "name": "Mimiron"
+    },
+    {
+      "encounterId": 769,
+      "creditType": 0,
+      "creditEntry": 33271,
+      "lastEncounterDungeon": 0,
+      "name": "General Vezax"
+    },
+    {
+      "encounterId": 770,
+      "creditType": 0,
+      "creditEntry": 33288,
+      "lastEncounterDungeon": 0,
+      "name": "Yogg-Saron"
+    },
+    {
+      "encounterId": 771,
+      "creditType": 1,
+      "creditEntry": 65184,
+      "lastEncounterDungeon": 244,
+      "name": "Algalon the Observer"
+    },
+    {
+      "encounterId": 772,
+      "creditType": 0,
+      "creditEntry": 31125,
+      "lastEncounterDungeon": 0,
+      "name": "Archavon the Stone Watcher"
+    },
+    {
+      "encounterId": 773,
+      "creditType": 0,
+      "creditEntry": 31125,
+      "lastEncounterDungeon": 0,
+      "name": "Archavon the Stone Watcher"
+    },
+    {
+      "encounterId": 774,
+      "creditType": 0,
+      "creditEntry": 33993,
+      "lastEncounterDungeon": 0,
+      "name": "Emalon the Storm Watcher"
+    },
+    {
+      "encounterId": 775,
+      "creditType": 0,
+      "creditEntry": 33993,
+      "lastEncounterDungeon": 0,
+      "name": "Emalon the Storm Watcher"
+    },
+    {
+      "encounterId": 776,
+      "creditType": 0,
+      "creditEntry": 35013,
+      "lastEncounterDungeon": 0,
+      "name": "Koralon the Flame Watcher"
+    },
+    {
+      "encounterId": 777,
+      "creditType": 0,
+      "creditEntry": 35013,
+      "lastEncounterDungeon": 0,
+      "name": "Koralon the Flame Watcher"
+    },
+    {
+      "encounterId": 779,
+      "creditType": 0,
+      "creditEntry": 23576,
+      "lastEncounterDungeon": 0,
+      "name": "Nalorakk"
+    },
+    {
+      "encounterId": 781,
+      "creditType": 0,
+      "creditEntry": 23577,
+      "lastEncounterDungeon": 0,
+      "name": "Halazzi"
+    },
+    {
+      "encounterId": 782,
+      "creditType": 0,
+      "creditEntry": 24239,
+      "lastEncounterDungeon": 0,
+      "name": "Hex Lord Malacrass"
+    },
+    {
+      "encounterId": 784,
+      "creditType": 0,
+      "creditEntry": 14507,
+      "lastEncounterDungeon": 0,
+      "name": "High Priest Venoxis"
+    },
+    {
+      "encounterId": 785,
+      "creditType": 0,
+      "creditEntry": 14517,
+      "lastEncounterDungeon": 0,
+      "name": "High Priestess Jeklik"
+    },
+    {
+      "encounterId": 787,
+      "creditType": 0,
+      "creditEntry": 11382,
+      "lastEncounterDungeon": 0,
+      "name": "Bloodlord Mandokir"
+    },
+    {
+      "encounterId": 788,
+      "creditType": 0,
+      "creditEntry": 15083,
+      "lastEncounterDungeon": 0,
+      "name": "Edge of Madness"
+    },
+    {
+      "encounterId": 789,
+      "creditType": 0,
+      "creditEntry": 14509,
+      "lastEncounterDungeon": 0,
+      "name": "High Priest Thekal"
+    },
+    {
+      "encounterId": 791,
+      "creditType": 0,
+      "creditEntry": 14515,
+      "lastEncounterDungeon": 0,
+      "name": "High Priestess Arlokk"
+    },
+    {
+      "encounterId": 793,
+      "creditType": 0,
+      "creditEntry": 14834,
+      "lastEncounterDungeon": 42,
+      "name": "Hakkar"
+    },
+    {
+      "encounterId": 829,
+      "creditType": 0,
+      "creditEntry": 36497,
+      "lastEncounterDungeon": 0,
+      "name": "Bronjahm"
+    },
+    {
+      "encounterId": 830,
+      "creditType": 0,
+      "creditEntry": 36497,
+      "lastEncounterDungeon": 0,
+      "name": "Bronjahm "
+    },
+    {
+      "encounterId": 831,
+      "creditType": 0,
+      "creditEntry": 36502,
+      "lastEncounterDungeon": 251,
+      "name": "Devourer of Souls"
+    },
+    {
+      "encounterId": 832,
+      "creditType": 0,
+      "creditEntry": 36502,
+      "lastEncounterDungeon": 252,
+      "name": "Devourer of Souls"
+    },
+    {
+      "encounterId": 833,
+      "creditType": 0,
+      "creditEntry": 36494,
+      "lastEncounterDungeon": 0,
+      "name": "Forgemaster Garfrost"
+    },
+    {
+      "encounterId": 834,
+      "creditType": 0,
+      "creditEntry": 36494,
+      "lastEncounterDungeon": 0,
+      "name": "Forgemaster Garfrost"
+    },
+    {
+      "encounterId": 835,
+      "creditType": 0,
+      "creditEntry": 36476,
+      "lastEncounterDungeon": 0,
+      "name": "Krick"
+    },
+    {
+      "encounterId": 836,
+      "creditType": 0,
+      "creditEntry": 36476,
+      "lastEncounterDungeon": 0,
+      "name": "Krick"
+    },
+    {
+      "encounterId": 837,
+      "creditType": 0,
+      "creditEntry": 36658,
+      "lastEncounterDungeon": 253,
+      "name": "Overlord Tyrannus"
+    },
+    {
+      "encounterId": 838,
+      "creditType": 0,
+      "creditEntry": 36658,
+      "lastEncounterDungeon": 254,
+      "name": "Overlord Tyrannus"
+    },
+    {
+      "encounterId": 839,
+      "creditType": 0,
+      "creditEntry": 38113,
+      "lastEncounterDungeon": 0,
+      "name": "Marwyn"
+    },
+    {
+      "encounterId": 840,
+      "creditType": 0,
+      "creditEntry": 38113,
+      "lastEncounterDungeon": 0,
+      "name": "Marwyn"
+    },
+    {
+      "encounterId": 841,
+      "creditType": 0,
+      "creditEntry": 38112,
+      "lastEncounterDungeon": 0,
+      "name": "Falric"
+    },
+    {
+      "encounterId": 842,
+      "creditType": 0,
+      "creditEntry": 38112,
+      "lastEncounterDungeon": 0,
+      "name": "Falric"
+    },
+    {
+      "encounterId": 843,
+      "creditType": 1,
+      "creditEntry": 72830,
+      "lastEncounterDungeon": 255,
+      "name": "Escaped from Arthas"
+    },
+    {
+      "encounterId": 844,
+      "creditType": 1,
+      "creditEntry": 72830,
+      "lastEncounterDungeon": 256,
+      "name": "Escaped from Arthas"
+    },
+    {
+      "encounterId": 845,
+      "creditType": 0,
+      "creditEntry": 36612,
+      "lastEncounterDungeon": 0,
+      "name": "Lord Marrowgar"
+    },
+    {
+      "encounterId": 846,
+      "creditType": 0,
+      "creditEntry": 36855,
+      "lastEncounterDungeon": 0,
+      "name": "Lady Deathwhisper"
+    },
+    {
+      "encounterId": 847,
+      "creditType": 1,
+      "creditEntry": 72959,
+      "lastEncounterDungeon": 0,
+      "name": "Icecrown Gunship Battle"
+    },
+    {
+      "encounterId": 848,
+      "creditType": 0,
+      "creditEntry": 37813,
+      "lastEncounterDungeon": 0,
+      "name": "Deathbringer Saurfang"
+    },
+    {
+      "encounterId": 849,
+      "creditType": 0,
+      "creditEntry": 36626,
+      "lastEncounterDungeon": 0,
+      "name": "Festergut"
+    },
+    {
+      "encounterId": 850,
+      "creditType": 0,
+      "creditEntry": 36627,
+      "lastEncounterDungeon": 0,
+      "name": "Rotface"
+    },
+    {
+      "encounterId": 851,
+      "creditType": 0,
+      "creditEntry": 36678,
+      "lastEncounterDungeon": 0,
+      "name": "Professor Putricide"
+    },
+    {
+      "encounterId": 852,
+      "creditType": 0,
+      "creditEntry": 37970,
+      "lastEncounterDungeon": 0,
+      "name": "Blood Council"
+    },
+    {
+      "encounterId": 854,
+      "creditType": 1,
+      "creditEntry": 72706,
+      "lastEncounterDungeon": 0,
+      "name": "Valithria Dreamwalker"
+    },
+    {
+      "encounterId": 855,
+      "creditType": 0,
+      "creditEntry": 36853,
+      "lastEncounterDungeon": 0,
+      "name": "Sindragosa"
+    },
+    {
+      "encounterId": 856,
+      "creditType": 0,
+      "creditEntry": 36597,
+      "lastEncounterDungeon": 279,
+      "name": "The Lich King"
+    },
+    {
+      "encounterId": 857,
+      "creditType": 0,
+      "creditEntry": 36612,
+      "lastEncounterDungeon": 0,
+      "name": "Lord Marrowgar"
+    },
+    {
+      "encounterId": 858,
+      "creditType": 0,
+      "creditEntry": 36855,
+      "lastEncounterDungeon": 0,
+      "name": "Lady Deathwhisper"
+    },
+    {
+      "encounterId": 859,
+      "creditType": 1,
+      "creditEntry": 72959,
+      "lastEncounterDungeon": 0,
+      "name": "Icecrown Gunship Battle"
+    },
+    {
+      "encounterId": 860,
+      "creditType": 0,
+      "creditEntry": 37813,
+      "lastEncounterDungeon": 0,
+      "name": "Deathbringer Saurfang"
+    },
+    {
+      "encounterId": 861,
+      "creditType": 0,
+      "creditEntry": 36626,
+      "lastEncounterDungeon": 0,
+      "name": "Festergut"
+    },
+    {
+      "encounterId": 862,
+      "creditType": 0,
+      "creditEntry": 36627,
+      "lastEncounterDungeon": 0,
+      "name": "Rotface"
+    },
+    {
+      "encounterId": 863,
+      "creditType": 0,
+      "creditEntry": 36678,
+      "lastEncounterDungeon": 0,
+      "name": "Professor Putricide"
+    },
+    {
+      "encounterId": 864,
+      "creditType": 0,
+      "creditEntry": 37970,
+      "lastEncounterDungeon": 0,
+      "name": "Blood Council"
+    },
+    {
+      "encounterId": 866,
+      "creditType": 1,
+      "creditEntry": 72706,
+      "lastEncounterDungeon": 0,
+      "name": "Valithria Dreamwalker"
+    },
+    {
+      "encounterId": 867,
+      "creditType": 0,
+      "creditEntry": 36853,
+      "lastEncounterDungeon": 0,
+      "name": "Sindragosa"
+    },
+    {
+      "encounterId": 868,
+      "creditType": 0,
+      "creditEntry": 36597,
+      "lastEncounterDungeon": 280,
+      "name": "The Lich King"
+    },
+    {
+      "encounterId": 883,
+      "creditType": 0,
+      "creditEntry": 4422,
+      "lastEncounterDungeon": 0,
+      "name": "Agathelos the Raging"
+    },
+    {
+      "encounterId": 885,
+      "creditType": 0,
+      "creditEntry": 38433,
+      "lastEncounterDungeon": 239,
+      "name": "Toravon the Ice Watcher"
+    },
+    {
+      "encounterId": 886,
+      "creditType": 0,
+      "creditEntry": 38433,
+      "lastEncounterDungeon": 240,
+      "name": "Toravon the Ice Watcher"
+    },
+    {
+      "encounterId": 887,
+      "creditType": 0,
+      "creditEntry": 39863,
+      "lastEncounterDungeon": 293,
+      "name": "Halion"
+    },
+    {
+      "encounterId": 888,
+      "creditType": 0,
+      "creditEntry": 39863,
+      "lastEncounterDungeon": 294,
+      "name": "Halion"
+    },
+    {
+      "encounterId": 889,
+      "creditType": 0,
+      "creditEntry": 39751,
+      "lastEncounterDungeon": 0,
+      "name": "Baltharus the Warborn"
+    },
+    {
+      "encounterId": 890,
+      "creditType": 0,
+      "creditEntry": 39751,
+      "lastEncounterDungeon": 0,
+      "name": "Baltharus the Warborn"
+    },
+    {
+      "encounterId": 891,
+      "creditType": 0,
+      "creditEntry": 39747,
+      "lastEncounterDungeon": 0,
+      "name": "Saviana Ragefire"
+    },
+    {
+      "encounterId": 892,
+      "creditType": 0,
+      "creditEntry": 39747,
+      "lastEncounterDungeon": 0,
+      "name": "Saviana Ragefire"
+    },
+    {
+      "encounterId": 893,
+      "creditType": 0,
+      "creditEntry": 39746,
+      "lastEncounterDungeon": 0,
+      "name": "General Zarithrian"
+    },
+    {
+      "encounterId": 894,
+      "creditType": 0,
+      "creditEntry": 39746,
+      "lastEncounterDungeon": 0,
+      "name": "General Zarithrian"
+    }
+  ],
+  "summary": {
+    "rowCount": 546,
+    "uniqueCreditEntries": 388,
+    "finalDungeonCredits": 104
+  },
+  "notes": [
+    "Base world encounters cover Classic/TBC/Wrath names and IDs; do not assume all are available on CR",
+    "Rows do not include map ID or explicit expansion; require verified map associations",
+    "Do not merge with pending CoA overrides without applying SQL ordering and delete rules",
+    "Some encounter IDs refer to raids and events, not only 5-player dungeons"
+  ]
+}

@@ -1,0 +1,365 @@
+spellId,classIds,classNames,candidateSpecIds,candidateSpecNames,evidenceCount,evidenceSources,status,currentClientVerified
+300070,28,Tinker,50,Mechanics,2,data/abilities/28-tinker.json,unresolved-archived-definition-and-tooltip,no
+704134,26,Starcaller,43,Moon Priest,2,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+704140,32,Runemaster,63,Riftblade,2,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+704160,18,Guardian,20,Inspiration,2,data/abilities/18-guardian.json,unresolved-archived-definition-and-tooltip,no
+800232,27,Sun Cleric,"46,48","Piety, Seraphim",2,data/abilities/27-sun-cleric.json,unresolved-archived-definition-and-tooltip,no
+800535,28,Tinker,50,Mechanics,2,data/abilities/28-tinker.json,unresolved-archived-definition-and-tooltip,no
+800720,32,Runemaster,61,Engravement,2,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+800721,32,Runemaster,61,Engravement,2,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+800747,32,Runemaster,61,Engravement,2,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+801605,13,Witch Doctor,4,Shadowhunting,2,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+801606,13,Witch Doctor,4,Shadowhunting,2,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+801671,13,Witch Doctor,"4,5","Shadowhunting, Voodoo",2,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+801810,28,Tinker,50,Mechanics,2,data/abilities/28-tinker.json,unresolved-archived-definition-and-tooltip,no
+802012,15,Witch Hunter,12,Inquisition,2,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+802992,19,Templar,23,Zealot,2,data/abilities/19-templar.json,unresolved-archived-definition-and-tooltip,no
+804352,17,Knight of Xoroth,17,Defiance,2,data/abilities/17-knight-of-xoroth.json,unresolved-archived-definition-and-tooltip,no
+806098,16,Stormbringer,"13,14","Wind, Maelstrom",2,data/abilities/16-stormbringer.json,unresolved-archived-definition-and-tooltip,no
+500017,13,Witch Doctor,"4,5","Shadowhunting, Voodoo",1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+500025,17,Knight of Xoroth,18,War,1,data/abilities/17-knight-of-xoroth.json,unresolved-archived-definition-and-tooltip,no
+500029,14,Felsworn,"8,9","Slayer, Tyrant",1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+500030,14,Felsworn,"7,9","Infernal, Tyrant",1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+500032,14,Felsworn,7,Infernal,1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+500037,14,Felsworn,"8,9","Slayer, Tyrant",1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+500088,15,Witch Hunter,11,Houndmaster,1,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+500122,20,Bloodmage,"26,27","Sanguine, Accursed",1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+500145,27,Sun Cleric,"46,48","Piety, Seraphim",1,data/abilities/27-sun-cleric.json,unresolved-archived-definition-and-tooltip,no
+500148,27,Sun Cleric,46,Piety,1,data/abilities/27-sun-cleric.json,unresolved-archived-definition-and-tooltip,no
+500155,18,Guardian,19,Gladiator,1,data/abilities/18-guardian.json,unresolved-archived-definition-and-tooltip,no
+500197,20,Bloodmage,26,Sanguine,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+500332,23,Necromancer,"34,35","Death, Animation",1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+500366,30,Reaper,57,Domination,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+500909,17,Knight of Xoroth,18,War,1,data/abilities/17-knight-of-xoroth.json,unresolved-archived-definition-and-tooltip,no
+500921,12,Barbarian,"1,2","Headhunting, Brutality",1,data/abilities/12-barbarian.json,unresolved-archived-definition-and-tooltip,no
+500922,16,Stormbringer,"14,15","Maelstrom, Lightning",1,data/abilities/16-stormbringer.json,unresolved-archived-definition-and-tooltip,no
+500942,31,Primalist,59,Wildwalker,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+500948,13,Witch Doctor,"4,5","Shadowhunting, Voodoo",1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+500949,13,Witch Doctor,5,Voodoo,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+500954,13,Witch Doctor,6,Brewing,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+501076,13,Witch Doctor,,,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+501077,13,Witch Doctor,,,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+501078,13,Witch Doctor,,,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+501079,13,Witch Doctor,,,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+501089,13,Witch Doctor,,,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+501090,13,Witch Doctor,,,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+501091,13,Witch Doctor,,,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+501092,13,Witch Doctor,,,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+501093,13,Witch Doctor,,,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+501094,13,Witch Doctor,,,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+501095,13,Witch Doctor,,,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+501264,14,Felsworn,,,1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+501265,14,Felsworn,,,1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+501266,14,Felsworn,,,1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+501267,14,Felsworn,,,1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+501268,14,Felsworn,,,1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+501269,14,Felsworn,,,1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+501278,14,Felsworn,,,1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+501279,14,Felsworn,,,1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+501280,14,Felsworn,,,1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+501374,15,Witch Hunter,,,1,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+501375,15,Witch Hunter,,,1,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+501376,15,Witch Hunter,,,1,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+501377,15,Witch Hunter,,,1,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+501378,15,Witch Hunter,,,1,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+501379,15,Witch Hunter,,,1,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+501381,15,Witch Hunter,,,1,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+501382,15,Witch Hunter,,,1,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+501412,16,Stormbringer,,,1,data/abilities/16-stormbringer.json,unresolved-archived-definition-and-tooltip,no
+501413,16,Stormbringer,,,1,data/abilities/16-stormbringer.json,unresolved-archived-definition-and-tooltip,no
+501414,16,Stormbringer,,,1,data/abilities/16-stormbringer.json,unresolved-archived-definition-and-tooltip,no
+501521,17,Knight of Xoroth,,,1,data/abilities/17-knight-of-xoroth.json,unresolved-archived-definition-and-tooltip,no
+501522,17,Knight of Xoroth,,,1,data/abilities/17-knight-of-xoroth.json,unresolved-archived-definition-and-tooltip,no
+501523,17,Knight of Xoroth,,,1,data/abilities/17-knight-of-xoroth.json,unresolved-archived-definition-and-tooltip,no
+501524,17,Knight of Xoroth,,,1,data/abilities/17-knight-of-xoroth.json,unresolved-archived-definition-and-tooltip,no
+501525,17,Knight of Xoroth,,,1,data/abilities/17-knight-of-xoroth.json,unresolved-archived-definition-and-tooltip,no
+501526,17,Knight of Xoroth,,,1,data/abilities/17-knight-of-xoroth.json,unresolved-archived-definition-and-tooltip,no
+501527,17,Knight of Xoroth,,,1,data/abilities/17-knight-of-xoroth.json,unresolved-archived-definition-and-tooltip,no
+501630,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501631,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501632,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501633,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501634,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501635,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501636,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501637,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501638,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501639,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501652,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501653,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501654,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501655,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501656,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501657,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501658,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501659,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501660,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501661,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501687,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501688,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501689,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501690,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501691,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501692,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501693,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501694,20,Bloodmage,,,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+501708,21,Ranger,,,1,data/abilities/21-ranger.json,unresolved-archived-definition-and-tooltip,no
+501709,21,Ranger,,,1,data/abilities/21-ranger.json,unresolved-archived-definition-and-tooltip,no
+501710,21,Ranger,,,1,data/abilities/21-ranger.json,unresolved-archived-definition-and-tooltip,no
+501711,21,Ranger,,,1,data/abilities/21-ranger.json,unresolved-archived-definition-and-tooltip,no
+501712,21,Ranger,,,1,data/abilities/21-ranger.json,unresolved-archived-definition-and-tooltip,no
+501713,21,Ranger,,,1,data/abilities/21-ranger.json,unresolved-archived-definition-and-tooltip,no
+501714,21,Ranger,,,1,data/abilities/21-ranger.json,unresolved-archived-definition-and-tooltip,no
+501862,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501863,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501864,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501865,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501873,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501874,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501875,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501876,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501877,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501878,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501879,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501889,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501893,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501894,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501895,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501896,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501897,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501898,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+501899,23,Necromancer,,,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+502091,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502092,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502093,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502094,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502095,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502096,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502097,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502098,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502099,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502100,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502101,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502102,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502103,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502104,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502105,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502106,24,Pyromancer,,,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+502302,26,Starcaller,,,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+502303,26,Starcaller,,,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+502479,27,Sun Cleric,,,1,data/abilities/27-sun-cleric.json,unresolved-archived-definition-and-tooltip,no
+502480,27,Sun Cleric,,,1,data/abilities/27-sun-cleric.json,unresolved-archived-definition-and-tooltip,no
+502481,27,Sun Cleric,,,1,data/abilities/27-sun-cleric.json,unresolved-archived-definition-and-tooltip,no
+502482,27,Sun Cleric,,,1,data/abilities/27-sun-cleric.json,unresolved-archived-definition-and-tooltip,no
+502483,27,Sun Cleric,,,1,data/abilities/27-sun-cleric.json,unresolved-archived-definition-and-tooltip,no
+502484,27,Sun Cleric,,,1,data/abilities/27-sun-cleric.json,unresolved-archived-definition-and-tooltip,no
+502485,27,Sun Cleric,,,1,data/abilities/27-sun-cleric.json,unresolved-archived-definition-and-tooltip,no
+502507,28,Tinker,,,1,data/abilities/28-tinker.json,unresolved-archived-definition-and-tooltip,no
+502508,28,Tinker,,,1,data/abilities/28-tinker.json,unresolved-archived-definition-and-tooltip,no
+502509,28,Tinker,,,1,data/abilities/28-tinker.json,unresolved-archived-definition-and-tooltip,no
+502603,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502604,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502605,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502606,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502607,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502608,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502609,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502610,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502611,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502612,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502613,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502614,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502615,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502616,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502617,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502618,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502700,30,Reaper,,,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+502701,30,Reaper,,,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+502702,30,Reaper,,,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+502703,30,Reaper,,,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+502704,30,Reaper,,,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+502705,30,Reaper,,,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+502706,30,Reaper,,,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+502707,30,Reaper,,,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+502734,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502735,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502736,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502737,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502738,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502739,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502740,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502784,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502785,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502786,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502787,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502788,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502789,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502790,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502791,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502792,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502793,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502794,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502795,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502796,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502797,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502798,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502799,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502800,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502801,31,Primalist,,,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+502861,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502862,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502863,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502864,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502865,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502866,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502867,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502868,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502869,32,Runemaster,,,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+502889,29,Venomancer,,,1,data/abilities/29-venomancer.json,unresolved-archived-definition-and-tooltip,no
+503001,26,Starcaller,,,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+503002,26,Starcaller,,,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+503003,26,Starcaller,,,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+503004,26,Starcaller,,,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+503005,26,Starcaller,,,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+503006,26,Starcaller,,,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+503007,26,Starcaller,,,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+503008,26,Starcaller,,,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+503009,26,Starcaller,,,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+503010,26,Starcaller,,,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+503011,26,Starcaller,,,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+503114,18,Guardian,,,1,data/abilities/18-guardian.json,unresolved-archived-definition-and-tooltip,no
+503115,18,Guardian,,,1,data/abilities/18-guardian.json,unresolved-archived-definition-and-tooltip,no
+503116,18,Guardian,,,1,data/abilities/18-guardian.json,unresolved-archived-definition-and-tooltip,no
+503117,18,Guardian,,,1,data/abilities/18-guardian.json,unresolved-archived-definition-and-tooltip,no
+503118,18,Guardian,,,1,data/abilities/18-guardian.json,unresolved-archived-definition-and-tooltip,no
+503290,30,Reaper,,,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+503291,30,Reaper,,,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+503292,30,Reaper,,,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+503293,30,Reaper,,,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+503294,30,Reaper,,,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+503415,12,Barbarian,,,1,data/abilities/12-barbarian.json,unresolved-archived-definition-and-tooltip,no
+503416,12,Barbarian,,,1,data/abilities/12-barbarian.json,unresolved-archived-definition-and-tooltip,no
+503417,12,Barbarian,,,1,data/abilities/12-barbarian.json,unresolved-archived-definition-and-tooltip,no
+503418,12,Barbarian,,,1,data/abilities/12-barbarian.json,unresolved-archived-definition-and-tooltip,no
+503419,12,Barbarian,,,1,data/abilities/12-barbarian.json,unresolved-archived-definition-and-tooltip,no
+503420,12,Barbarian,,,1,data/abilities/12-barbarian.json,unresolved-archived-definition-and-tooltip,no
+503421,12,Barbarian,,,1,data/abilities/12-barbarian.json,unresolved-archived-definition-and-tooltip,no
+503422,12,Barbarian,,,1,data/abilities/12-barbarian.json,unresolved-archived-definition-and-tooltip,no
+704095,21,Ranger,28,Archery,1,data/abilities/21-ranger.json,unresolved-archived-definition-and-tooltip,no
+704376,14,Felsworn,7,Infernal,1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+704507,13,Witch Doctor,5,Voodoo,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+704572,19,Templar,23,Zealot,1,data/abilities/19-templar.json,unresolved-archived-definition-and-tooltip,no
+800053,22,Chronomancer,32,Infinite,1,data/abilities/22-chronomancer.json,unresolved-archived-definition-and-tooltip,no
+800264,21,Ranger,30,Brigand,1,data/abilities/21-ranger.json,unresolved-archived-definition-and-tooltip,no
+800268,21,Ranger,29,Farstrider,1,data/abilities/21-ranger.json,unresolved-archived-definition-and-tooltip,no
+800271,21,Ranger,29,Farstrider,1,data/abilities/21-ranger.json,unresolved-archived-definition-and-tooltip,no
+800312,18,Guardian,19,Gladiator,1,data/abilities/18-guardian.json,unresolved-archived-definition-and-tooltip,no
+800314,18,Guardian,21,Vanguard,1,data/abilities/18-guardian.json,unresolved-archived-definition-and-tooltip,no
+800369,25,Cultist,40,Heretic,1,data/abilities/25-cultist.json,unresolved-archived-definition-and-tooltip,no
+800377,26,Starcaller,43,Moon Priest,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+800383,12,Barbarian,1,Headhunting,1,data/abilities/12-barbarian.json,unresolved-archived-definition-and-tooltip,no
+800433,25,Cultist,41,Corruption,1,data/abilities/25-cultist.json,unresolved-archived-definition-and-tooltip,no
+800445,25,Cultist,41,Corruption,1,data/abilities/25-cultist.json,unresolved-archived-definition-and-tooltip,no
+800455,27,Sun Cleric,48,Seraphim,1,data/abilities/27-sun-cleric.json,unresolved-archived-definition-and-tooltip,no
+800570,28,Tinker,50,Mechanics,1,data/abilities/28-tinker.json,unresolved-archived-definition-and-tooltip,no
+800582,28,Tinker,50,Mechanics,1,data/abilities/28-tinker.json,unresolved-archived-definition-and-tooltip,no
+800625,27,Sun Cleric,48,Seraphim,1,data/abilities/27-sun-cleric.json,unresolved-archived-definition-and-tooltip,no
+800713,32,Runemaster,61,Engravement,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+800718,32,Runemaster,"61,62","Engravement, Glyphic",1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+800725,32,Runemaster,61,Engravement,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+800745,32,Runemaster,61,Engravement,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+800746,32,Runemaster,61,Engravement,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+800748,32,Runemaster,62,Glyphic,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+800777,20,Bloodmage,99,Eternal,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+800853,15,Witch Hunter,10,Boltslinger,1,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+800883,29,Venomancer,"52,53","Fortitude, Stalking",1,data/abilities/29-venomancer.json,unresolved-archived-definition-and-tooltip,no
+800885,29,Venomancer,53,Stalking,1,data/abilities/29-venomancer.json,unresolved-archived-definition-and-tooltip,no
+800888,29,Venomancer,53,Stalking,1,data/abilities/29-venomancer.json,unresolved-archived-definition-and-tooltip,no
+800896,29,Venomancer,"52,53","Fortitude, Stalking",1,data/abilities/29-venomancer.json,unresolved-archived-definition-and-tooltip,no
+800897,29,Venomancer,54,Rot,1,data/abilities/29-venomancer.json,unresolved-archived-definition-and-tooltip,no
+800900,29,Venomancer,54,Rot,1,data/abilities/29-venomancer.json,unresolved-archived-definition-and-tooltip,no
+801239,14,Felsworn,9,Tyrant,1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+801267,22,Chronomancer,32,Infinite,1,data/abilities/22-chronomancer.json,unresolved-archived-definition-and-tooltip,no
+801296,22,Chronomancer,32,Infinite,1,data/abilities/22-chronomancer.json,unresolved-archived-definition-and-tooltip,no
+801298,22,Chronomancer,31,Time,1,data/abilities/22-chronomancer.json,unresolved-archived-definition-and-tooltip,no
+801321,30,Reaper,"55,57","Soul, Domination",1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+801329,30,Reaper,57,Domination,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+801330,30,Reaper,55,Soul,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+801408,19,Templar,24,Crusader,1,data/abilities/19-templar.json,unresolved-archived-definition-and-tooltip,no
+801587,13,Witch Doctor,4,Shadowhunting,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+801647,28,Tinker,50,Mechanics,1,data/abilities/28-tinker.json,unresolved-archived-definition-and-tooltip,no
+801648,28,Tinker,"49,50","Demolition, Mechanics",1,data/abilities/28-tinker.json,unresolved-archived-definition-and-tooltip,no
+801651,28,Tinker,"49,50","Demolition, Mechanics",1,data/abilities/28-tinker.json,unresolved-archived-definition-and-tooltip,no
+801673,13,Witch Doctor,4,Shadowhunting,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+801675,13,Witch Doctor,4,Shadowhunting,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+801681,13,Witch Doctor,4,Shadowhunting,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+801682,13,Witch Doctor,4,Shadowhunting,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+801684,13,Witch Doctor,4,Shadowhunting,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+801694,13,Witch Doctor,5,Voodoo,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+801715,28,Tinker,49,Demolition,1,data/abilities/28-tinker.json,unresolved-archived-definition-and-tooltip,no
+801750,23,Necromancer,36,Rime,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+801764,12,Barbarian,"1,2","Headhunting, Brutality",1,data/abilities/12-barbarian.json,unresolved-archived-definition-and-tooltip,no
+801819,28,Tinker,50,Mechanics,1,data/abilities/28-tinker.json,unresolved-archived-definition-and-tooltip,no
+801822,28,Tinker,49,Demolition,1,data/abilities/28-tinker.json,unresolved-archived-definition-and-tooltip,no
+801845,16,Stormbringer,"13,14","Wind, Maelstrom",1,data/abilities/16-stormbringer.json,unresolved-archived-definition-and-tooltip,no
+801846,16,Stormbringer,13,Wind,1,data/abilities/16-stormbringer.json,unresolved-archived-definition-and-tooltip,no
+801896,14,Felsworn,9,Tyrant,1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+801937,24,Pyromancer,39,Draconic,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+801944,23,Necromancer,34,Death,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+801965,25,Cultist,"40,41","Heretic, Corruption",1,data/abilities/25-cultist.json,unresolved-archived-definition-and-tooltip,no
+801993,26,Starcaller,"44,100","Sentinel, Moon Guard",1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+801995,26,Starcaller,100,Moon Guard,1,data/abilities/26-starcaller.json,unresolved-archived-definition-and-tooltip,no
+802010,15,Witch Hunter,"10,12","Boltslinger, Inquisition",1,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+802077,20,Bloodmage,26,Sanguine,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+802116,24,Pyromancer,39,Draconic,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+802123,23,Necromancer,"34,35","Death, Animation",1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+802127,23,Necromancer,35,Animation,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+802288,18,Guardian,19,Gladiator,1,data/abilities/18-guardian.json,unresolved-archived-definition-and-tooltip,no
+802869,20,Bloodmage,27,Accursed,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+802875,20,Bloodmage,26,Sanguine,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+803691,18,Guardian,20,Inspiration,1,data/abilities/18-guardian.json,unresolved-archived-definition-and-tooltip,no
+803944,31,Primalist,95,Geomancy,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+803952,24,Pyromancer,38,Incineration,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+803982,29,Venomancer,54,Rot,1,data/abilities/29-venomancer.json,unresolved-archived-definition-and-tooltip,no
+804006,17,Knight of Xoroth,"16,17","Hellfire, Defiance",1,data/abilities/17-knight-of-xoroth.json,unresolved-archived-definition-and-tooltip,no
+804167,17,Knight of Xoroth,16,Hellfire,1,data/abilities/17-knight-of-xoroth.json,unresolved-archived-definition-and-tooltip,no
+804180,31,Primalist,59,Wildwalker,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+804229,25,Cultist,40,Heretic,1,data/abilities/25-cultist.json,unresolved-archived-definition-and-tooltip,no
+804255,27,Sun Cleric,"48,98","Seraphim, Blessings",1,data/abilities/27-sun-cleric.json,unresolved-archived-definition-and-tooltip,no
+804289,30,Reaper,57,Domination,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+804291,14,Felsworn,9,Tyrant,1,data/abilities/14-felsworn.json,unresolved-archived-definition-and-tooltip,no
+804504,22,Chronomancer,"31,33","Time, Artificer",1,data/abilities/22-chronomancer.json,unresolved-archived-definition-and-tooltip,no
+804549,29,Venomancer,"52,54","Fortitude, Rot",1,data/abilities/29-venomancer.json,unresolved-archived-definition-and-tooltip,no
+804554,32,Runemaster,"61,63","Engravement, Riftblade",1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+804555,32,Runemaster,"61,63","Engravement, Riftblade",1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+804556,32,Runemaster,"61,63","Engravement, Riftblade",1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+804558,23,Necromancer,34,Death,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+804560,32,Runemaster,"61,63","Engravement, Riftblade",1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+804562,32,Runemaster,"61,63","Engravement, Riftblade",1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+804601,20,Bloodmage,27,Accursed,1,data/abilities/20-bloodmage.json,unresolved-archived-definition-and-tooltip,no
+805497,24,Pyromancer,37,Flameweaving,1,data/abilities/24-pyromancer.json,unresolved-archived-definition-and-tooltip,no
+805623,32,Runemaster,61,Engravement,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+805630,27,Sun Cleric,48,Seraphim,1,data/abilities/27-sun-cleric.json,unresolved-archived-definition-and-tooltip,no
+805645,31,Primalist,95,Geomancy,1,data/abilities/31-primalist.json,unresolved-archived-definition-and-tooltip,no
+805665,17,Knight of Xoroth,16,Hellfire,1,data/abilities/17-knight-of-xoroth.json,unresolved-archived-definition-and-tooltip,no
+805713,30,Reaper,57,Domination,1,data/abilities/30-reaper.json,unresolved-archived-definition-and-tooltip,no
+805728,32,Runemaster,62,Glyphic,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+805733,32,Runemaster,61,Engravement,1,data/abilities/32-runemaster.json,unresolved-archived-definition-and-tooltip,no
+805765,15,Witch Hunter,10,Boltslinger,1,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+805772,15,Witch Hunter,10,Boltslinger,1,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+805781,12,Barbarian,3,Ancestry,1,data/abilities/12-barbarian.json,unresolved-archived-definition-and-tooltip,no
+805903,15,Witch Hunter,10,Boltslinger,1,data/abilities/15-witch-hunter.json,unresolved-archived-definition-and-tooltip,no
+806107,25,Cultist,40,Heretic,1,data/abilities/25-cultist.json,unresolved-archived-definition-and-tooltip,no
+806127,23,Necromancer,34,Death,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+806230,25,Cultist,42,Godblade,1,data/abilities/25-cultist.json,unresolved-archived-definition-and-tooltip,no
+806243,16,Stormbringer,13,Wind,1,data/abilities/16-stormbringer.json,unresolved-archived-definition-and-tooltip,no
+806280,13,Witch Doctor,6,Brewing,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+806284,13,Witch Doctor,5,Voodoo,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+806287,13,Witch Doctor,4,Shadowhunting,1,data/abilities/13-witch-doctor.json,unresolved-archived-definition-and-tooltip,no
+806317,22,Chronomancer,32,Infinite,1,data/abilities/22-chronomancer.json,unresolved-archived-definition-and-tooltip,no
+806318,23,Necromancer,34,Death,1,data/abilities/23-necromancer.json,unresolved-archived-definition-and-tooltip,no
+806326,22,Chronomancer,32,Infinite,1,data/abilities/22-chronomancer.json,unresolved-archived-definition-and-tooltip,no
+806362,21,Ranger,29,Farstrider,1,data/abilities/21-ranger.json,unresolved-archived-definition-and-tooltip,no
+806367,21,Ranger,29,Farstrider,1,data/abilities/21-ranger.json,unresolved-archived-definition-and-tooltip,no
+806519,19,Templar,"23,24","Zealot, Crusader",1,data/abilities/19-templar.json,unresolved-archived-definition-and-tooltip,no
+806601,29,Venomancer,53,Stalking,1,data/abilities/29-venomancer.json,unresolved-archived-definition-and-tooltip,no

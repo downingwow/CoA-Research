@@ -247,14 +247,19 @@
     "The source describes 19 original dungeon maps, not all TBC/Wrath dungeons or raids",
     "Loot variant allowlist excludes raids in this runtime implementation",
     "Health source export contains 1747 parsed rows, compared with 1756 documented later; investigate subsequent migrations and parser coverage.",
-    "Encounter-to-map crosswalk joins NPC IDs to health map data; it is inferred and 41 credit rows remain unassigned."
+    "Encounter-to-map crosswalk joins NPC IDs to health map data; it is inferred and 41 credit rows remain unassigned.",
+    "41 unmatched encounters have provisional name-based map assignments; these require spawn-map verification.",
+    "Use merged boss loot v3; v1/v2 were superseded due to incomplete final-tuple parsing."
   ],
   "researchDataSources": {
     "health": "research/dungeons/vanilla-health-heroic-mythic-full-source-2026-10-30.json",
     "lootVariants": "research/loot/vanilla-dungeon-gear-variant-families-2026-10-30.json",
     "bossLoot": "research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json",
     "encounters": "research/encounters/vanilla-and-raid-encounter-sql-source-index-2026-10-30.json",
-    "bossEncounterLootCrosswalk": "research/dungeons/vanilla-19-map-boss-encounter-loot-crosswalk-2026-10-30.json"
+    "bossEncounterLootCrosswalk": "research/dungeons/vanilla-19-map-boss-encounter-loot-crosswalk-2026-10-30.json",
+    "provisionalEncounterReconciliation": "research/dungeons/vanilla-41-unmatched-encounter-provisional-map-reconciliation-2026-10-30.json",
+    "mergedBossLoot": "research/loot/vanilla-heroic-mythic-boss-loot-merged-v3-2026-10-30.json",
+    "raidEncounterRegistry": "research/raids/raid-encounters-by-map-and-difficulty-2026-10-30.json"
   },
   "importedCounts": {
     "healthSourceRows": 1747,
@@ -263,6 +268,10 @@
     "encounterSourceRowsAcrossThreeFiles": 1036,
     "encounterCreditRowsParsed": 344,
     "encounterCreditRowsMatchedByHealthNpc": 303,
-    "encounterCreditRowsUnassigned": 41
+    "encounterCreditRowsUnassigned": 41,
+    "mergedBossLootRows": 3884,
+    "mergedBossLootTemplates": 414,
+    "raidEncounterRows": 501,
+    "raidMapCount": 22
   }
 }

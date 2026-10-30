@@ -1,0 +1,5010 @@
+{
+  "schema": "coa-research.vanilla-dungeon-loot-variants-v1",
+  "date": "2026-10-30",
+  "source": "data/sql/updates/pending_db_world/rev_20260926_00_vanilla_dungeon_difficulties.sql",
+  "sourceStatus": "pending SQL, runtime validates template classes and slots",
+  "count": 999,
+  "variants": [
+    {
+      "base": 720,
+      "heroic": 1550720,
+      "mythic": 1650720
+    },
+    {
+      "base": 754,
+      "heroic": 1550754,
+      "mythic": 1650754
+    },
+    {
+      "base": 791,
+      "heroic": 1550791,
+      "mythic": 1650791
+    },
+    {
+      "base": 871,
+      "heroic": 1550871,
+      "mythic": 1650871
+    },
+    {
+      "base": 872,
+      "heroic": 1550872,
+      "mythic": 1650872
+    },
+    {
+      "base": 888,
+      "heroic": 1550888,
+      "mythic": 1650888
+    },
+    {
+      "base": 940,
+      "heroic": 1550940,
+      "mythic": 1650940
+    },
+    {
+      "base": 943,
+      "heroic": 1550943,
+      "mythic": 1650943
+    },
+    {
+      "base": 1155,
+      "heroic": 1551155,
+      "mythic": 1651155
+    },
+    {
+      "base": 1156,
+      "heroic": 1551156,
+      "mythic": 1651156
+    },
+    {
+      "base": 1169,
+      "heroic": 1551169,
+      "mythic": 1651169
+    },
+    {
+      "base": 1203,
+      "heroic": 1551203,
+      "mythic": 0
+    },
+    {
+      "base": 1292,
+      "heroic": 1551292,
+      "mythic": 1651292
+    },
+    {
+      "base": 1447,
+      "heroic": 1551447,
+      "mythic": 1651447
+    },
+    {
+      "base": 1454,
+      "heroic": 1551454,
+      "mythic": 1651454
+    },
+    {
+      "base": 1481,
+      "heroic": 1551481,
+      "mythic": 1651481
+    },
+    {
+      "base": 1486,
+      "heroic": 1551486,
+      "mythic": 1651486
+    },
+    {
+      "base": 1488,
+      "heroic": 1551488,
+      "mythic": 1651488
+    },
+    {
+      "base": 1491,
+      "heroic": 1551491,
+      "mythic": 1651491
+    },
+    {
+      "base": 1713,
+      "heroic": 1551713,
+      "mythic": 1651713
+    },
+    {
+      "base": 1715,
+      "heroic": 1551715,
+      "mythic": 1651715
+    },
+    {
+      "base": 1717,
+      "heroic": 1551717,
+      "mythic": 1651717
+    },
+    {
+      "base": 1720,
+      "heroic": 1551720,
+      "mythic": 1651720
+    },
+    {
+      "base": 1727,
+      "heroic": 1551727,
+      "mythic": 1651727
+    },
+    {
+      "base": 1937,
+      "heroic": 1551937,
+      "mythic": 1651937
+    },
+    {
+      "base": 1976,
+      "heroic": 1551976,
+      "mythic": 1651976
+    },
+    {
+      "base": 1981,
+      "heroic": 1551981,
+      "mythic": 1651981
+    },
+    {
+      "base": 1982,
+      "heroic": 1551982,
+      "mythic": 1651982
+    },
+    {
+      "base": 2011,
+      "heroic": 1552011,
+      "mythic": 1652011
+    },
+    {
+      "base": 2040,
+      "heroic": 1552040,
+      "mythic": 1652040
+    },
+    {
+      "base": 2098,
+      "heroic": 1552098,
+      "mythic": 1652098
+    },
+    {
+      "base": 2100,
+      "heroic": 1552100,
+      "mythic": 1652100
+    },
+    {
+      "base": 2164,
+      "heroic": 1552164,
+      "mythic": 1652164
+    },
+    {
+      "base": 2169,
+      "heroic": 1552169,
+      "mythic": 1652169
+    },
+    {
+      "base": 2264,
+      "heroic": 1552264,
+      "mythic": 1652264
+    },
+    {
+      "base": 2271,
+      "heroic": 1552271,
+      "mythic": 1652271
+    },
+    {
+      "base": 2278,
+      "heroic": 1552278,
+      "mythic": 1652278
+    },
+    {
+      "base": 2280,
+      "heroic": 1552280,
+      "mythic": 1652280
+    },
+    {
+      "base": 2291,
+      "heroic": 1552291,
+      "mythic": 1652291
+    },
+    {
+      "base": 2299,
+      "heroic": 1552299,
+      "mythic": 1652299
+    },
+    {
+      "base": 2721,
+      "heroic": 1552721,
+      "mythic": 1652721
+    },
+    {
+      "base": 2800,
+      "heroic": 1552800,
+      "mythic": 1652800
+    },
+    {
+      "base": 2815,
+      "heroic": 1552815,
+      "mythic": 1652815
+    },
+    {
+      "base": 2816,
+      "heroic": 1552816,
+      "mythic": 1652816
+    },
+    {
+      "base": 2877,
+      "heroic": 1552877,
+      "mythic": 1652877
+    },
+    {
+      "base": 2878,
+      "heroic": 1552878,
+      "mythic": 1652878
+    },
+    {
+      "base": 2912,
+      "heroic": 1552912,
+      "mythic": 1652912
+    },
+    {
+      "base": 2941,
+      "heroic": 1552941,
+      "mythic": 1652941
+    },
+    {
+      "base": 2942,
+      "heroic": 1552942,
+      "mythic": 1652942
+    },
+    {
+      "base": 3020,
+      "heroic": 1553020,
+      "mythic": 1653020
+    },
+    {
+      "base": 3078,
+      "heroic": 1553078,
+      "mythic": 1653078
+    },
+    {
+      "base": 3191,
+      "heroic": 1553191,
+      "mythic": 1653191
+    },
+    {
+      "base": 3203,
+      "heroic": 1553203,
+      "mythic": 1653203
+    },
+    {
+      "base": 3228,
+      "heroic": 1553228,
+      "mythic": 1653228
+    },
+    {
+      "base": 3230,
+      "heroic": 1553230,
+      "mythic": 1653230
+    },
+    {
+      "base": 3413,
+      "heroic": 1553413,
+      "mythic": 1653413
+    },
+    {
+      "base": 3414,
+      "heroic": 1553414,
+      "mythic": 1653414
+    },
+    {
+      "base": 3415,
+      "heroic": 1553415,
+      "mythic": 1653415
+    },
+    {
+      "base": 3416,
+      "heroic": 1553416,
+      "mythic": 1653416
+    },
+    {
+      "base": 3417,
+      "heroic": 1553417,
+      "mythic": 1653417
+    },
+    {
+      "base": 3748,
+      "heroic": 1553748,
+      "mythic": 1653748
+    },
+    {
+      "base": 4090,
+      "heroic": 1554090,
+      "mythic": 1654090
+    },
+    {
+      "base": 4091,
+      "heroic": 1554091,
+      "mythic": 1654091
+    },
+    {
+      "base": 4438,
+      "heroic": 1554438,
+      "mythic": 1654438
+    },
+    {
+      "base": 5187,
+      "heroic": 1555187,
+      "mythic": 1655187
+    },
+    {
+      "base": 5191,
+      "heroic": 1555191,
+      "mythic": 1655191
+    },
+    {
+      "base": 5192,
+      "heroic": 1555192,
+      "mythic": 1655192
+    },
+    {
+      "base": 5193,
+      "heroic": 1555193,
+      "mythic": 1655193
+    },
+    {
+      "base": 5194,
+      "heroic": 1555194,
+      "mythic": 1655194
+    },
+    {
+      "base": 5195,
+      "heroic": 1555195,
+      "mythic": 1655195
+    },
+    {
+      "base": 5196,
+      "heroic": 1555196,
+      "mythic": 1655196
+    },
+    {
+      "base": 5197,
+      "heroic": 1555197,
+      "mythic": 1655197
+    },
+    {
+      "base": 5198,
+      "heroic": 1555198,
+      "mythic": 1655198
+    },
+    {
+      "base": 5199,
+      "heroic": 1555199,
+      "mythic": 1655199
+    },
+    {
+      "base": 5200,
+      "heroic": 1555200,
+      "mythic": 1655200
+    },
+    {
+      "base": 5201,
+      "heroic": 1555201,
+      "mythic": 1655201
+    },
+    {
+      "base": 5202,
+      "heroic": 1555202,
+      "mythic": 1655202
+    },
+    {
+      "base": 5243,
+      "heroic": 1555243,
+      "mythic": 1655243
+    },
+    {
+      "base": 5254,
+      "heroic": 1555254,
+      "mythic": 1655254
+    },
+    {
+      "base": 5404,
+      "heroic": 1555404,
+      "mythic": 1655404
+    },
+    {
+      "base": 5443,
+      "heroic": 1555443,
+      "mythic": 1655443
+    },
+    {
+      "base": 5444,
+      "heroic": 1555444,
+      "mythic": 1655444
+    },
+    {
+      "base": 5616,
+      "heroic": 1555616,
+      "mythic": 1655616
+    },
+    {
+      "base": 5970,
+      "heroic": 1555970,
+      "mythic": 1655970
+    },
+    {
+      "base": 6220,
+      "heroic": 1556220,
+      "mythic": 1656220
+    },
+    {
+      "base": 6226,
+      "heroic": 1556226,
+      "mythic": 1656226
+    },
+    {
+      "base": 6314,
+      "heroic": 1556314,
+      "mythic": 1656314
+    },
+    {
+      "base": 6318,
+      "heroic": 1556318,
+      "mythic": 1656318
+    },
+    {
+      "base": 6319,
+      "heroic": 1556319,
+      "mythic": 1656319
+    },
+    {
+      "base": 6320,
+      "heroic": 1556320,
+      "mythic": 1656320
+    },
+    {
+      "base": 6321,
+      "heroic": 1556321,
+      "mythic": 1656321
+    },
+    {
+      "base": 6323,
+      "heroic": 1556323,
+      "mythic": 1656323
+    },
+    {
+      "base": 6324,
+      "heroic": 1556324,
+      "mythic": 1656324
+    },
+    {
+      "base": 6340,
+      "heroic": 1556340,
+      "mythic": 1656340
+    },
+    {
+      "base": 6392,
+      "heroic": 1556392,
+      "mythic": 1656392
+    },
+    {
+      "base": 6440,
+      "heroic": 0,
+      "mythic": 1656440
+    },
+    {
+      "base": 6447,
+      "heroic": 1556447,
+      "mythic": 1656447
+    },
+    {
+      "base": 6448,
+      "heroic": 1556448,
+      "mythic": 1656448
+    },
+    {
+      "base": 6449,
+      "heroic": 1556449,
+      "mythic": 1656449
+    },
+    {
+      "base": 6459,
+      "heroic": 1556459,
+      "mythic": 1656459
+    },
+    {
+      "base": 6460,
+      "heroic": 1556460,
+      "mythic": 1656460
+    },
+    {
+      "base": 6461,
+      "heroic": 1556461,
+      "mythic": 1656461
+    },
+    {
+      "base": 6463,
+      "heroic": 1556463,
+      "mythic": 1656463
+    },
+    {
+      "base": 6465,
+      "heroic": 1556465,
+      "mythic": 1656465
+    },
+    {
+      "base": 6469,
+      "heroic": 1556469,
+      "mythic": 1656469
+    },
+    {
+      "base": 6472,
+      "heroic": 1556472,
+      "mythic": 1656472
+    },
+    {
+      "base": 6473,
+      "heroic": 1556473,
+      "mythic": 1656473
+    },
+    {
+      "base": 6627,
+      "heroic": 1556627,
+      "mythic": 1656627
+    },
+    {
+      "base": 6629,
+      "heroic": 1556629,
+      "mythic": 1656629
+    },
+    {
+      "base": 6630,
+      "heroic": 1556630,
+      "mythic": 1656630
+    },
+    {
+      "base": 6631,
+      "heroic": 1556631,
+      "mythic": 1656631
+    },
+    {
+      "base": 6632,
+      "heroic": 1556632,
+      "mythic": 1656632
+    },
+    {
+      "base": 6633,
+      "heroic": 1556633,
+      "mythic": 1656633
+    },
+    {
+      "base": 6641,
+      "heroic": 1556641,
+      "mythic": 1656641
+    },
+    {
+      "base": 6642,
+      "heroic": 1556642,
+      "mythic": 1656642
+    },
+    {
+      "base": 6681,
+      "heroic": 1556681,
+      "mythic": 1656681
+    },
+    {
+      "base": 6682,
+      "heroic": 1556682,
+      "mythic": 1656682
+    },
+    {
+      "base": 6685,
+      "heroic": 1556685,
+      "mythic": 1656685
+    },
+    {
+      "base": 6686,
+      "heroic": 1556686,
+      "mythic": 1656686
+    },
+    {
+      "base": 6687,
+      "heroic": 1556687,
+      "mythic": 1656687
+    },
+    {
+      "base": 6688,
+      "heroic": 1556688,
+      "mythic": 1656688
+    },
+    {
+      "base": 6689,
+      "heroic": 1556689,
+      "mythic": 1656689
+    },
+    {
+      "base": 6690,
+      "heroic": 1556690,
+      "mythic": 1656690
+    },
+    {
+      "base": 6691,
+      "heroic": 1556691,
+      "mythic": 1656691
+    },
+    {
+      "base": 6692,
+      "heroic": 1556692,
+      "mythic": 1656692
+    },
+    {
+      "base": 6693,
+      "heroic": 1556693,
+      "mythic": 1656693
+    },
+    {
+      "base": 6694,
+      "heroic": 1556694,
+      "mythic": 1656694
+    },
+    {
+      "base": 6695,
+      "heroic": 1556695,
+      "mythic": 1656695
+    },
+    {
+      "base": 6696,
+      "heroic": 1556696,
+      "mythic": 1656696
+    },
+    {
+      "base": 6697,
+      "heroic": 1556697,
+      "mythic": 1656697
+    },
+    {
+      "base": 6901,
+      "heroic": 1556901,
+      "mythic": 1656901
+    },
+    {
+      "base": 6902,
+      "heroic": 1556902,
+      "mythic": 1656902
+    },
+    {
+      "base": 6903,
+      "heroic": 1556903,
+      "mythic": 1656903
+    },
+    {
+      "base": 6904,
+      "heroic": 1556904,
+      "mythic": 1656904
+    },
+    {
+      "base": 6905,
+      "heroic": 1556905,
+      "mythic": 1656905
+    },
+    {
+      "base": 6906,
+      "heroic": 1556906,
+      "mythic": 1656906
+    },
+    {
+      "base": 6907,
+      "heroic": 1556907,
+      "mythic": 1656907
+    },
+    {
+      "base": 6908,
+      "heroic": 1556908,
+      "mythic": 1656908
+    },
+    {
+      "base": 6909,
+      "heroic": 1556909,
+      "mythic": 1656909
+    },
+    {
+      "base": 6910,
+      "heroic": 1556910,
+      "mythic": 1656910
+    },
+    {
+      "base": 6911,
+      "heroic": 1556911,
+      "mythic": 1656911
+    },
+    {
+      "base": 7230,
+      "heroic": 1557230,
+      "mythic": 1657230
+    },
+    {
+      "base": 7682,
+      "heroic": 1557682,
+      "mythic": 1657682
+    },
+    {
+      "base": 7683,
+      "heroic": 1557683,
+      "mythic": 1657683
+    },
+    {
+      "base": 7684,
+      "heroic": 1557684,
+      "mythic": 1657684
+    },
+    {
+      "base": 7685,
+      "heroic": 1557685,
+      "mythic": 1657685
+    },
+    {
+      "base": 7686,
+      "heroic": 1557686,
+      "mythic": 1657686
+    },
+    {
+      "base": 7687,
+      "heroic": 1557687,
+      "mythic": 1657687
+    },
+    {
+      "base": 7688,
+      "heroic": 1557688,
+      "mythic": 1657688
+    },
+    {
+      "base": 7689,
+      "heroic": 1557689,
+      "mythic": 1657689
+    },
+    {
+      "base": 7690,
+      "heroic": 1557690,
+      "mythic": 1657690
+    },
+    {
+      "base": 7691,
+      "heroic": 1557691,
+      "mythic": 1657691
+    },
+    {
+      "base": 7708,
+      "heroic": 1557708,
+      "mythic": 1657708
+    },
+    {
+      "base": 7709,
+      "heroic": 1557709,
+      "mythic": 1657709
+    },
+    {
+      "base": 7710,
+      "heroic": 1557710,
+      "mythic": 1657710
+    },
+    {
+      "base": 7711,
+      "heroic": 1557711,
+      "mythic": 1657711
+    },
+    {
+      "base": 7712,
+      "heroic": 1557712,
+      "mythic": 1657712
+    },
+    {
+      "base": 7713,
+      "heroic": 1557713,
+      "mythic": 1657713
+    },
+    {
+      "base": 7714,
+      "heroic": 1557714,
+      "mythic": 1657714
+    },
+    {
+      "base": 7717,
+      "heroic": 1557717,
+      "mythic": 1657717
+    },
+    {
+      "base": 7718,
+      "heroic": 1557718,
+      "mythic": 1657718
+    },
+    {
+      "base": 7719,
+      "heroic": 1557719,
+      "mythic": 1657719
+    },
+    {
+      "base": 7720,
+      "heroic": 1557720,
+      "mythic": 1657720
+    },
+    {
+      "base": 7721,
+      "heroic": 1557721,
+      "mythic": 1657721
+    },
+    {
+      "base": 7722,
+      "heroic": 1557722,
+      "mythic": 1657722
+    },
+    {
+      "base": 7723,
+      "heroic": 1557723,
+      "mythic": 1657723
+    },
+    {
+      "base": 7724,
+      "heroic": 1557724,
+      "mythic": 1657724
+    },
+    {
+      "base": 7726,
+      "heroic": 1557726,
+      "mythic": 1657726
+    },
+    {
+      "base": 7731,
+      "heroic": 1557731,
+      "mythic": 1657731
+    },
+    {
+      "base": 7756,
+      "heroic": 1557756,
+      "mythic": 1657756
+    },
+    {
+      "base": 9359,
+      "heroic": 1559359,
+      "mythic": 1659359
+    },
+    {
+      "base": 9379,
+      "heroic": 1559379,
+      "mythic": 1659379
+    },
+    {
+      "base": 9384,
+      "heroic": 1559384,
+      "mythic": 1659384
+    },
+    {
+      "base": 9387,
+      "heroic": 1559387,
+      "mythic": 1659387
+    },
+    {
+      "base": 9388,
+      "heroic": 1559388,
+      "mythic": 1659388
+    },
+    {
+      "base": 9389,
+      "heroic": 1559389,
+      "mythic": 1659389
+    },
+    {
+      "base": 9390,
+      "heroic": 1559390,
+      "mythic": 1659390
+    },
+    {
+      "base": 9393,
+      "heroic": 1559393,
+      "mythic": 1659393
+    },
+    {
+      "base": 9394,
+      "heroic": 1559394,
+      "mythic": 1659394
+    },
+    {
+      "base": 9396,
+      "heroic": 1559396,
+      "mythic": 1659396
+    },
+    {
+      "base": 9398,
+      "heroic": 1559398,
+      "mythic": 1659398
+    },
+    {
+      "base": 9400,
+      "heroic": 1559400,
+      "mythic": 1659400
+    },
+    {
+      "base": 9401,
+      "heroic": 1559401,
+      "mythic": 1659401
+    },
+    {
+      "base": 9403,
+      "heroic": 1559403,
+      "mythic": 1659403
+    },
+    {
+      "base": 9404,
+      "heroic": 1559404,
+      "mythic": 1659404
+    },
+    {
+      "base": 9405,
+      "heroic": 1559405,
+      "mythic": 1659405
+    },
+    {
+      "base": 9407,
+      "heroic": 1559407,
+      "mythic": 1659407
+    },
+    {
+      "base": 9408,
+      "heroic": 1559408,
+      "mythic": 1659408
+    },
+    {
+      "base": 9409,
+      "heroic": 1559409,
+      "mythic": 1659409
+    },
+    {
+      "base": 9410,
+      "heroic": 1559410,
+      "mythic": 1659410
+    },
+    {
+      "base": 9411,
+      "heroic": 1559411,
+      "mythic": 1659411
+    },
+    {
+      "base": 9412,
+      "heroic": 1559412,
+      "mythic": 1659412
+    },
+    {
+      "base": 9413,
+      "heroic": 1559413,
+      "mythic": 1659413
+    },
+    {
+      "base": 9414,
+      "heroic": 1559414,
+      "mythic": 1659414
+    },
+    {
+      "base": 9415,
+      "heroic": 1559415,
+      "mythic": 1659415
+    },
+    {
+      "base": 9416,
+      "heroic": 1559416,
+      "mythic": 1659416
+    },
+    {
+      "base": 9418,
+      "heroic": 1559418,
+      "mythic": 1659418
+    },
+    {
+      "base": 9419,
+      "heroic": 1559419,
+      "mythic": 1659419
+    },
+    {
+      "base": 9420,
+      "heroic": 1559420,
+      "mythic": 1659420
+    },
+    {
+      "base": 9424,
+      "heroic": 1559424,
+      "mythic": 1659424
+    },
+    {
+      "base": 9425,
+      "heroic": 1559425,
+      "mythic": 1659425
+    },
+    {
+      "base": 9426,
+      "heroic": 1559426,
+      "mythic": 1659426
+    },
+    {
+      "base": 9427,
+      "heroic": 1559427,
+      "mythic": 1659427
+    },
+    {
+      "base": 9428,
+      "heroic": 1559428,
+      "mythic": 1659428
+    },
+    {
+      "base": 9431,
+      "heroic": 1559431,
+      "mythic": 1659431
+    },
+    {
+      "base": 9433,
+      "heroic": 1559433,
+      "mythic": 1659433
+    },
+    {
+      "base": 9445,
+      "heroic": 1559445,
+      "mythic": 1659445
+    },
+    {
+      "base": 9446,
+      "heroic": 1559446,
+      "mythic": 1659446
+    },
+    {
+      "base": 9447,
+      "heroic": 1559447,
+      "mythic": 1659447
+    },
+    {
+      "base": 9448,
+      "heroic": 1559448,
+      "mythic": 1659448
+    },
+    {
+      "base": 9449,
+      "heroic": 1559449,
+      "mythic": 1659449
+    },
+    {
+      "base": 9450,
+      "heroic": 1559450,
+      "mythic": 1659450
+    },
+    {
+      "base": 9452,
+      "heroic": 1559452,
+      "mythic": 1659452
+    },
+    {
+      "base": 9453,
+      "heroic": 1559453,
+      "mythic": 1659453
+    },
+    {
+      "base": 9454,
+      "heroic": 1559454,
+      "mythic": 1659454
+    },
+    {
+      "base": 9455,
+      "heroic": 1559455,
+      "mythic": 1659455
+    },
+    {
+      "base": 9456,
+      "heroic": 1559456,
+      "mythic": 1659456
+    },
+    {
+      "base": 9457,
+      "heroic": 1559457,
+      "mythic": 1659457
+    },
+    {
+      "base": 9458,
+      "heroic": 1559458,
+      "mythic": 1659458
+    },
+    {
+      "base": 9459,
+      "heroic": 1559459,
+      "mythic": 1659459
+    },
+    {
+      "base": 9461,
+      "heroic": 1559461,
+      "mythic": 1659461
+    },
+    {
+      "base": 9467,
+      "heroic": 1559467,
+      "mythic": 1659467
+    },
+    {
+      "base": 9469,
+      "heroic": 1559469,
+      "mythic": 1659469
+    },
+    {
+      "base": 9470,
+      "heroic": 1559470,
+      "mythic": 1659470
+    },
+    {
+      "base": 9473,
+      "heroic": 1559473,
+      "mythic": 1659473
+    },
+    {
+      "base": 9474,
+      "heroic": 1559474,
+      "mythic": 1659474
+    },
+    {
+      "base": 9475,
+      "heroic": 1559475,
+      "mythic": 1659475
+    },
+    {
+      "base": 9476,
+      "heroic": 1559476,
+      "mythic": 1659476
+    },
+    {
+      "base": 9477,
+      "heroic": 1559477,
+      "mythic": 1659477
+    },
+    {
+      "base": 9478,
+      "heroic": 1559478,
+      "mythic": 1659478
+    },
+    {
+      "base": 9479,
+      "heroic": 1559479,
+      "mythic": 1659479
+    },
+    {
+      "base": 9480,
+      "heroic": 1559480,
+      "mythic": 1659480
+    },
+    {
+      "base": 9481,
+      "heroic": 1559481,
+      "mythic": 1659481
+    },
+    {
+      "base": 9482,
+      "heroic": 1559482,
+      "mythic": 1659482
+    },
+    {
+      "base": 9483,
+      "heroic": 1559483,
+      "mythic": 1659483
+    },
+    {
+      "base": 9486,
+      "heroic": 1559486,
+      "mythic": 1659486
+    },
+    {
+      "base": 9487,
+      "heroic": 1559487,
+      "mythic": 1659487
+    },
+    {
+      "base": 9488,
+      "heroic": 1559488,
+      "mythic": 1659488
+    },
+    {
+      "base": 9492,
+      "heroic": 1559492,
+      "mythic": 1659492
+    },
+    {
+      "base": 9511,
+      "heroic": 1559511,
+      "mythic": 1659511
+    },
+    {
+      "base": 9512,
+      "heroic": 1559512,
+      "mythic": 1659512
+    },
+    {
+      "base": 9639,
+      "heroic": 1559639,
+      "mythic": 1659639
+    },
+    {
+      "base": 9640,
+      "heroic": 1559640,
+      "mythic": 1659640
+    },
+    {
+      "base": 9641,
+      "heroic": 1559641,
+      "mythic": 1659641
+    },
+    {
+      "base": 10330,
+      "heroic": 1510330,
+      "mythic": 1610330
+    },
+    {
+      "base": 10399,
+      "heroic": 1560399,
+      "mythic": 1660399
+    },
+    {
+      "base": 10403,
+      "heroic": 1560403,
+      "mythic": 1660403
+    },
+    {
+      "base": 10410,
+      "heroic": 1510410,
+      "mythic": 1610410
+    },
+    {
+      "base": 10411,
+      "heroic": 1510411,
+      "mythic": 1610411
+    },
+    {
+      "base": 10412,
+      "heroic": 1510412,
+      "mythic": 1610412
+    },
+    {
+      "base": 10760,
+      "heroic": 1510760,
+      "mythic": 1610760
+    },
+    {
+      "base": 10761,
+      "heroic": 1560761,
+      "mythic": 1660761
+    },
+    {
+      "base": 10762,
+      "heroic": 1560762,
+      "mythic": 1660762
+    },
+    {
+      "base": 10763,
+      "heroic": 1560763,
+      "mythic": 1660763
+    },
+    {
+      "base": 10764,
+      "heroic": 1560764,
+      "mythic": 1660764
+    },
+    {
+      "base": 10765,
+      "heroic": 1560765,
+      "mythic": 1660765
+    },
+    {
+      "base": 10766,
+      "heroic": 1510766,
+      "mythic": 1610766
+    },
+    {
+      "base": 10769,
+      "heroic": 1560769,
+      "mythic": 1660769
+    },
+    {
+      "base": 10770,
+      "heroic": 1560770,
+      "mythic": 1660770
+    },
+    {
+      "base": 10771,
+      "heroic": 1560771,
+      "mythic": 1660771
+    },
+    {
+      "base": 10772,
+      "heroic": 1560772,
+      "mythic": 1660772
+    },
+    {
+      "base": 10774,
+      "heroic": 1560774,
+      "mythic": 1660774
+    },
+    {
+      "base": 10775,
+      "heroic": 1560775,
+      "mythic": 1660775
+    },
+    {
+      "base": 10776,
+      "heroic": 1560776,
+      "mythic": 1660776
+    },
+    {
+      "base": 10777,
+      "heroic": 1560777,
+      "mythic": 1660777
+    },
+    {
+      "base": 10795,
+      "heroic": 1560795,
+      "mythic": 1660795
+    },
+    {
+      "base": 10796,
+      "heroic": 1560796,
+      "mythic": 1660796
+    },
+    {
+      "base": 10797,
+      "heroic": 1560797,
+      "mythic": 1660797
+    },
+    {
+      "base": 10798,
+      "heroic": 1560798,
+      "mythic": 1660798
+    },
+    {
+      "base": 10799,
+      "heroic": 1560799,
+      "mythic": 1660799
+    },
+    {
+      "base": 10800,
+      "heroic": 1560800,
+      "mythic": 1660800
+    },
+    {
+      "base": 10806,
+      "heroic": 1560806,
+      "mythic": 1660806
+    },
+    {
+      "base": 10807,
+      "heroic": 1560807,
+      "mythic": 1660807
+    },
+    {
+      "base": 10808,
+      "heroic": 1560808,
+      "mythic": 1660808
+    },
+    {
+      "base": 10828,
+      "heroic": 1560828,
+      "mythic": 1660828
+    },
+    {
+      "base": 10829,
+      "heroic": 1560829,
+      "mythic": 1660829
+    },
+    {
+      "base": 10833,
+      "heroic": 1560833,
+      "mythic": 1660833
+    },
+    {
+      "base": 10835,
+      "heroic": 1560835,
+      "mythic": 1660835
+    },
+    {
+      "base": 10836,
+      "heroic": 1560836,
+      "mythic": 1660836
+    },
+    {
+      "base": 10837,
+      "heroic": 1560837,
+      "mythic": 1660837
+    },
+    {
+      "base": 10838,
+      "heroic": 1560838,
+      "mythic": 1660838
+    },
+    {
+      "base": 10842,
+      "heroic": 1560842,
+      "mythic": 1660842
+    },
+    {
+      "base": 10843,
+      "heroic": 1560843,
+      "mythic": 1660843
+    },
+    {
+      "base": 10844,
+      "heroic": 1560844,
+      "mythic": 1660844
+    },
+    {
+      "base": 10845,
+      "heroic": 1560845,
+      "mythic": 1660845
+    },
+    {
+      "base": 10846,
+      "heroic": 1560846,
+      "mythic": 1660846
+    },
+    {
+      "base": 10847,
+      "heroic": 1560847,
+      "mythic": 1660847
+    },
+    {
+      "base": 11086,
+      "heroic": 1561086,
+      "mythic": 1661086
+    },
+    {
+      "base": 11118,
+      "heroic": 1511118,
+      "mythic": 1611118
+    },
+    {
+      "base": 11121,
+      "heroic": 1561121,
+      "mythic": 1661121
+    },
+    {
+      "base": 11310,
+      "heroic": 1511310,
+      "mythic": 1611310
+    },
+    {
+      "base": 11311,
+      "heroic": 1511311,
+      "mythic": 1611311
+    },
+    {
+      "base": 11623,
+      "heroic": 213877,
+      "mythic": 213878
+    },
+    {
+      "base": 11624,
+      "heroic": 213889,
+      "mythic": 213890
+    },
+    {
+      "base": 11625,
+      "heroic": 213901,
+      "mythic": 213902
+    },
+    {
+      "base": 11626,
+      "heroic": 213913,
+      "mythic": 213914
+    },
+    {
+      "base": 11627,
+      "heroic": 213925,
+      "mythic": 213926
+    },
+    {
+      "base": 11628,
+      "heroic": 213937,
+      "mythic": 213938
+    },
+    {
+      "base": 11629,
+      "heroic": 213949,
+      "mythic": 213950
+    },
+    {
+      "base": 11631,
+      "heroic": 213961,
+      "mythic": 213962
+    },
+    {
+      "base": 11632,
+      "heroic": 213973,
+      "mythic": 213974
+    },
+    {
+      "base": 11669,
+      "heroic": 214047,
+      "mythic": 214048
+    },
+    {
+      "base": 11684,
+      "heroic": 214107,
+      "mythic": 214108
+    },
+    {
+      "base": 11735,
+      "heroic": 214239,
+      "mythic": 214240
+    },
+    {
+      "base": 11744,
+      "heroic": 214263,
+      "mythic": 214264
+    },
+    {
+      "base": 11745,
+      "heroic": 214275,
+      "mythic": 214276
+    },
+    {
+      "base": 11746,
+      "heroic": 214287,
+      "mythic": 214288
+    },
+    {
+      "base": 11747,
+      "heroic": 214299,
+      "mythic": 214300
+    },
+    {
+      "base": 11748,
+      "heroic": 214311,
+      "mythic": 214312
+    },
+    {
+      "base": 11749,
+      "heroic": 214323,
+      "mythic": 214324
+    },
+    {
+      "base": 11750,
+      "heroic": 214335,
+      "mythic": 214336
+    },
+    {
+      "base": 11755,
+      "heroic": 214348,
+      "mythic": 214349
+    },
+    {
+      "base": 11764,
+      "heroic": 214360,
+      "mythic": 214361
+    },
+    {
+      "base": 11765,
+      "heroic": 214372,
+      "mythic": 214373
+    },
+    {
+      "base": 11766,
+      "heroic": 214384,
+      "mythic": 214385
+    },
+    {
+      "base": 11767,
+      "heroic": 214396,
+      "mythic": 214397
+    },
+    {
+      "base": 11782,
+      "heroic": 214420,
+      "mythic": 214421
+    },
+    {
+      "base": 11783,
+      "heroic": 214432,
+      "mythic": 214433
+    },
+    {
+      "base": 11784,
+      "heroic": 214444,
+      "mythic": 214445
+    },
+    {
+      "base": 11785,
+      "heroic": 214456,
+      "mythic": 214457
+    },
+    {
+      "base": 11786,
+      "heroic": 214468,
+      "mythic": 214469
+    },
+    {
+      "base": 11787,
+      "heroic": 214480,
+      "mythic": 214481
+    },
+    {
+      "base": 11802,
+      "heroic": 214492,
+      "mythic": 214493
+    },
+    {
+      "base": 11803,
+      "heroic": 214504,
+      "mythic": 214505
+    },
+    {
+      "base": 11805,
+      "heroic": 214516,
+      "mythic": 214517
+    },
+    {
+      "base": 11807,
+      "heroic": 214528,
+      "mythic": 214529
+    },
+    {
+      "base": 11808,
+      "heroic": 214540,
+      "mythic": 214541
+    },
+    {
+      "base": 11809,
+      "heroic": 214556,
+      "mythic": 214559
+    },
+    {
+      "base": 11810,
+      "heroic": 214570,
+      "mythic": 214571
+    },
+    {
+      "base": 11812,
+      "heroic": 214594,
+      "mythic": 214595
+    },
+    {
+      "base": 11814,
+      "heroic": 214606,
+      "mythic": 214607
+    },
+    {
+      "base": 11815,
+      "heroic": 214618,
+      "mythic": 214619
+    },
+    {
+      "base": 11816,
+      "heroic": 214630,
+      "mythic": 214631
+    },
+    {
+      "base": 11817,
+      "heroic": 214642,
+      "mythic": 214643
+    },
+    {
+      "base": 11819,
+      "heroic": 214654,
+      "mythic": 214655
+    },
+    {
+      "base": 11820,
+      "heroic": 214667,
+      "mythic": 214668
+    },
+    {
+      "base": 11821,
+      "heroic": 214679,
+      "mythic": 214680
+    },
+    {
+      "base": 11822,
+      "heroic": 214691,
+      "mythic": 214692
+    },
+    {
+      "base": 11823,
+      "heroic": 214703,
+      "mythic": 214704
+    },
+    {
+      "base": 11832,
+      "heroic": 214732,
+      "mythic": 214733
+    },
+    {
+      "base": 11839,
+      "heroic": 214744,
+      "mythic": 214745
+    },
+    {
+      "base": 11841,
+      "heroic": 214756,
+      "mythic": 214757
+    },
+    {
+      "base": 11842,
+      "heroic": 214768,
+      "mythic": 214769
+    },
+    {
+      "base": 11920,
+      "heroic": 311920,
+      "mythic": 211920
+    },
+    {
+      "base": 11921,
+      "heroic": 311921,
+      "mythic": 211921
+    },
+    {
+      "base": 11922,
+      "heroic": 311922,
+      "mythic": 211922
+    },
+    {
+      "base": 11923,
+      "heroic": 311923,
+      "mythic": 211923
+    },
+    {
+      "base": 11924,
+      "heroic": 215348,
+      "mythic": 215349
+    },
+    {
+      "base": 11925,
+      "heroic": 311925,
+      "mythic": 211925
+    },
+    {
+      "base": 11926,
+      "heroic": 311926,
+      "mythic": 211926
+    },
+    {
+      "base": 11927,
+      "heroic": 311927,
+      "mythic": 211927
+    },
+    {
+      "base": 11928,
+      "heroic": 215360,
+      "mythic": 215361
+    },
+    {
+      "base": 11929,
+      "heroic": 311929,
+      "mythic": 211929
+    },
+    {
+      "base": 11930,
+      "heroic": 215372,
+      "mythic": 215373
+    },
+    {
+      "base": 11931,
+      "heroic": 215384,
+      "mythic": 215385
+    },
+    {
+      "base": 11932,
+      "heroic": 215396,
+      "mythic": 215397
+    },
+    {
+      "base": 11933,
+      "heroic": 215409,
+      "mythic": 215410
+    },
+    {
+      "base": 11934,
+      "heroic": 215421,
+      "mythic": 215422
+    },
+    {
+      "base": 11935,
+      "heroic": 215433,
+      "mythic": 215434
+    },
+    {
+      "base": 12103,
+      "heroic": 216972,
+      "mythic": 216973
+    },
+    {
+      "base": 12243,
+      "heroic": 1562243,
+      "mythic": 1662243
+    },
+    {
+      "base": 12462,
+      "heroic": 1562462,
+      "mythic": 1662462
+    },
+    {
+      "base": 12463,
+      "heroic": 1562463,
+      "mythic": 1662463
+    },
+    {
+      "base": 12464,
+      "heroic": 1562464,
+      "mythic": 1662464
+    },
+    {
+      "base": 12465,
+      "heroic": 1562465,
+      "mythic": 1662465
+    },
+    {
+      "base": 12466,
+      "heroic": 1562466,
+      "mythic": 1662466
+    },
+    {
+      "base": 12470,
+      "heroic": 0,
+      "mythic": 1612470
+    },
+    {
+      "base": 12471,
+      "heroic": 1512471,
+      "mythic": 1612471
+    },
+    {
+      "base": 12527,
+      "heroic": 217769,
+      "mythic": 217770
+    },
+    {
+      "base": 12528,
+      "heroic": 217781,
+      "mythic": 217783
+    },
+    {
+      "base": 12531,
+      "heroic": 217794,
+      "mythic": 217795
+    },
+    {
+      "base": 12532,
+      "heroic": 217806,
+      "mythic": 217807
+    },
+    {
+      "base": 12535,
+      "heroic": 217818,
+      "mythic": 217819
+    },
+    {
+      "base": 12542,
+      "heroic": 217830,
+      "mythic": 217831
+    },
+    {
+      "base": 12546,
+      "heroic": 217878,
+      "mythic": 217879
+    },
+    {
+      "base": 12547,
+      "heroic": 217890,
+      "mythic": 217891
+    },
+    {
+      "base": 12549,
+      "heroic": 217914,
+      "mythic": 217915
+    },
+    {
+      "base": 12550,
+      "heroic": 217926,
+      "mythic": 217927
+    },
+    {
+      "base": 12551,
+      "heroic": 217938,
+      "mythic": 217939
+    },
+    {
+      "base": 12552,
+      "heroic": 217950,
+      "mythic": 217951
+    },
+    {
+      "base": 12553,
+      "heroic": 217962,
+      "mythic": 217963
+    },
+    {
+      "base": 12554,
+      "heroic": 217974,
+      "mythic": 217975
+    },
+    {
+      "base": 12555,
+      "heroic": 217986,
+      "mythic": 217987
+    },
+    {
+      "base": 12556,
+      "heroic": 217998,
+      "mythic": 217999
+    },
+    {
+      "base": 12557,
+      "heroic": 218010,
+      "mythic": 218011
+    },
+    {
+      "base": 12582,
+      "heroic": 120742,
+      "mythic": 212582
+    },
+    {
+      "base": 12583,
+      "heroic": 100304,
+      "mythic": 212583
+    },
+    {
+      "base": 12587,
+      "heroic": 113507,
+      "mythic": 212587
+    },
+    {
+      "base": 12588,
+      "heroic": 218034,
+      "mythic": 218035
+    },
+    {
+      "base": 12589,
+      "heroic": 103877,
+      "mythic": 212589
+    },
+    {
+      "base": 12590,
+      "heroic": 114140,
+      "mythic": 212590
+    },
+    {
+      "base": 12592,
+      "heroic": 100297,
+      "mythic": 212592
+    },
+    {
+      "base": 12602,
+      "heroic": 102336,
+      "mythic": 212602
+    },
+    {
+      "base": 12603,
+      "heroic": 123071,
+      "mythic": 212603
+    },
+    {
+      "base": 12604,
+      "heroic": 128504,
+      "mythic": 212604
+    },
+    {
+      "base": 12605,
+      "heroic": 123741,
+      "mythic": 212605
+    },
+    {
+      "base": 12606,
+      "heroic": 100954,
+      "mythic": 212606
+    },
+    {
+      "base": 12608,
+      "heroic": 100703,
+      "mythic": 212608
+    },
+    {
+      "base": 12609,
+      "heroic": 123427,
+      "mythic": 212609
+    },
+    {
+      "base": 12621,
+      "heroic": 102233,
+      "mythic": 212621
+    },
+    {
+      "base": 12626,
+      "heroic": 116221,
+      "mythic": 212626
+    },
+    {
+      "base": 12634,
+      "heroic": 100763,
+      "mythic": 212634
+    },
+    {
+      "base": 12637,
+      "heroic": 100195,
+      "mythic": 212637
+    },
+    {
+      "base": 12651,
+      "heroic": 100298,
+      "mythic": 212651
+    },
+    {
+      "base": 12653,
+      "heroic": 123612,
+      "mythic": 212653
+    },
+    {
+      "base": 12709,
+      "heroic": 114660,
+      "mythic": 212709
+    },
+    {
+      "base": 12791,
+      "heroic": 218525,
+      "mythic": 218526
+    },
+    {
+      "base": 12793,
+      "heroic": 218550,
+      "mythic": 218551
+    },
+    {
+      "base": 12905,
+      "heroic": 130837,
+      "mythic": 212905
+    },
+    {
+      "base": 12926,
+      "heroic": 115486,
+      "mythic": 212926
+    },
+    {
+      "base": 12927,
+      "heroic": 130475,
+      "mythic": 212927
+    },
+    {
+      "base": 12929,
+      "heroic": 112956,
+      "mythic": 212929
+    },
+    {
+      "base": 12930,
+      "heroic": 100690,
+      "mythic": 212930
+    },
+    {
+      "base": 12935,
+      "heroic": 130779,
+      "mythic": 212935
+    },
+    {
+      "base": 12936,
+      "heroic": 100235,
+      "mythic": 212936
+    },
+    {
+      "base": 12939,
+      "heroic": 100981,
+      "mythic": 212939
+    },
+    {
+      "base": 12940,
+      "heroic": 100980,
+      "mythic": 212940
+    },
+    {
+      "base": 12952,
+      "heroic": 120407,
+      "mythic": 212952
+    },
+    {
+      "base": 12953,
+      "heroic": 102353,
+      "mythic": 212953
+    },
+    {
+      "base": 12960,
+      "heroic": 130469,
+      "mythic": 212960
+    },
+    {
+      "base": 12963,
+      "heroic": 100317,
+      "mythic": 212963
+    },
+    {
+      "base": 12964,
+      "heroic": 130471,
+      "mythic": 212964
+    },
+    {
+      "base": 12965,
+      "heroic": 128241,
+      "mythic": 212965
+    },
+    {
+      "base": 12966,
+      "heroic": 100306,
+      "mythic": 212966
+    },
+    {
+      "base": 12967,
+      "heroic": 100373,
+      "mythic": 212967
+    },
+    {
+      "base": 12968,
+      "heroic": 116162,
+      "mythic": 212968
+    },
+    {
+      "base": 12969,
+      "heroic": 123734,
+      "mythic": 212969
+    },
+    {
+      "base": 12974,
+      "heroic": 1562974,
+      "mythic": 1662974
+    },
+    {
+      "base": 13005,
+      "heroic": 1563005,
+      "mythic": 1663005
+    },
+    {
+      "base": 13010,
+      "heroic": 1563010,
+      "mythic": 1663010
+    },
+    {
+      "base": 13011,
+      "heroic": 1563011,
+      "mythic": 1663011
+    },
+    {
+      "base": 13012,
+      "heroic": 1563012,
+      "mythic": 1663012
+    },
+    {
+      "base": 13016,
+      "heroic": 1563016,
+      "mythic": 1663016
+    },
+    {
+      "base": 13018,
+      "heroic": 1563018,
+      "mythic": 1663018
+    },
+    {
+      "base": 13019,
+      "heroic": 1563019,
+      "mythic": 1663019
+    },
+    {
+      "base": 13021,
+      "heroic": 1563021,
+      "mythic": 1663021
+    },
+    {
+      "base": 13024,
+      "heroic": 1563024,
+      "mythic": 1663024
+    },
+    {
+      "base": 13026,
+      "heroic": 1563026,
+      "mythic": 1663026
+    },
+    {
+      "base": 13031,
+      "heroic": 1563031,
+      "mythic": 1663031
+    },
+    {
+      "base": 13032,
+      "heroic": 1563032,
+      "mythic": 1663032
+    },
+    {
+      "base": 13035,
+      "heroic": 1563035,
+      "mythic": 1663035
+    },
+    {
+      "base": 13037,
+      "heroic": 1563037,
+      "mythic": 1663037
+    },
+    {
+      "base": 13039,
+      "heroic": 1563039,
+      "mythic": 1663039
+    },
+    {
+      "base": 13041,
+      "heroic": 1563041,
+      "mythic": 1663041
+    },
+    {
+      "base": 13043,
+      "heroic": 1563043,
+      "mythic": 1663043
+    },
+    {
+      "base": 13048,
+      "heroic": 1563048,
+      "mythic": 1663048
+    },
+    {
+      "base": 13049,
+      "heroic": 1563049,
+      "mythic": 1663049
+    },
+    {
+      "base": 13051,
+      "heroic": 1563051,
+      "mythic": 1663051
+    },
+    {
+      "base": 13055,
+      "heroic": 1563055,
+      "mythic": 1663055
+    },
+    {
+      "base": 13057,
+      "heroic": 1563057,
+      "mythic": 1663057
+    },
+    {
+      "base": 13058,
+      "heroic": 1563058,
+      "mythic": 1663058
+    },
+    {
+      "base": 13062,
+      "heroic": 1563062,
+      "mythic": 1663062
+    },
+    {
+      "base": 13071,
+      "heroic": 1563071,
+      "mythic": 1663071
+    },
+    {
+      "base": 13074,
+      "heroic": 1563074,
+      "mythic": 1663074
+    },
+    {
+      "base": 13076,
+      "heroic": 1563076,
+      "mythic": 1663076
+    },
+    {
+      "base": 13079,
+      "heroic": 1563079,
+      "mythic": 1663079
+    },
+    {
+      "base": 13082,
+      "heroic": 1563082,
+      "mythic": 1663082
+    },
+    {
+      "base": 13087,
+      "heroic": 1563087,
+      "mythic": 1663087
+    },
+    {
+      "base": 13089,
+      "heroic": 1563089,
+      "mythic": 1663089
+    },
+    {
+      "base": 13094,
+      "heroic": 1563094,
+      "mythic": 1663094
+    },
+    {
+      "base": 13095,
+      "heroic": 1563095,
+      "mythic": 1663095
+    },
+    {
+      "base": 13097,
+      "heroic": 1563097,
+      "mythic": 1663097
+    },
+    {
+      "base": 13098,
+      "heroic": 123180,
+      "mythic": 213098
+    },
+    {
+      "base": 13099,
+      "heroic": 1563099,
+      "mythic": 1663099
+    },
+    {
+      "base": 13100,
+      "heroic": 1563100,
+      "mythic": 1663100
+    },
+    {
+      "base": 13102,
+      "heroic": 1563102,
+      "mythic": 1663102
+    },
+    {
+      "base": 13106,
+      "heroic": 1563106,
+      "mythic": 1663106
+    },
+    {
+      "base": 13109,
+      "heroic": 1563109,
+      "mythic": 1663109
+    },
+    {
+      "base": 13112,
+      "heroic": 1563112,
+      "mythic": 1663112
+    },
+    {
+      "base": 13114,
+      "heroic": 1563114,
+      "mythic": 1663114
+    },
+    {
+      "base": 13115,
+      "heroic": 1563115,
+      "mythic": 1663115
+    },
+    {
+      "base": 13127,
+      "heroic": 1563127,
+      "mythic": 1663127
+    },
+    {
+      "base": 13128,
+      "heroic": 1563128,
+      "mythic": 1663128
+    },
+    {
+      "base": 13131,
+      "heroic": 1563131,
+      "mythic": 1663131
+    },
+    {
+      "base": 13134,
+      "heroic": 1563134,
+      "mythic": 1663134
+    },
+    {
+      "base": 13141,
+      "heroic": 130435,
+      "mythic": 213141
+    },
+    {
+      "base": 13142,
+      "heroic": 100691,
+      "mythic": 213142
+    },
+    {
+      "base": 13143,
+      "heroic": 122744,
+      "mythic": 213143
+    },
+    {
+      "base": 13145,
+      "heroic": 1563145,
+      "mythic": 1663145
+    },
+    {
+      "base": 13148,
+      "heroic": 220267,
+      "mythic": 220268
+    },
+    {
+      "base": 13161,
+      "heroic": 130470,
+      "mythic": 213161
+    },
+    {
+      "base": 13162,
+      "heroic": 123568,
+      "mythic": 213162
+    },
+    {
+      "base": 13163,
+      "heroic": 123569,
+      "mythic": 213163
+    },
+    {
+      "base": 13164,
+      "heroic": 220279,
+      "mythic": 220280
+    },
+    {
+      "base": 13166,
+      "heroic": 124537,
+      "mythic": 213166
+    },
+    {
+      "base": 13167,
+      "heroic": 115452,
+      "mythic": 213167
+    },
+    {
+      "base": 13168,
+      "heroic": 123416,
+      "mythic": 213168
+    },
+    {
+      "base": 13169,
+      "heroic": 130468,
+      "mythic": 213169
+    },
+    {
+      "base": 13170,
+      "heroic": 124532,
+      "mythic": 213170
+    },
+    {
+      "base": 13177,
+      "heroic": 129745,
+      "mythic": 213177
+    },
+    {
+      "base": 13178,
+      "heroic": 123644,
+      "mythic": 213178
+    },
+    {
+      "base": 13179,
+      "heroic": 100669,
+      "mythic": 213179
+    },
+    {
+      "base": 13181,
+      "heroic": 220317,
+      "mythic": 220318
+    },
+    {
+      "base": 13182,
+      "heroic": 220329,
+      "mythic": 220330
+    },
+    {
+      "base": 13183,
+      "heroic": 130613,
+      "mythic": 213183
+    },
+    {
+      "base": 13184,
+      "heroic": 113539,
+      "mythic": 213184
+    },
+    {
+      "base": 13185,
+      "heroic": 128974,
+      "mythic": 213185
+    },
+    {
+      "base": 13198,
+      "heroic": 120609,
+      "mythic": 213198
+    },
+    {
+      "base": 13203,
+      "heroic": 100139,
+      "mythic": 213203
+    },
+    {
+      "base": 13204,
+      "heroic": 100226,
+      "mythic": 213204
+    },
+    {
+      "base": 13205,
+      "heroic": 123588,
+      "mythic": 213205
+    },
+    {
+      "base": 13206,
+      "heroic": 130941,
+      "mythic": 213206
+    },
+    {
+      "base": 13208,
+      "heroic": 100322,
+      "mythic": 213208
+    },
+    {
+      "base": 13210,
+      "heroic": 123179,
+      "mythic": 213210
+    },
+    {
+      "base": 13211,
+      "heroic": 124538,
+      "mythic": 213211
+    },
+    {
+      "base": 13212,
+      "heroic": 120446,
+      "mythic": 213212
+    },
+    {
+      "base": 13213,
+      "heroic": 127391,
+      "mythic": 213213
+    },
+    {
+      "base": 13218,
+      "heroic": 113572,
+      "mythic": 213218
+    },
+    {
+      "base": 13244,
+      "heroic": 117427,
+      "mythic": 213244
+    },
+    {
+      "base": 13245,
+      "heroic": 1513245,
+      "mythic": 1613245
+    },
+    {
+      "base": 13252,
+      "heroic": 100820,
+      "mythic": 213252
+    },
+    {
+      "base": 13253,
+      "heroic": 120461,
+      "mythic": 213253
+    },
+    {
+      "base": 13255,
+      "heroic": 130474,
+      "mythic": 213255
+    },
+    {
+      "base": 13257,
+      "heroic": 102236,
+      "mythic": 213257
+    },
+    {
+      "base": 13258,
+      "heroic": 124536,
+      "mythic": 213258
+    },
+    {
+      "base": 13259,
+      "heroic": 123589,
+      "mythic": 213259
+    },
+    {
+      "base": 13261,
+      "heroic": 118581,
+      "mythic": 213261
+    },
+    {
+      "base": 13282,
+      "heroic": 123135,
+      "mythic": 213282
+    },
+    {
+      "base": 13283,
+      "heroic": 122563,
+      "mythic": 213283
+    },
+    {
+      "base": 13284,
+      "heroic": 129242,
+      "mythic": 213284
+    },
+    {
+      "base": 13285,
+      "heroic": 130332,
+      "mythic": 213285
+    },
+    {
+      "base": 13286,
+      "heroic": 123615,
+      "mythic": 213286
+    },
+    {
+      "base": 13314,
+      "heroic": 220477,
+      "mythic": 220478
+    },
+    {
+      "base": 13340,
+      "heroic": 220503,
+      "mythic": 220504
+    },
+    {
+      "base": 13344,
+      "heroic": 220515,
+      "mythic": 220516
+    },
+    {
+      "base": 13345,
+      "heroic": 220527,
+      "mythic": 220528
+    },
+    {
+      "base": 13346,
+      "heroic": 220539,
+      "mythic": 220540
+    },
+    {
+      "base": 13348,
+      "heroic": 220551,
+      "mythic": 220552
+    },
+    {
+      "base": 13349,
+      "heroic": 220563,
+      "mythic": 220564
+    },
+    {
+      "base": 13353,
+      "heroic": 220575,
+      "mythic": 220576
+    },
+    {
+      "base": 13358,
+      "heroic": 220587,
+      "mythic": 220588
+    },
+    {
+      "base": 13359,
+      "heroic": 220599,
+      "mythic": 220600
+    },
+    {
+      "base": 13360,
+      "heroic": 220611,
+      "mythic": 220612
+    },
+    {
+      "base": 13361,
+      "heroic": 220623,
+      "mythic": 220624
+    },
+    {
+      "base": 13368,
+      "heroic": 220635,
+      "mythic": 220636
+    },
+    {
+      "base": 13369,
+      "heroic": 220647,
+      "mythic": 220648
+    },
+    {
+      "base": 13371,
+      "heroic": 220659,
+      "mythic": 220661
+    },
+    {
+      "base": 13372,
+      "heroic": 220672,
+      "mythic": 220673
+    },
+    {
+      "base": 13373,
+      "heroic": 220684,
+      "mythic": 220685
+    },
+    {
+      "base": 13374,
+      "heroic": 220696,
+      "mythic": 220697
+    },
+    {
+      "base": 13375,
+      "heroic": 220708,
+      "mythic": 220709
+    },
+    {
+      "base": 13376,
+      "heroic": 220720,
+      "mythic": 220721
+    },
+    {
+      "base": 13378,
+      "heroic": 220733,
+      "mythic": 220734
+    },
+    {
+      "base": 13379,
+      "heroic": 220745,
+      "mythic": 220746
+    },
+    {
+      "base": 13380,
+      "heroic": 220757,
+      "mythic": 220758
+    },
+    {
+      "base": 13381,
+      "heroic": 220769,
+      "mythic": 220770
+    },
+    {
+      "base": 13382,
+      "heroic": 220781,
+      "mythic": 220782
+    },
+    {
+      "base": 13383,
+      "heroic": 220793,
+      "mythic": 220794
+    },
+    {
+      "base": 13384,
+      "heroic": 220805,
+      "mythic": 220806
+    },
+    {
+      "base": 13385,
+      "heroic": 220817,
+      "mythic": 220818
+    },
+    {
+      "base": 13386,
+      "heroic": 220829,
+      "mythic": 220830
+    },
+    {
+      "base": 13387,
+      "heroic": 220841,
+      "mythic": 220842
+    },
+    {
+      "base": 13394,
+      "heroic": 220949,
+      "mythic": 220950
+    },
+    {
+      "base": 13395,
+      "heroic": 220961,
+      "mythic": 220962
+    },
+    {
+      "base": 13396,
+      "heroic": 220973,
+      "mythic": 220974
+    },
+    {
+      "base": 13397,
+      "heroic": 220985,
+      "mythic": 220986
+    },
+    {
+      "base": 13398,
+      "heroic": 220997,
+      "mythic": 220998
+    },
+    {
+      "base": 13399,
+      "heroic": 221009,
+      "mythic": 221010
+    },
+    {
+      "base": 13400,
+      "heroic": 221021,
+      "mythic": 221022
+    },
+    {
+      "base": 13401,
+      "heroic": 221033,
+      "mythic": 221034
+    },
+    {
+      "base": 13402,
+      "heroic": 221045,
+      "mythic": 221046
+    },
+    {
+      "base": 13403,
+      "heroic": 221057,
+      "mythic": 221058
+    },
+    {
+      "base": 13404,
+      "heroic": 221069,
+      "mythic": 221070
+    },
+    {
+      "base": 13405,
+      "heroic": 221081,
+      "mythic": 221082
+    },
+    {
+      "base": 13408,
+      "heroic": 221093,
+      "mythic": 221094
+    },
+    {
+      "base": 13409,
+      "heroic": 221105,
+      "mythic": 221106
+    },
+    {
+      "base": 13498,
+      "heroic": 120455,
+      "mythic": 213498
+    },
+    {
+      "base": 13502,
+      "heroic": 120454,
+      "mythic": 213502
+    },
+    {
+      "base": 13505,
+      "heroic": 221173,
+      "mythic": 221174
+    },
+    {
+      "base": 13515,
+      "heroic": 221185,
+      "mythic": 221186
+    },
+    {
+      "base": 13524,
+      "heroic": 221197,
+      "mythic": 221198
+    },
+    {
+      "base": 13525,
+      "heroic": 0,
+      "mythic": 221211
+    },
+    {
+      "base": 13526,
+      "heroic": 0,
+      "mythic": 221226
+    },
+    {
+      "base": 13527,
+      "heroic": 0,
+      "mythic": 221239
+    },
+    {
+      "base": 13528,
+      "heroic": 0,
+      "mythic": 221254
+    },
+    {
+      "base": 13529,
+      "heroic": 221265,
+      "mythic": 221266
+    },
+    {
+      "base": 13530,
+      "heroic": 0,
+      "mythic": 221284
+    },
+    {
+      "base": 13531,
+      "heroic": 0,
+      "mythic": 221297
+    },
+    {
+      "base": 13532,
+      "heroic": 0,
+      "mythic": 221310
+    },
+    {
+      "base": 13533,
+      "heroic": 0,
+      "mythic": 221323
+    },
+    {
+      "base": 13534,
+      "heroic": 221363,
+      "mythic": 221369
+    },
+    {
+      "base": 13535,
+      "heroic": 0,
+      "mythic": 221420
+    },
+    {
+      "base": 13537,
+      "heroic": 0,
+      "mythic": 221433
+    },
+    {
+      "base": 13538,
+      "heroic": 0,
+      "mythic": 221446
+    },
+    {
+      "base": 13539,
+      "heroic": 0,
+      "mythic": 221514
+    },
+    {
+      "base": 13937,
+      "heroic": 221835,
+      "mythic": 221840
+    },
+    {
+      "base": 13938,
+      "heroic": 221851,
+      "mythic": 221852
+    },
+    {
+      "base": 13944,
+      "heroic": 221864,
+      "mythic": 221865
+    },
+    {
+      "base": 13950,
+      "heroic": 221876,
+      "mythic": 221877
+    },
+    {
+      "base": 13951,
+      "heroic": 221890,
+      "mythic": 221892
+    },
+    {
+      "base": 13952,
+      "heroic": 221903,
+      "mythic": 221904
+    },
+    {
+      "base": 13953,
+      "heroic": 221915,
+      "mythic": 221916
+    },
+    {
+      "base": 13954,
+      "heroic": 221927,
+      "mythic": 221928
+    },
+    {
+      "base": 13955,
+      "heroic": 221939,
+      "mythic": 221940
+    },
+    {
+      "base": 13956,
+      "heroic": 221951,
+      "mythic": 221952
+    },
+    {
+      "base": 13957,
+      "heroic": 221963,
+      "mythic": 221964
+    },
+    {
+      "base": 13960,
+      "heroic": 222000,
+      "mythic": 222001
+    },
+    {
+      "base": 13964,
+      "heroic": 222048,
+      "mythic": 222049
+    },
+    {
+      "base": 13967,
+      "heroic": 222084,
+      "mythic": 222085
+    },
+    {
+      "base": 13969,
+      "heroic": 222108,
+      "mythic": 222109
+    },
+    {
+      "base": 13983,
+      "heroic": 222132,
+      "mythic": 222133
+    },
+    {
+      "base": 14024,
+      "heroic": 222204,
+      "mythic": 222205
+    },
+    {
+      "base": 14145,
+      "heroic": 1564145,
+      "mythic": 1664145
+    },
+    {
+      "base": 14147,
+      "heroic": 1564147,
+      "mythic": 1664147
+    },
+    {
+      "base": 14148,
+      "heroic": 1564148,
+      "mythic": 1664148
+    },
+    {
+      "base": 14149,
+      "heroic": 1564149,
+      "mythic": 1664149
+    },
+    {
+      "base": 14150,
+      "heroic": 1564150,
+      "mythic": 1664150
+    },
+    {
+      "base": 14151,
+      "heroic": 1564151,
+      "mythic": 1664151
+    },
+    {
+      "base": 14340,
+      "heroic": 225496,
+      "mythic": 225497
+    },
+    {
+      "base": 14487,
+      "heroic": 226628,
+      "mythic": 226629
+    },
+    {
+      "base": 14502,
+      "heroic": 226640,
+      "mythic": 226641
+    },
+    {
+      "base": 14503,
+      "heroic": 226652,
+      "mythic": 226653
+    },
+    {
+      "base": 14522,
+      "heroic": 226664,
+      "mythic": 226665
+    },
+    {
+      "base": 14525,
+      "heroic": 226676,
+      "mythic": 226677
+    },
+    {
+      "base": 14528,
+      "heroic": 226688,
+      "mythic": 226689
+    },
+    {
+      "base": 14531,
+      "heroic": 226700,
+      "mythic": 226701
+    },
+    {
+      "base": 14536,
+      "heroic": 226712,
+      "mythic": 226713
+    },
+    {
+      "base": 14537,
+      "heroic": 226724,
+      "mythic": 226725
+    },
+    {
+      "base": 14538,
+      "heroic": 226736,
+      "mythic": 226737
+    },
+    {
+      "base": 14539,
+      "heroic": 226748,
+      "mythic": 226749
+    },
+    {
+      "base": 14541,
+      "heroic": 226760,
+      "mythic": 226761
+    },
+    {
+      "base": 14543,
+      "heroic": 226772,
+      "mythic": 226773
+    },
+    {
+      "base": 14545,
+      "heroic": 226784,
+      "mythic": 226785
+    },
+    {
+      "base": 14548,
+      "heroic": 226796,
+      "mythic": 226797
+    },
+    {
+      "base": 14549,
+      "heroic": 1564549,
+      "mythic": 1664549
+    },
+    {
+      "base": 14551,
+      "heroic": 1564551,
+      "mythic": 1664551
+    },
+    {
+      "base": 14576,
+      "heroic": 227052,
+      "mythic": 227053
+    },
+    {
+      "base": 14577,
+      "heroic": 227064,
+      "mythic": 227065
+    },
+    {
+      "base": 14611,
+      "heroic": 227453,
+      "mythic": 227454
+    },
+    {
+      "base": 14612,
+      "heroic": 227465,
+      "mythic": 227466
+    },
+    {
+      "base": 14614,
+      "heroic": 227482,
+      "mythic": 227483
+    },
+    {
+      "base": 14615,
+      "heroic": 227494,
+      "mythic": 227495
+    },
+    {
+      "base": 14616,
+      "heroic": 227506,
+      "mythic": 227507
+    },
+    {
+      "base": 14620,
+      "heroic": 227518,
+      "mythic": 227519
+    },
+    {
+      "base": 14621,
+      "heroic": 227530,
+      "mythic": 227531
+    },
+    {
+      "base": 14622,
+      "heroic": 227542,
+      "mythic": 227543
+    },
+    {
+      "base": 14623,
+      "heroic": 227554,
+      "mythic": 227555
+    },
+    {
+      "base": 14624,
+      "heroic": 227566,
+      "mythic": 227567
+    },
+    {
+      "base": 14626,
+      "heroic": 227578,
+      "mythic": 227579
+    },
+    {
+      "base": 14629,
+      "heroic": 227590,
+      "mythic": 227591
+    },
+    {
+      "base": 14631,
+      "heroic": 227602,
+      "mythic": 227603
+    },
+    {
+      "base": 14632,
+      "heroic": 227614,
+      "mythic": 227615
+    },
+    {
+      "base": 14633,
+      "heroic": 227626,
+      "mythic": 227627
+    },
+    {
+      "base": 14636,
+      "heroic": 227638,
+      "mythic": 227639
+    },
+    {
+      "base": 14637,
+      "heroic": 227650,
+      "mythic": 227651
+    },
+    {
+      "base": 14638,
+      "heroic": 227662,
+      "mythic": 227663
+    },
+    {
+      "base": 14640,
+      "heroic": 227674,
+      "mythic": 227675
+    },
+    {
+      "base": 14641,
+      "heroic": 227686,
+      "mythic": 227687
+    },
+    {
+      "base": 16666,
+      "heroic": 130619,
+      "mythic": 216666
+    },
+    {
+      "base": 16667,
+      "heroic": 243527,
+      "mythic": 243528
+    },
+    {
+      "base": 16668,
+      "heroic": 243539,
+      "mythic": 243540
+    },
+    {
+      "base": 16669,
+      "heroic": 123194,
+      "mythic": 216669
+    },
+    {
+      "base": 16670,
+      "heroic": 100453,
+      "mythic": 216670
+    },
+    {
+      "base": 16671,
+      "heroic": 243551,
+      "mythic": 243552
+    },
+    {
+      "base": 16672,
+      "heroic": 116900,
+      "mythic": 216672
+    },
+    {
+      "base": 16673,
+      "heroic": 100894,
+      "mythic": 216673
+    },
+    {
+      "base": 16674,
+      "heroic": 100252,
+      "mythic": 216674
+    },
+    {
+      "base": 16675,
+      "heroic": 243563,
+      "mythic": 243564
+    },
+    {
+      "base": 16676,
+      "heroic": 100250,
+      "mythic": 216676
+    },
+    {
+      "base": 16677,
+      "heroic": 243575,
+      "mythic": 243576
+    },
+    {
+      "base": 16678,
+      "heroic": 243587,
+      "mythic": 243588
+    },
+    {
+      "base": 16679,
+      "heroic": 100251,
+      "mythic": 216679
+    },
+    {
+      "base": 16680,
+      "heroic": 100248,
+      "mythic": 216680
+    },
+    {
+      "base": 16681,
+      "heroic": 100249,
+      "mythic": 216681
+    },
+    {
+      "base": 16682,
+      "heroic": 243599,
+      "mythic": 243600
+    },
+    {
+      "base": 16683,
+      "heroic": 122465,
+      "mythic": 216683
+    },
+    {
+      "base": 16684,
+      "heroic": 243611,
+      "mythic": 243612
+    },
+    {
+      "base": 16685,
+      "heroic": 122464,
+      "mythic": 216685
+    },
+    {
+      "base": 16686,
+      "heroic": 243623,
+      "mythic": 243624
+    },
+    {
+      "base": 16687,
+      "heroic": 243635,
+      "mythic": 243636
+    },
+    {
+      "base": 16688,
+      "heroic": 122471,
+      "mythic": 216688
+    },
+    {
+      "base": 16689,
+      "heroic": 243647,
+      "mythic": 243648
+    },
+    {
+      "base": 16690,
+      "heroic": 102311,
+      "mythic": 216690
+    },
+    {
+      "base": 16691,
+      "heroic": 243659,
+      "mythic": 243660
+    },
+    {
+      "base": 16692,
+      "heroic": 243671,
+      "mythic": 243672
+    },
+    {
+      "base": 16693,
+      "heroic": 243683,
+      "mythic": 243684
+    },
+    {
+      "base": 16694,
+      "heroic": 243695,
+      "mythic": 243696
+    },
+    {
+      "base": 16695,
+      "heroic": 102310,
+      "mythic": 216695
+    },
+    {
+      "base": 16696,
+      "heroic": 102309,
+      "mythic": 216696
+    },
+    {
+      "base": 16697,
+      "heroic": 243707,
+      "mythic": 243708
+    },
+    {
+      "base": 16698,
+      "heroic": 243719,
+      "mythic": 243720
+    },
+    {
+      "base": 16699,
+      "heroic": 243731,
+      "mythic": 243732
+    },
+    {
+      "base": 16700,
+      "heroic": 102387,
+      "mythic": 216700
+    },
+    {
+      "base": 16701,
+      "heroic": 243743,
+      "mythic": 243744
+    },
+    {
+      "base": 16702,
+      "heroic": 243755,
+      "mythic": 243756
+    },
+    {
+      "base": 16703,
+      "heroic": 102386,
+      "mythic": 216703
+    },
+    {
+      "base": 16704,
+      "heroic": 243767,
+      "mythic": 243768
+    },
+    {
+      "base": 16705,
+      "heroic": 243779,
+      "mythic": 243780
+    },
+    {
+      "base": 16706,
+      "heroic": 130845,
+      "mythic": 216706
+    },
+    {
+      "base": 16707,
+      "heroic": 243791,
+      "mythic": 243792
+    },
+    {
+      "base": 16708,
+      "heroic": 243803,
+      "mythic": 243804
+    },
+    {
+      "base": 16709,
+      "heroic": 243815,
+      "mythic": 243816
+    },
+    {
+      "base": 16710,
+      "heroic": 123783,
+      "mythic": 216710
+    },
+    {
+      "base": 16711,
+      "heroic": 243827,
+      "mythic": 243828
+    },
+    {
+      "base": 16712,
+      "heroic": 123784,
+      "mythic": 216712
+    },
+    {
+      "base": 16713,
+      "heroic": 123782,
+      "mythic": 216713
+    },
+    {
+      "base": 16714,
+      "heroic": 243839,
+      "mythic": 243840
+    },
+    {
+      "base": 16715,
+      "heroic": 130842,
+      "mythic": 216715
+    },
+    {
+      "base": 16716,
+      "heroic": 130841,
+      "mythic": 216716
+    },
+    {
+      "base": 16717,
+      "heroic": 130843,
+      "mythic": 216717
+    },
+    {
+      "base": 16718,
+      "heroic": 130844,
+      "mythic": 216718
+    },
+    {
+      "base": 16719,
+      "heroic": 243851,
+      "mythic": 243852
+    },
+    {
+      "base": 16720,
+      "heroic": 243863,
+      "mythic": 243864
+    },
+    {
+      "base": 16721,
+      "heroic": 123785,
+      "mythic": 216721
+    },
+    {
+      "base": 16722,
+      "heroic": 243875,
+      "mythic": 243876
+    },
+    {
+      "base": 16723,
+      "heroic": 243887,
+      "mythic": 243888
+    },
+    {
+      "base": 16724,
+      "heroic": 243899,
+      "mythic": 243900
+    },
+    {
+      "base": 16725,
+      "heroic": 243911,
+      "mythic": 243912
+    },
+    {
+      "base": 16726,
+      "heroic": 122143,
+      "mythic": 216726
+    },
+    {
+      "base": 16727,
+      "heroic": 243923,
+      "mythic": 243924
+    },
+    {
+      "base": 16728,
+      "heroic": 243935,
+      "mythic": 243936
+    },
+    {
+      "base": 16729,
+      "heroic": 122148,
+      "mythic": 216729
+    },
+    {
+      "base": 16730,
+      "heroic": 100684,
+      "mythic": 216730
+    },
+    {
+      "base": 16731,
+      "heroic": 243947,
+      "mythic": 243948
+    },
+    {
+      "base": 16732,
+      "heroic": 243959,
+      "mythic": 243960
+    },
+    {
+      "base": 16733,
+      "heroic": 128157,
+      "mythic": 216733
+    },
+    {
+      "base": 16734,
+      "heroic": 243971,
+      "mythic": 243972
+    },
+    {
+      "base": 16735,
+      "heroic": 100665,
+      "mythic": 216735
+    },
+    {
+      "base": 16736,
+      "heroic": 100284,
+      "mythic": 216736
+    },
+    {
+      "base": 16737,
+      "heroic": 243983,
+      "mythic": 243984
+    },
+    {
+      "base": 17061,
+      "heroic": 244759,
+      "mythic": 244760
+    },
+    {
+      "base": 17707,
+      "heroic": 1567707,
+      "mythic": 1667707
+    },
+    {
+      "base": 17710,
+      "heroic": 1567710,
+      "mythic": 1667710
+    },
+    {
+      "base": 17711,
+      "heroic": 1567711,
+      "mythic": 1667711
+    },
+    {
+      "base": 17713,
+      "heroic": 1567713,
+      "mythic": 1667713
+    },
+    {
+      "base": 17714,
+      "heroic": 1567714,
+      "mythic": 1667714
+    },
+    {
+      "base": 17715,
+      "heroic": 1567715,
+      "mythic": 1667715
+    },
+    {
+      "base": 17717,
+      "heroic": 1567717,
+      "mythic": 1667717
+    },
+    {
+      "base": 17718,
+      "heroic": 1567718,
+      "mythic": 1667718
+    },
+    {
+      "base": 17719,
+      "heroic": 1567719,
+      "mythic": 1667719
+    },
+    {
+      "base": 17728,
+      "heroic": 1567728,
+      "mythic": 1667728
+    },
+    {
+      "base": 17730,
+      "heroic": 1567730,
+      "mythic": 1667730
+    },
+    {
+      "base": 17732,
+      "heroic": 1567732,
+      "mythic": 1667732
+    },
+    {
+      "base": 17734,
+      "heroic": 1567734,
+      "mythic": 1667734
+    },
+    {
+      "base": 17736,
+      "heroic": 1567736,
+      "mythic": 1667736
+    },
+    {
+      "base": 17737,
+      "heroic": 1567737,
+      "mythic": 1667737
+    },
+    {
+      "base": 17738,
+      "heroic": 1567738,
+      "mythic": 1667738
+    },
+    {
+      "base": 17739,
+      "heroic": 1567739,
+      "mythic": 1667739
+    },
+    {
+      "base": 17740,
+      "heroic": 1567740,
+      "mythic": 1667740
+    },
+    {
+      "base": 17741,
+      "heroic": 1517741,
+      "mythic": 1617741
+    },
+    {
+      "base": 17742,
+      "heroic": 1517742,
+      "mythic": 1617742
+    },
+    {
+      "base": 17744,
+      "heroic": 1567744,
+      "mythic": 1667744
+    },
+    {
+      "base": 17745,
+      "heroic": 1567745,
+      "mythic": 1667745
+    },
+    {
+      "base": 17746,
+      "heroic": 1567746,
+      "mythic": 1667746
+    },
+    {
+      "base": 17748,
+      "heroic": 1567748,
+      "mythic": 1667748
+    },
+    {
+      "base": 17749,
+      "heroic": 1567749,
+      "mythic": 1667749
+    },
+    {
+      "base": 17750,
+      "heroic": 1567750,
+      "mythic": 1667750
+    },
+    {
+      "base": 17751,
+      "heroic": 1567751,
+      "mythic": 1667751
+    },
+    {
+      "base": 17752,
+      "heroic": 1567752,
+      "mythic": 1667752
+    },
+    {
+      "base": 17754,
+      "heroic": 1567754,
+      "mythic": 1667754
+    },
+    {
+      "base": 17755,
+      "heroic": 1567755,
+      "mythic": 1667755
+    },
+    {
+      "base": 17766,
+      "heroic": 1567766,
+      "mythic": 1667766
+    },
+    {
+      "base": 17767,
+      "heroic": 1517767,
+      "mythic": 1617767
+    },
+    {
+      "base": 17780,
+      "heroic": 1567780,
+      "mythic": 1667780
+    },
+    {
+      "base": 17943,
+      "heroic": 1567943,
+      "mythic": 1667943
+    },
+    {
+      "base": 18043,
+      "heroic": 246385,
+      "mythic": 246386
+    },
+    {
+      "base": 18044,
+      "heroic": 246397,
+      "mythic": 246398
+    },
+    {
+      "base": 18047,
+      "heroic": 115457,
+      "mythic": 218047
+    },
+    {
+      "base": 18048,
+      "heroic": 122775,
+      "mythic": 218048
+    },
+    {
+      "base": 18082,
+      "heroic": 1568082,
+      "mythic": 1668082
+    },
+    {
+      "base": 18083,
+      "heroic": 1568083,
+      "mythic": 1668083
+    },
+    {
+      "base": 18102,
+      "heroic": 102373,
+      "mythic": 218102
+    },
+    {
+      "base": 18103,
+      "heroic": 100209,
+      "mythic": 218103
+    },
+    {
+      "base": 18104,
+      "heroic": 114651,
+      "mythic": 218104
+    },
+    {
+      "base": 18289,
+      "heroic": 246519,
+      "mythic": 246520
+    },
+    {
+      "base": 18295,
+      "heroic": 246531,
+      "mythic": 246532
+    },
+    {
+      "base": 18296,
+      "heroic": 246543,
+      "mythic": 246544
+    },
+    {
+      "base": 18298,
+      "heroic": 246555,
+      "mythic": 246556
+    },
+    {
+      "base": 18301,
+      "heroic": 246567,
+      "mythic": 246569
+    },
+    {
+      "base": 18302,
+      "heroic": 246580,
+      "mythic": 246582
+    },
+    {
+      "base": 18305,
+      "heroic": 246617,
+      "mythic": 246619
+    },
+    {
+      "base": 18306,
+      "heroic": 246630,
+      "mythic": 246632
+    },
+    {
+      "base": 18307,
+      "heroic": 246643,
+      "mythic": 246645
+    },
+    {
+      "base": 18308,
+      "heroic": 246656,
+      "mythic": 246658
+    },
+    {
+      "base": 18309,
+      "heroic": 246669,
+      "mythic": 246670
+    },
+    {
+      "base": 18310,
+      "heroic": 246681,
+      "mythic": 246682
+    },
+    {
+      "base": 18311,
+      "heroic": 246693,
+      "mythic": 246694
+    },
+    {
+      "base": 18312,
+      "heroic": 246705,
+      "mythic": 246706
+    },
+    {
+      "base": 18313,
+      "heroic": 246717,
+      "mythic": 246718
+    },
+    {
+      "base": 18314,
+      "heroic": 246729,
+      "mythic": 246730
+    },
+    {
+      "base": 18315,
+      "heroic": 246741,
+      "mythic": 246742
+    },
+    {
+      "base": 18317,
+      "heroic": 246753,
+      "mythic": 246754
+    },
+    {
+      "base": 18318,
+      "heroic": 246765,
+      "mythic": 246766
+    },
+    {
+      "base": 18319,
+      "heroic": 246777,
+      "mythic": 246778
+    },
+    {
+      "base": 18321,
+      "heroic": 246801,
+      "mythic": 246802
+    },
+    {
+      "base": 18322,
+      "heroic": 246813,
+      "mythic": 246814
+    },
+    {
+      "base": 18323,
+      "heroic": 246825,
+      "mythic": 246826
+    },
+    {
+      "base": 18324,
+      "heroic": 246837,
+      "mythic": 246838
+    },
+    {
+      "base": 18325,
+      "heroic": 246849,
+      "mythic": 246850
+    },
+    {
+      "base": 18326,
+      "heroic": 246861,
+      "mythic": 246862
+    },
+    {
+      "base": 18327,
+      "heroic": 246873,
+      "mythic": 246874
+    },
+    {
+      "base": 18328,
+      "heroic": 246885,
+      "mythic": 246886
+    },
+    {
+      "base": 18338,
+      "heroic": 246910,
+      "mythic": 246911
+    },
+    {
+      "base": 18340,
+      "heroic": 246935,
+      "mythic": 246936
+    },
+    {
+      "base": 18344,
+      "heroic": 246984,
+      "mythic": 246985
+    },
+    {
+      "base": 18345,
+      "heroic": 246996,
+      "mythic": 246998
+    },
+    {
+      "base": 18346,
+      "heroic": 247009,
+      "mythic": 247011
+    },
+    {
+      "base": 18347,
+      "heroic": 247022,
+      "mythic": 247024
+    },
+    {
+      "base": 18349,
+      "heroic": 247047,
+      "mythic": 247049
+    },
+    {
+      "base": 18350,
+      "heroic": 247060,
+      "mythic": 247062
+    },
+    {
+      "base": 18351,
+      "heroic": 247073,
+      "mythic": 247075
+    },
+    {
+      "base": 18352,
+      "heroic": 247086,
+      "mythic": 247088
+    },
+    {
+      "base": 18353,
+      "heroic": 247099,
+      "mythic": 247101
+    },
+    {
+      "base": 18354,
+      "heroic": 247112,
+      "mythic": 247113
+    },
+    {
+      "base": 18370,
+      "heroic": 247172,
+      "mythic": 247173
+    },
+    {
+      "base": 18371,
+      "heroic": 247184,
+      "mythic": 247185
+    },
+    {
+      "base": 18372,
+      "heroic": 247196,
+      "mythic": 247197
+    },
+    {
+      "base": 18373,
+      "heroic": 247208,
+      "mythic": 247209
+    },
+    {
+      "base": 18374,
+      "heroic": 247220,
+      "mythic": 247221
+    },
+    {
+      "base": 18375,
+      "heroic": 247232,
+      "mythic": 247233
+    },
+    {
+      "base": 18376,
+      "heroic": 247244,
+      "mythic": 247245
+    },
+    {
+      "base": 18377,
+      "heroic": 247256,
+      "mythic": 247257
+    },
+    {
+      "base": 18378,
+      "heroic": 247268,
+      "mythic": 247269
+    },
+    {
+      "base": 18379,
+      "heroic": 247280,
+      "mythic": 247281
+    },
+    {
+      "base": 18380,
+      "heroic": 247292,
+      "mythic": 247293
+    },
+    {
+      "base": 18381,
+      "heroic": 247304,
+      "mythic": 247305
+    },
+    {
+      "base": 18382,
+      "heroic": 247316,
+      "mythic": 247317
+    },
+    {
+      "base": 18383,
+      "heroic": 247328,
+      "mythic": 247329
+    },
+    {
+      "base": 18384,
+      "heroic": 247340,
+      "mythic": 247341
+    },
+    {
+      "base": 18385,
+      "heroic": 247352,
+      "mythic": 247353
+    },
+    {
+      "base": 18386,
+      "heroic": 247364,
+      "mythic": 247365
+    },
+    {
+      "base": 18387,
+      "heroic": 247376,
+      "mythic": 247377
+    },
+    {
+      "base": 18388,
+      "heroic": 247388,
+      "mythic": 247389
+    },
+    {
+      "base": 18389,
+      "heroic": 247400,
+      "mythic": 247401
+    },
+    {
+      "base": 18390,
+      "heroic": 247412,
+      "mythic": 247413
+    },
+    {
+      "base": 18391,
+      "heroic": 247424,
+      "mythic": 247425
+    },
+    {
+      "base": 18392,
+      "heroic": 247436,
+      "mythic": 247437
+    },
+    {
+      "base": 18393,
+      "heroic": 247448,
+      "mythic": 247449
+    },
+    {
+      "base": 18394,
+      "heroic": 247460,
+      "mythic": 247461
+    },
+    {
+      "base": 18395,
+      "heroic": 247472,
+      "mythic": 247473
+    },
+    {
+      "base": 18396,
+      "heroic": 247484,
+      "mythic": 247485
+    },
+    {
+      "base": 18397,
+      "heroic": 247496,
+      "mythic": 247497
+    },
+    {
+      "base": 18425,
+      "heroic": 247680,
+      "mythic": 247682
+    },
+    {
+      "base": 18450,
+      "heroic": 247910,
+      "mythic": 247912
+    },
+    {
+      "base": 18451,
+      "heroic": 247923,
+      "mythic": 247925
+    },
+    {
+      "base": 18458,
+      "heroic": 248008,
+      "mythic": 248010
+    },
+    {
+      "base": 18459,
+      "heroic": 248021,
+      "mythic": 248023
+    },
+    {
+      "base": 18460,
+      "heroic": 248034,
+      "mythic": 248036
+    },
+    {
+      "base": 18462,
+      "heroic": 248059,
+      "mythic": 248061
+    },
+    {
+      "base": 18463,
+      "heroic": 248072,
+      "mythic": 248074
+    },
+    {
+      "base": 18464,
+      "heroic": 248085,
+      "mythic": 248087
+    },
+    {
+      "base": 18475,
+      "heroic": 248206,
+      "mythic": 248208
+    },
+    {
+      "base": 18477,
+      "heroic": 248232,
+      "mythic": 248234
+    },
+    {
+      "base": 18479,
+      "heroic": 248258,
+      "mythic": 248260
+    },
+    {
+      "base": 18483,
+      "heroic": 248310,
+      "mythic": 248311
+    },
+    {
+      "base": 18484,
+      "heroic": 248322,
+      "mythic": 248323
+    },
+    {
+      "base": 18485,
+      "heroic": 248334,
+      "mythic": 248335
+    },
+    {
+      "base": 18490,
+      "heroic": 248358,
+      "mythic": 248359
+    },
+    {
+      "base": 18493,
+      "heroic": 248382,
+      "mythic": 248383
+    },
+    {
+      "base": 18494,
+      "heroic": 248394,
+      "mythic": 248395
+    },
+    {
+      "base": 18496,
+      "heroic": 248418,
+      "mythic": 248419
+    },
+    {
+      "base": 18497,
+      "heroic": 248430,
+      "mythic": 248431
+    },
+    {
+      "base": 18498,
+      "heroic": 248442,
+      "mythic": 248443
+    },
+    {
+      "base": 18502,
+      "heroic": 248478,
+      "mythic": 248479
+    },
+    {
+      "base": 18503,
+      "heroic": 248490,
+      "mythic": 248491
+    },
+    {
+      "base": 18505,
+      "heroic": 248514,
+      "mythic": 248515
+    },
+    {
+      "base": 18507,
+      "heroic": 248538,
+      "mythic": 248539
+    },
+    {
+      "base": 18520,
+      "heroic": 248598,
+      "mythic": 248599
+    },
+    {
+      "base": 18521,
+      "heroic": 248610,
+      "mythic": 248611
+    },
+    {
+      "base": 18522,
+      "heroic": 248622,
+      "mythic": 248623
+    },
+    {
+      "base": 18523,
+      "heroic": 248634,
+      "mythic": 248635
+    },
+    {
+      "base": 18524,
+      "heroic": 248646,
+      "mythic": 248647
+    },
+    {
+      "base": 18525,
+      "heroic": 248658,
+      "mythic": 248659
+    },
+    {
+      "base": 18526,
+      "heroic": 248670,
+      "mythic": 248671
+    },
+    {
+      "base": 18527,
+      "heroic": 248682,
+      "mythic": 248683
+    },
+    {
+      "base": 18528,
+      "heroic": 248694,
+      "mythic": 248695
+    },
+    {
+      "base": 18530,
+      "heroic": 248718,
+      "mythic": 248719
+    },
+    {
+      "base": 18533,
+      "heroic": 248754,
+      "mythic": 248755
+    },
+    {
+      "base": 18680,
+      "heroic": 249148,
+      "mythic": 249149
+    },
+    {
+      "base": 18681,
+      "heroic": 249160,
+      "mythic": 249161
+    },
+    {
+      "base": 18682,
+      "heroic": 249172,
+      "mythic": 249173
+    },
+    {
+      "base": 18683,
+      "heroic": 249184,
+      "mythic": 249185
+    },
+    {
+      "base": 18684,
+      "heroic": 249196,
+      "mythic": 249197
+    },
+    {
+      "base": 18686,
+      "heroic": 249208,
+      "mythic": 249209
+    },
+    {
+      "base": 18689,
+      "heroic": 249220,
+      "mythic": 249221
+    },
+    {
+      "base": 18690,
+      "heroic": 249232,
+      "mythic": 249233
+    },
+    {
+      "base": 18691,
+      "heroic": 249244,
+      "mythic": 249245
+    },
+    {
+      "base": 18692,
+      "heroic": 249256,
+      "mythic": 249257
+    },
+    {
+      "base": 18693,
+      "heroic": 249268,
+      "mythic": 249269
+    },
+    {
+      "base": 18694,
+      "heroic": 249280,
+      "mythic": 249281
+    },
+    {
+      "base": 18695,
+      "heroic": 249292,
+      "mythic": 249293
+    },
+    {
+      "base": 18696,
+      "heroic": 249304,
+      "mythic": 249305
+    },
+    {
+      "base": 18697,
+      "heroic": 249316,
+      "mythic": 249317
+    },
+    {
+      "base": 18698,
+      "heroic": 249328,
+      "mythic": 249329
+    },
+    {
+      "base": 18699,
+      "heroic": 249340,
+      "mythic": 249341
+    },
+    {
+      "base": 18700,
+      "heroic": 249352,
+      "mythic": 249353
+    },
+    {
+      "base": 18701,
+      "heroic": 249364,
+      "mythic": 249365
+    },
+    {
+      "base": 18702,
+      "heroic": 249376,
+      "mythic": 249377
+    },
+    {
+      "base": 18716,
+      "heroic": 249449,
+      "mythic": 249450
+    },
+    {
+      "base": 18717,
+      "heroic": 249461,
+      "mythic": 249462
+    },
+    {
+      "base": 18718,
+      "heroic": 249507,
+      "mythic": 249508
+    },
+    {
+      "base": 18720,
+      "heroic": 249519,
+      "mythic": 249520
+    },
+    {
+      "base": 18721,
+      "heroic": 249531,
+      "mythic": 249532
+    },
+    {
+      "base": 18722,
+      "heroic": 249543,
+      "mythic": 249544
+    },
+    {
+      "base": 18723,
+      "heroic": 249555,
+      "mythic": 249556
+    },
+    {
+      "base": 18725,
+      "heroic": 249567,
+      "mythic": 249568
+    },
+    {
+      "base": 18726,
+      "heroic": 249579,
+      "mythic": 249580
+    },
+    {
+      "base": 18727,
+      "heroic": 249591,
+      "mythic": 249592
+    },
+    {
+      "base": 18728,
+      "heroic": 249603,
+      "mythic": 249604
+    },
+    {
+      "base": 18729,
+      "heroic": 249615,
+      "mythic": 249616
+    },
+    {
+      "base": 18730,
+      "heroic": 249627,
+      "mythic": 249628
+    },
+    {
+      "base": 18734,
+      "heroic": 249639,
+      "mythic": 249640
+    },
+    {
+      "base": 18735,
+      "heroic": 249651,
+      "mythic": 249652
+    },
+    {
+      "base": 18736,
+      "heroic": 249663,
+      "mythic": 249664
+    },
+    {
+      "base": 18737,
+      "heroic": 249675,
+      "mythic": 249676
+    },
+    {
+      "base": 18738,
+      "heroic": 249687,
+      "mythic": 249688
+    },
+    {
+      "base": 18739,
+      "heroic": 249699,
+      "mythic": 249700
+    },
+    {
+      "base": 18740,
+      "heroic": 249711,
+      "mythic": 249712
+    },
+    {
+      "base": 18741,
+      "heroic": 249723,
+      "mythic": 249724
+    },
+    {
+      "base": 18742,
+      "heroic": 249735,
+      "mythic": 249736
+    },
+    {
+      "base": 18743,
+      "heroic": 249747,
+      "mythic": 249748
+    },
+    {
+      "base": 18744,
+      "heroic": 249759,
+      "mythic": 249760
+    },
+    {
+      "base": 18745,
+      "heroic": 249771,
+      "mythic": 249772
+    },
+    {
+      "base": 18754,
+      "heroic": 249783,
+      "mythic": 249784
+    },
+    {
+      "base": 18755,
+      "heroic": 249795,
+      "mythic": 249796
+    },
+    {
+      "base": 18756,
+      "heroic": 249807,
+      "mythic": 249808
+    },
+    {
+      "base": 18757,
+      "heroic": 249819,
+      "mythic": 249820
+    },
+    {
+      "base": 18758,
+      "heroic": 249831,
+      "mythic": 249832
+    },
+    {
+      "base": 18759,
+      "heroic": 249843,
+      "mythic": 249844
+    },
+    {
+      "base": 18760,
+      "heroic": 249855,
+      "mythic": 249856
+    },
+    {
+      "base": 18761,
+      "heroic": 249867,
+      "mythic": 249868
+    },
+    {
+      "base": 19507,
+      "heroic": 1569507,
+      "mythic": 1669507
+    },
+    {
+      "base": 19508,
+      "heroic": 1569508,
+      "mythic": 1669508
+    },
+    {
+      "base": 19509,
+      "heroic": 1569509,
+      "mythic": 1669509
+    },
+    {
+      "base": 22204,
+      "heroic": 260225,
+      "mythic": 260226
+    },
+    {
+      "base": 22205,
+      "heroic": 260237,
+      "mythic": 260238
+    },
+    {
+      "base": 22207,
+      "heroic": 260262,
+      "mythic": 260263
+    },
+    {
+      "base": 22208,
+      "heroic": 260274,
+      "mythic": 260275
+    },
+    {
+      "base": 22212,
+      "heroic": 260286,
+      "mythic": 260287
+    },
+    {
+      "base": 22223,
+      "heroic": 260298,
+      "mythic": 260299
+    },
+    {
+      "base": 22225,
+      "heroic": 102378,
+      "mythic": 222225
+    },
+    {
+      "base": 22231,
+      "heroic": 120731,
+      "mythic": 222231
+    },
+    {
+      "base": 22232,
+      "heroic": 122748,
+      "mythic": 222232
+    },
+    {
+      "base": 22234,
+      "heroic": 260322,
+      "mythic": 260323
+    },
+    {
+      "base": 22240,
+      "heroic": 260334,
+      "mythic": 260335
+    },
+    {
+      "base": 22241,
+      "heroic": 260346,
+      "mythic": 260347
+    },
+    {
+      "base": 22242,
+      "heroic": 260358,
+      "mythic": 260359
+    },
+    {
+      "base": 22245,
+      "heroic": 260370,
+      "mythic": 260371
+    },
+    {
+      "base": 22247,
+      "heroic": 113537,
+      "mythic": 222247
+    },
+    {
+      "base": 22253,
+      "heroic": 130434,
+      "mythic": 222253
+    },
+    {
+      "base": 22254,
+      "heroic": 260382,
+      "mythic": 260383
+    },
+    {
+      "base": 22255,
+      "heroic": 260394,
+      "mythic": 260395
+    },
+    {
+      "base": 22256,
+      "heroic": 260406,
+      "mythic": 260407
+    },
+    {
+      "base": 22267,
+      "heroic": 128166,
+      "mythic": 222267
+    },
+    {
+      "base": 22268,
+      "heroic": 102339,
+      "mythic": 222268
+    },
+    {
+      "base": 22269,
+      "heroic": 123777,
+      "mythic": 222269
+    },
+    {
+      "base": 22275,
+      "heroic": 260502,
+      "mythic": 260503
+    },
+    {
+      "base": 22302,
+      "heroic": 260526,
+      "mythic": 260527
+    },
+    {
+      "base": 22303,
+      "heroic": 260538,
+      "mythic": 260539
+    },
+    {
+      "base": 22304,
+      "heroic": 260550,
+      "mythic": 260551
+    },
+    {
+      "base": 22306,
+      "heroic": 260574,
+      "mythic": 260575
+    },
+    {
+      "base": 22311,
+      "heroic": 120701,
+      "mythic": 222311
+    },
+    {
+      "base": 22313,
+      "heroic": 120702,
+      "mythic": 222313
+    },
+    {
+      "base": 22314,
+      "heroic": 260586,
+      "mythic": 260587
+    },
+    {
+      "base": 22315,
+      "heroic": 260598,
+      "mythic": 260599
+    },
+    {
+      "base": 22319,
+      "heroic": 260634,
+      "mythic": 260635
+    },
+    {
+      "base": 22321,
+      "heroic": 120504,
+      "mythic": 222321
+    },
+    {
+      "base": 22322,
+      "heroic": 260646,
+      "mythic": 260647
+    },
+    {
+      "base": 22325,
+      "heroic": 260658,
+      "mythic": 260659
+    },
+    {
+      "base": 22326,
+      "heroic": 260670,
+      "mythic": 260671
+    },
+    {
+      "base": 22331,
+      "heroic": 260730,
+      "mythic": 260731
+    },
+    {
+      "base": 22332,
+      "heroic": 260742,
+      "mythic": 260743
+    },
+    {
+      "base": 22333,
+      "heroic": 260754,
+      "mythic": 260755
+    },
+    {
+      "base": 22335,
+      "heroic": 260778,
+      "mythic": 260779
+    },
+    {
+      "base": 22336,
+      "heroic": 260790,
+      "mythic": 260791
+    },
+    {
+      "base": 22337,
+      "heroic": 260802,
+      "mythic": 260803
+    },
+    {
+      "base": 22339,
+      "heroic": 260814,
+      "mythic": 260815
+    },
+    {
+      "base": 22340,
+      "heroic": 260826,
+      "mythic": 260827
+    },
+    {
+      "base": 22342,
+      "heroic": 260838,
+      "mythic": 260839
+    },
+    {
+      "base": 22343,
+      "heroic": 260850,
+      "mythic": 260851
+    },
+    {
+      "base": 22345,
+      "heroic": 260862,
+      "mythic": 260863
+    },
+    {
+      "base": 22394,
+      "heroic": 260982,
+      "mythic": 260983
+    },
+    {
+      "base": 22395,
+      "heroic": 260994,
+      "mythic": 260995
+    },
+    {
+      "base": 22397,
+      "heroic": 261006,
+      "mythic": 261007
+    },
+    {
+      "base": 22398,
+      "heroic": 261018,
+      "mythic": 261019
+    },
+    {
+      "base": 22400,
+      "heroic": 261030,
+      "mythic": 261031
+    },
+    {
+      "base": 22401,
+      "heroic": 261042,
+      "mythic": 261043
+    },
+    {
+      "base": 22403,
+      "heroic": 261054,
+      "mythic": 261055
+    },
+    {
+      "base": 22404,
+      "heroic": 261066,
+      "mythic": 261067
+    },
+    {
+      "base": 22405,
+      "heroic": 261078,
+      "mythic": 261079
+    },
+    {
+      "base": 22406,
+      "heroic": 261090,
+      "mythic": 261091
+    },
+    {
+      "base": 22407,
+      "heroic": 261102,
+      "mythic": 261103
+    },
+    {
+      "base": 22408,
+      "heroic": 261114,
+      "mythic": 261115
+    },
+    {
+      "base": 22409,
+      "heroic": 261126,
+      "mythic": 261127
+    },
+    {
+      "base": 22410,
+      "heroic": 261138,
+      "mythic": 261139
+    },
+    {
+      "base": 22411,
+      "heroic": 261150,
+      "mythic": 261151
+    },
+    {
+      "base": 22412,
+      "heroic": 261162,
+      "mythic": 261163
+    },
+    {
+      "base": 22433,
+      "heroic": 261174,
+      "mythic": 261175
+    },
+    {
+      "base": 22472,
+      "heroic": 261198,
+      "mythic": 261199
+    },
+    {
+      "base": 23171,
+      "heroic": 1523171,
+      "mythic": 0
+    },
+    {
+      "base": 23173,
+      "heroic": 1523173,
+      "mythic": 0
+    },
+    {
+      "base": 23177,
+      "heroic": 1523177,
+      "mythic": 0
+    },
+    {
+      "base": 23178,
+      "heroic": 1523178,
+      "mythic": 0
+    },
+    {
+      "base": 23198,
+      "heroic": 0,
+      "mythic": 523198
+    },
+    {
+      "base": 23199,
+      "heroic": 0,
+      "mythic": 523199
+    },
+    {
+      "base": 23200,
+      "heroic": 262908,
+      "mythic": 262909
+    },
+    {
+      "base": 23201,
+      "heroic": 262920,
+      "mythic": 262921
+    },
+    {
+      "base": 28972,
+      "heroic": 116056,
+      "mythic": 228972
+    },
+    {
+      "base": 34227,
+      "heroic": 1584227,
+      "mythic": 1684227
+    }
+  ],
+  "notes": [
+    "Do not infer class/spec eligibility from the existence of an item mapping",
+    "Later SQL migrations may modify some pairs",
+    "The base item may come from creature or gameobject loot on allowlisted dungeon maps",
+    "A zero target retains the original item"
+  ]
+}

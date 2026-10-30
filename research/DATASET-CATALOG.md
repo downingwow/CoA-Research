@@ -14,3 +14,7 @@ Maintainer: Uncle Bone. Updated 2026-10-29.
 | Dynamic BiS prototype | https://github.com/lintukellin/chronoforge | Combat/gear recommendation project | Evaluate code and data provenance |
 
 Do not mirror Ascension Logs' bulk data without permission. Preserve source URLs, hashes, phase labels, retrieval dates, methods and permissible derived summaries. Third-party datasets are not automatically licensed for copying.
+
+## Audits
+
+| BiS eligibility audit | [BIS-ELIGIBILITY-AUDIT-2026-10-30.md](BIS-ELIGIBILITY-AUDIT-2026-10-30.md) | 140 phase/spec lists checked against preserved armor, weapon, shield, dual-wield rules, and local weights | 65 ineligible rows filtered; 1 talent-gated item labeled |

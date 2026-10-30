@@ -1,0 +1,344 @@
+{
+  "schema": "coa-research.raid-map-manifest.v1",
+  "date": "2026-10-30",
+  "source": "data/sql/updates/pending_db_world/rev_20261024_07_coa_raid_instance_encounters.sql",
+  "detailedData": "research/raids/raid-encounters-by-map-and-difficulty-2026-10-30.json",
+  "maps": [
+    {
+      "mapId": 249,
+      "name": "Onyxia's Lair",
+      "era": "Vanilla",
+      "encounterRows": 4,
+      "uniqueCreditNpcCount": 1,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4054,
+      "lastEncounterId": 4339
+    },
+    {
+      "mapId": 309,
+      "name": "Zul'Gurub",
+      "era": "Vanilla",
+      "encounterRows": 40,
+      "uniqueCreditNpcCount": 10,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4086,
+      "lastEncounterId": 4409
+    },
+    {
+      "mapId": 409,
+      "name": "Molten Core",
+      "era": "Vanilla",
+      "encounterRows": 40,
+      "uniqueCreditNpcCount": 10,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4031,
+      "lastEncounterId": 4395
+    },
+    {
+      "mapId": 469,
+      "name": "Blackwing Lair",
+      "era": "Vanilla",
+      "encounterRows": 24,
+      "uniqueCreditNpcCount": 6,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4009,
+      "lastEncounterId": 4299
+    },
+    {
+      "mapId": 509,
+      "name": "Ruins of Ahn'Qiraj",
+      "era": "Vanilla",
+      "encounterRows": 25,
+      "uniqueCreditNpcCount": 6,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 900,
+      "lastEncounterId": 4354
+    },
+    {
+      "mapId": 531,
+      "name": "Temple of Ahn'Qiraj",
+      "era": "Vanilla",
+      "encounterRows": 36,
+      "uniqueCreditNpcCount": 9,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4055,
+      "lastEncounterId": 4348
+    },
+    {
+      "mapId": 532,
+      "name": "Karazhan",
+      "era": "TBC",
+      "encounterRows": 36,
+      "uniqueCreditNpcCount": 9,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4023,
+      "lastEncounterId": 4394
+    },
+    {
+      "mapId": 533,
+      "name": "Naxxramas",
+      "era": "Wrath",
+      "encounterRows": 60,
+      "uniqueCreditNpcCount": 15,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4040,
+      "lastEncounterId": 4396
+    },
+    {
+      "mapId": 544,
+      "name": "Magtheridon's Lair",
+      "era": "TBC",
+      "encounterRows": 4,
+      "uniqueCreditNpcCount": 1,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4022,
+      "lastEncounterId": 4307
+    },
+    {
+      "mapId": 548,
+      "name": "Serpentshrine Cavern",
+      "era": "TBC",
+      "encounterRows": 24,
+      "uniqueCreditNpcCount": 6,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4015,
+      "lastEncounterId": 4393
+    },
+    {
+      "mapId": 550,
+      "name": "The Eye / Tempest Keep",
+      "era": "TBC",
+      "encounterRows": 16,
+      "uniqueCreditNpcCount": 4,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4076,
+      "lastEncounterId": 4364
+    },
+    {
+      "mapId": 564,
+      "name": "Black Temple",
+      "era": "TBC",
+      "encounterRows": 32,
+      "uniqueCreditNpcCount": 8,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4001,
+      "lastEncounterId": 4293
+    },
+    {
+      "mapId": 565,
+      "name": "Gruul's Lair",
+      "era": "TBC",
+      "encounterRows": 8,
+      "uniqueCreditNpcCount": 2,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4020,
+      "lastEncounterId": 4306
+    },
+    {
+      "mapId": 568,
+      "name": "Zul'Aman",
+      "era": "TBC",
+      "encounterRows": 24,
+      "uniqueCreditNpcCount": 6,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4080,
+      "lastEncounterId": 4370
+    },
+    {
+      "mapId": 580,
+      "name": "Sunwell Plateau",
+      "era": "TBC",
+      "encounterRows": 24,
+      "uniqueCreditNpcCount": 6,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4070,
+      "lastEncounterId": 4360
+    },
+    {
+      "mapId": 603,
+      "name": "Ulduar",
+      "era": "Wrath",
+      "encounterRows": 32,
+      "uniqueCreditNpcCount": 8,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4437,
+      "lastEncounterId": 4472
+    },
+    {
+      "mapId": 615,
+      "name": "The Obsidian Sanctum",
+      "era": "Wrath",
+      "encounterRows": 4,
+      "uniqueCreditNpcCount": 1,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4413,
+      "lastEncounterId": 4416
+    },
+    {
+      "mapId": 616,
+      "name": "The Eye of Eternity",
+      "era": "Wrath",
+      "encounterRows": 4,
+      "uniqueCreditNpcCount": 1,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4090,
+      "lastEncounterId": 4375
+    },
+    {
+      "mapId": 624,
+      "name": "Vault of Archavon",
+      "era": "Wrath",
+      "encounterRows": 16,
+      "uniqueCreditNpcCount": 4,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4417,
+      "lastEncounterId": 4532
+    },
+    {
+      "mapId": 631,
+      "name": "Icecrown Citadel",
+      "era": "Wrath",
+      "encounterRows": 36,
+      "uniqueCreditNpcCount": 9,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4489,
+      "lastEncounterId": 4528
+    },
+    {
+      "mapId": 649,
+      "name": "Trial of the Crusader",
+      "era": "Wrath",
+      "encounterRows": 8,
+      "uniqueCreditNpcCount": 2,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 4477,
+      "lastEncounterId": 4484
+    },
+    {
+      "mapId": 724,
+      "name": "The Ruby Sanctum",
+      "era": "Wrath",
+      "encounterRows": 5,
+      "uniqueCreditNpcCount": 2,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "firstEncounterId": 2992,
+      "lastEncounterId": 4536
+    }
+  ],
+  "notes": [
+    "Era denotes original expansion, not proof of current server access or loot phase",
+    "Difficulties reflect CoA DBC comment codes, not guaranteed UI labels",
+    "Count is encounter rows, not unique bosses or kill events",
+    "Map 533 Naxxramas is treated as Wrath version in this roster"
+  ]
+}

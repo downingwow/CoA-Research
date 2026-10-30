@@ -1,0 +1,60 @@
+name: Preserve AscensionDB public cache snapshot
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/preserve-ascensiondb-cache.yml'
+permissions:
+  contents: write
+jobs:
+  mirror-cache:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch pinned upstream downloader and manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p backup/tools backup/input
+          curl --fail --location --retry 4 https://raw.githubusercontent.com/hertigservices/Ascension_preservation/main/tools/data-storage/dataset.py -o backup/tools/dataset.py
+          curl --fail --location --retry 4 https://raw.githubusercontent.com/hertigservices/ascension-data/main/datasets/cache.json -o backup/input/cache.json
+          sha256sum backup/tools/dataset.py backup/input/cache.json > backup/input/download-input-sha256.txt
+      - name: Download and verify cache against upstream checksums
+        run: python backup/tools/dataset.py download backup/input/cache.json --out backup/AscensionData
+      - name: Record verification and archive snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib,json,pathlib
+          root=pathlib.Path('backup/AscensionData')
+          manifest=json.loads(pathlib.Path('backup/input/cache.json').read_text())
+          errors=[]
+          for name,info in manifest['files'].items():
+              p=root/name
+              if not p.is_file():
+                  errors.append('missing '+name)
+                  continue
+              if p.stat().st_size != info['bytes'] or hashlib.sha256(p.read_bytes()).hexdigest() != info['sha256']:
+                  errors.append('mismatch '+name)
+          if errors:
+              raise SystemExit('Verification failed: '+str(errors[:25]))
+          print('Verified',len(manifest['files']),'files')
+          pathlib.Path('backup/input/verification.json').write_text(json.dumps({'snapshot':manifest['snapshot'],'files_verified':len(manifest['files']),'status':'all-checksums-match'},indent=2))
+          PY
+          tar -C backup -czf ascensiondb-cache-public-snapshot.tar.gz AscensionData input
+          sha256sum ascensiondb-cache-public-snapshot.tar.gz > ascensiondb-cache-public-snapshot.tar.gz.sha256
+      - name: Publish independent GitHub Release copy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          SNAPSHOT=$(python -c "import json;print(json.load(open('backup/input/cache.json'))['snapshot'][:16])")
+          TAG="ascensiondb-cache-${SNAPSHOT}"
+          gh release create "$TAG" --repo "${GITHUB_REPOSITORY}" --title "AscensionDB public cache snapshot ${SNAPSHOT}" --notes "Public upstream cache mirror, verified against manifest SHA-256 checksums. See included manifest and provenance. Does not include private or supplemental collections." --latest=false || true
+          gh release upload "$TAG" ascensiondb-cache-public-snapshot.tar.gz ascensiondb-cache-public-snapshot.tar.gz.sha256 --repo "${GITHUB_REPOSITORY}" --clobber

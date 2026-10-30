@@ -1,0 +1,226 @@
+{
+  "schema": "coa-research.vaults-encounter-phase-evidence.v1",
+  "source": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/blob/main/src/server/coa/CoAVaults.cpp",
+  "deployment": "unverified",
+  "timingSemantics": "upstream scheduled event or state delay; not live measured",
+  "bosses": [
+    {
+      "npcId": 162700,
+      "name": "Merciless Echo",
+      "prePull": {
+        "rpRequired": true,
+        "engageDelayMs": 3000,
+        "sourceLines": [
+          484,
+          506,
+          536
+        ]
+      },
+      "events": [
+        {
+          "name": "Chains",
+          "firstMs": 5000,
+          "repeatMsByDifficulty": {
+            "normal": 10000,
+            "heroic": 4000,
+            "mythic": 2000
+          },
+          "summonNpc": 162702,
+          "helperTriggerDelayMs": 2500,
+          "helperSpellId": 256804,
+          "sourceLines": [
+            588,
+            591,
+            1554,
+            1559
+          ]
+        },
+        {
+          "name": "Fierce Blow",
+          "spellId": 975011,
+          "firstMs": 6000,
+          "repeatMsRange": [
+            9000,
+            11000
+          ]
+        },
+        {
+          "name": "Spectral Strike",
+          "spellId": 256975,
+          "firstMs": 15000,
+          "repeatMs": 37000,
+          "helperNpc": 162701,
+          "helperCastDelayMs": 500
+        },
+        {
+          "name": "Spectral Destruction",
+          "spellId": 256805,
+          "firstMs": 25000,
+          "repeatMs": 37000,
+          "glowMs": 5500
+        }
+      ]
+    },
+    {
+      "npcId": 162703,
+      "name": "His Majesty Darkandle",
+      "phase": {
+        "trigger": "incoming damage crosses health percentage",
+        "healthPctByDifficulty": {
+          "normal": 15,
+          "heroic": 20,
+          "mythic": 30
+        },
+        "escapeSpellId": 256811,
+        "escapeDelayMs": 3000,
+        "postTeleportDelayMs": 1100,
+        "devourSpellId": 256820,
+        "dialoguePct": 10,
+        "oneShot": true,
+        "sourceLines": [
+          855,
+          863,
+          1007,
+          1034
+        ]
+      },
+      "events": [
+        {
+          "name": "More Fire",
+          "spellId": 256814,
+          "firstMs": 5000,
+          "repeatMs": 20000,
+          "fireCirclesDelayMs": 3000,
+          "fireLineAdditionalDelayMs": 4000
+        },
+        {
+          "name": "Earthquake",
+          "spellId": 256819,
+          "firstMs": 18500,
+          "repeatMs": 20000,
+          "cleanupDelayMs": 7000,
+          "markerNpc": 162745,
+          "markerSpellId": 256917
+        },
+        {
+          "name": "Fierce Blow",
+          "spellId": 975011,
+          "firstMs": 9000,
+          "repeatMsRange": [
+            6000,
+            8000
+          ]
+        }
+      ],
+      "helpers": [
+        {
+          "npcId": 162706,
+          "name": "Candle flame"
+        },
+        {
+          "npcId": 162707,
+          "name": "Candle zone",
+          "shotDelayMs": 3000,
+          "impactDelayMs": 4000,
+          "spellId": 256816
+        }
+      ]
+    },
+    {
+      "npcId": 162704,
+      "name": "The Deceiver's Presence",
+      "prePull": {
+        "sealNpcId": 162705,
+        "sealClickBreakMs": 3000,
+        "voidConsumptionSpellId": 257219,
+        "voidConsumptionRecastMs": 29000,
+        "unsealSequenceMs": [
+          2000,
+          6000,
+          11000,
+          13000
+        ],
+        "holyCracksMs": 12000,
+        "sealRingMs": 14000,
+        "roarMs": 15500,
+        "awakenedMs": 17000,
+        "sourceLines": [
+          1113,
+          1123,
+          1275,
+          1363,
+          1699,
+          1770
+        ]
+      },
+      "events": [
+        {
+          "name": "Voidflare",
+          "spellId": 256927,
+          "firstMs": 7000,
+          "repeatMs": 40000
+        },
+        {
+          "name": "Inner ring",
+          "auraSpellId": 256821,
+          "damageSpellId": 256823,
+          "firstMs": 20000,
+          "repeatMs": 40000,
+          "burstDelayMs": 5000,
+          "outerRadiusYards": 9.5
+        },
+        {
+          "name": "Outer ring",
+          "visualSpellId": 256822,
+          "damageSpellId": 256824,
+          "firstMs": 25000,
+          "repeatMs": 40000,
+          "burstDelayMs": 5000,
+          "innerRadiusYards": 9.5,
+          "outerRadiusYards": 18.5
+        },
+        {
+          "name": "Soak",
+          "firstMs": 30000,
+          "repeatMs": 40000,
+          "helperNpcId": 162978,
+          "resolveDelayMs": 4000,
+          "helperLifeMs": 4500,
+          "soakRadiusYards": 4.2,
+          "successSpellId": 256925,
+          "failureSpellId": 256926
+        },
+        {
+          "name": "Crystal",
+          "firstMs": 35000,
+          "repeatMs": 40000,
+          "helperNpcId": 162723,
+          "clickCreatesNpcId": 162724,
+          "shelterSpellId": 256847
+        },
+        {
+          "name": "Void Wrath",
+          "spellId": 256844,
+          "firstMs": 40000,
+          "repeatMs": 40000,
+          "protectionSpellId": 256847
+        },
+        {
+          "name": "Fierce Blow",
+          "spellId": 975011,
+          "firstMs": 10000,
+          "repeatMsRange": [
+            10000,
+            12000
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Events may be delayed by active casting and encounter state.",
+    "Difficulty labels reflect this C++ DifficultyIndex; current realm and Mythic+ behavior unverified.",
+    "Helper spell damage may not originate from boss GUID.",
+    "Do not conflate pre-pull awakening with combat timers."
+  ]
+}

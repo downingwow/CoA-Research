@@ -249,7 +249,8 @@
     "Health source export contains 1747 parsed rows, compared with 1756 documented later; investigate subsequent migrations and parser coverage.",
     "Encounter-to-map crosswalk joins NPC IDs to health map data; it is inferred and 41 credit rows remain unassigned.",
     "41 unmatched encounters have provisional name-based map assignments; these require spawn-map verification.",
-    "Use merged boss loot v3; v1/v2 were superseded due to incomplete final-tuple parsing."
+    "Use merged boss loot v3; v1/v2 were superseded due to incomplete final-tuple parsing.",
+    "Raid registry v2 supersedes v1 (final semicolon-terminated row)."
   ],
   "researchDataSources": {
     "health": "research/dungeons/vanilla-health-heroic-mythic-full-source-2026-10-30.json",
@@ -259,7 +260,8 @@
     "bossEncounterLootCrosswalk": "research/dungeons/vanilla-19-map-boss-encounter-loot-crosswalk-2026-10-30.json",
     "provisionalEncounterReconciliation": "research/dungeons/vanilla-41-unmatched-encounter-provisional-map-reconciliation-2026-10-30.json",
     "mergedBossLoot": "research/loot/vanilla-heroic-mythic-boss-loot-merged-v3-2026-10-30.json",
-    "raidEncounterRegistry": "research/raids/raid-encounters-by-map-and-difficulty-2026-10-30.json"
+    "raidEncounterRegistry": "research/raids/raid-encounters-by-map-and-difficulty-v2-2026-10-30.json",
+    "raidMapManifest": "research/raids/classic-tbc-wrath-22-raid-map-research-manifest-2026-10-30.json"
   },
   "importedCounts": {
     "healthSourceRows": 1747,
@@ -271,7 +273,7 @@
     "encounterCreditRowsUnassigned": 41,
     "mergedBossLootRows": 3884,
     "mergedBossLootTemplates": 414,
-    "raidEncounterRows": 501,
+    "raidEncounterRows": 502,
     "raidMapCount": 22
   }
 }

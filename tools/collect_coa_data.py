@@ -89,7 +89,7 @@ def run(max_files):
     OUT.mkdir(parents=True, exist_ok=True)
     manifest = {"generatedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(), "sources": [], "errors": [], "schema": 1}
     processed = 0
-    per_category_cap = max(1, max_files // 8)
+    per_category_cap = max_files
     for repo, ref, rules in SOURCES:
         try:
             entries = tree(repo, ref)

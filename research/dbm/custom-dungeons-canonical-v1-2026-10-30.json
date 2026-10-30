@@ -39,7 +39,9 @@
             },
             "source": "CoAOtherSideEmbryo.cpp"
           },
-          "confidence": "source-derived; live-unverified"
+          "confidence": "source-derived; live-unverified",
+          "heroicNpcId": 262716,
+          "mythicNpcId": 362716
         },
         {
           "npcId": 162715,
@@ -67,7 +69,9 @@
             "source": "CoAOtherSideDrakmath.cpp",
             "caveat": "Beam phase may have interruptions or implementation-dependent delays; next sink scheduled in EndBeam."
           },
-          "confidence": "source-derived; live-unverified"
+          "confidence": "source-derived; live-unverified",
+          "heroicNpcId": 262715,
+          "mythicNpcId": 362715
         },
         {
           "npcId": 162711,
@@ -102,12 +106,15 @@
             },
             "source": "CoAOtherSideMuzah.cpp"
           },
-          "confidence": "source-derived; live-unverified"
+          "confidence": "source-derived; live-unverified",
+          "heroicNpcId": 262711,
+          "mythicNpcId": 362711
         }
       ],
       "references": [
         "research/dbm/road-to-de-other-side-three-boss-source-audit-2026-10-30.md",
-        "research/dbm/road-to-de-other-side-phase-timelines-v1-2026-10-30.json"
+        "research/dbm/road-to-de-other-side-phase-timelines-v1-2026-10-30.json",
+        "research/dbm/road-to-de-other-side-sql-difficulty-fixes-2026-10-30.md"
       ],
       "healthSource": "data/sql/updates/pending_db_world/rev_20261029_82_coa_road_to_de_other_side_health_immunities.sql",
       "difficultyHealth": [
@@ -283,7 +290,180 @@
       },
       "cautions": [
         "Health is from upstream log-derived or model-derived SQL, not confirmed current live values"
-      ]
+      ],
+      "meleeDamageModifiers": [
+        {
+          "npcId": 62711,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62715,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62716,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62743,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62765,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62769,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62770,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62773,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62775,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62776,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62780,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62782,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62783,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62784,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62785,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62979,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62980,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62981,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62982,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62983,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62988,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 162766,
+          "normal": null,
+          "heroic": 1.206,
+          "mythic": 3.015,
+          "notes": "Normal modifier sourced from separate SQL; Heroic/Mythic extrapolated from other trash, not measured bat hits"
+        },
+        {
+          "npcId": 162767,
+          "normal": null,
+          "heroic": 1.206,
+          "mythic": 3.015,
+          "notes": "Normal modifier sourced from separate SQL; Heroic/Mythic extrapolated from other trash, not measured bat hits"
+        }
+      ],
+      "meleeDamageSource": "data/sql/updates/pending_db_world/rev_20261029_85_coa_custom_dungeons_melee.sql",
+      "entrance": {
+        "triggerId": 8004,
+        "destinationMapId": 937,
+        "destination": {
+          "x": 480.61,
+          "y": -232.172,
+          "z": 173.47,
+          "orientation": 4.15317
+        }
+      },
+      "exit": {
+        "triggerId": 8005,
+        "destination": {
+          "x": -243,
+          "y": -4185,
+          "z": 56.029,
+          "orientation": 3.14
+        },
+        "note": "Updated exit destination outside ward; target map not repeated in later SQL"
+      },
+      "questGiver": {
+        "npcId": 162933,
+        "name": "Adlazin",
+        "questIds": [
+          1660083,
+          1660084
+        ]
+      },
+      "batKillCreditNpcId": 163814,
+      "lootStatus": "No Road boss loot rows established in examined pending SQL; do not infer absence in base DB"
     },
     {
       "name": "Vaults of the Inquisition",
@@ -609,7 +789,112 @@
         "heroic": 1401,
         "mythic": 2401
       },
-      "lootSource": "data/sql/updates/pending_db_world/rev_20261028_60_vaults_of_the_inquisition.sql"
+      "lootSource": "data/sql/updates/pending_db_world/rev_20261028_60_vaults_of_the_inquisition.sql",
+      "meleeDamageModifiers": [
+        {
+          "npcId": 62700,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62703,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62704,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62733,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62734,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62735,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62736,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62737,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62738,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62748,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62761,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62762,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62763,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62766,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62767,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 62999,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        },
+        {
+          "npcId": 63813,
+          "normal": null,
+          "heroic": null,
+          "mythic": null
+        }
+      ],
+      "meleeDamageSource": "data/sql/updates/pending_db_world/rev_20261029_85_coa_custom_dungeons_melee.sql"
     },
     {
       "name": "Frozen Reach (custom map)",

@@ -1,0 +1,47 @@
+name: Publish BoneArchive Worker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - 'wrangler.jsonc'
+      - '.github/workflows/workers.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy coa-research Worker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Cloudflare deployment credentials
+        id: credentials
+        shell: bash
+        env:
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [[ -n "$CF_API_TOKEN" && -n "$CF_ACCOUNT_ID" ]]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check out repository
+        if: steps.credentials.outputs.configured == 'true'
+        uses: actions/checkout@v4
+
+      - name: Deploy Worker assets
+        if: steps.credentials.outputs.configured == 'true'
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
+
+      - name: Report missing Cloudflare credentials
+        if: steps.credentials.outputs.configured != 'true'
+        run: echo '::warning::Cloudflare deployment skipped. Configure CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID in repository Actions secrets to publish the coa-research Worker.'

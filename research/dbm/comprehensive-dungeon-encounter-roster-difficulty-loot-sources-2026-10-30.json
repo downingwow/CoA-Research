@@ -1,0 +1,3814 @@
+{
+  "scope": "Full dungeon reference foundation: LFG roster, difficulty design, boss encounter IDs, reward rules",
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "verification": "Upstream source and migration evidence; not live Conquest Reborn verified",
+  "files": [
+    {
+      "path": "docs/coa/vanilla-dungeon-difficulties.md",
+      "sha": "66a9457fd937b3387384d99af75e65cc10a6893f",
+      "lineCount": 123,
+      "content": [
+        {
+          "line": 1,
+          "text": "# Vanilla dungeon difficulties"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "The first playable baseline covers the 19 original dungeon maps: 33, 34, 36, 43, 47, 48, 70, 90, 109,"
+        },
+        {
+          "line": 4,
+          "text": "129, 189, 209, 229, 230, 289, 329, 349, 389 and 429. Their installed Ascension MapDifficulty.dbc provides"
+        },
+        {
+          "line": 5,
+          "text": "Normal (0), Heroic (1) and Mythic (2). Mythic+ is outside this baseline."
+        },
+        {
+          "line": 6,
+          "text": ""
+        },
+        {
+          "line": 7,
+          "text": "## Spawns and access"
+        },
+        {
+          "line": 8,
+          "text": ""
+        },
+        {
+          "line": 9,
+          "text": "The existing Normal creature and gameobject spawns also participate in Heroic and Mythic. Their GUIDs,"
+        },
+        {
+          "line": 10,
+          "text": "positions, pools, events, paths and instance scripts remain unchanged. Event summons keep their original"
+        },
+        {
+          "line": 11,
+          "text": "entries, so the core selects the corresponding difficulty template without breaking scripted boss IDs."
+        },
+        {
+          "line": 12,
+          "text": "1,278 difficulty templates in 645 families are supported by named entries in the Exiles creature export"
+        },
+        {
+          "line": 13,
+          "text": "of 13 September 2026. Models, movement, resistances, spell lists and template addons are copied with them."
+        },
+        {
+          "line": 14,
+          "text": "AI and ScriptName remain on the original template, as required by the core."
+        },
+        {
+          "line": 15,
+          "text": ""
+        },
+        {
+          "line": 16,
+          "text": "Creature levels for all 1,278 difficulty templates use the explicit Exiles `min_level` / `max_level` values:"
+        },
+        {
+          "line": 17,
+          "text": "60 (127 variants), 61 (650), 62 (83), or 63 (418). Gordok Mastiff is 60 and VanCleef is 63 on both tiers."
+        },
+        {
+          "line": 18,
+          "text": "The core retains the Normal entry as the creature identity; `.npc near` therefore shows the Normal ID"
+        },
+        {
+          "line": 19,
+          "text": "even when the difficulty template is active."
+        },
+        {
+          "line": 20,
+          "text": ""
+        },
+        {
+          "line": 21,
+          "text": "Boss and trash damage is described under [Boss mechanics and damage](#boss-mechanics-and-damage)."
+        },
+        {
+          "line": 22,
+          "text": "Entry requirements are inherited from the current Normal baseline. Existing higher-difficulty access rows are preserved. The baseline adds no inferred level-60 or item-level gate."
+        },
+        {
+          "line": 23,
+          "text": ""
+        },
+        {
+          "line": 24,
+          "text": "The Exiles spawn export is not a complete event implementation. Its differences include rare spawns,"
+        },
+        {
+          "line": 25,
+          "text": "seasonal actors and scripted encounters. They are not applied as wholesale spawn replacements. Exact"
+        },
+        {
+          "line": 26,
+          "text": "Ascension placement parity and the Mythic Champion's appearance rules remain unverified."
+        },
+        {
+          "line": 27,
+          "text": ""
+        },
+        {
+          "line": 28,
+          "text": "## Loot"
+        },
+        {
+          "line": 29,
+          "text": ""
+        },
+        {
+          "line": 30,
+          "text": "`coa_dungeon_loot_variant` maps 999 existing equipment entries to supported Heroic and/or Mythic items."
+        },
+        {
+          "line": 31,
+          "text": "The map is loaded at server startup and by the full loot-table reload. The original loot template rolls"
+        },
+        {
+          "line": 32,
+          "text": "its existing chances, groups, references and quantities. `Loot::AddItem` then substitutes the selected"
+        },
+        {
+          "line": 33,
+          "text": "item **before** constructing the loot item, splitting stacks and generating its random enchantments."
+        },
+        {
+          "line": 34,
+          "text": "This also covers shared reference pools and dungeon chests without modifying those shared pools."
+        },
+        {
+          "line": 35,
+          "text": ""
+        },
+        {
+          "line": 36,
+          "text": "Only creature and gameobject loot with an actual source on one of these maps is eligible. Normal,"
+        },
+        {
+          "line": 37,
+          "text": "other maps, raids, quest-required drops, bags, mail, fishing, skinning and disenchanting keep their"
+        },
+        {
+          "line": 38,
+          "text": "original items. Missing tier mappings retain the original drop. There is no arithmetic item-ID offset."
+        },
+        {
+          "line": 39,
+          "text": ""
+        },
+        {
+          "line": 40,
+          "text": "**Provisional:** drop rates, counts and the underlying loot pools are the installed server's existing"
+        },
+        {
+          "line": 41,
+          "text": "ones, not recovered Ascension rates. AtlasLoot's newer extra boss items without supported difficulty"
+        },
+        {
+          "line": 42,
+          "text": "variants are not added. Some rare/legacy items have no verified variant and retain Normal loot."
+        },
+        {
+          "line": 43,
+          "text": "The Exiles aggregated creature-drop table is never used as a server loot table."
+        },
+        {
+          "line": 44,
+          "text": ""
+        },
+        {
+          "line": 45,
+          "text": "## Evidence"
+        },
+        {
+          "line": 46,
+          "text": ""
+        },
+        {
+          "line": 47,
+          "text": "- Dungeon template names: `exiles-db-export/tables/creature.csv.gz`, export 2026-09-13."
+        },
+        {
+          "line": 48,
+          "text": "- Client difficulties: the installed server's `Data/dbc/MapDifficulty.dbc`, all 57 map/mode pairs."
+        },
+        {
+          "line": 49,
+          "text": "- Boss/item associations and explicit tier IDs: `AtlasLoot_OriginalWoW/originalwow.lua`,"
+        },
+        {
+          "line": 50,
+          "text": "  `AtlasLoot_Cache/AtlasLootCache.lua` and `ItemIDsDatabaseFixes.lua` from the supplied All AddOns directory."
+        },
+        {
+          "line": 51,
+          "text": "- Item validation: installed item names, class, subclass and inventory slot, with exact"
+        },
+        {
+          "line": 52,
+          "text": "  `@Heroic Dungeon@` / `@Mythic Dungeon@` tags and RequiredLevel 60. Unique matching tagged items can"
+        },
+        {
+          "line": 53,
+          "text": "  correct stale AtlasLoot IDs. Bronzebeard and Darkmoon item caches corroborate the available tagged items."
+        },
+        {
+          "line": 54,
+          "text": "- Legacy `@Heroic@` / `@Mythic@` descriptions require an explicit AtlasLoot mapping, the same item identity,"
+        },
+        {
+          "line": 55,
+          "text": "  RequiredLevel 60 and ItemLevel 60â€“100. `@Mythic N@` items are excluded."
+        },
+        {
+          "line": 56,
+          "text": ""
+        },
+        {
+          "line": 57,
+          "text": "The pending migration contains the explicit selected IDs. The compiled `dungeon_loot` harness exercises"
+        },
+        {
+          "line": 58,
+          "text": "the actual `Loot::AddItem` method with both tiers, original-row preservation, counts, target stack sizes,"
+        },
+        {
+          "line": 59,
+          "text": "conditions, quest drops and missing mappings. Map and loot-source exclusions are checked separately."
+        },
+        {
+          "line": 60,
+          "text": "That focused harness does not establish live-client portal traversal, full dungeon clears, encounter"
+        },
+        {
+          "line": 61,
+          "text": "completion or exact Ascension drop probabilities; those require runtime/in-game acceptance."
+        },
+        {
+          "line": 62,
+          "text": ""
+        },
+        {
+          "line": 63,
+          "text": "The native `vanilla-dungeons-normal`, `vanilla-dungeons-heroic` and `vanilla-dungeons-mythic` scenarios"
+        },
+        {
+          "line": 64,
+          "text": "exercise all 57 map/mode combinations, a real database spawn on each map, VanCleef's selected template"
+        },
+        {
+          "line": 65,
+          "text": "and loot generated by a native killing blow. Four independent fixture accounts respect the standard"
+        },
+        {
+          "line": 66,
+          "text": "five-instance hourly limit. These server-side tests do not replace client portal/UI or full-clear acceptance."
+        },
+        {
+          "line": 67,
+          "text": ""
+        },
+        {
+          "line": 68,
+          "text": "## Client difficulty selection"
+        },
+        {
+          "line": 69,
+          "text": ""
+        },
+        {
+          "line": 70,
+          "text": "The portrait menu calls `RequestSetDungeonDifficulty(2)` for Mythic. The local Extensions.dll"
+        },
+        {
+          "line": 71,
+          "text": "registers this function at 0x100dcdf0; it sends opcode 0x773 with one uint8 difficulty."
+        },
+        {
+          "line": 72,
+          "text": "The early compatibility hook translates it into the queued native difficulty request, retaining"
+        },
+        {
+          "line": 73,
+          "text": "group leadership and instance restrictions. Solo changes also send the difficulty confirmation."
+        },
+        {
+          "line": 74,
+          "text": "Dungeon Finder serves all three tiers: Random Classic Dungeon (258), Random Classic Dungeon Heroic (1258) and"
+        },
+        {
+          "line": 75,
+          "text": "Random Classic Dungeon Mythic (2258) at level 60, and the Heroic/Mythic wing entries teleport to the same start"
+        },
+        {
+          "line": 76,
+          "text": "points as Normal. The `lfg-random-classic-{heroic,mythic}-queue` scenarios queue a group and check the instance"
+        },
+        {
+          "line": 77,
+          "text": "difficulty. The Mythic gameplay scenario exercises this path; the protocol harness checks malformed payloads,"
+        },
+        {
+          "line": 78,
+          "text": "queue translation, solo confirmation and group/instance restrictions."
+        },
+        {
+          "line": 79,
+          "text": ""
+        },
+        {
+          "line": 80,
+          "text": "## Reconstructed health"
+        },
+        {
+          "line": 81,
+          "text": ""
+        },
+        {
+          "line": 82,
+          "text": "`coa_dungeon_health` holds Heroic and Mythic maximum health for 1,756 creatures, keyed by map, difficulty and"
+        },
+        {
+          "line": 83,
+          "text": "original creature entry. The table is exported from an HP tool that combines user videos, combat logs and a"
+        },
+        {
+          "line": 84,
+          "text": "model: Mythic comes from the observations, Heroic is derived from Mythic (bosses and trash / 1.30, event bosses"
+        },
+        {
+          "line": 85,
+          "text": "/ 1.65). `evidence` and `source` record the origin of every row. A few later rows are corrected from in-game"
+        },
+        {
+          "line": 86,
+          "text": "checks (for example The Unforgiven, Mythic 373,000). Recount damage totals are not imported as maximum health."
+        },
+        {
+          "line": 87,
+          "text": "Normal health is unchanged."
+        },
+        {
+          "line": 88,
+          "text": ""
+        },
+        {
+          "line": 89,
+          "text": "The engine applies these targets after template health generation, without changing creature class, damage,"
+        },
+        {
+          "line": 90,
+          "text": "faction, AI, spells or loot. Summons with an observed base entry also receive its target. Normal, pets, raids"
+        },
+        {
+          "line": 91,
+          "text": "and non-Vanilla maps are excluded. Creatures without a row keep their template health."
+        },
+        {
+          "line": 92,
+          "text": ""
+        },
+        {
+          "line": 93,
+          "text": "Targets load at world startup. The `dungeon_health` harness checks resolution and exclusions, and"
+        },
+        {
+          "line": 94,
+          "text": "`vanilla-dungeons-health` checks real spawned creatures on Normal, Heroic and Mythic, including the actual"
+        },
+        {
+          "line": 95,
+          "text": "Ascension Mythic selection request."
+        },
+        {
+          "line": 96,
+          "text": ""
+        },
+        {
+          "line": 97,
+          "text": "## Boss mechanics and damage"
+        },
+        {
+          "line": 98,
+          "text": ""
+        },
+        {
+          "line": 99,
+          "text": "Each boss gets its Ascension ability kit. The target list per boss is the difficulty spell list of the Exiles"
+        },
+        {
+          "line": 100,
+          "text": "creature page, plus tier spells of the same name from the export. SmartAI bosses receive the kit as additional"
+        },
+        {
+          "line": 101,
+          "text": "`smart_scripts` rows from id 9000; where Normal, Heroic and Mythic use different tiers of a spell, event"
+        },
+        {
+          "line": 102,
+          "text": "difficulty flags pick the tier. Vanilla rows that the kit replaces get event flag 0x10, which never fires in a"
+        },
+        {
+          "line": 103,
+          "text": "5-man dungeon, so they stay in place for reference. Bosses with a C++ script keep it unchanged;"
+        },
+        {
+          "line": 104,
+          "text": "`coa_dungeon_boss_kit` runs their kit next to the script on non-raid dungeon maps."
+        },
+        {
+          "line": 105,
+          "text": ""
+        },
+        {
+          "line": 106,
+          "text": "Where a boss's Ascension kit was already implemented before this restoration (Deadmines bosses, Jed Runewatcher,"
+        },
+        {
+          "line": 107,
+          "text": "Goraluk Anvilcrack, General Drakkisath, Pyroguard Emberseer, The Beast, Mr. Smite), that kit is used and the"
+        },
+        {
+          "line": 108,
+          "text": "vanilla dungeon kit adds nothing: no `smart_scripts` rows from id 9000, no `coa_dungeon_boss_kit` rows and no spell"
+        },
+        {
+          "line": 109,
+          "text": "corrections of its own. Jed's and Goraluk's rows run on every difficulty."
+        },
+        {
+          "line": 110,
+          "text": ""
+        },
+        {
+          "line": 111,
+          "text": "Spell damage of dungeon creatures is scaled per map and difficulty in `coa_dungeon_spell_damage`, with"
+        },
+        {
+          "line": 112,
+          "text": "fixed per-spell factors where in-game logs showed a different value. Trash spells are softened above"
+        },
+        {
+          "line": 113,
+          "text": "460 (Heroic) and 600 (Mythic) damage: the excess deals one twentieth. Bosses listed in `coa_dungeon_bosses`,"
+        },
+        {
+          "line": 114,
+          "text": "their summons and individually tuned spells are exempt. Dungeon creatures pay no power cost on Heroic and"
+        },
+        {
+          "line": 115,
+          "text": "Mythic, and creatures without health regeneration spawn at full health there."
+        },
+        {
+          "line": 116,
+          "text": ""
+        },
+        {
+          "line": 117,
+          "text": "SmartAI changes that the kits rely on, limited to dungeon creatures where noted: self-casts skip range and"
+        },
+        {
+          "line": 118,
+          "text": "line-of-sight checks, a repeat timer no longer interrupts a running channel, and a cast rejected because"
+        },
+        {
+          "line": 119,
+          "text": "another spell is in progress is retried. Ascension spell effect 174 deals a percentage of the target's maximum health or of the caster's melee damage."
+        },
+        {
+          "line": 120,
+          "text": ""
+        },
+        {
+          "line": 121,
+          "text": "Instance doors on these maps open without a key or lockpicking. Scripted doors keep opening through their"
+        },
+        {
+          "line": 122,
+          "text": "events. `CoA.BossProbe.Enable` (default off) logs boss spell damage before multipliers for tuning."
+        },
+        {
+          "line": 123,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "path": "src/server/coa/AscensionLfgClassicDungeonList.cpp",
+      "sha": "ba6930caa047ade65570a5da07956882aadef6d0",
+      "lineCount": 40,
+      "content": [
+        {
+          "line": 1,
+          "text": "/* Copyright (C) 2016+ AzerothCore, GNU AGPL v3. */"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "#include \"LFGMgr.h\""
+        },
+        {
+          "line": 4,
+          "text": "#include \"Player.h\""
+        },
+        {
+          "line": 5,
+          "text": "#include \"PlayerScript.h\""
+        },
+        {
+          "line": 6,
+          "text": "#include <algorithm>"
+        },
+        {
+          "line": 7,
+          "text": ""
+        },
+        {
+          "line": 8,
+          "text": "namespace"
+        },
+        {
+          "line": 9,
+          "text": "{"
+        },
+        {
+          "line": 10,
+          "text": "constexpr uint8 ClientClassicDungeonListMaxLevel = 59;"
+        },
+        {
+          "line": 11,
+          "text": ""
+        },
+        {
+          "line": 12,
+          "text": "[[nodiscard]] bool IsClientClassicDungeonList(Player const* player, lfg::LfgDungeonSet const& dungeons)"
+        },
+        {
+          "line": 13,
+          "text": "{"
+        },
+        {
+          "line": 14,
+          "text": "    return player->GetLevel() <= ClientClassicDungeonListMaxLevel && dungeons.size() > 1 &&"
+        },
+        {
+          "line": 15,
+          "text": "           std::ranges::all_of(dungeons, [](uint32 dungeonId)"
+        },
+        {
+          "line": 16,
+          "text": "           {"
+        },
+        {
+          "line": 17,
+          "text": "               return sLFGMgr->GetClassicRandomFallback(dungeonId) != nullptr;"
+        },
+        {
+          "line": 18,
+          "text": "           });"
+        },
+        {
+          "line": 19,
+          "text": "}"
+        },
+        {
+          "line": 20,
+          "text": ""
+        },
+        {
+          "line": 21,
+          "text": "class lfg_classic_dungeon_list_join : public PlayerScript"
+        },
+        {
+          "line": 22,
+          "text": "{"
+        },
+        {
+          "line": 23,
+          "text": "public:"
+        },
+        {
+          "line": 24,
+          "text": "    lfg_classic_dungeon_list_join() : PlayerScript(\"lfg_classic_dungeon_list_join\", {PLAYERHOOK_CAN_JOIN_LFG}) { }"
+        },
+        {
+          "line": 25,
+          "text": ""
+        },
+        {
+          "line": 26,
+          "text": "    bool OnPlayerCanJoinLfg(Player* player, uint8, lfg::LfgDungeonSet& dungeons, std::string const&) override"
+        },
+        {
+          "line": 27,
+          "text": "    {"
+        },
+        {
+          "line": 28,
+          "text": "        if (IsClientClassicDungeonList(player, dungeons) && sLFGMgr->GetLFGDungeon(lfg::LFG_DUNGEON_RANDOM_CLASSIC))"
+        },
+        {
+          "line": 29,
+          "text": "            dungeons = { lfg::LFG_DUNGEON_RANDOM_CLASSIC };"
+        },
+        {
+          "line": 30,
+          "text": ""
+        },
+        {
+          "line": 31,
+          "text": "        return true;"
+        },
+        {
+          "line": 32,
+          "text": "    }"
+        },
+        {
+          "line": 33,
+          "text": "};"
+        },
+        {
+          "line": 34,
+          "text": "}"
+        },
+        {
+          "line": 35,
+          "text": ""
+        },
+        {
+          "line": 36,
+          "text": "void AddSC_AscensionLfgClassicDungeonList()"
+        },
+        {
+          "line": 37,
+          "text": "{"
+        },
+        {
+          "line": 38,
+          "text": "    new lfg_classic_dungeon_list_join();"
+        },
+        {
+          "line": 39,
+          "text": "}"
+        },
+        {
+          "line": 40,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20260929_20_heroic_mythic_encounters.sql",
+      "sha": "9d06609f6c7a20e0f55d79f0071de45b50609227",
+      "lineCount": 353,
+      "content": [
+        {
+          "line": 1,
+          "text": "-- Heroic and Mythic encounters of the vanilla dungeons: boss credit for the server (only VanCleef Mythic before)."
+        },
+        {
+          "line": 2,
+          "text": "-- Source: the client's DungeonEncounter.dbc + DungeonEncounterExtra.dbc (creature and the wing it ends)."
+        },
+        {
+          "line": 3,
+          "text": "-- Without these rows a Heroic/Mythic boss does not count as an encounter and a Heroic/Mythic wing run through"
+        },
+        {
+          "line": 4,
+          "text": "-- the Dungeon Finder is not completed at its last boss. Includes the extra Mythic bosses (Ironspine, Azshir,"
+        },
+        {
+          "line": 6,
+          "text": "DELETE FROM `instance_encounters` WHERE `entry` IN (1140, 1141, 1142, 1143, 1144, 1145, 1146, 1147, 1148, 1149, 1150, 1151, 1152, 1153, 1154, 1155, 1156, 1157, 1158, 1159, 1161, 1162, 1163, 1164, 1165, 1166, 1167, 1219, 1220, 1221, 1222, 1224, 1225, 1226, 1227, 1228, 1229, 1230, 1231, 1232, 1233, 1234, 1235, 1236, 1237, 1238, 1239, 1240, 1241, 1242, 1243, 1244, 1245, 1267, 1268"
+        },
+        {
+          "line": 7,
+          "text": "INSERT INTO `instance_encounters` (`entry`, `creditType`, `creditEntry`, `lastEncounterDungeon`, `comment`) VALUES"
+        },
+        {
+          "line": 8,
+          "text": "(1140, 0, 8923, 0, 'CoA Heroic DBC: Panzor the Invincible'),"
+        },
+        {
+          "line": 9,
+          "text": "(1141, 0, 16042, 0, 'CoA Heroic DBC: Lord Valthalak'),"
+        },
+        {
+          "line": 10,
+          "text": "(1142, 0, 10899, 0, 'CoA Heroic DBC: Goraluk Anvilcrack'),"
+        },
+        {
+          "line": 11,
+          "text": "(1143, 0, 10509, 0, 'CoA Heroic DBC: Jed Runewatcher'),"
+        },
+        {
+          "line": 12,
+          "text": "(1144, 0, 16080, 0, 'CoA Heroic DBC: Mor Grayhoof'),"
+        },
+        {
+          "line": 13,
+          "text": "(1145, 0, 10263, 0, 'CoA Heroic DBC: Burning Felguard'),"
+        },
+        {
+          "line": 14,
+          "text": "(1146, 0, 9718, 0, 'CoA Heroic DBC: Ghok Bashguud'),"
+        },
+        {
+          "line": 15,
+          "text": "(1147, 0, 10376, 0, 'CoA Heroic DBC: Crystal Fang'),"
+        },
+        {
+          "line": 16,
+          "text": "(1148, 0, 9596, 0, 'CoA Heroic DBC: Bannok Grimaxe'),"
+        },
+        {
+          "line": 17,
+          "text": "(1149, 0, 9217, 0, 'CoA Heroic DBC: Spirestone Lord Magus'),"
+        },
+        {
+          "line": 18,
+          "text": "(1150, 0, 9218, 0, 'CoA Heroic DBC: Spirestone Battle Lord'),"
+        },
+        {
+          "line": 19,
+          "text": "(1151, 0, 9219, 0, 'CoA Heroic DBC: Spirestone Butcher'),"
+        },
+        {
+          "line": 20,
+          "text": "(1152, 0, 10809, 0, 'CoA Heroic DBC: Stonespine'),"
+        },
+        {
+          "line": 21,
+          "text": "(1153, 0, 11058, 0, 'CoA Heroic DBC: Fras Siabi'),"
+        },
+        {
+          "line": 22,
+          "text": "(1154, 0, 10393, 0, 'CoA Heroic DBC: Skul'),"
+        },
+        {
+          "line": 23,
+          "text": "(1155, 0, 16097, 0, 'CoA Heroic DBC: Isalien'),"
+        },
+        {
+          "line": 24,
+          "text": "(1156, 0, 14506, 0, 'CoA Heroic DBC: Lord Hel''nurath'),"
+        },
+        {
+          "line": 25,
+          "text": "(1157, 0, 11467, 0, 'CoA Heroic DBC: Tsu''zee'),"
+        },
+        {
+          "line": 26,
+          "text": "(1158, 0, 14861, 0, 'CoA Heroic DBC: Blood Steward of Kirtonos'),"
+        },
+        {
+          "line": 27,
+          "text": "(1159, 0, 14516, 0, 'CoA Heroic DBC: Death Knight Darkreaver'),"
+        },
+        {
+          "line": 28,
+          "text": "(1161, 0, 644, 0, 'CoA Heroic DBC: Rhahk''zor'),"
+        },
+        {
+          "line": 29,
+          "text": "(1162, 0, 642, 0, 'CoA Heroic DBC: Sneed'),"
+        },
+        {
+          "line": 30,
+          "text": "(1163, 0, 1763, 0, 'CoA Heroic DBC: Gilnid'),"
+        },
+        {
+          "line": 31,
+          "text": "(1164, 0, 646, 0, 'CoA Heroic DBC: Mr. Smite'),"
+        },
+        {
+          "line": 32,
+          "text": "(1165, 0, 645, 0, 'CoA Heroic DBC: Cookie'),"
+        },
+        {
+          "line": 33,
+          "text": "(1166, 0, 647, 0, 'CoA Heroic DBC: Captain Greenskin'),"
+        },
+        {
+          "line": 34,
+          "text": "(1167, 0, 639, 1696, 'CoA Heroic DBC: Edwin VanCleef'),"
+        },
+        {
+          "line": 35,
+          "text": "(1219, 0, 4887, 0, 'CoA Heroic DBC: Ghamoo-ra'),"
+        },
+        {
+          "line": 36,
+          "text": "(1220, 0, 4831, 0, 'CoA Heroic DBC: Lady Sarevess'),"
+        },
+        {
+          "line": 37,
+          "text": "(1221, 0, 6243, 0, 'CoA Heroic DBC: Gelihast'),"
+        },
+        {
+          "line": 38,
+          "text": "(1222, 0, 12902, 0, 'CoA Heroic DBC: Lorgus Jett'),"
+        },
+        {
+          "line": 39,
+          "text": "(1224, 0, 4830, 0, 'CoA Heroic DBC: Old Serra''kis'),"
+        },
+        {
+          "line": 40,
+          "text": "(1225, 0, 4832, 0, 'CoA Heroic DBC: Twilight Lord Kelris'),"
+        },
+        {
+          "line": 41,
+          "text": "(1226, 0, 4829, 1700, 'CoA Heroic DBC: Aku''mai'),"
+        },
+        {
+          "line": 42,
+          "text": "(1227, 0, 9018, 0, 'CoA Heroic DBC: High Interrogator Gerstahn'),"
+        },
+        {
+          "line": 43,
+          "text": "(1228, 0, 9025, 0, 'CoA Heroic DBC: Lord Roccor'),"
+        },
+        {
+          "line": 44,
+          "text": "(1229, 0, 9319, 0, 'CoA Heroic DBC: Houndmaster Grebmar'),"
+        },
+        {
+          "line": 45,
+          "text": "(1230, 0, 10096, 1030, 'CoA Heroic DBC: Ring of Law'),"
+        },
+        {
+          "line": 46,
+          "text": "(1231, 0, 9024, 0, 'CoA Heroic DBC: Pyromancer Loregrain'),"
+        },
+        {
+          "line": 47,
+          "text": "(1232, 0, 9017, 0, 'CoA Heroic DBC: Lord Incendius'),"
+        },
+        {
+          "line": 48,
+          "text": "(1233, 0, 9041, 0, 'CoA Heroic DBC: Warder Stilgiss'),"
+        },
+        {
+          "line": 49,
+          "text": "(1234, 0, 9056, 0, 'CoA Heroic DBC: Fineous Darkvire'),"
+        },
+        {
+          "line": 50,
+          "text": "(1235, 0, 9016, 0, 'CoA Heroic DBC: Bael''Gar'),"
+        },
+        {
+          "line": 51,
+          "text": "(1236, 0, 9033, 0, 'CoA Heroic DBC: General Angerforge'),"
+        },
+        {
+          "line": 52,
+          "text": "(1237, 0, 8983, 602, 'CoA Heroic DBC: Golem Lord Argelmach'),"
+        },
+        {
+          "line": 53,
+          "text": "(1238, 0, 9537, 0, 'CoA Heroic DBC: Hurley Blackbreath'),"
+        },
+        {
+          "line": 54,
+          "text": "(1239, 0, 9502, 0, 'CoA Heroic DBC: Phalanx'),"
+        },
+        {
+          "line": 55,
+          "text": "(1240, 0, 9543, 0, 'CoA Heroic DBC: Ribbly Screwspigot'),"
+        },
+        {
+          "line": 56,
+          "text": "(1241, 0, 9499, 0, 'CoA Heroic DBC: Plugger Spazzring'),"
+        },
+        {
+          "line": 57,
+          "text": "(1242, 0, 9156, 0, 'CoA Heroic DBC: Ambassador Flamelash'),"
+        },
+        {
+          "line": 58,
+          "text": "(1243, 0, 9039, 0, 'CoA Heroic DBC: The Seven'),"
+        },
+        {
+          "line": 59,
+          "text": "(1244, 0, 9938, 0, 'CoA Heroic DBC: Magmus'),"
+        },
+        {
+          "line": 60,
+          "text": "(1245, 0, 9019, 1276, 'CoA Heroic DBC: Emperor Dagran Thaurissan'),"
+        },
+        {
+          "line": 61,
+          "text": "(1267, 0, 9196, 0, 'CoA Heroic DBC: Highlord Omokk'),"
+        },
+        {
+          "line": 62,
+          "text": "(1268, 0, 9236, 0, 'CoA Heroic DBC: Shadow Hunter Vosh''gajin'),"
+        },
+        {
+          "line": 63,
+          "text": "(1269, 0, 9237, 0, 'CoA Heroic DBC: War Master Voone'),"
+        },
+        {
+          "line": 64,
+          "text": "(1270, 0, 10596, 0, 'CoA Heroic DBC: Mother Smolderweb'),"
+        },
+        {
+          "line": 65,
+          "text": "(1271, 0, 10584, 0, 'CoA Heroic DBC: Urok Doomhowl'),"
+        },
+        {
+          "line": 66,
+          "text": "(1272, 0, 9736, 0, 'CoA Heroic DBC: Quartermaster Zigris'),"
+        },
+        {
+          "line": 67,
+          "text": "(1273, 0, 10268, 0, 'CoA Heroic DBC: Gizrul the Slavener'),"
+        },
+        {
+          "line": 68,
+          "text": "(1274, 0, 10220, 0, 'CoA Heroic DBC: Halycon'),"
+        },
+        {
+          "line": 69,
+          "text": "(1275, 0, 9568, 1032, 'CoA Heroic DBC: Overlord Wyrmthalak'),"
+        },
+        {
+          "line": 70,
+          "text": "(1276, 0, 9816, 0, 'CoA Heroic DBC: Pyroguard Emberseer'),"
+        },
+        {
+          "line": 71,
+          "text": "(1277, 0, 10264, 0, 'CoA Heroic DBC: Solakar Flamewreath'),"
+        },
+        {
+          "line": 72,
+          "text": "(1278, 0, 10429, 0, 'CoA Heroic DBC: Warchief Rend Blackhand'),"
+        },
+        {
+          "line": 73,
+          "text": "(1279, 0, 10430, 0, 'CoA Heroic DBC: The Beast'),"
+        },
+        {
+          "line": 74,
+          "text": "(1280, 0, 10363, 1044, 'CoA Heroic DBC: General Drakkisath'),"
+        },
+        {
+          "line": 75,
+          "text": "(1343, 0, 11490, 0, 'CoA Heroic DBC: Zevrim Thornhoof'),"
+        },
+        {
+          "line": 76,
+          "text": "(1344, 0, 13280, 0, 'CoA Heroic DBC: Hydrospawn'),"
+        },
+        {
+          "line": 77,
+          "text": "(1345, 0, 14327, 0, 'CoA Heroic DBC: Lethtendris'),"
+        },
+        {
+          "line": 78,
+          "text": "(1346, 0, 11492, 1034, 'CoA Heroic DBC: Alzzin the Wildshaper'),"
+        },
+        {
+          "line": 79,
+          "text": "(1347, 0, 11488, 0, 'CoA Heroic DBC: Illyanna Ravenoak'),"
+        },
+        {
+          "line": 80,
+          "text": "(1348, 0, 11487, 0, 'CoA Heroic DBC: Magister Kalendris'),"
+        },
+        {
+          "line": 81,
+          "text": "(1349, 0, 11496, 0, 'CoA Heroic DBC: Immol''thar'),"
+        },
+        {
+          "line": 82,
+          "text": "(1350, 0, 11489, 0, 'CoA Heroic DBC: Tendris Warpwood'),"
+        },
+        {
+          "line": 83,
+          "text": "(1361, 0, 11486, 1036, 'CoA Heroic DBC: Prince Tortheldrin'),"
+        },
+        {
+          "line": 84,
+          "text": "(1362, 0, 14326, 0, 'CoA Heroic DBC: Guard Mol''dar'),"
+        },
+        {
+          "line": 85,
+          "text": "(1363, 0, 14322, 0, 'CoA Heroic DBC: Stomper Kreeg'),"
+        },
+        {
+          "line": 86,
+          "text": "(1364, 0, 14321, 0, 'CoA Heroic DBC: Guard Fengus'),"
+        },
+        {
+          "line": 87,
+          "text": "(1365, 0, 14323, 0, 'CoA Heroic DBC: Guard Slip''kik'),"
+        },
+        {
+          "line": 88,
+          "text": "(1366, 0, 14325, 0, 'CoA Heroic DBC: Captain Kromcrush'),"
+        },
+        {
+          "line": 89,
+          "text": "(1367, 0, 14324, 0, 'CoA Heroic DBC: Cho''Rush the Observer'),"
+        },
+        {
+          "line": 90,
+          "text": "(1368, 0, 11501, 1038, 'CoA Heroic DBC: King Gordok'),"
+        },
+        {
+          "line": 91,
+          "text": "(1378, 0, 7079, 0, 'CoA Heroic DBC: Viscous Fallout'),"
+        },
+        {
+          "line": 92,
+          "text": "(1379, 0, 7361, 0, 'CoA Heroic DBC: Grubbis'),"
+        },
+        {
+          "line": 93,
+          "text": "(1380, 0, 6235, 0, 'CoA Heroic DBC: Electrocutioner 6000'),"
+        },
+        {
+          "line": 94,
+          "text": "(1381, 0, 6229, 2727, 'CoA Heroic DBC: Crowd Pummeler 9-60'),"
+        },
+        {
+          "line": 95,
+          "text": "(1382, 0, 7800, 1704, 'CoA Heroic DBC: Mekgineer Thermaplugg'),"
+        },
+        {
+          "line": 96,
+          "text": "(1422, 0, 13282, 0, 'CoA Heroic DBC: Noxxion'),"
+        },
+        {
+          "line": 97,
+          "text": "(1423, 0, 12258, 1716, 'CoA Heroic DBC: Razorlash'),"
+        },
+        {
+          "line": 98,
+          "text": "(1424, 0, 12236, 1962, 'CoA Heroic DBC: Lord Vyletongue'),"
+        },
+        {
+          "line": 99,
+          "text": "(1425, 0, 12225, 0, 'CoA Heroic DBC: Celebras the Cursed'),"
+        },
+        {
+          "line": 100,
+          "text": "(1426, 0, 12203, 0, 'CoA Heroic DBC: Landslide'),"
+        },
+        {
+          "line": 101,
+          "text": "(1427, 0, 13601, 0, 'CoA Heroic DBC: Tinkerer Gizlock'),"
+        },
+        {
+          "line": 102,
+          "text": "(1428, 0, 13596, 0, 'CoA Heroic DBC: Rotgrip'),"
+        },
+        {
+          "line": 103,
+          "text": "(1429, 0, 12201, 1963, 'CoA Heroic DBC: Princess Theradras'),"
+        },
+        {
+          "line": 104,
+          "text": "(1430, 0, 11517, 0, 'CoA Heroic DBC: Oggleflint'),"
+        },
+        {
+          "line": 105,
+          "text": "(1431, 0, 11520, 1694, 'CoA Heroic DBC: Taragaman the Hungerer'),"
+        },
+        {
+          "line": 106,
+          "text": "(1432, 0, 11518, 0, 'CoA Heroic DBC: Jergosh the Invoker'),"
+        },
+        {
+          "line": 107,
+          "text": "(1433, 0, 11519, 0, 'CoA Heroic DBC: Bazzalan'),"
+        },
+        {
+          "line": 108,
+          "text": "(1434, 0, 7355, 0, 'CoA Heroic DBC: Tuten''kash'),"
+        },
+        {
+          "line": 109,
+          "text": "(1435, 0, 7357, 0, 'CoA Heroic DBC: Mordresh Fire Eye'),"
+        },
+        {
+          "line": 110,
+          "text": "(1436, 0, 8567, 0, 'CoA Heroic DBC: Glutton'),"
+        },
+        {
+          "line": 111,
+          "text": "(1437, 0, 7358, 1710, 'CoA Heroic DBC: Amnennar the Coldbringer'),"
+        },
+        {
+          "line": 112,
+          "text": "(1438, 0, 6168, 0, 'CoA Heroic DBC: Roogug'),"
+        },
+        {
+          "line": 113,
+          "text": "(1439, 0, 4424, 0, 'CoA Heroic DBC: Aggem Thorncurse'),"
+        },
+        {
+          "line": 114,
+          "text": "(1440, 0, 4428, 0, 'CoA Heroic DBC: Death Speaker Jargba'),"
+        },
+        {
+          "line": 115,
+          "text": "(1441, 0, 4420, 0, 'CoA Heroic DBC: Overlord Ramtusk'),"
+        },
+        {
+          "line": 116,
+          "text": "(1443, 0, 4421, 1706, 'CoA Heroic DBC: Charlga Razorflank'),"
+        },
+        {
+          "line": 117,
+          "text": "(1444, 0, 3983, 0, 'CoA Heroic DBC: Interrogator Vishas'),"
+        },
+        {
+          "line": 118,
+          "text": "(1445, 0, 4543, 1708, 'CoA Heroic DBC: Bloodmage Thalnos'),"
+        },
+        {
+          "line": 119,
+          "text": "(1446, 0, 3974, 0, 'CoA Heroic DBC: Houndmaster Loksey'),"
+        },
+        {
+          "line": 120,
+          "text": "(1447, 0, 6487, 1855, 'CoA Heroic DBC: Arcanist Doan'),"
+        },
+        {
+          "line": 121,
+          "text": "(1448, 0, 3975, 1853, 'CoA Heroic DBC: Herod'),"
+        },
+        {
+          "line": 122,
+          "text": "(1449, 0, 4542, 0, 'CoA Heroic DBC: High Inquisitor Fairbanks'),"
+        },
+        {
+          "line": 123,
+          "text": "(1450, 0, 3977, 1854, 'CoA Heroic DBC: High Inquisitor Whitemane'),"
+        },
+        {
+          "line": 124,
+          "text": "(1451, 0, 10506, 0, 'CoA Heroic DBC: Kirtonos the Herald'),"
+        },
+        {
+          "line": 125,
+          "text": "(1452, 0, 10503, 0, 'CoA Heroic DBC: Jandice Barov'),"
+        },
+        {
+          "line": 126,
+          "text": "(1453, 0, 11622, 0, 'CoA Heroic DBC: Rattlegore'),"
+        },
+        {
+          "line": 127,
+          "text": "(1454, 0, 10433, 0, 'CoA Heroic DBC: Marduk Blackpool'),"
+        },
+        {
+          "line": 128,
+          "text": "(1455, 0, 10432, 0, 'CoA Heroic DBC: Vectus'),"
+        },
+        {
+          "line": 129,
+          "text": "(1457, 0, 10505, 0, 'CoA Heroic DBC: Instructor Malicia'),"
+        },
+        {
+          "line": 130,
+          "text": "(1458, 0, 11261, 0, 'CoA Heroic DBC: Doctor Theolen Krastinov'),"
+        },
+        {
+          "line": 131,
+          "text": "(1459, 0, 10901, 0, 'CoA Heroic DBC: Lorekeeper Polkelt'),"
+        },
+        {
+          "line": 132,
+          "text": "(1460, 0, 10507, 0, 'CoA Heroic DBC: The Ravenian'),"
+        },
+        {
+          "line": 133,
+          "text": "(1461, 0, 10504, 0, 'CoA Heroic DBC: Lord Alexei Barov'),"
+        },
+        {
+          "line": 134,
+          "text": "(1462, 0, 10502, 0, 'CoA Heroic DBC: Lady Illucia Barov'),"
+        },
+        {
+          "line": 135,
+          "text": "(1463, 0, 1853, 52, 'CoA Heroic DBC: Darkmaster Gandling'),"
+        },
+        {
+          "line": 136,
+          "text": "(1464, 0, 3914, 0, 'CoA Heroic DBC: Rethilgore'),"
+        },
+        {
+          "line": 137,
+          "text": "(1465, 0, 3886, 0, 'CoA Heroic DBC: Razorclaw the Butcher'),"
+        },
+        {
+          "line": 138,
+          "text": "(1466, 0, 3887, 0, 'CoA Heroic DBC: Baron Silverlaine'),"
+        },
+        {
+          "line": 139,
+          "text": "(1467, 0, 4278, 0, 'CoA Heroic DBC: Commander Springvale'),"
+        },
+        {
+          "line": 140,
+          "text": "(1468, 0, 4279, 0, 'CoA Heroic DBC: Odo the Blindwatcher'),"
+        },
+        {
+          "line": 141,
+          "text": "(1469, 0, 4274, 0, 'CoA Heroic DBC: Fenrus the Devourer'),"
+        },
+        {
+          "line": 142,
+          "text": "(1470, 0, 3927, 0, 'CoA Heroic DBC: Wolf Master Nandos'),"
+        },
+        {
+          "line": 143,
+          "text": "(1471, 0, 4275, 1008, 'CoA Heroic DBC: Archmage Arugal'),"
+        },
+        {
+          "line": 144,
+          "text": "(1472, 0, 10516, 0, 'CoA Heroic DBC: The Unforgiven'),"
+        },
+        {
+          "line": 145,
+          "text": "(1473, 0, 10558, 0, 'CoA Heroic DBC: Hearthsinger Forresten'),"
+        },
+        {
+          "line": 146,
+          "text": "(1474, 0, 10808, 0, 'CoA Heroic DBC: Timmy the Cruel'),"
+        },
+        {
+          "line": 147,
+          "text": "(1475, 0, 10997, 0, 'CoA Heroic DBC: Cannon Master Willey'),"
+        },
+        {
+          "line": 148,
+          "text": "(1476, 0, 11032, 0, 'CoA Heroic DBC: Malor the Zealous'),"
+        },
+        {
+          "line": 149,
+          "text": "(1477, 0, 10811, 0, 'CoA Heroic DBC: Archivist Galford'),"
+        },
+        {
+          "line": 150,
+          "text": "(1478, 0, 10813, 1040, 'CoA Heroic DBC: Balnazzar'),"
+        },
+        {
+          "line": 151,
+          "text": "(1479, 0, 10436, 0, 'CoA Heroic DBC: Baroness Anastari'),"
+        },
+        {
+          "line": 152,
+          "text": "(1480, 0, 10437, 0, 'CoA Heroic DBC: Nerub''enkan'),"
+        },
+        {
+          "line": 153,
+          "text": "(1481, 0, 10438, 0, 'CoA Heroic DBC: Maleki the Pallid'),"
+        },
+        {
+          "line": 154,
+          "text": "(1482, 0, 10435, 0, 'CoA Heroic DBC: Magistrate Barthilas'),"
+        },
+        {
+          "line": 155,
+          "text": "(1483, 0, 10439, 0, 'CoA Heroic DBC: Ramnstein the Gorger'),"
+        },
+        {
+          "line": 156,
+          "text": "(1484, 0, 10440, 1274, 'CoA Heroic DBC: Baron Rivendare'),"
+        },
+        {
+          "line": 157,
+          "text": "(1485, 0, 8580, 0, 'CoA Heroic DBC: Atal''alarion'),"
+        },
+        {
+          "line": 158,
+          "text": "(1486, 0, 5721, 0, 'CoA Heroic DBC: Dreamscythe'),"
+        },
+        {
+          "line": 159,
+          "text": "(1487, 0, 5720, 0, 'CoA Heroic DBC: Weaver'),"
+        },
+        {
+          "line": 160,
+          "text": "(1488, 0, 5710, 0, 'CoA Heroic DBC: Jammal''an and Ogom'),"
+        },
+        {
+          "line": 161,
+          "text": "(1490, 0, 5719, 0, 'CoA Heroic DBC: Morphaz'),"
+        },
+        {
+          "line": 162,
+          "text": "(1491, 0, 5722, 0, 'CoA Heroic DBC: Hazzas'),"
+        },
+        {
+          "line": 163,
+          "text": "(1492, 0, 8443, 0, 'CoA Heroic DBC: Avatar of Hakkar'),"
+        },
+        {
+          "line": 164,
+          "text": "(1493, 0, 5709, 1718, 'CoA Heroic DBC: Shade of Eranikus'),"
+        },
+        {
+          "line": 165,
+          "text": "(1536, 0, 1696, 0, 'CoA Heroic DBC: Targorr the Dread'),"
+        },
+        {
+          "line": 166,
+          "text": "(1537, 0, 1666, 0, 'CoA Heroic DBC: Kam Deepfury'),"
+        },
+        {
+          "line": 167,
+          "text": "(1538, 0, 1717, 0, 'CoA Heroic DBC: Hamhock'),"
+        },
+        {
+          "line": 168,
+          "text": "(1539, 0, 1716, 1702, 'CoA Heroic DBC: Bazil Thredd'),"
+        },
+        {
+          "line": 169,
+          "text": "(1540, 0, 1663, 0, 'CoA Heroic DBC: Dextren Ward'),"
+        },
+        {
+          "line": 170,
+          "text": "(1547, 0, 6910, 0, 'CoA Heroic DBC: Revelosh'),"
+        },
+        {
+          "line": 171,
+          "text": "(1548, 0, 6906, 0, 'CoA Heroic DBC: The Lost Dwarves'),"
+        },
+        {
+          "line": 172,
+          "text": "(1549, 0, 7228, 0, 'CoA Heroic DBC: Ironaya'),"
+        },
+        {
+          "line": 173,
+          "text": "(1551, 0, 7206, 0, 'CoA Heroic DBC: Ancient Stone Keeper'),"
+        },
+        {
+          "line": 174,
+          "text": "(1552, 0, 7291, 0, 'CoA Heroic DBC: Galgann Firehammer'),"
+        },
+        {
+          "line": 175,
+          "text": "(1553, 0, 4854, 0, 'CoA Heroic DBC: Grimlok'),"
+        },
+        {
+          "line": 176,
+          "text": "(1554, 0, 2748, 1712, 'CoA Heroic DBC: Archaedas'),"
+        },
+        {
+          "line": 177,
+          "text": "(1585, 0, 3671, 0, 'CoA Heroic DBC: Lady Anacondra'),"
+        },
+        {
+          "line": 178,
+          "text": "(1586, 0, 3669, 2693, 'CoA Heroic DBC: Lord Cobrahn'),"
+        },
+        {
+          "line": 179,
+          "text": "(1587, 0, 3653, 0, 'CoA Heroic DBC: Kresh'),"
+        },
+        {
+          "line": 180,
+          "text": "(1588, 0, 3670, 0, 'CoA Heroic DBC: Lord Pythas'),"
+        },
+        {
+          "line": 181,
+          "text": "(1589, 0, 3674, 2721, 'CoA Heroic DBC: Skum'),"
+        },
+        {
+          "line": 182,
+          "text": "(1590, 0, 3673, 0, 'CoA Heroic DBC: Lord Serpentis'),"
+        },
+        {
+          "line": 183,
+          "text": "(1591, 0, 5775, 2725, 'CoA Heroic DBC: Verdan the Everliving'),"
+        },
+        {
+          "line": 184,
+          "text": "(1592, 0, 3654, 1691, 'CoA Heroic DBC: Mutanus the Devourer'),"
+        },
+        {
+          "line": 185,
+          "text": "(1593, 0, 7795, 0, 'CoA Heroic DBC: Hydromancer Velratha'),"
+        },
+        {
+          "line": 186,
+          "text": "(1594, 0, 7273, 0, 'CoA Heroic DBC: Ghaz''rilla'),"
+        },
+        {
+          "line": 187,
+          "text": "(1595, 0, 8127, 0, 'CoA Heroic DBC: Antu''sul'),"
+        },
+        {
+          "line": 188,
+          "text": "(1596, 0, 7272, 0, 'CoA Heroic DBC: Theka the Martyr'),"
+        },
+        {
+          "line": 189,
+          "text": "(1597, 0, 7271, 0, 'CoA Heroic DBC: Witch Doctor Zum''rah'),"
+        },
+        {
+          "line": 190,
+          "text": "(1598, 0, 7796, 0, 'CoA Heroic DBC: Nekrum Gutchewer'),"
+        },
+        {
+          "line": 191,
+          "text": "(1599, 0, 7275, 0, 'CoA Heroic DBC: Shadowpriest Sezz''ziz'),"
+        },
+        {
+          "line": 192,
+          "text": "(1600, 0, 7267, 1714, 'CoA Heroic DBC: Chief Ukorz Sandscalp &  Ruuzlu'),"
+        },
+        {
+          "line": 193,
+          "text": "(1883, 0, 4422, 0, 'CoA Heroic DBC: Agathelos the Raging'),"
+        },
+        {
+          "line": 194,
+          "text": "(1980, 0, 16118, 0, 'CoA Heroic DBC: Kormok'),"
+        },
+        {
+          "line": 195,
+          "text": "(1985, 0, 17830, 0, 'CoA Heroic DBC: Zelemar the Wrathful'),"
+        },
+        {
+          "line": 196,
+          "text": "(2141, 0, 16042, 0, 'CoA Mythic DBC: Lord Valthalak'),"
+        },
+        {
+          "line": 197,
+          "text": "(2142, 0, 10899, 0, 'CoA Mythic DBC: Goraluk Anvilcrack'),"
+        },
+        {
+          "line": 198,
+          "text": "(2143, 0, 10509, 0, 'CoA Mythic DBC: Jed Runewatcher'),"
+        },
+        {
+          "line": 199,
+          "text": "(2144, 0, 16080, 0, 'CoA Mythic DBC: Mor Grayhoof'),"
+        },
+        {
+          "line": 200,
+          "text": "(2145, 0, 10263, 0, 'CoA Mythic DBC: Burning Felguard'),"
+        },
+        {
+          "line": 201,
+          "text": "(2146, 0, 9718, 0, 'CoA Mythic DBC: Ghok Bashguud'),"
+        },
+        {
+          "line": 202,
+          "text": "(2147, 0, 10376, 0, 'CoA Mythic DBC: Crystal Fang'),"
+        },
+        {
+          "line": 203,
+          "text": "(2148, 0, 9596, 0, 'CoA Mythic DBC: Bannok Grimaxe'),"
+        },
+        {
+          "line": 204,
+          "text": "(2149, 0, 9217, 0, 'CoA Mythic DBC: Spirestone Lord Magus'),"
+        },
+        {
+          "line": 205,
+          "text": "(2150, 0, 9218, 0, 'CoA Mythic DBC: Spirestone Battle Lord'),"
+        },
+        {
+          "line": 206,
+          "text": "(2151, 0, 9219, 0, 'CoA Mythic DBC: Spirestone Butcher'),"
+        },
+        {
+          "line": 207,
+          "text": "(2152, 0, 10809, 0, 'CoA Mythic DBC: Stonespine'),"
+        },
+        {
+          "line": 208,
+          "text": "(2153, 0, 11058, 0, 'CoA Mythic DBC: Fras Siabi'),"
+        },
+        {
+          "line": 209,
+          "text": "(2154, 0, 10393, 0, 'CoA Mythic DBC: Skul'),"
+        },
+        {
+          "line": 210,
+          "text": "(2155, 0, 16097, 0, 'CoA Mythic DBC: Isalien Trigger'),"
+        },
+        {
+          "line": 211,
+          "text": "(2156, 0, 14506, 0, 'CoA Mythic DBC: Lord Hel''nurath'),"
+        },
+        {
+          "line": 212,
+          "text": "(2157, 0, 11467, 0, 'CoA Mythic DBC: Tsu''zee'),"
+        },
+        {
+          "line": 213,
+          "text": "(2158, 0, 14861, 0, 'CoA Mythic DBC: Blood Steward of Kirtonos'),"
+        },
+        {
+          "line": 214,
+          "text": "(2159, 0, 14516, 0, 'CoA Mythic DBC: Death Knight Darkreaver'),"
+        },
+        {
+          "line": 215,
+          "text": "(2227, 0, 9018, 0, 'CoA Mythic DBC: High Interrogator Gerstahn'),"
+        },
+        {
+          "line": 216,
+          "text": "(2228, 0, 9025, 0, 'CoA Mythic DBC: Lord Roccor'),"
+        },
+        {
+          "line": 217,
+          "text": "(2229, 0, 9319, 0, 'CoA Mythic DBC: Houndmaster Grebmar'),"
+        },
+        {
+          "line": 218,
+          "text": "(2230, 0, 10096, 2030, 'CoA Mythic DBC: Ring of Law'),"
+        },
+        {
+          "line": 219,
+          "text": "(2231, 0, 9024, 0, 'CoA Mythic DBC: Pyromancer Loregrain'),"
+        },
+        {
+          "line": 220,
+          "text": "(2232, 0, 9017, 0, 'CoA Mythic DBC: Lord Incendius'),"
+        },
+        {
+          "line": 221,
+          "text": "(2233, 0, 9041, 0, 'CoA Mythic DBC: Warder Stilgiss'),"
+        },
+        {
+          "line": 222,
+          "text": "(2234, 0, 9056, 0, 'CoA Mythic DBC: Fineous Darkvire'),"
+        },
+        {
+          "line": 223,
+          "text": "(2235, 0, 9016, 0, 'CoA Mythic DBC: Bael''Gar'),"
+        },
+        {
+          "line": 224,
+          "text": "(2236, 0, 9033, 0, 'CoA Mythic DBC: General Angerforge'),"
+        },
+        {
+          "line": 225,
+          "text": "(2237, 0, 8983, 603, 'CoA Mythic DBC: Golem Lord Argelmach'),"
+        },
+        {
+          "line": 226,
+          "text": "(2242, 0, 9156, 0, 'CoA Mythic DBC: Ambassador Flamelash'),"
+        },
+        {
+          "line": 227,
+          "text": "(2244, 0, 9938, 0, 'CoA Mythic DBC: Magmus'),"
+        },
+        {
+          "line": 228,
+          "text": "(2245, 0, 9019, 276, 'CoA Mythic DBC: Emperor Dagran Thaurissan'),"
+        },
+        {
+          "line": 229,
+          "text": "(2343, 0, 11490, 0, 'CoA Mythic DBC: Zevrim Thornhoof'),"
+        },
+        {
+          "line": 230,
+          "text": "(2344, 0, 13280, 0, 'CoA Mythic DBC: Hydrospawn'),"
+        },
+        {
+          "line": 231,
+          "text": "(2345, 0, 14327, 0, 'CoA Mythic DBC: Lethtendris'),"
+        },
+        {
+          "line": 232,
+          "text": "(2346, 0, 11492, 2034, 'CoA Mythic DBC: Alzzin the Wildshaper'),"
+        },
+        {
+          "line": 233,
+          "text": "(2347, 0, 11488, 0, 'CoA Mythic DBC: Illyanna Ravenoak'),"
+        },
+        {
+          "line": 234,
+          "text": "(2348, 0, 11487, 0, 'CoA Mythic DBC: Magister Kalendris'),"
+        },
+        {
+          "line": 235,
+          "text": "(2349, 0, 11496, 0, 'CoA Mythic DBC: Immol''thar'),"
+        },
+        {
+          "line": 236,
+          "text": "(2350, 0, 11489, 0, 'CoA Mythic DBC: Tendris Warpwood'),"
+        },
+        {
+          "line": 237,
+          "text": "(2361, 0, 11486, 2036, 'CoA Mythic DBC: Prince Tortheldrin'),"
+        },
+        {
+          "line": 238,
+          "text": "(2362, 0, 14326, 0, 'CoA Mythic DBC: Guard Mol''dar'),"
+        },
+        {
+          "line": 239,
+          "text": "(2363, 0, 14322, 0, 'CoA Mythic DBC: Stomper Kreeg'),"
+        },
+        {
+          "line": 240,
+          "text": "(2364, 0, 14321, 0, 'CoA Mythic DBC: Guard Fengus'),"
+        },
+        {
+          "line": 241,
+          "text": "(2365, 0, 14323, 0, 'CoA Mythic DBC: Guard Slip''kik'),"
+        },
+        {
+          "line": 242,
+          "text": "(2366, 0, 14325, 0, 'CoA Mythic DBC: Captain Kromcrush'),"
+        },
+        {
+          "line": 243,
+          "text": "(2367, 0, 14324, 0, 'CoA Mythic DBC: Cho''Rush the Observer'),"
+        },
+        {
+          "line": 244,
+          "text": "(2368, 0, 11501, 2038, 'CoA Mythic DBC: King Gordok'),"
+        },
+        {
+          "line": 245,
+          "text": "(2422, 0, 13282, 0, 'CoA Mythic DBC: Noxxion'),"
+        },
+        {
+          "line": 246,
+          "text": "(2423, 0, 12258, 2716, 'CoA Mythic DBC: Razorlash'),"
+        },
+        {
+          "line": 247,
+          "text": "(2424, 0, 12236, 2962, 'CoA Mythic DBC: Lord Vyletongue'),"
+        },
+        {
+          "line": 248,
+          "text": "(2425, 0, 12225, 0, 'CoA Mythic DBC: Celebras the Cursed'),"
+        },
+        {
+          "line": 249,
+          "text": "(2426, 0, 12203, 0, 'CoA Mythic DBC: Landslide'),"
+        },
+        {
+          "line": 250,
+          "text": "(2427, 0, 13601, 0, 'CoA Mythic DBC: Tinkerer Gizlock'),"
+        },
+        {
+          "line": 251,
+          "text": "(2428, 0, 13596, 0, 'CoA Mythic DBC: Rotgrip'),"
+        },
+        {
+          "line": 252,
+          "text": "(2429, 0, 12201, 2963, 'CoA Mythic DBC: Princess Theradras'),"
+        },
+        {
+          "line": 253,
+          "text": "(2444, 0, 3983, 0, 'CoA Mythic DBC: Interrogator Vishas'),"
+        },
+        {
+          "line": 254,
+          "text": "(2445, 0, 4543, 2708, 'CoA Mythic DBC: Bloodmage Thalnos'),"
+        },
+        {
+          "line": 255,
+          "text": "(2446, 0, 3974, 0, 'CoA Mythic DBC: Houndmaster Loksey'),"
+        },
+        {
+          "line": 256,
+          "text": "(2447, 0, 6487, 2855, 'CoA Mythic DBC: Arcanist Doan'),"
+        },
+        {
+          "line": 257,
+          "text": "(2448, 0, 3975, 2853, 'CoA Mythic DBC: Herod'),"
+        },
+        {
+          "line": 258,
+          "text": "(2449, 0, 4542, 0, 'CoA Mythic DBC: High Inquisitor Fairbanks'),"
+        },
+        {
+          "line": 259,
+          "text": "(2450, 0, 3977, 2854, 'CoA Mythic DBC: High Inquisitor Whitemane'),"
+        },
+        {
+          "line": 260,
+          "text": "(2451, 0, 10506, 0, 'CoA Mythic DBC: Kirtonos the Herald'),"
+        },
+        {
+          "line": 261,
+          "text": "(2452, 0, 10503, 0, 'CoA Mythic DBC: Jandice Barov'),"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261009_70_dungeon_boss_heroic_mythic_loot.sql",
+      "sha": "3f452fcdf566a30c05acc6150e8d30d14fa89cbb",
+      "lineCount": 2313,
+      "content": [
+        {
+          "line": 1,
+          "text": "-- Heroic and Mythic loot for the Vanilla dungeon bosses, from AtlasLoot (Ascension Edition): each boss's"
+        },
+        {
+          "line": 2,
+          "text": "-- items as AtlasLoot lists them, swapped for their Heroic/Mythic versions (its item variant table), one"
+        },
+        {
+          "line": 4,
+          "text": "-- comes from the core; the Stockade keeps its own (#6626). Generated by loot_atlas_bauen.py."
+        },
+        {
+          "line": 5,
+          "text": "UPDATE `creature_template` SET `lootid` = `entry` WHERE `entry` IN (100639, 100642, 100643, 100644, 100645, 100646, 100647, 101763, 101853, 102748, 103586, 103653, 103654, 103669, 103670, 103671, 103673, 103674, 103886, 103887, 103914, 103927, 104274, 104275, 104278, 104279, 104420, 104421, 104422, 104424, 104425, 104428, 104829, 104830, 104831, 104832, 104842, 104854, 104887, "
+        },
+        {
+          "line": 6,
+          "text": "DELETE FROM `creature_loot_template` WHERE `Entry` IN (100639, 100642, 100643, 100644, 100645, 100646, 100647, 101763, 101853, 102748, 103586, 103653, 103654, 103669, 103670, 103671, 103673, 103674, 103886, 103887, 103914, 103927, 104274, 104275, 104278, 104279, 104420, 104421, 104422, 104424, 104425, 104428, 104829, 104830, 104831, 104832, 104842, 104854, 104887, 105709, 10571"
+        },
+        {
+          "line": 7,
+          "text": "INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES"
+        },
+        {
+          "line": 8,
+          "text": "(100639, 1555191, 0, 0, 0, 1, 1, 1, 1, 'Edwin VanCleef (Heroic) - Cruel Barb'),"
+        },
+        {
+          "line": 9,
+          "text": "(100639, 1555193, 0, 0, 0, 1, 1, 1, 1, 'Edwin VanCleef (Heroic) - Cape of the Brotherhood'),"
+        },
+        {
+          "line": 10,
+          "text": "(100639, 1555202, 0, 0, 0, 1, 1, 1, 1, 'Edwin VanCleef (Heroic) - Corsair''s Overshirt'),"
+        },
+        {
+          "line": 11,
+          "text": "(100639, 1560399, 0, 0, 0, 1, 1, 1, 1, 'Edwin VanCleef (Heroic) - Blackened Defias Armor'),"
+        },
+        {
+          "line": 12,
+          "text": "(100642, 1551937, 0, 0, 0, 1, 1, 1, 1, 'Sneed''s Shredder (Heroic) - Buzz Saw'),"
+        },
+        {
+          "line": 13,
+          "text": "(100642, 1552169, 0, 0, 0, 1, 1, 1, 1, 'Sneed''s Shredder (Heroic) - Buzzer Blade'),"
+        },
+        {
+          "line": 14,
+          "text": "(100643, 1555194, 0, 0, 0, 1, 1, 1, 1, 'Sneed (Heroic) - Taskmaster Axe'),"
+        },
+        {
+          "line": 15,
+          "text": "(100643, 1555195, 0, 0, 0, 1, 1, 1, 1, 'Sneed (Heroic) - Gold-flecked Gloves'),"
+        },
+        {
+          "line": 16,
+          "text": "(100644, 1550872, 0, 0, 0, 1, 1, 1, 1, 'Rhahk''Zor (Heroic) - Rockslicer'),"
+        },
+        {
+          "line": 17,
+          "text": "(100644, 1555187, 0, 0, 0, 1, 1, 1, 1, 'Rhahk''Zor (Heroic) - Rhahk''Zor''s Hammer'),"
+        },
+        {
+          "line": 18,
+          "text": "(100645, 1555197, 0, 0, 0, 1, 1, 1, 1, 'Cookie (Heroic) - Cookie''s Tenderizer'),"
+        },
+        {
+          "line": 19,
+          "text": "(100645, 1555198, 0, 0, 0, 1, 1, 1, 1, 'Cookie (Heroic) - Cookie''s Stirring Rod'),"
+        },
+        {
+          "line": 20,
+          "text": "(100646, 1555192, 0, 0, 0, 1, 1, 1, 1, 'Mr. Smite (Heroic) - Thief''s Blade'),"
+        },
+        {
+          "line": 21,
+          "text": "(100646, 1555196, 0, 0, 0, 1, 1, 1, 1, 'Mr. Smite (Heroic) - Smite''s Reaver'),"
+        },
+        {
+          "line": 22,
+          "text": "(100646, 1557230, 0, 0, 0, 1, 1, 1, 1, 'Mr. Smite (Heroic) - Smite''s Mighty Hammer'),"
+        },
+        {
+          "line": 23,
+          "text": "(100647, 1555200, 0, 0, 0, 1, 1, 1, 1, 'Captain Greenskin (Heroic) - Impaling Harpoon'),"
+        },
+        {
+          "line": 24,
+          "text": "(100647, 1555201, 0, 0, 0, 1, 1, 1, 1, 'Captain Greenskin (Heroic) - Emberstone Staff'),"
+        },
+        {
+          "line": 25,
+          "text": "(100647, 1560403, 0, 0, 0, 1, 1, 1, 1, 'Captain Greenskin (Heroic) - Blackened Defias Belt'),"
+        },
+        {
+          "line": 26,
+          "text": "(101763, 1551156, 0, 0, 0, 1, 1, 1, 1, 'Gilnid (Heroic) - Lavishly Jeweled Ring'),"
+        },
+        {
+          "line": 27,
+          "text": "(101763, 1555199, 0, 0, 0, 1, 1, 1, 1, 'Gilnid (Heroic) - Smelting Pants'),"
+        },
+        {
+          "line": 28,
+          "text": "(101853, 220997, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Boots of the Shrieker'),"
+        },
+        {
+          "line": 29,
+          "text": "(101853, 221835, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Headmaster''s Charge'),"
+        },
+        {
+          "line": 30,
+          "text": "(101853, 221851, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Bonecreeper Stylus'),"
+        },
+        {
+          "line": 31,
+          "text": "(101853, 221864, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Tombstone Breastplate'),"
+        },
+        {
+          "line": 32,
+          "text": "(101853, 221876, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Detention Strap'),"
+        },
+        {
+          "line": 33,
+          "text": "(101853, 221890, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Vigorsteel Vambraces'),"
+        },
+        {
+          "line": 34,
+          "text": "(101853, 221915, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Silent Fang'),"
+        },
+        {
+          "line": 35,
+          "text": "(101853, 222048, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Witchblade'),"
+        },
+        {
+          "line": 36,
+          "text": "(101853, 243527, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Coif of Elements'),"
+        },
+        {
+          "line": 37,
+          "text": "(101853, 243575, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Beaststalker''s Cap'),"
+        },
+        {
+          "line": 38,
+          "text": "(101853, 243623, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Magister''s Crown'),"
+        },
+        {
+          "line": 39,
+          "text": "(101853, 243683, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Devout Crown'),"
+        },
+        {
+          "line": 40,
+          "text": "(101853, 243719, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Dreadmist Mask'),"
+        },
+        {
+          "line": 41,
+          "text": "(101853, 243791, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Shadowcraft Cap'),"
+        },
+        {
+          "line": 42,
+          "text": "(101853, 243863, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Wildheart Cowl'),"
+        },
+        {
+          "line": 43,
+          "text": "(101853, 243923, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Lightforge Helm'),"
+        },
+        {
+          "line": 44,
+          "text": "(101853, 243947, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Helm of Valor'),"
+        },
+        {
+          "line": 45,
+          "text": "(101853, 261174, 0, 0, 0, 1, 1, 1, 1, 'Darkmaster Gandling (Heroic) - Don Mauricio''s Band of Domination'),"
+        },
+        {
+          "line": 46,
+          "text": "(101853, 56988, 0, 1.0, 0, 1, 0, 1, 1, 'Darkmaster Gandling (Heroic) - Sigil of Darkmaster Gandling'),"
+        },
+        {
+          "line": 47,
+          "text": "(101853, 97730, 0, 6.0, 0, 1, 0, 1, 1, 'Darkmaster Gandling (Heroic) - Worldforged Key Fragment'),"
+        },
+        {
+          "line": 48,
+          "text": "(102748, 1511118, 0, 0, 0, 1, 1, 1, 1, 'Archaedas (Heroic) - Archaedic Stone'),"
+        },
+        {
+          "line": 49,
+          "text": "(102748, 1559413, 0, 0, 0, 1, 1, 1, 1, 'Archaedas (Heroic) - The Rockpounder'),"
+        },
+        {
+          "line": 50,
+          "text": "(102748, 1559418, 0, 0, 0, 1, 1, 1, 1, 'Archaedas (Heroic) - Stoneslayer'),"
+        },
+        {
+          "line": 51,
+          "text": "(103586, 1555443, 0, 0, 0, 1, 1, 1, 1, 'Miner Johnson (Heroic) - Gold-plated Buckler'),"
+        },
+        {
+          "line": 52,
+          "text": "(103586, 1555444, 0, 0, 0, 1, 1, 1, 1, 'Miner Johnson (Heroic) - Miner''s Cape'),"
+        },
+        {
+          "line": 53,
+          "text": "(103586, 57593, 0, 1.0, 0, 1, 0, 1, 1, 'Miner Johnson (Heroic) - Sigil of Miner Johnson'),"
+        },
+        {
+          "line": 54,
+          "text": "(103653, 1513245, 0, 0, 0, 1, 1, 1, 1, 'Kresh (Heroic) - Kresh''s Back'),"
+        },
+        {
+          "line": 55,
+          "text": "(103653, 1556447, 0, 0, 0, 1, 1, 1, 1, 'Kresh (Heroic) - Worn Turtle Shell Shield'),"
+        },
+        {
+          "line": 56,
+          "text": "(103653, 57596, 0, 1.0, 0, 1, 0, 1, 1, 'Kresh (Heroic) - Sigil of Kresh'),"
+        },
+        {
+          "line": 57,
+          "text": "(103654, 1556461, 0, 0, 0, 1, 1, 1, 1, 'Mutanus the Devourer (Heroic) - Slime-encrusted Pads'),"
+        },
+        {
+          "line": 58,
+          "text": "(103654, 1556463, 0, 0, 0, 1, 1, 1, 1, 'Mutanus the Devourer (Heroic) - Deep Fathom Ring'),"
+        },
+        {
+          "line": 59,
+          "text": "(103654, 1556627, 0, 0, 0, 1, 1, 1, 1, 'Mutanus the Devourer (Heroic) - Mutant Scale Breastplate'),"
+        },
+        {
+          "line": 60,
+          "text": "(103669, 1510410, 0, 0, 0, 1, 1, 1, 1, 'Lord Cobrahn (Heroic) - Leggings of the Fang'),"
+        },
+        {
+          "line": 61,
+          "text": "(103669, 1556460, 0, 0, 0, 1, 1, 1, 1, 'Lord Cobrahn (Heroic) - Cobrahn''s Grasp'),"
+        },
+        {
+          "line": 62,
+          "text": "(103669, 1556465, 0, 0, 0, 1, 1, 1, 1, 'Lord Cobrahn (Heroic) - Robe of the Moccasin'),"
+        },
+        {
+          "line": 63,
+          "text": "(103669, 57598, 0, 1.0, 0, 1, 0, 1, 1, 'Lord Cobrahn (Heroic) - Sigil of Lord Cobrahn'),"
+        },
+        {
+          "line": 64,
+          "text": "(103670, 1556472, 0, 0, 0, 1, 1, 1, 1, 'Lord Pythas (Heroic) - Stinging Viper'),"
+        },
+        {
+          "line": 65,
+          "text": "(103670, 1556473, 0, 0, 0, 1, 1, 1, 1, 'Lord Pythas (Heroic) - Armor of the Fang'),"
+        },
+        {
+          "line": 66,
+          "text": "(103670, 57599, 0, 1.0, 0, 1, 0, 1, 1, 'Lord Pythas (Heroic) - Sigil of Lord Pythas'),"
+        },
+        {
+          "line": 67,
+          "text": "(103671, 1510412, 0, 0, 0, 1, 1, 1, 1, 'Lady Anacondra (Heroic) - Belt of the Fang'),"
+        },
+        {
+          "line": 68,
+          "text": "(103671, 1555404, 0, 0, 0, 1, 1, 1, 1, 'Lady Anacondra (Heroic) - Serpent''s Shoulders'),"
+        },
+        {
+          "line": 69,
+          "text": "(103671, 57600, 0, 1.0, 0, 1, 0, 1, 1, 'Lady Anacondra (Heroic) - Sigil of Lady Anacondra'),"
+        },
+        {
+          "line": 70,
+          "text": "(103673, 1510411, 0, 0, 0, 1, 1, 1, 1, 'Lord Serpentis (Heroic) - Footpads of the Fang'),"
+        },
+        {
+          "line": 71,
+          "text": "(103673, 1555970, 0, 0, 0, 1, 1, 1, 1, 'Lord Serpentis (Heroic) - Serpent Gloves'),"
+        },
+        {
+          "line": 72,
+          "text": "(103673, 1556459, 0, 0, 0, 1, 1, 1, 1, 'Lord Serpentis (Heroic) - Savage Trodders'),"
+        },
+        {
+          "line": 73,
+          "text": "(103673, 1556469, 0, 0, 0, 1, 1, 1, 1, 'Lord Serpentis (Heroic) - Venomstrike'),"
+        },
+        {
+          "line": 74,
+          "text": "(103673, 57602, 0, 1.0, 0, 1, 0, 1, 1, 'Lord Serpentis (Heroic) - Sigil of Lord Serpentis'),"
+        },
+        {
+          "line": 75,
+          "text": "(103674, 1556448, 0, 0, 0, 1, 1, 1, 1, 'Skum (Heroic) - Tail Spike'),"
+        },
+        {
+          "line": 76,
+          "text": "(103674, 1556449, 0, 0, 0, 1, 1, 1, 1, 'Skum (Heroic) - Glowing Lizardscale Cloak'),"
+        },
+        {
+          "line": 77,
+          "text": "(103674, 57603, 0, 1.0, 0, 1, 0, 1, 1, 'Skum (Heroic) - Sigil of Skum'),"
+        },
+        {
+          "line": 78,
+          "text": "(103886, 1551292, 0, 0, 0, 1, 1, 1, 1, 'Razorclaw the Butcher (Heroic) - Butcher''s Cleaver'),"
+        },
+        {
+          "line": 79,
+          "text": "(103886, 1556226, 0, 0, 0, 1, 1, 1, 1, 'Razorclaw the Butcher (Heroic) - Bloody Apron'),"
+        },
+        {
+          "line": 80,
+          "text": "(103886, 1556633, 0, 0, 0, 1, 1, 1, 1, 'Razorclaw the Butcher (Heroic) - Butcher''s Slicer'),"
+        },
+        {
+          "line": 81,
+          "text": "(103887, 1556321, 0, 0, 0, 1, 1, 1, 1, 'Baron Silverlaine (Heroic) - Silverlaine''s Family Seal'),"
+        },
+        {
+          "line": 82,
+          "text": "(103887, 1556323, 0, 0, 0, 1, 1, 1, 1, 'Baron Silverlaine (Heroic) - Baron''s Scepter'),"
+        },
+        {
+          "line": 83,
+          "text": "(103914, 1555254, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Rugged Spaulders'),"
+        },
+        {
+          "line": 84,
+          "text": "(103927, 1553748, 0, 0, 0, 1, 1, 1, 1, 'Wolf Master Nandos (Heroic) - Feline Mantle'),"
+        },
+        {
+          "line": 85,
+          "text": "(103927, 1556314, 0, 0, 0, 1, 1, 1, 1, 'Wolf Master Nandos (Heroic) - Wolfmaster Cape'),"
+        },
+        {
+          "line": 86,
+          "text": "(104274, 1553230, 0, 0, 0, 1, 1, 1, 1, 'Fenrus the Devourer (Heroic) - Black Wolf Bracers'),"
+        },
+        {
+          "line": 87,
+          "text": "(104274, 1556340, 0, 0, 0, 1, 1, 1, 1, 'Fenrus the Devourer (Heroic) - Fenrus'' Hide'),"
+        },
+        {
+          "line": 88,
+          "text": "(104275, 1556220, 0, 0, 0, 1, 1, 1, 1, 'Archmage Arugal (Heroic) - Meteor Shard'),"
+        },
+        {
+          "line": 89,
+          "text": "(104275, 1556324, 0, 0, 0, 1, 1, 1, 1, 'Archmage Arugal (Heroic) - Robes of Arugal'),"
+        },
+        {
+          "line": 90,
+          "text": "(104275, 1556392, 0, 0, 0, 1, 1, 1, 1, 'Archmage Arugal (Heroic) - Belt of Arugal'),"
+        },
+        {
+          "line": 91,
+          "text": "(104278, 1553191, 0, 0, 0, 1, 1, 1, 1, 'Commander Springvale (Heroic) - Arced War Axe'),"
+        },
+        {
+          "line": 92,
+          "text": "(104278, 1556320, 0, 0, 0, 1, 1, 1, 1, 'Commander Springvale (Heroic) - Commander''s Crest'),"
+        },
+        {
+          "line": 93,
+          "text": "(104279, 1556318, 0, 0, 0, 1, 1, 1, 1, 'Odo the Blindwatcher (Heroic) - Odo''s Ley Staff'),"
+        },
+        {
+          "line": 94,
+          "text": "(104279, 1556319, 0, 0, 0, 1, 1, 1, 1, 'Odo the Blindwatcher (Heroic) - Girdle of the Blindwatcher'),"
+        },
+        {
+          "line": 95,
+          "text": "(104420, 1556686, 0, 0, 0, 1, 1, 1, 1, 'Overlord Ramtusk (Heroic) - Tusken Helm'),"
+        },
+        {
+          "line": 96,
+          "text": "(104420, 1556687, 0, 0, 0, 1, 1, 1, 1, 'Overlord Ramtusk (Heroic) - Corpsemaker'),"
+        },
+        {
+          "line": 97,
+          "text": "(104421, 1556692, 0, 0, 0, 1, 1, 1, 1, 'Charlga Razorflank (Heroic) - Pronged Reaver'),"
+        },
+        {
+          "line": 98,
+          "text": "(104421, 1556693, 0, 0, 0, 1, 1, 1, 1, 'Charlga Razorflank (Heroic) - Agamaggan''s Clutch'),"
+        },
+        {
+          "line": 99,
+          "text": "(104421, 1556694, 0, 0, 0, 1, 1, 1, 1, 'Charlga Razorflank (Heroic) - Heart of Agamaggan'),"
+        },
+        {
+          "line": 100,
+          "text": "(104422, 1556690, 0, 0, 0, 1, 1, 1, 1, 'Agathelos the Raging (Heroic) - Ferine Leggings'),"
+        },
+        {
+          "line": 101,
+          "text": "(104422, 1556691, 0, 0, 0, 1, 1, 1, 1, 'Agathelos the Raging (Heroic) - Swinetusk Shank'),"
+        },
+        {
+          "line": 102,
+          "text": "(104424, 1556681, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Thornspike'),"
+        },
+        {
+          "line": 103,
+          "text": "(104425, 1556695, 0, 0, 0, 1, 1, 1, 1, 'Blind Hunter (Heroic) - Stygian Bone Amulet'),"
+        },
+        {
+          "line": 104,
+          "text": "(104425, 1556696, 0, 0, 0, 1, 1, 1, 1, 'Blind Hunter (Heroic) - Nightstalker Bow'),"
+        },
+        {
+          "line": 105,
+          "text": "(104425, 1556697, 0, 0, 0, 1, 1, 1, 1, 'Blind Hunter (Heroic) - Batwing Mantle'),"
+        },
+        {
+          "line": 106,
+          "text": "(104425, 57633, 0, 1.0, 0, 1, 0, 1, 1, 'Blind Hunter (Heroic) - Sigil of Blind Hunter'),"
+        },
+        {
+          "line": 107,
+          "text": "(104428, 1552816, 0, 0, 0, 1, 1, 1, 1, 'Death Speaker Jargba (Heroic) - Death Speaker Scepter'),"
+        },
+        {
+          "line": 108,
+          "text": "(104428, 1556682, 0, 0, 0, 1, 1, 1, 1, 'Death Speaker Jargba (Heroic) - Death Speaker Robes'),"
+        },
+        {
+          "line": 109,
+          "text": "(104428, 1556685, 0, 0, 0, 1, 1, 1, 1, 'Death Speaker Jargba (Heroic) - Death Speaker Mantle'),"
+        },
+        {
+          "line": 110,
+          "text": "(104829, 1556909, 0, 0, 0, 1, 1, 1, 1, 'Aku''mai (Heroic) - Strike of the Hydra'),"
+        },
+        {
+          "line": 111,
+          "text": "(104829, 1556910, 0, 0, 0, 1, 1, 1, 1, 'Aku''mai (Heroic) - Leech Pants'),"
+        },
+        {
+          "line": 112,
+          "text": "(104829, 1556911, 0, 0, 0, 1, 1, 1, 1, 'Aku''mai (Heroic) - Moss Cinch'),"
+        },
+        {
+          "line": 113,
+          "text": "(104830, 1556901, 0, 0, 0, 1, 1, 1, 1, 'Old Serra''kis (Heroic) - Glowing Thresher Cape'),"
+        },
+        {
+          "line": 114,
+          "text": "(104830, 1556902, 0, 0, 0, 1, 1, 1, 1, 'Old Serra''kis (Heroic) - Bands of Serra''kis'),"
+        },
+        {
+          "line": 115,
+          "text": "(104830, 1556904, 0, 0, 0, 1, 1, 1, 1, 'Old Serra''kis (Heroic) - Bite of Serra''kis'),"
+        },
+        {
+          "line": 116,
+          "text": "(104831, 1550888, 0, 0, 0, 1, 1, 1, 1, 'Lady Sarevess (Heroic) - Naga Battle Gloves'),"
+        },
+        {
+          "line": 117,
+          "text": "(104831, 1553078, 0, 0, 0, 1, 1, 1, 1, 'Lady Sarevess (Heroic) - Naga Heartpiercer'),"
+        },
+        {
+          "line": 118,
+          "text": "(104831, 1561121, 0, 0, 0, 1, 1, 1, 1, 'Lady Sarevess (Heroic) - Darkwater Talwar'),"
+        },
+        {
+          "line": 119,
+          "text": "(104832, 1551155, 0, 0, 0, 1, 1, 1, 1, 'Twilight Lord Kelris (Heroic) - Rod of the Sleepwalker'),"
+        },
+        {
+          "line": 120,
+          "text": "(104832, 1556903, 0, 0, 0, 1, 1, 1, 1, 'Twilight Lord Kelris (Heroic) - Gaze Dreamer Pants'),"
+        },
+        {
+          "line": 121,
+          "text": "(104842, 1556688, 0, 0, 0, 1, 1, 1, 1, 'Earthcaller Halmgar (Heroic) - Whisperwind Headdress'),"
+        },
+        {
+          "line": 122,
+          "text": "(104842, 1556689, 0, 0, 0, 1, 1, 1, 1, 'Earthcaller Halmgar (Heroic) - Wind Spirit Staff'),"
+        },
+        {
+          "line": 123,
+          "text": "(104854, 1559414, 0, 0, 0, 1, 1, 1, 1, 'Grimlok (Heroic) - Oilskin Leggings'),"
+        },
+        {
+          "line": 124,
+          "text": "(104854, 1559415, 0, 0, 0, 1, 1, 1, 1, 'Grimlok (Heroic) - Grimlok''s Tribal Vestments'),"
+        },
+        {
+          "line": 125,
+          "text": "(104854, 1559416, 0, 0, 0, 1, 1, 1, 1, 'Grimlok (Heroic) - Grimlok''s Charge'),"
+        },
+        {
+          "line": 126,
+          "text": "(104854, 57643, 0, 1.0, 0, 1, 0, 1, 1, 'Grimlok (Heroic) - Sigil of Grimlok'),"
+        },
+        {
+          "line": 127,
+          "text": "(104887, 1556907, 0, 0, 0, 1, 1, 1, 1, 'Ghamoo-ra (Heroic) - Tortoise Armor'),"
+        },
+        {
+          "line": 128,
+          "text": "(104887, 1556908, 0, 0, 0, 1, 1, 1, 1, 'Ghamoo-ra (Heroic) - Ghamoo-ra''s Bind'),"
+        },
+        {
+          "line": 129,
+          "text": "(105709, 1560828, 0, 0, 0, 1, 1, 1, 1, 'Shade of Eranikus (Heroic) - Dire Nail'),"
+        },
+        {
+          "line": 130,
+          "text": "(105709, 1560829, 0, 0, 0, 1, 1, 1, 1, 'Shade of Eranikus (Heroic) - The Dragon''s Eye'),"
+        },
+        {
+          "line": 131,
+          "text": "(105709, 1560833, 0, 0, 0, 1, 1, 1, 1, 'Shade of Eranikus (Heroic) - Horns of Eranikus'),"
+        },
+        {
+          "line": 132,
+          "text": "(105709, 1560835, 0, 0, 0, 1, 1, 1, 1, 'Shade of Eranikus (Heroic) - Crest of Supremacy'),"
+        },
+        {
+          "line": 133,
+          "text": "(105709, 1560836, 0, 0, 0, 1, 1, 1, 1, 'Shade of Eranikus (Heroic) - Rod of Corrosion'),"
+        },
+        {
+          "line": 134,
+          "text": "(105709, 1560837, 0, 0, 0, 1, 1, 1, 1, 'Shade of Eranikus (Heroic) - Tooth of Eranikus'),"
+        },
+        {
+          "line": 135,
+          "text": "(105709, 1560847, 0, 0, 0, 1, 1, 1, 1, 'Shade of Eranikus (Heroic) - Dragon''s Call'),"
+        },
+        {
+          "line": 136,
+          "text": "(105710, 1560806, 0, 0, 0, 1, 1, 1, 1, 'Jammal''an the Prophet (Heroic) - Vestments of the Atal''ai Prophet'),"
+        },
+        {
+          "line": 137,
+          "text": "(105710, 1560807, 0, 0, 0, 1, 1, 1, 1, 'Jammal''an the Prophet (Heroic) - Kilt of the Atal''ai Prophet'),"
+        },
+        {
+          "line": 138,
+          "text": "(105710, 1560808, 0, 0, 0, 1, 1, 1, 1, 'Jammal''an the Prophet (Heroic) - Gloves of the Atal''ai Prophet'),"
+        },
+        {
+          "line": 139,
+          "text": "(105710, 57662, 0, 1.0, 0, 1, 0, 1, 1, 'Jammal''an the Prophet (Heroic) - Sigil of Jammal''an the Prophet'),"
+        },
+        {
+          "line": 140,
+          "text": "(105719, 1560795, 0, 0, 0, 1, 1, 1, 1, 'Morphaz (Heroic) - Drakeclaw Band'),"
+        },
+        {
+          "line": 141,
+          "text": "(105719, 1560796, 0, 0, 0, 1, 1, 1, 1, 'Morphaz (Heroic) - Drakestone'),"
+        },
+        {
+          "line": 142,
+          "text": "(105719, 1560797, 0, 0, 0, 1, 1, 1, 1, 'Morphaz (Heroic) - Firebreather'),"
+        },
+        {
+          "line": 143,
+          "text": "(105719, 1562243, 0, 0, 0, 1, 1, 1, 1, 'Morphaz (Heroic) - Smoldering Claw'),"
+        },
+        {
+          "line": 144,
+          "text": "(105719, 1562463, 0, 0, 0, 1, 1, 1, 1, 'Morphaz (Heroic) - Drakefang Butcher'),"
+        },
+        {
+          "line": 145,
+          "text": "(105719, 1562464, 0, 0, 0, 1, 1, 1, 1, 'Morphaz (Heroic) - Bloodfire Talons'),"
+        },
+        {
+          "line": 146,
+          "text": "(105719, 1562465, 0, 0, 0, 1, 1, 1, 1, 'Morphaz (Heroic) - Nightfall Drape'),"
+        },
+        {
+          "line": 147,
+          "text": "(105719, 1562466, 0, 0, 0, 1, 1, 1, 1, 'Morphaz (Heroic) - Dawnspire Cord'),"
+        },
+        {
+          "line": 148,
+          "text": "(105719, 57663, 0, 1.0, 0, 1, 0, 1, 1, 'Morphaz (Heroic) - Sigil of Morphaz'),"
+        },
+        {
+          "line": 149,
+          "text": "(105720, 1560795, 0, 0, 0, 1, 1, 1, 1, 'Weaver (Heroic) - Drakeclaw Band'),"
+        },
+        {
+          "line": 150,
+          "text": "(105720, 1560796, 0, 0, 0, 1, 1, 1, 1, 'Weaver (Heroic) - Drakestone'),"
+        },
+        {
+          "line": 151,
+          "text": "(105720, 1560797, 0, 0, 0, 1, 1, 1, 1, 'Weaver (Heroic) - Firebreather'),"
+        },
+        {
+          "line": 152,
+          "text": "(105720, 1562243, 0, 0, 0, 1, 1, 1, 1, 'Weaver (Heroic) - Smoldering Claw'),"
+        },
+        {
+          "line": 153,
+          "text": "(105720, 1562463, 0, 0, 0, 1, 1, 1, 1, 'Weaver (Heroic) - Drakefang Butcher'),"
+        },
+        {
+          "line": 154,
+          "text": "(105720, 1562464, 0, 0, 0, 1, 1, 1, 1, 'Weaver (Heroic) - Bloodfire Talons'),"
+        },
+        {
+          "line": 155,
+          "text": "(105720, 1562465, 0, 0, 0, 1, 1, 1, 1, 'Weaver (Heroic) - Nightfall Drape'),"
+        },
+        {
+          "line": 156,
+          "text": "(105720, 1562466, 0, 0, 0, 1, 1, 1, 1, 'Weaver (Heroic) - Dawnspire Cord'),"
+        },
+        {
+          "line": 157,
+          "text": "(105721, 1560795, 0, 0, 0, 1, 1, 1, 1, 'Dreamscythe (Heroic) - Drakeclaw Band'),"
+        },
+        {
+          "line": 158,
+          "text": "(105721, 1560796, 0, 0, 0, 1, 1, 1, 1, 'Dreamscythe (Heroic) - Drakestone'),"
+        },
+        {
+          "line": 159,
+          "text": "(105721, 1560797, 0, 0, 0, 1, 1, 1, 1, 'Dreamscythe (Heroic) - Firebreather'),"
+        },
+        {
+          "line": 160,
+          "text": "(105721, 1562243, 0, 0, 0, 1, 1, 1, 1, 'Dreamscythe (Heroic) - Smoldering Claw'),"
+        },
+        {
+          "line": 161,
+          "text": "(105721, 1562463, 0, 0, 0, 1, 1, 1, 1, 'Dreamscythe (Heroic) - Drakefang Butcher'),"
+        },
+        {
+          "line": 162,
+          "text": "(105721, 1562464, 0, 0, 0, 1, 1, 1, 1, 'Dreamscythe (Heroic) - Bloodfire Talons'),"
+        },
+        {
+          "line": 163,
+          "text": "(105721, 1562465, 0, 0, 0, 1, 1, 1, 1, 'Dreamscythe (Heroic) - Nightfall Drape'),"
+        },
+        {
+          "line": 164,
+          "text": "(105721, 1562466, 0, 0, 0, 1, 1, 1, 1, 'Dreamscythe (Heroic) - Dawnspire Cord'),"
+        },
+        {
+          "line": 165,
+          "text": "(105722, 1560795, 0, 0, 0, 1, 1, 1, 1, 'Hazzas (Heroic) - Drakeclaw Band'),"
+        },
+        {
+          "line": 166,
+          "text": "(105722, 1560796, 0, 0, 0, 1, 1, 1, 1, 'Hazzas (Heroic) - Drakestone'),"
+        },
+        {
+          "line": 167,
+          "text": "(105722, 1560797, 0, 0, 0, 1, 1, 1, 1, 'Hazzas (Heroic) - Firebreather'),"
+        },
+        {
+          "line": 168,
+          "text": "(105722, 1562243, 0, 0, 0, 1, 1, 1, 1, 'Hazzas (Heroic) - Smoldering Claw'),"
+        },
+        {
+          "line": 169,
+          "text": "(105722, 1562463, 0, 0, 0, 1, 1, 1, 1, 'Hazzas (Heroic) - Drakefang Butcher'),"
+        },
+        {
+          "line": 170,
+          "text": "(105722, 1562464, 0, 0, 0, 1, 1, 1, 1, 'Hazzas (Heroic) - Bloodfire Talons'),"
+        },
+        {
+          "line": 171,
+          "text": "(105722, 1562465, 0, 0, 0, 1, 1, 1, 1, 'Hazzas (Heroic) - Nightfall Drape'),"
+        },
+        {
+          "line": 172,
+          "text": "(105722, 1562466, 0, 0, 0, 1, 1, 1, 1, 'Hazzas (Heroic) - Dawnspire Cord'),"
+        },
+        {
+          "line": 173,
+          "text": "(105722, 57666, 0, 1.0, 0, 1, 0, 1, 1, 'Hazzas (Heroic) - Sigil of Hazzas'),"
+        },
+        {
+          "line": 174,
+          "text": "(105775, 1556629, 0, 0, 0, 1, 1, 1, 1, 'Verdan the Everliving (Heroic) - Sporid Cape'),"
+        },
+        {
+          "line": 175,
+          "text": "(105775, 1556630, 0, 0, 0, 1, 1, 1, 1, 'Verdan the Everliving (Heroic) - Seedcloud Buckler'),"
+        },
+        {
+          "line": 176,
+          "text": "(105775, 1556631, 0, 0, 0, 1, 1, 1, 1, 'Verdan the Everliving (Heroic) - Living Root'),"
+        },
+        {
+          "line": 177,
+          "text": "(105775, 57667, 0, 1.0, 0, 1, 0, 1, 1, 'Verdan the Everliving (Heroic) - Sigil of Verdan the Everliving'),"
+        },
+        {
+          "line": 178,
+          "text": "(106228, 1559455, 0, 0, 0, 1, 1, 1, 1, 'Dark Iron Ambassador (Heroic) - Emissary Cuffs'),"
+        },
+        {
+          "line": 179,
+          "text": "(106228, 1559456, 0, 0, 0, 1, 1, 1, 1, 'Dark Iron Ambassador (Heroic) - Glass Shooter'),"
+        },
+        {
+          "line": 180,
+          "text": "(106228, 1559457, 0, 0, 0, 1, 1, 1, 1, 'Dark Iron Ambassador (Heroic) - Royal Diplomatic Scepter'),"
+        },
+        {
+          "line": 181,
+          "text": "(106229, 1559449, 0, 0, 0, 1, 1, 1, 1, 'Crowd Pummeler 9-60 (Heroic) - Manual Crowd Pummeler'),"
+        },
+        {
+          "line": 182,
+          "text": "(106229, 1559450, 0, 0, 0, 1, 1, 1, 1, 'Crowd Pummeler 9-60 (Heroic) - Gnomebot Operating Boots'),"
+        },
+        {
+          "line": 183,
+          "text": "(106235, 1559446, 0, 0, 0, 1, 1, 1, 1, 'Electrocutioner 6000 (Heroic) - Electrocutioner Leg'),"
+        },
+        {
+          "line": 184,
+          "text": "(106235, 1559447, 0, 0, 0, 1, 1, 1, 1, 'Electrocutioner 6000 (Heroic) - Electrocutioner Lagnut'),"
+        },
+        {
+          "line": 185,
+          "text": "(106235, 1559448, 0, 0, 0, 1, 1, 1, 1, 'Electrocutioner 6000 (Heroic) - Spidertank Oilrag'),"
+        },
+        {
+          "line": 186,
+          "text": "(106243, 1556905, 0, 0, 0, 1, 1, 1, 1, 'Gelihast (Heroic) - Reef Axe'),"
+        },
+        {
+          "line": 187,
+          "text": "(106243, 1556906, 0, 0, 0, 1, 1, 1, 1, 'Gelihast (Heroic) - Algae Fists'),"
+        },
+        {
+          "line": 188,
+          "text": "(106906, 1559394, 0, 0, 0, 1, 1, 1, 1, 'Baelog (Heroic) - Horned Viking Helmet'),"
+        },
+        {
+          "line": 189,
+          "text": "(106906, 1559398, 0, 0, 0, 1, 1, 1, 1, 'Baelog (Heroic) - Worn Running Boots'),"
+        },
+        {
+          "line": 190,
+          "text": "(106906, 1559400, 0, 0, 0, 1, 1, 1, 1, 'Baelog (Heroic) - Baelog''s Shortbow'),"
+        },
+        {
+          "line": 191,
+          "text": "(106906, 1559401, 0, 0, 0, 1, 1, 1, 1, 'Baelog (Heroic) - Nordic Longshank'),"
+        },
+        {
+          "line": 192,
+          "text": "(106906, 1559403, 0, 0, 0, 1, 1, 1, 1, 'Baelog (Heroic) - Battered Viking Shield'),"
+        },
+        {
+          "line": 193,
+          "text": "(106906, 1559404, 0, 0, 0, 1, 1, 1, 1, 'Baelog (Heroic) - Olaf''s All Purpose Shield'),"
+        },
+        {
+          "line": 194,
+          "text": "(106906, 58847, 0, 1.0, 0, 1, 0, 1, 1, 'Baelog (Heroic) - Sigil of Baelog'),"
+        },
+        {
+          "line": 195,
+          "text": "(106910, 1559387, 0, 0, 0, 1, 1, 1, 1, 'Revelosh (Heroic) - Revelosh''s Boots'),"
+        },
+        {
+          "line": 196,
+          "text": "(106910, 1559388, 0, 0, 0, 1, 1, 1, 1, 'Revelosh (Heroic) - Revelosh''s Armguards'),"
+        },
+        {
+          "line": 197,
+          "text": "(106910, 1559389, 0, 0, 0, 1, 1, 1, 1, 'Revelosh (Heroic) - Revelosh''s Spaulders'),"
+        },
+        {
+          "line": 198,
+          "text": "(106910, 1559390, 0, 0, 0, 1, 1, 1, 1, 'Revelosh (Heroic) - Revelosh''s Gloves'),"
+        },
+        {
+          "line": 199,
+          "text": "(106910, 58848, 0, 1.0, 0, 1, 0, 1, 1, 'Revelosh (Heroic) - Sigil of Revelosh'),"
+        },
+        {
+          "line": 200,
+          "text": "(107079, 1559452, 0, 0, 0, 1, 1, 1, 1, 'Viscous Fallout (Heroic) - Hydrocane'),"
+        },
+        {
+          "line": 201,
+          "text": "(107079, 1559453, 0, 0, 0, 1, 1, 1, 1, 'Viscous Fallout (Heroic) - Toxic Revenger'),"
+        },
+        {
+          "line": 202,
+          "text": "(107079, 1559454, 0, 0, 0, 1, 1, 1, 1, 'Viscous Fallout (Heroic) - Acidic Walkers'),"
+        },
+        {
+          "line": 203,
+          "text": "(107206, 1559410, 0, 0, 0, 1, 1, 1, 1, 'Ancient Stone Keeper (Heroic) - Cragfists'),"
+        },
+        {
+          "line": 204,
+          "text": "(107206, 1559411, 0, 0, 0, 1, 1, 1, 1, 'Ancient Stone Keeper (Heroic) - Rockshard Pauldrons'),"
+        },
+        {
+          "line": 205,
+          "text": "(107206, 58857, 0, 1.0, 0, 1, 0, 1, 1, 'Ancient Stone Keeper (Heroic) - Sigil of Ancient Stone Keeper'),"
+        },
+        {
+          "line": 206,
+          "text": "(107228, 1559407, 0, 0, 0, 1, 1, 1, 1, 'Ironaya (Heroic) - Stoneweaver Leggings'),"
+        },
+        {
+          "line": 207,
+          "text": "(107228, 1559408, 0, 0, 0, 1, 1, 1, 1, 'Ironaya (Heroic) - Ironshod Bludgeon'),"
+        },
+        {
+          "line": 208,
+          "text": "(107228, 1559409, 0, 0, 0, 1, 1, 1, 1, 'Ironaya (Heroic) - Ironaya''s Bracers'),"
+        },
+        {
+          "line": 209,
+          "text": "(107267, 1559372, 0, 0, 0, 1, 1, 1, 1, 'Chief Ukorz Sandscalp (Heroic) - Sul''thraze the Lasher'),"
+        },
+        {
+          "line": 210,
+          "text": "(107267, 1559476, 0, 0, 0, 1, 1, 1, 1, 'Chief Ukorz Sandscalp (Heroic) - Big Bad Pauldrons'),"
+        },
+        {
+          "line": 211,
+          "text": "(107267, 1559477, 0, 0, 0, 1, 1, 1, 1, 'Chief Ukorz Sandscalp (Heroic) - The Chief''s Enforcer'),"
+        },
+        {
+          "line": 212,
+          "text": "(107267, 1559478, 0, 0, 0, 1, 1, 1, 1, 'Chief Ukorz Sandscalp (Heroic) - Ripsaw'),"
+        },
+        {
+          "line": 213,
+          "text": "(107267, 1559479, 0, 0, 0, 1, 1, 1, 1, 'Chief Ukorz Sandscalp (Heroic) - Embrace of the Lycan'),"
+        },
+        {
+          "line": 214,
+          "text": "(107267, 1561086, 0, 0, 0, 1, 1, 1, 1, 'Chief Ukorz Sandscalp (Heroic) - Jang''thraze the Protector'),"
+        },
+        {
+          "line": 215,
+          "text": "(107271, 1568082, 0, 0, 0, 1, 1, 1, 1, 'Witch Doctor Zum''rah (Heroic) - Zum''rah''s Vexing Cane'),"
+        },
+        {
+          "line": 216,
+          "text": "(107271, 1568083, 0, 0, 0, 1, 1, 1, 1, 'Witch Doctor Zum''rah (Heroic) - Jumanza Grips'),"
+        },
+        {
+          "line": 217,
+          "text": "(107272, 1563018, 0, 0, 0, 1, 1, 1, 1, 'Theka the Martyr (Heroic) - Executioner''s Cleaver'),"
+        },
+        {
+          "line": 218,
+          "text": "(107272, 1563035, 0, 0, 0, 1, 1, 1, 1, 'Theka the Martyr (Heroic) - Serpent Slicer'),"
+        },
+        {
+          "line": 219,
+          "text": "(107272, 1563039, 0, 0, 0, 1, 1, 1, 1, 'Theka the Martyr (Heroic) - Skull Splitting Crossbow'),"
+        },
+        {
+          "line": 220,
+          "text": "(107272, 1563043, 0, 0, 0, 1, 1, 1, 1, 'Theka the Martyr (Heroic) - Blade of the Titans'),"
+        },
+        {
+          "line": 221,
+          "text": "(107272, 1563055, 0, 0, 0, 1, 1, 1, 1, 'Theka the Martyr (Heroic) - Bonechewer'),"
+        },
+        {
+          "line": 222,
+          "text": "(107272, 1563076, 0, 0, 0, 1, 1, 1, 1, 'Theka the Martyr (Heroic) - Giantslayer Bracers'),"
+        },
+        {
+          "line": 223,
+          "text": "(107272, 1563089, 0, 0, 0, 1, 1, 1, 1, 'Theka the Martyr (Heroic) - Skibi''s Pendant'),"
+        },
+        {
+          "line": 224,
+          "text": "(107272, 1563109, 0, 0, 0, 1, 1, 1, 1, 'Theka the Martyr (Heroic) - Blackflame Cape'),"
+        },
+        {
+          "line": 225,
+          "text": "(107272, 1563112, 0, 0, 0, 1, 1, 1, 1, 'Theka the Martyr (Heroic) - Winged Helm'),"
+        },
+        {
+          "line": 226,
+          "text": "(107272, 1563134, 0, 0, 0, 1, 1, 1, 1, 'Theka the Martyr (Heroic) - Belt of the Gladiator'),"
+        },
+        {
+          "line": 227,
+          "text": "(107275, 1559470, 0, 0, 0, 1, 1, 1, 1, 'Shadowpriest Sezz''ziz (Heroic) - Bad Mojo Mask'),"
+        },
+        {
+          "line": 228,
+          "text": "(107275, 1559473, 0, 0, 0, 1, 1, 1, 1, 'Shadowpriest Sezz''ziz (Heroic) - Jinxed Hoodoo Skin'),"
+        },
+        {
+          "line": 229,
+          "text": "(107275, 1559474, 0, 0, 0, 1, 1, 1, 1, 'Shadowpriest Sezz''ziz (Heroic) - Jinxed Hoodoo Kilt'),"
+        },
+        {
+          "line": 230,
+          "text": "(107275, 1559475, 0, 0, 0, 1, 1, 1, 1, 'Shadowpriest Sezz''ziz (Heroic) - Diabolic Skiver'),"
+        },
+        {
+          "line": 231,
+          "text": "(107291, 1511310, 0, 0, 0, 1, 1, 1, 1, 'Galgann Firehammer (Heroic) - Flameseer Mantle'),"
+        },
+        {
+          "line": 232,
+          "text": "(107291, 1511311, 0, 0, 0, 1, 1, 1, 1, 'Galgann Firehammer (Heroic) - Emberscale Cape'),"
+        },
+        {
+          "line": 233,
+          "text": "(107291, 1559412, 0, 0, 0, 1, 1, 1, 1, 'Galgann Firehammer (Heroic) - Galgann''s Fireblaster'),"
+        },
+        {
+          "line": 234,
+          "text": "(107291, 1559419, 0, 0, 0, 1, 1, 1, 1, 'Galgann Firehammer (Heroic) - Galgann''s Firehammer'),"
+        },
+        {
+          "line": 235,
+          "text": "(107291, 58869, 0, 1.0, 0, 1, 0, 1, 1, 'Galgann Firehammer (Heroic) - Sigil of Galgann Firehammer'),"
+        },
+        {
+          "line": 236,
+          "text": "(107355, 1560775, 0, 0, 0, 1, 1, 1, 1, 'Tuten''kash (Heroic) - Carapace of Tuten''kash'),"
+        },
+        {
+          "line": 237,
+          "text": "(107355, 1560776, 0, 0, 0, 1, 1, 1, 1, 'Tuten''kash (Heroic) - Silky Spider Cape'),"
+        },
+        {
+          "line": 238,
+          "text": "(107355, 1560777, 0, 0, 0, 1, 1, 1, 1, 'Tuten''kash (Heroic) - Arachnid Gloves'),"
+        },
+        {
+          "line": 239,
+          "text": "(107356, 1510760, 0, 0, 0, 1, 1, 1, 1, 'Plaguemaw the Rotting (Heroic) - Swine Fists'),"
+        },
+        {
+          "line": 240,
+          "text": "(107356, 1510766, 0, 0, 0, 1, 1, 1, 1, 'Plaguemaw the Rotting (Heroic) - Plaguerot Sprig'),"
+        },
+        {
+          "line": 241,
+          "text": "(107357, 1560769, 0, 0, 0, 1, 1, 1, 1, 'Mordresh Fire Eye (Heroic) - Glowing Eye of Mordresh'),"
+        },
+        {
+          "line": 242,
+          "text": "(107357, 1560770, 0, 0, 0, 1, 1, 1, 1, 'Mordresh Fire Eye (Heroic) - Mordresh''s Lifeless Skull'),"
+        },
+        {
+          "line": 243,
+          "text": "(107357, 1560771, 0, 0, 0, 1, 1, 1, 1, 'Mordresh Fire Eye (Heroic) - Deathmage Sash'),"
+        },
+        {
+          "line": 244,
+          "text": "(107358, 1560761, 0, 0, 0, 1, 1, 1, 1, 'Amnennar the Coldbringer (Heroic) - Coldrage Dagger'),"
+        },
+        {
+          "line": 245,
+          "text": "(107358, 1560762, 0, 0, 0, 1, 1, 1, 1, 'Amnennar the Coldbringer (Heroic) - Robes of the Lich'),"
+        },
+        {
+          "line": 246,
+          "text": "(107358, 1560763, 0, 0, 0, 1, 1, 1, 1, 'Amnennar the Coldbringer (Heroic) - Icemetal Barbute'),"
+        },
+        {
+          "line": 247,
+          "text": "(107358, 1560764, 0, 0, 0, 1, 1, 1, 1, 'Amnennar the Coldbringer (Heroic) - Deathchill Armor'),"
+        },
+        {
+          "line": 248,
+          "text": "(107358, 1560765, 0, 0, 0, 1, 1, 1, 1, 'Amnennar the Coldbringer (Heroic) - Bonefingers'),"
+        },
+        {
+          "line": 249,
+          "text": "(107361, 1559445, 0, 0, 0, 1, 1, 1, 1, 'Grubbis (Heroic) - Grubbis Paws'),"
+        },
+        {
+          "line": 250,
+          "text": "(107604, 1551981, 0, 0, 0, 1, 1, 1, 1, 'Sergeant Bly (Heroic) - Icemail Jerkin'),"
+        },
+        {
+          "line": 251,
+          "text": "(107604, 1551982, 0, 0, 0, 1, 1, 1, 1, 'Sergeant Bly (Heroic) - Nightblade'),"
+        },
+        {
+          "line": 252,
+          "text": "(107604, 1552164, 0, 0, 0, 1, 1, 1, 1, 'Sergeant Bly (Heroic) - Gut Ripper'),"
+        },
+        {
+          "line": 253,
+          "text": "(107604, 1564549, 0, 0, 0, 1, 1, 1, 1, 'Sergeant Bly (Heroic) - Boots of Avoidance'),"
+        },
+        {
+          "line": 254,
+          "text": "(107795, 1550871, 0, 0, 0, 1, 1, 1, 1, 'Hydromancer Velratha (Heroic) - Flurry Axe'),"
+        },
+        {
+          "line": 255,
+          "text": "(107795, 1550940, 0, 0, 0, 1, 1, 1, 1, 'Hydromancer Velratha (Heroic) - Robes of Insight'),"
+        },
+        {
+          "line": 256,
+          "text": "(107795, 1550943, 0, 0, 0, 1, 1, 1, 1, 'Hydromancer Velratha (Heroic) - Warden Staff'),"
+        },
+        {
+          "line": 257,
+          "text": "(107795, 1551169, 0, 0, 0, 1, 1, 1, 1, 'Hydromancer Velratha (Heroic) - Blackskull Shield'),"
+        },
+        {
+          "line": 258,
+          "text": "(107795, 1551447, 0, 0, 0, 1, 1, 1, 1, 'Hydromancer Velratha (Heroic) - Ring of Saviors'),"
+        },
+        {
+          "line": 259,
+          "text": "(107795, 1551981, 0, 0, 0, 1, 1, 1, 1, 'Hydromancer Velratha (Heroic) - Icemail Jerkin'),"
+        },
+        {
+          "line": 260,
+          "text": "(107795, 1551982, 0, 0, 0, 1, 1, 1, 1, 'Hydromancer Velratha (Heroic) - Nightblade'),"
+        },
+        {
+          "line": 261,
+          "text": "(107795, 1552100, 0, 0, 0, 1, 1, 1, 1, 'Hydromancer Velratha (Heroic) - Precisely Calibrated Boomstick'),"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261016_30_dungeon_boss_loot_and_marks.sql",
+      "sha": "fc4bfb26b3d776bfd69db9e0174ecb891571fc95",
+      "lineCount": 1938,
+      "content": [
+        {
+          "line": 1,
+          "text": "-- Heroic and Mythic boss loot, second pass (#7513: the Ring of Law bosses dropped no Mythic items)."
+        },
+        {
+          "line": 2,
+          "text": "-- rev_20261009_70 missed every AtlasLoot section whose name is not a plain BabbleBoss[...]: Ring of Law, the"
+        },
+        {
+          "line": 3,
+          "text": "-- Scarlet Monastery bosses (coloured names), Armory (Herod) and the Sunken Temple troll minibosses, and it did not"
+        },
+        {
+          "line": 4,
+          "text": "-- read Upper Blackrock Spire, so those Heroic/Mythic templates kept their Normal loot (or none) and the boss before"
+        },
+        {
+          "line": 6,
+          "text": "-- now drops one item of its own Heroic (item level 61) or Mythic (64) pool per kill: AtlasLoot (Ascension Edition)"
+        },
+        {
+          "line": 8,
+          "text": "-- rewards and the bosses AtlasLoot has no section for). Generated by dungeon-recherche/loot_atlas_bauen.py."
+        },
+        {
+          "line": 9,
+          "text": "UPDATE `creature_template` SET `lootid` = `entry` WHERE `entry` IN (101666, 103914, 103974, 103975, 103976, 103977, 103983, 104424, 104542, 104543, 105711, 105712, 105716, 105717, 106487, 106488, 106489, 106490, 107361, 108923, 109018, 109027, 109028, 109029, 109030, 109031, 109032, 109033, 109217, 109218, 109219, 109568, 109816, 110081, 110263, 110264, 110363, 110429, 110430, "
+        },
+        {
+          "line": 10,
+          "text": "DELETE FROM `creature_loot_template` WHERE `Entry` IN (101666, 103914, 103974, 103975, 103976, 103977, 103983, 104424, 104542, 104543, 105711, 105712, 105716, 105717, 106487, 106488, 106489, 106490, 107361, 108923, 109018, 109027, 109028, 109029, 109030, 109031, 109032, 109033, 109217, 109218, 109219, 109568, 109816, 110081, 110263, 110264, 110363, 110429, 110430, 110432, 11043"
+        },
+        {
+          "line": 11,
+          "text": "INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES"
+        },
+        {
+          "line": 12,
+          "text": "(101666, 1552280, 0, 50, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Kam''s Walking Stick'),"
+        },
+        {
+          "line": 13,
+          "text": "(101666, 1523169, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Scorn''s Icy Choker'),"
+        },
+        {
+          "line": 14,
+          "text": "(101666, 1523170, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - The Frozen Clutch'),"
+        },
+        {
+          "line": 15,
+          "text": "(101666, 1523173, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Abomination Skin Leggings'),"
+        },
+        {
+          "line": 16,
+          "text": "(101666, 1523177, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Lady Falther''ess'' Finger'),"
+        },
+        {
+          "line": 17,
+          "text": "(101666, 1523178, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Mantle of Lady Falther''ess'),"
+        },
+        {
+          "line": 18,
+          "text": "(101666, 1550720, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Brawler Gloves'),"
+        },
+        {
+          "line": 19,
+          "text": "(101666, 1550754, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Shortsword of Vengeance'),"
+        },
+        {
+          "line": 20,
+          "text": "(101666, 1551203, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Aegis of Stormwind'),"
+        },
+        {
+          "line": 21,
+          "text": "(101666, 1551713, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Ankh of Life'),"
+        },
+        {
+          "line": 22,
+          "text": "(101666, 1551715, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Polished Jazeraint Armor'),"
+        },
+        {
+          "line": 23,
+          "text": "(101666, 1551717, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Double Link Tunic'),"
+        },
+        {
+          "line": 24,
+          "text": "(101666, 1552011, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Twisted Sabre'),"
+        },
+        {
+          "line": 25,
+          "text": "(101666, 1552098, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Double-barreled Shotgun'),"
+        },
+        {
+          "line": 26,
+          "text": "(101666, 1552278, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Forest Tracker Epaulets'),"
+        },
+        {
+          "line": 27,
+          "text": "(101666, 1552299, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Burning War Axe'),"
+        },
+        {
+          "line": 28,
+          "text": "(101666, 1552721, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Holy Shroud'),"
+        },
+        {
+          "line": 29,
+          "text": "(101666, 1552800, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Black Velvet Robes'),"
+        },
+        {
+          "line": 30,
+          "text": "(101666, 1552877, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Combatant Claymore'),"
+        },
+        {
+          "line": 31,
+          "text": "(101666, 1552912, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Claw of the Shadowmancer'),"
+        },
+        {
+          "line": 32,
+          "text": "(101666, 1553020, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Enduring Cap'),"
+        },
+        {
+          "line": 33,
+          "text": "(101666, 1553203, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Dense Triangle Mace'),"
+        },
+        {
+          "line": 34,
+          "text": "(101666, 1554090, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Mug O'' Hurt'),"
+        },
+        {
+          "line": 35,
+          "text": "(101666, 1554091, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Widowmaker'),"
+        },
+        {
+          "line": 36,
+          "text": "(101666, 1559359, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Wirt''s Third Leg'),"
+        },
+        {
+          "line": 37,
+          "text": "(101666, 1559405, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Girdle of Golem Strength'),"
+        },
+        {
+          "line": 38,
+          "text": "(101666, 1559433, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Forgotten Wraps'),"
+        },
+        {
+          "line": 39,
+          "text": "(101666, 1562974, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - The Black Knight'),"
+        },
+        {
+          "line": 40,
+          "text": "(101666, 1563005, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Amy''s Blanket'),"
+        },
+        {
+          "line": 41,
+          "text": "(101666, 1563010, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Dreamsinger Legguards'),"
+        },
+        {
+          "line": 42,
+          "text": "(101666, 1563011, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Silver-lined Belt'),"
+        },
+        {
+          "line": 43,
+          "text": "(101666, 1563012, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Yorgen Bracers'),"
+        },
+        {
+          "line": 44,
+          "text": "(101666, 1563016, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Killmaim'),"
+        },
+        {
+          "line": 45,
+          "text": "(101666, 1563018, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Executioner''s Cleaver'),"
+        },
+        {
+          "line": 46,
+          "text": "(101666, 1563019, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Harpyclaw Short Bow'),"
+        },
+        {
+          "line": 47,
+          "text": "(101666, 1563021, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Needle Threader'),"
+        },
+        {
+          "line": 48,
+          "text": "(101666, 1563024, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Beazel''s Basher'),"
+        },
+        {
+          "line": 49,
+          "text": "(101666, 1563031, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Orb of Mistmantle'),"
+        },
+        {
+          "line": 50,
+          "text": "(101666, 1563032, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Sword of Corruption'),"
+        },
+        {
+          "line": 51,
+          "text": "(101666, 1563035, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Serpent Slicer'),"
+        },
+        {
+          "line": 52,
+          "text": "(101666, 1563037, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Crystalpine Stinger'),"
+        },
+        {
+          "line": 53,
+          "text": "(101666, 1563039, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Skull Splitting Crossbow'),"
+        },
+        {
+          "line": 54,
+          "text": "(101666, 1563041, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Guardian Blade'),"
+        },
+        {
+          "line": 55,
+          "text": "(101666, 1563043, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Blade of the Titans'),"
+        },
+        {
+          "line": 56,
+          "text": "(101666, 1563048, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Looming Gavel'),"
+        },
+        {
+          "line": 57,
+          "text": "(101666, 1563049, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Deanship Claymore'),"
+        },
+        {
+          "line": 58,
+          "text": "(101666, 1563051, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Witchfury'),"
+        },
+        {
+          "line": 59,
+          "text": "(101666, 1563062, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Thunderwood'),"
+        },
+        {
+          "line": 60,
+          "text": "(101666, 1563071, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Plated Fist of Hakoo'),"
+        },
+        {
+          "line": 61,
+          "text": "(101666, 1563074, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Golem Shard Leggings'),"
+        },
+        {
+          "line": 62,
+          "text": "(101666, 1563076, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Giantslayer Bracers'),"
+        },
+        {
+          "line": 63,
+          "text": "(101666, 1563079, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Shield of Thorsen'),"
+        },
+        {
+          "line": 64,
+          "text": "(101666, 1563082, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Mountainside Buckler'),"
+        },
+        {
+          "line": 65,
+          "text": "(101666, 1563087, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - River Pride Choker'),"
+        },
+        {
+          "line": 66,
+          "text": "(101666, 1563089, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Skibi''s Pendant'),"
+        },
+        {
+          "line": 67,
+          "text": "(101666, 1563094, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - The Queen''s Jewel'),"
+        },
+        {
+          "line": 68,
+          "text": "(101666, 1563095, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Assault Band'),"
+        },
+        {
+          "line": 69,
+          "text": "(101666, 1563097, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Thunderbrow Ring'),"
+        },
+        {
+          "line": 70,
+          "text": "(101666, 1563099, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Moccasins of the White Hare'),"
+        },
+        {
+          "line": 71,
+          "text": "(101666, 1563100, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Furen''s Boots'),"
+        },
+        {
+          "line": 72,
+          "text": "(101666, 1563102, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Cassandra''s Grace'),"
+        },
+        {
+          "line": 73,
+          "text": "(101666, 1563106, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Glowing Magical Bracelets'),"
+        },
+        {
+          "line": 74,
+          "text": "(101666, 1563109, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Blackflame Cape'),"
+        },
+        {
+          "line": 75,
+          "text": "(101666, 1563112, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Winged Helm'),"
+        },
+        {
+          "line": 76,
+          "text": "(101666, 1563114, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Troll''s Bane Leggings'),"
+        },
+        {
+          "line": 77,
+          "text": "(101666, 1563115, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Sheepshear Mantle'),"
+        },
+        {
+          "line": 78,
+          "text": "(101666, 1563127, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Frostreaver Crown'),"
+        },
+        {
+          "line": 79,
+          "text": "(101666, 1563128, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - High Bergg Helm'),"
+        },
+        {
+          "line": 80,
+          "text": "(101666, 1563131, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Sparkleshell Mantle'),"
+        },
+        {
+          "line": 81,
+          "text": "(101666, 1563134, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Belt of the Gladiator'),"
+        },
+        {
+          "line": 82,
+          "text": "(101666, 1563145, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Enormous Ogre Belt'),"
+        },
+        {
+          "line": 83,
+          "text": "(101666, 2248085, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Gordok Knuckleband'),"
+        },
+        {
+          "line": 84,
+          "text": "(101666, 2248297, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Oversimplified Stick Chucker'),"
+        },
+        {
+          "line": 85,
+          "text": "(101666, 2448085, 0, 0, 0, 1, 1, 1, 1, 'Kam Deepfury (Heroic) - Shared Dungeon Loot - Flattened Elven Ring'),"
+        },
+        {
+          "line": 86,
+          "text": "(103914, 1555254, 0, 50, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Rugged Spaulders'),"
+        },
+        {
+          "line": 87,
+          "text": "(103914, 1523169, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Scorn''s Icy Choker'),"
+        },
+        {
+          "line": 88,
+          "text": "(103914, 1523170, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - The Frozen Clutch'),"
+        },
+        {
+          "line": 89,
+          "text": "(103914, 1523173, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Abomination Skin Leggings'),"
+        },
+        {
+          "line": 90,
+          "text": "(103914, 1523177, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Lady Falther''ess'' Finger'),"
+        },
+        {
+          "line": 91,
+          "text": "(103914, 1523178, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Mantle of Lady Falther''ess'),"
+        },
+        {
+          "line": 92,
+          "text": "(103914, 1550720, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Brawler Gloves'),"
+        },
+        {
+          "line": 93,
+          "text": "(103914, 1550754, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Shortsword of Vengeance'),"
+        },
+        {
+          "line": 94,
+          "text": "(103914, 1551203, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Aegis of Stormwind'),"
+        },
+        {
+          "line": 95,
+          "text": "(103914, 1551713, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Ankh of Life'),"
+        },
+        {
+          "line": 96,
+          "text": "(103914, 1551715, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Polished Jazeraint Armor'),"
+        },
+        {
+          "line": 97,
+          "text": "(103914, 1551717, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Double Link Tunic'),"
+        },
+        {
+          "line": 98,
+          "text": "(103914, 1552011, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Twisted Sabre'),"
+        },
+        {
+          "line": 99,
+          "text": "(103914, 1552098, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Double-barreled Shotgun'),"
+        },
+        {
+          "line": 100,
+          "text": "(103914, 1552278, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Forest Tracker Epaulets'),"
+        },
+        {
+          "line": 101,
+          "text": "(103914, 1552299, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Burning War Axe'),"
+        },
+        {
+          "line": 102,
+          "text": "(103914, 1552721, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Holy Shroud'),"
+        },
+        {
+          "line": 103,
+          "text": "(103914, 1552800, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Black Velvet Robes'),"
+        },
+        {
+          "line": 104,
+          "text": "(103914, 1552877, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Combatant Claymore'),"
+        },
+        {
+          "line": 105,
+          "text": "(103914, 1552912, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Claw of the Shadowmancer'),"
+        },
+        {
+          "line": 106,
+          "text": "(103914, 1553020, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Enduring Cap'),"
+        },
+        {
+          "line": 107,
+          "text": "(103914, 1553203, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Dense Triangle Mace'),"
+        },
+        {
+          "line": 108,
+          "text": "(103914, 1554090, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Mug O'' Hurt'),"
+        },
+        {
+          "line": 109,
+          "text": "(103914, 1554091, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Widowmaker'),"
+        },
+        {
+          "line": 110,
+          "text": "(103914, 1559359, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Wirt''s Third Leg'),"
+        },
+        {
+          "line": 111,
+          "text": "(103914, 1559405, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Girdle of Golem Strength'),"
+        },
+        {
+          "line": 112,
+          "text": "(103914, 1559433, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Forgotten Wraps'),"
+        },
+        {
+          "line": 113,
+          "text": "(103914, 1562974, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - The Black Knight'),"
+        },
+        {
+          "line": 114,
+          "text": "(103914, 1563005, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Amy''s Blanket'),"
+        },
+        {
+          "line": 115,
+          "text": "(103914, 1563010, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Dreamsinger Legguards'),"
+        },
+        {
+          "line": 116,
+          "text": "(103914, 1563011, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Silver-lined Belt'),"
+        },
+        {
+          "line": 117,
+          "text": "(103914, 1563012, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Yorgen Bracers'),"
+        },
+        {
+          "line": 118,
+          "text": "(103914, 1563016, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Killmaim'),"
+        },
+        {
+          "line": 119,
+          "text": "(103914, 1563018, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Executioner''s Cleaver'),"
+        },
+        {
+          "line": 120,
+          "text": "(103914, 1563019, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Harpyclaw Short Bow'),"
+        },
+        {
+          "line": 121,
+          "text": "(103914, 1563021, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Needle Threader'),"
+        },
+        {
+          "line": 122,
+          "text": "(103914, 1563024, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Beazel''s Basher'),"
+        },
+        {
+          "line": 123,
+          "text": "(103914, 1563031, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Orb of Mistmantle'),"
+        },
+        {
+          "line": 124,
+          "text": "(103914, 1563032, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Sword of Corruption'),"
+        },
+        {
+          "line": 125,
+          "text": "(103914, 1563035, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Serpent Slicer'),"
+        },
+        {
+          "line": 126,
+          "text": "(103914, 1563037, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Crystalpine Stinger'),"
+        },
+        {
+          "line": 127,
+          "text": "(103914, 1563039, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Skull Splitting Crossbow'),"
+        },
+        {
+          "line": 128,
+          "text": "(103914, 1563041, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Guardian Blade'),"
+        },
+        {
+          "line": 129,
+          "text": "(103914, 1563043, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Blade of the Titans'),"
+        },
+        {
+          "line": 130,
+          "text": "(103914, 1563048, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Looming Gavel'),"
+        },
+        {
+          "line": 131,
+          "text": "(103914, 1563049, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Deanship Claymore'),"
+        },
+        {
+          "line": 132,
+          "text": "(103914, 1563051, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Witchfury'),"
+        },
+        {
+          "line": 133,
+          "text": "(103914, 1563062, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Thunderwood'),"
+        },
+        {
+          "line": 134,
+          "text": "(103914, 1563071, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Plated Fist of Hakoo'),"
+        },
+        {
+          "line": 135,
+          "text": "(103914, 1563074, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Golem Shard Leggings'),"
+        },
+        {
+          "line": 136,
+          "text": "(103914, 1563076, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Giantslayer Bracers'),"
+        },
+        {
+          "line": 137,
+          "text": "(103914, 1563079, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Shield of Thorsen'),"
+        },
+        {
+          "line": 138,
+          "text": "(103914, 1563082, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Mountainside Buckler'),"
+        },
+        {
+          "line": 139,
+          "text": "(103914, 1563087, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - River Pride Choker'),"
+        },
+        {
+          "line": 140,
+          "text": "(103914, 1563089, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Skibi''s Pendant'),"
+        },
+        {
+          "line": 141,
+          "text": "(103914, 1563094, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - The Queen''s Jewel'),"
+        },
+        {
+          "line": 142,
+          "text": "(103914, 1563095, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Assault Band'),"
+        },
+        {
+          "line": 143,
+          "text": "(103914, 1563097, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Thunderbrow Ring'),"
+        },
+        {
+          "line": 144,
+          "text": "(103914, 1563099, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Moccasins of the White Hare'),"
+        },
+        {
+          "line": 145,
+          "text": "(103914, 1563100, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Furen''s Boots'),"
+        },
+        {
+          "line": 146,
+          "text": "(103914, 1563102, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Cassandra''s Grace'),"
+        },
+        {
+          "line": 147,
+          "text": "(103914, 1563106, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Glowing Magical Bracelets'),"
+        },
+        {
+          "line": 148,
+          "text": "(103914, 1563109, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Blackflame Cape'),"
+        },
+        {
+          "line": 149,
+          "text": "(103914, 1563112, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Winged Helm'),"
+        },
+        {
+          "line": 150,
+          "text": "(103914, 1563114, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Troll''s Bane Leggings'),"
+        },
+        {
+          "line": 151,
+          "text": "(103914, 1563115, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Sheepshear Mantle'),"
+        },
+        {
+          "line": 152,
+          "text": "(103914, 1563127, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Frostreaver Crown'),"
+        },
+        {
+          "line": 153,
+          "text": "(103914, 1563128, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - High Bergg Helm'),"
+        },
+        {
+          "line": 154,
+          "text": "(103914, 1563131, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Sparkleshell Mantle'),"
+        },
+        {
+          "line": 155,
+          "text": "(103914, 1563134, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Belt of the Gladiator'),"
+        },
+        {
+          "line": 156,
+          "text": "(103914, 1563145, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Enormous Ogre Belt'),"
+        },
+        {
+          "line": 157,
+          "text": "(103914, 2248085, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Gordok Knuckleband'),"
+        },
+        {
+          "line": 158,
+          "text": "(103914, 2248297, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Oversimplified Stick Chucker'),"
+        },
+        {
+          "line": 159,
+          "text": "(103914, 2448085, 0, 0, 0, 1, 1, 1, 1, 'Rethilgore (Heroic) - Shared Dungeon Loot - Flattened Elven Ring'),"
+        },
+        {
+          "line": 160,
+          "text": "(103974, 1557710, 0, 0, 0, 1, 1, 1, 1, 'Houndmaster Loksey (Heroic) - Loksey''s Training Stick'),"
+        },
+        {
+          "line": 161,
+          "text": "(103974, 1557756, 0, 0, 0, 1, 1, 1, 1, 'Houndmaster Loksey (Heroic) - Dog Training Gloves'),"
+        },
+        {
+          "line": 162,
+          "text": "(103975, 1510330, 0, 0, 0, 1, 1, 1, 1, 'Herod (Heroic) - Scarlet Leggings'),"
+        },
+        {
+          "line": 163,
+          "text": "(103975, 1557717, 0, 0, 0, 1, 1, 1, 1, 'Herod (Heroic) - Ravager'),"
+        },
+        {
+          "line": 164,
+          "text": "(103975, 1557718, 0, 0, 0, 1, 1, 1, 1, 'Herod (Heroic) - Herod''s Shoulder'),"
+        },
+        {
+          "line": 165,
+          "text": "(103975, 1557719, 0, 0, 0, 1, 1, 1, 1, 'Herod (Heroic) - Raging Berserker''s Helm'),"
+        },
+        {
+          "line": 166,
+          "text": "(103976, 1510330, 0, 0, 0, 1, 1, 1, 1, 'Scarlet Commander Mograine (Heroic) - Scarlet Leggings'),"
+        },
+        {
+          "line": 167,
+          "text": "(103976, 1557723, 0, 0, 0, 1, 1, 1, 1, 'Scarlet Commander Mograine (Heroic) - Mograine''s Might'),"
+        },
+        {
+          "line": 168,
+          "text": "(103976, 1557724, 0, 0, 0, 1, 1, 1, 1, 'Scarlet Commander Mograine (Heroic) - Gauntlets of Divinity'),"
+        },
+        {
+          "line": 169,
+          "text": "(103976, 1557726, 0, 0, 0, 1, 1, 1, 1, 'Scarlet Commander Mograine (Heroic) - Aegis of the Scarlet Commander'),"
+        },
+        {
+          "line": 170,
+          "text": "(103977, 1557720, 0, 0, 0, 1, 1, 1, 1, 'High Inquisitor Whitemane (Heroic) - Whitemane''s Chapeau'),"
+        },
+        {
+          "line": 171,
+          "text": "(103977, 1557721, 0, 0, 0, 1, 1, 1, 1, 'High Inquisitor Whitemane (Heroic) - Hand of Righteousness'),"
+        },
+        {
+          "line": 172,
+          "text": "(103977, 1557722, 0, 0, 0, 1, 1, 1, 1, 'High Inquisitor Whitemane (Heroic) - Triune Amulet'),"
+        },
+        {
+          "line": 173,
+          "text": "(103983, 1557682, 0, 0, 0, 1, 1, 1, 1, 'Interrogator Vishas (Heroic) - Torturing Poker'),"
+        },
+        {
+          "line": 174,
+          "text": "(103983, 1557683, 0, 0, 0, 1, 1, 1, 1, 'Interrogator Vishas (Heroic) - Bloody Brass Knuckles'),"
+        },
+        {
+          "line": 175,
+          "text": "(104424, 1556681, 0, 50, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Thornspike'),"
+        },
+        {
+          "line": 176,
+          "text": "(104424, 1523169, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Scorn''s Icy Choker'),"
+        },
+        {
+          "line": 177,
+          "text": "(104424, 1523170, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - The Frozen Clutch'),"
+        },
+        {
+          "line": 178,
+          "text": "(104424, 1523173, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Abomination Skin Leggings'),"
+        },
+        {
+          "line": 179,
+          "text": "(104424, 1523177, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Lady Falther''ess'' Finger'),"
+        },
+        {
+          "line": 180,
+          "text": "(104424, 1523178, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Mantle of Lady Falther''ess'),"
+        },
+        {
+          "line": 181,
+          "text": "(104424, 1550720, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Brawler Gloves'),"
+        },
+        {
+          "line": 182,
+          "text": "(104424, 1550754, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Shortsword of Vengeance'),"
+        },
+        {
+          "line": 183,
+          "text": "(104424, 1551203, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Aegis of Stormwind'),"
+        },
+        {
+          "line": 184,
+          "text": "(104424, 1551713, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Ankh of Life'),"
+        },
+        {
+          "line": 185,
+          "text": "(104424, 1551715, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Polished Jazeraint Armor'),"
+        },
+        {
+          "line": 186,
+          "text": "(104424, 1551717, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Double Link Tunic'),"
+        },
+        {
+          "line": 187,
+          "text": "(104424, 1552011, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Twisted Sabre'),"
+        },
+        {
+          "line": 188,
+          "text": "(104424, 1552098, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Double-barreled Shotgun'),"
+        },
+        {
+          "line": 189,
+          "text": "(104424, 1552278, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Forest Tracker Epaulets'),"
+        },
+        {
+          "line": 190,
+          "text": "(104424, 1552299, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Burning War Axe'),"
+        },
+        {
+          "line": 191,
+          "text": "(104424, 1552721, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Holy Shroud'),"
+        },
+        {
+          "line": 192,
+          "text": "(104424, 1552800, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Black Velvet Robes'),"
+        },
+        {
+          "line": 193,
+          "text": "(104424, 1552877, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Combatant Claymore'),"
+        },
+        {
+          "line": 194,
+          "text": "(104424, 1552912, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Claw of the Shadowmancer'),"
+        },
+        {
+          "line": 195,
+          "text": "(104424, 1553020, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Enduring Cap'),"
+        },
+        {
+          "line": 196,
+          "text": "(104424, 1553203, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Dense Triangle Mace'),"
+        },
+        {
+          "line": 197,
+          "text": "(104424, 1554090, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Mug O'' Hurt'),"
+        },
+        {
+          "line": 198,
+          "text": "(104424, 1554091, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Widowmaker'),"
+        },
+        {
+          "line": 199,
+          "text": "(104424, 1559359, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Wirt''s Third Leg'),"
+        },
+        {
+          "line": 200,
+          "text": "(104424, 1559405, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Girdle of Golem Strength'),"
+        },
+        {
+          "line": 201,
+          "text": "(104424, 1559433, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Forgotten Wraps'),"
+        },
+        {
+          "line": 202,
+          "text": "(104424, 1562974, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - The Black Knight'),"
+        },
+        {
+          "line": 203,
+          "text": "(104424, 1563005, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Amy''s Blanket'),"
+        },
+        {
+          "line": 204,
+          "text": "(104424, 1563010, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Dreamsinger Legguards'),"
+        },
+        {
+          "line": 205,
+          "text": "(104424, 1563011, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Silver-lined Belt'),"
+        },
+        {
+          "line": 206,
+          "text": "(104424, 1563012, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Yorgen Bracers'),"
+        },
+        {
+          "line": 207,
+          "text": "(104424, 1563016, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Killmaim'),"
+        },
+        {
+          "line": 208,
+          "text": "(104424, 1563018, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Executioner''s Cleaver'),"
+        },
+        {
+          "line": 209,
+          "text": "(104424, 1563019, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Harpyclaw Short Bow'),"
+        },
+        {
+          "line": 210,
+          "text": "(104424, 1563021, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Needle Threader'),"
+        },
+        {
+          "line": 211,
+          "text": "(104424, 1563024, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Beazel''s Basher'),"
+        },
+        {
+          "line": 212,
+          "text": "(104424, 1563031, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Orb of Mistmantle'),"
+        },
+        {
+          "line": 213,
+          "text": "(104424, 1563032, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Sword of Corruption'),"
+        },
+        {
+          "line": 214,
+          "text": "(104424, 1563035, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Serpent Slicer'),"
+        },
+        {
+          "line": 215,
+          "text": "(104424, 1563037, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Crystalpine Stinger'),"
+        },
+        {
+          "line": 216,
+          "text": "(104424, 1563039, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Skull Splitting Crossbow'),"
+        },
+        {
+          "line": 217,
+          "text": "(104424, 1563041, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Guardian Blade'),"
+        },
+        {
+          "line": 218,
+          "text": "(104424, 1563043, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Blade of the Titans'),"
+        },
+        {
+          "line": 219,
+          "text": "(104424, 1563048, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Looming Gavel'),"
+        },
+        {
+          "line": 220,
+          "text": "(104424, 1563049, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Deanship Claymore'),"
+        },
+        {
+          "line": 221,
+          "text": "(104424, 1563051, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Witchfury'),"
+        },
+        {
+          "line": 222,
+          "text": "(104424, 1563062, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Thunderwood'),"
+        },
+        {
+          "line": 223,
+          "text": "(104424, 1563071, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Plated Fist of Hakoo'),"
+        },
+        {
+          "line": 224,
+          "text": "(104424, 1563074, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Golem Shard Leggings'),"
+        },
+        {
+          "line": 225,
+          "text": "(104424, 1563076, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Giantslayer Bracers'),"
+        },
+        {
+          "line": 226,
+          "text": "(104424, 1563079, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Shield of Thorsen'),"
+        },
+        {
+          "line": 227,
+          "text": "(104424, 1563082, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Mountainside Buckler'),"
+        },
+        {
+          "line": 228,
+          "text": "(104424, 1563087, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - River Pride Choker'),"
+        },
+        {
+          "line": 229,
+          "text": "(104424, 1563089, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Skibi''s Pendant'),"
+        },
+        {
+          "line": 230,
+          "text": "(104424, 1563094, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - The Queen''s Jewel'),"
+        },
+        {
+          "line": 231,
+          "text": "(104424, 1563095, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Assault Band'),"
+        },
+        {
+          "line": 232,
+          "text": "(104424, 1563097, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Thunderbrow Ring'),"
+        },
+        {
+          "line": 233,
+          "text": "(104424, 1563099, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Moccasins of the White Hare'),"
+        },
+        {
+          "line": 234,
+          "text": "(104424, 1563100, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Furen''s Boots'),"
+        },
+        {
+          "line": 235,
+          "text": "(104424, 1563102, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Cassandra''s Grace'),"
+        },
+        {
+          "line": 236,
+          "text": "(104424, 1563106, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Glowing Magical Bracelets'),"
+        },
+        {
+          "line": 237,
+          "text": "(104424, 1563109, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Blackflame Cape'),"
+        },
+        {
+          "line": 238,
+          "text": "(104424, 1563112, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Winged Helm'),"
+        },
+        {
+          "line": 239,
+          "text": "(104424, 1563114, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Troll''s Bane Leggings'),"
+        },
+        {
+          "line": 240,
+          "text": "(104424, 1563115, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Sheepshear Mantle'),"
+        },
+        {
+          "line": 241,
+          "text": "(104424, 1563127, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Frostreaver Crown'),"
+        },
+        {
+          "line": 242,
+          "text": "(104424, 1563128, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - High Bergg Helm'),"
+        },
+        {
+          "line": 243,
+          "text": "(104424, 1563131, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Sparkleshell Mantle'),"
+        },
+        {
+          "line": 244,
+          "text": "(104424, 1563134, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Belt of the Gladiator'),"
+        },
+        {
+          "line": 245,
+          "text": "(104424, 1563145, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Enormous Ogre Belt'),"
+        },
+        {
+          "line": 246,
+          "text": "(104424, 2248085, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Gordok Knuckleband'),"
+        },
+        {
+          "line": 247,
+          "text": "(104424, 2248297, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Oversimplified Stick Chucker'),"
+        },
+        {
+          "line": 248,
+          "text": "(104424, 2448085, 0, 0, 0, 1, 1, 1, 1, 'Aggem Thorncurse (Heroic) - Shared Dungeon Loot - Flattened Elven Ring'),"
+        },
+        {
+          "line": 249,
+          "text": "(104542, 1569507, 0, 0, 0, 1, 1, 1, 1, 'High Inquisitor Fairbanks (Heroic) - Inquisitor''s Shawl'),"
+        },
+        {
+          "line": 250,
+          "text": "(104542, 1569508, 0, 0, 0, 1, 1, 1, 1, 'High Inquisitor Fairbanks (Heroic) - Branded Leather Bracers'),"
+        },
+        {
+          "line": 251,
+          "text": "(104542, 1569509, 0, 0, 0, 1, 1, 1, 1, 'High Inquisitor Fairbanks (Heroic) - Dusty Mail Boots'),"
+        },
+        {
+          "line": 252,
+          "text": "(104543, 1557684, 0, 0, 0, 1, 1, 1, 1, 'Bloodmage Thalnos (Heroic) - Bloodmage Mantle'),"
+        },
+        {
+          "line": 253,
+          "text": "(104543, 1557685, 0, 0, 0, 1, 1, 1, 1, 'Bloodmage Thalnos (Heroic) - Orb of the Forgotten Seer'),"
+        },
+        {
+          "line": 254,
+          "text": "(105711, 269281, 0, 0, 0, 1, 1, 1, 1, 'Ogom the Wretched (Heroic) - Blade of the Wretched'),"
+        },
+        {
+          "line": 255,
+          "text": "(105711, 269457, 0, 0, 0, 1, 1, 1, 1, 'Ogom the Wretched (Heroic) - Fist of the Damned'),"
+        },
+        {
+          "line": 256,
+          "text": "(105711, 269645, 0, 0, 0, 1, 1, 1, 1, 'Ogom the Wretched (Heroic) - Eater of the Dead'),"
+        },
+        {
+          "line": 257,
+          "text": "(105712, 272893, 0, 0, 0, 1, 1, 1, 1, 'Zolo (Heroic) - Atal''ai Boots'),"
+        },
+        {
+          "line": 258,
+          "text": "(105712, 272968, 0, 0, 0, 1, 1, 1, 1, 'Zolo (Heroic) - Atal''ai Gloves'),"
+        },
+        {
+          "line": 259,
+          "text": "(105716, 272893, 0, 0, 0, 1, 1, 1, 1, 'Zul''Lor (Heroic) - Atal''ai Boots'),"
+        },
+        {
+          "line": 260,
+          "text": "(105716, 272968, 0, 0, 0, 1, 1, 1, 1, 'Zul''Lor (Heroic) - Atal''ai Gloves'),"
+        },
+        {
+          "line": 261,
+          "text": "(105717, 272893, 0, 0, 0, 1, 1, 1, 1, 'Mijan (Heroic) - Atal''ai Boots'),"
+        },
+        {
+          "line": 262,
+          "text": "(105717, 272968, 0, 0, 0, 1, 1, 1, 1, 'Mijan (Heroic) - Atal''ai Gloves'),"
+        }
+      ]
+    }
+  ]
+}

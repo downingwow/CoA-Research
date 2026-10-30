@@ -1,0 +1,27 @@
+{
+  "title": "Zul'Gurub Thorough Audit v5 — handoff manifest",
+  "date": "2026-10-30",
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "handoff": "research/transfers/ZulGurub-Conquest-Deep-Audit-Raid-Pack-v4-2026-10-30.json",
+  "supplement": "research/dbm/coa-zulgurub-deep-crosssystem-audit-2026-10-30.json",
+  "sourceFiles": {
+    "previousUnique": 57,
+    "newCrossSystem": 15,
+    "totalPotential": 72,
+    "notice": "Separate archives; overlaps may exist, so 72 is not a verified unique count"
+  },
+  "newCategories": [
+    "Zandalar quests and gear-family migration",
+    "Encounter script loader and raid reset harness",
+    "Creature template spell/equipment/addon/movement/resistance/reputation data",
+    "Hero callboard and Worldforged unlock conditions",
+    "Adventurer cache gear"
+  ],
+  "unresolved": [
+    "Authoritative Normal baseline creature_template health values for all trash",
+    "Full live spell effect and damage verification",
+    "Difficulty-specific combat logs",
+    "Live confirmation of reconstructed PR 9139 mechanics"
+  ],
+  "validation": "No build or gameplay test performed. Supporting source files are not all ZG-specific."
+}

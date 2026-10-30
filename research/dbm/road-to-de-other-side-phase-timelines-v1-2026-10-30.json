@@ -1,0 +1,90 @@
+{
+  "schema": "coa-research.other-side-phase-timeline.v1",
+  "sourceRoot": "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/blob/main/src/server/coa/",
+  "status": "direct upstream source; current realm unverified",
+  "timelineAnchor": "phase entry for Embryo, beam event for Drakmath, combat engage for Muzah",
+  "bosses": [
+    {
+      "npcId": 162716,
+      "name": "Chimeric Embryo",
+      "phaseTrigger": "crossing 50% health during ground phase",
+      "eggPhase": {
+        "novaStartMs": 0,
+        "swirlsMs": 7000,
+        "ritualMs": 7000,
+        "blobsMs": 9000,
+        "eggRainMs": 10000,
+        "eggRainRepeatMs": 3000,
+        "phaseStopMs": 47000,
+        "lastRainMs": 50000,
+        "hatchMs": 51000,
+        "spidersRunMs": 52000,
+        "landMs": 53000,
+        "ritualChannelMs": 30000
+      },
+      "postLanding": {
+        "spikesMs": 5000,
+        "webLinesMs": 3000,
+        "poisonBoltMs": 8000,
+        "fierceBlowMs": 10000
+      },
+      "source": "CoAOtherSideEmbryo.cpp"
+    },
+    {
+      "npcId": 162715,
+      "name": "Drak'math",
+      "phase": {
+        "firstSinkAfterEngageMs": 15000,
+        "submergedEventDelayMs": 600,
+        "sidePillarsAfterSubmergedMs": 2000,
+        "sidePillarsFadeAfterSpawnMs": 4000,
+        "riseAfterSubmergedMs": 10000,
+        "beamAfterRiseMs": 1000,
+        "beamChannelMs": 30000,
+        "beamWalkerAfterBeamStartMs": 5000,
+        "beamPillarsAfterBeamStartMs": 5000,
+        "beamPillarRepeatMs": 3000,
+        "deathMissileRepeatMs": 1000,
+        "beamTickMs": 500,
+        "beamEndAfterBeamStartMs": 35200,
+        "nextSinkAfterEndBeamMs": 25000
+      },
+      "source": "CoAOtherSideDrakmath.cpp",
+      "caveat": "Beam phase may have interruptions or implementation-dependent delays; next sink scheduled in EndBeam."
+    },
+    {
+      "npcId": 162711,
+      "name": "Muzah",
+      "pull": {
+        "whirlingGlaivesMs": 0,
+        "glaiveCastMs": 2000,
+        "glaivesLandMs": 2100,
+        "firstLeapMs": 7000,
+        "leapRepeatMs": 25000,
+        "firstWebMs": 20000,
+        "webRepeatMs": 20000,
+        "firstGlaiveStrikeMs": 15000,
+        "glaiveStrikeRepeatMs": 20000,
+        "mythicOnly": true
+      },
+      "cobra": {
+        "castMs": 2000,
+        "gapMs": 2500,
+        "randomExtraAfterCastMs": 2000,
+        "seriesEndAfterCastMs": 2600
+      },
+      "helpers": {
+        "swirlLifeMs": 2500,
+        "batFallMs": 1800,
+        "webCocoonMs": 4000,
+        "strikerLifeMs": 4000
+      },
+      "source": "CoAOtherSideMuzah.cpp"
+    }
+  ],
+  "cautions": [
+    "All times scheduled, not live timestamps",
+    "NPC 162716 identity from prior roster; source-to-template binding not independently checked",
+    "Difficulty and phase may change scheduling"
+  ]
+}

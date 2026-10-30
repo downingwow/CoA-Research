@@ -1,0 +1,488 @@
+{
+  "schema": "coa-research.vaults-spell-bindings.v1",
+  "date": "2026-10-30",
+  "sourceSql": "data/sql/updates/pending_db_world/rev_20261028_60_vaults_of_the_inquisition.sql",
+  "sourceCpp": "src/server/coa/CoAVaults.cpp",
+  "spellScriptBindings": [
+    {
+      "spellId": 256491,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256499,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256500,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256501,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256804,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256805,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256818,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256819,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256831,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256832,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256844,
+      "script": "spell_coa_vaults_void_wrath"
+    },
+    {
+      "spellId": 256848,
+      "script": "spell_coa_vaults_void_wrath_tick"
+    },
+    {
+      "spellId": 256891,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256892,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256893,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256895,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256927,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 256963,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257102,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257103,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257104,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257105,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257106,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257107,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257111,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257112,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257113,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257114,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257115,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257116,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257120,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257121,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257122,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257126,
+      "script": "spell_coa_vaults_void_wrath_tick"
+    },
+    {
+      "spellId": 257127,
+      "script": "spell_coa_vaults_void_wrath_tick"
+    },
+    {
+      "spellId": 257128,
+      "script": "spell_coa_vaults_void_wrath_tick"
+    },
+    {
+      "spellId": 257142,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257143,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257144,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257168,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257169,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257170,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257172,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257173,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257174,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257175,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257176,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257177,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257178,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257179,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257180,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257181,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257186,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257187,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257188,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257189,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257195,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257196,
+      "script": "spell_coa_vaults_damage"
+    },
+    {
+      "spellId": 257197,
+      "script": "spell_coa_vaults_damage"
+    }
+  ],
+  "damageMultiplierRows": [
+    {
+      "spellId": 256891,
+      "multiplier": 1,
+      "comment": "Vaults of the Inquisition: Endless Affliction (Wrathful Torment), values from the logs, no trash cap"
+    },
+    {
+      "spellId": 256892,
+      "multiplier": 1,
+      "comment": "Vaults of the Inquisition: Darkandle Flame (Darkandle Kobold), values from the logs, no trash cap"
+    },
+    {
+      "spellId": 256893,
+      "multiplier": 1,
+      "comment": "Vaults of the Inquisition: Dark Wax Explosion (Darkandle Brute), values from the logs, no trash cap"
+    },
+    {
+      "spellId": 257168,
+      "multiplier": 1,
+      "comment": "Vaults of the Inquisition: Endless Affliction (Wrathful Torment), values from the logs, no trash cap"
+    },
+    {
+      "spellId": 257169,
+      "multiplier": 1,
+      "comment": "Vaults of the Inquisition: Endless Affliction (Wrathful Torment), values from the logs, no trash cap"
+    },
+    {
+      "spellId": 257170,
+      "multiplier": 1,
+      "comment": "Vaults of the Inquisition: Endless Affliction (Wrathful Torment), values from the logs, no trash cap"
+    },
+    {
+      "spellId": 257172,
+      "multiplier": 1,
+      "comment": "Vaults of the Inquisition: Darkandle Flame (Darkandle Kobold), values from the logs, no trash cap"
+    },
+    {
+      "spellId": 257173,
+      "multiplier": 1,
+      "comment": "Vaults of the Inquisition: Darkandle Flame (Darkandle Kobold), values from the logs, no trash cap"
+    },
+    {
+      "spellId": 257174,
+      "multiplier": 1,
+      "comment": "Vaults of the Inquisition: Darkandle Flame (Darkandle Kobold), values from the logs, no trash cap"
+    },
+    {
+      "spellId": 257179,
+      "multiplier": 1,
+      "comment": "Vaults of the Inquisition: Dark Wax Explosion (Darkandle Brute), values from the logs, no trash cap"
+    },
+    {
+      "spellId": 257180,
+      "multiplier": 1,
+      "comment": "Vaults of the Inquisition: Dark Wax Explosion (Darkandle Brute), values from the logs, no trash cap"
+    },
+    {
+      "spellId": 257181,
+      "multiplier": 1,
+      "comment": "Vaults of the Inquisition: Dark Wax Explosion (Darkandle Brute), values from the logs, no trash cap"
+    }
+  ],
+  "cppSpellConstants": {
+    "SPELL_FIERCE_BLOW": 975011,
+    "SPELL_SPECTRAL_DESTRUCTION": 256805,
+    "SPELL_SPECTRAL_DESTRUCTION_RP": 256937,
+    "SPELL_RP_SHADOWBOLT": 256936,
+    "SPELL_VOID_ESCAPE": 256811,
+    "SPELL_CANDLE_HIT_ZONE": 256815,
+    "SPELL_CANDLE_FIREBALL_HIT": 256817,
+    "SPELL_HOLY_RING": 256806,
+    "SPELL_HOLY_CHANNEL_LOOK": 47540,
+    "SPELL_COSMETIC_CHAINS": 256843,
+    "SPELL_GROUND_ZONE": 256852,
+    "SPELL_QUAKE_ZONE": 256917,
+    "SPELL_SPECTRAL_STRIKE": 256975,
+    "SPELL_CHAIN_ZONE": 256803,
+    "SPELL_SUBJUGATING_CHAINS": 256804,
+    "SPELL_VISUAL_CANDLE_FLAME": 256812,
+    "SPELL_CANDLES": 256813,
+    "SPELL_MORE_FIRE": 256814,
+    "SPELL_CANDLE_FIREBALL": 256816,
+    "SPELL_DARKANDLE_FLAME": 256818,
+    "SPELL_EARTHQUAKE": 256819,
+    "SPELL_ABYSSAL_DEVOUR": 256820,
+    "SPELL_SHADOWY_RING_VISUAL": 256822,
+    "SPELL_SHADOWY_RING": 256823,
+    "SPELL_VOID_PUNISHMENT": 256831,
+    "SPELL_ENDLESS_AFFLICTION_BOSS": 256832,
+    "SPELL_VOID_WRATH": 256844,
+    "SPELL_GROUND_CRACKS": 255878,
+    "SPELL_ECHO_GLOW": 256916,
+    "SPELL_HOLY_SHELTER_ZONE": 256846,
+    "SPELL_SHADOWY_RINGS": 256825,
+    "SPELL_SHADOWY_RING_INNER": 256821,
+    "SPELL_SHADOWY_RING_OUTER": 256824,
+    "SPELL_VOID_CONSUMPTION": 257219,
+    "SPELL_SOAK_ERUPTION": 256925,
+    "SPELL_VOID_WRATH_TICK": 256926,
+    "SPELL_HOLY_SHELTER": 256847,
+    "SPELL_VOID_ZONE": 256827,
+    "SPELL_VOIDFLARE": 256927,
+    "SPELL_SWORD_STRIKE": 256918,
+    "SPELL_MANA_BURN": 267007,
+    "SPELL_SILENCE": 267008,
+    "SPELL_PSYCHIC_SCREAM": 257166,
+    "SPELL_MANIFEST": 257167,
+    "SPELL_ENDLESS_AFFLICTION": 256891,
+    "SPELL_HAUNTING_WRATH": 257171,
+    "SPELL_PICKAXE_STRIKE": 257175,
+    "SPELL_DARK_WAX_EXPLOSION": 256893,
+    "SPELL_CHARGE_IMPACT": 257186,
+    "SPELL_KOBOLD_FLAME": 256892,
+    "SPELL_LASH_OF_THE_VOID": 256895,
+    "SPELL_SHADOWFURY": 256491,
+    "SPELL_MIND_BLAST": 256962,
+    "SPELL_ABYSSAL_CRY": 256963
+  },
+  "cppNpcConstants": {
+    "NPC_MERCILESS_ECHO": 162700,
+    "NPC_ECHO_IMAGE": 162701,
+    "NPC_CHAIN_ZONE": 162702,
+    "NPC_DARKANDLE": 162703,
+    "NPC_DECEIVER": 162704,
+    "NPC_HOLY_CRYSTAL_SEAL": 162705,
+    "NPC_CANDLE_FLAME": 162706,
+    "NPC_CANDLE_ZONE": 162707,
+    "NPC_VOIDFLARE": 162710,
+    "NPC_HOLY_CRYSTAL_FIGHT": 162723,
+    "NPC_SHIELD_ZONE": 162724,
+    "NPC_TORTURER": 162733,
+    "NPC_PHANTASMAL_BOUND": 162734,
+    "NPC_FREED_PRISONER": 162735,
+    "NPC_WRATHFUL_TORMENT": 162736,
+    "NPC_KOBOLD": 162737,
+    "NPC_BRUTE": 162738,
+    "NPC_SOUND_HELPER": 162745,
+    "NPC_SHADOW_PROJECTION": 162748,
+    "NPC_KOBOLD_NORMAL": 162759,
+    "NPC_CORPOREAL_SHADOW": 162761,
+    "NPC_KOBOLD_ELITE": 162762,
+    "NPC_BRUTE_ELITE": 162763,
+    "NPC_CONFESSOR_KONRAD": 162999,
+    "NPC_KOBOLD_FLAME": 163813,
+    "NPC_RP_TORTURER": 162984,
+    "NPC_RP_TORMENT": 162985,
+    "NPC_RP_PHANTASM": 162986,
+    "NPC_TRAP_CONTROLLER": 162978
+  },
+  "spellConstantsUsedInCastExpressions": [
+    {
+      "name": "SPELL_FIERCE_BLOW",
+      "id": 975011
+    },
+    {
+      "name": "SPELL_SPECTRAL_STRIKE",
+      "id": 256975
+    },
+    {
+      "name": "SPELL_SPECTRAL_DESTRUCTION",
+      "id": 256805
+    },
+    {
+      "name": "SPELL_SPECTRAL_DESTRUCTION_RP",
+      "id": 256937
+    },
+    {
+      "name": "SPELL_RP_SHADOWBOLT",
+      "id": 256936
+    },
+    {
+      "name": "SPELL_ENDLESS_AFFLICTION",
+      "id": 256891
+    },
+    {
+      "name": "SPELL_MORE_FIRE",
+      "id": 256814
+    },
+    {
+      "name": "SPELL_EARTHQUAKE",
+      "id": 256819
+    },
+    {
+      "name": "SPELL_VOID_ESCAPE",
+      "id": 256811
+    },
+    {
+      "name": "SPELL_CANDLES",
+      "id": 256813
+    },
+    {
+      "name": "SPELL_ABYSSAL_DEVOUR",
+      "id": 256820
+    },
+    {
+      "name": "SPELL_SHADOWY_RINGS",
+      "id": 256825
+    },
+    {
+      "name": "SPELL_VOID_WRATH",
+      "id": 256844
+    },
+    {
+      "name": "SPELL_VOID_CONSUMPTION",
+      "id": 257219
+    },
+    {
+      "name": "SPELL_VOIDFLARE",
+      "id": 256927
+    },
+    {
+      "name": "SPELL_CHAIN_ZONE",
+      "id": 256803
+    },
+    {
+      "name": "SPELL_VOID_ZONE",
+      "id": 256827
+    },
+    {
+      "name": "SPELL_VISUAL_CANDLE_FLAME",
+      "id": 256812
+    },
+    {
+      "name": "SPELL_SUBJUGATING_CHAINS",
+      "id": 256804
+    },
+    {
+      "name": "SPELL_CANDLE_FIREBALL",
+      "id": 256816
+    },
+    {
+      "name": "SPELL_COSMETIC_CHAINS",
+      "id": 256843
+    },
+    {
+      "name": "SPELL_CHARGE_IMPACT",
+      "id": 257186
+    }
+  ],
+  "notes": [
+    "Cast-expression detection is a lexical index, not a verified boss-to-spell mapping",
+    "Source SQL may contain variants not explicitly named in C++",
+    "Upstream only; live deployment unverified"
+  ]
+}

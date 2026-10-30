@@ -1,0 +1,35 @@
+name: Package ZulGurub research ZIP
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/package-zulgurub.yml'
+permissions:
+  contents: write
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Create ZIP without version suffix
+        run: |
+          python3 - <<'PY'
+          import json,zipfile,pathlib
+          src=pathlib.Path('research/transfers/ZulGurub-Conquest-UNIFIED-Complete-Raid-Pack-v5-2026-10-30.json')
+          dst=pathlib.Path('research/transfers/ZulGurub-Conquest-Complete-Raid-Pack.zip')
+          data=json.loads(src.read_text())
+          data.pop('version',None)
+          data['title']="Zul'Gurub — Complete Raid Research Package"
+          payload=json.dumps(data,ensure_ascii=False,indent=2).encode()
+          with zipfile.ZipFile(dst,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
+              z.writestr('ZulGurub-Conquest-Complete-Raid-Pack.json',payload)
+          print(dst,dst.stat().st_size)
+          PY
+      - name: Commit ZIP
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/transfers/ZulGurub-Conquest-Complete-Raid-Pack.zip
+          git diff --cached --quiet || (git commit -m "Add versionless ZulGurub complete research ZIP" && git push)

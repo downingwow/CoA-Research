@@ -45,7 +45,7 @@ def main():
             unresolved.append({"path": path, "reason": "unreadable-shard", "detail": str(exc)})
             continue
         class_id = doc.get("classId")
-        if not positive(class_id) and "/abilities/_" in path:
+        if not positive(class_id) and (path.endswith("/index.json") or path.endswith("/_meta.json") or "/abilities/_residual-" in path):
             skipped_other_classes.append({"path": path, "reason": "unattributed-residual-or-metadata"})
             continue
         if not positive(class_id):

@@ -35,3 +35,5 @@ a{color:#d5ad72}a:hover{color:#f0cf96}p,small{color:#aaa398}h2,h3{color:#ede6da}
 @media(max-width:600px){.overview-intro{grid-template-columns:54px 1fr;gap:14px;padding:16px}.overview-class-mark{width:52px;height:52px}.overview-class-mark img{width:38px;height:38px}.overview-spec-grid,.overview-ability-grid,.overview-facts{grid-template-columns:1fr}.overview-fact-link{grid-column:auto}.overview-spec{min-height:0}.class-overview-layout{gap:20px}.overview-intro p{font-size:12px}}
 
 .overview-retail{margin-top:13px;padding:12px 14px;border:1px solid #414647;background:#1a1f22}.overview-retail>.eyebrow{display:block;margin-bottom:5px;color:#d3ad73}.overview-retail p{margin:0;color:#c3bbaf;font-size:11px;line-height:1.65}.overview-retail-preview{margin:0 0 9px;color:#d6b77f!important;font-size:9px!important;line-height:1.4!important}.overview-retail-preview strong{color:#e3c58e;text-transform:uppercase;letter-spacing:.05em}
+
+.overview-retail>a,.cards .card>a{display:inline-block;margin-top:8px;color:#d8b476;font-size:10px}.cards .card>a:hover,.overview-retail>a:hover{color:#f0d19b}

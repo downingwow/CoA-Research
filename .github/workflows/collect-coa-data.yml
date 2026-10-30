@@ -1,5 +1,9 @@
 name: Collect CoA source records
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/collect-coa-data.yml'
   workflow_dispatch:
     inputs:
       max_files:
@@ -22,7 +26,7 @@ jobs:
       - name: Download and index source records
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MAX_FILES: ${{ inputs.max_files }}
+          MAX_FILES: ${{ inputs.max_files || '20' }}
         run: python tools/collect_coa_data.py --max-files "$MAX_FILES"
       - name: Commit imported records
         run: |

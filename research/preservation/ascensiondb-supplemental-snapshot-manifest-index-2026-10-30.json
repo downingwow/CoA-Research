@@ -1,0 +1,40 @@
+{
+  "source": "hertigservices/ascension-data",
+  "manifests": [
+    {
+      "path": "supplemental/bisbeard/7733de9bf573b62f451375ea09415f8de86b13c9c131cd6108a0e9a2e716d666/manifest.json",
+      "sha": "72fb9a2b3b24b983cfb08fa4c034e1520eb5aafb",
+      "bytes": 1717,
+      "keys": [
+        "artifacts",
+        "baseline",
+        "counts",
+        "schema_version",
+        "semantics",
+        "source"
+      ],
+      "sample": "{\"artifacts\":{\"catalog.sqlite.gz\":{\"bytes\":9976021,\"sha256\":\"876b85538547f78e3bf3d3e3733d8d6d6d6babeceb59c5575a7307ece8f438e3\"},\"comparison.json.gz\":{\"bytes\":22232,\"sha256\":\"938e137fe4a35713e23bbd695ef2e5587048daf873d9b81861884e97a4df9234\"},\"rows.jsonl.gz\":{\"bytes\":5115144,\"sha256\":\"0606dca622e46957c7c325753076428651713f5dc7e73a5c86533547c552e574\"},\"source.dexie.gz\":{\"bytes\":3998789,\"sha256\":\"7dfc1a37208f2f9742cd343c6622d0a745add73fdc0b72acbe218935ffedc5eb\"}},\"baseline\":{\"distinct_entries\":55200"
+    },
+    {
+      "path": "supplemental/exiles-db-export/17187cc0bca9bf620309d1fb65f2318bb0128be1348b4d15e7f8f35fb12b99a9/manifest.json",
+      "sha": "ece533723ab99a80893e46c3d0fbd0602425c1bc",
+      "bytes": 21213,
+      "keys": [
+        "database",
+        "files",
+        "icon_map",
+        "images",
+        "release",
+        "schema",
+        "screening",
+        "source"
+      ],
+      "sample": "{\n  \"database\": {\n    \"engine\": \"PostgreSQL (17 recommended by the export; restored and verified on 18.6)\",\n    \"extensions\": [\n      \"citext\",\n      \"pg_trgm\"\n    ],\n    \"per_table\": {\n      \"achievement\": {\n        \"csv_gz_bytes\": 318741,\n        \"csv_gz_sha256\": \"8976333772aa31180275db6058452dc74e61e11c2c2bbab0511334a832683a0c\",\n        \"rows\": 22637\n      },\n      \"achievement_category\": {\n        \"csv_gz_bytes\": 2140,\n        \"csv_gz_sha256\": \"4a453b9263fc1d310e496d908a0e24a913ee38be33998e9"
+    },
+    {
+      "path": "supplemental/coa-databank/166001399306e4fb022116fe1e3cfbbd7bd4bf37/manifest.json",
+      "error": "SyntaxError: Unexpected end of JSON input"
+    }
+  ],
+  "notes": "Source manifests indexed; payloads are not yet mirrored or checksum verified."
+}

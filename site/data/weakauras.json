@@ -1,0 +1,826 @@
+{
+  "source": "JesterCharles/coa-weakauras",
+  "sourceUpdated": "2026-08-08",
+  "sourceStatus": "Public community packs; compatibility and completeness vary by pack.",
+  "entries": [
+    {
+      "class": "Barbarian",
+      "kind": "Specialization pack",
+      "spec": "Ancestry",
+      "path": "docs/packs/barbarian/barbarian-ancestry.txt",
+      "size": 8133,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/barbarian/barbarian-ancestry.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/barbarian/"
+    },
+    {
+      "class": "Barbarian",
+      "kind": "Specialization pack",
+      "spec": "Brutality",
+      "path": "docs/packs/barbarian/barbarian-brutality.txt",
+      "size": 7778,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/barbarian/barbarian-brutality.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/barbarian/"
+    },
+    {
+      "class": "Barbarian",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/barbarian/barbarian-coa.txt",
+      "size": 14161,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/barbarian/barbarian-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/barbarian/"
+    },
+    {
+      "class": "Barbarian",
+      "kind": "Specialization pack",
+      "spec": "Headhunting",
+      "path": "docs/packs/barbarian/barbarian-headhunting.txt",
+      "size": 7726,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/barbarian/barbarian-headhunting.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/barbarian/"
+    },
+    {
+      "class": "Bloodmage",
+      "kind": "Specialization pack",
+      "spec": "Accursed",
+      "path": "docs/packs/bloodmage/bloodmage-accursed.txt",
+      "size": 8256,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/bloodmage/bloodmage-accursed.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/bloodmage/"
+    },
+    {
+      "class": "Bloodmage",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/bloodmage/bloodmage-coa.txt",
+      "size": 20965,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/bloodmage/bloodmage-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/bloodmage/"
+    },
+    {
+      "class": "Bloodmage",
+      "kind": "Specialization pack",
+      "spec": "Eternal",
+      "path": "docs/packs/bloodmage/bloodmage-eternal.txt",
+      "size": 7334,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/bloodmage/bloodmage-eternal.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/bloodmage/"
+    },
+    {
+      "class": "Bloodmage",
+      "kind": "Specialization pack",
+      "spec": "Fleshweaver",
+      "path": "docs/packs/bloodmage/bloodmage-fleshweaver.txt",
+      "size": 9156,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/bloodmage/bloodmage-fleshweaver.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/bloodmage/"
+    },
+    {
+      "class": "Bloodmage",
+      "kind": "Specialization pack",
+      "spec": "Sanguine",
+      "path": "docs/packs/bloodmage/bloodmage-sanguine.txt",
+      "size": 9393,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/bloodmage/bloodmage-sanguine.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/bloodmage/"
+    },
+    {
+      "class": "Chronomancer",
+      "kind": "Specialization pack",
+      "spec": "Artificer",
+      "path": "docs/packs/chronomancer/chronomancer-artificer.txt",
+      "size": 10810,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/chronomancer/chronomancer-artificer.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/chronomancer/"
+    },
+    {
+      "class": "Chronomancer",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/chronomancer/chronomancer-coa.txt",
+      "size": 22138,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/chronomancer/chronomancer-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/chronomancer/"
+    },
+    {
+      "class": "Chronomancer",
+      "kind": "Specialization pack",
+      "spec": "Infinite",
+      "path": "docs/packs/chronomancer/chronomancer-infinite.txt",
+      "size": 10722,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/chronomancer/chronomancer-infinite.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/chronomancer/"
+    },
+    {
+      "class": "Chronomancer",
+      "kind": "Specialization pack",
+      "spec": "Time",
+      "path": "docs/packs/chronomancer/chronomancer-time.txt",
+      "size": 11641,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/chronomancer/chronomancer-time.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/chronomancer/"
+    },
+    {
+      "class": "Cultist",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/cultist/cultist-coa.txt",
+      "size": 23048,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/cultist/cultist-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/cultist/"
+    },
+    {
+      "class": "Cultist",
+      "kind": "Specialization pack",
+      "spec": "Corruption",
+      "path": "docs/packs/cultist/cultist-corruption.txt",
+      "size": 9153,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/cultist/cultist-corruption.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/cultist/"
+    },
+    {
+      "class": "Cultist",
+      "kind": "Specialization pack",
+      "spec": "Dreadnought",
+      "path": "docs/packs/cultist/cultist-dreadnought.txt",
+      "size": 8498,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/cultist/cultist-dreadnought.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/cultist/"
+    },
+    {
+      "class": "Cultist",
+      "kind": "Specialization pack",
+      "spec": "Godblade",
+      "path": "docs/packs/cultist/cultist-godblade.txt",
+      "size": 8766,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/cultist/cultist-godblade.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/cultist/"
+    },
+    {
+      "class": "Cultist",
+      "kind": "Specialization pack",
+      "spec": "Heretic",
+      "path": "docs/packs/cultist/cultist-heretic.txt",
+      "size": 9701,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/cultist/cultist-heretic.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/cultist/"
+    },
+    {
+      "class": "Felsworn",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/felsworn/felsworn-coa.txt",
+      "size": 14542,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/felsworn/felsworn-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/felsworn/"
+    },
+    {
+      "class": "Felsworn",
+      "kind": "Specialization pack",
+      "spec": "Infernal",
+      "path": "docs/packs/felsworn/felsworn-infernal.txt",
+      "size": 7712,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/felsworn/felsworn-infernal.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/felsworn/"
+    },
+    {
+      "class": "Felsworn",
+      "kind": "Specialization pack",
+      "spec": "Slayer",
+      "path": "docs/packs/felsworn/felsworn-slayer.txt",
+      "size": 8432,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/felsworn/felsworn-slayer.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/felsworn/"
+    },
+    {
+      "class": "Felsworn",
+      "kind": "Specialization pack",
+      "spec": "Tyrant",
+      "path": "docs/packs/felsworn/felsworn-tyrant.txt",
+      "size": 7870,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/felsworn/felsworn-tyrant.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/felsworn/"
+    },
+    {
+      "class": "Guardian",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/guardian/guardian-coa.txt",
+      "size": 16652,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/guardian/guardian-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/guardian/"
+    },
+    {
+      "class": "Guardian",
+      "kind": "Specialization pack",
+      "spec": "Gladiator",
+      "path": "docs/packs/guardian/guardian-gladiator.txt",
+      "size": 7520,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/guardian/guardian-gladiator.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/guardian/"
+    },
+    {
+      "class": "Guardian",
+      "kind": "Specialization pack",
+      "spec": "Inspiration",
+      "path": "docs/packs/guardian/guardian-inspiration.txt",
+      "size": 10032,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/guardian/guardian-inspiration.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/guardian/"
+    },
+    {
+      "class": "Guardian",
+      "kind": "Specialization pack",
+      "spec": "Vanguard",
+      "path": "docs/packs/guardian/guardian-vanguard.txt",
+      "size": 8100,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/guardian/guardian-vanguard.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/guardian/"
+    },
+    {
+      "class": "Knight of Xoroth",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/knight-of-xoroth/knight-of-xoroth-coa.txt",
+      "size": 19589,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/knight-of-xoroth/knight-of-xoroth-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/knight-of-xoroth/"
+    },
+    {
+      "class": "Knight of Xoroth",
+      "kind": "Specialization pack",
+      "spec": "Defiance",
+      "path": "docs/packs/knight-of-xoroth/knight-of-xoroth-defiance.txt",
+      "size": 9636,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/knight-of-xoroth/knight-of-xoroth-defiance.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/knight-of-xoroth/"
+    },
+    {
+      "class": "Knight of Xoroth",
+      "kind": "Specialization pack",
+      "spec": "Hellfire",
+      "path": "docs/packs/knight-of-xoroth/knight-of-xoroth-hellfire.txt",
+      "size": 9861,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/knight-of-xoroth/knight-of-xoroth-hellfire.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/knight-of-xoroth/"
+    },
+    {
+      "class": "Knight of Xoroth",
+      "kind": "Specialization pack",
+      "spec": "War",
+      "path": "docs/packs/knight-of-xoroth/knight-of-xoroth-war.txt",
+      "size": 9246,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/knight-of-xoroth/knight-of-xoroth-war.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/knight-of-xoroth/"
+    },
+    {
+      "class": "Necromancer",
+      "kind": "Specialization pack",
+      "spec": "Animation",
+      "path": "docs/packs/necromancer/necromancer-animation.txt",
+      "size": 9072,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/necromancer/necromancer-animation.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/necromancer/"
+    },
+    {
+      "class": "Necromancer",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/necromancer/necromancer-coa.txt",
+      "size": 17594,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/necromancer/necromancer-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/necromancer/"
+    },
+    {
+      "class": "Necromancer",
+      "kind": "Specialization pack",
+      "spec": "Death",
+      "path": "docs/packs/necromancer/necromancer-death.txt",
+      "size": 9226,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/necromancer/necromancer-death.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/necromancer/"
+    },
+    {
+      "class": "Necromancer",
+      "kind": "Specialization pack",
+      "spec": "Rime",
+      "path": "docs/packs/necromancer/necromancer-rime.txt",
+      "size": 8800,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/necromancer/necromancer-rime.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/necromancer/"
+    },
+    {
+      "class": "Primalist",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/primalist/primalist-coa.txt",
+      "size": 21056,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/primalist/primalist-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/primalist/"
+    },
+    {
+      "class": "Primalist",
+      "kind": "Specialization pack",
+      "spec": "Geomancy",
+      "path": "docs/packs/primalist/primalist-geomancy.txt",
+      "size": 9020,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/primalist/primalist-geomancy.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/primalist/"
+    },
+    {
+      "class": "Primalist",
+      "kind": "Specialization pack",
+      "spec": "Grovekeeper",
+      "path": "docs/packs/primalist/primalist-grovekeeper.txt",
+      "size": 9526,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/primalist/primalist-grovekeeper.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/primalist/"
+    },
+    {
+      "class": "Primalist",
+      "kind": "Specialization pack",
+      "spec": "Mountain King",
+      "path": "docs/packs/primalist/primalist-mountain-king.txt",
+      "size": 7992,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/primalist/primalist-mountain-king.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/primalist/"
+    },
+    {
+      "class": "Primalist",
+      "kind": "Specialization pack",
+      "spec": "Wildwalker",
+      "path": "docs/packs/primalist/primalist-wildwalker.txt",
+      "size": 9662,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/primalist/primalist-wildwalker.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/primalist/"
+    },
+    {
+      "class": "Pyromancer",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/pyromancer/pyromancer-coa.txt",
+      "size": 14974,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/pyromancer/pyromancer-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/pyromancer/"
+    },
+    {
+      "class": "Pyromancer",
+      "kind": "Specialization pack",
+      "spec": "Draconic",
+      "path": "docs/packs/pyromancer/pyromancer-draconic.txt",
+      "size": 7958,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/pyromancer/pyromancer-draconic.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/pyromancer/"
+    },
+    {
+      "class": "Pyromancer",
+      "kind": "Specialization pack",
+      "spec": "Flameweaving",
+      "path": "docs/packs/pyromancer/pyromancer-flameweaving.txt",
+      "size": 8657,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/pyromancer/pyromancer-flameweaving.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/pyromancer/"
+    },
+    {
+      "class": "Pyromancer",
+      "kind": "Specialization pack",
+      "spec": "Incineration",
+      "path": "docs/packs/pyromancer/pyromancer-incineration.txt",
+      "size": 8256,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/pyromancer/pyromancer-incineration.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/pyromancer/"
+    },
+    {
+      "class": "Ranger",
+      "kind": "Specialization pack",
+      "spec": "Archery",
+      "path": "docs/packs/ranger/ranger-archery.txt",
+      "size": 8417,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/ranger/ranger-archery.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/ranger/"
+    },
+    {
+      "class": "Ranger",
+      "kind": "Specialization pack",
+      "spec": "Brigand",
+      "path": "docs/packs/ranger/ranger-brigand.txt",
+      "size": 9072,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/ranger/ranger-brigand.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/ranger/"
+    },
+    {
+      "class": "Ranger",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/ranger/ranger-coa.txt",
+      "size": 17946,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/ranger/ranger-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/ranger/"
+    },
+    {
+      "class": "Ranger",
+      "kind": "Specialization pack",
+      "spec": "Farstrider",
+      "path": "docs/packs/ranger/ranger-farstrider.txt",
+      "size": 9106,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/ranger/ranger-farstrider.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/ranger/"
+    },
+    {
+      "class": "Reaper",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/reaper/reaper-coa.txt",
+      "size": 18534,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/reaper/reaper-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/reaper/"
+    },
+    {
+      "class": "Reaper",
+      "kind": "Specialization pack",
+      "spec": "Domination",
+      "path": "docs/packs/reaper/reaper-domination.txt",
+      "size": 9112,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/reaper/reaper-domination.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/reaper/"
+    },
+    {
+      "class": "Reaper",
+      "kind": "Specialization pack",
+      "spec": "Harvest",
+      "path": "docs/packs/reaper/reaper-harvest.txt",
+      "size": 9324,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/reaper/reaper-harvest.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/reaper/"
+    },
+    {
+      "class": "Reaper",
+      "kind": "Specialization pack",
+      "spec": "Soul",
+      "path": "docs/packs/reaper/reaper-soul.txt",
+      "size": 9485,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/reaper/reaper-soul.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/reaper/"
+    },
+    {
+      "class": "Runemaster",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/runemaster/runemaster-coa.txt",
+      "size": 24233,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/runemaster/runemaster-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/runemaster/"
+    },
+    {
+      "class": "Runemaster",
+      "kind": "Specialization pack",
+      "spec": "Engravement",
+      "path": "docs/packs/runemaster/runemaster-engravement.txt",
+      "size": 13161,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/runemaster/runemaster-engravement.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/runemaster/"
+    },
+    {
+      "class": "Runemaster",
+      "kind": "Specialization pack",
+      "spec": "Glyphic",
+      "path": "docs/packs/runemaster/runemaster-glyphic.txt",
+      "size": 12990,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/runemaster/runemaster-glyphic.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/runemaster/"
+    },
+    {
+      "class": "Runemaster",
+      "kind": "Specialization pack",
+      "spec": "Riftblade",
+      "path": "docs/packs/runemaster/runemaster-riftblade.txt",
+      "size": 12713,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/runemaster/runemaster-riftblade.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/runemaster/"
+    },
+    {
+      "class": "Starcaller",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/starcaller/starcaller-coa.txt",
+      "size": 19168,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/starcaller/starcaller-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/starcaller/"
+    },
+    {
+      "class": "Starcaller",
+      "kind": "Specialization pack",
+      "spec": "Moon Guard",
+      "path": "docs/packs/starcaller/starcaller-moon-guard.txt",
+      "size": 8102,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/starcaller/starcaller-moon-guard.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/starcaller/"
+    },
+    {
+      "class": "Starcaller",
+      "kind": "Specialization pack",
+      "spec": "Moon Priest",
+      "path": "docs/packs/starcaller/starcaller-moon-priest.txt",
+      "size": 9786,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/starcaller/starcaller-moon-priest.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/starcaller/"
+    },
+    {
+      "class": "Starcaller",
+      "kind": "Specialization pack",
+      "spec": "Sentinel",
+      "path": "docs/packs/starcaller/starcaller-sentinel.txt",
+      "size": 8058,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/starcaller/starcaller-sentinel.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/starcaller/"
+    },
+    {
+      "class": "Starcaller",
+      "kind": "Specialization pack",
+      "spec": "Warden",
+      "path": "docs/packs/starcaller/starcaller-warden.txt",
+      "size": 7525,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/starcaller/starcaller-warden.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/starcaller/"
+    },
+    {
+      "class": "Stormbringer",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/stormbringer/stormbringer-coa.txt",
+      "size": 19078,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/stormbringer/stormbringer-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/stormbringer/"
+    },
+    {
+      "class": "Stormbringer",
+      "kind": "Specialization pack",
+      "spec": "Lightning",
+      "path": "docs/packs/stormbringer/stormbringer-lightning.txt",
+      "size": 8373,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/stormbringer/stormbringer-lightning.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/stormbringer/"
+    },
+    {
+      "class": "Stormbringer",
+      "kind": "Specialization pack",
+      "spec": "Maelstrom",
+      "path": "docs/packs/stormbringer/stormbringer-maelstrom.txt",
+      "size": 9262,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/stormbringer/stormbringer-maelstrom.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/stormbringer/"
+    },
+    {
+      "class": "Stormbringer",
+      "kind": "Specialization pack",
+      "spec": "Wind",
+      "path": "docs/packs/stormbringer/stormbringer-wind.txt",
+      "size": 10477,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/stormbringer/stormbringer-wind.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/stormbringer/"
+    },
+    {
+      "class": "Sun Cleric",
+      "kind": "Specialization pack",
+      "spec": "Blessings",
+      "path": "docs/packs/sun-cleric/sun-cleric-blessings.txt",
+      "size": 9632,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/sun-cleric/sun-cleric-blessings.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/sun-cleric/"
+    },
+    {
+      "class": "Sun Cleric",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/sun-cleric/sun-cleric-coa.txt",
+      "size": 23186,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/sun-cleric/sun-cleric-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/sun-cleric/"
+    },
+    {
+      "class": "Sun Cleric",
+      "kind": "Specialization pack",
+      "spec": "Piety",
+      "path": "docs/packs/sun-cleric/sun-cleric-piety.txt",
+      "size": 9488,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/sun-cleric/sun-cleric-piety.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/sun-cleric/"
+    },
+    {
+      "class": "Sun Cleric",
+      "kind": "Specialization pack",
+      "spec": "Seraphim",
+      "path": "docs/packs/sun-cleric/sun-cleric-seraphim.txt",
+      "size": 9637,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/sun-cleric/sun-cleric-seraphim.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/sun-cleric/"
+    },
+    {
+      "class": "Sun Cleric",
+      "kind": "Specialization pack",
+      "spec": "Valkyrie",
+      "path": "docs/packs/sun-cleric/sun-cleric-valkyrie.txt",
+      "size": 8505,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/sun-cleric/sun-cleric-valkyrie.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/sun-cleric/"
+    },
+    {
+      "class": "Templar",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/templar/templar-coa.txt",
+      "size": 17058,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/templar/templar-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/templar/"
+    },
+    {
+      "class": "Templar",
+      "kind": "Specialization pack",
+      "spec": "Crusader",
+      "path": "docs/packs/templar/templar-crusader.txt",
+      "size": 9078,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/templar/templar-crusader.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/templar/"
+    },
+    {
+      "class": "Templar",
+      "kind": "Specialization pack",
+      "spec": "Oathkeeper",
+      "path": "docs/packs/templar/templar-oathkeeper.txt",
+      "size": 9168,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/templar/templar-oathkeeper.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/templar/"
+    },
+    {
+      "class": "Templar",
+      "kind": "Specialization pack",
+      "spec": "Zealot",
+      "path": "docs/packs/templar/templar-zealot.txt",
+      "size": 8169,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/templar/templar-zealot.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/templar/"
+    },
+    {
+      "class": "Tinker",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/tinker/tinker-coa.txt",
+      "size": 20534,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/tinker/tinker-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/tinker/"
+    },
+    {
+      "class": "Tinker",
+      "kind": "Specialization pack",
+      "spec": "Demolition",
+      "path": "docs/packs/tinker/tinker-demolition.txt",
+      "size": 8877,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/tinker/tinker-demolition.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/tinker/"
+    },
+    {
+      "class": "Tinker",
+      "kind": "Specialization pack",
+      "spec": "Invention",
+      "path": "docs/packs/tinker/tinker-invention.txt",
+      "size": 9524,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/tinker/tinker-invention.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/tinker/"
+    },
+    {
+      "class": "Tinker",
+      "kind": "Specialization pack",
+      "spec": "Mechanics",
+      "path": "docs/packs/tinker/tinker-mechanics.txt",
+      "size": 10881,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/tinker/tinker-mechanics.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/tinker/"
+    },
+    {
+      "class": "Venomancer",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/venomancer/venomancer-coa.txt",
+      "size": 21946,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/venomancer/venomancer-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/venomancer/"
+    },
+    {
+      "class": "Venomancer",
+      "kind": "Specialization pack",
+      "spec": "Fortitude",
+      "path": "docs/packs/venomancer/venomancer-fortitude.txt",
+      "size": 8808,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/venomancer/venomancer-fortitude.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/venomancer/"
+    },
+    {
+      "class": "Venomancer",
+      "kind": "Specialization pack",
+      "spec": "Rot",
+      "path": "docs/packs/venomancer/venomancer-rot.txt",
+      "size": 8876,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/venomancer/venomancer-rot.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/venomancer/"
+    },
+    {
+      "class": "Venomancer",
+      "kind": "Specialization pack",
+      "spec": "Stalking",
+      "path": "docs/packs/venomancer/venomancer-stalking.txt",
+      "size": 9780,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/venomancer/venomancer-stalking.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/venomancer/"
+    },
+    {
+      "class": "Venomancer",
+      "kind": "Specialization pack",
+      "spec": "Vizier",
+      "path": "docs/packs/venomancer/venomancer-vizier.txt",
+      "size": 8765,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/venomancer/venomancer-vizier.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/venomancer/"
+    },
+    {
+      "class": "Witch Doctor",
+      "kind": "Specialization pack",
+      "spec": "Brewing",
+      "path": "docs/packs/witch-doctor/witch-doctor-brewing.txt",
+      "size": 9406,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/witch-doctor/witch-doctor-brewing.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/witch-doctor/"
+    },
+    {
+      "class": "Witch Doctor",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/witch-doctor/witch-doctor-coa.txt",
+      "size": 18108,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/witch-doctor/witch-doctor-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/witch-doctor/"
+    },
+    {
+      "class": "Witch Doctor",
+      "kind": "Specialization pack",
+      "spec": "Shadowhunting",
+      "path": "docs/packs/witch-doctor/witch-doctor-shadowhunting.txt",
+      "size": 8600,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/witch-doctor/witch-doctor-shadowhunting.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/witch-doctor/"
+    },
+    {
+      "class": "Witch Doctor",
+      "kind": "Specialization pack",
+      "spec": "Voodoo",
+      "path": "docs/packs/witch-doctor/witch-doctor-voodoo.txt",
+      "size": 8561,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/witch-doctor/witch-doctor-voodoo.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/witch-doctor/"
+    },
+    {
+      "class": "Witch Hunter",
+      "kind": "Specialization pack",
+      "spec": "Black Knight",
+      "path": "docs/packs/witch-hunter/witch-hunter-black-knight.txt",
+      "size": 8702,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/witch-hunter/witch-hunter-black-knight.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/witch-hunter/"
+    },
+    {
+      "class": "Witch Hunter",
+      "kind": "Specialization pack",
+      "spec": "Boltslinger",
+      "path": "docs/packs/witch-hunter/witch-hunter-boltslinger.txt",
+      "size": 8053,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/witch-hunter/witch-hunter-boltslinger.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/witch-hunter/"
+    },
+    {
+      "class": "Witch Hunter",
+      "kind": "Class pack",
+      "spec": "All Specs",
+      "path": "docs/packs/witch-hunter/witch-hunter-coa.txt",
+      "size": 20489,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/witch-hunter/witch-hunter-coa.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/witch-hunter/"
+    },
+    {
+      "class": "Witch Hunter",
+      "kind": "Specialization pack",
+      "spec": "Houndmaster",
+      "path": "docs/packs/witch-hunter/witch-hunter-houndmaster.txt",
+      "size": 8218,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/witch-hunter/witch-hunter-houndmaster.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/witch-hunter/"
+    },
+    {
+      "class": "Witch Hunter",
+      "kind": "Specialization pack",
+      "spec": "Inquisition",
+      "path": "docs/packs/witch-hunter/witch-hunter-inquisition.txt",
+      "size": 8969,
+      "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/witch-hunter/witch-hunter-inquisition.txt",
+      "page": "https://jestercharles.github.io/coa-weakauras/witch-hunter/"
+    }
+  ]
+}

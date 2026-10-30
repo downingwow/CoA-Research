@@ -78,3 +78,7 @@ Maintainer: **Uncle Bone**, GitHub: https://github.com/downingwow
 - [CoA-Research](https://github.com/downingwow/CoA-Research) — this research hub
 
 Other named projects in development: DBM-CoA, MRT-CoA, Questie-X, LootCollector, Zygor-CoA, ElvUI-CoA, FojjiCore-CoA, Leatrix Plus CoA, UncleGPT. Link their exact repositories only after confirmed rather than guessing URLs.
+## Community WeakAuras catalog
+
+BoneArchive catalogs 91 public class and specialization pack exports from [JesterCharles/coa-weakauras](https://github.com/JesterCharles/coa-weakauras), last observed Aug 8, 2026. The site stores only the pack manifest and links to the author's export strings and guide pages; it does not mirror the import strings. A second listed project, [Zillas/coa-weakauras](https://github.com/Zillas/coa-weakauras), currently has no public pack files. Compatibility is author-reported and must be checked against the installed client/addon version.
+

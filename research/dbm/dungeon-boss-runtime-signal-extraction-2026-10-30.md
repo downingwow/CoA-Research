@@ -1,0 +1,184 @@
+# Dungeon DBM extraction — boss runtime and difficulty signals
+
+Source: `Conquest-of-AzerothCore/azerothcore-wotlk-coa` upstream, not verified live.
+
+## src/server/coa/CoADungeonBossSpells.cpp
+SHA: `a16fb16b2dee6f9000e49a29523c812afe42e5b1` · 505 lines
+
+- L26: `    class spell_coa_torrent_spin : public AuraScript`
+- L28: `        PrepareAuraScript(spell_coa_torrent_spin);`
+- L32: `        uint32 _ticks = 0;`
+- L67: `            float angle = Position::NormalizeOrientation(_start - turned);`
+- L87: `            AfterEffectApply += AuraEffectApplyFn(spell_coa_torrent_spin::Start, EFFECT_1,`
+- L88: `                SPELL_AURA_PERIODIC_TRIGGER_SPELL, AURA_EFFECT_HANDLE_REAL);`
+- L89: `            OnEffectPeriodic += AuraEffectPeriodicFn(spell_coa_torrent_spin::Turn, EFFECT_1,`
+- L90: `                SPELL_AURA_PERIODIC_TRIGGER_SPELL);`
+- L91: `            AfterEffectRemove += AuraEffectRemoveFn(spell_coa_torrent_spin::Stop, EFFECT_1,`
+- L92: `                SPELL_AURA_PERIODIC_TRIGGER_SPELL, AURA_EFFECT_HANDLE_REAL);`
+- L96: `    class spell_coa_bouncing_saw_blade : public SpellScript`
+- L98: `        PrepareSpellScript(spell_coa_bouncing_saw_blade);`
+- L102: `            size_t const count = GetCaster()->GetMap()->GetDifficulty() >= DUNGEON_DIFFICULTY_EPIC ? 3 : 1;`
+- L109: `            OnObjectAreaTargetSelect += SpellObjectAreaTargetSelectFn(spell_coa_bouncing_saw_blade::Limit, EFFECT_ALL,`
+- L114: `    class spell_coa_massive_fire_nova : public SpellScript`
+- L116: `        PrepareSpellScript(spell_coa_massive_fire_nova);`
+- L118: `        static constexpr uint32 EarthPillar = 663030;`
+- L119: `        static constexpr uint32 NovaLanded = 1;`
+- L161: `            OnObjectAreaTargetSelect += SpellObjectAreaTargetSelectFn(spell_coa_massive_fire_nova::Cover, EFFECT_0,`
+- L163: `            AfterCast += SpellCastFn(spell_coa_massive_fire_nova::Crumble);`
+- L167: `    class spell_coa_fixed_facing_channel : public AuraScript`
+- L169: `        PrepareAuraScript(spell_coa_fixed_facing_channel);`
+- L202: `            AfterEffectApply += AuraEffectApplyFn(spell_coa_fixed_facing_channel::Start, EFFECT_0,`
+- L203: `                SPELL_AURA_PERIODIC_TRIGGER_SPELL, AURA_EFFECT_HANDLE_REAL);`
+- L204: `            AfterEffectRemove += AuraEffectRemoveFn(spell_coa_fixed_facing_channel::Stop, EFFECT_0,`
+- L205: `                SPELL_AURA_PERIODIC_TRIGGER_SPELL, AURA_EFFECT_HANDLE_REAL);`
+- L214: `        static constexpr uint32 SpellOverrunTrample = 2102625;`
+- L215: `        static constexpr uint32 SpellDustTrail = 2132349;`
+- L217: `        bool Execute(uint64, uint32) override`
+- L222: `            _owner->CastSpell(_owner, SpellDustTrail, true);`
+- L227: `            uint32 const damage = map->GetDifficulty() == DUNGEON_DIFFICULTY_NORMAL ? 400`
+- L228: `                : map->GetDifficulty() == DUNGEON_DIFFICULTY_HEROIC ? 1350 : 1750;`
+- L231: `                if (!player->IsAlive() || player->IsGameMaster() || !_hit->insert(player->GetGUID()).second)`
+- L233: `                SpellNonMeleeDamage log(_owner, player, sSpellMgr->GetSpellInfo(SpellOverrunTrample), SPELL_SCHOOL_MASK_NORMAL);`
+- L250: `    class spell_coa_skum_overrun : public SpellScript`
+- L252: `        PrepareSpellScript(spell_coa_skum_overrun);`
+- L264: `            for (uint32 i = 0; i < 12; ++i)`
+- L265: `                skum->m_Events.AddEventAtOffset(new OverrunTrampleEvent(skum, hit), Milliseconds(100 + i * 150));`
+- L278: `            AfterCast += SpellCastFn(spell_coa_skum_overrun::Run);`
+- L282: `    class spell_coa_divine_retribution : public AuraScript`
+- L284: `        PrepareAuraScript(spell_coa_divine_retribution);`
+- L286: `        static constexpr uint32 SpellRelease = 570147;`
+- L299: `            values.AddSpellMod(SPELLVALUE_BASE_POINT0, stored);`
+- L305: `            AfterEffectRemove += AuraEffectRemoveFn(spell_coa_divine_retribution::Release, EFFECT_2, SPELL_AURA_DUMMY,`
+- L315: `        static constexpr uint32 SpellDivineRetribution = 680624;`
+- L317: `        void OnDamage(Unit* attacker, Unit* victim, uint32& damage) override`
+- L333: `        static constexpr uint32 Rattlegore = 11622;`
+- L334: `        static constexpr uint32 SpellBoneCrush = 40412;`
+- L336: `        void ModifyMeleeDamage(Unit* target, Unit* attacker, uint32& damage) override`
+- L341: `            if (!map || !map->IsNonRaidDungeon() || map->GetDifficulty() == DUNGEON_DIFFICULTY_NORMAL)`
+- L357: `        static constexpr uint32 SpellBerserkerLeap = 2102736;`
+- L358: `        static constexpr uint32 SpellBerserkerLeapDestArea = 2102735;`
+- L362: `            if (info->Id != SpellBerserkerLeap || spell->IsTriggered() || spell->getState() != SPELL_STATE_PREPARING`
+- L366: `            caster->CastSpell(landing->GetPositionX(), landing->GetPositionY(), landing->GetPositionZ(),`
+- L373: `        SPELL_MOTHERS_MILK_DEBUFF = 2102217,`
+- L374: `        SPELL_MOTHERS_MILK_BLOODSTREAM = 2102216,`
+- L375: `        SPELL_WEBPLOSION = 2102218,`
+- L378: `    class spell_coa_mothers_milk_spray : public SpellScript`
+- L380: `        PrepareSpellScript(spell_coa_mothers_milk_spray);`
+- L385: `                GetCaster()->CastSpell(target, SPELL_MOTHERS_MILK_DEBUFF, true);`
+- L390: `            AfterHit += SpellHitFn(spell_coa_mothers_milk_spray::Apply);`
+- L394: `    class spell_coa_mothers_milk_debuff : public AuraScript`
+- L396: `        PrepareAuraScript(spell_coa_mothers_milk_debuff);`
+- L401: `                target->CastSpell(target, SPELL_WEBPLOSION, true, nullptr, aurEff, GetCasterGUID());`
+- L407: `                GetTarget()->CastSpell(GetTarget(), SPELL_MOTHERS_MILK_BLOODSTREAM, true);`
+- L412: `            OnEffectPeriodic += AuraEffectPeriodicFn(spell_coa_mothers_milk_debuff::Webplosion, EFFECT_0, SPELL_AURA_PERIODIC_DUMMY);`
+- L413: `            AfterEffectRemove += AuraEffectRemoveFn(spell_coa_mothers_milk_debuff::Expired, EFFECT_0, SPELL_AURA_PERIODIC_DUMMY,`
+- L419: `class spell_coa_summon_hearty_heart : public SpellScript`
+- L421: `    PrepareSpellScript(spell_coa_summon_hearty_heart);`
+- L442: `        BeforeCast += SpellCastFn(spell_coa_summon_hearty_heart::SnapToGround);`
+- L446: `class spell_coa_petrifying_gaze : public SpellScript`
+- L448: `    PrepareSpellScript(spell_coa_petrifying_gaze);`
+- L461: `        return SPELL_CAST_OK;`
+- L474: `            float offset = Position::NormalizeOrientation(caster->GetAngle(target) - facing);`
+- L483: `        OnCheckCast += SpellCheckCastFn(spell_coa_petrifying_gaze::LockFacing);`
+- L484: `        OnObjectAreaTargetSelect += SpellObjectAreaTargetSelectFn(spell_coa_petrifying_gaze::FilterCone, EFFECT_0,`
+- L491: `    RegisterSpellScript(spell_coa_petrifying_gaze);`
+- L492: `    RegisterSpellScript(spell_coa_summon_hearty_heart);`
+- L493: `    RegisterSpellScript(spell_coa_massive_fire_nova);`
+- L494: `    RegisterSpellScript(spell_coa_torrent_spin);`
+- L495: `    RegisterSpellScript(spell_coa_bouncing_saw_blade);`
+- L496: `    RegisterSpellScript(spell_coa_skum_overrun);`
+- L497: `    RegisterSpellScript(spell_coa_divine_retribution);`
+- L499: `    RegisterSpellScript(spell_coa_fixed_facing_channel);`
+- L502: `    RegisterSpellScript(spell_coa_mothers_milk_spray);`
+- L503: `    RegisterSpellScript(spell_coa_mothers_milk_debuff);`
+
+## src/server/coa/CoADungeonBossKit.cpp
+SHA: `068909d584d50251cf552376fd22656ea4e70442` · 230 lines
+
+- L6: `#include "CoADungeonNormal.h"`
+- L25: `        KIT_TIMER = 0,`
+- L46: `    constexpr uint8 KIT_ONLY_HEROIC = 0x04;`
+- L47: `    constexpr uint8 KIT_ONLY_MYTHIC = 0x08;`
+- L51: `        uint32 spell = 0;`
+- L52: `        uint8 event = KIT_TIMER;`
+- L53: `        uint8 difficulty = 0;`
+- L54: `        uint32 initialMin = 0, initialMax = 0, repeatMin = 0, repeatMax = 0;`
+- L61: `    std::unordered_map<uint32, std::vector<KitEntry>> Kits;`
+- L66: `        std::vector<int32> timers;`
+- L69: `    uint32 KitRoll(uint32 lo, uint32 hi)`
+- L114: `            values.AddSpellMod(SPELLVALUE_BASE_POINT0, kit.basePoints);`
+- L118: `            result = me->CastSpell(target, kit.spell, triggered ? TRIGGERED_FULL_MASK : TRIGGERED_NONE);`
+- L119: `        return result != SPELL_FAILED_SPELL_IN_PROGRESS && result != SPELL_FAILED_NOT_READY;`
+- L131: `        uint32 count = 0;`
+- L132: `        if (QueryResult result = WorldDatabase.Query("SELECT entry, spell, event, difficulty, initial_min, initial_max, repeat_min, "`
+- L139: `                kit.spell = f[1].Get<uint32>();`
+- L141: `                kit.difficulty = f[3].Get<uint8>();`
+- L142: `                kit.initialMin = f[4].Get<uint32>();`
+- L143: `                kit.initialMax = f[5].Get<uint32>();`
+- L144: `                kit.repeatMin = f[6].Get<uint32>();`
+- L145: `                kit.repeatMax = f[7].Get<uint32>();`
+- L150: `                Kits[f[0].Get<uint32>()].push_back(kit);`
+- L163: `    void OnAllCreatureUpdate(Creature* me, uint32 diff) override`
+- L174: `        std::vector<KitEntry> const& kits = itr->second;`
+- L182: `        bool mythic = map->GetDifficulty() == DUNGEON_DIFFICULTY_EPIC;`
+- L187: `            state->timers.assign(kits.size(), -1);`
+- L191: `                if ((kit.difficulty & KIT_ONLY_HEROIC && mythic) || (kit.difficulty & KIT_ONLY_MYTHIC && !mythic))`
+- L194: `                    state->timers[i] = 0;`
+- L195: `                else if (kit.event == KIT_TIMER)`
+- L196: `                    state->timers[i] = int32(KitRoll(kit.initialMin, kit.initialMax));`
+- L198: `                    state->timers[i] = 0;`
+- L204: `            int32& timer = state->timers[i];`
+- L205: `            if (timer < 0)`
+- L210: `            timer -= int32(diff);`
+- L211: `            if (timer > 0)`
+- L215: `                timer = 250;`
+- L218: `            timer = kit.repeatMin ? int32(CoADungeonNormal::KitRepeat(me, KitRoll(kit.repeatMin, kit.repeatMax))) : -1;`
+- L220: `                timer = std::max(timer, 1);`
+
+## docs/coa/vanilla-dungeon-difficulties.md
+SHA: `66a9457fd937b3387384d99af75e65cc10a6893f` · 123 lines
+
+- L4: `129, 189, 209, 229, 230, 289, 329, 349, 389 and 429. Their installed Ascension MapDifficulty.dbc provides`
+- L5: `Normal (0), Heroic (1) and Mythic (2). Mythic+ is outside this baseline.`
+- L9: `The existing Normal creature and gameobject spawns also participate in Heroic and Mythic. Their GUIDs,`
+- L11: `entries, so the core selects the corresponding difficulty template without breaking scripted boss IDs.`
+- L12: `1,278 difficulty templates in 645 families are supported by named entries in the Exiles creature export`
+- L16: `Creature levels for all 1,278 difficulty templates use the explicit Exiles 'min_level' / 'max_level' values:`
+- L18: `The core retains the Normal entry as the creature identity; '.npc near' therefore shows the Normal ID`
+- L19: `even when the difficulty template is active.`
+- L22: `Entry requirements are inherited from the current Normal baseline. Existing higher-difficulty access rows are preserved. The baseline adds no inferred level-60 or item-level gate.`
+- L26: `Ascension placement parity and the Mythic Champion's appearance rules remain unverified.`
+- L30: `'coa_dungeon_loot_variant' maps 999 existing equipment entries to supported Heroic and/or Mythic items.`
+- L36: `Only creature and gameobject loot with an actual source on one of these maps is eligible. Normal,`
+- L41: `ones, not recovered Ascension rates. AtlasLoot's newer extra boss items without supported difficulty`
+- L42: `variants are not added. Some rare/legacy items have no verified variant and retain Normal loot.`
+- L48: `- Client difficulties: the installed server's 'Data/dbc/MapDifficulty.dbc', all 57 map/mode pairs.`
+- L52: `  '@Heroic Dungeon@' / '@Mythic Dungeon@' tags and RequiredLevel 60. Unique matching tagged items can`
+- L54: `- Legacy '@Heroic@' / '@Mythic@' descriptions require an explicit AtlasLoot mapping, the same item identity,`
+- L55: `  RequiredLevel 60 and ItemLevel 60â€“100. '@Mythic N@' items are excluded.`
+- L63: `The native 'vanilla-dungeons-normal', 'vanilla-dungeons-heroic' and 'vanilla-dungeons-mythic' scenarios`
+- L68: `## Client difficulty selection`
+- L70: `The portrait menu calls 'RequestSetDungeonDifficulty(2)' for Mythic. The local Extensions.dll`
+- L71: `registers this function at 0x100dcdf0; it sends opcode 0x773 with one uint8 difficulty.`
+- L72: `The early compatibility hook translates it into the queued native difficulty request, retaining`
+- L73: `group leadership and instance restrictions. Solo changes also send the difficulty confirmation.`
+- L74: `Dungeon Finder serves all three tiers: Random Classic Dungeon (258), Random Classic Dungeon Heroic (1258) and`
+- L75: `Random Classic Dungeon Mythic (2258) at level 60, and the Heroic/Mythic wing entries teleport to the same start`
+- L76: `points as Normal. The 'lfg-random-classic-{heroic,mythic}-queue' scenarios queue a group and check the instance`
+- L77: `difficulty. The Mythic gameplay scenario exercises this path; the protocol harness checks malformed payloads,`
+- L82: `'coa_dungeon_health' holds Heroic and Mythic maximum health for 1,756 creatures, keyed by map, difficulty and`
+- L84: `model: Mythic comes from the observations, Heroic is derived from Mythic (bosses and trash / 1.30, event bosses`
+- L86: `checks (for example The Unforgiven, Mythic 373,000). Recount damage totals are not imported as maximum health.`
+- L87: `Normal health is unchanged.`
+- L90: `faction, AI, spells or loot. Summons with an observed base entry also receive its target. Normal, pets, raids`
+- L94: `'vanilla-dungeons-health' checks real spawned creatures on Normal, Heroic and Mythic, including the actual`
+- L95: `Ascension Mythic selection request.`
+- L99: `Each boss gets its Ascension ability kit. The target list per boss is the difficulty spell list of the Exiles`
+- L101: `'smart_scripts' rows from id 9000; where Normal, Heroic and Mythic use different tiers of a spell, event`
+- L102: `difficulty flags pick the tier. Vanilla rows that the kit replaces get event flag 0x10, which never fires in a`
+- L109: `corrections of its own. Jed's and Goraluk's rows run on every difficulty.`
+- L111: `Spell damage of dungeon creatures is scaled per map and difficulty in 'coa_dungeon_spell_damage', with`
+- L113: `460 (Heroic) and 600 (Mythic) damage: the excess deals one twentieth. Bosses listed in 'coa_dungeon_bosses',`
+- L114: `their summons and individually tuned spells are exempt. Dungeon creatures pay no power cost on Heroic and`
+- L115: `Mythic, and creatures without health regeneration spawn at full health there.`
+- L118: `line-of-sight checks, a repeat timer no longer interrupts a running channel, and a cast rejected because`

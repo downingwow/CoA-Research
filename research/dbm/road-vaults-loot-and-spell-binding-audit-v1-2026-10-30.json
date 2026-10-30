@@ -1,0 +1,501 @@
+{
+  "schema": "coa-research.road-vaults-loot-binding-audit.v1",
+  "date": "2026-10-30",
+  "sourceFiles": [
+    "data/sql/updates/pending_db_world/rev_20261028_60_vaults_of_the_inquisition.sql",
+    "data/sql/updates/pending_db_world/rev_20261023_62_road_to_de_other_side_review.sql"
+  ],
+  "vaults": {
+    "mapId": 936,
+    "bossLoot": [
+      {
+        "npcId": 162700,
+        "baseItem": 559301,
+        "groupId": 1,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162700,
+        "baseItem": 559306,
+        "groupId": 1,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162700,
+        "baseItem": 559311,
+        "groupId": 1,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162700,
+        "baseItem": 559319,
+        "groupId": 1,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162700,
+        "baseItem": 559320,
+        "groupId": 1,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162700,
+        "baseItem": 559339,
+        "groupId": 2,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162700,
+        "baseItem": 559346,
+        "groupId": 2,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162700,
+        "baseItem": 559349,
+        "groupId": 2,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162700,
+        "baseItem": 559361,
+        "groupId": 2,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162703,
+        "baseItem": 559305,
+        "groupId": 1,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162703,
+        "baseItem": 559309,
+        "groupId": 1,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162703,
+        "baseItem": 559310,
+        "groupId": 1,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162703,
+        "baseItem": 559317,
+        "groupId": 1,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162703,
+        "baseItem": 559326,
+        "groupId": 1,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162703,
+        "baseItem": 559332,
+        "groupId": 2,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162703,
+        "baseItem": 559342,
+        "groupId": 2,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162703,
+        "baseItem": 559351,
+        "groupId": 2,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162703,
+        "baseItem": 559352,
+        "groupId": 2,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162704,
+        "baseItem": 559300,
+        "groupId": 1,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162704,
+        "baseItem": 559315,
+        "groupId": 1,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162704,
+        "baseItem": 559323,
+        "groupId": 1,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162704,
+        "baseItem": 559324,
+        "groupId": 1,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162704,
+        "baseItem": 559335,
+        "groupId": 2,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162704,
+        "baseItem": 559337,
+        "groupId": 2,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162704,
+        "baseItem": 559341,
+        "groupId": 2,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162704,
+        "baseItem": 559347,
+        "groupId": 2,
+        "chance": 0,
+        "lootMode": 1
+      },
+      {
+        "npcId": 162704,
+        "baseItem": 559360,
+        "groupId": 2,
+        "chance": 0,
+        "lootMode": 1
+      }
+    ],
+    "variants": [
+      {
+        "baseItem": 559300,
+        "heroicItem": 277944,
+        "mythicItem": 277945
+      },
+      {
+        "baseItem": 559301,
+        "heroicItem": 278090,
+        "mythicItem": 278091
+      },
+      {
+        "baseItem": 559305,
+        "heroicItem": 278210,
+        "mythicItem": 278211
+      },
+      {
+        "baseItem": 559306,
+        "heroicItem": 278796,
+        "mythicItem": 278797
+      },
+      {
+        "baseItem": 559309,
+        "heroicItem": 279273,
+        "mythicItem": 279274
+      },
+      {
+        "baseItem": 559310,
+        "heroicItem": 279334,
+        "mythicItem": 279335
+      },
+      {
+        "baseItem": 559311,
+        "heroicItem": 279483,
+        "mythicItem": 279484
+      },
+      {
+        "baseItem": 559315,
+        "heroicItem": 282552,
+        "mythicItem": 282553
+      },
+      {
+        "baseItem": 559317,
+        "heroicItem": 283951,
+        "mythicItem": 283952
+      },
+      {
+        "baseItem": 559319,
+        "heroicItem": 284200,
+        "mythicItem": 284201
+      },
+      {
+        "baseItem": 559320,
+        "heroicItem": 285160,
+        "mythicItem": 285161
+      },
+      {
+        "baseItem": 559323,
+        "heroicItem": 286460,
+        "mythicItem": 286461
+      },
+      {
+        "baseItem": 559324,
+        "heroicItem": 287867,
+        "mythicItem": 287868
+      },
+      {
+        "baseItem": 559326,
+        "heroicItem": 290012,
+        "mythicItem": 290013
+      },
+      {
+        "baseItem": 559332,
+        "heroicItem": 298385,
+        "mythicItem": 298386
+      },
+      {
+        "baseItem": 559335,
+        "heroicItem": 292560,
+        "mythicItem": 292561
+      },
+      {
+        "baseItem": 559337,
+        "heroicItem": 292709,
+        "mythicItem": 292710
+      },
+      {
+        "baseItem": 559339,
+        "heroicItem": 292861,
+        "mythicItem": 292862
+      },
+      {
+        "baseItem": 559341,
+        "heroicItem": 298464,
+        "mythicItem": 298465
+      },
+      {
+        "baseItem": 559342,
+        "heroicItem": 298902,
+        "mythicItem": 298903
+      },
+      {
+        "baseItem": 559346,
+        "heroicItem": 295371,
+        "mythicItem": 295372
+      },
+      {
+        "baseItem": 559347,
+        "heroicItem": 295414,
+        "mythicItem": 295415
+      },
+      {
+        "baseItem": 559349,
+        "heroicItem": 295457,
+        "mythicItem": 295458
+      },
+      {
+        "baseItem": 559351,
+        "heroicItem": 295543,
+        "mythicItem": 295544
+      },
+      {
+        "baseItem": 559352,
+        "heroicItem": 295586,
+        "mythicItem": 295587
+      },
+      {
+        "baseItem": 559360,
+        "heroicItem": 297650,
+        "mythicItem": 297651
+      }
+    ],
+    "validation": {
+      "bossLootRows": 27,
+      "uniqueBaseItems": 27,
+      "variantRows": 26,
+      "unmappedBaseItems": [
+        559361
+      ],
+      "duplicateVariantBaseIds": 0
+    },
+    "warnings": [
+      "Chance=0 is an SQL group-chance value, not evidence of zero loot drops",
+      "Names, equipment slots and class eligibility are NOT provided by this SQL; still need item database verification"
+    ]
+  },
+  "road": {
+    "mapId": 937,
+    "reviewSpellScriptBindings": [
+      {
+        "spellId": 256496,
+        "script": "spell_coa_drakmath_necrotic_emerge"
+      },
+      {
+        "spellId": 257048,
+        "script": "spell_coa_drakmath_death_beam"
+      },
+      {
+        "spellId": 257049,
+        "script": "spell_coa_drakmath_death_beam"
+      },
+      {
+        "spellId": 257072,
+        "script": "spell_coa_volzeen_colossal_smash"
+      },
+      {
+        "spellId": 257073,
+        "script": "spell_coa_volzeen_colossal_smash"
+      },
+      {
+        "spellId": 257078,
+        "script": "spell_coa_embryo_runover"
+      },
+      {
+        "spellId": 257079,
+        "script": "spell_coa_embryo_runover"
+      },
+      {
+        "spellId": 257081,
+        "script": "spell_coa_embryo_runover"
+      },
+      {
+        "spellId": 257082,
+        "script": "spell_coa_embryo_runover"
+      },
+      {
+        "spellId": 257162,
+        "script": "spell_coa_embryo_spike_hit"
+      },
+      {
+        "spellId": 257163,
+        "script": "spell_coa_embryo_spike_hit"
+      },
+      {
+        "spellId": 257117,
+        "script": "spell_coa_other_side_trash_damage"
+      },
+      {
+        "spellId": 257118,
+        "script": "spell_coa_other_side_trash_damage"
+      },
+      {
+        "spellId": 257123,
+        "script": "spell_coa_other_side_trash_damage"
+      },
+      {
+        "spellId": 257124,
+        "script": "spell_coa_other_side_trash_damage"
+      },
+      {
+        "spellId": 257132,
+        "script": "spell_coa_other_side_trash_damage"
+      },
+      {
+        "spellId": 257133,
+        "script": "spell_coa_other_side_trash_damage"
+      },
+      {
+        "spellId": 257026,
+        "script": "spell_coa_other_side_trash_damage"
+      },
+      {
+        "spellId": 257027,
+        "script": "spell_coa_other_side_trash_damage"
+      },
+      {
+        "spellId": 257069,
+        "script": "spell_coa_other_side_trash_damage"
+      },
+      {
+        "spellId": 257070,
+        "script": "spell_coa_other_side_trash_damage"
+      },
+      {
+        "spellId": 257204,
+        "script": "spell_coa_other_side_trash_damage"
+      },
+      {
+        "spellId": 257205,
+        "script": "spell_coa_other_side_trash_damage"
+      }
+    ],
+    "damageCapExemptionSpells": [
+      {
+        "spellId": 257117,
+        "description": "Road to De Other Side: Decaying Hemorrhage (Heroic), values from the logs, no trash cap"
+      },
+      {
+        "spellId": 257118,
+        "description": "Road to De Other Side: Decaying Hemorrhage (Mythic), values from the logs, no trash cap"
+      },
+      {
+        "spellId": 257123,
+        "description": "Road to De Other Side: Bite (Heroic), values from the logs, no trash cap"
+      },
+      {
+        "spellId": 257124,
+        "description": "Road to De Other Side: Bite (Mythic), values from the logs, no trash cap"
+      },
+      {
+        "spellId": 257132,
+        "description": "Road to De Other Side: Sting (Heroic), values from the logs, no trash cap"
+      },
+      {
+        "spellId": 257133,
+        "description": "Road to De Other Side: Sting (Mythic), values from the logs, no trash cap"
+      },
+      {
+        "spellId": 257026,
+        "description": "Road to De Other Side: Rend Flesh (Heroic), values from the logs, no trash cap"
+      },
+      {
+        "spellId": 257027,
+        "description": "Road to De Other Side: Rend Flesh (Mythic), values from the logs, no trash cap"
+      },
+      {
+        "spellId": 257069,
+        "description": "Road to De Other Side: Shield Bash (Heroic), values from the logs, no trash cap"
+      },
+      {
+        "spellId": 257070,
+        "description": "Road to De Other Side: Shield Bash (Mythic), values from the logs, no trash cap"
+      },
+      {
+        "spellId": 257204,
+        "description": "Road to De Other Side: Toxic Expulsion (Heroic), values from the logs, no trash cap"
+      },
+      {
+        "spellId": 257205,
+        "description": "Road to De Other Side: Toxic Expulsion (Mythic), values from the logs, no trash cap"
+      }
+    ],
+    "reviewSpawnMaskFix": {
+      "startGuid": 9370500,
+      "endGuid": 9370537,
+      "spawnMask": 7
+    },
+    "lootStatus": "Not found in inspected Road pending SQL; base database and other sources not exhaustively checked"
+  },
+  "provenance": "Upstream SQL, not independently verified on live Conquest Reborn"
+}

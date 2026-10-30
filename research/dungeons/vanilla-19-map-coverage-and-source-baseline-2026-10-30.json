@@ -250,7 +250,8 @@
     "Encounter-to-map crosswalk joins NPC IDs to health map data; it is inferred and 41 credit rows remain unassigned.",
     "41 unmatched encounters have provisional name-based map assignments; these require spawn-map verification.",
     "Use merged boss loot v3; v1/v2 were superseded due to incomplete final-tuple parsing.",
-    "Raid registry v2 supersedes v1 (final semicolon-terminated row)."
+    "Raid registry v2 supersedes v1 (final semicolon-terminated row).",
+    "1429-row merged encounter overlay is a selected SQL source-order reconstruction, not a live database dump."
   ],
   "researchDataSources": {
     "health": "research/dungeons/vanilla-health-heroic-mythic-full-source-2026-10-30.json",
@@ -261,7 +262,10 @@
     "provisionalEncounterReconciliation": "research/dungeons/vanilla-41-unmatched-encounter-provisional-map-reconciliation-2026-10-30.json",
     "mergedBossLoot": "research/loot/vanilla-heroic-mythic-boss-loot-merged-v3-2026-10-30.json",
     "raidEncounterRegistry": "research/raids/raid-encounters-by-map-and-difficulty-v2-2026-10-30.json",
-    "raidMapManifest": "research/raids/classic-tbc-wrath-22-raid-map-research-manifest-2026-10-30.json"
+    "raidMapManifest": "research/raids/classic-tbc-wrath-22-raid-map-research-manifest-2026-10-30.json",
+    "baseWorldEncounters": "research/encounters/classic-tbc-wrath-base-world-encounter-registry-2026-10-30.json",
+    "coaEncounterOverrides": "research/encounters/coa-vanilla-and-raid-full-encounter-overrides-2026-10-30.json",
+    "basePlusCoaEncounterOverlay": "research/encounters/base-plus-coa-encounter-overlay-2026-10-30.json"
   },
   "importedCounts": {
     "healthSourceRows": 1747,
@@ -274,6 +278,7 @@
     "mergedBossLootRows": 3884,
     "mergedBossLootTemplates": 414,
     "raidEncounterRows": 502,
-    "raidMapCount": 22
+    "raidMapCount": 22,
+    "basePlusCoaEncounterOverlayRows": 1429
   }
 }

@@ -47,6 +47,12 @@ A separately preserved CoA Build Hub scrape, collected July 31, is available in 
 | 2026-08-22 to 2026-08-29 | Public spec-ranking pages cite late-August individual report dates and show a ranking update on August 29. | Examples only; no complete report collection or weekly rollups. |
 | 2026-07-17 and 2026-07-31 | CoA Build Hub reported 37 community builds at launch; a later mirror preserves 128 identity-stripped builds and guides. | Community-submitted build guides and popularity votes, not combat-log parses. Kept separate from performance tiers. |
 
+### August 12 third-party performance tables now imported
+
+BoneArchive now includes all **169 displayed rows** from the third-party log-tier snapshot: 50 boss-only DPS, 50 boss-plus-adds DPS, 49 Mythic+ DPS, 8 HPS, and 12 tank-role DPS. Values and sample counts are transcribed as displayed; DPS is rounded to tenths of a thousand and the healer table uses HPS. The source says its ordinary rankings use median performance and quantile tiers; it flags fewer than 10 parses as weak samples. Its Mythic+ table instead pools top-10 boss/key leaderboard rows across key levels, so it should only be compared internally. These are parsed aggregate summaries, not raw event logs.
+
+The same dated snapshot is also browsable from the Meta / Tiers panel. A July 25 Reddit post contributes another 62 numeric DPS values with informal tiers, but no stated filter, percentile, or sample sizes. BoneArchive includes that table separately at low confidence and preserves the alternative 90th-percentile grouping reported by a commenter as unverified.
+
 ## Retrieval boundary
 
 The CoA report endpoint checked on 2026-10-30 returned 410 Gone. Searches in public GitHub and Reddit found source-backed summaries and examples, but no public July–September dump of all CoA reports or their full timelines. FangYuanWoW's repos contain the uploader/companion tooling, not archived submissions. The 54-log Molten Core corpus is the best new lead; obtaining the raw files would require access to the parser checkout's excluded local log folder or a contributor-provided export.
@@ -63,6 +69,10 @@ Do not mark the week-by-week archive as available: none of the located captures 
 - [Permitted CoA Build Hub snapshot and build archive](https://github.com/hertigservices/ascension-data/tree/main/supplemental/coa-databank/166001399306e4fb022116fe1e3cfbbd7bd4bf37/coabuildhub/builds)
 - [CoA tier-list aggregate captures](https://github.com/Ryansousa10/coa-tier-list/tree/main/tools/data/raw)
 - [Third-party snapshot: tier list from logs, dated 2026-08-12](https://coa.zalidan.com/tier-list-logs/)
+- [Reddit community DPS value and tier list, dated 2026-07-25](https://www.reddit.com/r/ProjectAscension/comments/1v6itd1/most_recent_dps_statistics_ranking/)
+- [Reddit tank intake observations, dated 2026-07-25](https://www.reddit.com/r/ProjectAscension/comments/1v6j5ca/coa_tank_damage_intake_profiles/)
+- [Reddit report-comparison discussion, dated 2026-08-16](https://www.reddit.com/r/ProjectAscension/comments/1vpmbqi/bloodmage_accursed_help/)
+- [Reddit remembered CoA rotations, dated 2026-09-14](https://www.reddit.com/r/ProjectAscension/comments/1wgfo2x/what_coa_spec_did_you_play_how_did_it_work/)
 - [July 27 CoA guide reporting 39,481 logged fights](https://kami-labs.fr/en/ascension/guides-ascension/tier-list-ascension-pve-meilleurs-builds-coa/)
 - [August 2 Mythic dungeon record-count post](https://www.reddit.com/r/ProjectAscension/comments/1vdlzds/class_statistics/)
 - [Week 1 Molten Core Normal Lucifron class/spec parse counts](https://www.reddit.com/r/ProjectAscension/comments/1vm1c7o/week_1_molten_core_normal_class_statistics/)

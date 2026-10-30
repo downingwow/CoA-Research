@@ -44,5 +44,7 @@ Related public log-backed evidence: July 27 2026 CoA guide says its rankings cov
 
 GitHub search of FangYuanWoW's public account found the Companion and Uploader projects. They describe embedding player gear/talents in logs and uploading the player's local `WoWCombatLog.txt`; neither repository contains a public archive of submitted CoA reports. CoA Build Hub's July 17 Reddit post describes its then-live meta list as community voting across 37 builds, not log-derived rankings. A separately preserved mirror later captured 128 identity-stripped CoA Build Hub builds on July 31; those guides belong in the build library and are not combat performance evidence.
 
+BoneArchive also imports the August 12 third-party tables: 50 boss-only DPS, 50 boss-plus-adds DPS, 49 Mythic+ DPS, 8 HPS, and 12 tank-role DPS rows, with parse counts. The snapshot states median-based quantile tiers and a weak-sample threshold under 10 parses; its Mythic+ section uses a different top-10 leaderboard aggregation. A separate July 25 Reddit post's 62 DPS values and an unverified commenter-produced 90th-percentile tier grouping are displayed as low-confidence community evidence. See [LOGS-ARCHIVE-STATUS.md](LOGS-ARCHIVE-STATUS.md) for the source inventory and caveats.
+
 ## Potential addon use
 Details! — guardian owner and absorb edge cases; DBM-CoA/MRT — encounter classification; BoneBiS — observed player builds as corroborating evidence, not proof of theoretical optimality; BoneBuilds — talent popularity, with encounter/sample filters.

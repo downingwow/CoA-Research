@@ -46,6 +46,12 @@ Last cataloged: 2026-10-29. Dates/counts below describe prior inspections, not a
 | CoA Molten Core restoration notes (published evidence from a 54-log live CoA corpus; raw logs excluded from public repo) | https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa/blob/main/docs/coa/molten-core.md#evidence-live-combat-logs |
 | Reddit CoA Mythic record-count snapshot (community transcription, Aug 2 2026; not raw reports) | https://www.reddit.com/r/ProjectAscension/comments/1vdlzds/class_statistics/ |
 | Reddit Week 1 Molten Core Normal Lucifron class/spec parse counts (Aug 12 2026; source total mismatch is flagged on BoneArchive) | https://www.reddit.com/r/ProjectAscension/comments/1vm1c7o/week_1_molten_core_normal_class_statistics/ |
+| Third-party CoA logs tier snapshot (Aug 12 2026; boss-only/AoE DPS, Mythic+, HPS, tank DPS, parse counts) | https://coa.zalidan.com/tier-list-logs/ |
+| Reddit community DPS value/tier snapshot (Jul 25 2026; includes exact values, but filter/sample method omitted) | https://www.reddit.com/r/ProjectAscension/comments/1v6itd1/most_recent_dps_statistics_ranking/ |
+| Reddit tank intake observations (Jul 25 2026; leveling/dungeon anecdotes) | https://www.reddit.com/r/ProjectAscension/comments/1v6j5ca/coa_tank_damage_intake_profiles/ |
+| Reddit high-key tank ranking discussion (Aug 18 2026; self-reported claims) | https://www.reddit.com/r/ProjectAscension/comments/1vrgkde/how_would_you_rank_the_tanks/ |
+| Reddit report-comparison discussion (Aug 16 2026; Reave/Wound damage source question) | https://www.reddit.com/r/ProjectAscension/comments/1vpmbqi/bloodmage_accursed_help/ |
+| Reddit player rotation recollections (Sep 14 2026; post-shutdown memories, not parsed event sequences) | https://www.reddit.com/r/ProjectAscension/comments/1wgfo2x/what_coa_spec_did_you_play_how_did_it_work/ |
 | FangYuanWoW Ascension Logs Uploader / Companion (upload and combatant-metadata tooling; not a public log dump) | https://github.com/FangYuanWoW/ascension-logs-uploader |
 | CoA Build Hub community-vote meta announcement (37 builds reported Jul 17 2026; not log-derived) | https://www.reddit.com/r/ProjectAscension/comments/1uz0jox/coa_build_hub_update_meta_tier_list_is_live_37/ |
 | Preserved CoA Build Hub scrape mirror (128 identity-stripped builds; captured Jul 31 2026) | https://github.com/hertigservices/ascension-data/tree/main/supplemental/coa-databank/166001399306e4fb022116fe1e3cfbbd7bd4bf37/coabuildhub/builds |

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "policy": "Current in-game names are canonical for display. Internal class tokens, archived talent tabs, and historical names are aliases, not automatically invalid names. Never equate talent tab IDs with spec IDs without evidence.",
+  "verifiedDisplayToClientToken": {
+    "Bloodmage": "SonOfArugal",
+    "Felsworn": "DemonHunter",
+    "Templar": "Monk",
+    "Knight of Xoroth": "KnightOfXoroth",
+    "Sun Cleric": "SunCleric",
+    "Witch Doctor": "WitchDoctor",
+    "Witch Hunter": "WitchHunter"
+  },
+  "historicalInternalAliases": {
+    "Primalist": [
+      "WILDWALKER"
+    ],
+    "Knight of Xoroth": [
+      "FLESHWARDEN"
+    ],
+    "Venomancer": [
+      "PROPHET"
+    ],
+    "Runemaster": [
+      "SPIRITMAGE"
+    ]
+  },
+  "confirmedInGameSpec": {
+    "Primalist": [
+      "Wildwalker"
+    ]
+  },
+  "unresolved": [
+    "Primalist Grovekeeper/Wildwalker to archived Life/Primal talent tab correspondence",
+    "All remaining current UI spec names to class-specific numeric spec IDs"
+  ],
+  "sourceFiles": [
+    "site/data/classes.json",
+    "datasets/normalized/coa-custom-class-roster.json"
+  ],
+  "notes": "The source files reflect archived client data and may not match current Conquest Reborn names."
+}

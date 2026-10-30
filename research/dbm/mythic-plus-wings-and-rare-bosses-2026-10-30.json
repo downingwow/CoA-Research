@@ -1,0 +1,762 @@
+{
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "verification": "Upstream source, not live verified",
+  "files": [
+    {
+      "path": "modules/mod-coa-mythic-plus/src/MythicPlusData.h",
+      "sha": "3c903d97f138a3a981b1478a8c532c60188ce435",
+      "lineCount": 109,
+      "signals": [
+        {
+          "line": 2,
+          "text": " * Client tables Mythic+ is built on, read straight from the DBC files in DataDir."
+        },
+        {
+          "line": 5,
+          "text": " *  - TimedDungeons.dbc    LFG dungeon -> enemy forces, required encounters,"
+        },
+        {
+          "line": 8,
+          "text": " *  - MythicKeystones.dbc  keystone item -> LFG dungeon, keystone level."
+        },
+        {
+          "line": 9,
+          "text": " *  - MythicPlusScaling.dbc level -> health %, physical damage %, magic damage %."
+        },
+        {
+          "line": 10,
+          "text": " *  - MythicAffixes.dbc    week (day of the year / 7, as the client counts it) and"
+        },
+        {
+          "line": 11,
+          "text": " *                          level -> affix spells. The client works the affixes"
+        },
+        {
+          "line": 15,
+          "text": "#ifndef MOD_COA_MYTHIC_PLUS_DATA_H"
+        },
+        {
+          "line": 16,
+          "text": "#define MOD_COA_MYTHIC_PLUS_DATA_H"
+        },
+        {
+          "line": 24,
+          "text": "namespace CoaMythicPlus"
+        },
+        {
+          "line": 26,
+          "text": "    struct TimedDungeon"
+        },
+        {
+          "line": 30,
+          "text": "        uint32 encountersRequired = 0;"
+        },
+        {
+          "line": 34,
+          "text": "        uint32 mapId = 0;           // from LFGDungeons.dbc"
+        },
+        {
+          "line": 35,
+          "text": "        uint32 expansion = 0;       // from LFGDungeons.dbc"
+        },
+        {
+          "line": 38,
+          "text": "    struct Keystone"
+        },
+        {
+          "line": 42,
+          "text": "        uint32 level = 0;"
+        },
+        {
+          "line": 45,
+          "text": "    // DungeonEncounterExtra.dbc: the bosses of one LFG dungeon (wing) as the"
+        },
+        {
+          "line": 46,
+          "text": "    // client lists them in the tracker, with their client encounter id."
+        },
+        {
+          "line": 47,
+          "text": "    struct WingEncounter"
+        },
+        {
+          "line": 51,
+          "text": "        bool final = false;"
+        },
+        {
+          "line": 56,
+          "text": "        float health = 1.0f;"
+        },
+        {
+          "line": 68,
+          "text": "        TimedDungeon const* GetDungeon(uint32 lfgId) const;"
+        },
+        {
+          "line": 69,
+          "text": "        Keystone const* GetKeystone(uint32 item) const;"
+        },
+        {
+          "line": 70,
+          "text": "        uint32 GetKeystoneItem(uint32 lfgId, uint32 level) const;"
+        },
+        {
+          "line": 71,
+          "text": "        Scaling GetScaling(uint32 level) const;"
+        },
+        {
+          "line": 72,
+          "text": "        std::vector<uint32> GetAffixes(uint32 rotation, uint32 level) const;"
+        },
+        {
+          "line": 74,
+          "text": "        // Keystone items whose dungeon lies on this map (the Scarlet Monastery"
+        },
+        {
+          "line": 75,
+          "text": "        // wings share one map, so there can be several dungeons per map)."
+        },
+        {
+          "line": 76,
+          "text": "        std::vector<uint32> const* GetKeystonesForMap(uint32 mapId) const;"
+        },
+        {
+          "line": 77,
+          "text": "        bool IsKeystone(uint32 item) const { return _keystones.count(item) != 0; }"
+        },
+        {
+          "line": 79,
+          "text": "        // Dungeons a new key can point at, for this level."
+        },
+        {
+          "line": 80,
+          "text": "        std::vector<uint32> GetKeyPool(uint32 level, uint32 maxExpansion) const;"
+        },
+        {
+          "line": 82,
+          "text": "        std::vector<WingEncounter> const* GetWingEncounters(uint32 lfgId) const;"
+        },
+        {
+          "line": 83,
+          "text": "        std::unordered_map<uint32, TimedDungeon> const& Dungeons() const { return _dungeons; }"
+        },
+        {
+          "line": 84,
+          "text": "        std::vector<uint32> const& DisabledAffixes() const { return _disabledAffixes; }"
+        },
+        {
+          "line": 85,
+          "text": "        std::vector<uint32> const& AffixSubstitutes() const { return _affixSubstitutes; }"
+        },
+        {
+          "line": 86,
+          "text": "        // MythicAffixes.dbc rows (all 16 fields) in which a disabled affix was swapped, as the client needs them."
+        },
+        {
+          "line": 87,
+          "text": "        std::vector<std::array<uint32, 16>> const& SwappedAffixRows() const { return _swappedAffixRows; }"
+        },
+        {
+          "line": 88,
+          "text": "        // An empty MythicAffixes.dbc row for a +1 key of this week. The table starts at +2; without a row for +1 the"
+        },
+        {
+          "line": 89,
+          "text": "        // client falls back to its last row and shows that week's full set on a +1 key, which has no affixes."
+        },
+        {
+          "line": 90,
+          "text": "        std::array<uint32, 16> PlusOneAffixRow(uint32 rotation) const;"
+        },
+        {
+          "line": 93,
+          "text": "        std::unordered_map<uint32, std::vector<WingEncounter>> _wingEncounters;"
+        },
+        {
+          "line": 94,
+          "text": "        std::vector<uint32> _disabledAffixes;"
+        },
+        {
+          "line": 95,
+          "text": "        std::vector<uint32> _affixSubstitutes;"
+        },
+        {
+          "line": 96,
+          "text": "        std::unordered_map<uint32, TimedDungeon> _dungeons;"
+        },
+        {
+          "line": 97,
+          "text": "        std::unordered_map<uint32, Keystone> _keystones;"
+        },
+        {
+          "line": 98,
+          "text": "        std::unordered_map<uint64, uint32> _keystoneByDungeonLevel;"
+        },
+        {
+          "line": 99,
+          "text": "        std::unordered_map<uint32, std::vector<uint32>> _keystonesByMap;"
+        },
+        {
+          "line": 101,
+          "text": "        std::unordered_map<uint32, std::vector<uint32>> _affixes;   // rotation << 16 | level"
+        },
+        {
+          "line": 102,
+          "text": "        std::vector<std::array<uint32, 16>> _swappedAffixRows;"
+        },
+        {
+          "line": 103,
+          "text": "        uint32 _lastAffixRowId = 0;"
+        },
+        {
+          "line": 104,
+          "text": "        uint32 _affixRowScale = 0;"
+        }
+      ]
+    },
+    {
+      "path": "modules/mod-coa-mythic-plus/src/MythicPlusData.cpp",
+      "sha": "0843858e62dac88a0adf1a4fda9569871b544fcc",
+      "lineCount": 304,
+      "signals": [
+        {
+          "line": 1,
+          "text": "#include \"MythicPlusData.h\""
+        },
+        {
+          "line": 14,
+          "text": "namespace CoaMythicPlus"
+        },
+        {
+          "line": 48,
+          "text": "                LOG_ERROR(\"module\", \"Mythic+: {} not found\", path);"
+        },
+        {
+          "line": 55,
+          "text": "                LOG_ERROR(\"module\", \"Mythic+: {} is not a DBC file\", path);"
+        },
+        {
+          "line": 64,
+          "text": "                LOG_ERROR(\"module\", \"Mythic+: {} has an unexpected layout\", path);"
+        },
+        {
+          "line": 80,
+          "text": "        uint64 Key(uint32 lfgId, uint32 level)"
+        },
+        {
+          "line": 82,
+          "text": "            return (uint64(lfgId) << 32) | level;"
+        },
+        {
+          "line": 94,
+          "text": "        _dungeons.clear();"
+        },
+        {
+          "line": 95,
+          "text": "        _keystones.clear();"
+        },
+        {
+          "line": 96,
+          "text": "        _keystoneByDungeonLevel.clear();"
+        },
+        {
+          "line": 97,
+          "text": "        _keystonesByMap.clear();"
+        },
+        {
+          "line": 99,
+          "text": "        _affixes.clear();"
+        },
+        {
+          "line": 102,
+          "text": "        if (ReadDbc(\"TimedDungeons.dbc\", 6, timed))"
+        },
+        {
+          "line": 106,
+          "text": "                TimedDungeon d;"
+        },
+        {
+          "line": 109,
+          "text": "                d.encountersRequired = timed.U32(i, 2);"
+        },
+        {
+          "line": 114,
+          "text": "                LFGDungeonEntry const* lfg = sLFGDungeonStore.LookupEntry(d.lfgId);"
+        },
+        {
+          "line": 117,
+          "text": "                d.mapId = lfg->MapID;"
+        },
+        {
+          "line": 118,
+          "text": "                d.expansion = lfg->ExpansionLevel;"
+        },
+        {
+          "line": 119,
+          "text": "                _dungeons[d.lfgId] = d;"
+        },
+        {
+          "line": 124,
+          "text": "        if (ReadDbc(\"MythicKeystones.dbc\", 3, keys))"
+        },
+        {
+          "line": 128,
+          "text": "                Keystone k { keys.U32(i, 0), keys.U32(i, 1), keys.U32(i, 2) };"
+        },
+        {
+          "line": 129,
+          "text": "                auto dungeon = _dungeons.find(k.lfgId);"
+        },
+        {
+          "line": 130,
+          "text": "                if (!k.item || !k.level || dungeon == _dungeons.end())"
+        },
+        {
+          "line": 132,
+          "text": "                _keystones[k.item] = k;"
+        },
+        {
+          "line": 134,
+          "text": "                // whole dungeon (\"Keystone: Wailing Caverns\") and a newer one with the wing in its name. New"
+        },
+        {
+          "line": 136,
+          "text": "                uint32& handedOut = _keystoneByDungeonLevel[Key(k.lfgId, k.level)];"
+        },
+        {
+          "line": 138,
+          "text": "                _keystonesByMap[dungeon->second.mapId].push_back(k.item);"
+        },
+        {
+          "line": 142,
+          "text": "        // The table holds every level twice (ids 0-99 and 100-199, same values)."
+        },
+        {
+          "line": 143,
+          "text": "        // Field 1 is the level, 3 magic damage %, 5 physical damage %, 6 health %"
+        },
+        {
+          "line": 144,
+          "text": "        // (C_MythicPlus.GetKeystoneInfo reads them in that order; a +9 key shows"
+        },
+        {
+          "line": 145,
+          "text": "        // +109 % health, +86 % physical, +86 % magic). All are bonuses on top"
+        },
+        {
+          "line": 148,
+          "text": "        // Health does not follow the DBC bonus alone. Videos and combat logs of"
+        },
+        {
+          "line": 149,
+          "text": "        // the live server (48 runs, 14 logs, measured against Mythic) show that"
+        },
+        {
+          "line": 150,
+          "text": "        // +1 keeps the Mythic health, and from +2 on the multiplier is"
+        },
+        {
+          "line": 151,
+          "text": "        // Basis x (1 + health %) + Offset (1.1245 and -0.02 fit +2 to +22"
+        },
+        {
+          "line": 153,
+          "text": "        float const healthBasis = sConfigMgr->GetOption<float>(\"MythicPlus.Health.Basis\", 1.1245f);"
+        },
+        {
+          "line": 154,
+          "text": "        float const healthOffset = sConfigMgr->GetOption<float>(\"MythicPlus.Health.Offset\", -0.02f);"
+        },
+        {
+          "line": 156,
+          "text": "        if (ReadDbc(\"MythicPlusScaling.dbc\", 7, scaling))"
+        },
+        {
+          "line": 160,
+          "text": "                uint32 level = scaling.U32(i, 1);"
+        },
+        {
+          "line": 162,
+          "text": "                s.health = level <= 1 ? 1.0f"
+        },
+        {
+          "line": 163,
+          "text": "                    : healthBasis * (1.0f + scaling.U32(i, 6) / 100.0f) + healthOffset;"
+        },
+        {
+          "line": 166,
+          "text": "                _scaling.emplace(level, s);"
+        },
+        {
+          "line": 170,
+          "text": "        // One row per week (field 1, 0-52) and level (field 2, 2-254); fields"
+        },
+        {
+          "line": 171,
+          "text": "        // 3-14 hold the affix spells in the order the client lists them."
+        },
+        {
+          "line": 172,
+          "text": "        _disabledAffixes = IdList(sConfigMgr->GetOption<std::string>(\"MythicPlus.DisabledAffixes\", \"80087\"));"
+        },
+        {
+          "line": 173,
+          "text": "        _affixSubstitutes = IdList(sConfigMgr->GetOption<std::string>(\"MythicPlus.AffixSubstitutes\", \"80046 80044 80026 80024 80032\"));"
+        },
+        {
+          "line": 174,
+          "text": "        _swappedAffixRows.clear();"
+        },
+        {
+          "line": 175,
+          "text": "        RawDbc affixes;"
+        },
+        {
+          "line": 176,
+          "text": "        if (ReadDbc(\"MythicAffixes.dbc\", 16, affixes))"
+        },
+        {
+          "line": 178,
+          "text": "            for (uint32 i = 0; i < affixes.records; ++i)"
+        },
+        {
+          "line": 182,
+          "text": "                    if (uint32 id = affixes.U32(i, f))"
+        },
+        {
+          "line": 184,
+          "text": "                // A disabled affix (MythicPlus.DisabledAffixes) takes the first of"
+        },
+        {
+          "line": 185,
+          "text": "                // MythicPlus.AffixSubstitutes the row does not have yet. The"
+        },
+        {
+          "line": 186,
+          "text": "                // swapped rows go to the client at login (SMSG_PATCH_MYTHIC_AFFIXES)."
+        },
+        {
+          "line": 188,
+          "text": "                    if (std::find(_disabledAffixes.begin(), _disabledAffixes.end(), id) != _disabledAffixes.end())"
+        },
+        {
+          "line": 189,
+          "text": "                        for (uint32 substitute : _affixSubstitutes)"
+        },
+        {
+          "line": 197,
+          "text": "                    row[f] = affixes.U32(i, f);"
+        },
+        {
+          "line": 206,
+          "text": "                    _swappedAffixRows.push_back(row);"
+        },
+        {
+          "line": 207,
+          "text": "                _lastAffixRowId = std::max(_lastAffixRowId, row[0]);"
+        },
+        {
+          "line": 208,
+          "text": "                _affixRowScale = row[15];"
+        },
+        {
+          "line": 209,
+          "text": "                _affixes[(affixes.U32(i, 1) << 16) | affixes.U32(i, 2)] = std::move(ids);"
+        },
+        {
+          "line": 213,
+          "text": "        // Field 0 encounter id, 1 creature, 2 LFG dungeon, 3 the LFG dungeon"
+        },
+        {
+          "line": 214,
+          "text": "        // again when this boss ends it."
+        },
+        {
+          "line": 215,
+          "text": "        _wingEncounters.clear();"
+        },
+        {
+          "line": 217,
+          "text": "        if (ReadDbc(\"DungeonEncounterExtra.dbc\", 4, wings))"
+        },
+        {
+          "line": 219,
+          "text": "                _wingEncounters[wings.U32(i, 2)].push_back({ wings.U32(i, 0), wings.U32(i, 1), wings.U32(i, 3) != 0 });"
+        },
+        {
+          "line": 221,
+          "text": "        LOG_INFO(\"server.loading\", \">> Mythic+: {} timed dungeons, {} keystones, {} scaling levels, {} affix rows, {} wings\","
+        },
+        {
+          "line": 222,
+          "text": "            uint32(_dungeons.size()), uint32(_keystones.size()), uint32(_scaling.size()), uint32(_affixes.size()),"
+        },
+        {
+          "line": 223,
+          "text": "            uint32(_wingEncounters.size()));"
+        },
+        {
+          "line": 226,
+          "text": "    TimedDungeon const* Data::GetDungeon(uint32 lfgId) const"
+        },
+        {
+          "line": 228,
+          "text": "        auto itr = _dungeons.find(lfgId);"
+        },
+        {
+          "line": 229,
+          "text": "        return itr != _dungeons.end() ? &itr->second : nullptr;"
+        },
+        {
+          "line": 232,
+          "text": "    Keystone const* Data::GetKeystone(uint32 item) const"
+        },
+        {
+          "line": 234,
+          "text": "        auto itr = _keystones.find(item);"
+        },
+        {
+          "line": 235,
+          "text": "        return itr != _keystones.end() ? &itr->second : nullptr;"
+        },
+        {
+          "line": 238,
+          "text": "    uint32 Data::GetKeystoneItem(uint32 lfgId, uint32 level) const"
+        },
+        {
+          "line": 240,
+          "text": "        auto itr = _keystoneByDungeonLevel.find(Key(lfgId, level));"
+        },
+        {
+          "line": 241,
+          "text": "        return itr != _keystoneByDungeonLevel.end() ? itr->second : 0;"
+        },
+        {
+          "line": 244,
+          "text": "    Scaling Data::GetScaling(uint32 level) const"
+        },
+        {
+          "line": 248,
+          "text": "        auto itr = _scaling.find(level);"
+        },
+        {
+          "line": 251,
+          "text": "        // Above the table: hold the last level."
+        },
+        {
+          "line": 255,
+          "text": "        return level > top ? _scaling.at(top) : Scaling {};"
+        },
+        {
+          "line": 258,
+          "text": "    std::vector<uint32> Data::GetAffixes(uint32 rotation, uint32 level) const"
+        },
+        {
+          "line": 260,
+          "text": "        if (level < 2)"
+        },
+        {
+          "line": 262,
+          "text": "        auto itr = _affixes.find((rotation << 16) | std::min<uint32>(level, 254));"
+        },
+        {
+          "line": 263,
+          "text": "        return itr != _affixes.end() ? itr->second : std::vector<uint32> {};"
+        },
+        {
+          "line": 266,
+          "text": "    std::array<uint32, 16> Data::PlusOneAffixRow(uint32 rotation) const"
+        },
+        {
+          "line": 269,
+          "text": "        row[0] = _lastAffixRowId + 1 + rotation;"
+        },
+        {
+          "line": 272,
+          "text": "        row[15] = _affixRowScale;"
+        },
+        {
+          "line": 276,
+          "text": "    std::vector<WingEncounter> const* Data::GetWingEncounters(uint32 lfgId) const"
+        },
+        {
+          "line": 278,
+          "text": "        auto itr = _wingEncounters.find(lfgId);"
+        },
+        {
+          "line": 279,
+          "text": "        return itr != _wingEncounters.end() ? &itr->second : nullptr;"
+        },
+        {
+          "line": 282,
+          "text": "    std::vector<uint32> const* Data::GetKeystonesForMap(uint32 mapId) const"
+        },
+        {
+          "line": 284,
+          "text": "        auto itr = _keystonesByMap.find(mapId);"
+        },
+        {
+          "line": 285,
+          "text": "        return itr != _keystonesByMap.end() ? &itr->second : nullptr;"
+        },
+        {
+          "line": 288,
+          "text": "    std::vector<uint32> Data::GetKeyPool(uint32 level, uint32 maxExpansion) const"
+        },
+        {
+          "line": 291,
+          "text": "        for (auto const& [lfgId, d] : _dungeons)"
+        },
+        {
+          "line": 293,
+          "text": "            // Rows asking for 20 encounters in 130 minutes are placeholders,"
+        },
+        {
+          "line": 294,
+          "text": "            // not dungeons a key can open (assumption, see protokoll-20260926.md)."
+        },
+        {
+          "line": 295,
+          "text": "            if (d.expansion > maxExpansion || !d.forcesTotal || d.encountersRequired >= 20)"
+        },
+        {
+          "line": 297,
+          "text": "            if (GetKeystoneItem(lfgId, level))"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20260925_50_lfg_wing_final_bosses.sql",
+      "sha": "a15d9e45506fe06738b5b2e2e08450c705c3f389",
+      "lineCount": 20,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Dungeon Finder: every Ascension wing dungeon gets its final boss, so finishing it completes the"
+        },
+        {
+          "line": 2,
+          "text": "-- dungeon and gives the random dungeon reward. Final bosses are the ones the client names for each"
+        },
+        {
+          "line": 3,
+          "text": "-- wing in DungeonEncounterExtra.dbc. The whole-dungeon entries these bosses ended before"
+        },
+        {
+          "line": 4,
+          "text": "-- (1 Wailing Caverns, 2 Scholomance, 14 Gnomeregan, 22 Uldaman) are level 100 in LFGDungeons.dbc."
+        },
+        {
+          "line": 5,
+          "text": "UPDATE `instance_encounters` SET `lastEncounterDungeon` = 1003 WHERE `entry` = 586; -- Lord Cobrahn: Wailing Caverns - Pit of Fangs"
+        },
+        {
+          "line": 6,
+          "text": "UPDATE `instance_encounters` SET `lastEncounterDungeon` = 1031 WHERE `entry` = 589; -- Skum: Wailing Caverns - Winding Chasm"
+        },
+        {
+          "line": 7,
+          "text": "UPDATE `instance_encounters` SET `lastEncounterDungeon` = 1035 WHERE `entry` = 591; -- Verdan the Everliving: Wailing Caverns - Crag of the Everliving"
+        },
+        {
+          "line": 8,
+          "text": "UPDATE `instance_encounters` SET `lastEncounterDungeon` = 1039 WHERE `entry` = 592; -- Mutanus the Devourer: Wailing Caverns - Dreamer's Rock"
+        },
+        {
+          "line": 9,
+          "text": "UPDATE `instance_encounters` SET `lastEncounterDungeon` = 1004 WHERE `entry` = 380; -- Electrocutioner 6000: Gnomeregan - Launch Bay"
+        },
+        {
+          "line": 10,
+          "text": "UPDATE `instance_encounters` SET `lastEncounterDungeon` = 1037 WHERE `entry` = 381; -- Crowd Pummeler 9-60: Gnomeregan - Engineering Labs"
+        },
+        {
+          "line": 11,
+          "text": "UPDATE `instance_encounters` SET `lastEncounterDungeon` = 1033 WHERE `entry` = 382; -- Mekgineer Thermaplugg: Gnomeregan - Tinker's Court"
+        },
+        {
+          "line": 12,
+          "text": "UPDATE `instance_encounters` SET `lastEncounterDungeon` = 1007 WHERE `entry` = 549; -- Ironaya: Uldaman - Hall of the Crafters"
+        },
+        {
+          "line": 13,
+          "text": "UPDATE `instance_encounters` SET `lastEncounterDungeon` = 1006 WHERE `entry` = 553; -- Grimlok: Uldaman - The Stone Vault"
+        },
+        {
+          "line": 14,
+          "text": "UPDATE `instance_encounters` SET `lastEncounterDungeon` = 1005 WHERE `entry` = 554; -- Archaedas: Uldaman - Map Chamber"
+        },
+        {
+          "line": 15,
+          "text": "UPDATE `instance_encounters` SET `lastEncounterDungeon` = 601 WHERE `entry` = 237; -- Golem Lord Argelmach: Blackrock Depths - Manufactory"
+        },
+        {
+          "line": 16,
+          "text": "UPDATE `instance_encounters` SET `lastEncounterDungeon` = 51 WHERE `entry` = 463; -- Darkmaster Gandling: Lower Scholomance"
+        },
+        {
+          "line": 17,
+          "text": "DELETE FROM `instance_encounters` WHERE `entry` = 3457;"
+        },
+        {
+          "line": 18,
+          "text": "INSERT INTO `instance_encounters` (`entry`, `creditType`, `creditEntry`, `lastEncounterDungeon`, `comment`) VALUES"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261009_50_dungeon_rares_adamant_hamhock.sql",
+      "sha": "59337109319d45d9df48fe2c23b93af2675c512e",
+      "lineCount": 30,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Dungeon fixes: rares on every difficulty, Deathstalker Adamant, Hamhock."
+        },
+        {
+          "line": 3,
+          "text": "-- Lower Blackrock Spire: the rare bosses always spawn and stand on every difficulty (they were placed for"
+        },
+        {
+          "line": 4,
+          "text": "-- Mythic). The stock Burning Felguard spawn goes; the placed one stays, so there is one of him."
+        },
+        {
+          "line": 6,
+          "text": "INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`"
+        },
+        {
+          "line": 12,
+          "text": "-- Ghok Bashguud (Lower Blackrock Spire) spawned in 15 % of instances, an ordinary add in the rest"
+        },
+        {
+          "line": 13,
+          "text": "-- (pool 9718). Rares always spawn: Ghok always, the add goes."
+        },
+        {
+          "line": 14,
+          "text": "DELETE FROM `pool_creature` WHERE `pool_entry` = 9718;"
+        },
+        {
+          "line": 15,
+          "text": "DELETE FROM `pool_template` WHERE `entry` = 9718;"
+        },
+        {
+          "line": 20,
+          "text": "UPDATE `creature_template` SET `unit_flags` = `unit_flags` | 0x2 | 0x100 | 0x200 WHERE `entry` IN (3849, 103849, 203849);"
+        },
+        {
+          "line": 25,
+          "text": "UPDATE `smart_scripts` SET `event_flags` = 16 WHERE `entryorguid` = 1717 AND `source_type` = 0 AND `id` = 0;"
+        },
+        {
+          "line": 27,
+          "text": "WHERE `entryorguid` = 1717 AND `source_type` = 0 AND `id` = 9010;"
+        },
+        {
+          "line": 29,
+          "text": "WHERE `entryorguid` = 1717 AND `source_type` = 0 AND `id` = 9011;"
+        }
+      ]
+    }
+  ]
+}

@@ -901,7 +901,133 @@
           "mythic": 2.884
         }
       ],
-      "meleeDamageSource": "data/sql/updates/pending_db_world/rev_20261029_85_coa_custom_dungeons_melee.sql"
+      "meleeDamageSource": "data/sql/updates/pending_db_world/rev_20261029_85_coa_custom_dungeons_melee.sql",
+      "difficultyHealth": [
+        {
+          "npcId": 162700,
+          "heroicHealth": 680375,
+          "heroicEvidence": "log",
+          "mythicHealth": 884488,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162703,
+          "heroicHealth": 675027,
+          "heroicEvidence": "log",
+          "mythicHealth": 877535,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162704,
+          "heroicHealth": 675026,
+          "heroicEvidence": "log",
+          "mythicHealth": 877534,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162733,
+          "heroicHealth": 56177,
+          "heroicEvidence": "log",
+          "mythicHealth": 73030,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162734,
+          "heroicHealth": 150035,
+          "heroicEvidence": "log",
+          "mythicHealth": 195046,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162735,
+          "heroicHealth": 36766,
+          "heroicEvidence": "log",
+          "mythicHealth": 47796,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162736,
+          "heroicHealth": 150019,
+          "heroicEvidence": "log",
+          "mythicHealth": 195025,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162737,
+          "heroicHealth": 56177,
+          "heroicEvidence": "log",
+          "mythicHealth": 73030,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162738,
+          "heroicHealth": 150030,
+          "heroicEvidence": "log",
+          "mythicHealth": 195039,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162748,
+          "heroicHealth": 43458,
+          "heroicEvidence": "log",
+          "mythicHealth": 56495,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162761,
+          "heroicHealth": 150021,
+          "heroicEvidence": "log",
+          "mythicHealth": 195027,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162762,
+          "heroicHealth": 115052,
+          "heroicEvidence": "log",
+          "mythicHealth": 149567,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162763,
+          "heroicHealth": 246596,
+          "heroicEvidence": "log",
+          "mythicHealth": 320575,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 162999,
+          "heroicHealth": 367520,
+          "heroicEvidence": "log",
+          "mythicHealth": 477776,
+          "mythicEvidence": "log"
+        },
+        {
+          "npcId": 163813,
+          "heroicHealth": 39342,
+          "heroicEvidence": "log",
+          "mythicHealth": 51145,
+          "mythicEvidence": "log"
+        }
+      ],
+      "encounters": {
+        "normal": [
+          15000,
+          15001,
+          15002
+        ],
+        "heroic": [
+          15008,
+          15009,
+          15010
+        ],
+        "mythic": [
+          15014,
+          15015,
+          15016
+        ],
+        "finalBossNpcId": 162704
+      },
+      "healthSource": "data/sql/updates/pending_db_world/rev_20261028_60_vaults_of_the_inquisition.sql"
     },
     {
       "name": "Frozen Reach (custom map)",

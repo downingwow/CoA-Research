@@ -120,7 +120,8 @@
         "research/dbm/road-vaults-phase-conditions-v1-2026-10-30.json",
         "research/dbm/road-vaults-loot-and-spell-binding-audit-v1-2026-10-30.json",
         "research/dbm/road-vaults-difficulty-loot-runtime-audit-2026-10-30.md",
-        "research/shared/dungeon-loot-runtime-validation-rules-2026-10-30.md"
+        "research/shared/dungeon-loot-runtime-validation-rules-2026-10-30.md",
+        "research/dbm/road-boss-complete-scheduling-and-spell-index-2026-10-30.json"
       ],
       "healthSource": "data/sql/updates/pending_db_world/rev_20261029_82_coa_road_to_de_other_side_health_immunities.sql",
       "difficultyHealth": [
@@ -480,7 +481,8 @@
       "phaseConditionsSource": "research/dbm/road-vaults-phase-conditions-v1-2026-10-30.json",
       "lootSpellAuditSource": "research/dbm/road-vaults-loot-and-spell-binding-audit-v1-2026-10-30.json",
       "difficultyLootRuntimeSource": "research/dbm/road-vaults-difficulty-loot-runtime-audit-2026-10-30.md",
-      "sharedLootValidationRules": "research/shared/dungeon-loot-runtime-validation-rules-2026-10-30.md"
+      "sharedLootValidationRules": "research/shared/dungeon-loot-runtime-validation-rules-2026-10-30.md",
+      "fullSourceIndex": "research/dbm/road-boss-complete-scheduling-and-spell-index-2026-10-30.json"
     },
     {
       "name": "Vaults of the Inquisition",
@@ -790,7 +792,8 @@
         "research/dbm/road-vaults-phase-conditions-v1-2026-10-30.json",
         "research/dbm/road-vaults-loot-and-spell-binding-audit-v1-2026-10-30.json",
         "research/dbm/road-vaults-difficulty-loot-runtime-audit-2026-10-30.md",
-        "research/shared/dungeon-loot-runtime-validation-rules-2026-10-30.md"
+        "research/shared/dungeon-loot-runtime-validation-rules-2026-10-30.md",
+        "research/dbm/vaults-full-spell-sql-and-cpp-index-2026-10-30.json"
       ],
       "trashSource": "src/server/coa/CoAVaults.cpp",
       "cautions": [
@@ -1047,7 +1050,8 @@
       "phaseConditionsSource": "research/dbm/road-vaults-phase-conditions-v1-2026-10-30.json",
       "lootSpellAuditSource": "research/dbm/road-vaults-loot-and-spell-binding-audit-v1-2026-10-30.json",
       "difficultyLootRuntimeSource": "research/dbm/road-vaults-difficulty-loot-runtime-audit-2026-10-30.md",
-      "sharedLootValidationRules": "research/shared/dungeon-loot-runtime-validation-rules-2026-10-30.md"
+      "sharedLootValidationRules": "research/shared/dungeon-loot-runtime-validation-rules-2026-10-30.md",
+      "fullSourceIndex": "research/dbm/vaults-full-spell-sql-and-cpp-index-2026-10-30.json"
     },
     {
       "name": "Frozen Reach (custom map)",

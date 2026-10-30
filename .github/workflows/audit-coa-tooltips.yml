@@ -1,0 +1,31 @@
+name: Audit CoA missing spell tooltips (manual)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-coa-tooltips.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reconcile missing definitions with historical tooltip archive
+        run: python tools/audit_missing_spell_tooltips.py
+      - name: Commit historical tooltip audit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datasets/relationships/historical-tooltip-*
+          if ! git diff --cached --quiet; then
+            git commit -m "data: publish historical tooltip fallback coverage"
+            git push
+          fi

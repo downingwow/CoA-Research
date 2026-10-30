@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T08:17:48.088433+00:00",
+  "generatedAt": "2026-10-30T08:24:55.436073+00:00",
   "sources": [
     {
       "repository": "srhinos/coa-datamine",
@@ -1360,10 +1360,960 @@
           "path": "data/creatures/creatures-340000.jsonl",
           "bytes": 253,
           "sha256": "6e922ab70d44ed64089f9ab67a32e92a575070308ee609e96cc984fef879ec11"
+        },
+        {
+          "path": "data/creatures/creatures-3400000.jsonl",
+          "bytes": 51,
+          "sha256": "6a3a4905f76342c74995fb16e4311feed21e70b915ec1aedf70f96691600776d"
+        },
+        {
+          "path": "data/creatures/creatures-3430000.jsonl",
+          "bytes": 66,
+          "sha256": "33a5315e40393b763861fffaa47d55f46f7e2c6f86a986b7ca8c19a13031e4b1"
+        },
+        {
+          "path": "data/creatures/creatures-345000.jsonl",
+          "bytes": 1154,
+          "sha256": "fa7e9d9f5e1051d3a229c7e03cb0e6a0f4554f169c891f600d679bb5317653a5"
+        },
+        {
+          "path": "data/creatures/creatures-35000.jsonl",
+          "bytes": 124267,
+          "sha256": "6d1cdb0647c5a239447961cc9697d075a24d69439fdaa996b29b356817339371"
+        },
+        {
+          "path": "data/creatures/creatures-350000.jsonl",
+          "bytes": 18866,
+          "sha256": "87f2fc99d04b01bef9921b1ca2ecd63dd4437ffe1f89efd25a112975b851388f"
+        },
+        {
+          "path": "data/creatures/creatures-355000.jsonl",
+          "bytes": 69325,
+          "sha256": "7e71ab2bdb60843587d5610d8422230e0af8d96e35e4629797f934f5a62e4914"
+        },
+        {
+          "path": "data/creatures/creatures-360000.jsonl",
+          "bytes": 3014,
+          "sha256": "828aa6f5f3b27485d72af0b1cec0a707fe1b74c6dbb96a91bf43f2a570faa76b"
+        },
+        {
+          "path": "data/creatures/creatures-365000.jsonl",
+          "bytes": 66406,
+          "sha256": "0ffffb8c4403f91291bbfef47ad1f97d548fc8c66d1ed7d1f8691b203defc68a"
+        },
+        {
+          "path": "data/creatures/creatures-370000.jsonl",
+          "bytes": 322686,
+          "sha256": "cfc4e289ecfa42e4d47f0c3feabad78022c5622b88438f5f7be5e2379c50cb1b"
+        },
+        {
+          "path": "data/creatures/creatures-3700000.jsonl",
+          "bytes": 310,
+          "sha256": "bf95bdb4424a1142980d7e65588820280db3c323c47c3e0c4063e8c5ac423523"
+        },
+        {
+          "path": "data/creatures/creatures-375000.jsonl",
+          "bytes": 305967,
+          "sha256": "e126ce3c1fbed2b2602683929ecd19bc4674a689292c5caad673f4d479ca49d4"
+        },
+        {
+          "path": "data/creatures/creatures-380000.jsonl",
+          "bytes": 5301,
+          "sha256": "1665a1dde5a4b6f57f17994e2c9f1af73b9513bddaebf90ed91525325c42531e"
+        },
+        {
+          "path": "data/creatures/creatures-385000.jsonl",
+          "bytes": 1458,
+          "sha256": "f7fd6b7c36b941f70c510b8ffc1efc979b2b98ef91446f2ad49a81c0184c1db2"
+        },
+        {
+          "path": "data/creatures/creatures-390000.jsonl",
+          "bytes": 12832,
+          "sha256": "4c7a2874756747186b3403c12955c93b6942a4a1425535f2ba9f10e305194077"
+        },
+        {
+          "path": "data/creatures/creatures-395000.jsonl",
+          "bytes": 827,
+          "sha256": "baf24faff45f42aa8e7df45f4a7260c48ef1385c76acf783446f284a10cb0d2e"
+        },
+        {
+          "path": "data/creatures/creatures-40000.jsonl",
+          "bytes": 98235,
+          "sha256": "00e582e2b9b7c0b8ea1f82d0fe0eb0703f74e99e878dd9bc385939dfeaa434d8"
+        },
+        {
+          "path": "data/creatures/creatures-400000.jsonl",
+          "bytes": 243714,
+          "sha256": "2d8b8a05569b79a5acf3a352450539a20a4f778b0756321b7420aef154c90a1f"
+        },
+        {
+          "path": "data/creatures/creatures-4000000.jsonl",
+          "bytes": 1779,
+          "sha256": "6dd3859434763e5488eb637931294818e5cf51cc7683fa4dd8fa978b47459875"
+        },
+        {
+          "path": "data/creatures/creatures-4005000.jsonl",
+          "bytes": 158,
+          "sha256": "c6919f1b38018391b2c8ddf22600dd3f40c8bbac429024b5e776ecc86443360a"
+        },
+        {
+          "path": "data/creatures/creatures-4010000.jsonl",
+          "bytes": 213,
+          "sha256": "a2d9e9b1c97f6a852bc00385f4543b09f300bfeabc6cd414eee968eb5e838d31"
+        },
+        {
+          "path": "data/creatures/creatures-4015000.jsonl",
+          "bytes": 158,
+          "sha256": "9ee6d060beb05022f712822061d43a663c7d933ea68c20b9ebdc37862c2c4a00"
+        },
+        {
+          "path": "data/creatures/creatures-4020000.jsonl",
+          "bytes": 57,
+          "sha256": "63f2b534463d657c55463c531c0cc4e82c5993420b66df5fbadc81a3c0a32d5e"
+        },
+        {
+          "path": "data/creatures/creatures-4025000.jsonl",
+          "bytes": 166,
+          "sha256": "873beca48ec501cb7a95e4533e8997ae0cb978965579ec6db1bf7edef2620245"
+        },
+        {
+          "path": "data/creatures/creatures-4030000.jsonl",
+          "bytes": 60,
+          "sha256": "f991e0b8e9355ff019f479c021607a9000e089d7848b8f406e787e2fb4b8f4f7"
+        },
+        {
+          "path": "data/creatures/creatures-4035000.jsonl",
+          "bytes": 49,
+          "sha256": "291001a182c6738a76cf2e43b4f476d8d1695f236b93bd97cbebb1bfe5eb0274"
+        },
+        {
+          "path": "data/creatures/creatures-405000.jsonl",
+          "bytes": 276120,
+          "sha256": "41c886e9728b8821317de714f73c001e477e6eac8cd2060b13274ff67feed9c6"
+        },
+        {
+          "path": "data/creatures/creatures-4075000.jsonl",
+          "bytes": 53,
+          "sha256": "e23f174a6d28d97eaf1b2ceaf67b7999f39d5391ce28f2b33a383741b3508a38"
+        },
+        {
+          "path": "data/creatures/creatures-410000.jsonl",
+          "bytes": 366994,
+          "sha256": "dfb77c5fe0bb445ab2e4549ec82e45aa6548ae4e5bd3a4d379ce06af972c2fcf"
+        },
+        {
+          "path": "data/creatures/creatures-415000.jsonl",
+          "bytes": 82675,
+          "sha256": "e04665791877b66d0b83ec392b5551da35a4c1368dfa00bad44e1778c434b36b"
+        },
+        {
+          "path": "data/creatures/creatures-4180000.jsonl",
+          "bytes": 62,
+          "sha256": "afaaf92c094688a95ca2551b23c4b61d011fcb9ac6426f1480b48ab5c4a0f859"
+        },
+        {
+          "path": "data/creatures/creatures-420000.jsonl",
+          "bytes": 98660,
+          "sha256": "5afeef473566627051981d09d4f23ae169e1810341f151b12d25cf96e52f771c"
+        },
+        {
+          "path": "data/creatures/creatures-4210000.jsonl",
+          "bytes": 63,
+          "sha256": "54fb962282e098519853f78a05df48ff8918dac9a3acc9722467c15f84e852d5"
+        },
+        {
+          "path": "data/creatures/creatures-425000.jsonl",
+          "bytes": 149749,
+          "sha256": "5d5bf98e8d0c08885087d71e01921eb95bd23462f160d62387139802b4f441bf"
+        },
+        {
+          "path": "data/creatures/creatures-430000.jsonl",
+          "bytes": 37372,
+          "sha256": "ff67a1c71680847e0760fa6af4ea460bc3ec5e4b2033fd1d466d89b0eb9bc3d9"
+        },
+        {
+          "path": "data/creatures/creatures-435000.jsonl",
+          "bytes": 877,
+          "sha256": "2de743a0686082030a4f2511a1ff5d04952406bbc0edaff897b3fb6c1d53a594"
+        },
+        {
+          "path": "data/creatures/creatures-440000.jsonl",
+          "bytes": 116968,
+          "sha256": "b786df55a807a97dc12b904fa013dd696b11a689ce5e739e6d9b90f827f6fb75"
+        },
+        {
+          "path": "data/creatures/creatures-4400000.jsonl",
+          "bytes": 61,
+          "sha256": "0c7c4a8ddd681dcce85531642c776cf6112875c250c7b2dd51cbd196f2dd193e"
+        },
+        {
+          "path": "data/creatures/creatures-445000.jsonl",
+          "bytes": 12209,
+          "sha256": "6151e8aa754ffd38190181952c3be1018a716c3b06d7a31b7aed701bd8ff1b01"
+        },
+        {
+          "path": "data/creatures/creatures-45000.jsonl",
+          "bytes": 34423,
+          "sha256": "bb20adf03cc40cc0b4913c5e9029c46e921460561db2ace2ef9e0d56113d8b3a"
+        },
+        {
+          "path": "data/creatures/creatures-450000.jsonl",
+          "bytes": 122364,
+          "sha256": "a7bed42bae1855fd7089eb06aa067e02c07c38f4f8deeca328d4635f770c0f2b"
+        },
+        {
+          "path": "data/creatures/creatures-455000.jsonl",
+          "bytes": 1292,
+          "sha256": "95af0747d7a8300cd756b6d72cb599971c3a2e86a06541af69c3aa92203c3773"
+        },
+        {
+          "path": "data/creatures/creatures-460000.jsonl",
+          "bytes": 393759,
+          "sha256": "98cb91aefca2f08c51409c2d18e48bbdfa772ad9e3366f51b2b5367d88729a38"
+        },
+        {
+          "path": "data/creatures/creatures-4605000.jsonl",
+          "bytes": 47,
+          "sha256": "2c43556f5c65b46b994eb73c394fe9db2009dc416499f7e21a6e306422f2970b"
+        },
+        {
+          "path": "data/creatures/creatures-465000.jsonl",
+          "bytes": 141921,
+          "sha256": "ab62e98132ccc8d736b1d66df6043f2334a9260ba578d2f9a72de830faf8ac53"
+        },
+        {
+          "path": "data/creatures/creatures-475000.jsonl",
+          "bytes": 16767,
+          "sha256": "1e9f781f56e3dfcde8786ccc66ddb20c93cf2b8195361450ccd8a4d8ebdb6f80"
+        },
+        {
+          "path": "data/creatures/creatures-480000.jsonl",
+          "bytes": 1283,
+          "sha256": "bf80310ae596df1528a908c673ccdb2230868dccc804e7a0e4dfc8bc40df8c90"
+        },
+        {
+          "path": "data/creatures/creatures-485000.jsonl",
+          "bytes": 835,
+          "sha256": "6a19d8edac2ca82dfa969fc24f0fb2e1ab58ce08c6fcaadc517787ef16d98e33"
+        },
+        {
+          "path": "data/creatures/creatures-4860000.jsonl",
+          "bytes": 298,
+          "sha256": "a1da39e1467c5b1dd4580c312570d02329f9b7e4439191dcb076629a46124c81"
+        },
+        {
+          "path": "data/creatures/creatures-490000.jsonl",
+          "bytes": 1105,
+          "sha256": "ed1eb50ccd64a239bf759d21c9b80a02ac80d98ef440ccea995465661b618250"
+        },
+        {
+          "path": "data/creatures/creatures-495000.jsonl",
+          "bytes": 28212,
+          "sha256": "b3c0d4bd2939b8aaaedbfe88916cf509a82058feebfad39a1fa03f1e63aaacc3"
+        },
+        {
+          "path": "data/creatures/creatures-4995000.jsonl",
+          "bytes": 45,
+          "sha256": "3c73e7532d4fa95945c8a97664d1be0700843c3487f646d5d56e32e05f8548c8"
+        },
+        {
+          "path": "data/creatures/creatures-5000.jsonl",
+          "bytes": 138558,
+          "sha256": "34446e0f870b44a98be9654f087300b211bfb7e7214d61e843c7e3e7c5f803d7"
+        },
+        {
+          "path": "data/creatures/creatures-50000.jsonl",
+          "bytes": 22061,
+          "sha256": "fa8272304d7f60927ced079f87e9fafc3a589fcd62fe9d183d78d52f771569ab"
+        },
+        {
+          "path": "data/creatures/creatures-500000.jsonl",
+          "bytes": 27833,
+          "sha256": "9678819fc374f791561271a83df4204f853d130ebaaf5862bb5ad360da5639dc"
+        },
+        {
+          "path": "data/creatures/creatures-5000000.jsonl",
+          "bytes": 1973,
+          "sha256": "9712c05305fe24f6cfeec97d89d181e3e1009acdb2dc89f7534c81ff17a3bf69"
+        },
+        {
+          "path": "data/creatures/creatures-5010000.jsonl",
+          "bytes": 322,
+          "sha256": "4e418b63de20d80923a677233ec35b0daff47163ff38f69e1a398df046f3e7ed"
+        },
+        {
+          "path": "data/creatures/creatures-5030000.jsonl",
+          "bytes": 58,
+          "sha256": "97ca23738461db9293c20daad06fc35ec30e0ac8f4ea2b5ef026142b69b2425b"
+        },
+        {
+          "path": "data/creatures/creatures-505000.jsonl",
+          "bytes": 1712,
+          "sha256": "de7343ed48ebe0e043471841ed791fb8a67d275235a98d0561895dd17e8e0b1e"
+        },
+        {
+          "path": "data/creatures/creatures-5050000.jsonl",
+          "bytes": 792,
+          "sha256": "b8f1d3111fdf8cdf0f02b733a3838235b9b89c54313f3cbfd73ac6b411386fc2"
+        },
+        {
+          "path": "data/creatures/creatures-5075000.jsonl",
+          "bytes": 50,
+          "sha256": "5ed26dc937398c964b163e340874dd72d993d44ee3caa6c92be1c766f4986e39"
+        },
+        {
+          "path": "data/creatures/creatures-510000.jsonl",
+          "bytes": 3041,
+          "sha256": "c67de61c7b5e238b196be2ccaa3e680b1fb1a243eb651291bffa6b13176eda1e"
+        },
+        {
+          "path": "data/creatures/creatures-5100000.jsonl",
+          "bytes": 342,
+          "sha256": "90177e78fd9162d68bffd1b099fd1280184a34521e6a177aad9769054d0cc7af"
+        },
+        {
+          "path": "data/creatures/creatures-5110000.jsonl",
+          "bytes": 171,
+          "sha256": "3708bb0ac21580817a534bc544a62848158abb33a37973d7cef1c29c42a53456"
+        },
+        {
+          "path": "data/creatures/creatures-515000.jsonl",
+          "bytes": 2741,
+          "sha256": "74c5465b2d9ff9781ae37dfe8a61de3ae1fdf6c01a64298d46a57648a98038c1"
+        },
+        {
+          "path": "data/creatures/creatures-520000.jsonl",
+          "bytes": 1359,
+          "sha256": "e3290abe5f260c2fc89733ffb54f00b52a5607cfa2e9d8a475fba9e0e70e7cda"
+        },
+        {
+          "path": "data/creatures/creatures-5210000.jsonl",
+          "bytes": 171,
+          "sha256": "44a4bb1c24e8d9ad057d4a4cd92575ebce12c4d04de5b7fa9b06fc0a91d1a7c6"
+        },
+        {
+          "path": "data/creatures/creatures-525000.jsonl",
+          "bytes": 677,
+          "sha256": "4eca9fa170643808288792b83f66334242a435c8e56c85f46c8338505741f1c5"
+        },
+        {
+          "path": "data/creatures/creatures-5250000.jsonl",
+          "bytes": 103,
+          "sha256": "12770114e9fb4d1094a21a07a8e54470dbe65096adc6acee855fadab04fdc7c8"
+        },
+        {
+          "path": "data/creatures/creatures-530000.jsonl",
+          "bytes": 372,
+          "sha256": "a1cf89f142655586c4a984a18d8f1cebe49de39d457602e6f136c28ff1da3bd0"
+        },
+        {
+          "path": "data/creatures/creatures-535000.jsonl",
+          "bytes": 477,
+          "sha256": "02c82c786d73f2115a559d6727f0874b6819307f43e3a3cdb1985476c5c63a3a"
+        },
+        {
+          "path": "data/creatures/creatures-540000.jsonl",
+          "bytes": 843,
+          "sha256": "544255d9a3e80fa0e3034d4a0e2ffc2bacc240fccea7f25d00334ccf5b1d24b0"
+        },
+        {
+          "path": "data/creatures/creatures-5445000.jsonl",
+          "bytes": 52,
+          "sha256": "649bc23fcaf5b2709768c9cfb696de828136beabe9b9ede2e269d3d53898704e"
+        },
+        {
+          "path": "data/creatures/creatures-545000.jsonl",
+          "bytes": 265,
+          "sha256": "121a8acad55444f14682bddf332401992c3bd98207a983122e95647b889779bb"
+        },
+        {
+          "path": "data/creatures/creatures-55000.jsonl",
+          "bytes": 3669,
+          "sha256": "e10779581a73486abcadd6ea4abff092c12f58c4f00aa3fb11f9acc31c4a8658"
+        },
+        {
+          "path": "data/creatures/creatures-550000.jsonl",
+          "bytes": 147177,
+          "sha256": "3d105c1352ba1a21128d427f4c581b0e64e019b4813c1ff39cef2f839a2baf48"
+        },
+        {
+          "path": "data/creatures/creatures-5525000.jsonl",
+          "bytes": 76198,
+          "sha256": "b1e7f2d911591e541ca73f99f1076cca1db70dc3012b590c38493fda9c570952"
+        },
+        {
+          "path": "data/creatures/creatures-555000.jsonl",
+          "bytes": 312,
+          "sha256": "83e8c7ee601cca960bfb88cdad8bcd2ef85635b9c314e7a5c13af0b6cd8c56c3"
+        },
+        {
+          "path": "data/creatures/creatures-560000.jsonl",
+          "bytes": 190,
+          "sha256": "3babeaaf1b934ff008c3c2cd27c05495c93622b4dcef0927243c3cc8d61af669"
+        },
+        {
+          "path": "data/creatures/creatures-5625000.jsonl",
+          "bytes": 219,
+          "sha256": "7c742aa8dfb056c37e9d76609627c2fd3d0aa7a33d73f118bd2a81a07cb48d2e"
+        },
+        {
+          "path": "data/creatures/creatures-565000.jsonl",
+          "bytes": 70,
+          "sha256": "a92745ae2f334fc4d848760536567982e39acdaf5af4740b3cc9f10c42472ef9"
+        },
+        {
+          "path": "data/creatures/creatures-575000.jsonl",
+          "bytes": 736,
+          "sha256": "6c4524d13b530ae0e2eda6da2e633fa9807ce093a99f8771bfcb5f9ef9be14a1"
+        },
+        {
+          "path": "data/creatures/creatures-580000.jsonl",
+          "bytes": 116,
+          "sha256": "a5f60ee97254e364e337ebdf50f35b1a7e09be4b116240c6587e4410e0240cbe"
+        },
+        {
+          "path": "data/creatures/creatures-585000.jsonl",
+          "bytes": 126,
+          "sha256": "6a14fad695d491f0306711dbedf6d68ce68b649851d89f289bfd1b0032796939"
+        },
+        {
+          "path": "data/creatures/creatures-590000.jsonl",
+          "bytes": 6097,
+          "sha256": "690a9d0440cc1c6fd6847efc7a97cc5dc86240ed04015e3c50abcfca51de01fb"
+        },
+        {
+          "path": "data/creatures/creatures-595000.jsonl",
+          "bytes": 3580,
+          "sha256": "618789b74ea34eec68d78bf0b6a1739c8e55b75bcedc8736ed6f68b3a53b62b4"
+        },
+        {
+          "path": "data/creatures/creatures-60000.jsonl",
+          "bytes": 10511,
+          "sha256": "299a53e7c007c63a8f0ca8cdcaa0c59ed3f3659410cf01353121da235d7f6d93"
+        },
+        {
+          "path": "data/creatures/creatures-600000.jsonl",
+          "bytes": 9215,
+          "sha256": "64b1e1107ff268edf3ffd268cc8ab8164ec80adf9fcfbed971359c82f9630690"
+        },
+        {
+          "path": "data/creatures/creatures-6000000.jsonl",
+          "bytes": 54,
+          "sha256": "236e01dfe8ec957c1b3cc92619f672a0ff88a3c287cb12f8332975410024b7c6"
+        },
+        {
+          "path": "data/creatures/creatures-6010000.jsonl",
+          "bytes": 48,
+          "sha256": "145259e6f17e1a7b1dadcb13a938a872d28b4e893ea3f6a86c3891cb54a95440"
+        },
+        {
+          "path": "data/creatures/creatures-605000.jsonl",
+          "bytes": 588,
+          "sha256": "138146b833df3a7a3e121846bf0e21eaf917aa46e386cb183d170441238aecc9"
+        },
+        {
+          "path": "data/creatures/creatures-6050000.jsonl",
+          "bytes": 164,
+          "sha256": "745408b12d49f39714cf980acd0de09a3cdda6e3e0aaa1771129c94a1ec3acbd"
+        },
+        {
+          "path": "data/creatures/creatures-6070000.jsonl",
+          "bytes": 634,
+          "sha256": "5a8ed42f75509de8ade9506152187cfacecf394dca771136dc6b49e2d6880d13"
+        },
+        {
+          "path": "data/creatures/creatures-610000.jsonl",
+          "bytes": 9204,
+          "sha256": "2bac9ba1ff5a25b200dacb2a3f2f7ab27fc8d2443a71941dac34f4158d7a24ed"
+        },
+        {
+          "path": "data/creatures/creatures-615000.jsonl",
+          "bytes": 6341,
+          "sha256": "6a8938150414082c113acc1cb2e7afbe859ad87e6dadb18f517a6a148ba4a2e7"
+        },
+        {
+          "path": "data/creatures/creatures-620000.jsonl",
+          "bytes": 378,
+          "sha256": "7fab7ae1c61100824c359046377a2dba0fd6036d4ab99d0a2e70f95fbbf94eff"
+        },
+        {
+          "path": "data/creatures/creatures-625000.jsonl",
+          "bytes": 6535,
+          "sha256": "df227f36ff1242d4694a3510f9cdb74616defd7167fd082bf28fd533e7169e5a"
+        },
+        {
+          "path": "data/creatures/creatures-630000.jsonl",
+          "bytes": 1614,
+          "sha256": "8451c2efa9c9dff9a556f22ee4d20d15e30a3803bdc07e0299fd784b7613db6f"
+        },
+        {
+          "path": "data/creatures/creatures-635000.jsonl",
+          "bytes": 621,
+          "sha256": "6ac99aad388eda6de939103e95587d38ec6c5398993b1d97fc075e841398ae99"
+        },
+        {
+          "path": "data/creatures/creatures-6365000.jsonl",
+          "bytes": 53,
+          "sha256": "af8a9128edd1f7676975485fae0900e68167031a91a08de4502a2aecacac2fd7"
+        },
+        {
+          "path": "data/creatures/creatures-640000.jsonl",
+          "bytes": 113,
+          "sha256": "6a49c82645efeb236d28d087cd7d03f647be9fa1ce0409e945aeef70970fbdd0"
+        },
+        {
+          "path": "data/creatures/creatures-645000.jsonl",
+          "bytes": 960,
+          "sha256": "b18483fd99838dae161ed302ed9dc1635721e2afe51cce8dbb95432c0b7a8198"
+        },
+        {
+          "path": "data/creatures/creatures-65000.jsonl",
+          "bytes": 9000,
+          "sha256": "bfa62a3c63c85b0b197ef2b846e0a3e6f296db2b48ea78040225b501e9bff32d"
+        },
+        {
+          "path": "data/creatures/creatures-650000.jsonl",
+          "bytes": 11498,
+          "sha256": "eecb7b24ae26648f339dfe0caf559f41c018282ec6b0f62f24bf291409d49174"
+        },
+        {
+          "path": "data/creatures/creatures-655000.jsonl",
+          "bytes": 45,
+          "sha256": "4446f5bddc61203a870a89f3066d7354181b6d547eec6a022847fda58b9de4dd"
+        },
+        {
+          "path": "data/creatures/creatures-660000.jsonl",
+          "bytes": 5158,
+          "sha256": "f7955ed149c7cfec1a7bd31698e3927776feaf5adc7537c4ceeac9b6b44943f5"
+        },
+        {
+          "path": "data/creatures/creatures-665000.jsonl",
+          "bytes": 6296,
+          "sha256": "2331cfa3eefd21b9f4b2dfcf2669cef72ab0652018c536b193383e60a73221e5"
+        },
+        {
+          "path": "data/creatures/creatures-670000.jsonl",
+          "bytes": 230,
+          "sha256": "8c6a8459f24c26118009f0c8321de6e7ab6d722f422db51eea67dee5618195d5"
+        },
+        {
+          "path": "data/creatures/creatures-675000.jsonl",
+          "bytes": 778,
+          "sha256": "bf3ef8c8a060c539fefb1572259f90ad659e576e35458a46210068d1fb9596dd"
+        },
+        {
+          "path": "data/creatures/creatures-685000.jsonl",
+          "bytes": 1578,
+          "sha256": "cb5a8822d9924be8013cc6290be561dbcd1bdae55430517f7aa6fc852948d1c9"
+        },
+        {
+          "path": "data/creatures/creatures-695000.jsonl",
+          "bytes": 811,
+          "sha256": "444268eab9ff4274b09a47946b7f6eadf775610dd44c61eb66133b50a2e01686"
+        },
+        {
+          "path": "data/creatures/creatures-70000.jsonl",
+          "bytes": 8422,
+          "sha256": "3f6edd1279d76dbf3386686a77f2ebce8d6dd39598b3e2114f0a1bdefa051f92"
+        },
+        {
+          "path": "data/creatures/creatures-700000.jsonl",
+          "bytes": 6526,
+          "sha256": "3cc9df0142856bf8bb509db6338b2d11cb0136134444c127eb82802770f8a187"
+        },
+        {
+          "path": "data/creatures/creatures-7000000.jsonl",
+          "bytes": 224,
+          "sha256": "47abf5ec739a8ac3179c7e80ec8ee85c9c86b9508d2096c155fc26ad75a22504"
+        },
+        {
+          "path": "data/creatures/creatures-705000.jsonl",
+          "bytes": 745,
+          "sha256": "d4997c199577a04e0bbc4bd270575c84872c4c3e65c3dde83e27d3cbfcd20abe"
+        },
+        {
+          "path": "data/creatures/creatures-7070000.jsonl",
+          "bytes": 1012,
+          "sha256": "9bdc3ec8c9b3be77fb978bbed4afe1e3dd3c2edd36b488e4e1814c5b13c93609"
+        },
+        {
+          "path": "data/creatures/creatures-7080000.jsonl",
+          "bytes": 401202,
+          "sha256": "4ed497def0e6af41c4ca7bdf9f1f53d1a5efe63c1869b7163402cd3e8d1d8076"
+        },
+        {
+          "path": "data/creatures/creatures-7085000.jsonl",
+          "bytes": 362673,
+          "sha256": "4d8b7ef131ed3ad934212218c7898729003aefbd9126b679fc8a08d781ef4fd5"
+        },
+        {
+          "path": "data/creatures/creatures-7090000.jsonl",
+          "bytes": 69005,
+          "sha256": "dc0564d56d41f3d31ff9556b6edb9ebfe676d2419d17193192ec43ea3641cad3"
+        },
+        {
+          "path": "data/creatures/creatures-710000.jsonl",
+          "bytes": 479,
+          "sha256": "58c4d6ca8075f61ffffb22a321210a324aa311b72541471d26a468bf58aef2fb"
+        },
+        {
+          "path": "data/creatures/creatures-715000.jsonl",
+          "bytes": 2510,
+          "sha256": "ec2a839549d82e88d4a1d3c892d9a2449e79284c808491645d4fc057c0771b67"
+        },
+        {
+          "path": "data/creatures/creatures-720000.jsonl",
+          "bytes": 1598,
+          "sha256": "97a43c86ed1e6fe350a052aef2f324385d0fbcc673cf38745f50fe5c589b830e"
+        },
+        {
+          "path": "data/creatures/creatures-725000.jsonl",
+          "bytes": 60,
+          "sha256": "9dade9d4ed4235c66b6297716740d4eb3204e33d54a0395d8e94abb0a22d1428"
+        },
+        {
+          "path": "data/creatures/creatures-730000.jsonl",
+          "bytes": 58,
+          "sha256": "481b9dc9f57adb158fc449848d33cb431ef1cc76d86a7ceb23e5771bad067693"
+        },
+        {
+          "path": "data/creatures/creatures-735000.jsonl",
+          "bytes": 543,
+          "sha256": "ec2c3e71d9c5eee70f2b1b0aad691bab15bfc3edb8e90c12747dcc157e5c9a08"
+        },
+        {
+          "path": "data/creatures/creatures-740000.jsonl",
+          "bytes": 320,
+          "sha256": "48e6bf1b48d0453bb0e7e880416c7dfabe698a51140e737f6d452933521ba252"
+        },
+        {
+          "path": "data/creatures/creatures-745000.jsonl",
+          "bytes": 3285,
+          "sha256": "c00dc678c9a0e1f16efdc3d96f63118c5dc7d9fef6420757344adc18708d0639"
+        },
+        {
+          "path": "data/creatures/creatures-75000.jsonl",
+          "bytes": 11971,
+          "sha256": "6846669ffe39fd8d9c8aa56a1eea5f0f7d751c3022fe0ce02c6c698509fb9f8e"
+        },
+        {
+          "path": "data/creatures/creatures-750000.jsonl",
+          "bytes": 23460,
+          "sha256": "c292c72dd5e2a3fc77307673e96357627d6373c30d3e4ece752518aecf8dc169"
+        },
+        {
+          "path": "data/creatures/creatures-7500000.jsonl",
+          "bytes": 60,
+          "sha256": "659dc17cd698413c1f703d9c5833092be45750595a00adaa89238e1d9352522f"
+        },
+        {
+          "path": "data/creatures/creatures-755000.jsonl",
+          "bytes": 58,
+          "sha256": "d139c0d48ed97f27185a575bcf134a8d5b9c67cfdf120f7cae504645305695d4"
+        },
+        {
+          "path": "data/creatures/creatures-760000.jsonl",
+          "bytes": 21671,
+          "sha256": "334790b45e2a479ff3c5de5f210c3e50374e37308e41921ba869be28d6031a02"
+        },
+        {
+          "path": "data/creatures/creatures-765000.jsonl",
+          "bytes": 5945,
+          "sha256": "dca0d8d4c204483162fd67be1468695cbcd5913102d66c34e272948230f2cad1"
+        },
+        {
+          "path": "data/creatures/creatures-770000.jsonl",
+          "bytes": 1642,
+          "sha256": "654de2ca4ab503f95ee46428891dc427843f3a2a38cedc3c4b5a29da869813c3"
+        },
+        {
+          "path": "data/creatures/creatures-775000.jsonl",
+          "bytes": 5931,
+          "sha256": "87bbdedae7a90979b864b53ec8d074c88dda8009c4e3e73877203f0e37f52c08"
+        },
+        {
+          "path": "data/creatures/creatures-780000.jsonl",
+          "bytes": 791,
+          "sha256": "d8ea23260ef77dc24b6d67e21d021fa5807b1cecfaf85164bf9b3839482bccf8"
+        },
+        {
+          "path": "data/creatures/creatures-790000.jsonl",
+          "bytes": 548,
+          "sha256": "53b5ba9a3b69ede713e0d8ec8aa5339770652bf94eb5c0806d9652fffaee5195"
+        },
+        {
+          "path": "data/creatures/creatures-795000.jsonl",
+          "bytes": 162,
+          "sha256": "c071c536d82679680c793a92fb144f1c9078192e5860c893d82baebfc9444c5f"
+        },
+        {
+          "path": "data/creatures/creatures-80000.jsonl",
+          "bytes": 188968,
+          "sha256": "68547d9ec40bdf1e22f29acd96664eb99322d90e0e3d1b94d6109ab3f4800904"
+        },
+        {
+          "path": "data/creatures/creatures-800000.jsonl",
+          "bytes": 7500,
+          "sha256": "65df4848a482592ce426d7cbb4c405807f6a408bc1de29208416222de366b07f"
+        },
+        {
+          "path": "data/creatures/creatures-8000000.jsonl",
+          "bytes": 8603,
+          "sha256": "fe941e177bc885f9096f1d4e8fac03091ee0283ea61c8b22ad147c989bc49817"
+        },
+        {
+          "path": "data/creatures/creatures-805000.jsonl",
+          "bytes": 9511,
+          "sha256": "ef2da45a0f65ba1f8530f17b39b078909c5fa063025b50abac3c74754e794b8f"
+        },
+        {
+          "path": "data/creatures/creatures-8080000.jsonl",
+          "bytes": 44,
+          "sha256": "60b1ad7e34c31b3207dd48d9ddcacf80906ac95d12e59fdf0471c5d4df3fa182"
+        },
+        {
+          "path": "data/creatures/creatures-810000.jsonl",
+          "bytes": 969,
+          "sha256": "6c49b11c9a4aae2c2d14709443e17a50dda9a876cf0844da3fae7b63b27424e3"
+        },
+        {
+          "path": "data/creatures/creatures-815000.jsonl",
+          "bytes": 7125,
+          "sha256": "15ebbc19884dcb1d8e393ee3a0f11253af585410b0742bcc2b9a1fd28f7e6224"
+        },
+        {
+          "path": "data/creatures/creatures-820000.jsonl",
+          "bytes": 277,
+          "sha256": "357f8e81ffd93ce54f4d5f51ee31783d0955fbaa18fbe88f3c6e5530aa5d38ed"
+        },
+        {
+          "path": "data/creatures/creatures-825000.jsonl",
+          "bytes": 2067,
+          "sha256": "207f4fd0c40b5da4556c057657a6ee0617eb44df21a0a6bedf7ec6abe0f0691f"
+        },
+        {
+          "path": "data/creatures/creatures-8280000.jsonl",
+          "bytes": 59,
+          "sha256": "42b3f232390c9c6ed277d645faa2ca915fadb48eb8f2031cf455a1bd51cadc8e"
+        },
+        {
+          "path": "data/creatures/creatures-830000.jsonl",
+          "bytes": 911,
+          "sha256": "5590b24949705a8f33cce47f0917d3dac570aca55a181e7032a792292526ba79"
+        },
+        {
+          "path": "data/creatures/creatures-835000.jsonl",
+          "bytes": 297,
+          "sha256": "e6e22e9c70a9f5c99ce194b4562858dc8894ff5e415bf1b20e1c862b5c7df7a1"
+        },
+        {
+          "path": "data/creatures/creatures-840000.jsonl",
+          "bytes": 10225,
+          "sha256": "ecf2fc16f10738eb1d14530c2106ddd040fcfb1b7c65f217e4fc4200db227bbf"
+        },
+        {
+          "path": "data/creatures/creatures-845000.jsonl",
+          "bytes": 3303,
+          "sha256": "717924701943377b5fa307b8d19f03239d35ce015bcdf2e5f09529cc5e5ae00d"
+        },
+        {
+          "path": "data/creatures/creatures-85000.jsonl",
+          "bytes": 17974,
+          "sha256": "09439204262ab1e6fa72116c51061fabc69fb228a63d94c8e353ba92493b06af"
+        },
+        {
+          "path": "data/creatures/creatures-850000.jsonl",
+          "bytes": 9028,
+          "sha256": "651986df9161161f6eec9646159a4120bb5a78475afbc7084afbc87cc34da643"
+        },
+        {
+          "path": "data/creatures/creatures-8530000.jsonl",
+          "bytes": 55,
+          "sha256": "47027b7fd52c00018eb462937ebe40edc90e2bdc74c91d17b197bf87bd1f44dc"
+        },
+        {
+          "path": "data/creatures/creatures-855000.jsonl",
+          "bytes": 8792,
+          "sha256": "64640bf8c37c4db06eff9fc8ebddf2cbb755766cd4122aed6bbc6a4f845856c2"
+        },
+        {
+          "path": "data/creatures/creatures-860000.jsonl",
+          "bytes": 1192,
+          "sha256": "4247a39c0111552497f71d2d44577b3780b3fc0f7c9e7ee225ba8a6c54bcfc7a"
+        },
+        {
+          "path": "data/creatures/creatures-865000.jsonl",
+          "bytes": 1857,
+          "sha256": "5fbf0065dddeeae76ecd666a8041821a533ca6862780a29fbbeac15e1400d46e"
+        },
+        {
+          "path": "data/creatures/creatures-870000.jsonl",
+          "bytes": 609,
+          "sha256": "35661c28ac1a3f59bc8f0418e90d99a344c832e0e7f86a8a562ae32e717db05c"
+        },
+        {
+          "path": "data/creatures/creatures-875000.jsonl",
+          "bytes": 161,
+          "sha256": "70b4ea9bacc40a729268363010a4f86fec1ef01047e1f57acd5480638eb78103"
+        },
+        {
+          "path": "data/creatures/creatures-880000.jsonl",
+          "bytes": 314,
+          "sha256": "a5357656995c581e5c052d6304f2f92a991472fb0d9e2544eb581ee0439f2173"
+        },
+        {
+          "path": "data/creatures/creatures-885000.jsonl",
+          "bytes": 601,
+          "sha256": "827401932ac55f93a7a43b5c36980c61c09cfa87059bce1fde723a53faaf3fb6"
+        },
+        {
+          "path": "data/creatures/creatures-890000.jsonl",
+          "bytes": 2015,
+          "sha256": "f596b2b6e27fd8268f88be051a6264ad303ec70181fbe3633c2527c1ff6f0796"
+        },
+        {
+          "path": "data/creatures/creatures-895000.jsonl",
+          "bytes": 1738,
+          "sha256": "1895a6a67f90fda95cd16f654797e820ed54db44b538ecdb570acdcc32a659fd"
+        },
+        {
+          "path": "data/creatures/creatures-90000.jsonl",
+          "bytes": 156238,
+          "sha256": "e745a7fb0f09b9b1402811697be9781961aa92fcb0b6a53ae69a238dfb4800c9"
+        },
+        {
+          "path": "data/creatures/creatures-900000.jsonl",
+          "bytes": 10914,
+          "sha256": "b4042ec698c543c049e2e4fb57b74f581fed7bcba18467189b42e0247de14e0f"
+        },
+        {
+          "path": "data/creatures/creatures-9000000.jsonl",
+          "bytes": 358,
+          "sha256": "1385fdb420c9da7fa62e2c777f77dc8b4fade6f8d1b4ec12f9c02d78e348cc1b"
+        },
+        {
+          "path": "data/creatures/creatures-9005000.jsonl",
+          "bytes": 99,
+          "sha256": "53fce0323d0189902c4832afeabf99251a2b7542ddbc959aa21ef5eb7eda288d"
+        },
+        {
+          "path": "data/creatures/creatures-9015000.jsonl",
+          "bytes": 104,
+          "sha256": "f227ef214544bf6d4583ed53729685af2d0f523e4e7a21b79cf972418da260fe"
+        },
+        {
+          "path": "data/creatures/creatures-910000.jsonl",
+          "bytes": 2631,
+          "sha256": "0676c5acc7453baa593a089ec94ece3e90298b450f3831ad87620b071d17d953"
+        },
+        {
+          "path": "data/creatures/creatures-915000.jsonl",
+          "bytes": 11441,
+          "sha256": "5eadb570b3f2017b652f99f61e6d49b8b67e7848721b98933b776cb24be5e20f"
+        },
+        {
+          "path": "data/creatures/creatures-920000.jsonl",
+          "bytes": 341,
+          "sha256": "fee1a287b3a755ae1a1082fb832b0af1bc84742d4fd78d462260cd7fafe49433"
+        },
+        {
+          "path": "data/creatures/creatures-925000.jsonl",
+          "bytes": 1009,
+          "sha256": "e984e78b77074f9d5b7ad8e8051c7f816f0fbef527bd7c735c507f21ee84e6f6"
+        },
+        {
+          "path": "data/creatures/creatures-930000.jsonl",
+          "bytes": 1263,
+          "sha256": "83f99ef06471a542eca5b6597dea57491572e6ea009aa7d8af7ed4d3ad0df4dc"
+        },
+        {
+          "path": "data/creatures/creatures-940000.jsonl",
+          "bytes": 376,
+          "sha256": "c939096457ba1d2bca8eae9de2d6e66a7e6128d37ece8358f464fef5be07bd44"
+        },
+        {
+          "path": "data/creatures/creatures-95000.jsonl",
+          "bytes": 54015,
+          "sha256": "26cf4f008ced61415b3408af30b6e43ce5f91d98a361cb9697a9fd261ac4ec36"
+        },
+        {
+          "path": "data/creatures/creatures-950000.jsonl",
+          "bytes": 11403,
+          "sha256": "b20a1bda90679be25b66c16a0033e91de8532537800cf0a33d5046bb0b557f71"
+        },
+        {
+          "path": "data/creatures/creatures-955000.jsonl",
+          "bytes": 47,
+          "sha256": "525953329be9f3f19e5d09c7977898676e205dd0d6c0f8fd9649cedf95cfa6af"
+        },
+        {
+          "path": "data/creatures/creatures-960000.jsonl",
+          "bytes": 48,
+          "sha256": "b2ae2294a6a9d71caebe35a88772dc3081c8c8f321679bb9c31b8656a89d96a8"
+        },
+        {
+          "path": "data/creatures/creatures-965000.jsonl",
+          "bytes": 1248,
+          "sha256": "7b4edf1c81515b9b79cb949fd30f8d79f4db82b0ffe0525dc4bcc8ed1d97c2a9"
+        },
+        {
+          "path": "data/creatures/creatures-970000.jsonl",
+          "bytes": 7719,
+          "sha256": "204cc5ba910d8cdda6856e3553256ec723495e8767bae2ef1d445caee1fbc486"
+        },
+        {
+          "path": "data/creatures/creatures-975000.jsonl",
+          "bytes": 2346,
+          "sha256": "4ae5a9da1c340f39cb850c8ce94559e93bf04a20eea65ce501230decf0de2f27"
+        },
+        {
+          "path": "data/creatures/creatures-9780000.jsonl",
+          "bytes": 1119,
+          "sha256": "ff725eeb9f99ca3861bf78daf70cc7e3fae17bbcf48d8e30fa5549c3ce7711c9"
+        },
+        {
+          "path": "data/creatures/creatures-980000.jsonl",
+          "bytes": 113,
+          "sha256": "97c493a699f25707a1462646d5287616e3f480b908bb4c590ab707db95bc5cea"
+        },
+        {
+          "path": "data/creatures/creatures-985000.jsonl",
+          "bytes": 142,
+          "sha256": "afd6a0bb9dd72f0e97c8449351a1854048819fd1812d264fde67191298e5b7c4"
+        },
+        {
+          "path": "data/creatures/creatures-9890000.jsonl",
+          "bytes": 69,
+          "sha256": "485bbabd9099922fe623892c90a2d11a8c8d7e5ca2e5562c5d005d76fea49daa"
+        },
+        {
+          "path": "data/creatures/creatures-990000.jsonl",
+          "bytes": 6898,
+          "sha256": "5d21e5b0fb9285b328a3c5ad0861e6257444fa190778fdb0b1548febb3ae3d99"
+        },
+        {
+          "path": "data/creatures/creatures-995000.jsonl",
+          "bytes": 1611,
+          "sha256": "c1aec698f79aa9b336b11ad4466163bdb6aab82ffa74df55b1afcd160e664f0e"
+        },
+        {
+          "path": "data/creatures/creatures-9980000.jsonl",
+          "bytes": 61,
+          "sha256": "50cde80d3e7df89ec161178113cd162570e42bafc0ab59b0a15313a621782a62"
+        },
+        {
+          "path": "data/creatures/creatures-9990000.jsonl",
+          "bytes": 160,
+          "sha256": "9ab7ba6bd78c27796ad5a1aede214fa67fbf75b38d5ce379bf8fb0b23591f15d"
+        },
+        {
+          "path": "data/creatures/creatures-9995000.jsonl",
+          "bytes": 200,
+          "sha256": "9f79a4a080fe04839e1432becf009ce0eb556cd15c679a00a551f20f7066909b"
         }
       ],
-      "parsedRecords": 53885,
-      "distinctIds": 53885,
+      "parsedRecords": 127179,
+      "distinctIds": 127179,
       "index": "datasets/bulk/indexes/srhinos__coa-datamine__npcs.json.gz"
     },
     {

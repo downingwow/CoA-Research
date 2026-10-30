@@ -2,7 +2,7 @@
   "schema": "coa-research.raid-map-manifest.v1",
   "date": "2026-10-30",
   "source": "data/sql/updates/pending_db_world/rev_20261024_07_coa_raid_instance_encounters.sql",
-  "detailedData": "research/raids/raid-encounters-by-map-and-difficulty-2026-10-30.json",
+  "detailedData": "research/raids/raid-encounters-by-map-and-difficulty-v2-2026-10-30.json",
   "maps": [
     {
       "mapId": 249,

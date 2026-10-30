@@ -1,0 +1,250 @@
+{
+  "schema": "coa-research.vanilla-dungeon-coverage-v1",
+  "date": "2026-10-30",
+  "source": "docs/coa/vanilla-dungeon-difficulties.md",
+  "sourceStatus": "upstream design and test documentation; live acceptance requires validation",
+  "maps": [
+    {
+      "mapId": 33,
+      "name": "Shadowfang Keep",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 34,
+      "name": "Stormwind Stockade",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 36,
+      "name": "The Deadmines",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 43,
+      "name": "Wailing Caverns",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 47,
+      "name": "Razorfen Kraul",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 48,
+      "name": "Blackfathom Deeps",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 70,
+      "name": "Uldaman",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 90,
+      "name": "Gnomeregan",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 109,
+      "name": "Sunken Temple",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 129,
+      "name": "Razorfen Downs",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 189,
+      "name": "Scarlet Monastery",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 209,
+      "name": "Zul'Farrak",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 229,
+      "name": "Blackrock Spire",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 230,
+      "name": "Blackrock Depths",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 289,
+      "name": "Scholomance",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 329,
+      "name": "Stratholme",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 349,
+      "name": "Maraudon",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 389,
+      "name": "Ragefire Chasm",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    },
+    {
+      "mapId": 429,
+      "name": "Dire Maul",
+      "modes": [
+        "Normal",
+        "Heroic",
+        "Mythic"
+      ],
+      "lootVariantEligible": true,
+      "bossMechanics": "pending individual boss audit",
+      "loot": "source index in research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json (not complete original loot catalog)"
+    }
+  ],
+  "sourceReported": {
+    "difficultyTemplateCount": 1278,
+    "difficultyFamilies": 645,
+    "lootVariantFamilies": 999,
+    "healthRows": 1756,
+    "modeCombinations": 57
+  },
+  "notes": [
+    "Map 229 covers Blackrock Spire, including Upper/Lower content, not separate map IDs",
+    "Map 189 has multiple Scarlet Monastery wings",
+    "Map 429 contains Dire Maul wings",
+    "The source describes 19 original dungeon maps, not all TBC/Wrath dungeons or raids",
+    "Loot variant allowlist excludes raids in this runtime implementation"
+  ]
+}

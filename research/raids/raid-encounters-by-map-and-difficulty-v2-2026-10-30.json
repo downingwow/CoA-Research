@@ -1,0 +1,4798 @@
+{
+  "schema": "coa-research.raid-encounter-map-difficulty.v2",
+  "date": "2026-10-30",
+  "source": "data/sql/updates/pending_db_world/rev_20261024_07_coa_raid_instance_encounters.sql",
+  "sourceStatus": "upstream pending migration; not confirmed live",
+  "rowCount": 502,
+  "mapCount": 22,
+  "maps": [
+    {
+      "mapId": 249,
+      "encounterRows": 4,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4054,
+          "creditType": 0,
+          "creditNpcId": 10184,
+          "lastEncounterDungeon": 434,
+          "comment": "Onyxia (CoA DBC map 249 diff 0, was 707/708)",
+          "mapId": 249,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4149,
+          "creditType": 0,
+          "creditNpcId": 10184,
+          "lastEncounterDungeon": 257,
+          "comment": "Onyxia (CoA DBC map 249 diff 1, was 707/708)",
+          "mapId": 249,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4244,
+          "creditType": 0,
+          "creditNpcId": 10184,
+          "lastEncounterDungeon": 449,
+          "comment": "Onyxia (CoA DBC map 249 diff 2, was 707/708)",
+          "mapId": 249,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4339,
+          "creditType": 0,
+          "creditNpcId": 10184,
+          "lastEncounterDungeon": 464,
+          "comment": "Onyxia (CoA DBC map 249 diff 3, was 707/708)",
+          "mapId": 249,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 309,
+      "encounterRows": 40,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4086,
+          "creditType": 0,
+          "creditNpcId": 14507,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priest Venoxis (CoA DBC map 309 diff 0, was 784)",
+          "mapId": 309,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4087,
+          "creditType": 0,
+          "creditNpcId": 14517,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priestess Jeklik (CoA DBC map 309 diff 0, was 785)",
+          "mapId": 309,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4088,
+          "creditType": 0,
+          "creditNpcId": 14510,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priestess Mar'li (CoA DBC map 309 diff 0, was 786)",
+          "mapId": 309,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4089,
+          "creditType": 0,
+          "creditNpcId": 11382,
+          "lastEncounterDungeon": 0,
+          "comment": "Bloodlord Mandokir (CoA DBC map 309 diff 0, was 787)",
+          "mapId": 309,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4091,
+          "creditType": 0,
+          "creditNpcId": 14509,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priest Thekal (CoA DBC map 309 diff 0, was 789)",
+          "mapId": 309,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4092,
+          "creditType": 0,
+          "creditNpcId": 15114,
+          "lastEncounterDungeon": 0,
+          "comment": "Gahz'ranka (CoA DBC map 309 diff 0, was 790)",
+          "mapId": 309,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4093,
+          "creditType": 0,
+          "creditNpcId": 14515,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priestess Arlokk (CoA DBC map 309 diff 0, was 791)",
+          "mapId": 309,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4094,
+          "creditType": 0,
+          "creditNpcId": 11380,
+          "lastEncounterDungeon": 0,
+          "comment": "Jin'do the Hexxer (CoA DBC map 309 diff 0, was 792)",
+          "mapId": 309,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4095,
+          "creditType": 0,
+          "creditNpcId": 14834,
+          "lastEncounterDungeon": 420,
+          "comment": "Hakkar (CoA DBC map 309 diff 0, was 793)",
+          "mapId": 309,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4181,
+          "creditType": 0,
+          "creditNpcId": 14507,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priest Venoxis (CoA DBC map 309 diff 1, was 784)",
+          "mapId": 309,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4182,
+          "creditType": 0,
+          "creditNpcId": 14517,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priestess Jeklik (CoA DBC map 309 diff 1, was 785)",
+          "mapId": 309,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4183,
+          "creditType": 0,
+          "creditNpcId": 14510,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priestess Mar'li (CoA DBC map 309 diff 1, was 786)",
+          "mapId": 309,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4184,
+          "creditType": 0,
+          "creditNpcId": 11382,
+          "lastEncounterDungeon": 0,
+          "comment": "Bloodlord Mandokir (CoA DBC map 309 diff 1, was 787)",
+          "mapId": 309,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4186,
+          "creditType": 0,
+          "creditNpcId": 14509,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priest Thekal (CoA DBC map 309 diff 1, was 789)",
+          "mapId": 309,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4187,
+          "creditType": 0,
+          "creditNpcId": 15114,
+          "lastEncounterDungeon": 0,
+          "comment": "Gahz'ranka (CoA DBC map 309 diff 1, was 790)",
+          "mapId": 309,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4188,
+          "creditType": 0,
+          "creditNpcId": 14515,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priestess Arlokk (CoA DBC map 309 diff 1, was 791)",
+          "mapId": 309,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4189,
+          "creditType": 0,
+          "creditNpcId": 11380,
+          "lastEncounterDungeon": 0,
+          "comment": "Jin'do the Hexxer (CoA DBC map 309 diff 1, was 792)",
+          "mapId": 309,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4190,
+          "creditType": 0,
+          "creditNpcId": 14834,
+          "lastEncounterDungeon": 42,
+          "comment": "Hakkar (CoA DBC map 309 diff 1, was 793)",
+          "mapId": 309,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4276,
+          "creditType": 0,
+          "creditNpcId": 14507,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priest Venoxis (CoA DBC map 309 diff 2, was 784)",
+          "mapId": 309,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4277,
+          "creditType": 0,
+          "creditNpcId": 14517,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priestess Jeklik (CoA DBC map 309 diff 2, was 785)",
+          "mapId": 309,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4278,
+          "creditType": 0,
+          "creditNpcId": 14510,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priestess Mar'li (CoA DBC map 309 diff 2, was 786)",
+          "mapId": 309,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4279,
+          "creditType": 0,
+          "creditNpcId": 11382,
+          "lastEncounterDungeon": 0,
+          "comment": "Bloodlord Mandokir (CoA DBC map 309 diff 2, was 787)",
+          "mapId": 309,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4281,
+          "creditType": 0,
+          "creditNpcId": 14509,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priest Thekal (CoA DBC map 309 diff 2, was 789)",
+          "mapId": 309,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4282,
+          "creditType": 0,
+          "creditNpcId": 15114,
+          "lastEncounterDungeon": 0,
+          "comment": "Gahz'ranka (CoA DBC map 309 diff 2, was 790)",
+          "mapId": 309,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4283,
+          "creditType": 0,
+          "creditNpcId": 14515,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priestess Arlokk (CoA DBC map 309 diff 2, was 791)",
+          "mapId": 309,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4284,
+          "creditType": 0,
+          "creditNpcId": 11380,
+          "lastEncounterDungeon": 0,
+          "comment": "Jin'do the Hexxer (CoA DBC map 309 diff 2, was 792)",
+          "mapId": 309,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4285,
+          "creditType": 0,
+          "creditNpcId": 14834,
+          "lastEncounterDungeon": 435,
+          "comment": "Hakkar (CoA DBC map 309 diff 2, was 793)",
+          "mapId": 309,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4371,
+          "creditType": 0,
+          "creditNpcId": 14507,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priest Venoxis (CoA DBC map 309 diff 3, was 784)",
+          "mapId": 309,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4372,
+          "creditType": 0,
+          "creditNpcId": 14517,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priestess Jeklik (CoA DBC map 309 diff 3, was 785)",
+          "mapId": 309,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4373,
+          "creditType": 0,
+          "creditNpcId": 14510,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priestess Mar'li (CoA DBC map 309 diff 3, was 786)",
+          "mapId": 309,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4374,
+          "creditType": 0,
+          "creditNpcId": 11382,
+          "lastEncounterDungeon": 0,
+          "comment": "Bloodlord Mandokir (CoA DBC map 309 diff 3, was 787)",
+          "mapId": 309,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4376,
+          "creditType": 0,
+          "creditNpcId": 14509,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priest Thekal (CoA DBC map 309 diff 3, was 789)",
+          "mapId": 309,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4377,
+          "creditType": 0,
+          "creditNpcId": 15114,
+          "lastEncounterDungeon": 0,
+          "comment": "Gahz'ranka (CoA DBC map 309 diff 3, was 790)",
+          "mapId": 309,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4378,
+          "creditType": 0,
+          "creditNpcId": 14515,
+          "lastEncounterDungeon": 0,
+          "comment": "High Priestess Arlokk (CoA DBC map 309 diff 3, was 791)",
+          "mapId": 309,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4379,
+          "creditType": 0,
+          "creditNpcId": 11380,
+          "lastEncounterDungeon": 0,
+          "comment": "Jin'do the Hexxer (CoA DBC map 309 diff 3, was 792)",
+          "mapId": 309,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4380,
+          "creditType": 0,
+          "creditNpcId": 14834,
+          "lastEncounterDungeon": 450,
+          "comment": "Hakkar (CoA DBC map 309 diff 3, was 793)",
+          "mapId": 309,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4397,
+          "creditType": 0,
+          "creditNpcId": 15083,
+          "lastEncounterDungeon": 0,
+          "comment": "The Edge of Madness (CoA DBC map 309 diff 0, was 788)",
+          "mapId": 309,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4401,
+          "creditType": 0,
+          "creditNpcId": 15083,
+          "lastEncounterDungeon": 0,
+          "comment": "The Edge of Madness (CoA DBC map 309 diff 1, was 788)",
+          "mapId": 309,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4405,
+          "creditType": 0,
+          "creditNpcId": 15083,
+          "lastEncounterDungeon": 0,
+          "comment": "The Edge of Madness (CoA DBC map 309 diff 2, was 788)",
+          "mapId": 309,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4409,
+          "creditType": 0,
+          "creditNpcId": 15083,
+          "lastEncounterDungeon": 0,
+          "comment": "The Edge of Madness (CoA DBC map 309 diff 3, was 788)",
+          "mapId": 309,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 409,
+      "encounterRows": 40,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4031,
+          "creditType": 0,
+          "creditNpcId": 12118,
+          "lastEncounterDungeon": 0,
+          "comment": "Lucifron (CoA DBC map 409 diff 0, was 663)",
+          "mapId": 409,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4032,
+          "creditType": 0,
+          "creditNpcId": 11982,
+          "lastEncounterDungeon": 0,
+          "comment": "Magmadar (CoA DBC map 409 diff 0, was 664)",
+          "mapId": 409,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4033,
+          "creditType": 0,
+          "creditNpcId": 12259,
+          "lastEncounterDungeon": 0,
+          "comment": "Gehennas (CoA DBC map 409 diff 0, was 665)",
+          "mapId": 409,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4034,
+          "creditType": 0,
+          "creditNpcId": 12057,
+          "lastEncounterDungeon": 0,
+          "comment": "Garr (CoA DBC map 409 diff 0, was 666)",
+          "mapId": 409,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4035,
+          "creditType": 0,
+          "creditNpcId": 12264,
+          "lastEncounterDungeon": 0,
+          "comment": "Shazzrah (CoA DBC map 409 diff 0, was 667)",
+          "mapId": 409,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4036,
+          "creditType": 0,
+          "creditNpcId": 12056,
+          "lastEncounterDungeon": 0,
+          "comment": "Baron Geddon (CoA DBC map 409 diff 0, was 668)",
+          "mapId": 409,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4037,
+          "creditType": 0,
+          "creditNpcId": 12098,
+          "lastEncounterDungeon": 0,
+          "comment": "Sulfuron Harbinger (CoA DBC map 409 diff 0, was 669)",
+          "mapId": 409,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4038,
+          "creditType": 0,
+          "creditNpcId": 11988,
+          "lastEncounterDungeon": 0,
+          "comment": "Golemagg the Incinerator (CoA DBC map 409 diff 0, was 670)",
+          "mapId": 409,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4039,
+          "creditType": 0,
+          "creditNpcId": 11502,
+          "lastEncounterDungeon": 421,
+          "comment": "Ragnaros (CoA DBC map 409 diff 0, was 672)",
+          "mapId": 409,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4126,
+          "creditType": 0,
+          "creditNpcId": 12118,
+          "lastEncounterDungeon": 0,
+          "comment": "Lucifron (CoA DBC map 409 diff 1, was 663)",
+          "mapId": 409,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4127,
+          "creditType": 0,
+          "creditNpcId": 11982,
+          "lastEncounterDungeon": 0,
+          "comment": "Magmadar (CoA DBC map 409 diff 1, was 664)",
+          "mapId": 409,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4128,
+          "creditType": 0,
+          "creditNpcId": 12259,
+          "lastEncounterDungeon": 0,
+          "comment": "Gehennas (CoA DBC map 409 diff 1, was 665)",
+          "mapId": 409,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4129,
+          "creditType": 0,
+          "creditNpcId": 12057,
+          "lastEncounterDungeon": 0,
+          "comment": "Garr (CoA DBC map 409 diff 1, was 666)",
+          "mapId": 409,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4130,
+          "creditType": 0,
+          "creditNpcId": 12264,
+          "lastEncounterDungeon": 0,
+          "comment": "Shazzrah (CoA DBC map 409 diff 1, was 667)",
+          "mapId": 409,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4131,
+          "creditType": 0,
+          "creditNpcId": 12056,
+          "lastEncounterDungeon": 0,
+          "comment": "Baron Geddon (CoA DBC map 409 diff 1, was 668)",
+          "mapId": 409,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4132,
+          "creditType": 0,
+          "creditNpcId": 12098,
+          "lastEncounterDungeon": 0,
+          "comment": "Sulfuron Harbinger (CoA DBC map 409 diff 1, was 669)",
+          "mapId": 409,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4133,
+          "creditType": 0,
+          "creditNpcId": 11988,
+          "lastEncounterDungeon": 0,
+          "comment": "Golemagg the Incinerator (CoA DBC map 409 diff 1, was 670)",
+          "mapId": 409,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4134,
+          "creditType": 0,
+          "creditNpcId": 11502,
+          "lastEncounterDungeon": 48,
+          "comment": "Ragnaros (CoA DBC map 409 diff 1, was 672)",
+          "mapId": 409,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4221,
+          "creditType": 0,
+          "creditNpcId": 12118,
+          "lastEncounterDungeon": 0,
+          "comment": "Lucifron (CoA DBC map 409 diff 2, was 663)",
+          "mapId": 409,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4222,
+          "creditType": 0,
+          "creditNpcId": 11982,
+          "lastEncounterDungeon": 0,
+          "comment": "Magmadar (CoA DBC map 409 diff 2, was 664)",
+          "mapId": 409,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4223,
+          "creditType": 0,
+          "creditNpcId": 12259,
+          "lastEncounterDungeon": 0,
+          "comment": "Gehennas (CoA DBC map 409 diff 2, was 665)",
+          "mapId": 409,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4224,
+          "creditType": 0,
+          "creditNpcId": 12057,
+          "lastEncounterDungeon": 0,
+          "comment": "Garr (CoA DBC map 409 diff 2, was 666)",
+          "mapId": 409,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4225,
+          "creditType": 0,
+          "creditNpcId": 12264,
+          "lastEncounterDungeon": 0,
+          "comment": "Shazzrah (CoA DBC map 409 diff 2, was 667)",
+          "mapId": 409,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4226,
+          "creditType": 0,
+          "creditNpcId": 12056,
+          "lastEncounterDungeon": 0,
+          "comment": "Baron Geddon (CoA DBC map 409 diff 2, was 668)",
+          "mapId": 409,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4227,
+          "creditType": 0,
+          "creditNpcId": 12098,
+          "lastEncounterDungeon": 0,
+          "comment": "Sulfuron Harbinger (CoA DBC map 409 diff 2, was 669)",
+          "mapId": 409,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4228,
+          "creditType": 0,
+          "creditNpcId": 11988,
+          "lastEncounterDungeon": 0,
+          "comment": "Golemagg the Incinerator (CoA DBC map 409 diff 2, was 670)",
+          "mapId": 409,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4229,
+          "creditType": 0,
+          "creditNpcId": 11502,
+          "lastEncounterDungeon": 436,
+          "comment": "Ragnaros (CoA DBC map 409 diff 2, was 672)",
+          "mapId": 409,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4316,
+          "creditType": 0,
+          "creditNpcId": 12118,
+          "lastEncounterDungeon": 0,
+          "comment": "Lucifron (CoA DBC map 409 diff 3, was 663)",
+          "mapId": 409,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4317,
+          "creditType": 0,
+          "creditNpcId": 11982,
+          "lastEncounterDungeon": 0,
+          "comment": "Magmadar (CoA DBC map 409 diff 3, was 664)",
+          "mapId": 409,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4318,
+          "creditType": 0,
+          "creditNpcId": 12259,
+          "lastEncounterDungeon": 0,
+          "comment": "Gehennas (CoA DBC map 409 diff 3, was 665)",
+          "mapId": 409,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4319,
+          "creditType": 0,
+          "creditNpcId": 12057,
+          "lastEncounterDungeon": 0,
+          "comment": "Garr (CoA DBC map 409 diff 3, was 666)",
+          "mapId": 409,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4320,
+          "creditType": 0,
+          "creditNpcId": 12264,
+          "lastEncounterDungeon": 0,
+          "comment": "Shazzrah (CoA DBC map 409 diff 3, was 667)",
+          "mapId": 409,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4321,
+          "creditType": 0,
+          "creditNpcId": 12056,
+          "lastEncounterDungeon": 0,
+          "comment": "Baron Geddon (CoA DBC map 409 diff 3, was 668)",
+          "mapId": 409,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4322,
+          "creditType": 0,
+          "creditNpcId": 12098,
+          "lastEncounterDungeon": 0,
+          "comment": "Sulfuron Harbinger (CoA DBC map 409 diff 3, was 669)",
+          "mapId": 409,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4323,
+          "creditType": 0,
+          "creditNpcId": 11988,
+          "lastEncounterDungeon": 0,
+          "comment": "Golemagg the Incinerator (CoA DBC map 409 diff 3, was 670)",
+          "mapId": 409,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4324,
+          "creditType": 0,
+          "creditNpcId": 11502,
+          "lastEncounterDungeon": 451,
+          "comment": "Ragnaros (CoA DBC map 409 diff 3, was 672)",
+          "mapId": 409,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4383,
+          "creditType": 0,
+          "creditNpcId": 12018,
+          "lastEncounterDungeon": 0,
+          "comment": "Majordomo Executus (CoA DBC map 409 diff 0, was 671)",
+          "mapId": 409,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4387,
+          "creditType": 0,
+          "creditNpcId": 12018,
+          "lastEncounterDungeon": 0,
+          "comment": "Majordomo Executus (CoA DBC map 409 diff 1, was 671)",
+          "mapId": 409,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4391,
+          "creditType": 0,
+          "creditNpcId": 12018,
+          "lastEncounterDungeon": 0,
+          "comment": "Majordomo Executus (CoA DBC map 409 diff 2, was 671)",
+          "mapId": 409,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4395,
+          "creditType": 0,
+          "creditNpcId": 12018,
+          "lastEncounterDungeon": 0,
+          "comment": "Majordomo Executus (CoA DBC map 409 diff 3, was 671)",
+          "mapId": 409,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 469,
+      "encounterRows": 24,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4009,
+          "creditType": 0,
+          "creditNpcId": 12435,
+          "lastEncounterDungeon": 0,
+          "comment": "Razorgore the Untamed (CoA DBC map 469 diff 0, was 610)",
+          "mapId": 469,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4010,
+          "creditType": 0,
+          "creditNpcId": 13020,
+          "lastEncounterDungeon": 0,
+          "comment": "Vaelastrasz the Corrupt (CoA DBC map 469 diff 0, was 611)",
+          "mapId": 469,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4011,
+          "creditType": 0,
+          "creditNpcId": 12017,
+          "lastEncounterDungeon": 0,
+          "comment": "Broodlord Lashlayer (CoA DBC map 469 diff 0, was 612)",
+          "mapId": 469,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4012,
+          "creditType": 0,
+          "creditNpcId": 11983,
+          "lastEncounterDungeon": 0,
+          "comment": "Firemaw (CoA DBC map 469 diff 0, was 613)",
+          "mapId": 469,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4013,
+          "creditType": 0,
+          "creditNpcId": 14020,
+          "lastEncounterDungeon": 0,
+          "comment": "Chromaggus (CoA DBC map 469 diff 0, was 616)",
+          "mapId": 469,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4014,
+          "creditType": 0,
+          "creditNpcId": 11583,
+          "lastEncounterDungeon": 422,
+          "comment": "Nefarian (CoA DBC map 469 diff 0, was 617)",
+          "mapId": 469,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4104,
+          "creditType": 0,
+          "creditNpcId": 12435,
+          "lastEncounterDungeon": 0,
+          "comment": "Razorgore the Untamed (CoA DBC map 469 diff 1, was 610)",
+          "mapId": 469,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4105,
+          "creditType": 0,
+          "creditNpcId": 13020,
+          "lastEncounterDungeon": 0,
+          "comment": "Vaelastrasz the Corrupt (CoA DBC map 469 diff 1, was 611)",
+          "mapId": 469,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4106,
+          "creditType": 0,
+          "creditNpcId": 12017,
+          "lastEncounterDungeon": 0,
+          "comment": "Broodlord Lashlayer (CoA DBC map 469 diff 1, was 612)",
+          "mapId": 469,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4107,
+          "creditType": 0,
+          "creditNpcId": 11983,
+          "lastEncounterDungeon": 0,
+          "comment": "Firemaw (CoA DBC map 469 diff 1, was 613)",
+          "mapId": 469,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4108,
+          "creditType": 0,
+          "creditNpcId": 14020,
+          "lastEncounterDungeon": 0,
+          "comment": "Chromaggus (CoA DBC map 469 diff 1, was 616)",
+          "mapId": 469,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4109,
+          "creditType": 0,
+          "creditNpcId": 11583,
+          "lastEncounterDungeon": 50,
+          "comment": "Nefarian (CoA DBC map 469 diff 1, was 617)",
+          "mapId": 469,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4199,
+          "creditType": 0,
+          "creditNpcId": 12435,
+          "lastEncounterDungeon": 0,
+          "comment": "Razorgore the Untamed (CoA DBC map 469 diff 2, was 610)",
+          "mapId": 469,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4200,
+          "creditType": 0,
+          "creditNpcId": 13020,
+          "lastEncounterDungeon": 0,
+          "comment": "Vaelastrasz the Corrupt (CoA DBC map 469 diff 2, was 611)",
+          "mapId": 469,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4201,
+          "creditType": 0,
+          "creditNpcId": 12017,
+          "lastEncounterDungeon": 0,
+          "comment": "Broodlord Lashlayer (CoA DBC map 469 diff 2, was 612)",
+          "mapId": 469,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4202,
+          "creditType": 0,
+          "creditNpcId": 11983,
+          "lastEncounterDungeon": 0,
+          "comment": "Firemaw (CoA DBC map 469 diff 2, was 613)",
+          "mapId": 469,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4203,
+          "creditType": 0,
+          "creditNpcId": 14020,
+          "lastEncounterDungeon": 0,
+          "comment": "Chromaggus (CoA DBC map 469 diff 2, was 616)",
+          "mapId": 469,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4204,
+          "creditType": 0,
+          "creditNpcId": 11583,
+          "lastEncounterDungeon": 437,
+          "comment": "Nefarian (CoA DBC map 469 diff 2, was 617)",
+          "mapId": 469,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4294,
+          "creditType": 0,
+          "creditNpcId": 12435,
+          "lastEncounterDungeon": 0,
+          "comment": "Razorgore the Untamed (CoA DBC map 469 diff 3, was 610)",
+          "mapId": 469,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4295,
+          "creditType": 0,
+          "creditNpcId": 13020,
+          "lastEncounterDungeon": 0,
+          "comment": "Vaelastrasz the Corrupt (CoA DBC map 469 diff 3, was 611)",
+          "mapId": 469,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4296,
+          "creditType": 0,
+          "creditNpcId": 12017,
+          "lastEncounterDungeon": 0,
+          "comment": "Broodlord Lashlayer (CoA DBC map 469 diff 3, was 612)",
+          "mapId": 469,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4297,
+          "creditType": 0,
+          "creditNpcId": 11983,
+          "lastEncounterDungeon": 0,
+          "comment": "Firemaw (CoA DBC map 469 diff 3, was 613)",
+          "mapId": 469,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4298,
+          "creditType": 0,
+          "creditNpcId": 14020,
+          "lastEncounterDungeon": 0,
+          "comment": "Chromaggus (CoA DBC map 469 diff 3, was 616)",
+          "mapId": 469,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4299,
+          "creditType": 0,
+          "creditNpcId": 11583,
+          "lastEncounterDungeon": 452,
+          "comment": "Nefarian (CoA DBC map 469 diff 3, was 617)",
+          "mapId": 469,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 509,
+      "encounterRows": 25,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 900,
+          "creditType": 0,
+          "creditNpcId": 15348,
+          "lastEncounterDungeon": 0,
+          "comment": "Kurinnaxx (CoA DBC map 509 diff 1, was 718)",
+          "mapId": 509,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4064,
+          "creditType": 0,
+          "creditNpcId": 15348,
+          "lastEncounterDungeon": 0,
+          "comment": "Kurinnaxx (CoA DBC map 509 diff 0, was 718)",
+          "mapId": 509,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4065,
+          "creditType": 0,
+          "creditNpcId": 15341,
+          "lastEncounterDungeon": 0,
+          "comment": "General Rajaxx (CoA DBC map 509 diff 0, was 719)",
+          "mapId": 509,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4066,
+          "creditType": 0,
+          "creditNpcId": 15340,
+          "lastEncounterDungeon": 0,
+          "comment": "Moam (CoA DBC map 509 diff 0, was 720)",
+          "mapId": 509,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4067,
+          "creditType": 0,
+          "creditNpcId": 15370,
+          "lastEncounterDungeon": 0,
+          "comment": "Buru the Gorger (CoA DBC map 509 diff 0, was 721)",
+          "mapId": 509,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4068,
+          "creditType": 0,
+          "creditNpcId": 15369,
+          "lastEncounterDungeon": 0,
+          "comment": "Ayamiss the Hunter (CoA DBC map 509 diff 0, was 722)",
+          "mapId": 509,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4069,
+          "creditType": 0,
+          "creditNpcId": 15339,
+          "lastEncounterDungeon": 423,
+          "comment": "Ossirian the Unscarred (CoA DBC map 509 diff 0, was 723)",
+          "mapId": 509,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4159,
+          "creditType": 0,
+          "creditNpcId": 15348,
+          "lastEncounterDungeon": 0,
+          "comment": "Kurinnaxx (CoA DBC map 509 diff 1, was 718)",
+          "mapId": 509,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4160,
+          "creditType": 0,
+          "creditNpcId": 15341,
+          "lastEncounterDungeon": 0,
+          "comment": "General Rajaxx (CoA DBC map 509 diff 1, was 719)",
+          "mapId": 509,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4161,
+          "creditType": 0,
+          "creditNpcId": 15340,
+          "lastEncounterDungeon": 0,
+          "comment": "Moam (CoA DBC map 509 diff 1, was 720)",
+          "mapId": 509,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4162,
+          "creditType": 0,
+          "creditNpcId": 15370,
+          "lastEncounterDungeon": 0,
+          "comment": "Buru the Gorger (CoA DBC map 509 diff 1, was 721)",
+          "mapId": 509,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4163,
+          "creditType": 0,
+          "creditNpcId": 15369,
+          "lastEncounterDungeon": 0,
+          "comment": "Ayamiss the Hunter (CoA DBC map 509 diff 1, was 722)",
+          "mapId": 509,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4164,
+          "creditType": 0,
+          "creditNpcId": 15339,
+          "lastEncounterDungeon": 160,
+          "comment": "Ossirian the Unscarred (CoA DBC map 509 diff 1, was 723)",
+          "mapId": 509,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4254,
+          "creditType": 0,
+          "creditNpcId": 15348,
+          "lastEncounterDungeon": 0,
+          "comment": "Kurinnaxx (CoA DBC map 509 diff 2, was 718)",
+          "mapId": 509,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4255,
+          "creditType": 0,
+          "creditNpcId": 15341,
+          "lastEncounterDungeon": 0,
+          "comment": "General Rajaxx (CoA DBC map 509 diff 2, was 719)",
+          "mapId": 509,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4256,
+          "creditType": 0,
+          "creditNpcId": 15340,
+          "lastEncounterDungeon": 0,
+          "comment": "Moam (CoA DBC map 509 diff 2, was 720)",
+          "mapId": 509,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4257,
+          "creditType": 0,
+          "creditNpcId": 15370,
+          "lastEncounterDungeon": 0,
+          "comment": "Buru the Gorger (CoA DBC map 509 diff 2, was 721)",
+          "mapId": 509,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4258,
+          "creditType": 0,
+          "creditNpcId": 15369,
+          "lastEncounterDungeon": 0,
+          "comment": "Ayamiss the Hunter (CoA DBC map 509 diff 2, was 722)",
+          "mapId": 509,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4259,
+          "creditType": 0,
+          "creditNpcId": 15339,
+          "lastEncounterDungeon": 438,
+          "comment": "Ossirian the Unscarred (CoA DBC map 509 diff 2, was 723)",
+          "mapId": 509,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4349,
+          "creditType": 0,
+          "creditNpcId": 15348,
+          "lastEncounterDungeon": 0,
+          "comment": "Kurinnaxx (CoA DBC map 509 diff 3, was 718)",
+          "mapId": 509,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4350,
+          "creditType": 0,
+          "creditNpcId": 15341,
+          "lastEncounterDungeon": 0,
+          "comment": "General Rajaxx (CoA DBC map 509 diff 3, was 719)",
+          "mapId": 509,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4351,
+          "creditType": 0,
+          "creditNpcId": 15340,
+          "lastEncounterDungeon": 0,
+          "comment": "Moam (CoA DBC map 509 diff 3, was 720)",
+          "mapId": 509,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4352,
+          "creditType": 0,
+          "creditNpcId": 15370,
+          "lastEncounterDungeon": 0,
+          "comment": "Buru the Gorger (CoA DBC map 509 diff 3, was 721)",
+          "mapId": 509,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4353,
+          "creditType": 0,
+          "creditNpcId": 15369,
+          "lastEncounterDungeon": 0,
+          "comment": "Ayamiss the Hunter (CoA DBC map 509 diff 3, was 722)",
+          "mapId": 509,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4354,
+          "creditType": 0,
+          "creditNpcId": 15339,
+          "lastEncounterDungeon": 453,
+          "comment": "Ossirian the Unscarred (CoA DBC map 509 diff 3, was 723)",
+          "mapId": 509,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 531,
+      "encounterRows": 36,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4055,
+          "creditType": 0,
+          "creditNpcId": 15263,
+          "lastEncounterDungeon": 0,
+          "comment": "The Prophet Skeram (CoA DBC map 531 diff 0, was 709)",
+          "mapId": 531,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4056,
+          "creditType": 0,
+          "creditNpcId": 15544,
+          "lastEncounterDungeon": 0,
+          "comment": "Silithid Royalty (CoA DBC map 531 diff 0, was 710)",
+          "mapId": 531,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4057,
+          "creditType": 0,
+          "creditNpcId": 15516,
+          "lastEncounterDungeon": 0,
+          "comment": "Battleguard Sartura (CoA DBC map 531 diff 0, was 711)",
+          "mapId": 531,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4058,
+          "creditType": 0,
+          "creditNpcId": 15510,
+          "lastEncounterDungeon": 0,
+          "comment": "Fankriss the Unyielding (CoA DBC map 531 diff 0, was 712)",
+          "mapId": 531,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4059,
+          "creditType": 0,
+          "creditNpcId": 15299,
+          "lastEncounterDungeon": 0,
+          "comment": "Viscidus (CoA DBC map 531 diff 0, was 713)",
+          "mapId": 531,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4060,
+          "creditType": 0,
+          "creditNpcId": 15509,
+          "lastEncounterDungeon": 0,
+          "comment": "Princess Huhuran (CoA DBC map 531 diff 0, was 714)",
+          "mapId": 531,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4061,
+          "creditType": 0,
+          "creditNpcId": 15275,
+          "lastEncounterDungeon": 0,
+          "comment": "Twin Emperors (CoA DBC map 531 diff 0, was 715)",
+          "mapId": 531,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4062,
+          "creditType": 0,
+          "creditNpcId": 15517,
+          "lastEncounterDungeon": 0,
+          "comment": "Ouro (CoA DBC map 531 diff 0, was 716)",
+          "mapId": 531,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4063,
+          "creditType": 0,
+          "creditNpcId": 15727,
+          "lastEncounterDungeon": 424,
+          "comment": "C'thun (CoA DBC map 531 diff 0, was 717)",
+          "mapId": 531,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4150,
+          "creditType": 0,
+          "creditNpcId": 15263,
+          "lastEncounterDungeon": 0,
+          "comment": "The Prophet Skeram (CoA DBC map 531 diff 1, was 709)",
+          "mapId": 531,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4151,
+          "creditType": 0,
+          "creditNpcId": 15544,
+          "lastEncounterDungeon": 0,
+          "comment": "Silithid Royalty (CoA DBC map 531 diff 1, was 710)",
+          "mapId": 531,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4152,
+          "creditType": 0,
+          "creditNpcId": 15516,
+          "lastEncounterDungeon": 0,
+          "comment": "Battleguard Sartura (CoA DBC map 531 diff 1, was 711)",
+          "mapId": 531,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4153,
+          "creditType": 0,
+          "creditNpcId": 15510,
+          "lastEncounterDungeon": 0,
+          "comment": "Fankriss the Unyielding (CoA DBC map 531 diff 1, was 712)",
+          "mapId": 531,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4154,
+          "creditType": 0,
+          "creditNpcId": 15299,
+          "lastEncounterDungeon": 0,
+          "comment": "Viscidus (CoA DBC map 531 diff 1, was 713)",
+          "mapId": 531,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4155,
+          "creditType": 0,
+          "creditNpcId": 15509,
+          "lastEncounterDungeon": 0,
+          "comment": "Princess Huhuran (CoA DBC map 531 diff 1, was 714)",
+          "mapId": 531,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4156,
+          "creditType": 0,
+          "creditNpcId": 15275,
+          "lastEncounterDungeon": 0,
+          "comment": "Twin Emperors (CoA DBC map 531 diff 1, was 715)",
+          "mapId": 531,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4157,
+          "creditType": 0,
+          "creditNpcId": 15517,
+          "lastEncounterDungeon": 0,
+          "comment": "Ouro (CoA DBC map 531 diff 1, was 716)",
+          "mapId": 531,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4158,
+          "creditType": 0,
+          "creditNpcId": 15727,
+          "lastEncounterDungeon": 161,
+          "comment": "C'thun (CoA DBC map 531 diff 1, was 717)",
+          "mapId": 531,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4245,
+          "creditType": 0,
+          "creditNpcId": 15263,
+          "lastEncounterDungeon": 0,
+          "comment": "The Prophet Skeram (CoA DBC map 531 diff 2, was 709)",
+          "mapId": 531,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4246,
+          "creditType": 0,
+          "creditNpcId": 15544,
+          "lastEncounterDungeon": 0,
+          "comment": "Silithid Royalty (CoA DBC map 531 diff 2, was 710)",
+          "mapId": 531,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4247,
+          "creditType": 0,
+          "creditNpcId": 15516,
+          "lastEncounterDungeon": 0,
+          "comment": "Battleguard Sartura (CoA DBC map 531 diff 2, was 711)",
+          "mapId": 531,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4248,
+          "creditType": 0,
+          "creditNpcId": 15510,
+          "lastEncounterDungeon": 0,
+          "comment": "Fankriss the Unyielding (CoA DBC map 531 diff 2, was 712)",
+          "mapId": 531,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4249,
+          "creditType": 0,
+          "creditNpcId": 15299,
+          "lastEncounterDungeon": 0,
+          "comment": "Viscidus (CoA DBC map 531 diff 2, was 713)",
+          "mapId": 531,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4250,
+          "creditType": 0,
+          "creditNpcId": 15509,
+          "lastEncounterDungeon": 0,
+          "comment": "Princess Huhuran (CoA DBC map 531 diff 2, was 714)",
+          "mapId": 531,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4251,
+          "creditType": 0,
+          "creditNpcId": 15275,
+          "lastEncounterDungeon": 0,
+          "comment": "Twin Emperors (CoA DBC map 531 diff 2, was 715)",
+          "mapId": 531,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4252,
+          "creditType": 0,
+          "creditNpcId": 15517,
+          "lastEncounterDungeon": 0,
+          "comment": "Ouro (CoA DBC map 531 diff 2, was 716)",
+          "mapId": 531,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4253,
+          "creditType": 0,
+          "creditNpcId": 15727,
+          "lastEncounterDungeon": 439,
+          "comment": "C'thun (CoA DBC map 531 diff 2, was 717)",
+          "mapId": 531,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4340,
+          "creditType": 0,
+          "creditNpcId": 15263,
+          "lastEncounterDungeon": 0,
+          "comment": "The Prophet Skeram (CoA DBC map 531 diff 3, was 709)",
+          "mapId": 531,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4341,
+          "creditType": 0,
+          "creditNpcId": 15544,
+          "lastEncounterDungeon": 0,
+          "comment": "Silithid Royalty (CoA DBC map 531 diff 3, was 710)",
+          "mapId": 531,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4342,
+          "creditType": 0,
+          "creditNpcId": 15516,
+          "lastEncounterDungeon": 0,
+          "comment": "Battleguard Sartura (CoA DBC map 531 diff 3, was 711)",
+          "mapId": 531,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4343,
+          "creditType": 0,
+          "creditNpcId": 15510,
+          "lastEncounterDungeon": 0,
+          "comment": "Fankriss the Unyielding (CoA DBC map 531 diff 3, was 712)",
+          "mapId": 531,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4344,
+          "creditType": 0,
+          "creditNpcId": 15299,
+          "lastEncounterDungeon": 0,
+          "comment": "Viscidus (CoA DBC map 531 diff 3, was 713)",
+          "mapId": 531,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4345,
+          "creditType": 0,
+          "creditNpcId": 15509,
+          "lastEncounterDungeon": 0,
+          "comment": "Princess Huhuran (CoA DBC map 531 diff 3, was 714)",
+          "mapId": 531,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4346,
+          "creditType": 0,
+          "creditNpcId": 15275,
+          "lastEncounterDungeon": 0,
+          "comment": "Twin Emperors (CoA DBC map 531 diff 3, was 715)",
+          "mapId": 531,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4347,
+          "creditType": 0,
+          "creditNpcId": 15517,
+          "lastEncounterDungeon": 0,
+          "comment": "Ouro (CoA DBC map 531 diff 3, was 716)",
+          "mapId": 531,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4348,
+          "creditType": 0,
+          "creditNpcId": 15727,
+          "lastEncounterDungeon": 454,
+          "comment": "C'thun (CoA DBC map 531 diff 3, was 717)",
+          "mapId": 531,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 532,
+      "encounterRows": 36,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4023,
+          "creditType": 0,
+          "creditNpcId": 15687,
+          "lastEncounterDungeon": 0,
+          "comment": "Moroes (CoA DBC map 532 diff 0, was 653)",
+          "mapId": 532,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4024,
+          "creditType": 0,
+          "creditNpcId": 16457,
+          "lastEncounterDungeon": 0,
+          "comment": "Maiden of the Virtue (CoA DBC map 532 diff 0, was 654)",
+          "mapId": 532,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4025,
+          "creditType": 0,
+          "creditNpcId": 15691,
+          "lastEncounterDungeon": 0,
+          "comment": "The Curator (CoA DBC map 532 diff 0, was 656)",
+          "mapId": 532,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4026,
+          "creditType": 0,
+          "creditNpcId": 15688,
+          "lastEncounterDungeon": 0,
+          "comment": "Terestian Illhoof (CoA DBC map 532 diff 0, was 657)",
+          "mapId": 532,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4027,
+          "creditType": 0,
+          "creditNpcId": 16524,
+          "lastEncounterDungeon": 0,
+          "comment": "Shade of Aran (CoA DBC map 532 diff 0, was 658)",
+          "mapId": 532,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4028,
+          "creditType": 0,
+          "creditNpcId": 15689,
+          "lastEncounterDungeon": 0,
+          "comment": "Netherspite (CoA DBC map 532 diff 0, was 659)",
+          "mapId": 532,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4029,
+          "creditType": 0,
+          "creditNpcId": 15690,
+          "lastEncounterDungeon": 425,
+          "comment": "Prince Malchezaar (CoA DBC map 532 diff 0, was 661)",
+          "mapId": 532,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4030,
+          "creditType": 0,
+          "creditNpcId": 17225,
+          "lastEncounterDungeon": 0,
+          "comment": "Nightbane (CoA DBC map 532 diff 0, was 662)",
+          "mapId": 532,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4118,
+          "creditType": 0,
+          "creditNpcId": 15687,
+          "lastEncounterDungeon": 0,
+          "comment": "Moroes (CoA DBC map 532 diff 1, was 653)",
+          "mapId": 532,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4119,
+          "creditType": 0,
+          "creditNpcId": 16457,
+          "lastEncounterDungeon": 0,
+          "comment": "Maiden of the Virtue (CoA DBC map 532 diff 1, was 654)",
+          "mapId": 532,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4120,
+          "creditType": 0,
+          "creditNpcId": 15691,
+          "lastEncounterDungeon": 0,
+          "comment": "The Curator (CoA DBC map 532 diff 1, was 656)",
+          "mapId": 532,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4121,
+          "creditType": 0,
+          "creditNpcId": 15688,
+          "lastEncounterDungeon": 0,
+          "comment": "Terestian Illhoof (CoA DBC map 532 diff 1, was 657)",
+          "mapId": 532,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4122,
+          "creditType": 0,
+          "creditNpcId": 16524,
+          "lastEncounterDungeon": 0,
+          "comment": "Shade of Aran (CoA DBC map 532 diff 1, was 658)",
+          "mapId": 532,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4123,
+          "creditType": 0,
+          "creditNpcId": 15689,
+          "lastEncounterDungeon": 0,
+          "comment": "Netherspite (CoA DBC map 532 diff 1, was 659)",
+          "mapId": 532,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4124,
+          "creditType": 0,
+          "creditNpcId": 15690,
+          "lastEncounterDungeon": 175,
+          "comment": "Prince Malchezaar (CoA DBC map 532 diff 1, was 661)",
+          "mapId": 532,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4125,
+          "creditType": 0,
+          "creditNpcId": 17225,
+          "lastEncounterDungeon": 0,
+          "comment": "Nightbane (CoA DBC map 532 diff 1, was 662)",
+          "mapId": 532,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4213,
+          "creditType": 0,
+          "creditNpcId": 15687,
+          "lastEncounterDungeon": 0,
+          "comment": "Moroes (CoA DBC map 532 diff 2, was 653)",
+          "mapId": 532,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4214,
+          "creditType": 0,
+          "creditNpcId": 16457,
+          "lastEncounterDungeon": 0,
+          "comment": "Maiden of the Virtue (CoA DBC map 532 diff 2, was 654)",
+          "mapId": 532,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4215,
+          "creditType": 0,
+          "creditNpcId": 15691,
+          "lastEncounterDungeon": 0,
+          "comment": "The Curator (CoA DBC map 532 diff 2, was 656)",
+          "mapId": 532,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4216,
+          "creditType": 0,
+          "creditNpcId": 15688,
+          "lastEncounterDungeon": 0,
+          "comment": "Terestian Illhoof (CoA DBC map 532 diff 2, was 657)",
+          "mapId": 532,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4217,
+          "creditType": 0,
+          "creditNpcId": 16524,
+          "lastEncounterDungeon": 0,
+          "comment": "Shade of Aran (CoA DBC map 532 diff 2, was 658)",
+          "mapId": 532,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4218,
+          "creditType": 0,
+          "creditNpcId": 15689,
+          "lastEncounterDungeon": 0,
+          "comment": "Netherspite (CoA DBC map 532 diff 2, was 659)",
+          "mapId": 532,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4219,
+          "creditType": 0,
+          "creditNpcId": 15690,
+          "lastEncounterDungeon": 440,
+          "comment": "Prince Malchezaar (CoA DBC map 532 diff 2, was 661)",
+          "mapId": 532,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4220,
+          "creditType": 0,
+          "creditNpcId": 17225,
+          "lastEncounterDungeon": 0,
+          "comment": "Nightbane (CoA DBC map 532 diff 2, was 662)",
+          "mapId": 532,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4308,
+          "creditType": 0,
+          "creditNpcId": 15687,
+          "lastEncounterDungeon": 0,
+          "comment": "Moroes (CoA DBC map 532 diff 3, was 653)",
+          "mapId": 532,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4309,
+          "creditType": 0,
+          "creditNpcId": 16457,
+          "lastEncounterDungeon": 0,
+          "comment": "Maiden of the Virtue (CoA DBC map 532 diff 3, was 654)",
+          "mapId": 532,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4310,
+          "creditType": 0,
+          "creditNpcId": 15691,
+          "lastEncounterDungeon": 0,
+          "comment": "The Curator (CoA DBC map 532 diff 3, was 656)",
+          "mapId": 532,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4311,
+          "creditType": 0,
+          "creditNpcId": 15688,
+          "lastEncounterDungeon": 0,
+          "comment": "Terestian Illhoof (CoA DBC map 532 diff 3, was 657)",
+          "mapId": 532,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4312,
+          "creditType": 0,
+          "creditNpcId": 16524,
+          "lastEncounterDungeon": 0,
+          "comment": "Shade of Aran (CoA DBC map 532 diff 3, was 658)",
+          "mapId": 532,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4313,
+          "creditType": 0,
+          "creditNpcId": 15689,
+          "lastEncounterDungeon": 0,
+          "comment": "Netherspite (CoA DBC map 532 diff 3, was 659)",
+          "mapId": 532,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4314,
+          "creditType": 0,
+          "creditNpcId": 15690,
+          "lastEncounterDungeon": 455,
+          "comment": "Prince Malchezaar (CoA DBC map 532 diff 3, was 661)",
+          "mapId": 532,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4315,
+          "creditType": 0,
+          "creditNpcId": 17225,
+          "lastEncounterDungeon": 0,
+          "comment": "Nightbane (CoA DBC map 532 diff 3, was 662)",
+          "mapId": 532,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4382,
+          "creditType": 0,
+          "creditNpcId": 22520,
+          "lastEncounterDungeon": 0,
+          "comment": "Chess Event (CoA DBC map 532 diff 0, was 660)",
+          "mapId": 532,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4386,
+          "creditType": 0,
+          "creditNpcId": 22520,
+          "lastEncounterDungeon": 0,
+          "comment": "Chess Event (CoA DBC map 532 diff 1, was 660)",
+          "mapId": 532,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4390,
+          "creditType": 0,
+          "creditNpcId": 22520,
+          "lastEncounterDungeon": 0,
+          "comment": "Chess Event (CoA DBC map 532 diff 2, was 660)",
+          "mapId": 532,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4394,
+          "creditType": 0,
+          "creditNpcId": 22520,
+          "lastEncounterDungeon": 0,
+          "comment": "Chess Event (CoA DBC map 532 diff 3, was 660)",
+          "mapId": 532,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 533,
+      "encounterRows": 60,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4040,
+          "creditType": 0,
+          "creditNpcId": 15956,
+          "lastEncounterDungeon": 0,
+          "comment": "Anub'Rekhan (CoA DBC map 533 diff 0, was 673/674)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4041,
+          "creditType": 0,
+          "creditNpcId": 15953,
+          "lastEncounterDungeon": 0,
+          "comment": "Grand Widow Faerlina (CoA DBC map 533 diff 0, was 677/678)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4042,
+          "creditType": 0,
+          "creditNpcId": 15952,
+          "lastEncounterDungeon": 0,
+          "comment": "Maexxna (CoA DBC map 533 diff 0, was 679/680)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4043,
+          "creditType": 0,
+          "creditNpcId": 15954,
+          "lastEncounterDungeon": 0,
+          "comment": "Noth the Plaguebringer (CoA DBC map 533 diff 0, was 681/682)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4044,
+          "creditType": 0,
+          "creditNpcId": 15936,
+          "lastEncounterDungeon": 0,
+          "comment": "Heigan the Unclean (CoA DBC map 533 diff 0, was 683/684)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4045,
+          "creditType": 0,
+          "creditNpcId": 16011,
+          "lastEncounterDungeon": 0,
+          "comment": "Loatheb (CoA DBC map 533 diff 0, was 685/686)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4046,
+          "creditType": 0,
+          "creditNpcId": 16061,
+          "lastEncounterDungeon": 0,
+          "comment": "Instructor Razuvious (CoA DBC map 533 diff 0, was 687/689)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4047,
+          "creditType": 0,
+          "creditNpcId": 16060,
+          "lastEncounterDungeon": 0,
+          "comment": "Gothik the Harvester (CoA DBC map 533 diff 0, was 690/691)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4048,
+          "creditType": 0,
+          "creditNpcId": 16028,
+          "lastEncounterDungeon": 0,
+          "comment": "Patchwerk (CoA DBC map 533 diff 0, was 694/695)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4049,
+          "creditType": 0,
+          "creditNpcId": 15931,
+          "lastEncounterDungeon": 0,
+          "comment": "Grobbulus (CoA DBC map 533 diff 0, was 696/697)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4050,
+          "creditType": 0,
+          "creditNpcId": 15932,
+          "lastEncounterDungeon": 0,
+          "comment": "Gluth (CoA DBC map 533 diff 0, was 698/699)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4051,
+          "creditType": 0,
+          "creditNpcId": 15928,
+          "lastEncounterDungeon": 0,
+          "comment": "Thaddius (CoA DBC map 533 diff 0, was 700/701)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4052,
+          "creditType": 0,
+          "creditNpcId": 15989,
+          "lastEncounterDungeon": 0,
+          "comment": "Sapphiron (CoA DBC map 533 diff 0, was 702/703)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4053,
+          "creditType": 0,
+          "creditNpcId": 15990,
+          "lastEncounterDungeon": 433,
+          "comment": "Kel'Thuzad (CoA DBC map 533 diff 0, was 704/706)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4135,
+          "creditType": 0,
+          "creditNpcId": 15956,
+          "lastEncounterDungeon": 0,
+          "comment": "Anub'Rekhan (CoA DBC map 533 diff 1, was 673/674)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4136,
+          "creditType": 0,
+          "creditNpcId": 15953,
+          "lastEncounterDungeon": 0,
+          "comment": "Grand Widow Faerlina (CoA DBC map 533 diff 1, was 677/678)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4137,
+          "creditType": 0,
+          "creditNpcId": 15952,
+          "lastEncounterDungeon": 0,
+          "comment": "Maexxna (CoA DBC map 533 diff 1, was 679/680)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4138,
+          "creditType": 0,
+          "creditNpcId": 15954,
+          "lastEncounterDungeon": 0,
+          "comment": "Noth the Plaguebringer (CoA DBC map 533 diff 1, was 681/682)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4139,
+          "creditType": 0,
+          "creditNpcId": 15936,
+          "lastEncounterDungeon": 0,
+          "comment": "Heigan the Unclean (CoA DBC map 533 diff 1, was 683/684)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4140,
+          "creditType": 0,
+          "creditNpcId": 16011,
+          "lastEncounterDungeon": 0,
+          "comment": "Loatheb (CoA DBC map 533 diff 1, was 685/686)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4141,
+          "creditType": 0,
+          "creditNpcId": 16061,
+          "lastEncounterDungeon": 0,
+          "comment": "Instructor Razuvious (CoA DBC map 533 diff 1, was 687/689)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4142,
+          "creditType": 0,
+          "creditNpcId": 16060,
+          "lastEncounterDungeon": 0,
+          "comment": "Gothik the Harvester (CoA DBC map 533 diff 1, was 690/691)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4143,
+          "creditType": 0,
+          "creditNpcId": 16028,
+          "lastEncounterDungeon": 0,
+          "comment": "Patchwerk (CoA DBC map 533 diff 1, was 694/695)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4144,
+          "creditType": 0,
+          "creditNpcId": 15931,
+          "lastEncounterDungeon": 0,
+          "comment": "Grobbulus (CoA DBC map 533 diff 1, was 696/697)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4145,
+          "creditType": 0,
+          "creditNpcId": 15932,
+          "lastEncounterDungeon": 0,
+          "comment": "Gluth (CoA DBC map 533 diff 1, was 698/699)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4146,
+          "creditType": 0,
+          "creditNpcId": 15928,
+          "lastEncounterDungeon": 0,
+          "comment": "Thaddius (CoA DBC map 533 diff 1, was 700/701)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4147,
+          "creditType": 0,
+          "creditNpcId": 15989,
+          "lastEncounterDungeon": 0,
+          "comment": "Sapphiron (CoA DBC map 533 diff 1, was 702/703)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4148,
+          "creditType": 0,
+          "creditNpcId": 15990,
+          "lastEncounterDungeon": 227,
+          "comment": "Kel'Thuzad (CoA DBC map 533 diff 1, was 704/706)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4230,
+          "creditType": 0,
+          "creditNpcId": 15956,
+          "lastEncounterDungeon": 0,
+          "comment": "Anub'Rekhan (CoA DBC map 533 diff 2, was 673/674)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4231,
+          "creditType": 0,
+          "creditNpcId": 15953,
+          "lastEncounterDungeon": 0,
+          "comment": "Grand Widow Faerlina (CoA DBC map 533 diff 2, was 677/678)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4232,
+          "creditType": 0,
+          "creditNpcId": 15952,
+          "lastEncounterDungeon": 0,
+          "comment": "Maexxna (CoA DBC map 533 diff 2, was 679/680)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4233,
+          "creditType": 0,
+          "creditNpcId": 15954,
+          "lastEncounterDungeon": 0,
+          "comment": "Noth the Plaguebringer (CoA DBC map 533 diff 2, was 681/682)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4234,
+          "creditType": 0,
+          "creditNpcId": 15936,
+          "lastEncounterDungeon": 0,
+          "comment": "Heigan the Unclean (CoA DBC map 533 diff 2, was 683/684)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4235,
+          "creditType": 0,
+          "creditNpcId": 16011,
+          "lastEncounterDungeon": 0,
+          "comment": "Loatheb (CoA DBC map 533 diff 2, was 685/686)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4236,
+          "creditType": 0,
+          "creditNpcId": 16061,
+          "lastEncounterDungeon": 0,
+          "comment": "Instructor Razuvious (CoA DBC map 533 diff 2, was 687/689)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4237,
+          "creditType": 0,
+          "creditNpcId": 16060,
+          "lastEncounterDungeon": 0,
+          "comment": "Gothik the Harvester (CoA DBC map 533 diff 2, was 690/691)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4238,
+          "creditType": 0,
+          "creditNpcId": 16028,
+          "lastEncounterDungeon": 0,
+          "comment": "Patchwerk (CoA DBC map 533 diff 2, was 694/695)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4239,
+          "creditType": 0,
+          "creditNpcId": 15931,
+          "lastEncounterDungeon": 0,
+          "comment": "Grobbulus (CoA DBC map 533 diff 2, was 696/697)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4240,
+          "creditType": 0,
+          "creditNpcId": 15932,
+          "lastEncounterDungeon": 0,
+          "comment": "Gluth (CoA DBC map 533 diff 2, was 698/699)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4241,
+          "creditType": 0,
+          "creditNpcId": 15928,
+          "lastEncounterDungeon": 0,
+          "comment": "Thaddius (CoA DBC map 533 diff 2, was 700/701)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4242,
+          "creditType": 0,
+          "creditNpcId": 15989,
+          "lastEncounterDungeon": 0,
+          "comment": "Sapphiron (CoA DBC map 533 diff 2, was 702/703)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4243,
+          "creditType": 0,
+          "creditNpcId": 15990,
+          "lastEncounterDungeon": 448,
+          "comment": "Kel'Thuzad (CoA DBC map 533 diff 2, was 704/706)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4325,
+          "creditType": 0,
+          "creditNpcId": 15956,
+          "lastEncounterDungeon": 0,
+          "comment": "Anub'Rekhan (CoA DBC map 533 diff 3, was 673/674)",
+          "mapId": 533,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4326,
+          "creditType": 0,
+          "creditNpcId": 15953,
+          "lastEncounterDungeon": 0,
+          "comment": "Grand Widow Faerlina (CoA DBC map 533 diff 3, was 677/678)",
+          "mapId": 533,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4327,
+          "creditType": 0,
+          "creditNpcId": 15952,
+          "lastEncounterDungeon": 0,
+          "comment": "Maexxna (CoA DBC map 533 diff 3, was 679/680)",
+          "mapId": 533,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4328,
+          "creditType": 0,
+          "creditNpcId": 15954,
+          "lastEncounterDungeon": 0,
+          "comment": "Noth the Plaguebringer (CoA DBC map 533 diff 3, was 681/682)",
+          "mapId": 533,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4329,
+          "creditType": 0,
+          "creditNpcId": 15936,
+          "lastEncounterDungeon": 0,
+          "comment": "Heigan the Unclean (CoA DBC map 533 diff 3, was 683/684)",
+          "mapId": 533,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4330,
+          "creditType": 0,
+          "creditNpcId": 16011,
+          "lastEncounterDungeon": 0,
+          "comment": "Loatheb (CoA DBC map 533 diff 3, was 685/686)",
+          "mapId": 533,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4331,
+          "creditType": 0,
+          "creditNpcId": 16061,
+          "lastEncounterDungeon": 0,
+          "comment": "Instructor Razuvious (CoA DBC map 533 diff 3, was 687/689)",
+          "mapId": 533,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4332,
+          "creditType": 0,
+          "creditNpcId": 16060,
+          "lastEncounterDungeon": 0,
+          "comment": "Gothik the Harvester (CoA DBC map 533 diff 3, was 690/691)",
+          "mapId": 533,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4333,
+          "creditType": 0,
+          "creditNpcId": 16028,
+          "lastEncounterDungeon": 0,
+          "comment": "Patchwerk (CoA DBC map 533 diff 3, was 694/695)",
+          "mapId": 533,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4334,
+          "creditType": 0,
+          "creditNpcId": 15931,
+          "lastEncounterDungeon": 0,
+          "comment": "Grobbulus (CoA DBC map 533 diff 3, was 696/697)",
+          "mapId": 533,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4335,
+          "creditType": 0,
+          "creditNpcId": 15932,
+          "lastEncounterDungeon": 0,
+          "comment": "Gluth (CoA DBC map 533 diff 3, was 698/699)",
+          "mapId": 533,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4336,
+          "creditType": 0,
+          "creditNpcId": 15928,
+          "lastEncounterDungeon": 0,
+          "comment": "Thaddius (CoA DBC map 533 diff 3, was 700/701)",
+          "mapId": 533,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4337,
+          "creditType": 0,
+          "creditNpcId": 15989,
+          "lastEncounterDungeon": 0,
+          "comment": "Sapphiron (CoA DBC map 533 diff 3, was 702/703)",
+          "mapId": 533,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4338,
+          "creditType": 0,
+          "creditNpcId": 15990,
+          "lastEncounterDungeon": 463,
+          "comment": "Kel'Thuzad (CoA DBC map 533 diff 3, was 704/706)",
+          "mapId": 533,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4384,
+          "creditType": 1,
+          "creditNpcId": 59450,
+          "lastEncounterDungeon": 0,
+          "comment": "The Four Horsemen (CoA DBC map 533 diff 0, was 692/693)",
+          "mapId": 533,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4388,
+          "creditType": 1,
+          "creditNpcId": 59450,
+          "lastEncounterDungeon": 0,
+          "comment": "The Four Horsemen (CoA DBC map 533 diff 1, was 692/693)",
+          "mapId": 533,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4392,
+          "creditType": 1,
+          "creditNpcId": 59450,
+          "lastEncounterDungeon": 0,
+          "comment": "The Four Horsemen (CoA DBC map 533 diff 2, was 692/693)",
+          "mapId": 533,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4396,
+          "creditType": 1,
+          "creditNpcId": 59450,
+          "lastEncounterDungeon": 0,
+          "comment": "The Four Horsemen (CoA DBC map 533 diff 3, was 692/693)",
+          "mapId": 533,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 544,
+      "encounterRows": 4,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4022,
+          "creditType": 0,
+          "creditNpcId": 17257,
+          "lastEncounterDungeon": 426,
+          "comment": "Magtheridon (CoA DBC map 544 diff 0, was 651)",
+          "mapId": 544,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4117,
+          "creditType": 0,
+          "creditNpcId": 17257,
+          "lastEncounterDungeon": 176,
+          "comment": "Magtheridon (CoA DBC map 544 diff 1, was 651)",
+          "mapId": 544,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4212,
+          "creditType": 0,
+          "creditNpcId": 17257,
+          "lastEncounterDungeon": 441,
+          "comment": "Magtheridon (CoA DBC map 544 diff 2, was 651)",
+          "mapId": 544,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4307,
+          "creditType": 0,
+          "creditNpcId": 17257,
+          "lastEncounterDungeon": 456,
+          "comment": "Magtheridon (CoA DBC map 544 diff 3, was 651)",
+          "mapId": 544,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 548,
+      "encounterRows": 24,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4015,
+          "creditType": 0,
+          "creditNpcId": 21216,
+          "lastEncounterDungeon": 0,
+          "comment": "Hydross the Unstable (CoA DBC map 548 diff 0, was 623)",
+          "mapId": 548,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4016,
+          "creditType": 0,
+          "creditNpcId": 21215,
+          "lastEncounterDungeon": 0,
+          "comment": "Leotheras the Blind (CoA DBC map 548 diff 0, was 625)",
+          "mapId": 548,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4017,
+          "creditType": 0,
+          "creditNpcId": 21214,
+          "lastEncounterDungeon": 0,
+          "comment": "Fathom-Lord Karathress (CoA DBC map 548 diff 0, was 626)",
+          "mapId": 548,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4018,
+          "creditType": 0,
+          "creditNpcId": 21213,
+          "lastEncounterDungeon": 0,
+          "comment": "Morogrim Tidewalker (CoA DBC map 548 diff 0, was 627)",
+          "mapId": 548,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4019,
+          "creditType": 0,
+          "creditNpcId": 21212,
+          "lastEncounterDungeon": 429,
+          "comment": "Lady Vashj (CoA DBC map 548 diff 0, was 628)",
+          "mapId": 548,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4110,
+          "creditType": 0,
+          "creditNpcId": 21216,
+          "lastEncounterDungeon": 0,
+          "comment": "Hydross the Unstable (CoA DBC map 548 diff 1, was 623)",
+          "mapId": 548,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4111,
+          "creditType": 0,
+          "creditNpcId": 21215,
+          "lastEncounterDungeon": 0,
+          "comment": "Leotheras the Blind (CoA DBC map 548 diff 1, was 625)",
+          "mapId": 548,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4112,
+          "creditType": 0,
+          "creditNpcId": 21214,
+          "lastEncounterDungeon": 0,
+          "comment": "Fathom-Lord Karathress (CoA DBC map 548 diff 1, was 626)",
+          "mapId": 548,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4113,
+          "creditType": 0,
+          "creditNpcId": 21213,
+          "lastEncounterDungeon": 0,
+          "comment": "Morogrim Tidewalker (CoA DBC map 548 diff 1, was 627)",
+          "mapId": 548,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4114,
+          "creditType": 0,
+          "creditNpcId": 21212,
+          "lastEncounterDungeon": 194,
+          "comment": "Lady Vashj (CoA DBC map 548 diff 1, was 628)",
+          "mapId": 548,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4205,
+          "creditType": 0,
+          "creditNpcId": 21216,
+          "lastEncounterDungeon": 0,
+          "comment": "Hydross the Unstable (CoA DBC map 548 diff 2, was 623)",
+          "mapId": 548,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4206,
+          "creditType": 0,
+          "creditNpcId": 21215,
+          "lastEncounterDungeon": 0,
+          "comment": "Leotheras the Blind (CoA DBC map 548 diff 2, was 625)",
+          "mapId": 548,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4207,
+          "creditType": 0,
+          "creditNpcId": 21214,
+          "lastEncounterDungeon": 0,
+          "comment": "Fathom-Lord Karathress (CoA DBC map 548 diff 2, was 626)",
+          "mapId": 548,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4208,
+          "creditType": 0,
+          "creditNpcId": 21213,
+          "lastEncounterDungeon": 0,
+          "comment": "Morogrim Tidewalker (CoA DBC map 548 diff 2, was 627)",
+          "mapId": 548,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4209,
+          "creditType": 0,
+          "creditNpcId": 21212,
+          "lastEncounterDungeon": 444,
+          "comment": "Lady Vashj (CoA DBC map 548 diff 2, was 628)",
+          "mapId": 548,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4300,
+          "creditType": 0,
+          "creditNpcId": 21216,
+          "lastEncounterDungeon": 0,
+          "comment": "Hydross the Unstable (CoA DBC map 548 diff 3, was 623)",
+          "mapId": 548,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4301,
+          "creditType": 0,
+          "creditNpcId": 21215,
+          "lastEncounterDungeon": 0,
+          "comment": "Leotheras the Blind (CoA DBC map 548 diff 3, was 625)",
+          "mapId": 548,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4302,
+          "creditType": 0,
+          "creditNpcId": 21214,
+          "lastEncounterDungeon": 0,
+          "comment": "Fathom-Lord Karathress (CoA DBC map 548 diff 3, was 626)",
+          "mapId": 548,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4303,
+          "creditType": 0,
+          "creditNpcId": 21213,
+          "lastEncounterDungeon": 0,
+          "comment": "Morogrim Tidewalker (CoA DBC map 548 diff 3, was 627)",
+          "mapId": 548,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4304,
+          "creditType": 0,
+          "creditNpcId": 21212,
+          "lastEncounterDungeon": 459,
+          "comment": "Lady Vashj (CoA DBC map 548 diff 3, was 628)",
+          "mapId": 548,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4381,
+          "creditType": 0,
+          "creditNpcId": 21217,
+          "lastEncounterDungeon": 0,
+          "comment": "The Lurker Below (CoA DBC map 548 diff 0, was 624)",
+          "mapId": 548,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4385,
+          "creditType": 0,
+          "creditNpcId": 21217,
+          "lastEncounterDungeon": 0,
+          "comment": "The Lurker Below (CoA DBC map 548 diff 1, was 624)",
+          "mapId": 548,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4389,
+          "creditType": 0,
+          "creditNpcId": 21217,
+          "lastEncounterDungeon": 0,
+          "comment": "The Lurker Below (CoA DBC map 548 diff 2, was 624)",
+          "mapId": 548,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4393,
+          "creditType": 0,
+          "creditNpcId": 21217,
+          "lastEncounterDungeon": 0,
+          "comment": "The Lurker Below (CoA DBC map 548 diff 3, was 624)",
+          "mapId": 548,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 550,
+      "encounterRows": 16,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4076,
+          "creditType": 0,
+          "creditNpcId": 19514,
+          "lastEncounterDungeon": 0,
+          "comment": "Al'ar (CoA DBC map 550 diff 0, was 730)",
+          "mapId": 550,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4077,
+          "creditType": 0,
+          "creditNpcId": 19516,
+          "lastEncounterDungeon": 0,
+          "comment": "Void Reaver (CoA DBC map 550 diff 0, was 731)",
+          "mapId": 550,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4078,
+          "creditType": 0,
+          "creditNpcId": 18805,
+          "lastEncounterDungeon": 0,
+          "comment": "High Astromancer Solarian (CoA DBC map 550 diff 0, was 732)",
+          "mapId": 550,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4079,
+          "creditType": 0,
+          "creditNpcId": 19622,
+          "lastEncounterDungeon": 428,
+          "comment": "Kael'thas Sunstrider (CoA DBC map 550 diff 0, was 733)",
+          "mapId": 550,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4171,
+          "creditType": 0,
+          "creditNpcId": 19514,
+          "lastEncounterDungeon": 0,
+          "comment": "Al'ar (CoA DBC map 550 diff 1, was 730)",
+          "mapId": 550,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4172,
+          "creditType": 0,
+          "creditNpcId": 19516,
+          "lastEncounterDungeon": 0,
+          "comment": "Void Reaver (CoA DBC map 550 diff 1, was 731)",
+          "mapId": 550,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4173,
+          "creditType": 0,
+          "creditNpcId": 18805,
+          "lastEncounterDungeon": 0,
+          "comment": "High Astromancer Solarian (CoA DBC map 550 diff 1, was 732)",
+          "mapId": 550,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4174,
+          "creditType": 0,
+          "creditNpcId": 19622,
+          "lastEncounterDungeon": 193,
+          "comment": "Kael'thas Sunstrider (CoA DBC map 550 diff 1, was 733)",
+          "mapId": 550,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4266,
+          "creditType": 0,
+          "creditNpcId": 19514,
+          "lastEncounterDungeon": 0,
+          "comment": "Al'ar (CoA DBC map 550 diff 2, was 730)",
+          "mapId": 550,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4267,
+          "creditType": 0,
+          "creditNpcId": 19516,
+          "lastEncounterDungeon": 0,
+          "comment": "Void Reaver (CoA DBC map 550 diff 2, was 731)",
+          "mapId": 550,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4268,
+          "creditType": 0,
+          "creditNpcId": 18805,
+          "lastEncounterDungeon": 0,
+          "comment": "High Astromancer Solarian (CoA DBC map 550 diff 2, was 732)",
+          "mapId": 550,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4269,
+          "creditType": 0,
+          "creditNpcId": 19622,
+          "lastEncounterDungeon": 443,
+          "comment": "Kael'thas Sunstrider (CoA DBC map 550 diff 2, was 733)",
+          "mapId": 550,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4361,
+          "creditType": 0,
+          "creditNpcId": 19514,
+          "lastEncounterDungeon": 0,
+          "comment": "Al'ar (CoA DBC map 550 diff 3, was 730)",
+          "mapId": 550,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4362,
+          "creditType": 0,
+          "creditNpcId": 19516,
+          "lastEncounterDungeon": 0,
+          "comment": "Void Reaver (CoA DBC map 550 diff 3, was 731)",
+          "mapId": 550,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4363,
+          "creditType": 0,
+          "creditNpcId": 18805,
+          "lastEncounterDungeon": 0,
+          "comment": "High Astromancer Solarian (CoA DBC map 550 diff 3, was 732)",
+          "mapId": 550,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4364,
+          "creditType": 0,
+          "creditNpcId": 19622,
+          "lastEncounterDungeon": 458,
+          "comment": "Kael'thas Sunstrider (CoA DBC map 550 diff 3, was 733)",
+          "mapId": 550,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 564,
+      "encounterRows": 32,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4001,
+          "creditType": 0,
+          "creditNpcId": 22887,
+          "lastEncounterDungeon": 0,
+          "comment": "High Warlord Naj'entus (CoA DBC map 564 diff 0, was 601)",
+          "mapId": 564,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4002,
+          "creditType": 0,
+          "creditNpcId": 22898,
+          "lastEncounterDungeon": 0,
+          "comment": "Supremus (CoA DBC map 564 diff 0, was 602)",
+          "mapId": 564,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4003,
+          "creditType": 0,
+          "creditNpcId": 22841,
+          "lastEncounterDungeon": 0,
+          "comment": "Shade of Akama (CoA DBC map 564 diff 0, was 603)",
+          "mapId": 564,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4004,
+          "creditType": 0,
+          "creditNpcId": 22871,
+          "lastEncounterDungeon": 0,
+          "comment": "Teron Gorefiend (CoA DBC map 564 diff 0, was 604)",
+          "mapId": 564,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4005,
+          "creditType": 0,
+          "creditNpcId": 22948,
+          "lastEncounterDungeon": 0,
+          "comment": "Gurtogg Bloodboil (CoA DBC map 564 diff 0, was 605)",
+          "mapId": 564,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4006,
+          "creditType": 0,
+          "creditNpcId": 23420,
+          "lastEncounterDungeon": 0,
+          "comment": "Reliquary of Souls (CoA DBC map 564 diff 0, was 606)",
+          "mapId": 564,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4007,
+          "creditType": 0,
+          "creditNpcId": 22947,
+          "lastEncounterDungeon": 0,
+          "comment": "Mother Shahraz (CoA DBC map 564 diff 0, was 607)",
+          "mapId": 564,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4008,
+          "creditType": 0,
+          "creditNpcId": 22917,
+          "lastEncounterDungeon": 430,
+          "comment": "Illidan Stormrage (CoA DBC map 564 diff 0, was 609)",
+          "mapId": 564,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4096,
+          "creditType": 0,
+          "creditNpcId": 22887,
+          "lastEncounterDungeon": 0,
+          "comment": "High Warlord Naj'entus (CoA DBC map 564 diff 1, was 601)",
+          "mapId": 564,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4097,
+          "creditType": 0,
+          "creditNpcId": 22898,
+          "lastEncounterDungeon": 0,
+          "comment": "Supremus (CoA DBC map 564 diff 1, was 602)",
+          "mapId": 564,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4098,
+          "creditType": 0,
+          "creditNpcId": 22841,
+          "lastEncounterDungeon": 0,
+          "comment": "Shade of Akama (CoA DBC map 564 diff 1, was 603)",
+          "mapId": 564,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4099,
+          "creditType": 0,
+          "creditNpcId": 22871,
+          "lastEncounterDungeon": 0,
+          "comment": "Teron Gorefiend (CoA DBC map 564 diff 1, was 604)",
+          "mapId": 564,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4100,
+          "creditType": 0,
+          "creditNpcId": 22948,
+          "lastEncounterDungeon": 0,
+          "comment": "Gurtogg Bloodboil (CoA DBC map 564 diff 1, was 605)",
+          "mapId": 564,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4101,
+          "creditType": 0,
+          "creditNpcId": 23420,
+          "lastEncounterDungeon": 0,
+          "comment": "Reliquary of Souls (CoA DBC map 564 diff 1, was 606)",
+          "mapId": 564,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4102,
+          "creditType": 0,
+          "creditNpcId": 22947,
+          "lastEncounterDungeon": 0,
+          "comment": "Mother Shahraz (CoA DBC map 564 diff 1, was 607)",
+          "mapId": 564,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4103,
+          "creditType": 0,
+          "creditNpcId": 22917,
+          "lastEncounterDungeon": 196,
+          "comment": "Illidan Stormrage (CoA DBC map 564 diff 1, was 609)",
+          "mapId": 564,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4191,
+          "creditType": 0,
+          "creditNpcId": 22887,
+          "lastEncounterDungeon": 0,
+          "comment": "High Warlord Naj'entus (CoA DBC map 564 diff 2, was 601)",
+          "mapId": 564,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4192,
+          "creditType": 0,
+          "creditNpcId": 22898,
+          "lastEncounterDungeon": 0,
+          "comment": "Supremus (CoA DBC map 564 diff 2, was 602)",
+          "mapId": 564,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4193,
+          "creditType": 0,
+          "creditNpcId": 22841,
+          "lastEncounterDungeon": 0,
+          "comment": "Shade of Akama (CoA DBC map 564 diff 2, was 603)",
+          "mapId": 564,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4194,
+          "creditType": 0,
+          "creditNpcId": 22871,
+          "lastEncounterDungeon": 0,
+          "comment": "Teron Gorefiend (CoA DBC map 564 diff 2, was 604)",
+          "mapId": 564,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4195,
+          "creditType": 0,
+          "creditNpcId": 22948,
+          "lastEncounterDungeon": 0,
+          "comment": "Gurtogg Bloodboil (CoA DBC map 564 diff 2, was 605)",
+          "mapId": 564,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4196,
+          "creditType": 0,
+          "creditNpcId": 23420,
+          "lastEncounterDungeon": 0,
+          "comment": "Reliquary of Souls (CoA DBC map 564 diff 2, was 606)",
+          "mapId": 564,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4197,
+          "creditType": 0,
+          "creditNpcId": 22947,
+          "lastEncounterDungeon": 0,
+          "comment": "Mother Shahraz (CoA DBC map 564 diff 2, was 607)",
+          "mapId": 564,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4198,
+          "creditType": 0,
+          "creditNpcId": 22917,
+          "lastEncounterDungeon": 445,
+          "comment": "Illidan Stormrage (CoA DBC map 564 diff 2, was 609)",
+          "mapId": 564,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4286,
+          "creditType": 0,
+          "creditNpcId": 22887,
+          "lastEncounterDungeon": 0,
+          "comment": "High Warlord Naj'entus (CoA DBC map 564 diff 3, was 601)",
+          "mapId": 564,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4287,
+          "creditType": 0,
+          "creditNpcId": 22898,
+          "lastEncounterDungeon": 0,
+          "comment": "Supremus (CoA DBC map 564 diff 3, was 602)",
+          "mapId": 564,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4288,
+          "creditType": 0,
+          "creditNpcId": 22841,
+          "lastEncounterDungeon": 0,
+          "comment": "Shade of Akama (CoA DBC map 564 diff 3, was 603)",
+          "mapId": 564,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4289,
+          "creditType": 0,
+          "creditNpcId": 22871,
+          "lastEncounterDungeon": 0,
+          "comment": "Teron Gorefiend (CoA DBC map 564 diff 3, was 604)",
+          "mapId": 564,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4290,
+          "creditType": 0,
+          "creditNpcId": 22948,
+          "lastEncounterDungeon": 0,
+          "comment": "Gurtogg Bloodboil (CoA DBC map 564 diff 3, was 605)",
+          "mapId": 564,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4291,
+          "creditType": 0,
+          "creditNpcId": 23420,
+          "lastEncounterDungeon": 0,
+          "comment": "Reliquary of Souls (CoA DBC map 564 diff 3, was 606)",
+          "mapId": 564,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4292,
+          "creditType": 0,
+          "creditNpcId": 22947,
+          "lastEncounterDungeon": 0,
+          "comment": "Mother Shahraz (CoA DBC map 564 diff 3, was 607)",
+          "mapId": 564,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4293,
+          "creditType": 0,
+          "creditNpcId": 22917,
+          "lastEncounterDungeon": 460,
+          "comment": "Illidan Stormrage (CoA DBC map 564 diff 3, was 609)",
+          "mapId": 564,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 565,
+      "encounterRows": 8,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4020,
+          "creditType": 0,
+          "creditNpcId": 18831,
+          "lastEncounterDungeon": 0,
+          "comment": "High King Maulgar (CoA DBC map 565 diff 0, was 649)",
+          "mapId": 565,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4021,
+          "creditType": 0,
+          "creditNpcId": 19044,
+          "lastEncounterDungeon": 427,
+          "comment": "Gruul the Dragonkiller (CoA DBC map 565 diff 0, was 650)",
+          "mapId": 565,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4115,
+          "creditType": 0,
+          "creditNpcId": 18831,
+          "lastEncounterDungeon": 0,
+          "comment": "High King Maulgar (CoA DBC map 565 diff 1, was 649)",
+          "mapId": 565,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4116,
+          "creditType": 0,
+          "creditNpcId": 19044,
+          "lastEncounterDungeon": 177,
+          "comment": "Gruul the Dragonkiller (CoA DBC map 565 diff 1, was 650)",
+          "mapId": 565,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4210,
+          "creditType": 0,
+          "creditNpcId": 18831,
+          "lastEncounterDungeon": 0,
+          "comment": "High King Maulgar (CoA DBC map 565 diff 2, was 649)",
+          "mapId": 565,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4211,
+          "creditType": 0,
+          "creditNpcId": 19044,
+          "lastEncounterDungeon": 442,
+          "comment": "Gruul the Dragonkiller (CoA DBC map 565 diff 2, was 650)",
+          "mapId": 565,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4305,
+          "creditType": 0,
+          "creditNpcId": 18831,
+          "lastEncounterDungeon": 0,
+          "comment": "High King Maulgar (CoA DBC map 565 diff 3, was 649)",
+          "mapId": 565,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4306,
+          "creditType": 0,
+          "creditNpcId": 19044,
+          "lastEncounterDungeon": 457,
+          "comment": "Gruul the Dragonkiller (CoA DBC map 565 diff 3, was 650)",
+          "mapId": 565,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 568,
+      "encounterRows": 24,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4080,
+          "creditType": 0,
+          "creditNpcId": 23574,
+          "lastEncounterDungeon": 0,
+          "comment": "Akil'zon (CoA DBC map 568 diff 0, was 778)",
+          "mapId": 568,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4081,
+          "creditType": 0,
+          "creditNpcId": 23576,
+          "lastEncounterDungeon": 0,
+          "comment": "Nalorakk (CoA DBC map 568 diff 0, was 779)",
+          "mapId": 568,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4082,
+          "creditType": 0,
+          "creditNpcId": 23578,
+          "lastEncounterDungeon": 0,
+          "comment": "Jan'alai (CoA DBC map 568 diff 0, was 780)",
+          "mapId": 568,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4083,
+          "creditType": 0,
+          "creditNpcId": 23577,
+          "lastEncounterDungeon": 0,
+          "comment": "Halazzi (CoA DBC map 568 diff 0, was 781)",
+          "mapId": 568,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4084,
+          "creditType": 0,
+          "creditNpcId": 24239,
+          "lastEncounterDungeon": 0,
+          "comment": "Hex Lord Malacrass (CoA DBC map 568 diff 0, was 782)",
+          "mapId": 568,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4085,
+          "creditType": 0,
+          "creditNpcId": 23863,
+          "lastEncounterDungeon": 431,
+          "comment": "Zul'jin (CoA DBC map 568 diff 0, was 783)",
+          "mapId": 568,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4175,
+          "creditType": 0,
+          "creditNpcId": 23574,
+          "lastEncounterDungeon": 0,
+          "comment": "Akil'zon (CoA DBC map 568 diff 1, was 778)",
+          "mapId": 568,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4176,
+          "creditType": 0,
+          "creditNpcId": 23576,
+          "lastEncounterDungeon": 0,
+          "comment": "Nalorakk (CoA DBC map 568 diff 1, was 779)",
+          "mapId": 568,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4177,
+          "creditType": 0,
+          "creditNpcId": 23578,
+          "lastEncounterDungeon": 0,
+          "comment": "Jan'alai (CoA DBC map 568 diff 1, was 780)",
+          "mapId": 568,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4178,
+          "creditType": 0,
+          "creditNpcId": 23577,
+          "lastEncounterDungeon": 0,
+          "comment": "Halazzi (CoA DBC map 568 diff 1, was 781)",
+          "mapId": 568,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4179,
+          "creditType": 0,
+          "creditNpcId": 24239,
+          "lastEncounterDungeon": 0,
+          "comment": "Hex Lord Malacrass (CoA DBC map 568 diff 1, was 782)",
+          "mapId": 568,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4180,
+          "creditType": 0,
+          "creditNpcId": 23863,
+          "lastEncounterDungeon": 197,
+          "comment": "Zul'jin (CoA DBC map 568 diff 1, was 783)",
+          "mapId": 568,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4270,
+          "creditType": 0,
+          "creditNpcId": 23574,
+          "lastEncounterDungeon": 0,
+          "comment": "Akil'zon (CoA DBC map 568 diff 2, was 778)",
+          "mapId": 568,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4271,
+          "creditType": 0,
+          "creditNpcId": 23576,
+          "lastEncounterDungeon": 0,
+          "comment": "Nalorakk (CoA DBC map 568 diff 2, was 779)",
+          "mapId": 568,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4272,
+          "creditType": 0,
+          "creditNpcId": 23578,
+          "lastEncounterDungeon": 0,
+          "comment": "Jan'alai (CoA DBC map 568 diff 2, was 780)",
+          "mapId": 568,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4273,
+          "creditType": 0,
+          "creditNpcId": 23577,
+          "lastEncounterDungeon": 0,
+          "comment": "Halazzi (CoA DBC map 568 diff 2, was 781)",
+          "mapId": 568,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4274,
+          "creditType": 0,
+          "creditNpcId": 24239,
+          "lastEncounterDungeon": 0,
+          "comment": "Hex Lord Malacrass (CoA DBC map 568 diff 2, was 782)",
+          "mapId": 568,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4275,
+          "creditType": 0,
+          "creditNpcId": 23863,
+          "lastEncounterDungeon": 446,
+          "comment": "Zul'jin (CoA DBC map 568 diff 2, was 783)",
+          "mapId": 568,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4365,
+          "creditType": 0,
+          "creditNpcId": 23574,
+          "lastEncounterDungeon": 0,
+          "comment": "Akil'zon (CoA DBC map 568 diff 3, was 778)",
+          "mapId": 568,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4366,
+          "creditType": 0,
+          "creditNpcId": 23576,
+          "lastEncounterDungeon": 0,
+          "comment": "Nalorakk (CoA DBC map 568 diff 3, was 779)",
+          "mapId": 568,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4367,
+          "creditType": 0,
+          "creditNpcId": 23578,
+          "lastEncounterDungeon": 0,
+          "comment": "Jan'alai (CoA DBC map 568 diff 3, was 780)",
+          "mapId": 568,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4368,
+          "creditType": 0,
+          "creditNpcId": 23577,
+          "lastEncounterDungeon": 0,
+          "comment": "Halazzi (CoA DBC map 568 diff 3, was 781)",
+          "mapId": 568,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4369,
+          "creditType": 0,
+          "creditNpcId": 24239,
+          "lastEncounterDungeon": 0,
+          "comment": "Hex Lord Malacrass (CoA DBC map 568 diff 3, was 782)",
+          "mapId": 568,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4370,
+          "creditType": 0,
+          "creditNpcId": 23863,
+          "lastEncounterDungeon": 461,
+          "comment": "Zul'jin (CoA DBC map 568 diff 3, was 783)",
+          "mapId": 568,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 580,
+      "encounterRows": 24,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4070,
+          "creditType": 0,
+          "creditNpcId": 24892,
+          "lastEncounterDungeon": 0,
+          "comment": "Kalecgos (CoA DBC map 580 diff 0, was 724)",
+          "mapId": 580,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4071,
+          "creditType": 0,
+          "creditNpcId": 24882,
+          "lastEncounterDungeon": 0,
+          "comment": "Brutallus (CoA DBC map 580 diff 0, was 725)",
+          "mapId": 580,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4072,
+          "creditType": 0,
+          "creditNpcId": 25038,
+          "lastEncounterDungeon": 0,
+          "comment": "Felmyst (CoA DBC map 580 diff 0, was 726)",
+          "mapId": 580,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4073,
+          "creditType": 0,
+          "creditNpcId": 25165,
+          "lastEncounterDungeon": 0,
+          "comment": "Eredar Twins (CoA DBC map 580 diff 0, was 727)",
+          "mapId": 580,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4074,
+          "creditType": 0,
+          "creditNpcId": 25840,
+          "lastEncounterDungeon": 0,
+          "comment": "M'uru (CoA DBC map 580 diff 0, was 728)",
+          "mapId": 580,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4075,
+          "creditType": 0,
+          "creditNpcId": 25315,
+          "lastEncounterDungeon": 432,
+          "comment": "Kil'jaeden (CoA DBC map 580 diff 0, was 729)",
+          "mapId": 580,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4165,
+          "creditType": 0,
+          "creditNpcId": 24892,
+          "lastEncounterDungeon": 0,
+          "comment": "Kalecgos (CoA DBC map 580 diff 1, was 724)",
+          "mapId": 580,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4166,
+          "creditType": 0,
+          "creditNpcId": 24882,
+          "lastEncounterDungeon": 0,
+          "comment": "Brutallus (CoA DBC map 580 diff 1, was 725)",
+          "mapId": 580,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4167,
+          "creditType": 0,
+          "creditNpcId": 25038,
+          "lastEncounterDungeon": 0,
+          "comment": "Felmyst (CoA DBC map 580 diff 1, was 726)",
+          "mapId": 580,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4168,
+          "creditType": 0,
+          "creditNpcId": 25165,
+          "lastEncounterDungeon": 0,
+          "comment": "Eredar Twins (CoA DBC map 580 diff 1, was 727)",
+          "mapId": 580,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4169,
+          "creditType": 0,
+          "creditNpcId": 25840,
+          "lastEncounterDungeon": 0,
+          "comment": "M'uru (CoA DBC map 580 diff 1, was 728)",
+          "mapId": 580,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4170,
+          "creditType": 0,
+          "creditNpcId": 25315,
+          "lastEncounterDungeon": 199,
+          "comment": "Kil'jaeden (CoA DBC map 580 diff 1, was 729)",
+          "mapId": 580,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4260,
+          "creditType": 0,
+          "creditNpcId": 24892,
+          "lastEncounterDungeon": 0,
+          "comment": "Kalecgos (CoA DBC map 580 diff 2, was 724)",
+          "mapId": 580,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4261,
+          "creditType": 0,
+          "creditNpcId": 24882,
+          "lastEncounterDungeon": 0,
+          "comment": "Brutallus (CoA DBC map 580 diff 2, was 725)",
+          "mapId": 580,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4262,
+          "creditType": 0,
+          "creditNpcId": 25038,
+          "lastEncounterDungeon": 0,
+          "comment": "Felmyst (CoA DBC map 580 diff 2, was 726)",
+          "mapId": 580,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4263,
+          "creditType": 0,
+          "creditNpcId": 25165,
+          "lastEncounterDungeon": 0,
+          "comment": "Eredar Twins (CoA DBC map 580 diff 2, was 727)",
+          "mapId": 580,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4264,
+          "creditType": 0,
+          "creditNpcId": 25840,
+          "lastEncounterDungeon": 0,
+          "comment": "M'uru (CoA DBC map 580 diff 2, was 728)",
+          "mapId": 580,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4265,
+          "creditType": 0,
+          "creditNpcId": 25315,
+          "lastEncounterDungeon": 447,
+          "comment": "Kil'jaeden (CoA DBC map 580 diff 2, was 729)",
+          "mapId": 580,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4355,
+          "creditType": 0,
+          "creditNpcId": 24892,
+          "lastEncounterDungeon": 0,
+          "comment": "Kalecgos (CoA DBC map 580 diff 3, was 724)",
+          "mapId": 580,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4356,
+          "creditType": 0,
+          "creditNpcId": 24882,
+          "lastEncounterDungeon": 0,
+          "comment": "Brutallus (CoA DBC map 580 diff 3, was 725)",
+          "mapId": 580,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4357,
+          "creditType": 0,
+          "creditNpcId": 25038,
+          "lastEncounterDungeon": 0,
+          "comment": "Felmyst (CoA DBC map 580 diff 3, was 726)",
+          "mapId": 580,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4358,
+          "creditType": 0,
+          "creditNpcId": 25165,
+          "lastEncounterDungeon": 0,
+          "comment": "Eredar Twins (CoA DBC map 580 diff 3, was 727)",
+          "mapId": 580,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4359,
+          "creditType": 0,
+          "creditNpcId": 25840,
+          "lastEncounterDungeon": 0,
+          "comment": "M'uru (CoA DBC map 580 diff 3, was 728)",
+          "mapId": 580,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4360,
+          "creditType": 0,
+          "creditNpcId": 25315,
+          "lastEncounterDungeon": 462,
+          "comment": "Kil'jaeden (CoA DBC map 580 diff 3, was 729)",
+          "mapId": 580,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 603,
+      "encounterRows": 32,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4437,
+          "creditType": 0,
+          "creditNpcId": 32930,
+          "lastEncounterDungeon": 0,
+          "comment": "Kologarn (CoA DBC map 603 diff 0, was 749/763)",
+          "mapId": 603,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4438,
+          "creditType": 0,
+          "creditNpcId": 32930,
+          "lastEncounterDungeon": 0,
+          "comment": "Kologarn (CoA DBC map 603 diff 1, was 749/763)",
+          "mapId": 603,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4439,
+          "creditType": 0,
+          "creditNpcId": 32930,
+          "lastEncounterDungeon": 0,
+          "comment": "Kologarn (CoA DBC map 603 diff 2, was 749/763)",
+          "mapId": 603,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4440,
+          "creditType": 0,
+          "creditNpcId": 32930,
+          "lastEncounterDungeon": 0,
+          "comment": "Kologarn (CoA DBC map 603 diff 3, was 749/763)",
+          "mapId": 603,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4441,
+          "creditType": 0,
+          "creditNpcId": 33113,
+          "lastEncounterDungeon": 0,
+          "comment": "Flame Leviathan (CoA DBC map 603 diff 0, was 744/758)",
+          "mapId": 603,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4442,
+          "creditType": 0,
+          "creditNpcId": 33113,
+          "lastEncounterDungeon": 0,
+          "comment": "Flame Leviathan (CoA DBC map 603 diff 1, was 744/758)",
+          "mapId": 603,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4443,
+          "creditType": 0,
+          "creditNpcId": 33113,
+          "lastEncounterDungeon": 0,
+          "comment": "Flame Leviathan (CoA DBC map 603 diff 2, was 744/758)",
+          "mapId": 603,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4444,
+          "creditType": 0,
+          "creditNpcId": 33113,
+          "lastEncounterDungeon": 0,
+          "comment": "Flame Leviathan (CoA DBC map 603 diff 3, was 744/758)",
+          "mapId": 603,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4445,
+          "creditType": 0,
+          "creditNpcId": 33118,
+          "lastEncounterDungeon": 0,
+          "comment": "Ignis the Furnace Master (CoA DBC map 603 diff 0, was 745/759)",
+          "mapId": 603,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4446,
+          "creditType": 0,
+          "creditNpcId": 33118,
+          "lastEncounterDungeon": 0,
+          "comment": "Ignis the Furnace Master (CoA DBC map 603 diff 1, was 745/759)",
+          "mapId": 603,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4447,
+          "creditType": 0,
+          "creditNpcId": 33118,
+          "lastEncounterDungeon": 0,
+          "comment": "Ignis the Furnace Master (CoA DBC map 603 diff 2, was 745/759)",
+          "mapId": 603,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4448,
+          "creditType": 0,
+          "creditNpcId": 33118,
+          "lastEncounterDungeon": 0,
+          "comment": "Ignis the Furnace Master (CoA DBC map 603 diff 3, was 745/759)",
+          "mapId": 603,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4449,
+          "creditType": 0,
+          "creditNpcId": 33186,
+          "lastEncounterDungeon": 0,
+          "comment": "Razorscale (CoA DBC map 603 diff 0, was 746/760)",
+          "mapId": 603,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4450,
+          "creditType": 0,
+          "creditNpcId": 33186,
+          "lastEncounterDungeon": 0,
+          "comment": "Razorscale (CoA DBC map 603 diff 1, was 746/760)",
+          "mapId": 603,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4451,
+          "creditType": 0,
+          "creditNpcId": 33186,
+          "lastEncounterDungeon": 0,
+          "comment": "Razorscale (CoA DBC map 603 diff 2, was 746/760)",
+          "mapId": 603,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4452,
+          "creditType": 0,
+          "creditNpcId": 33186,
+          "lastEncounterDungeon": 0,
+          "comment": "Razorscale (CoA DBC map 603 diff 3, was 746/760)",
+          "mapId": 603,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4453,
+          "creditType": 0,
+          "creditNpcId": 33271,
+          "lastEncounterDungeon": 0,
+          "comment": "General Vezax (CoA DBC map 603 diff 0, was 755/769)",
+          "mapId": 603,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4454,
+          "creditType": 0,
+          "creditNpcId": 33271,
+          "lastEncounterDungeon": 0,
+          "comment": "General Vezax (CoA DBC map 603 diff 1, was 755/769)",
+          "mapId": 603,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4455,
+          "creditType": 0,
+          "creditNpcId": 33271,
+          "lastEncounterDungeon": 0,
+          "comment": "General Vezax (CoA DBC map 603 diff 2, was 755/769)",
+          "mapId": 603,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4456,
+          "creditType": 0,
+          "creditNpcId": 33271,
+          "lastEncounterDungeon": 0,
+          "comment": "General Vezax (CoA DBC map 603 diff 3, was 755/769)",
+          "mapId": 603,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4457,
+          "creditType": 0,
+          "creditNpcId": 33288,
+          "lastEncounterDungeon": 0,
+          "comment": "Yogg-Saron (CoA DBC map 603 diff 0, was 756/770)",
+          "mapId": 603,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4458,
+          "creditType": 0,
+          "creditNpcId": 33288,
+          "lastEncounterDungeon": 0,
+          "comment": "Yogg-Saron (CoA DBC map 603 diff 1, was 756/770)",
+          "mapId": 603,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4459,
+          "creditType": 0,
+          "creditNpcId": 33288,
+          "lastEncounterDungeon": 0,
+          "comment": "Yogg-Saron (CoA DBC map 603 diff 2, was 756/770)",
+          "mapId": 603,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4460,
+          "creditType": 0,
+          "creditNpcId": 33288,
+          "lastEncounterDungeon": 0,
+          "comment": "Yogg-Saron (CoA DBC map 603 diff 3, was 756/770)",
+          "mapId": 603,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4461,
+          "creditType": 0,
+          "creditNpcId": 33293,
+          "lastEncounterDungeon": 0,
+          "comment": "XT-002 Deconstructor (CoA DBC map 603 diff 0, was 747/761)",
+          "mapId": 603,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4462,
+          "creditType": 0,
+          "creditNpcId": 33293,
+          "lastEncounterDungeon": 0,
+          "comment": "XT-002 Deconstructor (CoA DBC map 603 diff 1, was 747/761)",
+          "mapId": 603,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4463,
+          "creditType": 0,
+          "creditNpcId": 33293,
+          "lastEncounterDungeon": 0,
+          "comment": "XT-002 Deconstructor (CoA DBC map 603 diff 2, was 747/761)",
+          "mapId": 603,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4464,
+          "creditType": 0,
+          "creditNpcId": 33293,
+          "lastEncounterDungeon": 0,
+          "comment": "XT-002 Deconstructor (CoA DBC map 603 diff 3, was 747/761)",
+          "mapId": 603,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4469,
+          "creditType": 0,
+          "creditNpcId": 33515,
+          "lastEncounterDungeon": 0,
+          "comment": "Auriaya (CoA DBC map 603 diff 0, was 750/764)",
+          "mapId": 603,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4470,
+          "creditType": 0,
+          "creditNpcId": 33515,
+          "lastEncounterDungeon": 0,
+          "comment": "Auriaya (CoA DBC map 603 diff 1, was 750/764)",
+          "mapId": 603,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4471,
+          "creditType": 0,
+          "creditNpcId": 33515,
+          "lastEncounterDungeon": 0,
+          "comment": "Auriaya (CoA DBC map 603 diff 2, was 750/764)",
+          "mapId": 603,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4472,
+          "creditType": 0,
+          "creditNpcId": 33515,
+          "lastEncounterDungeon": 0,
+          "comment": "Auriaya (CoA DBC map 603 diff 3, was 750/764)",
+          "mapId": 603,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 615,
+      "encounterRows": 4,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4413,
+          "creditType": 0,
+          "creditNpcId": 28860,
+          "lastEncounterDungeon": 0,
+          "comment": "Sartharion (CoA DBC map 615 diff 0, was 742/743)",
+          "mapId": 615,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4414,
+          "creditType": 0,
+          "creditNpcId": 28860,
+          "lastEncounterDungeon": 238,
+          "comment": "Sartharion (CoA DBC map 615 diff 1, was 742/743)",
+          "mapId": 615,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4415,
+          "creditType": 0,
+          "creditNpcId": 28860,
+          "lastEncounterDungeon": 0,
+          "comment": "Sartharion (CoA DBC map 615 diff 2, was 742/743)",
+          "mapId": 615,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4416,
+          "creditType": 0,
+          "creditNpcId": 28860,
+          "lastEncounterDungeon": 0,
+          "comment": "Sartharion (CoA DBC map 615 diff 3, was 742/743)",
+          "mapId": 615,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 616,
+      "encounterRows": 4,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4090,
+          "creditType": 0,
+          "creditNpcId": 28859,
+          "lastEncounterDungeon": 0,
+          "comment": "Malygos (CoA DBC map 616 diff 0, was 734/735)",
+          "mapId": 616,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4185,
+          "creditType": 0,
+          "creditNpcId": 28859,
+          "lastEncounterDungeon": 237,
+          "comment": "Malygos (CoA DBC map 616 diff 1, was 734/735)",
+          "mapId": 616,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4280,
+          "creditType": 0,
+          "creditNpcId": 28859,
+          "lastEncounterDungeon": 0,
+          "comment": "Malygos (CoA DBC map 616 diff 2, was 734/735)",
+          "mapId": 616,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4375,
+          "creditType": 0,
+          "creditNpcId": 28859,
+          "lastEncounterDungeon": 0,
+          "comment": "Malygos (CoA DBC map 616 diff 3, was 734/735)",
+          "mapId": 616,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 624,
+      "encounterRows": 16,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4417,
+          "creditType": 0,
+          "creditNpcId": 31125,
+          "lastEncounterDungeon": 0,
+          "comment": "Archavon the Stone Watcher (CoA DBC map 624 diff 0, was 772/773)",
+          "mapId": 624,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4418,
+          "creditType": 0,
+          "creditNpcId": 31125,
+          "lastEncounterDungeon": 0,
+          "comment": "Archavon the Stone Watcher (CoA DBC map 624 diff 1, was 772/773)",
+          "mapId": 624,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4419,
+          "creditType": 0,
+          "creditNpcId": 31125,
+          "lastEncounterDungeon": 0,
+          "comment": "Archavon the Stone Watcher (CoA DBC map 624 diff 2, was 772/773)",
+          "mapId": 624,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4420,
+          "creditType": 0,
+          "creditNpcId": 31125,
+          "lastEncounterDungeon": 0,
+          "comment": "Archavon the Stone Watcher (CoA DBC map 624 diff 3, was 772/773)",
+          "mapId": 624,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4473,
+          "creditType": 0,
+          "creditNpcId": 33993,
+          "lastEncounterDungeon": 0,
+          "comment": "Emalon the Storm Watcher (CoA DBC map 624 diff 0, was 774/775)",
+          "mapId": 624,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4474,
+          "creditType": 0,
+          "creditNpcId": 33993,
+          "lastEncounterDungeon": 0,
+          "comment": "Emalon the Storm Watcher (CoA DBC map 624 diff 1, was 774/775)",
+          "mapId": 624,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4475,
+          "creditType": 0,
+          "creditNpcId": 33993,
+          "lastEncounterDungeon": 0,
+          "comment": "Emalon the Storm Watcher (CoA DBC map 624 diff 2, was 774/775)",
+          "mapId": 624,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4476,
+          "creditType": 0,
+          "creditNpcId": 33993,
+          "lastEncounterDungeon": 0,
+          "comment": "Emalon the Storm Watcher (CoA DBC map 624 diff 3, was 774/775)",
+          "mapId": 624,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4485,
+          "creditType": 0,
+          "creditNpcId": 35013,
+          "lastEncounterDungeon": 0,
+          "comment": "Koralon the Flame Watcher (CoA DBC map 624 diff 0, was 776/777)",
+          "mapId": 624,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4486,
+          "creditType": 0,
+          "creditNpcId": 35013,
+          "lastEncounterDungeon": 0,
+          "comment": "Koralon the Flame Watcher (CoA DBC map 624 diff 1, was 776/777)",
+          "mapId": 624,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4487,
+          "creditType": 0,
+          "creditNpcId": 35013,
+          "lastEncounterDungeon": 0,
+          "comment": "Koralon the Flame Watcher (CoA DBC map 624 diff 2, was 776/777)",
+          "mapId": 624,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4488,
+          "creditType": 0,
+          "creditNpcId": 35013,
+          "lastEncounterDungeon": 0,
+          "comment": "Koralon the Flame Watcher (CoA DBC map 624 diff 3, was 776/777)",
+          "mapId": 624,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4529,
+          "creditType": 0,
+          "creditNpcId": 38433,
+          "lastEncounterDungeon": 0,
+          "comment": "Toravon the Ice Watcher (CoA DBC map 624 diff 0, was 885)",
+          "mapId": 624,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4530,
+          "creditType": 0,
+          "creditNpcId": 38433,
+          "lastEncounterDungeon": 240,
+          "comment": "Toravon the Ice Watcher (CoA DBC map 624 diff 1, was 886)",
+          "mapId": 624,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4531,
+          "creditType": 0,
+          "creditNpcId": 38433,
+          "lastEncounterDungeon": 0,
+          "comment": "Toravon the Ice Watcher (CoA DBC map 624 diff 2, was 887)",
+          "mapId": 624,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4532,
+          "creditType": 0,
+          "creditNpcId": 38433,
+          "lastEncounterDungeon": 0,
+          "comment": "Toravon the Ice Watcher (CoA DBC map 624 diff 3, was 888)",
+          "mapId": 624,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 631,
+      "encounterRows": 36,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4489,
+          "creditType": 0,
+          "creditNpcId": 36597,
+          "lastEncounterDungeon": 0,
+          "comment": "The Lich King (CoA DBC map 631 diff 0, was 856/868)",
+          "mapId": 631,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4490,
+          "creditType": 0,
+          "creditNpcId": 36597,
+          "lastEncounterDungeon": 280,
+          "comment": "The Lich King (CoA DBC map 631 diff 1, was 856/868)",
+          "mapId": 631,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4491,
+          "creditType": 0,
+          "creditNpcId": 36597,
+          "lastEncounterDungeon": 0,
+          "comment": "The Lich King (CoA DBC map 631 diff 2, was 856/868)",
+          "mapId": 631,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4492,
+          "creditType": 0,
+          "creditNpcId": 36597,
+          "lastEncounterDungeon": 0,
+          "comment": "The Lich King (CoA DBC map 631 diff 3, was 856/868)",
+          "mapId": 631,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4493,
+          "creditType": 0,
+          "creditNpcId": 36612,
+          "lastEncounterDungeon": 0,
+          "comment": "Lord Marrowgar (CoA DBC map 631 diff 0, was 845/857)",
+          "mapId": 631,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4494,
+          "creditType": 0,
+          "creditNpcId": 36612,
+          "lastEncounterDungeon": 0,
+          "comment": "Lord Marrowgar (CoA DBC map 631 diff 1, was 845/857)",
+          "mapId": 631,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4495,
+          "creditType": 0,
+          "creditNpcId": 36612,
+          "lastEncounterDungeon": 0,
+          "comment": "Lord Marrowgar (CoA DBC map 631 diff 2, was 845/857)",
+          "mapId": 631,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4496,
+          "creditType": 0,
+          "creditNpcId": 36612,
+          "lastEncounterDungeon": 0,
+          "comment": "Lord Marrowgar (CoA DBC map 631 diff 3, was 845/857)",
+          "mapId": 631,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4497,
+          "creditType": 0,
+          "creditNpcId": 36626,
+          "lastEncounterDungeon": 0,
+          "comment": "Festergut (CoA DBC map 631 diff 0, was 849/861)",
+          "mapId": 631,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4498,
+          "creditType": 0,
+          "creditNpcId": 36626,
+          "lastEncounterDungeon": 0,
+          "comment": "Festergut (CoA DBC map 631 diff 1, was 849/861)",
+          "mapId": 631,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4499,
+          "creditType": 0,
+          "creditNpcId": 36626,
+          "lastEncounterDungeon": 0,
+          "comment": "Festergut (CoA DBC map 631 diff 2, was 849/861)",
+          "mapId": 631,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4500,
+          "creditType": 0,
+          "creditNpcId": 36626,
+          "lastEncounterDungeon": 0,
+          "comment": "Festergut (CoA DBC map 631 diff 3, was 849/861)",
+          "mapId": 631,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4501,
+          "creditType": 0,
+          "creditNpcId": 36627,
+          "lastEncounterDungeon": 0,
+          "comment": "Rotface (CoA DBC map 631 diff 0, was 850/862)",
+          "mapId": 631,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4502,
+          "creditType": 0,
+          "creditNpcId": 36627,
+          "lastEncounterDungeon": 0,
+          "comment": "Rotface (CoA DBC map 631 diff 1, was 850/862)",
+          "mapId": 631,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4503,
+          "creditType": 0,
+          "creditNpcId": 36627,
+          "lastEncounterDungeon": 0,
+          "comment": "Rotface (CoA DBC map 631 diff 2, was 850/862)",
+          "mapId": 631,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4504,
+          "creditType": 0,
+          "creditNpcId": 36627,
+          "lastEncounterDungeon": 0,
+          "comment": "Rotface (CoA DBC map 631 diff 3, was 850/862)",
+          "mapId": 631,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4505,
+          "creditType": 0,
+          "creditNpcId": 36678,
+          "lastEncounterDungeon": 0,
+          "comment": "Professor Putricide (CoA DBC map 631 diff 0, was 851/863)",
+          "mapId": 631,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4506,
+          "creditType": 0,
+          "creditNpcId": 36678,
+          "lastEncounterDungeon": 0,
+          "comment": "Professor Putricide (CoA DBC map 631 diff 1, was 851/863)",
+          "mapId": 631,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4507,
+          "creditType": 0,
+          "creditNpcId": 36678,
+          "lastEncounterDungeon": 0,
+          "comment": "Professor Putricide (CoA DBC map 631 diff 2, was 851/863)",
+          "mapId": 631,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4508,
+          "creditType": 0,
+          "creditNpcId": 36678,
+          "lastEncounterDungeon": 0,
+          "comment": "Professor Putricide (CoA DBC map 631 diff 3, was 851/863)",
+          "mapId": 631,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4513,
+          "creditType": 0,
+          "creditNpcId": 36853,
+          "lastEncounterDungeon": 0,
+          "comment": "Sindragosa (CoA DBC map 631 diff 0, was 855/867)",
+          "mapId": 631,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4514,
+          "creditType": 0,
+          "creditNpcId": 36853,
+          "lastEncounterDungeon": 0,
+          "comment": "Sindragosa (CoA DBC map 631 diff 1, was 855/867)",
+          "mapId": 631,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4515,
+          "creditType": 0,
+          "creditNpcId": 36853,
+          "lastEncounterDungeon": 0,
+          "comment": "Sindragosa (CoA DBC map 631 diff 2, was 855/867)",
+          "mapId": 631,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4516,
+          "creditType": 0,
+          "creditNpcId": 36853,
+          "lastEncounterDungeon": 0,
+          "comment": "Sindragosa (CoA DBC map 631 diff 3, was 855/867)",
+          "mapId": 631,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4517,
+          "creditType": 0,
+          "creditNpcId": 36855,
+          "lastEncounterDungeon": 0,
+          "comment": "Lady Deathwhisper (CoA DBC map 631 diff 0, was 846/858)",
+          "mapId": 631,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4518,
+          "creditType": 0,
+          "creditNpcId": 36855,
+          "lastEncounterDungeon": 0,
+          "comment": "Lady Deathwhisper (CoA DBC map 631 diff 1, was 846/858)",
+          "mapId": 631,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4519,
+          "creditType": 0,
+          "creditNpcId": 36855,
+          "lastEncounterDungeon": 0,
+          "comment": "Lady Deathwhisper (CoA DBC map 631 diff 2, was 846/858)",
+          "mapId": 631,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4520,
+          "creditType": 0,
+          "creditNpcId": 36855,
+          "lastEncounterDungeon": 0,
+          "comment": "Lady Deathwhisper (CoA DBC map 631 diff 3, was 846/858)",
+          "mapId": 631,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4521,
+          "creditType": 0,
+          "creditNpcId": 37813,
+          "lastEncounterDungeon": 0,
+          "comment": "Deathbringer Saurfang (CoA DBC map 631 diff 0, was 848/860)",
+          "mapId": 631,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4522,
+          "creditType": 0,
+          "creditNpcId": 37813,
+          "lastEncounterDungeon": 0,
+          "comment": "Deathbringer Saurfang (CoA DBC map 631 diff 1, was 848/860)",
+          "mapId": 631,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4523,
+          "creditType": 0,
+          "creditNpcId": 37813,
+          "lastEncounterDungeon": 0,
+          "comment": "Deathbringer Saurfang (CoA DBC map 631 diff 2, was 848/860)",
+          "mapId": 631,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4524,
+          "creditType": 0,
+          "creditNpcId": 37813,
+          "lastEncounterDungeon": 0,
+          "comment": "Deathbringer Saurfang (CoA DBC map 631 diff 3, was 848/860)",
+          "mapId": 631,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4525,
+          "creditType": 0,
+          "creditNpcId": 37955,
+          "lastEncounterDungeon": 0,
+          "comment": "Blood-Queen Lana'thel (CoA DBC map 631 diff 0, was 853/865)",
+          "mapId": 631,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4526,
+          "creditType": 0,
+          "creditNpcId": 37955,
+          "lastEncounterDungeon": 0,
+          "comment": "Blood-Queen Lana'thel (CoA DBC map 631 diff 1, was 853/865)",
+          "mapId": 631,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4527,
+          "creditType": 0,
+          "creditNpcId": 37955,
+          "lastEncounterDungeon": 0,
+          "comment": "Blood-Queen Lana'thel (CoA DBC map 631 diff 2, was 853/865)",
+          "mapId": 631,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4528,
+          "creditType": 0,
+          "creditNpcId": 37955,
+          "lastEncounterDungeon": 0,
+          "comment": "Blood-Queen Lana'thel (CoA DBC map 631 diff 3, was 853/865)",
+          "mapId": 631,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 649,
+      "encounterRows": 8,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4477,
+          "creditType": 0,
+          "creditNpcId": 34564,
+          "lastEncounterDungeon": 0,
+          "comment": "Anub'arak (CoA DBC map 649 diff 0, was 645/646/647/648)",
+          "mapId": 649,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4478,
+          "creditType": 0,
+          "creditNpcId": 34564,
+          "lastEncounterDungeon": 248,
+          "comment": "Anub'arak (CoA DBC map 649 diff 1, was 645/646/647/648)",
+          "mapId": 649,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4479,
+          "creditType": 0,
+          "creditNpcId": 34564,
+          "lastEncounterDungeon": 247,
+          "comment": "Anub'arak (CoA DBC map 649 diff 2, was 645/646/647/648)",
+          "mapId": 649,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4480,
+          "creditType": 0,
+          "creditNpcId": 34564,
+          "lastEncounterDungeon": 250,
+          "comment": "Anub'arak (CoA DBC map 649 diff 3, was 645/646/647/648)",
+          "mapId": 649,
+          "difficulty": 3
+        },
+        {
+          "encounterId": 4481,
+          "creditType": 0,
+          "creditNpcId": 34780,
+          "lastEncounterDungeon": 0,
+          "comment": "Lord Jaraxxus (CoA DBC map 649 diff 0, was 633/634/635/636)",
+          "mapId": 649,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4482,
+          "creditType": 0,
+          "creditNpcId": 34780,
+          "lastEncounterDungeon": 0,
+          "comment": "Lord Jaraxxus (CoA DBC map 649 diff 1, was 633/634/635/636)",
+          "mapId": 649,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4483,
+          "creditType": 0,
+          "creditNpcId": 34780,
+          "lastEncounterDungeon": 0,
+          "comment": "Lord Jaraxxus (CoA DBC map 649 diff 2, was 633/634/635/636)",
+          "mapId": 649,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4484,
+          "creditType": 0,
+          "creditNpcId": 34780,
+          "lastEncounterDungeon": 0,
+          "comment": "Lord Jaraxxus (CoA DBC map 649 diff 3, was 633/634/635/636)",
+          "mapId": 649,
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "mapId": 724,
+      "encounterRows": 5,
+      "difficulties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 2992,
+          "creditType": 0,
+          "creditNpcId": 39751,
+          "lastEncounterDungeon": 0,
+          "comment": "Baltharus the Warborn (CoA DBC map 724 diff 2, was 889)",
+          "mapId": 724,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4533,
+          "creditType": 0,
+          "creditNpcId": 39863,
+          "lastEncounterDungeon": 0,
+          "comment": "Halion (CoA DBC map 724 diff 0, was 888)",
+          "mapId": 724,
+          "difficulty": 0
+        },
+        {
+          "encounterId": 4534,
+          "creditType": 0,
+          "creditNpcId": 39863,
+          "lastEncounterDungeon": 294,
+          "comment": "Halion (CoA DBC map 724 diff 1, was 888)",
+          "mapId": 724,
+          "difficulty": 1
+        },
+        {
+          "encounterId": 4535,
+          "creditType": 0,
+          "creditNpcId": 39863,
+          "lastEncounterDungeon": 0,
+          "comment": "Halion (CoA DBC map 724 diff 2, was 888)",
+          "mapId": 724,
+          "difficulty": 2
+        },
+        {
+          "encounterId": 4536,
+          "creditType": 0,
+          "creditNpcId": 39863,
+          "lastEncounterDungeon": 0,
+          "comment": "Halion (CoA DBC map 724 diff 3, was 888)",
+          "mapId": 724,
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "v2 supersedes v1, capturing the final semicolon-terminated SQL tuple",
+    "Map and difficulty are parsed from explicit DBC comments",
+    "lastEncounterDungeon is LFG ID, not map ID",
+    "No live deployment or raid-clear verification"
+  ]
+}

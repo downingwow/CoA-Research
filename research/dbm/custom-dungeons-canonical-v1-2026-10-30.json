@@ -149,7 +149,65 @@
               "heroic": 4000,
               "mythic": 2000
             }
-          }
+          },
+          "heroicNpcId": 262700,
+          "mythicNpcId": 362700,
+          "loot": [
+            {
+              "normal": 559301,
+              "heroic": 278090,
+              "mythic": 278091,
+              "groupId": 1
+            },
+            {
+              "normal": 559306,
+              "heroic": 278796,
+              "mythic": 278797,
+              "groupId": 1
+            },
+            {
+              "normal": 559311,
+              "heroic": 279483,
+              "mythic": 279484,
+              "groupId": 1
+            },
+            {
+              "normal": 559319,
+              "heroic": 284200,
+              "mythic": 284201,
+              "groupId": 1
+            },
+            {
+              "normal": 559320,
+              "heroic": 285160,
+              "mythic": 285161,
+              "groupId": 1
+            },
+            {
+              "normal": 559339,
+              "heroic": 292861,
+              "mythic": 292862,
+              "groupId": 2
+            },
+            {
+              "normal": 559346,
+              "heroic": 295371,
+              "mythic": 295372,
+              "groupId": 2
+            },
+            {
+              "normal": 559349,
+              "heroic": 295457,
+              "mythic": 295458,
+              "groupId": 2
+            },
+            {
+              "normal": 559361,
+              "heroic": 297693,
+              "mythic": 297694,
+              "groupId": 2
+            }
+          ]
         },
         {
           "npcId": 162703,
@@ -182,7 +240,65 @@
             "normal": 15,
             "heroic": 20,
             "mythic": 30
-          }
+          },
+          "heroicNpcId": 262703,
+          "mythicNpcId": 362703,
+          "loot": [
+            {
+              "normal": 559305,
+              "heroic": 278210,
+              "mythic": 278211,
+              "groupId": 1
+            },
+            {
+              "normal": 559309,
+              "heroic": 279273,
+              "mythic": 279274,
+              "groupId": 1
+            },
+            {
+              "normal": 559310,
+              "heroic": 279334,
+              "mythic": 279335,
+              "groupId": 1
+            },
+            {
+              "normal": 559317,
+              "heroic": 283951,
+              "mythic": 283952,
+              "groupId": 1
+            },
+            {
+              "normal": 559326,
+              "heroic": 290012,
+              "mythic": 290013,
+              "groupId": 1
+            },
+            {
+              "normal": 559332,
+              "heroic": 298385,
+              "mythic": 298386,
+              "groupId": 2
+            },
+            {
+              "normal": 559342,
+              "heroic": 298902,
+              "mythic": 298903,
+              "groupId": 2
+            },
+            {
+              "normal": 559351,
+              "heroic": 295543,
+              "mythic": 295544,
+              "groupId": 2
+            },
+            {
+              "normal": 559352,
+              "heroic": 295586,
+              "mythic": 295587,
+              "groupId": 2
+            }
+          ]
         },
         {
           "npcId": 162704,
@@ -233,19 +349,92 @@
             "roar": 15500,
             "awake": 17000
           },
-          "caution": "Awakening offsets are relative to seal-break sequence, not pull."
+          "caution": "Awakening offsets are relative to seal-break sequence, not pull.",
+          "heroicNpcId": 262704,
+          "mythicNpcId": 362704,
+          "loot": [
+            {
+              "normal": 559300,
+              "heroic": 277944,
+              "mythic": 277945,
+              "groupId": 1
+            },
+            {
+              "normal": 559315,
+              "heroic": 282552,
+              "mythic": 282553,
+              "groupId": 1
+            },
+            {
+              "normal": 559323,
+              "heroic": 286460,
+              "mythic": 286461,
+              "groupId": 1
+            },
+            {
+              "normal": 559324,
+              "heroic": 287867,
+              "mythic": 287868,
+              "groupId": 1
+            },
+            {
+              "normal": 559335,
+              "heroic": 292560,
+              "mythic": 292561,
+              "groupId": 2
+            },
+            {
+              "normal": 559337,
+              "heroic": 292709,
+              "mythic": 292710,
+              "groupId": 2
+            },
+            {
+              "normal": 559341,
+              "heroic": 298464,
+              "mythic": 298465,
+              "groupId": 2
+            },
+            {
+              "normal": 559347,
+              "heroic": 295414,
+              "mythic": 295415,
+              "groupId": 2
+            },
+            {
+              "normal": 559360,
+              "heroic": 297650,
+              "mythic": 297651,
+              "groupId": 2
+            }
+          ]
         }
       ],
       "references": [
         "research/dbm/vaults-of-the-inquisition-three-boss-source-audit-2026-10-30.md",
-        "research/dbm/vaults-trash-and-deceiver-timing-audit-2026-10-30.md"
+        "research/dbm/vaults-trash-and-deceiver-timing-audit-2026-10-30.md",
+        "research/dbm/vaults-sql-binding-map-lfg-audit-2026-10-30.md"
       ],
       "trashSource": "src/server/coa/CoAVaults.cpp",
       "cautions": [
         "C++ source-derived; not live-verified",
         "Timing may shift with casts and RP",
         "Heroic/Mythic trash abilities differ"
-      ]
+      ],
+      "teleport": {
+        "id": 2205,
+        "x": -6658.51,
+        "y": -5569.48,
+        "z": 175.073,
+        "orientation": 4.72967,
+        "coordinateType": "inside-map game_tele; not confirmed exterior entrance"
+      },
+      "lfgDungeonIds": {
+        "normal": 401,
+        "heroic": 1401,
+        "mythic": 2401
+      },
+      "lootSource": "data/sql/updates/pending_db_world/rev_20261028_60_vaults_of_the_inquisition.sql"
     },
     {
       "name": "Frozen Reach (custom map)",

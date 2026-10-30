@@ -1,0 +1,35 @@
+{
+  "schema": "coa-research.vanilla-dungeon-boss-loot-overlay.v2",
+  "date": "2026-10-30",
+  "sourceStatus": "upstream pending SQL migrations, not confirmed live",
+  "stages": [
+    {
+      "source": "data/sql/updates/pending_db_world/rev_20261009_70_dungeon_boss_heroic_mythic_loot.sql",
+      "parsedRows": 0,
+      "deletedTemplateCount": 343,
+      "postStageTemplates": 0,
+      "postStageRows": 0
+    },
+    {
+      "source": "data/sql/updates/pending_db_world/rev_20261016_30_dungeon_boss_loot_and_marks.sql",
+      "parsedRows": 0,
+      "deletedTemplateCount": 117,
+      "postStageTemplates": 0,
+      "postStageRows": 0
+    },
+    {
+      "source": "data/sql/updates/pending_db_world/rev_20261024_41_scorn_heroic_mythic_loot.sql",
+      "parsedRows": 0,
+      "deletedTemplateCount": 2,
+      "postStageTemplates": 0,
+      "postStageRows": 0
+    }
+  ],
+  "templates": [],
+  "notes": [
+    "v2 supersedes v1: correctly includes semicolon-terminated final SQL tuples",
+    "Sequential DELETE replacement by template applied",
+    "Selected migrations only; not a live loot export",
+    "No class/spec equipment eligibility implied"
+  ]
+}

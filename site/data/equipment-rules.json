@@ -1,0 +1,744 @@
+{
+  "source": "Ryansousa10/coa-tier-list · tools/data/raw/bisbeard-meta.json",
+  "sourceCommit": "92616fe829e79335e8bdc6139c7ceb7619b4d63a",
+  "captured": "2026-10-30",
+  "sourceNote": "Equipment rules are extracted from BisBeard metadata. They describe eligibility in that saved gear model; they are not an official class proficiency table and may not represent every client or spec exception.",
+  "armorPermissions": {
+    "Barbarian": [
+      "Cloth",
+      "Leather"
+    ],
+    "Witch Doctor": [
+      "Cloth",
+      "Leather",
+      "Mail"
+    ],
+    "Felsworn": [
+      "Cloth",
+      "Leather"
+    ],
+    "Witch Hunter": [
+      "Cloth",
+      "Leather",
+      "Mail"
+    ],
+    "Stormbringer": [
+      "Cloth"
+    ],
+    "Knight of Xoroth": [
+      "Cloth",
+      "Leather",
+      "Mail",
+      "Plate"
+    ],
+    "Guardian": [
+      "Cloth",
+      "Leather",
+      "Mail",
+      "Plate"
+    ],
+    "Templar": [
+      "Cloth",
+      "Leather",
+      "Mail"
+    ],
+    "Bloodmage": [
+      "Cloth",
+      "Leather"
+    ],
+    "Ranger": [
+      "Cloth",
+      "Leather"
+    ],
+    "Chronomancer": [
+      "Cloth"
+    ],
+    "Necromancer": [
+      "Cloth"
+    ],
+    "Pyromancer": [
+      "Cloth"
+    ],
+    "Cultist": [
+      "Cloth",
+      "Leather",
+      "Mail",
+      "Plate"
+    ],
+    "Starcaller": [
+      "Cloth",
+      "Leather",
+      "Mail",
+      "Plate"
+    ],
+    "Sun Cleric": [
+      "Cloth",
+      "Leather",
+      "Mail",
+      "Plate"
+    ],
+    "Tinker": [
+      "Cloth",
+      "Leather",
+      "Mail"
+    ],
+    "Venomancer": [
+      "Cloth",
+      "Leather",
+      "Mail"
+    ],
+    "Reaper": [
+      "Cloth",
+      "Leather",
+      "Mail",
+      "Plate"
+    ],
+    "Primalist": [
+      "Cloth",
+      "Leather",
+      "Mail",
+      "Plate"
+    ],
+    "Runemaster": [
+      "Cloth",
+      "Leather"
+    ]
+  },
+  "weaponPermissions": {
+    "Barbarian": {
+      "dualWield": true,
+      "shield": false,
+      "allowedTypes": [
+        "Axe",
+        "Mace",
+        "Polearm",
+        "Sword",
+        "Dagger",
+        "Fist",
+        "Thrown"
+      ],
+      "noTwoHanded": []
+    },
+    "Witch Doctor": {
+      "dualWield": true,
+      "shield": false,
+      "allowedTypes": [
+        "Axe",
+        "Mace",
+        "Polearm",
+        "Staff",
+        "Bow",
+        "Dagger",
+        "Fist",
+        "Thrown",
+        "Wand",
+        "Crossbow"
+      ],
+      "noTwoHanded": [
+        "Axe",
+        "Mace"
+      ]
+    },
+    "Felsworn": {
+      "dualWield": true,
+      "shield": false,
+      "allowedTypes": [
+        "Axe",
+        "Mace",
+        "Polearm",
+        "Sword",
+        "Staff",
+        "Bow",
+        "Dagger",
+        "Fist",
+        "Thrown",
+        "Wand"
+      ],
+      "noOneHanded": [
+        "Mace"
+      ],
+      "noTwoHanded": []
+    },
+    "Witch Hunter": {
+      "dualWield": true,
+      "shield": false,
+      "allowedTypes": [
+        "Axe",
+        "Mace",
+        "Sword",
+        "Gun",
+        "Dagger",
+        "Crossbow"
+      ],
+      "noOneHanded": [
+        "Mace"
+      ],
+      "noTwoHanded": []
+    },
+    "Stormbringer": {
+      "dualWield": false,
+      "shield": false,
+      "allowedTypes": [
+        "Mace",
+        "Staff",
+        "Dagger",
+        "Wand"
+      ],
+      "noTwoHanded": [
+        "Mace"
+      ]
+    },
+    "Knight of Xoroth": {
+      "dualWield": false,
+      "shield": true,
+      "allowedTypes": [
+        "Axe",
+        "Mace",
+        "Polearm",
+        "Sword",
+        "Bow",
+        "Crossbow"
+      ],
+      "noTwoHanded": []
+    },
+    "Guardian": {
+      "dualWield": false,
+      "shield": true,
+      "allowedTypes": [
+        "Axe",
+        "Mace",
+        "Sword",
+        "Bow",
+        "Gun",
+        "Fist",
+        "Thrown",
+        "Crossbow"
+      ],
+      "noTwoHanded": [
+        "Axe",
+        "Mace",
+        "Sword"
+      ]
+    },
+    "Templar": {
+      "dualWield": true,
+      "shield": false,
+      "allowedTypes": [
+        "Axe",
+        "Mace",
+        "Polearm",
+        "Sword",
+        "Staff",
+        "Bow",
+        "Fist",
+        "Crossbow"
+      ],
+      "noTwoHanded": []
+    },
+    "Bloodmage": {
+      "dualWield": true,
+      "shield": false,
+      "allowedTypes": [
+        "Axe",
+        "Mace",
+        "Polearm",
+        "Sword",
+        "Staff",
+        "Bow",
+        "Dagger",
+        "Fist",
+        "Wand",
+        "Crossbow"
+      ],
+      "noOneHanded": [
+        "Mace"
+      ],
+      "noTwoHanded": []
+    },
+    "Ranger": {
+      "dualWield": true,
+      "shield": false,
+      "allowedTypes": [
+        "Axe",
+        "Polearm",
+        "Sword",
+        "Bow",
+        "Dagger",
+        "Fist",
+        "Crossbow"
+      ],
+      "noTwoHanded": [
+        "Axe",
+        "Sword"
+      ]
+    },
+    "Chronomancer": {
+      "dualWield": false,
+      "shield": false,
+      "allowedTypes": [
+        "Mace",
+        "Staff",
+        "Dagger",
+        "Wand"
+      ],
+      "noTwoHanded": [
+        "Mace"
+      ]
+    },
+    "Necromancer": {
+      "dualWield": false,
+      "shield": false,
+      "allowedTypes": [
+        "Sword",
+        "Staff",
+        "Dagger",
+        "Wand"
+      ],
+      "noTwoHanded": [
+        "Sword"
+      ]
+    },
+    "Pyromancer": {
+      "dualWield": false,
+      "shield": false,
+      "allowedTypes": [
+        "Sword",
+        "Staff",
+        "Dagger",
+        "Wand"
+      ],
+      "noTwoHanded": [
+        "Sword"
+      ]
+    },
+    "Cultist": {
+      "dualWield": false,
+      "shield": true,
+      "allowedTypes": [
+        "Axe",
+        "Mace",
+        "Polearm",
+        "Sword",
+        "Staff",
+        "Bow",
+        "Gun",
+        "Dagger",
+        "Fist",
+        "Thrown",
+        "Wand",
+        "Crossbow"
+      ],
+      "noTwoHanded": []
+    },
+    "Starcaller": {
+      "dualWield": true,
+      "shield": true,
+      "allowedTypes": [
+        "Axe",
+        "Mace",
+        "Polearm",
+        "Sword",
+        "Staff",
+        "Bow",
+        "Dagger",
+        "Wand",
+        "Crossbow"
+      ],
+      "noTwoHanded": [
+        "Axe"
+      ]
+    },
+    "Sun Cleric": {
+      "dualWield": true,
+      "shield": true,
+      "allowedTypes": [
+        "Mace",
+        "Polearm",
+        "Sword",
+        "Staff",
+        "Bow",
+        "Wand",
+        "Crossbow"
+      ],
+      "noTwoHanded": []
+    },
+    "Tinker": {
+      "dualWield": false,
+      "shield": true,
+      "allowedTypes": [
+        "Axe",
+        "Mace",
+        "Polearm",
+        "Staff",
+        "Gun",
+        "Dagger"
+      ],
+      "noTwoHanded": []
+    },
+    "Venomancer": {
+      "dualWield": true,
+      "shield": false,
+      "allowedTypes": [
+        "Mace",
+        "Polearm",
+        "Staff",
+        "Bow",
+        "Dagger",
+        "Fist",
+        "Thrown",
+        "Wand",
+        "Crossbow"
+      ],
+      "noTwoHanded": []
+    },
+    "Reaper": {
+      "dualWield": true,
+      "shield": false,
+      "allowedTypes": [
+        "Axe",
+        "Mace",
+        "Polearm",
+        "Sword",
+        "Bow",
+        "Dagger",
+        "Thrown",
+        "Crossbow"
+      ],
+      "noTwoHanded": [],
+      "noOneHanded": [
+        "Mace"
+      ]
+    },
+    "Primalist": {
+      "dualWield": true,
+      "shield": false,
+      "allowedTypes": [
+        "Axe",
+        "Mace",
+        "Polearm",
+        "Bow",
+        "Fist",
+        "Thrown",
+        "Wand"
+      ],
+      "noTwoHanded": []
+    },
+    "Runemaster": {
+      "dualWield": true,
+      "shield": false,
+      "allowedTypes": [
+        "Axe",
+        "Polearm",
+        "Sword",
+        "Staff",
+        "Dagger",
+        "Fist",
+        "Thrown",
+        "Wand"
+      ],
+      "noTwoHanded": []
+    }
+  },
+  "specWeaponPermissions": {
+    "Barbarian": {
+      "Headhunting": {
+        "dualWield": "oneHand"
+      },
+      "Brutality": {
+        "dualWield": "none",
+        "oneHandDualWieldTypes": [
+          "Dagger"
+        ]
+      },
+      "Ancestry": {
+        "dualWield": "twoHand",
+        "oneHandDualWieldTypes": [
+          "Dagger"
+        ],
+        "twoHandDualWieldRequiredTalentNodeId": 11219,
+        "shieldRequiredTalentNodeId": 31219,
+        "twoHandDualWieldBlockedTypes": [
+          "Polearm"
+        ]
+      }
+    },
+    "Witch Doctor": {
+      "Shadowhunting": {
+        "dualWield": "oneHand",
+        "allowedRangedWeaponTypes": [
+          "Bow",
+          "Crossbow"
+        ]
+      },
+      "Voodoo": {
+        "dualWield": "oneHand"
+      },
+      "Brewing": {
+        "dualWield": "oneHand"
+      }
+    },
+    "Felsworn": {
+      "Infernal": {
+        "dualWield": "oneHand"
+      },
+      "Slayer": {
+        "dualWield": "oneHand"
+      },
+      "Tyrant": {
+        "dualWield": "twoHand",
+        "twoHandDualWieldBlockedTypes": [
+          "Staff"
+        ]
+      }
+    },
+    "Witch Hunter": {
+      "Boltslinger": {
+        "dualWield": "oneHand"
+      },
+      "Houndmaster": {
+        "dualWield": "oneHand"
+      },
+      "Inquisition": {
+        "dualWield": "oneHand"
+      },
+      "Black Knight": {
+        "dualWield": "none"
+      }
+    },
+    "Stormbringer": {
+      "Wind": {
+        "dualWield": "none"
+      },
+      "Maelstrom": {
+        "dualWield": "none"
+      },
+      "Lightning": {
+        "dualWield": "none"
+      }
+    },
+    "Knight of Xoroth": {
+      "Hellfire": {
+        "dualWield": "none",
+        "preferTwoHand": true
+      },
+      "Defiance": {
+        "dualWield": "none",
+        "preferShield": true
+      },
+      "War": {
+        "dualWield": "none",
+        "preferTwoHand": true
+      }
+    },
+    "Guardian": {
+      "Gladiator": {
+        "dualWield": "none",
+        "twoHandWithShieldTypes": [
+          "Polearm"
+        ]
+      },
+      "Inspiration": {
+        "dualWield": "none"
+      },
+      "Vanguard": {
+        "dualWield": "none",
+        "preferShield": true,
+        "twoHandWithShieldTypes": [
+          "Mace"
+        ],
+        "twoHandWithShieldRequiredTalentNodeId": 29992
+      }
+    },
+    "Templar": {
+      "Oathkeeper": {
+        "dualWield": "oneHand"
+      },
+      "Zealot": {
+        "dualWield": "oneHand"
+      },
+      "Crusader": {
+        "dualWield": "oneHand"
+      }
+    },
+    "Bloodmage": {
+      "Fleshweaver": {
+        "dualWield": "none"
+      },
+      "Sanguine": {
+        "dualWield": "none"
+      },
+      "Accursed": {
+        "dualWield": "none"
+      },
+      "Eternal": {
+        "dualWield": "oneHand"
+      }
+    },
+    "Ranger": {
+      "Archery": {
+        "dualWield": "oneHand"
+      },
+      "Farstrider": {
+        "dualWield": "oneHand"
+      },
+      "Brigand": {
+        "dualWield": "oneHand"
+      }
+    },
+    "Chronomancer": {
+      "Time": {
+        "dualWield": "none"
+      },
+      "Infinite": {
+        "dualWield": "none"
+      },
+      "Artificer": {
+        "dualWield": "none"
+      }
+    },
+    "Necromancer": {
+      "Death": {
+        "dualWield": "none"
+      },
+      "Animation": {
+        "dualWield": "none"
+      },
+      "Rime": {
+        "dualWield": "none"
+      }
+    },
+    "Pyromancer": {
+      "Flameweaving": {
+        "dualWield": "none"
+      },
+      "Incineration": {
+        "dualWield": "none"
+      },
+      "Draconic": {
+        "dualWield": "none"
+      }
+    },
+    "Cultist": {
+      "Heretic": {
+        "dualWield": "none"
+      },
+      "Corruption": {
+        "dualWield": "none"
+      },
+      "Godblade": {
+        "dualWield": "none"
+      },
+      "Dreadnought": {
+        "dualWield": "none",
+        "preferShield": true
+      }
+    },
+    "Starcaller": {
+      "Moon Priest": {
+        "dualWield": "none",
+        "autoFillRangedWeaponTypes": [
+          "Bow",
+          "Crossbow"
+        ]
+      },
+      "Sentinel": {
+        "dualWield": "oneHand",
+        "allowedRangedWeaponTypes": [
+          "Bow",
+          "Crossbow"
+        ],
+        "autoFillRangedWeaponTypes": [
+          "Bow",
+          "Crossbow"
+        ]
+      },
+      "Warden": {
+        "dualWield": "oneHand"
+      },
+      "Moon Guard": {
+        "dualWield": "none",
+        "preferShield": true
+      }
+    },
+    "Sun Cleric": {
+      "Piety": {
+        "dualWield": "none"
+      },
+      "Valkyrie": {
+        "dualWield": "twoHand"
+      },
+      "Seraphim": {
+        "dualWield": "none",
+        "preferShield": true
+      },
+      "Blessings": {
+        "dualWield": "none"
+      }
+    },
+    "Tinker": {
+      "Demolition": {
+        "dualWield": "none"
+      },
+      "Mechanics": {
+        "dualWield": "none"
+      },
+      "Invention": {
+        "dualWield": "none"
+      }
+    },
+    "Venomancer": {
+      "Fortitude": {
+        "dualWield": "oneHand"
+      },
+      "Stalking": {
+        "dualWield": "oneHand"
+      },
+      "Rotweaver": {
+        "dualWield": "oneHand"
+      },
+      "Vizier": {
+        "dualWield": "oneHand"
+      }
+    },
+    "Reaper": {
+      "Soul": {
+        "dualWield": "oneHand"
+      },
+      "Harvest": {
+        "dualWield": "oneHand"
+      },
+      "Domination": {
+        "dualWield": "oneHand"
+      }
+    },
+    "Primalist": {
+      "Grovekeeper": {
+        "dualWield": "oneHand"
+      },
+      "Wildwalker": {
+        "dualWield": "oneHand"
+      },
+      "Mountain King": {
+        "dualWield": "oneHand"
+      },
+      "Geomancy": {
+        "dualWield": "oneHand"
+      }
+    },
+    "Runemaster": {
+      "Engravement": {
+        "dualWield": "oneHand"
+      },
+      "Glyphic": {
+        "dualWield": "oneHand",
+        "oneHandDualWieldTypes": [
+          "Sword",
+          "Dagger"
+        ]
+      },
+      "Riftblade": {
+        "dualWield": "oneHand"
+      }
+    }
+  }
+}

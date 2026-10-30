@@ -1,0 +1,448 @@
+{
+  "schema": "coa-research.road-vaults-change-sequence.v1",
+  "date": "2026-10-30",
+  "sourceRoot": "data/sql/updates/pending_db_world/",
+  "sourceChangeSequence": [
+    {
+      "file": "rev_20260922_01_disable_inquisition_otherside_lfg.sql",
+      "statements": [
+        {
+          "operation": [
+            "DELETE FROM",
+            "disables"
+          ],
+          "snippet": "neither map has a non-LFG\n-- entrance, so this is the whole removal, not just the random pool.\nDELETE FROM `disables` WHERE `sourceType` = 8 AND `entry` IN (936, 937)"
+        },
+        {
+          "operation": [
+            "INSERT INTO",
+            "disables"
+          ],
+          "snippet": "INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, `comment`) VALUES\n(8, 936, 0, '', '', 'Vaults of Inquisition removed from Dungeon Finder'),\n(8, 937, 0, '', '', 'Road to De Other Side removed from Dungeon Find"
+        }
+      ],
+      "mentionsMap936": true,
+      "mentionsMap937": true
+    },
+    {
+      "file": "rev_20261023_80_coa_block_road_to_de_other_side.sql",
+      "statements": [
+        {
+          "operation": [
+            "DELETE FROM",
+            "disables"
+          ],
+          "snippet": "DELETE FROM `disables` WHERE `sourceType` = 2 AND `entry` = 937"
+        },
+        {
+          "operation": [
+            "INSERT INTO",
+            "disables"
+          ],
+          "snippet": "INSERT INTO `disables` (`sourceType`, `entry`, `flags`, `params_0`, `params_1`, `comment`) VALUES\n(2, 937, 15, '', '', 'Road to De Other Side - closed to players until it has level scaling')"
+        }
+      ],
+      "mentionsMap936": false,
+      "mentionsMap937": true
+    },
+    {
+      "file": "rev_20261029_80_coa_reopen_road_to_de_other_side.sql",
+      "statements": [
+        {
+          "operation": [
+            "DELETE FROM",
+            "disables"
+          ],
+          "snippet": "it scales 15-59 on Normal (finder entry 401).\nDELETE FROM `disables` WHERE `sourceType` IN (2, 8) AND `entry` IN (936, 937)"
+        }
+      ],
+      "mentionsMap936": true,
+      "mentionsMap937": true
+    },
+    {
+      "file": "rev_20261029_81_coa_other_side_normal_melee.sql",
+      "statements": [
+        {
+          "operation": [
+            "INSERT INTO",
+            "creature_template"
+          ],
+          "snippet": "Road from the\n-- 2026-09 live logs at the same Vaults/Road ratio).\n\n-- creature_template\nINSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subn"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- difficulty templates and Normal melee\nUPDATE `creature_template` SET `difficulty_entry_1` = `entry` + 100000, `difficulty_entry_2` = `entry` + 200000 WHERE `entry` IN (162743, 162765, 162769, 162770, 162773, 162775, 162776, 162780, 16278"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Vaults of the Inquisition\nUPDATE `creature_template` SET `DamageModifier` = CASE `entry`\n    WHEN 162700 THEN 5.438\n    WHEN 162703 THEN 8.28\n    WHEN 162704 THEN 9.126\n    WHEN 162733 THEN 1.211\n    WHEN 162734 THEN 3.426\n    WHEN 16273"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Road to De Other Side trash\nUPDATE `creature_template` SET `DamageModifier` = CASE `entry`\n    WHEN 162743 THEN 0.382\n    WHEN 162765 THEN 2.75\n    WHEN 162769 THEN 2.291\n    WHEN 162770 THEN 1.146\n    WHEN 162773 THEN 2.75\n    WHEN 1627"
+        }
+      ],
+      "mentionsMap936": true,
+      "mentionsMap937": true
+    },
+    {
+      "file": "rev_20261029_82_coa_road_to_de_other_side_health_immunities.sql",
+      "statements": [
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Road to De Other Side (map 937): what was agreed after #8715 and never reached main (its last commits came after the\n-- merge): boss crowd-control immunities and health true to Ascension's logs.\n\n-- The three bosses take the crowd-contro"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Road to De Other Side (map 937): health true to Ascension's logs. Mythic is the 2026-08-05 Mythic log, Heroic is\n-- Mythic / 1.3 and Normal at level 60 Heroic / 2.33 (Destiny Weaver scales it down with the character), as in Vaults\n-- of "
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Muzah, the Shadow Hunter, about 289.6k\nUPDATE `creature_template` SET `HealthModifier` = 46.76 WHERE `entry` = 162715"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Drak'math the Sinister King, about 285.5k\nUPDATE `creature_template` SET `HealthModifier` = 38.572 WHERE `entry` = 162716"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Chimeric Embryo, about 294.3k\nUPDATE `creature_template` SET `HealthModifier` = 3.748 WHERE `entry` = 162743"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Spider, about 28.6k\nUPDATE `creature_template` SET `HealthModifier` = 8.441 WHERE `entry` = 162765"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Interstitial Wanderer, about 64.4k\nUPDATE `creature_template` SET `HealthModifier` = 2.38 WHERE `entry` = 162766"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Bat of the Other Side, about 18.2k\nUPDATE `creature_template` SET `HealthModifier` = 2.38 WHERE `entry` = 162767"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Bat of the Other Side, about 18.2k\nUPDATE `creature_template` SET `HealthModifier` = 8.442 WHERE `entry` = 162769"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Deathweaver Matriarch, about 64.4k\nUPDATE `creature_template` SET `HealthModifier` = 3.16 WHERE `entry` = 162770"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Spider of the Other Side, about 24.1k\nUPDATE `creature_template` SET `HealthModifier` = 24.036 WHERE `entry` = 162773"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Gutdevourer, about 183.4k\nUPDATE `creature_template` SET `HealthModifier` = 8.44 WHERE `entry` = 162775"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Gutdevourer, about 64.4k\nUPDATE `creature_template` SET `HealthModifier` = 8.44 WHERE `entry` = 162776"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Interstitial Wanderer, about 64.4k\nUPDATE `creature_template` SET `HealthModifier` = 30.041 WHERE `entry` = 162780"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Risen Cultist, about 183.4k\nUPDATE `creature_template` SET `HealthModifier` = 10.55 WHERE `entry` = 162782"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Hisser of the Other Side, about 64.4k\nUPDATE `creature_template` SET `HealthModifier` = 10.548 WHERE `entry` = 162783"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Interstitial Wanderer, about 64.4k\nUPDATE `creature_template` SET `HealthModifier` = 3.16 WHERE `entry` = 162784"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Violent Swarm, about 24.1k\nUPDATE `creature_template` SET `HealthModifier` = 14.241 WHERE `entry` = 162785"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Watcher of the Path, about 86.9k\nUPDATE `creature_template` SET `HealthModifier` = 3.16 WHERE `entry` = 162979"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Lifedrinker, about 24.1k\nUPDATE `creature_template` SET `HealthModifier` = 3.16 WHERE `entry` = 162980"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Lifedrinker, about 24.1k\nUPDATE `creature_template` SET `HealthModifier` = 2.109 WHERE `entry` = 162981"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Lifedrinker, about 16.1k\nUPDATE `creature_template` SET `HealthModifier` = 24.037 WHERE `entry` = 162982"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Risen Cultist, about 183.4k\nUPDATE `creature_template` SET `HealthModifier` = 8.441 WHERE `entry` = 162983"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Risen Cultist, about 64.4k\nUPDATE `creature_template` SET `HealthModifier` = 29.53 WHERE `entry` = 162988"
+        },
+        {
+          "operation": [
+            "DELETE FROM",
+            "coa_dungeon_health"
+          ],
+          "snippet": "-- Vol’zeen, about 225.3k\n\nDELETE FROM `coa_dungeon_health` WHERE `map_id` = 937"
+        },
+        {
+          "operation": [
+            "INSERT INTO",
+            "coa_dungeon_health"
+          ],
+          "snippet": "INSERT INTO `coa_dungeon_health` (`map_id`, `difficulty`, `creature_entry`, `max_health`, `evidence`, `source`) VALUES\n(937, 1, 162711, 674735, 'log', 'Heroic from Mythic /1.3"
+        }
+      ],
+      "mentionsMap936": false,
+      "mentionsMap937": true
+    },
+    {
+      "file": "rev_20261029_85_coa_custom_dungeons_melee.sql",
+      "statements": [
+        {
+          "operation": [],
+          "snippet": "the core gives 118.3 per point to a class 1 and 112.4 to a class 2 creature of level\n-- 60 (gameplay test script_melee_hit_taken), so Heroic and Mythic hit about 7x (Vaults) or 1.7x (Road) below their\n-- logs (#10053: the Deceiver's Presenc"
+        },
+        {
+          "operation": [
+            "INSERT INTO",
+            "creature_template"
+          ],
+          "snippet": "spawned creatures take it on top, so the Normal values are\n-- divided by 1.5. Where Normal would then hit harder at level 59 than Heroic at 60, it is held at Heroic.\n-- Road's three bosses get Heroic/Mythic templates like its trash (their N"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "UPDATE `creature_template` SET `difficulty_entry_1` = `entry` + 100000, `difficulty_entry_2` = `entry` + 200000 WHERE `entry` IN (162711, 162715, 162716)"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Vaults of the Inquisition: Normal\nUPDATE `creature_template` SET `DamageModifier` = CASE `entry`\n    WHEN 162700 THEN 3.371\n    WHEN 162703 THEN 5.471\n    WHEN 162704 THEN 5.403\n    WHEN 162733 THEN 0.801\n    WHEN 162734 THEN 2.074\n    W"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Vaults of the Inquisition: Heroic\nUPDATE `creature_template` SET `DamageModifier` = CASE `entry`\n    WHEN 262700 THEN 4.956\n    WHEN 262703 THEN 8.042\n    WHEN 262704 THEN 7.946\n    WHEN 262733 THEN 1.623\n    WHEN 262734 THEN 3.05\n    WH"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Vaults of the Inquisition: Mythic\nUPDATE `creature_template` SET `DamageModifier` = CASE `entry`\n    WHEN 362700 THEN 10.658\n    WHEN 362703 THEN 17.287\n    WHEN 362704 THEN 17.089\n    WHEN 362733 THEN 4.05\n    WHEN 362734 THEN 7.625\n   "
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Road to De Other Side: Normal\nUPDATE `creature_template` SET `DamageModifier` = CASE `entry`\n    WHEN 162711 THEN 1.562\n    WHEN 162715 THEN 1.495\n    WHEN 162716 THEN 2.393\n    WHEN 162743 THEN 0.253\n    WHEN 162765 THEN 1.818\n    WHEN "
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Road to De Other Side: Heroic\nUPDATE `creature_template` SET `DamageModifier` = CASE `entry`\n    WHEN 262711 THEN 3.132\n    WHEN 262715 THEN 2.963\n    WHEN 262716 THEN 4.798\n    WHEN 262743 THEN 0.377\n    WHEN 262765 THEN 2.711\n    WHEN "
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "-- Road to De Other Side: Mythic\nUPDATE `creature_template` SET `DamageModifier` = CASE `entry`\n    WHEN 362711 THEN 6.736\n    WHEN 362715 THEN 6.372\n    WHEN 362716 THEN 10.316\n    WHEN 362743 THEN 0.941\n    WHEN 362765 THEN 6.778\n    WHEN"
+        }
+      ],
+      "mentionsMap936": true,
+      "mentionsMap937": true
+    },
+    {
+      "file": "rev_20261029_86_coa_road_bats_heroic_mythic.sql",
+      "statements": [
+        {
+          "operation": [
+            "INSERT INTO",
+            "creature_template"
+          ],
+          "snippet": "-- Road to De Other Side (map 937): Heroic/Mythic templates at +100000/+200000 for the hostile Bat of the Other Side\n-- (162766, 162767), the last hostile Road creatures that fought with their Normal melee on every difficulty.\n-- No log has"
+        },
+        {
+          "operation": [
+            "UPDATE",
+            "creature_template"
+          ],
+          "snippet": "UPDATE `creature_template` SET `difficulty_entry_1` = `entry` + 100000, `difficulty_entry_2` = `entry` + 200000 WHERE `entry` IN (162766, 162767)"
+        }
+      ],
+      "mentionsMap936": false,
+      "mentionsMap937": true
+    },
+    {
+      "file": "rev_20261029_87_coa_custom_dungeon_fierce_blow.sql",
+      "statements": [
+        {
+          "operation": [
+            "DELETE FROM",
+            "spell_script_names"
+          ],
+          "snippet": "-- Vaults of the Inquisition (map 936) and Road to De Other Side (map 937): Fierce Blow (975011, 100 % weapon damage)\n-- hits as hard as the caster's regular blow. As a spell it took DestinyWeaver's flat damage factor instead of the\n-- weap"
+        },
+        {
+          "operation": [
+            "INSERT INTO",
+            "spell_script_names"
+          ],
+          "snippet": "INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES\n(975011, 'spell_coa_custom_dungeon_fierce_blow')"
+        }
+      ],
+      "mentionsMap936": true,
+      "mentionsMap937": true
+    }
+  ],
+  "roadDifficultyTemplateEntries": [
+    262743,
+    262765,
+    262769,
+    262770,
+    262773,
+    262775,
+    262776,
+    262780,
+    262782,
+    262783,
+    262784,
+    262785,
+    262979,
+    262980,
+    262981,
+    262982,
+    262983,
+    262988,
+    362743,
+    362765,
+    362769,
+    362770,
+    362773,
+    362775,
+    362776,
+    362780,
+    362782,
+    362783,
+    362784,
+    362785,
+    362979,
+    362980,
+    362981,
+    362982,
+    362983,
+    362988
+  ],
+  "roadDifficultyTemplateCounts": {
+    "heroic": 49,
+    "mythic": 49
+  },
+  "importantFindings": [
+    "Earlier SQL disables LFG for both maps; later 2026-10-29 SQL deletes both map and LFG disables, but live state must be checked",
+    "Road was separately blocked pending scaling and later reopened",
+    "Fierce Blow 975011 custom damage handler is scoped to map IDs 936 and 937",
+    "Pending SQL order does not guarantee applied live server migration order"
+  ],
+  "notes": [
+    "Statement snippets preserve SQL source evidence; not an execution log",
+    "Not all SQL files for these maps are included; use with prior canonical records"
+  ]
+}

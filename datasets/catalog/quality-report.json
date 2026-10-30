@@ -1,0 +1,79 @@
+{
+  "generatedAt": "2026-10-30T15:04:56.468612+00:00",
+  "sourceManifestGeneratedAt": "2026-10-30T15:04:48.413298+00:00",
+  "sourceFiles": {
+    "srhinos/coa-datamine/spells": 104,
+    "srhinos/coa-datamine/npcs": 355,
+    "srhinos/coa-datamine/items": 71,
+    "srhinos/coa-datamine/quests": 114,
+    "srhinos/coa-datamine/abilities": 53,
+    "srhinos/coa-datamine/talents": 23,
+    "Bharph/coa-preservation-data/tooltips": 1,
+    "Bharph/coa-preservation-data/spellbooks": 1,
+    "Bharph/coa-preservation-data/changelog": 1,
+    "johnayoung/coa-arena/arena-abilities": 3
+  },
+  "categories": {
+    "srhinos/coa-datamine/spells": {
+      "indexedIds": 32824,
+      "parsedRecords": 32824
+    },
+    "srhinos/coa-datamine/npcs": {
+      "indexedIds": 127179,
+      "parsedRecords": 127179
+    },
+    "srhinos/coa-datamine/items": {
+      "indexedIds": 20267,
+      "parsedRecords": 20267
+    },
+    "srhinos/coa-datamine/quests": {
+      "indexedIds": 18561,
+      "parsedRecords": 18561
+    },
+    "srhinos/coa-datamine/abilities": {
+      "indexedIds": 29776,
+      "parsedRecords": 53
+    },
+    "srhinos/coa-datamine/talents": {
+      "indexedIds": 3618,
+      "parsedRecords": 23
+    },
+    "Bharph/coa-preservation-data/tooltips": {
+      "indexedIds": 180282,
+      "parsedRecords": 180282
+    },
+    "johnayoung/coa-arena/arena-abilities": {
+      "indexedIds": 0,
+      "parsedRecords": 3
+    },
+    "item": {
+      "uniqueIds": 20267,
+      "multipleRepositories": 0,
+      "differentSourceNames": 0
+    },
+    "npc": {
+      "uniqueIds": 127179,
+      "multipleRepositories": 0,
+      "differentSourceNames": 0
+    },
+    "quest": {
+      "uniqueIds": 18561,
+      "multipleRepositories": 0,
+      "differentSourceNames": 0
+    },
+    "spell": {
+      "uniqueIds": 190580,
+      "multipleRepositories": 30800,
+      "differentSourceNames": 13
+    },
+    "talent": {
+      "uniqueIds": 3618,
+      "multipleRepositories": 0,
+      "differentSourceNames": 0
+    }
+  },
+  "warnings": [],
+  "errors": [],
+  "schema": 1,
+  "totalUniqueTypedIds": 360205
+}

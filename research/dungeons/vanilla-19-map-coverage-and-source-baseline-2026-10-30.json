@@ -245,6 +245,19 @@
     "Map 189 has multiple Scarlet Monastery wings",
     "Map 429 contains Dire Maul wings",
     "The source describes 19 original dungeon maps, not all TBC/Wrath dungeons or raids",
-    "Loot variant allowlist excludes raids in this runtime implementation"
-  ]
+    "Loot variant allowlist excludes raids in this runtime implementation",
+    "Health source export contains 1747 parsed rows, compared with 1756 documented later; investigate subsequent migrations and parser coverage."
+  ],
+  "researchDataSources": {
+    "health": "research/dungeons/vanilla-health-heroic-mythic-full-source-2026-10-30.json",
+    "lootVariants": "research/loot/vanilla-dungeon-gear-variant-families-2026-10-30.json",
+    "bossLoot": "research/loot/vanilla-heroic-mythic-boss-loot-second-pass-2026-10-30.json",
+    "encounters": "research/encounters/vanilla-and-raid-encounter-sql-source-index-2026-10-30.json"
+  },
+  "importedCounts": {
+    "healthSourceRows": 1747,
+    "lootVariantFamilies": 999,
+    "bossLootSecondPassRows": 1902,
+    "encounterSourceRowsAcrossThreeFiles": 1036
+  }
 }

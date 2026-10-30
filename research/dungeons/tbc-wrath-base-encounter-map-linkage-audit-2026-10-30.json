@@ -1,0 +1,36 @@
+{
+  "title": "TBC/Wrath dungeon encounter mapping evidence audit",
+  "generatedOn": "2026-10-30",
+  "source": {
+    "repository": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+    "path": "data/sql/base/db_world/instance_encounters.sql"
+  },
+  "relatedRegistry": "research/dungeons/tbc-wrath-32-dungeon-instance-script-registry-2026-10-30.json",
+  "counts": {
+    "baseEncounterRows": 546,
+    "nonzeroLastEncounterDungeon": 104,
+    "encountersWithDungeonNameKeyword": 2
+  },
+  "criticalFieldMeaning": {
+    "lastEncounterDungeon": "LfgDungeon.dbc entry, NOT instance map ID",
+    "creditEntry": "NPC/spell credit ID, NOT map ID"
+  },
+  "method": "Keyword matching to comments only; no confirmed NPC spawn or boss-to-map linkage",
+  "keywordCandidates": [
+    {
+      "encounterId": 205,
+      "creditType": 0,
+      "creditEntry": 18344,
+      "lastEncounterDungeon": 148,
+      "name": "Nexus-Prince Shaffar"
+    },
+    {
+      "encounterId": 251,
+      "creditType": 0,
+      "creditEntry": 18344,
+      "lastEncounterDungeon": 179,
+      "name": "Nexus-Prince Shaffar"
+    }
+  ],
+  "unresolved": "Resolve creditEntry through creature spawn maps and/or verified encounter scripts before attaching map IDs. Base SQL alone cannot prove a dungeon map association."
+}

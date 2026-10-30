@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "totalLinkedSpellIds": 9656,
+  "withArchivedSpellDbcDefinition": 8776,
+  "withHistoricalTooltip": 516,
+  "withAdditionalArchiveEvidence": 364,
+  "withoutAnySourceEvidence": 0,
+  "withoutAnyDisplayName": 0,
+  "unnamedSpellIds": [],
+  "nameConflictsAcrossAllSources": 217,
+  "sourceCoverage": {
+    "archived-spell-dbc": 8776,
+    "databank": 364,
+    "exiles": 345,
+    "historical-tooltip": 516
+  },
+  "warning": "Historical evidence does not prove live-client spell behavior or availability."
+}

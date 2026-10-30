@@ -1,0 +1,3712 @@
+[
+  {
+    "spellId": 500017,
+    "preferred": "Serpent Beam Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Serpent Beam Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Serpent Beam"
+      }
+    ]
+  },
+  {
+    "spellId": 500029,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Blood of Azzinoth"
+      }
+    ]
+  },
+  {
+    "spellId": 500030,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Breath of Kil'jaeden"
+      }
+    ]
+  },
+  {
+    "spellId": 500032,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Felshield"
+      }
+    ]
+  },
+  {
+    "spellId": 500037,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Glaive Throw"
+      }
+    ]
+  },
+  {
+    "spellId": 500366,
+    "preferred": "Lament DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Lament DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Lament"
+      }
+    ]
+  },
+  {
+    "spellId": 500942,
+    "preferred": "Boon of the Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Boon of the Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Boon of the Tiger"
+      }
+    ]
+  },
+  {
+    "spellId": 500948,
+    "preferred": "Hex of Blood Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Hex of Blood Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Hex of Blood"
+      }
+    ]
+  },
+  {
+    "spellId": 501076,
+    "preferred": "Voodoo Idol",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Voodoo Idol"
+      },
+      {
+        "source": "databank",
+        "name": "Voodoo Puddle"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Voodoo Ward"
+      }
+    ]
+  },
+  {
+    "spellId": 501077,
+    "preferred": "Voodoo Idol",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Voodoo Idol"
+      },
+      {
+        "source": "databank",
+        "name": "Voodoo Puddle"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Voodoo Ward"
+      }
+    ]
+  },
+  {
+    "spellId": 501078,
+    "preferred": "Dark Mojo Crash Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Dark Mojo Crash Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Dark Mojo Crash"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Holy Combatant"
+      }
+    ]
+  },
+  {
+    "spellId": 501079,
+    "preferred": "Dark Mojo Crash Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Dark Mojo Crash Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Dark Mojo Crash"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Holy Combatant"
+      }
+    ]
+  },
+  {
+    "spellId": 501089,
+    "preferred": "Gift of the Loa",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Gift of the Loa"
+      },
+      {
+        "source": "databank",
+        "name": "Gift of the Loa"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Templar"
+      }
+    ]
+  },
+  {
+    "spellId": 501090,
+    "preferred": "Gift of the Loa",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Gift of the Loa"
+      },
+      {
+        "source": "databank",
+        "name": "Gift of the Loa"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Templar"
+      }
+    ]
+  },
+  {
+    "spellId": 501091,
+    "preferred": "Gift of the Loa",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Gift of the Loa"
+      },
+      {
+        "source": "databank",
+        "name": "Gift of the Loa"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Templar"
+      }
+    ]
+  },
+  {
+    "spellId": 501092,
+    "preferred": "Gift of the Loa",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Gift of the Loa"
+      },
+      {
+        "source": "databank",
+        "name": "Gift of the Loa"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Templar"
+      }
+    ]
+  },
+  {
+    "spellId": 501093,
+    "preferred": "Gift of the Loa",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Gift of the Loa"
+      },
+      {
+        "source": "databank",
+        "name": "Gift of the Loa"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Templar"
+      }
+    ]
+  },
+  {
+    "spellId": 501094,
+    "preferred": "Gift of the Loa",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Gift of the Loa"
+      },
+      {
+        "source": "databank",
+        "name": "Gift of the Loa"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Templar"
+      }
+    ]
+  },
+  {
+    "spellId": 501095,
+    "preferred": "Gift of the Loa",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Gift of the Loa"
+      },
+      {
+        "source": "databank",
+        "name": "Gift of the Loa"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Templar"
+      }
+    ]
+  },
+  {
+    "spellId": 501264,
+    "preferred": "Stomp",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Stomp"
+      },
+      {
+        "source": "databank",
+        "name": "Stomp"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Carve"
+      }
+    ]
+  },
+  {
+    "spellId": 501265,
+    "preferred": "Stomp",
+    "candidates": [
+      {
+        "source": "databank",
+        "name": "Stomp"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Carve"
+      }
+    ]
+  },
+  {
+    "spellId": 501266,
+    "preferred": "Stomp",
+    "candidates": [
+      {
+        "source": "databank",
+        "name": "Stomp"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Carve"
+      }
+    ]
+  },
+  {
+    "spellId": 501267,
+    "preferred": "Stomp",
+    "candidates": [
+      {
+        "source": "databank",
+        "name": "Stomp"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Carve"
+      }
+    ]
+  },
+  {
+    "spellId": 501268,
+    "preferred": "Stomp",
+    "candidates": [
+      {
+        "source": "databank",
+        "name": "Stomp"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Carve"
+      }
+    ]
+  },
+  {
+    "spellId": 501269,
+    "preferred": "Stomp",
+    "candidates": [
+      {
+        "source": "databank",
+        "name": "Stomp"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Carve"
+      }
+    ]
+  },
+  {
+    "spellId": 501278,
+    "preferred": "Voidblaze",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Voidblaze"
+      },
+      {
+        "source": "databank",
+        "name": "Voidblaze"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Immolation Aura"
+      }
+    ]
+  },
+  {
+    "spellId": 501279,
+    "preferred": "Voidblaze",
+    "candidates": [
+      {
+        "source": "databank",
+        "name": "Voidblaze"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Immolation Aura"
+      }
+    ]
+  },
+  {
+    "spellId": 501280,
+    "preferred": "Voidblaze",
+    "candidates": [
+      {
+        "source": "databank",
+        "name": "Voidblaze"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Immolation Aura"
+      }
+    ]
+  },
+  {
+    "spellId": 501374,
+    "preferred": "Interrogate DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Interrogate DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Interrogate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Brand of the Unworthy"
+      }
+    ]
+  },
+  {
+    "spellId": 501375,
+    "preferred": "Interrogate DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Interrogate DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Interrogate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Brand of the Unworthy"
+      }
+    ]
+  },
+  {
+    "spellId": 501376,
+    "preferred": "Interrogate DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Interrogate DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Interrogate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Brand of the Unworthy"
+      }
+    ]
+  },
+  {
+    "spellId": 501377,
+    "preferred": "Interrogate DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Interrogate DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Interrogate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Brand of the Unworthy"
+      }
+    ]
+  },
+  {
+    "spellId": 501378,
+    "preferred": "Interrogate DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Interrogate DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Interrogate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Brand of the Unworthy"
+      }
+    ]
+  },
+  {
+    "spellId": 501379,
+    "preferred": "Interrogate DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Interrogate DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Interrogate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Brand of the Unworthy"
+      }
+    ]
+  },
+  {
+    "spellId": 501381,
+    "preferred": "Interrogate DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Interrogate DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Interrogate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Brand of the Unworthy"
+      }
+    ]
+  },
+  {
+    "spellId": 501382,
+    "preferred": "Interrogate DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Interrogate DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Interrogate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Brand of the Unworthy"
+      }
+    ]
+  },
+  {
+    "spellId": 501412,
+    "preferred": "Mystic Thunder",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Mystic Thunder"
+      },
+      {
+        "source": "databank",
+        "name": "Mystic Thunder"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Gust of Wind"
+      }
+    ]
+  },
+  {
+    "spellId": 501413,
+    "preferred": "Mystic Thunder",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Mystic Thunder"
+      },
+      {
+        "source": "databank",
+        "name": "Mystic Thunder"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Gust of Wind"
+      }
+    ]
+  },
+  {
+    "spellId": 501414,
+    "preferred": "Mystic Thunder",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Mystic Thunder"
+      },
+      {
+        "source": "databank",
+        "name": "Mystic Thunder"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Gust of Wind"
+      }
+    ]
+  },
+  {
+    "spellId": 501630,
+    "preferred": "Finger of Agony",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "databank",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Pestilence of Conquest"
+      }
+    ]
+  },
+  {
+    "spellId": 501631,
+    "preferred": "Finger of Agony",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "databank",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Pestilence of Conquest"
+      }
+    ]
+  },
+  {
+    "spellId": 501632,
+    "preferred": "Finger of Agony",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "databank",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Pestilence of Conquest"
+      }
+    ]
+  },
+  {
+    "spellId": 501633,
+    "preferred": "Finger of Agony",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "databank",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Pestilence of Conquest"
+      }
+    ]
+  },
+  {
+    "spellId": 501634,
+    "preferred": "Finger of Agony",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "databank",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Pestilence of Conquest"
+      }
+    ]
+  },
+  {
+    "spellId": 501635,
+    "preferred": "Finger of Agony",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "databank",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Pestilence of Conquest"
+      }
+    ]
+  },
+  {
+    "spellId": 501636,
+    "preferred": "Finger of Agony",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "databank",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Pestilence of Conquest"
+      }
+    ]
+  },
+  {
+    "spellId": 501637,
+    "preferred": "Finger of Agony",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "databank",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Pestilence of Conquest"
+      }
+    ]
+  },
+  {
+    "spellId": 501638,
+    "preferred": "Finger of Agony",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "databank",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Pestilence of Conquest"
+      }
+    ]
+  },
+  {
+    "spellId": 501639,
+    "preferred": "Finger of Agony",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "databank",
+        "name": "Finger of Agony"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Pestilence of Conquest"
+      }
+    ]
+  },
+  {
+    "spellId": 501652,
+    "preferred": "Infuse",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Infuse"
+      },
+      {
+        "source": "databank",
+        "name": "Lifedrinker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Net Throw"
+      }
+    ]
+  },
+  {
+    "spellId": 501653,
+    "preferred": "Infuse",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Infuse"
+      },
+      {
+        "source": "databank",
+        "name": "Lifedrinker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Net Throw"
+      }
+    ]
+  },
+  {
+    "spellId": 501654,
+    "preferred": "Infuse",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Infuse"
+      },
+      {
+        "source": "databank",
+        "name": "Lifedrinker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Net Throw"
+      }
+    ]
+  },
+  {
+    "spellId": 501655,
+    "preferred": "Infuse",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Infuse"
+      },
+      {
+        "source": "databank",
+        "name": "Lifedrinker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Net Throw"
+      }
+    ]
+  },
+  {
+    "spellId": 501656,
+    "preferred": "Infuse",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Infuse"
+      },
+      {
+        "source": "databank",
+        "name": "Lifedrinker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Net Throw"
+      }
+    ]
+  },
+  {
+    "spellId": 501657,
+    "preferred": "Infuse",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Infuse"
+      },
+      {
+        "source": "databank",
+        "name": "Lifedrinker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Net Throw"
+      }
+    ]
+  },
+  {
+    "spellId": 501658,
+    "preferred": "Infuse",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Infuse"
+      },
+      {
+        "source": "databank",
+        "name": "Lifedrinker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Net Throw"
+      }
+    ]
+  },
+  {
+    "spellId": 501659,
+    "preferred": "Infuse",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Infuse"
+      },
+      {
+        "source": "databank",
+        "name": "Lifedrinker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Net Throw"
+      }
+    ]
+  },
+  {
+    "spellId": 501660,
+    "preferred": "Infuse",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Infuse"
+      },
+      {
+        "source": "databank",
+        "name": "Lifedrinker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Net Throw"
+      }
+    ]
+  },
+  {
+    "spellId": 501661,
+    "preferred": "Infuse",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Infuse"
+      },
+      {
+        "source": "databank",
+        "name": "Lifedrinker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Net Throw"
+      }
+    ]
+  },
+  {
+    "spellId": 501687,
+    "preferred": "Lupine Shred",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "databank",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Eviscerated"
+      }
+    ]
+  },
+  {
+    "spellId": 501688,
+    "preferred": "Lupine Shred",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "databank",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Eviscerated"
+      }
+    ]
+  },
+  {
+    "spellId": 501689,
+    "preferred": "Lupine Shred",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "databank",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Eviscerated"
+      }
+    ]
+  },
+  {
+    "spellId": 501690,
+    "preferred": "Lupine Shred",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "databank",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Eviscerated"
+      }
+    ]
+  },
+  {
+    "spellId": 501691,
+    "preferred": "Lupine Shred",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "databank",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Eviscerated"
+      }
+    ]
+  },
+  {
+    "spellId": 501692,
+    "preferred": "Lupine Shred",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "databank",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Eviscerated"
+      }
+    ]
+  },
+  {
+    "spellId": 501693,
+    "preferred": "Lupine Shred",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "databank",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Eviscerated"
+      }
+    ]
+  },
+  {
+    "spellId": 501694,
+    "preferred": "Lupine Shred",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "databank",
+        "name": "Lupine Shred"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Eviscerated"
+      }
+    ]
+  },
+  {
+    "spellId": 501708,
+    "preferred": "Spread Shot",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spread Shot"
+      },
+      {
+        "source": "databank",
+        "name": "Spread Shot"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Fel Monstrosity"
+      }
+    ]
+  },
+  {
+    "spellId": 501709,
+    "preferred": "Spread Shot",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spread Shot"
+      },
+      {
+        "source": "databank",
+        "name": "Spread Shot"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Fel Monstrosity"
+      }
+    ]
+  },
+  {
+    "spellId": 501710,
+    "preferred": "Spread Shot",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spread Shot"
+      },
+      {
+        "source": "databank",
+        "name": "Spread Shot"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Fel Monstrosity"
+      }
+    ]
+  },
+  {
+    "spellId": 501711,
+    "preferred": "Spread Shot",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spread Shot"
+      },
+      {
+        "source": "databank",
+        "name": "Spread Shot"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Fel Monstrosity"
+      }
+    ]
+  },
+  {
+    "spellId": 501712,
+    "preferred": "Spread Shot",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spread Shot"
+      },
+      {
+        "source": "databank",
+        "name": "Spread Shot"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Fel Monstrosity"
+      }
+    ]
+  },
+  {
+    "spellId": 501713,
+    "preferred": "Spread Shot",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spread Shot"
+      },
+      {
+        "source": "databank",
+        "name": "Spread Shot"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Fel Monstrosity"
+      }
+    ]
+  },
+  {
+    "spellId": 501714,
+    "preferred": "Spread Shot",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spread Shot"
+      },
+      {
+        "source": "databank",
+        "name": "Spread Shot"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Fel Monstrosity"
+      }
+    ]
+  },
+  {
+    "spellId": 501862,
+    "preferred": "Flesh to Worms DEPRECATED RANK",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Flesh to Worms DEPRECATED RANK"
+      },
+      {
+        "source": "databank",
+        "name": "Flesh to Worms"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Flesh to Worms"
+      }
+    ]
+  },
+  {
+    "spellId": 501863,
+    "preferred": "Flesh to Worms DEPRECATED RANK",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Flesh to Worms DEPRECATED RANK"
+      },
+      {
+        "source": "databank",
+        "name": "Flesh to Worms"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Flesh to Worms"
+      }
+    ]
+  },
+  {
+    "spellId": 501864,
+    "preferred": "Flesh to Worms DEPRECATED RANK",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Flesh to Worms DEPRECATED RANK"
+      },
+      {
+        "source": "databank",
+        "name": "Flesh to Worms"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Flesh to Worms"
+      }
+    ]
+  },
+  {
+    "spellId": 501865,
+    "preferred": "Flesh to Worms DEPRECATED RANK",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Flesh to Worms DEPRECATED RANK"
+      },
+      {
+        "source": "databank",
+        "name": "Flesh to Worms"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Flesh to Worms"
+      }
+    ]
+  },
+  {
+    "spellId": 501889,
+    "preferred": "Crypt Scarabs (deprecated old max rank)",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Crypt Scarabs (deprecated old max rank)"
+      },
+      {
+        "source": "databank",
+        "name": "Crypt Scarabs (deprecated old max rank)"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Crypt Swarm"
+      }
+    ]
+  },
+  {
+    "spellId": 501893,
+    "preferred": "Wretched Bile DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Wretched Bile DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Wretched Bile DEPRECATED"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Spirit Link Idol"
+      }
+    ]
+  },
+  {
+    "spellId": 501894,
+    "preferred": "Wretched Bile DEPRECATED",
+    "candidates": [
+      {
+        "source": "databank",
+        "name": "Wretched Bile DEPRECATED"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Spirit Link Idol"
+      }
+    ]
+  },
+  {
+    "spellId": 501895,
+    "preferred": "Wretched Bile DEPRECATED",
+    "candidates": [
+      {
+        "source": "databank",
+        "name": "Wretched Bile DEPRECATED"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Spirit Link Idol"
+      }
+    ]
+  },
+  {
+    "spellId": 501896,
+    "preferred": "Wretched Bile DEPRECATED",
+    "candidates": [
+      {
+        "source": "databank",
+        "name": "Wretched Bile DEPRECATED"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Spirit Link Idol"
+      }
+    ]
+  },
+  {
+    "spellId": 501897,
+    "preferred": "Wretched Bile DEPRECATED",
+    "candidates": [
+      {
+        "source": "databank",
+        "name": "Wretched Bile DEPRECATED"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Spirit Link Idol"
+      }
+    ]
+  },
+  {
+    "spellId": 501898,
+    "preferred": "Wretched Bile DEPRECATED",
+    "candidates": [
+      {
+        "source": "databank",
+        "name": "Wretched Bile DEPRECATED"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Spirit Link Idol"
+      }
+    ]
+  },
+  {
+    "spellId": 501899,
+    "preferred": "Wretched Bile DEPRECATED",
+    "candidates": [
+      {
+        "source": "databank",
+        "name": "Wretched Bile DEPRECATED"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Spirit Link Idol"
+      }
+    ]
+  },
+  {
+    "spellId": 502091,
+    "preferred": "Burst",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Burst"
+      },
+      {
+        "source": "databank",
+        "name": "Burst"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike"
+      }
+    ]
+  },
+  {
+    "spellId": 502092,
+    "preferred": "Burst",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Burst"
+      },
+      {
+        "source": "databank",
+        "name": "Burst"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike"
+      }
+    ]
+  },
+  {
+    "spellId": 502093,
+    "preferred": "Burst",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Burst"
+      },
+      {
+        "source": "databank",
+        "name": "Burst"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike"
+      }
+    ]
+  },
+  {
+    "spellId": 502094,
+    "preferred": "Burst",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Burst"
+      },
+      {
+        "source": "databank",
+        "name": "Burst"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike"
+      }
+    ]
+  },
+  {
+    "spellId": 502095,
+    "preferred": "Burst",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Burst"
+      },
+      {
+        "source": "databank",
+        "name": "Burst"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike"
+      }
+    ]
+  },
+  {
+    "spellId": 502096,
+    "preferred": "Burst",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Burst"
+      },
+      {
+        "source": "databank",
+        "name": "Burst"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike"
+      }
+    ]
+  },
+  {
+    "spellId": 502097,
+    "preferred": "Burst",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Burst"
+      },
+      {
+        "source": "databank",
+        "name": "Burst"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike"
+      }
+    ]
+  },
+  {
+    "spellId": 502098,
+    "preferred": "Burst",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Burst"
+      },
+      {
+        "source": "databank",
+        "name": "Burst"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike"
+      }
+    ]
+  },
+  {
+    "spellId": 502099,
+    "preferred": "Burst",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Burst"
+      },
+      {
+        "source": "databank",
+        "name": "Burst"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike"
+      }
+    ]
+  },
+  {
+    "spellId": 502100,
+    "preferred": "Draconic Fang",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Draconic Fang"
+      },
+      {
+        "source": "databank",
+        "name": "Draconic Fang"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike (Offhand)"
+      }
+    ]
+  },
+  {
+    "spellId": 502101,
+    "preferred": "Draconic Fang",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Draconic Fang"
+      },
+      {
+        "source": "databank",
+        "name": "Draconic Fang"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike (Offhand)"
+      }
+    ]
+  },
+  {
+    "spellId": 502102,
+    "preferred": "Draconic Fang",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Draconic Fang"
+      },
+      {
+        "source": "databank",
+        "name": "Draconic Fang"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike (Offhand)"
+      }
+    ]
+  },
+  {
+    "spellId": 502103,
+    "preferred": "Draconic Fang",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Draconic Fang"
+      },
+      {
+        "source": "databank",
+        "name": "Draconic Fang"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike (Offhand)"
+      }
+    ]
+  },
+  {
+    "spellId": 502104,
+    "preferred": "Draconic Fang",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Draconic Fang"
+      },
+      {
+        "source": "databank",
+        "name": "Draconic Fang"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike (Offhand)"
+      }
+    ]
+  },
+  {
+    "spellId": 502105,
+    "preferred": "Draconic Fang",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Draconic Fang"
+      },
+      {
+        "source": "databank",
+        "name": "Draconic Fang"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike (Offhand)"
+      }
+    ]
+  },
+  {
+    "spellId": 502106,
+    "preferred": "Draconic Fang",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Draconic Fang"
+      },
+      {
+        "source": "databank",
+        "name": "Draconic Fang"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Annihilan Strike (Offhand)"
+      }
+    ]
+  },
+  {
+    "spellId": 502479,
+    "preferred": "Emancipate",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Emancipate"
+      },
+      {
+        "source": "databank",
+        "name": "Emancipate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Gavel of Wrath"
+      }
+    ]
+  },
+  {
+    "spellId": 502480,
+    "preferred": "Emancipate",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Emancipate"
+      },
+      {
+        "source": "databank",
+        "name": "Emancipate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Gavel of Wrath"
+      }
+    ]
+  },
+  {
+    "spellId": 502481,
+    "preferred": "Emancipate",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Emancipate"
+      },
+      {
+        "source": "databank",
+        "name": "Emancipate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Gavel of Wrath"
+      }
+    ]
+  },
+  {
+    "spellId": 502482,
+    "preferred": "Emancipate",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Emancipate"
+      },
+      {
+        "source": "databank",
+        "name": "Emancipate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Gavel of Wrath"
+      }
+    ]
+  },
+  {
+    "spellId": 502483,
+    "preferred": "Emancipate",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Emancipate"
+      },
+      {
+        "source": "databank",
+        "name": "Emancipate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Gavel of Wrath"
+      }
+    ]
+  },
+  {
+    "spellId": 502484,
+    "preferred": "Emancipate",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Emancipate"
+      },
+      {
+        "source": "databank",
+        "name": "Emancipate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Gavel of Wrath"
+      }
+    ]
+  },
+  {
+    "spellId": 502485,
+    "preferred": "Emancipate",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Emancipate"
+      },
+      {
+        "source": "databank",
+        "name": "Emancipate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Gavel of Wrath"
+      }
+    ]
+  },
+  {
+    "spellId": 502507,
+    "preferred": "Boomshot",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Boomshot"
+      },
+      {
+        "source": "databank",
+        "name": "Boomshot"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Supremacy"
+      }
+    ]
+  },
+  {
+    "spellId": 502508,
+    "preferred": "Boomshot",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Boomshot"
+      },
+      {
+        "source": "databank",
+        "name": "Boomshot"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Supremacy"
+      }
+    ]
+  },
+  {
+    "spellId": 502509,
+    "preferred": "Boomshot",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Boomshot"
+      },
+      {
+        "source": "databank",
+        "name": "Boomshot"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Supremacy"
+      }
+    ]
+  },
+  {
+    "spellId": 502603,
+    "preferred": "Manastrike",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastrike"
+      },
+      {
+        "source": "databank",
+        "name": "Manastrike"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Expunge Blight"
+      }
+    ]
+  },
+  {
+    "spellId": 502604,
+    "preferred": "Manastrike",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastrike"
+      },
+      {
+        "source": "databank",
+        "name": "Manastrike"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Expunge Blight"
+      }
+    ]
+  },
+  {
+    "spellId": 502605,
+    "preferred": "Manastrike",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastrike"
+      },
+      {
+        "source": "databank",
+        "name": "Manastrike"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Expunge Blight"
+      }
+    ]
+  },
+  {
+    "spellId": 502606,
+    "preferred": "Manastrike",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastrike"
+      },
+      {
+        "source": "databank",
+        "name": "Manastrike"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Expunge Blight"
+      }
+    ]
+  },
+  {
+    "spellId": 502607,
+    "preferred": "Manastrike",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastrike"
+      },
+      {
+        "source": "databank",
+        "name": "Manastrike"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Expunge Blight"
+      }
+    ]
+  },
+  {
+    "spellId": 502608,
+    "preferred": "Manastrike",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastrike"
+      },
+      {
+        "source": "databank",
+        "name": "Manastrike"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Expunge Blight"
+      }
+    ]
+  },
+  {
+    "spellId": 502609,
+    "preferred": "Manastrike",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastrike"
+      },
+      {
+        "source": "databank",
+        "name": "Manastrike"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Expunge Blight"
+      }
+    ]
+  },
+  {
+    "spellId": 502610,
+    "preferred": "Manastrike",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastrike"
+      },
+      {
+        "source": "databank",
+        "name": "Manastrike"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Expunge Blight"
+      }
+    ]
+  },
+  {
+    "spellId": 502611,
+    "preferred": "Manastrike",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastrike"
+      },
+      {
+        "source": "databank",
+        "name": "Manastrike"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Expunge Blight"
+      }
+    ]
+  },
+  {
+    "spellId": 502612,
+    "preferred": "Manastrike",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastrike"
+      },
+      {
+        "source": "databank",
+        "name": "Manastrike"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Expunge Blight"
+      }
+    ]
+  },
+  {
+    "spellId": 502613,
+    "preferred": "Manastrike",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastrike"
+      },
+      {
+        "source": "databank",
+        "name": "Manastrike"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Expunge Blight"
+      }
+    ]
+  },
+  {
+    "spellId": 502614,
+    "preferred": "Manastorm",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastorm"
+      },
+      {
+        "source": "databank",
+        "name": "Manastorm"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Valiance"
+      }
+    ]
+  },
+  {
+    "spellId": 502615,
+    "preferred": "Manastorm",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastorm"
+      },
+      {
+        "source": "databank",
+        "name": "Manastorm"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Valiance"
+      }
+    ]
+  },
+  {
+    "spellId": 502616,
+    "preferred": "Manastorm",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastorm"
+      },
+      {
+        "source": "databank",
+        "name": "Manastorm"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Valiance"
+      }
+    ]
+  },
+  {
+    "spellId": 502617,
+    "preferred": "Manastorm",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastorm"
+      },
+      {
+        "source": "databank",
+        "name": "Manastorm"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Valiance"
+      }
+    ]
+  },
+  {
+    "spellId": 502618,
+    "preferred": "Manastorm",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Manastorm"
+      },
+      {
+        "source": "databank",
+        "name": "Manastorm"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Valiance"
+      }
+    ]
+  },
+  {
+    "spellId": 502700,
+    "preferred": "Shrieking Scythe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "databank",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Shrieker"
+      }
+    ]
+  },
+  {
+    "spellId": 502701,
+    "preferred": "Shrieking Scythe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "databank",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Shrieker"
+      }
+    ]
+  },
+  {
+    "spellId": 502702,
+    "preferred": "Shrieking Scythe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "databank",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Shrieker"
+      }
+    ]
+  },
+  {
+    "spellId": 502703,
+    "preferred": "Shrieking Scythe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "databank",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Shrieker"
+      }
+    ]
+  },
+  {
+    "spellId": 502704,
+    "preferred": "Shrieking Scythe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "databank",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Shrieker"
+      }
+    ]
+  },
+  {
+    "spellId": 502705,
+    "preferred": "Shrieking Scythe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "databank",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Shrieker"
+      }
+    ]
+  },
+  {
+    "spellId": 502706,
+    "preferred": "Shrieking Scythe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "databank",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Shrieker"
+      }
+    ]
+  },
+  {
+    "spellId": 502707,
+    "preferred": "Shrieking Scythe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "databank",
+        "name": "Shrieking Scythe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Shrieker"
+      }
+    ]
+  },
+  {
+    "spellId": 502734,
+    "preferred": "Bear's Maw",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Bear's Maw"
+      },
+      {
+        "source": "databank",
+        "name": "Bear's Maw"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Ride the Lightning"
+      }
+    ]
+  },
+  {
+    "spellId": 502735,
+    "preferred": "Bear's Maw",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Bear's Maw"
+      },
+      {
+        "source": "databank",
+        "name": "Bear's Maw"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Ride the Lightning"
+      }
+    ]
+  },
+  {
+    "spellId": 502736,
+    "preferred": "Bear's Maw",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Bear's Maw"
+      },
+      {
+        "source": "databank",
+        "name": "Bear's Maw"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Ride the Lightning"
+      }
+    ]
+  },
+  {
+    "spellId": 502737,
+    "preferred": "Bear's Maw",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Bear's Maw"
+      },
+      {
+        "source": "databank",
+        "name": "Bear's Maw"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Ride the Lightning"
+      }
+    ]
+  },
+  {
+    "spellId": 502738,
+    "preferred": "Bear's Maw",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Bear's Maw"
+      },
+      {
+        "source": "databank",
+        "name": "Bear's Maw"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Ride the Lightning"
+      }
+    ]
+  },
+  {
+    "spellId": 502739,
+    "preferred": "Bear's Maw",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Bear's Maw"
+      },
+      {
+        "source": "databank",
+        "name": "Bear's Maw"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Ride the Lightning"
+      }
+    ]
+  },
+  {
+    "spellId": 502740,
+    "preferred": "Bear's Maw",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Bear's Maw"
+      },
+      {
+        "source": "databank",
+        "name": "Bear's Maw"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Ride the Lightning"
+      }
+    ]
+  },
+  {
+    "spellId": 502784,
+    "preferred": "Mending Growth",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Mending Growth"
+      },
+      {
+        "source": "databank",
+        "name": "Mending Growth"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Supremacy"
+      }
+    ]
+  },
+  {
+    "spellId": 502785,
+    "preferred": "Mending Growth",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Mending Growth"
+      },
+      {
+        "source": "databank",
+        "name": "Mending Growth"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Supremacy"
+      }
+    ]
+  },
+  {
+    "spellId": 502786,
+    "preferred": "Mending Growth",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Mending Growth"
+      },
+      {
+        "source": "databank",
+        "name": "Mending Growth"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Supremacy"
+      }
+    ]
+  },
+  {
+    "spellId": 502787,
+    "preferred": "Mending Growth",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Mending Growth"
+      },
+      {
+        "source": "databank",
+        "name": "Mending Growth"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Supremacy"
+      }
+    ]
+  },
+  {
+    "spellId": 502788,
+    "preferred": "Mending Growth",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Mending Growth"
+      },
+      {
+        "source": "databank",
+        "name": "Mending Growth"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Supremacy"
+      }
+    ]
+  },
+  {
+    "spellId": 502789,
+    "preferred": "Mending Growth",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Mending Growth"
+      },
+      {
+        "source": "databank",
+        "name": "Mending Growth"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Supremacy"
+      }
+    ]
+  },
+  {
+    "spellId": 502790,
+    "preferred": "Mending Growth",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Mending Growth"
+      },
+      {
+        "source": "databank",
+        "name": "Mending Growth"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Supremacy"
+      }
+    ]
+  },
+  {
+    "spellId": 502791,
+    "preferred": "Primal Infusion",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Primal Infusion"
+      },
+      {
+        "source": "databank",
+        "name": "Primal Infusion"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Supremacy"
+      }
+    ]
+  },
+  {
+    "spellId": 502792,
+    "preferred": "Primal Infusion",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Primal Infusion"
+      },
+      {
+        "source": "databank",
+        "name": "Primal Infusion"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Supremacy"
+      }
+    ]
+  },
+  {
+    "spellId": 502861,
+    "preferred": "Spellwrath DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spellwrath DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Spellwrath"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Valiance"
+      }
+    ]
+  },
+  {
+    "spellId": 502862,
+    "preferred": "Spellwrath DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spellwrath DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Spellwrath"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Valiance"
+      }
+    ]
+  },
+  {
+    "spellId": 502863,
+    "preferred": "Spellwrath DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spellwrath DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Spellwrath"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Valiance"
+      }
+    ]
+  },
+  {
+    "spellId": 502864,
+    "preferred": "Spellwrath DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spellwrath DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Spellwrath"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Valiance"
+      }
+    ]
+  },
+  {
+    "spellId": 502865,
+    "preferred": "Spellwrath DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spellwrath DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Spellwrath"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Valiance"
+      }
+    ]
+  },
+  {
+    "spellId": 502866,
+    "preferred": "Spellwrath DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spellwrath DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Spellwrath"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Valiance"
+      }
+    ]
+  },
+  {
+    "spellId": 502867,
+    "preferred": "Spellwrath DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spellwrath DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Spellwrath"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Valiance"
+      }
+    ]
+  },
+  {
+    "spellId": 502868,
+    "preferred": "Spellwrath DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spellwrath DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Spellwrath"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Valiance"
+      }
+    ]
+  },
+  {
+    "spellId": 502869,
+    "preferred": "Spellwrath DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spellwrath DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Spellwrath"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Standard of Valiance"
+      }
+    ]
+  },
+  {
+    "spellId": 503001,
+    "preferred": "Water Bolt",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "databank",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Torn Flesh"
+      }
+    ]
+  },
+  {
+    "spellId": 503002,
+    "preferred": "Water Bolt",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "databank",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Torn Flesh"
+      }
+    ]
+  },
+  {
+    "spellId": 503003,
+    "preferred": "Water Bolt",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "databank",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Torn Flesh"
+      }
+    ]
+  },
+  {
+    "spellId": 503004,
+    "preferred": "Water Bolt",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "databank",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Torn Flesh"
+      }
+    ]
+  },
+  {
+    "spellId": 503005,
+    "preferred": "Water Bolt",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "databank",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Torn Flesh"
+      }
+    ]
+  },
+  {
+    "spellId": 503006,
+    "preferred": "Water Bolt",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "databank",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Torn Flesh"
+      }
+    ]
+  },
+  {
+    "spellId": 503007,
+    "preferred": "Water Bolt",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "databank",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Torn Flesh"
+      }
+    ]
+  },
+  {
+    "spellId": 503008,
+    "preferred": "Water Bolt",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "databank",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Torn Flesh"
+      }
+    ]
+  },
+  {
+    "spellId": 503009,
+    "preferred": "Water Bolt",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "databank",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Torn Flesh"
+      }
+    ]
+  },
+  {
+    "spellId": 503010,
+    "preferred": "Water Bolt",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "databank",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Torn Flesh"
+      }
+    ]
+  },
+  {
+    "spellId": 503011,
+    "preferred": "Water Bolt",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "databank",
+        "name": "Water Bolt"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Torn Flesh"
+      }
+    ]
+  },
+  {
+    "spellId": 503114,
+    "preferred": "Linebreaker",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Linebreaker"
+      },
+      {
+        "source": "databank",
+        "name": "Linebreaker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Versus Frozen"
+      }
+    ]
+  },
+  {
+    "spellId": 503115,
+    "preferred": "Linebreaker",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Linebreaker"
+      },
+      {
+        "source": "databank",
+        "name": "Linebreaker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Versus Frozen"
+      }
+    ]
+  },
+  {
+    "spellId": 503116,
+    "preferred": "Linebreaker",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Linebreaker"
+      },
+      {
+        "source": "databank",
+        "name": "Linebreaker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Versus Frozen"
+      }
+    ]
+  },
+  {
+    "spellId": 503117,
+    "preferred": "Linebreaker",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Linebreaker"
+      },
+      {
+        "source": "databank",
+        "name": "Linebreaker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Versus Frozen"
+      }
+    ]
+  },
+  {
+    "spellId": 503118,
+    "preferred": "Linebreaker",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Linebreaker"
+      },
+      {
+        "source": "databank",
+        "name": "Linebreaker"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Versus Frozen"
+      }
+    ]
+  },
+  {
+    "spellId": 503415,
+    "preferred": "Rending Axe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "databank",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Maiming Spear"
+      }
+    ]
+  },
+  {
+    "spellId": 503416,
+    "preferred": "Rending Axe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "databank",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Maiming Spear"
+      }
+    ]
+  },
+  {
+    "spellId": 503417,
+    "preferred": "Rending Axe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "databank",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Maiming Spear"
+      }
+    ]
+  },
+  {
+    "spellId": 503418,
+    "preferred": "Rending Axe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "databank",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Maiming Spear"
+      }
+    ]
+  },
+  {
+    "spellId": 503419,
+    "preferred": "Rending Axe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "databank",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Maiming Spear"
+      }
+    ]
+  },
+  {
+    "spellId": 503420,
+    "preferred": "Rending Axe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "databank",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Maiming Spear"
+      }
+    ]
+  },
+  {
+    "spellId": 503421,
+    "preferred": "Rending Axe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "databank",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Maiming Spear"
+      }
+    ]
+  },
+  {
+    "spellId": 503422,
+    "preferred": "Rending Axe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "databank",
+        "name": "Rending Axe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Maiming Spear"
+      }
+    ]
+  },
+  {
+    "spellId": 704134,
+    "preferred": "Purify",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Purify"
+      },
+      {
+        "source": "databank",
+        "name": "Wash"
+      }
+    ]
+  },
+  {
+    "spellId": 704160,
+    "preferred": "Piercing Cry",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Piercing Cry"
+      },
+      {
+        "source": "databank",
+        "name": "Piercing Cry"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Ambition"
+      }
+    ]
+  },
+  {
+    "spellId": 704507,
+    "preferred": "Totem of Hir'eek DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Totem of Hir'eek DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Totem of Hir'eek"
+      }
+    ]
+  },
+  {
+    "spellId": 800314,
+    "preferred": "King's Valor DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "King's Valor DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "King's Valor"
+      }
+    ]
+  },
+  {
+    "spellId": 800713,
+    "preferred": "Runic Familiar DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Runic Familiar DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Conjure: Runic Familiar"
+      }
+    ]
+  },
+  {
+    "spellId": 800718,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Warp"
+      }
+    ]
+  },
+  {
+    "spellId": 800720,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Familiar: Field of Slowness"
+      }
+    ]
+  },
+  {
+    "spellId": 800721,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Familiar: Field of Destruction"
+      }
+    ]
+  },
+  {
+    "spellId": 800745,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Familiar: Cosmic Force"
+      }
+    ]
+  },
+  {
+    "spellId": 800746,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Familiar: Warpslide"
+      }
+    ]
+  },
+  {
+    "spellId": 800747,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Familiar: Magic Well"
+      }
+    ]
+  },
+  {
+    "spellId": 800748,
+    "preferred": "Controlled Magic",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Controlled Magic"
+      },
+      {
+        "source": "databank",
+        "name": "My Mind Is Guarded"
+      }
+    ]
+  },
+  {
+    "spellId": 801587,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Dinomancy: Raptor Ambush"
+      }
+    ]
+  },
+  {
+    "spellId": 801605,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Dinomancy: Diemetradon"
+      }
+    ]
+  },
+  {
+    "spellId": 801606,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Dinomancy: Raptor's Call"
+      }
+    ]
+  },
+  {
+    "spellId": 801675,
+    "preferred": "Mojo Talisman",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Mojo Talisman"
+      },
+      {
+        "source": "databank",
+        "name": "Panther's Pounce"
+      }
+    ]
+  },
+  {
+    "spellId": 801681,
+    "preferred": "Devotion of Kimbul",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Devotion of Kimbul"
+      },
+      {
+        "source": "databank",
+        "name": "Devotion of Bethekk"
+      }
+    ]
+  },
+  {
+    "spellId": 801682,
+    "preferred": "Devotion of Zanza",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Devotion of Zanza"
+      },
+      {
+        "source": "databank",
+        "name": "Devotion of Hir'eek"
+      }
+    ]
+  },
+  {
+    "spellId": 801684,
+    "preferred": "Devotion of Lukou",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Devotion of Lukou"
+      },
+      {
+        "source": "databank",
+        "name": "Devotion of Sseratus"
+      }
+    ]
+  },
+  {
+    "spellId": 801944,
+    "preferred": "Spectral Decay DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Spectral Decay DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Spectral Decay"
+      }
+    ]
+  },
+  {
+    "spellId": 802012,
+    "preferred": "Interrogate DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Interrogate DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Interrogate"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Brand of the Unworthy"
+      }
+    ]
+  },
+  {
+    "spellId": 802077,
+    "preferred": "Panacea deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Panacea deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Panacea"
+      }
+    ]
+  },
+  {
+    "spellId": 804167,
+    "preferred": "Demonflare DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Demonflare DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Demonflare"
+      }
+    ]
+  },
+  {
+    "spellId": 804504,
+    "preferred": "Fate Guard DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Fate Guard DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Fate Guard"
+      }
+    ]
+  },
+  {
+    "spellId": 804558,
+    "preferred": "Putrefy DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Putrefy DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Putrefy"
+      }
+    ]
+  },
+  {
+    "spellId": 805497,
+    "preferred": "Lucifron's Lagniappe",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Lucifron's Lagniappe"
+      },
+      {
+        "source": "databank",
+        "name": "Lucifron's Lagniappe"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Wild Magic"
+      }
+    ]
+  },
+  {
+    "spellId": 805728,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Runesurge"
+      }
+    ]
+  },
+  {
+    "spellId": 805733,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Familiar: Trispell"
+      }
+    ]
+  },
+  {
+    "spellId": 806107,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Inevitable Prophecy"
+      }
+    ]
+  },
+  {
+    "spellId": 806127,
+    "preferred": "Malady of Rot DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Malady of Rot DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Malady of Rot"
+      }
+    ]
+  },
+  {
+    "spellId": 806318,
+    "preferred": "Plaguebringer DEPRECATED",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Plaguebringer DEPRECATED"
+      },
+      {
+        "source": "databank",
+        "name": "Plaguebringer"
+      }
+    ]
+  },
+  {
+    "spellId": 806362,
+    "preferred": "Deprecated",
+    "candidates": [
+      {
+        "source": "exiles",
+        "name": "Deprecated"
+      },
+      {
+        "source": "databank",
+        "name": "Horn of Disorientation"
+      },
+      {
+        "source": "archived-relationship",
+        "name": "Coordination"
+      }
+    ]
+  }
+]

@@ -1,0 +1,634 @@
+{
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "verification": "Upstream scripts only, not live confirmed",
+  "files": [
+    {
+      "path": "src/server/scripts/Northrend/Gundrak/boss_slad_ran.cpp",
+      "sha": "2d3eaf0b00fb9040a001ae50aee4aff7ea1cba9a",
+      "lines": 198,
+      "signals": [
+        {
+          "line": 27,
+          "text": "SPELL_POISON_NOVA                           = 55081,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_POWERFULL_BITE                        = 48287,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_VENOM_BOLT                            = 54970,"
+        },
+        {
+          "line": 31,
+          "text": "SPELL_SNAKE_WRAP                            = 55126"
+        },
+        {
+          "line": 79,
+          "text": "Talk(SAY_SUMMON_SNAKES);"
+        },
+        {
+          "line": 83,
+          "text": "me->SummonCreature(NPC_SLADRAN_VIPER, SpawnLoc[i], TEMPSUMMON_CORPSE_TIMED_DESPAWN, 20 * IN_MILLISECONDS);"
+        },
+        {
+          "line": 88,
+          "text": "Talk(SAY_SUMMON_CONSTRICTORS);"
+        },
+        {
+          "line": 92,
+          "text": "me->SummonCreature(NPC_SLADRAN_CONSTRICTORS, SpawnLoc[i], TEMPSUMMON_CORPSE_TIMED_DESPAWN, 20 * IN_MILLISECONDS);"
+        },
+        {
+          "line": 112,
+          "text": "Talk(SAY_AGGRO);"
+        },
+        {
+          "line": 116,
+          "text": "Talk(EMOTE_NOVA);"
+        },
+        {
+          "line": 117,
+          "text": "DoCastAOE(SPELL_POISON_NOVA);"
+        },
+        {
+          "line": 121,
+          "text": "DoCastVictim(SPELL_POWERFULL_BITE);"
+        },
+        {
+          "line": 125,
+          "text": "DoCastRandomTarget(SPELL_VENOM_BOLT, 0, 45.0f, false);"
+        },
+        {
+          "line": 129,
+          "text": "void JustDied(Unit* killer) override"
+        },
+        {
+          "line": 131,
+          "text": "Talk(SAY_DEATH);"
+        },
+        {
+          "line": 132,
+          "text": "Talk(EMOTE_ALTAR);"
+        },
+        {
+          "line": 133,
+          "text": "BossAI::JustDied(killer);"
+        },
+        {
+          "line": 138,
+          "text": "Talk(SAY_SLAY);"
+        },
+        {
+          "line": 157,
+          "text": "return ValidateSpellInfo({ SPELL_SNAKE_WRAP });"
+        },
+        {
+          "line": 166,
+          "text": "GetUnitOwner()->CastSpell(GetUnitOwner(), SPELL_SNAKE_WRAP, true);"
+        },
+        {
+          "line": 172,
+          "text": "OnEffectPeriodic += AuraEffectPeriodicFn(spell_sladran_grip_of_sladran_aura::HandlePeriodic, EFFECT_0, SPELL_AURA_PERIODIC_DUMMY);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/Nexus/Nexus/boss_keristrasza.cpp",
+      "sha": "e6e92f8ce6e81098d1f9e778d3fef8f416941ec5",
+      "lines": 199,
+      "signals": [
+        {
+          "line": 28,
+          "text": "SPELL_FROZEN_PRISON             = 47854,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_TAIL_SWEEP                = 50155,"
+        },
+        {
+          "line": 30,
+          "text": "SPELL_CRYSTAL_CHAINS            = 50997,"
+        },
+        {
+          "line": 31,
+          "text": "SPELL_ENRAGE                    = 8599,"
+        },
+        {
+          "line": 32,
+          "text": "SPELL_CRYSTALFIRE_BREATH        = 48096,"
+        },
+        {
+          "line": 33,
+          "text": "SPELL_CRYSTALIZE                = 48179,"
+        },
+        {
+          "line": 34,
+          "text": "SPELL_INTENSE_COLD              = 48094,"
+        },
+        {
+          "line": 35,
+          "text": "SPELL_INTENSE_COLD_TRIGGER      = 48095,"
+        },
+        {
+          "line": 50,
+          "text": "EVENT_CRYSTALFIRE_BREATH        = 1,"
+        },
+        {
+          "line": 51,
+          "text": "EVENT_CRYSTAL_CHAINS            = 2,"
+        },
+        {
+          "line": 52,
+          "text": "EVENT_TAIL_SWEEP                = 3,"
+        },
+        {
+          "line": 53,
+          "text": "EVENT_HEALTH_CHECK              = 4,"
+        },
+        {
+          "line": 54,
+          "text": "EVENT_ACHIEVEMENT_CHECK         = 5"
+        },
+        {
+          "line": 72,
+          "text": "Talk(SAY_AGGRO);"
+        },
+        {
+          "line": 75,
+          "text": "me->CastSpell(me, SPELL_INTENSE_COLD, true);"
+        },
+        {
+          "line": 76,
+          "text": "events.ScheduleEvent(EVENT_CRYSTALFIRE_BREATH, 14s);"
+        },
+        {
+          "line": 77,
+          "text": "events.ScheduleEvent(EVENT_CRYSTAL_CHAINS, DUNGEON_MODE(20s, 11s));"
+        },
+        {
+          "line": 78,
+          "text": "events.ScheduleEvent(EVENT_TAIL_SWEEP, 5s);"
+        },
+        {
+          "line": 79,
+          "text": "events.ScheduleEvent(EVENT_HEALTH_CHECK, 1s);"
+        },
+        {
+          "line": 80,
+          "text": "events.ScheduleEvent(EVENT_ACHIEVEMENT_CHECK, 1s);"
+        },
+        {
+          "line": 83,
+          "text": "void JustDied(Unit* killer) override"
+        },
+        {
+          "line": 85,
+          "text": "Talk(SAY_DEATH);"
+        },
+        {
+          "line": 86,
+          "text": "BossAI::JustDied(killer);"
+        },
+        {
+          "line": 91,
+          "text": "Talk(SAY_SLAY);"
+        },
+        {
+          "line": 113,
+          "text": "me->RemoveAurasDueToSpell(SPELL_FROZEN_PRISON);"
+        },
+        {
+          "line": 118,
+          "text": "me->CastSpell(me, SPELL_FROZEN_PRISON, true);"
+        },
+        {
+          "line": 138,
+          "text": "case EVENT_HEALTH_CHECK:"
+        },
+        {
+          "line": 139,
+          "text": "if (me->HealthBelowPct(26))"
+        },
+        {
+          "line": 141,
+          "text": "Talk(SAY_ENRAGE);"
+        },
+        {
+          "line": 142,
+          "text": "Talk(EMOTE_FRENZY);"
+        },
+        {
+          "line": 143,
+          "text": "me->CastSpell(me, SPELL_ENRAGE, true);"
+        },
+        {
+          "line": 146,
+          "text": "events.ScheduleEvent(EVENT_HEALTH_CHECK, 1s);"
+        },
+        {
+          "line": 148,
+          "text": "case EVENT_ACHIEVEMENT_CHECK:"
+        },
+        {
+          "line": 152,
+          "text": "if (Aura* aur = itr->GetSource()->GetAura(SPELL_INTENSE_COLD_TRIGGER))"
+        },
+        {
+          "line": 155,
+          "text": "events.ScheduleEvent(EVENT_ACHIEVEMENT_CHECK, 500ms);"
+        },
+        {
+          "line": 158,
+          "text": "case EVENT_CRYSTALFIRE_BREATH:"
+        },
+        {
+          "line": 159,
+          "text": "me->CastSpell(me->GetVictim(), SPELL_CRYSTALFIRE_BREATH, false);"
+        },
+        {
+          "line": 160,
+          "text": "events.ScheduleEvent(EVENT_CRYSTALFIRE_BREATH, 14s);"
+        },
+        {
+          "line": 162,
+          "text": "case EVENT_TAIL_SWEEP:"
+        },
+        {
+          "line": 163,
+          "text": "me->CastSpell(me, SPELL_TAIL_SWEEP, false);"
+        },
+        {
+          "line": 164,
+          "text": "events.ScheduleEvent(EVENT_TAIL_SWEEP, 5s);"
+        },
+        {
+          "line": 166,
+          "text": "case EVENT_CRYSTAL_CHAINS:"
+        },
+        {
+          "line": 167,
+          "text": "Talk(SAY_CRYSTAL_NOVA);"
+        },
+        {
+          "line": 169,
+          "text": "me->CastSpell(me, SPELL_CRYSTALIZE, false);"
+        },
+        {
+          "line": 171,
+          "text": "me->CastSpell(target, SPELL_CRYSTAL_CHAINS, false);"
+        },
+        {
+          "line": 172,
+          "text": "events.ScheduleEvent(EVENT_CRYSTAL_CHAINS, DUNGEON_MODE(20s, 11s));"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/Nexus/Oculus/boss_urom.cpp",
+      "sha": "57eeb4b170dc235d876eabfa5ada2d82b1ffbfa6",
+      "lines": 390,
+      "signals": [
+        {
+          "line": 25,
+          "text": "SPELL_EVOCATION                             = 51602,"
+        },
+        {
+          "line": 26,
+          "text": "SPELL_SUMMON_MENAGERIE_1                    = 50476,"
+        },
+        {
+          "line": 27,
+          "text": "SPELL_SUMMON_MENAGERIE_2                    = 50495,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_SUMMON_MENAGERIE_3                    = 50496,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_TELEPORT                              = 51112,"
+        },
+        {
+          "line": 31,
+          "text": "SPELL_FROSTBOMB                             = 51103,"
+        },
+        {
+          "line": 32,
+          "text": "SPELL_TIME_BOMB                             = 51121,"
+        },
+        {
+          "line": 33,
+          "text": "SPELL_EMPOWERED_ARCANE_EXPLOSION            = 51110,"
+        },
+        {
+          "line": 53,
+          "text": "EVENT_FROSTBOMB                             = 1,"
+        },
+        {
+          "line": 54,
+          "text": "EVENT_TELEPORT_TO_CENTER                    = 2,"
+        },
+        {
+          "line": 55,
+          "text": "EVENT_TELE_BACK                             = 3,"
+        },
+        {
+          "line": 56,
+          "text": "EVENT_TIME_BOMB                             = 4,"
+        },
+        {
+          "line": 133,
+          "text": "me->CastSpell(me, SPELL_EVOCATION, true);"
+        },
+        {
+          "line": 152,
+          "text": "Talk(SAY_AGGRO);"
+        },
+        {
+          "line": 159,
+          "text": "if (me->FindCurrentSpellBySpellId(SPELL_EVOCATION))"
+        },
+        {
+          "line": 162,
+          "text": "events.RescheduleEvent(EVENT_FROSTBOMB, 7s, 11s);"
+        },
+        {
+          "line": 163,
+          "text": "events.RescheduleEvent(EVENT_TELEPORT_TO_CENTER, 30s, 35s);"
+        },
+        {
+          "line": 164,
+          "text": "events.RescheduleEvent(EVENT_TIME_BOMB, 20s, 25s);"
+        },
+        {
+          "line": 173,
+          "text": "Talk(SAY_SUMMON_1);"
+        },
+        {
+          "line": 175,
+          "text": "me->CastSpell(me, SPELL_SUMMON_MENAGERIE_1, false);"
+        },
+        {
+          "line": 178,
+          "text": "Talk(SAY_SUMMON_2);"
+        },
+        {
+          "line": 180,
+          "text": "me->CastSpell(me, SPELL_SUMMON_MENAGERIE_2, false);"
+        },
+        {
+          "line": 183,
+          "text": "Talk(SAY_SUMMON_3);"
+        },
+        {
+          "line": 185,
+          "text": "me->CastSpell(me, SPELL_SUMMON_MENAGERIE_3, false);"
+        },
+        {
+          "line": 219,
+          "text": "void JustDied(Unit* /*killer*/) override"
+        },
+        {
+          "line": 221,
+          "text": "Talk(SAY_DEATH);"
+        },
+        {
+          "line": 238,
+          "text": "Talk(SAY_PLAYER_KILL);"
+        },
+        {
+          "line": 245,
+          "text": "case SPELL_SUMMON_MENAGERIE_1:"
+        },
+        {
+          "line": 248,
+          "text": "me->SummonCreature(summons[0][i], cords[0][0] + ((i % 2) ? 4.0f : -4.0f), cords[0][1] + (i < 2 ? 4.0f : -4.0f), cords[0][2], 0.0f, TEMPSUMMON_TIMED_DESPAWN, 300000);"
+        },
+        {
+          "line": 253,
+          "text": "me->CastSpell(me, SPELL_EVOCATION, true);"
+        },
+        {
+          "line": 257,
+          "text": "case SPELL_SUMMON_MENAGERIE_2:"
+        },
+        {
+          "line": 260,
+          "text": "me->SummonCreature(summons[1][i], cords[1][0] + ((i % 2) ? 4.0f : -4.0f), cords[1][1] + (i < 2 ? 4.0f : -4.0f), cords[1][2], 0.0f, TEMPSUMMON_TIMED_DESPAWN, 300000);"
+        },
+        {
+          "line": 265,
+          "text": "me->CastSpell(me, SPELL_EVOCATION, true);"
+        },
+        {
+          "line": 269,
+          "text": "case SPELL_SUMMON_MENAGERIE_3:"
+        },
+        {
+          "line": 272,
+          "text": "me->SummonCreature(summons[2][i], cords[2][0] + ((i % 2) ? 4.0f : -4.0f), cords[2][1] + (i < 2 ? 4.0f : -4.0f), cords[2][2], 0.0f, TEMPSUMMON_TIMED_DESPAWN, 300000);"
+        },
+        {
+          "line": 277,
+          "text": "me->CastSpell(me, SPELL_EVOCATION, true);"
+        },
+        {
+          "line": 281,
+          "text": "case SPELL_TELEPORT:"
+        },
+        {
+          "line": 292,
+          "text": "Talk(SAY_ARCANE_EXPLOSION);"
+        },
+        {
+          "line": 293,
+          "text": "Talk(EMOTE_ARCANE_EXPLOSION);"
+        },
+        {
+          "line": 295,
+          "text": "//At this point we are still in casting state so we need to clear it for DoCastAOE not to fail"
+        },
+        {
+          "line": 297,
+          "text": "DoCastAOE(SPELL_EMPOWERED_ARCANE_EXPLOSION);"
+        },
+        {
+          "line": 299,
+          "text": "events.RescheduleEvent(EVENT_TELE_BACK, DUNGEON_MODE(9s, 7s));"
+        },
+        {
+          "line": 317,
+          "text": "me->CastSpell(me, SPELL_EVOCATION, true);"
+        },
+        {
+          "line": 339,
+          "text": "case EVENT_FROSTBOMB:"
+        },
+        {
+          "line": 341,
+          "text": "me->CastSpell(v, SPELL_FROSTBOMB, false);"
+        },
+        {
+          "line": 344,
+          "text": "case EVENT_TIME_BOMB:"
+        },
+        {
+          "line": 346,
+          "text": "DoCast(target, SPELL_TIME_BOMB);"
+        },
+        {
+          "line": 349,
+          "text": "case EVENT_TELEPORT_TO_CENTER:"
+        },
+        {
+          "line": 353,
+          "text": "me->CastSpell(me, SPELL_TELEPORT, false);"
+        },
+        {
+          "line": 357,
+          "text": "case EVENT_TELE_BACK:"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Outland/TempestKeep/Mechanar/boss_pathaleon_the_calculator.cpp",
+      "sha": "bd6e6d82c31e61f046dd29b64f8aa8944ce7aaf8",
+      "lines": 183,
+      "signals": [
+        {
+          "line": 35,
+          "text": "SPELL_ARCANE_EXPLOSION          = 15453,"
+        },
+        {
+          "line": 36,
+          "text": "SPELL_DISGRUNTLED_ANGER         = 35289,"
+        },
+        {
+          "line": 37,
+          "text": "SPELL_ARCANE_TORRENT            = 36022,"
+        },
+        {
+          "line": 38,
+          "text": "SPELL_MANA_TAP                  = 36021,"
+        },
+        {
+          "line": 39,
+          "text": "SPELL_DOMINATION                = 35280,"
+        },
+        {
+          "line": 40,
+          "text": "SPELL_FRENZY                    = 36992,"
+        },
+        {
+          "line": 41,
+          "text": "SPELL_SUICIDE                   = 35301,"
+        },
+        {
+          "line": 42,
+          "text": "SPELL_ETHEREAL_TELEPORT         = 34427,"
+        },
+        {
+          "line": 43,
+          "text": "SPELL_GREATER_INVISIBILITY      = 34426,"
+        },
+        {
+          "line": 44,
+          "text": "SPELL_SUMMON_NETHER_WRAITH_1    = 35285,"
+        },
+        {
+          "line": 45,
+          "text": "SPELL_SUMMON_NETHER_WRAITH_2    = 35286,"
+        },
+        {
+          "line": 46,
+          "text": "SPELL_SUMMON_NETHER_WRAITH_3    = 35287,"
+        },
+        {
+          "line": 47,
+          "text": "SPELL_SUMMON_NETHER_WRAITH_4    = 35288,"
+        },
+        {
+          "line": 71,
+          "text": "DoCastSelf(SPELL_GREATER_INVISIBILITY);"
+        },
+        {
+          "line": 86,
+          "text": "DoCastSelf(SPELL_SUICIDE, true);"
+        },
+        {
+          "line": 87,
+          "text": "DoCastSelf(SPELL_FRENZY, true);"
+        },
+        {
+          "line": 88,
+          "text": "Talk(SAY_ENRAGE);"
+        },
+        {
+          "line": 98,
+          "text": "me->CastSpell(me, SPELL_SUMMON_NETHER_WRAITH_1 + i, true);"
+        },
+        {
+          "line": 100,
+          "text": "Talk(SAY_SUMMON);"
+        },
+        {
+          "line": 107,
+          "text": "DoCast(target, SPELL_MANA_TAP);"
+        },
+        {
+          "line": 112,
+          "text": "me->RemoveAurasDueToSpell(SPELL_MANA_TAP);"
+        },
+        {
+          "line": 114,
+          "text": "DoCastSelf(SPELL_ARCANE_TORRENT);"
+        },
+        {
+          "line": 118,
+          "text": "if (DoCastRandomTarget(SPELL_DOMINATION, 0, 50.0f, true, false, false) == SPELL_CAST_OK)"
+        },
+        {
+          "line": 120,
+          "text": "Talk(SAY_DOMINATION);"
+        },
+        {
+          "line": 125,
+          "text": "DoCast(SPELL_DISGRUNTLED_ANGER);"
+        },
+        {
+          "line": 133,
+          "text": "DoCastAOE(SPELL_ARCANE_EXPLOSION);"
+        },
+        {
+          "line": 138,
+          "text": "Talk(SAY_AGGRO);"
+        },
+        {
+          "line": 150,
+          "text": "DoCastSelf(SPELL_ETHEREAL_TELEPORT);"
+        },
+        {
+          "line": 151,
+          "text": "Talk(SAY_APPEAR);"
+        },
+        {
+          "line": 168,
+          "text": "Talk(SAY_SLAY);"
+        },
+        {
+          "line": 172,
+          "text": "void JustDied(Unit* /*killer*/) override"
+        },
+        {
+          "line": 174,
+          "text": "_JustDied();"
+        },
+        {
+          "line": 175,
+          "text": "Talk(SAY_DEATH);"
+        }
+      ]
+    }
+  ]
+}

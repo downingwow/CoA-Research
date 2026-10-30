@@ -1,0 +1,406 @@
+{
+  "updated": "2026-10-30",
+  "compatibilityNotes": [
+    "CoA-specific means the project README explicitly targets Conquest of Azeroth or its 21 custom classes; it is not a claim that every release was tested by BoneArchive.",
+    "Wrath 3.3.5a means the addon or profile targets the client generation used by Ascension. Class-aware functions and encounter timers may still need CoA-specific checks.",
+    "Do not install two full UI replacements or multiple addons that perform the same job without checking for conflicts. Review each author's install steps, requirements, release notes, and license."
+  ],
+  "owned": [
+    {
+      "name": "DBM-CoA",
+      "category": "Boss alerts",
+      "summary": "Uncle Bone's CoA encounter alerts and timer project.",
+      "url": "https://github.com/downingwow/DBM-CoA"
+    },
+    {
+      "name": "MRT-CoA",
+      "category": "Raid coordination",
+      "summary": "Uncle Bone's CoA raid coordination project.",
+      "url": "https://github.com/downingwow/MRT-CoA"
+    },
+    {
+      "name": "Questie-X",
+      "category": "Questing",
+      "summary": "Uncle Bone's CoA-focused Questie-X work.",
+      "url": "https://github.com/downingwow/Questie-X"
+    },
+    {
+      "name": "LootCollector",
+      "category": "Loot research",
+      "summary": "Uncle Bone's Ascension loot and discovery research addon.",
+      "url": "https://github.com/downingwow/LootCollector"
+    },
+    {
+      "name": "BoneUI",
+      "category": "Interface",
+      "summary": "Uncle Bone's standalone interface project.",
+      "url": "https://github.com/downingwow/BoneUI"
+    },
+    {
+      "name": "ElvUI-CoA",
+      "category": "Interface",
+      "summary": "Uncle Bone's ElvUI fork for the CoA client.",
+      "url": "https://github.com/downingwow/ElvUI-CoA"
+    },
+    {
+      "name": "Cell-CoA",
+      "category": "Raid frames",
+      "summary": "Uncle Bone's Cell raid-frame adaptation.",
+      "url": "https://github.com/downingwow/Cell-CoA"
+    },
+    {
+      "name": "Nameplates",
+      "category": "Nameplates",
+      "summary": "Uncle Bone's CoA nameplate project.",
+      "url": "https://github.com/downingwow/Nameplates"
+    },
+    {
+      "name": "Zygor-CoA",
+      "category": "Guides",
+      "summary": "Uncle Bone's CoA guide integration project.",
+      "url": "https://github.com/downingwow/Zygor-CoA"
+    }
+  ],
+  "addons": [
+    {
+      "name": "RetreatUI",
+      "category": "Full UI & class HUD",
+      "compatibility": "CoA-specific · all 21 classes",
+      "maturity": "Community project",
+      "summary": "Class-aware HUDs, resources, cooldowns, party utility, and per-build layouts. The CoA release requires RetreatUI_Classes and lists ElvUI, TurboPlates, MobSpells, and Details! as requirements; DBM integration is optional.",
+      "source": "https://github.com/RetreatUI/RetreatUI-Addon",
+      "download": "https://github.com/RetreatUI/RetreatUI-Addon/releases/latest",
+      "tags": [
+        "interface",
+        "hud",
+        "class"
+      ]
+    },
+    {
+      "name": "CoA Cooldown Manager",
+      "category": "Cooldowns & resources",
+      "compatibility": "CoA-specific · Ascension classless client",
+      "maturity": "Community project",
+      "summary": "Configurable spell, item, summon, totem, resource, aura, cooldown and HoT viewers with dropdown-based setup. Designed around Ascension's custom class, spell-ID, and resource behavior.",
+      "source": "https://github.com/WoloUI/CoACooldownManager",
+      "download": "https://github.com/WoloUI/CoACooldownManager",
+      "tags": [
+        "cooldowns",
+        "resources",
+        "healing"
+      ]
+    },
+    {
+      "name": "GSE-CoA",
+      "category": "Macros",
+      "compatibility": "CoA-specific · 3.3.5a",
+      "maturity": "Community project",
+      "summary": "Gnome Sequencer Enhanced adapted for Conquest of Azeroth, with sequence editing and macro compatibility features. Review the project's current release and its rules before using combat sequences.",
+      "source": "https://github.com/Neindao/gse-coa",
+      "download": "https://github.com/Neindao/gse-coa/releases/latest",
+      "tags": [
+        "macros"
+      ]
+    },
+    {
+      "name": "CoADamage",
+      "category": "Combat analysis",
+      "compatibility": "CoA-specific · 3.3.5a",
+      "maturity": "Early community project",
+      "summary": "DRDamage-inspired testing tool that records direct, periodic, and ranged damage observations with crit, stats, and buff context for spell theorycrafting.",
+      "source": "https://github.com/talexander9797-sketch/CoADamage",
+      "download": "https://github.com/talexander9797-sketch/CoADamage",
+      "tags": [
+        "damage",
+        "theorycrafting"
+      ]
+    },
+    {
+      "name": "SmartPVP",
+      "category": "PvP",
+      "compatibility": "CoA-specific · early release",
+      "maturity": "Early release; author warns of bugs",
+      "summary": "Kill and match history, battleground/arena statistics, a session HUD, rivalries, leveling metrics, and an opt-in shared leaderboard. The author documents known CoA client limitations.",
+      "source": "https://github.com/cccarv82/SmartPVP",
+      "download": "https://github.com/cccarv82/SmartPVP",
+      "tags": [
+        "pvp",
+        "statistics"
+      ]
+    },
+    {
+      "name": "OmniBarCOA",
+      "category": "PvP cooldowns",
+      "compatibility": "CoA-specific fork",
+      "maturity": "Community fork",
+      "summary": "Conquest-focused OmniBar fork for tracking enemy cooldowns. Check the repository for current class/spell coverage and installation notes.",
+      "source": "https://github.com/DreamerNazar/OmniBarCOA",
+      "download": "https://github.com/DreamerNazar/OmniBarCOA",
+      "tags": [
+        "pvp",
+        "cooldowns"
+      ]
+    },
+    {
+      "name": "AUX for CoA",
+      "category": "Auction house",
+      "compatibility": "CoA-specific · 3.3.5a",
+      "maturity": "Community fork",
+      "summary": "Auction-house replacement that adds support for CoA custom item IDs, variants, qualities, required levels, and Ascension auction behavior.",
+      "source": "https://github.com/ViktorSveins/aux-addon",
+      "download": "https://github.com/ViktorSveins/aux-addon",
+      "tags": [
+        "auction-house",
+        "items"
+      ]
+    },
+    {
+      "name": "Ascension Auctionator",
+      "category": "Auction house",
+      "compatibility": "CoA-specific · 3.3.5a",
+      "maturity": "Community port",
+      "summary": "Auctionator port with a compatibility layer for the 3.3.5a client and CoA auction-house behavior. An alternative to AUX; choose one auction-house workflow and check current releases.",
+      "source": "https://github.com/Theopt/AscensionAuctionator",
+      "download": "https://github.com/Theopt/AscensionAuctionator",
+      "tags": [
+        "auction-house",
+        "items"
+      ]
+    },
+    {
+      "name": "HydroUI",
+      "category": "ElvUI plugin & profile",
+      "compatibility": "CoA-specific · all 21 classes",
+      "maturity": "Community project",
+      "summary": "ElvUI plugin that applies an original CoA-aware layout, themes, unit-frame styling, class/spec headers, and an installer. Requires an Ascension-compatible ElvUI installation.",
+      "source": "https://github.com/Hydr0gen19/HydroUI",
+      "download": "https://github.com/Hydr0gen19/HydroUI",
+      "tags": [
+        "interface",
+        "elvui",
+        "profiles"
+      ]
+    },
+    {
+      "name": "DragonUI-CoA",
+      "category": "Full UI",
+      "compatibility": "CoA-specific · 3.3.5a",
+      "maturity": "Community project",
+      "summary": "Modular DragonUI adaptation for CoA, with configurable components and import/export layout presets. A full UI replacement; avoid stacking it with another full replacement.",
+      "source": "https://github.com/PentSec/DragonUI-CoA",
+      "download": "https://github.com/PentSec/DragonUI-CoA/releases/latest",
+      "tags": [
+        "interface",
+        "profiles"
+      ]
+    },
+    {
+      "name": "CoA Loot Decider",
+      "category": "Gear comparison",
+      "compatibility": "CoA-specific · 3.3.5a",
+      "maturity": "Community project",
+      "summary": "Adaptive loot-comparison addon for Conquest of Azeroth. Check the repository for its supported item and stat behavior before relying on its recommendations.",
+      "source": "https://github.com/Cnbz13/coa-loot-decider",
+      "download": "https://github.com/Cnbz13/coa-loot-decider",
+      "tags": [
+        "gear",
+        "loot"
+      ]
+    },
+    {
+      "name": "BloodforgedFilter",
+      "category": "Auction house filters",
+      "compatibility": "Ascension / CoA · 3.3.5a",
+      "maturity": "Community project",
+      "summary": "Hides Bloodforged or other chosen text from Auction House results. Small focused utility; verify it still matches the current auction-house addon and client.",
+      "source": "https://github.com/Leemo94/BloodforgedFilter",
+      "download": "https://github.com/Leemo94/BloodforgedFilter",
+      "tags": [
+        "auction-house",
+        "filters"
+      ]
+    },
+    {
+      "name": "CoA Class Portraits",
+      "category": "Unit-frame artwork",
+      "compatibility": "CoA-specific",
+      "maturity": "Community project",
+      "summary": "Rounded class portraits for CoA class identities in compatible Project Ascension unit frames.",
+      "source": "https://github.com/mal-cmyk/CoAClassPortraits",
+      "download": "https://github.com/mal-cmyk/CoAClassPortraits",
+      "tags": [
+        "unit-frames",
+        "artwork"
+      ]
+    },
+    {
+      "name": "CoA-compatible 3.3.5a addon directory",
+      "category": "General utilities",
+      "compatibility": "3.3.5a addons listed for CoA",
+      "maturity": "External curated directory",
+      "summary": "Browse the wider CoA-tagged catalog for bags, action bars, maps, tooltips, professions, mail, and other utilities. Individual listings may target other Ascension realms or require CoA-specific checks.",
+      "source": "https://warperia.com/conquest-of-azeroth-coa-addons/",
+      "download": "https://warperia.com/conquest-of-azeroth-coa-addons/",
+      "tags": [
+        "directory",
+        "general"
+      ]
+    },
+    {
+      "name": "Bagnon",
+      "category": "Bags & inventory",
+      "compatibility": "3.3.5a · generic utility",
+      "maturity": "CoA directory-listed",
+      "summary": "Combines bags and bank storage into searchable inventory windows. Does not add custom CoA item data by itself.",
+      "source": "https://warperia.com/addon-wotlk/bagnon/",
+      "download": "https://warperia.com/addon-wotlk/bagnon/",
+      "tags": [
+        "inventory"
+      ]
+    },
+    {
+      "name": "AtlasLoot Enhanced",
+      "category": "Loot tables",
+      "compatibility": "3.3.5a · generic utility",
+      "maturity": "CoA directory-listed; data coverage varies",
+      "summary": "Browse encounter and dungeon loot tables. Treat stock tables as reference only where CoA content or item drops differ.",
+      "source": "https://warperia.com/addon-wotlk/atlasloot-enhanced/",
+      "download": "https://warperia.com/addon-wotlk/atlasloot-enhanced/",
+      "tags": [
+        "dungeons",
+        "raids",
+        "loot"
+      ]
+    },
+    {
+      "name": "Bartender 4",
+      "category": "Action bars",
+      "compatibility": "3.3.5a · generic utility",
+      "maturity": "CoA directory-listed",
+      "summary": "Reposition and configure action bars for the larger spellbooks of CoA. It does not provide class-specific spell tracking.",
+      "source": "https://warperia.com/addon-wotlk/bartender-4/",
+      "download": "https://warperia.com/addon-wotlk/bartender-4/",
+      "tags": [
+        "action-bars"
+      ]
+    },
+    {
+      "name": "OmniCC",
+      "category": "Cooldown text",
+      "compatibility": "3.3.5a · generic utility",
+      "maturity": "CoA directory-listed",
+      "summary": "Adds countdown numbers to cooldown icons. CoA Cooldown Manager notes it as an optional dependency for some countdown displays.",
+      "source": "https://warperia.com/addon-wotlk/omnicc/",
+      "download": "https://warperia.com/addon-wotlk/omnicc/",
+      "tags": [
+        "cooldowns"
+      ]
+    },
+    {
+      "name": "Leatrix Plus",
+      "category": "Quality of life",
+      "compatibility": "3.3.5a · generic utility",
+      "maturity": "CoA directory-listed",
+      "summary": "A configurable bundle of general interface and quality-of-life options for the 3.3.5 client.",
+      "source": "https://warperia.com/addon-wotlk/leatrixplus/",
+      "download": "https://warperia.com/addon-wotlk/leatrixplus/",
+      "tags": [
+        "quality-of-life"
+      ]
+    },
+    {
+      "name": "Mapster",
+      "category": "Map & minimap",
+      "compatibility": "3.3.5a · generic utility",
+      "maturity": "CoA directory-listed",
+      "summary": "Map display and navigation enhancements. Custom CoA cave and sub-zone data may depend on the selected map addon or plugin.",
+      "source": "https://warperia.com/addon-wotlk/mapster/",
+      "download": "https://warperia.com/addon-wotlk/mapster/",
+      "tags": [
+        "maps"
+      ]
+    },
+    {
+      "name": "RaidRecruiter",
+      "category": "Raid management",
+      "compatibility": "Project Ascension · 3.3.5a",
+      "maturity": "Beta; live posting/trade behavior not yet confirmed by author",
+      "summary": "LFG feed, raid recruitment, role collection, loot-roll tracking, and pull timer. The author says some live-server behaviors still need testing.",
+      "source": "https://github.com/DenoHearth/RaidRecruiter",
+      "download": "https://github.com/DenoHearth/RaidRecruiter",
+      "tags": [
+        "raids",
+        "recruitment"
+      ]
+    },
+    {
+      "name": "RaidLocks",
+      "category": "Raid management",
+      "compatibility": "Project Ascension · 3.3.5a",
+      "maturity": "Community project",
+      "summary": "Lists raid lockouts with difficulty, size, boss progress, and reset time in one panel.",
+      "source": "https://github.com/DenoHearth/RaidLocks",
+      "download": "https://github.com/DenoHearth/RaidLocks",
+      "tags": [
+        "raids",
+        "lockouts"
+      ]
+    },
+    {
+      "name": "CoA gear planner",
+      "category": "External build tool",
+      "compatibility": "CoA-specific web tool",
+      "maturity": "Community tool",
+      "summary": "Plan a CoA class/spec, equipment, enchants, and stat weights in a browser; repository documents source-aware item data and an in-game exporter.",
+      "source": "https://github.com/IOUJared/ascension-armory",
+      "download": "https://github.com/IOUJared/ascension-armory",
+      "tags": [
+        "gear",
+        "planner"
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "name": "Minimalist ElvUI Profile 3.3.5",
+      "addon": "ElvUI",
+      "compatibility": "Wrath 3.3.5 profile · not CoA class-aware",
+      "summary": "A minimal ElvUI profile for Wrath private servers. Import through ElvUI; its class labels and class-specific styling are standard Wrath classes, so use it for layout only and adjust CoA units/classes yourself.",
+      "source": "https://warperia.com/elvui/elvui-profile-3-3-5/",
+      "import": "https://warperia.com/elvui/elvui-profile-3-3-5/"
+    },
+    {
+      "name": "JDI ElvUI profile 3.3.5a",
+      "addon": "ElvUI",
+      "compatibility": "Wrath 3.3.5a · manual import",
+      "summary": "A profile linked from a Wago Wrath aura entry, plus its shared media pack. Verify the profile version against your installed Ascension ElvUI before importing.",
+      "source": "https://wago.io/8uYWjM6c8",
+      "import": "https://github.com/ExoJdi/elvui-profile-jdi-3.3.5a/tree/main"
+    },
+    {
+      "name": "ElvUIBackport Profile Converter",
+      "addon": "ElvUI",
+      "compatibility": "Profile conversion utility · not a CoA profile",
+      "summary": "Converts modern Wago ElvUI profile exports to the older 3.3.5-compatible format. Converted profiles still need review; modern widgets and class-specific settings may not map.",
+      "source": "https://github.com/locus313/WoW-3.3.5a-Addons",
+      "import": "https://github.com/locus313/WoW-3.3.5a-Addons/tree/main/ElvUIBackport_ProfileConverter"
+    }
+  ],
+  "profileSources": [
+    {
+      "name": "Wago UI Packs",
+      "url": "https://uipacks.wago.io/",
+      "summary": "Wago offers profiles and WeakAura bundles in UI packs, but its published client support list does not include Ascension's custom 3.3.5a client. Use only individually identified Wrath-era profile data, not a one-click Wago UI pack for CoA."
+    },
+    {
+      "name": "Warperia CoA addon directory",
+      "url": "https://warperia.com/conquest-of-azeroth-coa-addons/",
+      "summary": "A CoA-filtered catalog of 3.3.5 addons and tools. Individual addon pages provide their own version and source links."
+    },
+    {
+      "name": "GitHub CoA / Ascension addon search",
+      "url": "https://github.com/topics/conquest-of-azeroth",
+      "summary": "Searchable project index; check each repository's README, release history, dependencies, and license before installation."
+    }
+  ]
+}

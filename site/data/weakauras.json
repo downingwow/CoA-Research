@@ -1,7 +1,7 @@
 {
   "source": "JesterCharles/coa-weakauras",
   "sourceUpdated": "2026-08-08",
-  "sourceStatus": "Public community packs; compatibility and completeness vary by pack.",
+  "sourceStatus": "The class/spec export index contains 91 entries, but author review state varies; inspect each author page for draft, test, and compatibility notes.",
   "entries": [
     {
       "class": "Barbarian",
@@ -821,6 +821,129 @@
       "size": 8969,
       "url": "https://raw.githubusercontent.com/JesterCharles/coa-weakauras/main/docs/packs/witch-hunter/witch-hunter-inquisition.txt",
       "page": "https://jestercharles.github.io/coa-weakauras/witch-hunter/"
+    }
+  ],
+  "sources": [
+    {
+      "name": "JesterCharles · CoA class/spec packs",
+      "type": "Class and specialization packs",
+      "url": "https://github.com/JesterCharles/coa-weakauras",
+      "summary": "Community-authored custom-class packs and generated exports for the CoA 3.3.5a WeakAuras fork. The source site shows per-class/spec status notes; some are drafts or awaiting in-game confirmation."
+    },
+    {
+      "name": "Ascension Database · CoA WeakAuras",
+      "type": "Community class/spec and utility packs",
+      "url": "https://db.ascension.gg/?weakauras=200",
+      "summary": "Browse CoA-tagged player submissions and inspect individual descriptions and import strings. Review pack dates, comments, code notices, and client compatibility."
+    },
+    {
+      "name": "Ascension Sidekick · CoA WeakAuras",
+      "type": "Player-submitted CoA packs",
+      "url": "https://ascensionsidekick.com/weakauras",
+      "summary": "A second CoA-specific source for player-submitted packs. Use source pages to check pack notes and authorship."
+    }
+  ],
+  "encounterPacks": [
+    {
+      "name": "Updated Mythic+ WA's",
+      "scope": "Dungeons",
+      "game": "Ascension Mythic+ · includes CoA ability options",
+      "sourceName": "Ascension Database",
+      "url": "https://db.ascension.gg/?weakaura=873.rev%3A12",
+      "summary": "Encounter mechanics, interrupts, affixes, and dungeon-specific alerts; its custom options include Conquest of Azeroth ability names and cooldowns.",
+      "status": "Ascension-specific; inspect current revision and requirements."
+    },
+    {
+      "name": "Mythic+ Boss and Champion package",
+      "scope": "Dungeons",
+      "game": "Ascension Mythic+",
+      "sourceName": "Ascension Database",
+      "url": "https://db.ascension.gg/?weakaura=237",
+      "summary": "Boss and champion mechanics for Ascension Mythic+ dungeons. This is an Ascension encounter pack, not guaranteed to match a CoA dungeon rotation.",
+      "status": "Ascension-specific; verify current dungeon rotation."
+    },
+    {
+      "name": "Ascension TBC Tier 6 · Black Temple",
+      "scope": "Raids",
+      "game": "Ascension TBC",
+      "sourceName": "Ascension Database",
+      "url": "https://db.ascension.gg/?weakaura=423",
+      "summary": "Black Temple boss and trash mechanics, including progression callouts and raid-leader displays. The author recommends WeakAuras 4.2.3 or higher.",
+      "status": "Ascension TBC raid pack; use only for that raid content."
+    },
+    {
+      "name": "Ascension TBC Tier 6 · Mount Hyjal",
+      "scope": "Raids",
+      "game": "Ascension TBC",
+      "sourceName": "Ascension Database",
+      "url": "https://db.ascension.gg/?weakaura=407.rev%3A1",
+      "summary": "Mount Hyjal wave and boss encounter pack linked from an Ascension raid guide.",
+      "status": "Ascension TBC raid pack; use only for that raid content."
+    },
+    {
+      "name": "ALL-IN WOTLK RAIDS PAK (T7–T10)",
+      "scope": "Raids",
+      "game": "Wrath 3.3.5",
+      "sourceName": "Wago · Maslou",
+      "url": "https://wago.io/SyXJ4N4n0",
+      "summary": "A multi-raid pack covering Wrath Tiers 7–10. It is tagged as a Wago WeakAura import, but its UNKNOWN client marker means the target fork must be checked before use.",
+      "status": "Wrath pack; not confirmed CoA-specific."
+    },
+    {
+      "name": "Tems WotLK Dungeon Pack",
+      "scope": "Dungeons",
+      "game": "WotLK 3.3.5a / AzerothCore-oriented",
+      "sourceName": "Wago · Tems",
+      "url": "https://wago.io/wotlk-weakauras/roles",
+      "summary": "Large WotLK dungeon encounter pack. Wago describes the original as a Wrath dungeon pack; server-specific event timing can differ.",
+      "status": "Wrath dungeon pack; inspect dependencies and server-specific triggers before use."
+    },
+    {
+      "name": "Tems' T7 / Naxxramas Pack",
+      "scope": "Raids",
+      "game": "WotLK 3.3.5a / AzerothCore-oriented",
+      "sourceName": "Wago · 5Buttons",
+      "url": "https://wago.io/p/5Buttons",
+      "summary": "A WotLK T7 raid-pack fork listed by the author alongside dungeon and other raid imports.",
+      "status": "Wrath raid pack; not confirmed CoA-specific."
+    },
+    {
+      "name": "Browse CoA WeakAura submissions",
+      "scope": "Source directory",
+      "game": "Conquest of Azeroth",
+      "sourceName": "Ascension Database",
+      "url": "https://db.ascension.gg/?weakauras=200",
+      "summary": "Search the CoA WeakAura category for additional class/spec and encounter packs; add individual records to BoneArchive when their scope and source can be identified.",
+      "status": "Directory; listings vary in completeness."
+    }
+  ],
+  "communityPacks": [
+    {
+      "name": "Templar Pack",
+      "class": "Templar",
+      "kind": "Class pack",
+      "sourceName": "Ascension Sidekick",
+      "url": "https://ascensionsidekick.com/weakauras",
+      "summary": "Player-submitted Templar class pack described as including rotation, proc, buff, resource, cooldown, spec-mechanic, and trinket tracking.",
+      "status": "CoA-specific community submission; verify the current export and author notes on the source page."
+    },
+    {
+      "name": "Bloodmage PACK",
+      "class": "Bloodmage",
+      "kind": "Class pack",
+      "sourceName": "Ascension Sidekick",
+      "url": "https://ascensionsidekick.com/weakauras",
+      "summary": "Player-submitted Bloodmage class pack described as covering buffs/debuffs, specialization effects, passives, Howls, cooldowns, and resources.",
+      "status": "CoA-specific community submission; verify the current export and author notes on the source page."
+    },
+    {
+      "name": "Runemaster Rotation Helper",
+      "class": "Runemaster",
+      "kind": "Class pack",
+      "sourceName": "Ascension Sidekick",
+      "url": "https://ascensionsidekick.com/weakauras",
+      "summary": "Player-submitted Runemaster rotation-helper pack from the CoA community WeakAuras page.",
+      "status": "CoA-specific community submission; inspect source for scope, latest export, and update notes."
     }
   ]
 }

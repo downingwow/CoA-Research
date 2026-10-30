@@ -1,0 +1,1378 @@
+{
+  "scope": "Classic Eastern Kingdoms and Kalimdor dungeons plus CoA custom Vaults",
+  "excluded": [
+    "Outland",
+    "Northrend"
+  ],
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "verification": "Upstream source; not confirmed live",
+  "files": [
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261002_20_sm_scholo.sql",
+      "sha": "b8375365b934ebca83d62a60702866eaae61c22c",
+      "lineCount": 47,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Scarlet Monastery and Scholomance fixes after ingame check (02.10.2026)"
+        },
+        {
+          "line": 3,
+          "text": "-- Scarlet Monastery Graveyard: Azshir, Ironspine and Scorn at the Ascension positions placed ingame on Mythic,"
+        },
+        {
+          "line": 4,
+          "text": "-- now on every difficulty"
+        },
+        {
+          "line": 5,
+          "text": "UPDATE `creature` SET `spawnMask` = 7 WHERE `guid` IN (9780157, 9780158, 9780159);"
+        },
+        {
+          "line": 7,
+          "text": "-- Scorn (14693) had trash stats on Heroic/Mythic: same as Azshir now (level 63, rare elite, boss damage and health)"
+        },
+        {
+          "line": 8,
+          "text": "UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `rank` = 2, `DamageModifier` = 4.21 WHERE `entry` = 114693;"
+        },
+        {
+          "line": 9,
+          "text": "UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `rank` = 2, `DamageModifier` = 5.47 WHERE `entry` = 214693;"
+        },
+        {
+          "line": 10,
+          "text": "DELETE FROM `coa_dungeon_health` WHERE `map_id` = 189 AND `creature_entry` = 14693;"
+        },
+        {
+          "line": 11,
+          "text": "INSERT INTO `coa_dungeon_health` (`map_id`, `difficulty`, `creature_entry`, `max_health`, `evidence`, `source`) VALUES"
+        },
+        {
+          "line": 15,
+          "text": "-- Herod's Door (Armory) stays open"
+        },
+        {
+          "line": 16,
+          "text": "UPDATE `gameobject` SET `state` = 0 WHERE `guid` = 32250 AND `id` = 101854;"
+        },
+        {
+          "line": 18,
+          "text": "-- Scholomance: Jandice Barov's illusions at about 10% of her health"
+        },
+        {
+          "line": 19,
+          "text": "DELETE FROM `coa_dungeon_health` WHERE `map_id` = 289 AND `creature_entry` = 11439;"
+        },
+        {
+          "line": 20,
+          "text": "INSERT INTO `coa_dungeon_health` (`map_id`, `difficulty`, `creature_entry`, `max_health`, `evidence`, `source`) VALUES"
+        },
+        {
+          "line": 23,
+          "text": "-- Darkmaster Gandling's Rise! (2100398) summons Ascension's Risen Student (80066), which did not exist here"
+        },
+        {
+          "line": 25,
+          "text": "INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed_run`, `speed_swim`, `speed_flight`, `de"
+        },
+        {
+          "line": 26,
+          "text": "VALUES"
+        },
+        {
+          "line": 30,
+          "text": "ON DUPLICATE KEY UPDATE `difficulty_entry_1` = VALUES(`difficulty_entry_1`), `difficulty_entry_2` = VALUES(`difficulty_entry_2`), `difficulty_entry_3` = VALUES(`difficulty_entry_3`), `KillCredit1` = VALUES(`KillCredit1`), `KillCredit2` = VALUES(`KillCredit2`), `name` = VALUES(`name`), `subname` = VA"
+        },
+        {
+          "line": 31,
+          "text": "DELETE FROM `creature_template_model` WHERE `CreatureID` IN (80066, 180066, 280066);"
+        },
+        {
+          "line": 32,
+          "text": "INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`, `DisplayScale`, `Probability`, `VerifiedBuild`) VALUES"
+        },
+        {
+          "line": 43,
+          "text": "DELETE FROM `coa_dungeon_health` WHERE `map_id` = 289 AND `creature_entry` = 80066;"
+        },
+        {
+          "line": 44,
+          "text": "INSERT INTO `coa_dungeon_health` (`map_id`, `difficulty`, `creature_entry`, `max_health`, `evidence`, `source`) VALUES"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261003_30_stratholme.sql",
+      "sha": "f077e3c0a881af2054e4b22b7bf94bb7f9268f42",
+      "lineCount": 39,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Stratholme fixes after ingame check (03.10.2026)"
+        },
+        {
+          "line": 2,
+          "text": "-- Cannon Master Willey: his own Crimson Riflemen (copy of 11054 with its AI) that the kit summons after he jumps onto"
+        },
+        {
+          "line": 3,
+          "text": "-- the cannon platform; about 20k health on Mythic (15.4k Heroic)"
+        },
+        {
+          "line": 5,
+          "text": "INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed_run`, `speed_swim`, `speed_flight`, `de"
+        },
+        {
+          "line": 6,
+          "text": "VALUES"
+        },
+        {
+          "line": 10,
+          "text": "ON DUPLICATE KEY UPDATE `difficulty_entry_1` = VALUES(`difficulty_entry_1`), `difficulty_entry_2` = VALUES(`difficulty_entry_2`), `difficulty_entry_3` = VALUES(`difficulty_entry_3`), `KillCredit1` = VALUES(`KillCredit1`), `KillCredit2` = VALUES(`KillCredit2`), `name` = VALUES(`name`), `subname` = VA"
+        },
+        {
+          "line": 11,
+          "text": "DELETE FROM `creature_template_model` WHERE `CreatureID` IN (9780720, 9780721, 9780722);"
+        },
+        {
+          "line": 12,
+          "text": "INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`, `DisplayScale`, `Probability`, `VerifiedBuild`) VALUES"
+        },
+        {
+          "line": 25,
+          "text": "DELETE FROM `creature_equip_template` WHERE `CreatureID` IN (9780720);"
+        },
+        {
+          "line": 26,
+          "text": "INSERT INTO `creature_equip_template` (`CreatureID`, `ID`, `ItemID1`, `ItemID2`, `ItemID3`, `VerifiedBuild`) VALUES"
+        },
+        {
+          "line": 29,
+          "text": "DELETE FROM `coa_dungeon_health` WHERE `map_id` = 329 AND `creature_entry` = 9780720;"
+        },
+        {
+          "line": 30,
+          "text": "INSERT INTO `coa_dungeon_health` (`map_id`, `difficulty`, `creature_entry`, `max_health`, `evidence`, `source`) VALUES"
+        },
+        {
+          "line": 34,
+          "text": "-- The Unforgiven (10516): Mythic 373k (ingame), Heroic /1.30"
+        },
+        {
+          "line": 35,
+          "text": "DELETE FROM `coa_dungeon_health` WHERE `map_id` = 329 AND `creature_entry` = 10516;"
+        },
+        {
+          "line": 36,
+          "text": "INSERT INTO `coa_dungeon_health` (`map_id`, `difficulty`, `creature_entry`, `max_health`, `evidence`, `source`) VALUES"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261004_00_bosses_ulda_strat.sql",
+      "sha": "86ed6e6aabda5041144aad9a697b015e4e3e616f",
+      "lineCount": 15,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Boss entries of the vanilla dungeons (mobs.json): exempt from the trash spell damage cap (CoADungeonSpellDamage.cpp)"
+        },
+        {
+          "line": 2,
+          "text": "CREATE TABLE IF NOT EXISTS `coa_dungeon_bosses` (`entry` int unsigned NOT NULL, PRIMARY KEY (`entry`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;"
+        },
+        {
+          "line": 3,
+          "text": "DELETE FROM `coa_dungeon_bosses`;"
+        },
+        {
+          "line": 4,
+          "text": "INSERT INTO `coa_dungeon_bosses` (`entry`) VALUES (639), (642), (643), (644), (645), (646), (647), (1663), (1666), (1696), (1716), (1717), (1720), (1763), (1853), (2748), (3586), (3653), (3669), (3670), (3671), (3673), (3674), (3872), (3886), (3887), (3914), (3927), (3974), (3975), (3976), (3977), ("
+        },
+        {
+          "line": 6,
+          "text": "-- Uldaman: the Keystone (Staff of Prehistoria) opens with a click, no item needed"
+        },
+        {
+          "line": 7,
+          "text": "UPDATE `gameobject_template` SET `Data1` = 0 WHERE `entry` = 124371;"
+        },
+        {
+          "line": 8,
+          "text": "UPDATE `gameobject_template_addon` SET `flags` = `flags` & ~2 WHERE `entry` = 124371;"
+        },
+        {
+          "line": 10,
+          "text": "-- Uldaman: Obsidian Shard melee x3 comes from dungeon_schaden.py (NAHKAMPF_EXTRA, rev_20260930_40)"
+        },
+        {
+          "line": 12,
+          "text": "-- Stratholme: Willey's Crimson Riflemen x3 damage"
+        },
+        {
+          "line": 13,
+          "text": "UPDATE `creature_template` SET `DamageModifier` = 2.22 WHERE `entry` = 9780721;"
+        },
+        {
+          "line": 14,
+          "text": "UPDATE `creature_template` SET `DamageModifier` = 2.91 WHERE `entry` = 9780722;"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261002_30_stockade.sql",
+      "sha": "cb9649540a102563ca56f2eb13028ff1a1451c80",
+      "lineCount": 12,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Stormwind Stockade: Hamhock's Summon Greater Fire Nova Totem (2102745) summons Ascension's totem 192328, which did not"
+        },
+        {
+          "line": 2,
+          "text": "-- exist here. The totem detonates after 5 s with Greater Fire Nova (2102823 -> Massive Fire Nova 2102516 tiers,"
+        },
+        {
+          "line": 3,
+          "text": "-- Heroic 3000 / Mythic 3900 after coa_dungeon_spell_damage) and disappears; it can be killed before that."
+        },
+        {
+          "line": 5,
+          "text": "INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed_run`, `speed_swim`, `speed_flight`, `de"
+        },
+        {
+          "line": 6,
+          "text": "VALUES"
+        },
+        {
+          "line": 8,
+          "text": "ON DUPLICATE KEY UPDATE `difficulty_entry_1` = VALUES(`difficulty_entry_1`), `difficulty_entry_2` = VALUES(`difficulty_entry_2`), `difficulty_entry_3` = VALUES(`difficulty_entry_3`), `KillCredit1` = VALUES(`KillCredit1`), `KillCredit2` = VALUES(`KillCredit2`), `name` = VALUES(`name`), `subname` = VA"
+        },
+        {
+          "line": 9,
+          "text": "DELETE FROM `creature_template_model` WHERE `CreatureID` IN (192328);"
+        },
+        {
+          "line": 10,
+          "text": "INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`, `DisplayScale`, `Probability`, `VerifiedBuild`) VALUES"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20260930_70_deadmines_bosses.sql",
+      "sha": "59e97c9b39627ce46a3105b562272feafd30ddb5",
+      "lineCount": 19,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Deadmines Heroic/Mythic boss fixes (30.09.2026)"
+        },
+        {
+          "line": 3,
+          "text": "-- Bouncing Saw Blade: 1 target on Normal/Heroic, 3 on Mythic (CoADungeonBossSpells.cpp)"
+        },
+        {
+          "line": 4,
+          "text": "DELETE FROM `spell_script_names` WHERE `spell_id` = 2102559;"
+        },
+        {
+          "line": 5,
+          "text": "INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES (2102559, 'spell_coa_bouncing_saw_blade');"
+        },
+        {
+          "line": 6,
+          "text": "-- Throw Buzzing Saw Blade summons Buzzing Saw Blade (180237), which src/server/coa/AscensionDeadminesBosses.cpp drives."
+        },
+        {
+          "line": 8,
+          "text": "INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed_run`, `speed_swim`, `speed_flight`, `de"
+        },
+        {
+          "line": 9,
+          "text": "VALUES"
+        },
+        {
+          "line": 11,
+          "text": "ON DUPLICATE KEY UPDATE `difficulty_entry_1` = VALUES(`difficulty_entry_1`), `difficulty_entry_2` = VALUES(`difficulty_entry_2`), `difficulty_entry_3` = VALUES(`difficulty_entry_3`), `KillCredit1` = VALUES(`KillCredit1`), `KillCredit2` = VALUES(`KillCredit2`), `name` = VALUES(`name`), `subname` = VA"
+        },
+        {
+          "line": 12,
+          "text": "DELETE FROM `creature_template_model` WHERE `CreatureID` IN (9780600);"
+        },
+        {
+          "line": 13,
+          "text": "INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`, `DisplayScale`, `Probability`, `VerifiedBuild`) VALUES"
+        },
+        {
+          "line": 16,
+          "text": "-- Cannonball target (9780600): Edwin VanCleef calls cannon fire at 75/50/25 % on Heroic/Mythic (one under each player,"
+        },
+        {
+          "line": 17,
+          "text": "-- four around him). the cannon target marker 255338 (\"[PH] Visual: Target Cannon\", confirmed ingame) warns for 3 seconds, then Ascension's Cannon Shot hits 5 yards (1000 Heroic / 1300 Mythic"
+        },
+        {
+          "line": 18,
+          "text": "-- through coa_dungeon_spell_damage). Invisible, not selectable."
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261028_60_vaults_of_the_inquisition.sql",
+      "sha": "bc5c0f7c5789b40715df1e420413e48764d08b39",
+      "lineCount": 1089,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Vaults of the Inquisition (map 936): Ascension's dungeon under Northshire Abbey, restored from combat logs, the Exiles"
+        },
+        {
+          "line": 2,
+          "text": "-- dump and video. Templates (with Heroic/Mythic templates at +100000/+200000), spawns (creature and gameobject guids"
+        },
+        {
+          "line": 3,
+          "text": "-- 9360001-9360999), paths, texts, loot, spell scripts and the Heroic/Mythic data of the Classic dungeon rules."
+        },
+        {
+          "line": 4,
+          "text": "-- Generated from the dev DB; the entrance portals of rev_20260923_04 (guids 7912000-7912099) stay as they are."
+        },
+        {
+          "line": 6,
+          "text": "-- lfg_dungeon_template"
+        },
+        {
+          "line": 7,
+          "text": "DELETE FROM `lfg_dungeon_template` WHERE `dungeonId` IN (401, 1401, 2401);"
+        },
+        {
+          "line": 8,
+          "text": "INSERT INTO `lfg_dungeon_template` (`dungeonId`, `name`, `position_x`, `position_y`, `position_z`, `orientation`, `VerifiedBuild`) VALUES"
+        },
+        {
+          "line": 13,
+          "text": "-- game_tele"
+        },
+        {
+          "line": 14,
+          "text": "DELETE FROM `game_tele` WHERE `id` = 2205;"
+        },
+        {
+          "line": 15,
+          "text": "INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES"
+        },
+        {
+          "line": 18,
+          "text": "-- creature_template"
+        },
+        {
+          "line": 19,
+          "text": "INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed_run`, `speed_swim`, `speed_flight`, `de"
+        },
+        {
+          "line": 20,
+          "text": "(162700,262700,362700,0,0,0,'Merciless Echo','Jailer of the Inquisition',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,0.456,2000,0,1,1,1,0,0,0,0,6,8,162700,0,0,0,0,0,0,'',0,1,38.271,1,1,1,0,0,1,-273,0,'boss_coa_vaults_echo',12340),"
+        },
+        {
+          "line": 23,
+          "text": "(162703,262703,362703,0,0,0,'His Majesty Darkandle','',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,0.57,2000,0,1,1,1,0,0,0,0,7,8,162703,0,0,0,0,0,0,'',0,1,37.97,1,1,1,0,0,1,-273,0,'boss_coa_vaults_darkandle',12340),"
+        },
+        {
+          "line": 24,
+          "text": "(162704,262704,362704,0,81042,0,'The Deceiver\\'s Presence','',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,0.695,2000,0,1,1,2,0,0,0,0,15,8,162704,0,0,0,0,0,0,'',0,1,47.455,1,1,1,0,0,1,-273,0,'boss_coa_vaults_deceiver',12340),"
+        },
+        {
+          "line": 51,
+          "text": "(262700,0,0,0,0,0,'Merciless Echo','Jailer of the Inquisition',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,0.684,2000,0,1,1,1,0,0,0,0,6,8,162700,0,0,0,0,0,0,'',0,1,38.271,1,1,1,0,0,1,-273,0,'boss_coa_vaults_echo',12340),"
+        },
+        {
+          "line": 52,
+          "text": "(262703,0,0,0,0,0,'His Majesty Darkandle','',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,1.11,2000,0,1,1,1,0,0,0,0,7,8,162703,0,0,0,0,0,0,'',0,1,37.97,1,1,1,0,0,1,-273,0,'boss_coa_vaults_darkandle',12340),"
+        },
+        {
+          "line": 53,
+          "text": "(262704,0,0,0,81042,0,'The Deceiver\\'s Presence','',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,1.042,2000,0,1,1,2,0,0,0,0,15,8,162704,0,0,0,0,0,0,'',0,1,47.455,1,1,1,0,0,1,-273,0,'boss_coa_vaults_deceiver',12340),"
+        },
+        {
+          "line": 66,
+          "text": "(362700,0,0,0,0,0,'Merciless Echo','Jailer of the Inquisition',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,1.471,2000,0,1,1,1,0,0,0,0,6,8,162700,0,0,0,0,0,0,'',0,1,38.271,1,1,1,0,0,1,-273,0,'boss_coa_vaults_echo',12340),"
+        },
+        {
+          "line": 67,
+          "text": "(362703,0,0,0,0,0,'His Majesty Darkandle','',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,2.386,2000,0,1,1,1,0,0,0,0,7,8,162703,0,0,0,0,0,0,'',0,1,37.97,1,1,1,0,0,1,-273,0,'boss_coa_vaults_darkandle',12340),"
+        },
+        {
+          "line": 68,
+          "text": "(362704,0,0,0,81042,0,'The Deceiver\\'s Presence','',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,3,0,2.241,2000,0,1,1,2,0,0,0,0,15,8,162704,0,0,0,0,0,0,'',0,1,47.455,1,1,1,0,0,1,-273,0,'boss_coa_vaults_deceiver',12340),"
+        },
+        {
+          "line": 80,
+          "text": "(363813,0,0,0,162737,0,'Darkandle Kobold','',NULL,0,60,60,0,14,0,1,1.14286,1,1,20,1,0,0.398,2000,0,1,1,1,0,0,0,0,7,0,163813,0,0,0,0,19,85,'',0,1,2.213,1,1,1,0,0,1,0,0,'npc_coa_vaults_trash',12340) ON DUPLICATE KEY UPDATE `difficulty_entry_1` = VALUES(`difficulty_entry_1`), `difficulty_entry_2` = VAL"
+        },
+        {
+          "line": 82,
+          "text": "-- creature_template_addon"
+        },
+        {
+          "line": 83,
+          "text": "DELETE FROM `creature_template_addon` WHERE `entry` IN (162700, 162701, 162702, 162703, 162704, 162705, 162706, 162707, 162710, 162723, 162724, 162733, 162734, 162735, 162736, 162737, 162738, 162745, 162747, 162748, 162759, 162761, 162762, 162763, 162932, 162978, 162984, 162985, 162986, 162999, 1638"
+        },
+        {
+          "line": 84,
+          "text": "INSERT INTO `creature_template_addon` (`entry`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `visibilityDistanceType`, `auras`) VALUES"
+        },
+        {
+          "line": 87,
+          "text": "-- creature_template_model"
+        },
+        {
+          "line": 88,
+          "text": "DELETE FROM `creature_template_model` WHERE `CreatureID` IN (162700, 162701, 162702, 162703, 162704, 162705, 162706, 162707, 162710, 162723, 162724, 162733, 162734, 162735, 162736, 162737, 162738, 162745, 162747, 162748, 162759, 162761, 162762, 162763, 162932, 162978, 162984, 162985, 162986, 162999,"
+        },
+        {
+          "line": 89,
+          "text": "INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`, `DisplayScale`, `Probability`, `VerifiedBuild`) VALUES"
+        },
+        {
+          "line": 157,
+          "text": "-- creature_model_info"
+        },
+        {
+          "line": 158,
+          "text": "DELETE FROM `creature_model_info` WHERE `DisplayID` IN (42635, 94426, 94480, 132245, 132246, 138704, 140824, 140839, 140977, 141028, 141034, 141830, 141854, 141855);"
+        },
+        {
+          "line": 159,
+          "text": "INSERT INTO `creature_model_info` (`DisplayID`, `BoundingRadius`, `CombatReach`, `Gender`, `DisplayID_Other_Gender`, `VerifiedBuild`) VALUES"
+        },
+        {
+          "line": 175,
+          "text": "-- creature_display_preset"
+        },
+        {
+          "line": 176,
+          "text": "DELETE FROM `creature_display_preset` WHERE `entry` IN (162700, 162701, 162702, 162703, 162704, 162705, 162706, 162707, 162710, 162723, 162724, 162733, 162734, 162735, 162736, 162737, 162738, 162745, 162747, 162748, 162759, 162761, 162762, 162763, 162932, 162978, 162984, 162985, 162986, 162999, 1638"
+        },
+        {
+          "line": 177,
+          "text": "INSERT INTO `creature_display_preset` (`entry`, `display_id`, `race`, `gender`, `class`, `skin`, `face`, `hair`, `haircolor`, `facialhair`, `guild_id`, `item_head`, `item_shoulders`, `item_body`, `item_chest`, `item_waist`, `item_legs`, `item_feet`, `item_wrists`, `item_hands`, `item_back`, `item_ta"
+        },
+        {
+          "line": 180,
+          "text": "-- creature_equip_template"
+        },
+        {
+          "line": 181,
+          "text": "DELETE FROM `creature_equip_template` WHERE `CreatureID` IN (162700, 162701, 162702, 162703, 162704, 162705, 162706, 162707, 162710, 162723, 162724, 162733, 162734, 162735, 162736, 162737, 162738, 162745, 162747, 162748, 162759, 162761, 162762, 162763, 162932, 162978, 162984, 162985, 162986, 162999,"
+        },
+        {
+          "line": 182,
+          "text": "INSERT INTO `creature_equip_template` (`CreatureID`, `ID`, `ItemID1`, `ItemID2`, `ItemID3`, `VerifiedBuild`) VALUES"
+        },
+        {
+          "line": 188,
+          "text": "-- npc_spellclick_spells"
+        },
+        {
+          "line": 189,
+          "text": "DELETE FROM `npc_spellclick_spells` WHERE `npc_entry` IN (162700, 162701, 162702, 162703, 162704, 162705, 162706, 162707, 162710, 162723, 162724, 162733, 162734, 162735, 162736, 162737, 162738, 162745, 162747, 162748, 162759, 162761, 162762, 162763, 162932, 162978, 162984, 162985, 162986, 162999, 16"
+        },
+        {
+          "line": 190,
+          "text": "INSERT INTO `npc_spellclick_spells` (`npc_entry`, `spell_id`, `cast_flags`, `user_type`) VALUES"
+        },
+        {
+          "line": 195,
+          "text": "-- vehicle_template_accessory"
+        },
+        {
+          "line": 196,
+          "text": "DELETE FROM `vehicle_template_accessory` WHERE `entry` IN (162700, 162701, 162702, 162703, 162704, 162705, 162706, 162707, 162710, 162723, 162724, 162733, 162734, 162735, 162736, 162737, 162738, 162745, 162747, 162748, 162759, 162761, 162762, 162763, 162932, 162978, 162984, 162985, 162986, 162999, 1"
+        },
+        {
+          "line": 197,
+          "text": "INSERT INTO `vehicle_template_accessory` (`entry`, `accessory_entry`, `seat_id`, `minion`, `description`, `summontype`, `summontimer`) VALUES"
+        },
+        {
+          "line": 200,
+          "text": "-- creature_text"
+        },
+        {
+          "line": 201,
+          "text": "DELETE FROM `creature_text` WHERE `CreatureID` IN (162700, 162701, 162702, 162703, 162704, 162705, 162706, 162707, 162710, 162723, 162724, 162733, 162734, 162735, 162736, 162737, 162738, 162745, 162747, 162748, 162759, 162761, 162762, 162763, 162932, 162978, 162984, 162985, 162986, 162999, 163813, 2"
+        },
+        {
+          "line": 202,
+          "text": "INSERT INTO `creature_text` (`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Language`, `Probability`, `Emote`, `Duration`, `Sound`, `BroadcastTextId`, `TextRange`, `comment`) VALUES"
+        },
+        {
+          "line": 258,
+          "text": "-- npc_text"
+        },
+        {
+          "line": 259,
+          "text": "DELETE FROM `npc_text` WHERE `ID` = 9360001;"
+        },
+        {
+          "line": 260,
+          "text": "INSERT INTO `npc_text` (`ID`, `text0_0`, `text0_1`, `BroadcastTextID0`, `lang0`, `Probability0`, `em0_0`, `em0_1`, `em0_2`, `em0_3`, `em0_4`, `em0_5`, `text1_0`, `text1_1`, `BroadcastTextID1`, `lang1`, `Probability1`, `em1_0`, `em1_1`, `em1_2`, `em1_3`, `em1_4`, `em1_5`, `text2_0`, `text2_1`, `Broad"
+        },
+        {
+          "line": 263,
+          "text": "-- gossip_menu"
+        },
+        {
+          "line": 264,
+          "text": "DELETE FROM `gossip_menu` WHERE `MenuID` = 9360001;"
+        },
+        {
+          "line": 265,
+          "text": "INSERT INTO `gossip_menu` (`MenuID`, `TextID`) VALUES"
+        },
+        {
+          "line": 268,
+          "text": "-- creature_queststarter"
+        },
+        {
+          "line": 269,
+          "text": "DELETE FROM `creature_queststarter` WHERE `id` = 162932;"
+        },
+        {
+          "line": 270,
+          "text": "INSERT INTO `creature_queststarter` (`id`, `quest`) VALUES"
+        },
+        {
+          "line": 273,
+          "text": "-- creature_questender"
+        },
+        {
+          "line": 274,
+          "text": "DELETE FROM `creature_questender` WHERE `id` = 162932;"
+        },
+        {
+          "line": 275,
+          "text": "INSERT INTO `creature_questender` (`id`, `quest`) VALUES"
+        },
+        {
+          "line": 278,
+          "text": "-- gameobject_template"
+        },
+        {
+          "line": 279,
+          "text": "INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `IconName`, `castBarCaption`, `unk1`, `size`, `Data0`, `Data1`, `Data2`, `Data3`, `Data4`, `Data5`, `Data6`, `Data7`, `Data8`, `Data9`, `Data10`, `Data11`, `Data12`, `Data13`, `Data14`, `Data15`, `Data16`, `Data17`, `Data18`, `"
+        },
+        {
+          "line": 281,
+          "text": "(2300560,0,300454,'Inquisitorial Dungeon TowerBoss Door','','','',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'','go_coa_vaults_boss_gate',12340),"
+        },
+        {
+          "line": 282,
+          "text": "(2300561,0,300455,'Inquisitorial Dungeon TowerBoss Barrier','','','',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'','go_coa_vaults_boss_gate',12340),"
+        },
+        {
+          "line": 283,
+          "text": "(2300562,0,300456,'Inquisitorial Dungeon Kobold Wax Door','','','',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'','go_coa_vaults_boss_gate',12340),"
+        },
+        {
+          "line": 284,
+          "text": "(2300576,0,300455,'Inquisitorial Dungeon TowerBoss Barrier','','','',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'','go_coa_vaults_boss_gate',12340),"
+        },
+        {
+          "line": 285,
+          "text": "(2300577,0,300456,'Inquisitorial Dungeon Kobold Wax Door','','','',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'','go_coa_vaults_boss_gate',12340) ON DUPLICATE KEY UPDATE `type` = VALUES(`type`), `displayId` = VALUES(`displayId`), `name` = VALUES(`name`), `IconName` = VALUES(`IconName`), `cast"
+        },
+        {
+          "line": 287,
+          "text": "-- gameobject_template_addon"
+        },
+        {
+          "line": 288,
+          "text": "DELETE FROM `gameobject_template_addon` WHERE `entry` IN (2300559, 2300560, 2300561, 2300562, 2300576, 2300577);"
+        },
+        {
+          "line": 289,
+          "text": "INSERT INTO `gameobject_template_addon` (`entry`, `faction`, `flags`, `mingold`, `maxgold`, `artkit0`, `artkit1`, `artkit2`, `artkit3`) VALUES"
+        },
+        {
+          "line": 297,
+          "text": "-- creature"
+        },
+        {
+          "line": 298,
+          "text": "DELETE FROM `creature` WHERE `map` = 936 AND `guid` BETWEEN 9360001 AND 9360999;"
+        },
+        {
+          "line": 299,
+          "text": "INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, "
+        },
+        {
+          "line": 487,
+          "text": "-- creature_addon"
+        },
+        {
+          "line": 488,
+          "text": "DELETE FROM `creature_addon` WHERE `guid` IN (9360001, 9360002, 9360003, 9360004, 9360005, 9360006, 9360007, 9360008, 9360009, 9360010, 9360011, 9360012, 9360013, 9360014, 9360015, 9360016, 9360017, 9360018, 9360019, 9360020, 9360021, 9360022, 9360023, 9360024, 9360025, 9360026, 9360027, 9360028, 93"
+        },
+        {
+          "line": 489,
+          "text": "INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `visibilityDistanceType`, `auras`) VALUES"
+        },
+        {
+          "line": 499,
+          "text": "-- gameobject"
+        },
+        {
+          "line": 500,
+          "text": "DELETE FROM `gameobject` WHERE `map` = 936 AND `guid` BETWEEN 9360001 AND 9360999;"
+        },
+        {
+          "line": 501,
+          "text": "INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `ScriptName`, `VerifiedBuild`, `Comment`) VALUES"
+        },
+        {
+          "line": 554,
+          "text": "-- waypoint_data"
+        },
+        {
+          "line": 555,
+          "text": "DELETE FROM `waypoint_data` WHERE `id` IN (93600270, 93600370, 93600860, 93600920, 93600990, 93601020, 93601250, 93601360);"
+        },
+        {
+          "line": 556,
+          "text": "INSERT INTO `waypoint_data` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `velocity`, `delay`, `smoothTransition`, `move_type`, `action`, `action_chance`, `wpguid`) VALUES"
+        },
+        {
+          "line": 673,
+          "text": "-- spell_script_names"
+        },
+        {
+          "line": 674,
+          "text": "DELETE FROM `spell_script_names` WHERE `ScriptName` IN ('spell_coa_vaults_damage', 'spell_coa_vaults_void_wrath', 'spell_coa_vaults_void_wrath_tick');"
+        },
+        {
+          "line": 675,
+          "text": "INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES"
+        },
+        {
+          "line": 676,
+          "text": "(256491,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 677,
+          "text": "(256499,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 678,
+          "text": "(256500,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 679,
+          "text": "(256501,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 680,
+          "text": "(256804,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 681,
+          "text": "(256805,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 682,
+          "text": "(256818,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 683,
+          "text": "(256819,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 684,
+          "text": "(256831,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 685,
+          "text": "(256832,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 686,
+          "text": "(256844,'spell_coa_vaults_void_wrath'),"
+        },
+        {
+          "line": 687,
+          "text": "(256848,'spell_coa_vaults_void_wrath_tick'),"
+        },
+        {
+          "line": 688,
+          "text": "(256891,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 689,
+          "text": "(256892,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 690,
+          "text": "(256893,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 691,
+          "text": "(256895,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 692,
+          "text": "(256927,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 693,
+          "text": "(256963,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 694,
+          "text": "(257102,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 695,
+          "text": "(257103,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 696,
+          "text": "(257104,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 697,
+          "text": "(257105,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 698,
+          "text": "(257106,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 699,
+          "text": "(257107,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 700,
+          "text": "(257111,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 701,
+          "text": "(257112,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 702,
+          "text": "(257113,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 703,
+          "text": "(257114,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 704,
+          "text": "(257115,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 705,
+          "text": "(257116,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 706,
+          "text": "(257120,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 707,
+          "text": "(257121,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 708,
+          "text": "(257122,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 709,
+          "text": "(257126,'spell_coa_vaults_void_wrath_tick'),"
+        },
+        {
+          "line": 710,
+          "text": "(257127,'spell_coa_vaults_void_wrath_tick'),"
+        },
+        {
+          "line": 711,
+          "text": "(257128,'spell_coa_vaults_void_wrath_tick'),"
+        },
+        {
+          "line": 712,
+          "text": "(257142,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 713,
+          "text": "(257143,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 714,
+          "text": "(257144,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 715,
+          "text": "(257168,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 716,
+          "text": "(257169,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 717,
+          "text": "(257170,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 718,
+          "text": "(257172,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 719,
+          "text": "(257173,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 720,
+          "text": "(257174,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 721,
+          "text": "(257175,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 722,
+          "text": "(257176,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 723,
+          "text": "(257177,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 724,
+          "text": "(257178,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 725,
+          "text": "(257179,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 726,
+          "text": "(257180,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 727,
+          "text": "(257181,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 728,
+          "text": "(257186,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 729,
+          "text": "(257187,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 730,
+          "text": "(257188,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 731,
+          "text": "(257189,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 732,
+          "text": "(257195,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 733,
+          "text": "(257196,'spell_coa_vaults_damage'),"
+        },
+        {
+          "line": 734,
+          "text": "(257197,'spell_coa_vaults_damage');"
+        },
+        {
+          "line": 736,
+          "text": "-- creature_loot_template"
+        },
+        {
+          "line": 737,
+          "text": "DELETE FROM `creature_loot_template` WHERE `Entry` IN (162700, 162703, 162704, 162733, 162734, 162735, 162736, 162737, 162738, 162748, 162759, 162761, 162762, 162763, 162999, 163813);"
+        },
+        {
+          "line": 738,
+          "text": "INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES"
+        },
+        {
+          "line": 979,
+          "text": "-- coa_dungeon_loot_variant"
+        },
+        {
+          "line": 980,
+          "text": "DELETE FROM `coa_dungeon_loot_variant` WHERE `base_item` IN (559300, 559301, 559305, 559306, 559309, 559310, 559311, 559315, 559317, 559319, 559320, 559323, 559324, 559326, 559332, 559335, 559337, 559339, 559341, 559342, 559346, 559347, 559349, 559351, 559352, 559360, 559361);"
+        },
+        {
+          "line": 981,
+          "text": "INSERT INTO `coa_dungeon_loot_variant` (`base_item`, `heroic_item`, `mythic_item`) VALUES"
+        },
+        {
+          "line": 1010,
+          "text": "-- instance_encounters"
+        },
+        {
+          "line": 1011,
+          "text": "DELETE FROM `instance_encounters` WHERE `entry` BETWEEN 15000 AND 15002 OR `entry` BETWEEN 15008 AND 15010 OR `entry` BETWEEN 15014 AND 15016;"
+        },
+        {
+          "line": 1012,
+          "text": "INSERT INTO `instance_encounters` (`entry`, `creditType`, `creditEntry`, `lastEncounterDungeon`, `comment`) VALUES"
+        },
+        {
+          "line": 1023,
+          "text": "-- coa_dungeon_health"
+        },
+        {
+          "line": 1024,
+          "text": "DELETE FROM `coa_dungeon_health` WHERE `map_id` = 936;"
+        },
+        {
+          "line": 1025,
+          "text": "INSERT INTO `coa_dungeon_health` (`map_id`, `difficulty`, `creature_entry`, `max_health`, `evidence`, `source`) VALUES"
+        },
+        {
+          "line": 1057,
+          "text": "-- coa_dungeon_mark_bosses"
+        },
+        {
+          "line": 1058,
+          "text": "DELETE FROM `coa_dungeon_mark_bosses` WHERE `entry` IN (162700, 162703, 162704);"
+        },
+        {
+          "line": 1059,
+          "text": "INSERT INTO `coa_dungeon_mark_bosses` (`entry`) VALUES"
+        },
+        {
+          "line": 1064,
+          "text": "-- coa_dungeon_bosses"
+        },
+        {
+          "line": 1065,
+          "text": "DELETE FROM `coa_dungeon_bosses` WHERE `entry` IN (162700, 162703, 162704);"
+        },
+        {
+          "line": 1066,
+          "text": "INSERT INTO `coa_dungeon_bosses` (`entry`) VALUES"
+        },
+        {
+          "line": 1071,
+          "text": "-- coa_dungeon_spell_damage"
+        },
+        {
+          "line": 1072,
+          "text": "DELETE FROM `coa_dungeon_spell_damage` WHERE `comment` LIKE 'Vaults of the Inquisition:%';"
+        },
+        {
+          "line": 1073,
+          "text": "INSERT INTO `coa_dungeon_spell_damage` (`spell_id`, `multiplier`, `comment`) VALUES"
+        },
+        {
+          "line": 1087,
+          "text": "-- Dungeon Finder: the Vaults are populated now."
+        },
+        {
+          "line": 1088,
+          "text": "DELETE FROM `disables` WHERE `sourceType` = 8 AND `entry` = 936;"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261009_81_brd_prison_ring_of_law_final.sql",
+      "sha": "e0ffcf19e73cc799d4498c156fea2c68023fa3b7",
+      "lineCount": 6,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Blackrock Depths - Prison: the Ring of Law completes the wing in the Dungeon Finder on Normal too, as on"
+        },
+        {
+          "line": 2,
+          "text": "-- Heroic and Mythic (Ascension's DungeonEncounter data: 1230 and 2230 end dungeons 1030 and 2030). On Normal"
+        },
+        {
+          "line": 3,
+          "text": "-- High Interrogator Gerstahn still ended it, so finishing the arena event did not complete the random dungeon."
+        },
+        {
+          "line": 4,
+          "text": "UPDATE `instance_encounters` SET `lastEncounterDungeon` = 30 WHERE `entry` = 230;"
+        },
+        {
+          "line": 5,
+          "text": "UPDATE `instance_encounters` SET `lastEncounterDungeon` = 0 WHERE `entry` = 227;"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261022_82_brd_seven_mythic_health.sql",
+      "sha": "742b2d87be9a7f7fba12ae3e298a92f5f598de91",
+      "lineCount": 11,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Blackrock Depths, the Seven (Hate'rel to Dope'rel): 100000 health each on Mythic instead of the 490200 model"
+        },
+        {
+          "line": 2,
+          "text": "-- estimate (no live value exists); Heroic stays derived from Mythic (/1.30)"
+        },
+        {
+          "line": 3,
+          "text": "UPDATE `coa_dungeon_health`"
+        },
+        {
+          "line": 4,
+          "text": "SET `max_health` = 100000, `evidence` = 'assumption',"
+        },
+        {
+          "line": 6,
+          "text": "WHERE `map_id` = 230 AND `difficulty` = 2 AND `creature_entry` BETWEEN 9034 AND 9040;"
+        },
+        {
+          "line": 7,
+          "text": "UPDATE `coa_dungeon_health`"
+        },
+        {
+          "line": 8,
+          "text": "SET `max_health` = 76923, `evidence` = 'assumption',"
+        },
+        {
+          "line": 10,
+          "text": "WHERE `map_id` = 230 AND `difficulty` = 1 AND `creature_entry` BETWEEN 9034 AND 9040;"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261024_42_ring_of_law_difficulty_templates.sql",
+      "sha": "f74832c1dfce4fd88c06aee732eb4e52f71f91fc",
+      "lineCount": 105,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Heroic and Mythic templates for the six Ring of Law bosses (Gorosh the Dervish, Grizzle, Eviscerator, Ok'thor the"
+        },
+        {
+          "line": 2,
+          "text": "-- Breaker, Anub'shiah, Hedrum the Creeper), which had none, so they ran with their Normal values and loot on every"
+        },
+        {
+          "line": 3,
+          "text": "-- difficulty (#8360). Built like rev_20260926_00 (copies at entry + 100000 / + 200000 with their model, movement,"
+        },
+        {
+          "line": 4,
+          "text": "-- resistance, spell and addon rows), level 63 like the other Heroic/Mythic bosses (db.exil.es, dump of 2026-10-04:"
+        },
+        {
+          "line": 5,
+          "text": "-- \"Level 63 Boss\") and the average damage of rev_20261009_65 (Heroic 18.38, Mythic 39.32). The copies use their own"
+        },
+        {
+          "line": 6,
+          "text": "-- loot lists, written by rev_20261016_30. Health follows the rev_20261009_65 model for non-final bosses (Mythic"
+        },
+        {
+          "line": 7,
+          "text": "-- 541,700, Heroic / 1.30)."
+        },
+        {
+          "line": 10,
+          "text": "CREATE TEMPORARY TABLE `coa_dungeon_copy` AS SELECT * FROM `creature_template` WHERE `entry` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 11,
+          "text": "UPDATE `coa_dungeon_copy` SET `entry` = `entry` + 100000, `difficulty_entry_1` = 0, `difficulty_entry_2` = 0, `difficulty_entry_3` = 0, `AIName` = '', `ScriptName` = '';"
+        },
+        {
+          "line": 12,
+          "text": "INSERT INTO `creature_template` SELECT * FROM `coa_dungeon_copy`"
+        },
+        {
+          "line": 13,
+          "text": "ON DUPLICATE KEY UPDATE `entry` = `creature_template`.`entry`;"
+        },
+        {
+          "line": 15,
+          "text": "CREATE TEMPORARY TABLE `coa_dungeon_copy` AS SELECT * FROM `creature_template_model` WHERE `CreatureID` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 16,
+          "text": "UPDATE `coa_dungeon_copy` SET `CreatureID` = `CreatureID` + 100000;"
+        },
+        {
+          "line": 17,
+          "text": "DELETE FROM `creature_template_model` WHERE `CreatureID` IN (109027, 109028, 109029, 109030, 109031, 109032);"
+        },
+        {
+          "line": 18,
+          "text": "INSERT INTO `creature_template_model` SELECT * FROM `coa_dungeon_copy`;"
+        },
+        {
+          "line": 20,
+          "text": "CREATE TEMPORARY TABLE `coa_dungeon_copy` AS SELECT * FROM `creature_template_movement` WHERE `CreatureId` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 21,
+          "text": "UPDATE `coa_dungeon_copy` SET `CreatureId` = `CreatureId` + 100000;"
+        },
+        {
+          "line": 22,
+          "text": "DELETE FROM `creature_template_movement` WHERE `CreatureId` IN (109027, 109028, 109029, 109030, 109031, 109032);"
+        },
+        {
+          "line": 23,
+          "text": "INSERT INTO `creature_template_movement` SELECT * FROM `coa_dungeon_copy`;"
+        },
+        {
+          "line": 25,
+          "text": "CREATE TEMPORARY TABLE `coa_dungeon_copy` AS SELECT * FROM `creature_template_resistance` WHERE `CreatureID` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 26,
+          "text": "UPDATE `coa_dungeon_copy` SET `CreatureID` = `CreatureID` + 100000;"
+        },
+        {
+          "line": 27,
+          "text": "DELETE FROM `creature_template_resistance` WHERE `CreatureID` IN (109027, 109028, 109029, 109030, 109031, 109032);"
+        },
+        {
+          "line": 28,
+          "text": "INSERT INTO `creature_template_resistance` SELECT * FROM `coa_dungeon_copy`;"
+        },
+        {
+          "line": 30,
+          "text": "CREATE TEMPORARY TABLE `coa_dungeon_copy` AS SELECT * FROM `creature_template_spell` WHERE `CreatureID` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 31,
+          "text": "UPDATE `coa_dungeon_copy` SET `CreatureID` = `CreatureID` + 100000;"
+        },
+        {
+          "line": 32,
+          "text": "DELETE FROM `creature_template_spell` WHERE `CreatureID` IN (109027, 109028, 109029, 109030, 109031, 109032);"
+        },
+        {
+          "line": 33,
+          "text": "INSERT INTO `creature_template_spell` SELECT * FROM `coa_dungeon_copy`;"
+        },
+        {
+          "line": 35,
+          "text": "CREATE TEMPORARY TABLE `coa_dungeon_copy` AS SELECT * FROM `creature_template_addon` WHERE `entry` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 36,
+          "text": "UPDATE `coa_dungeon_copy` SET `entry` = `entry` + 100000;"
+        },
+        {
+          "line": 37,
+          "text": "DELETE FROM `creature_template_addon` WHERE `entry` IN (109027, 109028, 109029, 109030, 109031, 109032);"
+        },
+        {
+          "line": 38,
+          "text": "INSERT INTO `creature_template_addon` SELECT * FROM `coa_dungeon_copy`;"
+        },
+        {
+          "line": 42,
+          "text": "CREATE TEMPORARY TABLE `coa_dungeon_copy` AS SELECT * FROM `creature_template` WHERE `entry` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 43,
+          "text": "UPDATE `coa_dungeon_copy` SET `entry` = `entry` + 200000, `difficulty_entry_1` = 0, `difficulty_entry_2` = 0, `difficulty_entry_3` = 0, `AIName` = '', `ScriptName` = '';"
+        },
+        {
+          "line": 44,
+          "text": "INSERT INTO `creature_template` SELECT * FROM `coa_dungeon_copy`"
+        },
+        {
+          "line": 45,
+          "text": "ON DUPLICATE KEY UPDATE `entry` = `creature_template`.`entry`;"
+        },
+        {
+          "line": 47,
+          "text": "CREATE TEMPORARY TABLE `coa_dungeon_copy` AS SELECT * FROM `creature_template_model` WHERE `CreatureID` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 48,
+          "text": "UPDATE `coa_dungeon_copy` SET `CreatureID` = `CreatureID` + 200000;"
+        },
+        {
+          "line": 49,
+          "text": "DELETE FROM `creature_template_model` WHERE `CreatureID` IN (209027, 209028, 209029, 209030, 209031, 209032);"
+        },
+        {
+          "line": 50,
+          "text": "INSERT INTO `creature_template_model` SELECT * FROM `coa_dungeon_copy`;"
+        },
+        {
+          "line": 52,
+          "text": "CREATE TEMPORARY TABLE `coa_dungeon_copy` AS SELECT * FROM `creature_template_movement` WHERE `CreatureId` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 53,
+          "text": "UPDATE `coa_dungeon_copy` SET `CreatureId` = `CreatureId` + 200000;"
+        },
+        {
+          "line": 54,
+          "text": "DELETE FROM `creature_template_movement` WHERE `CreatureId` IN (209027, 209028, 209029, 209030, 209031, 209032);"
+        },
+        {
+          "line": 55,
+          "text": "INSERT INTO `creature_template_movement` SELECT * FROM `coa_dungeon_copy`;"
+        },
+        {
+          "line": 57,
+          "text": "CREATE TEMPORARY TABLE `coa_dungeon_copy` AS SELECT * FROM `creature_template_resistance` WHERE `CreatureID` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 58,
+          "text": "UPDATE `coa_dungeon_copy` SET `CreatureID` = `CreatureID` + 200000;"
+        },
+        {
+          "line": 59,
+          "text": "DELETE FROM `creature_template_resistance` WHERE `CreatureID` IN (209027, 209028, 209029, 209030, 209031, 209032);"
+        },
+        {
+          "line": 60,
+          "text": "INSERT INTO `creature_template_resistance` SELECT * FROM `coa_dungeon_copy`;"
+        },
+        {
+          "line": 62,
+          "text": "CREATE TEMPORARY TABLE `coa_dungeon_copy` AS SELECT * FROM `creature_template_spell` WHERE `CreatureID` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 63,
+          "text": "UPDATE `coa_dungeon_copy` SET `CreatureID` = `CreatureID` + 200000;"
+        },
+        {
+          "line": 64,
+          "text": "DELETE FROM `creature_template_spell` WHERE `CreatureID` IN (209027, 209028, 209029, 209030, 209031, 209032);"
+        },
+        {
+          "line": 65,
+          "text": "INSERT INTO `creature_template_spell` SELECT * FROM `coa_dungeon_copy`;"
+        },
+        {
+          "line": 67,
+          "text": "CREATE TEMPORARY TABLE `coa_dungeon_copy` AS SELECT * FROM `creature_template_addon` WHERE `entry` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 68,
+          "text": "UPDATE `coa_dungeon_copy` SET `entry` = `entry` + 200000;"
+        },
+        {
+          "line": 69,
+          "text": "DELETE FROM `creature_template_addon` WHERE `entry` IN (209027, 209028, 209029, 209030, 209031, 209032);"
+        },
+        {
+          "line": 70,
+          "text": "INSERT INTO `creature_template_addon` SELECT * FROM `coa_dungeon_copy`;"
+        },
+        {
+          "line": 73,
+          "text": "UPDATE `creature_template` SET `difficulty_entry_1` = `entry` + 100000, `difficulty_entry_2` = `entry` + 200000"
+        },
+        {
+          "line": 74,
+          "text": "WHERE `entry` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 75,
+          "text": "UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `DamageModifier` = 18.38, `lootid` = `entry`"
+        },
+        {
+          "line": 76,
+          "text": "WHERE `entry` IN (109027, 109028, 109029, 109030, 109031, 109032);"
+        },
+        {
+          "line": 77,
+          "text": "UPDATE `creature_template` SET `minlevel` = 63, `maxlevel` = 63, `DamageModifier` = 39.32, `lootid` = `entry`"
+        },
+        {
+          "line": 78,
+          "text": "WHERE `entry` IN (209027, 209028, 209029, 209030, 209031, 209032);"
+        },
+        {
+          "line": 80,
+          "text": "DELETE FROM `coa_dungeon_health` WHERE `map_id` = 230 AND `creature_entry` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 81,
+          "text": "INSERT INTO `coa_dungeon_health` (`map_id`, `difficulty`, `creature_entry`, `max_health`, `evidence`, `source`) VALUES"
+        },
+        {
+          "line": 82,
+          "text": "(230, 2, 9027, 541700, 'model', 'non-final boss model; Gorosh the Dervish'),"
+        },
+        {
+          "line": 83,
+          "text": "(230, 1, 9027, 416692, 'model', 'Heroic from Mythic; non-final boss model; Gorosh the Dervish'),"
+        },
+        {
+          "line": 84,
+          "text": "(230, 2, 9028, 541700, 'model', 'non-final boss model; Grizzle'),"
+        },
+        {
+          "line": 85,
+          "text": "(230, 1, 9028, 416692, 'model', 'Heroic from Mythic; non-final boss model; Grizzle'),"
+        },
+        {
+          "line": 86,
+          "text": "(230, 2, 9029, 541700, 'model', 'non-final boss model; Eviscerator'),"
+        },
+        {
+          "line": 87,
+          "text": "(230, 1, 9029, 416692, 'model', 'Heroic from Mythic; non-final boss model; Eviscerator'),"
+        },
+        {
+          "line": 88,
+          "text": "(230, 2, 9030, 541700, 'model', 'non-final boss model; Ok''thor the Breaker'),"
+        },
+        {
+          "line": 89,
+          "text": "(230, 1, 9030, 416692, 'model', 'Heroic from Mythic; non-final boss model; Ok''thor the Breaker'),"
+        },
+        {
+          "line": 90,
+          "text": "(230, 2, 9031, 541700, 'model', 'non-final boss model; Anub''shiah'),"
+        },
+        {
+          "line": 91,
+          "text": "(230, 1, 9031, 416692, 'model', 'Heroic from Mythic; non-final boss model; Anub''shiah'),"
+        },
+        {
+          "line": 92,
+          "text": "(230, 2, 9032, 541700, 'model', 'non-final boss model; Hedrum the Creeper'),"
+        },
+        {
+          "line": 93,
+          "text": "(230, 1, 9032, 416692, 'model', 'Heroic from Mythic; non-final boss model; Hedrum the Creeper');"
+        },
+        {
+          "line": 95,
+          "text": "-- A Mark of Triumph per kill on Heroic and Mythic, as rev_20261016_30 (#7928) intended for the Ring of Law bosses;"
+        },
+        {
+          "line": 96,
+          "text": "-- they were left out because they are not in coa_dungeon_bosses (db.exil.es, dump of 2026-10-04: 1414502 at 100%)."
+        },
+        {
+          "line": 97,
+          "text": "DELETE FROM `coa_dungeon_mark_bosses` WHERE `entry` IN (9027, 9028, 9029, 9030, 9031, 9032);"
+        },
+        {
+          "line": 98,
+          "text": "INSERT INTO `coa_dungeon_mark_bosses` (`entry`) VALUES"
+        }
+      ]
+    }
+  ]
+}

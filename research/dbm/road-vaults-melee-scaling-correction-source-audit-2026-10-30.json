@@ -21,65 +21,39 @@
     {
       "entry": 262711,
       "name": "Muzah",
-      "damageModifier": 0,
-      "lootid": 162711,
-      "healthModifier": 1
+      "lootId": 162711
     },
     {
       "entry": 262715,
       "name": "Drak\\'math the Sinister King",
-      "damageModifier": 1.67,
-      "lootid": 0,
-      "healthModifier": 1
+      "lootId": 0
     },
     {
       "entry": 262716,
       "name": "Chimeric Embryo",
-      "damageModifier": 2.85,
-      "lootid": 0,
-      "healthModifier": 1
+      "lootId": 0
     },
     {
       "entry": 362711,
       "name": "Muzah",
-      "damageModifier": 0,
-      "lootid": 162711,
-      "healthModifier": 1
+      "lootId": 162711
     },
     {
       "entry": 362715,
       "name": "Drak\\'math the Sinister King",
-      "damageModifier": 3.6,
-      "lootid": 0,
-      "healthModifier": 1
+      "lootId": 0
     },
     {
       "entry": 362716,
       "name": "Chimeric Embryo",
-      "damageModifier": 6.13,
-      "lootid": 0,
-      "healthModifier": 1
-    },
-    {
-      "entry": 262715,
-      "name": "0",
-      "damageModifier": null,
-      "lootid": null,
-      "healthModifier": null
-    },
-    {
-      "entry": 362715,
-      "name": "0",
-      "damageModifier": null,
-      "lootid": null,
-      "healthModifier": null
+      "lootId": 0
     }
   ],
-  "templateRowCount": 8,
   "notes": [
     "Author explicitly says earlier heroic/mythic tuning had a core damage-per-modifier mismatch",
     "Values are source-authored and log-derived; not directly measured by this audit",
     "lootid from creature template is not evidence that a loot-template row exists",
-    "SQL is pending; live deployment not confirmed"
+    "SQL is pending; live deployment not confirmed",
+    "The parsed lootId is sourced from the creature_template row; damage and health modifiers require column-aware SQL parsing and are intentionally omitted here."
   ]
 }

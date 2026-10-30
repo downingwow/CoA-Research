@@ -1,0 +1,38 @@
+name: Cross-reference all unresolved CoA spells
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/crossref-preservation-spells.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  crossref:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download three independent preservation catalogs
+        run: |
+          mkdir -p /tmp/coa-preservation
+          base=https://raw.githubusercontent.com/hertigservices/ascension-data/main
+          curl -fLsS --retry 3 "$base/supplemental/exiles-db/6bcecd0faa6c2e7084d8015e1d931431c30e3013a9122810d593868196a3578b/spells.jsonl.gz" -o /tmp/coa-preservation/exiles.jsonl.gz
+          curl -fLsS --retry 3 "$base/supplemental/coa-databank/166001399306e4fb022116fe1e3cfbbd7bd4bf37/databank/palette/spells.jsonl.gz" -o /tmp/coa-preservation/databank.jsonl.gz
+          curl -fLsS --retry 3 "$base/supplemental/coa-databank/166001399306e4fb022116fe1e3cfbbd7bd4bf37/coabuildhub/spells/master_index.json.gz" -o /tmp/coa-preservation/buildhub.json.gz
+      - name: Match 364 IDs and preserve evidence
+        run: |
+          python tools/crossref_preservation_spells.py --exiles /tmp/coa-preservation/exiles.jsonl.gz --databank /tmp/coa-preservation/databank.jsonl.gz --buildhub /tmp/coa-preservation/buildhub.json.gz
+      - name: Commit research findings
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datasets/relationships/additional-spell-source-* research/COA-ADDITIONAL-SPELL-RECOVERY.csv
+          if ! git diff --cached --quiet; then
+            git commit -m "research: preserve additional archived spell evidence across three databases"
+            git push
+          fi

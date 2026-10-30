@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "scope": "archived CoA class-linked spells",
+  "sourceCaveat": "Spell definitions derive from the archived BASE Spell.dbc; values are not confirmed against current Conquest Reborn.",
+  "sourceFilesScanned": 104,
+  "spellDefinitionRowsScanned": 32824,
+  "relationshipSpellIds": 9656,
+  "definitionsMatched": 8776,
+  "definitionsMissing": 880,
+  "invalidJsonLines": 0,
+  "duplicateDefinitionIds": 0,
+  "fieldCoverage": {
+    "id": 8776,
+    "name": 8776,
+    "description": 8776,
+    "rank": 8776,
+    "castTimeMs": 8776,
+    "cooldownMs": 8776,
+    "durationMs": 8776,
+    "powerType": 8776,
+    "manaCost": 8776,
+    "attributes": 8776,
+    "effects": 8776,
+    "schoolMask": 8776,
+    "procFlags": 8776,
+    "stackAmount": 8776
+  },
+  "excluded": "Unlinked original-WoW and unassigned spell records remain in raw archive, not this CoA-specific graph.",
+  "caution": "A field being present does not establish its units or current-client semantics. No guessed cooldown or duration conversion is performed."
+}

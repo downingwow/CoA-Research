@@ -34,11 +34,13 @@ jobs:
           MAX_FILES: ${{ inputs.max_files || '300' }}
           # Re-index existing records and fetch historical spell tooltips
         run: python tools/collect_coa_data.py --max-files "$MAX_FILES"
+      - name: Build searchable cross-source catalog and quality report
+        run: python tools/build_coa_catalog.py
       - name: Commit imported records
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add datasets/bulk
+          git add datasets/bulk datasets/catalog
           if ! git diff --cached --quiet; then
             git commit -m "data: bulk import CoA records and ID indexes"
             git push

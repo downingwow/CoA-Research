@@ -1,0 +1,547 @@
+{
+  "snapshotDate": "2026-10-30",
+  "purpose": "Durable research preservation inventory, source provenance, open gaps and project backup scope",
+  "repository": "https://github.com/downingwow/CoA-Research",
+  "repositories": [
+    {
+      "name": "downingwow/LootCollector",
+      "sizeKiBReported": 1102,
+      "defaultBranch": "main",
+      "emptyOrTiny": false
+    },
+    {
+      "name": "downingwow/DBM-CoA",
+      "sizeKiBReported": 14222,
+      "defaultBranch": "main",
+      "emptyOrTiny": false
+    },
+    {
+      "name": "downingwow/Details",
+      "sizeKiBReported": 7753,
+      "defaultBranch": "main",
+      "emptyOrTiny": false
+    },
+    {
+      "name": "downingwow/CoA-Research",
+      "sizeKiBReported": 27605,
+      "defaultBranch": "main",
+      "emptyOrTiny": false
+    },
+    {
+      "name": "downingwow/Cell-CoA",
+      "sizeKiBReported": 0,
+      "defaultBranch": "main",
+      "emptyOrTiny": true
+    },
+    {
+      "name": "downingwow/NovaInstanceTracker",
+      "sizeKiBReported": 0,
+      "defaultBranch": "main",
+      "emptyOrTiny": true
+    },
+    {
+      "name": "downingwow/Zygor-CoA",
+      "sizeKiBReported": 125198,
+      "defaultBranch": "main",
+      "emptyOrTiny": false
+    },
+    {
+      "name": "downingwow/BoneUI",
+      "sizeKiBReported": 24,
+      "defaultBranch": "main",
+      "emptyOrTiny": false
+    },
+    {
+      "name": "downingwow/ElvUI-CoA",
+      "sizeKiBReported": 16487,
+      "defaultBranch": "main",
+      "emptyOrTiny": false
+    },
+    {
+      "name": "downingwow/Nameplates",
+      "sizeKiBReported": 0,
+      "defaultBranch": "main",
+      "emptyOrTiny": true
+    },
+    {
+      "name": "downingwow/SilverDragon",
+      "sizeKiBReported": 236,
+      "defaultBranch": "main",
+      "emptyOrTiny": false
+    },
+    {
+      "name": "downingwow/MRT-CoA",
+      "sizeKiBReported": 5656,
+      "defaultBranch": "main",
+      "emptyOrTiny": false
+    },
+    {
+      "name": "downingwow/Questie-X",
+      "sizeKiBReported": 27370,
+      "defaultBranch": "main",
+      "emptyOrTiny": false
+    }
+  ],
+  "recentResearchCommits": [
+    {
+      "sha": "bcad4f9a240f5203a5347ea490eee34bcb28cb0f",
+      "message": "Add versionless ZulGurub complete research ZIP"
+    },
+    {
+      "sha": "a420765538487f3a9394eed54d75a71ba2c83b4e",
+      "message": "Automate versionless ZulGurub research ZIP generation"
+    },
+    {
+      "sha": "a06ba9714dee454ae5d6a5120e6cad11205b172d",
+      "message": "Combine Zul'Gurub deep audit and cross-system sources into one complete v5 handoff"
+    },
+    {
+      "sha": "74ef5a23ab23b03c6316da87306d0d1e7d91bafb",
+      "message": "Publish ZG v5 thorough audit manifest linking full raid pack and cross-system source supplement"
+    },
+    {
+      "sha": "8598afbe0ef4c9233d1c01b3b25f04257d3f577f",
+      "message": "Archive ZG Zandalar quest, boss unlock, script registration, creature data and raid-reset dependencies"
+    },
+    {
+      "sha": "0fe27d3d937eacf6cc1c76b890f60f95f7514442",
+      "message": "Publish 58-source ZG deep audit including captured health SQL, spawn masks, test scenarios and cache candidates"
+    },
+    {
+      "sha": "4260ce17e24472bab0b4829ecdac4d12bf118564",
+      "message": "Archive ZG baseline creature health candidates, spawn masks and regression test scenarios"
+    },
+    {
+      "sha": "8c83459fcafcdf4352e88a5d256d142efdb0d579",
+      "message": "Publish audited 50-file Zul'Gurub handoff with full boss, trash, loot, caches, release and encounter sources"
+    },
+    {
+      "sha": "c9d6354a0ac948c502256a90cf6712d75a140747",
+      "message": "Audit ZG cache rewards, encounter mappings, raid access and release dependencies"
+    },
+    {
+      "sha": "90f56df64f2be3e51de73662f0f4bc1258f3e0d8",
+      "message": "Expand ZG handoff with optional bosses, raid instance, flex, spawns, cache mapping and candidate spell index"
+    },
+    {
+      "sha": "adf95acd3cfe6cdeb38823c2c03a35c695be790b",
+      "message": "Package complete Zul'Gurub raid restoration source, loot, trash and all difficulty mechanics for Conquest handoff"
+    },
+    {
+      "sha": "aa0439bbf81f8f5f15046394181bb42bb1fc489a",
+      "message": "Archive ZG restoration PR core boss scripts and difficulty achievement conditions"
+    },
+    {
+      "sha": "2f3ce06d5965426d4e7503fcbff1e1fe5c69393d",
+      "message": "Archive ZG restoration PR full 9 boss scripts, shared code and evidence audit"
+    },
+    {
+      "sha": "2886973373e59622bdad186814a5eb6c06d02bbc",
+      "message": "Import ZG restoration PR 13 SQL files: loot, difficulty, trash, Loa and encounter data"
+    },
+    {
+      "sha": "4cd0e42895b31d73584d103f454b9ca5c1ddaf44",
+      "message": "Archive 9 legacy Zul'Gurub boss scripts to compare against CoA encounter overrides"
+    },
+    {
+      "sha": "b1f593160b67ac6cc8aa8b29272632edf5ddd5b9",
+      "message": "Archive Zul'Gurub auxiliary bosses, instance scripts, raid flex and spawn mappings"
+    },
+    {
+      "sha": "8d267858bf6f33c95654fd79c39d2ad1f0b5b4d2",
+      "message": "Archive 9 custom Zul'Gurub encounter scripts, shared mechanics and ZG SQL for DBM research"
+    },
+    {
+      "sha": "463dfaaf78d3375e91bd751e486095594ae3909a",
+      "message": "Import dungeon wing starts, Stockade and Stratholme scripts, boss difficulty mappings"
+    },
+    {
+      "sha": "9f7073fe4b7b4d7e16df74a277216fa065c87236",
+      "message": "Archive additional dungeon rare bosses, BRD Ring of Law, Vaults and Mythic+ encounter tests"
+    },
+    {
+      "sha": "ff0f6a891c6741942753465ec7a460b840da50e2",
+      "message": "Archive dungeon encounter, final boss, tier spell and damage source SQL for DBM"
+    },
+    {
+      "sha": "83e3f5e9f6ad1f6e80638390f77a1b6e3a8f7e01",
+      "message": "Import Mythic+ champion spawn tables and dungeon boss spell mechanics for DBM research"
+    },
+    {
+      "sha": "b604886a3654095dd0f52a7f114de9be0425426a",
+      "message": "Import dungeon boss kit precedence and Mythic+ implementation for DBM mechanics research"
+    },
+    {
+      "sha": "1c91a16253530a52c4473e52f12eee82ab81dfc8",
+      "message": "Archive measured Molten Core raid schedules and AQ20 custom encounter source for DBM"
+    },
+    {
+      "sha": "581f6236bc8791c964367083876b4cc0ab0b811a",
+      "message": "Archive CoA dungeon difficulty and Molten Core raid mechanic documentation for DBM research"
+    },
+    {
+      "sha": "371a21ac195c041b088475709913fea44cd16081",
+      "message": "Archive CoA dungeon boss SQL source for mechanics research"
+    },
+    {
+      "sha": "e0e12b6f1d88aab3923bdff639137d337c18fd58",
+      "message": "Extract CoA dungeon boss scripted spell IDs and exact timing windows for DBM research"
+    },
+    {
+      "sha": "01f1c8589907dfa98690c42f54240df153fca687",
+      "message": "Import second batch of 10 CoA October SQL migrations for item and world fixes"
+    },
+    {
+      "sha": "542c6672a6c5662e87af305615435c2367a3f796",
+      "message": "Import verified October CoA upstream world SQL migrations with original statements"
+    },
+    {
+      "sha": "a405489042a6f9ffbc983e01f5c1c7267575846a",
+      "message": "Import current CoA live/PTR source findings and verified spell, creature and vendor IDs"
+    },
+    {
+      "sha": "383a8c9e9b437a53b8f3799701816609ebdfb58d",
+      "message": "Import upstream CoA world database manifest for 318 tables with checksums and row counts"
+    },
+    {
+      "sha": "584a843ce82ab591d863267ec08f3048a9203f93",
+      "message": "Import 11 verified CoA upstream Basalthane spell-script mappings"
+    },
+    {
+      "sha": "43fa96aaa4bec73c9ab61d48d504b31a3fb70f7e",
+      "message": "Record CoA Development upstream GitHub source and database sync verification status"
+    },
+    {
+      "sha": "89e226a1e4aa7f7951c2abccf1522a35fafc2b81",
+      "message": "Document verified BoneArchive calculator talent dataset and canonical import source"
+    },
+    {
+      "sha": "be65ff179cfc5cbeab7db6019c8e57bd0f41492c",
+      "message": "Document CoA Development talent authority and structured source extraction audit"
+    },
+    {
+      "sha": "2e6552fabc8cb775506e6e30220f0377e3ef5af1",
+      "message": "research: document complete spell recovery, BisBeard phases, and 155 talent-tree cross-reference"
+    },
+    {
+      "sha": "d8ebc393bd5cbb7beae08f8150df193b21c2652e",
+      "message": "research: preserve 155 historical CoA talent trees"
+    },
+    {
+      "sha": "5adfb80d2c99c173c661ed9b988ac5db6ea0869d",
+      "message": "ci: publish preserved Exiles talent trees and historical registry matches"
+    },
+    {
+      "sha": "c13ce76e269ca7e246f48431a40c0841a50ad61a",
+      "message": "research: preserve 155 Exiles CoA talent trees and candidate specialization links"
+    },
+    {
+      "sha": "9b3c9dbca46f344f82051a4bbe8285b7e00e6bd9",
+      "message": "research: inspect preserved Exiles CoA talent tree structure for cross-reference"
+    },
+    {
+      "sha": "d99ba2dadd9e8e6e5e96c0ed1cd075780398acce",
+      "message": "data: publish browser-searchable CoA spell index"
+    },
+    {
+      "sha": "293ec6e5c81699cdeef8c94543fbbad816b6b051",
+      "message": "ci: republish searchable spell index with recovered names and source provenance"
+    },
+    {
+      "sha": "9fade570ac02575bfc543c959c2c96224686ce1d",
+      "message": "data: include recovered names, historical descriptions and provenance in searchable CoA spell index"
+    },
+    {
+      "sha": "50797237550d99de436de41bb2f4a060c329b398",
+      "message": "research: publish 9656-spell unified evidence index and source conflicts"
+    },
+    {
+      "sha": "416ee9a372bcf44cae4127b400a2eead2ecefe48",
+      "message": "ci: publish provenance-aware unified spell index and conflict audit"
+    },
+    {
+      "sha": "1c7ac520b270f025f6852b70e337e01e642daae7",
+      "message": "research: unify all 9656 archived spell IDs with source attribution and name conflict auditing"
+    },
+    {
+      "sha": "b8af6d58e267af76f6fd43010c1f9156a17a4a80",
+      "message": "data: preserve complete BisBeard planner catalog and phase coverage"
+    },
+    {
+      "sha": "83f74ed7d2b44f1a40d095d21ca008604e55578f",
+      "message": "ci: retry BisBeard import with corrected empty-table accounting and concurrent push handling"
+    },
+    {
+      "sha": "f08a685f62500e61ab64cc0c20cf41835ae6f7ee",
+      "message": "docs: distinguish 75 declared BisBeard tables from tables containing exported rows"
+    },
+    {
+      "sha": "2c6bc5b699a727379399faca1987619ef01aabd7",
+      "message": "fix: account for empty declared BisBeard tables absent from row export"
+    },
+    {
+      "sha": "d4357eeda334fb82ab52dad9118810ae7a48da41",
+      "message": "research: preserve additional archived spell evidence across three databases"
+    },
+    {
+      "sha": "06a077c7cf5b9613c7cc1d799da408ecb560483c",
+      "message": "ci: retry publication against concurrent research and website commits"
+    },
+    {
+      "sha": "3006c9393120eed20eada27e1636e807a28107c5",
+      "message": "ci: import complete historical BisBeard gear planner data into CoA-Research"
+    },
+    {
+      "sha": "cddba05ed137ffa8c53e9f4174bde8bbdb1ad53d",
+      "message": "research: normalize and preserve all 70838 BisBeard phase gear-planner records"
+    },
+    {
+      "sha": "983639a6d6926f30e065c7f18618d23a63d60e20",
+      "message": "ci: rebase preservation findings before push to handle concurrent research commits"
+    },
+    {
+      "sha": "a6397460428578ca723d85add7c21788fed80eb2",
+      "message": "research: inspect full BisBeard phase gear-planner export structure"
+    },
+    {
+      "sha": "fe2f2d53ce1c4cc845f9b1ce7c8689b22538b14d",
+      "message": "ci: run full 364-spell cross-reference against three searchable historical databases"
+    },
+    {
+      "sha": "a4dfbe51cdfc1011095337eaaa9a759916a8333f",
+      "message": "research: cross-reference all 364 missing spell IDs against Exiles, CoA-Databank and CoABuildHub archives"
+    },
+    {
+      "sha": "7e6d250507c554b626d969f8fba70de827076b36",
+      "message": "research: inspect searchable preservation spell catalogs and schema"
+    },
+    {
+      "sha": "4bb3b4b67baa4ea6167205df9e87d23acc7e53a1",
+      "message": "Fix English gear slot labels in item views"
+    },
+    {
+      "sha": "ceea03e3bc95765797a82af518a7711a8f9ba0f1",
+      "message": "research: publish unresolved CoA spell triage and evidence ranking"
+    },
+    {
+      "sha": "e2b2f435202a47319c86bbe0a7b435448bddd174",
+      "message": "ci: publish evidence-ranked unresolved CoA spell research audit"
+    },
+    {
+      "sha": "fa42537b445f76b9e3cd7e1f39d8057c694d830d",
+      "message": "research: build evidence-ranked queue for 364 unresolved CoA spell IDs"
+    },
+    {
+      "sha": "c34841a7105b10c957b87b8383cbccf83bfd75bf",
+      "message": "docs: track MRT integration and define safe portable CoA spell data contract"
+    },
+    {
+      "sha": "de7e992a715f3559035fa60e301367ca8f1a1ffe",
+      "message": "data: publish browser-searchable CoA spell index"
+    },
+    {
+      "sha": "1ae371f8c89a7290b958e8e81fa02e4f595511e5",
+      "message": "ci: rerun fixed spell index publisher"
+    },
+    {
+      "sha": "3e143ee18d8f4c037a0076a92eccd28b03df123f",
+      "message": "Redesign BoneArchive navigation and source attribution"
+    },
+    {
+      "sha": "6b85be3227c48f6c6d07f855ba390f1ce15483df",
+      "message": "Redesign BoneArchive navigation and source attribution"
+    },
+    {
+      "sha": "6f7c9a97854bbffce455c770c46f453eab4da284",
+      "message": "fix: correctly terminate JSON index output line in Python exporter"
+    },
+    {
+      "sha": "09a2b9a47ec359812d2e321069d3b035ec0415d3",
+      "message": "Redesign BoneArchive navigation and source attribution"
+    },
+    {
+      "sha": "d20e84d6f95f30cae591c2c14229fe4a21b1dc21",
+      "message": "Redesign BoneArchive navigation and source attribution"
+    },
+    {
+      "sha": "48fadb7d11f2f9fb87f23b4907db11cce1ccb679",
+      "message": "Redesign BoneArchive navigation and guide layouts"
+    },
+    {
+      "sha": "817cf1e32fe946097b8057e51d6a7319cc887c6f",
+      "message": "ci: retry spell search index export after Python syntax fix"
+    },
+    {
+      "sha": "73367c57f3150b2a2a707022e1ab4f9a0ef2a7a6",
+      "message": "fix: replace escaped newlines in site spell index generator"
+    },
+    {
+      "sha": "02521f64cf025e6a0b860590139f5054fcb40c34",
+      "message": "site: link searchable CoA spell database from BoneArchive archive navigation"
+    },
+    {
+      "sha": "9432b4ce2f90e5cd198f7d14d694e2626804d611",
+      "message": "build: publish validated 9656-spell browser search index to BoneArchive"
+    },
+    {
+      "sha": "4a3d7e81350810741d1dfbd3f22f0ae11f61a1cc",
+      "message": "fix: load class labels from deployed spell index without cross-root request"
+    },
+    {
+      "sha": "9dcb7c9f51f21de8cdc05c1d9c9612577e5f28c7",
+      "message": "feat: embed class display names directly in deployable spell search index"
+    },
+    {
+      "sha": "206ea98a622afde1b35cc83b50d19fc822afb652",
+      "message": "fix: correct defined/missing spell filter boolean comparison"
+    },
+    {
+      "sha": "653f375db847e519ea7769bbc2dccf2b072144ff",
+      "message": "feat: client-side spell ID/name/description search with class and definition filters"
+    },
+    {
+      "sha": "84cfec634fde06c4781a15b13e2e9946bc155fc3",
+      "message": "feat: add BoneArchive searchable archived spell database page"
+    },
+    {
+      "sha": "202c938d268091847a55e952eedcc303887c09e0",
+      "message": "feat: export compact archived CoA spell search index for BoneArchive"
+    },
+    {
+      "sha": "b8ac3646749792bf3503b1be1dcb93569c3b6102",
+      "message": "data: publish historical tooltip fallback coverage"
+    },
+    {
+      "sha": "c9ac4fe2f58aa7ba582e3df26a637b30839bb19c",
+      "message": "ci: run one-time historical spell tooltip reconciliation"
+    },
+    {
+      "sha": "e2394d3f8dc4d8b33d847c636bf8c379f36cee69",
+      "message": "feat: cross-reference unmatched CoA spell IDs with preserved historical tooltips"
+    },
+    {
+      "sha": "7efc1b4356ceb05bad0c3cbba203299919e4d228",
+      "message": "data: publish CoA archived spell definitions and enrichment audit"
+    },
+    {
+      "sha": "51541895e24bb2e0c07b2d73ff397f09ff58a0be",
+      "message": "ci: retry archived spell enrichment after correcting field coverage counter"
+    },
+    {
+      "sha": "abd807215eeea6d522578be4b173ca53f95ed0d1",
+      "message": "fix: count enrichment field presence rather than adding field values"
+    },
+    {
+      "sha": "d94c6941c81d5582637bced9b53bbaade4585b76",
+      "message": "build: run one-time archived spell definition enrichment with audit"
+    },
+    {
+      "sha": "2cc1bd5fe5cbe718c1a5da7dbe51404530858a7b",
+      "message": "feat: enrich CoA spell graph with archived Spell.dbc definitions and field coverage audit"
+    },
+    {
+      "sha": "4aa431227caafc1bb1b6611664099c8e20b790a4",
+      "message": "data: publish validated CoA spell and talent relationships"
+    },
+    {
+      "sha": "2c899baed13159e13d236d4534c24256942f496a",
+      "message": "ci: verify graph with upstream metadata/index shards correctly excluded"
+    },
+    {
+      "sha": "9fab54baad33a43fbafa621dfd2d5b7ae33af718",
+      "message": "fix: exclude upstream index and metadata documents from class graph validation"
+    },
+    {
+      "sha": "273c21fd0f2e28f24d69b94d5881d84de97c8fb2",
+      "message": "ci: rerun spell graph after distinguishing residual metadata from class records"
+    },
+    {
+      "sha": "7ca2a5d653031543668efa87aff63b875ac94759",
+      "message": "fix: exclude unattributed residual and metadata ability shards from CoA class attribution"
+    },
+    {
+      "sha": "d2743b82deac258d778d4df029f105655e68394b",
+      "message": "ci: rerun graph verification after excluding unrelated original WoW classes"
+    },
+    {
+      "sha": "c995dc8d40f1ebb5fb30f4d76ae386fe02ae8396",
+      "message": "fix: distinguish intentionally excluded original WoW classes from unresolved CoA graph errors"
+    },
+    {
+      "sha": "664d78e4f0680f1c66f262e894cae901fe868f44",
+      "message": "build: execute and validate manual CoA spell/talent graph once on workflow addition"
+    },
+    {
+      "sha": "7dc6f141e62a95716343d9269a2a72dfee782ca6",
+      "message": "docs: define manual spell/talent graph build and evidence limitations"
+    },
+    {
+      "sha": "43846ba20a662795101ec8630ffca34b79ebabe2",
+      "message": "feat: add manual evidence-backed CoA spell-to-class/spec and talent prerequisite graph builder"
+    },
+    {
+      "sha": "3136906d6b8e6847111a174d08f459aa4ba324e8",
+      "message": "docs: link complete archived 70-spec numeric registry and resolve Primalist tab-name aliases"
+    }
+  ],
+  "researchTopics": [
+    {
+      "topic": "CoA class, spec, talent and spell recovery",
+      "known": "21 custom classes; historical 69–70 spec counts vary by snapshot; 155 talent trees, 8610 cells, 9656 spell IDs and 217 naming discrepancies reported in earlier research",
+      "sources": [
+        "https://coa-development.org/talents",
+        "https://ascension-db.ascension-archive.workers.dev/"
+      ],
+      "caveat": "Historical and current Conquest Reborn identifiers may differ; counts reflect research snapshots, not fresh live verification"
+    },
+    {
+      "topic": "BisBeard historical itemization",
+      "known": "70 defaultWeights scoring profiles; historical 70,838 item records and 37,557 planner variants reported; all-phase BiS completeness unverified",
+      "caveat": "Weights are scoring inputs, not guaranteed priority lists; preserve provenance and avoid presenting inferred BiS as verified"
+    },
+    {
+      "topic": "AscensionLogs",
+      "known": "Historical rankings, reports, builds and boss statistics sources identified",
+      "source": "https://coa.ascensionlogs.gg/",
+      "caveat": "Do not claim complete logs archive; honor API access, attribution and redistribution restrictions"
+    },
+    {
+      "topic": "Preservation changelogs and historical client data",
+      "known": "Prior audit referenced 70,437 changelog entries and 7.47M client-data rows; large third-party datasets referenced rather than wholly mirrored",
+      "caveat": "Manifest/URL is not a full backup of underlying dataset"
+    },
+    {
+      "topic": "Raid and dungeon research",
+      "known": "Zul'Gurub unified 72-source pack committed; Molten Core, AQ20, dungeon mechanics, Mythic+ and boss schedules archived in separate research commits",
+      "caveat": "Some source is reconstructed and not gameplay-tested"
+    },
+    {
+      "topic": "Ascension world SQL",
+      "known": "Upstream world manifest describes 318 tables and 3,593,783 declared rows, plus select October SQL migrations",
+      "caveat": "Manifest is not complete SQL database export"
+    },
+    {
+      "topic": "Addons and future data capture",
+      "known": "Questie-X, LootCollector, DBM-CoA, MRT-CoA, Details and other addon projects have separate repositories",
+      "caveat": "This research repo does not automatically contain full addon release ZIPs or chat attachments"
+    }
+  ],
+  "researchSources": [
+    "https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+    "https://github.com/srhinos/coa-datamine",
+    "https://github.com/DealsBeam/ascension-db",
+    "https://github.com/Bharph/coa-preservation-data",
+    "https://github.com/f3rr311/CoA-Databank",
+    "https://coa-development.org/talents",
+    "https://coa.ascensionlogs.gg/",
+    "https://ascension-db.ascension-archive.workers.dev/"
+  ],
+  "openBackupGaps": [
+    "Uploaded archives from other chats may not exist in GitHub; do not claim they are backed up",
+    "Large external datasets may be referenced but not mirrored",
+    "Historical logs and exact phase-by-phase BiS are not comprehensively retrieved",
+    "Some listed addon repositories are empty or tiny, so independently verify release sources",
+    "No direct access to all chat attachments or every conversation artifact for bulk commit"
+  ],
+  "scope": "Research and metadata only; no addon source changes, no proprietary third-party files."
+}

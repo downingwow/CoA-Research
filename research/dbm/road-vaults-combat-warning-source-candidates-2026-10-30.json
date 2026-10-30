@@ -1,0 +1,835 @@
+{
+  "schema": "coa-research.combat-warning-source-candidates.v1",
+  "date": "2026-10-30",
+  "dungeons": [
+    {
+      "mapId": 937,
+      "source": {
+        "source": "src/server/coa/CoAOtherSideTrash.cpp",
+        "casts": [
+          {
+            "line": 163,
+            "code": "DoCastSelf(SPELL_BROOD_STATE, true);"
+          },
+          {
+            "line": 169,
+            "code": "DoCastSelf(SPELL_ENGORGED, true);"
+          },
+          {
+            "line": 196,
+            "code": "DoCastVictim(ability.spell);"
+          },
+          {
+            "line": 199,
+            "code": "DoCastSelf(ability.spell);"
+          },
+          {
+            "line": 203,
+            "code": "DoCast(target, ability.spell);"
+          }
+        ],
+        "spellConstants": [
+          {
+            "name": "SPELL_FIERCE_BLOW",
+            "id": 975011
+          },
+          {
+            "name": "SPELL_DECAYING_HEMORRHAGE",
+            "id": 256905
+          },
+          {
+            "name": "SPELL_BITE",
+            "id": 256906
+          },
+          {
+            "name": "SPELL_VENOMOUS_BREATH",
+            "id": 256907
+          },
+          {
+            "name": "SPELL_STING",
+            "id": 256909
+          },
+          {
+            "name": "SPELL_REND_FLESH",
+            "id": 256938
+          },
+          {
+            "name": "SPELL_SHIELD_BASH",
+            "id": 256939
+          },
+          {
+            "name": "SPELL_FISSURE_STRIKE",
+            "id": 256110
+          },
+          {
+            "name": "SPELL_EARTH_STRIKE",
+            "id": 256109
+          },
+          {
+            "name": "SPELL_ENGORGED",
+            "id": 257198
+          },
+          {
+            "name": "SPELL_BROOD_EMPOWERMENT",
+            "id": 257200
+          },
+          {
+            "name": "SPELL_BROOD_STATE",
+            "id": 257201
+          },
+          {
+            "name": "SPELL_BITING_CLOUD",
+            "id": 257202
+          },
+          {
+            "name": "SPELL_TOXIC_EXPULSION",
+            "id": 257203
+          }
+        ],
+        "npcConstants": [
+          {
+            "name": "NPC_SPIDER_ADD",
+            "id": 162743
+          },
+          {
+            "name": "NPC_WANDERER_1",
+            "id": 162765
+          },
+          {
+            "name": "NPC_MATRIARCH",
+            "id": 162769
+          },
+          {
+            "name": "NPC_SPIDER",
+            "id": 162770
+          },
+          {
+            "name": "NPC_GUTDEVOURER_1",
+            "id": 162773
+          },
+          {
+            "name": "NPC_GUTDEVOURER_2",
+            "id": 162775
+          },
+          {
+            "name": "NPC_WANDERER_2",
+            "id": 162776
+          },
+          {
+            "name": "NPC_CULTIST_1",
+            "id": 162780
+          },
+          {
+            "name": "NPC_HISSER",
+            "id": 162782
+          },
+          {
+            "name": "NPC_WANDERER_3",
+            "id": 162783
+          },
+          {
+            "name": "NPC_SWARM",
+            "id": 162784
+          },
+          {
+            "name": "NPC_WATCHER",
+            "id": 162785
+          },
+          {
+            "name": "NPC_LIFEDRINKER_1",
+            "id": 162979
+          },
+          {
+            "name": "NPC_LIFEDRINKER_2",
+            "id": 162980
+          },
+          {
+            "name": "NPC_CULTIST_2",
+            "id": 162982
+          },
+          {
+            "name": "NPC_CULTIST_SHIELD",
+            "id": 162983
+          }
+        ]
+      }
+    },
+    {
+      "mapId": 936,
+      "source": {
+        "source": "src/server/coa/CoAVaults.cpp",
+        "casts": [
+          {
+            "line": 227,
+            "code": "T ByDifficulty(Map const* map, T normal, T heroic, T mythic)"
+          },
+          {
+            "line": 511,
+            "code": "_events.ScheduleEvent(EVENT_ECHO_SECOND_LINE, 6s);"
+          },
+          {
+            "line": 512,
+            "code": "_events.ScheduleEvent(EVENT_ECHO_CHAINS, 5s);"
+          },
+          {
+            "line": 513,
+            "code": "_events.ScheduleEvent(EVENT_ECHO_FIERCE_BLOW, 6s);"
+          },
+          {
+            "line": 514,
+            "code": "_events.ScheduleEvent(EVENT_ECHO_STRIKE, 15s);"
+          },
+          {
+            "line": 515,
+            "code": "_events.ScheduleEvent(EVENT_ECHO_DESTRUCTION, 25s);"
+          },
+          {
+            "line": 591,
+            "code": "_events.Repeat(ByDifficulty(me->GetMap(), 10s, 4s, 2s));"
+          },
+          {
+            "line": 594,
+            "code": "DoCastVictim(SPELL_FIERCE_BLOW);"
+          },
+          {
+            "line": 595,
+            "code": "_events.Repeat(9s, 11s);"
+          },
+          {
+            "line": 600,
+            "code": "DoCastVictim(SPELL_SPECTRAL_STRIKE);"
+          },
+          {
+            "line": 601,
+            "code": "_events.Repeat(37s);"
+          },
+          {
+            "line": 607,
+            "code": "DoCastAOE(SPELL_SPECTRAL_DESTRUCTION);"
+          },
+          {
+            "line": 608,
+            "code": "_events.Repeat(37s);"
+          },
+          {
+            "line": 636,
+            "code": "DoCastSelf(SPELL_SPECTRAL_DESTRUCTION_RP);"
+          },
+          {
+            "line": 648,
+            "code": "DoCastSelf(SPELL_SPECTRAL_DESTRUCTION_RP);"
+          },
+          {
+            "line": 687,
+            "code": "uint32 const wanted = ByDifficulty<uint32>(me->GetMap(), 1, 2, uint32(targets.size()));"
+          },
+          {
+            "line": 748,
+            "code": "DoCast(echo, SPELL_RP_SHADOWBOLT);"
+          },
+          {
+            "line": 754,
+            "code": "DoCastSelf(SPELL_ENDLESS_AFFLICTION);"
+          },
+          {
+            "line": 836,
+            "code": "_events.ScheduleEvent(EVENT_DARK_MORE_FIRE, 5s);"
+          },
+          {
+            "line": 837,
+            "code": "_events.ScheduleEvent(EVENT_DARK_EARTHQUAKE, 18500ms);"
+          },
+          {
+            "line": 838,
+            "code": "_events.ScheduleEvent(EVENT_DARK_FIERCE_BLOW, 9s);"
+          },
+          {
+            "line": 857,
+            "code": "if (!_devoured && me->HealthBelowPctDamaged(ByDifficulty<int32>(me->GetMap(), 15, 20, 30), damage))"
+          },
+          {
+            "line": 859,
+            "code": "if (!_pleaded && me->HealthBelowPctDamaged(10, damage))"
+          },
+          {
+            "line": 916,
+            "code": "DoCastSelf(SPELL_MORE_FIRE);"
+          },
+          {
+            "line": 917,
+            "code": "_events.ScheduleEvent(EVENT_DARK_FIRE_CIRCLES, 3s);"
+          },
+          {
+            "line": 918,
+            "code": "_events.Repeat(20s);"
+          },
+          {
+            "line": 922,
+            "code": "_events.ScheduleEvent(EVENT_DARK_FIRE_LINE, 4s);"
+          },
+          {
+            "line": 930,
+            "code": "DoCastAOE(SPELL_EARTHQUAKE);"
+          },
+          {
+            "line": 931,
+            "code": "_events.ScheduleEvent(EVENT_DARK_QUAKE_END, 7s);"
+          },
+          {
+            "line": 932,
+            "code": "_events.Repeat(20s);"
+          },
+          {
+            "line": 938,
+            "code": "DoCastVictim(SPELL_FIERCE_BLOW);"
+          },
+          {
+            "line": 939,
+            "code": "_events.Repeat(6s, 8s);"
+          },
+          {
+            "line": 958,
+            "code": "DoCastSelf(SPELL_VOID_ESCAPE);"
+          },
+          {
+            "line": 959,
+            "code": "_events.ScheduleEvent(EVENT_DARK_APPEAR, DarkandleTeleportDelay);"
+          },
+          {
+            "line": 969,
+            "code": "_events.ScheduleEvent(EVENT_DARK_CANDLES, DarkandleAfterTeleport);"
+          },
+          {
+            "line": 973,
+            "code": "DoCastSelf(SPELL_CANDLES);"
+          },
+          {
+            "line": 974,
+            "code": "_events.ScheduleEvent(EVENT_DARK_INTRO_LINE, 4500ms);"
+          },
+          {
+            "line": 975,
+            "code": "_events.ScheduleEvent(EVENT_DARK_READY, 6500ms);"
+          },
+          {
+            "line": 1017,
+            "code": "DoCastSelf(SPELL_VOID_ESCAPE);"
+          },
+          {
+            "line": 1033,
+            "code": "DoCastAOE(SPELL_ABYSSAL_DEVOUR);"
+          },
+          {
+            "line": 1162,
+            "code": "_events.ScheduleEvent(EVENT_DEC_VOIDFLARE, 7s);"
+          },
+          {
+            "line": 1163,
+            "code": "_events.ScheduleEvent(EVENT_DEC_INNER_RING, 20s);"
+          },
+          {
+            "line": 1164,
+            "code": "_events.ScheduleEvent(EVENT_DEC_OUTER_RING, 25s);"
+          },
+          {
+            "line": 1165,
+            "code": "_events.ScheduleEvent(EVENT_DEC_SOAK, 30s);"
+          },
+          {
+            "line": 1166,
+            "code": "_events.ScheduleEvent(EVENT_DEC_CRYSTAL, 35s);"
+          },
+          {
+            "line": 1167,
+            "code": "_events.ScheduleEvent(EVENT_DEC_VOID_WRATH, 40s);"
+          },
+          {
+            "line": 1168,
+            "code": "_events.ScheduleEvent(EVENT_DEC_FIERCE_BLOW, 10s);"
+          },
+          {
+            "line": 1228,
+            "code": "_events.Repeat(DeceiverCycle);"
+          },
+          {
+            "line": 1231,
+            "code": "DoCastSelf(SPELL_SHADOWY_RINGS, true);"
+          },
+          {
+            "line": 1233,
+            "code": "_events.ScheduleEvent(EVENT_DEC_INNER_BURST, DeceiverRingDelay);"
+          },
+          {
+            "line": 1234,
+            "code": "_events.Repeat(DeceiverCycle);"
+          },
+          {
+            "line": 1241,
+            "code": "_events.ScheduleEvent(EVENT_DEC_OUTER_BURST, DeceiverRingDelay);"
+          },
+          {
+            "line": 1242,
+            "code": "_events.Repeat(DeceiverCycle);"
+          },
+          {
+            "line": 1250,
+            "code": "_events.Repeat(DeceiverCycle);"
+          },
+          {
+            "line": 1254,
+            "code": "_events.Repeat(DeceiverCycle);"
+          },
+          {
+            "line": 1258,
+            "code": "DoCastSelf(SPELL_VOID_WRATH);"
+          },
+          {
+            "line": 1259,
+            "code": "_events.Repeat(DeceiverCycle);"
+          },
+          {
+            "line": 1262,
+            "code": "DoCastVictim(SPELL_FIERCE_BLOW);"
+          },
+          {
+            "line": 1263,
+            "code": "_events.Repeat(10s, 12s);"
+          },
+          {
+            "line": 1291,
+            "code": "DoCastSelf(SPELL_VOID_CONSUMPTION);"
+          },
+          {
+            "line": 1310,
+            "code": "_events.ScheduleEvent(EVENT_DEC_ERUPTION, at);"
+          },
+          {
+            "line": 1311,
+            "code": "_events.ScheduleEvent(EVENT_DEC_HOLY_CRACKS, DeceiverHolyCracksAt);"
+          },
+          {
+            "line": 1312,
+            "code": "_events.ScheduleEvent(EVENT_DEC_SEAL_RING, DeceiverSealRingAt);"
+          },
+          {
+            "line": 1313,
+            "code": "_events.ScheduleEvent(EVENT_DEC_ROAR, DeceiverRoarAt);"
+          },
+          {
+            "line": 1314,
+            "code": "_events.ScheduleEvent(EVENT_DEC_AWAKE, DeceiverAwakeAt);"
+          },
+          {
+            "line": 1390,
+            "code": "DoCastSelf(SPELL_VOIDFLARE);"
+          },
+          {
+            "line": 1473,
+            "code": "DoCastSelf(SPELL_CHAIN_ZONE, true);"
+          },
+          {
+            "line": 1483,
+            "code": "DoCastSelf(SPELL_VOID_ZONE, true);"
+          },
+          {
+            "line": 1508,
+            "code": "me->CastSpell(me, SPELL_VISUAL_CANDLE_FLAME, false);"
+          },
+          {
+            "line": 1558,
+            "code": "DoCastSelf(SPELL_SUBJUGATING_CHAINS, true);"
+          },
+          {
+            "line": 1565,
+            "code": "DoCastSelf(SPELL_VOIDFLARE, true);"
+          },
+          {
+            "line": 1581,
+            "code": "DoCast(player, SPELL_SPECTRAL_STRIKE);"
+          },
+          {
+            "line": 1652,
+            "code": "candle->CastSpell(me, SPELL_CANDLE_FIREBALL, true);"
+          },
+          {
+            "line": 1749,
+            "code": "me->CastSpell(helper, SPELL_COSMETIC_CHAINS, true);"
+          },
+          {
+            "line": 1923,
+            "code": "DoCastVictim(ability.spell);"
+          },
+          {
+            "line": 1926,
+            "code": "DoCastSelf(ability.spell);"
+          },
+          {
+            "line": 1930,
+            "code": "DoCast(target, ability.spell);"
+          },
+          {
+            "line": 1943,
+            "code": "SpellCastResult const result = me->CastSpell(target, ability.spell, RelaxedCast);"
+          },
+          {
+            "line": 1964,
+            "code": "DoCastSelf(SPELL_CHARGE_IMPACT, true);"
+          }
+        ],
+        "spellConstants": [
+          {
+            "name": "SPELL_FIERCE_BLOW",
+            "id": 975011
+          },
+          {
+            "name": "SPELL_SPECTRAL_DESTRUCTION",
+            "id": 256805
+          },
+          {
+            "name": "SPELL_SPECTRAL_DESTRUCTION_RP",
+            "id": 256937
+          },
+          {
+            "name": "SPELL_RP_SHADOWBOLT",
+            "id": 256936
+          },
+          {
+            "name": "SPELL_VOID_ESCAPE",
+            "id": 256811
+          },
+          {
+            "name": "SPELL_CANDLE_HIT_ZONE",
+            "id": 256815
+          },
+          {
+            "name": "SPELL_CANDLE_FIREBALL_HIT",
+            "id": 256817
+          },
+          {
+            "name": "SPELL_HOLY_RING",
+            "id": 256806
+          },
+          {
+            "name": "SPELL_HOLY_CHANNEL_LOOK",
+            "id": 47540
+          },
+          {
+            "name": "SPELL_COSMETIC_CHAINS",
+            "id": 256843
+          },
+          {
+            "name": "SPELL_GROUND_ZONE",
+            "id": 256852
+          },
+          {
+            "name": "SPELL_QUAKE_ZONE",
+            "id": 256917
+          },
+          {
+            "name": "SPELL_SPECTRAL_STRIKE",
+            "id": 256975
+          },
+          {
+            "name": "SPELL_CHAIN_ZONE",
+            "id": 256803
+          },
+          {
+            "name": "SPELL_SUBJUGATING_CHAINS",
+            "id": 256804
+          },
+          {
+            "name": "SPELL_VISUAL_CANDLE_FLAME",
+            "id": 256812
+          },
+          {
+            "name": "SPELL_CANDLES",
+            "id": 256813
+          },
+          {
+            "name": "SPELL_MORE_FIRE",
+            "id": 256814
+          },
+          {
+            "name": "SPELL_CANDLE_FIREBALL",
+            "id": 256816
+          },
+          {
+            "name": "SPELL_DARKANDLE_FLAME",
+            "id": 256818
+          },
+          {
+            "name": "SPELL_EARTHQUAKE",
+            "id": 256819
+          },
+          {
+            "name": "SPELL_ABYSSAL_DEVOUR",
+            "id": 256820
+          },
+          {
+            "name": "SPELL_SHADOWY_RING_VISUAL",
+            "id": 256822
+          },
+          {
+            "name": "SPELL_SHADOWY_RING",
+            "id": 256823
+          },
+          {
+            "name": "SPELL_VOID_PUNISHMENT",
+            "id": 256831
+          },
+          {
+            "name": "SPELL_ENDLESS_AFFLICTION_BOSS",
+            "id": 256832
+          },
+          {
+            "name": "SPELL_VOID_WRATH",
+            "id": 256844
+          },
+          {
+            "name": "SPELL_GROUND_CRACKS",
+            "id": 255878
+          },
+          {
+            "name": "SPELL_ECHO_GLOW",
+            "id": 256916
+          },
+          {
+            "name": "SPELL_HOLY_SHELTER_ZONE",
+            "id": 256846
+          },
+          {
+            "name": "SPELL_SHADOWY_RINGS",
+            "id": 256825
+          },
+          {
+            "name": "SPELL_SHADOWY_RING_INNER",
+            "id": 256821
+          },
+          {
+            "name": "SPELL_SHADOWY_RING_OUTER",
+            "id": 256824
+          },
+          {
+            "name": "SPELL_VOID_CONSUMPTION",
+            "id": 257219
+          },
+          {
+            "name": "SPELL_SOAK_ERUPTION",
+            "id": 256925
+          },
+          {
+            "name": "SPELL_VOID_WRATH_TICK",
+            "id": 256926
+          },
+          {
+            "name": "SPELL_HOLY_SHELTER",
+            "id": 256847
+          },
+          {
+            "name": "SPELL_VOID_ZONE",
+            "id": 256827
+          },
+          {
+            "name": "SPELL_VOIDFLARE",
+            "id": 256927
+          },
+          {
+            "name": "SPELL_SWORD_STRIKE",
+            "id": 256918
+          },
+          {
+            "name": "SPELL_MANA_BURN",
+            "id": 267007
+          },
+          {
+            "name": "SPELL_SILENCE",
+            "id": 267008
+          },
+          {
+            "name": "SPELL_PSYCHIC_SCREAM",
+            "id": 257166
+          },
+          {
+            "name": "SPELL_MANIFEST",
+            "id": 257167
+          },
+          {
+            "name": "SPELL_ENDLESS_AFFLICTION",
+            "id": 256891
+          },
+          {
+            "name": "SPELL_HAUNTING_WRATH",
+            "id": 257171
+          },
+          {
+            "name": "SPELL_PICKAXE_STRIKE",
+            "id": 257175
+          },
+          {
+            "name": "SPELL_DARK_WAX_EXPLOSION",
+            "id": 256893
+          },
+          {
+            "name": "SPELL_CHARGE_IMPACT",
+            "id": 257186
+          },
+          {
+            "name": "SPELL_KOBOLD_FLAME",
+            "id": 256892
+          },
+          {
+            "name": "SPELL_LASH_OF_THE_VOID",
+            "id": 256895
+          },
+          {
+            "name": "SPELL_SHADOWFURY",
+            "id": 256491
+          },
+          {
+            "name": "SPELL_MIND_BLAST",
+            "id": 256962
+          },
+          {
+            "name": "SPELL_ABYSSAL_CRY",
+            "id": 256963
+          }
+        ],
+        "npcConstants": [
+          {
+            "name": "NPC_MERCILESS_ECHO",
+            "id": 162700
+          },
+          {
+            "name": "NPC_ECHO_IMAGE",
+            "id": 162701
+          },
+          {
+            "name": "NPC_CHAIN_ZONE",
+            "id": 162702
+          },
+          {
+            "name": "NPC_DARKANDLE",
+            "id": 162703
+          },
+          {
+            "name": "NPC_DECEIVER",
+            "id": 162704
+          },
+          {
+            "name": "NPC_HOLY_CRYSTAL_SEAL",
+            "id": 162705
+          },
+          {
+            "name": "NPC_CANDLE_FLAME",
+            "id": 162706
+          },
+          {
+            "name": "NPC_CANDLE_ZONE",
+            "id": 162707
+          },
+          {
+            "name": "NPC_VOIDFLARE",
+            "id": 162710
+          },
+          {
+            "name": "NPC_HOLY_CRYSTAL_FIGHT",
+            "id": 162723
+          },
+          {
+            "name": "NPC_SHIELD_ZONE",
+            "id": 162724
+          },
+          {
+            "name": "NPC_TORTURER",
+            "id": 162733
+          },
+          {
+            "name": "NPC_PHANTASMAL_BOUND",
+            "id": 162734
+          },
+          {
+            "name": "NPC_FREED_PRISONER",
+            "id": 162735
+          },
+          {
+            "name": "NPC_WRATHFUL_TORMENT",
+            "id": 162736
+          },
+          {
+            "name": "NPC_KOBOLD",
+            "id": 162737
+          },
+          {
+            "name": "NPC_BRUTE",
+            "id": 162738
+          },
+          {
+            "name": "NPC_SOUND_HELPER",
+            "id": 162745
+          },
+          {
+            "name": "NPC_SHADOW_PROJECTION",
+            "id": 162748
+          },
+          {
+            "name": "NPC_KOBOLD_NORMAL",
+            "id": 162759
+          },
+          {
+            "name": "NPC_CORPOREAL_SHADOW",
+            "id": 162761
+          },
+          {
+            "name": "NPC_KOBOLD_ELITE",
+            "id": 162762
+          },
+          {
+            "name": "NPC_BRUTE_ELITE",
+            "id": 162763
+          },
+          {
+            "name": "NPC_CONFESSOR_KONRAD",
+            "id": 162999
+          },
+          {
+            "name": "NPC_KOBOLD_FLAME",
+            "id": 163813
+          },
+          {
+            "name": "NPC_RP_TORTURER",
+            "id": 162984
+          },
+          {
+            "name": "NPC_RP_TORMENT",
+            "id": 162985
+          },
+          {
+            "name": "NPC_RP_PHANTASM",
+            "id": 162986
+          },
+          {
+            "name": "NPC_TRAP_CONTROLLER",
+            "id": 162978
+          }
+        ]
+      }
+    }
+  ],
+  "specialDamageHandler": {
+    "spellId": 975011,
+    "script": "spell_coa_custom_dungeon_fierce_blow",
+    "source": "data/sql/updates/pending_db_world/rev_20261029_87_coa_custom_dungeon_fierce_blow.sql",
+    "maps": [
+      936,
+      937
+    ],
+    "note": "Author claims 100% weapon damage and special level-scaling handling; not independently verified live"
+  },
+  "warningPolicy": [
+    "Use cast and schedule lines as candidates; not every spell requires a warning",
+    "Validate source context and target selection before assigning tank/dodge/interrupt/soak warning types",
+    "Do not treat visual, RP, summon or helper spells as player-targeted warnings without evidence",
+    "Do not invent cast intervals from a static spell constant"
+  ],
+  "provenance": "Upstream C++ and pending SQL, not live combat verification"
+}

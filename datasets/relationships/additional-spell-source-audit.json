@@ -1,0 +1,579 @@
+{
+  "schemaVersion": 1,
+  "status": "historical evidence only; not verified for live Conquest Reborn",
+  "unresolvedAtStart": 364,
+  "recoveredFromAdditionalArchives": 364,
+  "stillUnresolved": 0,
+  "sourceMetrics": {
+    "exiles": {
+      "rowsScanned": 214154,
+      "unresolvedIdsMatched": 345,
+      "placeholdersExcluded": 0
+    },
+    "databank": {
+      "rowsScanned": 238888,
+      "unresolvedIdsMatched": 364,
+      "placeholdersExcluded": 0
+    },
+    "buildhub": {
+      "rowsScanned": 5172,
+      "unresolvedIdsMatched": 0,
+      "placeholdersExcluded": 0
+    }
+  },
+  "nameConflicts": 73,
+  "nameConflictExamples": [
+    {
+      "spellId": 500017,
+      "names": [
+        "Serpent Beam Deprecated",
+        "Serpent Beam"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 500029,
+      "names": [
+        "Deprecated",
+        "Blood of Azzinoth"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 500030,
+      "names": [
+        "Deprecated",
+        "Breath of Kil'jaeden"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 500032,
+      "names": [
+        "Deprecated",
+        "Felshield"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 500037,
+      "names": [
+        "Deprecated",
+        "Glaive Throw"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 500366,
+      "names": [
+        "Lament DEPRECATED",
+        "Lament"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 500942,
+      "names": [
+        "Boon of the Deprecated",
+        "Boon of the Tiger"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 500948,
+      "names": [
+        "Hex of Blood Deprecated",
+        "Hex of Blood"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501076,
+      "names": [
+        "Voodoo Idol",
+        "Voodoo Puddle"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501077,
+      "names": [
+        "Voodoo Idol",
+        "Voodoo Puddle"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501078,
+      "names": [
+        "Dark Mojo Crash Deprecated",
+        "Dark Mojo Crash"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501079,
+      "names": [
+        "Dark Mojo Crash Deprecated",
+        "Dark Mojo Crash"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501374,
+      "names": [
+        "Interrogate DEPRECATED",
+        "Interrogate"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501375,
+      "names": [
+        "Interrogate DEPRECATED",
+        "Interrogate"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501376,
+      "names": [
+        "Interrogate DEPRECATED",
+        "Interrogate"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501377,
+      "names": [
+        "Interrogate DEPRECATED",
+        "Interrogate"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501378,
+      "names": [
+        "Interrogate DEPRECATED",
+        "Interrogate"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501379,
+      "names": [
+        "Interrogate DEPRECATED",
+        "Interrogate"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501381,
+      "names": [
+        "Interrogate DEPRECATED",
+        "Interrogate"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501382,
+      "names": [
+        "Interrogate DEPRECATED",
+        "Interrogate"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501652,
+      "names": [
+        "Infuse",
+        "Lifedrinker"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501653,
+      "names": [
+        "Infuse",
+        "Lifedrinker"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501654,
+      "names": [
+        "Infuse",
+        "Lifedrinker"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501655,
+      "names": [
+        "Infuse",
+        "Lifedrinker"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501656,
+      "names": [
+        "Infuse",
+        "Lifedrinker"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501657,
+      "names": [
+        "Infuse",
+        "Lifedrinker"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501658,
+      "names": [
+        "Infuse",
+        "Lifedrinker"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501659,
+      "names": [
+        "Infuse",
+        "Lifedrinker"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501660,
+      "names": [
+        "Infuse",
+        "Lifedrinker"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501661,
+      "names": [
+        "Infuse",
+        "Lifedrinker"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501862,
+      "names": [
+        "Flesh to Worms DEPRECATED RANK",
+        "Flesh to Worms"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501863,
+      "names": [
+        "Flesh to Worms DEPRECATED RANK",
+        "Flesh to Worms"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501864,
+      "names": [
+        "Flesh to Worms DEPRECATED RANK",
+        "Flesh to Worms"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 501865,
+      "names": [
+        "Flesh to Worms DEPRECATED RANK",
+        "Flesh to Worms"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 502861,
+      "names": [
+        "Spellwrath DEPRECATED",
+        "Spellwrath"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 502862,
+      "names": [
+        "Spellwrath DEPRECATED",
+        "Spellwrath"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 502863,
+      "names": [
+        "Spellwrath DEPRECATED",
+        "Spellwrath"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 502864,
+      "names": [
+        "Spellwrath DEPRECATED",
+        "Spellwrath"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 502865,
+      "names": [
+        "Spellwrath DEPRECATED",
+        "Spellwrath"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 502866,
+      "names": [
+        "Spellwrath DEPRECATED",
+        "Spellwrath"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 502867,
+      "names": [
+        "Spellwrath DEPRECATED",
+        "Spellwrath"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 502868,
+      "names": [
+        "Spellwrath DEPRECATED",
+        "Spellwrath"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 502869,
+      "names": [
+        "Spellwrath DEPRECATED",
+        "Spellwrath"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 704134,
+      "names": [
+        "Purify",
+        "Wash"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 704507,
+      "names": [
+        "Totem of Hir'eek DEPRECATED",
+        "Totem of Hir'eek"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 800314,
+      "names": [
+        "King's Valor DEPRECATED",
+        "King's Valor"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 800713,
+      "names": [
+        "Runic Familiar DEPRECATED",
+        "Conjure: Runic Familiar"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 800718,
+      "names": [
+        "Deprecated",
+        "Warp"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 800720,
+      "names": [
+        "Deprecated",
+        "Familiar: Field of Slowness"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    },
+    {
+      "spellId": 800721,
+      "names": [
+        "Deprecated",
+        "Familiar: Field of Destruction"
+      ],
+      "sources": [
+        "exiles",
+        "databank"
+      ]
+    }
+  ],
+  "remainingIds": [],
+  "caution": "An exact archived spell ID is evidence of historical usage, not proof of current behavior, class assignment, or live validity."
+}

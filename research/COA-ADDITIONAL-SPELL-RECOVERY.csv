@@ -1,0 +1,1389 @@
+spellId,source,name,description,sourceUrl,historicalOnly
+300070,exiles,Blasting Round,Empowers your next Blackpowder Shot with a Blasting Charge.,https://db.exil.es/spell/300070,True
+300070,databank,Blasting Round,Empowers your next |cffffffffBlackpowder Shot|r with a |cffffffffBlasting Charge|r.@s:804165:0@,,True
+500017,exiles,Serpent Beam Deprecated,Deprecated,https://db.exil.es/spell/500017,True
+500017,databank,Serpent Beam,"@ifknown:801684:|cffffffffInvokes Sseratus|r:ifknown@
+Channel a serpent beam upon an enemy or an ally for up to $704294d. 
+
+Deals $s1 Nature Damage or heals every $704294t1 sec depending on target.",,True
+500025,exiles,Fist of Xoroth,"Smash enemies around you, stunning enemies within 8 yds for 4 sec.",https://db.exil.es/spell/500025,True
+500025,databank,Fist of Xoroth,"Smash enemies around you, stunning enemies within $a1 yds for $d.",,True
+500029,exiles,Deprecated,Deprecated,https://db.exil.es/spell/500029,True
+500029,databank,Blood of Azzinoth,"|cff93cceaConsumes 1 Felfury|r
+Reduces all damage taken by $s1% and causes melee abilities to heal you for $500497s3% of your maximum health for $d.
+
+Usable while stunned or feared.",,True
+500030,exiles,Deprecated,Deprecated,https://db.exil.es/spell/500030,True
+500030,databank,Breath of Kil'jaeden,"Breathe void fire in a $a1 yd frontal cone, dealing ${$m1+$ppl1+$SP*0.5+$AP*0.2} Shadowflame Damage, increasing resource costs by $s2% and reducing movement speed by $500415s1% for $d.
+
+|cFFFFFFFFFel Empowerment|r transforms this ability into |cFFFFFFFFBreath of Tichondrius|r.@s:501304:0@",,True
+500032,exiles,Deprecated,Deprecated,https://db.exil.es/spell/500032,True
+500032,databank,Felshield,"Phase your physical form for $d, reducing all damage you take by $s1%, and making you immune to silence and interrupt effects.",,True
+500037,exiles,Deprecated,Deprecated,https://db.exil.es/spell/500037,True
+500037,databank,Glaive Throw,"Hurl a glaive at an enemy, dealing Weapon Damage plus ${$m1+$ppl1} and reducing their movement speed by $500416s1% for $500416d.
+
+|cffffffffCombo (Glaive Rush, This):|r Deals $801089s1% increased damage.",,True
+500088,exiles,Midnight,"Increases your dodge chance by 40% for 6 sec, healing you for 112.69 every 2 sec.",https://db.exil.es/spell/500088,True
+500088,databank,Midnight,"Increases your dodge chance by $s1% for $d, healing you for ${$m3+($pl*0.67-1*0.67)} every $t3 sec.",,True
+500122,exiles,Curse of the Worgen,Deprecated,https://db.exil.es/spell/500122,True
+500122,databank,Curse of the Worgen,Deprecated,,True
+500145,exiles,Sun Ray,"Unleash powerful sun rays on an enemy, dealing 2480 Holyflame Damage. Dawn: Deals 588 additional Fire Damage and resets the cooldown of Horusath Blast in Sunrise and Rapture in Sunset.",https://db.exil.es/spell/500145,True
+500145,databank,Sun Ray,"Unleash powerful sun rays on an enemy, dealing ${$m1+$ppl1+$SP*.0.85+$AP*.35} Fire Damage.
+
+|cFFFFFFFFSunset:|r Deals ${$802943m1+$802943ppl1} additional Fire Damage, increases the damage of your next |cFFFFFFFFHorusath Blast|r by $804944s1% for $804944d, and resets the cooldown of |cFFFFFFFFHorusath Blast|r.",,True
+500148,exiles,Solar Burn,"Blasts an enemy with sun rays, interrupting spellcasting and preventing spells of that school from being cast for 4 sec.",https://db.exil.es/spell/500148,True
+500148,databank,Solar Burn,"Blasts an enemy with sun rays, interrupting spellcasting and preventing spells of that school from being cast for $d. ",,True
+500155,exiles,Sunder,"Strike an enemy with overwhelming force, dealing Weapon Damage plus 12.",https://db.exil.es/spell/500155,True
+500155,databank,Sunder,"Strike an enemy with overwhelming force, dealing Weapon Damage plus ${$m1+$ppl1}.",,True
+500197,exiles,Atherann's Anguish,"Hurl a bolt of blood at an enemy, dealing 171 Shadow Damage and granting Thirst. @ext::ext@",https://db.exil.es/spell/500197,True
+500197,databank,Atherann's Anguish,"Hurl a bolt of blood at an enemy, dealing ${$m1+$ppl1+$SP*0.685} Shadow Damage$?s500107[ and granting |cffffffffThirst|r.
+@ext:@s:706613:0@:ext@][.]",,True
+500332,exiles,Raise: Skeletal Archer,"Raise a Skeletal Archer to aid you in combat, occupying 1 Life Force. Skeletal Archers attack slowly from afar and their attacks have a 0% chance to reduce enemies armor by 10% for 6 sec.",https://db.exil.es/spell/500332,True
+500332,databank,Raise: Skeletal Archer,"Raise a |cffffffffSkeletal Archer|r to aid you in combat, occupying 1 |cffffffffLife Force|r.
+
+|cffffffffSkeletal Archers|r attack slowly from afar and their attacks have a $524900h% chance to reduce enemies armor by $804447s1% for $804447d.",,True
+500366,exiles,Lament DEPRECATED,"Consumes 1 Reaped Soul Unleash a twisted torrent of darkness that crashes down upon a target, dealing 164 to 165 Shadow Damage to up to 0 nearby enemies in an 8 yd radius. Generates a large amount of threat.",https://db.exil.es/spell/500366,True
+500366,databank,Lament,"|cffffffffConsumes 1 Reaped Soul|r
+Unleash a twisted torrent of darkness that crashes down, dealing $s1 Shadow Damage to up to $804101i enemies.
+
+Generates a large amount of threat.",,True
+500909,exiles,Consuming Blade,"Strike an enemy with hellish fervor, dealing 130% Weapon Damage plus 165 and generating 20 rage and 2 Deathfire. When you kill an enemy that yields experience or honor the cooldown of this ability is reset.",https://db.exil.es/spell/500909,True
+500909,databank,Consuming Blade,"Strike an enemy with hellish fervor, dealing $s3% Weapon Damage plus ${$m1+$ppl1}, healing you for $804087s2% maximum health, and generaing $/10;s2 rage and 1 |cffffffffDeathfire|r.
+
+When you kill an enemy that yields experience or honor the cooldown of this ability is reset.",,True
+500921,exiles,Endless Fury,"Enrage, increasing movement speed by 50% for 10 sec.",https://db.exil.es/spell/500921,True
+500921,databank,Endless Fury,"Enrage, healing for $680335s1% maximum health every $t1 sec and increasing movement speed by $s2% for $d.",,True
+500922,exiles,Crackle,"2 Charges 12 sec recharge Lash an enemy with a beam of arcane lightning, dealing 288 Spellstorm Damage. Increases the damage the target takes from your next Electrocute by 0%, stacking 1 times. Increases the damage the target takes from your next Torrential Wrath by 0%, stacking 1 times. Generates 20 Static. Shares a cooldown with Forked Lightning.",https://db.exil.es/spell/500922,True
+500922,databank,Crackle,"|cffffffff2 Charges|r
+|cffffffff12 sec recharge|r
+Lash an enemy with a beam of arcane lightning, dealing ${$m1+$ppl1} Spellstorm Damage.$?s705645[ Increases the damage the target takes from your next |cffffffffElectrocute|r by $705645s2%, stacking $u times.][]$?s705725[
+
+Increases the damage the target takes from your next |cffffffffTorrential Wrath|r by $705725s2%, stacking $u times.][]
+
+Generates 20 |cffffffffStatic|r.$?s500068[
+
+Shares a cooldown with |cffffffffForked Lightning|r.][]",,True
+500942,exiles,Boon of the Deprecated,Deprecated,https://db.exil.es/spell/500942,True
+500942,databank,Boon of the Tiger,"$?s804180[Summon a |cffffffffSpirit Tiger|r, capable of slowing enemies, and providing avoidance and movement speed increasing effects.][Increase your melee haste by $s2%.
+
+Applies |cffffffffLesser Boon of the Tiger|r for $500942d.
+@ext:@s:997792:0@:ext@]",,True
+500948,exiles,Hex of Blood Deprecated,Deprecated,https://db.exil.es/spell/500948,True
+500948,databank,Hex of Blood,"|cffffffffInvokes Hir'eek|r
+Curse an enemy target, dealing ${$m1+$ppl1+$SP*0.033+$RAP*0.0975} Shadow Damage every $T1 sec$?s705894[ and increases damage taken by |cffffffffRage of Bethekk|r and |cffffffffReclamation|r by $705894s1%][] for $d.",,True
+500949,exiles,Hex of Shrinking,Deprecated,https://db.exil.es/spell/500949,True
+500949,databank,Hex of Shrinking,"|cffffffffInvokes Hir'eek|r
+Apply an evil |cffffffffHex|r to the enemy, shrinking them and reducing attack power by ${-($m1+$ppl1+$INT*(-0.12)+$SP*(-0.035))} for $d.",,True
+500954,exiles,Flask of Mana,2 Charges 60 sec recharge Restores 2% maximum mana every 2 sec for 8 sec. The mana restored increases by 2% each time you use Flask of Mana or a spell with a mana cost while active. Shares a cooldown with other Flasks.,https://db.exil.es/spell/500954,True
+500954,databank,Flask of Mana,"|cffffffff2 Charges|r
+|cffffffff60 sec recharge|r
+Instantly restores $s3% maximum mana, reduces the cost of spells by $500946s3% for $d, and restores an additional $s1% maximum mana at the end of the duration.
+
+The mana restored increases by $s1% each time you use |cffffffffFlask of Mana|r or a spell with a mana cost while active.$?s500053[
+
+Shares a cooldown with other |cffffffffFlasks|r.][]",,True
+501076,exiles,Voodoo Idol,"Summon a voodoo idol at the target location dealing 336.336 Spectral Damage every 2 sec for 8 sec. At the end of the duration, it explodes dealing 336.336 Spectral Damage.",https://db.exil.es/spell/501076,True
+501076,databank,Voodoo Puddle,"|cffffffffInvokes Hir'eek|r
+Create a |cffffffffVoodoo Puddle|r at the target location for $d, dealing $s1 Nature Damage to up to $i enemies every $t1 sec for $d.",,True
+501077,exiles,Voodoo Idol,"Summon a voodoo idol at the target location dealing 421.256 Spectral Damage every 2 sec for 8 sec. At the end of the duration, it explodes dealing 421.256 Spectral Damage.",https://db.exil.es/spell/501077,True
+501077,databank,Voodoo Puddle,"|cffffffffInvokes Hir'eek|r
+Create a |cffffffffVoodoo Puddle|r at the target location for $d, dealing $s1 Nature Damage to up to $i enemies every $t1 sec for $d.",,True
+501078,exiles,Dark Mojo Crash Deprecated,Deprecated,https://db.exil.es/spell/501078,True
+501078,databank,Dark Mojo Crash,"|cffffffffInvokes Bwonsamdi|r
+Launch waves of dark mojo upon up to $i enemies in a $a1 yd cone, knocking them back and dealing $s1 Shadow Damage.",,True
+501079,exiles,Dark Mojo Crash Deprecated,Deprecated,https://db.exil.es/spell/501079,True
+501079,databank,Dark Mojo Crash,"|cffffffffInvokes Bwonsamdi|r
+Launch waves of dark mojo upon up to $i enemies in a $a1 yd cone, knocking them back and dealing $s1 Shadow Damage.",,True
+501089,exiles,Gift of the Loa,Deprecated,https://db.exil.es/spell/501089,True
+501089,databank,Gift of the Loa,"Make a prayer to your Loa, healing an ally for ${$m1+$ppl1+$RAP*0.35+$SP*0.75} or dealing ${$m1+$ppl1+$RAP*0.35+$SP*0.75} Nature Damage to an enemy.
+
+Performs a bonus effect depending on your current |cffffffffDevotion|r.
+@ext:@s:804639:0@@s:804640:0@@s:804646:0@@s:804647:0@:ext@",,True
+501090,exiles,Gift of the Loa,Deprecated,https://db.exil.es/spell/501090,True
+501090,databank,Gift of the Loa,"Make a prayer to your Loa, healing an ally for ${$m1+$ppl1+$RAP*0.35+$SP*0.75} or dealing ${$m1+$ppl1+$RAP*0.35+$SP*0.75} Nature Damage to an enemy.
+
+Performs a bonus effect depending on your current |cffffffffDevotion|r.
+@ext:@s:804639:0@@s:804640:0@@s:804646:0@@s:804647:0@:ext@",,True
+501091,exiles,Gift of the Loa,Deprecated,https://db.exil.es/spell/501091,True
+501091,databank,Gift of the Loa,"Make a prayer to your Loa, healing an ally for ${$m1+$ppl1+$RAP*0.35+$SP*0.75} or dealing ${$m1+$ppl1+$RAP*0.35+$SP*0.75} Nature Damage to an enemy.
+
+Performs a bonus effect depending on your current |cffffffffDevotion|r.
+@ext:@s:804639:0@@s:804640:0@@s:804646:0@@s:804647:0@:ext@",,True
+501092,exiles,Gift of the Loa,Deprecated,https://db.exil.es/spell/501092,True
+501092,databank,Gift of the Loa,"Make a prayer to your Loa, healing an ally for ${$m1+$ppl1+$RAP*0.35+$SP*0.75} or dealing ${$m1+$ppl1+$RAP*0.35+$SP*0.75} Nature Damage to an enemy.
+
+Performs a bonus effect depending on your current |cffffffffDevotion|r.
+@ext:@s:804639:0@@s:804640:0@@s:804646:0@@s:804647:0@:ext@",,True
+501093,exiles,Gift of the Loa,Deprecated,https://db.exil.es/spell/501093,True
+501093,databank,Gift of the Loa,"Make a prayer to your Loa, healing an ally for ${$m1+$ppl1+$RAP*0.35+$SP*0.75} or dealing ${$m1+$ppl1+$RAP*0.35+$SP*0.75} Nature Damage to an enemy.
+
+Performs a bonus effect depending on your current |cffffffffDevotion|r.
+@ext:@s:804639:0@@s:804640:0@@s:804646:0@@s:804647:0@:ext@",,True
+501094,exiles,Gift of the Loa,Deprecated,https://db.exil.es/spell/501094,True
+501094,databank,Gift of the Loa,"Make a prayer to your Loa, healing an ally for ${$m1+$ppl1+$RAP*0.35+$SP*0.75} or dealing ${$m1+$ppl1+$RAP*0.35+$SP*0.75} Nature Damage to an enemy.
+
+Performs a bonus effect depending on your current |cffffffffDevotion|r.
+@ext:@s:804639:0@@s:804640:0@@s:804646:0@@s:804647:0@:ext@",,True
+501095,exiles,Gift of the Loa,Deprecated,https://db.exil.es/spell/501095,True
+501095,databank,Gift of the Loa,"Make a prayer to your Loa, healing an ally for ${$m1+$ppl1+$RAP*0.35+$SP*0.75} or dealing ${$m1+$ppl1+$RAP*0.35+$SP*0.75} Nature Damage to an enemy.
+
+Performs a bonus effect depending on your current |cffffffffDevotion|r.
+@ext:@s:804639:0@@s:804640:0@@s:804646:0@@s:804647:0@:ext@",,True
+501264,exiles,Stomp,"Stomp the ground beneath you, instantly dealing 192.8 Shadowflame damage to up to 0 enemies within 8 yds. Fel Empowerment transforms this ability into Fissure.",https://db.exil.es/spell/501264,True
+501264,databank,Stomp,"$?a804216[|cffffffff][|cffff3232]Requires Fel Empowerment|r
+Stomp the ground beneath you, instantly dealing ${$m2+$ppl2} Shadowflame damage to up to $i enemies within $a2 yds and an additional $s3 over $d.",,True
+501265,databank,Stomp,"$?a804216[|cffffffff][|cffff3232]Requires Fel Empowerment|r
+Stomp the ground beneath you, instantly dealing ${$m2+$ppl2} Shadowflame damage to up to $i enemies within $a2 yds and an additional $s3 over $d.",,True
+501266,databank,Stomp,"$?a804216[|cffffffff][|cffff3232]Requires Fel Empowerment|r
+Stomp the ground beneath you, instantly dealing ${$m2+$ppl2} Shadowflame damage to up to $i enemies within $a2 yds and an additional $s3 over $d.",,True
+501267,databank,Stomp,"$?a804216[|cffffffff][|cffff3232]Requires Fel Empowerment|r
+Stomp the ground beneath you, instantly dealing ${$m2+$ppl2} Shadowflame damage to up to $i enemies within $a2 yds and an additional $s3 over $d.",,True
+501268,databank,Stomp,"$?a804216[|cffffffff][|cffff3232]Requires Fel Empowerment|r
+Stomp the ground beneath you, instantly dealing ${$m2+$ppl2} Shadowflame damage to up to $i enemies within $a2 yds and an additional $s3 over $d.",,True
+501269,databank,Stomp,"$?a804216[|cffffffff][|cffff3232]Requires Fel Empowerment|r
+Stomp the ground beneath you, instantly dealing ${$m2+$ppl2} Shadowflame damage to up to $i enemies within $a2 yds and an additional $s3 over $d.",,True
+501278,exiles,Voidblaze,Increases haste by 15% and causes direct damage to deal an additional 193 Shadowflame Damage for 12 sec. Damage dealt in this way is unable to critically strike.,https://db.exil.es/spell/501278,True
+501278,databank,Voidblaze,Increases haste by $s1% and causes direct damage to deal an additional ${$m2+$ppl2+$SP*.1+$AP*.051} Shadowflame Damage for $d.,,True
+501279,databank,Voidblaze,Increases haste by $s1% and causes direct damage to deal an additional ${$m2+$ppl2+$SP*.1+$AP*.051} Shadowflame Damage for $d.,,True
+501280,databank,Voidblaze,Increases haste by $s1% and causes direct damage to deal an additional ${$m2+$ppl2+$SP*.1+$AP*.051} Shadowflame Damage for $d.,,True
+501374,exiles,Interrogate DEPRECATED,"Expose an enemy's darkest faults, dealing 97.92 Shadow Damage and incapacitating them for 5 sec and applying 8 stacks of Sensed Evil. Damage caused will end this effect. This ability grants Wickedness.",https://db.exil.es/spell/501374,True
+501374,databank,Interrogate,"Expose an enemy's darkest faults, dealing ${$m1+$ppl1} Shadow Damage and incapacitating them for $d and applying 8 stacks of |cffffffffSensed Evil|r.
+
+Damage caused will end this effect.
+
+This ability grants |cffffffffWickedness|r.",,True
+501375,exiles,Interrogate DEPRECATED,"Expose an enemy's darkest faults, dealing 133.84 Shadow Damage and incapacitating them for 5 sec and applying 8 stacks of Sensed Evil. Damage caused will end this effect. This ability grants Wickedness.",https://db.exil.es/spell/501375,True
+501375,databank,Interrogate,"Expose an enemy's darkest faults, dealing ${$m1+$ppl1} Shadow Damage and incapacitating them for $d and applying 8 stacks of |cffffffffSensed Evil|r.
+
+Damage caused will end this effect.
+
+This ability grants |cffffffffWickedness|r.",,True
+501376,exiles,Interrogate DEPRECATED,"Expose an enemy's darkest faults, dealing 174.76 Shadow Damage and incapacitating them for 5 sec and applying 8 stacks of Sensed Evil. Damage caused will end this effect. This ability grants Wickedness.",https://db.exil.es/spell/501376,True
+501376,databank,Interrogate,"Expose an enemy's darkest faults, dealing ${$m1+$ppl1} Shadow Damage and incapacitating them for $d and applying 8 stacks of |cffffffffSensed Evil|r.
+
+Damage caused will end this effect.
+
+This ability grants |cffffffffWickedness|r.",,True
+501377,exiles,Interrogate DEPRECATED,"Expose an enemy's darkest faults, dealing 221.68 Shadow Damage and incapacitating them for 5 sec and applying 8 stacks of Sensed Evil. Damage caused will end this effect. This ability grants Wickedness.",https://db.exil.es/spell/501377,True
+501377,databank,Interrogate,"Expose an enemy's darkest faults, dealing ${$m1+$ppl1} Shadow Damage and incapacitating them for $d and applying 8 stacks of |cffffffffSensed Evil|r.
+
+Damage caused will end this effect.
+
+This ability grants |cffffffffWickedness|r.",,True
+501378,exiles,Interrogate DEPRECATED,"Expose an enemy's darkest faults, dealing 277.6 Shadow Damage and incapacitating them for 5 sec and applying 8 stacks of Sensed Evil. Damage caused will end this effect. This ability grants Wickedness.",https://db.exil.es/spell/501378,True
+501378,databank,Interrogate,"Expose an enemy's darkest faults, dealing ${$m1+$ppl1} Shadow Damage and incapacitating them for $d and applying 8 stacks of |cffffffffSensed Evil|r.
+
+Damage caused will end this effect.
+
+This ability grants |cffffffffWickedness|r.",,True
+501379,exiles,Interrogate DEPRECATED,"Expose an enemy's darkest faults, dealing 344.52 Shadow Damage and incapacitating them for 5 sec and applying 8 stacks of Sensed Evil. Damage caused will end this effect. This ability grants Wickedness.",https://db.exil.es/spell/501379,True
+501379,databank,Interrogate,"Expose an enemy's darkest faults, dealing ${$m1+$ppl1} Shadow Damage and incapacitating them for $d and applying 8 stacks of |cffffffffSensed Evil|r.
+
+Damage caused will end this effect.
+
+This ability grants |cffffffffWickedness|r.",,True
+501381,exiles,Interrogate DEPRECATED,"Expose an enemy's darkest faults, dealing 529.36 Shadow Damage and incapacitating them for 5 sec and applying 8 stacks of Sensed Evil. Damage caused will end this effect. This ability grants Wickedness.",https://db.exil.es/spell/501381,True
+501381,databank,Interrogate,"Expose an enemy's darkest faults, dealing ${$m1+$ppl1} Shadow Damage and incapacitating them for $d and applying 8 stacks of |cffffffffSensed Evil|r.
+
+Damage caused will end this effect.
+
+This ability grants |cffffffffWickedness|r.",,True
+501382,exiles,Interrogate DEPRECATED,"Expose an enemy's darkest faults, dealing 660.28 Shadow Damage and incapacitating them for 5 sec and applying 8 stacks of Sensed Evil. Damage caused will end this effect. This ability grants Wickedness.",https://db.exil.es/spell/501382,True
+501382,databank,Interrogate,"Expose an enemy's darkest faults, dealing ${$m1+$ppl1} Shadow Damage and incapacitating them for $d and applying 8 stacks of |cffffffffSensed Evil|r.
+
+Damage caused will end this effect.
+
+This ability grants |cffffffffWickedness|r.",,True
+501412,exiles,Mystic Thunder,DEPRECATED,https://db.exil.es/spell/501412,True
+501412,databank,Mystic Thunder,DEPRECATED,,True
+501413,exiles,Mystic Thunder,DEPRECATED,https://db.exil.es/spell/501413,True
+501413,databank,Mystic Thunder,DEPRECATED,,True
+501414,exiles,Mystic Thunder,DEPRECATED,https://db.exil.es/spell/501414,True
+501414,databank,Mystic Thunder,DEPRECATED,,True
+501521,exiles,Infernal Bulwark,"Manifest a barrier for 18 sec, increasing Armor by 614 to 629, block value by 10%, and reducing magic damage taken by 3%. Stacks up to 4 times.",https://db.exil.es/spell/501521,True
+501521,databank,Infernal Bulwark,"Manifest a barrier for $d, increasing Armor by $s1, block value by $s2%, and reducing magic damage taken by $s3%.
+
+Stacks up to 4 times.",,True
+501522,exiles,Infernal Bulwark,"Manifest a barrier for 18 sec, increasing Armor by 917 to 945, block value by 10%, and reducing magic damage taken by 3%. Stacks up to 4 times.",https://db.exil.es/spell/501522,True
+501522,databank,Infernal Bulwark,"Manifest a barrier for $d, increasing Armor by $s1, block value by $s2%, and reducing magic damage taken by $s3%.
+
+Stacks up to 4 times.",,True
+501523,exiles,Infernal Bulwark,"Manifest a barrier for 18 sec, increasing Armor by 1279 to 1325, block value by 10%, and reducing magic damage taken by 3%. Stacks up to 4 times.",https://db.exil.es/spell/501523,True
+501523,databank,Infernal Bulwark,"Manifest a barrier for $d, increasing Armor by $s1, block value by $s2%, and reducing magic damage taken by $s3%.
+
+Stacks up to 4 times.",,True
+501524,exiles,Infernal Bulwark,"Manifest a barrier for 18 sec, increasing Armor by 1726 to 1796, block value by 10%, and reducing magic damage taken by 3%. Stacks up to 4 times.",https://db.exil.es/spell/501524,True
+501524,databank,Infernal Bulwark,"Manifest a barrier for $d, increasing Armor by $s1, block value by $s2%, and reducing magic damage taken by $s3%.
+
+Stacks up to 4 times.",,True
+501525,exiles,Infernal Bulwark,"Manifest a barrier for 18 sec, increasing Armor by 2295 to 2394, block value by 10%, and reducing magic damage taken by 3%. Stacks up to 4 times.",https://db.exil.es/spell/501525,True
+501525,databank,Infernal Bulwark,"Manifest a barrier for $d, increasing Armor by $s1, block value by $s2%, and reducing magic damage taken by $s3%.
+
+Stacks up to 4 times.",,True
+501526,exiles,Infernal Bulwark,"Manifest a barrier for 18 sec, increasing Armor by 3039 to 3173, block value by 10%, and reducing magic damage taken by 3%. Stacks up to 4 times.",https://db.exil.es/spell/501526,True
+501526,databank,Infernal Bulwark,"Manifest a barrier for $d, increasing Armor by $s1, block value by $s2%, and reducing magic damage taken by $s3%.
+
+Stacks up to 4 times.",,True
+501527,exiles,Infernal Bulwark,"Manifest a barrier for 18 sec, increasing Armor by 4035 to 4209, block value by 10%, and reducing magic damage taken by 3%. Stacks up to 4 times.",https://db.exil.es/spell/501527,True
+501527,databank,Infernal Bulwark,"Manifest a barrier for $d, increasing Armor by $s1, block value by $s2%, and reducing magic damage taken by $s3%.
+
+Stacks up to 4 times.",,True
+501630,exiles,Finger of Agony,"Requires Endless Thirst Attempt to turn your opponent inside out, dealing 182 Shadow Damage and causing your next Hematophage within 10 sec to become instant cast.",https://db.exil.es/spell/501630,True
+501630,databank,Finger of Agony,"Unleash a devastating beam of death that attempts to turn your opponent inside out, causing ${$m1+$ppl1+$SP*0.724286} Shadow Damage, and reducing all healing received by $s3% for $d.",,True
+501631,exiles,Finger of Agony,"Requires Endless Thirst Attempt to turn your opponent inside out, dealing 214 Shadow Damage and causing your next Hematophage within 10 sec to become instant cast.",https://db.exil.es/spell/501631,True
+501631,databank,Finger of Agony,"Unleash a devastating beam of death that attempts to turn your opponent inside out, causing ${$m1+$ppl1+$SP*0.724286} Shadow Damage, and reducing all healing received by $s3% for $d.",,True
+501632,exiles,Finger of Agony,"Requires Endless Thirst Attempt to turn your opponent inside out, dealing 264 Shadow Damage and causing your next Hematophage within 10 sec to become instant cast.",https://db.exil.es/spell/501632,True
+501632,databank,Finger of Agony,"Unleash a devastating beam of death that attempts to turn your opponent inside out, causing ${$m1+$ppl1+$SP*0.724286} Shadow Damage, and reducing all healing received by $s3% for $d.",,True
+501633,exiles,Finger of Agony,"Requires Endless Thirst Attempt to turn your opponent inside out, dealing 340 Shadow Damage and causing your next Hematophage within 10 sec to become instant cast.",https://db.exil.es/spell/501633,True
+501633,databank,Finger of Agony,"Unleash a devastating beam of death that attempts to turn your opponent inside out, causing ${$m1+$ppl1+$SP*0.724286} Shadow Damage, and reducing all healing received by $s3% for $d.",,True
+501634,exiles,Finger of Agony,"Requires Endless Thirst Attempt to turn your opponent inside out, dealing 463 Shadow Damage and causing your next Hematophage within 10 sec to become instant cast.",https://db.exil.es/spell/501634,True
+501634,databank,Finger of Agony,"Unleash a devastating beam of death that attempts to turn your opponent inside out, causing ${$m1+$ppl1+$SP*0.724286} Shadow Damage, and reducing all healing received by $s3% for $d.",,True
+501635,exiles,Finger of Agony,"Requires Endless Thirst Attempt to turn your opponent inside out, dealing 408 Shadow Damage and causing your next Hematophage within 10 sec to become instant cast.",https://db.exil.es/spell/501635,True
+501635,databank,Finger of Agony,"Unleash a devastating beam of death that attempts to turn your opponent inside out, causing ${$m1+$ppl1+$SP*0.724286} Shadow Damage, and reducing all healing received by $s3% for $d.",,True
+501636,exiles,Finger of Agony,"Requires Endless Thirst Attempt to turn your opponent inside out, dealing 654 Shadow Damage and causing your next Hematophage within 10 sec to become instant cast.",https://db.exil.es/spell/501636,True
+501636,databank,Finger of Agony,"Unleash a devastating beam of death that attempts to turn your opponent inside out, causing ${$m1+$ppl1+$SP*0.724286} Shadow Damage, and reducing all healing received by $s3% for $d.",,True
+501637,exiles,Finger of Agony,"Requires Endless Thirst Attempt to turn your opponent inside out, dealing 852 Shadow Damage and causing your next Hematophage within 10 sec to become instant cast.",https://db.exil.es/spell/501637,True
+501637,databank,Finger of Agony,"Unleash a devastating beam of death that attempts to turn your opponent inside out, causing ${$m1+$ppl1+$SP*0.724286} Shadow Damage, and reducing all healing received by $s3% for $d.",,True
+501638,exiles,Finger of Agony,"Requires Endless Thirst Attempt to turn your opponent inside out, dealing 1115 Shadow Damage and causing your next Hematophage within 10 sec to become instant cast.",https://db.exil.es/spell/501638,True
+501638,databank,Finger of Agony,"Unleash a devastating beam of death that attempts to turn your opponent inside out, causing ${$m1+$ppl1+$SP*0.724286} Shadow Damage, and reducing all healing received by $s3% for $d.",,True
+501639,exiles,Finger of Agony,"Requires Endless Thirst Attempt to turn your opponent inside out, dealing 1511 Shadow Damage and causing your next Hematophage within 10 sec to become instant cast.",https://db.exil.es/spell/501639,True
+501639,databank,Finger of Agony,"Unleash a devastating beam of death that attempts to turn your opponent inside out, causing ${$m1+$ppl1+$SP*0.724286} Shadow Damage, and reducing all healing received by $s3% for $d.",,True
+501652,exiles,Infuse,Requires Mortal Form Channel a beam of blood upon an ally healing for 180.094 every 0.4 sec for 4 sec. Each tick reduces the cooldown of Vampyr's Kiss by 1 sec. Empowered: Channels 30% faster.,https://db.exil.es/spell/501652,True
+501652,databank,Lifedrinker,"$?a524861[|cffff3232][|cffffffff]Requires Mortal Form|r
+$?s504254[Channel a beam of blood upon an ally or enemy for $d][Consume $806585s2 rage every $t1 sec for up to $d to channel a beam of blood upon an ally or enemy.]$?s500107[ Removes 1 stack of |cffffffffThirst|r per tick.][]
+
+|cFFFFFFFFEnemy:|r Leeches ${$m1+$ppl1+$SP*0.128571} health every $t1 sec.
+
+|cFFFFFFFFAlly:|r Heals ${$m1+$ppl1+$SP*0.155714+$SPI*1} every $t1 sec.$?s680688[
+
+|cffffffffEmpowered|r: Channels $680698s2% faster and can be used while moving][]",,True
+501653,exiles,Infuse,Requires Mortal Form Channel a beam of blood upon an ally healing for 223.964 every 0.4 sec for 4 sec. Each tick reduces the cooldown of Vampyr's Kiss by 1 sec. Empowered: Channels 30% faster.,https://db.exil.es/spell/501653,True
+501653,databank,Lifedrinker,"$?a524861[|cffff3232][|cffffffff]Requires Mortal Form|r
+$?s504254[Channel a beam of blood upon an ally or enemy for $d][Consume $806585s2 rage every $t1 sec for up to $d to channel a beam of blood upon an ally or enemy.]$?s500107[ Removes 1 stack of |cffffffffThirst|r per tick.][]
+
+|cFFFFFFFFEnemy:|r Leeches ${$m1+$ppl1+$SP*0.128571} health every $t1 sec.
+
+|cFFFFFFFFAlly:|r Heals ${$m1+$ppl1+$SP*0.155714+$SPI*1} every $t1 sec.$?s680688[
+
+|cffffffffEmpowered|r: Channels $680698s2% faster and can be used while moving][]",,True
+501654,exiles,Infuse,Requires Mortal Form Channel a beam of blood upon an ally healing for 279.832 every 0.4 sec for 4 sec. Each tick reduces the cooldown of Vampyr's Kiss by 1 sec. Empowered: Channels 30% faster.,https://db.exil.es/spell/501654,True
+501654,databank,Lifedrinker,"$?a524861[|cffff3232][|cffffffff]Requires Mortal Form|r
+$?s504254[Channel a beam of blood upon an ally or enemy for $d][Consume $806585s2 rage every $t1 sec for up to $d to channel a beam of blood upon an ally or enemy.]$?s500107[ Removes 1 stack of |cffffffffThirst|r per tick.][]
+
+|cFFFFFFFFEnemy:|r Leeches ${$m1+$ppl1+$SP*0.128571} health every $t1 sec.
+
+|cFFFFFFFFAlly:|r Heals ${$m1+$ppl1+$SP*0.155714+$SPI*1} every $t1 sec.$?s680688[
+
+|cffffffffEmpowered|r: Channels $680698s2% faster and can be used while moving][]",,True
+501655,exiles,Infuse,Requires Mortal Form Channel a beam of blood upon an ally healing for 335.7 every 0.4 sec for 4 sec. Each tick reduces the cooldown of Vampyr's Kiss by 1 sec. Empowered: Channels 30% faster.,https://db.exil.es/spell/501655,True
+501655,databank,Lifedrinker,"$?a524861[|cffff3232][|cffffffff]Requires Mortal Form|r
+$?s504254[Channel a beam of blood upon an ally or enemy for $d][Consume $806585s2 rage every $t1 sec for up to $d to channel a beam of blood upon an ally or enemy.]$?s500107[ Removes 1 stack of |cffffffffThirst|r per tick.][]
+
+|cFFFFFFFFEnemy:|r Leeches ${$m1+$ppl1+$SP*0.128571} health every $t1 sec.
+
+|cFFFFFFFFAlly:|r Heals ${$m1+$ppl1+$SP*0.155714+$SPI*1} every $t1 sec.$?s680688[
+
+|cffffffffEmpowered|r: Channels $680698s2% faster and can be used while moving][]",,True
+501656,exiles,Infuse,Requires Mortal Form Channel a beam of blood upon an ally healing for 390.408 every 0.4 sec for 4 sec. Each tick reduces the cooldown of Vampyr's Kiss by 1 sec. Empowered: Channels 30% faster.,https://db.exil.es/spell/501656,True
+501656,databank,Lifedrinker,"$?a524861[|cffff3232][|cffffffff]Requires Mortal Form|r
+$?s504254[Channel a beam of blood upon an ally or enemy for $d][Consume $806585s2 rage every $t1 sec for up to $d to channel a beam of blood upon an ally or enemy.]$?s500107[ Removes 1 stack of |cffffffffThirst|r per tick.][]
+
+|cFFFFFFFFEnemy:|r Leeches ${$m1+$ppl1+$SP*0.128571} health every $t1 sec.
+
+|cFFFFFFFFAlly:|r Heals ${$m1+$ppl1+$SP*0.155714+$SPI*1} every $t1 sec.$?s680688[
+
+|cffffffffEmpowered|r: Channels $680698s2% faster and can be used while moving][]",,True
+501657,exiles,Infuse,Requires Mortal Form Channel a beam of blood upon an ally healing for 448.276 every 0.4 sec for 4 sec. Each tick reduces the cooldown of Vampyr's Kiss by 1 sec. Empowered: Channels 30% faster.,https://db.exil.es/spell/501657,True
+501657,databank,Lifedrinker,"$?a524861[|cffff3232][|cffffffff]Requires Mortal Form|r
+$?s504254[Channel a beam of blood upon an ally or enemy for $d][Consume $806585s2 rage every $t1 sec for up to $d to channel a beam of blood upon an ally or enemy.]$?s500107[ Removes 1 stack of |cffffffffThirst|r per tick.][]
+
+|cFFFFFFFFEnemy:|r Leeches ${$m1+$ppl1+$SP*0.128571} health every $t1 sec.
+
+|cFFFFFFFFAlly:|r Heals ${$m1+$ppl1+$SP*0.155714+$SPI*1} every $t1 sec.$?s680688[
+
+|cffffffffEmpowered|r: Channels $680698s2% faster and can be used while moving][]",,True
+501658,exiles,Infuse,Requires Mortal Form Channel a beam of blood upon an ally healing for 523.146 every 0.4 sec for 4 sec. Each tick reduces the cooldown of Vampyr's Kiss by 1 sec. Empowered: Channels 30% faster.,https://db.exil.es/spell/501658,True
+501658,databank,Lifedrinker,"$?a524861[|cffff3232][|cffffffff]Requires Mortal Form|r
+$?s504254[Channel a beam of blood upon an ally or enemy for $d][Consume $806585s2 rage every $t1 sec for up to $d to channel a beam of blood upon an ally or enemy.]$?s500107[ Removes 1 stack of |cffffffffThirst|r per tick.][]
+
+|cFFFFFFFFEnemy:|r Leeches ${$m1+$ppl1+$SP*0.128571} health every $t1 sec.
+
+|cFFFFFFFFAlly:|r Heals ${$m1+$ppl1+$SP*0.155714+$SPI*1} every $t1 sec.$?s680688[
+
+|cffffffffEmpowered|r: Channels $680698s2% faster and can be used while moving][]",,True
+501659,exiles,Infuse,Requires Mortal Form Channel a beam of blood upon an ally healing for 560.014 every 0.4 sec for 4 sec. Each tick reduces the cooldown of Vampyr's Kiss by 1 sec. Empowered: Channels 30% faster.,https://db.exil.es/spell/501659,True
+501659,databank,Lifedrinker,"$?a524861[|cffff3232][|cffffffff]Requires Mortal Form|r
+$?s504254[Channel a beam of blood upon an ally or enemy for $d][Consume $806585s2 rage every $t1 sec for up to $d to channel a beam of blood upon an ally or enemy.]$?s500107[ Removes 1 stack of |cffffffffThirst|r per tick.][]
+
+|cFFFFFFFFEnemy:|r Leeches ${$m1+$ppl1+$SP*0.128571} health every $t1 sec.
+
+|cFFFFFFFFAlly:|r Heals ${$m1+$ppl1+$SP*0.155714+$SPI*1} every $t1 sec.$?s680688[
+
+|cffffffffEmpowered|r: Channels $680698s2% faster and can be used while moving][]",,True
+501660,exiles,Infuse,Requires Mortal Form Channel a beam of blood upon an ally healing for 818.722 every 0.4 sec for 4 sec. Each tick reduces the cooldown of Vampyr's Kiss by 1 sec. Empowered: Channels 30% faster.,https://db.exil.es/spell/501660,True
+501660,databank,Lifedrinker,"$?a524861[|cffff3232][|cffffffff]Requires Mortal Form|r
+$?s504254[Channel a beam of blood upon an ally or enemy for $d][Consume $806585s2 rage every $t1 sec for up to $d to channel a beam of blood upon an ally or enemy.]$?s500107[ Removes 1 stack of |cffffffffThirst|r per tick.][]
+
+|cFFFFFFFFEnemy:|r Leeches ${$m1+$ppl1+$SP*0.128571} health every $t1 sec.
+
+|cFFFFFFFFAlly:|r Heals ${$m1+$ppl1+$SP*0.155714+$SPI*1} every $t1 sec.$?s680688[
+
+|cffffffffEmpowered|r: Channels $680698s2% faster and can be used while moving][]",,True
+501661,exiles,Infuse,Requires Mortal Form Channel a beam of blood upon an ally healing for 885.722 every 0.4 sec for 4 sec. Each tick reduces the cooldown of Vampyr's Kiss by 1 sec. Empowered: Channels 30% faster.,https://db.exil.es/spell/501661,True
+501661,databank,Lifedrinker,"$?a524861[|cffff3232][|cffffffff]Requires Mortal Form|r
+$?s504254[Channel a beam of blood upon an ally or enemy for $d][Consume $806585s2 rage every $t1 sec for up to $d to channel a beam of blood upon an ally or enemy.]$?s500107[ Removes 1 stack of |cffffffffThirst|r per tick.][]
+
+|cFFFFFFFFEnemy:|r Leeches ${$m1+$ppl1+$SP*0.128571} health every $t1 sec.
+
+|cFFFFFFFFAlly:|r Heals ${$m1+$ppl1+$SP*0.155714+$SPI*1} every $t1 sec.$?s680688[
+
+|cffffffffEmpowered|r: Channels $680698s2% faster and can be used while moving][]",,True
+501687,exiles,Lupine Shred,"Requires Worgen Form Tear through the flesh of up to 0 enemies, dealing 111.682 to 114.682 Physical Damage causing them to bleed for an additional 0 over 4 sec.",https://db.exil.es/spell/501687,True
+501687,databank,Lupine Shred,"$?a524861[|cffffffff][|cffff3232]Requires Worgen Form|r
+Tear through the flesh of up to $i enemies, dealing $s1 Physical Damage causing them to bleed for an additional $o2 over $d. ",,True
+501688,exiles,Lupine Shred,"Requires Worgen Form Tear through the flesh of up to 0 enemies, dealing 145.042 to 150.042 Physical Damage causing them to bleed for an additional 0 over 4 sec.",https://db.exil.es/spell/501688,True
+501688,databank,Lupine Shred,"$?a524861[|cffffffff][|cffff3232]Requires Worgen Form|r
+Tear through the flesh of up to $i enemies, dealing $s1 Physical Damage causing them to bleed for an additional $o2 over $d. ",,True
+501689,exiles,Lupine Shred,"Requires Worgen Form Tear through the flesh of up to 0 enemies, dealing 191.403 to 198.403 Physical Damage causing them to bleed for an additional 0 over 4 sec.",https://db.exil.es/spell/501689,True
+501689,databank,Lupine Shred,"$?a524861[|cffffffff][|cffff3232]Requires Worgen Form|r
+Tear through the flesh of up to $i enemies, dealing $s1 Physical Damage causing them to bleed for an additional $o2 over $d. ",,True
+501690,exiles,Lupine Shred,"Requires Worgen Form Tear through the flesh of up to 0 enemies, dealing 237.763 to 247.763 Physical Damage causing them to bleed for an additional 0 over 4 sec.",https://db.exil.es/spell/501690,True
+501690,databank,Lupine Shred,"$?a524861[|cffffffff][|cffff3232]Requires Worgen Form|r
+Tear through the flesh of up to $i enemies, dealing $s1 Physical Damage causing them to bleed for an additional $o2 over $d. ",,True
+501691,exiles,Lupine Shred,"Requires Worgen Form Tear through the flesh of up to 0 enemies, dealing 288.195 to 301.195 Physical Damage causing them to bleed for an additional 0 over 4 sec.",https://db.exil.es/spell/501691,True
+501691,databank,Lupine Shred,"$?a524861[|cffffffff][|cffff3232]Requires Worgen Form|r
+Tear through the flesh of up to $i enemies, dealing $s1 Physical Damage causing them to bleed for an additional $o2 over $d. ",,True
+501692,exiles,Lupine Shred,"Requires Worgen Form Tear through the flesh of up to 0 enemies, dealing 372.556 to 389.556 Physical Damage causing them to bleed for an additional 0 over 4 sec.",https://db.exil.es/spell/501692,True
+501692,databank,Lupine Shred,"$?a524861[|cffffffff][|cffff3232]Requires Worgen Form|r
+Tear through the flesh of up to $i enemies, dealing $s1 Physical Damage causing them to bleed for an additional $o2 over $d. ",,True
+501693,exiles,Lupine Shred,"Requires Worgen Form Tear through the flesh of up to 0 enemies, dealing 481.917 to 503.917 Physical Damage causing them to bleed for an additional 0 over 4 sec.",https://db.exil.es/spell/501693,True
+501693,databank,Lupine Shred,"$?a524861[|cffffffff][|cffff3232]Requires Worgen Form|r
+Tear through the flesh of up to $i enemies, dealing $s1 Physical Damage causing them to bleed for an additional $o2 over $d. ",,True
+501694,exiles,Lupine Shred,"Requires Worgen Form Tear through the flesh of up to 0 enemies, dealing 626.277 to 654.277 Physical Damage causing them to bleed for an additional 0 over 4 sec.",https://db.exil.es/spell/501694,True
+501694,databank,Lupine Shred,"$?a524861[|cffffffff][|cffff3232]Requires Worgen Form|r
+Tear through the flesh of up to $i enemies, dealing $s1 Physical Damage causing them to bleed for an additional $o2 over $d. ",,True
+501708,exiles,Spread Shot,"2 Charges 8 sec recharge Fire several arrows, hitting up to 5 targets for ranged Weapon Damage plus 6 Physical Damage. Damage dealt generates 1 Archery Point.",https://db.exil.es/spell/501708,True
+501708,databank,Spread Shot,"|cFFFFFFFF2 Charges|r 
+|cffffffff8 sec recharge|r
+Fire several arrows, hitting up to $i targets for ranged Weapon Damage plus $s2 Physical Damage|r.
+
+Damage dealt generates 1 |cffffffffArchery Point|r.",,True
+501709,exiles,Spread Shot,"2 Charges 8 sec recharge Fire several arrows, hitting up to 5 targets for ranged Weapon Damage plus 10 Physical Damage. Damage dealt generates 1 Archery Point.",https://db.exil.es/spell/501709,True
+501709,databank,Spread Shot,"|cFFFFFFFF2 Charges|r 
+|cffffffff8 sec recharge|r
+Fire several arrows, hitting up to $i targets for ranged Weapon Damage plus $s2 Physical Damage|r.
+
+Damage dealt generates 1 |cffffffffArchery Point|r.",,True
+501710,exiles,Spread Shot,"2 Charges 8 sec recharge Fire several arrows, hitting up to 5 targets for ranged Weapon Damage plus 15 Physical Damage. Damage dealt generates 1 Archery Point.",https://db.exil.es/spell/501710,True
+501710,databank,Spread Shot,"|cFFFFFFFF2 Charges|r 
+|cffffffff8 sec recharge|r
+Fire several arrows, hitting up to $i targets for ranged Weapon Damage plus $s2 Physical Damage|r.
+
+Damage dealt generates 1 |cffffffffArchery Point|r.",,True
+501711,exiles,Spread Shot,"2 Charges 8 sec recharge Fire several arrows, hitting up to 5 targets for ranged Weapon Damage plus 23 Physical Damage. Damage dealt generates 1 Archery Point.",https://db.exil.es/spell/501711,True
+501711,databank,Spread Shot,"|cFFFFFFFF2 Charges|r 
+|cffffffff8 sec recharge|r
+Fire several arrows, hitting up to $i targets for ranged Weapon Damage plus $s2 Physical Damage|r.
+
+Damage dealt generates 1 |cffffffffArchery Point|r.",,True
+501712,exiles,Spread Shot,"2 Charges 8 sec recharge Fire several arrows, hitting up to 5 targets for ranged Weapon Damage plus 31 Physical Damage. Damage dealt generates 1 Archery Point.",https://db.exil.es/spell/501712,True
+501712,databank,Spread Shot,"|cFFFFFFFF2 Charges|r 
+|cffffffff8 sec recharge|r
+Fire several arrows, hitting up to $i targets for ranged Weapon Damage plus $s2 Physical Damage|r.
+
+Damage dealt generates 1 |cffffffffArchery Point|r.",,True
+501713,exiles,Spread Shot,"2 Charges 8 sec recharge Fire several arrows, hitting up to 5 targets for ranged Weapon Damage plus 44 Physical Damage. Damage dealt generates 1 Archery Point.",https://db.exil.es/spell/501713,True
+501713,databank,Spread Shot,"|cFFFFFFFF2 Charges|r 
+|cffffffff8 sec recharge|r
+Fire several arrows, hitting up to $i targets for ranged Weapon Damage plus $s2 Physical Damage|r.
+
+Damage dealt generates 1 |cffffffffArchery Point|r.",,True
+501714,exiles,Spread Shot,"2 Charges 8 sec recharge Fire several arrows, hitting up to 5 targets for ranged Weapon Damage plus 61 Physical Damage. Damage dealt generates 1 Archery Point.",https://db.exil.es/spell/501714,True
+501714,databank,Spread Shot,"|cFFFFFFFF2 Charges|r 
+|cffffffff8 sec recharge|r
+Fire several arrows, hitting up to $i targets for ranged Weapon Damage plus $s2 Physical Damage|r.
+
+Damage dealt generates 1 |cffffffffArchery Point|r.",,True
+501862,exiles,Flesh to Worms DEPRECATED RANK,"Disease an enemy, dealing 259.24 Shadow Damage and generating 3.3 Runic Power every 2 sec for 12 sec.",https://db.exil.es/spell/501862,True
+501862,databank,Flesh to Worms,"Disease an enemy, dealing ${$m1+$ppl1+$SP*0.088} Shadow Damage$?s560599[ and generating $/10;804272s2 Runic Power][] every $t1 sec for $d.",,True
+501863,exiles,Flesh to Worms DEPRECATED RANK,"Disease an enemy, dealing 316.2 Shadow Damage and generating 3.3 Runic Power every 2 sec for 12 sec.",https://db.exil.es/spell/501863,True
+501863,databank,Flesh to Worms,"Disease an enemy, dealing ${$m1+$ppl1+$SP*0.088} Shadow Damage$?s560599[ and generating $/10;804272s2 Runic Power][] every $t1 sec for $d.",,True
+501864,exiles,Flesh to Worms DEPRECATED RANK,"Disease an enemy, dealing 344.24 Shadow Damage and generating 3.3 Runic Power every 2 sec for 12 sec.",https://db.exil.es/spell/501864,True
+501864,databank,Flesh to Worms,"Disease an enemy, dealing ${$m1+$ppl1+$SP*0.088} Shadow Damage$?s560599[ and generating $/10;804272s2 Runic Power][] every $t1 sec for $d.",,True
+501865,exiles,Flesh to Worms DEPRECATED RANK,"Disease an enemy, dealing 426.2 Shadow Damage and generating 3.3 Runic Power every 2 sec for 12 sec.",https://db.exil.es/spell/501865,True
+501865,databank,Flesh to Worms,"Disease an enemy, dealing ${$m1+$ppl1+$SP*0.088} Shadow Damage$?s560599[ and generating $/10;804272s2 Runic Power][] every $t1 sec for $d.",,True
+501873,exiles,Expunge,"Blast a diseased enemy for 133.56 Plague Damage plus 45.82 over 10 sec, stacking 2 times, and extend the duration of Flesh to Worms by 3 sec. Can only target diseased enemies. If the enemy is below 20% health, spread Flesh to Worms disease to nearby enemies.",https://db.exil.es/spell/501873,True
+501873,databank,Expunge,"Blast a diseased enemy for ${$m1+$ppl1} Plague Damage plus ${$m3+$ppl3} over $d, stacking $573233u times$?s300236[, and extend the duration of |cffffffffFlesh to Worms|r by $/1000;680930s1 sec][].
+
+Can only target diseased enemies.$?s704598[
+
+If the enemy is below 20% health, spread |cffffffffFlesh to Worms|r disease to nearby enemies.][]",,True
+501874,exiles,Expunge,"Blast a diseased enemy for 181.656 Plague Damage plus 63.02 over 10 sec, stacking 2 times, and extend the duration of Flesh to Worms by 3 sec. Can only target diseased enemies. If the enemy is below 20% health, spread Flesh to Worms disease to nearby enemies.",https://db.exil.es/spell/501874,True
+501874,databank,Expunge,"Blast a diseased enemy for ${$m1+$ppl1} Plague Damage plus ${$m3+$ppl3} over $d, stacking $573233u times$?s300236[, and extend the duration of |cffffffffFlesh to Worms|r by $/1000;680930s1 sec][].
+
+Can only target diseased enemies.$?s704598[
+
+If the enemy is below 20% health, spread |cffffffffFlesh to Worms|r disease to nearby enemies.][]",,True
+501875,exiles,Expunge,"Blast a diseased enemy for 247 Plague Damage plus 81.22 over 0, stacking 2 times, and extend the duration of Flesh to Worms by 3 sec. Can only target diseased enemies. If the enemy is below 20% health, spread Flesh to Worms disease to nearby enemies.",https://db.exil.es/spell/501875,True
+501875,databank,Expunge,"Blast a diseased enemy for ${$m1+$ppl1} Plague Damage plus ${$m3+$ppl3} over $d, stacking $573233u times$?s300236[, and extend the duration of |cffffffffFlesh to Worms|r by $/1000;680930s1 sec][].
+
+Can only target diseased enemies.$?s704598[
+
+If the enemy is below 20% health, spread |cffffffffFlesh to Worms|r disease to nearby enemies.][]",,True
+501876,exiles,Expunge,"Blast a diseased enemy for 357.28 Plague Damage plus 99.42 over 10 sec, stacking 2 times, and extend the duration of Flesh to Worms by 3 sec. Can only target diseased enemies. If the enemy is below 20% health, spread Flesh to Worms disease to nearby enemies.",https://db.exil.es/spell/501876,True
+501876,databank,Expunge,"Blast a diseased enemy for ${$m1+$ppl1} Plague Damage plus ${$m3+$ppl3} over $d, stacking $573233u times$?s300236[, and extend the duration of |cffffffffFlesh to Worms|r by $/1000;680930s1 sec][].
+
+Can only target diseased enemies.$?s704598[
+
+If the enemy is below 20% health, spread |cffffffffFlesh to Worms|r disease to nearby enemies.][]",,True
+501877,exiles,Expunge,"Blast a diseased enemy for 486 Plague Damage plus 117.62 over 10 sec, stacking 2 times, and extend the duration of Flesh to Worms by 3 sec. Can only target diseased enemies. If the enemy is below 20% health, spread Flesh to Worms disease to nearby enemies.",https://db.exil.es/spell/501877,True
+501877,databank,Expunge,"Blast a diseased enemy for ${$m1+$ppl1} Plague Damage plus ${$m3+$ppl3} over $d, stacking $573233u times$?s300236[, and extend the duration of |cffffffffFlesh to Worms|r by $/1000;680930s1 sec][].
+
+Can only target diseased enemies.$?s704598[
+
+If the enemy is below 20% health, spread |cffffffffFlesh to Worms|r disease to nearby enemies.][]",,True
+501878,exiles,Expunge,"Blast a diseased enemy for 676 Plague Damage plus 138.82 over 10 sec, stacking 2 times, and extend the duration of Flesh to Worms by 3 sec. Can only target diseased enemies. If the enemy is below 20% health, spread Flesh to Worms disease to nearby enemies.",https://db.exil.es/spell/501878,True
+501878,databank,Expunge,"Blast a diseased enemy for ${$m1+$ppl1} Plague Damage plus ${$m3+$ppl3} over $d, stacking $573233u times$?s300236[, and extend the duration of |cffffffffFlesh to Worms|r by $/1000;680930s1 sec][].
+
+Can only target diseased enemies.$?s704598[
+
+If the enemy is below 20% health, spread |cffffffffFlesh to Worms|r disease to nearby enemies.][]",,True
+501879,exiles,Expunge,"Blast a diseased enemy for 924 Plague Damage plus 161.02 over 10 sec, stacking 2 times, and extend the duration of Flesh to Worms by 3 sec. Can only target diseased enemies. If the enemy is below 20% health, spread Flesh to Worms disease to nearby enemies.",https://db.exil.es/spell/501879,True
+501879,databank,Expunge,"Blast a diseased enemy for ${$m1+$ppl1} Plague Damage plus ${$m3+$ppl3} over $d, stacking $573233u times$?s300236[, and extend the duration of |cffffffffFlesh to Worms|r by $/1000;680930s1 sec][].
+
+Can only target diseased enemies.$?s704598[
+
+If the enemy is below 20% health, spread |cffffffffFlesh to Worms|r disease to nearby enemies.][]",,True
+501889,exiles,Crypt Scarabs (deprecated old max rank),"Costs 30 to 80 Runic Power per 0.5 sec Channel upon an enemy, expending 30 to 80 Runic Power every 0.5 sec to cause 439.81 to 499.81 Shadow Damage and empower nearby Undead Minions with Cryptfury. This channel ends if you run out of Runic Power.",https://db.exil.es/spell/501889,True
+501889,databank,Crypt Scarabs (deprecated old max rank),"|cffffffffCosts $800344s2 Runic Power per $t1 sec|r
+Channel upon an enemy, expending $800344s2 Runic Power every $t1 sec to cause $s1 Shadow Damage and empower nearby Undead Minions with |cffffffffCryptfury|r.
+
+This channel ends if you run out of Runic Power.@s:806588:0@",,True
+501893,exiles,Wretched Bile DEPRECATED,"Spew Bile in a frontal cone, Slowing the Movement Speed of all enemies hit by 60% and reducing their Attack Power by 457.2 to 456.2.",https://db.exil.es/spell/501893,True
+501893,databank,Wretched Bile DEPRECATED,"Spew Bile in a frontal cone, Slowing the Movement Speed of all enemies hit by $s2% and reducing their Attack Power by $s1.",,True
+501894,databank,Wretched Bile DEPRECATED,"Spew Bile in a frontal cone, Slowing the Movement Speed of all enemies hit by $s2% and reducing their Attack Power by $s1.",,True
+501895,databank,Wretched Bile DEPRECATED,"Spew Bile in a frontal cone, Slowing the Movement Speed of all enemies hit by $s2% and reducing their Attack Power by $s1.",,True
+501896,databank,Wretched Bile DEPRECATED,"Spew Bile in a frontal cone, Slowing the Movement Speed of all enemies hit by $s2% and reducing their Attack Power by $s1.",,True
+501897,databank,Wretched Bile DEPRECATED,"Spew Bile in a frontal cone, Slowing the Movement Speed of all enemies hit by $s2% and reducing their Attack Power by $s1.",,True
+501898,databank,Wretched Bile DEPRECATED,"Spew Bile in a frontal cone, Slowing the Movement Speed of all enemies hit by $s2% and reducing their Attack Power by $s1.",,True
+501899,databank,Wretched Bile DEPRECATED,"Spew Bile in a frontal cone, Slowing the Movement Speed of all enemies hit by $s2% and reducing their Attack Power by $s1.",,True
+502091,exiles,Burst,Deprecated,https://db.exil.es/spell/502091,True
+502091,databank,Burst,"Hurl a torrent of fire at an enemy, instantly dealing ${$m1+($pl*1.2-1*1.2)} Fire Damage and generating a |cffffffffBreath Charge|r.
+
+|cffffffffOverheat:|r Damage increased by $680359s2%.",,True
+502092,exiles,Burst,Deprecated,https://db.exil.es/spell/502092,True
+502092,databank,Burst,"Hurl a torrent of fire at an enemy, instantly dealing ${$m1+($pl*1.2-1*1.2)} Fire Damage and generating a |cffffffffBreath Charge|r.
+
+|cffffffffOverheat:|r Damage increased by $680359s2%.",,True
+502093,exiles,Burst,Deprecated,https://db.exil.es/spell/502093,True
+502093,databank,Burst,"Hurl a torrent of fire at an enemy, instantly dealing ${$m1+($pl*1.2-1*1.2)} Fire Damage and generating a |cffffffffBreath Charge|r.
+
+|cffffffffOverheat:|r Damage increased by $680359s2%.",,True
+502094,exiles,Burst,Deprecated,https://db.exil.es/spell/502094,True
+502094,databank,Burst,"Hurl a torrent of fire at an enemy, instantly dealing ${$m1+($pl*1.2-1*1.2)} Fire Damage and generating a |cffffffffBreath Charge|r.
+
+|cffffffffOverheat:|r Damage increased by $680359s2%.",,True
+502095,exiles,Burst,Deprecated,https://db.exil.es/spell/502095,True
+502095,databank,Burst,"Hurl a torrent of fire at an enemy, instantly dealing ${$m1+($pl*1.2-1*1.2)} Fire Damage and generating a |cffffffffBreath Charge|r.
+
+|cffffffffOverheat:|r Damage increased by $680359s2%.",,True
+502096,exiles,Burst,Deprecated,https://db.exil.es/spell/502096,True
+502096,databank,Burst,"Hurl a torrent of fire at an enemy, instantly dealing ${$m1+($pl*1.2-1*1.2)} Fire Damage and generating a |cffffffffBreath Charge|r.
+
+|cffffffffOverheat:|r Damage increased by $680359s2%.",,True
+502097,exiles,Burst,Deprecated,https://db.exil.es/spell/502097,True
+502097,databank,Burst,"Hurl a torrent of fire at an enemy, instantly dealing ${$m1+($pl*1.2-1*1.2)} Fire Damage and generating a |cffffffffBreath Charge|r.
+
+|cffffffffOverheat:|r Damage increased by $680359s2%.",,True
+502098,exiles,Burst,Deprecated,https://db.exil.es/spell/502098,True
+502098,databank,Burst,"Hurl a torrent of fire at an enemy, instantly dealing ${$m1+($pl*1.2-1*1.2)} Fire Damage and generating a |cffffffffBreath Charge|r.
+
+|cffffffffOverheat:|r Damage increased by $680359s2%.",,True
+502099,exiles,Burst,Deprecated,https://db.exil.es/spell/502099,True
+502099,databank,Burst,"Hurl a torrent of fire at an enemy, instantly dealing ${$m1+($pl*1.2-1*1.2)} Fire Damage and generating a |cffffffffBreath Charge|r.
+
+|cffffffffOverheat:|r Damage increased by $680359s2%.",,True
+502100,exiles,Draconic Fang,"Blast an enemy, dealing 251.6 Fire Damage, and generating 1 Breath Charge. Usable while moving. Overheat: Generates an additional Breath Charge.",https://db.exil.es/spell/502100,True
+502100,databank,Draconic Fang,"Blast an enemy, dealing ${$m1+$ppl1+$SP*.33} Fire Damage$?s500173[, and generating 1 |cffffffffBreath Charge|r][].
+
+Usable while moving.",,True
+502101,exiles,Draconic Fang,"Blast an enemy, dealing 349.6 Fire Damage, and generating 1 Breath Charge. Usable while moving. Overheat: Generates an additional Breath Charge.",https://db.exil.es/spell/502101,True
+502101,databank,Draconic Fang,"Blast an enemy, dealing ${$m1+$ppl1+$SP*.33} Fire Damage$?s500173[, and generating 1 |cffffffffBreath Charge|r][].
+
+Usable while moving.",,True
+502102,exiles,Draconic Fang,"Blast an enemy, dealing 489 Fire Damage, and generating 1 Breath Charge. Usable while moving. Overheat: Generates an additional Breath Charge.",https://db.exil.es/spell/502102,True
+502102,databank,Draconic Fang,"Blast an enemy, dealing ${$m1+$ppl1+$SP*.33} Fire Damage$?s500173[, and generating 1 |cffffffffBreath Charge|r][].
+
+Usable while moving.",,True
+502103,exiles,Draconic Fang,"Blast an enemy, dealing 684 Fire Damage, and generating 1 Breath Charge. Usable while moving. Overheat: Generates an additional Breath Charge.",https://db.exil.es/spell/502103,True
+502103,databank,Draconic Fang,"Blast an enemy, dealing ${$m1+$ppl1+$SP*.33} Fire Damage$?s500173[, and generating 1 |cffffffffBreath Charge|r][].
+
+Usable while moving.",,True
+502104,exiles,Draconic Fang,"Blast an enemy, dealing 961.48 Fire Damage, and generating 1 Breath Charge. Usable while moving. Overheat: Generates an additional Breath Charge.",https://db.exil.es/spell/502104,True
+502104,databank,Draconic Fang,"Blast an enemy, dealing ${$m1+$ppl1+$SP*.33} Fire Damage$?s500173[, and generating 1 |cffffffffBreath Charge|r][].
+
+Usable while moving.",,True
+502105,exiles,Draconic Fang,"Blast an enemy, dealing 1339.12 Fire Damage, and generating 1 Breath Charge. Usable while moving. Overheat: Generates an additional Breath Charge.",https://db.exil.es/spell/502105,True
+502105,databank,Draconic Fang,"Blast an enemy, dealing ${$m1+$ppl1+$SP*.33} Fire Damage$?s500173[, and generating 1 |cffffffffBreath Charge|r][].
+
+Usable while moving.",,True
+502106,exiles,Draconic Fang,"Blast an enemy, dealing 1666 Fire Damage, and generating 1 Breath Charge. Usable while moving. Overheat: Generates an additional Breath Charge.",https://db.exil.es/spell/502106,True
+502106,databank,Draconic Fang,"Blast an enemy, dealing ${$m1+$ppl1+$SP*.33} Fire Damage$?s500173[, and generating 1 |cffffffffBreath Charge|r][].
+
+Usable while moving.",,True
+502302,databank,Starshatter,Call down the power of the stars to stun an enemy for $d.,,True
+502303,databank,Starshatter,Call down the power of the stars to stun an enemy for $d.,,True
+502479,exiles,Emancipate,"You release holy light in a small radius around you, dealing 111.216 to 117.216 Holy Damage to enemies and reducing their damage dealt by 100% for 5 sec. Can only be used while at or below 20% Health.",https://db.exil.es/spell/502479,True
+502479,databank,Emancipate,"You release holy light in a small radius around you, dealing |cff01cdfe$s1 Holy Damage|r to enemies and reducing their damage dealt by |cfffeff9e$s2%|r for |cfffeff9e$d|r.
+
+Can only be used while at or below 20% |cfffeff9eHealth|r.",,True
+502480,exiles,Emancipate,"You release holy light in a small radius around you, dealing 161.776 to 170.776 Holy Damage to enemies and reducing their damage dealt by 100% for 5 sec. Can only be used while at or below 20% Health.",https://db.exil.es/spell/502480,True
+502480,databank,Emancipate,"You release holy light in a small radius around you, dealing |cff01cdfe$s1 Holy Damage|r to enemies and reducing their damage dealt by |cfffeff9e$s2%|r for |cfffeff9e$d|r.
+
+Can only be used while at or below 20% |cfffeff9eHealth|r.",,True
+502481,exiles,Emancipate,"You release holy light in a small radius around you, dealing 222.336 to 235.336 Holy Damage to enemies and reducing their damage dealt by 100% for 5 sec. Can only be used while at or below 20% Health.",https://db.exil.es/spell/502481,True
+502481,databank,Emancipate,"You release holy light in a small radius around you, dealing |cff01cdfe$s1 Holy Damage|r to enemies and reducing their damage dealt by |cfffeff9e$s2%|r for |cfffeff9e$d|r.
+
+Can only be used while at or below 20% |cfffeff9eHealth|r.",,True
+502482,exiles,Emancipate,"You release holy light in a small radius around you, dealing 297.896 to 316.896 Holy Damage to enemies and reducing their damage dealt by 100% for 5 sec. Can only be used while at or below 20% Health.",https://db.exil.es/spell/502482,True
+502482,databank,Emancipate,"You release holy light in a small radius around you, dealing |cff01cdfe$s1 Holy Damage|r to enemies and reducing their damage dealt by |cfffeff9e$s2%|r for |cfffeff9e$d|r.
+
+Can only be used while at or below 20% |cfffeff9eHealth|r.",,True
+502483,exiles,Emancipate,"You release holy light in a small radius around you, dealing 393.456 to 419.456 Holy Damage to enemies and reducing their damage dealt by 100% for 5 sec. Can only be used while at or below 20% Health.",https://db.exil.es/spell/502483,True
+502483,databank,Emancipate,"You release holy light in a small radius around you, dealing |cff01cdfe$s1 Holy Damage|r to enemies and reducing their damage dealt by |cfffeff9e$s2%|r for |cfffeff9e$d|r.
+
+Can only be used while at or below 20% |cfffeff9eHealth|r.",,True
+502484,exiles,Emancipate,"You release holy light in a small radius around you, dealing 519.016 to 553.016 Holy Damage to enemies and reducing their damage dealt by 100% for 5 sec. Can only be used while at or below 20% Health.",https://db.exil.es/spell/502484,True
+502484,databank,Emancipate,"You release holy light in a small radius around you, dealing |cff01cdfe$s1 Holy Damage|r to enemies and reducing their damage dealt by |cfffeff9e$s2%|r for |cfffeff9e$d|r.
+
+Can only be used while at or below 20% |cfffeff9eHealth|r.",,True
+502485,exiles,Emancipate,"You release holy light in a small radius around you, dealing 686.576 to 730.576 Holy Damage to enemies and reducing their damage dealt by 100% for 5 sec. Can only be used while at or below 20% Health.",https://db.exil.es/spell/502485,True
+502485,databank,Emancipate,"You release holy light in a small radius around you, dealing |cff01cdfe$s1 Holy Damage|r to enemies and reducing their damage dealt by |cfffeff9e$s2%|r for |cfffeff9e$d|r.
+
+Can only be used while at or below 20% |cfffeff9eHealth|r.",,True
+502507,exiles,Boomshot,"Fires 1 Round Fire a quick gunshot, dealing Ranged Weapon Damage plus 202.12 as Fire Damage. Restores 470% maximum mana. Castable while casting.",https://db.exil.es/spell/502507,True
+502507,databank,Boomshot,"|cff93cceaFires 1 Round|r
+Fire a quick gunshot, dealing Ranged Weapon Damage plus ${$m1+($PL*1-6*1)} as Fire Damage.
+
+Restores $804100s1% maximum mana.
+
+Castable while casting.",,True
+502508,exiles,Boomshot,"Fires 1 Round Fire a quick gunshot, dealing Ranged Weapon Damage plus 259.12 as Fire Damage. Restores 470% maximum mana. Castable while casting.",https://db.exil.es/spell/502508,True
+502508,databank,Boomshot,"|cff93cceaFires 1 Round|r
+Fire a quick gunshot, dealing Ranged Weapon Damage plus ${$m1+($PL*1-6*1)} as Fire Damage.
+
+Restores $804100s1% maximum mana.
+
+Castable while casting.",,True
+502509,exiles,Boomshot,"Fires 1 Round Fire a quick gunshot, dealing Ranged Weapon Damage plus 363.12 as Fire Damage. Restores 470% maximum mana. Castable while casting.",https://db.exil.es/spell/502509,True
+502509,databank,Boomshot,"|cff93cceaFires 1 Round|r
+Fire a quick gunshot, dealing Ranged Weapon Damage plus ${$m1+($PL*1-6*1)} as Fire Damage.
+
+Restores $804100s1% maximum mana.
+
+Castable while casting.",,True
+502603,exiles,Manastrike,Deprecated,https://db.exil.es/spell/502603,True
+502603,databank,Manastrike,Strike an enemy for ${$m1+$ppl1+$SP*0.25} Arcane Damage and regenerate $s2% maximum mana.,,True
+502604,exiles,Manastrike,Deprecated,https://db.exil.es/spell/502604,True
+502604,databank,Manastrike,Strike an enemy for ${$m1+$ppl1+$SP*0.25} Arcane Damage and regenerate $s2% maximum mana.,,True
+502605,exiles,Manastrike,Deprecated,https://db.exil.es/spell/502605,True
+502605,databank,Manastrike,Strike an enemy for ${$m1+$ppl1+$SP*0.25} Arcane Damage and regenerate $s2% maximum mana.,,True
+502606,exiles,Manastrike,Deprecated,https://db.exil.es/spell/502606,True
+502606,databank,Manastrike,Strike an enemy for ${$m1+$ppl1+$SP*0.25} Arcane Damage and regenerate $s2% maximum mana.,,True
+502607,exiles,Manastrike,Deprecated,https://db.exil.es/spell/502607,True
+502607,databank,Manastrike,Strike an enemy for ${$m1+$ppl1+$SP*0.25} Arcane Damage and regenerate $s2% maximum mana.,,True
+502608,exiles,Manastrike,Deprecated,https://db.exil.es/spell/502608,True
+502608,databank,Manastrike,Strike an enemy for ${$m1+$ppl1+$SP*0.25} Arcane Damage and regenerate $s2% maximum mana.,,True
+502609,exiles,Manastrike,Deprecated,https://db.exil.es/spell/502609,True
+502609,databank,Manastrike,Strike an enemy for ${$m1+$ppl1+$SP*0.25} Arcane Damage and regenerate $s2% maximum mana.,,True
+502610,exiles,Manastrike,Deprecated,https://db.exil.es/spell/502610,True
+502610,databank,Manastrike,Strike an enemy for ${$m1+$ppl1+$SP*0.25} Arcane Damage and regenerate $s2% maximum mana.,,True
+502611,exiles,Manastrike,Deprecated,https://db.exil.es/spell/502611,True
+502611,databank,Manastrike,Strike an enemy for ${$m1+$ppl1+$SP*0.25} Arcane Damage and regenerate $s2% maximum mana.,,True
+502612,exiles,Manastrike,Deprecated,https://db.exil.es/spell/502612,True
+502612,databank,Manastrike,Strike an enemy for ${$m1+$ppl1+$SP*0.25} Arcane Damage and regenerate $s2% maximum mana.,,True
+502613,exiles,Manastrike,Deprecated,https://db.exil.es/spell/502613,True
+502613,databank,Manastrike,Strike an enemy for ${$m1+$ppl1+$SP*0.25} Arcane Damage and regenerate $s2% maximum mana.,,True
+502614,exiles,Manastorm,Deprecated,https://db.exil.es/spell/502614,True
+502614,databank,Manastorm,"|cff93cceaConsumes 2 Inscribed Runes|r
+Fire a stream of magic missiles into the air, striking enemies within $a1 yds for ${$m1+$ppl1} Arcane Damage and stunning them for $d.",,True
+502615,exiles,Manastorm,Deprecated,https://db.exil.es/spell/502615,True
+502615,databank,Manastorm,"|cff93cceaConsumes 2 Inscribed Runes|r
+Fire a stream of magic missiles into the air, striking enemies within $a1 yds for ${$m1+$ppl1} Arcane Damage and stunning them for $d.",,True
+502616,exiles,Manastorm,Deprecated,https://db.exil.es/spell/502616,True
+502616,databank,Manastorm,"|cff93cceaConsumes 2 Inscribed Runes|r
+Fire a stream of magic missiles into the air, striking enemies within $a1 yds for ${$m1+$ppl1} Arcane Damage and stunning them for $d.",,True
+502617,exiles,Manastorm,Deprecated,https://db.exil.es/spell/502617,True
+502617,databank,Manastorm,"|cff93cceaConsumes 2 Inscribed Runes|r
+Fire a stream of magic missiles into the air, striking enemies within $a1 yds for ${$m1+$ppl1} Arcane Damage and stunning them for $d.",,True
+502618,exiles,Manastorm,Deprecated,https://db.exil.es/spell/502618,True
+502618,databank,Manastorm,"|cff93cceaConsumes 2 Inscribed Runes|r
+Fire a stream of magic missiles into the air, striking enemies within $a1 yds for ${$m1+$ppl1} Arcane Damage and stunning them for $d.",,True
+502700,exiles,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing 201.8 to 211.8 Shadow Damage and silencing them for 3.5 sec. If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.",https://db.exil.es/spell/502700,True
+502700,databank,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing $s1 Shadow Damage$?s705448[ and silencing them for $802086d. 
+
+If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.][]",,True
+502701,exiles,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing 288.12 to 302.12 Shadow Damage and silencing them for 3.5 sec. If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.",https://db.exil.es/spell/502701,True
+502701,databank,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing $s1 Shadow Damage$?s705448[ and silencing them for $802086d. 
+
+If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.][]",,True
+502702,exiles,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing 390.44 to 410.44 Shadow Damage and silencing them for 3.5 sec. If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.",https://db.exil.es/spell/502702,True
+502702,databank,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing $s1 Shadow Damage$?s705448[ and silencing them for $802086d. 
+
+If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.][]",,True
+502703,exiles,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing 514.76 to 542.76 Shadow Damage and silencing them for 3.5 sec. If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.",https://db.exil.es/spell/502703,True
+502703,databank,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing $s1 Shadow Damage$?s705448[ and silencing them for $802086d. 
+
+If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.][]",,True
+502704,exiles,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing 652.6 to 689.6 Shadow Damage and silencing them for 3.5 sec. If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.",https://db.exil.es/spell/502704,True
+502704,databank,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing $s1 Shadow Damage$?s705448[ and silencing them for $802086d. 
+
+If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.][]",,True
+502705,exiles,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing 845.92 to 893.92 Shadow Damage and silencing them for 3.5 sec. If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.",https://db.exil.es/spell/502705,True
+502705,databank,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing $s1 Shadow Damage$?s705448[ and silencing them for $802086d. 
+
+If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.][]",,True
+502706,exiles,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing 1096.24 to 1157.24 Shadow Damage and silencing them for 3.5 sec. If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.",https://db.exil.es/spell/502706,True
+502706,databank,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing $s1 Shadow Damage$?s705448[ and silencing them for $802086d. 
+
+If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.][]",,True
+502707,exiles,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing 1426.56 to 1502.56 Shadow Damage and silencing them for 3.5 sec. If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.",https://db.exil.es/spell/502707,True
+502707,databank,Shrieking Scythe,"Shred the enemy with a shadowy scythe, dealing $s1 Shadow Damage$?s705448[ and silencing them for $802086d. 
+
+If the target is silenced successfully, you also deal additional Weapon Damage as Shadow based on how low your Health is.][]",,True
+502734,exiles,Bear's Maw,"Strike an enemy with the might of Ursoc, dealing 60% Weapon Damage plus 302.8 Physical Damage. Generates 25 rage and 0% maximum mana and health.",https://db.exil.es/spell/502734,True
+502734,databank,Bear's Maw,"Strike an enemy with the might of Ursoc, dealing Weapon Damage plus ${$m1+$ppl1} Physical Damage.
+
+Generates $/10;804992s1 rage and restores $804117s2% maximum health.",,True
+502735,exiles,Bear's Maw,"Strike an enemy with the might of Ursoc, dealing 70% Weapon Damage plus 431.8 Physical Damage. Generates 25 rage and 0% maximum mana and health.",https://db.exil.es/spell/502735,True
+502735,databank,Bear's Maw,"Strike an enemy with the might of Ursoc, dealing Weapon Damage plus ${$m1+$ppl1} Physical Damage.
+
+Generates $/10;804992s1 rage and restores $804117s2% maximum health.",,True
+502736,exiles,Bear's Maw,"Strike an enemy with the might of Ursoc, dealing 80% Weapon Damage plus 574.8 Physical Damage. Generates 25 rage and 0% maximum mana and health.",https://db.exil.es/spell/502736,True
+502736,databank,Bear's Maw,"Strike an enemy with the might of Ursoc, dealing Weapon Damage plus ${$m1+$ppl1} Physical Damage.
+
+Generates $/10;804992s1 rage and restores $804117s2% maximum health.",,True
+502737,exiles,Bear's Maw,"Strike an enemy with the might of Ursoc, dealing 90% Weapon Damage plus 737.8 Physical Damage. Generates 25 rage and 0% maximum mana and health.",https://db.exil.es/spell/502737,True
+502737,databank,Bear's Maw,"Strike an enemy with the might of Ursoc, dealing Weapon Damage plus ${$m1+$ppl1} Physical Damage.
+
+Generates $/10;804992s1 rage and restores $804117s2% maximum health.",,True
+502738,exiles,Bear's Maw,"Strike an enemy with the might of Ursoc, dealing 100% Weapon Damage plus 929.8 Physical Damage. Generates 25 rage and 0% maximum mana and health.",https://db.exil.es/spell/502738,True
+502738,databank,Bear's Maw,"Strike an enemy with the might of Ursoc, dealing Weapon Damage plus ${$m1+$ppl1} Physical Damage.
+
+Generates $/10;804992s1 rage and restores $804117s2% maximum health.",,True
+502739,exiles,Bear's Maw,"Strike an enemy with the might of Ursoc, dealing 130% Weapon Damage plus 1162.8 Physical Damage. Generates 25 rage and 0% maximum mana and health.",https://db.exil.es/spell/502739,True
+502739,databank,Bear's Maw,"Strike an enemy with the might of Ursoc, dealing Weapon Damage plus ${$m1+$ppl1} Physical Damage.
+
+Generates $/10;804992s1 rage and restores $804117s2% maximum health.",,True
+502740,exiles,Bear's Maw,"Strike an enemy with the might of Ursoc, dealing 120% Weapon Damage plus 1454.8 Physical Damage. Generates 25 rage and 0% maximum mana and health.",https://db.exil.es/spell/502740,True
+502740,databank,Bear's Maw,"Strike an enemy with the might of Ursoc, dealing Weapon Damage plus ${$m1+$ppl1} Physical Damage.
+
+Generates $/10;804992s1 rage and restores $804117s2% maximum health.",,True
+502784,exiles,Mending Growth,Heal an ally for 271.824.,https://db.exil.es/spell/502784,True
+502784,databank,Mending Growth,"Heal an ally for ${$m1+$ppl1}$?s706137[ and increases the healing of your next |cffffffffHand of the Earthmother|r by ${$m3+$ppl3}, stacking $u times.][.]",,True
+502785,exiles,Mending Growth,Heal an ally for 409.768.,https://db.exil.es/spell/502785,True
+502785,databank,Mending Growth,"Heal an ally for ${$m1+$ppl1}$?s706137[ and increases the healing of your next |cffffffffHand of the Earthmother|r by ${$m3+$ppl3}, stacking $u times.][.]",,True
+502786,exiles,Mending Growth,Heal an ally for 552.712.,https://db.exil.es/spell/502786,True
+502786,databank,Mending Growth,"Heal an ally for ${$m1+$ppl1}$?s706137[ and increases the healing of your next |cffffffffHand of the Earthmother|r by ${$m3+$ppl3}, stacking $u times.][.]",,True
+502787,exiles,Mending Growth,Heal an ally for 695.656.,https://db.exil.es/spell/502787,True
+502787,databank,Mending Growth,"Heal an ally for ${$m1+$ppl1}$?s706137[ and increases the healing of your next |cffffffffHand of the Earthmother|r by ${$m3+$ppl3}, stacking $u times.][.]",,True
+502788,exiles,Mending Growth,Heal an ally for 833.6.,https://db.exil.es/spell/502788,True
+502788,databank,Mending Growth,"Heal an ally for ${$m1+$ppl1}$?s706137[ and increases the healing of your next |cffffffffHand of the Earthmother|r by ${$m3+$ppl3}, stacking $u times.][.]",,True
+502789,exiles,Mending Growth,Heal an ally for 971.544.,https://db.exil.es/spell/502789,True
+502789,databank,Mending Growth,"Heal an ally for ${$m1+$ppl1}$?s706137[ and increases the healing of your next |cffffffffHand of the Earthmother|r by ${$m3+$ppl3}, stacking $u times.][.]",,True
+502790,exiles,Mending Growth,Heal an ally for 1099.488.,https://db.exil.es/spell/502790,True
+502790,databank,Mending Growth,"Heal an ally for ${$m1+$ppl1}$?s706137[ and increases the healing of your next |cffffffffHand of the Earthmother|r by ${$m3+$ppl3}, stacking $u times.][.]",,True
+502791,exiles,Primal Infusion,Heals a friendly target for 378.72 plus 125.24 every 2.5 sec for 10 sec. Affected targets have 5% increased healing received from Hand of the Earthmother.,https://db.exil.es/spell/502791,True
+502791,databank,Primal Infusion,"Heals a friendly target for ${$m3+$ppl3} plus ${$m1+$ppl1} every $t1 sec for $d.
+
+Affected targets have $300740s1% increased healing received from |cffffffffPrimal Infusion|r.",,True
+502792,exiles,Primal Infusion,Heals a friendly target for 576.6 plus 153.12 every 2.5 sec for 10 sec. Affected targets have 5% increased healing received from Hand of the Earthmother.,https://db.exil.es/spell/502792,True
+502792,databank,Primal Infusion,"Heals a friendly target for ${$m3+$ppl3} plus ${$m1+$ppl1} every $t1 sec for $d.
+
+Affected targets have $300740s1% increased healing received from |cffffffffPrimal Infusion|r.",,True
+502793,exiles,Boon of the Turtle,"Increase your armor by 965.45, reduce damage taken by 5%, and deal 49.58 to 50.58 Nature Damage to melee attackers for 20 sec. Only 1 Boon may be active at a time.",https://db.exil.es/spell/502793,True
+502793,databank,Boon of the Turtle,"$?s804180[Summon a |cffffffffSpirit Turtle|r, capable of dealing damage to multiple enemies and reducing your damage taken.][Increase your armor by $s1, reduce damage taken by $s3%, and deal $s2 Nature Damage to melee attackers for $d.
+
+Only 1 |cffffffffBoon|r may be active at a time.
+
+Applies |cffffffffLesser Boon of the Turtle|r for $997793d.
+@ext:@s:997793:0@:ext@]",,True
+502794,exiles,Boon of the Turtle,"Increase your armor by 1288.848, reduce damage taken by 5%, and deal 67.54 to 69.54 Nature Damage to melee attackers for 20 sec. Only 1 Boon may be active at a time.",https://db.exil.es/spell/502794,True
+502794,databank,Boon of the Turtle,"$?s804180[Summon a |cffffffffSpirit Turtle|r, capable of dealing damage to multiple enemies and reducing your damage taken.][Increase your armor by $s1, reduce damage taken by $s3%, and deal $s2 Nature Damage to melee attackers for $d.
+
+Only 1 |cffffffffBoon|r may be active at a time.
+
+Applies |cffffffffLesser Boon of the Turtle|r for $997793d.
+@ext:@s:997793:0@:ext@]",,True
+502795,exiles,Boon of the Turtle,"Increase your armor by 1612.248, reduce damage taken by 5%, and deal 85.5 to 88.5 Nature Damage to melee attackers for 20 sec. Only 1 Boon may be active at a time.",https://db.exil.es/spell/502795,True
+502795,databank,Boon of the Turtle,"$?s804180[Summon a |cffffffffSpirit Turtle|r, capable of dealing damage to multiple enemies and reducing your damage taken.][Increase your armor by $s1, reduce damage taken by $s3%, and deal $s2 Nature Damage to melee attackers for $d.
+
+Only 1 |cffffffffBoon|r may be active at a time.
+
+Applies |cffffffffLesser Boon of the Turtle|r for $997793d.
+@ext:@s:997793:0@:ext@]",,True
+502796,exiles,Boon of the Turtle,"Increase your armor by 1935.648, reduce damage taken by 5%, and deal 105.46 to 109.46 Nature Damage to melee attackers for 20 sec. Only 1 Boon may be active at a time.",https://db.exil.es/spell/502796,True
+502796,databank,Boon of the Turtle,"$?s804180[Summon a |cffffffffSpirit Turtle|r, capable of dealing damage to multiple enemies and reducing your damage taken.][Increase your armor by $s1, reduce damage taken by $s3%, and deal $s2 Nature Damage to melee attackers for $d.
+
+Only 1 |cffffffffBoon|r may be active at a time.
+
+Applies |cffffffffLesser Boon of the Turtle|r for $997793d.
+@ext:@s:997793:0@:ext@]",,True
+502797,exiles,Boon of the Turtle,"Increase your armor by 2259.048, reduce damage taken by 5%, and deal 126.42 to 131.42 Nature Damage to melee attackers for 20 sec. Only 1 Boon may be active at a time.",https://db.exil.es/spell/502797,True
+502797,databank,Boon of the Turtle,"$?s804180[Summon a |cffffffffSpirit Turtle|r, capable of dealing damage to multiple enemies and reducing your damage taken.][Increase your armor by $s1, reduce damage taken by $s3%, and deal $s2 Nature Damage to melee attackers for $d.
+
+Only 1 |cffffffffBoon|r may be active at a time.
+
+Applies |cffffffffLesser Boon of the Turtle|r for $997793d.
+@ext:@s:997793:0@:ext@]",,True
+502798,exiles,Boon of the Turtle,"Increase your armor by 2582.448, reduce damage taken by 5%, and deal 149.38 to 155.38 Nature Damage to melee attackers for 20 sec. Only 1 Boon may be active at a time.",https://db.exil.es/spell/502798,True
+502798,databank,Boon of the Turtle,"$?s804180[Summon a |cffffffffSpirit Turtle|r, capable of dealing damage to multiple enemies and reducing your damage taken.][Increase your armor by $s1, reduce damage taken by $s3%, and deal $s2 Nature Damage to melee attackers for $d.
+
+Only 1 |cffffffffBoon|r may be active at a time.
+
+Applies |cffffffffLesser Boon of the Turtle|r for $997793d.
+@ext:@s:997793:0@:ext@]",,True
+502799,exiles,Boon of the Turtle,"Increase your armor by 3005.848, reduce damage taken by 5%, and deal 175.34 to 182.34 Nature Damage to melee attackers for 20 sec. Only 1 Boon may be active at a time.",https://db.exil.es/spell/502799,True
+502799,databank,Boon of the Turtle,"$?s804180[Summon a |cffffffffSpirit Turtle|r, capable of dealing damage to multiple enemies and reducing your damage taken.][Increase your armor by $s1, reduce damage taken by $s3%, and deal $s2 Nature Damage to melee attackers for $d.
+
+Only 1 |cffffffffBoon|r may be active at a time.
+
+Applies |cffffffffLesser Boon of the Turtle|r for $997793d.
+@ext:@s:997793:0@:ext@]",,True
+502800,exiles,Boon of the Turtle,"Increase your armor by 3329.248, reduce damage taken by 5%, and deal 205.3 to 213.3 Nature Damage to melee attackers for 20 sec. Only 1 Boon may be active at a time.",https://db.exil.es/spell/502800,True
+502800,databank,Boon of the Turtle,"$?s804180[Summon a |cffffffffSpirit Turtle|r, capable of dealing damage to multiple enemies and reducing your damage taken.][Increase your armor by $s1, reduce damage taken by $s3%, and deal $s2 Nature Damage to melee attackers for $d.
+
+Only 1 |cffffffffBoon|r may be active at a time.
+
+Applies |cffffffffLesser Boon of the Turtle|r for $997793d.
+@ext:@s:997793:0@:ext@]",,True
+502801,exiles,Boon of the Turtle,"Summon a Spirit Turtle, capable of dealing damage to multiple enemies and reducing your damage taken.",https://db.exil.es/spell/502801,True
+502801,databank,Boon of the Turtle,"$?s804180[Summon a |cffffffffSpirit Turtle|r, capable of dealing damage to multiple enemies and reducing your damage taken.][Increase your armor by $s1, reduce damage taken by $s3%, and deal $s2 Nature Damage to melee attackers for $d.
+
+Only 1 |cffffffffBoon|r may be active at a time.
+
+Applies |cffffffffLesser Boon of the Turtle|r for $997793d.
+@ext:@s:997793:0@:ext@]",,True
+502861,exiles,Spellwrath DEPRECATED,DEPRECATED,https://db.exil.es/spell/502861,True
+502861,databank,Spellwrath,Blast an enemy for $s1 Arcane Damage and apply |cffffffffSpellwrath|r for $524988d.@s:524988:0@,,True
+502862,exiles,Spellwrath DEPRECATED,DEPRECATED,https://db.exil.es/spell/502862,True
+502862,databank,Spellwrath,Blast an enemy for $s1 Arcane Damage and apply |cffffffffSpellwrath|r for $524988d.@s:524988:0@,,True
+502863,exiles,Spellwrath DEPRECATED,DEPRECATED,https://db.exil.es/spell/502863,True
+502863,databank,Spellwrath,Blast an enemy for $s1 Arcane Damage and apply |cffffffffSpellwrath|r for $524988d.@s:524988:0@,,True
+502864,exiles,Spellwrath DEPRECATED,DEPRECATED,https://db.exil.es/spell/502864,True
+502864,databank,Spellwrath,Blast an enemy for $s1 Arcane Damage and apply |cffffffffSpellwrath|r for $524988d.@s:524988:0@,,True
+502865,exiles,Spellwrath DEPRECATED,DEPRECATED,https://db.exil.es/spell/502865,True
+502865,databank,Spellwrath,Blast an enemy for $s1 Arcane Damage and apply |cffffffffSpellwrath|r for $524988d.@s:524988:0@,,True
+502866,exiles,Spellwrath DEPRECATED,DEPRECATED,https://db.exil.es/spell/502866,True
+502866,databank,Spellwrath,Blast an enemy for $s1 Arcane Damage and apply |cffffffffSpellwrath|r for $524988d.@s:524988:0@,,True
+502867,exiles,Spellwrath DEPRECATED,DEPRECATED,https://db.exil.es/spell/502867,True
+502867,databank,Spellwrath,Blast an enemy for $s1 Arcane Damage and apply |cffffffffSpellwrath|r for $524988d.@s:524988:0@,,True
+502868,exiles,Spellwrath DEPRECATED,DEPRECATED,https://db.exil.es/spell/502868,True
+502868,databank,Spellwrath,Blast an enemy for $s1 Arcane Damage and apply |cffffffffSpellwrath|r for $524988d.@s:524988:0@,,True
+502869,exiles,Spellwrath DEPRECATED,DEPRECATED,https://db.exil.es/spell/502869,True
+502869,databank,Spellwrath,Blast an enemy for $s1 Arcane Damage and apply |cffffffffSpellwrath|r for $524988d.@s:524988:0@,,True
+502889,exiles,Web Wrap,"Channels a beam of webbing at an enemy, reducing their movement speed by 60% and inflicting 2608.8 Nature Damage every 1 sec for 4 sec. While active, the target takes 30% increased damage from your other periodic damage effects. Can be used in any form.",https://db.exil.es/spell/502889,True
+502889,databank,Web Wrap,"Channels a beam of webbing at an enemy, reducing their movement speed by $s1% and inflicting ${$m2+$ppl2} Nature Damage every $t2 sec for $d.
+
+While active, the target takes $s3% increased damage from your other periodic damage effects.
+
+Can be used in any form.",,True
+503001,exiles,Water Bolt,"Hurls a watery bolt, inflicting 253.936 Frost damage. Focus: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by 0% for 10 sec.",https://db.exil.es/spell/503001,True
+503001,databank,Water Bolt,"Hurls a watery bolt, inflicting ${$m1+($PL*0.88-1*0.88)} Frost damage.
+
+|cffffffffFocus|r: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by $803046s3% for $803046d.",,True
+503002,exiles,Water Bolt,"Hurls a watery bolt, inflicting 305.448 Frost damage. Focus: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by 0% for 10 sec.",https://db.exil.es/spell/503002,True
+503002,databank,Water Bolt,"Hurls a watery bolt, inflicting ${$m1+($PL*0.88-1*0.88)} Frost damage.
+
+|cffffffffFocus|r: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by $803046s3% for $803046d.",,True
+503003,exiles,Water Bolt,"Hurls a watery bolt, inflicting 362.712 Frost damage. Focus: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by 0% for 10 sec.",https://db.exil.es/spell/503003,True
+503003,databank,Water Bolt,"Hurls a watery bolt, inflicting ${$m1+($PL*0.88-1*0.88)} Frost damage.
+
+|cffffffffFocus|r: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by $803046s3% for $803046d.",,True
+503004,exiles,Water Bolt,"Hurls a watery bolt, inflicting 421.976 Frost damage. Focus: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by 0% for 10 sec.",https://db.exil.es/spell/503004,True
+503004,databank,Water Bolt,"Hurls a watery bolt, inflicting ${$m1+($PL*0.88-1*0.88)} Frost damage.
+
+|cffffffffFocus|r: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by $803046s3% for $803046d.",,True
+503005,exiles,Water Bolt,"Hurls a watery bolt, inflicting 474.488 Frost damage. Focus: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by 0% for 10 sec.",https://db.exil.es/spell/503005,True
+503005,databank,Water Bolt,"Hurls a watery bolt, inflicting ${$m1+($PL*0.88-1*0.88)} Frost damage.
+
+|cffffffffFocus|r: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by $803046s3% for $803046d.",,True
+503006,exiles,Water Bolt,"Hurls a watery bolt, inflicting 533.752 Frost damage. Focus: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by 0% for 10 sec.",https://db.exil.es/spell/503006,True
+503006,databank,Water Bolt,"Hurls a watery bolt, inflicting ${$m1+($PL*0.88-1*0.88)} Frost damage.
+
+|cffffffffFocus|r: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by $803046s3% for $803046d.",,True
+503007,exiles,Water Bolt,"Hurls a watery bolt, inflicting 598.016 Frost damage. Focus: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by 0% for 10 sec.",https://db.exil.es/spell/503007,True
+503007,databank,Water Bolt,"Hurls a watery bolt, inflicting ${$m1+($PL*0.88-1*0.88)} Frost damage.
+
+|cffffffffFocus|r: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by $803046s3% for $803046d.",,True
+503008,exiles,Water Bolt,"Hurls a watery bolt, inflicting 688.528 Frost damage. Focus: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by 0% for 10 sec.",https://db.exil.es/spell/503008,True
+503008,databank,Water Bolt,"Hurls a watery bolt, inflicting ${$m1+($PL*0.88-1*0.88)} Frost damage.
+
+|cffffffffFocus|r: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by $803046s3% for $803046d.",,True
+503009,exiles,Water Bolt,"Hurls a watery bolt, inflicting 829.792 Frost damage. Focus: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by 0% for 10 sec.",https://db.exil.es/spell/503009,True
+503009,databank,Water Bolt,"Hurls a watery bolt, inflicting ${$m1+($PL*0.88-1*0.88)} Frost damage.
+
+|cffffffffFocus|r: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by $803046s3% for $803046d.",,True
+503010,exiles,Water Bolt,"Hurls a watery bolt, inflicting 1006.056 Frost damage. Focus: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by 0% for 10 sec.",https://db.exil.es/spell/503010,True
+503010,databank,Water Bolt,"Hurls a watery bolt, inflicting ${$m1+($PL*0.88-1*0.88)} Frost damage.
+
+|cffffffffFocus|r: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by $803046s3% for $803046d.",,True
+503011,exiles,Water Bolt,"Hurls a watery bolt, inflicting 1196.568 Frost damage. Focus: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by 0% for 10 sec.",https://db.exil.es/spell/503011,True
+503011,databank,Water Bolt,"Hurls a watery bolt, inflicting ${$m1+($PL*0.88-1*0.88)} Frost damage.
+
+|cffffffffFocus|r: Launches a secondary bolt of water that deals Frost Damage, and increases all healing you do by $803046s3% for $803046d.",,True
+503114,exiles,Linebreaker,Inflict Weapon Damage plus 172.032 to up to 0 enemies in a 12 yd line and reduce their movement speed by 40% for 6 sec.,https://db.exil.es/spell/503114,True
+503114,databank,Linebreaker,Inflict Weapon Damage plus ${$m1+$ppl1} to up to $i enemies in a $a1 yd line and reduce their movement speed by $504158s1% for $504158d.,,True
+503115,exiles,Linebreaker,Inflict Weapon Damage plus 335.464 to up to 0 enemies in a 12 yd line and reduce their movement speed by 40% for 6 sec.,https://db.exil.es/spell/503115,True
+503115,databank,Linebreaker,Inflict Weapon Damage plus ${$m1+$ppl1} to up to $i enemies in a $a1 yd line and reduce their movement speed by $504158s1% for $504158d.,,True
+503116,exiles,Linebreaker,Inflict Weapon Damage plus 512.008 to up to 0 enemies in a 12 yd line and reduce their movement speed by 40% for 6 sec.,https://db.exil.es/spell/503116,True
+503116,databank,Linebreaker,Inflict Weapon Damage plus ${$m1+$ppl1} to up to $i enemies in a $a1 yd line and reduce their movement speed by $504158s1% for $504158d.,,True
+503117,exiles,Linebreaker,Inflict Weapon Damage plus 629.552 to up to 0 enemies in a 12 yd line and reduce their movement speed by 40% for 6 sec.,https://db.exil.es/spell/503117,True
+503117,databank,Linebreaker,Inflict Weapon Damage plus ${$m1+$ppl1} to up to $i enemies in a $a1 yd line and reduce their movement speed by $504158s1% for $504158d.,,True
+503118,exiles,Linebreaker,Inflict Weapon Damage plus 855.984 to up to 0 enemies in a 12 yd line and reduce their movement speed by 40% for 6 sec.,https://db.exil.es/spell/503118,True
+503118,databank,Linebreaker,Inflict Weapon Damage plus ${$m1+$ppl1} to up to $i enemies in a $a1 yd line and reduce their movement speed by $504158s1% for $504158d.,,True
+503290,exiles,Ghostly Weapon,"Imbue your weapon with ghostly power for 15 sec, causing Reap, Dirge and Wraithblade to now strike an additional nearby enemy. While this effect is active, weapon attacks deal 212.8 Spectral Damage and generate 3% mana.",https://db.exil.es/spell/503290,True
+503290,databank,Ghostly Weapon,"Imbue your weapon with ghostly power for $d, causing |cffffffffReap|r, |cffffffffDirge|r and |cffffffffWraithblade|R  to now strike an additional nearby enemy.
+
+While this effect is active, weapon attacks deal ${$m1+$ppl1+$SP*0.22} Spectral Damage and generate $504331s1% mana.",,True
+503291,exiles,Ghostly Weapon,"Imbue your weapon with ghostly power for 15 sec, causing Reap, Dirge and Wraithblade to now strike an additional nearby enemy. While this effect is active, weapon attacks deal 345 Spectral Damage and generate 3% mana.",https://db.exil.es/spell/503291,True
+503291,databank,Ghostly Weapon,"Imbue your weapon with ghostly power for $d, causing |cffffffffReap|r, |cffffffffDirge|r and |cffffffffWraithblade|R  to now strike an additional nearby enemy.
+
+While this effect is active, weapon attacks deal ${$m1+$ppl1+$SP*0.22} Spectral Damage and generate $504331s1% mana.",,True
+503292,exiles,Ghostly Weapon,"Imbue your weapon with ghostly power for 15 sec, causing Reap, Dirge and Wraithblade to now strike an additional nearby enemy. While this effect is active, weapon attacks deal 569 Spectral Damage and generate 3% mana.",https://db.exil.es/spell/503292,True
+503292,databank,Ghostly Weapon,"Imbue your weapon with ghostly power for $d, causing |cffffffffReap|r, |cffffffffDirge|r and |cffffffffWraithblade|R  to now strike an additional nearby enemy.
+
+While this effect is active, weapon attacks deal ${$m1+$ppl1+$SP*0.22} Spectral Damage and generate $504331s1% mana.",,True
+503293,exiles,Ghostly Weapon,"Imbue your weapon with ghostly power for 15 sec, causing Reap, Dirge and Wraithblade to now strike an additional nearby enemy. While this effect is active, weapon attacks deal 947 Spectral Damage and generate 3% mana.",https://db.exil.es/spell/503293,True
+503293,databank,Ghostly Weapon,"Imbue your weapon with ghostly power for $d, causing |cffffffffReap|r, |cffffffffDirge|r and |cffffffffWraithblade|R  to now strike an additional nearby enemy.
+
+While this effect is active, weapon attacks deal ${$m1+$ppl1+$SP*0.22} Spectral Damage and generate $504331s1% mana.",,True
+503294,exiles,Ghostly Weapon,"Imbue your weapon with ghostly power for 15 sec, causing Reap, Dirge and Wraithblade to now strike an additional nearby enemy. While this effect is active, weapon attacks also generate 3% of your maximum mana and deal 1551 Spectral Damage.",https://db.exil.es/spell/503294,True
+503294,databank,Ghostly Weapon,"Imbue your weapon with ghostly power for $d, causing |cffffffffReap|r, |cffffffffDirge|r and |cffffffffWraithblade|R  to now strike an additional nearby enemy.
+
+While this effect is active, weapon attacks also generate $504331s1% of your maximum mana and deal ${$m1+$ppl1+$SP*0.22} Spectral Damage.",,True
+503415,exiles,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing 59.56 Physical Damage and slowing their movement speed by 40% for 6 sec.",https://db.exil.es/spell/503415,True
+503415,databank,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing $s1 Physical Damage and slowing their movement speed by $s3% for $d.",,True
+503416,exiles,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing 86.084 Physical Damage and slowing their movement speed by 40% for 6 sec.",https://db.exil.es/spell/503416,True
+503416,databank,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing $s1 Physical Damage and slowing their movement speed by $s3% for $d.",,True
+503417,exiles,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing 119.608 Physical Damage and slowing their movement speed by 40% for 6 sec.",https://db.exil.es/spell/503417,True
+503417,databank,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing $s1 Physical Damage and slowing their movement speed by $s3% for $d.",,True
+503418,exiles,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing 164.132 Physical Damage and slowing their movement speed by 40% for 6 sec.",https://db.exil.es/spell/503418,True
+503418,databank,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing $s1 Physical Damage and slowing their movement speed by $s3% for $d.",,True
+503419,exiles,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing 218.82 Physical Damage and slowing their movement speed by 40% for 6 sec.",https://db.exil.es/spell/503419,True
+503419,databank,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing $s1 Physical Damage and slowing their movement speed by $s3% for $d.",,True
+503420,exiles,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing 302.344 Physical Damage and slowing their movement speed by 40% for 6 sec.",https://db.exil.es/spell/503420,True
+503420,databank,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing $s1 Physical Damage and slowing their movement speed by $s3% for $d.",,True
+503421,exiles,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing 423.868 Physical Damage and slowing their movement speed by 40% for 6 sec.",https://db.exil.es/spell/503421,True
+503421,databank,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing $s1 Physical Damage and slowing their movement speed by $s3% for $d.",,True
+503422,exiles,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing 603.392 Physical Damage and slowing their movement speed by 40% for 6 sec.",https://db.exil.es/spell/503422,True
+503422,databank,Rending Axe,"You hurl your Thrown Weapon at an enemy, dealing $s1 Physical Damage and slowing their movement speed by $s3% for $d.",,True
+704095,exiles,Rain of Arrows,"Exhausts Archery Points Calls down a rain of arrows upon the target area, causing 110% Ranged Weapon Damage plus 101 to 103. Damage increased by 40% for each Archery Point.",https://db.exil.es/spell/704095,True
+704095,databank,Rain of Arrows,"|cff93cceaExhausts Archery Points|r
+Calls down a rain of arrows upon the target area, causing $s1% Ranged Weapon Damage plus $s2.
+
+Damage increased by $801429s1% for each |cffffffffArchery Point|r.",,True
+704134,exiles,Purify,"Cleanses a friendly target, removing 1 curse effect.",https://db.exil.es/spell/704134,True
+704134,databank,Wash,"Cleanses a friendly target, removing $s2 curse effect.",,True
+704140,exiles,Primordial Engraving,Deprecated,https://db.exil.es/spell/704140,True
+704140,databank,Primordial Engraving,"Primordial runes are engraved on your body.
+
+Increases spell power by $560273s1% of Intellect and grants |cffffffffManastrike|r and auto attacks a $h% chance to generate a stack of |cffffffffPrimordial Energy|r and 1 |cffffffff|cffffffffInscribed Rune|r|r.@s:804316:0@
+
+Only 1 |cffffffffEngraving|r can be active at a time.",,True
+704160,exiles,Piercing Cry,"Unleash a piercing cry, fearing all enemies within 8 yds for 8 sec. At the end of the duration, reduce the movement speed of enemies by 30% for 5 sec.",https://db.exil.es/spell/704160,True
+704160,databank,Piercing Cry,"Unleash a piercing cry, fearing all enemies within $a1 yds for $d. 
+
+At the end of the duration, reduce the movement speed of enemies by $520230s1% for $520230d.",,True
+704376,exiles,Nether Lance,"Hurl a bolt of fel at an enemy dealing 141 Shadowflame Damage that bounces to up to 5 others nearby, triggering a Felstrike on each. Fel Empowerment transforms this ability into Felspears.@ext::ext@",https://db.exil.es/spell/704376,True
+704376,databank,Nether Lance,"Hurl a bolt of fel at an enemy dealing ${$m1+$ppl1+$sp*0.52} Shadowflame Damage that bounces to up to 5 others nearby, triggering a |cffffffffFelstrike|r on each.
+
+|cffffffffFel Empowerment|r transforms this ability into |cffffffffFelspears|r.@ext:@s:706532:0@:ext@",,True
+704507,exiles,Totem of Hir'eek DEPRECATED,Place a totem on the ground for 10 sec that reduces the movement speed of all enemies within 0 yds by 0%.,https://db.exil.es/spell/704507,True
+704507,databank,Totem of Hir'eek,"Periodic damage dealt now grants |cffffffffTotem of Hir'eek|r, causing your next |cffffffffBatscreech Blast|r, |cFFFFFFFFGift of The Loa|r or |cffffffffHex of Death|r cooldown to be reduced by $704508s1%, stacking $704508u times.",,True
+704572,exiles,Jab,DEPRECATED,https://db.exil.es/spell/704572,True
+704572,databank,Jab,DEPRECATED,,True
+800053,exiles,Fray Magic,"Interrupts an enemy's spell cast, preventing any spell from that school from being cast for 4 sec. While active, the enemy's spells and abilities have 0% increased resource costs.",https://db.exil.es/spell/800053,True
+800053,databank,Fray Magic,"Interrupts an enemy's spell cast, preventing any spell from that school from being cast for $d.$?s706120[
+
+While active, the enemy's spells and abilities have $s2% increased resource costs.][]",,True
+800232,exiles,Spears of Light,Inflict 219 Holy Damage to 0 enemies within 10 yds of an enemy target. Generates 10 rage and 2 Solar Power. Dawn: Instant cast.,https://db.exil.es/spell/800232,True
+800232,databank,Spears of Light,"Inflict ${$m1+$ppl1+$SP*0.4+$AP*0.15} Holy Damage to $i enemies within $a1 yds of an enemy target. 
+
+Generates $/10;706868s3 rage and 2 |cffffffffSolar Power|r.
+
+|cffffffffSunset|r: Instant cast.",,True
+800264,exiles,Hack,Hack an enemy dealing 91.8 Physical Damage and reducing their movement speed by 61% for 8 sec.,https://db.exil.es/spell/800264,True
+800264,databank,Hack,Hack an enemy dealing $s1 Physical Damage and reducing their movement speed by $560018s1% for $560018d.,,True
+800268,exiles,Craft: Quilted Padding,"Craft a Quilted Padding for an ally, increasing Stamina by 2 for 1 hour.",https://db.exil.es/spell/800268,True
+800268,databank,Craft: Quilted Padding,"Craft a |cffffffffQuilted Padding|r for an ally, increasing Stamina by $s1 for $d.",,True
+800271,exiles,Craft: Tassel Guard,"Craft Tassel Guards for an ally, increasing their armor by 173 to 177 for 1 hour.",https://db.exil.es/spell/800271,True
+800271,databank,Craft: Tassel Guard,"Craft |cffffffffTassel Guards|r for an ally, increasing their armor by $s1 for $d.",,True
+800312,exiles,Spartan Kick,"Kick an enemy, dealing 666 Physical Damage and knocking them back a great distance. Usable while moving.",https://db.exil.es/spell/800312,True
+800312,databank,Spartan Kick,"Kick an enemy, dealing ${$m2+$ppl2} Physical Damage and knocking them back a great distance.
+
+This ability can be used while moving.",,True
+800314,exiles,King's Valor DEPRECATED,"For 15 sec, your energy regeneration is increased by 40%. Grants Motivation.",https://db.exil.es/spell/800314,True
+800314,databank,King's Valor,"Increases your block value by $s2% and your energy regeneration by $s1% for $d.
+
+Grants |cffffffffMotivation|r.@s:500256:0@
+
+Useable while stunned.",,True
+800369,exiles,Whisper of Yogg-Saron,"Whisper the word of Yogg-Saron to an ally that bounces to up to 4 allies, healing them for 259. Each jump reduces the effectiveness of the heal by 40%.",https://db.exil.es/spell/800369,True
+800369,databank,Whisper of Yogg-Saron,"Heal an ally for ${$m1+$ppl1} and generate 1 |cffffffffVoid Rune|r.
+
+|cffffffffHerald of Yogg-Saron|r: Healing increased by $805148s2%.",,True
+800377,exiles,Moonflow,Heal up to 0 allies within 30 yds for 234.4. Lunar Eclipse: Incurs no cooldown and consumes Scattered Stars from enemies within 30 yds.,https://db.exil.es/spell/800377,True
+800377,databank,Moonflow,"Heal up to $i allies within $a1 yds for ${$m1+($PL*1.2-12*1.2)}@ifknown:704759: and restores $704759s1% maximum mana:ifknown@.
+
+|cffffffffLunar Eclipse|r: Incurs no cooldown and consumes |cffffffffScattered Stars|r from enemies within $a2 yds.",,True
+800383,exiles,Wrist Snap,"Snap an enemy's wrist with a powerful throwing axe, interrupting them and preventing any spell from that school from being cast for 4 sec.",https://db.exil.es/spell/800383,True
+800383,databank,Wrist Snap,"Snap an enemy's wrist$?s92082[ with a powerful throwing axe][], interrupting them and preventing any spell from that school from being cast for $d.",,True
+800433,exiles,Eldritch Devastation,Deprecated,https://db.exil.es/spell/800433,True
+800433,databank,Eldritch Devastation,"Channel dark magic into the enemy for up to $d, reducing their movement speed by $800435s1%.
+
+Drains 5 |cffffffffInsanity|r and increases it's damage dealt every $t2 sec while channeling.
+
+Ending this spell will deal ${$800434m1+($pl*4.5)} Shadow Damage instantly and an additional ${$800434m2+($pl*1.3)} Shadow Damage every $800434t2 sec over $800434d. ",,True
+800445,exiles,Flow of Nether,Critically striking with spells and abilities increases your movement speed by 15% for 1.5 sec.,https://db.exil.es/spell/800445,True
+800445,databank,Flow of Nether,"Spell haste increased by $s2%.
+
+Gain $560309s1% increased movement speed for $805875d whenever you critical strike with a spell.",,True
+800455,exiles,Valkyrie Spear,"Throw a flaming spear at an enemy, causing 169 Fire Damage. The spear also scorches the ground on impact, causing an additional 49 damage every 1.5 sec to up to 0 enemies in a 5 yd area for 15 sec.",https://db.exil.es/spell/800455,True
+800455,databank,Valkyrie Spear,"Throw a flaming spear at an enemy, causing ${$m1+$ppl1} Fire Damage.
+
+The spear also scorches the ground on impact, causing an additional ${$m2+$ppl2} damage every $800656t1 sec to up to $800656i enemies in a $800656a1 yd area for $800656d.",,True
+800535,exiles,Bot: Crash & Thrash,You and your Clockwork Assistant strike up to 0 enemies within 5 yds for 172 Physical Damage.,https://db.exil.es/spell/800535,True
+800535,databank,Bot: Crash & Thrash,You and your |cffffffffClockwork Assistant|r strike up to $800536i enemies within $800536a1 yds for ${$m2+$ppl2} Physical Damage.,,True
+800570,exiles,Bot: Hydraulic Strike,"Commands your Clockwork Assistant to deliver a devastating attack to an enemy, causing 402 Physical Damage.",https://db.exil.es/spell/800570,True
+800570,databank,Bot: Hydraulic Strike,"Commands your |cffffffffClockwork Assistant|r to deliver a devastating attack to an enemy, causing ${$m2+$ppl2} Physical Damage.
+
+Shares a cooldown with |cffffffffBot: Crash & Thrash|r.",,True
+800582,exiles,Hydraulic Charge,"Charge an enemy with your Clockwork Assistant and strike as one, each dealing 362 Physical Damage and rooting enemies in place for 2 sec.",https://db.exil.es/spell/800582,True
+800582,databank,Hydraulic Charge,"Charge an enemy with your |cffffffffClockwork Assistant|r and strike as one, each dealing ${$m3+$ppl3} Physical Damage and rooting enemies in place for $800583d.",,True
+800625,exiles,Seraph's Hammer,"Hurl a burning hammer at an enemy that inflicts 85.6 to 91.6 Holyflame damage and Slows the target's Movement Speed by 40% for 4 sec. If the target is affected by Purging Flames, reset the cooldown of Glorious Execution and generate 15 Rage.",https://db.exil.es/spell/800625,True
+800625,databank,Seraph's Hammer,"Hurl a burning hammer at an enemy that inflicts $s1 Holyflame damage and Slows the target's Movement Speed by $800608s1% for $800608d.
+
+If the target is affected by Purging Flames, reset the cooldown of Glorious Execution and generate 15 Rage.",,True
+800713,exiles,Runic Familiar DEPRECATED,"Summon a Runic Familiar at target location for 30 sec, that will periodically launch missiles at an enemy, dealing 218 to 220 Arcane Damage every 2 sec.",https://db.exil.es/spell/800713,True
+800713,databank,Conjure: Runic Familiar,"Summons a |cffffffffRunic Familiar|r to assist you. While within $705547a2 yds of it, you gain |cFFFFFFFFRunic Protection Aura|r.
+
+This companion cannot attack, and will not regenerate health naturally.
+@s:705547:0@",,True
+800718,exiles,Deprecated,Deprecated,https://db.exil.es/spell/800718,True
+800718,databank,Warp,"Warp to the targeted location, dealing ${$m2+$ppl2} Arcane Damage, and granting |cffffffffCosmic Impact|r for $800738d.@s:800738:0@
+
+Can be cast while casting.",,True
+800720,exiles,Deprecated,Deprecated,https://db.exil.es/spell/800720,True
+800720,databank,Familiar: Field of Slowness,"Your |cffffffffRunic Familiar|r emanates a |cffffffffField of Slowness|r, enemies within $560303a1 yds of the familiar have $560303s1% reduced haste.
+
+Lasts until cancelled.",,True
+800721,exiles,Deprecated,Deprecated,https://db.exil.es/spell/800721,True
+800721,databank,Familiar: Field of Destruction,"Your |cffffffffRunic Familiar|r emanates a |cffffffffField of Destruction|r, enemies within $560308a1 yds of the familiar take $560308s1% increased Magic Damage.
+
+Lasts until cancelled.",,True
+800725,databank,Unleash Runes,"|cff93cceaConsumes Inscribed Runes|r
+Unleash runes upon an enemy dealing ${$800724m1+$800724ppl1} Arcane Damage every $t1 sec for $d.
+
+Duration increased by $/1000;800305s1 sec for each |cffffffff|cffffffffInscribed Rune|r|r. 
+
+Usable while moving.
+
+Grants |cffffffffCosmic Impact|r for $800738d.@s:800738:0@",,True
+800745,exiles,Deprecated,Deprecated,https://db.exil.es/spell/800745,True
+800745,databank,Familiar: Cosmic Force,"Stun up to $800742i enemies within $800742a1 yds of your |cffffffffRunic Familiar|r for $800742d. 
+
+Your next |cffffffffFamiliar: Warpslide|r within $560041d deals $560041s1% increased damage to affected enemies.",,True
+800746,exiles,Deprecated,Deprecated,https://db.exil.es/spell/800746,True
+800746,databank,Familiar: Warpslide,"Your |cffffffffRunic Familiar|r rushes $800690a1 yds toward you, dealing ${$800690m1+$800690ppl1+$SP*0.758+$INT*1.25} Arcane Damage, scaling with Intellect, to enemies it passes through and knocking them back.",,True
+800747,exiles,Deprecated,Deprecated,https://db.exil.es/spell/800747,True
+800747,databank,Familiar: Magic Well,"Your |cffffffffRunic Familiar|r explodes with magic, pulling in all enemies and reducing their movement speed by $800832s1% for $800744d.$?s300581[
+
+While slowed by this effect, enemies take $300581s1% increased damage from |cffffffffDisplace Familiar|r.][]",,True
+800748,exiles,Controlled Magic,Increases the chance to trigger Wild Magic by 10% and removes its mana burn.,https://db.exil.es/spell/800748,True
+800748,databank,My Mind Is Guarded,Reduces the cooldown of |cffffffffMind Guard|r by $/1000;s1 sec.,,True
+800777,exiles,Black Guard,Summon 6 Shadow Bats to attack an enemy. Triggers Call of the Darkwing every 1 sec for 8 sec. @ext::ext@,https://db.exil.es/spell/800777,True
+800777,databank,Black Guard,"$?a524861[|cffffffff][|cffff3232]Requires Cursed Form|r
+Instantly generate $s1% maximum rage and summon a |cffffffffShadow Worgen Darkcaster|r to aid you in combat for $d.
+
+While active, you generate $536272s1% maximum health every $t3 sec.",,True
+800853,databank,Swoop,"Take on the form of a crow for $d, increasing movement speed by $s1% and granting immunity to snares.
+
+Removes active roots and snares on cast.",,True
+800883,exiles,Leg Strike,Requires Scorpid or Stalker Form 3 Charges 12 sec recharge Strike up to 4 enemies for 142 Stormstrike Damage and generate 15 rage.,https://db.exil.es/spell/800883,True
+800883,databank,Leg Strike,"$?a803184[|cffffffff][|cffff3232]Requires Scorpid or Stalker Form|r
+|cffffffff3 Charges|r
+|cffffffff12 sec recharge|r
+Strike up to 4 enemies for ${$m1+$ppl1+$SP*.55+$AP*.15} Stormstrike Damage and generate $/10;504374s1 rage.",,True
+800885,exiles,Widow's Kiss,"Requires Stalker Form Bite an enemy for 222 Shadow Damage, increasing your melee haste by 20% for 4 sec. If the target is affected by Lethal Toxin, consume it to afflict them with Leech Poison, leeching health over time.",https://db.exil.es/spell/800885,True
+800885,databank,Widow's Kiss,"$?a800841[|cffffffff][|cffff3232]Requires Stalker Form|r
+Bite an enemy for ${$m1+$ppl1} Shadow Damage, increasing your melee haste by $804118s2% for $804118d.$?s705954[
+
+If the target is affected by |cffffffffLethal Toxin|r, consume it to afflict them with |cffffffffLeech Poison|r, leeching health over time.][]",,True
+800888,exiles,Fang of Shadra,"Requires Stalker Form Bite an enemy for 273 Plague Damage, refreshing 1 Leg Strike charge. This spell always critically strikes and generates 10 rage. If the target is affected by 2 stacks of Lethal Toxin, consume them to deal additional 579 Nature Damage. If the target is affected by Leech Poison, afflict them with Dread Poison for 8 sec.",https://db.exil.es/spell/800888,True
+800888,databank,Fang of Shadra,"$?a800841[|cffffffff][|cffff3232]Requires Stalker Form|r
+Bite an enemy for ${$m1+$ppl1} Plague Damage$?s706959[, refreshing 1 |cffffffffLeg Strike|r charge][]. 
+
+This spell always critically strikes and generates $/10;806941s1 rage.$?s706958[
+
+If the target is affected by 2 stacks of |cffffffffLethal Toxin|r, consume them to deal additional ${$504379m1+$504379ppl1} Nature Damage.][]$?s705951[
+
+If the target is affected by |cffffffffLeech Poison|r, afflict them with |cffffffffDread Poison|r for $800884d.@s:800884:0@][]",,True
+800896,exiles,Paralyze,"Requires Scorpid or Stalker Form Puts an enemy to sleep for up to 4 sec. Only one enemy can be asleep at a time. Any damage caused will awaken them. While Tunneling, the cooldown of this ability is reduced by 80% and duration increased by 4 sec but can only affect enemies that are not in combat.",https://db.exil.es/spell/800896,True
+800896,databank,Paralyze,"$?a803184[|cffffffff][|cffff3232]Requires Scorpid or Stalker Form|r
+Puts an enemy to sleep for up to $560647d. Only one enemy can be asleep at a time. Any damage caused will awaken them.
+
+While |cffffffffTunneling|r, the cooldown of this ability is reduced by $800906s2% and duration increased by $520596s1%.",,True
+800897,exiles,Vizier's Gift,Heal an ally and yourself for 144.88 and refresh the duration of Shadra's Vigil by 30 sec and applies your Fang Venom effects. Can only be used on allies affected by Shadra's Vigil.,https://db.exil.es/spell/800897,True
+800897,databank,Vizier's Gift,"Heal an ally and yourself for ${$m1+$ppl1} and refresh the duration of |cffffffffShadra's Vigil|r by $/1000;s2 sec$?s680797[ and applies your |cffffffffFang Venom|r effects][].
+
+Can only be used on allies affected by |cffffffffShadra's Vigil|r. ",,True
+800900,exiles,Ritual Healing,"Channel your life force into an ally for 5 sec, increasing the effectiveness of active periodic healing spells by 20%. Every 1 sec, you consume 2 sec of Shadra's Vigil from the target to heal them for 57 and restore 0% maximum mana.",https://db.exil.es/spell/800900,True
+800900,databank,Ritual Healing,"Channel your life force into an ally player for $d, increasing the effectiveness of active periodic healing spells by $s3%.
+
+Every $t1 sec, you consume $/1000;800908s1 sec of |cffffffffShadra's Vigil|r from the target to heal them for  ${$m1+$ppl1}$?s503918[ and restore $503918s1% maximum mana][].",,True
+801239,exiles,Gust,"Requires Fel Empowerment Deal 339 Chaos Damage to 0 enemies in a 12 yd cone, reducing magic resistance by 15% for 10 sec.",https://db.exil.es/spell/801239,True
+801239,databank,Gust,"$?a804216[|cffffffff][|cffff3232]Requires Demon Form|r
+Deal ${$m1+$ppl1+$SP*0.44+$AP*0.385} Chaos Damage to $i enemies in a $a1 yd cone, reducing magic resistance by $s2% for $d.",,True
+801267,exiles,Chronobeam,"Rapidly age an enemy target over 2 sec, dealing 241.08 Chaos Damage every 0.5 sec.",https://db.exil.es/spell/801267,True
+801267,databank,Chronobeam,"Rapidly age an enemy target over $d, dealing ${$m1+$ppl1+$SP*0.286877} Chaos Damage every $t1 sec.",,True
+801296,exiles,Reflection,"Place a barrier upon yourself, healing for 322.84 and causing them to reflect the next harmful spell within 2 sec.",https://db.exil.es/spell/801296,True
+801296,databank,Reflection,"You place a barrier upon an ally, healing them for ${$m1+$ppl1} and causing them to reflect the next harmful spell within $d.",,True
+801298,exiles,Flashback,"Instantly finishes an ally's current cooldowns. After being targeted by this spell, Flashback cannot be cast on the ally again for 2 min.",https://db.exil.es/spell/801298,True
+801298,databank,Flashback,"Instantly finishes an ally's current cooldowns.
+
+After being targeted by this spell, |cffffffffFlashback|r cannot be cast on the ally again for $802867d.",,True
+801321,exiles,Shudder Scythe,Deprecated,https://db.exil.es/spell/801321,True
+801321,databank,Shudder Scythe,"$?a803031[|cffffffff][|cffff3232]Requires Soul Infusion|r
+Deliver 4 swift attacks over 0.4 sec, each dealing ${$801322m2+$801322ppl2+$SP*.155+$AP*.1985} Physical Damage and healing for 25% of the damage dealt.$?s520055[ plus ${$804527m1+$804527ppl1+$SP*0.264} Shadow Damage with an off-hand weapon.][]",,True
+801329,databank,Withering Touch,"Touch an enemy with a ghostly finger, interrupting casting and preventing any spell from that school from being cast for $d.$?s705430[
+
+For the same duration, the target deals $s1% reduced damage. Fails against enemies immune to crowd control.][]",,True
+801330,exiles,Reave,"Requires Soul Infusion Strike in a flurry of souls, dealing 136.28 Shadow Damage to up to 0 enemies within 8 yds. Deals 90 Shadow Damage over 14 sec, healing for 50% of the damage dealt.",https://db.exil.es/spell/801330,True
+801330,databank,Reave,"$?a803031[|cffffffff][|cffff3232]Requires Soul Infusion|r
+Strike in a flurry of souls, dealing $s1 Shadow Damage to an enemy.
+
+Deals $s3 Shadow Damage over $801336d to affected targets, healing for 50% of the damage dealt over time.",,True
+801408,exiles,Righteous Lunge (Deprecated),"Requires Follow Up A holy Follow Up that strikes for 326 Physical Damage, and grants a Combo. Combo: Increases the critical damage of Follow Ups by 10%.",https://db.exil.es/spell/801408,True
+801408,databank,Righteous Lunge (Deprecated),"$?a704574[|cffffffff][|cffff3232]$?a704575[|cffff3232][]Requires Follow Up|r
+A holy |cffffffffFollow Up|r that strikes for ${$SP*0.225+$AP*0.525+$m1+$ppl1} Physical Damage, and grants a |cffffffffCombo|r.
+
+|cffffffffCombo:|r Increases the critical damage of |cffffffffFollow Ups|r by $706586s1%.",,True
+801587,exiles,Deprecated,Deprecated,https://db.exil.es/spell/801587,True
+801587,databank,Dinomancy: Raptor Ambush,"$?s504417[|cffffffffInvokes Gonk|r
+][]Summons $s1 |cffffffffRaptors|r at the location of a target enemy for $d, and reduces the enemy's movement speed by $s2% for the same duration.",,True
+801605,exiles,Deprecated,Deprecated,https://db.exil.es/spell/801605,True
+801605,databank,Dinomancy: Diemetradon,"$?s504417[|cffffffffInvokes Gonk|r
+][]Summon a |cffffffffDiemetradon|r to spit poison at your enemies for up to $d.
+
+Can be used while moving.",,True
+801606,exiles,Deprecated,Deprecated,https://db.exil.es/spell/801606,True
+801606,databank,Dinomancy: Raptor's Call,"$?s504417[|cffffffffInvokes Gonk|r
+][]Summons $s1 |cffffffffRaptors|r to tear your enemies apart for $d.",,True
+801647,exiles,Buckshot Rounds,"Maximum Ammunition: 4 Equip your Buckshot Rounds and instantly Reload. While equipped, Blackpowder Shot has a 5 yd range and shoots a Buckshot Round. Repair Shot has a 100% increased mana cost while active.",https://db.exil.es/spell/801647,True
+801647,databank,Buckshot Rounds,"|cffffffffMaximum Ammunition: 4|r
+Equip your |cffffffffBuckshot Rounds|r and instantly |cffffffffReload|r.
+
+While equipped, |cFFFFFFFFBlackpowder Shot|r becomes instant, has $s1 yds reduced range, and hits $802962i enemies in a cone.
+
+@ext:|cffffffffRepair Shot|r has a $801166s3% increased mana cost while active.:ext@",,True
+801648,exiles,Standard Rounds,"Maximum Ammunition: 8 Equip your Standard Rounds and instantly Reload. While equipped, Blackpowder Shot shoots a Standard Round.",https://db.exil.es/spell/801648,True
+801648,databank,Standard Rounds,"|cffffffffMaximum Ammunition: 8|r
+Equip your |cffffffffStandard Rounds|r and instantly |cffffffffReload|r.$?s801647[
+
+While equipped, |cffffffffBlackpowder Shot|r has a 30 yd range and 1 sec cast time.][]",,True
+801651,exiles,Explosive Rounds,"Maximum Ammunition: 6 Equip your Explosive Rounds and instantly Reload. While equipped, Blackpowder Shot shoots an Explosive Round.",https://db.exil.es/spell/801651,True
+801651,databank,Explosive Rounds,"|cffffffffMaximum Ammunition: 6|r
+Equip your |cffffffffExplosive Rounds|r and instantly |cffffffffReload|r.
+
+While equipped, |cffffffffBlackpowder Shot|r shoots an |cFFFFFFFFExplosive Round|r.@s:524975:0@",,True
+801671,exiles,Dreadful Screech,Deprecated,https://db.exil.es/spell/801671,True
+801671,databank,Dreadful Screech,"|cffffffffInvokes Hir'eek|r
+Fear nearby enemies within $a1 yds for $d.
+
+Damage caused may interrupt the effect.",,True
+801673,exiles,Umbral Glaive,Deprecated,https://db.exil.es/spell/801673,True
+801673,databank,Umbral Glaive,Deprecated,,True
+801675,exiles,Mojo Talisman,Use the power of a mojo talisman to jump to an ally or enemy target.,https://db.exil.es/spell/801675,True
+801675,databank,Panther's Pounce,"|cffffffffInvokes Bwonsamdi|r
+Jump to an ally or enemy target and increase your movement speed by $680885s1% for $680885d.",,True
+801681,exiles,Devotion of Kimbul,Deprecated,https://db.exil.es/spell/801681,True
+801681,databank,Devotion of Bethekk,"Devote to Bethekk, granting $s3% increased movement speed.
+
+Abilities that |cffffffffInvoke Bethekk|r have $s2% reduced cooldown and $s1% increased effectiveness and grant |cffffffffAppeasement of Bethekk|r.
+
+Shares a 5 sec cooldown with other |cffffffffDevotions|r.
+@ext:@s:802096:0@:ext@",,True
+801682,exiles,Devotion of Zanza,Deprecated,https://db.exil.es/spell/801682,True
+801682,databank,Devotion of Hir'eek,"Devote to Hir'eek, giving Nature Damage a $h% chance to reset the cooldown of |cffffffffJuju Burst|r$?s804620[ and |cffffffffPterodax Saliva|r][].
+
+Abilities that |cffffffffInvoke Hir'eek|r have $s2% reduced cooldown and $s1% increased effectiveness and grant |cffffffffAppeasement of Hir'eek|r.
+
+Shares a 5 sec cooldown with other |cffffffffDevotions|r.
+@ext:@s:802266:0@:ext@",,True
+801684,exiles,Devotion of Lukou,Deprecated,https://db.exil.es/spell/801684,True
+801684,databank,Devotion of Sseratus,"Devote to Sseratus, increasing healing by $s3%.
+
+Abilities that |cffffffffInvoke Sseratus|r have $s2% reduced cooldown and $s1% increased effectiveness and grant |cffffffffAppeasement of Sseratus|r.
+
+Shares a 5 sec cooldown with other |cffffffffDevotions|r.
+@ext:This does not affect |cFFFFFFFFHealing Wards|r.@s:802098:0@:ext@",,True
+801694,exiles,Hextend DEPRECATED,Instantly deals 76 to 79 Nature Damage to an enemy. Extends the duration of any active Hexes on the target by 4 sec.,https://db.exil.es/spell/801694,True
+801694,databank,Hextend DEPRECATED,"Instantly deals |cff01cdfe$s1 Nature Damage|r to an enemy.
+
+Extends the duration of any active |cfffeff9eHexes|r on the target by $/1000;802932s1 sec.",,True
+801715,exiles,Overclock Weapon,"Power up your weapon, incresing the damage of Blackpowder Shot by 25% and increasing your movement speed by 40% for 0. Every 2 sec while active, you reload 1 Round. At the end of the duration, you Reload.",https://db.exil.es/spell/801715,True
+801715,databank,Overclock Weapon,"Power up your weapon, incresing the damage of |cffffffffBlackpowder Shot|r by $s2% and increasing your movement speed by $s3% for $d.
+
+Every $t1 sec while active, you reload 1 |cffffffffRound|r.
+
+At the end of the duration, you |cffffffffReload|r.",,True
+801750,exiles,Arctic Blast,"Hurl a massive shard of ice at an enemy, dealing 831.56 Frost Damage and generating 30% of your missing runic power.",https://db.exil.es/spell/801750,True
+801750,databank,Arctic Blast,"Hurl a massive shard of ice at an enemy, dealing ${$m1+$ppl1+$SP*1.15} Frost Damage and generating $s2% of your missing runic power.",,True
+801764,exiles,Massacre,DEPRECATED,https://db.exil.es/spell/801764,True
+801764,databank,Massacre,DEPRECATED,,True
+801810,exiles,Build: Clockwork Assistant,Construct a Clockwork Assistant to aid you in battle.,https://db.exil.es/spell/801810,True
+801810,databank,Build: Clockwork Assistant,Construct a |cffffffffClockwork Assistant|r to aid you in battle.,,True
+801819,exiles,Telescopic Focusing Lens,Deprecated Spell,https://db.exil.es/spell/801819,True
+801819,databank,Telescopic Focusing Lens,Deprecated Spell,,True
+801822,exiles,Blackpowder Barrage,Fire 8 Blackpowder Shots at an enemy over 2 sec and then Reload.,https://db.exil.es/spell/801822,True
+801822,databank,Blackpowder Barrage,"$?a801651[|cffffffff][|cffff3232]Requires Explosive Rounds|r
+Fire $?a805322[8][4] |cffffffffBlackpowder Shots|r at an enemy over $d.
+
+After $d, you |cffffffffReload|r.",,True
+801845,exiles,Vortex,"Wrap an enemy in fierce winds, dealing 211 Nature Damage and stunning them for 4 sec.",https://db.exil.es/spell/801845,True
+801845,databank,Vortex,"Wrap an enemy in fierce winds, dealing ${$m2+$ppl2} Nature Damage and stunning them for $806505d.",,True
+801846,exiles,Exhale,"Exhale a gust of wind in a 15 yd cone in front of you, dealing 109.2 Nature Damage and rooting up to 0 enemies in place for 8 sec. Damage caused may interrupt this effect. Enemies that cannot be rooted are knocked away instead.",https://db.exil.es/spell/801846,True
+801846,databank,Exhale,"Exhale a gust of wind in a $a1 yd cone in front of you, dealing ${$m2+$ppl2} Nature Damage and rooting up to $i enemies in place for $d.
+
+Damage caused may interrupt this effect. Enemies that cannot be rooted are knocked away instead.",,True
+801896,exiles,Vengeance,"Take vengeance upon up to 0 enemies in a 5 yd frontal cone, dealing 142.6 Chaos Damage and triggering 2 Felstrikes. (Combo] After using Vengeance: Twin Slice costs no energy. (Combo) After using Vengeance: Stomp heals you for 10% of your maximum health.",https://db.exil.es/spell/801896,True
+801896,databank,Vengeance,"Take vengeance upon up to $i enemies in a $a1 yd frontal cone, dealing ${$m2+$ppl2} Chaos Damage and triggering 2 |cffffffffFelstrikes|r.
+
+|cFFFFFFFF(Combo]|r After using |cFFFFFFFFVengeance|r: |cFFFFFFFFTwin Slice|r costs no energy.$?a520254[
+
+|cFFFFFFFF(Combo)|r After using |cffffffffVengeance|r: |cFFFFFFFFStomp|r heals you for $524681s1% of your maximum health.][]",,True
+801937,exiles,Fire Streak,Slagstone consumes 0.1 sec of Ignite from a target to generate an additional Breath Charge and incur a 0.001 sec reduced cooldown.,https://db.exil.es/spell/801937,True
+801937,databank,Fire Streak,|cffffffffBurst|r consumes $/1000;806028s1 sec of |cffffffffIgnite|r from a target to generate an additional |cffffffffBreath Charge|r and incur a $/1000;806028s2 sec reduced cooldown.,,True
+801944,exiles,Spectral Decay DEPRECATED,"Decay an enemy, dealing 115.4 Shadow Damage every 3 sec for 18 sec and reducing spell haste by 30%.",https://db.exil.es/spell/801944,True
+801944,databank,Spectral Decay,"Decay an enemy, dealing ${$m1+$ppl1} Shadow Damage every $t1 sec for $d and reducing spell haste by $560925s1%.",,True
+801965,exiles,Bend Will,Deprecated,https://db.exil.es/spell/801965,True
+801965,databank,Bend Will,Deprecated,,True
+801993,exiles,Arcing Comet,"2 Charges 30 sec recharge Attempt to disengage from combat, leaping forward and increasing your movement speed by 20% for 3 sec. While the movement speed increase is active, your falling speed is reduced significantly.",https://db.exil.es/spell/801993,True
+801993,databank,Arcing Comet,"Attempt to disengage from combat, leaping forward and increasing your movement speed by $s2% for $d. 
+
+While the movement speed increase is active, your falling speed is reduced significantly.",,True
+801995,exiles,Guided Reflexes,Deprecated,https://db.exil.es/spell/801995,True
+801995,databank,Guided Reflexes,Increases your parry chance by $s1% for $d. ,,True
+802010,exiles,Slash,Slashes an enemy for 100% Weapon Damage and generates 10 rage. Knocks enemies back a great distance,https://db.exil.es/spell/802010,True
+802010,databank,Slash,Slashes an enemy for $s1% Weapon Damage and generates $/10;500179s1 rage.$?s500901[ Knocks enemies back a great distance][],,True
+802012,exiles,Interrogate DEPRECATED,"Expose an enemy's darkest faults, dealing 65 Shadow Damage and incapacitating them for 5 sec and applying 8 stacks of Sensed Evil. Damage caused will end this effect. This ability grants Wickedness.",https://db.exil.es/spell/802012,True
+802012,databank,Interrogate,"Expose an enemy's darkest faults, dealing ${$m1+$ppl1} Shadow Damage and incapacitating them for $d and applying 8 stacks of |cffffffffSensed Evil|r.
+
+Damage caused will end this effect.
+
+This ability grants |cffffffffWickedness|r.",,True
+802077,exiles,Panacea deprecated,Requires Mortal Form Cures 1 disease effect from an ally.,https://db.exil.es/spell/802077,True
+802077,databank,Panacea,"$?a524861[|cffff3232][|cffffffff]Requires Mortal Form|r
+Cures $s1 disease effect from an ally.",,True
+802116,exiles,Draconic Assault,"Transform into a dragon for 15 sec, allowing you to fly but disabling all of your abilities. While in this form, you cannot stop moving. While active, every 1 sec you launch a molten boulder upon the nearest enemy down below you, dealing 255 Fire Damage to them and other enemies near them. Not useable indoors.",https://db.exil.es/spell/802116,True
+802116,databank,Draconic Assault,"Transform into a dragon for $d, allowing you to fly but disabling all of your abilities. While in this form, you cannot stop moving.
+
+While active, every $802103t3 sec you launch a molten boulder upon the nearest enemy down below you, dealing ${$802104m1+($pl*1.5)} Fire Damage to them and other enemies near them.
+
+Not useable indoors.",,True
+802123,databank,Unholy Command,"Command your active |cffffffffAnimates|r to perform a unique attack.
+
+Usable while casting or channeling.@ext:@s:801518:0@@s:570040:0@$?s805040[@s:801541:0@][]$?s801941[@s:302509:0@][]$?s805044[@s:805051:0@][]$?s805032[@s:801412:0@][]$?s805048[@s:802332:0@][]:ext@",,True
+802127,exiles,Plaguecraft,"Heals all of your active Undead for 100.28 every 1 sec for 10 sec, and causes them to taunt all enemies near them. While the healing effect is active, Undead also have increased armor and magic resistance based on your Intellect.",https://db.exil.es/spell/802127,True
+802127,databank,Plaguecraft,"Heals all of your active Undead for ${$m1+($pl*0.4)} every $806526t1 sec for $806526d, and causes them to taunt all enemies near them. 
+
+While the healing effect is active, Undead also have increased armor and magic resistance based on your Intellect.",,True
+802288,exiles,Tendon Slash DEPRECATED,"Slash an enemy for 22.2 to 23.2 Physical Damage, and reduce their movement speed by 20% for 8 sec, stacking 1 times. At 1 stacks, the enemy is also rooted for 0.",https://db.exil.es/spell/802288,True
+802288,databank,Tendon Slash DEPRECATED,"Slash an enemy for $s1 Physical Damage, and reduce their movement speed by $804653s1% for $804653d, stacking $804653u times.$?s705338[
+
+At $804653u stacks, the enemy is also rooted for $804654d.][]",,True
+802869,exiles,Pursuit,"Requires Cursed Form Appear behind an enemy, dealing 411 Physical Damage, stunning the target for 4 sec, and reducing all damage taken by 20% for 8 sec.",https://db.exil.es/spell/802869,True
+802869,databank,Pursuit,"$?a524861[|cffffffff][|cffff3232]Requires Cursed Form|r
+Leap upon an enemy, dealing ${$m2+$ppl2+$AP*0.226927} Physical Damage, stunning the target for $d, and reducing all damage taken by $680552s1% for $680552d.",,True
+802875,exiles,Pack Hunting,Deprecated,https://db.exil.es/spell/802875,True
+802875,databank,Pack Hunting,Deprecated,,True
+802992,exiles,Engrave Fists,"DEPRECATED, DOES NOT WORK ANYMORE. Requires Unarmed Increases attack power by 10% of Agility and Intellect. Equipping a weapon will disable this effect.",https://db.exil.es/spell/802992,True
+802992,databank,Engrave Fists,"DEPRECATED, DOES NOT WORK ANYMORE.
+$?a800686[|cffffffff][|cffff3232]Requires Unarmed|r
+Increases attack power by $s1% of Agility and Intellect.
+
+Equipping a weapon will disable this effect.",,True
+803691,exiles,Feats of Excellence,"Mark an ally for 10 min, causing them to grant Motivation to nearby allies when they interrupt an enemy. Only 1 ally can be affected by Feats of Glory at a time.",https://db.exil.es/spell/803691,True
+803691,databank,Feats of Excellence,"Mark an ally for |cfffeff9e$d|r, causing them to grant |cffffffffMotivation|r to nearby allies when they interrupt an enemy.
+
+Only 1 ally can be affected by Feats of Glory at a time.@s:803958:0@",,True
+803944,exiles,Tectonic Slam,Deprecated,https://db.exil.es/spell/803944,True
+803944,databank,Tectonic Slam,"Rupture the earth in a $803945a1 yd line in front of you, dealing ${$803945m2+$803945ppl2+$SP*.1+$AP*.37} Nature Damage to enemies and knocking them toward you.
+
+Consumes all stacks of |cffffffffTectonic Shift|r, dealing $803977s2% increased damage for each stack.",,True
+803952,exiles,Stoke,Instantly deals 89 Fire Damage to an enemy. Adds 10 sec to the duration of active Ignite and Blaze effects to enemies within 10 yds of the target.,https://db.exil.es/spell/803952,True
+803952,databank,Stoke,"Instantly deals ${$m2+$ppl1} Fire Damage to an enemy.
+
+Adds $/1000;s1 sec to the duration of active |cffffffffIgnite|r and |cffffffffBlaze|r effects to enemies within $a1 yds of the target.",,True
+803982,exiles,Toxic Renewal,"Instantly heals an ally for 105.6 to 111.6. For the next 30 sec, that ally cannot be targeted by this spell again.",https://db.exil.es/spell/803982,True
+803982,databank,Toxic Renewal,"Instantly heals an ally for $s1.
+
+For the next $805556d, that ally cannot be targeted by this spell again.",,True
+804006,exiles,Hellfire Form,"Consumes Deathfire stacks Transform into a Xorothian Demon for 20 sec, increasing magic damage dealt by 15% and emanating hellish flames every 2 sec, dealing 309 Fire Damage to up to 0 enemies. Lasts an additional 3 sec for each Deathfire stack consumed.",https://db.exil.es/spell/804006,True
+804006,databank,Hellfire Form,"|cffffffffConsumes Deathfire stacks|r
+Transform into a |cffffffffXorothian Demon|r for $d, increasing magic damage dealt by $s3% and emanating hellish flames every $t2 sec, dealing ${$m2+$ppl2} Fire Damage to up to $i enemies.
+
+Lasts an additional $/1000;500906s3 sec for each |cffffffffDeathfire|r stack consumed.",,True
+804167,exiles,Demonflare DEPRECATED,DEPRECATED,https://db.exil.es/spell/804167,True
+804167,databank,Demonflare,"Burn the enemy for ${$m2+$ppl2+$AP*.1+$SP*.15} Shadowflame Damage plus $o1 over $d$?s680718[, increase their chance to be critically struck by $s3%,][]. ",,True
+804180,exiles,Animal Companions (DEPRECATED),"Boons now instead summon a permanent spirit pet based on the Boon used to aid you in combat. Boons now also have a 30 sec cooldown and cost no rage. The pets mimic your Primal Charge ability, and scale with Strength. Only 1 Spirit can be active at a time.",https://db.exil.es/spell/804180,True
+804180,databank,Animal Companions (DEPRECATED),"|cffffffffBoons|r now instead summon a permanent spirit pet based on the |cffffffffBoon|r used to aid you in combat. |cFFFFFFFFBoons|r now also have a 30 sec cooldown and cost no rage.
+
+The pets mimic your |cffffffffPrimal Charge|r ability, and scale with Strength.
+
+Only 1 |cffffffffSpirit|r can be active at a time.",,True
+804229,exiles,Feardrinker,Instantly consume a fear effect from an ally to heal yourself for 5% of your maximum health. This spell is usable while feared.,https://db.exil.es/spell/804229,True
+804229,databank,Feardrinker,"Instantly consume a fear effect from an ally to heal yourself for $s2% of your maximum health.
+
+This spell is usable while feared.",,True
+804255,exiles,Guidance: Sanctify,Heals up to 0 targets within 15 yds of your Guided ally for 160.2. Only usable on allies with Solar Guidance active.,https://db.exil.es/spell/804255,True
+804255,databank,Guidance: Sanctify,"Heals up to $801949i targets within $801949a1 yds of your |cffffffffGuided|r ally for ${$m1+$ppl1}.
+
+Only usable on allies with |cffffffffSolar Guidance|r active.",,True
+804289,exiles,Jailer of Souls,Increases threat generation by 600%.,https://db.exil.es/spell/804289,True
+804289,databank,Jailer of Souls,Increases threat generation by $s1%.,,True
+804291,exiles,Burning Vengeance,Increases threat generation by 600% and causes Demon Form to activate for free when in combat but reduces damage dealt by 0%. Reaching 100 rage now blasts nearby enemies for 1 Shadowflame Damage.,https://db.exil.es/spell/804291,True
+804291,databank,Burning Vengeance,"Increases threat generation by $s1%$?s500067[ and causes |cffffffffDemon Form|r to activate for free when in combat][] but reduces damage dealt by $804299s1%.$?560503s[
+
+Reaching 100 rage now blasts nearby enemies for $705124s1 Shadowflame Damage.][]",,True
+804352,exiles,Brimstone Buckler,Consumes Deathfire Increases block chance by 20% and block value by 25% for 10 sec. Successful blocks while active trigger a Hellish Rebuke. Effectiveness increased by 1% per Deathfire consumed.,https://db.exil.es/spell/804352,True
+804352,databank,Brimstone Buckler,"|cffffffffConsumes Deathfire|r
+Increases block chance by $s1% and block value by $s2% for $d.$?s300389[
+
+Successful blocks while active trigger a |cffffffffHellish Rebuke|r.@s:804011:0@][]
+
+Effectiveness increased by $680816s2% per |cffffffffDeathfire|r consumed.",,True
+804504,exiles,Fate Guard DEPRECATED,Reduces all damage taken by 50% for 0.,https://db.exil.es/spell/804504,True
+804504,databank,Fate Guard,"Reduces all damage taken by $s1% and makes you immune to stun effects for $d.
+
+When the shield expires, deal ${$520375m1+$520375ppl1} Holy Damage to enemies within $520375a1 yds.",,True
+804549,exiles,Miasma,"Create an 8 yd cloud of poison at a location for 18 sec, causing 146.4 Nature Damage to 0 enemies within it every 2 sec. Every 2 sec, all enemies in the cloud are afflicted with Lethargy, reducing their movement speed by 3% for 8 sec, stacks up to 1 times.",https://db.exil.es/spell/804549,True
+804549,databank,Miasma,"Create an $a yd cloud of poison at a location for $d, causing ${$m1+$ppl1} Nature Damage to $i enemies within it every $t1 sec.$?s706940[
+
+Every $t2 sec, all enemies in the cloud are afflicted with |cffffffffLethargy|r, reducing their movement speed by $503952s1% for $804979d, stacks up to $804979u times.][]",,True
+804554,exiles,ARCHMAGE DECK DEPRECATED,,https://db.exil.es/spell/804554,True
+804554,databank,ARCHMAGE DECK DEPRECATED,,,True
+804555,exiles,ARCHMAGE DECK DEPRECATED,,https://db.exil.es/spell/804555,True
+804555,databank,ARCHMAGE DECK DEPRECATED,,,True
+804556,exiles,ARCHMAGE DECK DEPRECATED,,https://db.exil.es/spell/804556,True
+804556,databank,ARCHMAGE DECK DEPRECATED,,,True
+804558,exiles,Putrefy DEPRECATED,"Hurl putrid necrotic magic at an enemy, dealing 88 Plague Damage and generating 15 runic power.",https://db.exil.es/spell/804558,True
+804558,databank,Putrefy,"Hurl putrid necrotic magic at an enemy, dealing ${$m1+$ppl1+$SP*.51} Plague Damage and generating $/10;804559s2 runic power.",,True
+804560,exiles,ARCHMAGE DECK DEPRECATED,,https://db.exil.es/spell/804560,True
+804560,databank,ARCHMAGE DECK DEPRECATED,,,True
+804562,exiles,ARCHMAGE DECK DEPRECATED,,https://db.exil.es/spell/804562,True
+804562,databank,ARCHMAGE DECK DEPRECATED,,,True
+804601,exiles,Deprecated,Deprecated,https://db.exil.es/spell/804601,True
+804601,databank,Deprecated,Deprecated,,True
+805497,exiles,Lucifron's Lagniappe,"Enhance an ally for 30 sec, increasing their spell haste by 10% and reducing all damage taken by 10%. Can only target 1 ally at a time.",https://db.exil.es/spell/805497,True
+805497,databank,Lucifron's Lagniappe,"Enhance an ally for $d, increasing their spell haste by $s1% and reducing all damage taken by $s2%. 
+
+Can only target 1 ally at a time.",,True
+805623,exiles,Etch,"Begin etching runes for up to 2 sec, generating 1 Inscribed Rune every 0.5 sec. If you have a Runic Familiar, it also unleashes a Runic Pulse each tick. Can be used while moving.",https://db.exil.es/spell/805623,True
+805623,databank,Etch,"Begin etching runes for up to $d, generating 1 |cffffffff|cffffffffInscribed Rune|r|r every $t1 sec.
+
+If you have a |cffffffffRunic Familiar|r, it also unleashes a |cffffffffRunic Pulse|r each tick.
+
+Can be used while moving.",,True
+805630,exiles,Light's Advance,"Rush towards an enemy, increasing your speed over the duration, and making you immune to roots and snares, until you reach them. When you reach your target you will end the effect to smite them for Holy Damage, increasing based on the distance travelled, and rooting them for 0. This effect ends if you stop facing your target. Lasts up to 10 sec.",https://db.exil.es/spell/805630,True
+805630,databank,Light's Advance,"Rush towards an enemy, increasing your speed over the duration, and making you immune to roots and snares, until you reach them. 
+
+When you reach your target you will end the effect to smite them for Holy Damage, increasing based on the distance travelled$?s680620[, and rooting them for $805638d][].
+
+This effect ends if you stop facing your target. Lasts up to $d.",,True
+805645,exiles,Earthen Skin,Deprecated,https://db.exil.es/spell/805645,True
+805645,databank,Earthen Skin,"Create a barrier of earth, absorbing up to ${$m1+$ppl1} damage for $d.
+
+Deals ${$805646m1+$805646ppl1} Nature Damage to enemies within $805646a1 yds that repeats when the shield fades.",,True
+805665,exiles,Blade of Xoroth,"Consumes Deathfire Stacks Strike an enemy, dealing 149 Shadowflame Damage and increasing your movement speed by 20% for 6 sec. Ignores immunities and resistances and increases damage the target takes from your Demonflare by 20% for 3 sec. Deals 40% increased damage per Deathfire consumed",https://db.exil.es/spell/805665,True
+805665,databank,Blade of Xoroth,"|cff93cceaConsumes Deathfire Stacks|r
+Strike an enemy, dealing ${$m1+$ppl1+$SP*.25} Shadowflame Damage and increasing your movement speed by $560694s1% for $560694d.
+
+Ignores immunities and resistances$?s704989[ and increases damage the target takes from your |cFFFFFFFFDemonflare|r by $s2% for $/1000;704989s1 sec][].
+
+Deals $704195s1% increased damage per |cFFFFFFFFDeathfire|r consumed",,True
+805713,exiles,Soulwarden's Resolve,"Consumes 1 Reaped Soul Increases your armor and magic resistance based on your Stamina for 0. While active, you can use abilities as if you were in Underwalk.",https://db.exil.es/spell/805713,True
+805713,databank,Soulwarden's Resolve,"|cffffffffConsumes 1 Reaped Soul|r
+Increases your armor and magic resistance based on your Stamina for $d. 
+
+While active, you can use abilities as if you were in |cffffffffUnderwalk|r.",,True
+805728,exiles,Deprecated,Deprecated,https://db.exil.es/spell/805728,True
+805728,databank,Runesurge,"|cffffffffConsumes 1 |cffffffffInscribed Rune|r|r
+Instantly restore $s1% of your maximum health and mana.$?s500314[
+
+Usable while stealthed.][]",,True
+805733,exiles,Deprecated,Deprecated,https://db.exil.es/spell/805733,True
+805733,databank,Familiar: Trispell,"|cffffffffConsumes 1 |cffffffffInscribed Rune|r|r
+Your |cffffffffRunic Familiar|r expels bolts of magic at the closest enemy dealing ${$805735m1+$PL*1.8+$SP*0.455+$SPI*0.285} damage every 1 sec over $805734d, scaling with Intellect.
+
+|cffffffffDisplace Familiar|r deals $805734s2% increased damage while |cffffffffTrispell's|r missiles are firing. ",,True
+805765,exiles,Ricochet,Allows Heartseeker Bolt to strike up to 3 enemies and your other Bolts to strike up to 5 enemies for 20 sec. Does not work with Burrow Bolt.,https://db.exil.es/spell/805765,True
+805765,databank,Ricochet,"Allows |cFFFFFFFFHeartseeker Bolt|r to strike up to $s2 enemies and your other |cffffffffBolts|r to strike up to $s1 enemies for $805765d.
+
+Does not work with |cffffffffBurrow Bolt|r.",,True
+805772,exiles,Disappear,"Enter a powerful stealth mode for 3 sec, reducing all damage taken by 90%. Receiving or dealing damage will not break this effect. Usable while stunned.",https://db.exil.es/spell/805772,True
+805772,databank,Disappear,"Enter a powerful stealth mode for $d, reducing all damage taken by $s2%. Receiving or dealing damage will not break this stealth effect.
+
+Usable while stunned.",,True
+805781,exiles,Drunken Dive,"Leap to the targeted location, crashing down upon any enemies in the area dealing 730 Frost Damage and stunning them for 3 sec.",https://db.exil.es/spell/805781,True
+805781,databank,Drunken Dive,"Leap to the targeted location, crashing down upon any enemies in the area dealing ${$801641m1+$801641ppl1} Frost Damage and stunning them for $801641d.",,True
+805903,exiles,Repeater Bolt,Deprecated spell. Use Witchbane and Heartseeking Bolt now.,https://db.exil.es/spell/805903,True
+805903,databank,Repeater Bolt,Deprecated spell. Use Witchbane and Heartseeking Bolt now.,,True
+806098,exiles,Magic Zap,Dispels 1 harmful magic effect from a friendly target.,https://db.exil.es/spell/806098,True
+806098,databank,Magic Zap,Dispels $s1 harmful magic effect from a friendly target.,,True
+806107,exiles,Deprecated,Deprecated,https://db.exil.es/spell/806107,True
+806107,databank,Inevitable Prophecy,Deprecated,,True
+806127,exiles,Malady of Rot DEPRECATED,"Applies a dark word to an enemy for 0, cursing them, and increasing damage they take from your periodic effects by 8%.",https://db.exil.es/spell/806127,True
+806127,databank,Malady of Rot,"Applies a dark word to an enemy for $d, cursing them, and increasing damage they take from your periodic effects by $s1%.",,True
+806230,exiles,Voidshift,Deprecated,https://db.exil.es/spell/806230,True
+806230,databank,Voidshift,"Phase your physical form for $d, reducing damage taken by $s3% and increasing dodge chance by $s1% for $d.
+
+For the duration, dodging an attack reduces the cooldown of |cffffffffNetherstrike|r by $/1000;520474s1 sec.",,True
+806243,exiles,Eye of Wind DEPRECATED,Increases the attack power of all party and raid members by 5%. Does not stack with other similar effects.,https://db.exil.es/spell/806243,True
+806243,databank,Eye of Wind DEPRECATED,"Increases the attack power of all party and raid members by $s2%.
+Does not stack with other similar effects.",,True
+806280,exiles,Dire Rage,"Enrage for 8 sec, reducing damage taken by 30% and reducing your movement speed by 20%. Removes incapacitate, and stun effects, and makes you immune to them for the duration.",https://db.exil.es/spell/806280,True
+806280,databank,Dire Rage,"Enrage for $d, reducing damage taken by $s1% and reducing your movement speed by $s3%.
+
+Removes incapacitate, and stun effects, and makes you immune to them for the duration.",,True
+806284,exiles,Shrinking Jinx,Deprecated,https://db.exil.es/spell/806284,True
+806284,databank,Shrinking Jinx,"Curse an enemy for $d, granting melee and ranged attacks against them $s3% increased critical strike chance.
+
+Only 1 |cffffffffJinx|r may be active on a target at a time. Can be cast while moving.",,True
+806287,exiles,Rage of Bethekk,Deprecated,https://db.exil.es/spell/806287,True
+806287,databank,Rage of Bethekk,"|cffffffffInvokes Bethekk|r
+Strike up to $x1 enemies for ${$m1+$ppl1+$RAP*0.35+$SP*0.35} Nature Damage$?s705944[ and increase your periodic damage dealt against the target by $705945s1% for $705945d][].",,True
+806317,exiles,Shifting Sands,"Blast an enemy for 726 Divine Damage, reducing their attack power by 30 for 8 sec, and granting Sands of Time. This spell belongs to Order. Entering Chaos Empowerment transforms this ability into Melt Reality . @ext::ext@",https://db.exil.es/spell/806317,True
+806317,databank,Shifting Sands,"Blast an enemy for ${$m1+$ppl1+$SP*.65} Divine Damage, reducing their attack power by $s2 for $d, and granting |cffffffffSands of Time|r.
+
+This spell belongs to |cFFFFFFFFOrder|r.
+Entering Chaos Empowerment transforms this ability into |cFFFFFFFFMelt Reality|r .@s:806335:0@
+@ext:@s:804488:0@:ext@",,True
+806318,exiles,Plaguebringer DEPRECATED,"Empower yourself with plague magic, increasing magic damage dealt by 20%.",https://db.exil.es/spell/806318,True
+806318,databank,Plaguebringer,"Empower yourself with plague magic, increasing magic damage dealt by $s1%$?s704713[ and your spell haste by $704713s1%][] for $d.",,True
+806326,exiles,Chronurgy,Instantly unleash a burst of magic dealing 315 Arcane Damage to an enemy and spreads active Decomposition to nearby targets. This spell belongs to both Chaos and Order and scales with modifiers to Discordance.,https://db.exil.es/spell/806326,True
+806326,databank,Chronurgy,"Instantly unleash a burst of magic dealing ${$m1+$ppl1+$SP*0.58} Arcane Damage to an enemy and spreads active |cFFFFFFFFDecomposition|r to nearby targets.
+
+This spell belongs to both |cffffffffChaos|r and |cFFFFFFFFOrder|r and scales with modifiers to |cFFFFFFFFDiscordance|r.",,True
+806362,exiles,Deprecated,Deprecated,https://db.exil.es/spell/806362,True
+806362,databank,Horn of Disorientation,Disorient all enemies in a $a1 yd radius for up to $d.,,True
+806367,exiles,Warband,"For 15 sec, Quick Shots generate an additional Archery Point and Skullpiercer Shot and Woodland Arrow deals 10% increased damage. For the duration, Skullpiercer Shots and Woodland Arrow used with 5 Archery Points will summon 1 War Falcon to your aid for 6 sec.",https://db.exil.es/spell/806367,True
+806367,databank,Warband,"For $d, |cffffffffQuick Shots|r generate an additional |cffffffffArchery Point|r and |cffffffffSkullpiercer Shot|r$?s806345[ and |cffffffffWoodland Arrow|r][] deals $s1% increased damage.
+
+For the duration, |cffffffffSkullpiercer Shots|r$?s806345[ and |cffffffffWoodland Arrow|r][] used with 5 |cffffffffArchery Points|r will summon 1 |cffffffffWar Falcon|r to your aid for $520588d.",,True
+806519,exiles,Zealous Wrath,"Deal Weapon Damage plus 410 to an enemy, and generate 5 Holy Runes.",https://db.exil.es/spell/806519,True
+806519,databank,Zealous Wrath,"Deal Weapon Damage plus $s1 to an enemy, and generate 5 Holy Runes.",,True
+806601,exiles,Facemelter,"Requires Stalker Form Melt an enemy's face, dealing 153 Plague Damage every 2 sec for 18 sec, and an additional 187 Nature Damage at the end of the duration.",https://db.exil.es/spell/806601,True
+806601,databank,Facemelter,"$?a800841[|cffffffff][|cffff3232]Requires Stalker Form|r
+Deals ${$m1+$ppl1} Plague Damage every $t1 sec for $d, and deals an additional ${$m2+$ppl2}  Nature Damage after the duration.",,True

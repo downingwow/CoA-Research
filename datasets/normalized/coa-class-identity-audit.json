@@ -1,0 +1,738 @@
+{
+  "schemaVersion": 1,
+  "kind": "manual cross-reference; not automated",
+  "generated": "2026-10-30",
+  "warning": "Class IDs and live talent tabs are from archived CoA client data; source snapshots and resource claims require in-game Conquest Reborn confirmation. Client class token is not necessarily the player-facing class name.",
+  "sources": [
+    "site/data/classes.json",
+    "datasets/normalized/coa-custom-class-roster.json",
+    "site/data/resources.json",
+    "site/data/equipment-rules.json"
+  ],
+  "classes": [
+    {
+      "classId": 12,
+      "displayName": "Barbarian",
+      "clientClassToken": "Barbarian",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Brutality",
+        "Headhunting",
+        "Ancestry"
+      ],
+      "baselineResourcePools": [
+        "Energy"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather"
+      ],
+      "specOverrides": {
+        "Headhunting": {
+          "pools": [
+            "Energy"
+          ],
+          "mechanics": [],
+          "source": "https://ascensionsidekick.com/barbarian/headhunting",
+          "tabStatus": "matches archived live tab"
+        },
+        "Brutality": {
+          "pools": [
+            "Energy"
+          ],
+          "mechanics": [],
+          "source": "https://ascensionsidekick.com/barbarian/brutality",
+          "tabStatus": "matches archived live tab"
+        },
+        "Ancestry": {
+          "pools": [
+            "Energy"
+          ],
+          "mechanics": [
+            {
+              "name": "Tankard fill level",
+              "kind": "Build-and-spend counter"
+            }
+          ],
+          "source": "https://ascensionsidekick.com/barbarian/ancestry",
+          "tabStatus": "matches archived live tab"
+        }
+      }
+    },
+    {
+      "classId": 20,
+      "displayName": "Bloodmage",
+      "clientClassToken": "SonOfArugal",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Sanguine",
+        "Accursed",
+        "Eternal",
+        "Fleshweaver"
+      ],
+      "baselineResourcePools": [
+        "Rage"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather"
+      ],
+      "specOverrides": {
+        "Sanguine": {
+          "pools": [
+            "Rage"
+          ],
+          "mechanics": [
+            {
+              "name": "Thirst",
+              "kind": "Stack counter"
+            }
+          ],
+          "costMechanics": [
+            "Health costs"
+          ],
+          "source": "https://ascensionsidekick.com/bloodmage/sanguine",
+          "tabStatus": "matches archived live tab"
+        }
+      }
+    },
+    {
+      "classId": 22,
+      "displayName": "Chronomancer",
+      "clientClassToken": "Chronomancer",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Infinite",
+        "Artificer",
+        "Time"
+      ],
+      "baselineResourcePools": [
+        "Mana"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth"
+      ],
+      "specOverrides": {}
+    },
+    {
+      "classId": 25,
+      "displayName": "Cultist",
+      "clientClassToken": "Cultist",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Corruption",
+        "Godblade",
+        "Heretic",
+        "Dreadnought"
+      ],
+      "baselineResourcePools": [
+        "Mana"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather",
+        "Mail",
+        "Plate"
+      ],
+      "specOverrides": {
+        "Heretic": {
+          "pools": [
+            "Mana"
+          ],
+          "mechanics": [
+            {
+              "name": "Insanity",
+              "kind": "Build-and-spend counter"
+            }
+          ],
+          "source": "https://ascensionsidekick.com/cultist/heretic",
+          "tabStatus": "matches archived live tab"
+        }
+      }
+    },
+    {
+      "classId": 14,
+      "displayName": "Felsworn",
+      "clientClassToken": "DemonHunter",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Slayer",
+        "Infernal",
+        "Tyrant"
+      ],
+      "baselineResourcePools": [
+        "Energy"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather"
+      ],
+      "specOverrides": {
+        "Tyrant": {
+          "pools": [
+            "Energy",
+            "Demonic Rage"
+          ],
+          "mechanics": [
+            {
+              "name": "Felfury",
+              "kind": "Stack counter"
+            }
+          ],
+          "source": "https://ascensionsidekick.com/felsworn/tyrant",
+          "tabStatus": "matches archived live tab"
+        }
+      }
+    },
+    {
+      "classId": 18,
+      "displayName": "Guardian",
+      "clientClassToken": "Guardian",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Vanguard",
+        "Inspiration",
+        "Gladiator"
+      ],
+      "baselineResourcePools": [
+        "Energy"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather",
+        "Mail",
+        "Plate"
+      ],
+      "specOverrides": {}
+    },
+    {
+      "classId": 17,
+      "displayName": "Knight of Xoroth",
+      "clientClassToken": "KnightOfXoroth",
+      "clientAliases": [
+        "FLESHWARDEN"
+      ],
+      "liveTalentTabs": [
+        "Hellfire",
+        "War",
+        "Defiance"
+      ],
+      "baselineResourcePools": [
+        "Rage"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather",
+        "Mail",
+        "Plate"
+      ],
+      "specOverrides": {
+        "Hellfire": {
+          "pools": [
+            "Rage"
+          ],
+          "mechanics": [
+            {
+              "name": "Demonfire",
+              "kind": "Build-and-spend mechanic"
+            }
+          ],
+          "source": "https://ascensionsidekick.com/knight-of-xoroth/hellfire",
+          "tabStatus": "matches archived live tab"
+        },
+        "Defiance": {
+          "pools": [
+            "Rage"
+          ],
+          "mechanics": [
+            {
+              "name": "Demonfire",
+              "kind": "Build-and-spend mechanic"
+            },
+            {
+              "name": "Demon's Blood",
+              "kind": "Stack counter"
+            }
+          ],
+          "source": "https://ascensionsidekick.com/knight-of-xoroth/defiance",
+          "tabStatus": "matches archived live tab"
+        },
+        "War": {
+          "pools": [
+            "Rage"
+          ],
+          "mechanics": [
+            {
+              "name": "Demonfire",
+              "kind": "Build-and-spend mechanic"
+            },
+            {
+              "name": "Demon's Blood",
+              "kind": "Stack counter"
+            }
+          ],
+          "source": "https://ascensionsidekick.com/knight-of-xoroth/war",
+          "tabStatus": "matches archived live tab"
+        }
+      }
+    },
+    {
+      "classId": 23,
+      "displayName": "Necromancer",
+      "clientClassToken": "Necromancer",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Animation",
+        "Death",
+        "Rime"
+      ],
+      "baselineResourcePools": [
+        "Runic Power"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth"
+      ],
+      "specOverrides": {}
+    },
+    {
+      "classId": 31,
+      "displayName": "Primalist",
+      "clientClassToken": "Primalist",
+      "clientAliases": [
+        "WILDWALKER"
+      ],
+      "liveTalentTabs": [
+        "Life",
+        "Geomancy",
+        "Primal",
+        "Mountain King"
+      ],
+      "baselineResourcePools": [
+        "Mana"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather",
+        "Mail",
+        "Plate"
+      ],
+      "specOverrides": {
+        "Grovekeeper": {
+          "pools": [
+            "Mana",
+            "Rage"
+          ],
+          "mechanics": [],
+          "source": "https://ascensionsidekick.com/primalist/grovekeeper",
+          "tabStatus": "NOT_IN_ARCHIVED_LIVE_TABS"
+        },
+        "Geomancy": {
+          "pools": [
+            "Mana",
+            "Rage"
+          ],
+          "mechanics": [],
+          "source": "https://ascensionsidekick.com/primalist/geomancy",
+          "tabStatus": "matches archived live tab"
+        },
+        "Wildwalker": {
+          "pools": [
+            "Rage"
+          ],
+          "mechanics": [],
+          "utilityPools": [
+            "Pet Focus",
+            "Mana utility costs"
+          ],
+          "source": "https://ascensionsidekick.com/primalist/wildwalker",
+          "tabStatus": "NOT_IN_ARCHIVED_LIVE_TABS"
+        }
+      }
+    },
+    {
+      "classId": 24,
+      "displayName": "Pyromancer",
+      "clientClassToken": "Pyromancer",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Draconic",
+        "Flameweaving",
+        "Incineration"
+      ],
+      "baselineResourcePools": [
+        "Mana"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth"
+      ],
+      "specOverrides": {}
+    },
+    {
+      "classId": 21,
+      "displayName": "Ranger",
+      "clientClassToken": "Ranger",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Brigand",
+        "Farstrider",
+        "Archery"
+      ],
+      "baselineResourcePools": [
+        "Focus"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather"
+      ],
+      "specOverrides": {}
+    },
+    {
+      "classId": 30,
+      "displayName": "Reaper",
+      "clientClassToken": "Reaper",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Harvest",
+        "Soul",
+        "Domination"
+      ],
+      "baselineResourcePools": [
+        "Runic Power"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather",
+        "Mail",
+        "Plate"
+      ],
+      "specOverrides": {}
+    },
+    {
+      "classId": 32,
+      "displayName": "Runemaster",
+      "clientClassToken": "Runemaster",
+      "clientAliases": [
+        "SPIRITMAGE"
+      ],
+      "liveTalentTabs": [
+        "Runic",
+        "Arcane",
+        "Riftblade"
+      ],
+      "baselineResourcePools": [
+        "Mana"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather"
+      ],
+      "specOverrides": {}
+    },
+    {
+      "classId": 26,
+      "displayName": "Starcaller",
+      "clientClassToken": "Starcaller",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Moon Guard",
+        "Sentinel",
+        "Moon Priest",
+        "Warden"
+      ],
+      "baselineResourcePools": [
+        "Energy"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather",
+        "Mail",
+        "Plate"
+      ],
+      "specOverrides": {
+        "Moon Priest": {
+          "pools": [
+            "Energy",
+            "Mana"
+          ],
+          "mechanics": [
+            {
+              "name": "Scattered Stars",
+              "kind": "Build-and-spend counter"
+            }
+          ],
+          "source": "https://ascensionsidekick.com/starcaller/moon-priest",
+          "tabStatus": "matches archived live tab"
+        },
+        "Moon Guard": {
+          "pools": [
+            "Energy",
+            "Mana"
+          ],
+          "mechanics": [
+            {
+              "name": "Scattered Stars",
+              "kind": "Build-and-spend counter"
+            }
+          ],
+          "source": "https://ascensionsidekick.com/starcaller/moon-guard",
+          "tabStatus": "matches archived live tab"
+        }
+      }
+    },
+    {
+      "classId": 16,
+      "displayName": "Stormbringer",
+      "clientClassToken": "Stormbringer",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Lightning",
+        "Wind",
+        "Maelstrom"
+      ],
+      "baselineResourcePools": [
+        "Mana"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth"
+      ],
+      "specOverrides": {
+        "Wind": {
+          "pools": [
+            "Mana"
+          ],
+          "mechanics": [
+            {
+              "name": "Static",
+              "kind": "Secondary counter"
+            }
+          ],
+          "source": "https://ascensionsidekick.com/stormbringer/wind",
+          "tabStatus": "matches archived live tab"
+        },
+        "Lightning": {
+          "pools": [
+            "Mana"
+          ],
+          "mechanics": [
+            {
+              "name": "Static",
+              "kind": "Secondary counter"
+            }
+          ],
+          "source": "https://ascensionsidekick.com/stormbringer/lightning",
+          "tabStatus": "matches archived live tab"
+        }
+      }
+    },
+    {
+      "classId": 27,
+      "displayName": "Sun Cleric",
+      "clientClassToken": "SunCleric",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Seraphim",
+        "Piety",
+        "Valkyrie",
+        "Blessings"
+      ],
+      "baselineResourcePools": [
+        "Mana"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather",
+        "Mail",
+        "Plate"
+      ],
+      "specOverrides": {}
+    },
+    {
+      "classId": 19,
+      "displayName": "Templar",
+      "clientClassToken": "Monk",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Zealot",
+        "Oathkeeper",
+        "Crusader"
+      ],
+      "baselineResourcePools": [
+        "Energy"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather",
+        "Mail"
+      ],
+      "specOverrides": {
+        "Oathkeeper": {
+          "pools": [
+            "Energy"
+          ],
+          "mechanics": [
+            {
+              "name": "Oaths",
+              "kind": "Build-and-spend counter"
+            }
+          ],
+          "source": "https://ascensionsidekick.com/templar/oathkeeper",
+          "tabStatus": "matches archived live tab"
+        },
+        "Zealot": {
+          "pools": [
+            "Energy"
+          ],
+          "mechanics": [
+            {
+              "name": "Oaths",
+              "kind": "Build-and-spend counter"
+            }
+          ],
+          "utilityPools": [
+            "Mana"
+          ],
+          "source": "https://ascensionsidekick.com/templar/zealot",
+          "tabStatus": "matches archived live tab"
+        }
+      }
+    },
+    {
+      "classId": 28,
+      "displayName": "Tinker",
+      "clientClassToken": "Tinker",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Mechanics",
+        "Invention",
+        "Demolition"
+      ],
+      "baselineResourcePools": [
+        "Mana"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather",
+        "Mail"
+      ],
+      "specOverrides": {}
+    },
+    {
+      "classId": 29,
+      "displayName": "Venomancer",
+      "clientClassToken": "Venomancer",
+      "clientAliases": [
+        "PROPHET"
+      ],
+      "liveTalentTabs": [
+        "Vizier",
+        "Venom",
+        "Stalking",
+        "Fortitude"
+      ],
+      "baselineResourcePools": [
+        "Mana"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather",
+        "Mail"
+      ],
+      "specOverrides": {}
+    },
+    {
+      "classId": 13,
+      "displayName": "Witch Doctor",
+      "clientClassToken": "WitchDoctor",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Shadowhunting",
+        "Voodoo",
+        "Brewing"
+      ],
+      "baselineResourcePools": [
+        "Mana"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather",
+        "Mail"
+      ],
+      "specOverrides": {}
+    },
+    {
+      "classId": 15,
+      "displayName": "Witch Hunter",
+      "clientClassToken": "WitchHunter",
+      "clientAliases": [],
+      "liveTalentTabs": [
+        "Boltslinger",
+        "Houndmaster",
+        "Inquisition",
+        "Black Knight"
+      ],
+      "baselineResourcePools": [
+        "Mana"
+      ],
+      "equipmentEligibilitySource": "BisBeard historical metadata; not official proficiency",
+      "armorEligibility": [
+        "Cloth",
+        "Leather",
+        "Mail"
+      ],
+      "specOverrides": {
+        "Boltslinger": {
+          "pools": [
+            "Rage",
+            "Mana"
+          ],
+          "mechanics": [],
+          "source": "https://ascensionsidekick.com/witch-hunter/boltslinger",
+          "tabStatus": "matches archived live tab"
+        },
+        "Inquisition": {
+          "pools": [
+            "Mana",
+            "Rage"
+          ],
+          "mechanics": [
+            {
+              "name": "The Hunt",
+              "kind": "Small secondary Rage pool"
+            }
+          ],
+          "source": "https://ascensionsidekick.com/witch-hunter/inquisition",
+          "tabStatus": "matches archived live tab"
+        },
+        "Black Knight": {
+          "pools": [
+            "Mana",
+            "Rage"
+          ],
+          "mechanics": [],
+          "source": "https://ascensionsidekick.com/witch-hunter/black-knight",
+          "tabStatus": "matches archived live tab"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "captured": "2026-10-30",
+  "source": "User-provided Conquest Reborn character creation screenshots (21 classes)",
+  "interpretation": "Armor is character-creation listed primary armor, not exhaustive equip permissions. Roles are class-level advertised roles, not independently assigned to each spec. Resources preserve displayed primary/secondary labels; slash-delimited primary resource values are not split into separate secondary resources.",
+  "classes": [
+    {
+      "name": "Barbarian",
+      "primaryArmor": "Leather",
+      "primaryResource": "Energy",
+      "secondaryResource": null,
+      "roles": [
+        "Melee DPS",
+        "Ranged DPS",
+        "Support"
+      ],
+      "specializations": [
+        "Brutality",
+        "Headhunting",
+        "Ancestry"
+      ]
+    },
+    {
+      "name": "Bloodmage",
+      "primaryArmor": "Leather",
+      "primaryResource": "Health / Rage",
+      "secondaryResource": null,
+      "roles": [
+        "Melee DPS",
+        "Casting DPS",
+        "Tank",
+        "Support"
+      ],
+      "specializations": [
+        "Fleshweaver",
+        "Sanguine",
+        "Accursed",
+        "Eternal"
+      ]
+    },
+    {
+      "name": "Chronomancer",
+      "primaryArmor": "Cloth",
+      "primaryResource": "Mana",
+      "secondaryResource": null,
+      "roles": [
+        "Ranged DPS",
+        "Casting DPS",
+        "Healer"
+      ],
+      "specializations": [
+        "Infinite",
+        "Time",
+        "Artificer"
+      ]
+    },
+    {
+      "name": "Cultist",
+      "primaryArmor": "Plate",
+      "primaryResource": "Mana",
+      "secondaryResource": "Insanity",
+      "roles": [
+        "Melee DPS",
+        "Casting DPS",
+        "Tank",
+        "Healer"
+      ],
+      "specializations": [
+        "Heretic",
+        "Corruption",
+        "Godblade",
+        "Dreadnought"
+      ]
+    },
+    {
+      "name": "Felsworn",
+      "primaryArmor": "Leather",
+      "primaryResource": "Energy",
+      "secondaryResource": "Fel Fury",
+      "roles": [
+        "Melee DPS",
+        "Casting DPS",
+        "Tank"
+      ],
+      "specializations": [
+        "Slaying",
+        "Infernal",
+        "Tyrant"
+      ]
+    },
+    {
+      "name": "Guardian",
+      "primaryArmor": "Plate",
+      "primaryResource": "Energy",
+      "secondaryResource": null,
+      "roles": [
+        "Melee DPS",
+        "Tank",
+        "Support"
+      ],
+      "specializations": [
+        "Gladiator",
+        "Inspiration",
+        "Vanguard"
+      ]
+    },
+    {
+      "name": "Knight of Xoroth",
+      "primaryArmor": "Plate",
+      "primaryResource": "Rage",
+      "secondaryResource": "Demonfire",
+      "roles": [
+        "Melee DPS",
+        "Tank"
+      ],
+      "specializations": [
+        "Hellfire",
+        "Defiance",
+        "War"
+      ]
+    },
+    {
+      "name": "Necromancer",
+      "primaryArmor": "Cloth",
+      "primaryResource": "Mana / Runic Power",
+      "secondaryResource": null,
+      "roles": [
+        "Casting DPS"
+      ],
+      "specializations": [
+        "Death",
+        "Rime",
+        "Animation"
+      ]
+    },
+    {
+      "name": "Primalist",
+      "primaryArmor": "Plate",
+      "primaryResource": "Mana / Rage",
+      "secondaryResource": null,
+      "roles": [
+        "Melee DPS",
+        "Casting DPS",
+        "Tank",
+        "Support"
+      ],
+      "specializations": [
+        "Grovekeeper",
+        "Wildwalker",
+        "Mountain King",
+        "Geomancy"
+      ]
+    },
+    {
+      "name": "Pyromancer",
+      "primaryArmor": "Cloth",
+      "primaryResource": "Mana",
+      "secondaryResource": "Heat",
+      "roles": [
+        "Casting DPS",
+        "Healer"
+      ],
+      "specializations": [
+        "Incineration",
+        "Flameweaving",
+        "Draconic"
+      ]
+    },
+    {
+      "name": "Ranger",
+      "primaryArmor": "Leather",
+      "primaryResource": "Focus",
+      "secondaryResource": "Advantage",
+      "roles": [
+        "Melee DPS",
+        "Ranged DPS",
+        "Support"
+      ],
+      "specializations": [
+        "Archery",
+        "Brigand",
+        "Farstrider"
+      ]
+    },
+    {
+      "name": "Reaper",
+      "primaryArmor": "Plate",
+      "primaryResource": "Runic Power",
+      "secondaryResource": "Souls",
+      "roles": [
+        "Melee DPS",
+        "Tank"
+      ],
+      "specializations": [
+        "Soul",
+        "Harvest",
+        "Domination"
+      ]
+    },
+    {
+      "name": "Runemaster",
+      "primaryArmor": "Leather",
+      "primaryResource": "Mana",
+      "secondaryResource": null,
+      "roles": [
+        "Melee DPS",
+        "Casting DPS"
+      ],
+      "specializations": [
+        "Engravement",
+        "Glyphic",
+        "Riftblade"
+      ]
+    },
+    {
+      "name": "Starcaller",
+      "primaryArmor": "Plate",
+      "primaryResource": "Mana / Energy",
+      "secondaryResource": null,
+      "roles": [
+        "Melee DPS",
+        "Ranged DPS",
+        "Tank",
+        "Healer"
+      ],
+      "specializations": [
+        "Sentinel",
+        "Warden",
+        "Moon Priest",
+        "Moon Guard"
+      ]
+    },
+    {
+      "name": "Stormbringer",
+      "primaryArmor": "Cloth",
+      "primaryResource": "Mana",
+      "secondaryResource": "Static",
+      "roles": [
+        "Casting DPS",
+        "Support"
+      ],
+      "specializations": [
+        "Maelstrom",
+        "Lightning",
+        "Wind"
+      ]
+    },
+    {
+      "name": "Sun Cleric",
+      "primaryArmor": "Plate",
+      "primaryResource": "Mana",
+      "secondaryResource": "Solar Power",
+      "roles": [
+        "Melee DPS",
+        "Casting DPS",
+        "Tank",
+        "Healer"
+      ],
+      "specializations": [
+        "Piety",
+        "Blessings",
+        "Valkyrie",
+        "Seraphim"
+      ]
+    },
+    {
+      "name": "Templar",
+      "primaryArmor": "Mail",
+      "primaryResource": "Energy",
+      "secondaryResource": null,
+      "roles": [
+        "Melee DPS",
+        "Tank"
+      ],
+      "specializations": [
+        "Oathkeeper",
+        "Zealot",
+        "Crusader"
+      ]
+    },
+    {
+      "name": "Tinker",
+      "primaryArmor": "Mail",
+      "primaryResource": "Mana",
+      "secondaryResource": null,
+      "roles": [
+        "Ranged DPS",
+        "Healer"
+      ],
+      "specializations": [
+        "Mechanics",
+        "Invention",
+        "Demolition"
+      ]
+    },
+    {
+      "name": "Venomancer",
+      "primaryArmor": "Mail",
+      "primaryResource": "Mana / Rage",
+      "secondaryResource": null,
+      "roles": [
+        "Melee DPS",
+        "Casting DPS",
+        "Tank",
+        "Healer"
+      ],
+      "specializations": [
+        "Fortitude",
+        "Stalking",
+        "Rotweaver",
+        "Vizier"
+      ]
+    },
+    {
+      "name": "Witch Doctor",
+      "primaryArmor": "Mail / Leather",
+      "primaryResource": "Mana",
+      "secondaryResource": null,
+      "roles": [
+        "Ranged DPS",
+        "Casting DPS",
+        "Healer"
+      ],
+      "specializations": [
+        "Shadowhunting",
+        "Voodoo",
+        "Brewing"
+      ]
+    },
+    {
+      "name": "Witch Hunter",
+      "primaryArmor": "Mail",
+      "primaryResource": "Mana / Rage",
+      "secondaryResource": null,
+      "roles": [
+        "Melee DPS",
+        "Ranged DPS",
+        "Tank"
+      ],
+      "specializations": [
+        "Boltslinger",
+        "Houndmaster",
+        "Inquisition",
+        "Black Knight"
+      ]
+    }
+  ]
+}

@@ -22,7 +22,6 @@ for sid,record in records.items():
 rows.sort(key=lambda r:r["id"])
 dest=root/"site/data/spell-search-index.json"
 dest.parent.mkdir(parents=True,exist_ok=True)
-dest.write_text(json.dumps({"schemaVersion":1,"versionStatus":"archived, not current-client verified","classes":class_names,"records":rows},ensure_ascii=False,separators=(",",":"))+"
-",encoding="utf-8")
+dest.write_text(json.dumps({"schemaVersion":1,"versionStatus":"archived, not current-client verified","classes":class_names,"records":rows},ensure_ascii=False,separators=(",",":"))+chr(10),encoding="utf-8")
 print("Published",len(rows),"searchable spell records")
 assert len(rows)>9000

@@ -1,0 +1,127 @@
+{
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "verification": "Upstream migrations, not confirmed live",
+  "files": [
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261016_30_dungeon_boss_fierce_blow.sql",
+      "sha": "0d778f5733aa98ba064faf9abb79e06ae3ab57fa",
+      "lineCount": 5,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Fierce Blow (975011) deals 100% weapon damage in the client data, and Ascension's combat logs show these bosses'"
+        },
+        {
+          "line": 2,
+          "text": "-- Fierce Blow landing for about one melee swing. The kit rows overrode effect 0 with 200, which doubled it on top of"
+        },
+        {
+          "line": 3,
+          "text": "-- the DamageModifier calibrated to the same logs (rev_20261005_20)."
+        },
+        {
+          "line": 4,
+          "text": "UPDATE `coa_dungeon_boss_kit` SET `base_points` = 0 WHERE `spell` = 975011 AND `base_points` = 200;"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261009_20_dungeon_fixes.sql",
+      "sha": "aa219d4795258a920fc33f954fc1dd850568e692",
+      "lineCount": 27,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Dungeon fixes: Fierce Blow, Tomb Fiend, Landslide."
+        },
+        {
+          "line": 3,
+          "text": "-- Fierce Blow (975011) in the bosses' SmartAI kits went out at 200 % weapon damage and triggered,"
+        },
+        {
+          "line": 4,
+          "text": "-- so it ignored a running cast. Boss melee damage is restored now, so it goes back to the spell's own"
+        },
+        {
+          "line": 5,
+          "text": "-- 100 %, and it is cast untriggered: the core makes it an on-next-swing strike (SpellInfoCorrections),"
+        },
+        {
+          "line": 10,
+          "text": "-- Tomb Fiend (Razorfen Downs) is a normal creature but had an elite's health (HealthModifier 4,"
+        },
+        {
+          "line": 12,
+          "text": "UPDATE `creature_template` SET `HealthModifier` = 1.1 WHERE `entry` = 7349;"
+        },
+        {
+          "line": 14,
+          "text": "-- Damage multiplier for single creatures in dungeons: melee, spells and periodic damage, every"
+        },
+        {
+          "line": 15,
+          "text": "-- difficulty (CoADungeonSpellDamage.cpp)."
+        },
+        {
+          "line": 16,
+          "text": "CREATE TABLE IF NOT EXISTS `coa_dungeon_creature_damage` ("
+        },
+        {
+          "line": 17,
+          "text": "    `entry`      INT UNSIGNED NOT NULL,"
+        },
+        {
+          "line": 20,
+          "text": "    PRIMARY KEY (`entry`)"
+        },
+        {
+          "line": 23,
+          "text": "-- Landslide (Maraudon) hit far too hard: Fierce Blow for about 8k, boulders for about 5k."
+        },
+        {
+          "line": 24,
+          "text": "DELETE FROM `coa_dungeon_creature_damage` WHERE `entry` = 12203;"
+        },
+        {
+          "line": 25,
+          "text": "INSERT INTO `coa_dungeon_creature_damage` (`entry`, `multiplier`, `comment`) VALUES"
+        },
+        {
+          "line": 26,
+          "text": "(12203, 0.6, 'Landslide: all damage -40 %');"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261007_97_mythic_dungeon_spawns.sql",
+      "sha": "c255f856853ba4c2c8069d613fe381c8e395698a",
+      "lineCount": 19,
+      "signals": [
+        {
+          "line": 1,
+          "text": "-- Mythic dungeon spawns from play-testing: rare and wing bosses in Lower Blackrock Spire and Stratholme that the"
+        },
+        {
+          "line": 2,
+          "text": "-- Mythic instances lacked (Chop'gog the Butcher, Hearthsinger Forresten, Razmorg the Decapitator, Sever, Spirestone Mystic, Spirestone Ogre Magus, Spirestone Reaver, Spirestone Warlord, The Unforgiven, Wizz'Magg the Magus, Xot'hot the Burning), and Sever in S"
+        },
+        {
+          "line": 3,
+          "text": "-- met him on every difficulty."
+        },
+        {
+          "line": 4,
+          "text": "DELETE FROM `creature` WHERE `guid` = 248653 AND `id` = 14682;"
+        },
+        {
+          "line": 5,
+          "text": "DELETE FROM `creature` WHERE `guid` BETWEEN 9970179 AND 9970190;"
+        },
+        {
+          "line": 6,
+          "text": "INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `"
+        }
+      ]
+    }
+  ]
+}

@@ -35,6 +35,7 @@ def main():
     graph = {}
     nodes = []
     unresolved = []
+    skipped_other_classes = []
     counts = collections.Counter()
     for entry in entries:
         path = entry["path"]
@@ -49,7 +50,7 @@ def main():
             continue
         class_specs = by_class.get(class_id, [])
         if not class_specs:
-            unresolved.append({"path": path, "reason": "class-id-not-in-21-class-registry", "classId": class_id})
+            skipped_other_classes.append({"path": path, "classId": class_id})
             continue
         if "/talents/" in path:
             tab_names = {t["tabId"]: t["tabName"] for t in doc.get("tabs", []) if positive(t.get("tabId"))}
@@ -115,7 +116,7 @@ def main():
               "note": "Candidate specialization relationships are derived from matching archived tab names; never claim confirmed current spec ownership. Class-wide talent tabs may have no spec assignment.",
               "counts": dict(counts), "uniqueLinkedSpellIds": len(graph),
               "missingPrerequisiteCount": len(missing_links), "missingPrerequisiteExamples": missing_links[:100],
-              "unresolvedFiles": unresolved}
+              "unresolvedFiles": unresolved, "skippedNonCoAClassFiles": skipped_other_classes}
     (DEST / "quality-report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"uniqueLinkedSpellIds": len(graph), **dict(counts), "unresolvedFiles": len(unresolved)}, indent=2))
 

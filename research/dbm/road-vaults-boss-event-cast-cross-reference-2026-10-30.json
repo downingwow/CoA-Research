@@ -1,0 +1,1066 @@
+{
+  "schema": "coa-research.boss-event-cast-cross-reference.v1",
+  "date": "2026-10-30",
+  "sourceBossFiles": [
+    {
+      "source": "src/server/coa/CoAOtherSideMuzah.cpp",
+      "spellConstantCount": 20,
+      "eventAndCastStatements": [
+        {
+          "line": 201,
+          "source": "DoCastSelf(SPELL_WHIRLING_GLAIVES);",
+          "spellIds": [
+            256887
+          ]
+        },
+        {
+          "line": 202,
+          "source": "_events.ScheduleEvent(EVENT_GLAIVES_LAND, Milliseconds(GlaiveCastMs + 100));",
+          "spellIds": []
+        },
+        {
+          "line": 203,
+          "source": "_events.ScheduleEvent(EVENT_LEAP, Milliseconds(GlaiveCastMs + 5000));",
+          "spellIds": []
+        },
+        {
+          "line": 204,
+          "source": "_events.ScheduleEvent(EVENT_WEB, 20s);",
+          "spellIds": []
+        },
+        {
+          "line": 205,
+          "source": "_events.ScheduleEvent(EVENT_WEB_TICK, 1s);",
+          "spellIds": []
+        },
+        {
+          "line": 206,
+          "source": "_events.ScheduleEvent(EVENT_FIERCE_BLOW, 10s, 15s);",
+          "spellIds": []
+        },
+        {
+          "line": 207,
+          "source": "_events.ScheduleEvent(EVENT_GLAIVE_STRIKE, 15s);",
+          "spellIds": []
+        },
+        {
+          "line": 253,
+          "source": "_events.Repeat(1s);",
+          "spellIds": []
+        },
+        {
+          "line": 257,
+          "source": "_events.Repeat(25s);",
+          "spellIds": []
+        },
+        {
+          "line": 261,
+          "source": "_events.ScheduleEvent(EVENT_COBRA_TANK_1, 200ms);",
+          "spellIds": []
+        },
+        {
+          "line": 266,
+          "source": "_events.ScheduleEvent(EVENT_SWIRLS, 10s);",
+          "spellIds": []
+        },
+        {
+          "line": 273,
+          "source": "_events.ScheduleEvent(EVENT_GLAIVE_STRIKE_SECOND, 3s);",
+          "spellIds": []
+        },
+        {
+          "line": 274,
+          "source": "_events.Repeat(20s);",
+          "spellIds": []
+        },
+        {
+          "line": 283,
+          "source": "_events.ScheduleEvent(eventId == EVENT_COBRA_TANK_1 ? EVENT_COBRA_TANK_2 : EVENT_COBRA_RANDOM, Milliseconds(CobraGapMs));",
+          "spellIds": []
+        },
+        {
+          "line": 295,
+          "source": "target->CastSpell(target, SPELL_MUZAHS_TARGET, true);",
+          "spellIds": [
+            256964
+          ]
+        },
+        {
+          "line": 296,
+          "source": "_events.ScheduleEvent(EVENT_COBRA_RANDOM_EXTRA, Milliseconds(CobraCastMs));",
+          "spellIds": []
+        },
+        {
+          "line": 297,
+          "source": "_events.ScheduleEvent(EVENT_SERIES_END, Milliseconds(CobraCastMs + 600));",
+          "spellIds": []
+        },
+        {
+          "line": 303,
+          "source": "me->CastSpell(target, ByDifficulty(me, SPELL_COBRA_SHOT, SPELL_COBRA_SHOT_HC, SPELL_COBRA_SHOT_MYTHIC), true);",
+          "spellIds": [
+            256929,
+            257030,
+            257031
+          ]
+        },
+        {
+          "line": 316,
+          "source": "DoCastSelf(SPELL_SUMMON_BATS);",
+          "spellIds": [
+            256904
+          ]
+        },
+        {
+          "line": 318,
+          "source": "_events.ScheduleEvent(EVENT_BATS_RETURN, 5100ms);",
+          "spellIds": []
+        },
+        {
+          "line": 323,
+          "source": "_events.Repeat(10s);",
+          "spellIds": []
+        },
+        {
+          "line": 334,
+          "source": "_events.Repeat(1s);",
+          "spellIds": []
+        },
+        {
+          "line": 337,
+          "source": "DoCastSelf(WebSpell(me));",
+          "spellIds": []
+        },
+        {
+          "line": 338,
+          "source": "_events.Repeat(20s);",
+          "spellIds": []
+        },
+        {
+          "line": 342,
+          "source": "_events.Repeat(1s);",
+          "spellIds": []
+        },
+        {
+          "line": 346,
+          "source": "DoCastVictim(SPELL_FIERCE_BLOW);",
+          "spellIds": [
+            975011
+          ]
+        },
+        {
+          "line": 347,
+          "source": "_events.Repeat(20s, 30s);",
+          "spellIds": []
+        },
+        {
+          "line": 451,
+          "source": "_events.ScheduleEvent(EVENT_LANDED, Milliseconds(uint32(me->GetExactDist2d(&spot) / JumpSpeed * 1000.0f) + 400));",
+          "spellIds": []
+        },
+        {
+          "line": 470,
+          "source": "striker->CastSpell(static_cast<Unit*>(nullptr), SPELL_GLAIVE_STRIKE, false);",
+          "spellIds": [
+            257029
+          ]
+        },
+        {
+          "line": 478,
+          "source": "target->CastSpell(target, SPELL_MUZAHS_TARGET, true);",
+          "spellIds": [
+            256964
+          ]
+        },
+        {
+          "line": 479,
+          "source": "me->CastSpell(target, ByDifficulty(me, SPELL_COBRA_SHOT, SPELL_COBRA_SHOT_HC, SPELL_COBRA_SHOT_MYTHIC), triggered);",
+          "spellIds": [
+            256929,
+            257030,
+            257031
+          ]
+        },
+        {
+          "line": 523,
+          "source": "marker->CastSpell(marker, SPELL_GROUND_SWIRL, true);",
+          "spellIds": [
+            256852
+          ]
+        },
+        {
+          "line": 534,
+          "source": "faller->CastSpell(faller, SPELL_BAT_FLY_DOWN, true);",
+          "spellIds": [
+            256896
+          ]
+        },
+        {
+          "line": 555,
+          "source": "bat->CastSpell(bat, SPELL_BLOOD_EXPLOSION, true);",
+          "spellIds": [
+            256903
+          ]
+        },
+        {
+          "line": 613,
+          "source": "me->CastSpell(me, SPELL_GLAIVE_VISUAL, true);",
+          "spellIds": [
+            256886
+          ]
+        },
+        {
+          "line": 639,
+          "source": "me->CastSpell(me, ByDifficulty(me, SPELL_RIPPED_BY_THE_GLAIVES, SPELL_RIPPED_BY_THE_GLAIVES_HC, SPELL_RIPPED_BY_THE_GLAIVES_MYTHIC), true);",
+          "spellIds": [
+            256888,
+            257036,
+            257037
+          ]
+        }
+      ],
+      "unresolvedSymbolCasts": 0
+    },
+    {
+      "source": "src/server/coa/CoAOtherSideDrakmath.cpp",
+      "spellConstantCount": 21,
+      "eventAndCastStatements": [
+        {
+          "line": 158,
+          "source": "DoCastSelf(SPELL_ENCHANTED, true);",
+          "spellIds": [
+            256839
+          ]
+        },
+        {
+          "line": 167,
+          "source": "_events.ScheduleEvent(EVENT_PARASITISM, 7s);",
+          "spellIds": []
+        },
+        {
+          "line": 168,
+          "source": "_events.ScheduleEvent(EVENT_FIERCE_BLOW, 9s);",
+          "spellIds": []
+        },
+        {
+          "line": 169,
+          "source": "_events.ScheduleEvent(EVENT_SINK, 15s);",
+          "spellIds": []
+        },
+        {
+          "line": 227,
+          "source": "_events.Repeat(1s);",
+          "spellIds": []
+        },
+        {
+          "line": 230,
+          "source": "DoCastSelf(ByDifficulty(me, SPELL_PARASITISM, SPELL_PARASITISM_HC, SPELL_PARASITISM_MYTHIC));",
+          "spellIds": [
+            256867,
+            257054,
+            257055
+          ]
+        },
+        {
+          "line": 231,
+          "source": "_events.Repeat(55s);",
+          "spellIds": []
+        },
+        {
+          "line": 235,
+          "source": "DoCastVictim(SPELL_FIERCE_BLOW);",
+          "spellIds": [
+            975011
+          ]
+        },
+        {
+          "line": 236,
+          "source": "_events.Repeat(45s);",
+          "spellIds": []
+        },
+        {
+          "line": 243,
+          "source": "_events.Repeat(500ms);",
+          "spellIds": []
+        },
+        {
+          "line": 251,
+          "source": "_events.Repeat(500ms);",
+          "spellIds": []
+        },
+        {
+          "line": 262,
+          "source": "_events.ScheduleEvent(EVENT_SIDE_PILLARS, 2s);",
+          "spellIds": []
+        },
+        {
+          "line": 263,
+          "source": "_events.ScheduleEvent(EVENT_RISE, 10s);",
+          "spellIds": []
+        },
+        {
+          "line": 275,
+          "source": "_events.ScheduleEvent(EVENT_SIDE_PILLARS_FADE, 4s);",
+          "spellIds": []
+        },
+        {
+          "line": 294,
+          "source": "DoCast(walker, SPELL_DEATH_BEAM);",
+          "spellIds": [
+            256858
+          ]
+        },
+        {
+          "line": 300,
+          "source": "_events.ScheduleEvent(EVENT_BEAM_WALK, 5s);",
+          "spellIds": []
+        },
+        {
+          "line": 301,
+          "source": "_events.ScheduleEvent(EVENT_BEAM_PILLAR, 5s);",
+          "spellIds": []
+        },
+        {
+          "line": 302,
+          "source": "_events.ScheduleEvent(EVENT_BEAM_END, Milliseconds(5000 + BeamChannelMs + 200));",
+          "spellIds": []
+        },
+        {
+          "line": 303,
+          "source": "_events.ScheduleEvent(EVENT_DEATH_MISSILE, 0ms);",
+          "spellIds": []
+        },
+        {
+          "line": 313,
+          "source": "_events.Repeat(3s);",
+          "spellIds": []
+        },
+        {
+          "line": 317,
+          "source": "_events.Repeat(1s);",
+          "spellIds": []
+        },
+        {
+          "line": 367,
+          "source": "pillar->CastSpell(pillar, SPELL_PILLAR_VISUAL, true);",
+          "spellIds": [
+            256854
+          ]
+        },
+        {
+          "line": 374,
+          "source": "pillar->CastSpell(pillar, SPELL_NECROTIC_EMERGE, true);",
+          "spellIds": [
+            256021
+          ]
+        },
+        {
+          "line": 396,
+          "source": "orb->CastSpell(orb, SPELL_ORB_VISUAL, true);",
+          "spellIds": [
+            256853
+          ]
+        },
+        {
+          "line": 451,
+          "source": "_events.ScheduleEvent(EVENT_SINK, 500ms);",
+          "spellIds": []
+        },
+        {
+          "line": 465,
+          "source": "DoCastSelf(SPELL_SUBMERGED, true);",
+          "spellIds": [
+            256850
+          ]
+        },
+        {
+          "line": 468,
+          "source": "_events.ScheduleEvent(EVENT_SUBMERGED, 600ms);",
+          "spellIds": []
+        },
+        {
+          "line": 483,
+          "source": "_events.ScheduleEvent(EVENT_BEAM, 1s);",
+          "spellIds": []
+        },
+        {
+          "line": 509,
+          "source": "mark->CastSpell(mark, SPELL_IMPACT_ZONE, true);",
+          "spellIds": [
+            256865
+          ]
+        },
+        {
+          "line": 527,
+          "source": "me->CastSpell(mark, SPELL_DEATH_MISSILE, true);",
+          "spellIds": [
+            256863
+          ]
+        },
+        {
+          "line": 536,
+          "source": "mark->CastSpell(mark->GetPositionX(), mark->GetPositionY(), mark->GetPositionZ(),",
+          "spellIds": []
+        },
+        {
+          "line": 606,
+          "source": "_events.ScheduleEvent(EVENT_SINK, 25s);",
+          "spellIds": []
+        }
+      ],
+      "unresolvedSymbolCasts": 0
+    },
+    {
+      "source": "src/server/coa/CoAOtherSideEmbryo.cpp",
+      "spellConstantCount": 21,
+      "eventAndCastStatements": [
+        {
+          "line": 211,
+          "source": "_events.ScheduleEvent(EVENT_SPIKES, 5s);",
+          "spellIds": []
+        },
+        {
+          "line": 212,
+          "source": "_events.ScheduleEvent(EVENT_FIERCE_BLOW, 10s);",
+          "spellIds": []
+        },
+        {
+          "line": 280,
+          "source": "_events.Repeat(20s);",
+          "spellIds": []
+        },
+        {
+          "line": 283,
+          "source": "DoCastAOE(ByDifficulty(me, SPELL_POISON_BOLT, SPELL_POISON_BOLT_HC, SPELL_POISON_BOLT_MYTHIC));",
+          "spellIds": [
+            256882,
+            257063,
+            257064
+          ]
+        },
+        {
+          "line": 284,
+          "source": "_events.Repeat(10s);",
+          "spellIds": []
+        },
+        {
+          "line": 288,
+          "source": "DoCastVictim(SPELL_FIERCE_BLOW);",
+          "spellIds": [
+            975011
+          ]
+        },
+        {
+          "line": 289,
+          "source": "_events.Repeat(14s);",
+          "spellIds": []
+        },
+        {
+          "line": 293,
+          "source": "_events.Repeat(10s);",
+          "spellIds": []
+        },
+        {
+          "line": 296,
+          "source": "DoCastAOE(SPELL_NOVA, true);",
+          "spellIds": [
+            256873
+          ]
+        },
+        {
+          "line": 297,
+          "source": "_events.Repeat(3s);",
+          "spellIds": []
+        },
+        {
+          "line": 301,
+          "source": "DoCastSelf(ByDifficulty(me, SPELL_RITUAL, SPELL_RITUAL_HC, SPELL_RITUAL_MYTHIC), true);",
+          "spellIds": [
+            256872,
+            256965,
+            256967
+          ]
+        },
+        {
+          "line": 305,
+          "source": "_events.Repeat(Milliseconds(RitualChannelMs));",
+          "spellIds": []
+        },
+        {
+          "line": 317,
+          "source": "swirl->CastSpell(swirl, SPELL_BLOB, true);",
+          "spellIds": [
+            256874
+          ]
+        },
+        {
+          "line": 322,
+          "source": "_events.Repeat(3s);",
+          "spellIds": []
+        },
+        {
+          "line": 411,
+          "source": "DoCastSelf(spell);",
+          "spellIds": []
+        },
+        {
+          "line": 426,
+          "source": "spike->CastSpell(spike, SPELL_SPIKE_MARK, true);",
+          "spellIds": [
+            256852
+          ]
+        },
+        {
+          "line": 487,
+          "source": "mark->CastSpell(mark, SPELL_WEB_MARK_VISUAL, true);",
+          "spellIds": [
+            256879
+          ]
+        },
+        {
+          "line": 488,
+          "source": "blade->CastSpell(blade, SPELL_WEB_SHOT, true);",
+          "spellIds": [
+            257135
+          ]
+        },
+        {
+          "line": 537,
+          "source": "blade->CastSpell(blade, SPELL_WEB_ACTIVE, true);",
+          "spellIds": [
+            256880
+          ]
+        },
+        {
+          "line": 563,
+          "source": "circle->CastSpell(circle, SPELL_CIRCLE, true);",
+          "spellIds": [
+            256875
+          ]
+        },
+        {
+          "line": 567,
+          "source": "_events.ScheduleEvent(EVENT_EGG_PHASE_NOVA, 0ms);",
+          "spellIds": []
+        },
+        {
+          "line": 568,
+          "source": "_events.ScheduleEvent(EVENT_EGG_PHASE_RITUAL, Milliseconds(SwirlsAtMs));",
+          "spellIds": []
+        },
+        {
+          "line": 569,
+          "source": "_events.ScheduleEvent(EVENT_EGG_PHASE_SWIRLS, Milliseconds(SwirlsAtMs));",
+          "spellIds": []
+        },
+        {
+          "line": 570,
+          "source": "_events.ScheduleEvent(EVENT_EGG_PHASE_BLOBS, Milliseconds(BlobsAtMs));",
+          "spellIds": []
+        },
+        {
+          "line": 571,
+          "source": "_events.ScheduleEvent(EVENT_EGG_RAIN, Milliseconds(EggsAtMs));",
+          "spellIds": []
+        },
+        {
+          "line": 572,
+          "source": "_events.ScheduleEvent(EVENT_EGG_PHASE_STOP, Milliseconds(PhaseStopMs));",
+          "spellIds": []
+        },
+        {
+          "line": 573,
+          "source": "_events.ScheduleEvent(EVENT_EGG_LAST_RAIN, Milliseconds(LastRainMs));",
+          "spellIds": []
+        },
+        {
+          "line": 574,
+          "source": "_events.ScheduleEvent(EVENT_EGG_HATCH, Milliseconds(HatchMs));",
+          "spellIds": []
+        },
+        {
+          "line": 575,
+          "source": "_events.ScheduleEvent(EVENT_SPIDERS_RUN, Milliseconds(SpidersRunMs));",
+          "spellIds": []
+        },
+        {
+          "line": 576,
+          "source": "_events.ScheduleEvent(EVENT_LAND, Milliseconds(LandMs));",
+          "spellIds": []
+        },
+        {
+          "line": 590,
+          "source": "swirl->CastSpell(swirl, SPELL_SWIRL, true);",
+          "spellIds": [
+            256883
+          ]
+        },
+        {
+          "line": 740,
+          "source": "_events.ScheduleEvent(EVENT_SPIKES, 5s);",
+          "spellIds": []
+        },
+        {
+          "line": 741,
+          "source": "_events.ScheduleEvent(EVENT_WEB_LINES, 3s);",
+          "spellIds": []
+        },
+        {
+          "line": 742,
+          "source": "_events.ScheduleEvent(EVENT_POISON_BOLT, 8s);",
+          "spellIds": []
+        },
+        {
+          "line": 743,
+          "source": "_events.ScheduleEvent(EVENT_FIERCE_BLOW, 10s);",
+          "spellIds": []
+        }
+      ],
+      "unresolvedSymbolCasts": 0
+    },
+    {
+      "source": "src/server/coa/CoAVaults.cpp",
+      "spellConstantCount": 54,
+      "eventAndCastStatements": [
+        {
+          "line": 511,
+          "source": "_events.ScheduleEvent(EVENT_ECHO_SECOND_LINE, 6s);",
+          "spellIds": []
+        },
+        {
+          "line": 512,
+          "source": "_events.ScheduleEvent(EVENT_ECHO_CHAINS, 5s);",
+          "spellIds": []
+        },
+        {
+          "line": 513,
+          "source": "_events.ScheduleEvent(EVENT_ECHO_FIERCE_BLOW, 6s);",
+          "spellIds": []
+        },
+        {
+          "line": 514,
+          "source": "_events.ScheduleEvent(EVENT_ECHO_STRIKE, 15s);",
+          "spellIds": []
+        },
+        {
+          "line": 515,
+          "source": "_events.ScheduleEvent(EVENT_ECHO_DESTRUCTION, 25s);",
+          "spellIds": []
+        },
+        {
+          "line": 591,
+          "source": "_events.Repeat(ByDifficulty(me->GetMap(), 10s, 4s, 2s));",
+          "spellIds": []
+        },
+        {
+          "line": 594,
+          "source": "DoCastVictim(SPELL_FIERCE_BLOW);",
+          "spellIds": [
+            975011
+          ]
+        },
+        {
+          "line": 595,
+          "source": "_events.Repeat(9s, 11s);",
+          "spellIds": []
+        },
+        {
+          "line": 600,
+          "source": "DoCastVictim(SPELL_SPECTRAL_STRIKE);",
+          "spellIds": [
+            256975
+          ]
+        },
+        {
+          "line": 601,
+          "source": "_events.Repeat(37s);",
+          "spellIds": []
+        },
+        {
+          "line": 607,
+          "source": "DoCastAOE(SPELL_SPECTRAL_DESTRUCTION);",
+          "spellIds": [
+            256805
+          ]
+        },
+        {
+          "line": 608,
+          "source": "_events.Repeat(37s);",
+          "spellIds": []
+        },
+        {
+          "line": 636,
+          "source": "DoCastSelf(SPELL_SPECTRAL_DESTRUCTION_RP);",
+          "spellIds": [
+            256937
+          ]
+        },
+        {
+          "line": 648,
+          "source": "DoCastSelf(SPELL_SPECTRAL_DESTRUCTION_RP);",
+          "spellIds": [
+            256937
+          ]
+        },
+        {
+          "line": 748,
+          "source": "DoCast(echo, SPELL_RP_SHADOWBOLT);",
+          "spellIds": [
+            256936
+          ]
+        },
+        {
+          "line": 754,
+          "source": "DoCastSelf(SPELL_ENDLESS_AFFLICTION);",
+          "spellIds": [
+            256891
+          ]
+        },
+        {
+          "line": 836,
+          "source": "_events.ScheduleEvent(EVENT_DARK_MORE_FIRE, 5s);",
+          "spellIds": []
+        },
+        {
+          "line": 837,
+          "source": "_events.ScheduleEvent(EVENT_DARK_EARTHQUAKE, 18500ms);",
+          "spellIds": []
+        },
+        {
+          "line": 838,
+          "source": "_events.ScheduleEvent(EVENT_DARK_FIERCE_BLOW, 9s);",
+          "spellIds": []
+        },
+        {
+          "line": 916,
+          "source": "DoCastSelf(SPELL_MORE_FIRE);",
+          "spellIds": [
+            256814
+          ]
+        },
+        {
+          "line": 917,
+          "source": "_events.ScheduleEvent(EVENT_DARK_FIRE_CIRCLES, 3s);",
+          "spellIds": []
+        },
+        {
+          "line": 918,
+          "source": "_events.Repeat(20s);",
+          "spellIds": []
+        },
+        {
+          "line": 922,
+          "source": "_events.ScheduleEvent(EVENT_DARK_FIRE_LINE, 4s);",
+          "spellIds": []
+        },
+        {
+          "line": 930,
+          "source": "DoCastAOE(SPELL_EARTHQUAKE);",
+          "spellIds": [
+            256819
+          ]
+        },
+        {
+          "line": 931,
+          "source": "_events.ScheduleEvent(EVENT_DARK_QUAKE_END, 7s);",
+          "spellIds": []
+        },
+        {
+          "line": 932,
+          "source": "_events.Repeat(20s);",
+          "spellIds": []
+        },
+        {
+          "line": 938,
+          "source": "DoCastVictim(SPELL_FIERCE_BLOW);",
+          "spellIds": [
+            975011
+          ]
+        },
+        {
+          "line": 939,
+          "source": "_events.Repeat(6s, 8s);",
+          "spellIds": []
+        },
+        {
+          "line": 958,
+          "source": "DoCastSelf(SPELL_VOID_ESCAPE);",
+          "spellIds": [
+            256811
+          ]
+        },
+        {
+          "line": 959,
+          "source": "_events.ScheduleEvent(EVENT_DARK_APPEAR, DarkandleTeleportDelay);",
+          "spellIds": []
+        },
+        {
+          "line": 969,
+          "source": "_events.ScheduleEvent(EVENT_DARK_CANDLES, DarkandleAfterTeleport);",
+          "spellIds": []
+        },
+        {
+          "line": 973,
+          "source": "DoCastSelf(SPELL_CANDLES);",
+          "spellIds": [
+            256813
+          ]
+        },
+        {
+          "line": 974,
+          "source": "_events.ScheduleEvent(EVENT_DARK_INTRO_LINE, 4500ms);",
+          "spellIds": []
+        },
+        {
+          "line": 975,
+          "source": "_events.ScheduleEvent(EVENT_DARK_READY, 6500ms);",
+          "spellIds": []
+        },
+        {
+          "line": 1017,
+          "source": "DoCastSelf(SPELL_VOID_ESCAPE);",
+          "spellIds": [
+            256811
+          ]
+        },
+        {
+          "line": 1033,
+          "source": "DoCastAOE(SPELL_ABYSSAL_DEVOUR);",
+          "spellIds": [
+            256820
+          ]
+        },
+        {
+          "line": 1162,
+          "source": "_events.ScheduleEvent(EVENT_DEC_VOIDFLARE, 7s);",
+          "spellIds": []
+        },
+        {
+          "line": 1163,
+          "source": "_events.ScheduleEvent(EVENT_DEC_INNER_RING, 20s);",
+          "spellIds": []
+        },
+        {
+          "line": 1164,
+          "source": "_events.ScheduleEvent(EVENT_DEC_OUTER_RING, 25s);",
+          "spellIds": []
+        },
+        {
+          "line": 1165,
+          "source": "_events.ScheduleEvent(EVENT_DEC_SOAK, 30s);",
+          "spellIds": []
+        },
+        {
+          "line": 1166,
+          "source": "_events.ScheduleEvent(EVENT_DEC_CRYSTAL, 35s);",
+          "spellIds": []
+        },
+        {
+          "line": 1167,
+          "source": "_events.ScheduleEvent(EVENT_DEC_VOID_WRATH, 40s);",
+          "spellIds": []
+        },
+        {
+          "line": 1168,
+          "source": "_events.ScheduleEvent(EVENT_DEC_FIERCE_BLOW, 10s);",
+          "spellIds": []
+        },
+        {
+          "line": 1228,
+          "source": "_events.Repeat(DeceiverCycle);",
+          "spellIds": []
+        },
+        {
+          "line": 1231,
+          "source": "DoCastSelf(SPELL_SHADOWY_RINGS, true);",
+          "spellIds": [
+            256825
+          ]
+        },
+        {
+          "line": 1233,
+          "source": "_events.ScheduleEvent(EVENT_DEC_INNER_BURST, DeceiverRingDelay);",
+          "spellIds": []
+        },
+        {
+          "line": 1234,
+          "source": "_events.Repeat(DeceiverCycle);",
+          "spellIds": []
+        },
+        {
+          "line": 1241,
+          "source": "_events.ScheduleEvent(EVENT_DEC_OUTER_BURST, DeceiverRingDelay);",
+          "spellIds": []
+        },
+        {
+          "line": 1242,
+          "source": "_events.Repeat(DeceiverCycle);",
+          "spellIds": []
+        },
+        {
+          "line": 1250,
+          "source": "_events.Repeat(DeceiverCycle);",
+          "spellIds": []
+        },
+        {
+          "line": 1254,
+          "source": "_events.Repeat(DeceiverCycle);",
+          "spellIds": []
+        },
+        {
+          "line": 1258,
+          "source": "DoCastSelf(SPELL_VOID_WRATH);",
+          "spellIds": [
+            256844
+          ]
+        },
+        {
+          "line": 1259,
+          "source": "_events.Repeat(DeceiverCycle);",
+          "spellIds": []
+        },
+        {
+          "line": 1262,
+          "source": "DoCastVictim(SPELL_FIERCE_BLOW);",
+          "spellIds": [
+            975011
+          ]
+        },
+        {
+          "line": 1263,
+          "source": "_events.Repeat(10s, 12s);",
+          "spellIds": []
+        },
+        {
+          "line": 1291,
+          "source": "DoCastSelf(SPELL_VOID_CONSUMPTION);",
+          "spellIds": [
+            257219
+          ]
+        },
+        {
+          "line": 1310,
+          "source": "_events.ScheduleEvent(EVENT_DEC_ERUPTION, at);",
+          "spellIds": []
+        },
+        {
+          "line": 1311,
+          "source": "_events.ScheduleEvent(EVENT_DEC_HOLY_CRACKS, DeceiverHolyCracksAt);",
+          "spellIds": []
+        },
+        {
+          "line": 1312,
+          "source": "_events.ScheduleEvent(EVENT_DEC_SEAL_RING, DeceiverSealRingAt);",
+          "spellIds": []
+        },
+        {
+          "line": 1313,
+          "source": "_events.ScheduleEvent(EVENT_DEC_ROAR, DeceiverRoarAt);",
+          "spellIds": []
+        },
+        {
+          "line": 1314,
+          "source": "_events.ScheduleEvent(EVENT_DEC_AWAKE, DeceiverAwakeAt);",
+          "spellIds": []
+        },
+        {
+          "line": 1390,
+          "source": "DoCastSelf(SPELL_VOIDFLARE);",
+          "spellIds": [
+            256927
+          ]
+        },
+        {
+          "line": 1473,
+          "source": "DoCastSelf(SPELL_CHAIN_ZONE, true);",
+          "spellIds": [
+            256803
+          ]
+        },
+        {
+          "line": 1483,
+          "source": "DoCastSelf(SPELL_VOID_ZONE, true);",
+          "spellIds": [
+            256827
+          ]
+        },
+        {
+          "line": 1508,
+          "source": "me->CastSpell(me, SPELL_VISUAL_CANDLE_FLAME, false);",
+          "spellIds": [
+            256812
+          ]
+        },
+        {
+          "line": 1558,
+          "source": "DoCastSelf(SPELL_SUBJUGATING_CHAINS, true);",
+          "spellIds": [
+            256804
+          ]
+        },
+        {
+          "line": 1565,
+          "source": "DoCastSelf(SPELL_VOIDFLARE, true);",
+          "spellIds": [
+            256927
+          ]
+        },
+        {
+          "line": 1581,
+          "source": "DoCast(player, SPELL_SPECTRAL_STRIKE);",
+          "spellIds": [
+            256975
+          ]
+        },
+        {
+          "line": 1652,
+          "source": "candle->CastSpell(me, SPELL_CANDLE_FIREBALL, true);",
+          "spellIds": [
+            256816
+          ]
+        },
+        {
+          "line": 1749,
+          "source": "me->CastSpell(helper, SPELL_COSMETIC_CHAINS, true);",
+          "spellIds": [
+            256843
+          ]
+        },
+        {
+          "line": 1923,
+          "source": "DoCastVictim(ability.spell);",
+          "spellIds": []
+        },
+        {
+          "line": 1926,
+          "source": "DoCastSelf(ability.spell);",
+          "spellIds": []
+        },
+        {
+          "line": 1930,
+          "source": "DoCast(target, ability.spell);",
+          "spellIds": []
+        },
+        {
+          "line": 1943,
+          "source": "SpellCastResult const result = me->CastSpell(target, ability.spell, RelaxedCast);",
+          "spellIds": []
+        },
+        {
+          "line": 1964,
+          "source": "DoCastSelf(SPELL_CHARGE_IMPACT, true);",
+          "spellIds": [
+            257186
+          ]
+        }
+      ],
+      "unresolvedSymbolCasts": 0
+    }
+  ],
+  "notes": [
+    "Resolved spell IDs only when a cast statement directly names a SPELL_ constant",
+    "ScheduleEvent is not automatically linked to a cast; event handlers require control-flow review",
+    "Vaults file includes multiple bosses and trash; no automatic boss attribution",
+    "No live confirmation"
+  ]
+}

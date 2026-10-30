@@ -1,0 +1,208 @@
+{
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "method": "GitHub code search first 100 matches per query; incomplete index, not a full recursive tree",
+  "totalDiscovered": 93,
+  "groups": {
+    "": [
+      "src/server/scripts/Kalimdor/boss_azuregos.cpp",
+      "src/server/scripts/Outland/boss_doomwalker.cpp",
+      "src/server/scripts/Outland/boss_doomlord_kazzak.cpp",
+      "src/server/scripts/World/boss_emerald_dragons.cpp"
+    ],
+    "Gundrak": [
+      "src/server/scripts/Northrend/Gundrak/boss_eck.cpp",
+      "src/server/scripts/Northrend/Gundrak/boss_moorabi.cpp",
+      "src/server/scripts/Northrend/Gundrak/boss_slad_ran.cpp",
+      "src/server/scripts/Northrend/Gundrak/boss_gal_darah.cpp",
+      "src/server/scripts/Northrend/Gundrak/boss_drakkari_colossus.cpp",
+      "src/server/scripts/Northrend/Gundrak/instance_gundrak.cpp"
+    ],
+    "DireMaul": [
+      "src/server/scripts/Kalimdor/DireMaul/boss_isalien.cpp",
+      "src/server/scripts/Kalimdor/DireMaul/instance_dire_maul.cpp"
+    ],
+    "VioletHold": [
+      "src/server/scripts/Northrend/VioletHold/boss_xevozz.cpp",
+      "src/server/scripts/Northrend/VioletHold/boss_moragg.cpp",
+      "src/server/scripts/Northrend/VioletHold/boss_erekem.cpp",
+      "src/server/scripts/Northrend/VioletHold/boss_ichoron.cpp",
+      "src/server/scripts/Northrend/VioletHold/boss_zuramat.cpp",
+      "src/server/scripts/Northrend/VioletHold/boss_cyanigosa.cpp",
+      "src/server/scripts/Northrend/VioletHold/boss_lavanthor.cpp",
+      "src/server/scripts/Northrend/VioletHold/instance_violet_hold.cpp"
+    ],
+    "Nexus/Oculus": [
+      "src/server/scripts/Northrend/Nexus/Oculus/boss_urom.cpp",
+      "src/server/scripts/Northrend/Nexus/Oculus/boss_varos.cpp",
+      "src/server/scripts/Northrend/Nexus/Oculus/boss_drakos.cpp",
+      "src/server/scripts/Northrend/Nexus/Oculus/boss_eregos.cpp",
+      "src/server/scripts/Northrend/Nexus/Oculus/instance_oculus.cpp"
+    ],
+    "DraktharonKeep": [
+      "src/server/scripts/Northrend/DraktharonKeep/boss_dred.cpp",
+      "src/server/scripts/Northrend/DraktharonKeep/boss_tharon_ja.cpp",
+      "src/server/scripts/Northrend/DraktharonKeep/boss_trollgore.cpp",
+      "src/server/scripts/Northrend/DraktharonKeep/instance_drak_tharon_keep.cpp"
+    ],
+    "Nexus/Nexus": [
+      "src/server/scripts/Northrend/Nexus/Nexus/boss_ormorok.cpp",
+      "src/server/scripts/Northrend/Nexus/Nexus/boss_anomalus.cpp",
+      "src/server/scripts/Northrend/Nexus/Nexus/boss_keristrasza.cpp",
+      "src/server/scripts/Northrend/Nexus/Nexus/boss_magus_telestra.cpp",
+      "src/server/scripts/Northrend/Nexus/Nexus/instance_nexus.cpp"
+    ],
+    "TempestKeep/botanica": [
+      "src/server/scripts/Outland/TempestKeep/botanica/boss_laj.cpp",
+      "src/server/scripts/Outland/TempestKeep/botanica/instance_the_botanica.cpp"
+    ],
+    "Deadmines": [
+      "src/server/scripts/EasternKingdoms/Deadmines/boss_mr_smite.cpp",
+      "src/server/scripts/EasternKingdoms/Deadmines/instance_deadmines.cpp"
+    ],
+    "Scholomance": [
+      "src/server/scripts/EasternKingdoms/Scholomance/boss_kormok.cpp",
+      "src/server/scripts/EasternKingdoms/Scholomance/instance_scholomance.cpp"
+    ],
+    "Auchindoun/SethekkHalls": [
+      "src/server/scripts/Outland/Auchindoun/SethekkHalls/boss_anzu.cpp",
+      "src/server/scripts/Outland/Auchindoun/SethekkHalls/instance_sethekk_halls.cpp"
+    ],
+    "Auchindoun/ManaTombs": [
+      "src/server/scripts/Outland/Auchindoun/ManaTombs/boss_tavarok.cpp",
+      "src/server/scripts/Outland/Auchindoun/ManaTombs/instance_mana_tombs.cpp"
+    ],
+    "Ulduar/HallsOfStone": [
+      "src/server/scripts/Northrend/Ulduar/HallsOfStone/boss_sjonnir.cpp",
+      "src/server/scripts/Northrend/Ulduar/HallsOfStone/instance_halls_of_stone.cpp"
+    ],
+    "AlteracValley": [
+      "src/server/scripts/EasternKingdoms/AlteracValley/boss_vanndar.cpp",
+      "src/server/scripts/EasternKingdoms/AlteracValley/boss_balinda.cpp",
+      "src/server/scripts/EasternKingdoms/AlteracValley/boss_drekthar.cpp",
+      "src/server/scripts/EasternKingdoms/AlteracValley/boss_galvangar.cpp"
+    ],
+    "IcecrownCitadel": [
+      "src/server/scripts/Northrend/IcecrownCitadel/boss_festergut.cpp",
+      "src/server/scripts/Northrend/IcecrownCitadel/instance_icecrown_citadel.cpp"
+    ],
+    "AzjolNerub/ahnkahet": [
+      "src/server/scripts/Northrend/AzjolNerub/ahnkahet/boss_amanitar.cpp",
+      "src/server/scripts/Northrend/AzjolNerub/ahnkahet/instance_ahnkahet.cpp"
+    ],
+    "Ulduar/HallsOfLightning": [
+      "src/server/scripts/Northrend/Ulduar/HallsOfLightning/boss_loken.cpp",
+      "src/server/scripts/Northrend/Ulduar/HallsOfLightning/boss_ionar.cpp",
+      "src/server/scripts/Northrend/Ulduar/HallsOfLightning/instance_halls_of_lightning.cpp"
+    ],
+    "Maraudon": [
+      "src/server/scripts/Kalimdor/Maraudon/instance_maraudon.cpp"
+    ],
+    "Uldaman": [
+      "src/server/scripts/EasternKingdoms/Uldaman/instance_uldaman.cpp"
+    ],
+    "Gnomeregan": [
+      "src/server/scripts/EasternKingdoms/Gnomeregan/instance_gnomeregan.cpp"
+    ],
+    "RazorfenKraul": [
+      "src/server/scripts/Kalimdor/RazorfenKraul/instance_razorfen_kraul.cpp"
+    ],
+    "RazorfenDowns": [
+      "src/server/scripts/Kalimdor/RazorfenDowns/instance_razorfen_downs.cpp"
+    ],
+    "TempestKeep/arcatraz": [
+      "src/server/scripts/Outland/TempestKeep/arcatraz/instance_arcatraz.cpp"
+    ],
+    "TempestKeep/Mechanar": [
+      "src/server/scripts/Outland/TempestKeep/Mechanar/instance_mechanar.cpp"
+    ],
+    "RagefireChasm": [
+      "src/server/scripts/Kalimdor/RagefireChasm/instance_ragefire_chasm.cpp"
+    ],
+    "WailingCaverns": [
+      "src/server/scripts/Kalimdor/WailingCaverns/instance_wailing_caverns.cpp"
+    ],
+    "TheStockade": [
+      "src/server/scripts/EasternKingdoms/TheStockade/instance_the_stockade.cpp"
+    ],
+    "ZulFarrak": [
+      "src/server/scripts/Kalimdor/ZulFarrak/instance_zulfarrak.cpp"
+    ],
+    "AzjolNerub/AzjolNerub": [
+      "src/server/scripts/Northrend/AzjolNerub/AzjolNerub/instance_azjol_nerub.cpp"
+    ],
+    "BlackfathomDeeps": [
+      "src/server/scripts/Kalimdor/BlackfathomDeeps/instance_blackfathom_deeps.cpp"
+    ],
+    "SunkenTemple": [
+      "src/server/scripts/EasternKingdoms/SunkenTemple/instance_sunken_temple.cpp"
+    ],
+    "FrozenHalls/PitOfSaron": [
+      "src/server/scripts/Northrend/FrozenHalls/PitOfSaron/instance_pit_of_saron.cpp"
+    ],
+    "ShadowfangKeep": [
+      "src/server/scripts/EasternKingdoms/ShadowfangKeep/instance_shadowfang_keep.cpp"
+    ],
+    "UtgardeKeep/UtgardeKeep": [
+      "src/server/scripts/Northrend/UtgardeKeep/UtgardeKeep/instance_utgarde_keep.cpp"
+    ],
+    "CoilfangReservoir/underbog": [
+      "src/server/scripts/Outland/CoilfangReservoir/underbog/instance_the_underbog.cpp"
+    ],
+    "CoilfangReservoir/SteamVault": [
+      "src/server/scripts/Outland/CoilfangReservoir/SteamVault/instance_steam_vault.cpp"
+    ],
+    "FrozenHalls/ForgeOfSouls": [
+      "src/server/scripts/Northrend/FrozenHalls/ForgeOfSouls/instance_forge_of_souls.cpp"
+    ],
+    "Auchindoun/AuchenaiCrypts": [
+      "src/server/scripts/Outland/Auchindoun/AuchenaiCrypts/instance_auchenai_crypts.cpp"
+    ],
+    "MagistersTerrace": [
+      "src/server/scripts/EasternKingdoms/MagistersTerrace/instance_magisters_terrace.cpp"
+    ],
+    "CoilfangReservoir/SlavePens": [
+      "src/server/scripts/Outland/CoilfangReservoir/SlavePens/instance_the_slave_pens.cpp"
+    ],
+    "HellfireCitadel/BloodFurnace": [
+      "src/server/scripts/Outland/HellfireCitadel/BloodFurnace/instance_blood_furnace.cpp"
+    ],
+    "Auchindoun/ShadowLabyrinth": [
+      "src/server/scripts/Outland/Auchindoun/ShadowLabyrinth/instance_shadow_labyrinth.cpp"
+    ],
+    "ScarletMonastery": [
+      "src/server/scripts/EasternKingdoms/ScarletMonastery/instance_scarlet_monastery.cpp"
+    ],
+    "HellfireCitadel/ShatteredHalls": [
+      "src/server/scripts/Outland/HellfireCitadel/ShatteredHalls/instance_shattered_halls.cpp"
+    ],
+    "UtgardeKeep/UtgardePinnacle": [
+      "src/server/scripts/Northrend/UtgardeKeep/UtgardePinnacle/instance_utgarde_pinnacle.cpp"
+    ],
+    "HellfireCitadel/HellfireRamparts": [
+      "src/server/scripts/Outland/HellfireCitadel/HellfireRamparts/instance_hellfire_ramparts.cpp"
+    ],
+    "Stratholme": [
+      "src/server/scripts/EasternKingdoms/Stratholme/instance_stratholme.cpp"
+    ],
+    "CavernsOfTime/EscapeFromDurnholdeKeep": [
+      "src/server/scripts/Kalimdor/CavernsOfTime/EscapeFromDurnholdeKeep/instance_old_hillsbrad.cpp"
+    ],
+    "CavernsOfTime/TheBlackMorass": [
+      "src/server/scripts/Kalimdor/CavernsOfTime/TheBlackMorass/instance_the_black_morass.cpp"
+    ],
+    "CavernsOfTime/CullingOfStratholme": [
+      "src/server/scripts/Kalimdor/CavernsOfTime/CullingOfStratholme/instance_culling_of_stratholme.cpp"
+    ],
+    "CavernsOfTime/BattleForMountHyjal": [
+      "src/server/scripts/Kalimdor/CavernsOfTime/BattleForMountHyjal/instance_hyjal.cpp"
+    ],
+    "BlackrockMountain/MoltenCore": [
+      "src/server/scripts/EasternKingdoms/BlackrockMountain/MoltenCore/instance_molten_core.cpp"
+    ],
+    "BlackrockMountain/BlackwingLair": [
+      "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/instance_blackwing_lair.cpp"
+    ]
+  },
+  "missingCoverage": "Search capped; needs recursive repository tree and SQL/DBC crosswalk",
+  "verification": "Upstream paths only; not confirmed live"
+}

@@ -1,0 +1,124 @@
+{
+  "schema": "coa-research.vaults-instance-difficulty-sql-index.v1",
+  "date": "2026-10-30",
+  "source": "data/sql/updates/pending_db_world/rev_20261028_60_vaults_of_the_inquisition.sql",
+  "sections": {
+    "lfg_dungeon_template": {
+      "sourceSection": [
+        "-- lfg_dungeon_template",
+        "DELETE FROM `lfg_dungeon_template` WHERE `dungeonId` IN (401, 1401, 2401);",
+        "INSERT INTO `lfg_dungeon_template` (`dungeonId`, `name`, `position_x`, `position_y`, `position_z`, `orientation`, `VerifiedBuild`) VALUES",
+        "(401,'Vaults of the Inquisition',-6658.51,-5569.48,175.073,4.72967,12340),"
+      ],
+      "rows": [
+        "(401,'Vaults of the Inquisition',-6658.51,-5569.48,175.073,4.72967,12340),",
+        "(1401,'Vaults of the Inquisition (Heroic)',-6658.51,-5569.48,175.073,4.72967,12340),",
+        "(2401,'Vaults of the Inquisition (Mythic)',-6658.51,-5569.48,175.073,4.72967,12340);"
+      ]
+    },
+    "instance_encounters": {
+      "sourceSection": [
+        "-- instance_encounters",
+        "DELETE FROM `instance_encounters` WHERE `entry` BETWEEN 15000 AND 15002 OR `entry` BETWEEN 15008 AND 15010 OR `entry` BETWEEN 15014 AND 15016;",
+        "INSERT INTO `instance_encounters` (`entry`, `creditType`, `creditEntry`, `lastEncounterDungeon`, `comment`) VALUES",
+        "(15000,0,162700,0,'Vaults of the Inquisition Normal: Merciless Echo'),"
+      ],
+      "rows": [
+        "(15000,0,162700,0,'Vaults of the Inquisition Normal: Merciless Echo'),",
+        "(15001,0,162703,0,'Vaults of the Inquisition Normal: His Majesty Darkandle'),",
+        "(15002,0,162704,401,'Vaults of the Inquisition Normal: The Deceiver\\'s Presence'),",
+        "(15008,0,162700,0,'Vaults of the Inquisition Heroic: Merciless Echo'),",
+        "(15009,0,162703,0,'Vaults of the Inquisition Heroic: His Majesty Darkandle'),",
+        "(15010,0,162704,1401,'Vaults of the Inquisition Heroic: The Deceiver\\'s Presence'),",
+        "(15014,0,162700,0,'Vaults of the Inquisition Mythic: Merciless Echo'),",
+        "(15015,0,162703,0,'Vaults of the Inquisition Mythic: His Majesty Darkandle'),",
+        "(15016,0,162704,2401,'Vaults of the Inquisition Mythic: The Deceiver\\'s Presence');"
+      ]
+    },
+    "coa_dungeon_health": {
+      "sourceSection": [
+        "-- coa_dungeon_health",
+        "DELETE FROM `coa_dungeon_health` WHERE `map_id` = 936;",
+        "INSERT INTO `coa_dungeon_health` (`map_id`, `difficulty`, `creature_entry`, `max_health`, `evidence`, `source`) VALUES",
+        "(936,1,162700,680375,'log','Heroic from Mythic /1.3; Merciless Echo'),"
+      ],
+      "rows": [
+        "(936,1,162700,680375,'log','Heroic from Mythic /1.3; Merciless Echo'),",
+        "(936,1,162703,675027,'log','Heroic from Mythic /1.3; His Majesty Darkandle'),",
+        "(936,1,162704,675026,'log','Heroic from Mythic /1.3; The Deceiver\\'s Presence'),",
+        "(936,1,162733,56177,'log','Heroic from Mythic /1.3; Inquisitorial Torturer'),",
+        "(936,1,162734,150035,'log','Heroic from Mythic /1.3; Phantasmal Bound'),",
+        "(936,1,162735,36766,'log','Heroic from Mythic /1.3; Freed Prisoner'),",
+        "(936,1,162736,150019,'log','Heroic from Mythic /1.3; Wrathful Torment'),",
+        "(936,1,162737,56177,'log','Heroic from Mythic /1.3; Darkandle Kobold'),",
+        "(936,1,162738,150030,'log','Heroic from Mythic /1.3; Darkandle Brute'),",
+        "(936,1,162748,43458,'log','Heroic from Mythic /1.3; Shadow Projection'),",
+        "(936,1,162761,150021,'log','Heroic from Mythic /1.3; Corporeal Shadow'),",
+        "(936,1,162762,115052,'log','Heroic from Mythic /1.3; Darkandle Kobold'),",
+        "(936,1,162763,246596,'log','Heroic from Mythic /1.3; Darkandle Brute'),",
+        "(936,1,162999,367520,'log','Heroic from Mythic /1.3; Inquisitorial Confessor Konrad'),",
+        "(936,1,163813,39342,'log','Heroic from Mythic /1.3; Darkandle Kobold'),",
+        "(936,2,162700,884488,'log','Mythic combat log 2026-08-05; Merciless Echo'),",
+        "(936,2,162703,877535,'log','Mythic combat log 2026-08-05; His Majesty Darkandle'),",
+        "(936,2,162704,877534,'log','Mythic combat log 2026-08-05; The Deceiver\\'s Presence'),",
+        "(936,2,162733,73030,'log','Mythic combat log 2026-08-05; Inquisitorial Torturer'),",
+        "(936,2,162734,195046,'log','Mythic combat log 2026-08-05; Phantasmal Bound'),",
+        "(936,2,162735,47796,'log','Mythic combat log 2026-08-05 (R2), dies to its own Manifest; Freed Prisoner'),",
+        "(936,2,162736,195025,'log','Mythic combat log 2026-08-05; Wrathful Torment'),",
+        "(936,2,162737,73030,'log','Mythic combat log 2026-08-05; Darkandle Kobold'),",
+        "(936,2,162738,195039,'log','Mythic combat log 2026-08-05; Darkandle Brute'),",
+        "(936,2,162748,56495,'log','Normal log 2026-06-06 x Torturer Mythic/Normal; Shadow Projection'),",
+        "(936,2,162761,195027,'log','Mythic combat log 2026-08-05; Corporeal Shadow'),",
+        "(936,2,162762,149567,'log','Mythic combat log 2026-08-05; Darkandle Kobold'),",
+        "(936,2,162763,320575,'log','Mythic combat log 2026-08-05; Darkandle Brute'),",
+        "(936,2,162999,477776,'log','Mythic combat log 2026-08-05 (R2); Inquisitorial Confessor Konrad'),",
+        "(936,2,163813,51145,'log','Mythic combat log 2026-08-05; Darkandle Kobold');"
+      ]
+    },
+    "coa_dungeon_mark_bosses": {
+      "sourceSection": [
+        "-- coa_dungeon_mark_bosses",
+        "DELETE FROM `coa_dungeon_mark_bosses` WHERE `entry` IN (162700, 162703, 162704);",
+        "INSERT INTO `coa_dungeon_mark_bosses` (`entry`) VALUES",
+        "(162700),"
+      ],
+      "rows": []
+    },
+    "coa_dungeon_bosses": {
+      "sourceSection": [
+        "-- coa_dungeon_bosses",
+        "DELETE FROM `coa_dungeon_bosses` WHERE `entry` IN (162700, 162703, 162704);",
+        "INSERT INTO `coa_dungeon_bosses` (`entry`) VALUES",
+        "(162700),"
+      ],
+      "rows": []
+    },
+    "coa_dungeon_spell_damage": {
+      "sourceSection": [
+        "-- coa_dungeon_spell_damage",
+        "DELETE FROM `coa_dungeon_spell_damage` WHERE `comment` LIKE 'Vaults of the Inquisition:%';",
+        "INSERT INTO `coa_dungeon_spell_damage` (`spell_id`, `multiplier`, `comment`) VALUES",
+        "(256891,1,'Vaults of the Inquisition: Endless Affliction (Wrathful Torment), values from the logs, no trash cap'),"
+      ],
+      "rows": [
+        "(256891,1,'Vaults of the Inquisition: Endless Affliction (Wrathful Torment), values from the logs, no trash cap'),",
+        "(256892,1,'Vaults of the Inquisition: Darkandle Flame (Darkandle Kobold), values from the logs, no trash cap'),",
+        "(256893,1,'Vaults of the Inquisition: Dark Wax Explosion (Darkandle Brute), values from the logs, no trash cap'),",
+        "(257168,1,'Vaults of the Inquisition: Endless Affliction (Wrathful Torment), values from the logs, no trash cap'),",
+        "(257169,1,'Vaults of the Inquisition: Endless Affliction (Wrathful Torment), values from the logs, no trash cap'),",
+        "(257170,1,'Vaults of the Inquisition: Endless Affliction (Wrathful Torment), values from the logs, no trash cap'),",
+        "(257172,1,'Vaults of the Inquisition: Darkandle Flame (Darkandle Kobold), values from the logs, no trash cap'),",
+        "(257173,1,'Vaults of the Inquisition: Darkandle Flame (Darkandle Kobold), values from the logs, no trash cap'),",
+        "(257174,1,'Vaults of the Inquisition: Darkandle Flame (Darkandle Kobold), values from the logs, no trash cap'),",
+        "(257179,1,'Vaults of the Inquisition: Dark Wax Explosion (Darkandle Brute), values from the logs, no trash cap'),",
+        "(257180,1,'Vaults of the Inquisition: Dark Wax Explosion (Darkandle Brute), values from the logs, no trash cap'),",
+        "(257181,1,'Vaults of the Inquisition: Dark Wax Explosion (Darkandle Brute), values from the logs, no trash cap');"
+      ]
+    }
+  },
+  "notes": [
+    "Rows retain SQL syntax to avoid incorrectly parsing escaped comments and strings",
+    "Health values and spell multipliers are authored upstream data, not live combat measurements",
+    "Difficulty and encounter mapping require in-game confirmation"
+  ]
+}

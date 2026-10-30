@@ -29,6 +29,10 @@ jobs:
           git add datasets/gear/bisbeard-* research/COA-BISBEARD-TABLE-COVERAGE.csv
           if ! git diff --cached --quiet; then
             git commit -m "data: preserve complete BisBeard planner catalog and phase coverage"
-            git pull --rebase origin main
-            git push
+            for attempt in 1 2 3 4 5; do
+              git pull --rebase origin main
+              if git push; then exit 0; fi
+              sleep 3
+            done
+            exit 1
           fi

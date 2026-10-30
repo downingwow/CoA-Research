@@ -1,0 +1,120 @@
+{
+  "schema": "coa-research.encounter-phase-conditions.v1",
+  "date": "2026-10-30",
+  "provenance": "Upstream C++ source only; no live confirmation",
+  "encounters": [
+    {
+      "npcId": 162716,
+      "name": "Chimeric Embryo",
+      "mapId": 937,
+      "source": "src/server/coa/CoAOtherSideEmbryo.cpp",
+      "trigger": {
+        "condition": "HealthBelowPctDamaged(50, damage)",
+        "phase": "Ground",
+        "action": "StartEggPhase pending when casting permits"
+      },
+      "eggPhaseMs": {
+        "swirls": 7000,
+        "blobs": 9000,
+        "eggs": 10000,
+        "phaseStop": 47000,
+        "lastRain": 50000,
+        "hatch": 51000,
+        "spidersRun": 52000,
+        "land": 53000,
+        "ritualChannel": 30000
+      },
+      "note": "Offsets relative to egg phase start, not encounter pull"
+    },
+    {
+      "npcId": 162715,
+      "name": "Drak'math the Sinister King",
+      "mapId": 937,
+      "source": "src/server/coa/CoAOtherSideDrakmath.cpp",
+      "pullScheduleMs": {
+        "parasitism": 7000,
+        "fierceBlow": 9000,
+        "sink": 15000
+      },
+      "beamChannelMs": 30000,
+      "beamTickMs": 500,
+      "missileMarkMs": 2500,
+      "note": "Submerge/walk/beam phases and scheduling conditional on transitions"
+    },
+    {
+      "npcId": 162711,
+      "name": "Muzah the Shadow Hunter",
+      "mapId": 937,
+      "source": "src/server/coa/CoAOtherSideMuzah.cpp",
+      "pullScheduleMs": {
+        "web": 20000,
+        "webTick": 1000,
+        "fierceBlowMin": 10000,
+        "fierceBlowMax": 15000,
+        "glaiveStrike": 15000
+      },
+      "note": "Glaive and leap offsets depend on GlaiveCastMs; not flattened"
+    },
+    {
+      "npcId": 162703,
+      "name": "His Majesty Darkandle",
+      "mapId": 936,
+      "source": "src/server/coa/CoAVaults.cpp",
+      "healthTriggers": {
+        "escape": {
+          "normalPct": 15,
+          "heroicPct": 20,
+          "mythicPct": 30
+        },
+        "pleaPct": 10
+      },
+      "pullScheduleMs": {
+        "moreFire": 5000,
+        "earthquake": 18500,
+        "fierceBlow": 9000
+      },
+      "note": "Escape and plea are separate threshold checks; source conditions apply"
+    },
+    {
+      "npcId": 162704,
+      "name": "The Deceiver's Presence",
+      "mapId": 936,
+      "source": "src/server/coa/CoAVaults.cpp",
+      "pullScheduleMs": {
+        "voidflare": 7000,
+        "innerRing": 20000,
+        "outerRing": 25000,
+        "soak": 30000,
+        "crystal": 35000,
+        "voidWrath": 40000,
+        "fierceBlow": 10000
+      },
+      "cycleMs": 40000,
+      "ringBurstDelayMs": 5000,
+      "awakeningOffsetsMs": {
+        "holyCracks": 12000,
+        "sealRing": 14000,
+        "roar": 15500,
+        "awake": 17000
+      },
+      "note": "Awakening offsets and pull schedules belong to distinct sequences"
+    },
+    {
+      "npcId": 162700,
+      "name": "Merciless Echo",
+      "mapId": 936,
+      "source": "src/server/coa/CoAVaults.cpp",
+      "pullScheduleMs": {
+        "chains": 5000,
+        "fierceBlow": 6000,
+        "spectralStrike": 15000,
+        "spectralDestruction": 25000
+      },
+      "note": "Initial RP line event and engagement delays also exist; do not conflate"
+    }
+  ],
+  "warnings": [
+    "Times are authored schedules, not verified combat-log timestamps",
+    "All phase-specific scheduling must be verified before creating DBM predictive timers"
+  ]
+}

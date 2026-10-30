@@ -1,0 +1,3148 @@
+{
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "verification": "Upstream scripts only; difficulty overrides and live behavior pending",
+  "files": [
+    {
+      "path": "src/server/scripts/Northrend/Gundrak/boss_eck.cpp",
+      "sha": "e21b5835cb28767942167eea9f4a2305ab39de6a",
+      "lineCount": 97,
+      "signals": [
+        {
+          "line": 25,
+          "text": "SPELL_ECK_BERSERK                   = 55816,"
+        },
+        {
+          "line": 26,
+          "text": "SPELL_ECK_BITE                      = 55813,"
+        },
+        {
+          "line": 27,
+          "text": "SPELL_ECK_SPIT                      = 55814,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_ECK_SPRING                    = 55815,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_ECK_SPRING_INIT               = 55837"
+        },
+        {
+          "line": 35,
+          "text": "EVENT_ECK_BERSERK                   = 1,"
+        },
+        {
+          "line": 36,
+          "text": "EVENT_ECK_CRAZED_EMOTE              = 2,"
+        },
+        {
+          "line": 60,
+          "text": "me->CastSpell(me, SPELL_ECK_SPRING_INIT, true);"
+        },
+        {
+          "line": 67,
+          "text": "if (spell->Id == SPELL_ECK_SPRING)"
+        },
+        {
+          "line": 78,
+          "text": "Talk(EMOTE_CRAZED);"
+        },
+        {
+          "line": 79,
+          "text": "}, EVENT_ECK_CRAZED_EMOTE);"
+        },
+        {
+          "line": 81,
+          "text": "DoCastVictim(SPELL_ECK_BITE);"
+        },
+        {
+          "line": 84,
+          "text": "DoCastVictim(SPELL_ECK_SPIT);"
+        },
+        {
+          "line": 87,
+          "text": "DoCastRandomTarget(SPELL_ECK_SPRING, 0, 30.0f, true);"
+        },
+        {
+          "line": 89,
+          "text": "ScheduleEnrageTimer(SPELL_ECK_BERSERK, 90s);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/Gundrak/boss_slad_ran.cpp",
+      "sha": "2d3eaf0b00fb9040a001ae50aee4aff7ea1cba9a",
+      "lineCount": 198,
+      "signals": [
+        {
+          "line": 27,
+          "text": "SPELL_POISON_NOVA                           = 55081,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_POWERFULL_BITE                        = 48287,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_VENOM_BOLT                            = 54970,"
+        },
+        {
+          "line": 31,
+          "text": "SPELL_SNAKE_WRAP                            = 55126"
+        },
+        {
+          "line": 73,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 75,
+          "text": "BossAI::Reset();"
+        },
+        {
+          "line": 79,
+          "text": "Talk(SAY_SUMMON_SNAKES);"
+        },
+        {
+          "line": 83,
+          "text": "me->SummonCreature(NPC_SLADRAN_VIPER, SpawnLoc[i], TEMPSUMMON_CORPSE_TIMED_DESPAWN, 20 * IN_MILLISECONDS);"
+        },
+        {
+          "line": 88,
+          "text": "Talk(SAY_SUMMON_CONSTRICTORS);"
+        },
+        {
+          "line": 92,
+          "text": "me->SummonCreature(NPC_SLADRAN_CONSTRICTORS, SpawnLoc[i], TEMPSUMMON_CORPSE_TIMED_DESPAWN, 20 * IN_MILLISECONDS);"
+        },
+        {
+          "line": 112,
+          "text": "Talk(SAY_AGGRO);"
+        },
+        {
+          "line": 116,
+          "text": "Talk(EMOTE_NOVA);"
+        },
+        {
+          "line": 117,
+          "text": "DoCastAOE(SPELL_POISON_NOVA);"
+        },
+        {
+          "line": 121,
+          "text": "DoCastVictim(SPELL_POWERFULL_BITE);"
+        },
+        {
+          "line": 125,
+          "text": "DoCastRandomTarget(SPELL_VENOM_BOLT, 0, 45.0f, false);"
+        },
+        {
+          "line": 129,
+          "text": "void JustDied(Unit* killer) override"
+        },
+        {
+          "line": 131,
+          "text": "Talk(SAY_DEATH);"
+        },
+        {
+          "line": 132,
+          "text": "Talk(EMOTE_ALTAR);"
+        },
+        {
+          "line": 133,
+          "text": "BossAI::JustDied(killer);"
+        },
+        {
+          "line": 138,
+          "text": "Talk(SAY_SLAY);"
+        },
+        {
+          "line": 157,
+          "text": "return ValidateSpellInfo({ SPELL_SNAKE_WRAP });"
+        },
+        {
+          "line": 166,
+          "text": "GetUnitOwner()->CastSpell(GetUnitOwner(), SPELL_SNAKE_WRAP, true);"
+        },
+        {
+          "line": 172,
+          "text": "OnEffectPeriodic += AuraEffectPeriodicFn(spell_sladran_grip_of_sladran_aura::HandlePeriodic, EFFECT_0, SPELL_AURA_PERIODIC_DUMMY);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/Gundrak/boss_drakkari_colossus.cpp",
+      "sha": "4d906b138a3ef327491db944657a3f61704efb9a",
+      "lineCount": 484,
+      "signals": [
+        {
+          "line": 26,
+          "text": "SPELL_MOJO_PUDDLE                   = 55627,"
+        },
+        {
+          "line": 27,
+          "text": "SPELL_MOJO_WAVE                     = 55626,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_FREEZE_ANIM                   = 52656,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_MIGHTY_BLOW                   = 54719,"
+        },
+        {
+          "line": 30,
+          "text": "SPELL_MORTAL_STRIKE                 = 54715,"
+        },
+        {
+          "line": 32,
+          "text": "SPELL_ELEMENTAL_SPAWN_EFFECT        = 54888,"
+        },
+        {
+          "line": 33,
+          "text": "SPELL_EMERGE                        = 54850,"
+        },
+        {
+          "line": 34,
+          "text": "SPELL_EMERGE_SUMMON                 = 54851,"
+        },
+        {
+          "line": 35,
+          "text": "SPELL_MOJO_VOLLEY                   = 54849,"
+        },
+        {
+          "line": 37,
+          "text": "SPELL_SURGE_VISUAL                  = 54827,"
+        },
+        {
+          "line": 38,
+          "text": "SPELL_SURGE                         = 54801,"
+        },
+        {
+          "line": 39,
+          "text": "SPELL_SURGE_DAMAGE                  = 54819,"
+        },
+        {
+          "line": 41,
+          "text": "SPELL_FACE_ME                       = 54991,"
+        },
+        {
+          "line": 42,
+          "text": "SPELL_MERGE                         = 54878,"
+        },
+        {
+          "line": 50,
+          "text": "ACTION_MERGE                        = 1,"
+        },
+        {
+          "line": 51,
+          "text": "ACTION_INFORM                       = 2,"
+        },
+        {
+          "line": 57,
+          "text": "EVENT_COLOSSUS_MIGHTY_BLOW          = 1,"
+        },
+        {
+          "line": 58,
+          "text": "EVENT_COLOSSUS_MORTAL_STRIKE        = 2,"
+        },
+        {
+          "line": 59,
+          "text": "EVENT_COLOSSUS_START_FIGHT          = 3,"
+        },
+        {
+          "line": 61,
+          "text": "EVENT_ELEMENTAL_HEALTH              = 10,"
+        },
+        {
+          "line": 62,
+          "text": "EVENT_ELEMENTAL_SURGE               = 11,"
+        },
+        {
+          "line": 63,
+          "text": "EVENT_ELEMENTAL_VOLLEY              = 12,"
+        },
+        {
+          "line": 65,
+          "text": "EVENT_MOJO_MOJO_WAVE                = 20,"
+        },
+        {
+          "line": 66,
+          "text": "EVENT_MOJO_MOJO_PUDDLE              = 21,"
+        },
+        {
+          "line": 117,
+          "text": "if (param == ACTION_INFORM)"
+        },
+        {
+          "line": 120,
+          "text": "summons.DoAction(ACTION_MERGE);"
+        },
+        {
+          "line": 121,
+          "text": "events.ScheduleEvent(EVENT_COLOSSUS_START_FIGHT, 3500ms);"
+        },
+        {
+          "line": 125,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 127,
+          "text": "BossAI::Reset();"
+        },
+        {
+          "line": 130,
+          "text": "me->CastSpell(me, SPELL_FREEZE_ANIM, true);"
+        },
+        {
+          "line": 133,
+          "text": "me->SummonCreature(NPC_LIVING_MOJO, i.GetPositionX(), i.GetPositionY(), i.GetPositionZ(), 0, TEMPSUMMON_MANUAL_DESPAWN, 0);"
+        },
+        {
+          "line": 148,
+          "text": "me->CastSpell(me, SPELL_FREEZE_ANIM, true);"
+        },
+        {
+          "line": 153,
+          "text": "events.ScheduleEvent(EVENT_COLOSSUS_START_FIGHT, 1s);"
+        },
+        {
+          "line": 154,
+          "text": "events.ScheduleEvent(EVENT_COLOSSUS_MIGHTY_BLOW, 10s);"
+        },
+        {
+          "line": 155,
+          "text": "events.ScheduleEvent(EVENT_COLOSSUS_MORTAL_STRIKE, 7s);"
+        },
+        {
+          "line": 158,
+          "text": "me->CastSpell(me, SPELL_EMERGE, false);"
+        },
+        {
+          "line": 159,
+          "text": "me->CastSpell(me, SPELL_EMERGE_SUMMON, true);"
+        },
+        {
+          "line": 166,
+          "text": "me->CastSpell(me, SPELL_EMERGE, false);"
+        },
+        {
+          "line": 167,
+          "text": "me->CastSpell(me, SPELL_EMERGE_SUMMON, true);"
+        },
+        {
+          "line": 184,
+          "text": "summon->AI()->DoAction(ACTION_INFORM);"
+        },
+        {
+          "line": 205,
+          "text": "me->RemoveAurasDueToSpell(SPELL_FREEZE_ANIM);"
+        },
+        {
+          "line": 222,
+          "text": "case EVENT_COLOSSUS_START_FIGHT:"
+        },
+        {
+          "line": 223,
+          "text": "me->RemoveAurasDueToSpell(SPELL_FREEZE_ANIM);"
+        },
+        {
+          "line": 226,
+          "text": "case EVENT_COLOSSUS_MIGHTY_BLOW:"
+        },
+        {
+          "line": 227,
+          "text": "me->CastSpell(me->GetVictim(), SPELL_MIGHTY_BLOW, false);"
+        },
+        {
+          "line": 228,
+          "text": "events.ScheduleEvent(EVENT_COLOSSUS_MIGHTY_BLOW, 10s);"
+        },
+        {
+          "line": 230,
+          "text": "case EVENT_COLOSSUS_MORTAL_STRIKE:"
+        },
+        {
+          "line": 231,
+          "text": "DoCastVictim(SPELL_MORTAL_STRIKE);"
+        },
+        {
+          "line": 232,
+          "text": "events.ScheduleEvent(EVENT_COLOSSUS_MORTAL_STRIKE, 7s);"
+        },
+        {
+          "line": 255,
+          "text": "events.ScheduleEvent(EVENT_ELEMENTAL_HEALTH, 1s);"
+        },
+        {
+          "line": 256,
+          "text": "events.ScheduleEvent(EVENT_ELEMENTAL_SURGE, 7s);"
+        },
+        {
+          "line": 257,
+          "text": "events.ScheduleEvent(EVENT_ELEMENTAL_VOLLEY, 0ms);"
+        },
+        {
+          "line": 264,
+          "text": "if (param == ACTION_INFORM)"
+        },
+        {
+          "line": 265,
+          "text": "events.CancelEvent(EVENT_ELEMENTAL_HEALTH);"
+        },
+        {
+          "line": 268,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 270,
+          "text": "me->CastSpell(me, SPELL_ELEMENTAL_SPAWN_EFFECT, false);"
+        },
+        {
+          "line": 273,
+          "text": "void JustDied(Unit*) override"
+        },
+        {
+          "line": 275,
+          "text": "Talk(EMOTE_ALTAR);"
+        },
+        {
+          "line": 293,
+          "text": "case EVENT_ELEMENTAL_HEALTH:"
+        },
+        {
+          "line": 294,
+          "text": "if (me->HealthBelowPct(56))"
+        },
+        {
+          "line": 296,
+          "text": "me->CastSpell(me, SPELL_FACE_ME, true);"
+        },
+        {
+          "line": 297,
+          "text": "me->CastSpell(me, SPELL_SURGE_VISUAL, true);"
+        },
+        {
+          "line": 298,
+          "text": "me->CastSpell(me, SPELL_MERGE, false);"
+        },
+        {
+          "line": 300,
+          "text": "events.Reset();"
+        },
+        {
+          "line": 303,
+          "text": "events.ScheduleEvent(EVENT_ELEMENTAL_HEALTH, 1s);"
+        },
+        {
+          "line": 305,
+          "text": "case EVENT_ELEMENTAL_SURGE:"
+        },
+        {
+          "line": 306,
+          "text": "Talk(SAY_SURGE);"
+        },
+        {
+          "line": 307,
+          "text": "me->CastSpell(me, SPELL_SURGE_VISUAL, true);"
+        },
+        {
+          "line": 308,
+          "text": "DoCastRandomTarget(SPELL_SURGE, 0, 40, true, false, true);"
+        },
+        {
+          "line": 309,
+          "text": "events.ScheduleEvent(EVENT_ELEMENTAL_SURGE, 15s);"
+        },
+        {
+          "line": 311,
+          "text": "case EVENT_ELEMENTAL_VOLLEY:"
+        },
+        {
+          "line": 312,
+          "text": "me->CastSpell(me, SPELL_MOJO_VOLLEY, true);"
+        },
+        {
+          "line": 339,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 341,
+          "text": "events.Reset();"
+        },
+        {
+          "line": 342,
+          "text": "events.ScheduleEvent(EVENT_MOJO_MOJO_PUDDLE, 13s);"
+        },
+        {
+          "line": 343,
+          "text": "events.ScheduleEvent(EVENT_MOJO_MOJO_WAVE, 15s);"
+        },
+        {
+          "line": 360,
+          "text": "summoner->GetAI()->DoAction(ACTION_INFORM);"
+        },
+        {
+          "line": 377,
+          "text": "if (param == ACTION_MERGE)"
+        },
+        {
+          "line": 396,
+          "text": "case EVENT_MOJO_MOJO_PUDDLE:"
+        },
+        {
+          "line": 398,
+          "text": "me->CastSpell(me, SPELL_MOJO_PUDDLE, false);"
+        },
+        {
+          "line": 399,
+          "text": "events.ScheduleEvent(EVENT_MOJO_MOJO_PUDDLE, 13s);"
+        },
+        {
+          "line": 402,
+          "text": "case EVENT_MOJO_MOJO_WAVE:"
+        },
+        {
+          "line": 404,
+          "text": "me->CastSpell(me->GetVictim(), SPELL_MOJO_WAVE, false);"
+        },
+        {
+          "line": 405,
+          "text": "events.ScheduleEvent(EVENT_MOJO_MOJO_WAVE, 15s);"
+        },
+        {
+          "line": 421,
+          "text": "return ValidateSpellInfo({ SPELL_FREEZE_ANIM });"
+        },
+        {
+          "line": 426,
+          "text": "GetCaster()->CastSpell(GetCaster(), SPELL_FREEZE_ANIM, true);"
+        },
+        {
+          "line": 431,
+          "text": "OnEffectHitTarget += SpellEffectFn(spell_drakkari_colossus_emerge::HandleDummy, EFFECT_0, SPELL_EFFECT_DUMMY);"
+        },
+        {
+          "line": 441,
+          "text": "return ValidateSpellInfo({ SPELL_SURGE_DAMAGE });"
+        },
+        {
+          "line": 447,
+          "text": "GetCaster()->CastSpell(target, SPELL_SURGE_DAMAGE, true);"
+        },
+        {
+          "line": 452,
+          "text": "OnEffectHitTarget += SpellEffectFn(spell_drakkari_colossus_surge::HandleDummy, EFFECT_0, SPELL_EFFECT_DUMMY);"
+        },
+        {
+          "line": 471,
+          "text": "OnEffectHitTarget += SpellEffectFn(spell_drakkari_colossus_face_me::HandleScriptEffect, EFFECT_0, SPELL_EFFECT_SCRIPT_EFFECT);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/Nexus/Oculus/boss_urom.cpp",
+      "sha": "57eeb4b170dc235d876eabfa5ada2d82b1ffbfa6",
+      "lineCount": 390,
+      "signals": [
+        {
+          "line": 25,
+          "text": "SPELL_EVOCATION                             = 51602,"
+        },
+        {
+          "line": 26,
+          "text": "SPELL_SUMMON_MENAGERIE_1                    = 50476,"
+        },
+        {
+          "line": 27,
+          "text": "SPELL_SUMMON_MENAGERIE_2                    = 50495,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_SUMMON_MENAGERIE_3                    = 50496,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_TELEPORT                              = 51112,"
+        },
+        {
+          "line": 31,
+          "text": "SPELL_FROSTBOMB                             = 51103,"
+        },
+        {
+          "line": 32,
+          "text": "SPELL_TIME_BOMB                             = 51121,"
+        },
+        {
+          "line": 33,
+          "text": "SPELL_EMPOWERED_ARCANE_EXPLOSION            = 51110,"
+        },
+        {
+          "line": 53,
+          "text": "EVENT_FROSTBOMB                             = 1,"
+        },
+        {
+          "line": 54,
+          "text": "EVENT_TELEPORT_TO_CENTER                    = 2,"
+        },
+        {
+          "line": 55,
+          "text": "EVENT_TELE_BACK                             = 3,"
+        },
+        {
+          "line": 56,
+          "text": "EVENT_TIME_BOMB                             = 4,"
+        },
+        {
+          "line": 113,
+          "text": "uint8 GetPhaseByCurrentPosition()"
+        },
+        {
+          "line": 122,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 133,
+          "text": "me->CastSpell(me, SPELL_EVOCATION, true);"
+        },
+        {
+          "line": 134,
+          "text": "events.Reset();"
+        },
+        {
+          "line": 149,
+          "text": "uint8 phase = GetPhaseByCurrentPosition();"
+        },
+        {
+          "line": 152,
+          "text": "Talk(SAY_AGGRO);"
+        },
+        {
+          "line": 159,
+          "text": "if (me->FindCurrentSpellBySpellId(SPELL_EVOCATION))"
+        },
+        {
+          "line": 162,
+          "text": "events.RescheduleEvent(EVENT_FROSTBOMB, 7s, 11s);"
+        },
+        {
+          "line": 163,
+          "text": "events.RescheduleEvent(EVENT_TELEPORT_TO_CENTER, 30s, 35s);"
+        },
+        {
+          "line": 164,
+          "text": "events.RescheduleEvent(EVENT_TIME_BOMB, 20s, 25s);"
+        },
+        {
+          "line": 173,
+          "text": "Talk(SAY_SUMMON_1);"
+        },
+        {
+          "line": 175,
+          "text": "me->CastSpell(me, SPELL_SUMMON_MENAGERIE_1, false);"
+        },
+        {
+          "line": 178,
+          "text": "Talk(SAY_SUMMON_2);"
+        },
+        {
+          "line": 180,
+          "text": "me->CastSpell(me, SPELL_SUMMON_MENAGERIE_2, false);"
+        },
+        {
+          "line": 183,
+          "text": "Talk(SAY_SUMMON_3);"
+        },
+        {
+          "line": 185,
+          "text": "me->CastSpell(me, SPELL_SUMMON_MENAGERIE_3, false);"
+        },
+        {
+          "line": 219,
+          "text": "void JustDied(Unit* /*killer*/) override"
+        },
+        {
+          "line": 221,
+          "text": "Talk(SAY_DEATH);"
+        },
+        {
+          "line": 238,
+          "text": "Talk(SAY_PLAYER_KILL);"
+        },
+        {
+          "line": 245,
+          "text": "case SPELL_SUMMON_MENAGERIE_1:"
+        },
+        {
+          "line": 248,
+          "text": "me->SummonCreature(summons[0][i], cords[0][0] + ((i % 2) ? 4.0f : -4.0f), cords[0][1] + (i < 2 ? 4.0f : -4.0f), cords[0][2], 0.0f, TEMPSUMMON_TIMED_DESPAWN, 300000);"
+        },
+        {
+          "line": 249,
+          "text": "uint8 phase = GetPhaseByCurrentPosition();"
+        },
+        {
+          "line": 253,
+          "text": "me->CastSpell(me, SPELL_EVOCATION, true);"
+        },
+        {
+          "line": 257,
+          "text": "case SPELL_SUMMON_MENAGERIE_2:"
+        },
+        {
+          "line": 260,
+          "text": "me->SummonCreature(summons[1][i], cords[1][0] + ((i % 2) ? 4.0f : -4.0f), cords[1][1] + (i < 2 ? 4.0f : -4.0f), cords[1][2], 0.0f, TEMPSUMMON_TIMED_DESPAWN, 300000);"
+        },
+        {
+          "line": 261,
+          "text": "uint8 phase = GetPhaseByCurrentPosition();"
+        },
+        {
+          "line": 265,
+          "text": "me->CastSpell(me, SPELL_EVOCATION, true);"
+        },
+        {
+          "line": 269,
+          "text": "case SPELL_SUMMON_MENAGERIE_3:"
+        },
+        {
+          "line": 272,
+          "text": "me->SummonCreature(summons[2][i], cords[2][0] + ((i % 2) ? 4.0f : -4.0f), cords[2][1] + (i < 2 ? 4.0f : -4.0f), cords[2][2], 0.0f, TEMPSUMMON_TIMED_DESPAWN, 300000);"
+        },
+        {
+          "line": 273,
+          "text": "uint8 phase = GetPhaseByCurrentPosition();"
+        },
+        {
+          "line": 277,
+          "text": "me->CastSpell(me, SPELL_EVOCATION, true);"
+        },
+        {
+          "line": 281,
+          "text": "case SPELL_TELEPORT:"
+        },
+        {
+          "line": 292,
+          "text": "Talk(SAY_ARCANE_EXPLOSION);"
+        },
+        {
+          "line": 293,
+          "text": "Talk(EMOTE_ARCANE_EXPLOSION);"
+        },
+        {
+          "line": 295,
+          "text": "//At this point we are still in casting state so we need to clear it for DoCastAOE not to fail"
+        },
+        {
+          "line": 297,
+          "text": "DoCastAOE(SPELL_EMPOWERED_ARCANE_EXPLOSION);"
+        },
+        {
+          "line": 299,
+          "text": "events.RescheduleEvent(EVENT_TELE_BACK, DUNGEON_MODE(9s, 7s));"
+        },
+        {
+          "line": 317,
+          "text": "me->CastSpell(me, SPELL_EVOCATION, true);"
+        },
+        {
+          "line": 339,
+          "text": "case EVENT_FROSTBOMB:"
+        },
+        {
+          "line": 341,
+          "text": "me->CastSpell(v, SPELL_FROSTBOMB, false);"
+        },
+        {
+          "line": 344,
+          "text": "case EVENT_TIME_BOMB:"
+        },
+        {
+          "line": 346,
+          "text": "DoCast(target, SPELL_TIME_BOMB);"
+        },
+        {
+          "line": 349,
+          "text": "case EVENT_TELEPORT_TO_CENTER:"
+        },
+        {
+          "line": 353,
+          "text": "me->CastSpell(me, SPELL_TELEPORT, false);"
+        },
+        {
+          "line": 357,
+          "text": "case EVENT_TELE_BACK:"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/Nexus/Oculus/boss_drakos.cpp",
+      "sha": "b6f9e9462c0cb061c0118679128bb4a6b523ebdb",
+      "lineCount": 259,
+      "signals": [
+        {
+          "line": 24,
+          "text": "SPELL_MAGIC_PULL                    = 51336,"
+        },
+        {
+          "line": 25,
+          "text": "SPELL_THUNDERING_STOMP              = 50774,"
+        },
+        {
+          "line": 27,
+          "text": "SPELL_UNSTABLE_SPHERE_PASSIVE       = 50756,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_UNSTABLE_SPHERE_PULSE         = 50757,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_UNSTABLE_SPHERE_TIMER         = 50758,"
+        },
+        {
+          "line": 30,
+          "text": "SPELL_TELEPORT_VISUAL               = 52096,"
+        },
+        {
+          "line": 40,
+          "text": "EVENT_MAGIC_PULL                    = 1,"
+        },
+        {
+          "line": 41,
+          "text": "EVENT_THUNDERING_STOMP              = 2,"
+        },
+        {
+          "line": 42,
+          "text": "EVENT_SUMMON                        = 3,"
+        },
+        {
+          "line": 43,
+          "text": "EVENT_SUMMON_x4                     = 4,"
+        },
+        {
+          "line": 75,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 80,
+          "text": "events.Reset();"
+        },
+        {
+          "line": 85,
+          "text": "Talk(SAY_AGGRO);"
+        },
+        {
+          "line": 92,
+          "text": "events.RescheduleEvent(EVENT_MAGIC_PULL, 10s, 15s);"
+        },
+        {
+          "line": 93,
+          "text": "events.RescheduleEvent(EVENT_THUNDERING_STOMP, 3s, 6s);"
+        },
+        {
+          "line": 94,
+          "text": "events.RescheduleEvent(EVENT_SUMMON, 2s);"
+        },
+        {
+          "line": 97,
+          "text": "void JustDied(Unit*  /*killer*/) override"
+        },
+        {
+          "line": 99,
+          "text": "Talk(SAY_DEATH);"
+        },
+        {
+          "line": 117,
+          "text": "Talk(SAY_KILL);"
+        },
+        {
+          "line": 139,
+          "text": "case EVENT_MAGIC_PULL:"
+        },
+        {
+          "line": 141,
+          "text": "Talk(SAY_PULL);"
+        },
+        {
+          "line": 144,
+          "text": "me->CastSpell(me, SPELL_MAGIC_PULL, false);"
+        },
+        {
+          "line": 146,
+          "text": "events.ScheduleEvent(EVENT_SUMMON_x4, 1500ms);"
+        },
+        {
+          "line": 149,
+          "text": "case EVENT_THUNDERING_STOMP:"
+        },
+        {
+          "line": 151,
+          "text": "Talk(SAY_STOMP);"
+        },
+        {
+          "line": 153,
+          "text": "me->CastSpell(me, SPELL_THUNDERING_STOMP, false);"
+        },
+        {
+          "line": 157,
+          "text": "case EVENT_SUMMON:"
+        },
+        {
+          "line": 162,
+          "text": "me->SummonCreature(NPC_UNSTABLE_SPHERE, me->GetPositionX() + 5.0f * cos(angle), me->GetPositionY() + 5.0f * std::sin(angle), me->GetPositionZ(), 0.0f, TEMPSUMMON_TIMED_DESPAWN, 18000);"
+        },
+        {
+          "line": 167,
+          "text": "case EVENT_SUMMON_x4:"
+        },
+        {
+          "line": 171,
+          "text": "me->SummonCreature(NPC_UNSTABLE_SPHERE, me->GetPositionX() + 5.0f * cos(angle), me->GetPositionY() + 5.0f * std::sin(angle), me->GetPositionZ(), 0.0f, TEMPSUMMON_TIMED_DESPAWN, 18000);"
+        },
+        {
+          "line": 213,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 217,
+          "text": "me->CastSpell(me, SPELL_UNSTABLE_SPHERE_PASSIVE, true);"
+        },
+        {
+          "line": 218,
+          "text": "me->CastSpell(me, SPELL_UNSTABLE_SPHERE_TIMER, true);"
+        },
+        {
+          "line": 232,
+          "text": "me->CastSpell(me, SPELL_TELEPORT_VISUAL, true);"
+        },
+        {
+          "line": 241,
+          "text": "me->CastSpell(me, SPELL_UNSTABLE_SPHERE_PULSE, true);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/Nexus/Nexus/boss_keristrasza.cpp",
+      "sha": "e6e92f8ce6e81098d1f9e778d3fef8f416941ec5",
+      "lineCount": 199,
+      "signals": [
+        {
+          "line": 28,
+          "text": "SPELL_FROZEN_PRISON             = 47854,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_TAIL_SWEEP                = 50155,"
+        },
+        {
+          "line": 30,
+          "text": "SPELL_CRYSTAL_CHAINS            = 50997,"
+        },
+        {
+          "line": 31,
+          "text": "SPELL_ENRAGE                    = 8599,"
+        },
+        {
+          "line": 32,
+          "text": "SPELL_CRYSTALFIRE_BREATH        = 48096,"
+        },
+        {
+          "line": 33,
+          "text": "SPELL_CRYSTALIZE                = 48179,"
+        },
+        {
+          "line": 34,
+          "text": "SPELL_INTENSE_COLD              = 48094,"
+        },
+        {
+          "line": 35,
+          "text": "SPELL_INTENSE_COLD_TRIGGER      = 48095,"
+        },
+        {
+          "line": 50,
+          "text": "EVENT_CRYSTALFIRE_BREATH        = 1,"
+        },
+        {
+          "line": 51,
+          "text": "EVENT_CRYSTAL_CHAINS            = 2,"
+        },
+        {
+          "line": 52,
+          "text": "EVENT_TAIL_SWEEP                = 3,"
+        },
+        {
+          "line": 53,
+          "text": "EVENT_HEALTH_CHECK              = 4,"
+        },
+        {
+          "line": 54,
+          "text": "EVENT_ACHIEVEMENT_CHECK         = 5"
+        },
+        {
+          "line": 63,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 65,
+          "text": "BossAI::Reset();"
+        },
+        {
+          "line": 72,
+          "text": "Talk(SAY_AGGRO);"
+        },
+        {
+          "line": 75,
+          "text": "me->CastSpell(me, SPELL_INTENSE_COLD, true);"
+        },
+        {
+          "line": 76,
+          "text": "events.ScheduleEvent(EVENT_CRYSTALFIRE_BREATH, 14s);"
+        },
+        {
+          "line": 77,
+          "text": "events.ScheduleEvent(EVENT_CRYSTAL_CHAINS, DUNGEON_MODE(20s, 11s));"
+        },
+        {
+          "line": 78,
+          "text": "events.ScheduleEvent(EVENT_TAIL_SWEEP, 5s);"
+        },
+        {
+          "line": 79,
+          "text": "events.ScheduleEvent(EVENT_HEALTH_CHECK, 1s);"
+        },
+        {
+          "line": 80,
+          "text": "events.ScheduleEvent(EVENT_ACHIEVEMENT_CHECK, 1s);"
+        },
+        {
+          "line": 83,
+          "text": "void JustDied(Unit* killer) override"
+        },
+        {
+          "line": 85,
+          "text": "Talk(SAY_DEATH);"
+        },
+        {
+          "line": 86,
+          "text": "BossAI::JustDied(killer);"
+        },
+        {
+          "line": 91,
+          "text": "Talk(SAY_SLAY);"
+        },
+        {
+          "line": 113,
+          "text": "me->RemoveAurasDueToSpell(SPELL_FROZEN_PRISON);"
+        },
+        {
+          "line": 118,
+          "text": "me->CastSpell(me, SPELL_FROZEN_PRISON, true);"
+        },
+        {
+          "line": 138,
+          "text": "case EVENT_HEALTH_CHECK:"
+        },
+        {
+          "line": 139,
+          "text": "if (me->HealthBelowPct(26))"
+        },
+        {
+          "line": 141,
+          "text": "Talk(SAY_ENRAGE);"
+        },
+        {
+          "line": 142,
+          "text": "Talk(EMOTE_FRENZY);"
+        },
+        {
+          "line": 143,
+          "text": "me->CastSpell(me, SPELL_ENRAGE, true);"
+        },
+        {
+          "line": 146,
+          "text": "events.ScheduleEvent(EVENT_HEALTH_CHECK, 1s);"
+        },
+        {
+          "line": 148,
+          "text": "case EVENT_ACHIEVEMENT_CHECK:"
+        },
+        {
+          "line": 152,
+          "text": "if (Aura* aur = itr->GetSource()->GetAura(SPELL_INTENSE_COLD_TRIGGER))"
+        },
+        {
+          "line": 155,
+          "text": "events.ScheduleEvent(EVENT_ACHIEVEMENT_CHECK, 500ms);"
+        },
+        {
+          "line": 158,
+          "text": "case EVENT_CRYSTALFIRE_BREATH:"
+        },
+        {
+          "line": 159,
+          "text": "me->CastSpell(me->GetVictim(), SPELL_CRYSTALFIRE_BREATH, false);"
+        },
+        {
+          "line": 160,
+          "text": "events.ScheduleEvent(EVENT_CRYSTALFIRE_BREATH, 14s);"
+        },
+        {
+          "line": 162,
+          "text": "case EVENT_TAIL_SWEEP:"
+        },
+        {
+          "line": 163,
+          "text": "me->CastSpell(me, SPELL_TAIL_SWEEP, false);"
+        },
+        {
+          "line": 164,
+          "text": "events.ScheduleEvent(EVENT_TAIL_SWEEP, 5s);"
+        },
+        {
+          "line": 166,
+          "text": "case EVENT_CRYSTAL_CHAINS:"
+        },
+        {
+          "line": 167,
+          "text": "Talk(SAY_CRYSTAL_NOVA);"
+        },
+        {
+          "line": 169,
+          "text": "me->CastSpell(me, SPELL_CRYSTALIZE, false);"
+        },
+        {
+          "line": 171,
+          "text": "me->CastSpell(target, SPELL_CRYSTAL_CHAINS, false);"
+        },
+        {
+          "line": 172,
+          "text": "events.ScheduleEvent(EVENT_CRYSTAL_CHAINS, DUNGEON_MODE(20s, 11s));"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/Nexus/Nexus/boss_magus_telestra.cpp",
+      "sha": "a410d721221dd3149739e9f23d43f60ccce01256",
+      "lineCount": 324,
+      "signals": [
+        {
+          "line": 31,
+          "text": "SPELL_ICE_NOVA                  = 47772,"
+        },
+        {
+          "line": 32,
+          "text": "SPELL_FIREBOMB                  = 47773,"
+        },
+        {
+          "line": 34,
+          "text": "SPELL_GRAVITY_WELL              = 47756,"
+        },
+        {
+          "line": 35,
+          "text": "SPELL_TELESTRA_BACK             = 47714,"
+        },
+        {
+          "line": 36,
+          "text": "SPELL_BURNING_WINDS             = 46308,"
+        },
+        {
+          "line": 37,
+          "text": "SPELL_START_SUMMON_CLONES       = 47710,"
+        },
+        {
+          "line": 39,
+          "text": "SPELL_FIRE_MAGUS_SUMMON         = 47707,"
+        },
+        {
+          "line": 40,
+          "text": "SPELL_FROST_MAGUS_SUMMON        = 47709,"
+        },
+        {
+          "line": 41,
+          "text": "SPELL_ARCANE_MAGUS_SUMMON       = 47708,"
+        },
+        {
+          "line": 43,
+          "text": "SPELL_FIRE_MAGUS_DEATH          = 47711,"
+        },
+        {
+          "line": 44,
+          "text": "SPELL_FROST_MAGUS_DEATH         = 47712,"
+        },
+        {
+          "line": 45,
+          "text": "SPELL_ARCANE_MAGUS_DEATH        = 47713,"
+        },
+        {
+          "line": 47,
+          "text": "SPELL_WEAR_CHRISTMAS_HAT        = 61400"
+        },
+        {
+          "line": 67,
+          "text": "GAME_EVENT_WINTER_VEIL          = 2,"
+        },
+        {
+          "line": 72,
+          "text": "EVENT_MAGUS_ICE_NOVA            = 1,"
+        },
+        {
+          "line": 73,
+          "text": "EVENT_MAGUS_FIREBOMB            = 2,"
+        },
+        {
+          "line": 74,
+          "text": "EVENT_MAGUS_GRAVITY_WELL        = 3,"
+        },
+        {
+          "line": 75,
+          "text": "EVENT_MAGUS_HEALTH1             = 4,"
+        },
+        {
+          "line": 76,
+          "text": "EVENT_MAGUS_HEALTH2             = 5,"
+        },
+        {
+          "line": 77,
+          "text": "EVENT_MAGUS_FAIL_ACHIEVEMENT    = 6,"
+        },
+        {
+          "line": 78,
+          "text": "EVENT_MAGUS_MERGED              = 7,"
+        },
+        {
+          "line": 79,
+          "text": "EVENT_MAGUS_RELOCATE            = 8"
+        },
+        {
+          "line": 88,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 90,
+          "text": "BossAI::Reset();"
+        },
+        {
+          "line": 93,
+          "text": "if (IsHeroic() && sGameEventMgr->IsActiveEvent(GAME_EVENT_WINTER_VEIL) && !me->HasAura(SPELL_WEAR_CHRISTMAS_HAT))"
+        },
+        {
+          "line": 94,
+          "text": "me->AddAura(SPELL_WEAR_CHRISTMAS_HAT, me);"
+        },
+        {
+          "line": 109,
+          "text": "Talk(SAY_AGGRO);"
+        },
+        {
+          "line": 111,
+          "text": "events.ScheduleEvent(EVENT_MAGUS_ICE_NOVA, 10s);"
+        },
+        {
+          "line": 112,
+          "text": "events.ScheduleEvent(EVENT_MAGUS_FIREBOMB, 0ms);"
+        },
+        {
+          "line": 113,
+          "text": "events.ScheduleEvent(EVENT_MAGUS_GRAVITY_WELL, 20s);"
+        },
+        {
+          "line": 114,
+          "text": "events.ScheduleEvent(EVENT_MAGUS_HEALTH1, 1s);"
+        },
+        {
+          "line": 116,
+          "text": "events.ScheduleEvent(EVENT_MAGUS_HEALTH2, 1s);"
+        },
+        {
+          "line": 125,
+          "text": "void JustDied(Unit* killer) override"
+        },
+        {
+          "line": 127,
+          "text": "BossAI::JustDied(killer);"
+        },
+        {
+          "line": 128,
+          "text": "Talk(SAY_DEATH);"
+        },
+        {
+          "line": 133,
+          "text": "Talk(SAY_KILL);"
+        },
+        {
+          "line": 144,
+          "text": "if (spellInfo->Id >= SPELL_FIRE_MAGUS_DEATH && spellInfo->Id <= SPELL_ARCANE_MAGUS_DEATH && caster->ToCreature())"
+        },
+        {
+          "line": 146,
+          "text": "events.ScheduleEvent(EVENT_MAGUS_FAIL_ACHIEVEMENT, 5s);"
+        },
+        {
+          "line": 149,
+          "text": "if (me->HasAura(SPELL_FIRE_MAGUS_DEATH) && me->HasAura(SPELL_FROST_MAGUS_DEATH) && me->HasAura(SPELL_ARCANE_MAGUS_DEATH))"
+        },
+        {
+          "line": 151,
+          "text": "events.CancelEvent(EVENT_MAGUS_FAIL_ACHIEVEMENT);"
+        },
+        {
+          "line": 152,
+          "text": "events.ScheduleEvent(EVENT_MAGUS_MERGED, 5s);"
+        },
+        {
+          "line": 153,
+          "text": "me->CastSpell(me, SPELL_BURNING_WINDS, true);"
+        },
+        {
+          "line": 165,
+          "text": "(me->HasUnitState(UNIT_STATE_STUNNED) && !me->HasAura(SPELL_START_SUMMON_CLONES))) // Reflected Ice Nova can stun her as its mechanic bypasses immunities"
+        },
+        {
+          "line": 170,
+          "text": "case EVENT_MAGUS_HEALTH1:"
+        },
+        {
+          "line": 171,
+          "text": "if (me->HealthBelowPct(51) && me->HealthAbovePct(11))"
+        },
+        {
+          "line": 173,
+          "text": "me->CastSpell(me, SPELL_START_SUMMON_CLONES, false);"
+        },
+        {
+          "line": 174,
+          "text": "events.ScheduleEvent(EVENT_MAGUS_RELOCATE, 3500ms);"
+        },
+        {
+          "line": 175,
+          "text": "Talk(SAY_SPLIT);"
+        },
+        {
+          "line": 178,
+          "text": "events.ScheduleEvent(EVENT_MAGUS_HEALTH1, 1s);"
+        },
+        {
+          "line": 180,
+          "text": "case EVENT_MAGUS_HEALTH2:"
+        },
+        {
+          "line": 181,
+          "text": "if (me->HealthBelowPct(11))"
+        },
+        {
+          "line": 184,
+          "text": "me->CastSpell(me, SPELL_START_SUMMON_CLONES, false);"
+        },
+        {
+          "line": 185,
+          "text": "events.ScheduleEvent(EVENT_MAGUS_RELOCATE, 3500ms);"
+        },
+        {
+          "line": 186,
+          "text": "Talk(SAY_SPLIT);"
+        },
+        {
+          "line": 189,
+          "text": "events.ScheduleEvent(EVENT_MAGUS_HEALTH2, 1s);"
+        },
+        {
+          "line": 191,
+          "text": "case EVENT_MAGUS_FIREBOMB:"
+        },
+        {
+          "line": 193,
+          "text": "me->CastSpell(target, SPELL_FIREBOMB, false);"
+        },
+        {
+          "line": 194,
+          "text": "events.ScheduleEvent(EVENT_MAGUS_FIREBOMB, 3s);"
+        },
+        {
+          "line": 196,
+          "text": "case EVENT_MAGUS_ICE_NOVA:"
+        },
+        {
+          "line": 197,
+          "text": "me->CastSpell(me, SPELL_ICE_NOVA, false);"
+        },
+        {
+          "line": 198,
+          "text": "events.ScheduleEvent(EVENT_MAGUS_ICE_NOVA, 15s);"
+        },
+        {
+          "line": 200,
+          "text": "case EVENT_MAGUS_GRAVITY_WELL:"
+        },
+        {
+          "line": 201,
+          "text": "me->CastSpell(me, SPELL_GRAVITY_WELL, false);"
+        },
+        {
+          "line": 202,
+          "text": "events.ScheduleEvent(EVENT_MAGUS_GRAVITY_WELL, 15s);"
+        },
+        {
+          "line": 204,
+          "text": "case EVENT_MAGUS_FAIL_ACHIEVEMENT:"
+        },
+        {
+          "line": 207,
+          "text": "case EVENT_MAGUS_RELOCATE:"
+        },
+        {
+          "line": 210,
+          "text": "case EVENT_MAGUS_MERGED:"
+        },
+        {
+          "line": 211,
+          "text": "me->CastSpell(me, SPELL_TELESTRA_BACK, true);"
+        },
+        {
+          "line": 213,
+          "text": "Talk(SAY_MERGE);"
+        },
+        {
+          "line": 228,
+          "text": "return ValidateSpellInfo({ SPELL_FIRE_MAGUS_SUMMON, SPELL_FROST_MAGUS_SUMMON, SPELL_ARCANE_MAGUS_SUMMON });"
+        },
+        {
+          "line": 238,
+          "text": "GetUnitOwner()->CastSpell(GetUnitOwner(), SPELL_FIRE_MAGUS_SUMMON, true);"
+        },
+        {
+          "line": 239,
+          "text": "GetUnitOwner()->CastSpell(GetUnitOwner(), SPELL_FROST_MAGUS_SUMMON, true);"
+        },
+        {
+          "line": 240,
+          "text": "GetUnitOwner()->CastSpell(GetUnitOwner(), SPELL_ARCANE_MAGUS_SUMMON, true);"
+        },
+        {
+          "line": 256,
+          "text": "AfterEffectApply += AuraEffectApplyFn(spell_boss_magus_telestra_summon_telestra_clones_aura::HandleApply, EFFECT_1, SPELL_AURA_TRANSFORM, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 257,
+          "text": "AfterEffectRemove += AuraEffectRemoveFn(spell_boss_magus_telestra_summon_telestra_clones_aura::HandleRemove, EFFECT_1, SPELL_AURA_TRANSFORM, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 297,
+          "text": "OnEffectHitTarget += SpellEffectFn(spell_boss_magus_telestra_gravity_well::HandlePull, EFFECT_0, SPELL_EFFECT_PULL_TOWARDS_DEST);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/DraktharonKeep/boss_trollgore.cpp",
+      "sha": "6d71ac5cd5d6c3b75c25e6cffc0f17bec2ebfc76",
+      "lineCount": 268,
+      "signals": [
+        {
+          "line": 39,
+          "text": "SPELL_SUMMON_INVADER_A              = 49456,"
+        },
+        {
+          "line": 40,
+          "text": "SPELL_SUMMON_INVADER_B              = 49457,"
+        },
+        {
+          "line": 41,
+          "text": "SPELL_SUMMON_INVADER_C              = 49458,"
+        },
+        {
+          "line": 43,
+          "text": "SPELL_INFECTED_WOUND                = 49637,"
+        },
+        {
+          "line": 44,
+          "text": "SPELL_CRUSH                         = 49639,"
+        },
+        {
+          "line": 45,
+          "text": "SPELL_CONSUME                       = 49380,"
+        },
+        {
+          "line": 46,
+          "text": "SPELL_CORPSE_EXPLODE                = 49555,"
+        },
+        {
+          "line": 48,
+          "text": "SPELL_CORPSE_EXPLODE_DAMAGE         = 49618,"
+        },
+        {
+          "line": 49,
+          "text": "SPELL_CONSUME_AURA                  = 49381,"
+        },
+        {
+          "line": 54,
+          "text": "EVENT_SPELL_INFECTED_WOUND          = 1,"
+        },
+        {
+          "line": 55,
+          "text": "EVENT_SPELL_CRUSH                   = 2,"
+        },
+        {
+          "line": 56,
+          "text": "EVENT_SPELL_CONSUME                 = 3,"
+        },
+        {
+          "line": 57,
+          "text": "EVENT_SPELL_CORPSE_EXPLODE          = 4,"
+        },
+        {
+          "line": 58,
+          "text": "EVENT_SPAWN_INVADERS                = 5"
+        },
+        {
+          "line": 72,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 74,
+          "text": "BossAI::Reset();"
+        },
+        {
+          "line": 75,
+          "text": "events2.Reset();"
+        },
+        {
+          "line": 76,
+          "text": "events2.ScheduleEvent(EVENT_SPAWN_INVADERS, 30s);"
+        },
+        {
+          "line": 81,
+          "text": "events.ScheduleEvent(EVENT_SPELL_INFECTED_WOUND, 6s, 10s);"
+        },
+        {
+          "line": 82,
+          "text": "events.ScheduleEvent(EVENT_SPELL_CRUSH, 3s, 5s);"
+        },
+        {
+          "line": 83,
+          "text": "events.ScheduleEvent(EVENT_SPELL_CONSUME, 15s);"
+        },
+        {
+          "line": 84,
+          "text": "events.ScheduleEvent(EVENT_SPELL_CORPSE_EXPLODE, 35s);"
+        },
+        {
+          "line": 85,
+          "text": "events.ScheduleEvent(EVENT_SPAWN_INVADERS, 20s, 30s);"
+        },
+        {
+          "line": 91,
+          "text": "Talk(SAY_AGGRO);"
+        },
+        {
+          "line": 96,
+          "text": "void JustDied(Unit* killer) override"
+        },
+        {
+          "line": 98,
+          "text": "Talk(SAY_DEATH);"
+        },
+        {
+          "line": 99,
+          "text": "BossAI::JustDied(killer);"
+        },
+        {
+          "line": 104,
+          "text": "Talk(SAY_KILL);"
+        },
+        {
+          "line": 117,
+          "text": "case EVENT_SPAWN_INVADERS:"
+        },
+        {
+          "line": 118,
+          "text": "me->CastSpell(me, SPELL_SUMMON_INVADER_A, true);"
+        },
+        {
+          "line": 119,
+          "text": "me->CastSpell(me, SPELL_SUMMON_INVADER_B, true);"
+        },
+        {
+          "line": 120,
+          "text": "me->CastSpell(me, SPELL_SUMMON_INVADER_C, true);"
+        },
+        {
+          "line": 121,
+          "text": "events2.ScheduleEvent(EVENT_SPAWN_INVADERS, 30s);"
+        },
+        {
+          "line": 140,
+          "text": "case EVENT_SPELL_INFECTED_WOUND:"
+        },
+        {
+          "line": 141,
+          "text": "me->CastSpell(me->GetVictim(), SPELL_INFECTED_WOUND, false);"
+        },
+        {
+          "line": 142,
+          "text": "events.ScheduleEvent(EVENT_SPELL_INFECTED_WOUND, 25s, 35s);"
+        },
+        {
+          "line": 144,
+          "text": "case EVENT_SPELL_CRUSH:"
+        },
+        {
+          "line": 145,
+          "text": "me->CastSpell(me->GetVictim(), SPELL_CRUSH, false);"
+        },
+        {
+          "line": 146,
+          "text": "events.ScheduleEvent(EVENT_SPELL_CRUSH, 10s, 15s);"
+        },
+        {
+          "line": 148,
+          "text": "case EVENT_SPELL_CONSUME:"
+        },
+        {
+          "line": 149,
+          "text": "Talk(SAY_CONSUME);"
+        },
+        {
+          "line": 150,
+          "text": "me->CastSpell(me, SPELL_CONSUME, false);"
+        },
+        {
+          "line": 151,
+          "text": "events.ScheduleEvent(EVENT_SPELL_CONSUME, 15s);"
+        },
+        {
+          "line": 153,
+          "text": "case EVENT_SPELL_CORPSE_EXPLODE:"
+        },
+        {
+          "line": 154,
+          "text": "Talk(SAY_EXPLODE);"
+        },
+        {
+          "line": 155,
+          "text": "me->CastSpell(me, SPELL_CORPSE_EXPLODE, false);"
+        },
+        {
+          "line": 156,
+          "text": "events.ScheduleEvent(EVENT_SPELL_CORPSE_EXPLODE, 15s, 19s);"
+        },
+        {
+          "line": 184,
+          "text": "return ValidateSpellInfo({ SPELL_CONSUME_AURA });"
+        },
+        {
+          "line": 190,
+          "text": "target->CastSpell(GetCaster(), SPELL_CONSUME_AURA, true);"
+        },
+        {
+          "line": 195,
+          "text": "OnEffectHitTarget += SpellEffectFn(spell_trollgore_consume::HandleScriptEffect, EFFECT_1, SPELL_EFFECT_SCRIPT_EFFECT);"
+        },
+        {
+          "line": 205,
+          "text": "return ValidateSpellInfo({ SPELL_CORPSE_EXPLODE_DAMAGE });"
+        },
+        {
+          "line": 212,
+          "text": "caster->CastSpell(GetTarget(), SPELL_CORPSE_EXPLODE_DAMAGE, true);"
+        },
+        {
+          "line": 223,
+          "text": "OnEffectPeriodic += AuraEffectPeriodicFn(spell_trollgore_corpse_explode_aura::PeriodicTick, EFFECT_0, SPELL_AURA_PERIODIC_DUMMY);"
+        },
+        {
+          "line": 224,
+          "text": "AfterEffectRemove += AuraEffectRemoveFn(spell_trollgore_corpse_explode_aura::HandleRemove, EFFECT_0, SPELL_AURA_PERIODIC_DUMMY, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 235,
+          "text": "target->CastSpell(GetCaster(), uint32(GetEffectValue()), true);"
+        },
+        {
+          "line": 240,
+          "text": "OnEffectHitTarget += SpellEffectFn(spell_trollgore_invader_taunt::HandleScriptEffect, EFFECT_0, SPELL_EFFECT_SCRIPT_EFFECT);"
+        },
+        {
+          "line": 256,
+          "text": "return target->GetAuraCount(sSpellMgr->GetSpellIdForDifficulty(SPELL_CONSUME_AURA, target)) < 10;"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/Ulduar/HallsOfStone/boss_sjonnir.cpp",
+      "sha": "2805d0b66285fd7a7b7acd5b74bf484d092258f0",
+      "lineCount": 405,
+      "signals": [
+        {
+          "line": 26,
+          "text": "SPELL_FRENZY                            = 28747, //at 20% hp"
+        },
+        {
+          "line": 27,
+          "text": "SPELL_CHAIN_LIGHTNING                   = 50830,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_LIGHTNING_SHIELD                  = 50831,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_STATIC_CHARGE                     = 50834,"
+        },
+        {
+          "line": 30,
+          "text": "SPELL_LIGHTNING_RING                    = 50840,"
+        },
+        {
+          "line": 31,
+          "text": "SPELL_LIGHTNING_RING_5S                 = 51849,"
+        },
+        {
+          "line": 34,
+          "text": "SPELL_TOXIC_VOLLEY                      = 50838,"
+        },
+        {
+          "line": 37,
+          "text": "SPELL_LIGHTNING_TETHER                  = 50895,"
+        },
+        {
+          "line": 40,
+          "text": "SPELL_LIGHTNING_SHOCK                   = 50900,"
+        },
+        {
+          "line": 61,
+          "text": "EVENT_MALFORMED_OOZE_CHECK              = 10,"
+        },
+        {
+          "line": 62,
+          "text": "EVENT_TOXIC_VOLLEY                      = 11,"
+        },
+        {
+          "line": 63,
+          "text": "EVENT_FORGED_LIGHTNING_SHOCK            = 12,"
+        },
+        {
+          "line": 64,
+          "text": "EVENT_FORGED_LIGHTNING_TETHER           = 13,"
+        },
+        {
+          "line": 77,
+          "text": "ACTION_SLUG_KILLED                      = 1,"
+        },
+        {
+          "line": 103,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 105,
+          "text": "_Reset();"
+        },
+        {
+          "line": 116,
+          "text": "brann->AI()->DoAction(ACTION_SJONNIR_WIPE_START);"
+        },
+        {
+          "line": 128,
+          "text": "uint8 Pos = urand(POS_GEN_RIGHT, POS_GEN_LEFT);"
+        },
+        {
+          "line": 129,
+          "text": "me->SummonCreature(NPC_FORGED_IRON_TROGG, RoomPosition[Pos].GetPositionX(), RoomPosition[Pos].GetPositionY(), RoomPosition[Pos].GetPositionZ(), 0, TEMPSUMMON_CORPSE_TIMED_DESPAWN, 20000);"
+        },
+        {
+          "line": 137,
+          "text": "brann->AI()->Talk(SAY_BRANN_SPAWN_OOZE);"
+        },
+        {
+          "line": 141,
+          "text": "uint8 pos = urand(POS_GEN_RIGHT, POS_GEN_LEFT);"
+        },
+        {
+          "line": 142,
+          "text": "if (Creature* ooze = me->SummonCreature(NPC_OOZE, RoomPosition[pos], TEMPSUMMON_CORPSE_TIMED_DESPAWN, 20000))"
+        },
+        {
+          "line": 156,
+          "text": "brann->AI()->Talk(SAY_BRANN_SPAWN_EARTHEN);"
+        },
+        {
+          "line": 162,
+          "text": "uint8 pos = urand(POS_GEN_RIGHT, POS_GEN_LEFT);"
+        },
+        {
+          "line": 163,
+          "text": "if (Creature* dwarf = me->SummonCreature(NPC_DWARFES_FRIENDLY, RoomPosition[pos], TEMPSUMMON_CORPSE_TIMED_DESPAWN, 20000))"
+        },
+        {
+          "line": 179,
+          "text": "DoCastSelf(SPELL_FRENZY, true);"
+        },
+        {
+          "line": 182,
+          "text": "DoCastSelf(SPELL_LIGHTNING_RING_5S);"
+        },
+        {
+          "line": 190,
+          "text": "DoCastSelf(SPELL_LIGHTNING_SHIELD);"
+        },
+        {
+          "line": 194,
+          "text": "DoCastVictim(SPELL_CHAIN_LIGHTNING);"
+        },
+        {
+          "line": 198,
+          "text": "DoCastRandomTarget(SPELL_STATIC_CHARGE, 0, 50.0f);"
+        },
+        {
+          "line": 202,
+          "text": "DoCastAOE(SPELL_LIGHTNING_RING);"
+        },
+        {
+          "line": 207,
+          "text": "brann->AI()->Talk(SAY_BRANN_SPAWN_TROGG, 20s);"
+        },
+        {
+          "line": 210,
+          "text": "uint8 pos = urand(POS_GEN_RIGHT, POS_GEN_LEFT);"
+        },
+        {
+          "line": 211,
+          "text": "me->SummonCreature(NPC_FORGED_IRON_DWARF, RoomPosition[pos], TEMPSUMMON_CORPSE_TIMED_DESPAWN, 20000);"
+        },
+        {
+          "line": 220,
+          "text": "Talk(SAY_AGGRO);"
+        },
+        {
+          "line": 227,
+          "text": "brann->AI()->DoAction(ACTION_START_SJONNIR_FIGHT);"
+        },
+        {
+          "line": 232,
+          "text": "if (param == ACTION_SLUG_KILLED)"
+        },
+        {
+          "line": 240,
+          "text": "void JustDied(Unit*  /*killer*/) override"
+        },
+        {
+          "line": 242,
+          "text": "Talk(SAY_DEATH);"
+        },
+        {
+          "line": 243,
+          "text": "_JustDied();"
+        },
+        {
+          "line": 248,
+          "text": "brann->AI()->DoAction(ACTION_SJONNIR_DEAD);"
+        },
+        {
+          "line": 253,
+          "text": "if (urand(0, 1))"
+        },
+        {
+          "line": 256,
+          "text": "Talk(SAY_SLAY);"
+        },
+        {
+          "line": 286,
+          "text": "DoSpellAttackIfReady((me->GetEntry() == NPC_FORGED_IRON_DWARF) ? SPELL_LIGHTNING_TETHER : SPELL_LIGHTNING_SHOCK);"
+        },
+        {
+          "line": 306,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 308,
+          "text": "events.Reset();"
+        },
+        {
+          "line": 313,
+          "text": "events.ScheduleEvent(EVENT_TOXIC_VOLLEY, 5s);"
+        },
+        {
+          "line": 315,
+          "text": "void JustDied(Unit*  /*killer*/) override"
+        },
+        {
+          "line": 319,
+          "text": "sjonnir->AI()->DoAction(ACTION_SLUG_KILLED);"
+        },
+        {
+          "line": 332,
+          "text": "// Every 5 seconds"
+        },
+        {
+          "line": 333,
+          "text": "case EVENT_TOXIC_VOLLEY:"
+        },
+        {
+          "line": 335,
+          "text": "me->CastSpell(me, SPELL_TOXIC_VOLLEY, false);"
+        },
+        {
+          "line": 365,
+          "text": "events.RescheduleEvent(EVENT_MALFORMED_OOZE_CHECK, 1s);"
+        },
+        {
+          "line": 376,
+          "text": "case EVENT_MALFORMED_OOZE_CHECK:"
+        },
+        {
+          "line": 382,
+          "text": "if (Creature* is = me->SummonCreature(NPC_IRON_SLUDGE, me->GetPositionX(), me->GetPositionY(), me->GetPositionZ(), 0, TEMPSUMMON_TIMED_DESPAWN_OUT_OF_COMBAT, 20000))"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/Ulduar/HallsOfLightning/boss_loken.cpp",
+      "sha": "d35b11025bfcda9d94b71c5e81afc9ae3590eef4",
+      "lineCount": 177,
+      "signals": [
+        {
+          "line": 27,
+          "text": "SPELL_ARC_LIGHTNING             = 52921,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_LIGHTNING_NOVA            = 52960,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_LIGHTNING_NOVA_VISUAL     = 56502,"
+        },
+        {
+          "line": 30,
+          "text": "SPELL_LIGHTNING_NOVA_THUNDERS   = 52663,"
+        },
+        {
+          "line": 32,
+          "text": "SPELL_PULSING_SHOCKWAVE         = 52961,"
+        },
+        {
+          "line": 33,
+          "text": "SPELL_PULSING_SHOCKWAVE_AURA    = 59414,"
+        },
+        {
+          "line": 57,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 59,
+          "text": "_Reset();"
+        },
+        {
+          "line": 65,
+          "text": "Talk(SAY_75HEALTH);"
+        },
+        {
+          "line": 69,
+          "text": "Talk(SAY_50HEALTH);"
+        },
+        {
+          "line": 73,
+          "text": "Talk(SAY_25HEALTH);"
+        },
+        {
+          "line": 84,
+          "text": "Talk(SAY_INTRO_1);"
+        },
+        {
+          "line": 85,
+          "text": "Talk(SAY_INTRO_2, 10s);"
+        },
+        {
+          "line": 91,
+          "text": "if (auraApp->GetBase()->GetId() == SPELL_LIGHTNING_NOVA_VISUAL)"
+        },
+        {
+          "line": 93,
+          "text": "me->RemoveAura(SPELL_LIGHTNING_NOVA_THUNDERS);"
+        },
+        {
+          "line": 102,
+          "text": "DoCastAOE(SPELL_PULSING_SHOCKWAVE_AURA, true);"
+        },
+        {
+          "line": 104,
+          "text": "DoCastSelf(SPELL_PULSING_SHOCKWAVE);"
+        },
+        {
+          "line": 108,
+          "text": "Talk(SAY_NOVA);"
+        },
+        {
+          "line": 109,
+          "text": "Talk(EMOTE_NOVA);"
+        },
+        {
+          "line": 110,
+          "text": "DoCastSelf(SPELL_LIGHTNING_NOVA_VISUAL, true);"
+        },
+        {
+          "line": 111,
+          "text": "DoCastSelf(SPELL_LIGHTNING_NOVA_THUNDERS, true);"
+        },
+        {
+          "line": 112,
+          "text": "DoCastAOE(SPELL_LIGHTNING_NOVA);"
+        },
+        {
+          "line": 120,
+          "text": "DoCastRandomTarget(SPELL_ARC_LIGHTNING, 0, 100.0f, false);"
+        },
+        {
+          "line": 131,
+          "text": "Talk(SAY_AGGRO);"
+        },
+        {
+          "line": 134,
+          "text": "void JustDied(Unit*) override"
+        },
+        {
+          "line": 136,
+          "text": "_JustDied();"
+        },
+        {
+          "line": 137,
+          "text": "Talk(SAY_DEATH);"
+        },
+        {
+          "line": 145,
+          "text": "Talk(SAY_SLAY);"
+        },
+        {
+          "line": 168,
+          "text": "OnEffectHitTarget += SpellEffectFn(spell_loken_pulsing_shockwave::CalculateDamage, EFFECT_0, SPELL_EFFECT_SCHOOL_DAMAGE);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/Ulduar/HallsOfLightning/boss_ionar.cpp",
+      "sha": "a45a90cdebc2471b275048b6a90ff1a6ab323c6b",
+      "lineCount": 285,
+      "signals": [
+        {
+          "line": 28,
+          "text": "SPELL_BALL_LIGHTNING            = 52780,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_STATIC_OVERLOAD           = 52658,"
+        },
+        {
+          "line": 30,
+          "text": "SPELL_STATIC_OVERLOAD_KNOCK     = 53337,"
+        },
+        {
+          "line": 32,
+          "text": "SPELL_DISPERSE                  = 52770,"
+        },
+        {
+          "line": 33,
+          "text": "SPELL_SUMMON_SPARK              = 52746,"
+        },
+        {
+          "line": 34,
+          "text": "SPELL_SPARK_DESPAWN             = 52776,"
+        },
+        {
+          "line": 37,
+          "text": "SPELL_SPARK_VISUAL_TRIGGER      = 52667,"
+        },
+        {
+          "line": 38,
+          "text": "SPELL_RANDOM_LIGHTNING          = 52663,"
+        },
+        {
+          "line": 47,
+          "text": "ACTION_CALLBACK                 = 1,"
+        },
+        {
+          "line": 48,
+          "text": "ACTION_SPARK_DESPAWN            = 2,"
+        },
+        {
+          "line": 61,
+          "text": "EVENT_BALL_LIGHTNING            = 1,"
+        },
+        {
+          "line": 62,
+          "text": "EVENT_STATIC_OVERLOAD           = 2,"
+        },
+        {
+          "line": 63,
+          "text": "EVENT_CHECK_HEALTH              = 3,"
+        },
+        {
+          "line": 64,
+          "text": "EVENT_CALL_SPARKS               = 4,"
+        },
+        {
+          "line": 65,
+          "text": "EVENT_RESTORE                   = 5,"
+        },
+        {
+          "line": 66,
+          "text": "EVENT_CHANGE_TARGET             = 6,"
+        },
+        {
+          "line": 73,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 75,
+          "text": "_Reset();"
+        },
+        {
+          "line": 79,
+          "text": "DoCastSelf(SPELL_DISPERSE);"
+        },
+        {
+          "line": 83,
+          "text": "void ScheduleEvents(bool spark)"
+        },
+        {
+          "line": 85,
+          "text": "events.SetPhase(1);"
+        },
+        {
+          "line": 87,
+          "text": "events.RescheduleEvent(EVENT_CHECK_HEALTH, 1s, 0, 1);"
+        },
+        {
+          "line": 89,
+          "text": "events.RescheduleEvent(EVENT_BALL_LIGHTNING, 7s, 11s, 0, 1);"
+        },
+        {
+          "line": 90,
+          "text": "events.RescheduleEvent(EVENT_STATIC_OVERLOAD, 6s, 12s, 0, 1);"
+        },
+        {
+          "line": 96,
+          "text": "Talk(SAY_AGGRO);"
+        },
+        {
+          "line": 97,
+          "text": "ScheduleEvents(false);"
+        },
+        {
+          "line": 100,
+          "text": "void JustDied(Unit*) override"
+        },
+        {
+          "line": 102,
+          "text": "_JustDied();"
+        },
+        {
+          "line": 103,
+          "text": "Talk(SAY_DEATH);"
+        },
+        {
+          "line": 111,
+          "text": "Talk(SAY_SLAY);"
+        },
+        {
+          "line": 116,
+          "text": "if (spell->Id == SPELL_DISPERSE)"
+        },
+        {
+          "line": 122,
+          "text": "Talk(SAY_SPLIT);"
+        },
+        {
+          "line": 126,
+          "text": "if (Creature* spark = me->SummonCreature(NPC_SPARK_OF_IONAR, me->GetPosition(), TEMPSUMMON_TIMED_DESPAWN, 20000))"
+        },
+        {
+          "line": 128,
+          "text": "spark->CastSpell(spark, SPELL_SPARK_VISUAL_TRIGGER, true);"
+        },
+        {
+          "line": 129,
+          "text": "spark->CastSpell(spark, SPELL_RANDOM_LIGHTNING, true);"
+        },
+        {
+          "line": 141,
+          "text": "events.SetPhase(2);"
+        },
+        {
+          "line": 142,
+          "text": "events.ScheduleEvent(EVENT_CALL_SPARKS, 20s, 0, 2);"
+        },
+        {
+          "line": 157,
+          "text": "case EVENT_BALL_LIGHTNING:"
+        },
+        {
+          "line": 158,
+          "text": "DoCastRandomTarget(SPELL_BALL_LIGHTNING, 1, 0.0f, false);"
+        },
+        {
+          "line": 161,
+          "text": "case EVENT_STATIC_OVERLOAD:"
+        },
+        {
+          "line": 162,
+          "text": "DoCastRandomTarget(SPELL_STATIC_OVERLOAD);"
+        },
+        {
+          "line": 165,
+          "text": "case EVENT_CALL_SPARKS:"
+        },
+        {
+          "line": 168,
+          "text": "summons.DoAction(ACTION_CALLBACK, pred);"
+        },
+        {
+          "line": 169,
+          "text": "events.ScheduleEvent(EVENT_RESTORE, 5s, 0, 2);"
+        },
+        {
+          "line": 172,
+          "text": "case EVENT_RESTORE:"
+        },
+        {
+          "line": 174,
+          "text": "summons.DoAction(ACTION_SPARK_DESPAWN, pred);"
+        },
+        {
+          "line": 178,
+          "text": "ScheduleEvents(true);"
+        },
+        {
+          "line": 193,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 196,
+          "text": "_events.ScheduleEvent(EVENT_CHANGE_TARGET, 3s);"
+        },
+        {
+          "line": 215,
+          "text": "case EVENT_CHANGE_TARGET:"
+        },
+        {
+          "line": 229,
+          "text": "if (param == ACTION_CALLBACK)"
+        },
+        {
+          "line": 231,
+          "text": "_events.Reset();"
+        },
+        {
+          "line": 238,
+          "text": "else if (param == ACTION_SPARK_DESPAWN)"
+        },
+        {
+          "line": 243,
+          "text": "me->CastSpell(me, SPELL_SPARK_DESPAWN, true);"
+        },
+        {
+          "line": 260,
+          "text": "return ValidateSpellInfo({ SPELL_STATIC_OVERLOAD_KNOCK });"
+        },
+        {
+          "line": 270,
+          "text": "target->CastSpell(target, SPELL_STATIC_OVERLOAD_KNOCK, true);"
+        },
+        {
+          "line": 275,
+          "text": "OnEffectRemove += AuraEffectRemoveFn(spell_ionar_static_overload::OnRemove, EFFECT_0, SPELL_AURA_PERIODIC_TRIGGER_SPELL, AURA_EFFECT_HANDLE_REAL);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Northrend/AzjolNerub/ahnkahet/boss_amanitar.cpp",
+      "sha": "6e788073347594be81e2ddd6642c4426be394512",
+      "lineCount": 190,
+      "signals": [
+        {
+          "line": 27,
+          "text": "SPELL_BASH                              = 57094,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_ENTANGLING_ROOTS                  = 57095,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_MINI                              = 57055,"
+        },
+        {
+          "line": 30,
+          "text": "SPELL_VENOM_BOLT_VOLLEY                 = 57088,"
+        },
+        {
+          "line": 31,
+          "text": "SPELL_REMOVE_MUSHROOM_POWER             = 57283,"
+        },
+        {
+          "line": 34,
+          "text": "SPELL_HEALTHY_MUSHROOM_POTENT_FUNGUS    = 56648"
+        },
+        {
+          "line": 46,
+          "text": "EVENT_GROW,"
+        },
+        {
+          "line": 47,
+          "text": "EVENT_CHECK_PLAYER,"
+        },
+        {
+          "line": 48,
+          "text": "EVENT_KILLSELF,"
+        },
+        {
+          "line": 92,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 94,
+          "text": "_Reset();"
+        },
+        {
+          "line": 101,
+          "text": "DoCastRandomTarget(SPELL_ENTANGLING_ROOTS, 1, 100.0f);"
+        },
+        {
+          "line": 105,
+          "text": "DoCastVictim(SPELL_BASH);"
+        },
+        {
+          "line": 109,
+          "text": "DoCastAOE(SPELL_VENOM_BOLT_VOLLEY);"
+        },
+        {
+          "line": 124,
+          "text": "if (SelectTarget(SelectTargetMethod::Random, 0, 0.0f, true, true, -SPELL_MINI))"
+        },
+        {
+          "line": 126,
+          "text": "DoCastSelf(SPELL_REMOVE_MUSHROOM_POWER, true);"
+        },
+        {
+          "line": 127,
+          "text": "DoCastAOE(SPELL_MINI);"
+        },
+        {
+          "line": 130,
+          "text": "DoCastAOE(SPELL_REMOVE_MUSHROOM_POWER, true);"
+        },
+        {
+          "line": 142,
+          "text": "void JustDied(Unit* /*killer*/) override"
+        },
+        {
+          "line": 144,
+          "text": "_JustDied();"
+        },
+        {
+          "line": 145,
+          "text": "instance->DoRemoveAurasDueToSpellOnPlayers(SPELL_MINI);"
+        },
+        {
+          "line": 156,
+          "text": "instance->DoRemoveAurasDueToSpellOnPlayers(SPELL_MINI);"
+        },
+        {
+          "line": 165,
+          "text": "me->SummonCreature(roll_chance_i(40) ? NPC_HEALTHY_MUSHROOM : NPC_POISONOUS_MUSHROOM, pos, TEMPSUMMON_CORPSE_TIMED_DESPAWN, 4000);"
+        },
+        {
+          "line": 176,
+          "text": "GetTarget()->RemoveAurasDueToSpell(SPELL_HEALTHY_MUSHROOM_POTENT_FUNGUS);"
+        },
+        {
+          "line": 181,
+          "text": "OnEffectApply += AuraEffectApplyFn(spell_amanitar_remove_mushroom_power::HandleApply, EFFECT_0, SPELL_AURA_DUMMY, AURA_EFFECT_HANDLE_REAL);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Outland/TempestKeep/botanica/boss_laj.cpp",
+      "sha": "87ff2954b058aa6697c983e888c7bc36c0d5f7c7",
+      "lineCount": 132,
+      "signals": [
+        {
+          "line": 24,
+          "text": "SPELL_ALLERGIC_REACTION    = 34697,"
+        },
+        {
+          "line": 25,
+          "text": "SPELL_TELEPORT_SELF        = 34673,"
+        },
+        {
+          "line": 27,
+          "text": "SPELL_SUMMON_LASHER_1      = 34681,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_SUMMON_FLAYER_1      = 34682,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_SUMMON_LASHER_2      = 34684,"
+        },
+        {
+          "line": 30,
+          "text": "SPELL_SUMMON_FLAYER_2      = 34685,"
+        },
+        {
+          "line": 31,
+          "text": "SPELL_SUMMON_LASHER_3      = 34686,"
+        },
+        {
+          "line": 32,
+          "text": "SPELL_SUMMON_FLAYER_4      = 34687,"
+        },
+        {
+          "line": 33,
+          "text": "SPELL_SUMMON_LASHER_4      = 34688,"
+        },
+        {
+          "line": 34,
+          "text": "SPELL_SUMMON_FLAYER_3      = 34690,"
+        },
+        {
+          "line": 36,
+          "text": "SPELL_DAMAGE_IMMUNE_ARCANE  = 34304,"
+        },
+        {
+          "line": 37,
+          "text": "SPELL_DAMAGE_IMMUNE_FIRE    = 34305,"
+        },
+        {
+          "line": 38,
+          "text": "SPELL_DAMAGE_IMMUNE_FROST   = 34306,"
+        },
+        {
+          "line": 39,
+          "text": "SPELL_DAMAGE_IMMUNE_NATURE  = 34308,"
+        },
+        {
+          "line": 40,
+          "text": "SPELL_DAMAGE_IMMUNE_SHADOW  = 34309"
+        },
+        {
+          "line": 61,
+          "text": "{ SPELL_DAMAGE_IMMUNE_SHADOW, MODEL_DEFAULT },"
+        },
+        {
+          "line": 62,
+          "text": "{ SPELL_DAMAGE_IMMUNE_ARCANE, MODEL_ARCANE  },"
+        },
+        {
+          "line": 63,
+          "text": "{ SPELL_DAMAGE_IMMUNE_FIRE,   MODEL_FIRE    },"
+        },
+        {
+          "line": 64,
+          "text": "{ SPELL_DAMAGE_IMMUNE_FROST,  MODEL_FROST   },"
+        },
+        {
+          "line": 65,
+          "text": "{ SPELL_DAMAGE_IMMUNE_NATURE, MODEL_NATURE  }"
+        },
+        {
+          "line": 72,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 74,
+          "text": "_Reset();"
+        },
+        {
+          "line": 77,
+          "text": "DoCastSelf(SPELL_DAMAGE_IMMUNE_SHADOW, true);"
+        },
+        {
+          "line": 91,
+          "text": "DoCastVictim(SPELL_ALLERGIC_REACTION);"
+        },
+        {
+          "line": 104,
+          "text": "DoCastSelf(_lastTransform.spellId, true);"
+        },
+        {
+          "line": 108,
+          "text": "DoCastSelf(SPELL_TELEPORT_SELF);"
+        },
+        {
+          "line": 114,
+          "text": "Talk(EMOTE_SUMMON);"
+        },
+        {
+          "line": 115,
+          "text": "DoCastAOE(SPELL_SUMMON_LASHER_1, true);"
+        },
+        {
+          "line": 116,
+          "text": "DoCastAOE(SPELL_SUMMON_FLAYER_1, true);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Outland/Auchindoun/SethekkHalls/boss_anzu.cpp",
+      "sha": "c4add0c1985df9e7c71706ca5bab81139cafeb77",
+      "lineCount": 243,
+      "signals": [
+        {
+          "line": 33,
+          "text": "SPELL_PARALYZING_SCREECH    = 40184,"
+        },
+        {
+          "line": 34,
+          "text": "SPELL_SPELL_BOMB            = 40303,"
+        },
+        {
+          "line": 35,
+          "text": "SPELL_CYCLONE               = 40321,"
+        },
+        {
+          "line": 36,
+          "text": "SPELL_BANISH_SELF           = 42354,"
+        },
+        {
+          "line": 37,
+          "text": "SPELL_SHADOWFORM            = 40973"
+        },
+        {
+          "line": 50,
+          "text": "SPELL_HAWK                  = 40237,"
+        },
+        {
+          "line": 51,
+          "text": "SPELL_FALCON                = 40241,"
+        },
+        {
+          "line": 52,
+          "text": "SPELL_EAGLE                 = 40240,"
+        },
+        {
+          "line": 54,
+          "text": "SPELL_DURATION              = 40250,"
+        },
+        {
+          "line": 56,
+          "text": "SPELL_FREEZE_ANIM           = 16245,"
+        },
+        {
+          "line": 57,
+          "text": "SPELL_STONEFORM             = 40308,"
+        },
+        {
+          "line": 70,
+          "text": "me->AddAura(SPELL_SHADOWFORM, me);"
+        },
+        {
+          "line": 90,
+          "text": "me->RemoveAurasDueToSpell(SPELL_BANISH_SELF);"
+        },
+        {
+          "line": 95,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 97,
+          "text": "_Reset();"
+        },
+        {
+          "line": 110,
+          "text": "DoCastSelf(SPELL_PARALYZING_SCREECH);"
+        },
+        {
+          "line": 117,
+          "text": "DoCast(target, SPELL_SPELL_BOMB);"
+        },
+        {
+          "line": 125,
+          "text": "DoCast(target, SPELL_CYCLONE);"
+        },
+        {
+          "line": 134,
+          "text": "Talk(SAY_SUMMON);"
+        },
+        {
+          "line": 135,
+          "text": "me->CastSpell(me, SPELL_BANISH_SELF, true);"
+        },
+        {
+          "line": 141,
+          "text": "me->SummonCreature(NPC_BROOD_OF_ANZU, spawnPos, TEMPSUMMON_TIMED_DESPAWN_OUT_OF_COMBAT, 30000);"
+        },
+        {
+          "line": 147,
+          "text": "me->SummonCreature(NPC_HAWK_SPIRIT, AnzuSpiritPos[0], TEMPSUMMON_MANUAL_DESPAWN);"
+        },
+        {
+          "line": 148,
+          "text": "me->SummonCreature(NPC_FALCON_SPIRIT, AnzuSpiritPos[1], TEMPSUMMON_MANUAL_DESPAWN);"
+        },
+        {
+          "line": 149,
+          "text": "me->SummonCreature(NPC_EAGLE_SPIRIT, AnzuSpiritPos[2], TEMPSUMMON_MANUAL_DESPAWN);"
+        },
+        {
+          "line": 160,
+          "text": "Talk(SAY_ANZU_INTRO1);"
+        },
+        {
+          "line": 166,
+          "text": "me->RemoveAurasDueToSpell(SPELL_SHADOWFORM);"
+        },
+        {
+          "line": 167,
+          "text": "Talk(SAY_ANZU_INTRO2);"
+        },
+        {
+          "line": 193,
+          "text": "if (me->GetAuraEffect(SPELL_AURA_PERIODIC_HEAL, SPELLFAMILY_DRUID, 64, 0))"
+        },
+        {
+          "line": 195,
+          "text": "me->RemoveAurasDueToSpell(SPELL_FREEZE_ANIM);"
+        },
+        {
+          "line": 196,
+          "text": "me->RemoveAurasDueToSpell(SPELL_STONEFORM);"
+        },
+        {
+          "line": 201,
+          "text": "DoCastSelf(SPELL_HAWK);"
+        },
+        {
+          "line": 204,
+          "text": "DoCastSelf(SPELL_FALCON);"
+        },
+        {
+          "line": 207,
+          "text": "DoCastSelf(SPELL_EAGLE);"
+        },
+        {
+          "line": 213,
+          "text": "else if (!me->HasAura(SPELL_STONEFORM))"
+        },
+        {
+          "line": 215,
+          "text": "Talk(SAY_STONED);"
+        },
+        {
+          "line": 216,
+          "text": "DoCastSelf(SPELL_FREEZE_ANIM, true);"
+        },
+        {
+          "line": 217,
+          "text": "DoCastSelf(SPELL_STONEFORM, true);"
+        },
+        {
+          "line": 224,
+          "text": "void Reset() override"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Outland/Auchindoun/ManaTombs/boss_tavarok.cpp",
+      "sha": "e126583817ffb6280404354399d03d905ef8a4f5",
+      "lineCount": 69,
+      "signals": [
+        {
+          "line": 24,
+          "text": "SPELL_EARTHQUAKE        = 33919,"
+        },
+        {
+          "line": 25,
+          "text": "SPELL_CRYSTAL_PRISON    = 32361,"
+        },
+        {
+          "line": 26,
+          "text": "SPELL_ARCING_SMASH      = 8374"
+        },
+        {
+          "line": 34,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 36,
+          "text": "_Reset();"
+        },
+        {
+          "line": 44,
+          "text": "DoCastSelf(SPELL_EARTHQUAKE);"
+        },
+        {
+          "line": 48,
+          "text": "DoCastRandomTarget(SPELL_CRYSTAL_PRISON);"
+        },
+        {
+          "line": 52,
+          "text": "DoCastVictim(SPELL_ARCING_SMASH);"
+        },
+        {
+          "line": 57,
+          "text": "void JustDied(Unit* /*killer*/) override"
+        },
+        {
+          "line": 59,
+          "text": "_JustDied();"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/Deadmines/boss_mr_smite.cpp",
+      "sha": "89161f97ba27cbf93e20bed1d4c568e6fbe6faf4",
+      "lineCount": 202,
+      "signals": [
+        {
+          "line": 24,
+          "text": "SPELL_SMITE_STOMP       = 2102575,"
+        },
+        {
+          "line": 25,
+          "text": "SPELL_FIERCE_BLOW       = 975011,"
+        },
+        {
+          "line": 26,
+          "text": "SPELL_STUNNING_STRIKE   = 2102553,"
+        },
+        {
+          "line": 27,
+          "text": "SPELL_SMITE_RUSH        = 2102576,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_RETALIATION       = 2102577,"
+        },
+        {
+          "line": 29,
+          "text": "SPELL_RUPTURE           = 2102580,"
+        },
+        {
+          "line": 35,
+          "text": "EVENT_CHECK_HEALTH1     = 1,"
+        },
+        {
+          "line": 36,
+          "text": "EVENT_CHECK_HEALTH2     = 2,"
+        },
+        {
+          "line": 37,
+          "text": "EVENT_SWAP_WEAPON1      = 4,"
+        },
+        {
+          "line": 38,
+          "text": "EVENT_SWAP_WEAPON2      = 5,"
+        },
+        {
+          "line": 39,
+          "text": "EVENT_RESTORE_COMBAT    = 6,"
+        },
+        {
+          "line": 40,
+          "text": "EVENT_KNEEL             = 7,"
+        },
+        {
+          "line": 41,
+          "text": "EVENT_FIERCE_BLOW       = 8,"
+        },
+        {
+          "line": 42,
+          "text": "EVENT_STUNNING_STRIKE   = 9,"
+        },
+        {
+          "line": 43,
+          "text": "EVENT_RUPTURE           = 10,"
+        },
+        {
+          "line": 44,
+          "text": "EVENT_RETALIATION       = 11,"
+        },
+        {
+          "line": 45,
+          "text": "EVENT_SWAP_SAY          = 12,"
+        },
+        {
+          "line": 46,
+          "text": "EVENT_SWAP_MOVE         = 13,"
+        },
+        {
+          "line": 76,
+          "text": "me->CastSpell(me, SPELL_SMITE_STOMP, false);"
+        },
+        {
+          "line": 81,
+          "text": "events.ScheduleEvent(EVENT_SWAP_SAY, 800ms);"
+        },
+        {
+          "line": 82,
+          "text": "events.ScheduleEvent(EVENT_SWAP_MOVE, 2s);"
+        },
+        {
+          "line": 85,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 98,
+          "text": "events.ScheduleEvent(EVENT_CHECK_HEALTH1, 500ms);"
+        },
+        {
+          "line": 99,
+          "text": "events.ScheduleEvent(EVENT_CHECK_HEALTH2, 500ms);"
+        },
+        {
+          "line": 100,
+          "text": "events.ScheduleEvent(EVENT_FIERCE_BLOW, 8400ms);"
+        },
+        {
+          "line": 101,
+          "text": "events.ScheduleEvent(EVENT_STUNNING_STRIKE, 14s, 18s);"
+        },
+        {
+          "line": 102,
+          "text": "events.ScheduleEvent(EVENT_RUPTURE, 12s, 15s);"
+        },
+        {
+          "line": 113,
+          "text": "case EVENT_CHECK_HEALTH1:"
+        },
+        {
+          "line": 114,
+          "text": "if (me->HealthBelowPct(67) && !health67)"
+        },
+        {
+          "line": 117,
+          "text": "events.ScheduleEvent(EVENT_RETALIATION, 13s, 18s);"
+        },
+        {
+          "line": 121,
+          "text": "events.ScheduleEvent(EVENT_CHECK_HEALTH1, 500ms);"
+        },
+        {
+          "line": 123,
+          "text": "case EVENT_CHECK_HEALTH2:"
+        },
+        {
+          "line": 124,
+          "text": "if (me->HealthBelowPct(34) && !health34)"
+        },
+        {
+          "line": 130,
+          "text": "events.ScheduleEvent(EVENT_CHECK_HEALTH2, 500ms);"
+        },
+        {
+          "line": 132,
+          "text": "case EVENT_FIERCE_BLOW:"
+        },
+        {
+          "line": 133,
+          "text": "me->CastSpell(me->GetVictim(), SPELL_FIERCE_BLOW, false);"
+        },
+        {
+          "line": 134,
+          "text": "events.ScheduleEvent(EVENT_FIERCE_BLOW, 7800ms);"
+        },
+        {
+          "line": 136,
+          "text": "case EVENT_STUNNING_STRIKE:"
+        },
+        {
+          "line": 137,
+          "text": "me->CastSpell(me->GetVictim(), SPELL_STUNNING_STRIKE, false);"
+        },
+        {
+          "line": 138,
+          "text": "events.ScheduleEvent(EVENT_STUNNING_STRIKE, 20s, 26s);"
+        },
+        {
+          "line": 140,
+          "text": "case EVENT_RUPTURE:"
+        },
+        {
+          "line": 141,
+          "text": "me->CastSpell(me->GetVictim(), SPELL_RUPTURE, false);"
+        },
+        {
+          "line": 142,
+          "text": "events.ScheduleEvent(EVENT_RUPTURE, 18s, 24s);"
+        },
+        {
+          "line": 144,
+          "text": "case EVENT_RETALIATION:"
+        },
+        {
+          "line": 145,
+          "text": "me->CastSpell(me, SPELL_RETALIATION, false);"
+        },
+        {
+          "line": 146,
+          "text": "events.ScheduleEvent(EVENT_RETALIATION, 25s, 30s);"
+        },
+        {
+          "line": 148,
+          "text": "case EVENT_SWAP_SAY:"
+        },
+        {
+          "line": 149,
+          "text": "Talk(swapEquip == EQUIP_TWO_SWORDS ? SAY_SWAP1 : SAY_SWAP2);"
+        },
+        {
+          "line": 151,
+          "text": "case EVENT_SWAP_MOVE:"
+        },
+        {
+          "line": 152,
+          "text": "me->CastSpell(me, SPELL_SMITE_RUSH, true);"
+        },
+        {
+          "line": 155,
+          "text": "case EVENT_SWAP_WEAPON1:"
+        },
+        {
+          "line": 159,
+          "text": "case EVENT_SWAP_WEAPON2:"
+        },
+        {
+          "line": 163,
+          "text": "case EVENT_RESTORE_COMBAT:"
+        },
+        {
+          "line": 167,
+          "text": "me->RemoveAurasDueToSpell(SPELL_SMITE_RUSH);"
+        },
+        {
+          "line": 174,
+          "text": "case EVENT_KNEEL:"
+        },
+        {
+          "line": 191,
+          "text": "events.ScheduleEvent(point == EQUIP_TWO_SWORDS ? EVENT_SWAP_WEAPON1 : EVENT_SWAP_WEAPON2, 1500ms);"
+        },
+        {
+          "line": 192,
+          "text": "events.ScheduleEvent(EVENT_RESTORE_COMBAT, 3s);"
+        },
+        {
+          "line": 193,
+          "text": "events.ScheduleEvent(EVENT_KNEEL, 0ms);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/Scholomance/boss_kormok.cpp",
+      "sha": "ac2e0797ef3718c448052241d4df15a2cdc7606b",
+      "lineCount": 216,
+      "signals": [
+        {
+          "line": 27,
+          "text": "SPELL_SHADOWBOLT_VOLLEY             = 20741,"
+        },
+        {
+          "line": 28,
+          "text": "SPELL_BONE_SHIELD                   = 27688,"
+        },
+        {
+          "line": 30,
+          "text": "SPELL_SUMMON_BONE_MAGES             = 27695,"
+        },
+        {
+          "line": 32,
+          "text": "SPELL_SUMMON_BONE_MAGE_FRONT_LEFT   = 27696,"
+        },
+        {
+          "line": 33,
+          "text": "SPELL_SUMMON_BONE_MAGE_FRONT_RIGHT  = 27697,"
+        },
+        {
+          "line": 34,
+          "text": "SPELL_SUMMON_BONE_MAGE_BACK_RIGHT   = 27698,"
+        },
+        {
+          "line": 35,
+          "text": "SPELL_SUMMON_BONE_MAGE_BACK_LEFT    = 27699,"
+        },
+        {
+          "line": 37,
+          "text": "SPELL_SUMMON_BONE_MINION1           = 27690,"
+        },
+        {
+          "line": 38,
+          "text": "SPELL_SUMMON_BONE_MINION2           = 27691,"
+        },
+        {
+          "line": 39,
+          "text": "SPELL_SUMMON_BONE_MINION3           = 27692,"
+        },
+        {
+          "line": 40,
+          "text": "SPELL_SUMMON_BONE_MINION4           = 27693,"
+        },
+        {
+          "line": 42,
+          "text": "SPELL_SUMMON_BONE_MINIONS           = 27687"
+        },
+        {
+          "line": 47,
+          "text": "EVENT_SHADOWBOLT_VOLLEY = 1,"
+        },
+        {
+          "line": 48,
+          "text": "EVENT_SUMMON_MINIONS"
+        },
+        {
+          "line": 63,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 78,
+          "text": "Talk(TALK_SUMMON);"
+        },
+        {
+          "line": 82,
+          "text": "DoCastSelf(SPELL_BONE_SHIELD);"
+        },
+        {
+          "line": 89,
+          "text": "Talk(TALK_AGGRO);"
+        },
+        {
+          "line": 93,
+          "text": "DoCastVictim(SPELL_SHADOWBOLT_VOLLEY);"
+        },
+        {
+          "line": 98,
+          "text": "DoCast(SPELL_SUMMON_BONE_MINIONS);"
+        },
+        {
+          "line": 116,
+          "text": "if (!_mages && me->HealthBelowPctDamaged(25, damage))"
+        },
+        {
+          "line": 120,
+          "text": "Talk(TALK_ENRAGE);"
+        },
+        {
+          "line": 122,
+          "text": "DoCast(SPELL_SUMMON_BONE_MAGES);"
+        },
+        {
+          "line": 126,
+          "text": "void JustDied(Unit* /*killer*/) override"
+        },
+        {
+          "line": 128,
+          "text": "Talk(TALK_DEATH);"
+        },
+        {
+          "line": 151,
+          "text": "SPELL_SUMMON_BONE_MAGE_FRONT_LEFT,"
+        },
+        {
+          "line": 152,
+          "text": "SPELL_SUMMON_BONE_MAGE_FRONT_RIGHT,"
+        },
+        {
+          "line": 153,
+          "text": "SPELL_SUMMON_BONE_MAGE_BACK_RIGHT,"
+        },
+        {
+          "line": 154,
+          "text": "SPELL_SUMMON_BONE_MAGE_BACK_LEFT,"
+        },
+        {
+          "line": 173,
+          "text": "GetCaster()->CastSpell(GetCaster(), SummonMageSpells[urand(0, 3)], true);"
+        },
+        {
+          "line": 179,
+          "text": "OnEffectHitTarget += SpellEffectFn(spell_kormok_summon_bone_mages::HandleScript, EFFECT_0, SPELL_EFFECT_SCRIPT_EFFECT);"
+        },
+        {
+          "line": 190,
+          "text": "return ValidateSpellInfo({ SPELL_SUMMON_BONE_MINIONS });"
+        },
+        {
+          "line": 200,
+          "text": "GetCaster()->CastSpell(GetCaster(), SPELL_SUMMON_BONE_MINION1 + i, true);"
+        },
+        {
+          "line": 206,
+          "text": "OnEffectHitTarget += SpellEffectFn(spell_kormok_summon_bone_minions::HandleScript, EFFECT_0, SPELL_EFFECT_SCRIPT_EFFECT);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/Kalimdor/DireMaul/boss_isalien.cpp",
+      "sha": "0471694416e46a7b832a0550984f3e7ae91b78fa",
+      "lineCount": 142,
+      "signals": [
+        {
+          "line": 30,
+          "text": "SPELL_CALL_EMPYREAN = 27639,"
+        },
+        {
+          "line": 31,
+          "text": "SPELL_MULTI_SHOT    = 14443,"
+        },
+        {
+          "line": 32,
+          "text": "SPELL_NET           = 12024,"
+        },
+        {
+          "line": 33,
+          "text": "SPELL_STARSHARDS    = 27636,"
+        },
+        {
+          "line": 34,
+          "text": "SPELL_REGROWTH      = 27637"
+        },
+        {
+          "line": 37,
+          "text": "enum Phases"
+        },
+        {
+          "line": 52,
+          "text": "void Reset() override"
+        },
+        {
+          "line": 54,
+          "text": "_Reset();"
+        },
+        {
+          "line": 67,
+          "text": "if (_phase != PHASE_REGROWTH && me->HealthBelowPct(80.f))"
+        },
+        {
+          "line": 78,
+          "text": "DoCastSelf(SPELL_REGROWTH);"
+        },
+        {
+          "line": 95,
+          "text": "DoCastRandomTarget(SPELL_NET);"
+        },
+        {
+          "line": 100,
+          "text": "DoCastRandomTarget(SPELL_MULTI_SHOT);"
+        },
+        {
+          "line": 105,
+          "text": "DoCastAOE(SPELL_STARSHARDS);"
+        },
+        {
+          "line": 110,
+          "text": "DoCastAOE(SPELL_CALL_EMPYREAN);"
+        },
+        {
+          "line": 127,
+          "text": "void JustDied(Unit* /*killer*/) override"
+        },
+        {
+          "line": 129,
+          "text": "_JustDied();"
+        },
+        {
+          "line": 130,
+          "text": "Talk(SAY_DEATH);"
+        }
+      ]
+    }
+  ]
+}

@@ -2,3 +2,11 @@
 @media(min-width:1600px){.pagebody{max-width:1550px}.classnav{left:max(0px,calc((100vw - 1550px)/2))}}
 @media(max-width:1150px){.topbar .searchbox{max-width:240px}.toplinks{gap:4px}.toplinks a{font-size:8px;padding:10px 6px}.class-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.tree-pair{grid-template-columns:1fr}.tree-canvas{max-width:650px;margin:auto}.tree-panel{max-width:700px}.research-layout{grid-template-columns:180px minmax(0,1fr)}}
 @media(max-width:760px){.topbar{padding:12px}.topbar .searchbox{max-width:none}.toplinks a{font-size:8px}.class-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:23px}.hero h1{font-size:34px}.feature-callout{padding:18px;gap:12px;flex-wrap:wrap}.feature-callout .button{margin-left:0}.feature-callout .callout-mark{display:none}.spell-grid,.search-results,.build-summary,.research-layout{grid-template-columns:1fr}.research-list{display:flex;gap:7px;overflow:auto}.research-list button{min-width:160px}.sharebox{flex-wrap:wrap}.toolbar{gap:7px}.toolbar .button{padding:9px}.tree-pair{gap:15px}.stats{gap:8px}.stats>div{flex:1;padding:12px}.classnav.open{margin-bottom:0}.pagebody{padding-top:18px}}
+
+/* Visible icon fallbacks when both icon hosts lack a texture. */
+.talent-node.icon-missing .fallback{z-index:0}
+.overview-spec-icon.icon-missing{display:grid;place-items:center;background:linear-gradient(145deg,#34302a,#202526);color:#e2bd7d;font:700 20px Georgia,serif}
+.overview-spec-icon.icon-missing::after{content:'✦'}
+.damage-factor-note{margin:16px 0 8px}
+.top-builds-section{margin:28px 0}
+.top-builds-empty{max-width:900px}

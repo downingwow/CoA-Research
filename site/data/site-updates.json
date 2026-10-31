@@ -1,0 +1,29 @@
+{
+  "updated": "2026-10-30",
+  "updates": [
+    {
+      "date": "Oct 30, 2026",
+      "status": "Updated",
+      "title": "Gear stat priorities clarified",
+      "summary": "Weapon and ranged DPS factors are separated from actual gear stats and explained as damage-source context on each specialization page.",
+      "url": "?view=spells",
+      "linkLabel": "Browse class records"
+    },
+    {
+      "date": "Oct 30, 2026",
+      "status": "In progress",
+      "title": "Top Builds",
+      "summary": "We’re recovering exact talent allocations from the research archive before publishing ranked builds. Historical gear weights and combat performance are not being treated as build codes.",
+      "url": "?view=builder",
+      "linkLabel": "Open talent calculator"
+    },
+    {
+      "date": "Oct 30, 2026",
+      "status": "Updated",
+      "title": "Icon reliability",
+      "summary": "Class and talent icons now retry from a second source and retain a visible fallback when an image is unavailable.",
+      "url": "?view=builder",
+      "linkLabel": "Open talent calculator"
+    }
+  ]
+}

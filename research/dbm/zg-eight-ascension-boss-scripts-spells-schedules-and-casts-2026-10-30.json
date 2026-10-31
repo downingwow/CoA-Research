@@ -1,0 +1,1668 @@
+{
+  "schema": "coa-research.dbm-zg-ascension-boss-script-extraction.v1",
+  "date": "2026-10-30",
+  "instance": "Zul'Gurub",
+  "mapId": 309,
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "sourceType": "Ascension-specific C++ raid difficulty boss scripts",
+  "deploymentVerified": false,
+  "notes": [
+    "ScheduleEvent lines are source schedules, not necessarily exact live cast timings",
+    "Initial and repeat schedules may change on phase transition or reset",
+    "Spell enum IDs include effects, auras and hits; not all are cast warnings",
+    "Review boss event handlers and difficulty conditions before implementing timers",
+    "Hakkar and Jin'do include custom spell IDs and multiple simultaneous event schedules"
+  ],
+  "counts": {
+    "bossFiles": 8,
+    "spells": 145,
+    "actionLines": 212
+  },
+  "files": [
+    {
+      "boss": "hakkar",
+      "path": "modules/mod-coa-raid-difficulty/src/boss_hakkar_coa.cpp",
+      "sourceLines": 480,
+      "spells": [
+        {
+          "symbol": "SPELL_BERSERK",
+          "spellId": 26662,
+          "line": 64
+        },
+        {
+          "symbol": "SPELL_POISONOUS_BLOOD",
+          "spellId": 24321,
+          "line": 65
+        },
+        {
+          "symbol": "SPELL_POISONOUS_CLOUD",
+          "spellId": 24320,
+          "line": 66
+        },
+        {
+          "symbol": "SPELL_CORRUPTED_BLOOD",
+          "spellId": 2118601,
+          "line": 68
+        },
+        {
+          "symbol": "SPELL_CORRUPTED_BLOOD_HEAL",
+          "spellId": 2118605,
+          "line": 69
+        },
+        {
+          "symbol": "SPELL_POOL_OF_CORRUPTED_BLOOD",
+          "spellId": 2118606,
+          "line": 70
+        },
+        {
+          "symbol": "SPELL_BLOOD_SIPHON",
+          "spellId": 2118615,
+          "line": 71
+        },
+        {
+          "symbol": "SPELL_BLOOD_SIPHON_HIT",
+          "spellId": 2118618,
+          "line": 72
+        },
+        {
+          "symbol": "SPELL_BLOOD_SIPHON_HEAL",
+          "spellId": 2118622,
+          "line": 73
+        },
+        {
+          "symbol": "SPELL_ANEMIA",
+          "spellId": 2118623,
+          "line": 74
+        },
+        {
+          "symbol": "SPELL_POISONED_BLOOD",
+          "spellId": 2118624,
+          "line": 75
+        },
+        {
+          "symbol": "SPELL_BLOOD_SCYTHE",
+          "spellId": 2118630,
+          "line": 76
+        },
+        {
+          "symbol": "SPELL_BLOOD_SCYTHE_HIT",
+          "spellId": 2118631,
+          "line": 77
+        },
+        {
+          "symbol": "SPELL_BLOOD_SCYTHE_ARMOR",
+          "spellId": 2118632,
+          "line": 78
+        },
+        {
+          "symbol": "SPELL_WILL_SLIPPING",
+          "spellId": 2118633,
+          "line": 79
+        },
+        {
+          "symbol": "SPELL_WILL_CONTROL",
+          "spellId": 2118634,
+          "line": 80
+        },
+        {
+          "symbol": "SPELL_WILL_SHIELD",
+          "spellId": 2118635,
+          "line": 81
+        },
+        {
+          "symbol": "SPELL_WILL_RELEASED",
+          "spellId": 2118636,
+          "line": 82
+        },
+        {
+          "symbol": "SPELL_HEART_EXPOSED",
+          "spellId": 2118650,
+          "line": 83
+        },
+        {
+          "symbol": "SPELL_POOL_OF_POISONED_BLOOD",
+          "spellId": 2118675,
+          "line": 84
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_HIREEK",
+          "spellId": 2118701,
+          "line": 85
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_HETHISS",
+          "spellId": 2118702,
+          "line": 86
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_SHADRA",
+          "spellId": 2118703,
+          "line": 87
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_SHIRVALLAH",
+          "spellId": 2118704,
+          "line": 88
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_BETHEKK",
+          "spellId": 2118705,
+          "line": 89
+        }
+      ],
+      "actions": [
+        {
+          "line": 145,
+          "code": "DoCastSelf(SPELL_HAKKAR_POWER, true);"
+        },
+        {
+          "line": 174,
+          "code": "DoCastSelf(aspect, true);"
+        },
+        {
+          "line": 176,
+          "code": "events.ScheduleEvent(EVENT_BLOOD_SCYTHE, 10s);"
+        },
+        {
+          "line": 177,
+          "code": "events.ScheduleEvent(EVENT_CORRUPTED_BLOOD, 25s);"
+        },
+        {
+          "line": 178,
+          "code": "events.ScheduleEvent(EVENT_WILL_OF_HAKKAR, 45s);"
+        },
+        {
+          "line": 179,
+          "code": "events.ScheduleEvent(EVENT_SONS, 45s);"
+        },
+        {
+          "line": 180,
+          "code": "events.ScheduleEvent(EVENT_BLOOD_SIPHON, 90s);"
+        },
+        {
+          "line": 181,
+          "code": "events.ScheduleEvent(EVENT_BERSERK, 10min);"
+        },
+        {
+          "line": 220,
+          "code": "_clock.ScheduleEvent(EVENT_SIPHON_END, 0ms);"
+        },
+        {
+          "line": 251,
+          "code": "_clock.ScheduleEvent(EVENT_SIPHON_TICK, 2s);"
+        },
+        {
+          "line": 252,
+          "code": "_clock.ScheduleEvent(EVENT_SIPHON_END, SIPHON_LENGTH);"
+        },
+        {
+          "line": 322,
+          "code": "_clock.ScheduleEvent(EVENT_SIPHON_TICK, 2s);"
+        },
+        {
+          "line": 340,
+          "code": "DoCastSelf(SPELL_BLOOD_SIPHON);"
+        },
+        {
+          "line": 341,
+          "code": "events.ScheduleEvent(EVENT_BLOOD_SIPHON, 90s);"
+        },
+        {
+          "line": 344,
+          "code": "DoCastSelf(SPELL_CORRUPTED_BLOOD, true);"
+        },
+        {
+          "line": 345,
+          "code": "events.ScheduleEvent(EVENT_CORRUPTED_BLOOD, 30s);"
+        },
+        {
+          "line": 352,
+          "code": "events.ScheduleEvent(EVENT_WILL_CONTROL, 5s);"
+        },
+        {
+          "line": 354,
+          "code": "events.ScheduleEvent(EVENT_WILL_OF_HAKKAR, 45s);"
+        },
+        {
+          "line": 362,
+          "code": "events.ScheduleEvent(EVENT_WILL_RELEASE, 15s);"
+        },
+        {
+          "line": 376,
+          "code": "DoCastVictim(SPELL_BLOOD_SCYTHE);"
+        },
+        {
+          "line": 377,
+          "code": "events.ScheduleEvent(EVENT_BLOOD_SCYTHE, 12s);"
+        },
+        {
+          "line": 386,
+          "code": "events.ScheduleEvent(EVENT_SONS, 60s);"
+        },
+        {
+          "line": 389,
+          "code": "DoCastSelf(SPELL_BERSERK, true);"
+        }
+      ]
+    },
+    {
+      "boss": "jindo",
+      "path": "modules/mod-coa-raid-difficulty/src/boss_jindo_coa.cpp",
+      "sourceLines": 307,
+      "spells": [
+        {
+          "symbol": "SPELL_BRAIN_WASH_TOTEM",
+          "spellId": 24262,
+          "line": 51
+        },
+        {
+          "symbol": "SPELL_POWERFULL_HEALING_WARD",
+          "spellId": 24309,
+          "line": 52
+        },
+        {
+          "symbol": "SPELL_HEX",
+          "spellId": 17172,
+          "line": 53
+        },
+        {
+          "symbol": "SPELL_SUMMON_SHADE_OF_JINDO",
+          "spellId": 24308,
+          "line": 54
+        },
+        {
+          "symbol": "SPELL_BANISH",
+          "spellId": 24466,
+          "line": 55
+        },
+        {
+          "symbol": "SPELL_DELUSIONS_OF_JINDO",
+          "spellId": 24306,
+          "line": 56
+        },
+        {
+          "symbol": "SPELL_SUMMON_BRAIN_WASH",
+          "spellId": 2118501,
+          "line": 58
+        },
+        {
+          "symbol": "SPELL_SUMMON_HEALING_STREAM",
+          "spellId": 2118503,
+          "line": 59
+        },
+        {
+          "symbol": "SPELL_DELUSIONS",
+          "spellId": 2118510,
+          "line": 60
+        },
+        {
+          "symbol": "SPELL_DELUSIONS_VISION",
+          "spellId": 2118511,
+          "line": 61
+        },
+        {
+          "symbol": "SPELL_DELUSIONS_DOT",
+          "spellId": 2118512,
+          "line": 62
+        },
+        {
+          "symbol": "SPELL_FRIENDS_ON_THE_OTHER_SIDE",
+          "spellId": 2118518,
+          "line": 63
+        },
+        {
+          "symbol": "SPELL_ANIMATE_BONES",
+          "spellId": 2118560,
+          "line": 64
+        }
+      ],
+      "actions": [
+        {
+          "line": 98,
+          "code": "events.ScheduleEvent(EVENT_TELEPORT, 5s);"
+        },
+        {
+          "line": 99,
+          "code": "events.ScheduleEvent(EVENT_HEX, 8s);"
+        },
+        {
+          "line": 100,
+          "code": "events.ScheduleEvent(EVENT_DELUSIONS, 14s);"
+        },
+        {
+          "line": 101,
+          "code": "events.ScheduleEvent(EVENT_BRAIN_WASH, 17s);"
+        },
+        {
+          "line": 102,
+          "code": "events.ScheduleEvent(EVENT_ANIMATE_BONES, 23s);"
+        },
+        {
+          "line": 103,
+          "code": "events.ScheduleEvent(EVENT_HEALING_STREAM, 202s);"
+        },
+        {
+          "line": 104,
+          "code": "events.ScheduleEvent(EVENT_DELUSIONS_GROW, 1s);"
+        },
+        {
+          "line": 171,
+          "code": "DoCastSelf(SPELL_BRAIN_WASH_TOTEM, true);"
+        },
+        {
+          "line": 174,
+          "code": "DoCastSelf(SPELL_POWERFULL_HEALING_WARD, true);"
+        },
+        {
+          "line": 254,
+          "code": "DoCast(target, SPELL_DELUSIONS);"
+        },
+        {
+          "line": 256,
+          "code": "events.ScheduleEvent(EVENT_DELUSIONS, 20s);"
+        },
+        {
+          "line": 259,
+          "code": "DoCastSelf(SPELL_SUMMON_BRAIN_WASH);"
+        },
+        {
+          "line": 260,
+          "code": "events.ScheduleEvent(EVENT_BRAIN_WASH, 60s);"
+        },
+        {
+          "line": 263,
+          "code": "DoCastSelf(SPELL_ANIMATE_BONES);"
+        },
+        {
+          "line": 264,
+          "code": "events.ScheduleEvent(EVENT_ANIMATE_BONES, 30s);"
+        },
+        {
+          "line": 267,
+          "code": "DoCastSelf(SPELL_SUMMON_HEALING_STREAM);"
+        },
+        {
+          "line": 268,
+          "code": "events.ScheduleEvent(EVENT_HEALING_STREAM, 120s);"
+        },
+        {
+          "line": 272,
+          "code": "DoCastVictim(SPELL_HEX, true);"
+        },
+        {
+          "line": 273,
+          "code": "events.ScheduleEvent(EVENT_HEX, 12s, 20s);"
+        },
+        {
+          "line": 276,
+          "code": "DoCastRandomTarget(SPELL_BANISH);"
+        },
+        {
+          "line": 277,
+          "code": "events.ScheduleEvent(EVENT_TELEPORT, 15s, 23s);"
+        },
+        {
+          "line": 282,
+          "code": "events.ScheduleEvent(EVENT_DELUSIONS_GROW, 1s);"
+        }
+      ]
+    },
+    {
+      "boss": "mandokir",
+      "path": "modules/mod-coa-raid-difficulty/src/boss_mandokir_coa.cpp",
+      "sourceLines": 421,
+      "spells": [
+        {
+          "symbol": "SPELL_SUMMON_PLAYER",
+          "spellId": 25104,
+          "line": 56
+        },
+        {
+          "symbol": "SPELL_MORTAL_STRIKE",
+          "spellId": 2118401,
+          "line": 58
+        },
+        {
+          "symbol": "SPELL_MORTAL_STRIKE_HIT",
+          "spellId": 2118402,
+          "line": 59
+        },
+        {
+          "symbol": "SPELL_MORTAL_WOUND",
+          "spellId": 2118403,
+          "line": 60
+        },
+        {
+          "symbol": "SPELL_EXECUTE",
+          "spellId": 2118404,
+          "line": 61
+        },
+        {
+          "symbol": "SPELL_EXECUTE_HIT",
+          "spellId": 2118405,
+          "line": 62
+        },
+        {
+          "symbol": "SPELL_BERSERKER_CHARGE",
+          "spellId": 2118406,
+          "line": 63
+        },
+        {
+          "symbol": "SPELL_WHIRLWIND",
+          "spellId": 2118408,
+          "line": 64
+        },
+        {
+          "symbol": "SPELL_DECAPITATE",
+          "spellId": 2118410,
+          "line": 65
+        },
+        {
+          "symbol": "SPELL_LEAP",
+          "spellId": 2118413,
+          "line": 66
+        },
+        {
+          "symbol": "SPELL_LEVEL_UP",
+          "spellId": 2118416,
+          "line": 67
+        },
+        {
+          "symbol": "SPELL_FIRST_BLOOD",
+          "spellId": 2118417,
+          "line": 68
+        },
+        {
+          "symbol": "SPELL_KILLING_SPREE",
+          "spellId": 2118418,
+          "line": 69
+        },
+        {
+          "symbol": "SPELL_RAMPAGE",
+          "spellId": 2118419,
+          "line": 70
+        },
+        {
+          "symbol": "SPELL_UNSTOPPABLE",
+          "spellId": 2118420,
+          "line": 71
+        },
+        {
+          "symbol": "SPELL_LEGENDARY",
+          "spellId": 2118421,
+          "line": 72
+        },
+        {
+          "symbol": "SPELL_THREATENING_GAZE",
+          "spellId": 2118422,
+          "line": 73
+        },
+        {
+          "symbol": "SPELL_FRENZY",
+          "spellId": 2106613,
+          "line": 74
+        }
+      ],
+      "actions": [
+        {
+          "line": 163,
+          "code": "events.ScheduleEvent(EVENT_CHECK_START, 1s);"
+        },
+        {
+          "line": 191,
+          "code": "events.ScheduleEvent(EVENT_MORTAL_STRIKE, 8s);"
+        },
+        {
+          "line": 192,
+          "code": "events.ScheduleEvent(EVENT_CHARGE, 10s);"
+        },
+        {
+          "line": 193,
+          "code": "events.ScheduleEvent(EVENT_GAZE, 15s);"
+        },
+        {
+          "line": 194,
+          "code": "events.ScheduleEvent(EVENT_CHECK_OHGAN, 1s);"
+        },
+        {
+          "line": 228,
+          "code": "DoCastSelf(streak, true);"
+        },
+        {
+          "line": 268,
+          "code": "if (doneTo->HealthBelowPctDamaged(20, damage))"
+        },
+        {
+          "line": 273,
+          "code": "events.ScheduleEvent(EVENT_EXECUTE, 1s);"
+        },
+        {
+          "line": 285,
+          "code": "DoCast(player, SPELL_SUMMON_PLAYER, true);"
+        },
+        {
+          "line": 321,
+          "code": "events.ScheduleEvent(EVENT_STARTED, 6s);"
+        },
+        {
+          "line": 324,
+          "code": "events.ScheduleEvent(EVENT_CHECK_START, 1s);"
+        },
+        {
+          "line": 349,
+          "code": "DoCast(target, SPELL_BERSERKER_CHARGE);"
+        },
+        {
+          "line": 353,
+          "code": "events.ScheduleEvent(EVENT_WHIRLWIND, 1500ms);"
+        },
+        {
+          "line": 354,
+          "code": "events.ScheduleEvent(EVENT_WHIRLWIND, 8s);"
+        },
+        {
+          "line": 355,
+          "code": "events.ScheduleEvent(EVENT_CHARGE, 25s);"
+        },
+        {
+          "line": 358,
+          "code": "DoCastSelf(SPELL_WHIRLWIND);"
+        },
+        {
+          "line": 361,
+          "code": "DoCastVictim(SPELL_MORTAL_STRIKE);"
+        },
+        {
+          "line": 362,
+          "code": "events.ScheduleEvent(EVENT_MORTAL_STRIKE, 10s);"
+        },
+        {
+          "line": 371,
+          "code": "events.ScheduleEvent(EVENT_GAZE_END, 4s);"
+        },
+        {
+          "line": 373,
+          "code": "events.ScheduleEvent(EVENT_GAZE, 20s);"
+        },
+        {
+          "line": 385,
+          "code": "DoCastVictim(SPELL_EXECUTE);"
+        },
+        {
+          "line": 386,
+          "code": "events.ScheduleEvent(EVENT_EXECUTE, 7s, 14s);"
+        },
+        {
+          "line": 391,
+          "code": "DoCastSelf(SPELL_FRENZY, true);"
+        },
+        {
+          "line": 395,
+          "code": "events.ScheduleEvent(EVENT_CHECK_OHGAN, 1s);"
+        }
+      ]
+    },
+    {
+      "boss": "venoxis",
+      "path": "modules/mod-coa-raid-difficulty/src/boss_venoxis_coa.cpp",
+      "sourceLines": 387,
+      "spells": [
+        {
+          "symbol": "SPELL_THRASH",
+          "spellId": 3391,
+          "line": 55
+        },
+        {
+          "symbol": "SPELL_FRENZY",
+          "spellId": 8269,
+          "line": 56
+        },
+        {
+          "symbol": "SPELL_RENEW",
+          "spellId": 2118001,
+          "line": 58
+        },
+        {
+          "symbol": "SPELL_HOLY_NOVA",
+          "spellId": 2118002,
+          "line": 59
+        },
+        {
+          "symbol": "SPELL_HOLY_NOVA_HIT",
+          "spellId": 2118003,
+          "line": 60
+        },
+        {
+          "symbol": "SPELL_HOLY_NOVA_HEAL",
+          "spellId": 2118007,
+          "line": 61
+        },
+        {
+          "symbol": "SPELL_HOLY_FIRE",
+          "spellId": 2118012,
+          "line": 63
+        },
+        {
+          "symbol": "SPELL_HOLY_FIRE_DOT",
+          "spellId": 2118013,
+          "line": 64
+        },
+        {
+          "symbol": "SPELL_HOLY_FIRE_HIT",
+          "spellId": 2118014,
+          "line": 65
+        },
+        {
+          "symbol": "SPELL_HOLY_WRATH",
+          "spellId": 2118020,
+          "line": 67
+        },
+        {
+          "symbol": "SPELL_HOLY_WRATH_HIT",
+          "spellId": 2118021,
+          "line": 68
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_HETHISS",
+          "spellId": 2118023,
+          "line": 69
+        },
+        {
+          "symbol": "SPELL_POISONOUS_FANGS",
+          "spellId": 2118025,
+          "line": 70
+        },
+        {
+          "symbol": "SPELL_VIRULENT_POISON",
+          "spellId": 2118026,
+          "line": 71
+        },
+        {
+          "symbol": "SPELL_VENOM_SPIT",
+          "spellId": 2118030,
+          "line": 72
+        },
+        {
+          "symbol": "SPELL_VENOM_SPIT_HIT",
+          "spellId": 2118031,
+          "line": 73
+        },
+        {
+          "symbol": "SPELL_TOXIC_BOMBARDEMENT",
+          "spellId": 2118035,
+          "line": 74
+        },
+        {
+          "symbol": "SPELL_PARASITIC_POISON",
+          "spellId": 2118040,
+          "line": 75
+        },
+        {
+          "symbol": "SPELL_PARASITIC_POISON_DOT",
+          "spellId": 2118041,
+          "line": 76
+        },
+        {
+          "symbol": "SPELL_CORPSE_EXPLOSION",
+          "spellId": 2118045,
+          "line": 77
+        },
+        {
+          "symbol": "SPELL_ACID_BURST",
+          "spellId": 2118078,
+          "line": 78
+        },
+        {
+          "symbol": "SPELL_ACID_POOL",
+          "spellId": 2118082,
+          "line": 79
+        }
+      ],
+      "actions": [
+        {
+          "line": 133,
+          "code": "events.ScheduleEvent(EVENT_THRASH, 8s);"
+        },
+        {
+          "line": 134,
+          "code": "events.ScheduleEvent(EVENT_HOLY_NOVA, 7s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 135,
+          "code": "events.ScheduleEvent(EVENT_RENEW, 16s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 136,
+          "code": "events.ScheduleEvent(EVENT_HOLY_WRATH, 18s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 137,
+          "code": "events.ScheduleEvent(EVENT_HOLY_FIRE, 22s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 151,
+          "code": "if (!_snake && me->HealthBelowPctDamaged(50, damage))"
+        },
+        {
+          "line": 155,
+          "code": "DoCastSelf(SPELL_ASPECT_OF_HETHISS, true);"
+        },
+        {
+          "line": 156,
+          "code": "DoCastSelf(SPELL_POISONOUS_FANGS, true);"
+        },
+        {
+          "line": 161,
+          "code": "events.ScheduleEvent(EVENT_TOXIC_BOMBARDEMENT, 1s, 0, PHASE_SNAKE);"
+        },
+        {
+          "line": 162,
+          "code": "events.ScheduleEvent(EVENT_PARASITIC_POISON, 3s, 0, PHASE_SNAKE);"
+        },
+        {
+          "line": 163,
+          "code": "events.ScheduleEvent(EVENT_VENOM_SPIT, 5s, 0, PHASE_SNAKE);"
+        },
+        {
+          "line": 164,
+          "code": "events.ScheduleEvent(EVENT_CORPSE_EXPLOSION, 17s, 0, PHASE_SNAKE);"
+        },
+        {
+          "line": 167,
+          "code": "if (!_frenzied && me->HealthBelowPctDamaged(20, damage))"
+        },
+        {
+          "line": 170,
+          "code": "DoCastSelf(SPELL_FRENZY, true);"
+        },
+        {
+          "line": 278,
+          "code": "DoCast(target, spell);"
+        },
+        {
+          "line": 297,
+          "code": "DoCastSelf(SPELL_THRASH, true);"
+        },
+        {
+          "line": 298,
+          "code": "events.ScheduleEvent(EVENT_THRASH, 10s, 20s);"
+        },
+        {
+          "line": 301,
+          "code": "DoCastSelf(SPELL_HOLY_NOVA);"
+        },
+        {
+          "line": 302,
+          "code": "events.ScheduleEvent(EVENT_HOLY_NOVA, 18s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 308,
+          "code": "events.ScheduleEvent(EVENT_RENEW, 24s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 315,
+          "code": "DoCast(tank, SPELL_HOLY_WRATH);"
+        },
+        {
+          "line": 317,
+          "code": "events.ScheduleEvent(EVENT_HOLY_WRATH, 15s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 321,
+          "code": "events.ScheduleEvent(EVENT_HOLY_FIRE, 10s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 326,
+          "code": "events.ScheduleEvent(EVENT_TOXIC_BOMBARDEMENT, 15s, 0, PHASE_SNAKE);"
+        },
+        {
+          "line": 330,
+          "code": "events.ScheduleEvent(EVENT_PARASITIC_POISON, 15s, 0, PHASE_SNAKE);"
+        },
+        {
+          "line": 333,
+          "code": "DoCastVictim(SPELL_VENOM_SPIT);"
+        },
+        {
+          "line": 334,
+          "code": "events.ScheduleEvent(EVENT_VENOM_SPIT, 10s, 0, PHASE_SNAKE);"
+        },
+        {
+          "line": 337,
+          "code": "DoCastSelf(SPELL_CORPSE_EXPLOSION);"
+        },
+        {
+          "line": 338,
+          "code": "events.ScheduleEvent(EVENT_CORPSE_EXPLOSION, 40s, 0, PHASE_SNAKE);"
+        }
+      ]
+    },
+    {
+      "boss": "marli",
+      "path": "modules/mod-coa-raid-difficulty/src/boss_marli_coa.cpp",
+      "sourceLines": 338,
+      "spells": [
+        {
+          "symbol": "SPELL_THRASH",
+          "spellId": 3391,
+          "line": 55
+        },
+        {
+          "symbol": "SPELL_CHARGE",
+          "spellId": 22911,
+          "line": 56
+        },
+        {
+          "symbol": "SPELL_DRAIN_LIFE",
+          "spellId": 2118105,
+          "line": 59
+        },
+        {
+          "symbol": "SPELL_DRAIN_LIFE_TICK",
+          "spellId": 2118107,
+          "line": 60
+        },
+        {
+          "symbol": "SPELL_DRAIN_LIFE_HEAL",
+          "spellId": 2118108,
+          "line": 61
+        },
+        {
+          "symbol": "SPELL_POISON_BOLT_VOLLEY",
+          "spellId": 2118109,
+          "line": 62
+        },
+        {
+          "symbol": "SPELL_POISON_BOLT_HIT",
+          "spellId": 2118110,
+          "line": 63
+        },
+        {
+          "symbol": "SPELL_HATCH_EGGS",
+          "spellId": 2118115,
+          "line": 64
+        },
+        {
+          "symbol": "SPELL_EVOLVE",
+          "spellId": 2118116,
+          "line": 65
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_SHADRA",
+          "spellId": 2118123,
+          "line": 66
+        },
+        {
+          "symbol": "SPELL_FURIOUS_STRIKES",
+          "spellId": 2118125,
+          "line": 67
+        },
+        {
+          "symbol": "SPELL_ACID_SPIT",
+          "spellId": 2118127,
+          "line": 68
+        },
+        {
+          "symbol": "SPELL_ACID_SPIT_DOT",
+          "spellId": 2118128,
+          "line": 69
+        },
+        {
+          "symbol": "SPELL_CORROSION",
+          "spellId": 2118132,
+          "line": 70
+        },
+        {
+          "symbol": "SPELL_WEB_SPRAY",
+          "spellId": 2118133,
+          "line": 71
+        },
+        {
+          "symbol": "SPELL_POISON_SHOCK",
+          "spellId": 2118145,
+          "line": 72
+        },
+        {
+          "symbol": "SPELL_POISON_SHOCK_HIT",
+          "spellId": 2118146,
+          "line": 73
+        },
+        {
+          "symbol": "SPELL_INFEST",
+          "spellId": 2118151,
+          "line": 74
+        }
+      ],
+      "actions": [
+        {
+          "line": 134,
+          "code": "events.ScheduleEvent(EVENT_THRASH, 4s, 6s);"
+        },
+        {
+          "line": 135,
+          "code": "events.ScheduleEvent(EVENT_DRAIN_LIFE, 6s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 136,
+          "code": "events.ScheduleEvent(EVENT_POISON_BOLT_VOLLEY, 12s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 137,
+          "code": "events.ScheduleEvent(EVENT_HATCH_EGGS, 17s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 138,
+          "code": "events.ScheduleEvent(EVENT_EVOLVE, 22s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 139,
+          "code": "events.ScheduleEvent(EVENT_INFEST, 87s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 152,
+          "code": "if (_spider || !me->HealthBelowPctDamaged(50, damage))"
+        },
+        {
+          "line": 158,
+          "code": "DoCastSelf(SPELL_ASPECT_OF_SHADRA, true);"
+        },
+        {
+          "line": 159,
+          "code": "DoCastSelf(SPELL_FURIOUS_STRIKES, true);"
+        },
+        {
+          "line": 162,
+          "code": "events.ScheduleEvent(EVENT_ACID_SPIT, 1s, 0, PHASE_SPIDER);"
+        },
+        {
+          "line": 163,
+          "code": "events.ScheduleEvent(EVENT_WEB_SPRAY, 15s, 0, PHASE_SPIDER);"
+        },
+        {
+          "line": 164,
+          "code": "events.ScheduleEvent(EVENT_POISON_SHOCK, 25s, 0, PHASE_SPIDER);"
+        },
+        {
+          "line": 267,
+          "code": "DoCastVictim(SPELL_THRASH);"
+        },
+        {
+          "line": 268,
+          "code": "events.ScheduleEvent(EVENT_THRASH, 10s, 20s);"
+        },
+        {
+          "line": 276,
+          "code": "events.ScheduleEvent(EVENT_DRAIN_LIFE, 10s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 279,
+          "code": "DoCastSelf(SPELL_POISON_BOLT_VOLLEY);"
+        },
+        {
+          "line": 280,
+          "code": "events.ScheduleEvent(EVENT_POISON_BOLT_VOLLEY, 15s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 283,
+          "code": "DoCastSelf(SPELL_HATCH_EGGS);"
+        },
+        {
+          "line": 287,
+          "code": "DoCast(spawn, SPELL_EVOLVE);"
+        },
+        {
+          "line": 288,
+          "code": "events.ScheduleEvent(EVENT_EVOLVE, 60s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 292,
+          "code": "DoCast(spawn, SPELL_INFEST);"
+        },
+        {
+          "line": 293,
+          "code": "events.ScheduleEvent(EVENT_INFEST, 60s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 296,
+          "code": "DoCastVictim(SPELL_ACID_SPIT);"
+        },
+        {
+          "line": 297,
+          "code": "events.ScheduleEvent(EVENT_ACID_SPIT, 12s, 0, PHASE_SPIDER);"
+        },
+        {
+          "line": 300,
+          "code": "DoCastSelf(SPELL_WEB_SPRAY);"
+        },
+        {
+          "line": 301,
+          "code": "events.ScheduleEvent(EVENT_CHARGE, 5s, 0, PHASE_SPIDER);"
+        },
+        {
+          "line": 302,
+          "code": "events.ScheduleEvent(EVENT_WEB_SPRAY, 55s, 0, PHASE_SPIDER);"
+        },
+        {
+          "line": 311,
+          "code": "DoCast(target, SPELL_CHARGE);"
+        },
+        {
+          "line": 316,
+          "code": "DoCastSelf(SPELL_POISON_SHOCK);"
+        },
+        {
+          "line": 317,
+          "code": "events.ScheduleEvent(EVENT_POISON_SHOCK, 25s, 0, PHASE_SPIDER);"
+        }
+      ]
+    },
+    {
+      "boss": "jeklik",
+      "path": "modules/mod-coa-raid-difficulty/src/boss_jeklik_coa.cpp",
+      "sourceLines": 339,
+      "spells": [
+        {
+          "symbol": "SPELL_GREEN_CHANNELING",
+          "spellId": 13540,
+          "line": 52
+        },
+        {
+          "symbol": "SPELL_BAT_FORM",
+          "spellId": 23966,
+          "line": 53
+        },
+        {
+          "symbol": "SPELL_MIND_FLAY",
+          "spellId": 2106105,
+          "line": 56
+        },
+        {
+          "symbol": "SPELL_SHADOW_WORD_PAIN",
+          "spellId": 2106112,
+          "line": 58
+        },
+        {
+          "symbol": "SPELL_SHADOW_WORD_PAIN_DOT",
+          "spellId": 2106113,
+          "line": 59
+        },
+        {
+          "symbol": "SPELL_MASS_FEAR",
+          "spellId": 2106114,
+          "line": 60
+        },
+        {
+          "symbol": "SPELL_MASS_FEAR_HIT",
+          "spellId": 2106115,
+          "line": 61
+        },
+        {
+          "symbol": "SPELL_GREATER_HEAL",
+          "spellId": 2106116,
+          "line": 62
+        },
+        {
+          "symbol": "SPELL_CURSE_OF_BLOOD",
+          "spellId": 2106117,
+          "line": 63
+        },
+        {
+          "symbol": "SPELL_CURSE_OF_BLOOD_HIT",
+          "spellId": 2106118,
+          "line": 64
+        },
+        {
+          "symbol": "SPELL_CALL_OF_HIREEK",
+          "spellId": 2106120,
+          "line": 65
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_HIREEK",
+          "spellId": 2106122,
+          "line": 66
+        },
+        {
+          "symbol": "SPELL_BATTERING_CHARGE",
+          "spellId": 2106125,
+          "line": 67
+        },
+        {
+          "symbol": "SPELL_BATTERING_STUN",
+          "spellId": 2106126,
+          "line": 68
+        },
+        {
+          "symbol": "SPELL_BATTERING_IMPACT",
+          "spellId": 2106127,
+          "line": 69
+        },
+        {
+          "symbol": "SPELL_SCREECH",
+          "spellId": 2106131,
+          "line": 70
+        },
+        {
+          "symbol": "SPELL_SCREECH_HIT",
+          "spellId": 2106136,
+          "line": 72
+        },
+        {
+          "symbol": "SPELL_VAMPIRISM",
+          "spellId": 2106138,
+          "line": 73
+        }
+      ],
+      "actions": [
+        {
+          "line": 132,
+          "code": "DoCastSelf(SPELL_GREEN_CHANNELING, true);"
+        },
+        {
+          "line": 143,
+          "code": "DoCastSelf(SPELL_BAT_FORM, true);"
+        },
+        {
+          "line": 156,
+          "code": "events.ScheduleEvent(EVENT_MIND_FLAY, 4s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 157,
+          "code": "events.ScheduleEvent(EVENT_MASS_FEAR, 12s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 158,
+          "code": "events.ScheduleEvent(EVENT_SHADOW_WORD_PAIN, 15s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 159,
+          "code": "events.ScheduleEvent(EVENT_CURSE_OF_BLOOD, 16s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 160,
+          "code": "events.ScheduleEvent(EVENT_CALL_OF_HIREEK, 20s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 161,
+          "code": "events.ScheduleEvent(EVENT_GREATER_HEAL, 29s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 181,
+          "code": "if (_bat || !me->HealthBelowPctDamaged(50, damage))"
+        },
+        {
+          "line": 186,
+          "code": "DoCastSelf(SPELL_ASPECT_OF_HIREEK, true);"
+        },
+        {
+          "line": 187,
+          "code": "DoCastSelf(SPELL_VAMPIRISM, true);"
+        },
+        {
+          "line": 191,
+          "code": "events.ScheduleEvent(EVENT_BATTERING_CHARGE, 2s, 0, PHASE_BAT);"
+        },
+        {
+          "line": 192,
+          "code": "events.ScheduleEvent(EVENT_SCREECH, 4s, 0, PHASE_BAT);"
+        },
+        {
+          "line": 193,
+          "code": "events.ScheduleEvent(EVENT_BAT_RIDER, 10s, 0, PHASE_BAT);"
+        },
+        {
+          "line": 251,
+          "code": "DoCast(target, spell);"
+        },
+        {
+          "line": 277,
+          "code": "events.ScheduleEvent(EVENT_MIND_FLAY, 14s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 280,
+          "code": "DoCastSelf(SPELL_MASS_FEAR);"
+        },
+        {
+          "line": 281,
+          "code": "events.ScheduleEvent(EVENT_MASS_FEAR, 48s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 285,
+          "code": "events.ScheduleEvent(EVENT_SHADOW_WORD_PAIN, 27s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 289,
+          "code": "events.ScheduleEvent(EVENT_CURSE_OF_BLOOD, 31s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 292,
+          "code": "DoCastSelf(SPELL_CALL_OF_HIREEK);"
+        },
+        {
+          "line": 293,
+          "code": "events.ScheduleEvent(EVENT_CALL_OF_HIREEK, 60s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 297,
+          "code": "DoCastSelf(SPELL_GREATER_HEAL);"
+        },
+        {
+          "line": 298,
+          "code": "events.ScheduleEvent(EVENT_GREATER_HEAL, 46s, 0, PHASE_TROLL);"
+        },
+        {
+          "line": 302,
+          "code": "DoCast(target, SPELL_BATTERING_CHARGE);"
+        },
+        {
+          "line": 303,
+          "code": "events.ScheduleEvent(EVENT_BATTERING_CHARGE, 20s, 0, PHASE_BAT);"
+        },
+        {
+          "line": 306,
+          "code": "DoCastSelf(SPELL_SCREECH);"
+        },
+        {
+          "line": 307,
+          "code": "events.ScheduleEvent(EVENT_SCREECH, 20s, 0, PHASE_BAT);"
+        },
+        {
+          "line": 316,
+          "code": "events.ScheduleEvent(EVENT_BAT_RIDER, 10s, 15s, 0, PHASE_BAT);"
+        }
+      ]
+    },
+    {
+      "boss": "thekal",
+      "path": "modules/mod-coa-raid-difficulty/src/boss_thekal_coa.cpp",
+      "sourceLines": 348,
+      "spells": [
+        {
+          "symbol": "SPELL_SUMMONTIGERS",
+          "spellId": 24183,
+          "line": 51
+        },
+        {
+          "symbol": "SPELL_FRENZY",
+          "spellId": 8269,
+          "line": 52
+        },
+        {
+          "symbol": "SPELL_RESURRECTION_IMPACT_VISUAL",
+          "spellId": 24171,
+          "line": 53
+        },
+        {
+          "symbol": "SPELL_MORTAL_CLEAVE",
+          "spellId": 2118201,
+          "line": 55
+        },
+        {
+          "symbol": "SPELL_MORTAL_CLEAVE_HIT",
+          "spellId": 2118202,
+          "line": 56
+        },
+        {
+          "symbol": "SPELL_MORTAL_WOUND",
+          "spellId": 2118203,
+          "line": 57
+        },
+        {
+          "symbol": "SPELL_BLOODLUST",
+          "spellId": 2118204,
+          "line": 58
+        },
+        {
+          "symbol": "SPELL_DISRUPTING_SHOUT",
+          "spellId": 2118205,
+          "line": 59
+        },
+        {
+          "symbol": "SPELL_DISRUPTING_SHOUT_HIT",
+          "spellId": 2118206,
+          "line": 60
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_SHIRVALLAH",
+          "spellId": 2118223,
+          "line": 61
+        },
+        {
+          "symbol": "SPELL_SHREDDING_CLAWS",
+          "spellId": 2118225,
+          "line": 62
+        },
+        {
+          "symbol": "SPELL_WAR_STOMP",
+          "spellId": 2118227,
+          "line": 63
+        },
+        {
+          "symbol": "SPELL_WAR_STOMP_HIT",
+          "spellId": 2118228,
+          "line": 64
+        },
+        {
+          "symbol": "SPELL_SPEED_SLASH",
+          "spellId": 2118232,
+          "line": 65
+        },
+        {
+          "symbol": "SPELL_RENDING_SWIPE",
+          "spellId": 2118238,
+          "line": 66
+        },
+        {
+          "symbol": "SPELL_RENDING_SWIPE_HIT",
+          "spellId": 2118239,
+          "line": 67
+        },
+        {
+          "symbol": "SPELL_RIP",
+          "spellId": 2118240,
+          "line": 68
+        }
+      ],
+      "actions": [
+        {
+          "line": 134,
+          "code": "DoCastVictim(SPELL_MORTAL_CLEAVE);"
+        },
+        {
+          "line": 135,
+          "code": "context.Repeat(13s);"
+        },
+        {
+          "line": 138,
+          "code": "DoCastSelf(SPELL_DISRUPTING_SHOUT);"
+        },
+        {
+          "line": 139,
+          "code": "context.Repeat(20s);"
+        },
+        {
+          "line": 143,
+          "code": "context.Repeat(30s);"
+        },
+        {
+          "line": 151,
+          "code": "DoCastVictim(SPELL_RENDING_SWIPE);"
+        },
+        {
+          "line": 152,
+          "code": "context.Repeat(14s);"
+        },
+        {
+          "line": 155,
+          "code": "DoCastSelf(SPELL_WAR_STOMP);"
+        },
+        {
+          "line": 156,
+          "code": "context.Repeat(40s);"
+        },
+        {
+          "line": 159,
+          "code": "DoCastSelf(SPELL_SPEED_SLASH);"
+        },
+        {
+          "line": 164,
+          "code": "context.Repeat(40s);"
+        },
+        {
+          "line": 167,
+          "code": "DoCastSelf(SPELL_FRENZY);"
+        },
+        {
+          "line": 168,
+          "code": "context.Repeat();"
+        },
+        {
+          "line": 171,
+          "code": "DoCastVictim(SPELL_SUMMONTIGERS, true);"
+        },
+        {
+          "line": 172,
+          "code": "context.Repeat(10s, 14s);"
+        },
+        {
+          "line": 176,
+          "code": "DoCastSelf(SPELL_FRENZY);"
+        },
+        {
+          "line": 186,
+          "code": "if (zealot->IsAlive() && zealot->IsInCombat() && zealot->GetHealthPct() < target->GetHealthPct())"
+        },
+        {
+          "line": 188,
+          "code": "DoCast(target, SPELL_BLOODLUST);"
+        },
+        {
+          "line": 308,
+          "code": "DoCastSelf(SPELL_RESURRECTION_IMPACT_VISUAL, true);"
+        },
+        {
+          "line": 316,
+          "code": "DoCastSelf(SPELL_ASPECT_OF_SHIRVALLAH, true);"
+        },
+        {
+          "line": 317,
+          "code": "DoCastSelf(SPELL_SHREDDING_CLAWS, true);"
+        }
+      ]
+    },
+    {
+      "boss": "arlokk",
+      "path": "modules/mod-coa-raid-difficulty/src/boss_arlokk_coa.cpp",
+      "sourceLines": 370,
+      "spells": [
+        {
+          "symbol": "SPELL_SUMMON_PROWLER",
+          "spellId": 24246,
+          "line": 53
+        },
+        {
+          "symbol": "SPELL_VANISH_VISUAL",
+          "spellId": 24222,
+          "line": 54
+        },
+        {
+          "symbol": "SPELL_VANISH",
+          "spellId": 24223,
+          "line": 55
+        },
+        {
+          "symbol": "SPELL_SUPER_INVIS",
+          "spellId": 24235,
+          "line": 56
+        },
+        {
+          "symbol": "SPELL_SHADOW_WORD_PAIN",
+          "spellId": 2118305,
+          "line": 59
+        },
+        {
+          "symbol": "SPELL_SHADOW_WORD_PAIN_DOT",
+          "spellId": 2118306,
+          "line": 60
+        },
+        {
+          "symbol": "SPELL_KIDNEY_SHOT",
+          "spellId": 2118307,
+          "line": 61
+        },
+        {
+          "symbol": "SPELL_SHADOWSTEP",
+          "spellId": 2118308,
+          "line": 62
+        },
+        {
+          "symbol": "SPELL_MARK_OF_ARLOKK",
+          "spellId": 2118310,
+          "line": 63
+        },
+        {
+          "symbol": "SPELL_MARK_OF_ARLOKK_AURA",
+          "spellId": 2118311,
+          "line": 64
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_BETHEKK",
+          "spellId": 2118323,
+          "line": 65
+        },
+        {
+          "symbol": "SPELL_RAZOR_CLAWS",
+          "spellId": 2118325,
+          "line": 66
+        },
+        {
+          "symbol": "SPELL_RAVAGE",
+          "spellId": 2118330,
+          "line": 67
+        },
+        {
+          "symbol": "SPELL_CLAW_STORM",
+          "spellId": 2118336,
+          "line": 68
+        }
+      ],
+      "actions": [
+        {
+          "line": 134,
+          "code": "events.ScheduleEvent(EVENT_SUMMON_PROWLERS, 6s, 0, PHASE_ALL);"
+        },
+        {
+          "line": 135,
+          "code": "events.ScheduleEvent(EVENT_MARK_OF_ARLOKK, 10s, 0, PHASE_ALL);"
+        },
+        {
+          "line": 155,
+          "code": "events.ScheduleEvent(EVENT_SHADOW_WORD_PAIN, swp, 0, PHASE_ONE);"
+        },
+        {
+          "line": 156,
+          "code": "events.ScheduleEvent(EVENT_KIDNEY_SHOT, 15s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 157,
+          "code": "events.ScheduleEvent(EVENT_TRANSFORM, 30s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 217,
+          "code": "DoCast(target, SPELL_MARK_OF_ARLOKK, true);"
+        },
+        {
+          "line": 239,
+          "code": "DoCast(tank, SPELL_SHADOW_WORD_PAIN);"
+        },
+        {
+          "line": 241,
+          "code": "events.ScheduleEvent(EVENT_SHADOW_WORD_PAIN, 20s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 244,
+          "code": "DoCastVictim(SPELL_KIDNEY_SHOT);"
+        },
+        {
+          "line": 245,
+          "code": "events.ScheduleEvent(EVENT_KIDNEY_SHOT, 30s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 250,
+          "code": "events.ScheduleEvent(EVENT_MARK_CHECK, 2s, 0, PHASE_ALL);"
+        },
+        {
+          "line": 266,
+          "code": "events.ScheduleEvent(EVENT_MARK_CHECK, 2s, 0, PHASE_ALL);"
+        },
+        {
+          "line": 281,
+          "code": "events.ScheduleEvent(EVENT_SUMMON_PROWLERS, 6s, 0, PHASE_ALL);"
+        },
+        {
+          "line": 284,
+          "code": "DoCastSelf(SPELL_ASPECT_OF_BETHEKK, true);"
+        },
+        {
+          "line": 291,
+          "code": "DoCastSelf(SPELL_VANISH_VISUAL);"
+        },
+        {
+          "line": 292,
+          "code": "DoCastSelf(SPELL_VANISH);"
+        },
+        {
+          "line": 293,
+          "code": "events.ScheduleEvent(EVENT_VANISH, 1s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 296,
+          "code": "DoCastSelf(SPELL_SUPER_INVIS);"
+        },
+        {
+          "line": 299,
+          "code": "events.ScheduleEvent(EVENT_VANISH_2, 9s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 302,
+          "code": "DoCastSelf(SPELL_VANISH);"
+        },
+        {
+          "line": 303,
+          "code": "DoCastSelf(SPELL_SUPER_INVIS);"
+        },
+        {
+          "line": 304,
+          "code": "events.ScheduleEvent(EVENT_VISIBLE, 41s, 47s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 313,
+          "code": "DoCastSelf(SPELL_RAZOR_CLAWS, true);"
+        },
+        {
+          "line": 315,
+          "code": "events.ScheduleEvent(EVENT_CLAW_STORM, 5s, 0, PHASE_TWO);"
+        },
+        {
+          "line": 316,
+          "code": "events.ScheduleEvent(EVENT_RAVAGE, 10s, 0, PHASE_TWO);"
+        },
+        {
+          "line": 317,
+          "code": "events.ScheduleEvent(EVENT_SHADOWSTEP, 12s, 0, PHASE_TWO);"
+        },
+        {
+          "line": 318,
+          "code": "events.ScheduleEvent(EVENT_TRANSFORM_BACK, 30s, 40s, 0, PHASE_TWO);"
+        },
+        {
+          "line": 321,
+          "code": "DoCastSelf(SPELL_CLAW_STORM);"
+        },
+        {
+          "line": 322,
+          "code": "events.ScheduleEvent(EVENT_CLAW_STORM, 20s, 0, PHASE_TWO);"
+        },
+        {
+          "line": 325,
+          "code": "DoCastVictim(SPELL_RAVAGE, true);"
+        },
+        {
+          "line": 326,
+          "code": "events.ScheduleEvent(EVENT_RAVAGE, 15s, 0, PHASE_TWO);"
+        },
+        {
+          "line": 331,
+          "code": "DoCast(target, SPELL_SHADOWSTEP);"
+        },
+        {
+          "line": 334,
+          "code": "events.ScheduleEvent(EVENT_SHADOWSTEP, 15s, 0, PHASE_TWO);"
+        },
+        {
+          "line": 339,
+          "code": "DoCastSelf(SPELL_VANISH_VISUAL);"
+        }
+      ]
+    }
+  ]
+}

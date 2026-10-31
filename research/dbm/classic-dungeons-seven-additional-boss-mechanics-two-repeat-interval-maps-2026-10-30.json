@@ -1,0 +1,235 @@
+{
+  "schema": "coa-research.dbm-dungeon-additional-map-mechanic-evidence.v1",
+  "date": "2026-10-30",
+  "sourceRepository": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "scope": "Additional Vanilla dungeons outside original six timer-mapped maps, plus supplemental boss evidence",
+  "classification": "Two additional dungeons have source-backed repeat intervals but no first-cast timer or resolved spell ID. Five more map mechanics have spell ID evidence but no cadence. Do not classify all seven as complete timer maps.",
+  "counts": {
+    "newMapsWithRepeatEvidence": 2,
+    "otherMapsWithSpellMechanics": 4,
+    "records": 7
+  },
+  "findings": [
+    {
+      "mapId": 34,
+      "dungeon": "The Stockade",
+      "npcId": 1717,
+      "boss": "Hamhock",
+      "mechanic": "Chain Lightning",
+      "repeatMs": [
+        10000,
+        10000
+      ],
+      "initialMs": null,
+      "spellId": null,
+      "source": "data/sql/updates/pending_db_world/rev_20261009_50_dungeon_rares_adamant_hamhock.sql",
+      "evidence": "SmartAI rows id 9010 and 9011 event_param3/4=10000; no spell ID specified in this UPDATE; action_param3 is not a spell ID",
+      "warning": "Requires base SmartAI row to resolve spell ID and initial event timing",
+      "type": "repeat-only"
+    },
+    {
+      "mapId": 209,
+      "dungeon": "Zul'Farrak",
+      "npcId": 7271,
+      "boss": "Witch Doctor Zum'rah",
+      "mechanic": "Healing Wave",
+      "repeatMs": [
+        10000,
+        10000
+      ],
+      "initialMs": null,
+      "spellId": null,
+      "source": "data/sql/updates/pending_db_world/rev_20261009_35_zumrah_healing_wave.sql",
+      "evidence": "SmartAI row id 4 repeat params set to 10000; source says 10-second cooldown",
+      "warning": "Spell ID and initial event timing unresolved",
+      "type": "repeat-only"
+    },
+    {
+      "mapId": 48,
+      "dungeon": "Blackfathom Deeps",
+      "npcId": null,
+      "boss": "Ghamoo-ra",
+      "mechanic": "Torrent spin",
+      "spellId": 2102687,
+      "repeatMs": null,
+      "initialMs": null,
+      "source": "data/sql/updates/pending_db_world/rev_20260930_60_bfd_bosses.sql",
+      "evidence": "spell_script_names binding for spell 2102687, spin mechanic",
+      "type": "spell-warning-no-timer"
+    },
+    {
+      "mapId": 389,
+      "dungeon": "Ragefire Chasm",
+      "npcId": null,
+      "boss": "Taragaman the Hungerer",
+      "mechanic": "Massive Fire Nova; take cover behind Earth Pillars",
+      "spellIds": [
+        2102516,
+        2102517,
+        2102518,
+        2102519
+      ],
+      "repeatMs": null,
+      "initialMs": null,
+      "source": "data/sql/updates/pending_db_world/rev_20260930_80_rfc_bosses.sql",
+      "evidence": "Four spell script bindings and Earth Pillar instructions; 7–13 seconds in comment describes nova sequence, NOT repeat cooldown",
+      "type": "spell-warning-no-timer"
+    },
+    {
+      "mapId": 349,
+      "dungeon": "Maraudon",
+      "npcId": null,
+      "boss": "Tinkerer Gizlock",
+      "mechanic": "Goblin Dragon Gun fixed-facing channel",
+      "spellId": 21833,
+      "repeatMs": null,
+      "initialMs": null,
+      "source": "data/sql/updates/pending_db_world/rev_20261003_10_dm_maraudon.sql",
+      "type": "spell-warning-no-timer"
+    },
+    {
+      "mapId": 429,
+      "dungeon": "Dire Maul",
+      "npcId": null,
+      "boss": "Illyanna Ravenoak",
+      "mechanic": "Immolation Trap",
+      "spellId": 2100236,
+      "repeatMs": null,
+      "initialMs": null,
+      "source": "data/sql/updates/pending_db_world/rev_20261003_10_dm_maraudon.sql",
+      "type": "spell-warning-no-timer"
+    },
+    {
+      "mapId": 289,
+      "dungeon": "Scholomance",
+      "npcId": null,
+      "boss": "Darkmaster Gandling",
+      "mechanic": "Rise! summons Risen Student",
+      "spellId": 2100398,
+      "summonNpcId": 80066,
+      "repeatMs": null,
+      "initialMs": null,
+      "source": "data/sql/updates/pending_db_world/rev_20261002_20_sm_scholo.sql",
+      "type": "spell-warning-no-timer"
+    }
+  ],
+  "sourceExcerpts": [
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261016_31_hamhock_chain_lightning.sql",
+      "relevantLines": [
+        {
+          "line": 1,
+          "text": "-- Hamhock's kit Chain Lightning (2102502) on Normal and Heroic went from 599 to 1198 base damage when its interval"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261009_35_zumrah_healing_wave.sql",
+      "relevantLines": [
+        {
+          "line": 1,
+          "text": "-- Witch Doctor Zum'rah (Zul'Farrak): Healing Wave has a 10 s cooldown and each of his heals restores"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261009_50_dungeon_rares_adamant_hamhock.sql",
+      "relevantLines": [
+        {
+          "line": 1,
+          "text": "-- Dungeon fixes: rares on every difficulty, Deathstalker Adamant, Hamhock."
+        },
+        {
+          "line": 22,
+          "text": "-- Hamhock (Stockade): the stock Chain Lightning row ran next to the Ascension kit's, so he cast it twice as"
+        },
+        {
+          "line": 23,
+          "text": "-- often. The stock row is parked like the others; the kit's Chain Lightning has a 10 s cooldown and hits"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20260930_60_bfd_bosses.sql",
+      "relevantLines": [
+        {
+          "line": 3,
+          "text": "-- Torrent (Ghamoo-ra): the boss spins around itself while the water cone fires (CoADungeonBossSpells.cpp)"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20260930_80_rfc_bosses.sql",
+      "relevantLines": [
+        {
+          "line": 3,
+          "text": "-- Massive Fire Nova (Taragaman): cover behind the Earth Pillars (CoADungeonBossSpells.cpp)"
+        },
+        {
+          "line": 8,
+          "text": "-- Earth Pillar (Ascension \"Rumbling Earth - Visual Indicator\", 663030; missing here): Taragaman summons three near him."
+        },
+        {
+          "line": 10,
+          "text": "-- (Earth Break, 800 in 4 yards with knockback) and stands as cover until the Massive Fire Nova is over (nova 7-13 s); at 13.5 s"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261003_10_dm_maraudon.sql",
+      "relevantLines": [
+        {
+          "line": 2,
+          "text": "-- Illyanna Ravenoak's Immolation Trap (2100236) places Ascension's trap object 264875, which did not exist here:"
+        },
+        {
+          "line": 3,
+          "text": "-- same trap as the vanilla Immolation Trap V (164875)"
+        },
+        {
+          "line": 7,
+          "text": "(264875, 6, 3074, 'Immolation Trap', '', '', '', 1.0, 12, 0, 5, 14301, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', 0)"
+        },
+        {
+          "line": 10,
+          "text": "-- Tinkerer Gizlock's Goblin Dragon Gun keeps the direction it started in (CoADungeonBossSpells.cpp)"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261002_20_sm_scholo.sql",
+      "relevantLines": [
+        {
+          "line": 23,
+          "text": "-- Darkmaster Gandling's Rise! (2100398) summons Ascension's Risen Student (80066), which did not exist here"
+        },
+        {
+          "line": 27,
+          "text": "(80066, 180066, 280066, 0, 0, 0, 'Risen Student', NULL, NULL, 0, 58, 58, 0, 21, 0, 1.0, 1.14286, 1.0, 1.0, 20.0, 0, 0, 1.0, 2000, 2000, 1.0, 1.0, 1, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1.0, 1.0, 1.0, 1.0, 1.0, 0, 0, 1, 0, 0, '', 0),"
+        },
+        {
+          "line": 28,
+          "text": "(180066, 0, 0, 0, 0, 0, 'Risen Student', NULL, NULL, 0, 60, 60, 0, 21, 0, 1.0, 1.14286, 1.0, 1.0, 20.0, 0, 0, 1.0, 2000, 2000, 1.0, 1.0, 1, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1.0, 1.0, 1.0, 1.0, 1.0, 0, 0, 1, 0, 0, '', 0),"
+        },
+        {
+          "line": 29,
+          "text": "(280066, 0, 0, 0, 0, 0, 'Risen Student', NULL, NULL, 0, 62, 62, 0, 21, 0, 1.0, 1.14286, 1.0, 1.0, 20.0, 0, 0, 1.3, 2000, 2000, 1.0, 1.0, 1, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1.0, 1.0, 1.0, 1.0, 1.0, 0, 0, 1, 0, 0, '', 0)"
+        },
+        {
+          "line": 45,
+          "text": "(289, 1, 80066, 6000, 'assumption', 'ghoul from Rise! (02.10.2026); Risen Student'),"
+        },
+        {
+          "line": 46,
+          "text": "(289, 2, 80066, 8000, 'assumption', 'ghoul from Rise! (02.10.2026); Risen Student');"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Source SQL under pending_db_world is not proof of deployed live behavior",
+    "Never use action_param3 as spell ID without schema confirmation",
+    "A repeat cooldown alone does not establish an initial timer",
+    "Spell IDs from script bindings do not establish a repeat interval"
+  ]
+}

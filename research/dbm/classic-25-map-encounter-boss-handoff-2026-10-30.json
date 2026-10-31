@@ -1,0 +1,3965 @@
+{
+  "schema": "coa-research.dbm-classic-encounter-handoff.v1",
+  "generatedOn": "2026-10-30",
+  "scope": "Vanilla/Classic only; excludes TBC/Wrath and unreleased custom dungeons",
+  "intendedConsumer": "DBM-CoA encounter discovery, boss attribution and encounter-completion matching",
+  "sources": [
+    "research/dungeons/vanilla-19-map-boss-encounter-loot-crosswalk-2026-10-30.json",
+    "research/raids/raid-encounters-by-map-and-difficulty-v2-2026-10-30.json"
+  ],
+  "sourceStatus": "Pending SQL and map-scoped health crosswalk; NOT confirmed deployed live",
+  "usageRules": [
+    "Use mapId + npcId + encounterId as research candidates; validate against actual game client and live logs before enabling boss warnings",
+    "Dungeon map joins are inferred from map-scoped health NPC records; verify collisions and 41 unmatched records separately",
+    "Raid difficulty codes copied from source comments; verify client DBC before assuming modes",
+    "lastEncounterLfgId is LfgDungeon.dbc ID, NOT map ID",
+    "creditType 0 indicates NPC kill credit; do not assume all encounters use that type",
+    "Do not create timers from encounter credit rows; mechanics and cast observations are separate evidence",
+    "Do not trigger warnings for player or pet abilities"
+  ],
+  "counts": {
+    "dungeonMaps": 19,
+    "raidMaps": 6,
+    "dungeonEncounterRows": 303,
+    "raidEncounterRows": 169
+  },
+  "dungeons": [
+    {
+      "mapId": 33,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1464,
+          "npcId": 3914,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Rethilgore",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1465,
+          "npcId": 3886,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Razorclaw the Butcher",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1466,
+          "npcId": 3887,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Baron Silverlaine",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1467,
+          "npcId": 4278,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Commander Springvale",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1468,
+          "npcId": 4279,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Odo the Blindwatcher",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1469,
+          "npcId": 4274,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Fenrus the Devourer",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1470,
+          "npcId": 3927,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Wolf Master Nandos",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1471,
+          "npcId": 4275,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Archmage Arugal",
+          "lastEncounterLfgId": 1008
+        },
+        {
+          "encounterId": 2464,
+          "npcId": 3914,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Rethilgore",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2465,
+          "npcId": 3886,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Razorclaw the Butcher",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2466,
+          "npcId": 3887,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Baron Silverlaine",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2467,
+          "npcId": 4278,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Commander Springvale",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2468,
+          "npcId": 4279,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Odo the Blindwatcher",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2469,
+          "npcId": 4274,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Fenrus the Devourer",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2470,
+          "npcId": 3927,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Wolf Master Nandos",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2471,
+          "npcId": 4275,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Archmage Arugal",
+          "lastEncounterLfgId": 2008
+        },
+        {
+          "encounterId": 2603,
+          "npcId": 14682,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Sever",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2610,
+          "npcId": 3872,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Deathsworn Captain",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 15030,
+          "npcId": 3914,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Rethilgore",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 15031,
+          "npcId": 3886,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Razorclaw the Butcher",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 15032,
+          "npcId": 3887,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Baron Silverlaine",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 15033,
+          "npcId": 4278,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Commander Springvale",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 15034,
+          "npcId": 4279,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Odo the Blindwatcher",
+          "lastEncounterLfgId": 3320
+        },
+        {
+          "encounterId": 15035,
+          "npcId": 14682,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Sever",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 15036,
+          "npcId": 4278,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Commander Springvale",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 15037,
+          "npcId": 4279,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Odo the Blindwatcher",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 15038,
+          "npcId": 4274,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Fenrus the Devourer",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 15039,
+          "npcId": 3927,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Wolf Master Nandos",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 15040,
+          "npcId": 4275,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Archmage Arugal",
+          "lastEncounterLfgId": 3321
+        },
+        {
+          "encounterId": 15041,
+          "npcId": 3872,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Captain Midwinter",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        3872,
+        3886,
+        3887,
+        3914,
+        3927,
+        4274,
+        4275,
+        4278,
+        4279,
+        14682
+      ]
+    },
+    {
+      "mapId": 34,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1536,
+          "npcId": 1696,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Targorr the Dread",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1537,
+          "npcId": 1666,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Kam Deepfury",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1538,
+          "npcId": 1717,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Hamhock",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1539,
+          "npcId": 1716,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Bazil Thredd",
+          "lastEncounterLfgId": 1702
+        },
+        {
+          "encounterId": 1540,
+          "npcId": 1663,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Dextren Ward",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2622,
+          "npcId": 1720,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Bruegal Ironknuckle",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        1663,
+        1666,
+        1696,
+        1716,
+        1717,
+        1720
+      ]
+    },
+    {
+      "mapId": 36,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1161,
+          "npcId": 644,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Rhahk'zor",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1162,
+          "npcId": 642,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Sneed",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1163,
+          "npcId": 1763,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Gilnid",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1164,
+          "npcId": 646,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Mr. Smite",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1165,
+          "npcId": 645,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Cookie",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1166,
+          "npcId": 647,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Captain Greenskin",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1167,
+          "npcId": 639,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Edwin VanCleef",
+          "lastEncounterLfgId": 1696
+        },
+        {
+          "encounterId": 2602,
+          "npcId": 3586,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Miner Johnson",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        639,
+        642,
+        644,
+        645,
+        646,
+        647,
+        1763,
+        3586
+      ]
+    },
+    {
+      "mapId": 43,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1585,
+          "npcId": 3671,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Lady Anacondra",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1586,
+          "npcId": 3669,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Lord Cobrahn",
+          "lastEncounterLfgId": 2693
+        },
+        {
+          "encounterId": 1587,
+          "npcId": 3653,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Kresh",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1588,
+          "npcId": 3670,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Lord Pythas",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1589,
+          "npcId": 3674,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Skum",
+          "lastEncounterLfgId": 2721
+        },
+        {
+          "encounterId": 1590,
+          "npcId": 3673,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Lord Serpentis",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1591,
+          "npcId": 5775,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Verdan the Everliving",
+          "lastEncounterLfgId": 2725
+        },
+        {
+          "encounterId": 3318,
+          "npcId": 3669,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Lord Cobrahn",
+          "lastEncounterLfgId": 3318
+        },
+        {
+          "encounterId": 3319,
+          "npcId": 5775,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Verdan the Everliving",
+          "lastEncounterLfgId": 3319
+        },
+        {
+          "encounterId": 3320,
+          "npcId": 3653,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Kresh",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 3322,
+          "npcId": 3671,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Lady Anacondra",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 3323,
+          "npcId": 3670,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Lord Pythas",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 3324,
+          "npcId": 3674,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Skum",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 3325,
+          "npcId": 5912,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Brightwing",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 3326,
+          "npcId": 3673,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Lord Serpentis",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        3653,
+        3669,
+        3670,
+        3671,
+        3673,
+        3674,
+        5775,
+        5912
+      ]
+    },
+    {
+      "mapId": 47,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1438,
+          "npcId": 6168,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Roogug",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1439,
+          "npcId": 4424,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Aggem Thorncurse",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1440,
+          "npcId": 4428,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Death Speaker Jargba",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1441,
+          "npcId": 4420,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Overlord Ramtusk",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1443,
+          "npcId": 4421,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Charlga Razorflank",
+          "lastEncounterLfgId": 1706
+        },
+        {
+          "encounterId": 1883,
+          "npcId": 4422,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Agathelos the Raging",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2609,
+          "npcId": 4425,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Blind Hunter",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2615,
+          "npcId": 4842,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Earthcaller Halmgar",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        4420,
+        4421,
+        4422,
+        4424,
+        4425,
+        4428,
+        4842,
+        6168
+      ]
+    },
+    {
+      "mapId": 48,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1219,
+          "npcId": 4887,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Ghamoo-ra",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1220,
+          "npcId": 4831,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Lady Sarevess",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1221,
+          "npcId": 6243,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Gelihast",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1222,
+          "npcId": 12902,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Lorgus Jett",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1224,
+          "npcId": 4830,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Old Serra'kis",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1225,
+          "npcId": 4832,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Twilight Lord Kelris",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1226,
+          "npcId": 4829,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Aku'mai",
+          "lastEncounterLfgId": 1700
+        }
+      ],
+      "uniqueNpcIds": [
+        4829,
+        4830,
+        4831,
+        4832,
+        4887,
+        6243,
+        12902
+      ]
+    },
+    {
+      "mapId": 70,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1547,
+          "npcId": 6910,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Revelosh",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1548,
+          "npcId": 6906,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: The Lost Dwarves",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1549,
+          "npcId": 7228,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Ironaya",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1551,
+          "npcId": 7206,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Ancient Stone Keeper",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1552,
+          "npcId": 7291,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Galgann Firehammer",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1553,
+          "npcId": 4854,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Grimlok",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1554,
+          "npcId": 2748,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Archaedas",
+          "lastEncounterLfgId": 1712
+        },
+        {
+          "encounterId": 2617,
+          "npcId": 7023,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Obsidian Sentinel",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        2748,
+        4854,
+        6906,
+        6910,
+        7023,
+        7206,
+        7228,
+        7291
+      ]
+    },
+    {
+      "mapId": 90,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1378,
+          "npcId": 7079,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Viscous Fallout",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1379,
+          "npcId": 7361,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Grubbis",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1380,
+          "npcId": 6235,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Electrocutioner 6000",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1381,
+          "npcId": 6229,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Crowd Pummeler 9-60",
+          "lastEncounterLfgId": 2727
+        },
+        {
+          "encounterId": 1382,
+          "npcId": 7800,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Mekgineer Thermaplugg",
+          "lastEncounterLfgId": 1704
+        }
+      ],
+      "uniqueNpcIds": [
+        6229,
+        6235,
+        7079,
+        7361,
+        7800
+      ]
+    },
+    {
+      "mapId": 109,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1488,
+          "npcId": 5710,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Jammal'an and Ogom",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1490,
+          "npcId": 5719,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Morphaz",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1491,
+          "npcId": 5722,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Hazzas",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1493,
+          "npcId": 5709,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Shade of Eranikus",
+          "lastEncounterLfgId": 1718
+        }
+      ],
+      "uniqueNpcIds": [
+        5709,
+        5710,
+        5719,
+        5722
+      ]
+    },
+    {
+      "mapId": 129,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1434,
+          "npcId": 7355,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Tuten'kash",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1435,
+          "npcId": 7357,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Mordresh Fire Eye",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1436,
+          "npcId": 8567,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Glutton",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1437,
+          "npcId": 7358,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Amnennar the Coldbringer",
+          "lastEncounterLfgId": 1710
+        },
+        {
+          "encounterId": 2618,
+          "npcId": 7356,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Plaguemaw the Rotting",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2619,
+          "npcId": 7354,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Ragglesnout",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        7354,
+        7355,
+        7356,
+        7357,
+        7358,
+        8567
+      ]
+    },
+    {
+      "mapId": 189,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1444,
+          "npcId": 3983,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Interrogator Vishas",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1445,
+          "npcId": 4543,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Bloodmage Thalnos",
+          "lastEncounterLfgId": 1708
+        },
+        {
+          "encounterId": 1446,
+          "npcId": 3974,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Houndmaster Loksey",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1447,
+          "npcId": 6487,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Arcanist Doan",
+          "lastEncounterLfgId": 1855
+        },
+        {
+          "encounterId": 1448,
+          "npcId": 3975,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Herod",
+          "lastEncounterLfgId": 1853
+        },
+        {
+          "encounterId": 1449,
+          "npcId": 4542,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: High Inquisitor Fairbanks",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1450,
+          "npcId": 3977,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: High Inquisitor Whitemane",
+          "lastEncounterLfgId": 1854
+        },
+        {
+          "encounterId": 2444,
+          "npcId": 3983,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Interrogator Vishas",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2445,
+          "npcId": 4543,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Bloodmage Thalnos",
+          "lastEncounterLfgId": 2708
+        },
+        {
+          "encounterId": 2446,
+          "npcId": 3974,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Houndmaster Loksey",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2447,
+          "npcId": 6487,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Arcanist Doan",
+          "lastEncounterLfgId": 2855
+        },
+        {
+          "encounterId": 2448,
+          "npcId": 3975,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Herod",
+          "lastEncounterLfgId": 2853
+        },
+        {
+          "encounterId": 2449,
+          "npcId": 4542,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: High Inquisitor Fairbanks",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2450,
+          "npcId": 3977,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: High Inquisitor Whitemane",
+          "lastEncounterLfgId": 2854
+        },
+        {
+          "encounterId": 2606,
+          "npcId": 6489,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Ironspine",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2607,
+          "npcId": 6490,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Azshir the Sleepless",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2616,
+          "npcId": 3976,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Scarlet Commander Mograine",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2623,
+          "npcId": 6488,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Fallen Champion",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        3974,
+        3975,
+        3976,
+        3977,
+        3983,
+        4542,
+        4543,
+        6487,
+        6488,
+        6489,
+        6490
+      ]
+    },
+    {
+      "mapId": 209,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1593,
+          "npcId": 7795,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Hydromancer Velratha",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1594,
+          "npcId": 7273,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Ghaz'rilla",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1595,
+          "npcId": 8127,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Antu'sul",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1596,
+          "npcId": 7272,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Theka the Martyr",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1597,
+          "npcId": 7271,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Witch Doctor Zum'rah",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1598,
+          "npcId": 7796,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Nekrum Gutchewer",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1599,
+          "npcId": 7275,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Shadowpriest Sezz'ziz",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1600,
+          "npcId": 7267,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Chief Ukorz Sandscalp &  Ruuzlu",
+          "lastEncounterLfgId": 1714
+        },
+        {
+          "encounterId": 2613,
+          "npcId": 10082,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Zerillis",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2626,
+          "npcId": 7604,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Sergeant Bly",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        7267,
+        7271,
+        7272,
+        7273,
+        7275,
+        7604,
+        7795,
+        7796,
+        8127,
+        10082
+      ]
+    },
+    {
+      "mapId": 229,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1142,
+          "npcId": 10899,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Goraluk Anvilcrack",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1143,
+          "npcId": 10509,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Jed Runewatcher",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1145,
+          "npcId": 10263,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Burning Felguard",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1147,
+          "npcId": 10376,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Crystal Fang",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1148,
+          "npcId": 9596,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Bannok Grimaxe",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1149,
+          "npcId": 9217,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Spirestone Lord Magus",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1150,
+          "npcId": 9218,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Spirestone Battle Lord",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1151,
+          "npcId": 9219,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Spirestone Butcher",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1267,
+          "npcId": 9196,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Highlord Omokk",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1268,
+          "npcId": 9236,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Shadow Hunter Vosh'gajin",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1269,
+          "npcId": 9237,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: War Master Voone",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1270,
+          "npcId": 10596,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Mother Smolderweb",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1272,
+          "npcId": 9736,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Quartermaster Zigris",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1273,
+          "npcId": 10268,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Gizrul the Slavener",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1274,
+          "npcId": 10220,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Halycon",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1275,
+          "npcId": 9568,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Overlord Wyrmthalak",
+          "lastEncounterLfgId": 1032
+        },
+        {
+          "encounterId": 1276,
+          "npcId": 9816,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Pyroguard Emberseer",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1278,
+          "npcId": 10429,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Warchief Rend Blackhand",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1279,
+          "npcId": 10430,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: The Beast",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1280,
+          "npcId": 10363,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: General Drakkisath",
+          "lastEncounterLfgId": 1044
+        },
+        {
+          "encounterId": 2142,
+          "npcId": 10899,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Goraluk Anvilcrack",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2143,
+          "npcId": 10509,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Jed Runewatcher",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2145,
+          "npcId": 10263,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Burning Felguard",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2147,
+          "npcId": 10376,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Crystal Fang",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2148,
+          "npcId": 9596,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Bannok Grimaxe",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2149,
+          "npcId": 9217,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Spirestone Lord Magus",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2150,
+          "npcId": 9218,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Spirestone Battle Lord",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2151,
+          "npcId": 9219,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Spirestone Butcher",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        9196,
+        9217,
+        9218,
+        9219,
+        9236,
+        9237,
+        9568,
+        9596,
+        9736,
+        9816,
+        10220,
+        10263,
+        10268,
+        10363,
+        10376,
+        10429,
+        10430,
+        10509,
+        10596,
+        10899
+      ]
+    },
+    {
+      "mapId": 230,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1227,
+          "npcId": 9018,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: High Interrogator Gerstahn",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1228,
+          "npcId": 9025,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Lord Roccor",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1229,
+          "npcId": 9319,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Houndmaster Grebmar",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1231,
+          "npcId": 9024,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Pyromancer Loregrain",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1232,
+          "npcId": 9017,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Lord Incendius",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1233,
+          "npcId": 9041,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Warder Stilgiss",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1234,
+          "npcId": 9056,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Fineous Darkvire",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1235,
+          "npcId": 9016,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Bael'Gar",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1236,
+          "npcId": 9033,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: General Angerforge",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1237,
+          "npcId": 8983,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Golem Lord Argelmach",
+          "lastEncounterLfgId": 602
+        },
+        {
+          "encounterId": 1238,
+          "npcId": 9537,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Hurley Blackbreath",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1239,
+          "npcId": 9502,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Phalanx",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1240,
+          "npcId": 9543,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Ribbly Screwspigot",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1241,
+          "npcId": 9499,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Plugger Spazzring",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1242,
+          "npcId": 9156,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Ambassador Flamelash",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1243,
+          "npcId": 9039,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: The Seven",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1244,
+          "npcId": 9938,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Magmus",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1245,
+          "npcId": 9019,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Emperor Dagran Thaurissan",
+          "lastEncounterLfgId": 1276
+        },
+        {
+          "encounterId": 2227,
+          "npcId": 9018,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: High Interrogator Gerstahn",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2228,
+          "npcId": 9025,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Lord Roccor",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2229,
+          "npcId": 9319,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Houndmaster Grebmar",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2231,
+          "npcId": 9024,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Pyromancer Loregrain",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2232,
+          "npcId": 9017,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Lord Incendius",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2233,
+          "npcId": 9041,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Warder Stilgiss",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2234,
+          "npcId": 9056,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Fineous Darkvire",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2235,
+          "npcId": 9016,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Bael'Gar",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2236,
+          "npcId": 9033,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: General Angerforge",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2237,
+          "npcId": 8983,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Golem Lord Argelmach",
+          "lastEncounterLfgId": 603
+        },
+        {
+          "encounterId": 2242,
+          "npcId": 9156,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Ambassador Flamelash",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2244,
+          "npcId": 9938,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Magmus",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2245,
+          "npcId": 9019,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Emperor Dagran Thaurissan",
+          "lastEncounterLfgId": 276
+        },
+        {
+          "encounterId": 36051,
+          "npcId": 9156,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Ambassador Flamelash",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 36052,
+          "npcId": 9039,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: The Seven",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 36053,
+          "npcId": 9938,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Magmus",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        8983,
+        9016,
+        9017,
+        9018,
+        9019,
+        9024,
+        9025,
+        9033,
+        9039,
+        9041,
+        9056,
+        9156,
+        9319,
+        9499,
+        9502,
+        9537,
+        9543,
+        9938
+      ]
+    },
+    {
+      "mapId": 289,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1158,
+          "npcId": 14861,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Blood Steward of Kirtonos",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1451,
+          "npcId": 10506,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Kirtonos the Herald",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1452,
+          "npcId": 10503,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Jandice Barov",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1453,
+          "npcId": 11622,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Rattlegore",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1454,
+          "npcId": 10433,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Marduk Blackpool",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1455,
+          "npcId": 10432,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Vectus",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1457,
+          "npcId": 10505,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Instructor Malicia",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1458,
+          "npcId": 11261,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Doctor Theolen Krastinov",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1459,
+          "npcId": 10901,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Lorekeeper Polkelt",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1460,
+          "npcId": 10507,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: The Ravenian",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1461,
+          "npcId": 10504,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Lord Alexei Barov",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1462,
+          "npcId": 10502,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Lady Illucia Barov",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1463,
+          "npcId": 1853,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Darkmaster Gandling",
+          "lastEncounterLfgId": 52
+        },
+        {
+          "encounterId": 2158,
+          "npcId": 14861,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Blood Steward of Kirtonos",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2451,
+          "npcId": 10506,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Kirtonos the Herald",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2452,
+          "npcId": 10503,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Jandice Barov",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2453,
+          "npcId": 11622,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Rattlegore",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2454,
+          "npcId": 10433,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Marduk Blackpool",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2455,
+          "npcId": 10432,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Vectus",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2456,
+          "npcId": 10508,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Ras Frostwhisper",
+          "lastEncounterLfgId": 56
+        },
+        {
+          "encounterId": 2457,
+          "npcId": 10505,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Instructor Malicia",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2458,
+          "npcId": 11261,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Doctor Theolen Krastinov",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2459,
+          "npcId": 10901,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Lorekeeper Polkelt",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2460,
+          "npcId": 10507,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: The Ravenian",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2461,
+          "npcId": 10504,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Lord Alexei Barov",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2462,
+          "npcId": 10502,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Lady Illucia Barov",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2463,
+          "npcId": 1853,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Darkmaster Gandling",
+          "lastEncounterLfgId": 53
+        },
+        {
+          "encounterId": 3456,
+          "npcId": 10508,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Ras Frostwhisper",
+          "lastEncounterLfgId": 55
+        }
+      ],
+      "uniqueNpcIds": [
+        1853,
+        10432,
+        10433,
+        10502,
+        10503,
+        10504,
+        10505,
+        10506,
+        10507,
+        10508,
+        10901,
+        11261,
+        11622,
+        14861
+      ]
+    },
+    {
+      "mapId": 329,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1152,
+          "npcId": 10809,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Stonespine",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1473,
+          "npcId": 10558,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Hearthsinger Forresten",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1474,
+          "npcId": 10808,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Timmy the Cruel",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1475,
+          "npcId": 10997,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Cannon Master Willey",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1476,
+          "npcId": 11032,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Malor the Zealous",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1477,
+          "npcId": 10811,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Archivist Galford",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1478,
+          "npcId": 10813,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Balnazzar",
+          "lastEncounterLfgId": 1040
+        },
+        {
+          "encounterId": 1479,
+          "npcId": 10436,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Baroness Anastari",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1480,
+          "npcId": 10437,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Nerub'enkan",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1481,
+          "npcId": 10438,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Maleki the Pallid",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1482,
+          "npcId": 10435,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Magistrate Barthilas",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1483,
+          "npcId": 10439,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Ramnstein the Gorger",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1484,
+          "npcId": 10440,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Baron Rivendare",
+          "lastEncounterLfgId": 1274
+        },
+        {
+          "encounterId": 2152,
+          "npcId": 10809,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Stonespine",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2473,
+          "npcId": 10558,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Hearthsinger Forresten",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2474,
+          "npcId": 10808,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Timmy the Cruel",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2475,
+          "npcId": 10997,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Cannon Master Willey",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2476,
+          "npcId": 11032,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Malor the Zealous",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2477,
+          "npcId": 10811,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Archivist Galford",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2478,
+          "npcId": 10813,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Balnazzar",
+          "lastEncounterLfgId": 2040
+        },
+        {
+          "encounterId": 2479,
+          "npcId": 10436,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Baroness Anastari",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2480,
+          "npcId": 10437,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Nerub'enkan",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2481,
+          "npcId": 10438,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Maleki the Pallid",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2482,
+          "npcId": 10435,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Magistrate Barthilas",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2483,
+          "npcId": 10439,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Ramnstein the Gorger",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2484,
+          "npcId": 10440,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Baron Rivendare",
+          "lastEncounterLfgId": 2274
+        }
+      ],
+      "uniqueNpcIds": [
+        10435,
+        10436,
+        10437,
+        10438,
+        10439,
+        10440,
+        10558,
+        10808,
+        10809,
+        10811,
+        10813,
+        10997,
+        11032
+      ]
+    },
+    {
+      "mapId": 349,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1422,
+          "npcId": 13282,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Noxxion",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1423,
+          "npcId": 12258,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Razorlash",
+          "lastEncounterLfgId": 1716
+        },
+        {
+          "encounterId": 1424,
+          "npcId": 12236,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Lord Vyletongue",
+          "lastEncounterLfgId": 1962
+        },
+        {
+          "encounterId": 1425,
+          "npcId": 12225,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Celebras the Cursed",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1426,
+          "npcId": 12203,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Landslide",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1427,
+          "npcId": 13601,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Tinkerer Gizlock",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1428,
+          "npcId": 13596,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Rotgrip",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1429,
+          "npcId": 12201,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Princess Theradras",
+          "lastEncounterLfgId": 1963
+        },
+        {
+          "encounterId": 2422,
+          "npcId": 13282,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Noxxion",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2423,
+          "npcId": 12258,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Razorlash",
+          "lastEncounterLfgId": 2716
+        },
+        {
+          "encounterId": 2424,
+          "npcId": 12236,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Lord Vyletongue",
+          "lastEncounterLfgId": 2962
+        },
+        {
+          "encounterId": 2425,
+          "npcId": 12225,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Celebras the Cursed",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2426,
+          "npcId": 12203,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Landslide",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2427,
+          "npcId": 13601,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Tinkerer Gizlock",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2428,
+          "npcId": 13596,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Rotgrip",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2429,
+          "npcId": 12201,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Princess Theradras",
+          "lastEncounterLfgId": 2963
+        },
+        {
+          "encounterId": 2611,
+          "npcId": 13738,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Veng",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2612,
+          "npcId": 13739,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Maraudos",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2620,
+          "npcId": 12225,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Celebras the Cursed",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2621,
+          "npcId": 12237,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Meshlok the Harvester",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        12201,
+        12203,
+        12225,
+        12236,
+        12237,
+        12258,
+        13282,
+        13596,
+        13601,
+        13738,
+        13739
+      ]
+    },
+    {
+      "mapId": 389,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1430,
+          "npcId": 11517,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Oggleflint",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1431,
+          "npcId": 11520,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Taragaman the Hungerer",
+          "lastEncounterLfgId": 1694
+        },
+        {
+          "encounterId": 1432,
+          "npcId": 11518,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Jergosh the Invoker",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1433,
+          "npcId": 11519,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Bazzalan",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1985,
+          "npcId": 17830,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Zelemar the Wrathful",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 3985,
+          "npcId": 17830,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Zelemar the Wrathful",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        11517,
+        11518,
+        11519,
+        11520,
+        17830
+      ]
+    },
+    {
+      "mapId": 429,
+      "sourceConfidence": "NPC-ID intersection only; shared NPC IDs or missing health rows may cause incomplete/misassigned coverage",
+      "encounters": [
+        {
+          "encounterId": 1156,
+          "npcId": 14506,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Lord Hel'nurath",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1157,
+          "npcId": 11467,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Tsu'zee",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1343,
+          "npcId": 11490,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Zevrim Thornhoof",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1344,
+          "npcId": 13280,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Hydrospawn",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1345,
+          "npcId": 14327,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Lethtendris",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1346,
+          "npcId": 11492,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Alzzin the Wildshaper",
+          "lastEncounterLfgId": 1034
+        },
+        {
+          "encounterId": 1347,
+          "npcId": 11488,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Illyanna Ravenoak",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1348,
+          "npcId": 11487,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Magister Kalendris",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1349,
+          "npcId": 11496,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Immol'thar",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1350,
+          "npcId": 11489,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Tendris Warpwood",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1361,
+          "npcId": 11486,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Prince Tortheldrin",
+          "lastEncounterLfgId": 1036
+        },
+        {
+          "encounterId": 1362,
+          "npcId": 14326,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Guard Mol'dar",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1363,
+          "npcId": 14322,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Stomper Kreeg",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1364,
+          "npcId": 14321,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Guard Fengus",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1365,
+          "npcId": 14323,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Guard Slip'kik",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1366,
+          "npcId": 14325,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Captain Kromcrush",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1367,
+          "npcId": 14324,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: Cho'Rush the Observer",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 1368,
+          "npcId": 11501,
+          "creditType": 0,
+          "comment": "CoA Heroic DBC: King Gordok",
+          "lastEncounterLfgId": 1038
+        },
+        {
+          "encounterId": 2156,
+          "npcId": 14506,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Lord Hel'nurath",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2157,
+          "npcId": 11467,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Tsu'zee",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2343,
+          "npcId": 11490,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Zevrim Thornhoof",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2344,
+          "npcId": 13280,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Hydrospawn",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2345,
+          "npcId": 14327,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Lethtendris",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2346,
+          "npcId": 11492,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Alzzin the Wildshaper",
+          "lastEncounterLfgId": 2034
+        },
+        {
+          "encounterId": 2347,
+          "npcId": 11488,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Illyanna Ravenoak",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2348,
+          "npcId": 11487,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Magister Kalendris",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2349,
+          "npcId": 11496,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Immol'thar",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2350,
+          "npcId": 11489,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Tendris Warpwood",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2361,
+          "npcId": 11486,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Prince Tortheldrin",
+          "lastEncounterLfgId": 2036
+        },
+        {
+          "encounterId": 2362,
+          "npcId": 14326,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Guard Mol'dar",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2363,
+          "npcId": 14322,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Stomper Kreeg",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2364,
+          "npcId": 14321,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Guard Fengus",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2365,
+          "npcId": 14323,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Guard Slip'kik",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2366,
+          "npcId": 14325,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Captain Kromcrush",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2367,
+          "npcId": 14324,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: Cho'Rush the Observer",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 2368,
+          "npcId": 11501,
+          "creditType": 0,
+          "comment": "CoA Mythic DBC: King Gordok",
+          "lastEncounterLfgId": 2038
+        }
+      ],
+      "uniqueNpcIds": [
+        11467,
+        11486,
+        11487,
+        11488,
+        11489,
+        11490,
+        11492,
+        11496,
+        11501,
+        13280,
+        14321,
+        14322,
+        14323,
+        14324,
+        14325,
+        14326,
+        14327,
+        14506
+      ]
+    }
+  ],
+  "raids": [
+    {
+      "mapId": 249,
+      "difficultyCodes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4054,
+          "npcId": 10184,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Onyxia (CoA DBC map 249 diff 0, was 707/708)",
+          "lastEncounterLfgId": 434
+        },
+        {
+          "encounterId": 4149,
+          "npcId": 10184,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Onyxia (CoA DBC map 249 diff 1, was 707/708)",
+          "lastEncounterLfgId": 257
+        },
+        {
+          "encounterId": 4244,
+          "npcId": 10184,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Onyxia (CoA DBC map 249 diff 2, was 707/708)",
+          "lastEncounterLfgId": 449
+        },
+        {
+          "encounterId": 4339,
+          "npcId": 10184,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Onyxia (CoA DBC map 249 diff 3, was 707/708)",
+          "lastEncounterLfgId": 464
+        }
+      ],
+      "uniqueNpcIds": [
+        10184
+      ]
+    },
+    {
+      "mapId": 309,
+      "difficultyCodes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4086,
+          "npcId": 14507,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "High Priest Venoxis (CoA DBC map 309 diff 0, was 784)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4087,
+          "npcId": 14517,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "High Priestess Jeklik (CoA DBC map 309 diff 0, was 785)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4088,
+          "npcId": 14510,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "High Priestess Mar'li (CoA DBC map 309 diff 0, was 786)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4089,
+          "npcId": 11382,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Bloodlord Mandokir (CoA DBC map 309 diff 0, was 787)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4091,
+          "npcId": 14509,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "High Priest Thekal (CoA DBC map 309 diff 0, was 789)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4092,
+          "npcId": 15114,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Gahz'ranka (CoA DBC map 309 diff 0, was 790)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4093,
+          "npcId": 14515,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "High Priestess Arlokk (CoA DBC map 309 diff 0, was 791)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4094,
+          "npcId": 11380,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Jin'do the Hexxer (CoA DBC map 309 diff 0, was 792)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4095,
+          "npcId": 14834,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Hakkar (CoA DBC map 309 diff 0, was 793)",
+          "lastEncounterLfgId": 420
+        },
+        {
+          "encounterId": 4181,
+          "npcId": 14507,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "High Priest Venoxis (CoA DBC map 309 diff 1, was 784)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4182,
+          "npcId": 14517,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "High Priestess Jeklik (CoA DBC map 309 diff 1, was 785)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4183,
+          "npcId": 14510,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "High Priestess Mar'li (CoA DBC map 309 diff 1, was 786)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4184,
+          "npcId": 11382,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Bloodlord Mandokir (CoA DBC map 309 diff 1, was 787)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4186,
+          "npcId": 14509,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "High Priest Thekal (CoA DBC map 309 diff 1, was 789)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4187,
+          "npcId": 15114,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Gahz'ranka (CoA DBC map 309 diff 1, was 790)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4188,
+          "npcId": 14515,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "High Priestess Arlokk (CoA DBC map 309 diff 1, was 791)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4189,
+          "npcId": 11380,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Jin'do the Hexxer (CoA DBC map 309 diff 1, was 792)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4190,
+          "npcId": 14834,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Hakkar (CoA DBC map 309 diff 1, was 793)",
+          "lastEncounterLfgId": 42
+        },
+        {
+          "encounterId": 4276,
+          "npcId": 14507,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "High Priest Venoxis (CoA DBC map 309 diff 2, was 784)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4277,
+          "npcId": 14517,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "High Priestess Jeklik (CoA DBC map 309 diff 2, was 785)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4278,
+          "npcId": 14510,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "High Priestess Mar'li (CoA DBC map 309 diff 2, was 786)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4279,
+          "npcId": 11382,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Bloodlord Mandokir (CoA DBC map 309 diff 2, was 787)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4281,
+          "npcId": 14509,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "High Priest Thekal (CoA DBC map 309 diff 2, was 789)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4282,
+          "npcId": 15114,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Gahz'ranka (CoA DBC map 309 diff 2, was 790)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4283,
+          "npcId": 14515,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "High Priestess Arlokk (CoA DBC map 309 diff 2, was 791)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4284,
+          "npcId": 11380,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Jin'do the Hexxer (CoA DBC map 309 diff 2, was 792)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4285,
+          "npcId": 14834,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Hakkar (CoA DBC map 309 diff 2, was 793)",
+          "lastEncounterLfgId": 435
+        },
+        {
+          "encounterId": 4371,
+          "npcId": 14507,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "High Priest Venoxis (CoA DBC map 309 diff 3, was 784)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4372,
+          "npcId": 14517,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "High Priestess Jeklik (CoA DBC map 309 diff 3, was 785)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4373,
+          "npcId": 14510,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "High Priestess Mar'li (CoA DBC map 309 diff 3, was 786)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4374,
+          "npcId": 11382,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Bloodlord Mandokir (CoA DBC map 309 diff 3, was 787)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4376,
+          "npcId": 14509,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "High Priest Thekal (CoA DBC map 309 diff 3, was 789)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4377,
+          "npcId": 15114,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Gahz'ranka (CoA DBC map 309 diff 3, was 790)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4378,
+          "npcId": 14515,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "High Priestess Arlokk (CoA DBC map 309 diff 3, was 791)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4379,
+          "npcId": 11380,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Jin'do the Hexxer (CoA DBC map 309 diff 3, was 792)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4380,
+          "npcId": 14834,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Hakkar (CoA DBC map 309 diff 3, was 793)",
+          "lastEncounterLfgId": 450
+        },
+        {
+          "encounterId": 4397,
+          "npcId": 15083,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "The Edge of Madness (CoA DBC map 309 diff 0, was 788)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4401,
+          "npcId": 15083,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "The Edge of Madness (CoA DBC map 309 diff 1, was 788)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4405,
+          "npcId": 15083,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "The Edge of Madness (CoA DBC map 309 diff 2, was 788)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4409,
+          "npcId": 15083,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "The Edge of Madness (CoA DBC map 309 diff 3, was 788)",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        11380,
+        11382,
+        14507,
+        14509,
+        14510,
+        14515,
+        14517,
+        14834,
+        15083,
+        15114
+      ]
+    },
+    {
+      "mapId": 409,
+      "difficultyCodes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4031,
+          "npcId": 12118,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Lucifron (CoA DBC map 409 diff 0, was 663)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4032,
+          "npcId": 11982,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Magmadar (CoA DBC map 409 diff 0, was 664)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4033,
+          "npcId": 12259,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Gehennas (CoA DBC map 409 diff 0, was 665)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4034,
+          "npcId": 12057,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Garr (CoA DBC map 409 diff 0, was 666)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4035,
+          "npcId": 12264,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Shazzrah (CoA DBC map 409 diff 0, was 667)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4036,
+          "npcId": 12056,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Baron Geddon (CoA DBC map 409 diff 0, was 668)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4037,
+          "npcId": 12098,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Sulfuron Harbinger (CoA DBC map 409 diff 0, was 669)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4038,
+          "npcId": 11988,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Golemagg the Incinerator (CoA DBC map 409 diff 0, was 670)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4039,
+          "npcId": 11502,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Ragnaros (CoA DBC map 409 diff 0, was 672)",
+          "lastEncounterLfgId": 421
+        },
+        {
+          "encounterId": 4126,
+          "npcId": 12118,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Lucifron (CoA DBC map 409 diff 1, was 663)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4127,
+          "npcId": 11982,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Magmadar (CoA DBC map 409 diff 1, was 664)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4128,
+          "npcId": 12259,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Gehennas (CoA DBC map 409 diff 1, was 665)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4129,
+          "npcId": 12057,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Garr (CoA DBC map 409 diff 1, was 666)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4130,
+          "npcId": 12264,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Shazzrah (CoA DBC map 409 diff 1, was 667)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4131,
+          "npcId": 12056,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Baron Geddon (CoA DBC map 409 diff 1, was 668)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4132,
+          "npcId": 12098,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Sulfuron Harbinger (CoA DBC map 409 diff 1, was 669)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4133,
+          "npcId": 11988,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Golemagg the Incinerator (CoA DBC map 409 diff 1, was 670)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4134,
+          "npcId": 11502,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Ragnaros (CoA DBC map 409 diff 1, was 672)",
+          "lastEncounterLfgId": 48
+        },
+        {
+          "encounterId": 4221,
+          "npcId": 12118,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Lucifron (CoA DBC map 409 diff 2, was 663)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4222,
+          "npcId": 11982,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Magmadar (CoA DBC map 409 diff 2, was 664)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4223,
+          "npcId": 12259,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Gehennas (CoA DBC map 409 diff 2, was 665)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4224,
+          "npcId": 12057,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Garr (CoA DBC map 409 diff 2, was 666)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4225,
+          "npcId": 12264,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Shazzrah (CoA DBC map 409 diff 2, was 667)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4226,
+          "npcId": 12056,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Baron Geddon (CoA DBC map 409 diff 2, was 668)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4227,
+          "npcId": 12098,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Sulfuron Harbinger (CoA DBC map 409 diff 2, was 669)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4228,
+          "npcId": 11988,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Golemagg the Incinerator (CoA DBC map 409 diff 2, was 670)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4229,
+          "npcId": 11502,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Ragnaros (CoA DBC map 409 diff 2, was 672)",
+          "lastEncounterLfgId": 436
+        },
+        {
+          "encounterId": 4316,
+          "npcId": 12118,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Lucifron (CoA DBC map 409 diff 3, was 663)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4317,
+          "npcId": 11982,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Magmadar (CoA DBC map 409 diff 3, was 664)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4318,
+          "npcId": 12259,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Gehennas (CoA DBC map 409 diff 3, was 665)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4319,
+          "npcId": 12057,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Garr (CoA DBC map 409 diff 3, was 666)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4320,
+          "npcId": 12264,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Shazzrah (CoA DBC map 409 diff 3, was 667)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4321,
+          "npcId": 12056,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Baron Geddon (CoA DBC map 409 diff 3, was 668)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4322,
+          "npcId": 12098,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Sulfuron Harbinger (CoA DBC map 409 diff 3, was 669)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4323,
+          "npcId": 11988,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Golemagg the Incinerator (CoA DBC map 409 diff 3, was 670)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4324,
+          "npcId": 11502,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Ragnaros (CoA DBC map 409 diff 3, was 672)",
+          "lastEncounterLfgId": 451
+        },
+        {
+          "encounterId": 4383,
+          "npcId": 12018,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Majordomo Executus (CoA DBC map 409 diff 0, was 671)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4387,
+          "npcId": 12018,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Majordomo Executus (CoA DBC map 409 diff 1, was 671)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4391,
+          "npcId": 12018,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Majordomo Executus (CoA DBC map 409 diff 2, was 671)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4395,
+          "npcId": 12018,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Majordomo Executus (CoA DBC map 409 diff 3, was 671)",
+          "lastEncounterLfgId": 0
+        }
+      ],
+      "uniqueNpcIds": [
+        11502,
+        11982,
+        11988,
+        12018,
+        12056,
+        12057,
+        12098,
+        12118,
+        12259,
+        12264
+      ]
+    },
+    {
+      "mapId": 469,
+      "difficultyCodes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4009,
+          "npcId": 12435,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Razorgore the Untamed (CoA DBC map 469 diff 0, was 610)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4010,
+          "npcId": 13020,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Vaelastrasz the Corrupt (CoA DBC map 469 diff 0, was 611)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4011,
+          "npcId": 12017,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Broodlord Lashlayer (CoA DBC map 469 diff 0, was 612)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4012,
+          "npcId": 11983,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Firemaw (CoA DBC map 469 diff 0, was 613)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4013,
+          "npcId": 14020,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Chromaggus (CoA DBC map 469 diff 0, was 616)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4014,
+          "npcId": 11583,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Nefarian (CoA DBC map 469 diff 0, was 617)",
+          "lastEncounterLfgId": 422
+        },
+        {
+          "encounterId": 4104,
+          "npcId": 12435,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Razorgore the Untamed (CoA DBC map 469 diff 1, was 610)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4105,
+          "npcId": 13020,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Vaelastrasz the Corrupt (CoA DBC map 469 diff 1, was 611)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4106,
+          "npcId": 12017,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Broodlord Lashlayer (CoA DBC map 469 diff 1, was 612)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4107,
+          "npcId": 11983,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Firemaw (CoA DBC map 469 diff 1, was 613)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4108,
+          "npcId": 14020,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Chromaggus (CoA DBC map 469 diff 1, was 616)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4109,
+          "npcId": 11583,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Nefarian (CoA DBC map 469 diff 1, was 617)",
+          "lastEncounterLfgId": 50
+        },
+        {
+          "encounterId": 4199,
+          "npcId": 12435,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Razorgore the Untamed (CoA DBC map 469 diff 2, was 610)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4200,
+          "npcId": 13020,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Vaelastrasz the Corrupt (CoA DBC map 469 diff 2, was 611)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4201,
+          "npcId": 12017,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Broodlord Lashlayer (CoA DBC map 469 diff 2, was 612)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4202,
+          "npcId": 11983,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Firemaw (CoA DBC map 469 diff 2, was 613)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4203,
+          "npcId": 14020,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Chromaggus (CoA DBC map 469 diff 2, was 616)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4204,
+          "npcId": 11583,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Nefarian (CoA DBC map 469 diff 2, was 617)",
+          "lastEncounterLfgId": 437
+        },
+        {
+          "encounterId": 4294,
+          "npcId": 12435,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Razorgore the Untamed (CoA DBC map 469 diff 3, was 610)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4295,
+          "npcId": 13020,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Vaelastrasz the Corrupt (CoA DBC map 469 diff 3, was 611)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4296,
+          "npcId": 12017,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Broodlord Lashlayer (CoA DBC map 469 diff 3, was 612)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4297,
+          "npcId": 11983,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Firemaw (CoA DBC map 469 diff 3, was 613)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4298,
+          "npcId": 14020,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Chromaggus (CoA DBC map 469 diff 3, was 616)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4299,
+          "npcId": 11583,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Nefarian (CoA DBC map 469 diff 3, was 617)",
+          "lastEncounterLfgId": 452
+        }
+      ],
+      "uniqueNpcIds": [
+        11583,
+        11983,
+        12017,
+        12435,
+        13020,
+        14020
+      ]
+    },
+    {
+      "mapId": 509,
+      "difficultyCodes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 900,
+          "npcId": 15348,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Kurinnaxx (CoA DBC map 509 diff 1, was 718)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4064,
+          "npcId": 15348,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Kurinnaxx (CoA DBC map 509 diff 0, was 718)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4065,
+          "npcId": 15341,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "General Rajaxx (CoA DBC map 509 diff 0, was 719)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4066,
+          "npcId": 15340,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Moam (CoA DBC map 509 diff 0, was 720)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4067,
+          "npcId": 15370,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Buru the Gorger (CoA DBC map 509 diff 0, was 721)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4068,
+          "npcId": 15369,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Ayamiss the Hunter (CoA DBC map 509 diff 0, was 722)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4069,
+          "npcId": 15339,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Ossirian the Unscarred (CoA DBC map 509 diff 0, was 723)",
+          "lastEncounterLfgId": 423
+        },
+        {
+          "encounterId": 4159,
+          "npcId": 15348,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Kurinnaxx (CoA DBC map 509 diff 1, was 718)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4160,
+          "npcId": 15341,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "General Rajaxx (CoA DBC map 509 diff 1, was 719)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4161,
+          "npcId": 15340,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Moam (CoA DBC map 509 diff 1, was 720)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4162,
+          "npcId": 15370,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Buru the Gorger (CoA DBC map 509 diff 1, was 721)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4163,
+          "npcId": 15369,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Ayamiss the Hunter (CoA DBC map 509 diff 1, was 722)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4164,
+          "npcId": 15339,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Ossirian the Unscarred (CoA DBC map 509 diff 1, was 723)",
+          "lastEncounterLfgId": 160
+        },
+        {
+          "encounterId": 4254,
+          "npcId": 15348,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Kurinnaxx (CoA DBC map 509 diff 2, was 718)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4255,
+          "npcId": 15341,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "General Rajaxx (CoA DBC map 509 diff 2, was 719)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4256,
+          "npcId": 15340,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Moam (CoA DBC map 509 diff 2, was 720)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4257,
+          "npcId": 15370,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Buru the Gorger (CoA DBC map 509 diff 2, was 721)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4258,
+          "npcId": 15369,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Ayamiss the Hunter (CoA DBC map 509 diff 2, was 722)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4259,
+          "npcId": 15339,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Ossirian the Unscarred (CoA DBC map 509 diff 2, was 723)",
+          "lastEncounterLfgId": 438
+        },
+        {
+          "encounterId": 4349,
+          "npcId": 15348,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Kurinnaxx (CoA DBC map 509 diff 3, was 718)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4350,
+          "npcId": 15341,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "General Rajaxx (CoA DBC map 509 diff 3, was 719)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4351,
+          "npcId": 15340,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Moam (CoA DBC map 509 diff 3, was 720)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4352,
+          "npcId": 15370,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Buru the Gorger (CoA DBC map 509 diff 3, was 721)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4353,
+          "npcId": 15369,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Ayamiss the Hunter (CoA DBC map 509 diff 3, was 722)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4354,
+          "npcId": 15339,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Ossirian the Unscarred (CoA DBC map 509 diff 3, was 723)",
+          "lastEncounterLfgId": 453
+        }
+      ],
+      "uniqueNpcIds": [
+        15339,
+        15340,
+        15341,
+        15348,
+        15369,
+        15370
+      ]
+    },
+    {
+      "mapId": 531,
+      "difficultyCodes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "encounters": [
+        {
+          "encounterId": 4055,
+          "npcId": 15263,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "The Prophet Skeram (CoA DBC map 531 diff 0, was 709)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4056,
+          "npcId": 15544,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Silithid Royalty (CoA DBC map 531 diff 0, was 710)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4057,
+          "npcId": 15516,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Battleguard Sartura (CoA DBC map 531 diff 0, was 711)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4058,
+          "npcId": 15510,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Fankriss the Unyielding (CoA DBC map 531 diff 0, was 712)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4059,
+          "npcId": 15299,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Viscidus (CoA DBC map 531 diff 0, was 713)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4060,
+          "npcId": 15509,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Princess Huhuran (CoA DBC map 531 diff 0, was 714)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4061,
+          "npcId": 15275,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Twin Emperors (CoA DBC map 531 diff 0, was 715)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4062,
+          "npcId": 15517,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "Ouro (CoA DBC map 531 diff 0, was 716)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4063,
+          "npcId": 15727,
+          "creditType": 0,
+          "difficulty": 0,
+          "comment": "C'thun (CoA DBC map 531 diff 0, was 717)",
+          "lastEncounterLfgId": 424
+        },
+        {
+          "encounterId": 4150,
+          "npcId": 15263,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "The Prophet Skeram (CoA DBC map 531 diff 1, was 709)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4151,
+          "npcId": 15544,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Silithid Royalty (CoA DBC map 531 diff 1, was 710)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4152,
+          "npcId": 15516,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Battleguard Sartura (CoA DBC map 531 diff 1, was 711)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4153,
+          "npcId": 15510,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Fankriss the Unyielding (CoA DBC map 531 diff 1, was 712)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4154,
+          "npcId": 15299,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Viscidus (CoA DBC map 531 diff 1, was 713)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4155,
+          "npcId": 15509,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Princess Huhuran (CoA DBC map 531 diff 1, was 714)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4156,
+          "npcId": 15275,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Twin Emperors (CoA DBC map 531 diff 1, was 715)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4157,
+          "npcId": 15517,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "Ouro (CoA DBC map 531 diff 1, was 716)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4158,
+          "npcId": 15727,
+          "creditType": 0,
+          "difficulty": 1,
+          "comment": "C'thun (CoA DBC map 531 diff 1, was 717)",
+          "lastEncounterLfgId": 161
+        },
+        {
+          "encounterId": 4245,
+          "npcId": 15263,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "The Prophet Skeram (CoA DBC map 531 diff 2, was 709)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4246,
+          "npcId": 15544,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Silithid Royalty (CoA DBC map 531 diff 2, was 710)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4247,
+          "npcId": 15516,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Battleguard Sartura (CoA DBC map 531 diff 2, was 711)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4248,
+          "npcId": 15510,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Fankriss the Unyielding (CoA DBC map 531 diff 2, was 712)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4249,
+          "npcId": 15299,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Viscidus (CoA DBC map 531 diff 2, was 713)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4250,
+          "npcId": 15509,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Princess Huhuran (CoA DBC map 531 diff 2, was 714)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4251,
+          "npcId": 15275,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Twin Emperors (CoA DBC map 531 diff 2, was 715)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4252,
+          "npcId": 15517,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "Ouro (CoA DBC map 531 diff 2, was 716)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4253,
+          "npcId": 15727,
+          "creditType": 0,
+          "difficulty": 2,
+          "comment": "C'thun (CoA DBC map 531 diff 2, was 717)",
+          "lastEncounterLfgId": 439
+        },
+        {
+          "encounterId": 4340,
+          "npcId": 15263,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "The Prophet Skeram (CoA DBC map 531 diff 3, was 709)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4341,
+          "npcId": 15544,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Silithid Royalty (CoA DBC map 531 diff 3, was 710)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4342,
+          "npcId": 15516,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Battleguard Sartura (CoA DBC map 531 diff 3, was 711)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4343,
+          "npcId": 15510,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Fankriss the Unyielding (CoA DBC map 531 diff 3, was 712)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4344,
+          "npcId": 15299,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Viscidus (CoA DBC map 531 diff 3, was 713)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4345,
+          "npcId": 15509,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Princess Huhuran (CoA DBC map 531 diff 3, was 714)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4346,
+          "npcId": 15275,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Twin Emperors (CoA DBC map 531 diff 3, was 715)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4347,
+          "npcId": 15517,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "Ouro (CoA DBC map 531 diff 3, was 716)",
+          "lastEncounterLfgId": 0
+        },
+        {
+          "encounterId": 4348,
+          "npcId": 15727,
+          "creditType": 0,
+          "difficulty": 3,
+          "comment": "C'thun (CoA DBC map 531 diff 3, was 717)",
+          "lastEncounterLfgId": 454
+        }
+      ],
+      "uniqueNpcIds": [
+        15263,
+        15275,
+        15299,
+        15509,
+        15510,
+        15516,
+        15517,
+        15544,
+        15727
+      ]
+    }
+  ]
+}

@@ -11,6 +11,7 @@
   function mount() {
     const app = document.querySelector('#app');
     const updates = app && app.querySelector('.home-updates');
+    const projects = app && app.querySelector('.home-projects');
     if (!updates || app.querySelector('.home-feedback')) return;
     const section = document.createElement('section');
     section.className = 'home-feedback';
@@ -24,7 +25,7 @@
       '<label class="feedback-field">Details<textarea name="details" rows="5" maxlength="5000" required placeholder="For a problem, include what you clicked and what happened. For a request, describe what you would like it to do."></textarea></label>' +
       '<div class="feedback-submit-row"><button class="button" type="submit">Continue to GitHub →</button><p class="feedback-note">This opens a ready-to-send report in GitHub. A GitHub account is needed to submit it.</p></div>' +
       '<p class="feedback-status" role="status" aria-live="polite"></p></form>';
-    updates.insertAdjacentElement('afterend', section);
+    (projects || updates).insertAdjacentElement('afterend', section);
     let selected = '';
     section.addEventListener('click', event => {
       const button = event.target.closest('[data-feedback-kind]');

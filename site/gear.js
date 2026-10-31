@@ -47,7 +47,7 @@ async function preservedItem(item){
   return preservedItemCache.get(cacheKey);
 }
 
-async function gearPage(params, token) {
+window.gearPage = async function gearPage(params, token) {
   const cls = classFrom(params.get('class'));
   const spec = tabsOf(cls).find(t => String(t.tabId) === params.get('spec')) || tabsOf(cls)[0];
   const phase = params.get('phase') === '2' ? '2' : '1';

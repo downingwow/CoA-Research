@@ -1,0 +1,607 @@
+{
+  "schema": "coa-research.dbm-classic-dungeon-19-map-priority.v1",
+  "date": "2026-10-30",
+  "scope": "19 Vanilla dungeon map IDs only; raids excluded",
+  "baselineSource": "Conquest-of-AzerothCore/azerothcore-wotlk-coa/docs/coa/vanilla-dungeon-difficulties.md",
+  "availabilityStatus": "Documented playable baseline Normal/Heroic/Mythic, NOT independently verified enabled on live Conquest Reborn at this time",
+  "caveats": [
+    "Encounter source rows include difficulty duplicates, not unique bosses",
+    "NPC IDs joined via source health table and encounter credits; some mappings provisional",
+    "Source files under pending_db_world are not proof of deployed mechanics",
+    "Do not confuse lastEncounterDungeon LFG ID with map ID"
+  ],
+  "maps": [
+    {
+      "mapId": 33,
+      "name": "Shadowfang Keep",
+      "sourceEncounterRows": 30,
+      "distinctNpcIds": 10,
+      "sourceExamples": [
+        {
+          "npcId": 3914,
+          "name": "CoA Heroic DBC: Rethilgore"
+        },
+        {
+          "npcId": 3886,
+          "name": "CoA Heroic DBC: Razorclaw the Butcher"
+        },
+        {
+          "npcId": 3887,
+          "name": "CoA Heroic DBC: Baron Silverlaine"
+        },
+        {
+          "npcId": 4278,
+          "name": "CoA Heroic DBC: Commander Springvale"
+        },
+        {
+          "npcId": 4279,
+          "name": "CoA Heroic DBC: Odo the Blindwatcher"
+        }
+      ],
+      "knownSourceLeads": [
+        "mod-manastorm-endless Shadowfang Keep source evidence"
+      ],
+      "researchPriority": "validate scripts and extract timers"
+    },
+    {
+      "mapId": 34,
+      "name": "The Stockade",
+      "sourceEncounterRows": 6,
+      "distinctNpcIds": 6,
+      "sourceExamples": [
+        {
+          "npcId": 1696,
+          "name": "CoA Heroic DBC: Targorr the Dread"
+        },
+        {
+          "npcId": 1666,
+          "name": "CoA Heroic DBC: Kam Deepfury"
+        },
+        {
+          "npcId": 1717,
+          "name": "CoA Heroic DBC: Hamhock"
+        },
+        {
+          "npcId": 1716,
+          "name": "CoA Heroic DBC: Bazil Thredd"
+        },
+        {
+          "npcId": 1663,
+          "name": "CoA Heroic DBC: Dextren Ward"
+        }
+      ],
+      "knownSourceLeads": [],
+      "researchPriority": "find SmartAI and boss script source"
+    },
+    {
+      "mapId": 36,
+      "name": "The Deadmines",
+      "sourceEncounterRows": 8,
+      "distinctNpcIds": 8,
+      "sourceExamples": [
+        {
+          "npcId": 644,
+          "name": "CoA Heroic DBC: Rhahk'zor"
+        },
+        {
+          "npcId": 642,
+          "name": "CoA Heroic DBC: Sneed"
+        },
+        {
+          "npcId": 1763,
+          "name": "CoA Heroic DBC: Gilnid"
+        },
+        {
+          "npcId": 646,
+          "name": "CoA Heroic DBC: Mr. Smite"
+        },
+        {
+          "npcId": 645,
+          "name": "CoA Heroic DBC: Cookie"
+        }
+      ],
+      "knownSourceLeads": [
+        "rev_20260930_70_deadmines_bosses.sql",
+        "rev_20261005_00_dungeon_main_kits_precedence.sql"
+      ],
+      "researchPriority": "validate scripts and extract timers"
+    },
+    {
+      "mapId": 43,
+      "name": "Wailing Caverns",
+      "sourceEncounterRows": 15,
+      "distinctNpcIds": 8,
+      "sourceExamples": [
+        {
+          "npcId": 3671,
+          "name": "CoA Heroic DBC: Lady Anacondra"
+        },
+        {
+          "npcId": 3669,
+          "name": "CoA Heroic DBC: Lord Cobrahn"
+        },
+        {
+          "npcId": 3653,
+          "name": "CoA Heroic DBC: Kresh"
+        },
+        {
+          "npcId": 3670,
+          "name": "CoA Heroic DBC: Lord Pythas"
+        },
+        {
+          "npcId": 3674,
+          "name": "CoA Heroic DBC: Skum"
+        }
+      ],
+      "knownSourceLeads": [],
+      "researchPriority": "find SmartAI and boss script source"
+    },
+    {
+      "mapId": 47,
+      "name": "Razorfen Kraul",
+      "sourceEncounterRows": 8,
+      "distinctNpcIds": 8,
+      "sourceExamples": [
+        {
+          "npcId": 6168,
+          "name": "CoA Heroic DBC: Roogug"
+        },
+        {
+          "npcId": 4424,
+          "name": "CoA Heroic DBC: Aggem Thorncurse"
+        },
+        {
+          "npcId": 4428,
+          "name": "CoA Heroic DBC: Death Speaker Jargba"
+        },
+        {
+          "npcId": 4420,
+          "name": "CoA Heroic DBC: Overlord Ramtusk"
+        },
+        {
+          "npcId": 4421,
+          "name": "CoA Heroic DBC: Charlga Razorflank"
+        }
+      ],
+      "knownSourceLeads": [],
+      "researchPriority": "find SmartAI and boss script source"
+    },
+    {
+      "mapId": 48,
+      "name": "Blackfathom Deeps",
+      "sourceEncounterRows": 7,
+      "distinctNpcIds": 7,
+      "sourceExamples": [
+        {
+          "npcId": 4887,
+          "name": "CoA Heroic DBC: Ghamoo-ra"
+        },
+        {
+          "npcId": 4831,
+          "name": "CoA Heroic DBC: Lady Sarevess"
+        },
+        {
+          "npcId": 6243,
+          "name": "CoA Heroic DBC: Gelihast"
+        },
+        {
+          "npcId": 12902,
+          "name": "CoA Heroic DBC: Lorgus Jett"
+        },
+        {
+          "npcId": 4830,
+          "name": "CoA Heroic DBC: Old Serra'kis"
+        }
+      ],
+      "knownSourceLeads": [
+        "rev_20260930_60_bfd_bosses.sql"
+      ],
+      "researchPriority": "validate scripts and extract timers"
+    },
+    {
+      "mapId": 70,
+      "name": "Uldaman",
+      "sourceEncounterRows": 8,
+      "distinctNpcIds": 8,
+      "sourceExamples": [
+        {
+          "npcId": 6910,
+          "name": "CoA Heroic DBC: Revelosh"
+        },
+        {
+          "npcId": 6906,
+          "name": "CoA Heroic DBC: The Lost Dwarves"
+        },
+        {
+          "npcId": 7228,
+          "name": "CoA Heroic DBC: Ironaya"
+        },
+        {
+          "npcId": 7206,
+          "name": "CoA Heroic DBC: Ancient Stone Keeper"
+        },
+        {
+          "npcId": 7291,
+          "name": "CoA Heroic DBC: Galgann Firehammer"
+        }
+      ],
+      "knownSourceLeads": [
+        "rev_20261004_00_bosses_ulda_strat.sql"
+      ],
+      "researchPriority": "validate scripts and extract timers"
+    },
+    {
+      "mapId": 90,
+      "name": "Gnomeregan",
+      "sourceEncounterRows": 5,
+      "distinctNpcIds": 5,
+      "sourceExamples": [
+        {
+          "npcId": 7079,
+          "name": "CoA Heroic DBC: Viscous Fallout"
+        },
+        {
+          "npcId": 7361,
+          "name": "CoA Heroic DBC: Grubbis"
+        },
+        {
+          "npcId": 6235,
+          "name": "CoA Heroic DBC: Electrocutioner 6000"
+        },
+        {
+          "npcId": 6229,
+          "name": "CoA Heroic DBC: Crowd Pummeler 9-60"
+        },
+        {
+          "npcId": 7800,
+          "name": "CoA Heroic DBC: Mekgineer Thermaplugg"
+        }
+      ],
+      "knownSourceLeads": [],
+      "researchPriority": "find SmartAI and boss script source"
+    },
+    {
+      "mapId": 109,
+      "name": "Sunken Temple",
+      "sourceEncounterRows": 4,
+      "distinctNpcIds": 4,
+      "sourceExamples": [
+        {
+          "npcId": 5710,
+          "name": "CoA Heroic DBC: Jammal'an and Ogom"
+        },
+        {
+          "npcId": 5719,
+          "name": "CoA Heroic DBC: Morphaz"
+        },
+        {
+          "npcId": 5722,
+          "name": "CoA Heroic DBC: Hazzas"
+        },
+        {
+          "npcId": 5709,
+          "name": "CoA Heroic DBC: Shade of Eranikus"
+        }
+      ],
+      "knownSourceLeads": [],
+      "researchPriority": "find SmartAI and boss script source"
+    },
+    {
+      "mapId": 129,
+      "name": "Razorfen Downs",
+      "sourceEncounterRows": 6,
+      "distinctNpcIds": 6,
+      "sourceExamples": [
+        {
+          "npcId": 7355,
+          "name": "CoA Heroic DBC: Tuten'kash"
+        },
+        {
+          "npcId": 7357,
+          "name": "CoA Heroic DBC: Mordresh Fire Eye"
+        },
+        {
+          "npcId": 8567,
+          "name": "CoA Heroic DBC: Glutton"
+        },
+        {
+          "npcId": 7358,
+          "name": "CoA Heroic DBC: Amnennar the Coldbringer"
+        },
+        {
+          "npcId": 7356,
+          "name": "CoA Mythic DBC: Plaguemaw the Rotting"
+        }
+      ],
+      "knownSourceLeads": [],
+      "researchPriority": "find SmartAI and boss script source"
+    },
+    {
+      "mapId": 189,
+      "name": "Scarlet Monastery",
+      "sourceEncounterRows": 18,
+      "distinctNpcIds": 11,
+      "sourceExamples": [
+        {
+          "npcId": 3983,
+          "name": "CoA Heroic DBC: Interrogator Vishas"
+        },
+        {
+          "npcId": 4543,
+          "name": "CoA Heroic DBC: Bloodmage Thalnos"
+        },
+        {
+          "npcId": 3974,
+          "name": "CoA Heroic DBC: Houndmaster Loksey"
+        },
+        {
+          "npcId": 6487,
+          "name": "CoA Heroic DBC: Arcanist Doan"
+        },
+        {
+          "npcId": 3975,
+          "name": "CoA Heroic DBC: Herod"
+        }
+      ],
+      "knownSourceLeads": [
+        "prior 8-migration mechanics evidence"
+      ],
+      "researchPriority": "validate scripts and extract timers"
+    },
+    {
+      "mapId": 209,
+      "name": "Zul'Farrak",
+      "sourceEncounterRows": 10,
+      "distinctNpcIds": 10,
+      "sourceExamples": [
+        {
+          "npcId": 7795,
+          "name": "CoA Heroic DBC: Hydromancer Velratha"
+        },
+        {
+          "npcId": 7273,
+          "name": "CoA Heroic DBC: Ghaz'rilla"
+        },
+        {
+          "npcId": 8127,
+          "name": "CoA Heroic DBC: Antu'sul"
+        },
+        {
+          "npcId": 7272,
+          "name": "CoA Heroic DBC: Theka the Martyr"
+        },
+        {
+          "npcId": 7271,
+          "name": "CoA Heroic DBC: Witch Doctor Zum'rah"
+        }
+      ],
+      "knownSourceLeads": [],
+      "researchPriority": "find SmartAI and boss script source"
+    },
+    {
+      "mapId": 229,
+      "name": "Blackrock Spire",
+      "sourceEncounterRows": 28,
+      "distinctNpcIds": 20,
+      "sourceExamples": [
+        {
+          "npcId": 10899,
+          "name": "CoA Heroic DBC: Goraluk Anvilcrack"
+        },
+        {
+          "npcId": 10509,
+          "name": "CoA Heroic DBC: Jed Runewatcher"
+        },
+        {
+          "npcId": 10263,
+          "name": "CoA Heroic DBC: Burning Felguard"
+        },
+        {
+          "npcId": 10376,
+          "name": "CoA Heroic DBC: Crystal Fang"
+        },
+        {
+          "npcId": 9596,
+          "name": "CoA Heroic DBC: Bannok Grimaxe"
+        }
+      ],
+      "knownSourceLeads": [
+        "rev_20261002_10_ubrs_boss_rank_and_kits.sql",
+        "rev_20261001_30_brs_spells.sql"
+      ],
+      "researchPriority": "validate scripts and extract timers"
+    },
+    {
+      "mapId": 230,
+      "name": "Blackrock Depths",
+      "sourceEncounterRows": 34,
+      "distinctNpcIds": 18,
+      "sourceExamples": [
+        {
+          "npcId": 9018,
+          "name": "CoA Heroic DBC: High Interrogator Gerstahn"
+        },
+        {
+          "npcId": 9025,
+          "name": "CoA Heroic DBC: Lord Roccor"
+        },
+        {
+          "npcId": 9319,
+          "name": "CoA Heroic DBC: Houndmaster Grebmar"
+        },
+        {
+          "npcId": 9024,
+          "name": "CoA Heroic DBC: Pyromancer Loregrain"
+        },
+        {
+          "npcId": 9017,
+          "name": "CoA Heroic DBC: Lord Incendius"
+        }
+      ],
+      "knownSourceLeads": [],
+      "researchPriority": "find SmartAI and boss script source"
+    },
+    {
+      "mapId": 289,
+      "name": "Scholomance",
+      "sourceEncounterRows": 28,
+      "distinctNpcIds": 14,
+      "sourceExamples": [
+        {
+          "npcId": 14861,
+          "name": "CoA Heroic DBC: Blood Steward of Kirtonos"
+        },
+        {
+          "npcId": 10506,
+          "name": "CoA Heroic DBC: Kirtonos the Herald"
+        },
+        {
+          "npcId": 10503,
+          "name": "CoA Heroic DBC: Jandice Barov"
+        },
+        {
+          "npcId": 11622,
+          "name": "CoA Heroic DBC: Rattlegore"
+        },
+        {
+          "npcId": 10433,
+          "name": "CoA Heroic DBC: Marduk Blackpool"
+        }
+      ],
+      "knownSourceLeads": [
+        "boss_darkmaster_gandling.cpp",
+        "boss_kormok.cpp",
+        "boss_kirtonos_the_herald.cpp"
+      ],
+      "researchPriority": "validate scripts and extract timers"
+    },
+    {
+      "mapId": 329,
+      "name": "Stratholme",
+      "sourceEncounterRows": 26,
+      "distinctNpcIds": 13,
+      "sourceExamples": [
+        {
+          "npcId": 10809,
+          "name": "CoA Heroic DBC: Stonespine"
+        },
+        {
+          "npcId": 10558,
+          "name": "CoA Heroic DBC: Hearthsinger Forresten"
+        },
+        {
+          "npcId": 10808,
+          "name": "CoA Heroic DBC: Timmy the Cruel"
+        },
+        {
+          "npcId": 10997,
+          "name": "CoA Heroic DBC: Cannon Master Willey"
+        },
+        {
+          "npcId": 11032,
+          "name": "CoA Heroic DBC: Malor the Zealous"
+        }
+      ],
+      "knownSourceLeads": [
+        "rev_20261004_00_bosses_ulda_strat.sql"
+      ],
+      "researchPriority": "validate scripts and extract timers"
+    },
+    {
+      "mapId": 349,
+      "name": "Maraudon",
+      "sourceEncounterRows": 20,
+      "distinctNpcIds": 11,
+      "sourceExamples": [
+        {
+          "npcId": 13282,
+          "name": "CoA Heroic DBC: Noxxion"
+        },
+        {
+          "npcId": 12258,
+          "name": "CoA Heroic DBC: Razorlash"
+        },
+        {
+          "npcId": 12236,
+          "name": "CoA Heroic DBC: Lord Vyletongue"
+        },
+        {
+          "npcId": 12225,
+          "name": "CoA Heroic DBC: Celebras the Cursed"
+        },
+        {
+          "npcId": 12203,
+          "name": "CoA Heroic DBC: Landslide"
+        }
+      ],
+      "knownSourceLeads": [
+        "rev_20261003_10_dm_maraudon.sql"
+      ],
+      "researchPriority": "validate scripts and extract timers"
+    },
+    {
+      "mapId": 389,
+      "name": "Ragefire Chasm",
+      "sourceEncounterRows": 6,
+      "distinctNpcIds": 5,
+      "sourceExamples": [
+        {
+          "npcId": 11517,
+          "name": "CoA Heroic DBC: Oggleflint"
+        },
+        {
+          "npcId": 11520,
+          "name": "CoA Heroic DBC: Taragaman the Hungerer"
+        },
+        {
+          "npcId": 11518,
+          "name": "CoA Heroic DBC: Jergosh the Invoker"
+        },
+        {
+          "npcId": 11519,
+          "name": "CoA Heroic DBC: Bazzalan"
+        },
+        {
+          "npcId": 17830,
+          "name": "CoA Heroic DBC: Zelemar the Wrathful"
+        }
+      ],
+      "knownSourceLeads": [
+        "rev_20260930_80_rfc_bosses.sql"
+      ],
+      "researchPriority": "validate scripts and extract timers"
+    },
+    {
+      "mapId": 429,
+      "name": "Dire Maul",
+      "sourceEncounterRows": 36,
+      "distinctNpcIds": 18,
+      "sourceExamples": [
+        {
+          "npcId": 14506,
+          "name": "CoA Heroic DBC: Lord Hel'nurath"
+        },
+        {
+          "npcId": 11467,
+          "name": "CoA Heroic DBC: Tsu'zee"
+        },
+        {
+          "npcId": 11490,
+          "name": "CoA Heroic DBC: Zevrim Thornhoof"
+        },
+        {
+          "npcId": 13280,
+          "name": "CoA Heroic DBC: Hydrospawn"
+        },
+        {
+          "npcId": 14327,
+          "name": "CoA Heroic DBC: Lethtendris"
+        }
+      ],
+      "knownSourceLeads": [
+        "rev_20261003_10_dm_maraudon.sql"
+      ],
+      "researchPriority": "validate scripts and extract timers"
+    }
+  ]
+}

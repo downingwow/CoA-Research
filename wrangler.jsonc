@@ -2,10 +2,5 @@
   "name": "coa-research",
   "main": "worker.js",
   "compatibility_date": "2026-10-29",
-  "assets": {
-    "directory": "./site",
-    "not_found_handling": "single-page-application",
-    "run_worker_first": true
-  },
   "workers_dev": true
 }

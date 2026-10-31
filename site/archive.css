@@ -113,3 +113,25 @@ body{background:radial-gradient(ellipse at 50% -25%,#34302a 0,#151a1c 42rem,#101
 .sidekick-role{font-size:10px;color:#bfae8b;white-space:nowrap}.sidekick-spec-row>div:first-child{flex-wrap:wrap;align-items:center}.sidekick-spec-name{margin-right:auto}
 
 .sidekick-difficulty{color:#c4bba9;font-size:12px}.sidekick-difficulty-mini{font-size:10px;color:#d5c39c;white-space:nowrap}.sidekick-difficulty-mini small{display:block;font-size:9px;color:#a99f91;text-align:right}
+
+/* Item previews share the archive's dark palette and remain interactive. */
+.gear-tooltip{background:#171d1f;color:#eee8df;border-color:#795b3e;box-shadow:0 16px 42px #0009;pointer-events:auto}
+.gear-preview-head{border-color:#384143}
+.gear-preview-head strong{color:#f3e5d0}
+.gear-preview-head span{color:#aeb6b3}
+.gear-piece-icon,.gear-preview-icon{border-color:#46504d;background:#202729}
+.gear-tooltip-slot{color:#d7d4cc;border-color:#384143}
+.gear-tooltip-slot>span{color:#b2b8b5}
+.gear-preview-stats div{border-color:#333c3e}
+.gear-preview-stats span{color:#b5bcb8}
+.gear-preview-stats b{color:#f1e7d7}
+.gear-preview-stats .gear-preview-estimate{padding:6px 8px;border:1px solid #594832;border-radius:5px;background:#28251f}
+.gear-preview-stats .gear-preview-estimate span{color:#e0b979}
+.gear-preview-stats .gear-preview-estimate b{color:#f3d9a8}
+.gear-tooltip-source{border-color:#333c3e;color:#aeb6b3}
+.gear-preview-score{color:#c0b9ad}
+.gear-preview-score b{color:#f0c27f}
+.gear-preview-score.is-partial b{color:#e8a27b}
+.gear-tooltip p,.gear-tooltip>small{color:#bbc2be}
+.gear-tooltip .gear-archive-link{color:#f0b36f}
+.gear-tooltip .gear-archive-link:hover,.gear-tooltip .gear-archive-link:focus-visible{color:#ffd69b}

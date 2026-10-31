@@ -113,16 +113,3 @@ body{background:radial-gradient(ellipse at 50% -25%,#34302a 0,#151a1c 42rem,#101
 .sidekick-role{font-size:10px;color:#bfae8b;white-space:nowrap}.sidekick-spec-row>div:first-child{flex-wrap:wrap;align-items:center}.sidekick-spec-name{margin-right:auto}
 
 .sidekick-difficulty{color:#c4bba9;font-size:12px}.sidekick-difficulty-mini{font-size:10px;color:#d5c39c;white-space:nowrap}.sidekick-difficulty-mini small{display:block;font-size:9px;color:#a99f91;text-align:right}
-
-/* Spec guides use a compact class/spec directory and keep sourced mechanics together. */
-.spec-overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}
-.spec-overview-grid .card h2{margin:7px 0;font-size:21px}
-.spec-profile{display:flex;justify-content:space-between;align-items:start;gap:24px;margin:14px 0}
-.spec-profile>div:first-child{max-width:850px}.spec-profile h2{margin:5px 0 8px}
-.spec-profile-meta{display:flex;gap:14px;flex-wrap:wrap;justify-content:end}.spec-profile-meta span{display:grid;gap:5px;min-width:95px;padding:10px 12px;border:1px solid #454a48;border-radius:4px;background:#202526}.spec-profile-meta small{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:#b5a68f}.spec-profile-meta b{text-transform:capitalize;color:#e6cb8c}
-.spec-section{margin:28px 0;scroll-margin-top:90px}.spec-section>h2{margin:5px 0 12px}.spec-section-intro{max-width:900px;color:#c8c0b4;line-height:1.65}
-.effect-group{margin:10px 0;padding:12px 14px;border:1px solid #3a4241;border-radius:5px;background:#1b2223}.effect-group>summary{cursor:pointer;color:#e8ce95;font-weight:700}.effect-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:12px}
-.effect-row{align-self:start;border:1px solid #343b3a;border-radius:4px;background:#202627}.effect-row>summary{display:flex;justify-content:space-between;gap:12px;padding:9px 11px;cursor:pointer}.effect-row>summary span{font-weight:700;color:#e6d5b4}.effect-row>summary small{color:#bdab85;white-space:nowrap}.effect-row p{margin:0;padding:0 11px 11px;color:#c7c0b4;font-size:12px;line-height:1.6;white-space:pre-line}
-.spec-section-intro+.effect-group{margin-top:14px}.equipment-card h2,.resource-card h2{margin:5px 0 13px}.equipment-facts>div strong{font-size:15px;line-height:1.55}.equipment-facts>div:nth-child(2) strong{font-family:inherit;font-size:13px;font-weight:650;overflow-wrap:anywhere}
-.damage-factor-note{max-width:950px;padding:10px 13px;border-left:3px solid #bd8b54;background:#252321;color:#d1c6b5;font-size:12px;line-height:1.6}
-@media(max-width:900px){.spec-overview-grid{grid-template-columns:1fr}.spec-profile{display:block}.spec-profile-meta{justify-content:start;margin-top:12px}.effect-list{grid-template-columns:1fr}}

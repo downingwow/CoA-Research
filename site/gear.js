@@ -5,8 +5,8 @@ async function gearPage(params, token) {
   const spec = tabsOf(cls).find(t => String(t.tabId) === params.get('spec')) || tabsOf(cls)[0];
   const phase = params.get('phase') === '2' ? '2' : '1';
   const mode = params.get('mode') === 'planner' ? 'planner' : 'ranked';
-  const [remote, equipment, catalogDoc] = await Promise.all([
-    json('remote.json'), json('equipment-rules.json'), json('item-catalog-p' + phase + '.json'),
+  const [remote, equipment, catalogDoc, performance] = await Promise.all([
+    json('remote.json'), json('equipment-rules.json'), json('item-catalog-p' + phase + '.json'), json('performance.js').catch(()=>null),
   ]);
   if (token !== routeToken) return;
 
@@ -22,7 +22,7 @@ async function gearPage(params, token) {
     '<label>Phase <select id="gear-phase"><option value="1" ' + (phase === '1' ? 'selected' : '') + '>Phase 1</option><option value="2" ' + (phase === '2' ? 'selected' : '') + '>Phase 2</option></select></label></div>' +
     '<div class="gear-mode-tabs" role="tablist" aria-label="Gear views"><button type="button" role="tab" aria-selected="' + (mode === 'ranked') + '" data-gear-mode="ranked">Recovered BiS lists</button><button type="button" role="tab" aria-selected="' + (mode === 'planner') + '" data-gear-mode="planner">Personal gear planner</button></div>' +
     '<div class="notice">Rankings use the preserved Phase ' + phase + ' candidate pool from all 70 class/spec snapshots and the historical profile weights. Legal candidates are re-scored for the selected specialization. Weapon DPS is reconstructed from archived scores when possible; items missing recoverable weapon DPS are labeled and rank below complete weapon scores.</div>' +
-    '<div id="gear-content" role="status">Loading recovered equipment data…</div>' +
+    '<div id="gear-content" role="status">Loading recovered equipment data…</div><section class="card gear-evidence-note"><h2>Observed player gear vs ranked candidates</h2><p>The combat archive has aggregate performance rows, but no per-player equipment snapshots linked to those results. The set below combines the highest-scoring eligible Phase '+phase+' candidates using the selected specialization’s recovered profile. It is a candidate set, not observed top-performer gear or an author-verified BiS set.</p></section>' +
     '<div class="sourcebar ba-credit"><strong>BoneArchive Gear &amp; BiS</strong> · Curated by Uncle Bone · Item sources and capture notes are collected in Sources.</div><div id="gear-tooltip" class="gear-tooltip" role="tooltip" hidden></div>';
 
   const route = (next = {}) => go('gear', { class: cls.key, spec: spec.tabId, phase, ...next });
@@ -257,7 +257,8 @@ async function gearPage(params, token) {
     $('#reset-gear-set').onclick=()=>paintPlanner(recommendedSet('My '+labelTab(cls,spec)+' set'));
     repaint();
   }
-  function paint() {
+  function recommendedSummary(){const picks=[];for(const slot of listRows){if(['finger','trinket'].includes(slot.key)){for(let n=0;n<2;n++){const item=slot.items[n];if(item)picks.push({slot:(slot.key==='finger'?'Ring ':'Trinket ')+(n+1),item});}}else if(slot.key==='twohand'){if(!listRows.find(x=>x.key==='mainhand')?.items.length||slot.items[0]?.score>=(listRows.find(x=>x.key==='mainhand')?.items[0]?.score||0)+(listRows.find(x=>x.key==='offhand')?.items[0]?.score||0)){if(slot.items[0])picks.push({slot:slot.label,item:slot.items[0]});}}else if(!['mainhand','offhand'].includes(slot.key)){if(slot.items[0])picks.push({slot:slot.label,item:slot.items[0]});}}const hasTwo=picks.some(x=>x.slot==='Two-Hand');if(!hasTwo){for(const k of ['mainhand','offhand']){const slot=listRows.find(x=>x.key===k);if(slot?.items[0])picks.push({slot:slot.label,item:slot.items[0]});}}return picks;}
+function paint() {
     if (mode==='planner') { paintPlanner(); return; }
     $('#gear-results').innerHTML='';
     const query=$('#gear-query').value.toLowerCase(), only=$('#gear-slot').value; let count=0;
@@ -273,7 +274,9 @@ async function gearPage(params, token) {
   }
   if(mode==='planner') { $('#gear-content').innerHTML='<div id="gear-results" class="gear-slot-list"></div>'; paintPlanner(); }
   else {
-    $('#gear-content').innerHTML='<div class="toolbar"><input id="gear-query" type="search" aria-label="Search gear" placeholder="Search item names or sources…"><select id="gear-slot" aria-label="Equipment slot"><option value="">All slots</option>'+listRows.map(slot=>'<option value="'+esc(slot.key)+'">'+esc(slot.label)+'</option>').join('')+'</select></div><div id="gear-count" class="scope-count"></div><div id="gear-compare"></div><div id="gear-results" class="gear-slot-list"></div>';
-    $('#gear-query').oninput=paint;$('#gear-slot').onchange=paint;comparison();paint();
+    const recommendations=recommendedSummary();
+    const totalScore=Math.round(recommendations.reduce((sum,x)=>sum+x.item.score,0)*10)/10;
+    $('#gear-content').innerHTML='<section class="card gear-set-recommendation"><span class="eyebrow">PHASE '+phase+' · ESTIMATED CANDIDATE SET</span><h2>Highest-scoring eligible set</h2><p>Combined weighted score '+totalScore+' · '+recommendations.length+' filled slots. These are the best candidates in each slot under this archived scoring model, not a set observed on top-performing players.</p><div class="gear-recommended-grid">'+recommendations.map(x=>'<div><span class="muted">'+esc(x.slot)+'</span><strong>'+esc(x.item.name)+'</strong><span>'+esc(x.item.score)+(x.item.scoreIncomplete?' · partial DPS':'')+'</span></div>').join('')+'</div><button class="button" id="open-recommended-planner">Open and edit this set</button></section><div class="toolbar"><input id="gear-query" type="search" aria-label="Search gear" placeholder="Search item names or sources…"><select id="gear-slot" aria-label="Equipment slot"><option value="">All slots</option>'+listRows.map(slot=>'<option value="'+esc(slot.key)+'">'+esc(slot.label)+'</option>').join('')+'</select></div><div id="gear-count" class="scope-count"></div><div id="gear-compare"></div><div id="gear-results" class="gear-slot-list"></div>';
+    $('#gear-query').oninput=paint;$('#gear-slot').onchange=paint;$('#open-recommended-planner').onclick=()=>go('gear',{class:cls.key,spec:spec.tabId,phase,mode:'planner'});comparison();paint();
   }
 }

@@ -1,0 +1,781 @@
+{
+  "schema": "coa-research.dbm-classic-structured-mechanics.v1",
+  "date": "2026-10-30",
+  "sourceRepository": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "status": "Upstream C++ candidates, not verified live",
+  "limits": [
+    "Schedule call sites are not unique timers; must distinguish initial and repeat schedules",
+    "Some spell IDs are defined in headers, and symbolic casts need resolution",
+    "Do not enable alerts before client and live log validation"
+  ],
+  "files": [
+    {
+      "source": "src/server/scripts/EasternKingdoms/ZulGurub/boss_arlokk.cpp",
+      "boss": "arlokk",
+      "mapId": 309,
+      "spells": [
+        {
+          "symbol": "SPELL_SHADOW_WORD_PAIN",
+          "spellId": 24212
+        },
+        {
+          "symbol": "SPELL_GOUGE",
+          "spellId": 12540
+        },
+        {
+          "symbol": "SPELL_MARK_OF_ARLOKK",
+          "spellId": 24210
+        },
+        {
+          "symbol": "SPELL_RAVAGE",
+          "spellId": 24213
+        },
+        {
+          "symbol": "SPELL_CLEAVE",
+          "spellId": 25174
+        },
+        {
+          "symbol": "SPELL_PANTHER_TRANSFORM",
+          "spellId": 24190
+        },
+        {
+          "symbol": "SPELL_SUMMON_PROWLER",
+          "spellId": 24246
+        },
+        {
+          "symbol": "SPELL_VANISH_VISUAL",
+          "spellId": 24222
+        },
+        {
+          "symbol": "SPELL_VANISH",
+          "spellId": 24223
+        },
+        {
+          "symbol": "SPELL_SUPER_INVIS",
+          "spellId": 24235
+        },
+        {
+          "symbol": "SPELL_SNEAK_RANK_1_1",
+          "spellId": 22766
+        },
+        {
+          "symbol": "SPELL_SNEAK_RANK_1_2",
+          "spellId": 7939
+        },
+        {
+          "symbol": "SPELL_MARK_OF_ARLOKK_TRIGGER",
+          "spellId": 24211
+        }
+      ],
+      "schedules": [
+        {
+          "line": 117,
+          "event": "EVENT_SHADOW_WORD_PAIN",
+          "method": "ScheduleEvent",
+          "args": "7s, 9s, 0, PHASE_ONE"
+        },
+        {
+          "line": 118,
+          "event": "EVENT_GOUGE",
+          "method": "ScheduleEvent",
+          "args": "12s, 15s, 0, PHASE_ONE"
+        },
+        {
+          "line": 119,
+          "event": "EVENT_SUMMON_PROWLERS",
+          "method": "ScheduleEvent",
+          "args": "6s, 0, PHASE_ALL"
+        },
+        {
+          "line": 120,
+          "event": "EVENT_MARK_OF_ARLOKK",
+          "method": "ScheduleEvent",
+          "args": "9s, 11s, 0, PHASE_ALL"
+        },
+        {
+          "line": 121,
+          "event": "EVENT_TRANSFORM",
+          "method": "ScheduleEvent",
+          "args": "30s, 0, PHASE_ONE"
+        },
+        {
+          "line": 188,
+          "event": "EVENT_SHADOW_WORD_PAIN",
+          "method": "ScheduleEvent",
+          "args": "5s, 7s, 0, PHASE_ONE"
+        },
+        {
+          "line": 210,
+          "event": "EVENT_SUMMON_PROWLERS",
+          "method": "ScheduleEvent",
+          "args": "6s, 0, PHASE_ALL"
+        },
+        {
+          "line": 222,
+          "event": "EVENT_MARK_OF_ARLOKK",
+          "method": "ScheduleEvent",
+          "args": "120s, 130s"
+        },
+        {
+          "line": 236,
+          "event": "EVENT_VANISH",
+          "method": "ScheduleEvent",
+          "args": "1s, 0, PHASE_ONE"
+        },
+        {
+          "line": 243,
+          "event": "EVENT_VANISH_2",
+          "method": "ScheduleEvent",
+          "args": "9s, 0, PHASE_ONE"
+        },
+        {
+          "line": 248,
+          "event": "EVENT_VISIBLE",
+          "method": "ScheduleEvent",
+          "args": "41s, 47s, 0, PHASE_ONE"
+        },
+        {
+          "line": 257,
+          "event": "EVENT_RAVAGE",
+          "method": "ScheduleEvent",
+          "args": "10s, 14s, 0, PHASE_TWO"
+        },
+        {
+          "line": 258,
+          "event": "EVENT_TRANSFORM_BACK",
+          "method": "ScheduleEvent",
+          "args": "30s, 40s, 0, PHASE_TWO"
+        },
+        {
+          "line": 264,
+          "event": "EVENT_RAVAGE",
+          "method": "ScheduleEvent",
+          "args": "10s, 14s, 0, PHASE_TWO"
+        },
+        {
+          "line": 273,
+          "event": "EVENT_SHADOW_WORD_PAIN",
+          "method": "ScheduleEvent",
+          "args": "4s, 7s, 0, PHASE_ONE"
+        },
+        {
+          "line": 274,
+          "event": "EVENT_GOUGE",
+          "method": "ScheduleEvent",
+          "args": "12s, 15s, 0, PHASE_ONE"
+        },
+        {
+          "line": 275,
+          "event": "EVENT_TRANSFORM",
+          "method": "ScheduleEvent",
+          "args": "30s, 0, PHASE_ONE"
+        }
+      ],
+      "casts": [
+        {
+          "line": 187,
+          "spellSymbol": "SPELL_SHADOW_WORD_PAIN"
+        },
+        {
+          "line": 191,
+          "spellSymbol": "SPELL_GOUGE"
+        },
+        {
+          "line": 198,
+          "spellSymbol": "SPELL_SUMMON_PROWLER"
+        },
+        {
+          "line": 206,
+          "spellSymbol": "SPELL_SUMMON_PROWLER"
+        },
+        {
+          "line": 219,
+          "spellSymbol": "SPELL_MARK_OF_ARLOKK"
+        },
+        {
+          "line": 227,
+          "spellSymbol": "SPELL_PANTHER_TRANSFORM"
+        },
+        {
+          "line": 234,
+          "spellSymbol": "SPELL_VANISH_VISUAL"
+        },
+        {
+          "line": 235,
+          "spellSymbol": "SPELL_VANISH"
+        },
+        {
+          "line": 240,
+          "spellSymbol": "SPELL_SUPER_INVIS"
+        },
+        {
+          "line": 246,
+          "spellSymbol": "SPELL_VANISH"
+        },
+        {
+          "line": 247,
+          "spellSymbol": "SPELL_SUPER_INVIS"
+        },
+        {
+          "line": 263,
+          "spellSymbol": "SPELL_RAVAGE"
+        },
+        {
+          "line": 269,
+          "spellSymbol": "SPELL_VANISH_VISUAL"
+        },
+        {
+          "line": 332,
+          "spellSymbol": "SPELL_SNEAK_RANK_1_1"
+        },
+        {
+          "line": 333,
+          "spellSymbol": "SPELL_SNEAK_RANK_1_2"
+        }
+      ],
+      "healthTriggers": []
+    },
+    {
+      "source": "src/server/scripts/EasternKingdoms/ZulGurub/boss_venoxis.cpp",
+      "boss": "venoxis",
+      "mapId": 309,
+      "spells": [
+        {
+          "symbol": "SPELL_THRASH",
+          "spellId": 3391
+        },
+        {
+          "symbol": "SPELL_DISPEL_MAGIC",
+          "spellId": 23859
+        },
+        {
+          "symbol": "SPELL_RENEW",
+          "spellId": 23895
+        },
+        {
+          "symbol": "SPELL_HOLY_NOVA",
+          "spellId": 23858
+        },
+        {
+          "symbol": "SPELL_HOLY_FIRE",
+          "spellId": 23860
+        },
+        {
+          "symbol": "SPELL_HOLY_WRATH",
+          "spellId": 23979
+        },
+        {
+          "symbol": "SPELL_VENOXIS_TRANSFORM",
+          "spellId": 23849
+        },
+        {
+          "symbol": "SPELL_POISON_CLOUD",
+          "spellId": 23861
+        },
+        {
+          "symbol": "SPELL_VENOM_SPIT",
+          "spellId": 23862
+        },
+        {
+          "symbol": "SPELL_SUMMON_PARASITIC_SERPENT",
+          "spellId": 23866
+        },
+        {
+          "symbol": "SPELL_FRENZY",
+          "spellId": 8269
+        }
+      ],
+      "schedules": [],
+      "casts": [
+        {
+          "line": 96,
+          "spellSymbol": "SPELL_THRASH"
+        },
+        {
+          "line": 105,
+          "spellSymbol": "SPELL_HOLY_NOVA"
+        },
+        {
+          "line": 109,
+          "spellSymbol": "SPELL_DISPEL_MAGIC"
+        },
+        {
+          "line": 113,
+          "spellSymbol": "SPELL_HOLY_FIRE"
+        },
+        {
+          "line": 117,
+          "spellSymbol": "SPELL_RENEW"
+        },
+        {
+          "line": 121,
+          "spellSymbol": "SPELL_HOLY_WRATH"
+        },
+        {
+          "line": 132,
+          "spellSymbol": "SPELL_VENOXIS_TRANSFORM"
+        },
+        {
+          "line": 138,
+          "spellSymbol": "SPELL_VENOM_SPIT"
+        },
+        {
+          "line": 142,
+          "spellSymbol": "SPELL_POISON_CLOUD"
+        },
+        {
+          "line": 146,
+          "spellSymbol": "SPELL_SUMMON_PARASITIC_SERPENT"
+        },
+        {
+          "line": 153,
+          "spellSymbol": "SPELL_FRENZY"
+        }
+      ],
+      "healthTriggers": []
+    },
+    {
+      "source": "src/server/scripts/Kalimdor/TempleOfAhnQiraj/boss_skeram.cpp",
+      "boss": "skeram",
+      "mapId": 531,
+      "spells": [
+        {
+          "symbol": "SPELL_ARCANE_EXPLOSION",
+          "spellId": 26192
+        },
+        {
+          "symbol": "SPELL_EARTH_SHOCK",
+          "spellId": 26194
+        },
+        {
+          "symbol": "SPELL_TRUE_FULFILLMENT",
+          "spellId": 785
+        },
+        {
+          "symbol": "SPELL_INITIALIZE_IMAGE",
+          "spellId": 3730
+        },
+        {
+          "symbol": "SPELL_SUMMON_IMAGES",
+          "spellId": 747
+        },
+        {
+          "symbol": "SPELL_BIRTH",
+          "spellId": 34115
+        }
+      ],
+      "schedules": [
+        {
+          "line": 130,
+          "event": "EVENT_INIT_IMAGE",
+          "method": "ScheduleEvent",
+          "args": "400ms"
+        },
+        {
+          "line": 151,
+          "event": "EVENT_ARCANE_EXPLOSION",
+          "method": "ScheduleEvent",
+          "args": "6s, 12s"
+        },
+        {
+          "line": 152,
+          "event": "EVENT_FULLFILMENT",
+          "method": "ScheduleEvent",
+          "args": "15s"
+        },
+        {
+          "line": 153,
+          "event": "EVENT_BLINK",
+          "method": "ScheduleEvent",
+          "args": "30s, 45s"
+        },
+        {
+          "line": 154,
+          "event": "EVENT_EARTH_SHOCK",
+          "method": "ScheduleEvent",
+          "args": "1200ms"
+        },
+        {
+          "line": 177,
+          "event": "EVENT_ARCANE_EXPLOSION",
+          "method": "ScheduleEvent",
+          "args": "8s, 18s"
+        },
+        {
+          "line": 181,
+          "event": "EVENT_FULLFILMENT",
+          "method": "ScheduleEvent",
+          "args": "20s, 30s"
+        },
+        {
+          "line": 186,
+          "event": "EVENT_BLINK",
+          "method": "ScheduleEvent",
+          "args": "10s, 30s"
+        },
+        {
+          "line": 190,
+          "event": "EVENT_EARTH_SHOCK",
+          "method": "ScheduleEvent",
+          "args": "1200ms"
+        },
+        {
+          "line": 204,
+          "event": "EVENT_BLINK",
+          "method": "RescheduleEvent",
+          "args": "10s, 30s"
+        },
+        {
+          "line": 221,
+          "event": "EVENT_TELEPORT",
+          "method": "ScheduleEvent",
+          "args": "2s"
+        },
+        {
+          "line": 234,
+          "event": "EVENT_EARTH_SHOCK",
+          "method": "RescheduleEvent",
+          "args": "1200ms"
+        }
+      ],
+      "casts": [
+        {
+          "line": 96,
+          "spellSymbol": "SPELL_BIRTH"
+        },
+        {
+          "line": 176,
+          "spellSymbol": "SPELL_ARCANE_EXPLOSION"
+        },
+        {
+          "line": 180,
+          "spellSymbol": "SPELL_TRUE_FULFILLMENT"
+        },
+        {
+          "line": 189,
+          "spellSymbol": "SPELL_EARTH_SHOCK"
+        },
+        {
+          "line": 207,
+          "spellSymbol": "SPELL_INITIALIZE_IMAGE"
+        },
+        {
+          "line": 215,
+          "spellSymbol": "SPELL_SUMMON_IMAGES"
+        }
+      ],
+      "healthTriggers": [
+        {
+          "line": 86,
+          "source": "if (me->GetHealthPct() < 25.0f)"
+        },
+        {
+          "line": 88,
+          "source": "else if (me->GetHealthPct() < 50.0f)"
+        },
+        {
+          "line": 94,
+          "source": "creature->SetHealth(creature->GetMaxHealth() * (me->GetHealthPct() / 100.0f));"
+        },
+        {
+          "line": 212,
+          "source": "if (!me->IsSummon() && me->GetHealthPct() < _hpct)"
+        }
+      ]
+    },
+    {
+      "source": "src/server/scripts/Kalimdor/RuinsOfAhnQiraj/boss_buru.cpp",
+      "boss": "buru",
+      "mapId": 509,
+      "spells": [
+        {
+          "symbol": "SPELL_CREEPING_PLAGUE",
+          "spellId": 20512
+        },
+        {
+          "symbol": "SPELL_DISMEMBER",
+          "spellId": 96
+        },
+        {
+          "symbol": "SPELL_GATHERING_SPEED",
+          "spellId": 1834
+        },
+        {
+          "symbol": "SPELL_FULL_SPEED",
+          "spellId": 1557
+        },
+        {
+          "symbol": "SPELL_THORNS",
+          "spellId": 25640
+        },
+        {
+          "symbol": "SPELL_BURU_TRANSFORM",
+          "spellId": 24721
+        },
+        {
+          "symbol": "SPELL_SUMMON_HATCHLING",
+          "spellId": 1881
+        },
+        {
+          "symbol": "SPELL_EXPLODE",
+          "spellId": 19593
+        },
+        {
+          "symbol": "SPELL_EXPLODE_2",
+          "spellId": 5255
+        },
+        {
+          "symbol": "SPELL_BURU_EGG_TRIGGER",
+          "spellId": 26646
+        },
+        {
+          "symbol": "SPELL_CREATURE_SPECIAL",
+          "spellId": 7155
+        }
+      ],
+      "schedules": [
+        {
+          "line": 91,
+          "event": "EVENT_DISMEMBER",
+          "method": "ScheduleEvent",
+          "args": "5s"
+        },
+        {
+          "line": 92,
+          "event": "EVENT_GATHERING_SPEED",
+          "method": "ScheduleEvent",
+          "args": "2s"
+        },
+        {
+          "line": 120,
+          "event": "EVENT_GATHERING_SPEED",
+          "method": "ScheduleEvent",
+          "args": "2s"
+        },
+        {
+          "line": 147,
+          "event": "EVENT_CREEPING_PLAGUE",
+          "method": "ScheduleEvent",
+          "args": "2s"
+        },
+        {
+          "line": 165,
+          "event": "EVENT_DISMEMBER",
+          "method": "ScheduleEvent",
+          "args": "5s"
+        },
+        {
+          "line": 169,
+          "event": "EVENT_GATHERING_SPEED",
+          "method": "ScheduleEvent",
+          "args": "9s"
+        },
+        {
+          "line": 173,
+          "event": "EVENT_CREEPING_PLAGUE",
+          "method": "ScheduleEvent",
+          "args": "6s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 65,
+          "spellSymbol": "SPELL_FULL_SPEED"
+        },
+        {
+          "line": 86,
+          "spellSymbol": "SPELL_THORNS"
+        },
+        {
+          "line": 139,
+          "spellSymbol": "SPELL_FULL_SPEED"
+        },
+        {
+          "line": 148,
+          "spellSymbol": "SPELL_BURU_TRANSFORM"
+        },
+        {
+          "line": 164,
+          "spellSymbol": "SPELL_DISMEMBER"
+        },
+        {
+          "line": 168,
+          "spellSymbol": "SPELL_GATHERING_SPEED"
+        },
+        {
+          "line": 172,
+          "spellSymbol": "SPELL_CREEPING_PLAGUE"
+        },
+        {
+          "line": 223,
+          "spellSymbol": "SPELL_SUMMON_HATCHLING"
+        },
+        {
+          "line": 228,
+          "spellSymbol": "SPELL_EXPLODE"
+        },
+        {
+          "line": 229,
+          "spellSymbol": "SPELL_BURU_EGG_TRIGGER"
+        },
+        {
+          "line": 230,
+          "spellSymbol": "SPELL_CREATURE_SPECIAL"
+        }
+      ],
+      "healthTriggers": [
+        {
+          "line": 137,
+          "source": "if (me->HealthBelowPctDamaged(20, damage) && _phase == PHASE_EGG)"
+        }
+      ]
+    },
+    {
+      "source": "src/server/scripts/Kalimdor/RuinsOfAhnQiraj/boss_moam.cpp",
+      "boss": "moam",
+      "mapId": 509,
+      "spells": [
+        {
+          "symbol": "SPELL_TRAMPLE",
+          "spellId": 15550
+        },
+        {
+          "symbol": "SPELL_DRAIN_MANA_SERVERSIDE",
+          "spellId": 25676
+        },
+        {
+          "symbol": "SPELL_DRAIN_MANA",
+          "spellId": 25671
+        },
+        {
+          "symbol": "SPELL_ARCANE_ERUPTION",
+          "spellId": 25672
+        },
+        {
+          "symbol": "SPELL_SUMMON_MANA_FIENDS",
+          "spellId": 25684
+        },
+        {
+          "symbol": "SPELL_SUMMON_MANA_FIEND_1",
+          "spellId": 25681
+        },
+        {
+          "symbol": "SPELL_SUMMON_MANA_FIEND_2",
+          "spellId": 25682
+        },
+        {
+          "symbol": "SPELL_SUMMON_MANA_FIEND_3",
+          "spellId": 25683
+        },
+        {
+          "symbol": "SPELL_ENERGIZE",
+          "spellId": 25685
+        },
+        {
+          "symbol": "SPELL_LARGE_OBSIDIAN_CHUNK",
+          "spellId": 27630
+        }
+      ],
+      "schedules": [
+        {
+          "line": 76,
+          "event": "EVENT_STONE_PHASE",
+          "method": "ScheduleEvent",
+          "args": "90s"
+        },
+        {
+          "line": 77,
+          "event": "EVENT_SPELL_TRAMPLE",
+          "method": "ScheduleEvent",
+          "args": "9s"
+        },
+        {
+          "line": 78,
+          "event": "EVENT_SPELL_DRAIN_MANA",
+          "method": "ScheduleEvent",
+          "args": "3s"
+        },
+        {
+          "line": 91,
+          "event": "EVENT_STONE_PHASE_END",
+          "method": "RescheduleEvent",
+          "args": "1s"
+        },
+        {
+          "line": 107,
+          "event": "EVENT_STONE_PHASE_END",
+          "method": "RescheduleEvent",
+          "args": "1s"
+        },
+        {
+          "line": 123,
+          "event": "EVENT_STONE_PHASE_END",
+          "method": "ScheduleEvent",
+          "args": "90s"
+        },
+        {
+          "line": 127,
+          "event": "EVENT_SPELL_DRAIN_MANA",
+          "method": "ScheduleEvent",
+          "args": "2s, 6s"
+        },
+        {
+          "line": 128,
+          "event": "EVENT_STONE_PHASE",
+          "method": "ScheduleEvent",
+          "args": "90s"
+        },
+        {
+          "line": 132,
+          "event": "EVENT_SPELL_DRAIN_MANA",
+          "method": "ScheduleEvent",
+          "args": "2s, 6s"
+        },
+        {
+          "line": 136,
+          "event": "EVENT_SPELL_TRAMPLE",
+          "method": "ScheduleEvent",
+          "args": "15s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 84,
+          "spellSymbol": "SPELL_LARGE_OBSIDIAN_CHUNK"
+        },
+        {
+          "line": 111,
+          "spellSymbol": "SPELL_ARCANE_ERUPTION"
+        },
+        {
+          "line": 120,
+          "spellSymbol": "SPELL_SUMMON_MANA_FIENDS"
+        },
+        {
+          "line": 121,
+          "spellSymbol": "SPELL_ENERGIZE"
+        },
+        {
+          "line": 131,
+          "spellSymbol": "SPELL_DRAIN_MANA_SERVERSIDE"
+        },
+        {
+          "line": 135,
+          "spellSymbol": "SPELL_TRAMPLE"
+        },
+        {
+          "line": 169,
+          "spellSymbol": "SPELL_DRAIN_MANA"
+        }
+      ],
+      "healthTriggers": []
+    }
+  ],
+  "counts": {
+    "bosses": 5,
+    "spellIds": 51,
+    "scheduleSites": 46,
+    "castSites": 50,
+    "healthLines": 5
+  }
+}

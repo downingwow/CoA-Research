@@ -37,8 +37,13 @@ async function latestAddonDownload(repo) {
 
   const apiUrl = `https://api.github.com/repos/uncle-bone/${repo}/releases/latest`;
   const releaseResponse = await fetch(apiUrl, {
-    headers: { Accept: "application/vnd.github+json", "User-Agent": "BoneArchive-addon-downloads" },
-    cf: { cacheEverything: true, cacheTtl: 300 }
+    headers: {
+      Accept: "application/vnd.github+json",
+      "User-Agent": "BoneArchive-addon-downloads",
+      "Cache-Control": "no-cache"
+    },
+    // Release pointers must always resolve to the current published asset.
+    cf: { cacheEverything: true, cacheTtl: 0 }
   });
 
   if (releaseResponse.status === 404) {

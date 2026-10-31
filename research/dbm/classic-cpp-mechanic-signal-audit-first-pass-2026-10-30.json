@@ -1,0 +1,221 @@
+{
+  "schema": "coa-research.dbm-classic-cpp-mechanic-signal-audit.v1",
+  "date": "2026-10-30",
+  "scope": "Deadmines and shared CoA dungeon spell scripts; first C++ audit, not all Classic content",
+  "sourceRepository": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "interpretation": "Counts are code token occurrences, not unique encounter mechanics. Must inspect semantic context and test live casts.",
+  "files": [
+    {
+      "source": "src/server/coa/CoADungeonBossSpells.cpp",
+      "sourceLines": 505,
+      "signals": [
+        {
+          "kind": "spellEnum",
+          "count": 17,
+          "examples": [
+            "SPELL_AURA_PERIODIC_TRIGGER_SPELL",
+            "SPELL_SCHOOL_MASK_NORMAL",
+            "SPELL_AURA_DUMMY",
+            "SPELL_STATE_PREPARING",
+            "SPELL_MOTHERS_MILK_DEBUFF",
+            "SPELL_MOTHERS_MILK_BLOODSTREAM",
+            "SPELL_WEBPLOSION",
+            "SPELL_AURA_PERIODIC_DUMMY",
+            "SPELL_CAST_OK"
+          ]
+        },
+        {
+          "kind": "eventEnum",
+          "count": 0,
+          "examples": []
+        },
+        {
+          "kind": "castCall",
+          "count": 6,
+          "examples": [
+            "CastSpell(",
+            "CastCustomSpell("
+          ]
+        },
+        {
+          "kind": "scheduleCall",
+          "count": 0,
+          "examples": []
+        },
+        {
+          "kind": "healthGate",
+          "count": 0,
+          "examples": []
+        },
+        {
+          "kind": "summon",
+          "count": 0,
+          "examples": []
+        }
+      ],
+      "numberedEvidence": [
+        {
+          "line": 88,
+          "text": "SPELL_AURA_PERIODIC_TRIGGER_SPELL, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 90,
+          "text": "SPELL_AURA_PERIODIC_TRIGGER_SPELL);"
+        },
+        {
+          "line": 92,
+          "text": "SPELL_AURA_PERIODIC_TRIGGER_SPELL, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 203,
+          "text": "SPELL_AURA_PERIODIC_TRIGGER_SPELL, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 205,
+          "text": "SPELL_AURA_PERIODIC_TRIGGER_SPELL, AURA_EFFECT_HANDLE_REAL);"
+        },
+        {
+          "line": 222,
+          "text": "_owner->CastSpell(_owner, SpellDustTrail, true);"
+        },
+        {
+          "line": 233,
+          "text": "SpellNonMeleeDamage log(_owner, player, sSpellMgr->GetSpellInfo(SpellOverrunTrample), SPELL_SCHOOL_MASK_NORMAL);"
+        },
+        {
+          "line": 300,
+          "text": "caster->CastCustomSpell(sSpellMgr->GetSpellInfo(SpellRelease), values, target, TRIGGERED_FULL_MASK);"
+        },
+        {
+          "line": 305,
+          "text": "AfterEffectRemove += AuraEffectRemoveFn(spell_coa_divine_retribution::Release, EFFECT_2, SPELL_AURA_DUMMY,"
+        },
+        {
+          "line": 362,
+          "text": "if (info->Id != SpellBerserkerLeap || spell->IsTriggered() || spell->getState() != SPELL_STATE_PREPARING"
+        },
+        {
+          "line": 366,
+          "text": "caster->CastSpell(landing->GetPositionX(), landing->GetPositionY(), landing->GetPositionZ(),"
+        },
+        {
+          "line": 373,
+          "text": "SPELL_MOTHERS_MILK_DEBUFF = 2102217,"
+        },
+        {
+          "line": 374,
+          "text": "SPELL_MOTHERS_MILK_BLOODSTREAM = 2102216,"
+        },
+        {
+          "line": 375,
+          "text": "SPELL_WEBPLOSION = 2102218,"
+        },
+        {
+          "line": 385,
+          "text": "GetCaster()->CastSpell(target, SPELL_MOTHERS_MILK_DEBUFF, true);"
+        },
+        {
+          "line": 401,
+          "text": "target->CastSpell(target, SPELL_WEBPLOSION, true, nullptr, aurEff, GetCasterGUID());"
+        },
+        {
+          "line": 407,
+          "text": "GetTarget()->CastSpell(GetTarget(), SPELL_MOTHERS_MILK_BLOODSTREAM, true);"
+        },
+        {
+          "line": 412,
+          "text": "OnEffectPeriodic += AuraEffectPeriodicFn(spell_coa_mothers_milk_debuff::Webplosion, EFFECT_0, SPELL_AURA_PERIODIC_DUMMY);"
+        },
+        {
+          "line": 413,
+          "text": "AfterEffectRemove += AuraEffectRemoveFn(spell_coa_mothers_milk_debuff::Expired, EFFECT_0, SPELL_AURA_PERIODIC_DUMMY,"
+        },
+        {
+          "line": 461,
+          "text": "return SPELL_CAST_OK;"
+        }
+      ]
+    },
+    {
+      "source": "src/server/coa/AscensionDeadminesBosses.cpp",
+      "sourceLines": 263,
+      "signals": [
+        {
+          "kind": "spellEnum",
+          "count": 9,
+          "examples": [
+            "SPELL_BUSTER_CALL_CIRCLE",
+            "SPELL_BUSTER_CALL_CANNONBALL",
+            "SPELL_ASCENSION_POISONED_HARPOON",
+            "SPELL_BUZZING_SAW_BLADE"
+          ]
+        },
+        {
+          "kind": "eventEnum",
+          "count": 0,
+          "examples": []
+        },
+        {
+          "kind": "castCall",
+          "count": 4,
+          "examples": [
+            "CastSpell("
+          ]
+        },
+        {
+          "kind": "scheduleCall",
+          "count": 0,
+          "examples": []
+        },
+        {
+          "kind": "healthGate",
+          "count": 0,
+          "examples": []
+        },
+        {
+          "kind": "summon",
+          "count": 0,
+          "examples": []
+        }
+      ],
+      "numberedEvidence": [
+        {
+          "line": 22,
+          "text": "SPELL_BUSTER_CALL_CIRCLE = 2102591,"
+        },
+        {
+          "line": 23,
+          "text": "SPELL_BUSTER_CALL_CANNONBALL = 2102592,"
+        },
+        {
+          "line": 26,
+          "text": "SPELL_ASCENSION_POISONED_HARPOON = 2102585,"
+        },
+        {
+          "line": 27,
+          "text": "SPELL_BUZZING_SAW_BLADE = 2102564,"
+        },
+        {
+          "line": 102,
+          "text": "me->CastSpell(me, SPELL_BUZZING_SAW_BLADE, true);"
+        },
+        {
+          "line": 208,
+          "text": "me->CastSpell(_x, _y, _z, SPELL_BUSTER_CALL_CIRCLE, true);"
+        },
+        {
+          "line": 214,
+          "text": "me->CastSpell(_x, _y, _z, SPELL_BUSTER_CALL_CANNONBALL, true);"
+        },
+        {
+          "line": 239,
+          "text": "return ValidateSpellInfo({ SPELL_ASCENSION_POISONED_HARPOON });"
+        },
+        {
+          "line": 247,
+          "text": "GetCaster()->CastSpell(target, SPELL_ASCENSION_POISONED_HARPOON, true);"
+        }
+      ]
+    }
+  ]
+}

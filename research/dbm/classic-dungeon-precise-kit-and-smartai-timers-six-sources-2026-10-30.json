@@ -1,0 +1,2728 @@
+{
+  "schema": "coa-research.dbm-dungeon-exact-sql-kit-fields.v1",
+  "date": "2026-10-30",
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "status": "Pending upstream SQL, not live CR verification",
+  "semantics": "coa_dungeon_boss_kit columns are read from explicit INSERT header; SmartAI rows are separately parsed by the explicit INSERT header. eventType 0 timer, 2 health, 4 pull in kit source comments; target 1 self, 2 victim, 5 random. Difficulty value requires runtime validation.",
+  "cautions": [
+    "Do not conflate initial/repeat values with observed in-game timers",
+    "Some SmartAI actions are summons, dialogue or state changes rather than casts",
+    "Source rows can be overridden by later migrations",
+    "Check base_points damage corrections and cast_flags before enabling warnings"
+  ],
+  "totals": {
+    "kit": 64,
+    "smart": 64,
+    "distinctKitNpcs": 22
+  },
+  "files": [
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "kit": [
+        {
+          "line": 17,
+          "npcId": 9156,
+          "rowId": 0,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Ambassador Flamelash - Fierce Blow (log)"
+        },
+        {
+          "line": 18,
+          "npcId": 9039,
+          "rowId": 0,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            7000,
+            9000
+          ],
+          "repeatMs": [
+            7000,
+            8000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Doom'rel - Fierce Blow (log)"
+        },
+        {
+          "line": 19,
+          "npcId": 9039,
+          "rowId": 1,
+          "spellId": 505347,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            5000,
+            8000
+          ],
+          "repeatMs": [
+            20000,
+            22000
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Doom'rel - Mystic Thunder (Exiles)"
+        },
+        {
+          "line": 20,
+          "npcId": 9019,
+          "rowId": 0,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Emperor Dagran Thaurissan - Fierce Blow (log)"
+        },
+        {
+          "line": 21,
+          "npcId": 9019,
+          "rowId": 1,
+          "spellId": 92603,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            10000,
+            12000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "healthPct": 0,
+          "target": 5,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Emperor Dagran Thaurissan - Dark Iron Hammer (log)"
+        },
+        {
+          "line": 22,
+          "npcId": 9019,
+          "rowId": 2,
+          "spellId": 92606,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            15000,
+            17000
+          ],
+          "repeatMs": [
+            15000,
+            17000
+          ],
+          "healthPct": 0,
+          "target": 5,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Emperor Dagran Thaurissan - Fiery Charge (log)"
+        },
+        {
+          "line": 23,
+          "npcId": 9019,
+          "rowId": 3,
+          "spellId": 381251,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            8000,
+            12000
+          ],
+          "repeatMs": [
+            18000,
+            22000
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Emperor Dagran Thaurissan - Frost Nova (Exiles)"
+        },
+        {
+          "line": 24,
+          "npcId": 9019,
+          "rowId": 4,
+          "spellId": 815637,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            5000,
+            8000
+          ],
+          "repeatMs": [
+            20000,
+            22000
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Emperor Dagran Thaurissan - Chilled Armor (Exiles)"
+        },
+        {
+          "line": 25,
+          "npcId": 9033,
+          "rowId": 0,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            7449,
+            9450
+          ],
+          "repeatMs": [
+            10000,
+            11000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "General Angerforge - Fierce Blow (log)"
+        },
+        {
+          "line": 26,
+          "npcId": 9037,
+          "rowId": 0,
+          "spellId": 13737,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            2050,
+            4050
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Gloom'rel - Mortal Strike (log)"
+        },
+        {
+          "line": 27,
+          "npcId": 9037,
+          "rowId": 1,
+          "spellId": 15284,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            1549,
+            2050
+          ],
+          "repeatMs": [
+            4300,
+            4800
+          ],
+          "healthPct": 0,
+          "target": 5,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Gloom'rel - Cleave (log)"
+        },
+        {
+          "line": 28,
+          "npcId": 9037,
+          "rowId": 2,
+          "spellId": 13847,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            3750,
+            5750
+          ],
+          "repeatMs": [
+            15000,
+            17000
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Gloom'rel - Recklessness (log)"
+        },
+        {
+          "line": 29,
+          "npcId": 9037,
+          "rowId": 3,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            7300,
+            9300
+          ],
+          "repeatMs": [
+            15000,
+            17000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Gloom'rel - Fierce Blow (log)"
+        },
+        {
+          "line": 30,
+          "npcId": 9018,
+          "rowId": 0,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            9000,
+            11000
+          ],
+          "repeatMs": [
+            9000,
+            10000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "High Interrogator Gerstahn - Fierce Blow (log)"
+        },
+        {
+          "line": 31,
+          "npcId": 9018,
+          "rowId": 1,
+          "spellId": 14033,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            3000,
+            4000
+          ],
+          "repeatMs": [
+            4000,
+            4500
+          ],
+          "healthPct": 0,
+          "target": 5,
+          "castFlags": 0,
+          "basePoints": 0,
+          "description": "High Interrogator Gerstahn - Mana Burn (manual)"
+        },
+        {
+          "line": 32,
+          "npcId": 9938,
+          "rowId": 0,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Magmus - Fierce Blow (log)"
+        },
+        {
+          "line": 33,
+          "npcId": 9502,
+          "rowId": 0,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Phalanx - Fierce Blow (log)"
+        },
+        {
+          "line": 34,
+          "npcId": 9502,
+          "rowId": 1,
+          "spellId": 17203,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            15000,
+            17000
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 0,
+          "basePoints": 0,
+          "description": "Phalanx - Fireball Volley (manual)"
+        },
+        {
+          "line": 35,
+          "npcId": 8929,
+          "rowId": 0,
+          "spellId": 10894,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            1300,
+            3300
+          ],
+          "repeatMs": [
+            7000,
+            8000
+          ],
+          "healthPct": 0,
+          "target": 5,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Princess Moira Bronzebeard - Shadow Word: Pain (log)"
+        },
+        {
+          "line": 36,
+          "npcId": 8929,
+          "rowId": 1,
+          "spellId": 10934,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            4500,
+            6500
+          ],
+          "repeatMs": [
+            7000,
+            8000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 0,
+          "basePoints": 0,
+          "description": "Princess Moira Bronzebeard - Smite (log)"
+        },
+        {
+          "line": 37,
+          "npcId": 8929,
+          "rowId": 2,
+          "spellId": 10917,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            22800,
+            24800
+          ],
+          "repeatMs": [
+            25000,
+            27000
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 0,
+          "basePoints": 0,
+          "description": "Princess Moira Bronzebeard - Flash Heal (log)"
+        },
+        {
+          "line": 38,
+          "npcId": 8929,
+          "rowId": 3,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Princess Moira Bronzebeard - Fierce Blow (log)"
+        },
+        {
+          "line": 39,
+          "npcId": 10363,
+          "rowId": 0,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            8500,
+            10500
+          ],
+          "repeatMs": [
+            9000,
+            10000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "General Drakkisath - Fierce Blow (log)"
+        },
+        {
+          "line": 40,
+          "npcId": 10363,
+          "rowId": 1,
+          "spellId": 2102619,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            14600,
+            16600
+          ],
+          "repeatMs": [
+            15000,
+            17000
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "General Drakkisath - Thunder Clap (log)"
+        },
+        {
+          "line": 41,
+          "npcId": 10363,
+          "rowId": 2,
+          "spellId": 2102203,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            22000,
+            24000
+          ],
+          "repeatMs": [
+            25000,
+            27000
+          ],
+          "healthPct": 0,
+          "target": 5,
+          "castFlags": 0,
+          "basePoints": 0,
+          "description": "General Drakkisath - Heatwave (log)"
+        },
+        {
+          "line": 42,
+          "npcId": 10363,
+          "rowId": 3,
+          "spellId": 2102552,
+          "eventType": 2,
+          "difficulty": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "healthPct": 30,
+          "target": 1,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "General Drakkisath - Enrage (Exiles)"
+        },
+        {
+          "line": 43,
+          "npcId": 10220,
+          "rowId": 0,
+          "spellId": 2100428,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            4000,
+            6000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Halycon - Furious Howl (log)"
+        },
+        {
+          "line": 44,
+          "npcId": 10220,
+          "rowId": 1,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            7000,
+            9000
+          ],
+          "repeatMs": [
+            7000,
+            8000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Halycon - Fierce Blow (log)"
+        },
+        {
+          "line": 45,
+          "npcId": 9196,
+          "rowId": 0,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            7000,
+            9000
+          ],
+          "repeatMs": [
+            7000,
+            8000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Highlord Omokk - Fierce Blow (log)"
+        },
+        {
+          "line": 46,
+          "npcId": 9196,
+          "rowId": 1,
+          "spellId": 2100148,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            13600,
+            15600
+          ],
+          "repeatMs": [
+            15000,
+            17000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Highlord Omokk - Crush Armor (log)"
+        },
+        {
+          "line": 47,
+          "npcId": 9568,
+          "rowId": 0,
+          "spellId": 2100345,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            10000,
+            12000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Overlord Wyrmthalak - Pierce Armor (log)"
+        },
+        {
+          "line": 48,
+          "npcId": 9568,
+          "rowId": 1,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            7000,
+            9000
+          ],
+          "repeatMs": [
+            7000,
+            8000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Overlord Wyrmthalak - Fierce Blow (log)"
+        },
+        {
+          "line": 49,
+          "npcId": 9816,
+          "rowId": 0,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Pyroguard Emberseer - Fierce Blow (log)"
+        },
+        {
+          "line": 50,
+          "npcId": 9816,
+          "rowId": 1,
+          "spellId": 2102189,
+          "eventType": 4,
+          "difficulty": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 34,
+          "basePoints": 0,
+          "description": "Pyroguard Emberseer - Gathering Heat (Exiles)"
+        },
+        {
+          "line": 51,
+          "npcId": 9816,
+          "rowId": 2,
+          "spellId": 2102825,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            8000,
+            12000
+          ],
+          "repeatMs": [
+            12000,
+            16000
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Pyroguard Emberseer - Immolation (Exiles)"
+        },
+        {
+          "line": 52,
+          "npcId": 9736,
+          "rowId": 0,
+          "spellId": 2102850,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            1000,
+            3000
+          ],
+          "repeatMs": [
+            20000,
+            22000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 0,
+          "basePoints": 0,
+          "description": "Quartermaster Zigris - Auto Shot (log)"
+        },
+        {
+          "line": 53,
+          "npcId": 9736,
+          "rowId": 1,
+          "spellId": 2100255,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            2600,
+            4600
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Quartermaster Zigris - Throw Net (log)"
+        },
+        {
+          "line": 54,
+          "npcId": 9736,
+          "rowId": 2,
+          "spellId": 2102851,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            5000,
+            7000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 0,
+          "basePoints": 0,
+          "description": "Quartermaster Zigris - Throw Proximity Mine (log)"
+        },
+        {
+          "line": 55,
+          "npcId": 9736,
+          "rowId": 3,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            7000,
+            9000
+          ],
+          "repeatMs": [
+            7000,
+            8000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Quartermaster Zigris - Fierce Blow (log)"
+        },
+        {
+          "line": 56,
+          "npcId": 10430,
+          "rowId": 0,
+          "spellId": 2102192,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            1000,
+            3000
+          ],
+          "repeatMs": [
+            20000,
+            22000
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 0,
+          "basePoints": 0,
+          "description": "The Beast - Flame Breath (log)"
+        },
+        {
+          "line": 57,
+          "npcId": 10430,
+          "rowId": 1,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            9000,
+            11000
+          ],
+          "repeatMs": [
+            9000,
+            10000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "The Beast - Fierce Blow (log)"
+        },
+        {
+          "line": 58,
+          "npcId": 10430,
+          "rowId": 2,
+          "spellId": 2102159,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            29000,
+            31000
+          ],
+          "repeatMs": [
+            35000,
+            37000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 0,
+          "basePoints": 0,
+          "description": "The Beast - Overrun (log)"
+        },
+        {
+          "line": 59,
+          "npcId": 10430,
+          "rowId": 3,
+          "spellId": 2100205,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            8000,
+            12000
+          ],
+          "repeatMs": [
+            10000,
+            14000
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 0,
+          "basePoints": 0,
+          "description": "The Beast - Blast Wave (Exiles)"
+        },
+        {
+          "line": 60,
+          "npcId": 10430,
+          "rowId": 4,
+          "spellId": 2100439,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            5000,
+            8000
+          ],
+          "repeatMs": [
+            20000,
+            22000
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "The Beast - Bellowing Roar (Exiles)"
+        },
+        {
+          "line": 61,
+          "npcId": 9237,
+          "rowId": 0,
+          "spellId": 2100465,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            3550,
+            5550
+          ],
+          "repeatMs": [
+            15000,
+            17000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "War Master Voone - Counter Kick (log)"
+        },
+        {
+          "line": 62,
+          "npcId": 9237,
+          "rowId": 1,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            7449,
+            9450
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "War Master Voone - Fierce Blow (log)"
+        },
+        {
+          "line": 63,
+          "npcId": 9237,
+          "rowId": 2,
+          "spellId": 15284,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "War Master Voone - Cleave (manual)"
+        },
+        {
+          "line": 64,
+          "npcId": 9237,
+          "rowId": 3,
+          "spellId": 15615,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            10000,
+            12000
+          ],
+          "repeatMs": [
+            16000,
+            18000
+          ],
+          "healthPct": 0,
+          "target": 5,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "War Master Voone - Pummel (manual)"
+        },
+        {
+          "line": 65,
+          "npcId": 9237,
+          "rowId": 4,
+          "spellId": 10966,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            12000,
+            14000
+          ],
+          "repeatMs": [
+            14000,
+            16000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "War Master Voone - Uppercut (manual)"
+        },
+        {
+          "line": 66,
+          "npcId": 646,
+          "rowId": 0,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            7550,
+            9550
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Mr. Smite - Fierce Blow (log)"
+        },
+        {
+          "line": 67,
+          "npcId": 646,
+          "rowId": 1,
+          "spellId": 2102553,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            15000,
+            17000
+          ],
+          "repeatMs": [
+            15000,
+            17000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Mr. Smite - Stunning Strike (log)"
+        },
+        {
+          "line": 68,
+          "npcId": 646,
+          "rowId": 2,
+          "spellId": 2102580,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            2600,
+            4600
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Mr. Smite - Rupture (log)"
+        },
+        {
+          "line": 69,
+          "npcId": 646,
+          "rowId": 3,
+          "spellId": 2102576,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            5000,
+            8000
+          ],
+          "repeatMs": [
+            65000,
+            67000
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Mr. Smite - Smite Rush (Exiles)"
+        },
+        {
+          "line": 70,
+          "npcId": 646,
+          "rowId": 4,
+          "spellId": 2102577,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            5000,
+            8000
+          ],
+          "repeatMs": [
+            20000,
+            22000
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Mr. Smite - Retaliation (Exiles)"
+        },
+        {
+          "line": 71,
+          "npcId": 1853,
+          "rowId": 0,
+          "spellId": 2100397,
+          "eventType": 2,
+          "difficulty": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "healthPct": 52,
+          "target": 1,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Darkmaster Gandling - Rise! (log)"
+        },
+        {
+          "line": 72,
+          "npcId": 1853,
+          "rowId": 1,
+          "spellId": 2100398,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            1500,
+            2000
+          ],
+          "repeatMs": [
+            3000,
+            3500
+          ],
+          "healthPct": 0,
+          "target": 1,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Darkmaster Gandling - Rise! (log)"
+        },
+        {
+          "line": 73,
+          "npcId": 1853,
+          "rowId": 2,
+          "spellId": 2100389,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            1000,
+            1500
+          ],
+          "repeatMs": [
+            2900,
+            3400
+          ],
+          "healthPct": 0,
+          "target": 5,
+          "castFlags": 0,
+          "basePoints": 0,
+          "description": "Darkmaster Gandling - Incinerate (log)"
+        },
+        {
+          "line": 74,
+          "npcId": 1853,
+          "rowId": 3,
+          "spellId": 2100393,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            10000,
+            12000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "healthPct": 0,
+          "target": 5,
+          "castFlags": 0,
+          "basePoints": 0,
+          "description": "Darkmaster Gandling - Immolate (log)"
+        },
+        {
+          "line": 75,
+          "npcId": 10506,
+          "rowId": 0,
+          "spellId": 2100034,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            3100,
+            3600
+          ],
+          "repeatMs": [
+            3100,
+            3600
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 0,
+          "basePoints": 0,
+          "description": "Kirtonos the Herald - Shadow Bolt (log)"
+        },
+        {
+          "line": 76,
+          "npcId": 10506,
+          "rowId": 1,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Kirtonos the Herald - Fierce Blow (log)"
+        },
+        {
+          "line": 77,
+          "npcId": 10506,
+          "rowId": 2,
+          "spellId": 2100004,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            10000,
+            12000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "healthPct": 0,
+          "target": 5,
+          "castFlags": 2,
+          "basePoints": 0,
+          "description": "Kirtonos the Herald - Cleave (log)"
+        },
+        {
+          "line": 78,
+          "npcId": 10436,
+          "rowId": 0,
+          "spellId": 816867,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            10000,
+            12000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "healthPct": 0,
+          "target": 5,
+          "castFlags": 0,
+          "basePoints": 0,
+          "description": "Baroness Anastari - Curse of the Baroness (log)"
+        },
+        {
+          "line": 79,
+          "npcId": 10436,
+          "rowId": 1,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Baroness Anastari - Fierce Blow (log)"
+        },
+        {
+          "line": 80,
+          "npcId": 7604,
+          "rowId": 0,
+          "spellId": 975011,
+          "eventType": 0,
+          "difficulty": 0,
+          "initialMs": [
+            5800,
+            7800
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "healthPct": 0,
+          "target": 2,
+          "castFlags": 2,
+          "basePoints": 200,
+          "description": "Sergeant Bly - Fierce Blow (log)"
+        }
+      ],
+      "smart": [],
+      "other": [
+        {
+          "line": 1,
+          "text": "-- Ascension boss kits for dungeon bosses with a C++ script (CoADungeonBossKit.cpp runs them beside the script on"
+        },
+        {
+          "line": 2,
+          "text": "-- Heroic/Mythic). Generated by dungeon-recherche/mechanik_sql.py: log kit plus every spell Exiles assigns to the boss"
+        },
+        {
+          "line": 5,
+          "text": "CREATE TABLE IF NOT EXISTS `coa_dungeon_boss_kit` ("
+        },
+        {
+          "line": 6,
+          "text": "  `entry` int unsigned NOT NULL, `id` int unsigned NOT NULL, `spell` int unsigned NOT NULL,"
+        },
+        {
+          "line": 15,
+          "text": "DELETE FROM `coa_dungeon_boss_kit`;"
+        },
+        {
+          "line": 16,
+          "text": "INSERT INTO `coa_dungeon_boss_kit` (`entry`, `id`, `spell`, `event`, `difficulty`, `initial_min`, `initial_max`, `repeat_min`, `repeat_max`, `health_pct`, `target`, `cast_flags`, `base_points`, `comment`) VALUES"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "kit": [],
+      "smart": [
+        {
+          "line": 7,
+          "npcId": 639,
+          "eventType": 1,
+          "eventPhaseMask": 0,
+          "eventFlags": 257,
+          "initialMs": [
+            1000,
+            1000
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 674,
+          "comment": "Edwin VanCleef - Out of Combat - Cast 'Dual Wield' (No Repeat)"
+        },
+        {
+          "line": 8,
+          "npcId": 639,
+          "eventType": 4,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 1,
+          "actionSpellOrEntry": 0,
+          "comment": "Edwin VanCleef - On Aggro - Say Line 0"
+        },
+        {
+          "line": 9,
+          "npcId": 639,
+          "eventType": 2,
+          "eventPhaseMask": 0,
+          "eventFlags": 1,
+          "initialMs": [
+            34,
+            66
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 1,
+          "actionSpellOrEntry": 1,
+          "comment": "Edwin VanCleef - Between 34-66% Health - Say Line 1 (No Repeat)"
+        },
+        {
+          "line": 10,
+          "npcId": 639,
+          "eventType": 2,
+          "eventPhaseMask": 0,
+          "eventFlags": 1,
+          "initialMs": [
+            0,
+            50
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 5200,
+          "comment": "Edwin VanCleef - Between 0-50% Health - Cast 'VanCleef`s Allies' (No Repeat)"
+        },
+        {
+          "line": 11,
+          "npcId": 639,
+          "eventType": 61,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 1,
+          "actionSpellOrEntry": 2,
+          "comment": "Edwin VanCleef - Between 0-50% Health - Say Line 2 (No Repeat)"
+        },
+        {
+          "line": 12,
+          "npcId": 639,
+          "eventType": 2,
+          "eventPhaseMask": 0,
+          "eventFlags": 1,
+          "initialMs": [
+            0,
+            33
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 1,
+          "actionSpellOrEntry": 3,
+          "comment": "Edwin VanCleef - Between 0-33% Health - Say Line 3 (No Repeat)"
+        },
+        {
+          "line": 13,
+          "npcId": 639,
+          "eventType": 5,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 1,
+          "actionSpellOrEntry": 4,
+          "comment": "Edwin VanCleef - On Killed Unit - Say Line 4"
+        },
+        {
+          "line": 14,
+          "npcId": 639,
+          "eventType": 6,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 1,
+          "actionSpellOrEntry": 5,
+          "comment": "Edwin VanCleef - On Just Died - Say Line 5"
+        },
+        {
+          "line": 15,
+          "npcId": 639,
+          "eventType": 61,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 12,
+          "actionSpellOrEntry": 180238,
+          "comment": "Edwin VanCleef - Between 34-66% Health - Summon Buster Call Marker"
+        },
+        {
+          "line": 16,
+          "npcId": 639,
+          "eventType": 61,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 12,
+          "actionSpellOrEntry": 180238,
+          "comment": "Edwin VanCleef - Between 34-66% Health - Summon Buster Call Marker"
+        },
+        {
+          "line": 17,
+          "npcId": 639,
+          "eventType": 61,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 12,
+          "actionSpellOrEntry": 180238,
+          "comment": "Edwin VanCleef - Between 34-66% Health - Summon Buster Call Marker"
+        },
+        {
+          "line": 18,
+          "npcId": 639,
+          "eventType": 61,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 12,
+          "actionSpellOrEntry": 180238,
+          "comment": "Edwin VanCleef - Between 0-33% Health - Summon Buster Call Marker"
+        },
+        {
+          "line": 19,
+          "npcId": 639,
+          "eventType": 61,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 12,
+          "actionSpellOrEntry": 180238,
+          "comment": "Edwin VanCleef - Between 0-33% Health - Summon Buster Call Marker"
+        },
+        {
+          "line": 20,
+          "npcId": 639,
+          "eventType": 61,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 12,
+          "actionSpellOrEntry": 180238,
+          "comment": "Edwin VanCleef - Between 0-33% Health - Summon Buster Call Marker"
+        },
+        {
+          "line": 23,
+          "npcId": 642,
+          "eventType": 6,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 5141,
+          "comment": "Sneed's Shredder - On Just Died - Cast Eject Sneed"
+        },
+        {
+          "line": 24,
+          "npcId": 642,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            8400,
+            8400
+          ],
+          "repeatMs": [
+            7800,
+            7800
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 975011,
+          "comment": "Sneed's Shredder - In Combat - Cast Fierce Blow"
+        },
+        {
+          "line": 25,
+          "npcId": 642,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            12000,
+            15000
+          ],
+          "repeatMs": [
+            20000,
+            25000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 2102559,
+          "comment": "Sneed's Shredder - In Combat - Cast Bouncing Saw Blade"
+        },
+        {
+          "line": 26,
+          "npcId": 642,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            5000,
+            8000
+          ],
+          "repeatMs": [
+            15000,
+            20000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 2102569,
+          "comment": "Sneed's Shredder - In Combat - Cast Throw Buzzing Saw Blade"
+        },
+        {
+          "line": 29,
+          "npcId": 643,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            1000,
+            7000
+          ],
+          "repeatMs": [
+            20000,
+            25000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 6713,
+          "comment": "Sneed - In Combat - Cast Disarm"
+        },
+        {
+          "line": 30,
+          "npcId": 643,
+          "eventType": 6,
+          "eventPhaseMask": 0,
+          "eventFlags": 512,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 9,
+          "actionSpellOrEntry": 0,
+          "comment": "Sneed - Open Door on Death"
+        },
+        {
+          "line": 31,
+          "npcId": 643,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            8400,
+            8400
+          ],
+          "repeatMs": [
+            7800,
+            7800
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 975011,
+          "comment": "Sneed - In Combat - Cast Fierce Blow"
+        },
+        {
+          "line": 34,
+          "npcId": 644,
+          "eventType": 4,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 1,
+          "actionSpellOrEntry": 0,
+          "comment": "Rhahk'Zor - On Aggro - Say Line 0"
+        },
+        {
+          "line": 35,
+          "npcId": 644,
+          "eventType": 6,
+          "eventPhaseMask": 0,
+          "eventFlags": 512,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 9,
+          "actionSpellOrEntry": 0,
+          "comment": "Rhahk'Zor - On Just Died - Activate Gameobject"
+        },
+        {
+          "line": 36,
+          "npcId": 644,
+          "eventType": 61,
+          "eventPhaseMask": 0,
+          "eventFlags": 512,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 34,
+          "actionSpellOrEntry": 0,
+          "comment": "Rhahk'Zor - On Just Died - Set Instance Data 0 to 3"
+        },
+        {
+          "line": 37,
+          "npcId": 644,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            8400,
+            8400
+          ],
+          "repeatMs": [
+            7800,
+            7800
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 975011,
+          "comment": "Rhahk'Zor - In Combat - Cast Fierce Blow"
+        },
+        {
+          "line": 38,
+          "npcId": 644,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            12000,
+            16000
+          ],
+          "repeatMs": [
+            15000,
+            20000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 2102553,
+          "comment": "Rhahk'Zor - In Combat - Cast Stunning Strike"
+        },
+        {
+          "line": 39,
+          "npcId": 644,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            15000,
+            20000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 2102554,
+          "comment": "Rhahk'Zor - In Combat - Cast Bladestorm"
+        },
+        {
+          "line": 42,
+          "npcId": 645,
+          "eventType": 0,
+          "eventPhaseMask": 2,
+          "eventFlags": 0,
+          "initialMs": [
+            20000,
+            25000
+          ],
+          "repeatMs": [
+            30000,
+            40000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 2102590,
+          "comment": "Cookie - In Combat - Cast Cookie's Cooking"
+        },
+        {
+          "line": 43,
+          "npcId": 645,
+          "eventType": 4,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 21,
+          "actionSpellOrEntry": 0,
+          "comment": "Cookie - On Aggro - Stop Combat Movement"
+        },
+        {
+          "line": 44,
+          "npcId": 645,
+          "eventType": 61,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 97,
+          "actionSpellOrEntry": 30,
+          "comment": "Cookie - On Aggro - Jump Into Cauldron"
+        },
+        {
+          "line": 45,
+          "npcId": 645,
+          "eventType": 34,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            16,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 22,
+          "actionSpellOrEntry": 2,
+          "comment": "Cookie - Landed In Cauldron - Set Phase 2"
+        },
+        {
+          "line": 46,
+          "npcId": 645,
+          "eventType": 61,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 103,
+          "actionSpellOrEntry": 1,
+          "comment": "Cookie - Landed In Cauldron - Root"
+        },
+        {
+          "line": 47,
+          "npcId": 645,
+          "eventType": 7,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 22,
+          "actionSpellOrEntry": 0,
+          "comment": "Cookie - On Evade - Set Phase 0"
+        },
+        {
+          "line": 48,
+          "npcId": 645,
+          "eventType": 61,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 21,
+          "actionSpellOrEntry": 1,
+          "comment": "Cookie - On Evade - Allow Combat Movement"
+        },
+        {
+          "line": 49,
+          "npcId": 645,
+          "eventType": 61,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 103,
+          "actionSpellOrEntry": 0,
+          "comment": "Cookie - On Evade - Unroot"
+        },
+        {
+          "line": 50,
+          "npcId": 645,
+          "eventType": 0,
+          "eventPhaseMask": 2,
+          "eventFlags": 0,
+          "initialMs": [
+            1500,
+            2500
+          ],
+          "repeatMs": [
+            1600,
+            1700
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 2102589,
+          "comment": "Cookie - In Cauldron - Cast Throw Food"
+        },
+        {
+          "line": 51,
+          "npcId": 645,
+          "eventType": 0,
+          "eventPhaseMask": 2,
+          "eventFlags": 0,
+          "initialMs": [
+            8000,
+            12000
+          ],
+          "repeatMs": [
+            12000,
+            18000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 2102527,
+          "comment": "Cookie - In Cauldron - Cast Throw Poison Vial"
+        },
+        {
+          "line": 54,
+          "npcId": 647,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            1000,
+            7000
+          ],
+          "repeatMs": [
+            10000,
+            15000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 40505,
+          "comment": "Captain Greenskin - In Combat - Cast Cleave"
+        },
+        {
+          "line": 55,
+          "npcId": 647,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            10000,
+            12000
+          ],
+          "repeatMs": [
+            25000,
+            35000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 5208,
+          "comment": "Captain Greenskin - In Combat - Cast Poisoned Harpoon"
+        },
+        {
+          "line": 56,
+          "npcId": 647,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            8400,
+            8400
+          ],
+          "repeatMs": [
+            7800,
+            7800
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 975011,
+          "comment": "Captain Greenskin - In Combat - Cast Fierce Blow"
+        },
+        {
+          "line": 57,
+          "npcId": 647,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            15000,
+            20000
+          ],
+          "repeatMs": [
+            20000,
+            25000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 2101111,
+          "comment": "Captain Greenskin - In Combat - Cast Frost Nova"
+        },
+        {
+          "line": 60,
+          "npcId": 1763,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            1000,
+            6000
+          ],
+          "repeatMs": [
+            15000,
+            25000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 5213,
+          "comment": "Gilnid - In Combat - Cast Molten Metal"
+        },
+        {
+          "line": 61,
+          "npcId": 1763,
+          "eventType": 1,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            120000,
+            120000
+          ],
+          "repeatMs": [
+            120000,
+            120000
+          ],
+          "actionType": 1,
+          "actionSpellOrEntry": 0,
+          "comment": "Gilnid - Out of Combat - Say Line 0"
+        },
+        {
+          "line": 62,
+          "npcId": 1763,
+          "eventType": 6,
+          "eventPhaseMask": 0,
+          "eventFlags": 512,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 9,
+          "actionSpellOrEntry": 0,
+          "comment": "Gilnid - On Just Died - Activate Gameobject"
+        },
+        {
+          "line": 63,
+          "npcId": 1763,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            8400,
+            8400
+          ],
+          "repeatMs": [
+            7800,
+            7800
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 975011,
+          "comment": "Gilnid - In Combat - Cast Fierce Blow"
+        },
+        {
+          "line": 64,
+          "npcId": 1763,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            10000,
+            14000
+          ],
+          "repeatMs": [
+            18000,
+            24000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 2102571,
+          "comment": "Gilnid - In Combat - Cast Melt Ore"
+        },
+        {
+          "line": 67,
+          "npcId": 10509,
+          "eventType": 37,
+          "eventPhaseMask": 0,
+          "eventFlags": 514,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 41,
+          "actionSpellOrEntry": 500,
+          "comment": "On AI initialize - None: Despawn in 0.5 s"
+        },
+        {
+          "line": 68,
+          "npcId": 10509,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            5000,
+            7000
+          ],
+          "repeatMs": [
+            4000,
+            6000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 14516,
+          "comment": "Every 4 - 6 seconds (5 - 7s initially)  - Self: Cast spell Strike (14516) on Victim"
+        },
+        {
+          "line": 69,
+          "npcId": 10509,
+          "eventType": 105,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            10000,
+            10000
+          ],
+          "repeatMs": [
+            10000,
+            10000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 11972,
+          "comment": "Every 10 seconds  - Self: Cast spell Shield Bash (11972) on Victim"
+        },
+        {
+          "line": 70,
+          "npcId": 10509,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            10000,
+            10000
+          ],
+          "repeatMs": [
+            5000,
+            15000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 15749,
+          "comment": "Every 5 - 15 seconds (10 - 10s initially)  - Self: Cast spell Shield Charge (15749) on Random hostile"
+        },
+        {
+          "line": 71,
+          "npcId": 10509,
+          "eventType": 4,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            0,
+            0
+          ],
+          "repeatMs": [
+            0,
+            0
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 2102741,
+          "comment": "Jed Runewatcher - On Aggro - Cast 'Defensive Stance'"
+        },
+        {
+          "line": 72,
+          "npcId": 10509,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            8000,
+            12000
+          ],
+          "repeatMs": [
+            15000,
+            20000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 2102840,
+          "comment": "Jed Runewatcher - In Combat - Cast 'Berserker Charge' on Random hostile"
+        },
+        {
+          "line": 73,
+          "npcId": 10509,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            7700,
+            9700
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 975011,
+          "comment": "Jed Runewatcher - In Combat - Cast 'Fierce Blow' on Victim"
+        },
+        {
+          "line": 76,
+          "npcId": 10899,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            5000,
+            7000
+          ],
+          "repeatMs": [
+            4000,
+            6000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 15580,
+          "comment": "Every 4 - 6 seconds (5 - 7s initially)  - Self: Cast spell Strike (15580) on Victim"
+        },
+        {
+          "line": 77,
+          "npcId": 10899,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            5000,
+            10000
+          ],
+          "repeatMs": [
+            20000,
+            20000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 16172,
+          "comment": "Every 20 - 20 seconds (5 - 10s initially)  - Self: Cast spell Head Crack (16172) on Victim"
+        },
+        {
+          "line": 78,
+          "npcId": 10899,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            10000,
+            10000
+          ],
+          "repeatMs": [
+            10000,
+            10000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 6253,
+          "comment": "Every 10 seconds  - Self: Cast spell Backhand (6253) on Victim"
+        },
+        {
+          "line": 79,
+          "npcId": 10899,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            12000,
+            16000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 2102553,
+          "comment": "Goraluk Anvilcrack - In Combat - Cast 'Stunning Strike' on Victim"
+        },
+        {
+          "line": 80,
+          "npcId": 10899,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            6000,
+            6000
+          ],
+          "repeatMs": [
+            25000,
+            30000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 2102138,
+          "comment": "Goraluk Anvilcrack - In Combat - Cast 'Enchant Armor - Protection V'"
+        },
+        {
+          "line": 81,
+          "npcId": 10899,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            16000,
+            16000
+          ],
+          "repeatMs": [
+            25000,
+            30000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 2102137,
+          "comment": "Goraluk Anvilcrack - In Combat - Cast 'Enchant Pickaxe - Efficieny V'"
+        },
+        {
+          "line": 82,
+          "npcId": 10899,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            5000,
+            7000
+          ],
+          "repeatMs": [
+            6000,
+            8000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 975011,
+          "comment": "Goraluk Anvilcrack - In Combat - Cast 'Fierce Blow' on Victim"
+        },
+        {
+          "line": 86,
+          "npcId": 10814,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            5000,
+            12800
+          ],
+          "repeatMs": [
+            13000,
+            13000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 15708,
+          "comment": "Chromatic Elite Guard - In Combat - Cast 'Mortal Strike' (Normal Dungeon)"
+        },
+        {
+          "line": 87,
+          "npcId": 10814,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            5600,
+            15400
+          ],
+          "repeatMs": [
+            11200,
+            25700
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 16790,
+          "comment": "Chromatic Elite Guard - In Combat - Cast 'Stunning Strike' (Normal Dungeon)"
+        },
+        {
+          "line": 88,
+          "npcId": 10814,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            12000,
+            20800
+          ],
+          "repeatMs": [
+            9000,
+            9000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 15580,
+          "comment": "Chromatic Elite Guard - In Combat - Cast 'Strike' (Normal Dungeon)"
+        },
+        {
+          "line": 89,
+          "npcId": 10814,
+          "eventType": 0,
+          "eventPhaseMask": 0,
+          "eventFlags": 0,
+          "initialMs": [
+            5000,
+            7000
+          ],
+          "repeatMs": [
+            6000,
+            8000
+          ],
+          "actionType": 11,
+          "actionSpellOrEntry": 975011,
+          "comment": "Chromatic Elite Guard - In Combat - Cast 'Fierce Blow' (Normal Dungeon)"
+        }
+      ],
+      "other": [
+        {
+          "line": 1,
+          "text": "-- Bosses whose Ascension kit main already implemented (Deadmines #6282, Upper Blackrock Spire #6175) fight with"
+        },
+        {
+          "line": 68,
+          "text": "(10509, 0, 1, 0, 0, 0, 100, 0, 5000, 7000, 4000, 6000, 0, 0, 11, 14516, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'Every 4 - 6 seconds (5 - 7s initially)  - Self: Cast spell Strike (14516) on Victim'),"
+        },
+        {
+          "line": 69,
+          "text": "(10509, 0, 2, 0, 105, 0, 100, 0, 10000, 10000, 10000, 10000, 0, 5, 11, 11972, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'Every 10 seconds  - Self: Cast spell Shield Bash (11972) on Victim'),"
+        },
+        {
+          "line": 70,
+          "text": "(10509, 0, 3, 0, 0, 0, 100, 0, 10000, 10000, 5000, 15000, 0, 0, 11, 15749, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'Every 5 - 15 seconds (10 - 10s initially)  - Self: Cast spell Shield Charge (15749) on Random hostile'),"
+        },
+        {
+          "line": 76,
+          "text": "(10899, 0, 1, 0, 0, 0, 100, 0, 5000, 7000, 4000, 6000, 0, 0, 11, 15580, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'Every 4 - 6 seconds (5 - 7s initially)  - Self: Cast spell Strike (15580) on Victim'),"
+        },
+        {
+          "line": 77,
+          "text": "(10899, 0, 2, 0, 0, 0, 100, 0, 5000, 10000, 20000, 20000, 0, 0, 11, 16172, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'Every 20 - 20 seconds (5 - 10s initially)  - Self: Cast spell Head Crack (16172) on Victim'),"
+        },
+        {
+          "line": 78,
+          "text": "(10899, 0, 3, 0, 0, 0, 100, 0, 10000, 10000, 10000, 10000, 0, 0, 11, 6253, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'Every 10 seconds  - Self: Cast spell Backhand (6253) on Victim'),"
+        },
+        {
+          "line": 92,
+          "text": "DELETE FROM `coa_dungeon_boss_kit` WHERE `entry` IN (646, 9816, 10363, 10430);"
+        },
+        {
+          "line": 95,
+          "text": "DELETE FROM `spell_script_names` WHERE `spell_id` = 2102559 AND `ScriptName` = 'spell_coa_bouncing_saw_blade';"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20261002_10_ubrs_boss_rank_and_kits.sql",
+      "kit": [],
+      "smart": [],
+      "other": [
+        {
+          "line": 2,
+          "text": "-- bosses (rank 3) in CoA's own creature query cache (hertigservices/ascension-data, conquest-of-azeroth,"
+        },
+        {
+          "line": 18,
+          "text": "(10509, 0, 1, 0, 0, 0, 100, 2, 5000, 7000, 4000, 6000, 0, 0, 11, 14516, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Every 4 - 6 seconds (5 - 7s initially)  - Self: Cast spell Strike (14516) on Victim'),"
+        },
+        {
+          "line": 19,
+          "text": "(10509, 0, 2, 0, 105, 0, 100, 2, 10000, 10000, 10000, 10000, 0, 5, 11, 11972, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 'Every 10 seconds  - Self: Cast spell Shield Bash (11972) on Victim'),"
+        },
+        {
+          "line": 20,
+          "text": "(10509, 0, 3, 0, 0, 0, 100, 2, 10000, 10000, 5000, 15000, 0, 0, 11, 15749, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 'Every 5 - 15 seconds (10 - 10s initially)  - Self: Cast spell Shield Charge (15749) on Random hostile'),"
+        },
+        {
+          "line": 28,
+          "text": "(10899, 0, 1, 0, 0, 0, 100, 2, 5000, 7000, 4000, 6000, 0, 0, 11, 15580, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Every 4 - 6 seconds (5 - 7s initially)  - Self: Cast spell Strike (15580) on Victim'),"
+        },
+        {
+          "line": 29,
+          "text": "(10899, 0, 2, 0, 0, 0, 100, 2, 5000, 10000, 20000, 20000, 0, 0, 11, 16172, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Every 20 - 20 seconds (5 - 10s initially)  - Self: Cast spell Head Crack (16172) on Victim'),"
+        },
+        {
+          "line": 30,
+          "text": "(10899, 0, 3, 0, 0, 0, 100, 2, 10000, 10000, 10000, 10000, 0, 0, 11, 6253, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Every 10 seconds  - Self: Cast spell Backhand (6253) on Victim'),"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20260930_70_deadmines_bosses.sql",
+      "kit": [],
+      "smart": [],
+      "other": [
+        {
+          "line": 1,
+          "text": "-- Deadmines Heroic/Mythic boss fixes (30.09.2026)"
+        },
+        {
+          "line": 3,
+          "text": "-- Bouncing Saw Blade: 1 target on Normal/Heroic, 3 on Mythic (CoADungeonBossSpells.cpp)"
+        },
+        {
+          "line": 4,
+          "text": "DELETE FROM `spell_script_names` WHERE `spell_id` = 2102559;"
+        },
+        {
+          "line": 5,
+          "text": "INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES (2102559, 'spell_coa_bouncing_saw_blade');"
+        },
+        {
+          "line": 6,
+          "text": "-- Throw Buzzing Saw Blade summons Buzzing Saw Blade (180237), which src/server/coa/AscensionDeadminesBosses.cpp drives."
+        },
+        {
+          "line": 8,
+          "text": "INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed"
+        },
+        {
+          "line": 11,
+          "text": "ON DUPLICATE KEY UPDATE `difficulty_entry_1` = VALUES(`difficulty_entry_1`), `difficulty_entry_2` = VALUES(`difficulty_entry_2`), `difficulty_entry_3` = VALUES(`difficulty_entry_3`), `KillCredit1` = VALUES(`KillCredit1`), `KillCredit2` = VALUES(`KillCredit2`),"
+        },
+        {
+          "line": 18,
+          "text": "-- through coa_dungeon_spell_damage). Invisible, not selectable."
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20260930_60_bfd_bosses.sql",
+      "kit": [],
+      "smart": [],
+      "other": [
+        {
+          "line": 1,
+          "text": "-- Blackfathom Deeps Heroic/Mythic boss fixes after ingame check (30.09.2026)"
+        },
+        {
+          "line": 3,
+          "text": "-- Torrent (Ghamoo-ra): the boss spins around itself while the water cone fires (CoADungeonBossSpells.cpp)"
+        },
+        {
+          "line": 4,
+          "text": "DELETE FROM `spell_script_names` WHERE `spell_id` = 2102687;"
+        },
+        {
+          "line": 5,
+          "text": "INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES (2102687, 'spell_coa_torrent_spin');"
+        }
+      ]
+    },
+    {
+      "path": "data/sql/updates/pending_db_world/rev_20260930_80_rfc_bosses.sql",
+      "kit": [],
+      "smart": [],
+      "other": [
+        {
+          "line": 1,
+          "text": "-- Ragefire Chasm Heroic/Mythic boss fixes after ingame check (30.09.2026)"
+        },
+        {
+          "line": 3,
+          "text": "-- Massive Fire Nova (Taragaman): cover behind the Earth Pillars (CoADungeonBossSpells.cpp)"
+        },
+        {
+          "line": 4,
+          "text": "DELETE FROM `spell_script_names` WHERE `spell_id` BETWEEN 2102516 AND 2102519;"
+        },
+        {
+          "line": 5,
+          "text": "INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES"
+        },
+        {
+          "line": 6,
+          "text": "(2102516, 'spell_coa_massive_fire_nova'), (2102517, 'spell_coa_massive_fire_nova'),"
+        },
+        {
+          "line": 7,
+          "text": "(2102518, 'spell_coa_massive_fire_nova'), (2102519, 'spell_coa_massive_fire_nova');"
+        },
+        {
+          "line": 16,
+          "text": "INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed"
+        },
+        {
+          "line": 20,
+          "text": "ON DUPLICATE KEY UPDATE `difficulty_entry_1` = VALUES(`difficulty_entry_1`), `difficulty_entry_2` = VALUES(`difficulty_entry_2`), `difficulty_entry_3` = VALUES(`difficulty_entry_3`), `KillCredit1` = VALUES(`KillCredit1`), `KillCredit2` = VALUES(`KillCredit2`),"
+        }
+      ]
+    }
+  ]
+}

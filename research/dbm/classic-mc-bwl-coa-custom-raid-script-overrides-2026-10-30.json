@@ -1,0 +1,2829 @@
+{
+  "schema": "coa-research.dbm-custom-raid-script-evidence.v1",
+  "date": "2026-10-30",
+  "sourceRepository": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "status": "Custom CoA module source, not confirmed deployed on live CR",
+  "notes": [
+    "Custom CoA scripts may supersede or augment base scripts",
+    "Check module registration and SQL script names before treating overrides as active",
+    "Line counts and call-site counts are not unique mechanics",
+    "Additional timers may use alternate scheduling APIs"
+  ],
+  "counts": {
+    "found": 10,
+    "lines": 3511,
+    "spells": 130,
+    "schedules": 102,
+    "casts": 105,
+    "conditionLines": 302
+  },
+  "files": [
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_lucifron_coa.cpp",
+      "lines": 164,
+      "spells": [
+        {
+          "symbol": "SPELL_SHADOW_BOLT_DUMMY",
+          "id": 2105254
+        },
+        {
+          "symbol": "SPELL_SHADOW_BOLT_HIT",
+          "id": 2105255
+        },
+        {
+          "symbol": "SPELL_SHADOW_CLEAVE",
+          "id": 2105256
+        },
+        {
+          "symbol": "SPELL_DARK_SUNDERING",
+          "id": 2105257
+        }
+      ],
+      "schedules": [
+        {
+          "line": 90,
+          "event": "EVENT_SHADOW_BOLT",
+          "args": "3s"
+        },
+        {
+          "line": 91,
+          "event": "EVENT_SHADOW_CLEAVE",
+          "args": "8s"
+        },
+        {
+          "line": 92,
+          "event": "EVENT_DARK_SUNDERING",
+          "args": "12s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 100,
+          "spell": "SPELL_SHADOW_BOLT_DUMMY"
+        },
+        {
+          "line": 104,
+          "spell": "SPELL_SHADOW_CLEAVE"
+        },
+        {
+          "line": 108,
+          "spell": "SPELL_DARK_SUNDERING"
+        },
+        {
+          "line": 149,
+          "spell": "SPELL_SHADOW_BOLT_HIT"
+        }
+      ],
+      "conditions": [
+        {
+          "line": 77,
+          "source": "EVENT_SHADOW_BOLT = 1,"
+        },
+        {
+          "line": 78,
+          "source": "EVENT_SHADOW_CLEAVE,"
+        },
+        {
+          "line": 79,
+          "source": "EVENT_DARK_SUNDERING,"
+        },
+        {
+          "line": 90,
+          "source": "events.ScheduleEvent(EVENT_SHADOW_BOLT, 3s);"
+        },
+        {
+          "line": 91,
+          "source": "events.ScheduleEvent(EVENT_SHADOW_CLEAVE, 8s);"
+        },
+        {
+          "line": 92,
+          "source": "events.ScheduleEvent(EVENT_DARK_SUNDERING, 12s);"
+        },
+        {
+          "line": 99,
+          "source": "case EVENT_SHADOW_BOLT:"
+        },
+        {
+          "line": 103,
+          "source": "case EVENT_SHADOW_CLEAVE:"
+        },
+        {
+          "line": 107,
+          "source": "case EVENT_DARK_SUNDERING:"
+        }
+      ]
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_magmadar_coa.cpp",
+      "lines": 416,
+      "spells": [
+        {
+          "symbol": "SPELL_FRENZY_COA",
+          "id": 19451
+        },
+        {
+          "symbol": "SPELL_PANIC_COA",
+          "id": 2105309
+        },
+        {
+          "symbol": "SPELL_LAVA_BOMB_MELEE_COA",
+          "id": 19411
+        },
+        {
+          "symbol": "SPELL_LAVA_BOMB_RANGED_COA",
+          "id": 20474
+        },
+        {
+          "symbol": "SPELL_FIERCE_BLOW_COA",
+          "id": 975011
+        },
+        {
+          "symbol": "SPELL_ANCIENT_HYSTERIA_COA",
+          "id": 2105311
+        },
+        {
+          "symbol": "SPELL_ANCIENT_DREAD_COA",
+          "id": 2105312
+        },
+        {
+          "symbol": "SPELL_ANCIENT_FURY_COA",
+          "id": 2105313
+        },
+        {
+          "symbol": "SPELL_ANCIENT_DESPAIR_COA",
+          "id": 2105310
+        },
+        {
+          "symbol": "SPELL_HEAD_ENRAGE",
+          "id": 2105307
+        },
+        {
+          "symbol": "SPELL_HEAD_LAVA_BURST",
+          "id": 2105357
+        },
+        {
+          "symbol": "SPELL_HEAD_SCORCHING_BREATH",
+          "id": 2105360
+        },
+        {
+          "symbol": "SPELL_HEAD_LAVA_BOMB",
+          "id": 2105366
+        },
+        {
+          "symbol": "SPELL_HEAD_SCORCHING_BREATH_DAMAGE",
+          "id": 2105362
+        },
+        {
+          "symbol": "SPELL_HEAD_LAVA_BOMB_EFFECT",
+          "id": 2105367
+        }
+      ],
+      "schedules": [
+        {
+          "line": 160,
+          "event": "EVENT_FRENZY_COA",
+          "args": "8500ms"
+        },
+        {
+          "line": 161,
+          "event": "EVENT_PANIC_COA",
+          "args": "9500ms"
+        },
+        {
+          "line": 162,
+          "event": "EVENT_LAVA_BOMB_MELEE_COA",
+          "args": "12s"
+        },
+        {
+          "line": 163,
+          "event": "EVENT_LAVA_BOMB_RANGED_COA",
+          "args": "15s"
+        },
+        {
+          "line": 164,
+          "event": "EVENT_FIERCE_BLOW_COA",
+          "args": "FIERCE_BLOW_MIN_COA, FIERCE_BLOW_MAX_COA"
+        },
+        {
+          "line": 165,
+          "event": "EVENT_ANCIENT_CYCLE_COA",
+          "args": "ANCIENT_FIRST_MIN_COA, ANCIENT_FIRST_MAX_COA"
+        },
+        {
+          "line": 170,
+          "event": "EVENT_CORE_HOUND_SPAWN_COA",
+          "args": "45s"
+        },
+        {
+          "line": 284,
+          "event": "EVENT_HEAD_ENRAGE",
+          "args": "25s"
+        },
+        {
+          "line": 285,
+          "event": "EVENT_HEAD_LAVA_BURST",
+          "args": "isRightHead ? 4s : 7s"
+        },
+        {
+          "line": 286,
+          "event": "EVENT_HEAD_SCORCHING_BREATH",
+          "args": "isRightHead ? 9s : 13s"
+        },
+        {
+          "line": 287,
+          "event": "EVENT_HEAD_LAVA_BOMB",
+          "args": "isRightHead ? 6s : 11s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 184,
+          "spell": "SPELL_FRENZY_COA"
+        },
+        {
+          "line": 190,
+          "spell": "SPELL_PANIC_COA"
+        },
+        {
+          "line": 197,
+          "spell": "SPELL_LAVA_BOMB_MELEE_COA"
+        },
+        {
+          "line": 212,
+          "spell": "SPELL_LAVA_BOMB_RANGED_COA"
+        },
+        {
+          "line": 218,
+          "spell": "SPELL_FIERCE_BLOW_COA"
+        },
+        {
+          "line": 295,
+          "spell": "SPELL_HEAD_ENRAGE"
+        },
+        {
+          "line": 299,
+          "spell": "SPELL_HEAD_LAVA_BURST"
+        },
+        {
+          "line": 303,
+          "spell": "SPELL_HEAD_SCORCHING_BREATH"
+        },
+        {
+          "line": 308,
+          "spell": "SPELL_HEAD_LAVA_BOMB"
+        },
+        {
+          "line": 360,
+          "spell": "SPELL_HEAD_SCORCHING_BREATH_DAMAGE"
+        },
+        {
+          "line": 399,
+          "spell": "SPELL_HEAD_LAVA_BOMB_EFFECT"
+        }
+      ],
+      "conditions": [
+        {
+          "line": 96,
+          "source": "EVENT_FRENZY_COA = 1,"
+        },
+        {
+          "line": 97,
+          "source": "EVENT_PANIC_COA,"
+        },
+        {
+          "line": 98,
+          "source": "EVENT_LAVA_BOMB_MELEE_COA,"
+        },
+        {
+          "line": 99,
+          "source": "EVENT_LAVA_BOMB_RANGED_COA,"
+        },
+        {
+          "line": 100,
+          "source": "EVENT_FIERCE_BLOW_COA,"
+        },
+        {
+          "line": 101,
+          "source": "EVENT_ANCIENT_CYCLE_COA,"
+        },
+        {
+          "line": 102,
+          "source": "EVENT_CORE_HOUND_SPAWN_COA,"
+        },
+        {
+          "line": 107,
+          "source": "EVENT_HEAD_ENRAGE = 1,"
+        },
+        {
+          "line": 108,
+          "source": "EVENT_HEAD_LAVA_BURST,"
+        },
+        {
+          "line": 109,
+          "source": "EVENT_HEAD_SCORCHING_BREATH,"
+        },
+        {
+          "line": 110,
+          "source": "EVENT_HEAD_LAVA_BOMB,"
+        },
+        {
+          "line": 160,
+          "source": "events.ScheduleEvent(EVENT_FRENZY_COA, 8500ms);"
+        },
+        {
+          "line": 161,
+          "source": "events.ScheduleEvent(EVENT_PANIC_COA, 9500ms);"
+        },
+        {
+          "line": 162,
+          "source": "events.ScheduleEvent(EVENT_LAVA_BOMB_MELEE_COA, 12s);"
+        },
+        {
+          "line": 163,
+          "source": "events.ScheduleEvent(EVENT_LAVA_BOMB_RANGED_COA, 15s);"
+        },
+        {
+          "line": 164,
+          "source": "events.ScheduleEvent(EVENT_FIERCE_BLOW_COA, FIERCE_BLOW_MIN_COA, FIERCE_BLOW_MAX_COA);"
+        },
+        {
+          "line": 165,
+          "source": "events.ScheduleEvent(EVENT_ANCIENT_CYCLE_COA, ANCIENT_FIRST_MIN_COA, ANCIENT_FIRST_MAX_COA);"
+        },
+        {
+          "line": 170,
+          "source": "events.ScheduleEvent(EVENT_CORE_HOUND_SPAWN_COA, 45s);"
+        },
+        {
+          "line": 181,
+          "source": "case EVENT_FRENZY_COA:"
+        },
+        {
+          "line": 188,
+          "source": "case EVENT_PANIC_COA:"
+        },
+        {
+          "line": 194,
+          "source": "case EVENT_LAVA_BOMB_MELEE_COA:"
+        },
+        {
+          "line": 202,
+          "source": "case EVENT_LAVA_BOMB_RANGED_COA:"
+        },
+        {
+          "line": 216,
+          "source": "case EVENT_FIERCE_BLOW_COA:"
+        },
+        {
+          "line": 222,
+          "source": "case EVENT_ANCIENT_CYCLE_COA:"
+        },
+        {
+          "line": 229,
+          "source": "case EVENT_CORE_HOUND_SPAWN_COA:"
+        },
+        {
+          "line": 284,
+          "source": "events.ScheduleEvent(EVENT_HEAD_ENRAGE, 25s);"
+        },
+        {
+          "line": 285,
+          "source": "events.ScheduleEvent(EVENT_HEAD_LAVA_BURST, isRightHead ? 4s : 7s);"
+        },
+        {
+          "line": 286,
+          "source": "events.ScheduleEvent(EVENT_HEAD_SCORCHING_BREATH, isRightHead ? 9s : 13s);"
+        },
+        {
+          "line": 287,
+          "source": "events.ScheduleEvent(EVENT_HEAD_LAVA_BOMB, isRightHead ? 6s : 11s);"
+        },
+        {
+          "line": 294,
+          "source": "case EVENT_HEAD_ENRAGE:"
+        },
+        {
+          "line": 298,
+          "source": "case EVENT_HEAD_LAVA_BURST:"
+        },
+        {
+          "line": 302,
+          "source": "case EVENT_HEAD_SCORCHING_BREATH:"
+        },
+        {
+          "line": 306,
+          "source": "case EVENT_HEAD_LAVA_BOMB:"
+        }
+      ]
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_gehennas_coa.cpp",
+      "error": "NOT_FOUND: Error code: NOT_FOUND; Error: GitHub API error 404: {\"message\":\"Not F"
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_garr_coa.cpp",
+      "lines": 147,
+      "spells": [
+        {
+          "symbol": "SPELL_FIERCE_BLOW",
+          "id": 975011
+        },
+        {
+          "symbol": "SPELL_HARDEN",
+          "id": 2105501
+        },
+        {
+          "symbol": "SPELL_EARTH_FURY",
+          "id": 2105502
+        },
+        {
+          "symbol": "SPELL_CRACKED",
+          "id": 2105503
+        },
+        {
+          "symbol": "SPELL_LAND_SLIDE",
+          "id": 2105508
+        },
+        {
+          "symbol": "SPELL_LAND_SLIDE_DAMAGE",
+          "id": 2105509
+        },
+        {
+          "symbol": "SPELL_UNSTOPPABLE_FORCE",
+          "id": 2105515
+        }
+      ],
+      "schedules": [
+        {
+          "line": 81,
+          "event": "EVENT_FIERCE_BLOW",
+          "args": "FIERCE_BLOW_FIRST_MIN, FIERCE_BLOW_FIRST_MAX"
+        },
+        {
+          "line": 82,
+          "event": "EVENT_HARDEN",
+          "args": "5s"
+        },
+        {
+          "line": 83,
+          "event": "EVENT_LAND_SLIDE",
+          "args": "20s"
+        },
+        {
+          "line": 84,
+          "event": "EVENT_UNSTOPPABLE_FORCE",
+          "args": "45s"
+        },
+        {
+          "line": 126,
+          "event": "EVENT_RECOVER",
+          "args": "20s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 97,
+          "spell": "SPELL_LAND_SLIDE_DAMAGE"
+        },
+        {
+          "line": 105,
+          "spell": "SPELL_FIERCE_BLOW"
+        },
+        {
+          "line": 110,
+          "spell": "SPELL_HARDEN"
+        },
+        {
+          "line": 115,
+          "spell": "SPELL_CAST_OK"
+        },
+        {
+          "line": 120,
+          "spell": "SPELL_UNSTOPPABLE_FORCE"
+        },
+        {
+          "line": 122,
+          "spell": "SPELL_CRACKED"
+        },
+        {
+          "line": 123,
+          "spell": "SPELL_EARTH_FURY"
+        }
+      ],
+      "conditions": [
+        {
+          "line": 60,
+          "source": "EVENT_FIERCE_BLOW = 1,"
+        },
+        {
+          "line": 61,
+          "source": "EVENT_HARDEN,"
+        },
+        {
+          "line": 62,
+          "source": "EVENT_LAND_SLIDE,"
+        },
+        {
+          "line": 63,
+          "source": "EVENT_UNSTOPPABLE_FORCE,"
+        },
+        {
+          "line": 64,
+          "source": "EVENT_RECOVER,"
+        },
+        {
+          "line": 81,
+          "source": "events.ScheduleEvent(EVENT_FIERCE_BLOW, FIERCE_BLOW_FIRST_MIN, FIERCE_BLOW_FIRST_MAX);"
+        },
+        {
+          "line": 82,
+          "source": "events.ScheduleEvent(EVENT_HARDEN, 5s);"
+        },
+        {
+          "line": 83,
+          "source": "events.ScheduleEvent(EVENT_LAND_SLIDE, 20s);"
+        },
+        {
+          "line": 84,
+          "source": "events.ScheduleEvent(EVENT_UNSTOPPABLE_FORCE, 45s);"
+        },
+        {
+          "line": 104,
+          "source": "case EVENT_FIERCE_BLOW:"
+        },
+        {
+          "line": 108,
+          "source": "case EVENT_HARDEN:"
+        },
+        {
+          "line": 113,
+          "source": "case EVENT_LAND_SLIDE:"
+        },
+        {
+          "line": 119,
+          "source": "case EVENT_UNSTOPPABLE_FORCE:"
+        },
+        {
+          "line": 126,
+          "source": "events.ScheduleEvent(EVENT_RECOVER, 20s);"
+        },
+        {
+          "line": 129,
+          "source": "case EVENT_RECOVER:"
+        }
+      ]
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_shazzrah_coa.cpp",
+      "lines": 99,
+      "spells": [
+        {
+          "symbol": "SPELL_TIME_STOP_COA",
+          "id": 2105618
+        },
+        {
+          "symbol": "SPELL_MASS_SLOW_COA",
+          "id": 2105619
+        }
+      ],
+      "schedules": [],
+      "casts": [
+        {
+          "line": 71,
+          "spell": "SPELL_TIME_STOP_COA"
+        },
+        {
+          "line": 75,
+          "spell": "SPELL_MASS_SLOW_COA"
+        }
+      ],
+      "conditions": [
+        {
+          "line": 13,
+          "source": "* on itself (smart_scripts, pending SQL, SMART_EVENT_UPDATE_OOC reusing"
+        }
+      ]
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_baron_geddon_coa.cpp",
+      "error": "NOT_FOUND: Error code: NOT_FOUND; Error: GitHub API error 404: {\"message\":\"Not F"
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_golemagg_coa.cpp",
+      "lines": 68,
+      "spells": [
+        {
+          "symbol": "SPELL_GOLEMAGG_MASSIVE_STOMP_DAMAGE",
+          "id": 2105823
+        }
+      ],
+      "schedules": [],
+      "casts": [
+        {
+          "line": 53,
+          "spell": "SPELL_GOLEMAGG_MASSIVE_STOMP_DAMAGE"
+        }
+      ],
+      "conditions": []
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_sulfuron_coa.cpp",
+      "error": "NOT_FOUND: Error code: NOT_FOUND; Error: GitHub API error 404: {\"message\":\"Not F"
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_majordomo_coa.cpp",
+      "error": "NOT_FOUND: Error code: NOT_FOUND; Error: GitHub API error 404: {\"message\":\"Not F"
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_ragnaros_coa.cpp",
+      "error": "NOT_FOUND: Error code: NOT_FOUND; Error: GitHub API error 404: {\"message\":\"Not F"
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_razorgore_coa.cpp",
+      "lines": 328,
+      "spells": [
+        {
+          "symbol": "SPELL_MINDCONTROL_VISUAL",
+          "id": 45537
+        },
+        {
+          "symbol": "SPELL_MIND_EXHAUSTION",
+          "id": 23958
+        },
+        {
+          "symbol": "SPELL_EXPLODE_ORB",
+          "id": 20037
+        },
+        {
+          "symbol": "SPELL_EXPLOSION",
+          "id": 20038
+        },
+        {
+          "symbol": "SPELL_WARMING_FLAMES",
+          "id": 23040
+        },
+        {
+          "symbol": "SPELL_FIERCE_BLOW",
+          "id": 975011
+        },
+        {
+          "symbol": "SPELL_FIREBALL_STORM_CAST",
+          "id": 2110401
+        },
+        {
+          "symbol": "SPELL_FIREBALL_STORM",
+          "id": 2110402
+        },
+        {
+          "symbol": "SPELL_WAR_STOMP_CAST",
+          "id": 2110406
+        },
+        {
+          "symbol": "SPELL_WAR_STOMP",
+          "id": 2110407
+        },
+        {
+          "symbol": "SPELL_CONFLAGRATION_CAST",
+          "id": 2110411
+        },
+        {
+          "symbol": "SPELL_CONFLAGRATE",
+          "id": 2110412
+        },
+        {
+          "symbol": "SPELL_MORTAL_CLEAVE_CAST",
+          "id": 2110417
+        },
+        {
+          "symbol": "SPELL_MORTAL_CLEAVE",
+          "id": 2110418
+        },
+        {
+          "symbol": "SPELL_MORTAL_WOUND",
+          "id": 2110419
+        },
+        {
+          "symbol": "SPELL_UNTAMED_FURY",
+          "id": 2110420
+        }
+      ],
+      "schedules": [
+        {
+          "line": 126,
+          "event": "EVENT_MORTAL_CLEAVE",
+          "args": "5s"
+        },
+        {
+          "line": 127,
+          "event": "EVENT_FIERCE_BLOW",
+          "args": "6s"
+        },
+        {
+          "line": 128,
+          "event": "EVENT_FIREBALL_STORM",
+          "args": "8s"
+        },
+        {
+          "line": 129,
+          "event": "EVENT_WAR_STOMP",
+          "args": "12s"
+        },
+        {
+          "line": 130,
+          "event": "EVENT_CONFLAGRATION",
+          "args": "15s"
+        },
+        {
+          "line": 278,
+          "event": "EVENT_MORTAL_CLEAVE",
+          "args": "8s"
+        },
+        {
+          "line": 282,
+          "event": "EVENT_WAR_STOMP",
+          "args": "20s"
+        },
+        {
+          "line": 286,
+          "event": "EVENT_FIERCE_BLOW",
+          "args": "8500ms"
+        },
+        {
+          "line": 290,
+          "event": "EVENT_FIREBALL_STORM",
+          "args": "15s"
+        },
+        {
+          "line": 304,
+          "event": "EVENT_CONFLAGRATION",
+          "args": "30s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 141,
+          "spell": "SPELL_WARMING_FLAMES"
+        },
+        {
+          "line": 143,
+          "spell": "SPELL_UNTAMED_FURY"
+        },
+        {
+          "line": 171,
+          "spell": "SPELL_MIND_EXHAUSTION"
+        },
+        {
+          "line": 172,
+          "spell": "SPELL_MINDCONTROL_VISUAL"
+        },
+        {
+          "line": 210,
+          "spell": "SPELL_EXPLODE_ORB"
+        },
+        {
+          "line": 211,
+          "spell": "SPELL_EXPLOSION"
+        },
+        {
+          "line": 236,
+          "spell": "SPELL_FIREBALL_STORM"
+        },
+        {
+          "line": 239,
+          "spell": "SPELL_WAR_STOMP"
+        },
+        {
+          "line": 245,
+          "spell": "SPELL_MORTAL_CLEAVE"
+        },
+        {
+          "line": 246,
+          "spell": "SPELL_MORTAL_WOUND"
+        },
+        {
+          "line": 253,
+          "spell": "SPELL_CONFLAGRATE"
+        },
+        {
+          "line": 277,
+          "spell": "SPELL_MORTAL_CLEAVE_CAST"
+        },
+        {
+          "line": 281,
+          "spell": "SPELL_WAR_STOMP_CAST"
+        },
+        {
+          "line": 285,
+          "spell": "SPELL_FIERCE_BLOW"
+        },
+        {
+          "line": 289,
+          "spell": "SPELL_FIREBALL_STORM_CAST"
+        },
+        {
+          "line": 297,
+          "spell": "SPELL_CONFLAGRATION_CAST"
+        },
+        {
+          "line": 302,
+          "spell": "SPELL_CONFLAGRATION_CAST"
+        }
+      ],
+      "conditions": [
+        {
+          "line": 75,
+          "source": "EVENT_MORTAL_CLEAVE = 1,"
+        },
+        {
+          "line": 76,
+          "source": "EVENT_WAR_STOMP,"
+        },
+        {
+          "line": 77,
+          "source": "EVENT_FIERCE_BLOW,"
+        },
+        {
+          "line": 78,
+          "source": "EVENT_FIREBALL_STORM,"
+        },
+        {
+          "line": 79,
+          "source": "EVENT_CONFLAGRATION,"
+        },
+        {
+          "line": 126,
+          "source": "events.ScheduleEvent(EVENT_MORTAL_CLEAVE, 5s);"
+        },
+        {
+          "line": 127,
+          "source": "events.ScheduleEvent(EVENT_FIERCE_BLOW, 6s);"
+        },
+        {
+          "line": 128,
+          "source": "events.ScheduleEvent(EVENT_FIREBALL_STORM, 8s);"
+        },
+        {
+          "line": 129,
+          "source": "events.ScheduleEvent(EVENT_WAR_STOMP, 12s);"
+        },
+        {
+          "line": 130,
+          "source": "events.ScheduleEvent(EVENT_CONFLAGRATION, 15s);"
+        },
+        {
+          "line": 276,
+          "source": "case EVENT_MORTAL_CLEAVE:"
+        },
+        {
+          "line": 278,
+          "source": "events.ScheduleEvent(EVENT_MORTAL_CLEAVE, 8s);"
+        },
+        {
+          "line": 280,
+          "source": "case EVENT_WAR_STOMP:"
+        },
+        {
+          "line": 282,
+          "source": "events.ScheduleEvent(EVENT_WAR_STOMP, 20s);"
+        },
+        {
+          "line": 284,
+          "source": "case EVENT_FIERCE_BLOW:"
+        },
+        {
+          "line": 286,
+          "source": "events.ScheduleEvent(EVENT_FIERCE_BLOW, 8500ms);"
+        },
+        {
+          "line": 288,
+          "source": "case EVENT_FIREBALL_STORM:"
+        },
+        {
+          "line": 290,
+          "source": "events.ScheduleEvent(EVENT_FIREBALL_STORM, 15s);"
+        },
+        {
+          "line": 292,
+          "source": "case EVENT_CONFLAGRATION:"
+        },
+        {
+          "line": 304,
+          "source": "events.ScheduleEvent(EVENT_CONFLAGRATION, 30s);"
+        }
+      ]
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_vaelastrasz_coa.cpp",
+      "lines": 646,
+      "spells": [
+        {
+          "symbol": "SPELL_NEFARIUS_CORRUPTION",
+          "id": 23642
+        },
+        {
+          "symbol": "SPELL_RED_LIGHTNING",
+          "id": 19484
+        },
+        {
+          "symbol": "SPELL_FIERCE_BLOW",
+          "id": 975011
+        },
+        {
+          "symbol": "SPELL_DRACONIC_CLEAVE_CAST",
+          "id": 2110601
+        },
+        {
+          "symbol": "SPELL_DRACONIC_CLEAVE",
+          "id": 2110602
+        },
+        {
+          "symbol": "SPELL_TAIL_SWEEP_HIT",
+          "id": 2110604
+        },
+        {
+          "symbol": "SPELL_SCORCHING_BREATH_CAST",
+          "id": 2110606
+        },
+        {
+          "symbol": "SPELL_SCORCHING_BREATH",
+          "id": 2110608
+        },
+        {
+          "symbol": "SPELL_SCORCHED",
+          "id": 2110612
+        },
+        {
+          "symbol": "SPELL_RAGE_ERUPTION",
+          "id": 2110617
+        },
+        {
+          "symbol": "SPELL_BURNING_ADRENALINE",
+          "id": 2110621
+        },
+        {
+          "symbol": "SPELL_BURNING_ADRENALINE_STACK",
+          "id": 2110622
+        },
+        {
+          "symbol": "SPELL_BURNING_ADRENALINE_BURN",
+          "id": 2110626
+        },
+        {
+          "symbol": "SPELL_BURN_OUT",
+          "id": 2110627
+        },
+        {
+          "symbol": "SPELL_BURNING_ADRENALINE_BLAST",
+          "id": 2110628
+        },
+        {
+          "symbol": "SPELL_CORRUPTION_PLAYER",
+          "id": 2110640
+        },
+        {
+          "symbol": "SPELL_CORRUPTION_VAEL",
+          "id": 2110641
+        },
+        {
+          "symbol": "SPELL_CONCENTRATING",
+          "id": 2110642
+        },
+        {
+          "symbol": "SPELL_CONCENTRATING_PULSE",
+          "id": 2110643
+        }
+      ],
+      "schedules": [
+        {
+          "line": 220,
+          "event": "EVENT_FIERCE_BLOW",
+          "args": "6s"
+        },
+        {
+          "line": 221,
+          "event": "EVENT_CLEAVE",
+          "args": "8s"
+        },
+        {
+          "line": 222,
+          "event": "EVENT_SCORCHING_BREATH",
+          "args": "12s"
+        },
+        {
+          "line": 223,
+          "event": "EVENT_RAGE_ERUPTION",
+          "args": "15s"
+        },
+        {
+          "line": 224,
+          "event": "EVENT_TAIL_SWEEP",
+          "args": "20s"
+        },
+        {
+          "line": 225,
+          "event": "EVENT_BURNING_ADRENALINE",
+          "args": "20s"
+        },
+        {
+          "line": 226,
+          "event": "EVENT_ORBS",
+          "args": "20s"
+        },
+        {
+          "line": 227,
+          "event": "EVENT_CONCENTRATE",
+          "args": "30s"
+        },
+        {
+          "line": 450,
+          "event": "EVENT_FIERCE_BLOW",
+          "args": "8500ms"
+        },
+        {
+          "line": 454,
+          "event": "EVENT_CLEAVE",
+          "args": "8s"
+        },
+        {
+          "line": 458,
+          "event": "EVENT_TAIL_SWEEP",
+          "args": "20s"
+        },
+        {
+          "line": 462,
+          "event": "EVENT_SCORCHING_BREATH",
+          "args": "12s"
+        },
+        {
+          "line": 466,
+          "event": "EVENT_RAGE_ERUPTION",
+          "args": "15s"
+        },
+        {
+          "line": 470,
+          "event": "EVENT_BURNING_ADRENALINE",
+          "args": "20s"
+        },
+        {
+          "line": 474,
+          "event": "EVENT_CONCENTRATE",
+          "args": "60s"
+        },
+        {
+          "line": 478,
+          "event": "EVENT_ORBS",
+          "args": "30s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 311,
+          "spell": "SPELL_DRACONIC_CLEAVE"
+        },
+        {
+          "line": 326,
+          "spell": "SPELL_SCORCHING_BREATH"
+        },
+        {
+          "line": 327,
+          "spell": "SPELL_SCORCHED"
+        },
+        {
+          "line": 337,
+          "spell": "SPELL_TAIL_SWEEP_HIT"
+        },
+        {
+          "line": 355,
+          "spell": "SPELL_BURNING_ADRENALINE"
+        },
+        {
+          "line": 374,
+          "spell": "SPELL_BURNING_ADRENALINE_BLAST"
+        },
+        {
+          "line": 386,
+          "spell": "SPELL_BURN_OUT"
+        },
+        {
+          "line": 449,
+          "spell": "SPELL_FIERCE_BLOW"
+        },
+        {
+          "line": 453,
+          "spell": "SPELL_DRACONIC_CLEAVE_CAST"
+        },
+        {
+          "line": 461,
+          "spell": "SPELL_SCORCHING_BREATH_CAST"
+        },
+        {
+          "line": 465,
+          "spell": "SPELL_RAGE_ERUPTION"
+        },
+        {
+          "line": 473,
+          "spell": "SPELL_CONCENTRATING"
+        },
+        {
+          "line": 511,
+          "spell": "SPELL_NEFARIUS_CORRUPTION"
+        },
+        {
+          "line": 519,
+          "spell": "SPELL_RED_LIGHTNING"
+        }
+      ],
+      "conditions": [
+        {
+          "line": 106,
+          "source": "EVENT_SPEECH_1 = 1,"
+        },
+        {
+          "line": 107,
+          "source": "EVENT_SPEECH_2,"
+        },
+        {
+          "line": 108,
+          "source": "EVENT_SPEECH_3,"
+        },
+        {
+          "line": 109,
+          "source": "EVENT_SPEECH_4,"
+        },
+        {
+          "line": 110,
+          "source": "EVENT_SPEECH_5,"
+        },
+        {
+          "line": 111,
+          "source": "EVENT_SPEECH_6,"
+        },
+        {
+          "line": 112,
+          "source": "EVENT_SPEECH_7,"
+        },
+        {
+          "line": 114,
+          "source": "EVENT_FIERCE_BLOW,"
+        },
+        {
+          "line": 115,
+          "source": "EVENT_CLEAVE,"
+        },
+        {
+          "line": 116,
+          "source": "EVENT_TAIL_SWEEP,"
+        },
+        {
+          "line": 117,
+          "source": "EVENT_SCORCHING_BREATH,"
+        },
+        {
+          "line": 118,
+          "source": "EVENT_RAGE_ERUPTION,"
+        },
+        {
+          "line": 119,
+          "source": "EVENT_BURNING_ADRENALINE,"
+        },
+        {
+          "line": 120,
+          "source": "EVENT_CONCENTRATE,"
+        },
+        {
+          "line": 121,
+          "source": "EVENT_ORBS,"
+        },
+        {
+          "line": 123,
+          "source": "EVENT_BREATH_PULSE,"
+        },
+        {
+          "line": 124,
+          "source": "EVENT_SECOND,"
+        },
+        {
+          "line": 220,
+          "source": "events.ScheduleEvent(EVENT_FIERCE_BLOW, 6s);"
+        },
+        {
+          "line": 221,
+          "source": "events.ScheduleEvent(EVENT_CLEAVE, 8s);"
+        },
+        {
+          "line": 222,
+          "source": "events.ScheduleEvent(EVENT_SCORCHING_BREATH, 12s);"
+        },
+        {
+          "line": 223,
+          "source": "events.ScheduleEvent(EVENT_RAGE_ERUPTION, 15s);"
+        },
+        {
+          "line": 224,
+          "source": "events.ScheduleEvent(EVENT_TAIL_SWEEP, 20s);"
+        },
+        {
+          "line": 225,
+          "source": "events.ScheduleEvent(EVENT_BURNING_ADRENALINE, 20s);"
+        },
+        {
+          "line": 226,
+          "source": "events.ScheduleEvent(EVENT_ORBS, 20s);"
+        },
+        {
+          "line": 227,
+          "source": "events.ScheduleEvent(EVENT_CONCENTRATE, 30s);"
+        },
+        {
+          "line": 229,
+          "source": "_clock.ScheduleEvent(EVENT_SECOND, 1s);"
+        },
+        {
+          "line": 248,
+          "source": "_eventsIntro.ScheduleEvent(EVENT_SPEECH_1, 1s);"
+        },
+        {
+          "line": 315,
+          "source": "_clock.ScheduleEvent(EVENT_BREATH_PULSE, 0ms);"
+        },
+        {
+          "line": 330,
+          "source": "_clock.ScheduleEvent(EVENT_BREATH_PULSE, 500ms);"
+        },
+        {
+          "line": 432,
+          "source": "if (tick == EVENT_BREATH_PULSE)"
+        },
+        {
+          "line": 434,
+          "source": "else if (tick == EVENT_SECOND)"
+        },
+        {
+          "line": 437,
+          "source": "_clock.ScheduleEvent(EVENT_SECOND, 1s);"
+        },
+        {
+          "line": 448,
+          "source": "case EVENT_FIERCE_BLOW:"
+        },
+        {
+          "line": 450,
+          "source": "events.ScheduleEvent(EVENT_FIERCE_BLOW, 8500ms);"
+        },
+        {
+          "line": 452,
+          "source": "case EVENT_CLEAVE:"
+        },
+        {
+          "line": 454,
+          "source": "events.ScheduleEvent(EVENT_CLEAVE, 8s);"
+        },
+        {
+          "line": 456,
+          "source": "case EVENT_TAIL_SWEEP:"
+        },
+        {
+          "line": 458,
+          "source": "events.ScheduleEvent(EVENT_TAIL_SWEEP, 20s);"
+        },
+        {
+          "line": 460,
+          "source": "case EVENT_SCORCHING_BREATH:"
+        },
+        {
+          "line": 462,
+          "source": "events.ScheduleEvent(EVENT_SCORCHING_BREATH, 12s);"
+        },
+        {
+          "line": 464,
+          "source": "case EVENT_RAGE_ERUPTION:"
+        },
+        {
+          "line": 466,
+          "source": "events.ScheduleEvent(EVENT_RAGE_ERUPTION, 15s);"
+        },
+        {
+          "line": 468,
+          "source": "case EVENT_BURNING_ADRENALINE:"
+        },
+        {
+          "line": 470,
+          "source": "events.ScheduleEvent(EVENT_BURNING_ADRENALINE, 20s);"
+        },
+        {
+          "line": 472,
+          "source": "case EVENT_CONCENTRATE:"
+        },
+        {
+          "line": 474,
+          "source": "events.ScheduleEvent(EVENT_CONCENTRATE, 60s);"
+        },
+        {
+          "line": 476,
+          "source": "case EVENT_ORBS:"
+        },
+        {
+          "line": 478,
+          "source": "events.ScheduleEvent(EVENT_ORBS, 30s);"
+        },
+        {
+          "line": 486,
+          "source": "if (HealthBelowPct(15) && !_hasYelled)"
+        },
+        {
+          "line": 502,
+          "source": "case EVENT_SPEECH_1:"
+        },
+        {
+          "line": 505,
+          "source": "_eventsIntro.ScheduleEvent(EVENT_SPEECH_2, 1s);"
+        },
+        {
+          "line": 508,
+          "source": "case EVENT_SPEECH_2:"
+        },
+        {
+          "line": 515,
+          "source": "_eventsIntro.ScheduleEvent(EVENT_SPEECH_3, 18s);"
+        },
+        {
+          "line": 517,
+          "source": "case EVENT_SPEECH_3:"
+        },
+        {
+          "line": 520,
+          "source": "_eventsIntro.ScheduleEvent(EVENT_SPEECH_4, 2s);"
+        },
+        {
+          "line": 522,
+          "source": "case EVENT_SPEECH_4:"
+        },
+        {
+          "line": 525,
+          "source": "_eventsIntro.ScheduleEvent(EVENT_SPEECH_5, 12s);"
+        },
+        {
+          "line": 527,
+          "source": "case EVENT_SPEECH_5:"
+        },
+        {
+          "line": 530,
+          "source": "_eventsIntro.ScheduleEvent(EVENT_SPEECH_6, 12s);"
+        },
+        {
+          "line": 532,
+          "source": "case EVENT_SPEECH_6:"
+        },
+        {
+          "line": 535,
+          "source": "_eventsIntro.ScheduleEvent(EVENT_SPEECH_7, 17s);"
+        },
+        {
+          "line": 538,
+          "source": "case EVENT_SPEECH_7:"
+        }
+      ]
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_broodlord_coa.cpp",
+      "lines": 188,
+      "spells": [
+        {
+          "symbol": "SPELL_FIERCE_BLOW",
+          "id": 975011
+        },
+        {
+          "symbol": "SPELL_CLEAVE",
+          "id": 2100004
+        },
+        {
+          "symbol": "SPELL_ARCANE_BOLT",
+          "id": 2101036
+        },
+        {
+          "symbol": "SPELL_BLAST_WAVE",
+          "id": 2101040
+        },
+        {
+          "symbol": "SPELL_MORTAL_STRIKE",
+          "id": 24573
+        },
+        {
+          "symbol": "SPELL_KNOCK_AWAY",
+          "id": 25778
+        }
+      ],
+      "schedules": [
+        {
+          "line": 77,
+          "event": "EVENT_FIERCE_BLOW",
+          "args": "6s"
+        },
+        {
+          "line": 78,
+          "event": "EVENT_CLEAVE",
+          "args": "8s"
+        },
+        {
+          "line": 79,
+          "event": "EVENT_MORTAL_STRIKE",
+          "args": "15s"
+        },
+        {
+          "line": 80,
+          "event": "EVENT_BLAST_WAVE",
+          "args": "20s"
+        },
+        {
+          "line": 81,
+          "event": "EVENT_KNOCK_AWAY",
+          "args": "30s"
+        },
+        {
+          "line": 82,
+          "event": "EVENT_ARCANE_BOLT",
+          "args": "2s"
+        },
+        {
+          "line": 83,
+          "event": "EVENT_CHECK",
+          "args": "1s"
+        },
+        {
+          "line": 140,
+          "event": "EVENT_FIERCE_BLOW",
+          "args": "8500ms"
+        },
+        {
+          "line": 144,
+          "event": "EVENT_CLEAVE",
+          "args": "8s"
+        },
+        {
+          "line": 148,
+          "event": "EVENT_BLAST_WAVE",
+          "args": "20s"
+        },
+        {
+          "line": 152,
+          "event": "EVENT_MORTAL_STRIKE",
+          "args": "15s"
+        },
+        {
+          "line": 158,
+          "event": "EVENT_KNOCK_AWAY",
+          "args": "30s"
+        },
+        {
+          "line": 162,
+          "event": "EVENT_ARCANE_BOLT",
+          "args": "2s"
+        },
+        {
+          "line": 171,
+          "event": "EVENT_CHECK",
+          "args": "1s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 105,
+          "spell": "SPELL_CLEAVE"
+        },
+        {
+          "line": 121,
+          "spell": "SPELL_ARCANE_BOLT"
+        },
+        {
+          "line": 139,
+          "spell": "SPELL_FIERCE_BLOW"
+        },
+        {
+          "line": 147,
+          "spell": "SPELL_BLAST_WAVE"
+        },
+        {
+          "line": 151,
+          "spell": "SPELL_MORTAL_STRIKE"
+        },
+        {
+          "line": 155,
+          "spell": "SPELL_KNOCK_AWAY"
+        }
+      ],
+      "conditions": [
+        {
+          "line": 52,
+          "source": "EVENT_CLEAVE = 1,"
+        },
+        {
+          "line": 53,
+          "source": "EVENT_BLAST_WAVE,"
+        },
+        {
+          "line": 54,
+          "source": "EVENT_MORTAL_STRIKE,"
+        },
+        {
+          "line": 55,
+          "source": "EVENT_KNOCK_AWAY,"
+        },
+        {
+          "line": 56,
+          "source": "EVENT_FIERCE_BLOW,"
+        },
+        {
+          "line": 57,
+          "source": "EVENT_ARCANE_BOLT,"
+        },
+        {
+          "line": 58,
+          "source": "EVENT_CHECK,"
+        },
+        {
+          "line": 77,
+          "source": "events.ScheduleEvent(EVENT_FIERCE_BLOW, 6s);"
+        },
+        {
+          "line": 78,
+          "source": "events.ScheduleEvent(EVENT_CLEAVE, 8s);"
+        },
+        {
+          "line": 79,
+          "source": "events.ScheduleEvent(EVENT_MORTAL_STRIKE, 15s);"
+        },
+        {
+          "line": 80,
+          "source": "events.ScheduleEvent(EVENT_BLAST_WAVE, 20s);"
+        },
+        {
+          "line": 81,
+          "source": "events.ScheduleEvent(EVENT_KNOCK_AWAY, 30s);"
+        },
+        {
+          "line": 82,
+          "source": "events.ScheduleEvent(EVENT_ARCANE_BOLT, 2s);"
+        },
+        {
+          "line": 83,
+          "source": "events.ScheduleEvent(EVENT_CHECK, 1s);"
+        },
+        {
+          "line": 138,
+          "source": "case EVENT_FIERCE_BLOW:"
+        },
+        {
+          "line": 140,
+          "source": "events.ScheduleEvent(EVENT_FIERCE_BLOW, 8500ms);"
+        },
+        {
+          "line": 142,
+          "source": "case EVENT_CLEAVE:"
+        },
+        {
+          "line": 144,
+          "source": "events.ScheduleEvent(EVENT_CLEAVE, 8s);"
+        },
+        {
+          "line": 146,
+          "source": "case EVENT_BLAST_WAVE:"
+        },
+        {
+          "line": 148,
+          "source": "events.ScheduleEvent(EVENT_BLAST_WAVE, 20s);"
+        },
+        {
+          "line": 150,
+          "source": "case EVENT_MORTAL_STRIKE:"
+        },
+        {
+          "line": 152,
+          "source": "events.ScheduleEvent(EVENT_MORTAL_STRIKE, 15s);"
+        },
+        {
+          "line": 154,
+          "source": "case EVENT_KNOCK_AWAY:"
+        },
+        {
+          "line": 158,
+          "source": "events.ScheduleEvent(EVENT_KNOCK_AWAY, 30s);"
+        },
+        {
+          "line": 160,
+          "source": "case EVENT_ARCANE_BOLT:"
+        },
+        {
+          "line": 162,
+          "source": "events.ScheduleEvent(EVENT_ARCANE_BOLT, 2s);"
+        },
+        {
+          "line": 164,
+          "source": "case EVENT_CHECK:"
+        },
+        {
+          "line": 171,
+          "source": "events.ScheduleEvent(EVENT_CHECK, 1s);"
+        }
+      ]
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_firemaw_coa.cpp",
+      "error": "NOT_FOUND: Error code: NOT_FOUND; Error: GitHub API error 404: {\"message\":\"Not F"
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_ebonroc_coa.cpp",
+      "error": "NOT_FOUND: Error code: NOT_FOUND; Error: GitHub API error 404: {\"message\":\"Not F"
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_flamegor_coa.cpp",
+      "error": "NOT_FOUND: Error code: NOT_FOUND; Error: GitHub API error 404: {\"message\":\"Not F"
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_chromaggus_coa.cpp",
+      "lines": 595,
+      "spells": [
+        {
+          "symbol": "SPELL_UNSTABLE_MUTATION",
+          "id": 2111017
+        },
+        {
+          "symbol": "SPELL_MUTATING",
+          "id": 2111018
+        },
+        {
+          "symbol": "SPELL_CHROMATIC_MUTATION",
+          "id": 2111019
+        },
+        {
+          "symbol": "SPELL_CHROMATIC_ADDON",
+          "id": 2111020
+        },
+        {
+          "symbol": "SPELL_RED_BURN",
+          "id": 2111021
+        },
+        {
+          "symbol": "SPELL_TIME_STOP",
+          "id": 2111022
+        },
+        {
+          "symbol": "SPELL_HOURGLASS_SAND",
+          "id": 2111023
+        },
+        {
+          "symbol": "SPELL_MUTATION_BURN",
+          "id": 2111024
+        },
+        {
+          "symbol": "SPELL_INCINERATE_DOT",
+          "id": 2111047
+        },
+        {
+          "symbol": "SPELL_INCINERATE_ERUPTION",
+          "id": 2111151
+        },
+        {
+          "symbol": "SPELL_CORROSIVE_ACID_DOT",
+          "id": 2111054
+        },
+        {
+          "symbol": "SPELL_ACIDIC_PUS",
+          "id": 2111156
+        },
+        {
+          "symbol": "SPELL_ACIDIC_OOZE",
+          "id": 2111160
+        },
+        {
+          "symbol": "SPELL_FROST_BURN_DOT",
+          "id": 2111061
+        },
+        {
+          "symbol": "SPELL_FREEZING_FOG",
+          "id": 2111165
+        },
+        {
+          "symbol": "SPELL_ENGULFING_SHADOWS",
+          "id": 2111068
+        },
+        {
+          "symbol": "SPELL_ENGULFING_TICK",
+          "id": 2111072
+        },
+        {
+          "symbol": "SPELL_CONSUMING_SHADOWS",
+          "id": 2111073
+        },
+        {
+          "symbol": "SPELL_SHADOW_MEND",
+          "id": 2111074
+        },
+        {
+          "symbol": "SPELL_TIME_LAPSE_FREEZE",
+          "id": 2111077
+        },
+        {
+          "symbol": "SPELL_ACCELERATE_TIME",
+          "id": 2111078
+        },
+        {
+          "symbol": "SPELL_DECELERATE_TIME",
+          "id": 2111080
+        },
+        {
+          "symbol": "SPELL_BERSERK",
+          "id": 2100213
+        }
+      ],
+      "schedules": [
+        {
+          "line": 220,
+          "event": "EVENT_PHASE",
+          "args": "1s"
+        },
+        {
+          "line": 221,
+          "event": "EVENT_AFFLICTION",
+          "args": "15s"
+        },
+        {
+          "line": 222,
+          "event": "EVENT_BERSERK",
+          "args": "10min"
+        },
+        {
+          "line": 288,
+          "event": "EVENT_BREATH",
+          "args": "5s"
+        },
+        {
+          "line": 289,
+          "event": "EVENT_BIG",
+          "args": "10s"
+        },
+        {
+          "line": 290,
+          "event": "EVENT_BREATH",
+          "args": "15s"
+        },
+        {
+          "line": 291,
+          "event": "EVENT_BREATH",
+          "args": "25s"
+        },
+        {
+          "line": 292,
+          "event": "EVENT_PHASE",
+          "args": "30s"
+        },
+        {
+          "line": 540,
+          "event": "EVENT_AFFLICTION",
+          "args": "15s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 331,
+          "spell": "SPELL_INCINERATE_DOT"
+        },
+        {
+          "line": 337,
+          "spell": "SPELL_CORROSIVE_ACID_DOT"
+        },
+        {
+          "line": 343,
+          "spell": "SPELL_FROST_BURN_DOT"
+        },
+        {
+          "line": 352,
+          "spell": "SPELL_ENGULFING_SHADOWS"
+        },
+        {
+          "line": 356,
+          "spell": "SPELL_TIME_LAPSE_FREEZE"
+        },
+        {
+          "line": 379,
+          "spell": "SPELL_INCINERATE_ERUPTION"
+        },
+        {
+          "line": 388,
+          "spell": "SPELL_ACIDIC_PUS"
+        },
+        {
+          "line": 389,
+          "spell": "SPELL_ACIDIC_OOZE"
+        },
+        {
+          "line": 397,
+          "spell": "SPELL_FREEZING_FOG"
+        },
+        {
+          "line": 457,
+          "spell": "SPELL_TIME_STOP"
+        },
+        {
+          "line": 467,
+          "spell": "SPELL_MUTATING"
+        },
+        {
+          "line": 476,
+          "spell": "SPELL_CHROMATIC_MUTATION"
+        },
+        {
+          "line": 477,
+          "spell": "SPELL_CHROMATIC_ADDON"
+        },
+        {
+          "line": 543,
+          "spell": "SPELL_BERSERK"
+        }
+      ],
+      "conditions": [
+        {
+          "line": 108,
+          "source": "EVENT_PHASE = 1,"
+        },
+        {
+          "line": 109,
+          "source": "EVENT_BREATH,"
+        },
+        {
+          "line": 110,
+          "source": "EVENT_BIG,"
+        },
+        {
+          "line": 111,
+          "source": "EVENT_AFFLICTION,"
+        },
+        {
+          "line": 112,
+          "source": "EVENT_BERSERK,"
+        },
+        {
+          "line": 115,
+          "source": "EVENT_SECOND,"
+        },
+        {
+          "line": 116,
+          "source": "EVENT_BREATH_PULSE,"
+        },
+        {
+          "line": 117,
+          "source": "EVENT_ERUPTION_RING,"
+        },
+        {
+          "line": 118,
+          "source": "EVENT_ACID_POOL,"
+        },
+        {
+          "line": 119,
+          "source": "EVENT_FOG,"
+        },
+        {
+          "line": 120,
+          "source": "EVENT_TIME_FLOW,"
+        },
+        {
+          "line": 220,
+          "source": "events.ScheduleEvent(EVENT_PHASE, 1s);"
+        },
+        {
+          "line": 221,
+          "source": "events.ScheduleEvent(EVENT_AFFLICTION, 15s);"
+        },
+        {
+          "line": 222,
+          "source": "events.ScheduleEvent(EVENT_BERSERK, 10min);"
+        },
+        {
+          "line": 223,
+          "source": "_clock.ScheduleEvent(EVENT_SECOND, 1s);"
+        },
+        {
+          "line": 288,
+          "source": "events.ScheduleEvent(EVENT_BREATH, 5s);"
+        },
+        {
+          "line": 289,
+          "source": "events.ScheduleEvent(EVENT_BIG, 10s);"
+        },
+        {
+          "line": 290,
+          "source": "events.ScheduleEvent(EVENT_BREATH, 15s);"
+        },
+        {
+          "line": 291,
+          "source": "events.ScheduleEvent(EVENT_BREATH, 25s);"
+        },
+        {
+          "line": 292,
+          "source": "events.ScheduleEvent(EVENT_PHASE, 30s);"
+        },
+        {
+          "line": 304,
+          "source": "_clock.ScheduleEvent(EVENT_BREATH_PULSE, 0ms);"
+        },
+        {
+          "line": 318,
+          "source": "_clock.ScheduleEvent(EVENT_BREATH_PULSE, 500ms);"
+        },
+        {
+          "line": 333,
+          "source": "_clock.ScheduleEvent(EVENT_ERUPTION_RING, 1s);"
+        },
+        {
+          "line": 339,
+          "source": "_clock.ScheduleEvent(EVENT_ACID_POOL, 500ms);"
+        },
+        {
+          "line": 348,
+          "source": "_clock.ScheduleEvent(EVENT_FOG, 1s);"
+        },
+        {
+          "line": 360,
+          "source": "_clock.ScheduleEvent(EVENT_TIME_FLOW, 4s);"
+        },
+        {
+          "line": 382,
+          "source": "_clock.ScheduleEvent(EVENT_ERUPTION_RING, 1s);"
+        },
+        {
+          "line": 391,
+          "source": "_clock.ScheduleEvent(EVENT_ACID_POOL, 500ms);"
+        },
+        {
+          "line": 399,
+          "source": "_clock.ScheduleEvent(EVENT_FOG, 1s);"
+        },
+        {
+          "line": 408,
+          "source": "_clock.ScheduleEvent(EVENT_TIME_FLOW, 1s);"
+        },
+        {
+          "line": 484,
+          "source": "if (p->GetHealthPct() < CONSUMED_BELOW)"
+        },
+        {
+          "line": 510,
+          "source": "case EVENT_SECOND:"
+        },
+        {
+          "line": 512,
+          "source": "_clock.ScheduleEvent(EVENT_SECOND, 1s);"
+        },
+        {
+          "line": 514,
+          "source": "case EVENT_BREATH_PULSE:    BreathPulse();  break;"
+        },
+        {
+          "line": 515,
+          "source": "case EVENT_ERUPTION_RING:   EruptionRing(); break;"
+        },
+        {
+          "line": 516,
+          "source": "case EVENT_ACID_POOL:       AcidPool();     break;"
+        },
+        {
+          "line": 517,
+          "source": "case EVENT_FOG:             Fog();          break;"
+        },
+        {
+          "line": 518,
+          "source": "case EVENT_TIME_FLOW:       TimeFlow();     break;"
+        },
+        {
+          "line": 529,
+          "source": "case EVENT_PHASE:"
+        },
+        {
+          "line": 532,
+          "source": "case EVENT_BREATH:"
+        },
+        {
+          "line": 535,
+          "source": "case EVENT_BIG:"
+        },
+        {
+          "line": 538,
+          "source": "case EVENT_AFFLICTION:"
+        },
+        {
+          "line": 540,
+          "source": "events.ScheduleEvent(EVENT_AFFLICTION, 15s);"
+        },
+        {
+          "line": 542,
+          "source": "case EVENT_BERSERK:"
+        }
+      ]
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_nefarian_coa.cpp",
+      "lines": 860,
+      "spells": [
+        {
+          "symbol": "SPELL_CHROMATIC_CHAOS",
+          "id": 16337
+        },
+        {
+          "symbol": "SPELL_VAELASTRASZZ_SPAWN",
+          "id": 16354
+        },
+        {
+          "symbol": "SPELL_NEFARIANS_BARRIER",
+          "id": 22663
+        },
+        {
+          "symbol": "SPELL_ROOT_SELF",
+          "id": 17507
+        },
+        {
+          "symbol": "SPELL_SHADOWFLAME_INITIAL",
+          "id": 22992
+        },
+        {
+          "symbol": "SPELL_RAISE_DRAKONID",
+          "id": 23362
+        },
+        {
+          "symbol": "SPELL_SHADOW_COMMAND",
+          "id": 22667
+        },
+        {
+          "symbol": "SPELL_BELLOWING_ROAR_FEAR",
+          "id": 22686
+        },
+        {
+          "symbol": "SPELL_ONYXIA_SCALE_CLOAK",
+          "id": 22683
+        },
+        {
+          "symbol": "SPELL_FIERCE_BLOW",
+          "id": 975011
+        },
+        {
+          "symbol": "SPELL_SHADOW_BOLT_CAST",
+          "id": 2111205
+        },
+        {
+          "symbol": "SPELL_SHADOW_BOLT_HIT",
+          "id": 2111201
+        },
+        {
+          "symbol": "SPELL_BLINK",
+          "id": 2111207
+        },
+        {
+          "symbol": "SPELL_DARK_VOLLEY",
+          "id": 2111210
+        },
+        {
+          "symbol": "SPELL_MINION_CONTROL",
+          "id": 2111217
+        },
+        {
+          "symbol": "SPELL_MINION_PROTECT",
+          "id": 2111219
+        },
+        {
+          "symbol": "SPELL_SHADOW_PRISON",
+          "id": 2111240
+        },
+        {
+          "symbol": "SPELL_SHADOW_FLAME_BOLT_CAST",
+          "id": 2111242
+        },
+        {
+          "symbol": "SPELL_SHADOW_FLAME_BOLT",
+          "id": 2111244
+        },
+        {
+          "symbol": "SPELL_BURNING_GROUND",
+          "id": 2111248
+        },
+        {
+          "symbol": "SPELL_BREATH_CAST",
+          "id": 2111252
+        },
+        {
+          "symbol": "SPELL_BREATH_HIT",
+          "id": 2111254
+        },
+        {
+          "symbol": "SPELL_SHADOW_FLAME",
+          "id": 2111258
+        },
+        {
+          "symbol": "SPELL_SCALE_CLOAK",
+          "id": 2111263
+        },
+        {
+          "symbol": "SPELL_CLEAVE_CAST",
+          "id": 2111265
+        },
+        {
+          "symbol": "SPELL_CLEAVE",
+          "id": 2111266
+        },
+        {
+          "symbol": "SPELL_TAIL_SWEEP_HIT",
+          "id": 2111268
+        },
+        {
+          "symbol": "SPELL_BELLOWING_ROAR_CAST",
+          "id": 2111273
+        },
+        {
+          "symbol": "SPELL_CLONE_ME",
+          "id": 2111280
+        },
+        {
+          "symbol": "SPELL_MIMIC_TARGET",
+          "id": 2111281
+        },
+        {
+          "symbol": "SPELL_SPIRITUAL_PAIN",
+          "id": 2111282
+        },
+        {
+          "symbol": "SPELL_INTENT",
+          "id": 2111284
+        },
+        {
+          "symbol": "SPELL_VEIL_OF_SHADOW",
+          "id": 2111288
+        },
+        {
+          "symbol": "SPELL_LEGION",
+          "id": 2111290
+        },
+        {
+          "symbol": "SPELL_MARCH",
+          "id": 2111291
+        },
+        {
+          "symbol": "SPELL_RESOLVE",
+          "id": 2111585
+        },
+        {
+          "symbol": "SPELL_BERSERK",
+          "id": 2100213
+        }
+      ],
+      "schedules": [
+        {
+          "line": 351,
+          "event": "EVENT_BLINK",
+          "args": "500ms"
+        },
+        {
+          "line": 352,
+          "event": "EVENT_SHADOW_BOLT",
+          "args": "3s"
+        },
+        {
+          "line": 353,
+          "event": "EVENT_SPAWN_ADDS",
+          "args": "10s"
+        },
+        {
+          "line": 354,
+          "event": "EVENT_SHADOW_FLAME_BOLT",
+          "args": "20s"
+        },
+        {
+          "line": 355,
+          "event": "EVENT_DARK_VOLLEY",
+          "args": "25s"
+        },
+        {
+          "line": 356,
+          "event": "EVENT_INTENT",
+          "args": "30s"
+        },
+        {
+          "line": 357,
+          "event": "EVENT_MINION",
+          "args": "35s"
+        },
+        {
+          "line": 358,
+          "event": "EVENT_SHADOW_PRISON",
+          "args": "60s"
+        },
+        {
+          "line": 366,
+          "event": "EVENT_PATH_2",
+          "args": "9s"
+        },
+        {
+          "line": 369,
+          "event": "EVENT_SUCCESS_1",
+          "args": "5s"
+        },
+        {
+          "line": 405,
+          "event": "EVENT_CHAOS_1",
+          "args": "7s"
+        },
+        {
+          "line": 413,
+          "event": "EVENT_CHAOS_2",
+          "args": "2s"
+        },
+        {
+          "line": 429,
+          "event": "EVENT_SUCCESS_2",
+          "args": "4s"
+        },
+        {
+          "line": 463,
+          "event": "EVENT_SHADOW_BOLT",
+          "args": "4s"
+        },
+        {
+          "line": 471,
+          "event": "EVENT_SHADOW_FLAME_BOLT",
+          "args": "20s"
+        },
+        {
+          "line": 475,
+          "event": "EVENT_DARK_VOLLEY",
+          "args": "25s"
+        },
+        {
+          "line": 479,
+          "event": "EVENT_INTENT",
+          "args": "30s"
+        },
+        {
+          "line": 488,
+          "event": "EVENT_MINION",
+          "args": "30s"
+        },
+        {
+          "line": 492,
+          "event": "EVENT_SHADOW_PRISON",
+          "args": "60s"
+        },
+        {
+          "line": 496,
+          "event": "EVENT_BLINK",
+          "args": "30s"
+        },
+        {
+          "line": 519,
+          "event": "EVENT_START_EVENT",
+          "args": "4s"
+        },
+        {
+          "line": 625,
+          "event": "EVENT_FIERCE_BLOW",
+          "args": "6s"
+        },
+        {
+          "line": 626,
+          "event": "EVENT_CLEAVE",
+          "args": "8s"
+        },
+        {
+          "line": 627,
+          "event": "EVENT_BREATH",
+          "args": "12s"
+        },
+        {
+          "line": 628,
+          "event": "EVENT_TAIL_SWEEP",
+          "args": "20s"
+        },
+        {
+          "line": 629,
+          "event": "EVENT_ROAR",
+          "args": "30s"
+        },
+        {
+          "line": 630,
+          "event": "EVENT_DOMINION",
+          "args": "45s"
+        },
+        {
+          "line": 631,
+          "event": "EVENT_BERSERK",
+          "args": "10min"
+        },
+        {
+          "line": 744,
+          "event": "EVENT_FIERCE_BLOW",
+          "args": "8500ms"
+        },
+        {
+          "line": 748,
+          "event": "EVENT_CLEAVE",
+          "args": "8s"
+        },
+        {
+          "line": 752,
+          "event": "EVENT_BREATH",
+          "args": "20s"
+        },
+        {
+          "line": 756,
+          "event": "EVENT_TAIL_SWEEP",
+          "args": "20s"
+        },
+        {
+          "line": 760,
+          "event": "EVENT_ROAR",
+          "args": "30s"
+        },
+        {
+          "line": 764,
+          "event": "EVENT_DOMINION",
+          "args": "45s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 327,
+          "spell": "SPELL_ROOT_SELF"
+        },
+        {
+          "line": 346,
+          "spell": "SPELL_NEFARIANS_BARRIER"
+        },
+        {
+          "line": 386,
+          "spell": "SPELL_SHADOW_FLAME_BOLT"
+        },
+        {
+          "line": 387,
+          "spell": "SPELL_BURNING_GROUND"
+        },
+        {
+          "line": 416,
+          "spell": "SPELL_CHROMATIC_CHAOS"
+        },
+        {
+          "line": 432,
+          "spell": "SPELL_VAELASTRASZZ_SPAWN"
+        },
+        {
+          "line": 461,
+          "spell": "SPELL_SHADOW_BOLT_CAST"
+        },
+        {
+          "line": 469,
+          "spell": "SPELL_SHADOW_FLAME_BOLT_CAST"
+        },
+        {
+          "line": 474,
+          "spell": "SPELL_DARK_VOLLEY"
+        },
+        {
+          "line": 478,
+          "spell": "SPELL_INTENT"
+        },
+        {
+          "line": 484,
+          "spell": "SPELL_SHADOW_COMMAND"
+        },
+        {
+          "line": 485,
+          "spell": "SPELL_MINION_CONTROL"
+        },
+        {
+          "line": 486,
+          "spell": "SPELL_MINION_PROTECT"
+        },
+        {
+          "line": 491,
+          "spell": "SPELL_SHADOW_PRISON"
+        },
+        {
+          "line": 495,
+          "spell": "SPELL_BLINK"
+        },
+        {
+          "line": 559,
+          "spell": "SPELL_RAISE_DRAKONID"
+        },
+        {
+          "line": 592,
+          "spell": "SPELL_LEGION"
+        },
+        {
+          "line": 606,
+          "spell": "SPELL_SHADOWFLAME_INITIAL"
+        },
+        {
+          "line": 651,
+          "spell": "SPELL_BELLOWING_ROAR_FEAR"
+        },
+        {
+          "line": 655,
+          "spell": "SPELL_CLEAVE"
+        },
+        {
+          "line": 666,
+          "spell": "SPELL_BREATH_HIT"
+        },
+        {
+          "line": 680,
+          "spell": "SPELL_TAIL_SWEEP_HIT"
+        },
+        {
+          "line": 695,
+          "spell": "SPELL_MIMIC_TARGET"
+        },
+        {
+          "line": 743,
+          "spell": "SPELL_FIERCE_BLOW"
+        },
+        {
+          "line": 747,
+          "spell": "SPELL_CLEAVE_CAST"
+        },
+        {
+          "line": 751,
+          "spell": "SPELL_BREATH_CAST"
+        },
+        {
+          "line": 759,
+          "spell": "SPELL_BELLOWING_ROAR_CAST"
+        },
+        {
+          "line": 767,
+          "spell": "SPELL_BERSERK"
+        },
+        {
+          "line": 804,
+          "spell": "SPELL_CLONE_ME"
+        }
+      ],
+      "conditions": [
+        {
+          "line": 83,
+          "source": "EVENT_PATH_2 = 1,"
+        },
+        {
+          "line": 84,
+          "source": "EVENT_CHAOS_1,"
+        },
+        {
+          "line": 85,
+          "source": "EVENT_CHAOS_2,"
+        },
+        {
+          "line": 86,
+          "source": "EVENT_SUCCESS_1,"
+        },
+        {
+          "line": 87,
+          "source": "EVENT_SUCCESS_2,"
+        },
+        {
+          "line": 88,
+          "source": "EVENT_PATH_3,"
+        },
+        {
+          "line": 89,
+          "source": "EVENT_START_EVENT,"
+        },
+        {
+          "line": 90,
+          "source": "EVENT_SPAWN_ADDS,"
+        },
+        {
+          "line": 93,
+          "source": "EVENT_SHADOW_BOLT,"
+        },
+        {
+          "line": 94,
+          "source": "EVENT_SHADOW_FLAME_BOLT,"
+        },
+        {
+          "line": 95,
+          "source": "EVENT_DARK_VOLLEY,"
+        },
+        {
+          "line": 96,
+          "source": "EVENT_INTENT,"
+        },
+        {
+          "line": 97,
+          "source": "EVENT_MINION,"
+        },
+        {
+          "line": 98,
+          "source": "EVENT_SHADOW_PRISON,"
+        },
+        {
+          "line": 99,
+          "source": "EVENT_BLINK,"
+        },
+        {
+          "line": 102,
+          "source": "EVENT_BREATH,"
+        },
+        {
+          "line": 103,
+          "source": "EVENT_ROAR,"
+        },
+        {
+          "line": 104,
+          "source": "EVENT_CLEAVE,"
+        },
+        {
+          "line": 105,
+          "source": "EVENT_TAIL_SWEEP,"
+        },
+        {
+          "line": 106,
+          "source": "EVENT_FIERCE_BLOW,"
+        },
+        {
+          "line": 107,
+          "source": "EVENT_DOMINION,"
+        },
+        {
+          "line": 108,
+          "source": "EVENT_BERSERK,"
+        },
+        {
+          "line": 109,
+          "source": "EVENT_BREATH_PULSE,"
+        },
+        {
+          "line": 110,
+          "source": "EVENT_LEGION,"
+        },
+        {
+          "line": 111,
+          "source": "EVENT_MARCH,"
+        },
+        {
+          "line": 351,
+          "source": "events.ScheduleEvent(EVENT_BLINK, 500ms);"
+        },
+        {
+          "line": 352,
+          "source": "events.ScheduleEvent(EVENT_SHADOW_BOLT, 3s);"
+        },
+        {
+          "line": 353,
+          "source": "events.ScheduleEvent(EVENT_SPAWN_ADDS, 10s);"
+        },
+        {
+          "line": 354,
+          "source": "events.ScheduleEvent(EVENT_SHADOW_FLAME_BOLT, 20s);"
+        },
+        {
+          "line": 355,
+          "source": "events.ScheduleEvent(EVENT_DARK_VOLLEY, 25s);"
+        },
+        {
+          "line": 356,
+          "source": "events.ScheduleEvent(EVENT_INTENT, 30s);"
+        },
+        {
+          "line": 357,
+          "source": "events.ScheduleEvent(EVENT_MINION, 35s);"
+        },
+        {
+          "line": 358,
+          "source": "events.ScheduleEvent(EVENT_SHADOW_PRISON, 60s);"
+        },
+        {
+          "line": 366,
+          "source": "events.ScheduleEvent(EVENT_PATH_2, 9s);"
+        },
+        {
+          "line": 369,
+          "source": "events.ScheduleEvent(EVENT_SUCCESS_1, 5s);"
+        },
+        {
+          "line": 403,
+          "source": "case EVENT_PATH_2:"
+        },
+        {
+          "line": 405,
+          "source": "events.ScheduleEvent(EVENT_CHAOS_1, 7s);"
+        },
+        {
+          "line": 407,
+          "source": "case EVENT_CHAOS_1:"
+        },
+        {
+          "line": 413,
+          "source": "events.ScheduleEvent(EVENT_CHAOS_2, 2s);"
+        },
+        {
+          "line": 415,
+          "source": "case EVENT_CHAOS_2:"
+        },
+        {
+          "line": 419,
+          "source": "case EVENT_SUCCESS_1:"
+        },
+        {
+          "line": 429,
+          "source": "events.ScheduleEvent(EVENT_SUCCESS_2, 4s);"
+        },
+        {
+          "line": 431,
+          "source": "case EVENT_SUCCESS_2:"
+        },
+        {
+          "line": 435,
+          "source": "case EVENT_PATH_3:"
+        },
+        {
+          "line": 438,
+          "source": "case EVENT_START_EVENT:"
+        },
+        {
+          "line": 457,
+          "source": "case EVENT_SHADOW_BOLT:"
+        },
+        {
+          "line": 463,
+          "source": "events.ScheduleEvent(EVENT_SHADOW_BOLT, 4s);"
+        },
+        {
+          "line": 465,
+          "source": "case EVENT_SHADOW_FLAME_BOLT:"
+        },
+        {
+          "line": 471,
+          "source": "events.ScheduleEvent(EVENT_SHADOW_FLAME_BOLT, 20s);"
+        },
+        {
+          "line": 473,
+          "source": "case EVENT_DARK_VOLLEY:"
+        },
+        {
+          "line": 475,
+          "source": "events.ScheduleEvent(EVENT_DARK_VOLLEY, 25s);"
+        },
+        {
+          "line": 477,
+          "source": "case EVENT_INTENT:"
+        },
+        {
+          "line": 479,
+          "source": "events.ScheduleEvent(EVENT_INTENT, 30s);"
+        },
+        {
+          "line": 481,
+          "source": "case EVENT_MINION:"
+        },
+        {
+          "line": 488,
+          "source": "events.ScheduleEvent(EVENT_MINION, 30s);"
+        },
+        {
+          "line": 490,
+          "source": "case EVENT_SHADOW_PRISON:"
+        },
+        {
+          "line": 492,
+          "source": "events.ScheduleEvent(EVENT_SHADOW_PRISON, 60s);"
+        },
+        {
+          "line": 494,
+          "source": "case EVENT_BLINK:"
+        },
+        {
+          "line": 496,
+          "source": "events.ScheduleEvent(EVENT_BLINK, 30s);"
+        },
+        {
+          "line": 498,
+          "source": "case EVENT_SPAWN_ADDS:"
+        },
+        {
+          "line": 519,
+          "source": "events.ScheduleEvent(EVENT_START_EVENT, 4s);"
+        },
+        {
+          "line": 561,
+          "source": "_clock.ScheduleEvent(EVENT_LEGION, 2s);"
+        },
+        {
+          "line": 594,
+          "source": "if (!_clock.HasTimeUntilEvent(EVENT_MARCH))"
+        },
+        {
+          "line": 595,
+          "source": "_clock.ScheduleEvent(EVENT_MARCH, 1s);"
+        },
+        {
+          "line": 625,
+          "source": "events.ScheduleEvent(EVENT_FIERCE_BLOW, 6s);"
+        },
+        {
+          "line": 626,
+          "source": "events.ScheduleEvent(EVENT_CLEAVE, 8s);"
+        },
+        {
+          "line": 627,
+          "source": "events.ScheduleEvent(EVENT_BREATH, 12s);"
+        },
+        {
+          "line": 628,
+          "source": "events.ScheduleEvent(EVENT_TAIL_SWEEP, 20s);"
+        },
+        {
+          "line": 629,
+          "source": "events.ScheduleEvent(EVENT_ROAR, 30s);"
+        },
+        {
+          "line": 630,
+          "source": "events.ScheduleEvent(EVENT_DOMINION, 45s);"
+        },
+        {
+          "line": 631,
+          "source": "events.ScheduleEvent(EVENT_BERSERK, 10min);"
+        },
+        {
+          "line": 648,
+          "source": "_clock.ScheduleEvent(EVENT_BREATH_PULSE, 0ms);"
+        },
+        {
+          "line": 671,
+          "source": "_clock.ScheduleEvent(EVENT_BREATH_PULSE, 500ms);"
+        },
+        {
+          "line": 712,
+          "source": "case EVENT_BREATH_PULSE:"
+        },
+        {
+          "line": 715,
+          "source": "case EVENT_LEGION:"
+        },
+        {
+          "line": 724,
+          "source": "case EVENT_MARCH:"
+        },
+        {
+          "line": 730,
+          "source": "_clock.ScheduleEvent(EVENT_MARCH, 1s);"
+        },
+        {
+          "line": 742,
+          "source": "case EVENT_FIERCE_BLOW:"
+        },
+        {
+          "line": 744,
+          "source": "events.ScheduleEvent(EVENT_FIERCE_BLOW, 8500ms);"
+        },
+        {
+          "line": 746,
+          "source": "case EVENT_CLEAVE:"
+        },
+        {
+          "line": 748,
+          "source": "events.ScheduleEvent(EVENT_CLEAVE, 8s);"
+        },
+        {
+          "line": 750,
+          "source": "case EVENT_BREATH:"
+        },
+        {
+          "line": 752,
+          "source": "events.ScheduleEvent(EVENT_BREATH, 20s);"
+        },
+        {
+          "line": 754,
+          "source": "case EVENT_TAIL_SWEEP:"
+        },
+        {
+          "line": 756,
+          "source": "events.ScheduleEvent(EVENT_TAIL_SWEEP, 20s);"
+        },
+        {
+          "line": 758,
+          "source": "case EVENT_ROAR:"
+        },
+        {
+          "line": 760,
+          "source": "events.ScheduleEvent(EVENT_ROAR, 30s);"
+        },
+        {
+          "line": 762,
+          "source": "case EVENT_DOMINION:"
+        },
+        {
+          "line": 764,
+          "source": "events.ScheduleEvent(EVENT_DOMINION, 45s);"
+        },
+        {
+          "line": 766,
+          "source": "case EVENT_BERSERK:"
+        }
+      ]
+    }
+  ]
+}

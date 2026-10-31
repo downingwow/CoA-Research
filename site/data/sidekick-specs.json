@@ -3,7 +3,7 @@
   "source": "https://ascensionsidekick.com/tiers",
   "sourceName": "Ascension Sidekick",
   "captured": "2026-10-30",
-  "method": "Sidekick community estimates by content type. Popularity is stated by Sidekick as community interest, not in-game pick rate. These are comparisons, not verified game data.",
+  "method": "Sidekick community estimates by content type. Popularity is stated by Sidekick as community interest, not in-game pick rate. These are comparisons, not verified game data. BoneArchive roles are cross-referenced from the preserved CoA role guide.",
   "columns": [
     "dungeon",
     "raid",
@@ -22,7 +22,8 @@
         "battlegrounds": "S"
       },
       "popularity": 70,
-      "role": null
+      "role": null,
+      "archiveRole": "tank"
     },
     {
       "class": "Felsworn",
@@ -35,7 +36,8 @@
         "battlegrounds": "S"
       },
       "popularity": 80,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Tinker",
@@ -48,7 +50,8 @@
         "battlegrounds": "A"
       },
       "popularity": 55,
-      "role": null
+      "role": null,
+      "archiveRole": "healer"
     },
     {
       "class": "Primalist",
@@ -61,7 +64,8 @@
         "battlegrounds": "S"
       },
       "popularity": 80,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Cultist",
@@ -74,7 +78,8 @@
         "battlegrounds": "S"
       },
       "popularity": 67,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Tinker",
@@ -87,7 +92,8 @@
         "battlegrounds": "S"
       },
       "popularity": 57,
-      "role": null
+      "role": null,
+      "archiveRole": "ranged"
     },
     {
       "class": "Pyromancer",
@@ -100,7 +106,8 @@
         "battlegrounds": "A"
       },
       "popularity": 56,
-      "role": null
+      "role": null,
+      "archiveRole": "healer"
     },
     {
       "class": "Primalist",
@@ -113,7 +120,8 @@
         "battlegrounds": "S"
       },
       "popularity": 54,
-      "role": null
+      "role": null,
+      "archiveRole": "support"
     },
     {
       "class": "Runemaster",
@@ -126,7 +134,8 @@
         "battlegrounds": "A"
       },
       "popularity": 77,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Witch Doctor",
@@ -139,7 +148,8 @@
         "battlegrounds": "A"
       },
       "popularity": 56,
-      "role": null
+      "role": null,
+      "archiveRole": "ranged"
     },
     {
       "class": "Witch Doctor",
@@ -152,7 +162,8 @@
         "battlegrounds": "B"
       },
       "popularity": 54,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Starcaller",
@@ -165,7 +176,8 @@
         "battlegrounds": "A"
       },
       "popularity": 77,
-      "role": null
+      "role": null,
+      "archiveRole": "ranged"
     },
     {
       "class": "Templar",
@@ -178,7 +190,8 @@
         "battlegrounds": "B"
       },
       "popularity": 63,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Bloodmage",
@@ -191,7 +204,8 @@
         "battlegrounds": "A"
       },
       "popularity": 62,
-      "role": null
+      "role": null,
+      "archiveRole": "tank"
     },
     {
       "class": "Tinker",
@@ -204,7 +218,8 @@
         "battlegrounds": "A"
       },
       "popularity": 50,
-      "role": null
+      "role": null,
+      "archiveRole": "ranged"
     },
     {
       "class": "Starcaller",
@@ -217,7 +232,8 @@
         "battlegrounds": "A"
       },
       "popularity": 49,
-      "role": null
+      "role": null,
+      "archiveRole": "healer"
     },
     {
       "class": "Necromancer",
@@ -230,7 +246,8 @@
         "battlegrounds": "A"
       },
       "popularity": 66,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Cultist",
@@ -243,7 +260,8 @@
         "battlegrounds": "B"
       },
       "popularity": 61,
-      "role": null
+      "role": null,
+      "archiveRole": "healer"
     },
     {
       "class": "Bloodmage",
@@ -256,7 +274,8 @@
         "battlegrounds": "A"
       },
       "popularity": 59,
-      "role": null
+      "role": null,
+      "archiveRole": "support"
     },
     {
       "class": "Templar",
@@ -269,7 +288,8 @@
         "battlegrounds": "A"
       },
       "popularity": 49,
-      "role": null
+      "role": null,
+      "archiveRole": "tank"
     },
     {
       "class": "Witch Hunter",
@@ -282,7 +302,8 @@
         "battlegrounds": "B"
       },
       "popularity": 47,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Chronomancer",
@@ -295,7 +316,8 @@
         "battlegrounds": "B"
       },
       "popularity": 85,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Sun Cleric",
@@ -308,7 +330,8 @@
         "battlegrounds": "A"
       },
       "popularity": 51,
-      "role": null
+      "role": null,
+      "archiveRole": "healer"
     },
     {
       "class": "Starcaller",
@@ -321,7 +344,8 @@
         "battlegrounds": "B"
       },
       "popularity": 51,
-      "role": null
+      "role": null,
+      "archiveRole": "tank"
     },
     {
       "class": "Pyromancer",
@@ -334,7 +358,8 @@
         "battlegrounds": "B"
       },
       "popularity": 45,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Witch Doctor",
@@ -347,7 +372,8 @@
         "battlegrounds": "A"
       },
       "popularity": 40,
-      "role": null
+      "role": null,
+      "archiveRole": "healer"
     },
     {
       "class": "Witch Hunter",
@@ -360,7 +386,8 @@
         "battlegrounds": "A"
       },
       "popularity": 38,
-      "role": null
+      "role": null,
+      "archiveRole": "tank"
     },
     {
       "class": "Necromancer",
@@ -373,7 +400,8 @@
         "battlegrounds": "B"
       },
       "popularity": 38,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Venomancer",
@@ -386,7 +414,8 @@
         "battlegrounds": "A"
       },
       "popularity": 35,
-      "role": null
+      "role": null,
+      "archiveRole": "tank"
     },
     {
       "class": "Venomancer",
@@ -399,7 +428,8 @@
         "battlegrounds": "A"
       },
       "popularity": 35,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Sun Cleric",
@@ -412,7 +442,8 @@
         "battlegrounds": "B"
       },
       "popularity": 34,
-      "role": null
+      "role": null,
+      "archiveRole": "tank"
     },
     {
       "class": "Venomancer",
@@ -425,7 +456,8 @@
         "battlegrounds": "B"
       },
       "popularity": 33,
-      "role": null
+      "role": null,
+      "archiveRole": "healer"
     },
     {
       "class": "Felsworn",
@@ -438,7 +470,8 @@
         "battlegrounds": "B"
       },
       "popularity": 62,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Ranger",
@@ -451,7 +484,8 @@
         "battlegrounds": "C"
       },
       "popularity": 57,
-      "role": null
+      "role": null,
+      "archiveRole": "ranged"
     },
     {
       "class": "Bloodmage",
@@ -464,7 +498,8 @@
         "battlegrounds": "C"
       },
       "popularity": 43,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Primalist",
@@ -477,7 +512,8 @@
         "battlegrounds": "B"
       },
       "popularity": 41,
-      "role": null
+      "role": null,
+      "archiveRole": "tank"
     },
     {
       "class": "Sun Cleric",
@@ -490,7 +526,8 @@
         "battlegrounds": "B"
       },
       "popularity": 41,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Stormbringer",
@@ -503,7 +540,8 @@
         "battlegrounds": "B"
       },
       "popularity": 40,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Cultist",
@@ -516,7 +554,8 @@
         "battlegrounds": "B"
       },
       "popularity": 66,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Pyromancer",
@@ -529,7 +568,8 @@
         "battlegrounds": "B"
       },
       "popularity": 54,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Knight of Xoroth",
@@ -542,7 +582,8 @@
         "battlegrounds": "C"
       },
       "popularity": 53,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Barbarian",
@@ -555,7 +596,8 @@
         "battlegrounds": "A"
       },
       "popularity": 52,
-      "role": null
+      "role": null,
+      "archiveRole": "ranged"
     },
     {
       "class": "Runemaster",
@@ -568,7 +610,8 @@
         "battlegrounds": "B"
       },
       "popularity": 50,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Stormbringer",
@@ -581,7 +624,8 @@
         "battlegrounds": "B"
       },
       "popularity": 46,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Reaper",
@@ -594,7 +638,8 @@
         "battlegrounds": "B"
       },
       "popularity": 43,
-      "role": null
+      "role": null,
+      "archiveRole": "tank"
     },
     {
       "class": "Bloodmage",
@@ -607,7 +652,8 @@
         "battlegrounds": "B"
       },
       "popularity": 42,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Guardian",
@@ -620,7 +666,8 @@
         "battlegrounds": "B"
       },
       "popularity": 40,
-      "role": null
+      "role": null,
+      "archiveRole": "tank"
     },
     {
       "class": "Chronomancer",
@@ -633,7 +680,8 @@
         "battlegrounds": "C"
       },
       "popularity": 37,
-      "role": null
+      "role": null,
+      "archiveRole": "ranged"
     },
     {
       "class": "Stormbringer",
@@ -646,7 +694,8 @@
         "battlegrounds": "B"
       },
       "popularity": 33,
-      "role": null
+      "role": null,
+      "archiveRole": "support"
     },
     {
       "class": "Runemaster",
@@ -659,7 +708,8 @@
         "battlegrounds": "B"
       },
       "popularity": 100,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Barbarian",
@@ -672,7 +722,8 @@
         "battlegrounds": "C"
       },
       "popularity": 66,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Knight of Xoroth",
@@ -685,7 +736,8 @@
         "battlegrounds": "B"
       },
       "popularity": 63,
-      "role": null
+      "role": null,
+      "archiveRole": "tank"
     },
     {
       "class": "Guardian",
@@ -698,7 +750,8 @@
         "battlegrounds": "B"
       },
       "popularity": 60,
-      "role": null
+      "role": null,
+      "archiveRole": "support"
     },
     {
       "class": "Chronomancer",
@@ -711,7 +764,8 @@
         "battlegrounds": "B"
       },
       "popularity": 54,
-      "role": null
+      "role": null,
+      "archiveRole": "healer"
     },
     {
       "class": "Primalist",
@@ -724,7 +778,8 @@
         "battlegrounds": "B"
       },
       "popularity": 37,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Templar",
@@ -737,7 +792,8 @@
         "battlegrounds": "C"
       },
       "popularity": 35,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Venomancer",
@@ -750,7 +806,8 @@
         "battlegrounds": "C"
       },
       "popularity": 34,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Knight of Xoroth",
@@ -763,7 +820,8 @@
         "battlegrounds": "C"
       },
       "popularity": 74,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Sun Cleric",
@@ -776,7 +834,8 @@
         "battlegrounds": "C"
       },
       "popularity": 55,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Reaper",
@@ -789,7 +848,8 @@
         "battlegrounds": "D"
       },
       "popularity": 54,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Starcaller",
@@ -802,7 +862,8 @@
         "battlegrounds": "C"
       },
       "popularity": 44,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Cultist",
@@ -815,7 +876,8 @@
         "battlegrounds": "C"
       },
       "popularity": 43,
-      "role": null
+      "role": null,
+      "archiveRole": "tank"
     },
     {
       "class": "Barbarian",
@@ -828,7 +890,8 @@
         "battlegrounds": "B"
       },
       "popularity": 39,
-      "role": null
+      "role": null,
+      "archiveRole": "support"
     },
     {
       "class": "Necromancer",
@@ -841,7 +904,8 @@
         "battlegrounds": "C"
       },
       "popularity": 36,
-      "role": null
+      "role": null,
+      "archiveRole": "caster"
     },
     {
       "class": "Ranger",
@@ -854,7 +918,8 @@
         "battlegrounds": "B"
       },
       "popularity": 35,
-      "role": null
+      "role": null,
+      "archiveRole": "support"
     },
     {
       "class": "Guardian",
@@ -867,7 +932,8 @@
         "battlegrounds": "C"
       },
       "popularity": 31,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Reaper",
@@ -880,7 +946,8 @@
         "battlegrounds": "C"
       },
       "popularity": 66,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Ranger",
@@ -893,7 +960,8 @@
         "battlegrounds": "C"
       },
       "popularity": 49,
-      "role": null
+      "role": null,
+      "archiveRole": "melee"
     },
     {
       "class": "Witch Hunter",
@@ -906,7 +974,8 @@
         "battlegrounds": "C"
       },
       "popularity": 44,
-      "role": null
+      "role": null,
+      "archiveRole": "ranged"
     },
     {
       "class": "Witch Hunter",
@@ -919,7 +988,115 @@
         "battlegrounds": "C"
       },
       "popularity": 34,
-      "role": null
+      "role": null,
+      "archiveRole": "ranged"
+    }
+  ],
+  "classes": [
+    {
+      "name": "Barbarian",
+      "specCount": 3,
+      "sourceUrl": "https://ascensionsidekick.com/barbarian"
+    },
+    {
+      "name": "Bloodmage",
+      "specCount": 4,
+      "sourceUrl": "https://ascensionsidekick.com/bloodmage"
+    },
+    {
+      "name": "Chronomancer",
+      "specCount": 3,
+      "sourceUrl": "https://ascensionsidekick.com/chronomancer"
+    },
+    {
+      "name": "Cultist",
+      "specCount": 4,
+      "sourceUrl": "https://ascensionsidekick.com/cultist"
+    },
+    {
+      "name": "Felsworn",
+      "specCount": 3,
+      "sourceUrl": "https://ascensionsidekick.com/felsworn"
+    },
+    {
+      "name": "Guardian",
+      "specCount": 3,
+      "sourceUrl": "https://ascensionsidekick.com/guardian"
+    },
+    {
+      "name": "Knight of Xoroth",
+      "specCount": 3,
+      "sourceUrl": "https://ascensionsidekick.com/knight-of-xoroth"
+    },
+    {
+      "name": "Necromancer",
+      "specCount": 3,
+      "sourceUrl": "https://ascensionsidekick.com/necromancer"
+    },
+    {
+      "name": "Primalist",
+      "specCount": 4,
+      "sourceUrl": "https://ascensionsidekick.com/primalist"
+    },
+    {
+      "name": "Pyromancer",
+      "specCount": 3,
+      "sourceUrl": "https://ascensionsidekick.com/pyromancer"
+    },
+    {
+      "name": "Ranger",
+      "specCount": 3,
+      "sourceUrl": "https://ascensionsidekick.com/ranger"
+    },
+    {
+      "name": "Reaper",
+      "specCount": 3,
+      "sourceUrl": "https://ascensionsidekick.com/reaper"
+    },
+    {
+      "name": "Runemaster",
+      "specCount": 3,
+      "sourceUrl": "https://ascensionsidekick.com/runemaster"
+    },
+    {
+      "name": "Starcaller",
+      "specCount": 4,
+      "sourceUrl": "https://ascensionsidekick.com/starcaller"
+    },
+    {
+      "name": "Stormbringer",
+      "specCount": 3,
+      "sourceUrl": "https://ascensionsidekick.com/stormbringer"
+    },
+    {
+      "name": "Sun Cleric",
+      "specCount": 4,
+      "sourceUrl": "https://ascensionsidekick.com/sun-cleric"
+    },
+    {
+      "name": "Templar",
+      "specCount": 3,
+      "sourceUrl": "https://ascensionsidekick.com/templar"
+    },
+    {
+      "name": "Tinker",
+      "specCount": 3,
+      "sourceUrl": "https://ascensionsidekick.com/tinker"
+    },
+    {
+      "name": "Venomancer",
+      "specCount": 4,
+      "sourceUrl": "https://ascensionsidekick.com/venomancer"
+    },
+    {
+      "name": "Witch Doctor",
+      "specCount": 3,
+      "sourceUrl": "https://ascensionsidekick.com/witch-doctor"
+    },
+    {
+      "name": "Witch Hunter",
+      "specCount": 4,
+      "sourceUrl": "https://ascensionsidekick.com/witch-hunter"
     }
   ]
 }

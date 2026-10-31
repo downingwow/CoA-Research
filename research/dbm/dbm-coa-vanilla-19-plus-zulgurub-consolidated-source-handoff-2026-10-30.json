@@ -1,0 +1,123 @@
+{
+  "schema": "coa-research.dbm-classic-plus-zg-complete-current-source-handoff.v1",
+  "date": "2026-10-30",
+  "scope": "19 documented Vanilla dungeons plus Zul'Gurub raid map 309",
+  "target": "DBM-CoA WoW 3.3.5a Conquest Reborn",
+  "sourcePaths": [
+    "research/dbm/zg-eight-ascension-boss-scripts-spells-schedules-and-casts-2026-10-30.json",
+    "research/dbm/zg-optional-bosses-and-coa-raid-sql-evidence-2026-10-30.json",
+    "research/dbm/zg-eight-stock-boss-scripts-comparison-2026-10-30.json",
+    "research/dbm/classic-last-four-dungeons-wailing-kraul-uldaman-downs-evidence-2026-10-30.json",
+    "research/dbm/classic-all-19-dungeons-comprehensive-mechanics-and-npc-handoff-2026-10-30.json"
+  ],
+  "counts": {
+    "dungeonMaps": 19,
+    "dungeonEncounterNpcIds": 190,
+    "exactDungeonMechanicRows": 113,
+    "provisionalDungeonMechanicRows": 15,
+    "zugurubScriptFiles": 23,
+    "zugurubCustomBossFiles": 8,
+    "zugurubCustomSpellDefinitions": 145,
+    "zugurubCustomMechanicSignalLines": 212
+  },
+  "priority": [
+    "Match map ID then boss NPC ID; verify actual difficulty NPC mapping",
+    "Use Ascension-specific ZG raid scripts before stock AzerothCore scripts",
+    "Resolve ZG event-to-spell and phase relationships from source before emitting predictive timers",
+    "Use 19 dungeon encounter rosters even where only AutoLearner/encounter detection is supported",
+    "All source-derived mechanics experimental until verified on live CR",
+    "Never create cast timers for effect-only spells, summons, or scripted events without source mapping",
+    "Keep instance sharing restrictions, BBLC25C protocol separation, and player/pet exclusions"
+  ],
+  "zgBosses": [
+    {
+      "boss": "hakkar",
+      "source": "modules/mod-coa-raid-difficulty/src/boss_hakkar_coa.cpp",
+      "spellDefinitions": 25,
+      "mechanicSignalLines": 23,
+      "sourceVerified": true,
+      "liveVerified": false
+    },
+    {
+      "boss": "jindo",
+      "source": "modules/mod-coa-raid-difficulty/src/boss_jindo_coa.cpp",
+      "spellDefinitions": 13,
+      "mechanicSignalLines": 22,
+      "sourceVerified": true,
+      "liveVerified": false
+    },
+    {
+      "boss": "mandokir",
+      "source": "modules/mod-coa-raid-difficulty/src/boss_mandokir_coa.cpp",
+      "spellDefinitions": 18,
+      "mechanicSignalLines": 24,
+      "sourceVerified": true,
+      "liveVerified": false
+    },
+    {
+      "boss": "venoxis",
+      "source": "modules/mod-coa-raid-difficulty/src/boss_venoxis_coa.cpp",
+      "spellDefinitions": 22,
+      "mechanicSignalLines": 29,
+      "sourceVerified": true,
+      "liveVerified": false
+    },
+    {
+      "boss": "marli",
+      "source": "modules/mod-coa-raid-difficulty/src/boss_marli_coa.cpp",
+      "spellDefinitions": 18,
+      "mechanicSignalLines": 30,
+      "sourceVerified": true,
+      "liveVerified": false
+    },
+    {
+      "boss": "jeklik",
+      "source": "modules/mod-coa-raid-difficulty/src/boss_jeklik_coa.cpp",
+      "spellDefinitions": 18,
+      "mechanicSignalLines": 29,
+      "sourceVerified": true,
+      "liveVerified": false
+    },
+    {
+      "boss": "thekal",
+      "source": "modules/mod-coa-raid-difficulty/src/boss_thekal_coa.cpp",
+      "spellDefinitions": 17,
+      "mechanicSignalLines": 21,
+      "sourceVerified": true,
+      "liveVerified": false
+    },
+    {
+      "boss": "arlokk",
+      "source": "modules/mod-coa-raid-difficulty/src/boss_arlokk_coa.cpp",
+      "spellDefinitions": 14,
+      "mechanicSignalLines": 34,
+      "sourceVerified": true,
+      "liveVerified": false
+    }
+  ],
+  "optionalSourceFiles": [
+    "modules/mod-coa-raid-difficulty/src/boss_grilek_coa.cpp",
+    "src/server/scripts/EasternKingdoms/ZulGurub/boss_gahzranka.cpp",
+    "src/server/scripts/EasternKingdoms/ZulGurub/boss_hazzarah.cpp",
+    "src/server/scripts/EasternKingdoms/ZulGurub/boss_renataki.cpp",
+    "src/server/scripts/EasternKingdoms/ZulGurub/boss_wushoolay.cpp",
+    "modules/mod-coa-raid-difficulty/data/sql/db-world/base/14_zg.sql",
+    "modules/mod-coa-raid-difficulty/src/zg_coa_common.h"
+  ],
+  "stockComparisonFiles": [
+    "src/server/scripts/EasternKingdoms/ZulGurub/boss_hakkar.cpp",
+    "src/server/scripts/EasternKingdoms/ZulGurub/boss_jindo.cpp",
+    "src/server/scripts/EasternKingdoms/ZulGurub/boss_mandokir.cpp",
+    "src/server/scripts/EasternKingdoms/ZulGurub/boss_venoxis.cpp",
+    "src/server/scripts/EasternKingdoms/ZulGurub/boss_marli.cpp",
+    "src/server/scripts/EasternKingdoms/ZulGurub/boss_jeklik.cpp",
+    "src/server/scripts/EasternKingdoms/ZulGurub/boss_thekal.cpp",
+    "src/server/scripts/EasternKingdoms/ZulGurub/boss_arlokk.cpp"
+  ],
+  "remainingGaps": [
+    "Razorfen Kraul still lacks source-confirmed boss combat abilities and cooldowns",
+    "Several other dungeon maps have only partial mechanics or event evidence",
+    "ZG CoA custom script presence does not independently prove runtime registration on live CR",
+    "No in-game test log has been used to verify cast intervals"
+  ]
+}

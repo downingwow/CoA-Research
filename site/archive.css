@@ -164,3 +164,13 @@ body{background:radial-gradient(ellipse at 50% -25%,#34302a 0,#151a1c 42rem,#101
 .gear-tooltip .gear-archive-link{display:inline-block;margin-top:3px;color:#d5bd84;font-size:10px}
 .gear-tooltip .gear-archive-link:hover,.gear-tooltip .gear-archive-link:focus-visible{color:#ffe6a8}
 @media(max-width:560px){.gear-tooltip{left:12px!important;width:calc(100vw - 24px)!important}}
+
+.gear-wow-set{margin:7px 0 4px;padding:6px 0 2px;border-top:1px solid #333a4a;color:#d5d9e3;font-size:11px;line-height:1.35}
+.gear-wow-set-heading{display:flex;align-items:baseline;justify-content:space-between;gap:8px;color:#d6c7a4}
+.gear-wow-set-heading strong{font-weight:600}
+.gear-wow-set-heading span{color:#a8afc1;white-space:nowrap}
+.gear-wow-set-pieces{margin:4px 0 5px;color:#aeb5c4}
+.gear-wow-set-pieces div{padding:1px 0}
+.gear-wow-set-bonuses{display:grid;gap:5px;margin-top:5px;color:#aeb5c4}
+.gear-wow-set-bonuses>div{padding-top:4px;border-top:1px solid #252d3e}
+.gear-wow-set-bonuses strong{color:#d6c7a4;font-weight:600}

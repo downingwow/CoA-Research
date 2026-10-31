@@ -1,0 +1,95 @@
+{
+  "schema": "coa-research.dbm-dungeon-coverage-expansion-handoff.v1",
+  "date": "2026-10-30",
+  "status": "Research coverage matrix for DBM-CoA implementation; NOT verified live timers",
+  "existingMappedTimerMaps": [
+    36,
+    209,
+    229,
+    230,
+    289,
+    329
+  ],
+  "newRepeatOnlyMaps": [
+    34
+  ],
+  "additionalSpellOnlyMaps": [
+    48,
+    389,
+    349,
+    429
+  ],
+  "totals": {
+    "mapsWithFullInitialAndRepeatCandidates": 6,
+    "mapsWithRepeatOnlyEvidence": 1,
+    "mapsWithSpellOnlyEvidence": 4,
+    "totalMapsWithAtLeastOneSourceBackedTimingOrSpellMechanic": 11
+  },
+  "extra": [
+    {
+      "mapId": 34,
+      "name": "The Stockade",
+      "kind": "repeat-only",
+      "boss": "Hamhock",
+      "npcId": 1717,
+      "mechanic": "Chain Lightning",
+      "repeatMs": [
+        10000,
+        10000
+      ],
+      "spellId": null,
+      "initialMs": null,
+      "source": "data/sql/updates/pending_db_world/rev_20261009_50_dungeon_rares_adamant_hamhock.sql",
+      "notes": "Two SmartAI rows (9010, 9011); need original row for spell and first cast"
+    },
+    {
+      "mapId": 48,
+      "name": "Blackfathom Deeps",
+      "kind": "spell-only",
+      "boss": "Ghamoo-ra",
+      "spellId": 2102687,
+      "mechanic": "Torrent",
+      "source": "data/sql/updates/pending_db_world/rev_20260930_60_bfd_bosses.sql"
+    },
+    {
+      "mapId": 389,
+      "name": "Ragefire Chasm",
+      "kind": "spell-only",
+      "boss": "Taragaman",
+      "spellIds": [
+        2102516,
+        2102517,
+        2102518,
+        2102519
+      ],
+      "mechanic": "Massive Fire Nova",
+      "source": "data/sql/updates/pending_db_world/rev_20260930_80_rfc_bosses.sql"
+    },
+    {
+      "mapId": 349,
+      "name": "Maraudon",
+      "kind": "spell-only",
+      "boss": "Tinkerer Gizlock",
+      "spellId": 21833,
+      "mechanic": "Goblin Dragon Gun",
+      "source": "data/sql/updates/pending_db_world/rev_20261003_10_dm_maraudon.sql"
+    },
+    {
+      "mapId": 429,
+      "name": "Dire Maul",
+      "kind": "spell-only",
+      "boss": "Illyanna Ravenoak",
+      "spellId": 2100236,
+      "mechanic": "Immolation Trap",
+      "source": "data/sql/updates/pending_db_world/rev_20261003_10_dm_maraudon.sql"
+    }
+  ],
+  "implementationPolicy": [
+    "Only existing six maps have initial-and-repeat candidate timers in earlier dataset",
+    "Stockade has repeat interval but cannot start a reliable pull timer without initial time",
+    "Spell-only maps can use cast-detected warnings, but not predictive timers",
+    "Zul'Farrak Witch Doctor Zum'rah adds a 10-second repeat-only healing event within an existing timer map",
+    "Do not claim 11 complete timer maps; there are six timer maps plus five maps with partial evidence",
+    "All sources are upstream/pending, live realm verification needed"
+  ]
+}

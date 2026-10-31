@@ -239,7 +239,7 @@ window.gearPage = async function gearPage(params, token) {
     }
     let binding=String(data.binding||data.bindType||data.bonding||'');
     if(!binding)binding=description.find(x=>/^Binds?\b/i.test(x))||'';
-    const extras=description.filter(line=>!setLines.has(line)&&!/^\(\s*\d+\s*\/\s*\d+\s*\)$/.test(line)&&!/^(\(\d+\)\s*)?Set:/i.test(line)&&!/^Binds?\b/i.test(line)&&!/^ID\s*#?\d+$/i.test(line)&&!/^Item Level\s*\d+$/i.test(line)&&!/^Requires Level\s*\d+$/i.test(line)&&!/^\(?\s*[\d.]+\s+damage per second\s*\)?$/i.test(line)&&!/Damage|Speed\s*[\d.]+/i.test(line)&&!/^\+?\d+\s+/.test(line));
+    const extras=description.filter(line=>!setLines.has(line)&&!/^\(\s*\d+\s*\/\s*\d+\s*\)$/.test(line)&&!/^(\(\d+\)\s*)?Set:/i.test(line)&&!/^Binds?\b/i.test(line)&&!/^ID\s*#?\d+$/i.test(line)&&!/^Item set$/i.test(line)&&!/^(?:Feet|Head|Shoulders|Chest|Waist|Legs|Hands|Wrists|Back|Neck|Finger|Trinket|Ranged|Main Hand|Off Hand)\\s+(?:Cloth|Leather|Mail|Plate)$/i.test(line)&&!/^Item Level\s*\d+$/i.test(line)&&!/^Requires Level\s*\d+$/i.test(line)&&!/^\(?\s*[\d.]+\s+damage per second\s*\)?$/i.test(line)&&!/Damage|Speed\s*[\d.]+/i.test(line)&&!/^\+?\d+\s+/.test(line));
     const bindLine=binding?'<div class="gear-wow-binding">'+esc(binding)+'</div>':'';
     const requirement=data.reqLevel||data.requiredLevel||data.requiredLevelMin||description.find(x=>/^Requires Level\s*\d+/i.test(x));
     const requirementLine=requirement?'<div class="gear-wow-requirement">'+(typeof requirement==='string'?esc(requirement):'Requires Level '+esc(requirement))+'</div>':'';

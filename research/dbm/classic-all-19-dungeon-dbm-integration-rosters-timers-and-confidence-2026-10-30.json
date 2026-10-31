@@ -1,0 +1,2354 @@
+{
+  "schema": "coa-research.dbm-all-19-vanilla-dungeon-implementation-handoff.v1",
+  "date": "2026-10-30",
+  "target": "DBM-CoA Conquest Reborn WoW 3.3.5a",
+  "scope": "All 19 documented Vanilla dungeon maps; raids and Naxxramas excluded",
+  "availability": "Documented upstream baseline; current live CR availability not independently verified",
+  "rules": [
+    "Use source NPC IDs for encounter detection, verify live",
+    "Only six maps have source initial and repeat timer candidates",
+    "Never invent initial timers for repeat-only evidence",
+    "Use cast-triggered warnings for spell-only evidence",
+    "Roster-only maps get encounter detection and AutoLearner, not fabricated mechanics",
+    "Pending SQL and C++ sources may differ from deployed CR; experimental until tested",
+    "Avoid duplicate AutoLearner warnings and player/pet timers"
+  ],
+  "totals": {
+    "dungeons": 19,
+    "encounterNpcs": 190,
+    "mapsWithTimers": 6,
+    "mapsRepeatOnly": 1,
+    "mapsSpellOnly": 4,
+    "mapsRosterOnly": 8
+  },
+  "maps": [
+    {
+      "mapId": 33,
+      "dungeon": "Shadowfang Keep",
+      "implementationTier": "encounter-roster-only",
+      "uniqueEncounterNpcCount": 10,
+      "encounters": [
+        {
+          "npcId": 3914,
+          "bossName": "Rethilgore",
+          "encounterId": 15030
+        },
+        {
+          "npcId": 3886,
+          "bossName": "Razorclaw the Butcher",
+          "encounterId": 15031
+        },
+        {
+          "npcId": 3887,
+          "bossName": "Baron Silverlaine",
+          "encounterId": 15032
+        },
+        {
+          "npcId": 4278,
+          "bossName": "Commander Springvale",
+          "encounterId": 15036
+        },
+        {
+          "npcId": 4279,
+          "bossName": "Odo the Blindwatcher",
+          "encounterId": 15037
+        },
+        {
+          "npcId": 4274,
+          "bossName": "Fenrus the Devourer",
+          "encounterId": 15038
+        },
+        {
+          "npcId": 3927,
+          "bossName": "Wolf Master Nandos",
+          "encounterId": 15039
+        },
+        {
+          "npcId": 4275,
+          "bossName": "Archmage Arugal",
+          "encounterId": 15040
+        },
+        {
+          "npcId": 14682,
+          "bossName": "Sever",
+          "encounterId": 15035
+        },
+        {
+          "npcId": 3872,
+          "bossName": "Captain Midwinter",
+          "encounterId": 15041
+        }
+      ],
+      "timedCandidates": [],
+      "otherMechanics": []
+    },
+    {
+      "mapId": 34,
+      "dungeon": "The Stockade",
+      "implementationTier": "repeat-only",
+      "uniqueEncounterNpcCount": 6,
+      "encounters": [
+        {
+          "npcId": 1696,
+          "bossName": "Targorr the Dread",
+          "encounterId": 1536
+        },
+        {
+          "npcId": 1666,
+          "bossName": "Kam Deepfury",
+          "encounterId": 1537
+        },
+        {
+          "npcId": 1717,
+          "bossName": "Hamhock",
+          "encounterId": 1538
+        },
+        {
+          "npcId": 1716,
+          "bossName": "Bazil Thredd",
+          "encounterId": 1539
+        },
+        {
+          "npcId": 1663,
+          "bossName": "Dextren Ward",
+          "encounterId": 1540
+        },
+        {
+          "npcId": 1720,
+          "bossName": "Bruegal Ironknuckle",
+          "encounterId": 2622
+        }
+      ],
+      "timedCandidates": [],
+      "otherMechanics": [
+        {
+          "mapId": 34,
+          "name": "The Stockade",
+          "kind": "repeat-only",
+          "boss": "Hamhock",
+          "npcId": 1717,
+          "mechanic": "Chain Lightning",
+          "repeatMs": [
+            10000,
+            10000
+          ],
+          "spellId": null,
+          "initialMs": null,
+          "source": "data/sql/updates/pending_db_world/rev_20261009_50_dungeon_rares_adamant_hamhock.sql",
+          "notes": "Two SmartAI rows (9010, 9011); need original row for spell and first cast"
+        }
+      ]
+    },
+    {
+      "mapId": 36,
+      "dungeon": "The Deadmines",
+      "implementationTier": "timed-candidates",
+      "uniqueEncounterNpcCount": 8,
+      "encounters": [
+        {
+          "npcId": 644,
+          "bossName": "Rhahk'zor",
+          "encounterId": 1161
+        },
+        {
+          "npcId": 642,
+          "bossName": "Sneed",
+          "encounterId": 1162
+        },
+        {
+          "npcId": 1763,
+          "bossName": "Gilnid",
+          "encounterId": 1163
+        },
+        {
+          "npcId": 646,
+          "bossName": "Mr. Smite",
+          "encounterId": 1164
+        },
+        {
+          "npcId": 645,
+          "bossName": "Cookie",
+          "encounterId": 1165
+        },
+        {
+          "npcId": 647,
+          "bossName": "Captain Greenskin",
+          "encounterId": 1166
+        },
+        {
+          "npcId": 639,
+          "bossName": "Edwin VanCleef",
+          "encounterId": 1167
+        },
+        {
+          "npcId": 3586,
+          "bossName": "Miner Johnson",
+          "encounterId": 2602
+        }
+      ],
+      "timedCandidates": [
+        {
+          "npcId": 646,
+          "spellId": 975011,
+          "initialMs": [
+            7550,
+            9550
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 66
+        },
+        {
+          "npcId": 646,
+          "spellId": 2102553,
+          "initialMs": [
+            15000,
+            17000
+          ],
+          "repeatMs": [
+            15000,
+            17000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 67
+        },
+        {
+          "npcId": 646,
+          "spellId": 2102580,
+          "initialMs": [
+            2600,
+            4600
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 68
+        },
+        {
+          "npcId": 646,
+          "spellId": 2102576,
+          "initialMs": [
+            5000,
+            8000
+          ],
+          "repeatMs": [
+            65000,
+            67000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 69
+        },
+        {
+          "npcId": 646,
+          "spellId": 2102577,
+          "initialMs": [
+            5000,
+            8000
+          ],
+          "repeatMs": [
+            20000,
+            22000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 70
+        },
+        {
+          "npcId": 642,
+          "spellId": 975011,
+          "initialMs": [
+            8400,
+            8400
+          ],
+          "repeatMs": [
+            7800,
+            7800
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 24
+        },
+        {
+          "npcId": 642,
+          "spellId": 2102559,
+          "initialMs": [
+            12000,
+            15000
+          ],
+          "repeatMs": [
+            20000,
+            25000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 25
+        },
+        {
+          "npcId": 642,
+          "spellId": 2102569,
+          "initialMs": [
+            5000,
+            8000
+          ],
+          "repeatMs": [
+            15000,
+            20000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 26
+        },
+        {
+          "npcId": 644,
+          "spellId": 975011,
+          "initialMs": [
+            8400,
+            8400
+          ],
+          "repeatMs": [
+            7800,
+            7800
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 37
+        },
+        {
+          "npcId": 644,
+          "spellId": 2102553,
+          "initialMs": [
+            12000,
+            16000
+          ],
+          "repeatMs": [
+            15000,
+            20000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 38
+        },
+        {
+          "npcId": 644,
+          "spellId": 2102554,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            15000,
+            20000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 39
+        },
+        {
+          "npcId": 645,
+          "spellId": 2102590,
+          "initialMs": [
+            20000,
+            25000
+          ],
+          "repeatMs": [
+            30000,
+            40000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 42
+        },
+        {
+          "npcId": 645,
+          "spellId": 2102589,
+          "initialMs": [
+            1500,
+            2500
+          ],
+          "repeatMs": [
+            1600,
+            1700
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 50
+        },
+        {
+          "npcId": 645,
+          "spellId": 2102527,
+          "initialMs": [
+            8000,
+            12000
+          ],
+          "repeatMs": [
+            12000,
+            18000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 51
+        },
+        {
+          "npcId": 647,
+          "spellId": 40505,
+          "initialMs": [
+            1000,
+            7000
+          ],
+          "repeatMs": [
+            10000,
+            15000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 54
+        },
+        {
+          "npcId": 647,
+          "spellId": 5208,
+          "initialMs": [
+            10000,
+            12000
+          ],
+          "repeatMs": [
+            25000,
+            35000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 55
+        },
+        {
+          "npcId": 647,
+          "spellId": 975011,
+          "initialMs": [
+            8400,
+            8400
+          ],
+          "repeatMs": [
+            7800,
+            7800
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 56
+        },
+        {
+          "npcId": 647,
+          "spellId": 2101111,
+          "initialMs": [
+            15000,
+            20000
+          ],
+          "repeatMs": [
+            20000,
+            25000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 57
+        },
+        {
+          "npcId": 1763,
+          "spellId": 5213,
+          "initialMs": [
+            1000,
+            6000
+          ],
+          "repeatMs": [
+            15000,
+            25000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 60
+        },
+        {
+          "npcId": 1763,
+          "spellId": 975011,
+          "initialMs": [
+            8400,
+            8400
+          ],
+          "repeatMs": [
+            7800,
+            7800
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 63
+        },
+        {
+          "npcId": 1763,
+          "spellId": 2102571,
+          "initialMs": [
+            10000,
+            14000
+          ],
+          "repeatMs": [
+            18000,
+            24000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 64
+        }
+      ],
+      "otherMechanics": []
+    },
+    {
+      "mapId": 43,
+      "dungeon": "Wailing Caverns",
+      "implementationTier": "encounter-roster-only",
+      "uniqueEncounterNpcCount": 8,
+      "encounters": [
+        {
+          "npcId": 3671,
+          "bossName": "Lady Anacondra",
+          "encounterId": 3322
+        },
+        {
+          "npcId": 3669,
+          "bossName": "Lord Cobrahn",
+          "encounterId": 3318
+        },
+        {
+          "npcId": 3653,
+          "bossName": "Kresh",
+          "encounterId": 3320
+        },
+        {
+          "npcId": 3670,
+          "bossName": "Lord Pythas",
+          "encounterId": 3323
+        },
+        {
+          "npcId": 3674,
+          "bossName": "Skum",
+          "encounterId": 3324
+        },
+        {
+          "npcId": 3673,
+          "bossName": "Lord Serpentis",
+          "encounterId": 3326
+        },
+        {
+          "npcId": 5775,
+          "bossName": "Verdan the Everliving",
+          "encounterId": 3319
+        },
+        {
+          "npcId": 5912,
+          "bossName": "Brightwing",
+          "encounterId": 3325
+        }
+      ],
+      "timedCandidates": [],
+      "otherMechanics": []
+    },
+    {
+      "mapId": 47,
+      "dungeon": "Razorfen Kraul",
+      "implementationTier": "encounter-roster-only",
+      "uniqueEncounterNpcCount": 8,
+      "encounters": [
+        {
+          "npcId": 6168,
+          "bossName": "Roogug",
+          "encounterId": 1438
+        },
+        {
+          "npcId": 4424,
+          "bossName": "Aggem Thorncurse",
+          "encounterId": 1439
+        },
+        {
+          "npcId": 4428,
+          "bossName": "Death Speaker Jargba",
+          "encounterId": 1440
+        },
+        {
+          "npcId": 4420,
+          "bossName": "Overlord Ramtusk",
+          "encounterId": 1441
+        },
+        {
+          "npcId": 4421,
+          "bossName": "Charlga Razorflank",
+          "encounterId": 1443
+        },
+        {
+          "npcId": 4422,
+          "bossName": "Agathelos the Raging",
+          "encounterId": 1883
+        },
+        {
+          "npcId": 4425,
+          "bossName": "Blind Hunter",
+          "encounterId": 2609
+        },
+        {
+          "npcId": 4842,
+          "bossName": "Earthcaller Halmgar",
+          "encounterId": 2615
+        }
+      ],
+      "timedCandidates": [],
+      "otherMechanics": []
+    },
+    {
+      "mapId": 48,
+      "dungeon": "Blackfathom Deeps",
+      "implementationTier": "spell-trigger-only",
+      "uniqueEncounterNpcCount": 7,
+      "encounters": [
+        {
+          "npcId": 4887,
+          "bossName": "Ghamoo-ra",
+          "encounterId": 1219
+        },
+        {
+          "npcId": 4831,
+          "bossName": "Lady Sarevess",
+          "encounterId": 1220
+        },
+        {
+          "npcId": 6243,
+          "bossName": "Gelihast",
+          "encounterId": 1221
+        },
+        {
+          "npcId": 12902,
+          "bossName": "Lorgus Jett",
+          "encounterId": 1222
+        },
+        {
+          "npcId": 4830,
+          "bossName": "Old Serra'kis",
+          "encounterId": 1224
+        },
+        {
+          "npcId": 4832,
+          "bossName": "Twilight Lord Kelris",
+          "encounterId": 1225
+        },
+        {
+          "npcId": 4829,
+          "bossName": "Aku'mai",
+          "encounterId": 1226
+        }
+      ],
+      "timedCandidates": [],
+      "otherMechanics": [
+        {
+          "mapId": 48,
+          "name": "Blackfathom Deeps",
+          "kind": "spell-only",
+          "boss": "Ghamoo-ra",
+          "spellId": 2102687,
+          "mechanic": "Torrent",
+          "source": "data/sql/updates/pending_db_world/rev_20260930_60_bfd_bosses.sql"
+        }
+      ]
+    },
+    {
+      "mapId": 70,
+      "dungeon": "Uldaman",
+      "implementationTier": "encounter-roster-only",
+      "uniqueEncounterNpcCount": 8,
+      "encounters": [
+        {
+          "npcId": 6910,
+          "bossName": "Revelosh",
+          "encounterId": 1547
+        },
+        {
+          "npcId": 6906,
+          "bossName": "The Lost Dwarves",
+          "encounterId": 1548
+        },
+        {
+          "npcId": 7228,
+          "bossName": "Ironaya",
+          "encounterId": 1549
+        },
+        {
+          "npcId": 7206,
+          "bossName": "Ancient Stone Keeper",
+          "encounterId": 1551
+        },
+        {
+          "npcId": 7291,
+          "bossName": "Galgann Firehammer",
+          "encounterId": 1552
+        },
+        {
+          "npcId": 4854,
+          "bossName": "Grimlok",
+          "encounterId": 1553
+        },
+        {
+          "npcId": 2748,
+          "bossName": "Archaedas",
+          "encounterId": 1554
+        },
+        {
+          "npcId": 7023,
+          "bossName": "Obsidian Sentinel",
+          "encounterId": 2617
+        }
+      ],
+      "timedCandidates": [],
+      "otherMechanics": []
+    },
+    {
+      "mapId": 90,
+      "dungeon": "Gnomeregan",
+      "implementationTier": "encounter-roster-only",
+      "uniqueEncounterNpcCount": 5,
+      "encounters": [
+        {
+          "npcId": 7079,
+          "bossName": "Viscous Fallout",
+          "encounterId": 1378
+        },
+        {
+          "npcId": 7361,
+          "bossName": "Grubbis",
+          "encounterId": 1379
+        },
+        {
+          "npcId": 6235,
+          "bossName": "Electrocutioner 6000",
+          "encounterId": 1380
+        },
+        {
+          "npcId": 6229,
+          "bossName": "Crowd Pummeler 9-60",
+          "encounterId": 1381
+        },
+        {
+          "npcId": 7800,
+          "bossName": "Mekgineer Thermaplugg",
+          "encounterId": 1382
+        }
+      ],
+      "timedCandidates": [],
+      "otherMechanics": []
+    },
+    {
+      "mapId": 109,
+      "dungeon": "Sunken Temple",
+      "implementationTier": "encounter-roster-only",
+      "uniqueEncounterNpcCount": 4,
+      "encounters": [
+        {
+          "npcId": 5710,
+          "bossName": "Jammal'an and Ogom",
+          "encounterId": 1488
+        },
+        {
+          "npcId": 5719,
+          "bossName": "Morphaz",
+          "encounterId": 1490
+        },
+        {
+          "npcId": 5722,
+          "bossName": "Hazzas",
+          "encounterId": 1491
+        },
+        {
+          "npcId": 5709,
+          "bossName": "Shade of Eranikus",
+          "encounterId": 1493
+        }
+      ],
+      "timedCandidates": [],
+      "otherMechanics": []
+    },
+    {
+      "mapId": 129,
+      "dungeon": "Razorfen Downs",
+      "implementationTier": "encounter-roster-only",
+      "uniqueEncounterNpcCount": 6,
+      "encounters": [
+        {
+          "npcId": 7355,
+          "bossName": "Tuten'kash",
+          "encounterId": 1434
+        },
+        {
+          "npcId": 7357,
+          "bossName": "Mordresh Fire Eye",
+          "encounterId": 1435
+        },
+        {
+          "npcId": 8567,
+          "bossName": "Glutton",
+          "encounterId": 1436
+        },
+        {
+          "npcId": 7358,
+          "bossName": "Amnennar the Coldbringer",
+          "encounterId": 1437
+        },
+        {
+          "npcId": 7356,
+          "bossName": "Plaguemaw the Rotting",
+          "encounterId": 2618
+        },
+        {
+          "npcId": 7354,
+          "bossName": "Ragglesnout",
+          "encounterId": 2619
+        }
+      ],
+      "timedCandidates": [],
+      "otherMechanics": []
+    },
+    {
+      "mapId": 189,
+      "dungeon": "Scarlet Monastery",
+      "implementationTier": "encounter-roster-only",
+      "uniqueEncounterNpcCount": 11,
+      "encounters": [
+        {
+          "npcId": 3983,
+          "bossName": "Interrogator Vishas",
+          "encounterId": 2444
+        },
+        {
+          "npcId": 4543,
+          "bossName": "Bloodmage Thalnos",
+          "encounterId": 2445
+        },
+        {
+          "npcId": 3974,
+          "bossName": "Houndmaster Loksey",
+          "encounterId": 2446
+        },
+        {
+          "npcId": 6487,
+          "bossName": "Arcanist Doan",
+          "encounterId": 2447
+        },
+        {
+          "npcId": 3975,
+          "bossName": "Herod",
+          "encounterId": 2448
+        },
+        {
+          "npcId": 4542,
+          "bossName": "High Inquisitor Fairbanks",
+          "encounterId": 2449
+        },
+        {
+          "npcId": 3977,
+          "bossName": "High Inquisitor Whitemane",
+          "encounterId": 2450
+        },
+        {
+          "npcId": 6489,
+          "bossName": "Ironspine",
+          "encounterId": 2606
+        },
+        {
+          "npcId": 6490,
+          "bossName": "Azshir the Sleepless",
+          "encounterId": 2607
+        },
+        {
+          "npcId": 3976,
+          "bossName": "Scarlet Commander Mograine",
+          "encounterId": 2616
+        },
+        {
+          "npcId": 6488,
+          "bossName": "Fallen Champion",
+          "encounterId": 2623
+        }
+      ],
+      "timedCandidates": [],
+      "otherMechanics": []
+    },
+    {
+      "mapId": 209,
+      "dungeon": "Zul'Farrak",
+      "implementationTier": "timed-candidates",
+      "uniqueEncounterNpcCount": 10,
+      "encounters": [
+        {
+          "npcId": 7795,
+          "bossName": "Hydromancer Velratha",
+          "encounterId": 1593
+        },
+        {
+          "npcId": 7273,
+          "bossName": "Ghaz'rilla",
+          "encounterId": 1594
+        },
+        {
+          "npcId": 8127,
+          "bossName": "Antu'sul",
+          "encounterId": 1595
+        },
+        {
+          "npcId": 7272,
+          "bossName": "Theka the Martyr",
+          "encounterId": 1596
+        },
+        {
+          "npcId": 7271,
+          "bossName": "Witch Doctor Zum'rah",
+          "encounterId": 1597
+        },
+        {
+          "npcId": 7796,
+          "bossName": "Nekrum Gutchewer",
+          "encounterId": 1598
+        },
+        {
+          "npcId": 7275,
+          "bossName": "Shadowpriest Sezz'ziz",
+          "encounterId": 1599
+        },
+        {
+          "npcId": 7267,
+          "bossName": "Chief Ukorz Sandscalp &  Ruuzlu",
+          "encounterId": 1600
+        },
+        {
+          "npcId": 10082,
+          "bossName": "Zerillis",
+          "encounterId": 2613
+        },
+        {
+          "npcId": 7604,
+          "bossName": "Sergeant Bly",
+          "encounterId": 2626
+        }
+      ],
+      "timedCandidates": [
+        {
+          "npcId": 7604,
+          "spellId": 975011,
+          "initialMs": [
+            5800,
+            7800
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 80
+        }
+      ],
+      "otherMechanics": []
+    },
+    {
+      "mapId": 229,
+      "dungeon": "Blackrock Spire",
+      "implementationTier": "timed-candidates",
+      "uniqueEncounterNpcCount": 20,
+      "encounters": [
+        {
+          "npcId": 10899,
+          "bossName": "Goraluk Anvilcrack",
+          "encounterId": 2142
+        },
+        {
+          "npcId": 10509,
+          "bossName": "Jed Runewatcher",
+          "encounterId": 2143
+        },
+        {
+          "npcId": 10263,
+          "bossName": "Burning Felguard",
+          "encounterId": 2145
+        },
+        {
+          "npcId": 10376,
+          "bossName": "Crystal Fang",
+          "encounterId": 2147
+        },
+        {
+          "npcId": 9596,
+          "bossName": "Bannok Grimaxe",
+          "encounterId": 2148
+        },
+        {
+          "npcId": 9217,
+          "bossName": "Spirestone Lord Magus",
+          "encounterId": 2149
+        },
+        {
+          "npcId": 9218,
+          "bossName": "Spirestone Battle Lord",
+          "encounterId": 2150
+        },
+        {
+          "npcId": 9219,
+          "bossName": "Spirestone Butcher",
+          "encounterId": 2151
+        },
+        {
+          "npcId": 9196,
+          "bossName": "Highlord Omokk",
+          "encounterId": 1267
+        },
+        {
+          "npcId": 9236,
+          "bossName": "Shadow Hunter Vosh'gajin",
+          "encounterId": 1268
+        },
+        {
+          "npcId": 9237,
+          "bossName": "War Master Voone",
+          "encounterId": 1269
+        },
+        {
+          "npcId": 10596,
+          "bossName": "Mother Smolderweb",
+          "encounterId": 1270
+        },
+        {
+          "npcId": 9736,
+          "bossName": "Quartermaster Zigris",
+          "encounterId": 1272
+        },
+        {
+          "npcId": 10268,
+          "bossName": "Gizrul the Slavener",
+          "encounterId": 1273
+        },
+        {
+          "npcId": 10220,
+          "bossName": "Halycon",
+          "encounterId": 1274
+        },
+        {
+          "npcId": 9568,
+          "bossName": "Overlord Wyrmthalak",
+          "encounterId": 1275
+        },
+        {
+          "npcId": 9816,
+          "bossName": "Pyroguard Emberseer",
+          "encounterId": 1276
+        },
+        {
+          "npcId": 10429,
+          "bossName": "Warchief Rend Blackhand",
+          "encounterId": 1278
+        },
+        {
+          "npcId": 10430,
+          "bossName": "The Beast",
+          "encounterId": 1279
+        },
+        {
+          "npcId": 10363,
+          "bossName": "General Drakkisath",
+          "encounterId": 1280
+        }
+      ],
+      "timedCandidates": [
+        {
+          "npcId": 10363,
+          "spellId": 975011,
+          "initialMs": [
+            8500,
+            10500
+          ],
+          "repeatMs": [
+            9000,
+            10000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 39
+        },
+        {
+          "npcId": 10363,
+          "spellId": 2102619,
+          "initialMs": [
+            14600,
+            16600
+          ],
+          "repeatMs": [
+            15000,
+            17000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 40
+        },
+        {
+          "npcId": 10363,
+          "spellId": 2102203,
+          "initialMs": [
+            22000,
+            24000
+          ],
+          "repeatMs": [
+            25000,
+            27000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 41
+        },
+        {
+          "npcId": 10220,
+          "spellId": 2100428,
+          "initialMs": [
+            4000,
+            6000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 43
+        },
+        {
+          "npcId": 10220,
+          "spellId": 975011,
+          "initialMs": [
+            7000,
+            9000
+          ],
+          "repeatMs": [
+            7000,
+            8000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 44
+        },
+        {
+          "npcId": 9196,
+          "spellId": 975011,
+          "initialMs": [
+            7000,
+            9000
+          ],
+          "repeatMs": [
+            7000,
+            8000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 45
+        },
+        {
+          "npcId": 9196,
+          "spellId": 2100148,
+          "initialMs": [
+            13600,
+            15600
+          ],
+          "repeatMs": [
+            15000,
+            17000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 46
+        },
+        {
+          "npcId": 9568,
+          "spellId": 2100345,
+          "initialMs": [
+            10000,
+            12000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 47
+        },
+        {
+          "npcId": 9568,
+          "spellId": 975011,
+          "initialMs": [
+            7000,
+            9000
+          ],
+          "repeatMs": [
+            7000,
+            8000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 48
+        },
+        {
+          "npcId": 9816,
+          "spellId": 975011,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 49
+        },
+        {
+          "npcId": 9816,
+          "spellId": 2102825,
+          "initialMs": [
+            8000,
+            12000
+          ],
+          "repeatMs": [
+            12000,
+            16000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 51
+        },
+        {
+          "npcId": 9736,
+          "spellId": 2102850,
+          "initialMs": [
+            1000,
+            3000
+          ],
+          "repeatMs": [
+            20000,
+            22000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 52
+        },
+        {
+          "npcId": 9736,
+          "spellId": 2100255,
+          "initialMs": [
+            2600,
+            4600
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 53
+        },
+        {
+          "npcId": 9736,
+          "spellId": 2102851,
+          "initialMs": [
+            5000,
+            7000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 54
+        },
+        {
+          "npcId": 9736,
+          "spellId": 975011,
+          "initialMs": [
+            7000,
+            9000
+          ],
+          "repeatMs": [
+            7000,
+            8000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 55
+        },
+        {
+          "npcId": 10430,
+          "spellId": 2102192,
+          "initialMs": [
+            1000,
+            3000
+          ],
+          "repeatMs": [
+            20000,
+            22000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 56
+        },
+        {
+          "npcId": 10430,
+          "spellId": 975011,
+          "initialMs": [
+            9000,
+            11000
+          ],
+          "repeatMs": [
+            9000,
+            10000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 57
+        },
+        {
+          "npcId": 10430,
+          "spellId": 2102159,
+          "initialMs": [
+            29000,
+            31000
+          ],
+          "repeatMs": [
+            35000,
+            37000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 58
+        },
+        {
+          "npcId": 10430,
+          "spellId": 2100205,
+          "initialMs": [
+            8000,
+            12000
+          ],
+          "repeatMs": [
+            10000,
+            14000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 59
+        },
+        {
+          "npcId": 10430,
+          "spellId": 2100439,
+          "initialMs": [
+            5000,
+            8000
+          ],
+          "repeatMs": [
+            20000,
+            22000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 60
+        },
+        {
+          "npcId": 9237,
+          "spellId": 2100465,
+          "initialMs": [
+            3550,
+            5550
+          ],
+          "repeatMs": [
+            15000,
+            17000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 61
+        },
+        {
+          "npcId": 9237,
+          "spellId": 975011,
+          "initialMs": [
+            7449,
+            9450
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 62
+        },
+        {
+          "npcId": 9237,
+          "spellId": 15284,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 63
+        },
+        {
+          "npcId": 9237,
+          "spellId": 15615,
+          "initialMs": [
+            10000,
+            12000
+          ],
+          "repeatMs": [
+            16000,
+            18000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 64
+        },
+        {
+          "npcId": 9237,
+          "spellId": 10966,
+          "initialMs": [
+            12000,
+            14000
+          ],
+          "repeatMs": [
+            14000,
+            16000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 65
+        },
+        {
+          "npcId": 10509,
+          "spellId": 14516,
+          "initialMs": [
+            5000,
+            7000
+          ],
+          "repeatMs": [
+            4000,
+            6000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 68
+        },
+        {
+          "npcId": 10509,
+          "spellId": 15749,
+          "initialMs": [
+            10000,
+            10000
+          ],
+          "repeatMs": [
+            5000,
+            15000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 70
+        },
+        {
+          "npcId": 10509,
+          "spellId": 2102840,
+          "initialMs": [
+            8000,
+            12000
+          ],
+          "repeatMs": [
+            15000,
+            20000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 72
+        },
+        {
+          "npcId": 10509,
+          "spellId": 975011,
+          "initialMs": [
+            7700,
+            9700
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 73
+        },
+        {
+          "npcId": 10899,
+          "spellId": 15580,
+          "initialMs": [
+            5000,
+            7000
+          ],
+          "repeatMs": [
+            4000,
+            6000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 76
+        },
+        {
+          "npcId": 10899,
+          "spellId": 16172,
+          "initialMs": [
+            5000,
+            10000
+          ],
+          "repeatMs": [
+            20000,
+            20000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 77
+        },
+        {
+          "npcId": 10899,
+          "spellId": 6253,
+          "initialMs": [
+            10000,
+            10000
+          ],
+          "repeatMs": [
+            10000,
+            10000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 78
+        },
+        {
+          "npcId": 10899,
+          "spellId": 2102553,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            12000,
+            16000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 79
+        },
+        {
+          "npcId": 10899,
+          "spellId": 2102138,
+          "initialMs": [
+            6000,
+            6000
+          ],
+          "repeatMs": [
+            25000,
+            30000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 80
+        },
+        {
+          "npcId": 10899,
+          "spellId": 2102137,
+          "initialMs": [
+            16000,
+            16000
+          ],
+          "repeatMs": [
+            25000,
+            30000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 81
+        },
+        {
+          "npcId": 10899,
+          "spellId": 975011,
+          "initialMs": [
+            5000,
+            7000
+          ],
+          "repeatMs": [
+            6000,
+            8000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+          "line": 82
+        }
+      ],
+      "otherMechanics": []
+    },
+    {
+      "mapId": 230,
+      "dungeon": "Blackrock Depths",
+      "implementationTier": "timed-candidates",
+      "uniqueEncounterNpcCount": 18,
+      "encounters": [
+        {
+          "npcId": 9018,
+          "bossName": "High Interrogator Gerstahn",
+          "encounterId": 2227
+        },
+        {
+          "npcId": 9025,
+          "bossName": "Lord Roccor",
+          "encounterId": 2228
+        },
+        {
+          "npcId": 9319,
+          "bossName": "Houndmaster Grebmar",
+          "encounterId": 2229
+        },
+        {
+          "npcId": 9024,
+          "bossName": "Pyromancer Loregrain",
+          "encounterId": 2231
+        },
+        {
+          "npcId": 9017,
+          "bossName": "Lord Incendius",
+          "encounterId": 2232
+        },
+        {
+          "npcId": 9041,
+          "bossName": "Warder Stilgiss",
+          "encounterId": 2233
+        },
+        {
+          "npcId": 9056,
+          "bossName": "Fineous Darkvire",
+          "encounterId": 2234
+        },
+        {
+          "npcId": 9016,
+          "bossName": "Bael'Gar",
+          "encounterId": 2235
+        },
+        {
+          "npcId": 9033,
+          "bossName": "General Angerforge",
+          "encounterId": 2236
+        },
+        {
+          "npcId": 8983,
+          "bossName": "Golem Lord Argelmach",
+          "encounterId": 2237
+        },
+        {
+          "npcId": 9537,
+          "bossName": "Hurley Blackbreath",
+          "encounterId": 1238
+        },
+        {
+          "npcId": 9502,
+          "bossName": "Phalanx",
+          "encounterId": 1239
+        },
+        {
+          "npcId": 9543,
+          "bossName": "Ribbly Screwspigot",
+          "encounterId": 1240
+        },
+        {
+          "npcId": 9499,
+          "bossName": "Plugger Spazzring",
+          "encounterId": 1241
+        },
+        {
+          "npcId": 9156,
+          "bossName": "Ambassador Flamelash",
+          "encounterId": 36051
+        },
+        {
+          "npcId": 9039,
+          "bossName": "The Seven",
+          "encounterId": 36052
+        },
+        {
+          "npcId": 9938,
+          "bossName": "Magmus",
+          "encounterId": 36053
+        },
+        {
+          "npcId": 9019,
+          "bossName": "Emperor Dagran Thaurissan",
+          "encounterId": 2245
+        }
+      ],
+      "timedCandidates": [
+        {
+          "npcId": 9156,
+          "spellId": 975011,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 17
+        },
+        {
+          "npcId": 9039,
+          "spellId": 975011,
+          "initialMs": [
+            7000,
+            9000
+          ],
+          "repeatMs": [
+            7000,
+            8000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 18
+        },
+        {
+          "npcId": 9039,
+          "spellId": 505347,
+          "initialMs": [
+            5000,
+            8000
+          ],
+          "repeatMs": [
+            20000,
+            22000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 19
+        },
+        {
+          "npcId": 9019,
+          "spellId": 975011,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 20
+        },
+        {
+          "npcId": 9019,
+          "spellId": 92603,
+          "initialMs": [
+            10000,
+            12000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 21
+        },
+        {
+          "npcId": 9019,
+          "spellId": 92606,
+          "initialMs": [
+            15000,
+            17000
+          ],
+          "repeatMs": [
+            15000,
+            17000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 22
+        },
+        {
+          "npcId": 9019,
+          "spellId": 381251,
+          "initialMs": [
+            8000,
+            12000
+          ],
+          "repeatMs": [
+            18000,
+            22000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 23
+        },
+        {
+          "npcId": 9019,
+          "spellId": 815637,
+          "initialMs": [
+            5000,
+            8000
+          ],
+          "repeatMs": [
+            20000,
+            22000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 24
+        },
+        {
+          "npcId": 9033,
+          "spellId": 975011,
+          "initialMs": [
+            7449,
+            9450
+          ],
+          "repeatMs": [
+            10000,
+            11000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 25
+        },
+        {
+          "npcId": 9018,
+          "spellId": 975011,
+          "initialMs": [
+            9000,
+            11000
+          ],
+          "repeatMs": [
+            9000,
+            10000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 30
+        },
+        {
+          "npcId": 9018,
+          "spellId": 14033,
+          "initialMs": [
+            3000,
+            4000
+          ],
+          "repeatMs": [
+            4000,
+            4500
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 31
+        },
+        {
+          "npcId": 9938,
+          "spellId": 975011,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 32
+        },
+        {
+          "npcId": 9502,
+          "spellId": 975011,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 33
+        },
+        {
+          "npcId": 9502,
+          "spellId": 17203,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            15000,
+            17000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 34
+        }
+      ],
+      "otherMechanics": []
+    },
+    {
+      "mapId": 289,
+      "dungeon": "Scholomance",
+      "implementationTier": "timed-candidates",
+      "uniqueEncounterNpcCount": 14,
+      "encounters": [
+        {
+          "npcId": 14861,
+          "bossName": "Blood Steward of Kirtonos",
+          "encounterId": 2158
+        },
+        {
+          "npcId": 10506,
+          "bossName": "Kirtonos the Herald",
+          "encounterId": 2451
+        },
+        {
+          "npcId": 10503,
+          "bossName": "Jandice Barov",
+          "encounterId": 2452
+        },
+        {
+          "npcId": 11622,
+          "bossName": "Rattlegore",
+          "encounterId": 2453
+        },
+        {
+          "npcId": 10433,
+          "bossName": "Marduk Blackpool",
+          "encounterId": 2454
+        },
+        {
+          "npcId": 10432,
+          "bossName": "Vectus",
+          "encounterId": 2455
+        },
+        {
+          "npcId": 10505,
+          "bossName": "Instructor Malicia",
+          "encounterId": 2457
+        },
+        {
+          "npcId": 11261,
+          "bossName": "Doctor Theolen Krastinov",
+          "encounterId": 2458
+        },
+        {
+          "npcId": 10901,
+          "bossName": "Lorekeeper Polkelt",
+          "encounterId": 2459
+        },
+        {
+          "npcId": 10507,
+          "bossName": "The Ravenian",
+          "encounterId": 2460
+        },
+        {
+          "npcId": 10504,
+          "bossName": "Lord Alexei Barov",
+          "encounterId": 2461
+        },
+        {
+          "npcId": 10502,
+          "bossName": "Lady Illucia Barov",
+          "encounterId": 2462
+        },
+        {
+          "npcId": 1853,
+          "bossName": "Darkmaster Gandling",
+          "encounterId": 2463
+        },
+        {
+          "npcId": 10508,
+          "bossName": "Ras Frostwhisper",
+          "encounterId": 3456
+        }
+      ],
+      "timedCandidates": [
+        {
+          "npcId": 1853,
+          "spellId": 2100398,
+          "initialMs": [
+            1500,
+            2000
+          ],
+          "repeatMs": [
+            3000,
+            3500
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 72
+        },
+        {
+          "npcId": 1853,
+          "spellId": 2100389,
+          "initialMs": [
+            1000,
+            1500
+          ],
+          "repeatMs": [
+            2900,
+            3400
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 73
+        },
+        {
+          "npcId": 1853,
+          "spellId": 2100393,
+          "initialMs": [
+            10000,
+            12000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 74
+        },
+        {
+          "npcId": 10506,
+          "spellId": 2100034,
+          "initialMs": [
+            3100,
+            3600
+          ],
+          "repeatMs": [
+            3100,
+            3600
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 75
+        },
+        {
+          "npcId": 10506,
+          "spellId": 975011,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 76
+        },
+        {
+          "npcId": 10506,
+          "spellId": 2100004,
+          "initialMs": [
+            10000,
+            12000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 77
+        }
+      ],
+      "otherMechanics": []
+    },
+    {
+      "mapId": 329,
+      "dungeon": "Stratholme",
+      "implementationTier": "timed-candidates",
+      "uniqueEncounterNpcCount": 13,
+      "encounters": [
+        {
+          "npcId": 10809,
+          "bossName": "Stonespine",
+          "encounterId": 2152
+        },
+        {
+          "npcId": 10558,
+          "bossName": "Hearthsinger Forresten",
+          "encounterId": 2473
+        },
+        {
+          "npcId": 10808,
+          "bossName": "Timmy the Cruel",
+          "encounterId": 2474
+        },
+        {
+          "npcId": 10997,
+          "bossName": "Cannon Master Willey",
+          "encounterId": 2475
+        },
+        {
+          "npcId": 11032,
+          "bossName": "Malor the Zealous",
+          "encounterId": 2476
+        },
+        {
+          "npcId": 10811,
+          "bossName": "Archivist Galford",
+          "encounterId": 2477
+        },
+        {
+          "npcId": 10813,
+          "bossName": "Balnazzar",
+          "encounterId": 2478
+        },
+        {
+          "npcId": 10436,
+          "bossName": "Baroness Anastari",
+          "encounterId": 2479
+        },
+        {
+          "npcId": 10437,
+          "bossName": "Nerub'enkan",
+          "encounterId": 2480
+        },
+        {
+          "npcId": 10438,
+          "bossName": "Maleki the Pallid",
+          "encounterId": 2481
+        },
+        {
+          "npcId": 10435,
+          "bossName": "Magistrate Barthilas",
+          "encounterId": 2482
+        },
+        {
+          "npcId": 10439,
+          "bossName": "Ramnstein the Gorger",
+          "encounterId": 2483
+        },
+        {
+          "npcId": 10440,
+          "bossName": "Baron Rivendare",
+          "encounterId": 2484
+        }
+      ],
+      "timedCandidates": [
+        {
+          "npcId": 10436,
+          "spellId": 816867,
+          "initialMs": [
+            10000,
+            12000
+          ],
+          "repeatMs": [
+            10000,
+            12000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 78
+        },
+        {
+          "npcId": 10436,
+          "spellId": 975011,
+          "initialMs": [
+            8000,
+            10000
+          ],
+          "repeatMs": [
+            8000,
+            9000
+          ],
+          "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+          "line": 79
+        }
+      ],
+      "otherMechanics": []
+    },
+    {
+      "mapId": 349,
+      "dungeon": "Maraudon",
+      "implementationTier": "spell-trigger-only",
+      "uniqueEncounterNpcCount": 11,
+      "encounters": [
+        {
+          "npcId": 13282,
+          "bossName": "Noxxion",
+          "encounterId": 2422
+        },
+        {
+          "npcId": 12258,
+          "bossName": "Razorlash",
+          "encounterId": 2423
+        },
+        {
+          "npcId": 12236,
+          "bossName": "Lord Vyletongue",
+          "encounterId": 2424
+        },
+        {
+          "npcId": 12225,
+          "bossName": "Celebras the Cursed",
+          "encounterId": 2620
+        },
+        {
+          "npcId": 12203,
+          "bossName": "Landslide",
+          "encounterId": 2426
+        },
+        {
+          "npcId": 13601,
+          "bossName": "Tinkerer Gizlock",
+          "encounterId": 2427
+        },
+        {
+          "npcId": 13596,
+          "bossName": "Rotgrip",
+          "encounterId": 2428
+        },
+        {
+          "npcId": 12201,
+          "bossName": "Princess Theradras",
+          "encounterId": 2429
+        },
+        {
+          "npcId": 13738,
+          "bossName": "Veng",
+          "encounterId": 2611
+        },
+        {
+          "npcId": 13739,
+          "bossName": "Maraudos",
+          "encounterId": 2612
+        },
+        {
+          "npcId": 12237,
+          "bossName": "Meshlok the Harvester",
+          "encounterId": 2621
+        }
+      ],
+      "timedCandidates": [],
+      "otherMechanics": [
+        {
+          "mapId": 349,
+          "name": "Maraudon",
+          "kind": "spell-only",
+          "boss": "Tinkerer Gizlock",
+          "spellId": 21833,
+          "mechanic": "Goblin Dragon Gun",
+          "source": "data/sql/updates/pending_db_world/rev_20261003_10_dm_maraudon.sql"
+        }
+      ]
+    },
+    {
+      "mapId": 389,
+      "dungeon": "Ragefire Chasm",
+      "implementationTier": "spell-trigger-only",
+      "uniqueEncounterNpcCount": 5,
+      "encounters": [
+        {
+          "npcId": 11517,
+          "bossName": "Oggleflint",
+          "encounterId": 1430
+        },
+        {
+          "npcId": 11520,
+          "bossName": "Taragaman the Hungerer",
+          "encounterId": 1431
+        },
+        {
+          "npcId": 11518,
+          "bossName": "Jergosh the Invoker",
+          "encounterId": 1432
+        },
+        {
+          "npcId": 11519,
+          "bossName": "Bazzalan",
+          "encounterId": 1433
+        },
+        {
+          "npcId": 17830,
+          "bossName": "Zelemar the Wrathful",
+          "encounterId": 3985
+        }
+      ],
+      "timedCandidates": [],
+      "otherMechanics": [
+        {
+          "mapId": 389,
+          "name": "Ragefire Chasm",
+          "kind": "spell-only",
+          "boss": "Taragaman",
+          "spellIds": [
+            2102516,
+            2102517,
+            2102518,
+            2102519
+          ],
+          "mechanic": "Massive Fire Nova",
+          "source": "data/sql/updates/pending_db_world/rev_20260930_80_rfc_bosses.sql"
+        }
+      ]
+    },
+    {
+      "mapId": 429,
+      "dungeon": "Dire Maul",
+      "implementationTier": "spell-trigger-only",
+      "uniqueEncounterNpcCount": 18,
+      "encounters": [
+        {
+          "npcId": 14506,
+          "bossName": "Lord Hel'nurath",
+          "encounterId": 2156
+        },
+        {
+          "npcId": 11467,
+          "bossName": "Tsu'zee",
+          "encounterId": 2157
+        },
+        {
+          "npcId": 11490,
+          "bossName": "Zevrim Thornhoof",
+          "encounterId": 2343
+        },
+        {
+          "npcId": 13280,
+          "bossName": "Hydrospawn",
+          "encounterId": 2344
+        },
+        {
+          "npcId": 14327,
+          "bossName": "Lethtendris",
+          "encounterId": 2345
+        },
+        {
+          "npcId": 11492,
+          "bossName": "Alzzin the Wildshaper",
+          "encounterId": 2346
+        },
+        {
+          "npcId": 11488,
+          "bossName": "Illyanna Ravenoak",
+          "encounterId": 2347
+        },
+        {
+          "npcId": 11487,
+          "bossName": "Magister Kalendris",
+          "encounterId": 2348
+        },
+        {
+          "npcId": 11496,
+          "bossName": "Immol'thar",
+          "encounterId": 2349
+        },
+        {
+          "npcId": 11489,
+          "bossName": "Tendris Warpwood",
+          "encounterId": 2350
+        },
+        {
+          "npcId": 11486,
+          "bossName": "Prince Tortheldrin",
+          "encounterId": 2361
+        },
+        {
+          "npcId": 14326,
+          "bossName": "Guard Mol'dar",
+          "encounterId": 2362
+        },
+        {
+          "npcId": 14322,
+          "bossName": "Stomper Kreeg",
+          "encounterId": 2363
+        },
+        {
+          "npcId": 14321,
+          "bossName": "Guard Fengus",
+          "encounterId": 2364
+        },
+        {
+          "npcId": 14323,
+          "bossName": "Guard Slip'kik",
+          "encounterId": 2365
+        },
+        {
+          "npcId": 14325,
+          "bossName": "Captain Kromcrush",
+          "encounterId": 2366
+        },
+        {
+          "npcId": 14324,
+          "bossName": "Cho'Rush the Observer",
+          "encounterId": 2367
+        },
+        {
+          "npcId": 11501,
+          "bossName": "King Gordok",
+          "encounterId": 2368
+        }
+      ],
+      "timedCandidates": [],
+      "otherMechanics": [
+        {
+          "mapId": 429,
+          "name": "Dire Maul",
+          "kind": "spell-only",
+          "boss": "Illyanna Ravenoak",
+          "spellId": 2100236,
+          "mechanic": "Immolation Trap",
+          "source": "data/sql/updates/pending_db_world/rev_20261003_10_dm_maraudon.sql"
+        }
+      ]
+    }
+  ]
+}

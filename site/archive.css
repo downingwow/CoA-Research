@@ -135,3 +135,32 @@ body{background:radial-gradient(ellipse at 50% -25%,#34302a 0,#151a1c 42rem,#101
 .gear-tooltip p,.gear-tooltip>small{color:#bbc2be}
 .gear-tooltip .gear-archive-link{color:#f0b36f}
 .gear-tooltip .gear-archive-link:hover,.gear-tooltip .gear-archive-link:focus-visible{color:#ffd69b}
+
+/* Classic item-card treatment for complete preserved gear records. */
+.gear-tooltip{width:min(360px,calc(100vw - 24px));max-height:min(76vh,560px);padding:11px 13px;background:#070d20;color:#f2f4ff;border:1px solid #6c5b43;border-radius:4px;box-shadow:0 12px 36px #000b;font:12px/1.4 Arial,Helvetica,sans-serif;pointer-events:auto}
+.gear-wow-head{display:flex;align-items:flex-start;gap:9px;min-height:40px;margin-bottom:3px}
+.gear-wow-head .gear-piece-icon{width:38px;height:38px;flex:0 0 38px;border:1px solid #8d8066;border-radius:3px;background:#11182b;object-fit:cover}
+.gear-wow-namebox{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:1px 8px;min-width:0;flex:1}
+.gear-wow-namebox strong{grid-column:1/-1;font:700 14px/1.25 Arial,Helvetica,sans-serif}
+.gear-wow-namebox .quality-poor{color:#9d9d9d}.gear-wow-namebox .quality-common{color:#fff}.gear-wow-namebox .quality-uncommon{color:#1eff00}.gear-wow-namebox .quality-rare{color:#0070dd}.gear-wow-namebox .quality-epic{color:#a335ee}.gear-wow-namebox .quality-legendary{color:#ff8000}.gear-wow-namebox .quality-artifact{color:#e6cc80}
+.gear-wow-phase{grid-column:2;grid-row:2;color:#ffd100;white-space:nowrap;text-align:right}
+.gear-wow-level{grid-column:1;grid-row:2;color:#ffd100}
+.gear-wow-binding{margin:1px 0 4px;color:#fff}
+.gear-tooltip-slot{display:flex;justify-content:space-between;gap:10px;padding:7px 0 6px;margin:0 0 3px;border-top:1px solid #333a4a;border-bottom:1px solid #333a4a;color:#fff;font-size:12px}
+.gear-wow-damage{display:flex;justify-content:space-between;gap:12px;color:#fff}
+.gear-wow-damage strong{font-weight:400;text-align:right}
+.gear-wow-speed{text-align:right;color:#fff}
+.gear-wow-dps{margin:0 0 3px;color:#fff}
+.gear-wow-estimate{color:#e8bd7a}
+.gear-wow-stats{display:grid;gap:0;margin:3px 0 6px}
+.gear-wow-stat{color:#1eff00}
+.gear-wow-base-stat{color:#fff}
+.gear-wow-requirement,.gear-wow-extra{margin:1px 0;color:#fff}
+.gear-wow-effect{margin:2px 0 7px;color:#1eff00}
+.gear-wow-price{margin-top:3px;color:#fff}
+.gear-wow-archive{display:flex;justify-content:space-between;gap:10px;margin-top:8px;padding-top:6px;border-top:1px solid #333a4a;color:#a8afc1;font-size:10px}
+.gear-preview-score{margin:6px 0 2px;color:#a8afc1;font-size:10px}
+.gear-preview-score b{color:#d6c7a4}
+.gear-tooltip .gear-archive-link{display:inline-block;margin-top:3px;color:#d5bd84;font-size:10px}
+.gear-tooltip .gear-archive-link:hover,.gear-tooltip .gear-archive-link:focus-visible{color:#ffe6a8}
+@media(max-width:560px){.gear-tooltip{left:12px!important;width:calc(100vw - 24px)!important}}

@@ -174,3 +174,4 @@ body{background:radial-gradient(ellipse at 50% -25%,#34302a 0,#151a1c 42rem,#101
 .gear-wow-set-bonuses{display:grid;gap:5px;margin-top:5px;color:#aeb5c4}
 .gear-wow-set-bonuses>div{padding-top:4px;border-top:1px solid #252d3e}
 .gear-wow-set-bonuses strong{color:#d6c7a4;font-weight:600}
+.gear-tooltip{max-height:calc(100vh - 24px)}

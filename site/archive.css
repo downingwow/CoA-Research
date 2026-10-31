@@ -111,3 +111,5 @@ body{background:radial-gradient(ellipse at 50% -25%,#34302a 0,#151a1c 42rem,#101
 @media(max-width:820px){.sidekick-spec-grid{grid-template-columns:1fr}.sidekick-index-head,.sidekick-card-head{display:block}.sidekick-index-head label{margin-top:14px}.sidekick-tier-grid{grid-template-columns:repeat(2,1fr)}}
 
 .sidekick-role{font-size:10px;color:#bfae8b;white-space:nowrap}.sidekick-spec-row>div:first-child{flex-wrap:wrap;align-items:center}.sidekick-spec-name{margin-right:auto}
+
+.sidekick-difficulty{color:#c4bba9;font-size:12px}.sidekick-difficulty-mini{font-size:10px;color:#d5c39c;white-space:nowrap}.sidekick-difficulty-mini small{display:block;font-size:9px;color:#a99f91;text-align:right}

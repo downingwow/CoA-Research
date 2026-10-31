@@ -23,7 +23,11 @@
       },
       "popularity": 70,
       "role": null,
-      "archiveRole": "tank"
+      "archiveRole": "tank",
+      "difficulty": {
+        "floor": "very-high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Felsworn",
@@ -37,7 +41,11 @@
       },
       "popularity": 80,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "very-high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Tinker",
@@ -51,7 +59,11 @@
       },
       "popularity": 55,
       "role": null,
-      "archiveRole": "healer"
+      "archiveRole": "healer",
+      "difficulty": {
+        "floor": "very-high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Primalist",
@@ -65,7 +77,11 @@
       },
       "popularity": 80,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Cultist",
@@ -79,7 +95,11 @@
       },
       "popularity": 67,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Tinker",
@@ -93,7 +113,11 @@
       },
       "popularity": 57,
       "role": null,
-      "archiveRole": "ranged"
+      "archiveRole": "ranged",
+      "difficulty": {
+        "floor": "very-high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Pyromancer",
@@ -107,7 +131,11 @@
       },
       "popularity": 56,
       "role": null,
-      "archiveRole": "healer"
+      "archiveRole": "healer",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Primalist",
@@ -121,7 +149,11 @@
       },
       "popularity": 54,
       "role": null,
-      "archiveRole": "support"
+      "archiveRole": "support",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Runemaster",
@@ -135,7 +167,11 @@
       },
       "popularity": 77,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Witch Doctor",
@@ -149,7 +185,11 @@
       },
       "popularity": 56,
       "role": null,
-      "archiveRole": "ranged"
+      "archiveRole": "ranged",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Witch Doctor",
@@ -163,7 +203,11 @@
       },
       "popularity": 54,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Starcaller",
@@ -177,7 +221,11 @@
       },
       "popularity": 77,
       "role": null,
-      "archiveRole": "ranged"
+      "archiveRole": "ranged",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Templar",
@@ -191,7 +239,11 @@
       },
       "popularity": 63,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Bloodmage",
@@ -205,7 +257,11 @@
       },
       "popularity": 62,
       "role": null,
-      "archiveRole": "tank"
+      "archiveRole": "tank",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Tinker",
@@ -219,7 +275,11 @@
       },
       "popularity": 50,
       "role": null,
-      "archiveRole": "ranged"
+      "archiveRole": "ranged",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Starcaller",
@@ -233,7 +293,11 @@
       },
       "popularity": 49,
       "role": null,
-      "archiveRole": "healer"
+      "archiveRole": "healer",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Necromancer",
@@ -247,7 +311,11 @@
       },
       "popularity": 66,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Cultist",
@@ -261,7 +329,11 @@
       },
       "popularity": 61,
       "role": null,
-      "archiveRole": "healer"
+      "archiveRole": "healer",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Bloodmage",
@@ -275,7 +347,11 @@
       },
       "popularity": 59,
       "role": null,
-      "archiveRole": "support"
+      "archiveRole": "support",
+      "difficulty": {
+        "floor": "very-high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Templar",
@@ -289,7 +365,11 @@
       },
       "popularity": 49,
       "role": null,
-      "archiveRole": "tank"
+      "archiveRole": "tank",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Witch Hunter",
@@ -303,7 +383,11 @@
       },
       "popularity": 47,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Chronomancer",
@@ -317,7 +401,11 @@
       },
       "popularity": 85,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Sun Cleric",
@@ -331,7 +419,11 @@
       },
       "popularity": 51,
       "role": null,
-      "archiveRole": "healer"
+      "archiveRole": "healer",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Starcaller",
@@ -345,7 +437,11 @@
       },
       "popularity": 51,
       "role": null,
-      "archiveRole": "tank"
+      "archiveRole": "tank",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Pyromancer",
@@ -359,7 +455,11 @@
       },
       "popularity": 45,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Witch Doctor",
@@ -373,7 +473,11 @@
       },
       "popularity": 40,
       "role": null,
-      "archiveRole": "healer"
+      "archiveRole": "healer",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Witch Hunter",
@@ -387,7 +491,11 @@
       },
       "popularity": 38,
       "role": null,
-      "archiveRole": "tank"
+      "archiveRole": "tank",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Necromancer",
@@ -401,7 +509,11 @@
       },
       "popularity": 38,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Venomancer",
@@ -415,7 +527,11 @@
       },
       "popularity": 35,
       "role": null,
-      "archiveRole": "tank"
+      "archiveRole": "tank",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Venomancer",
@@ -429,7 +545,11 @@
       },
       "popularity": 35,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Sun Cleric",
@@ -443,7 +563,11 @@
       },
       "popularity": 34,
       "role": null,
-      "archiveRole": "tank"
+      "archiveRole": "tank",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Venomancer",
@@ -457,7 +581,11 @@
       },
       "popularity": 33,
       "role": null,
-      "archiveRole": "healer"
+      "archiveRole": "healer",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Felsworn",
@@ -471,7 +599,11 @@
       },
       "popularity": 62,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Ranger",
@@ -485,7 +617,11 @@
       },
       "popularity": 57,
       "role": null,
-      "archiveRole": "ranged"
+      "archiveRole": "ranged",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Bloodmage",
@@ -499,7 +635,11 @@
       },
       "popularity": 43,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Primalist",
@@ -513,7 +653,11 @@
       },
       "popularity": 41,
       "role": null,
-      "archiveRole": "tank"
+      "archiveRole": "tank",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Sun Cleric",
@@ -527,7 +671,11 @@
       },
       "popularity": 41,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Stormbringer",
@@ -541,7 +689,11 @@
       },
       "popularity": 40,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Cultist",
@@ -555,7 +707,11 @@
       },
       "popularity": 66,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Pyromancer",
@@ -569,7 +725,11 @@
       },
       "popularity": 54,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Knight of Xoroth",
@@ -583,7 +743,11 @@
       },
       "popularity": 53,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Barbarian",
@@ -597,7 +761,11 @@
       },
       "popularity": 52,
       "role": null,
-      "archiveRole": "ranged"
+      "archiveRole": "ranged",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Runemaster",
@@ -611,7 +779,11 @@
       },
       "popularity": 50,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Stormbringer",
@@ -625,7 +797,11 @@
       },
       "popularity": 46,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Reaper",
@@ -639,7 +815,11 @@
       },
       "popularity": 43,
       "role": null,
-      "archiveRole": "tank"
+      "archiveRole": "tank",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Bloodmage",
@@ -653,7 +833,11 @@
       },
       "popularity": 42,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "very-high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Guardian",
@@ -667,7 +851,11 @@
       },
       "popularity": 40,
       "role": null,
-      "archiveRole": "tank"
+      "archiveRole": "tank",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Chronomancer",
@@ -681,7 +869,11 @@
       },
       "popularity": 37,
       "role": null,
-      "archiveRole": "ranged"
+      "archiveRole": "ranged",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Stormbringer",
@@ -695,7 +887,11 @@
       },
       "popularity": 33,
       "role": null,
-      "archiveRole": "support"
+      "archiveRole": "support",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Runemaster",
@@ -709,7 +905,11 @@
       },
       "popularity": 100,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Barbarian",
@@ -723,7 +923,11 @@
       },
       "popularity": 66,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Knight of Xoroth",
@@ -737,7 +941,11 @@
       },
       "popularity": 63,
       "role": null,
-      "archiveRole": "tank"
+      "archiveRole": "tank",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Guardian",
@@ -751,7 +959,11 @@
       },
       "popularity": 60,
       "role": null,
-      "archiveRole": "support"
+      "archiveRole": "support",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Chronomancer",
@@ -765,7 +977,11 @@
       },
       "popularity": 54,
       "role": null,
-      "archiveRole": "healer"
+      "archiveRole": "healer",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Primalist",
@@ -779,7 +995,11 @@
       },
       "popularity": 37,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Templar",
@@ -793,7 +1013,11 @@
       },
       "popularity": 35,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Venomancer",
@@ -807,7 +1031,11 @@
       },
       "popularity": 34,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "very-high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Knight of Xoroth",
@@ -821,7 +1049,11 @@
       },
       "popularity": 74,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Sun Cleric",
@@ -835,7 +1067,11 @@
       },
       "popularity": 55,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Reaper",
@@ -849,7 +1085,11 @@
       },
       "popularity": 54,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Starcaller",
@@ -863,7 +1103,11 @@
       },
       "popularity": 44,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Cultist",
@@ -877,7 +1121,11 @@
       },
       "popularity": 43,
       "role": null,
-      "archiveRole": "tank"
+      "archiveRole": "tank",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Barbarian",
@@ -891,7 +1139,11 @@
       },
       "popularity": 39,
       "role": null,
-      "archiveRole": "support"
+      "archiveRole": "support",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Necromancer",
@@ -905,7 +1157,11 @@
       },
       "popularity": 36,
       "role": null,
-      "archiveRole": "caster"
+      "archiveRole": "caster",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Ranger",
@@ -919,7 +1175,11 @@
       },
       "popularity": 35,
       "role": null,
-      "archiveRole": "support"
+      "archiveRole": "support",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Guardian",
@@ -933,7 +1193,11 @@
       },
       "popularity": 31,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Reaper",
@@ -947,7 +1211,11 @@
       },
       "popularity": 66,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "very-high"
+      }
     },
     {
       "class": "Ranger",
@@ -961,7 +1229,11 @@
       },
       "popularity": 49,
       "role": null,
-      "archiveRole": "melee"
+      "archiveRole": "melee",
+      "difficulty": {
+        "floor": "low",
+        "ceiling": "high"
+      }
     },
     {
       "class": "Witch Hunter",
@@ -975,7 +1247,11 @@
       },
       "popularity": 44,
       "role": null,
-      "archiveRole": "ranged"
+      "archiveRole": "ranged",
+      "difficulty": {
+        "floor": "medium",
+        "ceiling": "medium"
+      }
     },
     {
       "class": "Witch Hunter",
@@ -989,7 +1265,11 @@
       },
       "popularity": 34,
       "role": null,
-      "archiveRole": "ranged"
+      "archiveRole": "ranged",
+      "difficulty": {
+        "floor": "high",
+        "ceiling": "high"
+      }
     }
   ],
   "classes": [
@@ -1098,5 +1378,6 @@
       "specCount": 4,
       "sourceUrl": "https://ascensionsidekick.com/witch-hunter"
     }
-  ]
+  ],
+  "difficultySource": "https://ascensionsidekick.com/skill"
 }

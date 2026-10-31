@@ -1,0 +1,433 @@
+{
+  "schema": "coa-research.dbm-zg-optional-bosses-and-raid-sql.v1",
+  "date": "2026-10-30",
+  "mapId": 309,
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "sourceType": "CoA Gri'lek, stock optional ZG scripts, CoA ZG SQL and shared header",
+  "warnings": [
+    "Stock optional boss scripts may be overridden by CoA raid module",
+    "SQL may be source baseline not live realm configuration",
+    "Do not infer timer from spell list without schedule/cast link"
+  ],
+  "files": [
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/boss_grilek_coa.cpp",
+      "sourceLines": 168,
+      "spells": [
+        {
+          "symbol": "SPELL_AVATAR",
+          "spellId": 83068,
+          "line": 37
+        },
+        {
+          "symbol": "SPELL_GROUND_TREMOR",
+          "spellId": 6524,
+          "line": 38
+        },
+        {
+          "symbol": "SPELL_PURSUIT",
+          "spellId": 2118801,
+          "line": 39
+        },
+        {
+          "symbol": "SPELL_TRAUMA",
+          "spellId": 2118802,
+          "line": 40
+        },
+        {
+          "symbol": "SPELL_GROUND_SLAM",
+          "spellId": 2118806,
+          "line": 41
+        },
+        {
+          "symbol": "SPELL_GROUND_SLAM_HIT",
+          "spellId": 2118807,
+          "line": 42
+        }
+      ],
+      "actions": [
+        {
+          "line": 66,
+          "code": "DoCastSelf(SPELL_AVATAR, true);"
+        },
+        {
+          "line": 67,
+          "code": "events.ScheduleEvent(EVENT_PURSUIT, 1s);"
+        },
+        {
+          "line": 68,
+          "code": "events.ScheduleEvent(EVENT_GROUND_SLAM, 13s);"
+        },
+        {
+          "line": 82,
+          "code": "events.ScheduleEvent(EVENT_PURSUIT, 1s);"
+        },
+        {
+          "line": 123,
+          "code": "DoCastSelf(SPELL_GROUND_TREMOR, true);"
+        },
+        {
+          "line": 142,
+          "code": "events.ScheduleEvent(EVENT_PURSUIT, 20s);"
+        },
+        {
+          "line": 145,
+          "code": "DoCastSelf(SPELL_GROUND_SLAM);"
+        },
+        {
+          "line": 146,
+          "code": "events.ScheduleEvent(EVENT_GROUND_SLAM, 13s);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/ZulGurub/boss_gahzranka.cpp",
+      "sourceLines": 141,
+      "spells": [
+        {
+          "symbol": "SPELL_FROSTBREATH",
+          "spellId": 16099,
+          "line": 26
+        },
+        {
+          "symbol": "SPELL_MASSIVEGEYSER",
+          "spellId": 22421,
+          "line": 27
+        },
+        {
+          "symbol": "SPELL_SLAM",
+          "spellId": 24326,
+          "line": 28
+        },
+        {
+          "symbol": "SPELL_THRASH",
+          "spellId": 3417,
+          "line": 29
+        },
+        {
+          "symbol": "SPELL_SPLASH",
+          "spellId": 24593,
+          "line": 30
+        }
+      ],
+      "actions": [
+        {
+          "line": 54,
+          "code": "DoCastVictim(SPELL_FROSTBREATH);"
+        },
+        {
+          "line": 59,
+          "code": "DoCastVictim(SPELL_MASSIVEGEYSER);"
+        },
+        {
+          "line": 64,
+          "code": "DoCastVictim(SPELL_SLAM, true);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/ZulGurub/boss_hazzarah.cpp",
+      "sourceLines": 172,
+      "spells": [
+        {
+          "symbol": "SPELL_SLEEP",
+          "spellId": 24664,
+          "line": 26
+        },
+        {
+          "symbol": "SPELL_EARTH_SHOCK",
+          "spellId": 24685,
+          "line": 27
+        },
+        {
+          "symbol": "SPELL_CHAIN_BURN",
+          "spellId": 24684,
+          "line": 28
+        },
+        {
+          "symbol": "SPELL_SUMMON_NIGHTMARE_ILLUSION_LEFT",
+          "spellId": 24681,
+          "line": 29
+        },
+        {
+          "symbol": "SPELL_SUMMON_NIGHTMARE_ILLUSION_BACK",
+          "spellId": 24728,
+          "line": 30
+        },
+        {
+          "symbol": "SPELL_SUMMON_NIGHTMARE_ILLUSION_RIGHT",
+          "spellId": 24729,
+          "line": 31
+        }
+      ],
+      "actions": [
+        {
+          "line": 76,
+          "code": "events.ScheduleEvent(EVENT_SLEEP, 12s, 15s);"
+        },
+        {
+          "line": 77,
+          "code": "events.ScheduleEvent(EVENT_EARTH_SHOCK, 8s, 18s);"
+        },
+        {
+          "line": 78,
+          "code": "events.ScheduleEvent(EVENT_CHAIN_BURN, 12s, 28s);"
+        },
+        {
+          "line": 79,
+          "code": "events.ScheduleEvent(EVENT_ILLUSIONS, 16s, 24s);"
+        },
+        {
+          "line": 115,
+          "code": "DoCastVictim(SPELL_SLEEP, true);"
+        },
+        {
+          "line": 116,
+          "code": "events.ScheduleEvent(EVENT_SLEEP, 24s, 32s);"
+        },
+        {
+          "line": 119,
+          "code": "DoCastVictim(SPELL_EARTH_SHOCK);"
+        },
+        {
+          "line": 120,
+          "code": "events.ScheduleEvent(EVENT_EARTH_SHOCK, 8s, 18s);"
+        },
+        {
+          "line": 127,
+          "code": "DoCast(target, SPELL_CHAIN_BURN);"
+        },
+        {
+          "line": 130,
+          "code": "events.ScheduleEvent(EVENT_CHAIN_BURN, 12s, 28s);"
+        },
+        {
+          "line": 133,
+          "code": "DoCastSelf(SPELL_SUMMON_NIGHTMARE_ILLUSION_LEFT, true);"
+        },
+        {
+          "line": 134,
+          "code": "DoCastSelf(SPELL_SUMMON_NIGHTMARE_ILLUSION_BACK, true);"
+        },
+        {
+          "line": 135,
+          "code": "DoCastSelf(SPELL_SUMMON_NIGHTMARE_ILLUSION_RIGHT, true);"
+        },
+        {
+          "line": 136,
+          "code": "events.ScheduleEvent(EVENT_ILLUSIONS, 15s, 25s);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/ZulGurub/boss_renataki.cpp",
+      "sourceLines": 260,
+      "spells": [
+        {
+          "symbol": "SPELL_VANISH",
+          "spellId": 24699,
+          "line": 24
+        },
+        {
+          "symbol": "SPELL_AMBUSH",
+          "spellId": 24337,
+          "line": 25
+        },
+        {
+          "symbol": "SPELL_GOUGE",
+          "spellId": 24698,
+          "line": 26
+        },
+        {
+          "symbol": "SPELL_THOUSAND_BLADES",
+          "spellId": 24649,
+          "line": 27
+        },
+        {
+          "symbol": "SPELL_THRASH",
+          "spellId": 3417,
+          "line": 28
+        },
+        {
+          "symbol": "SPELL_ENRAGE",
+          "spellId": 8269,
+          "line": 29
+        }
+      ],
+      "actions": [
+        {
+          "line": 62,
+          "code": "events.ScheduleEvent(EVENT_VANISH, 23s, 25s);"
+        },
+        {
+          "line": 63,
+          "code": "events.ScheduleEvent(EVENT_GOUGE, 5s, 10s);"
+        },
+        {
+          "line": 64,
+          "code": "events.ScheduleEvent(EVENT_THOUSAND_BLADES, 15s, 20s);"
+        },
+        {
+          "line": 66,
+          "code": "DoCastSelf(SPELL_THRASH, true);"
+        },
+        {
+          "line": 74,
+          "code": "DoCast(me, SPELL_ENRAGE);"
+        },
+        {
+          "line": 140,
+          "code": "DoCastSelf(SPELL_VANISH);"
+        },
+        {
+          "line": 142,
+          "code": "events.ScheduleEvent(EVENT_AMBUSH, 5s);"
+        },
+        {
+          "line": 143,
+          "code": "events.ScheduleEvent(EVENT_VANISH, 38s, 45s);"
+        },
+        {
+          "line": 149,
+          "code": "DoCast(target, SPELL_AMBUSH, true);"
+        },
+        {
+          "line": 157,
+          "code": "events.ScheduleEvent(EVENT_GOUGE, 10s, 15s);"
+        },
+        {
+          "line": 214,
+          "code": "DoCast(target, SPELL_THOUSAND_BLADES);"
+        },
+        {
+          "line": 219,
+          "code": "events.ScheduleEvent(EVENT_THOUSAND_BLADES, 500ms);"
+        },
+        {
+          "line": 224,
+          "code": "events.ScheduleEvent(EVENT_THOUSAND_BLADES, 15s, 22s);"
+        },
+        {
+          "line": 230,
+          "code": "events.ScheduleEvent(EVENT_THOUSAND_BLADES, 15s, 22s);"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/ZulGurub/boss_wushoolay.cpp",
+      "sourceLines": 104,
+      "spells": [
+        {
+          "symbol": "SPELL_LIGHTNING_CLOUD",
+          "spellId": 24683,
+          "line": 24
+        },
+        {
+          "symbol": "SPELL_CHAIN_LIGHTNING",
+          "spellId": 24680,
+          "line": 25
+        },
+        {
+          "symbol": "SPELL_FORKED_LIGHTNING",
+          "spellId": 24682,
+          "line": 26
+        }
+      ],
+      "actions": [
+        {
+          "line": 48,
+          "code": "events.ScheduleEvent(EVENT_LIGHTNING_CLOUD, 7s, 15s);"
+        },
+        {
+          "line": 49,
+          "code": "events.ScheduleEvent(EVENT_CHAIN_LIGHTNING, 12s, 16s);"
+        },
+        {
+          "line": 50,
+          "code": "events.ScheduleEvent(EVENT_FORKED_LIGHTNING, 8s, 12s);"
+        },
+        {
+          "line": 72,
+          "code": "events.ScheduleEvent(EVENT_LIGHTNING_CLOUD, 9s, 20s);"
+        },
+        {
+          "line": 77,
+          "code": "DoCast(target, SPELL_CHAIN_LIGHTNING);"
+        },
+        {
+          "line": 79,
+          "code": "events.ScheduleEvent(EVENT_CHAIN_LIGHTNING, 12s, 24s);"
+        },
+        {
+          "line": 83,
+          "code": "events.ScheduleEvent(EVENT_FORKED_LIGHTNING, 8s, 20s);"
+        }
+      ]
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/data/sql/db-world/base/14_zg.sql",
+      "sourceLines": 50,
+      "spells": [],
+      "actions": [
+        {
+          "line": 13,
+          "code": "UPDATE `creature_template` SET `ScriptName` = 'boss_venoxis_coa'  WHERE `entry` = 14507;"
+        },
+        {
+          "line": 14,
+          "code": "UPDATE `creature_template` SET `ScriptName` = 'boss_jeklik_coa'   WHERE `entry` = 14517;"
+        },
+        {
+          "line": 15,
+          "code": "UPDATE `creature_template` SET `ScriptName` = 'boss_marli_coa'    WHERE `entry` = 14510;"
+        },
+        {
+          "line": 16,
+          "code": "UPDATE `creature_template` SET `ScriptName` = 'boss_thekal_coa'   WHERE `entry` = 14509;"
+        },
+        {
+          "line": 17,
+          "code": "UPDATE `creature_template` SET `ScriptName` = 'boss_arlokk_coa'   WHERE `entry` = 14515;"
+        },
+        {
+          "line": 18,
+          "code": "UPDATE `creature_template` SET `ScriptName` = 'boss_mandokir_coa' WHERE `entry` = 11382;"
+        },
+        {
+          "line": 19,
+          "code": "UPDATE `creature_template` SET `ScriptName` = 'boss_jindo_coa'    WHERE `entry` = 11380;"
+        },
+        {
+          "line": 20,
+          "code": "UPDATE `creature_template` SET `ScriptName` = 'boss_hakkar_coa'   WHERE `entry` = 14834;"
+        },
+        {
+          "line": 21,
+          "code": "UPDATE `creature_template` SET `ScriptName` = 'boss_grilek_coa'   WHERE `entry` = 15082;"
+        },
+        {
+          "line": 26,
+          "code": "UPDATE `zg_heart` SET `entry` = 9780022, `minlevel` = 63, `maxlevel` = 63,"
+        },
+        {
+          "line": 31,
+          "code": "INSERT INTO `creature_template` SELECT * FROM `zg_heart`;"
+        },
+        {
+          "line": 35,
+          "code": "INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`, `DisplayScale`, `Probability`, `VerifiedBuild`)"
+        },
+        {
+          "line": 41,
+          "code": "INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES"
+        }
+      ]
+    },
+    {
+      "path": "modules/mod-coa-raid-difficulty/src/zg_coa_common.h",
+      "sourceLines": 117,
+      "spells": [],
+      "actions": []
+    }
+  ]
+}

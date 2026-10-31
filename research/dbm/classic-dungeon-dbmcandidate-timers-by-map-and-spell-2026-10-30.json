@@ -1,0 +1,1821 @@
+{
+  "schema": "coa-research.dbm-classic-dungeon-timer-candidates-v1",
+  "date": "2026-10-30",
+  "status": "Source-configured timer candidates; NOT active DBM timers, NOT live-verified",
+  "criteria": "Requires numeric spell ID, timer event type 0, positive initial and repeat min values; no inferred timers",
+  "notes": [
+    "Prioritization by spell-description keyword is heuristic, not a validated warning severity",
+    "Cast and encounter conditions can change the real timing",
+    "Some SmartAI spell casts use cast flags and phase restrictions not represented here; consult original rows",
+    "Missing boss does not mean it has no mechanics; other SQL and C++ implementations are not included",
+    "Map IDs from exact NPC encounter crosswalk"
+  ],
+  "counts": {
+    "timerCandidates": 94,
+    "withMap": 80,
+    "unmapped": 14,
+    "dungeonMapsWithCandidates": 6
+  },
+  "byMap": {
+    "36": [
+      {
+        "mapId": 36,
+        "npcId": 646,
+        "bossName": "Mr. Smite",
+        "spellId": 975011,
+        "initialMs": [
+          7550,
+          9550
+        ],
+        "repeatMs": [
+          8000,
+          9000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 66,
+        "comment": "Mr. Smite - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 36,
+        "npcId": 646,
+        "bossName": "Mr. Smite",
+        "spellId": 2102553,
+        "initialMs": [
+          15000,
+          17000
+        ],
+        "repeatMs": [
+          15000,
+          17000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 67,
+        "comment": "Mr. Smite - Stunning Strike (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 36,
+        "npcId": 646,
+        "bossName": "Mr. Smite",
+        "spellId": 2102580,
+        "initialMs": [
+          2600,
+          4600
+        ],
+        "repeatMs": [
+          10000,
+          12000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 68,
+        "comment": "Mr. Smite - Rupture (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 36,
+        "npcId": 646,
+        "bossName": "Mr. Smite",
+        "spellId": 2102576,
+        "initialMs": [
+          5000,
+          8000
+        ],
+        "repeatMs": [
+          65000,
+          67000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 69,
+        "comment": "Mr. Smite - Smite Rush (Exiles)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 36,
+        "npcId": 646,
+        "bossName": "Mr. Smite",
+        "spellId": 2102577,
+        "initialMs": [
+          5000,
+          8000
+        ],
+        "repeatMs": [
+          20000,
+          22000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 70,
+        "comment": "Mr. Smite - Retaliation (Exiles)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 36,
+        "npcId": 642,
+        "bossName": "Sneed",
+        "spellId": 975011,
+        "initialMs": [
+          8400,
+          8400
+        ],
+        "repeatMs": [
+          7800,
+          7800
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 24,
+        "comment": "Sneed's Shredder - In Combat - Cast Fierce Blow",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 36,
+        "npcId": 642,
+        "bossName": "Sneed",
+        "spellId": 2102559,
+        "initialMs": [
+          12000,
+          15000
+        ],
+        "repeatMs": [
+          20000,
+          25000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 25,
+        "comment": "Sneed's Shredder - In Combat - Cast Bouncing Saw Blade",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 36,
+        "npcId": 642,
+        "bossName": "Sneed",
+        "spellId": 2102569,
+        "initialMs": [
+          5000,
+          8000
+        ],
+        "repeatMs": [
+          15000,
+          20000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 26,
+        "comment": "Sneed's Shredder - In Combat - Cast Throw Buzzing Saw Blade",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 36,
+        "npcId": 644,
+        "bossName": "Rhahk'zor",
+        "spellId": 975011,
+        "initialMs": [
+          8400,
+          8400
+        ],
+        "repeatMs": [
+          7800,
+          7800
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 37,
+        "comment": "Rhahk'Zor - In Combat - Cast Fierce Blow",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 36,
+        "npcId": 644,
+        "bossName": "Rhahk'zor",
+        "spellId": 2102553,
+        "initialMs": [
+          12000,
+          16000
+        ],
+        "repeatMs": [
+          15000,
+          20000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 38,
+        "comment": "Rhahk'Zor - In Combat - Cast Stunning Strike",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 36,
+        "npcId": 644,
+        "bossName": "Rhahk'zor",
+        "spellId": 2102554,
+        "initialMs": [
+          8000,
+          10000
+        ],
+        "repeatMs": [
+          15000,
+          20000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 39,
+        "comment": "Rhahk'Zor - In Combat - Cast Bladestorm",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 36,
+        "npcId": 645,
+        "bossName": "Cookie",
+        "spellId": 2102590,
+        "initialMs": [
+          20000,
+          25000
+        ],
+        "repeatMs": [
+          30000,
+          40000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 42,
+        "comment": "Cookie - In Combat - Cast Cookie's Cooking",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 36,
+        "npcId": 645,
+        "bossName": "Cookie",
+        "spellId": 2102589,
+        "initialMs": [
+          1500,
+          2500
+        ],
+        "repeatMs": [
+          1600,
+          1700
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 50,
+        "comment": "Cookie - In Cauldron - Cast Throw Food",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 36,
+        "npcId": 645,
+        "bossName": "Cookie",
+        "spellId": 2102527,
+        "initialMs": [
+          8000,
+          12000
+        ],
+        "repeatMs": [
+          12000,
+          18000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 51,
+        "comment": "Cookie - In Cauldron - Cast Throw Poison Vial",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 36,
+        "npcId": 647,
+        "bossName": "Captain Greenskin",
+        "spellId": 40505,
+        "initialMs": [
+          1000,
+          7000
+        ],
+        "repeatMs": [
+          10000,
+          15000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 54,
+        "comment": "Captain Greenskin - In Combat - Cast Cleave",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 36,
+        "npcId": 647,
+        "bossName": "Captain Greenskin",
+        "spellId": 5208,
+        "initialMs": [
+          10000,
+          12000
+        ],
+        "repeatMs": [
+          25000,
+          35000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 55,
+        "comment": "Captain Greenskin - In Combat - Cast Poisoned Harpoon",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 36,
+        "npcId": 647,
+        "bossName": "Captain Greenskin",
+        "spellId": 975011,
+        "initialMs": [
+          8400,
+          8400
+        ],
+        "repeatMs": [
+          7800,
+          7800
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 56,
+        "comment": "Captain Greenskin - In Combat - Cast Fierce Blow",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 36,
+        "npcId": 647,
+        "bossName": "Captain Greenskin",
+        "spellId": 2101111,
+        "initialMs": [
+          15000,
+          20000
+        ],
+        "repeatMs": [
+          20000,
+          25000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 57,
+        "comment": "Captain Greenskin - In Combat - Cast Frost Nova",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 36,
+        "npcId": 1763,
+        "bossName": "Gilnid",
+        "spellId": 5213,
+        "initialMs": [
+          1000,
+          6000
+        ],
+        "repeatMs": [
+          15000,
+          25000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 60,
+        "comment": "Gilnid - In Combat - Cast Molten Metal",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 36,
+        "npcId": 1763,
+        "bossName": "Gilnid",
+        "spellId": 975011,
+        "initialMs": [
+          8400,
+          8400
+        ],
+        "repeatMs": [
+          7800,
+          7800
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 63,
+        "comment": "Gilnid - In Combat - Cast Fierce Blow",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 36,
+        "npcId": 1763,
+        "bossName": "Gilnid",
+        "spellId": 2102571,
+        "initialMs": [
+          10000,
+          14000
+        ],
+        "repeatMs": [
+          18000,
+          24000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 64,
+        "comment": "Gilnid - In Combat - Cast Melt Ore",
+        "priority": "review-timer"
+      }
+    ],
+    "209": [
+      {
+        "mapId": 209,
+        "npcId": 7604,
+        "bossName": "Sergeant Bly",
+        "spellId": 975011,
+        "initialMs": [
+          5800,
+          7800
+        ],
+        "repeatMs": [
+          8000,
+          9000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 80,
+        "comment": "Sergeant Bly - Fierce Blow (log)",
+        "priority": "review-warning"
+      }
+    ],
+    "229": [
+      {
+        "mapId": 229,
+        "npcId": 10363,
+        "bossName": "General Drakkisath",
+        "spellId": 975011,
+        "initialMs": [
+          8500,
+          10500
+        ],
+        "repeatMs": [
+          9000,
+          10000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 39,
+        "comment": "General Drakkisath - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10363,
+        "bossName": "General Drakkisath",
+        "spellId": 2102619,
+        "initialMs": [
+          14600,
+          16600
+        ],
+        "repeatMs": [
+          15000,
+          17000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 40,
+        "comment": "General Drakkisath - Thunder Clap (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10363,
+        "bossName": "General Drakkisath",
+        "spellId": 2102203,
+        "initialMs": [
+          22000,
+          24000
+        ],
+        "repeatMs": [
+          25000,
+          27000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 41,
+        "comment": "General Drakkisath - Heatwave (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10220,
+        "bossName": "Halycon",
+        "spellId": 2100428,
+        "initialMs": [
+          4000,
+          6000
+        ],
+        "repeatMs": [
+          10000,
+          12000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 43,
+        "comment": "Halycon - Furious Howl (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10220,
+        "bossName": "Halycon",
+        "spellId": 975011,
+        "initialMs": [
+          7000,
+          9000
+        ],
+        "repeatMs": [
+          7000,
+          8000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 44,
+        "comment": "Halycon - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9196,
+        "bossName": "Highlord Omokk",
+        "spellId": 975011,
+        "initialMs": [
+          7000,
+          9000
+        ],
+        "repeatMs": [
+          7000,
+          8000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 45,
+        "comment": "Highlord Omokk - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9196,
+        "bossName": "Highlord Omokk",
+        "spellId": 2100148,
+        "initialMs": [
+          13600,
+          15600
+        ],
+        "repeatMs": [
+          15000,
+          17000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 46,
+        "comment": "Highlord Omokk - Crush Armor (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9568,
+        "bossName": "Overlord Wyrmthalak",
+        "spellId": 2100345,
+        "initialMs": [
+          10000,
+          12000
+        ],
+        "repeatMs": [
+          10000,
+          12000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 47,
+        "comment": "Overlord Wyrmthalak - Pierce Armor (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9568,
+        "bossName": "Overlord Wyrmthalak",
+        "spellId": 975011,
+        "initialMs": [
+          7000,
+          9000
+        ],
+        "repeatMs": [
+          7000,
+          8000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 48,
+        "comment": "Overlord Wyrmthalak - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9816,
+        "bossName": "Pyroguard Emberseer",
+        "spellId": 975011,
+        "initialMs": [
+          8000,
+          10000
+        ],
+        "repeatMs": [
+          8000,
+          9000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 49,
+        "comment": "Pyroguard Emberseer - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9816,
+        "bossName": "Pyroguard Emberseer",
+        "spellId": 2102825,
+        "initialMs": [
+          8000,
+          12000
+        ],
+        "repeatMs": [
+          12000,
+          16000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 51,
+        "comment": "Pyroguard Emberseer - Immolation (Exiles)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9736,
+        "bossName": "Quartermaster Zigris",
+        "spellId": 2102850,
+        "initialMs": [
+          1000,
+          3000
+        ],
+        "repeatMs": [
+          20000,
+          22000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 52,
+        "comment": "Quartermaster Zigris - Auto Shot (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9736,
+        "bossName": "Quartermaster Zigris",
+        "spellId": 2100255,
+        "initialMs": [
+          2600,
+          4600
+        ],
+        "repeatMs": [
+          10000,
+          12000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 53,
+        "comment": "Quartermaster Zigris - Throw Net (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9736,
+        "bossName": "Quartermaster Zigris",
+        "spellId": 2102851,
+        "initialMs": [
+          5000,
+          7000
+        ],
+        "repeatMs": [
+          10000,
+          12000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 54,
+        "comment": "Quartermaster Zigris - Throw Proximity Mine (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9736,
+        "bossName": "Quartermaster Zigris",
+        "spellId": 975011,
+        "initialMs": [
+          7000,
+          9000
+        ],
+        "repeatMs": [
+          7000,
+          8000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 55,
+        "comment": "Quartermaster Zigris - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10430,
+        "bossName": "The Beast",
+        "spellId": 2102192,
+        "initialMs": [
+          1000,
+          3000
+        ],
+        "repeatMs": [
+          20000,
+          22000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 56,
+        "comment": "The Beast - Flame Breath (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10430,
+        "bossName": "The Beast",
+        "spellId": 975011,
+        "initialMs": [
+          9000,
+          11000
+        ],
+        "repeatMs": [
+          9000,
+          10000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 57,
+        "comment": "The Beast - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10430,
+        "bossName": "The Beast",
+        "spellId": 2102159,
+        "initialMs": [
+          29000,
+          31000
+        ],
+        "repeatMs": [
+          35000,
+          37000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 58,
+        "comment": "The Beast - Overrun (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10430,
+        "bossName": "The Beast",
+        "spellId": 2100205,
+        "initialMs": [
+          8000,
+          12000
+        ],
+        "repeatMs": [
+          10000,
+          14000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 59,
+        "comment": "The Beast - Blast Wave (Exiles)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10430,
+        "bossName": "The Beast",
+        "spellId": 2100439,
+        "initialMs": [
+          5000,
+          8000
+        ],
+        "repeatMs": [
+          20000,
+          22000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 60,
+        "comment": "The Beast - Bellowing Roar (Exiles)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9237,
+        "bossName": "War Master Voone",
+        "spellId": 2100465,
+        "initialMs": [
+          3550,
+          5550
+        ],
+        "repeatMs": [
+          15000,
+          17000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 61,
+        "comment": "War Master Voone - Counter Kick (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9237,
+        "bossName": "War Master Voone",
+        "spellId": 975011,
+        "initialMs": [
+          7449,
+          9450
+        ],
+        "repeatMs": [
+          8000,
+          9000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 62,
+        "comment": "War Master Voone - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9237,
+        "bossName": "War Master Voone",
+        "spellId": 15284,
+        "initialMs": [
+          8000,
+          10000
+        ],
+        "repeatMs": [
+          10000,
+          12000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 63,
+        "comment": "War Master Voone - Cleave (manual)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9237,
+        "bossName": "War Master Voone",
+        "spellId": 15615,
+        "initialMs": [
+          10000,
+          12000
+        ],
+        "repeatMs": [
+          16000,
+          18000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 64,
+        "comment": "War Master Voone - Pummel (manual)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 9237,
+        "bossName": "War Master Voone",
+        "spellId": 10966,
+        "initialMs": [
+          12000,
+          14000
+        ],
+        "repeatMs": [
+          14000,
+          16000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 65,
+        "comment": "War Master Voone - Uppercut (manual)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10509,
+        "bossName": "Jed Runewatcher",
+        "spellId": 14516,
+        "initialMs": [
+          5000,
+          7000
+        ],
+        "repeatMs": [
+          4000,
+          6000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 68,
+        "comment": "Every 4 - 6 seconds (5 - 7s initially)  - Self: Cast spell Strike (14516) on Victim",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10509,
+        "bossName": "Jed Runewatcher",
+        "spellId": 15749,
+        "initialMs": [
+          10000,
+          10000
+        ],
+        "repeatMs": [
+          5000,
+          15000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 70,
+        "comment": "Every 5 - 15 seconds (10 - 10s initially)  - Self: Cast spell Shield Charge (15749) on Random hostile",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10509,
+        "bossName": "Jed Runewatcher",
+        "spellId": 2102840,
+        "initialMs": [
+          8000,
+          12000
+        ],
+        "repeatMs": [
+          15000,
+          20000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 72,
+        "comment": "Jed Runewatcher - In Combat - Cast 'Berserker Charge' on Random hostile",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10509,
+        "bossName": "Jed Runewatcher",
+        "spellId": 975011,
+        "initialMs": [
+          7700,
+          9700
+        ],
+        "repeatMs": [
+          8000,
+          9000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 73,
+        "comment": "Jed Runewatcher - In Combat - Cast 'Fierce Blow' on Victim",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10899,
+        "bossName": "Goraluk Anvilcrack",
+        "spellId": 15580,
+        "initialMs": [
+          5000,
+          7000
+        ],
+        "repeatMs": [
+          4000,
+          6000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 76,
+        "comment": "Every 4 - 6 seconds (5 - 7s initially)  - Self: Cast spell Strike (15580) on Victim",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10899,
+        "bossName": "Goraluk Anvilcrack",
+        "spellId": 16172,
+        "initialMs": [
+          5000,
+          10000
+        ],
+        "repeatMs": [
+          20000,
+          20000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 77,
+        "comment": "Every 20 - 20 seconds (5 - 10s initially)  - Self: Cast spell Head Crack (16172) on Victim",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10899,
+        "bossName": "Goraluk Anvilcrack",
+        "spellId": 6253,
+        "initialMs": [
+          10000,
+          10000
+        ],
+        "repeatMs": [
+          10000,
+          10000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 78,
+        "comment": "Every 10 seconds  - Self: Cast spell Backhand (6253) on Victim",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10899,
+        "bossName": "Goraluk Anvilcrack",
+        "spellId": 2102553,
+        "initialMs": [
+          8000,
+          10000
+        ],
+        "repeatMs": [
+          12000,
+          16000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 79,
+        "comment": "Goraluk Anvilcrack - In Combat - Cast 'Stunning Strike' on Victim",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10899,
+        "bossName": "Goraluk Anvilcrack",
+        "spellId": 2102138,
+        "initialMs": [
+          6000,
+          6000
+        ],
+        "repeatMs": [
+          25000,
+          30000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 80,
+        "comment": "Goraluk Anvilcrack - In Combat - Cast 'Enchant Armor - Protection V'",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10899,
+        "bossName": "Goraluk Anvilcrack",
+        "spellId": 2102137,
+        "initialMs": [
+          16000,
+          16000
+        ],
+        "repeatMs": [
+          25000,
+          30000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 81,
+        "comment": "Goraluk Anvilcrack - In Combat - Cast 'Enchant Pickaxe - Efficieny V'",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 229,
+        "npcId": 10899,
+        "bossName": "Goraluk Anvilcrack",
+        "spellId": 975011,
+        "initialMs": [
+          5000,
+          7000
+        ],
+        "repeatMs": [
+          6000,
+          8000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 82,
+        "comment": "Goraluk Anvilcrack - In Combat - Cast 'Fierce Blow' on Victim",
+        "priority": "review-warning"
+      }
+    ],
+    "230": [
+      {
+        "mapId": 230,
+        "npcId": 9156,
+        "bossName": "Ambassador Flamelash",
+        "spellId": 975011,
+        "initialMs": [
+          8000,
+          10000
+        ],
+        "repeatMs": [
+          8000,
+          9000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 17,
+        "comment": "Ambassador Flamelash - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 230,
+        "npcId": 9039,
+        "bossName": "The Seven",
+        "spellId": 975011,
+        "initialMs": [
+          7000,
+          9000
+        ],
+        "repeatMs": [
+          7000,
+          8000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 18,
+        "comment": "Doom'rel - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 230,
+        "npcId": 9039,
+        "bossName": "The Seven",
+        "spellId": 505347,
+        "initialMs": [
+          5000,
+          8000
+        ],
+        "repeatMs": [
+          20000,
+          22000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 19,
+        "comment": "Doom'rel - Mystic Thunder (Exiles)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 230,
+        "npcId": 9019,
+        "bossName": "Emperor Dagran Thaurissan",
+        "spellId": 975011,
+        "initialMs": [
+          8000,
+          10000
+        ],
+        "repeatMs": [
+          8000,
+          9000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 20,
+        "comment": "Emperor Dagran Thaurissan - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 230,
+        "npcId": 9019,
+        "bossName": "Emperor Dagran Thaurissan",
+        "spellId": 92603,
+        "initialMs": [
+          10000,
+          12000
+        ],
+        "repeatMs": [
+          10000,
+          12000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 21,
+        "comment": "Emperor Dagran Thaurissan - Dark Iron Hammer (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 230,
+        "npcId": 9019,
+        "bossName": "Emperor Dagran Thaurissan",
+        "spellId": 92606,
+        "initialMs": [
+          15000,
+          17000
+        ],
+        "repeatMs": [
+          15000,
+          17000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 22,
+        "comment": "Emperor Dagran Thaurissan - Fiery Charge (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 230,
+        "npcId": 9019,
+        "bossName": "Emperor Dagran Thaurissan",
+        "spellId": 381251,
+        "initialMs": [
+          8000,
+          12000
+        ],
+        "repeatMs": [
+          18000,
+          22000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 23,
+        "comment": "Emperor Dagran Thaurissan - Frost Nova (Exiles)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 230,
+        "npcId": 9019,
+        "bossName": "Emperor Dagran Thaurissan",
+        "spellId": 815637,
+        "initialMs": [
+          5000,
+          8000
+        ],
+        "repeatMs": [
+          20000,
+          22000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 24,
+        "comment": "Emperor Dagran Thaurissan - Chilled Armor (Exiles)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 230,
+        "npcId": 9033,
+        "bossName": "General Angerforge",
+        "spellId": 975011,
+        "initialMs": [
+          7449,
+          9450
+        ],
+        "repeatMs": [
+          10000,
+          11000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 25,
+        "comment": "General Angerforge - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 230,
+        "npcId": 9018,
+        "bossName": "High Interrogator Gerstahn",
+        "spellId": 975011,
+        "initialMs": [
+          9000,
+          11000
+        ],
+        "repeatMs": [
+          9000,
+          10000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 30,
+        "comment": "High Interrogator Gerstahn - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 230,
+        "npcId": 9018,
+        "bossName": "High Interrogator Gerstahn",
+        "spellId": 14033,
+        "initialMs": [
+          3000,
+          4000
+        ],
+        "repeatMs": [
+          4000,
+          4500
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 31,
+        "comment": "High Interrogator Gerstahn - Mana Burn (manual)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 230,
+        "npcId": 9938,
+        "bossName": "Magmus",
+        "spellId": 975011,
+        "initialMs": [
+          8000,
+          10000
+        ],
+        "repeatMs": [
+          8000,
+          9000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 32,
+        "comment": "Magmus - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 230,
+        "npcId": 9502,
+        "bossName": "Phalanx",
+        "spellId": 975011,
+        "initialMs": [
+          8000,
+          10000
+        ],
+        "repeatMs": [
+          8000,
+          9000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 33,
+        "comment": "Phalanx - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 230,
+        "npcId": 9502,
+        "bossName": "Phalanx",
+        "spellId": 17203,
+        "initialMs": [
+          8000,
+          10000
+        ],
+        "repeatMs": [
+          15000,
+          17000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 34,
+        "comment": "Phalanx - Fireball Volley (manual)",
+        "priority": "review-warning"
+      }
+    ],
+    "289": [
+      {
+        "mapId": 289,
+        "npcId": 1853,
+        "bossName": "Darkmaster Gandling",
+        "spellId": 2100398,
+        "initialMs": [
+          1500,
+          2000
+        ],
+        "repeatMs": [
+          3000,
+          3500
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 72,
+        "comment": "Darkmaster Gandling - Rise! (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 289,
+        "npcId": 1853,
+        "bossName": "Darkmaster Gandling",
+        "spellId": 2100389,
+        "initialMs": [
+          1000,
+          1500
+        ],
+        "repeatMs": [
+          2900,
+          3400
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 73,
+        "comment": "Darkmaster Gandling - Incinerate (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 289,
+        "npcId": 1853,
+        "bossName": "Darkmaster Gandling",
+        "spellId": 2100393,
+        "initialMs": [
+          10000,
+          12000
+        ],
+        "repeatMs": [
+          10000,
+          12000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 74,
+        "comment": "Darkmaster Gandling - Immolate (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": 289,
+        "npcId": 10506,
+        "bossName": "Kirtonos the Herald",
+        "spellId": 2100034,
+        "initialMs": [
+          3100,
+          3600
+        ],
+        "repeatMs": [
+          3100,
+          3600
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 75,
+        "comment": "Kirtonos the Herald - Shadow Bolt (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 289,
+        "npcId": 10506,
+        "bossName": "Kirtonos the Herald",
+        "spellId": 975011,
+        "initialMs": [
+          8000,
+          10000
+        ],
+        "repeatMs": [
+          8000,
+          9000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 76,
+        "comment": "Kirtonos the Herald - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 289,
+        "npcId": 10506,
+        "bossName": "Kirtonos the Herald",
+        "spellId": 2100004,
+        "initialMs": [
+          10000,
+          12000
+        ],
+        "repeatMs": [
+          10000,
+          12000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 77,
+        "comment": "Kirtonos the Herald - Cleave (log)",
+        "priority": "review-warning"
+      }
+    ],
+    "329": [
+      {
+        "mapId": 329,
+        "npcId": 10436,
+        "bossName": "Baroness Anastari",
+        "spellId": 816867,
+        "initialMs": [
+          10000,
+          12000
+        ],
+        "repeatMs": [
+          10000,
+          12000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 78,
+        "comment": "Baroness Anastari - Curse of the Baroness (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": 329,
+        "npcId": 10436,
+        "bossName": "Baroness Anastari",
+        "spellId": 975011,
+        "initialMs": [
+          8000,
+          10000
+        ],
+        "repeatMs": [
+          8000,
+          9000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 79,
+        "comment": "Baroness Anastari - Fierce Blow (log)",
+        "priority": "review-warning"
+      }
+    ],
+    "unmapped": [
+      {
+        "mapId": null,
+        "npcId": 9037,
+        "bossName": "Gloom'rel",
+        "spellId": 13737,
+        "initialMs": [
+          2050,
+          4050
+        ],
+        "repeatMs": [
+          8000,
+          9000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 26,
+        "comment": "Gloom'rel - Mortal Strike (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": null,
+        "npcId": 9037,
+        "bossName": "Gloom'rel",
+        "spellId": 15284,
+        "initialMs": [
+          1549,
+          2050
+        ],
+        "repeatMs": [
+          4300,
+          4800
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 27,
+        "comment": "Gloom'rel - Cleave (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": null,
+        "npcId": 9037,
+        "bossName": "Gloom'rel",
+        "spellId": 13847,
+        "initialMs": [
+          3750,
+          5750
+        ],
+        "repeatMs": [
+          15000,
+          17000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 28,
+        "comment": "Gloom'rel - Recklessness (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": null,
+        "npcId": 9037,
+        "bossName": "Gloom'rel",
+        "spellId": 975011,
+        "initialMs": [
+          7300,
+          9300
+        ],
+        "repeatMs": [
+          15000,
+          17000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 29,
+        "comment": "Gloom'rel - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": null,
+        "npcId": 8929,
+        "bossName": "Princess Moira Bronzebeard",
+        "spellId": 10894,
+        "initialMs": [
+          1300,
+          3300
+        ],
+        "repeatMs": [
+          7000,
+          8000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 35,
+        "comment": "Princess Moira Bronzebeard - Shadow Word: Pain (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": null,
+        "npcId": 8929,
+        "bossName": "Princess Moira Bronzebeard",
+        "spellId": 10934,
+        "initialMs": [
+          4500,
+          6500
+        ],
+        "repeatMs": [
+          7000,
+          8000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 36,
+        "comment": "Princess Moira Bronzebeard - Smite (log)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": null,
+        "npcId": 8929,
+        "bossName": "Princess Moira Bronzebeard",
+        "spellId": 10917,
+        "initialMs": [
+          22800,
+          24800
+        ],
+        "repeatMs": [
+          25000,
+          27000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 37,
+        "comment": "Princess Moira Bronzebeard - Flash Heal (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": null,
+        "npcId": 8929,
+        "bossName": "Princess Moira Bronzebeard",
+        "spellId": 975011,
+        "initialMs": [
+          8000,
+          10000
+        ],
+        "repeatMs": [
+          8000,
+          9000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+        "line": 38,
+        "comment": "Princess Moira Bronzebeard - Fierce Blow (log)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": null,
+        "npcId": 643,
+        "bossName": "Sneed",
+        "spellId": 6713,
+        "initialMs": [
+          1000,
+          7000
+        ],
+        "repeatMs": [
+          20000,
+          25000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 29,
+        "comment": "Sneed - In Combat - Cast Disarm",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": null,
+        "npcId": 643,
+        "bossName": "Sneed",
+        "spellId": 975011,
+        "initialMs": [
+          8400,
+          8400
+        ],
+        "repeatMs": [
+          7800,
+          7800
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 31,
+        "comment": "Sneed - In Combat - Cast Fierce Blow",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": null,
+        "npcId": 10814,
+        "bossName": "Chromatic Elite Guard",
+        "spellId": 15708,
+        "initialMs": [
+          5000,
+          12800
+        ],
+        "repeatMs": [
+          13000,
+          13000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 86,
+        "comment": "Chromatic Elite Guard - In Combat - Cast 'Mortal Strike' (Normal Dungeon)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": null,
+        "npcId": 10814,
+        "bossName": "Chromatic Elite Guard",
+        "spellId": 16790,
+        "initialMs": [
+          5600,
+          15400
+        ],
+        "repeatMs": [
+          11200,
+          25700
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 87,
+        "comment": "Chromatic Elite Guard - In Combat - Cast 'Stunning Strike' (Normal Dungeon)",
+        "priority": "review-warning"
+      },
+      {
+        "mapId": null,
+        "npcId": 10814,
+        "bossName": "Chromatic Elite Guard",
+        "spellId": 15580,
+        "initialMs": [
+          12000,
+          20800
+        ],
+        "repeatMs": [
+          9000,
+          9000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 88,
+        "comment": "Chromatic Elite Guard - In Combat - Cast 'Strike' (Normal Dungeon)",
+        "priority": "review-timer"
+      },
+      {
+        "mapId": null,
+        "npcId": 10814,
+        "bossName": "Chromatic Elite Guard",
+        "spellId": 975011,
+        "initialMs": [
+          5000,
+          7000
+        ],
+        "repeatMs": [
+          6000,
+          8000
+        ],
+        "eventType": 0,
+        "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+        "line": 89,
+        "comment": "Chromatic Elite Guard - In Combat - Cast 'Fierce Blow' (Normal Dungeon)",
+        "priority": "review-warning"
+      }
+    ]
+  }
+}

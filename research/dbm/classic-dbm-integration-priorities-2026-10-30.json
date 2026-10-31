@@ -1,0 +1,52 @@
+{
+  "schema": "coa-research.dbm-classic-release-research-manifest.v1",
+  "generatedOn": "2026-10-30",
+  "scope": "Vanilla/Classic 19 dungeons and 6 raids",
+  "datasets": [
+    "research/dbm/classic-25-map-encounter-boss-handoff-2026-10-30.json",
+    "research/dbm/classic-mechanics-spell-bindings-and-warning-candidates-2026-10-30.json"
+  ],
+  "priorEvidence": [
+    "research/dungeons/vanilla-41-unmatched-encounter-provisional-map-reconciliation-2026-10-30.json",
+    "research/raids/raid-encounters-by-map-and-difficulty-v2-2026-10-30.json",
+    "research/dbm/vanilla-eight-dungeon-mechanics-sql-evidence-2026-10-30.json"
+  ],
+  "integrationPlan": [
+    {
+      "priority": "P0",
+      "task": "Import 25-map encounter IDs and NPC IDs as candidate boss roster, keyed by map and difficulty",
+      "gate": "Validate client DBC and live NPC GUIDs; do not treat pending SQL as live"
+    },
+    {
+      "priority": "P0",
+      "task": "Keep 41 provisional/unassigned dungeon encounters separate from verified roster",
+      "gate": "Resolve with creature spawn map or live boss observations"
+    },
+    {
+      "priority": "P1",
+      "task": "Use 9 source spell-script bindings as candidate mechanics",
+      "gate": "Verify source C++ semantics and actual combat log events before enabling warnings"
+    },
+    {
+      "priority": "P1",
+      "task": "Learn real cast intervals from DBM-CoA learner observations; record sample size and confidence",
+      "gate": "No made-up timer intervals; exclude player and pet abilities"
+    },
+    {
+      "priority": "P1",
+      "task": "Protect live performance by deduplicating cast events and deferring bulk archive sync",
+      "gate": "Benchmark memory and frame time in raids"
+    },
+    {
+      "priority": "P2",
+      "task": "Build raid-specific warnings for ZG, MC, BWL, AQ20, AQ40 and Onyxia",
+      "gate": "Check each mechanic against current scripts and in-game logs"
+    }
+  ],
+  "limitations": [
+    "These are research handoffs, not an updated DBM addon ZIP",
+    "Only selected upstream pending migrations represented; no live-server DB export",
+    "No verified cast interval database included",
+    "Unreleased custom dungeons and TBC/Wrath excluded"
+  ]
+}

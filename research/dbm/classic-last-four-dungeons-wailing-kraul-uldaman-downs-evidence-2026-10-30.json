@@ -1,0 +1,191 @@
+{
+  "schema": "coa-research.dbm-last-four-vanilla-dungeons-evidence.v1",
+  "date": "2026-10-30",
+  "sourceStatus": "Upstream CoA repository; live Conquest Reborn behavior not verified",
+  "findings": [
+    {
+      "mapId": 43,
+      "dungeon": "Wailing Caverns",
+      "evidence": [
+        {
+          "kind": "encounter-gating",
+          "boss": "Mutanus / Naralex event",
+          "source": "src/server/scripts/Kalimdor/WailingCaverns/instance_wailing_caverns.cpp",
+          "lines": [
+            60,
+            78,
+            116,
+            138
+          ],
+          "mechanic": "Naralex event gated by completed Lord Cobrahn, Lord Pythas and other prerequisites; LFG wings ending before Mutanus disable the event",
+          "spellIds": [],
+          "timer": null
+        },
+        {
+          "kind": "gossip-gating",
+          "source": "data/sql/updates/pending_db_world/rev_20261019_21_wailing_caverns_disciple_wing_gossip.sql",
+          "lines": [
+            1,
+            4
+          ],
+          "mechanic": "Disciple of Naralex hides Mutanus event start in wings ending earlier",
+          "spellIds": [],
+          "timer": null
+        }
+      ],
+      "status": "encounter-event-mechanics-no-spell-timers"
+    },
+    {
+      "mapId": 47,
+      "dungeon": "Razorfen Kraul",
+      "evidence": [
+        {
+          "kind": "boss-roster",
+          "source": "research/dungeons/vanilla-19-map-boss-encounter-loot-crosswalk-2026-10-30.json",
+          "mechanic": "Source-grounded NPC encounter roster; no source-supported ability spell ID or cast cadence found in searched CoA scripts",
+          "spellIds": [],
+          "timer": null
+        }
+      ],
+      "status": "roster-only-no-mechanic-verified"
+    },
+    {
+      "mapId": 70,
+      "dungeon": "Uldaman",
+      "evidence": [
+        {
+          "kind": "boss-activation",
+          "boss": "Archaedas",
+          "source": "src/server/scripts/EasternKingdoms/Uldaman/instance_uldaman.cpp",
+          "lines": [
+            26,
+            35,
+            190,
+            208
+          ],
+          "mechanic": "Awaken event and instance boss activation; stoned aura toggles immunity/passive behavior",
+          "spellIds": [
+            10347,
+            10258
+          ],
+          "timer": null,
+          "notes": "Spell IDs are named awaken/vault walker constants, not cast cooldowns"
+        },
+        {
+          "kind": "door-state",
+          "boss": "Ironaya",
+          "source": "data/sql/updates/pending_db_world/rev_20261028_01_ironaya_unit_flags.sql",
+          "lines": [
+            1,
+            8
+          ],
+          "mechanic": "Door gating and unit flags affect boss access, not timed combat warning",
+          "spellIds": [],
+          "timer": null
+        }
+      ],
+      "status": "source-backed-boss-activation-no-cast-timers"
+    },
+    {
+      "mapId": 129,
+      "dungeon": "Razorfen Downs",
+      "evidence": [
+        {
+          "kind": "scripted-event",
+          "boss": "Belnistrasz idol room defense",
+          "source": "src/server/scripts/Kalimdor/RazorfenDowns/razorfen_downs.cpp",
+          "lines": [
+            67,
+            71,
+            119,
+            120,
+            163,
+            206,
+            231,
+            240
+          ],
+          "mechanic": "Idol room spawner repeats 35s; event progress at 120s then 60s; Fireball first 1s then 8s; Frost Nova first 8-12s then 15s. Scripted NPC/event, not dungeon boss.",
+          "spellIds": [
+            9053,
+            11831,
+            12774,
+            12816
+          ],
+          "timings": {
+            "fireball": {
+              "initialMs": [
+                1000,
+                1000
+              ],
+              "repeatMs": [
+                8000,
+                8000
+              ]
+            },
+            "frostNova": {
+              "initialMs": [
+                8000,
+                12000
+              ],
+              "repeatMs": [
+                15000,
+                15000
+              ]
+            },
+            "spawnerRepeatMs": 35000
+          }
+        },
+        {
+          "kind": "difficulty-spell-templates",
+          "boss": "Tuten'kash / Plaguemaw the Rotting",
+          "source": "data/sql/updates/pending_db_world/rev_20260930_30_rfd_boss_tuning.sql",
+          "lines": [
+            17,
+            36,
+            53,
+            55
+          ],
+          "mechanic": "Heroic/Mythic creature template spell IDs supplied; not proof these spells are cast on a specific schedule",
+          "bossNpcIds": [
+            7355,
+            7356
+          ],
+          "heroicNpcIds": [
+            107355,
+            107356
+          ],
+          "mythicNpcIds": [
+            207355,
+            207356
+          ],
+          "spellsByBoss": {
+            "7355": [
+              12252,
+              3391,
+              12255,
+              12251
+            ],
+            "7356": [
+              12946,
+              11441
+            ]
+          },
+          "additionalSpells": [
+            2100710,
+            2100711
+          ],
+          "timer": null
+        }
+      ],
+      "status": "source-backed-spells-and-scripted-event-timers-no-boss-cast-timers"
+    }
+  ],
+  "coverageDefinition": "All four have source-backed encounter/event evidence or rosters; Razorfen Kraul still has NO confirmed combat mechanics. Do not claim full boss-mechanics coverage.",
+  "warnings": [
+    "Razorfen Downs Belnistrasz timers are event/NPC timers, not boss timers",
+    "RFD creature_template_spell lists available spells, not confirmed cast schedules",
+    "Wailing Caverns LFG wings may omit Mutanus; do not start its event timers in earlier wings",
+    "Uldaman Archaedas activation spells do not imply repeat timers",
+    "Razorfen Kraul remains roster-only pending actual source or live combat logs"
+  ]
+}

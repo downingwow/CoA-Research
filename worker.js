@@ -1,4 +1,4 @@
-const PAGES_ORIGIN = "https://downingwow.github.io";
+const PAGES_ORIGIN = "https://uncle-bone.github.io";
 const PAGES_PREFIX = "/CoA-Research";
 const ADDON_REPOS = new Set([
   "AtlasLoot-CoA",
@@ -24,7 +24,7 @@ const ADDON_REPOS = new Set([
 ]);
 
 function messagePage(title, message, status) {
-  return new Response(`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>${title} · BoneArchive</title><body style="margin:0;background:#151a1c;color:#eee8df;font:16px/1.6 system-ui,sans-serif"><main style="max-width:640px;margin:12vh auto;padding:28px"><p style="color:#d5b477;font-size:12px;letter-spacing:.12em;text-transform:uppercase">BoneArchive · Addon downloads</p><h1>${title}</h1><p>${message}</p><p><a style="color:#f0bd74" href="https://github.com/downingwow?tab=repositories">Browse GitHub repositories ↗</a></p></main></body></html>`, {
+  return new Response(`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>${title} · BoneArchive</title><body style="margin:0;background:#151a1c;color:#eee8df;font:16px/1.6 system-ui,sans-serif"><main style="max-width:640px;margin:12vh auto;padding:28px"><p style="color:#d5b477;font-size:12px;letter-spacing:.12em;text-transform:uppercase">BoneArchive · Addon downloads</p><h1>${title}</h1><p>${message}</p><p><a style="color:#f0bd74" href="https://github.com/uncle-bone?tab=repositories">Browse GitHub repositories ↗</a></p></main></body></html>`, {
     status,
     headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" }
   });
@@ -33,7 +33,7 @@ function messagePage(title, message, status) {
 async function latestAddonDownload(repo) {
   if (!ADDON_REPOS.has(repo)) return messagePage("Addon not found", "This download link is not in the BoneArchive addon catalog.", 404);
 
-  const apiUrl = `https://api.github.com/repos/downingwow/${repo}/releases/latest`;
+  const apiUrl = `https://api.github.com/repos/uncle-bone/${repo}/releases/latest`;
   const releaseResponse = await fetch(apiUrl, {
     headers: { Accept: "application/vnd.github+json", "User-Agent": "BoneArchive-addon-downloads" },
     cf: { cacheEverything: true, cacheTtl: 300 }
@@ -61,7 +61,7 @@ async function latestAddonDownload(repo) {
   }
 
   const assetUrl = new URL(zipAssets[0].browser_download_url || "");
-  const allowedPrefix = `/downingwow/${repo}/releases/download/`;
+  const allowedPrefix = `/uncle-bone/${repo}/releases/download/`;
   if (assetUrl.protocol !== "https:" || assetUrl.hostname !== "github.com" || !assetUrl.pathname.startsWith(allowedPrefix)) {
     return messagePage("Download not available", "The release asset link did not match this repository. Please use the repository page.", 502);
   }

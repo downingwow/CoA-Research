@@ -193,7 +193,14 @@ window.gearPage = async function gearPage(params, token) {
   let activePreviewId='';
   const previewStats={agility:'Agility',strength:'Strength',intellect:'Intellect',stamina:'Stamina',spirit:'Spirit',attackPower:'Attack power',rangedAttackPower:'Ranged attack power',feralAttackPower:'Feral attack power',spellPower:'Spell power',spellDamage:'Spell power',healingPower:'Healing power',critRating:'Critical strike',hitRating:'Hit rating',hasteRating:'Haste',armorPenetration:'Armor penetration',spellPenetration:'Spell penetration',expertise:'Expertise',defense:'Defense',dodge:'Dodge',parry:'Parry',block:'Block',blockValue:'Block value',shieldBlockValue:'Shield block value',armor:'Armor',fireResist:'Fire resistance',natureResist:'Nature resistance',frostResist:'Frost resistance',shadowResist:'Shadow resistance',arcaneResist:'Arcane resistance'};
   function tooltipMarkup(item,preserved=null){
-    const data=preserved?.data?.record||preserved?.data||{},stats=data.stats&&Object.keys(data.stats).length?data.stats:(item.stats||{});
+    let data=preserved?.data||{};
+    for(let depth=0;depth<4;depth++){
+      if(typeof data==='string'){try{data=JSON.parse(data);}catch{data={};}}
+      if(data&&typeof data==='object'&&data.record!=null){data=data.record;continue;}
+      break;
+    }
+    if(!data||typeof data!=='object'||Array.isArray(data))data={};
+    const stats=data.stats&&Object.keys(data.stats).length?data.stats:(item.stats||{});
     const name=String(data.name||item.name),quality=String(data.quality||item.quality||'Item'),level=data.itemLevel??data.ilvl??item.ilvl,phase=data.phase??item.phase;
     const type=String(data.type||item.type||''),slot=String(data.slot||item.slot||''),source=String(data.source||item.source||'Source unknown');
     const lines=Object.entries(stats).filter(([key])=>key!=='armor').map(([key,value])=>'<div class="gear-wow-stat">+'+esc(value)+' '+esc(previewStats[key]||key.replace(/([A-Z])/g,' $1').replace(/^./,x=>x.toUpperCase()))+'</div>').join('');
@@ -210,7 +217,8 @@ window.gearPage = async function gearPage(params, token) {
     const progressIndex=setProgressLine?description.indexOf(setProgressLine):-1;
     const setPieceText=description.slice(progressIndex>=0?progressIndex+1:0,firstBonusIndex>=0?firstBonusIndex:description.length);
     const rawSetPieces=data.setPieces||data.setItems||data.setItemNames||[];
-    const setPieces=[...rawSetPieces.map(piece=>typeof piece==='string'?piece:piece?.name||'').filter(Boolean),...setPieceText].filter(piece=>piece!==name);
+    const setPieceList=Array.isArray(rawSetPieces)?rawSetPieces:(typeof rawSetPieces==='string'?[rawSetPieces]:[]);
+    const setPieces=[...setPieceList.map(piece=>typeof piece==='string'?piece:piece?.name||'').filter(Boolean),...setPieceText].filter(piece=>piece!==name);
     const uniqueSetPieces=[...new Set(setPieces)];
     const setLines=new Set([setProgressLine,...setPieceText,...parsedSetBonuses.map(x=>'('+x.count+') Set: '+x.text)].filter(Boolean));
     const setSection=(setName||uniqueSetPieces.length||setBonuses.length)?'<section class="gear-wow-set"><div class="gear-wow-set-heading">'+(setName?'<strong>'+esc(setName)+'</strong>':'<strong>Item set</strong>')+(setProgress?'<span>('+esc(setProgress)+')</span>':'')+'</div>'+(uniqueSetPieces.length?'<div class="gear-wow-set-pieces">'+uniqueSetPieces.map(piece=>'<div>'+esc(piece)+'</div>').join('')+'</div>':'')+(setBonuses.length?'<div class="gear-wow-set-bonuses">'+setBonuses.map(bonus=>'<div><strong>('+esc(bonus.count)+') Set:</strong> '+esc(bonus.text)+'</div>').join('')+'</div>':'')+'</section>':'';

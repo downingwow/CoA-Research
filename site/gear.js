@@ -193,7 +193,7 @@ window.gearPage = async function gearPage(params, token) {
   let activePreviewId='';
   const previewStats={agility:'Agility',strength:'Strength',intellect:'Intellect',stamina:'Stamina',spirit:'Spirit',attackPower:'Attack power',rangedAttackPower:'Ranged attack power',feralAttackPower:'Feral attack power',spellPower:'Spell power',spellDamage:'Spell power',healingPower:'Healing power',critRating:'Critical strike',hitRating:'Hit rating',hasteRating:'Haste',armorPenetration:'Armor penetration',spellPenetration:'Spell penetration',expertise:'Expertise',defense:'Defense',dodge:'Dodge',parry:'Parry',block:'Block',blockValue:'Block value',shieldBlockValue:'Shield block value',armor:'Armor',fireResist:'Fire resistance',natureResist:'Nature resistance',frostResist:'Frost resistance',shadowResist:'Shadow resistance',arcaneResist:'Arcane resistance'};
   function tooltipMarkup(item,preserved=null){
-    const data=preserved?.data||{},stats=data.stats&&Object.keys(data.stats).length?data.stats:(item.stats||{});
+    const data=preserved?.data?.record||preserved?.data||{},stats=data.stats&&Object.keys(data.stats).length?data.stats:(item.stats||{});
     const name=String(data.name||item.name),quality=String(data.quality||item.quality||'Item'),level=data.itemLevel??data.ilvl??item.ilvl,phase=data.phase??item.phase;
     const type=String(data.type||item.type||''),slot=String(data.slot||item.slot||''),source=String(data.source||item.source||'Source unknown');
     const lines=Object.entries(stats).filter(([key])=>key!=='armor').map(([key,value])=>'<div class="gear-wow-stat">+'+esc(value)+' '+esc(previewStats[key]||key.replace(/([A-Z])/g,' $1').replace(/^./,x=>x.toUpperCase()))+'</div>').join('');

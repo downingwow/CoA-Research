@@ -1,0 +1,755 @@
+{
+  "schema": "coa-research.dbm-classic-structured-bulk.v1",
+  "date": "2026-10-30",
+  "sourceRepository": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "status": "Upstream source candidates, not verified live",
+  "files": [
+    {
+      "path": "src/server/scripts/Kalimdor/OnyxiasLair/boss_onyxia.cpp",
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_WINGBUFFET",
+          "id": 18500
+        },
+        {
+          "symbol": "SPELL_FLAMEBREATH",
+          "id": 18435
+        },
+        {
+          "symbol": "SPELL_CLEAVE",
+          "id": 68868
+        },
+        {
+          "symbol": "SPELL_TAILSWEEP",
+          "id": 68867
+        },
+        {
+          "symbol": "SPELL_FIREBALL",
+          "id": 18392
+        },
+        {
+          "symbol": "SPELL_BELLOWINGROAR",
+          "id": 18431
+        },
+        {
+          "symbol": "SPELL_SUMMON_WHELP",
+          "id": 17646
+        },
+        {
+          "symbol": "SPELL_SUMMON_LAIR_GUARD",
+          "id": 68968
+        },
+        {
+          "symbol": "SPELL_ERUPTION",
+          "id": 17731
+        },
+        {
+          "symbol": "SPELL_OLG_BLASTNOVA",
+          "id": 68958
+        },
+        {
+          "symbol": "SPELL_OLG_IGNITEWEAPON",
+          "id": 68959
+        },
+        {
+          "symbol": "SPELL_BREATH_N_TO_S",
+          "id": 17086
+        },
+        {
+          "symbol": "SPELL_BREATH_S_TO_N",
+          "id": 18351
+        },
+        {
+          "symbol": "SPELL_BREATH_E_TO_W",
+          "id": 18576
+        },
+        {
+          "symbol": "SPELL_BREATH_W_TO_E",
+          "id": 18609
+        },
+        {
+          "symbol": "SPELL_BREATH_SE_TO_NW",
+          "id": 18564
+        },
+        {
+          "symbol": "SPELL_BREATH_NW_TO_SE",
+          "id": 18584
+        },
+        {
+          "symbol": "SPELL_BREATH_SW_TO_NE",
+          "id": 18596
+        },
+        {
+          "symbol": "SPELL_BREATH_NE_TO_SW",
+          "id": 18617
+        }
+      ],
+      "schedules": [
+        {
+          "line": 151,
+          "event": "EVENT_SPELL_WINGBUFFET",
+          "method": "ScheduleEvent",
+          "arguments": "10s, 20s"
+        },
+        {
+          "line": 152,
+          "event": "EVENT_SPELL_FLAMEBREATH",
+          "method": "ScheduleEvent",
+          "arguments": "10s, 20s"
+        },
+        {
+          "line": 153,
+          "event": "EVENT_SPELL_TAILSWEEP",
+          "method": "ScheduleEvent",
+          "arguments": "15s, 20s"
+        },
+        {
+          "line": 154,
+          "event": "EVENT_SPELL_CLEAVE",
+          "method": "ScheduleEvent",
+          "arguments": "2s, 5s"
+        },
+        {
+          "line": 157,
+          "event": "EVENT_START_PHASE_2",
+          "method": "ScheduleEvent",
+          "arguments": "0ms"
+        },
+        {
+          "line": 160,
+          "event": "EVENT_START_PHASE_3",
+          "method": "ScheduleEvent",
+          "arguments": "5s"
+        },
+        {
+          "line": 254,
+          "event": "EVENT_SPELL_FIREBALL_FIRST",
+          "method": "ScheduleEvent",
+          "arguments": "1s"
+        },
+        {
+          "line": 263,
+          "event": "EVENT_LIFTOFF",
+          "method": "ScheduleEvent",
+          "arguments": "0ms"
+        },
+        {
+          "line": 267,
+          "event": "EVENT_FLY_S_TO_N",
+          "method": "ScheduleEvent",
+          "arguments": "0ms"
+        },
+        {
+          "line": 271,
+          "event": "EVENT_LAND",
+          "method": "ScheduleEvent",
+          "arguments": "0ms"
+        },
+        {
+          "line": 277,
+          "event": "EVENT_PHASE_3_ATTACK",
+          "method": "ScheduleEvent",
+          "arguments": "0ms"
+        },
+        {
+          "line": 392,
+          "event": "EVENT_END_MANY_WHELPS_TIME",
+          "method": "RescheduleEvent",
+          "arguments": "10s"
+        },
+        {
+          "line": 404,
+          "event": "EVENT_WHELP_SPAM",
+          "method": "ScheduleEvent",
+          "arguments": "90s"
+        },
+        {
+          "line": 405,
+          "event": "EVENT_SUMMON_LAIR_GUARD",
+          "method": "ScheduleEvent",
+          "arguments": "30s"
+        },
+        {
+          "line": 436,
+          "event": "EVENT_SPELL_FIREBALL_SECOND",
+          "method": "ScheduleEvent",
+          "arguments": "4s"
+        },
+        {
+          "line": 450,
+          "event": "EVENT_PHASE_2_STEP_CW",
+          "method": "ScheduleEvent",
+          "arguments": "4s"
+        },
+        {
+          "line": 453,
+          "event": "EVENT_PHASE_2_STEP_ACW",
+          "method": "ScheduleEvent",
+          "arguments": "4s"
+        },
+        {
+          "line": 456,
+          "event": "EVENT_PHASE_2_STEP_ACROSS",
+          "method": "ScheduleEvent",
+          "arguments": "4s"
+        },
+        {
+          "line": 486,
+          "event": "EVENT_SPELL_BREATH",
+          "method": "ScheduleEvent",
+          "arguments": "8250ms"
+        },
+        {
+          "line": 513,
+          "event": "EVENT_ERUPTION",
+          "method": "ScheduleEvent",
+          "arguments": "0ms"
+        },
+        {
+          "line": 514,
+          "event": "EVENT_SPELL_WINGBUFFET",
+          "method": "ScheduleEvent",
+          "arguments": "10s, 20s"
+        },
+        {
+          "line": 515,
+          "event": "EVENT_SPELL_FLAMEBREATH",
+          "method": "ScheduleEvent",
+          "arguments": "10s, 20s"
+        },
+        {
+          "line": 516,
+          "event": "EVENT_SPELL_TAILSWEEP",
+          "method": "ScheduleEvent",
+          "arguments": "15s, 20s"
+        },
+        {
+          "line": 517,
+          "event": "EVENT_SPELL_CLEAVE",
+          "method": "ScheduleEvent",
+          "arguments": "2s, 5s"
+        },
+        {
+          "line": 518,
+          "event": "EVENT_SPELL_BELLOWINGROAR",
+          "method": "ScheduleEvent",
+          "arguments": "15s"
+        },
+        {
+          "line": 519,
+          "event": "EVENT_SUMMON_WHELP",
+          "method": "ScheduleEvent",
+          "arguments": "10s"
+        },
+        {
+          "line": 526,
+          "event": "EVENT_ERUPTION",
+          "method": "ScheduleEvent",
+          "arguments": "0ms"
+        },
+        {
+          "line": 582,
+          "event": "EVENT_OLG_SPELL_BLASTNOVA",
+          "method": "ScheduleEvent",
+          "arguments": "15s"
+        },
+        {
+          "line": 583,
+          "event": "EVENT_OLG_SPELL_IGNITEWEAPON",
+          "method": "ScheduleEvent",
+          "arguments": "10s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 290,
+          "spellSymbol": "SPELL_SUMMON_WHELP"
+        },
+        {
+          "line": 291,
+          "spellSymbol": "SPELL_SUMMON_WHELP"
+        },
+        {
+          "line": 348,
+          "spellSymbol": "SPELL_WINGBUFFET"
+        },
+        {
+          "line": 354,
+          "spellSymbol": "SPELL_FLAMEBREATH"
+        },
+        {
+          "line": 360,
+          "spellSymbol": "SPELL_TAILSWEEP"
+        },
+        {
+          "line": 366,
+          "spellSymbol": "SPELL_CLEAVE"
+        },
+        {
+          "line": 410,
+          "spellSymbol": "SPELL_SUMMON_LAIR_GUARD"
+        },
+        {
+          "line": 433,
+          "spellSymbol": "SPELL_FIREBALL"
+        },
+        {
+          "line": 444,
+          "spellSymbol": "SPELL_FIREBALL"
+        },
+        {
+          "line": 511,
+          "spellSymbol": "SPELL_BELLOWINGROAR"
+        },
+        {
+          "line": 524,
+          "spellSymbol": "SPELL_BELLOWINGROAR"
+        },
+        {
+          "line": 533,
+          "spellSymbol": "SPELL_ERUPTION"
+        },
+        {
+          "line": 603,
+          "spellSymbol": "SPELL_OLG_BLASTNOVA"
+        },
+        {
+          "line": 613,
+          "spellSymbol": "SPELL_OLG_IGNITEWEAPON"
+        }
+      ],
+      "health": [
+        {
+          "line": 208,
+          "source": "if (me->HealthBelowPctDamaged(65, damage) && _phase == PHASE_GROUNDED)"
+        },
+        {
+          "line": 212,
+          "source": "else if (me->HealthBelowPctDamaged(40, damage) && _phase == PHASE_AIRPHASE)"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/Stratholme/boss_jarien_and_sothos.cpp",
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_MORTAL_STRIKE",
+          "id": 16856
+        },
+        {
+          "symbol": "SPELL_SHADOW_SHOCK",
+          "id": 22575
+        },
+        {
+          "symbol": "SPELL_CRIPPLE",
+          "id": 20812
+        },
+        {
+          "symbol": "SPELL_CLEAVE",
+          "id": 15284
+        },
+        {
+          "symbol": "SPELL_SHIELD_CHARGE",
+          "id": 15749
+        },
+        {
+          "symbol": "SPELL_SHIELD_SLAM",
+          "id": 15655
+        },
+        {
+          "symbol": "SPELL_SHIELD_BLOCK",
+          "id": 12169
+        },
+        {
+          "symbol": "SPELL_SHADOW_BOLT",
+          "id": 27646
+        },
+        {
+          "symbol": "SPELL_FEAR",
+          "id": 27641
+        },
+        {
+          "symbol": "SPELL_VENGEANCE",
+          "id": 27650
+        }
+      ],
+      "schedules": [],
+      "casts": [
+        {
+          "line": 175,
+          "spellSymbol": "SPELL_VENGEANCE"
+        },
+        {
+          "line": 189,
+          "spellSymbol": "SPELL_SHADOW_SHOCK"
+        },
+        {
+          "line": 194,
+          "spellSymbol": "SPELL_CLEAVE"
+        },
+        {
+          "line": 199,
+          "spellSymbol": "SPELL_CRIPPLE"
+        },
+        {
+          "line": 204,
+          "spellSymbol": "SPELL_MORTAL_STRIKE"
+        },
+        {
+          "line": 301,
+          "spellSymbol": "SPELL_VENGEANCE"
+        },
+        {
+          "line": 315,
+          "spellSymbol": "SPELL_FEAR"
+        },
+        {
+          "line": 320,
+          "spellSymbol": "SPELL_SHADOW_BOLT"
+        },
+        {
+          "line": 325,
+          "spellSymbol": "SPELL_SHIELD_CHARGE"
+        },
+        {
+          "line": 330,
+          "spellSymbol": "SPELL_SHIELD_BLOCK"
+        },
+        {
+          "line": 335,
+          "spellSymbol": "SPELL_SHIELD_SLAM"
+        }
+      ],
+      "health": []
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/Stratholme/boss_baroness_anastari.cpp",
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_BANSHEEWAIL",
+          "id": 16565
+        },
+        {
+          "symbol": "SPELL_BANSHEECURSE",
+          "id": 16867
+        },
+        {
+          "symbol": "SPELL_SILENCE",
+          "id": 18327
+        },
+        {
+          "symbol": "SPELL_POSSESS",
+          "id": 17244
+        },
+        {
+          "symbol": "SPELL_POSSESSED",
+          "id": 17246
+        },
+        {
+          "symbol": "SPELL_POSSESS_INV",
+          "id": 17250
+        }
+      ],
+      "schedules": [],
+      "casts": [
+        {
+          "line": 67,
+          "spellSymbol": "SPELL_BANSHEEWAIL"
+        },
+        {
+          "line": 71,
+          "spellSymbol": "SPELL_BANSHEECURSE"
+        },
+        {
+          "line": 75,
+          "spellSymbol": "SPELL_SILENCE"
+        },
+        {
+          "line": 92,
+          "spellSymbol": "SPELL_POSSESS"
+        },
+        {
+          "line": 93,
+          "spellSymbol": "SPELL_POSSESSED"
+        }
+      ],
+      "health": [
+        {
+          "line": 101,
+          "source": "if (!possessedTarget || !possessedTarget->IsAlive() || !possessedTarget->HasAura(SPELL_POSSESSED) || possessedTarget->HealthBelowPct(50))"
+        }
+      ]
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/Scholomance/boss_darkmaster_gandling.cpp",
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_ARCANE_MISSILES",
+          "id": 15790
+        },
+        {
+          "symbol": "SPELL_CURSE_DARKMASTER",
+          "id": 18702
+        },
+        {
+          "symbol": "SPELL_SHADOW_SHIELD",
+          "id": 12040
+        },
+        {
+          "symbol": "SPELL_SHADOW_PORTAL",
+          "id": 17950
+        },
+        {
+          "symbol": "SPELL_SHADOW_PORTAL_UP_NORTH",
+          "id": 17863
+        },
+        {
+          "symbol": "SPELL_SHADOW_PORTAL_UP_EAST",
+          "id": 17939
+        },
+        {
+          "symbol": "SPELL_SHADOW_PORTAL_UP_SOUTH",
+          "id": 17943
+        },
+        {
+          "symbol": "SPELL_SHADOW_PORTAL_DOWN_NORTH",
+          "id": 17944
+        },
+        {
+          "symbol": "SPELL_SHADOW_PORTAL_DOWN_EAST",
+          "id": 17946
+        },
+        {
+          "symbol": "SPELL_SHADOW_PORTAL_DOWN_SOUTH",
+          "id": 17948
+        }
+      ],
+      "schedules": [],
+      "casts": [
+        {
+          "line": 334,
+          "spellSymbol": "SPELL_ARCANE_MISSILES"
+        },
+        {
+          "line": 340,
+          "spellSymbol": "SPELL_CURSE_DARKMASTER"
+        },
+        {
+          "line": 345,
+          "spellSymbol": "SPELL_SHADOW_SHIELD"
+        },
+        {
+          "line": 356,
+          "spellSymbol": "SPELL_SHADOW_PORTAL"
+        }
+      ],
+      "health": []
+    },
+    {
+      "path": "src/server/scripts/EasternKingdoms/Scholomance/boss_kirtonos_the_herald.cpp",
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_SWOOP",
+          "id": 18144
+        },
+        {
+          "symbol": "SPELL_WING_FLAP",
+          "id": 12882
+        },
+        {
+          "symbol": "SPELL_PIERCE_ARMOR",
+          "id": 6016
+        },
+        {
+          "symbol": "SPELL_DISARM",
+          "id": 8379
+        },
+        {
+          "symbol": "SPELL_KIRTONOS_TRANSFORM",
+          "id": 16467
+        },
+        {
+          "symbol": "SPELL_SHADOW_BOLT_VOLLEY",
+          "id": 17228
+        },
+        {
+          "symbol": "SPELL_CURSE_OF_TONGUES",
+          "id": 12889
+        },
+        {
+          "symbol": "SPELL_DOMINATE_MIND",
+          "id": 14515
+        },
+        {
+          "symbol": "SPELL_TRANSFORM_VISUAL",
+          "id": 24085
+        }
+      ],
+      "schedules": [
+        {
+          "line": 93,
+          "event": "EVENT_SHADOW_BOLT_VOLLEY",
+          "method": "ScheduleEvent",
+          "arguments": "2s"
+        },
+        {
+          "line": 94,
+          "event": "EVENT_CURSE_OF_TONGUES",
+          "method": "ScheduleEvent",
+          "arguments": "6s"
+        },
+        {
+          "line": 95,
+          "event": "EVENT_KIRTONOS_TRANSFORM",
+          "method": "ScheduleEvent",
+          "arguments": "20s"
+        },
+        {
+          "line": 188,
+          "event": "EVENT_SWOOP",
+          "method": "ScheduleEvent",
+          "arguments": "15s"
+        },
+        {
+          "line": 192,
+          "event": "EVENT_WING_FLAP",
+          "method": "ScheduleEvent",
+          "arguments": "13s"
+        },
+        {
+          "line": 196,
+          "event": "EVENT_PIERCE_ARMOR",
+          "method": "ScheduleEvent",
+          "arguments": "12s"
+        },
+        {
+          "line": 200,
+          "event": "EVENT_DISARM",
+          "method": "ScheduleEvent",
+          "arguments": "11s"
+        },
+        {
+          "line": 204,
+          "event": "EVENT_SHADOW_BOLT_VOLLEY",
+          "method": "ScheduleEvent",
+          "arguments": "10s"
+        },
+        {
+          "line": 208,
+          "event": "EVENT_CURSE_OF_TONGUES",
+          "method": "ScheduleEvent",
+          "arguments": "20s"
+        },
+        {
+          "line": 222,
+          "event": "EVENT_SWOOP",
+          "method": "ScheduleEvent",
+          "arguments": "4s"
+        },
+        {
+          "line": 223,
+          "event": "EVENT_WING_FLAP",
+          "method": "ScheduleEvent",
+          "arguments": "7s"
+        },
+        {
+          "line": 224,
+          "event": "EVENT_PIERCE_ARMOR",
+          "method": "ScheduleEvent",
+          "arguments": "11s"
+        },
+        {
+          "line": 225,
+          "event": "EVENT_DISARM",
+          "method": "ScheduleEvent",
+          "arguments": "15s"
+        },
+        {
+          "line": 234,
+          "event": "EVENT_SHADOW_BOLT_VOLLEY",
+          "method": "ScheduleEvent",
+          "arguments": "2s"
+        },
+        {
+          "line": 235,
+          "event": "EVENT_CURSE_OF_TONGUES",
+          "method": "ScheduleEvent",
+          "arguments": "6s"
+        },
+        {
+          "line": 236,
+          "event": "EVENT_WING_FLAP",
+          "method": "ScheduleEvent",
+          "arguments": "13s"
+        },
+        {
+          "line": 242,
+          "event": "EVENT_DOMINATE_MIND",
+          "method": "ScheduleEvent",
+          "arguments": "4s, 8s"
+        },
+        {
+          "line": 246,
+          "event": "EVENT_KIRTONOS_TRANSFORM",
+          "method": "ScheduleEvent",
+          "arguments": "20s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 155,
+          "spellSymbol": "SPELL_KIRTONOS_TRANSFORM"
+        },
+        {
+          "line": 187,
+          "spellSymbol": "SPELL_SWOOP"
+        },
+        {
+          "line": 191,
+          "spellSymbol": "SPELL_WING_FLAP"
+        },
+        {
+          "line": 195,
+          "spellSymbol": "SPELL_PIERCE_ARMOR"
+        },
+        {
+          "line": 199,
+          "spellSymbol": "SPELL_DISARM"
+        },
+        {
+          "line": 203,
+          "spellSymbol": "SPELL_SHADOW_BOLT_VOLLEY"
+        },
+        {
+          "line": 207,
+          "spellSymbol": "SPELL_CURSE_OF_TONGUES"
+        },
+        {
+          "line": 213,
+          "spellSymbol": "SPELL_DOMINATE_MIND"
+        },
+        {
+          "line": 227,
+          "spellSymbol": "SPELL_TRANSFORM_VISUAL"
+        },
+        {
+          "line": 237,
+          "spellSymbol": "SPELL_KIRTONOS_TRANSFORM"
+        }
+      ],
+      "health": []
+    }
+  ],
+  "counts": {
+    "files": 5,
+    "spellDefinitions": 54,
+    "schedules": 47,
+    "casts": 44,
+    "health": 3
+  },
+  "warnings": [
+    "Onyxia version and script may not match CR deployment",
+    "No live-verified timer intervals",
+    "Source event calls require manual linkage to spell cast handling"
+  ]
+}

@@ -206,7 +206,7 @@ window.gearPage = async function gearPage(params, token) {
     const lines=Object.entries(stats).filter(([key])=>key!=='armor').map(([key,value])=>'<div class="gear-wow-stat">+'+esc(value)+' '+esc(previewStats[key]||key.replace(/([A-Z])/g,' $1').replace(/^./,x=>x.toUpperCase()))+'</div>').join('');
     const armor=Number(stats.armor)>0?'<div class="gear-wow-base-stat">Armor '+esc(stats.armor)+'</div>':'';
     const damage=data.damage||{},min=damage.min??data.minDamage??data.damageMin,max=damage.max??data.maxDamage??data.damageMax,speed=damage.speed??data.weaponSpeed;
-    const description=String(data.description||'').split(/\\s*\\|\\s*/).map(x=>x.trim()).filter(Boolean);
+    const description=String(data.description||'').split(/\s*\\|\s*/).map(x=>x.trim()).filter(Boolean);
     const setProgressLine=description.find(line=>/\(\d+\s*\/\s*\d+\)$/.test(line)&&Number(line.match(/\/(\d+)\)$/)?.[1])>=2&&Number(line.match(/\/(\d+)\)$/)?.[1])<=8)||'';
     const progressMatch=setProgressLine.match(/\((\d+)\s*\/\s*(\d+)\)$/);
     const progressTotal=Number(progressMatch?.[2]||0), progressOwned=Number(progressMatch?.[1]||0);
@@ -239,7 +239,7 @@ window.gearPage = async function gearPage(params, token) {
     }
     let binding=String(data.binding||data.bindType||data.bonding||'');
     if(!binding)binding=description.find(x=>/^Binds?\b/i.test(x))||'';
-    const extras=description.filter(line=>!setLines.has(line)&&!/^\(\s*\d+\s*\/\s*\d+\s*\)$/.test(line)&&!/^(\(\d+\)\s*)?Set:/i.test(line)&&!/^Binds?\b/i.test(line)&&!/^ID\s*#?\d+$/i.test(line)&&!/^Item set$/i.test(line)&&!/^(?:Feet|Head|Shoulders|Chest|Waist|Legs|Hands|Wrists|Back|Neck|Finger|Trinket|Ranged|Main Hand|Off Hand)\\s+(?:Cloth|Leather|Mail|Plate)$/i.test(line)&&!/^Item Level\s*\d+$/i.test(line)&&!/^Requires Level\s*\d+$/i.test(line)&&!/^\(?\s*[\d.]+\s+damage per second\s*\)?$/i.test(line)&&!/Damage|Speed\s*[\d.]+/i.test(line)&&!/^\+?\d+\s+/.test(line));
+    const extras=description.filter(line=>!setLines.has(line)&&!/^\(\s*\d+\s*\/\s*\d+\s*\)$/.test(line)&&!/^(\(\d+\)\s*)?Set:/i.test(line)&&!/^Binds?\b/i.test(line)&&!/^ID\s*#?\d+$/i.test(line)&&!/^Item set$/i.test(line)&&!/^(?:Feet|Head|Shoulders|Chest|Waist|Legs|Hands|Wrists|Back|Neck|Finger|Trinket|Ranged|Main Hand|Off Hand)\s+(?:Cloth|Leather|Mail|Plate)$/i.test(line)&&!/^Item Level\s*\d+$/i.test(line)&&!/^Requires Level\s*\d+$/i.test(line)&&!/^\(?\s*[\d.]+\s+damage per second\s*\)?$/i.test(line)&&!/Damage|Speed\s*[\d.]+/i.test(line)&&!/^\+?\d+\s+/.test(line));
     const bindLine=binding?'<div class="gear-wow-binding">'+esc(binding)+'</div>':'';
     const requirement=data.reqLevel||data.requiredLevel||data.requiredLevelMin||description.find(x=>/^Requires Level\s*\d+/i.test(x));
     const requirementLine=requirement?'<div class="gear-wow-requirement">'+(typeof requirement==='string'?esc(requirement):'Requires Level '+esc(requirement))+'</div>':'';

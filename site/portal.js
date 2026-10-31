@@ -24,7 +24,7 @@ function renderSidebar(selected){$('#class-list').innerHTML=classes.map((c,i)=>'
 function hero(eyebrow,title,copy,actions=''){return '<section class="hero"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="./">Archive home</a><span aria-hidden="true">›</span><span>'+esc(eyebrow)+'</span></nav><div class="eyebrow">'+eyebrow+'</div><h1>'+title+'</h1><p>'+copy+'</p>'+actions+'</section>';}
 function tile(c,i){return '<a class="class-tile" style="--classcolor:'+COLORS[i%COLORS.length]+'" href="'+url('class',{class:c.key})+'">'+classIcon(c,'class-tile-mark')+'<strong>'+esc(c.name)+'</strong><small>'+tabsOf(c).map(t=>esc(labelTab(c,t))).join(' · ')+'</small></a>';}
 function empty(text){return '<div class="empty">'+esc(text)+'</div>';}
-async async function home(params,token){
+async function home(params,token){
 const updateFeed=await json('site-updates.json');if(token!==routeToken)return;
 const sections=[
  ['01','CLASS DATABASE','Class dossiers, specializations, gear rules, and class abilities.',url('spells')],

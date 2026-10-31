@@ -43,7 +43,8 @@ async function latestAddonDownload(repo) {
       "Cache-Control": "no-cache"
     },
     // Release pointers must always resolve to the current published asset.
-    cf: { cacheEverything: true, cacheTtl: 0 }
+    cache: "no-store",
+    cf: { cacheTtl: 0 }
   });
 
   if (releaseResponse.status === 404) {

@@ -1,10 +1,10 @@
 # CoA Research — Conquest Reborn Addon & Data Hub
 
-**Maintainer:** Uncle Bone · [@downingwow](https://github.com/downingwow)
+**Maintainer:** Uncle Bone · [@uncle-bone](https://github.com/uncle-bone)
 
 A searchable collection of research, reference data, and engineering notes supporting addons for Ascension's **Conquest of Azeroth / Conquest Reborn**. It brings together the sources and compatibility findings used to build, update, and maintain the CoA addon lineup, alongside preservation work for useful community data and older projects.
 
-This repository is the research and reference hub. Installable addon builds are published in their individual repositories under [downingwow](https://github.com/downingwow?tab=repositories); use each addon's README or Releases page for its current download. Research files here are not packaged addon releases, and external data is not assumed to be complete or validated against the live client.
+This repository is the research and reference hub. Installable addon builds are published in their individual repositories under [uncle-bone](https://github.com/uncle-bone?tab=repositories); use each addon's README or Releases page for its current download. Research files here are not packaged addon releases, and external data is not assumed to be complete or validated against the live client.
 
 ## What this project does
 
@@ -15,9 +15,9 @@ This repository is the research and reference hub. Installable addon builds are 
 
 ## Current addon releases
 
-The CoA addons are maintained in separate repositories so each project can publish its own source, release notes, and easy-to-download ZIP. Browse the [addon repositories](https://github.com/downingwow?tab=repositories) and use the **Download** link at the top of an addon's README or its [Releases](https://github.com/downingwow?tab=repositories) page to get the current build.
+The CoA addons are maintained in separate repositories so each project can publish its own source, release notes, and easy-to-download ZIP. Browse the [addon repositories](https://github.com/uncle-bone?tab=repositories) and use the **Download** link at the top of an addon's README or its [Releases](https://github.com/uncle-bone?tab=repositories) page to get the current build.
 
-Projects in the lineup include [DBM-CoA](https://github.com/downingwow/DBM-CoA), [Questie-X](https://github.com/downingwow/Questie-X), [Details](https://github.com/downingwow/Details), [MRT-CoA](https://github.com/downingwow/MRT-CoA), [WeakAuras-CoA](https://github.com/downingwow/WeakAuras-CoA), [LootCollector](https://github.com/downingwow/LootCollector), [AtlasLoot-CoA](https://github.com/downingwow/AtlasLoot-CoA), [Cell-CoA](https://github.com/downingwow/Cell-CoA), [CoA-Item-Search](https://github.com/downingwow/CoA-Item-Search), [Nameplates](https://github.com/downingwow/Nameplates), [ElvUI-CoA](https://github.com/downingwow/ElvUI-CoA), [Zygor-CoA](https://github.com/downingwow/Zygor-CoA), [SilverDragon](https://github.com/downingwow/SilverDragon), [UnclePlus-CoA](https://github.com/downingwow/UnclePlus-CoA), [Refactor-CoA](https://github.com/downingwow/Refactor-CoA), and [BoneUI](https://github.com/downingwow/BoneUI). Availability and release status are tracked in each project's own repository.
+Projects in the lineup include [DBM-CoA](https://github.com/uncle-bone/DBM-CoA), [Questie-X](https://github.com/uncle-bone/Questie-X), [Details](https://github.com/uncle-bone/Details), [MRT-CoA](https://github.com/uncle-bone/MRT-CoA), [WeakAuras-CoA](https://github.com/uncle-bone/WeakAuras-CoA), [LootCollector](https://github.com/uncle-bone/LootCollector), [AtlasLoot-CoA](https://github.com/uncle-bone/AtlasLoot-CoA), [Cell-CoA](https://github.com/uncle-bone/Cell-CoA), [CoA-Item-Search](https://github.com/uncle-bone/CoA-Item-Search), [Nameplates](https://github.com/uncle-bone/Nameplates), [ElvUI-CoA](https://github.com/uncle-bone/ElvUI-CoA), [Zygor-CoA](https://github.com/uncle-bone/Zygor-CoA), [SilverDragon](https://github.com/uncle-bone/SilverDragon), [UnclePlus-CoA](https://github.com/uncle-bone/UnclePlus-CoA), [Refactor-CoA](https://github.com/uncle-bone/Refactor-CoA), and [BoneUI](https://github.com/uncle-bone/BoneUI). Availability and release status are tracked in each project's own repository.
 
 ## What we've gathered
 

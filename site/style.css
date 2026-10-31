@@ -13,3 +13,10 @@ details{border-top:1px solid var(--line);padding-top:13px;margin-top:15px}summar
 @media(min-width:1450px){.pagebody{padding-right:45px}}
 @media(max-width:1100px){.topbar{gap:15px;padding:0 20px}.toplinks a{font-size:9px;padding:10px 8px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.classnav{width:205px}.pagebody{padding-left:235px;padding-right:25px}}
 @media(max-width:760px){.topbar{height:auto;min-height:68px;flex-wrap:wrap;padding:15px;gap:12px}.brand{font-size:21px}.topbar .searchbox{flex:1;max-width:none;min-width:150px}.toplinks{order:4;width:100%;overflow:auto;margin:0}.toplinks a{flex:1;text-align:center;font-size:9px}.menu-toggle{display:block;background:#24202e;color:#c5a9fa;border:1px solid #4c3a63;border-radius:6px;padding:7px}.classnav{display:none;position:static;width:auto;border:0;max-height:360px;margin:10px 15px;background:#15141e;border-radius:10px}.classnav.open{display:block}.pagebody{padding:20px 15px}.pagebody>header{padding:24px}.pagebody>header h1{font-size:36px}.cards,#specrows{grid-template-columns:1fr}.filters{grid-template-columns:1fr}.panel{overflow-wrap:anywhere}label input,label select{display:block;margin:8px 0;width:100%}}
+
+/* Keep every top navigation item on one shared baseline. */
+.toplinks{align-items:center}
+.toplinks .nav-dropdown{position:relative;margin:0;padding:0;border:0}
+.toplinks .nav-dropdown>summary{display:flex;align-items:center;gap:6px;list-style:none;font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:700;line-height:1.2;color:#bbbacb;background:var(--panel);border:1px solid var(--line);padding:10px 12px;border-radius:7px;white-space:nowrap}
+.toplinks .nav-dropdown>summary::-webkit-details-marker{display:none}
+.toplinks .nav-dropdown>summary:hover,.toplinks .nav-dropdown[open]>summary{background:#262035;color:#d4bdff}

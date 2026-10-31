@@ -3,7 +3,8 @@
   "compatibilityNotes": [
     "CoA-specific means the project README explicitly targets Conquest of Azeroth or its 21 custom classes; it is not a claim that every release was tested by BoneArchive.",
     "Wrath 3.3.5a means the addon or profile targets the client generation used by Ascension. Class-aware functions and encounter timers may still need CoA-specific checks.",
-    "Do not install two full UI replacements or multiple addons that perform the same job without checking for conflicts. Review each author's install steps, requirements, release notes, and license."
+    "Do not install two full UI replacements or multiple addons that perform the same job without checking for conflicts. Review each author's install steps, requirements, release notes, and license.",
+    "The owned list mirrors all 17 add-on repositories in the GitHub account. A repository entry does not mean that it has a published release or live-client validation; check each project's current README and releases."
   ],
   "owned": [
     {
@@ -59,6 +60,54 @@
       "category": "Guides",
       "summary": "Uncle Bone's CoA guide integration project.",
       "url": "https://github.com/downingwow/Zygor-CoA"
+    },
+    {
+      "name": "NovaInstanceTracker",
+      "category": "Instance tracking",
+      "summary": "Repository shell for an instance-tracking addon; no source files or release details are published yet.",
+      "url": "https://github.com/downingwow/NovaInstanceTracker"
+    },
+    {
+      "name": "Details",
+      "category": "Combat analysis",
+      "summary": "Details! CoA fork with specialization-aware labels, pet and summon attribution, and combat history. Current release notes still call for live-client validation.",
+      "url": "https://github.com/downingwow/Details"
+    },
+    {
+      "name": "SilverDragon",
+      "category": "Rare scanning",
+      "summary": "Rare alerts and per-zone sighting history adapted for Conquest Reborn; optional map integrations and ElvUI styling.",
+      "url": "https://github.com/downingwow/SilverDragon"
+    },
+    {
+      "name": "AtlasLoot-CoA",
+      "category": "Loot tables",
+      "summary": "AtlasLoot adaptation with a CoA Best-in-Slot browser framework; phase recommendations are not populated yet.",
+      "url": "https://github.com/downingwow/AtlasLoot-CoA"
+    },
+    {
+      "name": "CoA-Item-Search",
+      "category": "Item research",
+      "summary": "WoW 3.3.5a / Conquest Reborn item search and data-harvesting addon.",
+      "url": "https://github.com/downingwow/CoA-Item-Search"
+    },
+    {
+      "name": "WeakAuras-CoA",
+      "category": "WeakAuras",
+      "summary": "Repository for a Conquest Reborn WeakAuras adaptation; source and release details are not documented yet.",
+      "url": "https://github.com/downingwow/WeakAuras-CoA"
+    },
+    {
+      "name": "UnclePlus-CoA",
+      "category": "Interface",
+      "summary": "Conquest Reborn addon package; the repository currently has only a brief project description.",
+      "url": "https://github.com/downingwow/UnclePlus-CoA"
+    },
+    {
+      "name": "Refactor-CoA",
+      "category": "Utilities",
+      "summary": "Conquest Reborn Refactor addon project; feature and installation details are not yet documented.",
+      "url": "https://github.com/downingwow/Refactor-CoA"
     }
   ],
   "addons": [

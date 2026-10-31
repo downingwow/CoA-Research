@@ -1,0 +1,429 @@
+{
+  "schema": "coa-research.dbm-dungeon-provisional-npc-map-reconciliation.v1",
+  "date": "2026-10-30",
+  "scope": "Only 15 previously unmapped mechanic/action rows from the 19 Vanilla dungeons",
+  "status": "Provisional mapping, not source-verified map spawn and not live-verified",
+  "method": "Explicit proposed map mapping based on encounter grouping, NPC identity, and name. Kept separate from exact joins to avoid presenting inference as verified.",
+  "counts": {
+    "records": 15,
+    "npcIds": 4,
+    "proposedMaps": [
+      230,
+      36,
+      229
+    ]
+  },
+  "records": [
+    {
+      "npcId": 9037,
+      "kind": "kit",
+      "spellId": 13737,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        2050,
+        4050
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Gloom'rel",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 26,
+      "comment": "Gloom'rel - Mortal Strike (log)",
+      "proposedMapId": 230,
+      "mappingReason": "Gloom'rel is one of The Seven in Blackrock Depths; grouped encounter credit does not identify each member",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "multi-npc-encounter"
+    },
+    {
+      "npcId": 9037,
+      "kind": "kit",
+      "spellId": 15284,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        1549,
+        2050
+      ],
+      "repeatMs": [
+        4300,
+        4800
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Gloom'rel",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 27,
+      "comment": "Gloom'rel - Cleave (log)",
+      "proposedMapId": 230,
+      "mappingReason": "Gloom'rel is one of The Seven in Blackrock Depths; grouped encounter credit does not identify each member",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "multi-npc-encounter"
+    },
+    {
+      "npcId": 9037,
+      "kind": "kit",
+      "spellId": 13847,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        3750,
+        5750
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Gloom'rel",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 28,
+      "comment": "Gloom'rel - Recklessness (log)",
+      "proposedMapId": 230,
+      "mappingReason": "Gloom'rel is one of The Seven in Blackrock Depths; grouped encounter credit does not identify each member",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "multi-npc-encounter"
+    },
+    {
+      "npcId": 9037,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        7300,
+        9300
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Gloom'rel",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 29,
+      "comment": "Gloom'rel - Fierce Blow (log)",
+      "proposedMapId": 230,
+      "mappingReason": "Gloom'rel is one of The Seven in Blackrock Depths; grouped encounter credit does not identify each member",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "multi-npc-encounter"
+    },
+    {
+      "npcId": 8929,
+      "kind": "kit",
+      "spellId": 10894,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        1300,
+        3300
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Princess Moira Bronzebeard",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 35,
+      "comment": "Princess Moira Bronzebeard - Shadow Word: Pain (log)",
+      "proposedMapId": 230,
+      "mappingReason": "Princess Moira Bronzebeard participates in Emperor Dagran Thaurissan encounter; companion NPC absent from encounter credit",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "boss-companion-or-phase"
+    },
+    {
+      "npcId": 8929,
+      "kind": "kit",
+      "spellId": 10934,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        4500,
+        6500
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Princess Moira Bronzebeard",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 36,
+      "comment": "Princess Moira Bronzebeard - Smite (log)",
+      "proposedMapId": 230,
+      "mappingReason": "Princess Moira Bronzebeard participates in Emperor Dagran Thaurissan encounter; companion NPC absent from encounter credit",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "boss-companion-or-phase"
+    },
+    {
+      "npcId": 8929,
+      "kind": "kit",
+      "spellId": 10917,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        22800,
+        24800
+      ],
+      "repeatMs": [
+        25000,
+        27000
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Princess Moira Bronzebeard",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 37,
+      "comment": "Princess Moira Bronzebeard - Flash Heal (log)",
+      "proposedMapId": 230,
+      "mappingReason": "Princess Moira Bronzebeard participates in Emperor Dagran Thaurissan encounter; companion NPC absent from encounter credit",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "boss-companion-or-phase"
+    },
+    {
+      "npcId": 8929,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Princess Moira Bronzebeard",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 38,
+      "comment": "Princess Moira Bronzebeard - Fierce Blow (log)",
+      "proposedMapId": 230,
+      "mappingReason": "Princess Moira Bronzebeard participates in Emperor Dagran Thaurissan encounter; companion NPC absent from encounter credit",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "boss-companion-or-phase"
+    },
+    {
+      "npcId": 643,
+      "kind": "smart",
+      "spellId": 6713,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        1000,
+        7000
+      ],
+      "repeatMs": [
+        20000,
+        25000
+      ],
+      "healthPct": null,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Sneed",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 29,
+      "comment": "Sneed - In Combat - Cast Disarm",
+      "proposedMapId": 36,
+      "mappingReason": "Sneed is the dismounted second stage of Sneed's Shredder in Deadmines",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "boss-companion-or-phase"
+    },
+    {
+      "npcId": 643,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 9,
+      "eventType": 6,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Sneed",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 30,
+      "comment": "Sneed - Open Door on Death",
+      "proposedMapId": 36,
+      "mappingReason": "Sneed is the dismounted second stage of Sneed's Shredder in Deadmines",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "boss-companion-or-phase"
+    },
+    {
+      "npcId": 643,
+      "kind": "smart",
+      "spellId": 975011,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        8400,
+        8400
+      ],
+      "repeatMs": [
+        7800,
+        7800
+      ],
+      "healthPct": null,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Sneed",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 31,
+      "comment": "Sneed - In Combat - Cast Fierce Blow",
+      "proposedMapId": 36,
+      "mappingReason": "Sneed is the dismounted second stage of Sneed's Shredder in Deadmines",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "boss-companion-or-phase"
+    },
+    {
+      "npcId": 10814,
+      "kind": "smart",
+      "spellId": 15708,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        12800
+      ],
+      "repeatMs": [
+        13000,
+        13000
+      ],
+      "healthPct": null,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Chromatic Elite Guard",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 86,
+      "comment": "Chromatic Elite Guard - In Combat - Cast 'Mortal Strike' (Normal Dungeon)",
+      "proposedMapId": 229,
+      "mappingReason": "Chromatic Elite Guard is UBRS encounter trash/guard, not an independent boss",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "trash-not-boss"
+    },
+    {
+      "npcId": 10814,
+      "kind": "smart",
+      "spellId": 16790,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        5600,
+        15400
+      ],
+      "repeatMs": [
+        11200,
+        25700
+      ],
+      "healthPct": null,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Chromatic Elite Guard",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 87,
+      "comment": "Chromatic Elite Guard - In Combat - Cast 'Stunning Strike' (Normal Dungeon)",
+      "proposedMapId": 229,
+      "mappingReason": "Chromatic Elite Guard is UBRS encounter trash/guard, not an independent boss",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "trash-not-boss"
+    },
+    {
+      "npcId": 10814,
+      "kind": "smart",
+      "spellId": 15580,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        12000,
+        20800
+      ],
+      "repeatMs": [
+        9000,
+        9000
+      ],
+      "healthPct": null,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Chromatic Elite Guard",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 88,
+      "comment": "Chromatic Elite Guard - In Combat - Cast 'Strike' (Normal Dungeon)",
+      "proposedMapId": 229,
+      "mappingReason": "Chromatic Elite Guard is UBRS encounter trash/guard, not an independent boss",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "trash-not-boss"
+    },
+    {
+      "npcId": 10814,
+      "kind": "smart",
+      "spellId": 975011,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        7000
+      ],
+      "repeatMs": [
+        6000,
+        8000
+      ],
+      "healthPct": null,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Chromatic Elite Guard",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 89,
+      "comment": "Chromatic Elite Guard - In Combat - Cast 'Fierce Blow' (Normal Dungeon)",
+      "proposedMapId": 229,
+      "mappingReason": "Chromatic Elite Guard is UBRS encounter trash/guard, not an independent boss",
+      "mappingMethod": "Encounter relationship inferred from NPC/boss name and known dungeon context; NOT an exact NPC encounter credit join",
+      "confidence": "provisional",
+      "warningCategory": "trash-not-boss"
+    }
+  ],
+  "validationRequired": [
+    "Check creature spawn map IDs in creature table",
+    "Confirm Gloom'rel membership and exact encounter IDs",
+    "Check Sneed transition and boss kit applicability",
+    "Exclude Chromatic Elite Guard from boss-only timer lists"
+  ]
+}

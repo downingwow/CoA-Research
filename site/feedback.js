@@ -17,7 +17,7 @@
     section.innerHTML =
       '<div class="sectionline"><div><span class="eyebrow">COMMUNITY FEEDBACK</span><h2>Help shape what comes next</h2></div><span class="archive-wordmark">Requests and reports go straight to the project tracker</span></div>' +
       '<p class="home-feedback-intro">Have an addon idea, a WeakAura request, or something that needs fixing? Choose a category and tell us what you have in mind.</p>' +
-      '<div class="feedback-categories" role="group" aria-label="What would you like to send?">' +
+      '<div class="feedback-categories" role="group" aria-label="What would you like to send?" tabindex="-1">' +
       categories.map(([id, title, description]) => '<button class="feedback-category" type="button" data-feedback-kind="' + id + '" aria-pressed="false"><strong>' + title + '</strong><span>' + description + '</span></button>').join('') +
       '</div><form class="feedback-form">' +
       '<label class="feedback-field">Addon, WeakAura, page, or feature name <span>Optional</span><input name="subject" maxlength="120" placeholder="What is this about?"></label>' +

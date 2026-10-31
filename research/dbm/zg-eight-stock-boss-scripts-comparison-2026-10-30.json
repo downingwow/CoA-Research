@@ -1,0 +1,1593 @@
+{
+  "schema": "coa-research.dbm-zg-stock-boss-script-comparison.v1",
+  "date": "2026-10-30",
+  "mapId": 309,
+  "sourceRepo": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "sourceType": "Stock AzerothCore scripts, comparison only; CoA-specific raid module takes priority where active",
+  "files": [
+    {
+      "boss": "hakkar",
+      "path": "src/server/scripts/EasternKingdoms/ZulGurub/boss_hakkar.cpp",
+      "sourceLines": 424,
+      "spells": [
+        {
+          "symbol": "SPELL_BLOOD_SIPHON",
+          "spellId": 24324,
+          "line": 46
+        },
+        {
+          "symbol": "SPELL_BLOOD_SIPHON_HEAL",
+          "spellId": 24322,
+          "line": 47
+        },
+        {
+          "symbol": "SPELL_BLOOD_SIPHON_DAMAGE",
+          "spellId": 24323,
+          "line": 48
+        },
+        {
+          "symbol": "SPELL_CORRUPTED_BLOOD",
+          "spellId": 24328,
+          "line": 49
+        },
+        {
+          "symbol": "SPELL_CAUSE_INSANITY",
+          "spellId": 24327,
+          "line": 50
+        },
+        {
+          "symbol": "SPELL_ENRAGE",
+          "spellId": 24318,
+          "line": 51
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_JEKLIK",
+          "spellId": 24687,
+          "line": 53
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_VENOXIS",
+          "spellId": 24688,
+          "line": 54
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_MARLI",
+          "spellId": 24686,
+          "line": 55
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_THEKAL",
+          "spellId": 24689,
+          "line": 56
+        },
+        {
+          "symbol": "SPELL_ASPECT_OF_ARLOKK",
+          "spellId": 24690,
+          "line": 57
+        },
+        {
+          "symbol": "SPELL_POISONOUS_BLOOD",
+          "spellId": 24321,
+          "line": 58
+        }
+      ],
+      "actions": [
+        {
+          "line": 99,
+          "code": "DoCastSelf(SPELL_HAKKAR_POWER, true);"
+        },
+        {
+          "line": 117,
+          "code": "events.ScheduleEvent(EVENT_BLOOD_SIPHON, 90s);"
+        },
+        {
+          "line": 118,
+          "code": "events.ScheduleEvent(EVENT_CORRUPTED_BLOOD, 25s);"
+        },
+        {
+          "line": 119,
+          "code": "events.ScheduleEvent(EVENT_CAUSE_INSANITY, 17s);"
+        },
+        {
+          "line": 120,
+          "code": "events.ScheduleEvent(EVENT_ENRAGE, 1min);"
+        },
+        {
+          "line": 122,
+          "code": "events.ScheduleEvent(EVENT_ASPECT_OF_JEKLIK, 21s);"
+        },
+        {
+          "line": 124,
+          "code": "events.ScheduleEvent(EVENT_ASPECT_OF_VENOXIS, 14s);"
+        },
+        {
+          "line": 126,
+          "code": "events.ScheduleEvent(EVENT_ASPECT_OF_MARLI, 15s);"
+        },
+        {
+          "line": 128,
+          "code": "events.ScheduleEvent(EVENT_ASPECT_OF_THEKAL, 10s);"
+        },
+        {
+          "line": 130,
+          "code": "events.ScheduleEvent(EVENT_ASPECT_OF_ARLOKK, 18s);"
+        },
+        {
+          "line": 157,
+          "code": "events.ScheduleEvent(EVENT_BLOOD_SIPHON, 90s);"
+        },
+        {
+          "line": 160,
+          "code": "DoCastVictim(SPELL_CORRUPTED_BLOOD, true);"
+        },
+        {
+          "line": 161,
+          "code": "events.ScheduleEvent(EVENT_CORRUPTED_BLOOD, 30s, 40s);"
+        },
+        {
+          "line": 168,
+          "code": "DoCast(victim, SPELL_CAUSE_INSANITY);"
+        },
+        {
+          "line": 171,
+          "code": "events.ScheduleEvent(EVENT_CAUSE_INSANITY, 35s, 40s);"
+        },
+        {
+          "line": 175,
+          "code": "DoCastSelf(SPELL_ENRAGE);"
+        },
+        {
+          "line": 176,
+          "code": "events.ScheduleEvent(EVENT_ENRAGE, 90s);"
+        },
+        {
+          "line": 179,
+          "code": "DoCastVictim(SPELL_ASPECT_OF_JEKLIK, true);"
+        },
+        {
+          "line": 180,
+          "code": "events.ScheduleEvent(EVENT_ASPECT_OF_JEKLIK, 24s);"
+        },
+        {
+          "line": 183,
+          "code": "DoCastVictim(SPELL_ASPECT_OF_VENOXIS, true);"
+        },
+        {
+          "line": 184,
+          "code": "events.ScheduleEvent(EVENT_ASPECT_OF_VENOXIS, 16s, 18s);"
+        },
+        {
+          "line": 189,
+          "code": "DoCast(victim, SPELL_ASPECT_OF_MARLI, true);"
+        },
+        {
+          "line": 192,
+          "code": "events.ScheduleEvent(EVENT_ASPECT_OF_MARLI, 45s);"
+        },
+        {
+          "line": 195,
+          "code": "DoCastVictim(SPELL_ASPECT_OF_THEKAL, true);"
+        },
+        {
+          "line": 196,
+          "code": "events.ScheduleEvent(EVENT_ASPECT_OF_THEKAL, 15s);"
+        },
+        {
+          "line": 201,
+          "code": "DoCast(victim, SPELL_ASPECT_OF_ARLOKK, true);"
+        },
+        {
+          "line": 204,
+          "code": "events.ScheduleEvent(EVENT_ASPECT_OF_ARLOKK, 10s, 15s);"
+        }
+      ]
+    },
+    {
+      "boss": "jindo",
+      "path": "src/server/scripts/EasternKingdoms/ZulGurub/boss_jindo.cpp",
+      "sourceLines": 307,
+      "spells": [
+        {
+          "symbol": "SPELL_BRAIN_WASH_TOTEM",
+          "spellId": 24262,
+          "line": 32
+        },
+        {
+          "symbol": "SPELL_POWERFULL_HEALING_WARD",
+          "spellId": 24309,
+          "line": 33
+        },
+        {
+          "symbol": "SPELL_HEX",
+          "spellId": 17172,
+          "line": 34
+        },
+        {
+          "symbol": "SPELL_DELUSIONS_OF_JINDO",
+          "spellId": 24306,
+          "line": 35
+        },
+        {
+          "symbol": "SPELL_SUMMON_SHADE_OF_JINDO",
+          "spellId": 24308,
+          "line": 36
+        },
+        {
+          "symbol": "SPELL_BANISH",
+          "spellId": 24466,
+          "line": 37
+        },
+        {
+          "symbol": "SPELL_HEAL",
+          "spellId": 24311,
+          "line": 40
+        },
+        {
+          "symbol": "SPELL_SHADE_OF_JINDO_PASSIVE",
+          "spellId": 24307,
+          "line": 43
+        },
+        {
+          "symbol": "SPELL_SHADE_OF_JINDO_VISUAL",
+          "spellId": 24313,
+          "line": 44
+        },
+        {
+          "symbol": "SPELL_SHADOW_SHOCK",
+          "spellId": 19460,
+          "line": 45
+        },
+        {
+          "symbol": "SPELL_RANDOM_AGGRO",
+          "spellId": 23878,
+          "line": 46
+        }
+      ],
+      "actions": [
+        {
+          "line": 65,
+          "code": "events.ScheduleEvent(EVENT_BRAIN_WASH_TOTEM, 20s);"
+        },
+        {
+          "line": 66,
+          "code": "events.ScheduleEvent(EVENT_POWERFULL_HEALING_WARD, 16s);"
+        },
+        {
+          "line": 67,
+          "code": "events.ScheduleEvent(EVENT_HEX, 8s);"
+        },
+        {
+          "line": 68,
+          "code": "events.ScheduleEvent(EVENT_DELUSIONS_OF_JINDO, 10s);"
+        },
+        {
+          "line": 69,
+          "code": "events.ScheduleEvent(EVENT_TELEPORT, 5s);"
+        },
+        {
+          "line": 128,
+          "code": "DoCastSelf(SPELL_BRAIN_WASH_TOTEM);"
+        },
+        {
+          "line": 129,
+          "code": "events.ScheduleEvent(EVENT_BRAIN_WASH_TOTEM, 18s, 26s);"
+        },
+        {
+          "line": 132,
+          "code": "DoCastSelf(SPELL_POWERFULL_HEALING_WARD, true);"
+        },
+        {
+          "line": 133,
+          "code": "events.ScheduleEvent(EVENT_POWERFULL_HEALING_WARD, 14s, 20s);"
+        },
+        {
+          "line": 137,
+          "code": "DoCastVictim(SPELL_HEX, true);"
+        },
+        {
+          "line": 138,
+          "code": "events.ScheduleEvent(EVENT_HEX, 12s, 20s);"
+        },
+        {
+          "line": 141,
+          "code": "DoCastRandomTarget(SPELL_DELUSIONS_OF_JINDO);"
+        },
+        {
+          "line": 142,
+          "code": "events.ScheduleEvent(EVENT_DELUSIONS_OF_JINDO, 4s, 12s);"
+        },
+        {
+          "line": 145,
+          "code": "DoCastRandomTarget(SPELL_BANISH);"
+        },
+        {
+          "line": 146,
+          "code": "events.ScheduleEvent(EVENT_TELEPORT, 15s, 23s);"
+        },
+        {
+          "line": 180,
+          "code": "DoCast(pJindo, SPELL_HEAL);"
+        },
+        {
+          "line": 181,
+          "code": "context.Repeat(3s);"
+        },
+        {
+          "line": 206,
+          "code": "DoCastSelf(SPELL_SHADE_OF_JINDO_PASSIVE, true);"
+        },
+        {
+          "line": 207,
+          "code": "DoCastSelf(SPELL_SHADE_OF_JINDO_VISUAL, true);"
+        },
+        {
+          "line": 219,
+          "code": "context.Repeat();"
+        },
+        {
+          "line": 228,
+          "code": "DoCastVictim(SPELL_SHADOW_SHOCK);"
+        },
+        {
+          "line": 229,
+          "code": "context.Repeat(2s);"
+        }
+      ]
+    },
+    {
+      "boss": "mandokir",
+      "path": "src/server/scripts/EasternKingdoms/ZulGurub/boss_mandokir.cpp",
+      "sourceLines": 794,
+      "spells": [
+        {
+          "symbol": "SPELL_CHARGE",
+          "spellId": 24408,
+          "line": 40
+        },
+        {
+          "symbol": "SPELL_OVERPOWER",
+          "spellId": 24407,
+          "line": 41
+        },
+        {
+          "symbol": "SPELL_FRIGHTENING_SHOUT",
+          "spellId": 19134,
+          "line": 42
+        },
+        {
+          "symbol": "SPELL_WHIRLWIND",
+          "spellId": 13736,
+          "line": 43
+        },
+        {
+          "symbol": "SPELL_MORTAL_STRIKE",
+          "spellId": 16856,
+          "line": 44
+        },
+        {
+          "symbol": "SPELL_FRENZY",
+          "spellId": 24318,
+          "line": 45
+        },
+        {
+          "symbol": "SPELL_WATCH",
+          "spellId": 24314,
+          "line": 46
+        },
+        {
+          "symbol": "SPELL_WATCH_CHARGE",
+          "spellId": 24315,
+          "line": 47
+        },
+        {
+          "symbol": "SPELL_LEVEL_UP",
+          "spellId": 24312,
+          "line": 48
+        },
+        {
+          "symbol": "SPELL_EXECUTE",
+          "spellId": 7160,
+          "line": 49
+        },
+        {
+          "symbol": "SPELL_MANDOKIR_CLEAVE",
+          "spellId": 20691,
+          "line": 50
+        },
+        {
+          "symbol": "SPELL_SUMMON_PLAYER",
+          "spellId": 25104,
+          "line": 51
+        },
+        {
+          "symbol": "SPELL_REVIVE",
+          "spellId": 24341,
+          "line": 53
+        },
+        {
+          "symbol": "SPELL_SUNDERARMOR",
+          "spellId": 24317,
+          "line": 517
+        },
+        {
+          "symbol": "SPELL_THRASH",
+          "spellId": 3391,
+          "line": 518
+        },
+        {
+          "symbol": "SPELL_DEMORALIZING_SHOUT",
+          "spellId": 13730,
+          "line": 663
+        },
+        {
+          "symbol": "SPELL_CLEAVE",
+          "spellId": 15284,
+          "line": 664
+        }
+      ],
+      "actions": [
+        {
+          "line": 159,
+          "code": "events.ScheduleEvent(EVENT_CHECK_START, 1s);"
+        },
+        {
+          "line": 191,
+          "code": "events.ScheduleEvent(EVENT_OVERPOWER, 1s);"
+        },
+        {
+          "line": 192,
+          "code": "events.ScheduleEvent(EVENT_MORTAL_STRIKE, 14s, 28s);"
+        },
+        {
+          "line": 193,
+          "code": "events.ScheduleEvent(EVENT_WHIRLWIND, 24s, 30s);"
+        },
+        {
+          "line": 194,
+          "code": "events.ScheduleEvent(EVENT_CHECK_OHGAN, 1s);"
+        },
+        {
+          "line": 195,
+          "code": "events.ScheduleEvent(EVENT_WATCH_PLAYER, 12s, 24s);"
+        },
+        {
+          "line": 196,
+          "code": "events.ScheduleEvent(EVENT_CHARGE_PLAYER, 30s, 40s);"
+        },
+        {
+          "line": 197,
+          "code": "events.ScheduleEvent(EVENT_CLEAVE, 1s);"
+        },
+        {
+          "line": 227,
+          "code": "DoCastSelf(SPELL_LEVEL_UP, true);"
+        },
+        {
+          "line": 262,
+          "code": "DoCast(target, SPELL_WATCH_CHARGE, true);"
+        },
+        {
+          "line": 306,
+          "code": "events.ScheduleEvent(EVENT_EXECUTE, 1s);"
+        },
+        {
+          "line": 319,
+          "code": "DoCast(player, SPELL_SUMMON_PLAYER, true);"
+        },
+        {
+          "line": 376,
+          "code": "events.ScheduleEvent(EVENT_STARTED, 6s);"
+        },
+        {
+          "line": 380,
+          "code": "events.ScheduleEvent(EVENT_CHECK_START, 1s);"
+        },
+        {
+          "line": 410,
+          "code": "if (DoCastVictim(SPELL_OVERPOWER) == SPELL_CAST_OK)"
+        },
+        {
+          "line": 412,
+          "code": "events.ScheduleEvent(EVENT_OVERPOWER, 6s, 8s);"
+        },
+        {
+          "line": 416,
+          "code": "events.ScheduleEvent(EVENT_OVERPOWER, 1s);"
+        },
+        {
+          "line": 420,
+          "code": "DoCastVictim(SPELL_MORTAL_STRIKE);"
+        },
+        {
+          "line": 421,
+          "code": "events.ScheduleEvent(EVENT_MORTAL_STRIKE, 14s, 28s);"
+        },
+        {
+          "line": 424,
+          "code": "DoCast(me, SPELL_WHIRLWIND);"
+        },
+        {
+          "line": 425,
+          "code": "events.ScheduleEvent(EVENT_WHIRLWIND, 22s,  26s);"
+        },
+        {
+          "line": 430,
+          "code": "DoCast(me, SPELL_FRENZY);"
+        },
+        {
+          "line": 435,
+          "code": "events.ScheduleEvent(EVENT_CHECK_OHGAN, 1s);"
+        },
+        {
+          "line": 441,
+          "code": "DoCast(player, SPELL_WATCH);"
+        },
+        {
+          "line": 445,
+          "code": "events.ScheduleEvent(EVENT_WATCH_PLAYER, 12s, 24s);"
+        },
+        {
+          "line": 457,
+          "code": "DoCast(target, SPELL_CHARGE);"
+        },
+        {
+          "line": 464,
+          "code": "events.ScheduleEvent(EVENT_CHARGE_PLAYER, 30s, 40s);"
+        },
+        {
+          "line": 467,
+          "code": "DoCastVictim(SPELL_EXECUTE, true);"
+        },
+        {
+          "line": 468,
+          "code": "events.ScheduleEvent(EVENT_EXECUTE, 7s, 14s);"
+        },
+        {
+          "line": 484,
+          "code": "DoCastVictim(SPELL_MANDOKIR_CLEAVE);"
+        },
+        {
+          "line": 485,
+          "code": "events.ScheduleEvent(EVENT_CLEAVE, 10s, 20s);"
+        },
+        {
+          "line": 489,
+          "code": "events.ScheduleEvent(EVENT_CLEAVE, 1s);"
+        },
+        {
+          "line": 548,
+          "code": "DoCastVictim(SPELL_SUNDERARMOR);"
+        },
+        {
+          "line": 549,
+          "code": "context.Repeat(6s, 12s);"
+        },
+        {
+          "line": 553,
+          "code": "DoCastSelf(SPELL_THRASH);"
+        },
+        {
+          "line": 554,
+          "code": "context.Repeat(12s, 18s);"
+        },
+        {
+          "line": 642,
+          "code": "DoCast(target, SPELL_REVIVE);"
+        },
+        {
+          "line": 682,
+          "code": "context.Repeat(22s, 30s);"
+        },
+        {
+          "line": 686,
+          "code": "DoCastVictim(SPELL_CLEAVE, true);"
+        },
+        {
+          "line": 687,
+          "code": "context.Repeat(6s, 9s);"
+        }
+      ]
+    },
+    {
+      "boss": "venoxis",
+      "path": "src/server/scripts/EasternKingdoms/ZulGurub/boss_venoxis.cpp",
+      "sourceLines": 170,
+      "spells": [
+        {
+          "symbol": "SPELL_THRASH",
+          "spellId": 3391,
+          "line": 37
+        },
+        {
+          "symbol": "SPELL_DISPEL_MAGIC",
+          "spellId": 23859,
+          "line": 40
+        },
+        {
+          "symbol": "SPELL_RENEW",
+          "spellId": 23895,
+          "line": 41
+        },
+        {
+          "symbol": "SPELL_HOLY_NOVA",
+          "spellId": 23858,
+          "line": 42
+        },
+        {
+          "symbol": "SPELL_HOLY_FIRE",
+          "spellId": 23860,
+          "line": 43
+        },
+        {
+          "symbol": "SPELL_HOLY_WRATH",
+          "spellId": 23979,
+          "line": 44
+        },
+        {
+          "symbol": "SPELL_VENOXIS_TRANSFORM",
+          "spellId": 23849,
+          "line": 47
+        },
+        {
+          "symbol": "SPELL_POISON_CLOUD",
+          "spellId": 23861,
+          "line": 50
+        },
+        {
+          "symbol": "SPELL_VENOM_SPIT",
+          "spellId": 23862,
+          "line": 51
+        },
+        {
+          "symbol": "SPELL_SUMMON_PARASITIC_SERPENT",
+          "spellId": 23866,
+          "line": 52
+        },
+        {
+          "symbol": "SPELL_FRENZY",
+          "spellId": 8269,
+          "line": 53
+        }
+      ],
+      "actions": [
+        {
+          "line": 96,
+          "code": "DoCastSelf(SPELL_THRASH, true);"
+        },
+        {
+          "line": 97,
+          "code": "context.Repeat(10s, 20s);"
+        },
+        {
+          "line": 105,
+          "code": "DoCastSelf(SPELL_HOLY_NOVA);"
+        },
+        {
+          "line": 106,
+          "code": "context.Repeat(10s, 24s);"
+        },
+        {
+          "line": 109,
+          "code": "DoCastSelf(SPELL_DISPEL_MAGIC);"
+        },
+        {
+          "line": 110,
+          "code": "context.Repeat(15s, 20s);"
+        },
+        {
+          "line": 113,
+          "code": "DoCastRandomTarget(SPELL_HOLY_FIRE);"
+        },
+        {
+          "line": 114,
+          "code": "context.Repeat(10s, 24s);"
+        },
+        {
+          "line": 117,
+          "code": "DoCastSelf(SPELL_RENEW);"
+        },
+        {
+          "line": 118,
+          "code": "context.Repeat(25s, 30s);"
+        },
+        {
+          "line": 122,
+          "code": "context.Repeat(12s, 22s);"
+        },
+        {
+          "line": 132,
+          "code": "DoCastSelf(SPELL_VENOXIS_TRANSFORM);"
+        },
+        {
+          "line": 138,
+          "code": "DoCastSelf(SPELL_VENOM_SPIT);"
+        },
+        {
+          "line": 139,
+          "code": "context.Repeat(5s, 15s);"
+        },
+        {
+          "line": 142,
+          "code": "DoCastSelf(SPELL_POISON_CLOUD);"
+        },
+        {
+          "line": 143,
+          "code": "context.Repeat(15s, 20s);"
+        },
+        {
+          "line": 146,
+          "code": "DoCastSelf(SPELL_SUMMON_PARASITIC_SERPENT);"
+        },
+        {
+          "line": 147,
+          "code": "context.Repeat(15s);"
+        },
+        {
+          "line": 153,
+          "code": "DoCastSelf(SPELL_FRENZY, true);"
+        }
+      ]
+    },
+    {
+      "boss": "marli",
+      "path": "src/server/scripts/EasternKingdoms/ZulGurub/boss_marli.cpp",
+      "sourceLines": 350,
+      "spells": [
+        {
+          "symbol": "SPELL_CHARGE",
+          "spellId": 22911,
+          "line": 42
+        },
+        {
+          "symbol": "SPELL_ENVELOPING_WEB",
+          "spellId": 24110,
+          "line": 43
+        },
+        {
+          "symbol": "SPELL_CORROSIVE_POISON",
+          "spellId": 24111,
+          "line": 44
+        },
+        {
+          "symbol": "SPELL_POISON_SHOCK",
+          "spellId": 24112,
+          "line": 45
+        },
+        {
+          "symbol": "SPELL_POISON_VOLLEY",
+          "spellId": 24099,
+          "line": 48
+        },
+        {
+          "symbol": "SPELL_DRAIN_LIFE",
+          "spellId": 24300,
+          "line": 49
+        },
+        {
+          "symbol": "SPELL_ENLARGE",
+          "spellId": 24109,
+          "line": 50
+        },
+        {
+          "symbol": "SPELL_SPIDER_EGGS",
+          "spellId": 24082,
+          "line": 51
+        },
+        {
+          "symbol": "SPELL_SPIDER_FORM",
+          "spellId": 24084,
+          "line": 54
+        },
+        {
+          "symbol": "SPELL_TRANSFORM_BACK",
+          "spellId": 24085,
+          "line": 55
+        },
+        {
+          "symbol": "SPELL_THRASH",
+          "spellId": 3391,
+          "line": 56
+        },
+        {
+          "symbol": "SPELL_HATCH_SPIDER_EGG",
+          "spellId": 24082,
+          "line": 57
+        },
+        {
+          "symbol": "SPELL_HATCH_EGGS",
+          "spellId": 24083,
+          "line": 58
+        },
+        {
+          "symbol": "SPELL_GROWTH",
+          "spellId": 24086,
+          "line": 61
+        },
+        {
+          "symbol": "SPELL_FULL_GROWN",
+          "spellId": 24088,
+          "line": 62
+        }
+      ],
+      "actions": [
+        {
+          "line": 125,
+          "code": "DoCastVictim(SPELL_THRASH);"
+        },
+        {
+          "line": 126,
+          "code": "context.Repeat(10s, 20s);"
+        },
+        {
+          "line": 148,
+          "code": "DoCastSelf(SPELL_TRANSFORM_BACK, true);"
+        },
+        {
+          "line": 159,
+          "code": "DoCastVictim(SPELL_POISON_VOLLEY, true);"
+        },
+        {
+          "line": 160,
+          "code": "context.Repeat(10s, 20s);"
+        },
+        {
+          "line": 163,
+          "code": "DoCastRandomTarget(SPELL_DRAIN_LIFE);"
+        },
+        {
+          "line": 164,
+          "code": "context.Repeat(20s, 50s);"
+        },
+        {
+          "line": 167,
+          "code": "DoCastSelf(SPELL_HATCH_SPIDER_EGG, true);"
+        },
+        {
+          "line": 168,
+          "code": "context.Repeat(20s);"
+        },
+        {
+          "line": 174,
+          "code": "DoCast(target, SPELL_ENLARGE);"
+        },
+        {
+          "line": 176,
+          "code": "context.Repeat(20s, 40s);"
+        },
+        {
+          "line": 192,
+          "code": "DoCastSelf(SPELL_SPIDER_FORM, true);"
+        },
+        {
+          "line": 202,
+          "code": "context.Repeat(15s, 20s);"
+        },
+        {
+          "line": 205,
+          "code": "DoCastVictim(SPELL_CORROSIVE_POISON);"
+        },
+        {
+          "line": 206,
+          "code": "context.Repeat(25s, 35s);"
+        },
+        {
+          "line": 209,
+          "code": "DoCastRandomTarget(SPELL_POISON_SHOCK);"
+        },
+        {
+          "line": 210,
+          "code": "context.Repeat(10s);"
+        },
+        {
+          "line": 232,
+          "code": "DoCast(target, SPELL_CHARGE);"
+        },
+        {
+          "line": 255,
+          "code": "DoCastSelf(SPELL_GROWTH);"
+        },
+        {
+          "line": 256,
+          "code": "context.Repeat(4s);"
+        },
+        {
+          "line": 261,
+          "code": "DoCastSelf(SPELL_FULL_GROWN);"
+        }
+      ]
+    },
+    {
+      "boss": "jeklik",
+      "path": "src/server/scripts/EasternKingdoms/ZulGurub/boss_jeklik.cpp",
+      "sourceLines": 426,
+      "spells": [
+        {
+          "symbol": "SPELL_GREEN_CHANNELING",
+          "spellId": 13540,
+          "line": 44
+        },
+        {
+          "symbol": "SPELL_BAT_FORM",
+          "spellId": 23966,
+          "line": 45
+        },
+        {
+          "symbol": "SPELL_PIERCE_ARMOR",
+          "spellId": 12097,
+          "line": 48
+        },
+        {
+          "symbol": "SPELL_BLOOD_LEECH",
+          "spellId": 22644,
+          "line": 49
+        },
+        {
+          "symbol": "SPELL_CHARGE",
+          "spellId": 22911,
+          "line": 50
+        },
+        {
+          "symbol": "SPELL_SONIC_BURST",
+          "spellId": 23918,
+          "line": 51
+        },
+        {
+          "symbol": "SPELL_SWOOP",
+          "spellId": 23919,
+          "line": 52
+        },
+        {
+          "symbol": "SPELL_CURSE_OF_BLOOD",
+          "spellId": 16098,
+          "line": 55
+        },
+        {
+          "symbol": "SPELL_PSYCHIC_SCREAM",
+          "spellId": 22884,
+          "line": 56
+        },
+        {
+          "symbol": "SPELL_SHADOW_WORD_PAIN",
+          "spellId": 23952,
+          "line": 57
+        },
+        {
+          "symbol": "SPELL_MIND_FLAY",
+          "spellId": 23953,
+          "line": 58
+        },
+        {
+          "symbol": "SPELL_GREATER_HEAL",
+          "spellId": 23954,
+          "line": 59
+        },
+        {
+          "symbol": "SPELL_BATRIDER_THROW_LIQUID_FIRE",
+          "spellId": 23970,
+          "line": 62
+        },
+        {
+          "symbol": "SPELL_BATRIDER_SUMMON_LIQUID_FIRE",
+          "spellId": 23971,
+          "line": 63
+        },
+        {
+          "symbol": "SPELL_BATRIDER_DEMO_SHOUT",
+          "spellId": 23511,
+          "line": 66
+        },
+        {
+          "symbol": "SPELL_BATRIDER_BATTLE_COMMAND",
+          "spellId": 5115,
+          "line": 67
+        },
+        {
+          "symbol": "SPELL_BATRIDER_INFECTED_BITE",
+          "spellId": 16128,
+          "line": 68
+        },
+        {
+          "symbol": "SPELL_BATRIDER_PASSIVE_THRASH",
+          "spellId": 8876,
+          "line": 69
+        },
+        {
+          "symbol": "SPELL_BATRIDER_UNSTABLE_CONCOCTION",
+          "spellId": 24024,
+          "line": 70
+        }
+      ],
+      "actions": [
+        {
+          "line": 129,
+          "code": "DoCastSelf(SPELL_GREEN_CHANNELING, true);"
+        },
+        {
+          "line": 141,
+          "code": "DoCastSelf(SPELL_BAT_FORM, true);"
+        },
+        {
+          "line": 161,
+          "code": "DoCast(target, SPELL_CHARGE);"
+        },
+        {
+          "line": 164,
+          "code": "context.Repeat(15s, 30s);"
+        },
+        {
+          "line": 167,
+          "code": "DoCastVictim(SPELL_PIERCE_ARMOR);"
+        },
+        {
+          "line": 168,
+          "code": "context.Repeat(20s, 30s);"
+        },
+        {
+          "line": 171,
+          "code": "DoCastVictim(SPELL_BLOOD_LEECH);"
+        },
+        {
+          "line": 172,
+          "code": "context.Repeat(10s, 20s);"
+        },
+        {
+          "line": 175,
+          "code": "DoCastVictim(SPELL_SONIC_BURST);"
+        },
+        {
+          "line": 176,
+          "code": "context.Repeat(20s, 30s);"
+        },
+        {
+          "line": 179,
+          "code": "DoCastVictim(SPELL_SWOOP);"
+        },
+        {
+          "line": 180,
+          "code": "context.Repeat(20s, 30s);"
+        },
+        {
+          "line": 194,
+          "code": "context.Repeat(30s);"
+        },
+        {
+          "line": 209,
+          "code": "DoCastSelf(SPELL_CURSE_OF_BLOOD);"
+        },
+        {
+          "line": 210,
+          "code": "context.Repeat(25s, 30s);"
+        },
+        {
+          "line": 213,
+          "code": "DoCastVictim(SPELL_PSYCHIC_SCREAM);"
+        },
+        {
+          "line": 214,
+          "code": "context.Repeat(35s, 45s);"
+        },
+        {
+          "line": 217,
+          "code": "DoCastRandomTarget(SPELL_SHADOW_WORD_PAIN, 0, true);"
+        },
+        {
+          "line": 218,
+          "code": "context.Repeat(12s, 18s);"
+        },
+        {
+          "line": 221,
+          "code": "DoCastVictim(SPELL_MIND_FLAY);"
+        },
+        {
+          "line": 222,
+          "code": "context.Repeat(20s, 40s);"
+        },
+        {
+          "line": 227,
+          "code": "DoCastSelf(SPELL_GREATER_HEAL);"
+        },
+        {
+          "line": 228,
+          "code": "context.Repeat(25s);"
+        },
+        {
+          "line": 244,
+          "code": "context.Repeat(10s, 15s);"
+        },
+        {
+          "line": 338,
+          "code": "DoCastRandomTarget(SPELL_BATRIDER_THROW_LIQUID_FIRE);"
+        },
+        {
+          "line": 339,
+          "code": "context.Repeat(8s);"
+        },
+        {
+          "line": 346,
+          "code": "DoCastSelf(SPELL_BATRIDER_DEMO_SHOUT);"
+        },
+        {
+          "line": 349,
+          "code": "DoCastSelf(SPELL_BATRIDER_BATTLE_COMMAND);"
+        },
+        {
+          "line": 350,
+          "code": "context.Repeat(25s);"
+        },
+        {
+          "line": 353,
+          "code": "DoCastVictim(SPELL_BATRIDER_INFECTED_BITE);"
+        },
+        {
+          "line": 354,
+          "code": "context.Repeat(8s);"
+        },
+        {
+          "line": 366,
+          "code": "DoCastSelf(SPELL_BATRIDER_UNSTABLE_CONCOCTION);"
+        }
+      ]
+    },
+    {
+      "boss": "thekal",
+      "path": "src/server/scripts/EasternKingdoms/ZulGurub/boss_thekal.cpp",
+      "sourceLines": 521,
+      "spells": [
+        {
+          "symbol": "SPELL_SUMMONTIGERS",
+          "spellId": 24183,
+          "line": 36
+        },
+        {
+          "symbol": "SPELL_CHARGE",
+          "spellId": 24193,
+          "line": 39
+        },
+        {
+          "symbol": "SPELL_ENRAGE",
+          "spellId": 8269,
+          "line": 40
+        },
+        {
+          "symbol": "SPELL_FORCEPUNCH",
+          "spellId": 24189,
+          "line": 41
+        },
+        {
+          "symbol": "SPELL_FRENZY",
+          "spellId": 8269,
+          "line": 42
+        },
+        {
+          "symbol": "SPELL_MORTALCLEAVE",
+          "spellId": 22859,
+          "line": 43
+        },
+        {
+          "symbol": "SPELL_RESURRECTION_IMPACT_VISUAL",
+          "spellId": 24171,
+          "line": 44
+        },
+        {
+          "symbol": "SPELL_SILENCE",
+          "spellId": 22666,
+          "line": 45
+        },
+        {
+          "symbol": "SPELL_TIGER_FORM",
+          "spellId": 24169,
+          "line": 46
+        },
+        {
+          "symbol": "SPELL_SHIELD",
+          "spellId": 20545,
+          "line": 49
+        },
+        {
+          "symbol": "SPELL_BLOODLUST",
+          "spellId": 24185,
+          "line": 50
+        },
+        {
+          "symbol": "SPELL_GREATERHEAL",
+          "spellId": 24208,
+          "line": 51
+        },
+        {
+          "symbol": "SPELL_DISARM",
+          "spellId": 6713,
+          "line": 52
+        },
+        {
+          "symbol": "SPELL_SWEEPINGSTRIKES",
+          "spellId": 18765,
+          "line": 55
+        },
+        {
+          "symbol": "SPELL_SINISTERSTRIKE",
+          "spellId": 15581,
+          "line": 56
+        },
+        {
+          "symbol": "SPELL_GOUGE",
+          "spellId": 12540,
+          "line": 57
+        },
+        {
+          "symbol": "SPELL_KICK",
+          "spellId": 15614,
+          "line": 58
+        },
+        {
+          "symbol": "SPELL_BLIND",
+          "spellId": 21060,
+          "line": 59
+        }
+      ],
+      "actions": [
+        {
+          "line": 116,
+          "code": "context.Repeat(5s, 25s);"
+        },
+        {
+          "line": 143,
+          "code": "DoCastVictim(SPELL_MORTALCLEAVE);"
+        },
+        {
+          "line": 144,
+          "code": "context.Repeat(15s, 20s);"
+        },
+        {
+          "line": 147,
+          "code": "DoCastVictim(SPELL_SILENCE);"
+        },
+        {
+          "line": 148,
+          "code": "context.Repeat(20s, 25s);"
+        },
+        {
+          "line": 151,
+          "code": "DoCastSelf(SPELL_BLOODLUST);"
+        },
+        {
+          "line": 152,
+          "code": "context.Repeat(20s, 28s);"
+        },
+        {
+          "line": 251,
+          "code": "DoCastSelf(SPELL_RESURRECTION_IMPACT_VISUAL, true);"
+        },
+        {
+          "line": 260,
+          "code": "DoCastSelf(SPELL_TIGER_FORM);"
+        },
+        {
+          "line": 268,
+          "code": "DoCastSelf(SPELL_FRENZY);"
+        },
+        {
+          "line": 269,
+          "code": "context.Repeat();"
+        },
+        {
+          "line": 272,
+          "code": "DoCastVictim(SPELL_FORCEPUNCH);"
+        },
+        {
+          "line": 273,
+          "code": "context.Repeat(16s, 21s);"
+        },
+        {
+          "line": 279,
+          "code": "DoCast(target, SPELL_CHARGE);"
+        },
+        {
+          "line": 283,
+          "code": "context.Repeat(15s, 22s);"
+        },
+        {
+          "line": 286,
+          "code": "DoCastVictim(SPELL_SUMMONTIGERS, true);"
+        },
+        {
+          "line": 287,
+          "code": "context.Repeat(10s, 14s);"
+        },
+        {
+          "line": 293,
+          "code": "DoCastSelf(SPELL_ENRAGE);"
+        },
+        {
+          "line": 346,
+          "code": "context.Repeat(5s, 25s);"
+        },
+        {
+          "line": 356,
+          "code": "DoCastSelf(SPELL_SHIELD);"
+        },
+        {
+          "line": 357,
+          "code": "context.Repeat(1min);"
+        },
+        {
+          "line": 368,
+          "code": "DoCastSelf(SPELL_GREATERHEAL);"
+        },
+        {
+          "line": 372,
+          "code": "DoCast(zath, SPELL_GREATERHEAL);"
+        },
+        {
+          "line": 376,
+          "code": "DoCast(thekal, SPELL_GREATERHEAL);"
+        },
+        {
+          "line": 379,
+          "code": "context.Repeat(15s, 20s);"
+        },
+        {
+          "line": 382,
+          "code": "DoCastVictim(SPELL_DISARM);"
+        },
+        {
+          "line": 383,
+          "code": "context.Repeat(15s, 25s);"
+        },
+        {
+          "line": 445,
+          "code": "context.Repeat(5s, 25s);"
+        },
+        {
+          "line": 455,
+          "code": "DoCastSelf(SPELL_SWEEPINGSTRIKES);"
+        },
+        {
+          "line": 456,
+          "code": "context.Repeat(1min);"
+        },
+        {
+          "line": 459,
+          "code": "DoCastSelf(SPELL_BLOODLUST);"
+        },
+        {
+          "line": 460,
+          "code": "context.Repeat(22s, 26s);"
+        },
+        {
+          "line": 463,
+          "code": "DoCastVictim(SPELL_SINISTERSTRIKE);"
+        },
+        {
+          "line": 464,
+          "code": "context.Repeat(8s, 16s);"
+        },
+        {
+          "line": 467,
+          "code": "DoCastVictim(SPELL_GOUGE);"
+        },
+        {
+          "line": 474,
+          "code": "context.Repeat(17s, 27s);"
+        },
+        {
+          "line": 477,
+          "code": "DoCastVictim(SPELL_KICK);"
+        },
+        {
+          "line": 478,
+          "code": "context.Repeat(15s, 25s);"
+        },
+        {
+          "line": 481,
+          "code": "DoCastVictim(SPELL_BLIND);"
+        },
+        {
+          "line": 482,
+          "code": "context.Repeat(10s, 20s);"
+        }
+      ]
+    },
+    {
+      "boss": "arlokk",
+      "path": "src/server/scripts/EasternKingdoms/ZulGurub/boss_arlokk.cpp",
+      "sourceLines": 436,
+      "spells": [
+        {
+          "symbol": "SPELL_SHADOW_WORD_PAIN",
+          "spellId": 24212,
+          "line": 33
+        },
+        {
+          "symbol": "SPELL_GOUGE",
+          "spellId": 12540,
+          "line": 34
+        },
+        {
+          "symbol": "SPELL_MARK_OF_ARLOKK",
+          "spellId": 24210,
+          "line": 35
+        },
+        {
+          "symbol": "SPELL_RAVAGE",
+          "spellId": 24213,
+          "line": 36
+        },
+        {
+          "symbol": "SPELL_CLEAVE",
+          "spellId": 25174,
+          "line": 37
+        },
+        {
+          "symbol": "SPELL_PANTHER_TRANSFORM",
+          "spellId": 24190,
+          "line": 38
+        },
+        {
+          "symbol": "SPELL_SUMMON_PROWLER",
+          "spellId": 24246,
+          "line": 39
+        },
+        {
+          "symbol": "SPELL_VANISH_VISUAL",
+          "spellId": 24222,
+          "line": 40
+        },
+        {
+          "symbol": "SPELL_VANISH",
+          "spellId": 24223,
+          "line": 41
+        },
+        {
+          "symbol": "SPELL_SUPER_INVIS",
+          "spellId": 24235,
+          "line": 42
+        },
+        {
+          "symbol": "SPELL_SNEAK_RANK_1_1",
+          "spellId": 22766,
+          "line": 306
+        },
+        {
+          "symbol": "SPELL_SNEAK_RANK_1_2",
+          "spellId": 7939,
+          "line": 307
+        },
+        {
+          "symbol": "SPELL_MARK_OF_ARLOKK_TRIGGER",
+          "spellId": 24211,
+          "line": 308
+        }
+      ],
+      "actions": [
+        {
+          "line": 117,
+          "code": "events.ScheduleEvent(EVENT_SHADOW_WORD_PAIN, 7s, 9s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 118,
+          "code": "events.ScheduleEvent(EVENT_GOUGE, 12s, 15s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 119,
+          "code": "events.ScheduleEvent(EVENT_SUMMON_PROWLERS, 6s, 0, PHASE_ALL);"
+        },
+        {
+          "line": 120,
+          "code": "events.ScheduleEvent(EVENT_MARK_OF_ARLOKK, 9s, 11s, 0, PHASE_ALL);"
+        },
+        {
+          "line": 121,
+          "code": "events.ScheduleEvent(EVENT_TRANSFORM, 30s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 187,
+          "code": "DoCastVictim(SPELL_SHADOW_WORD_PAIN, true);"
+        },
+        {
+          "line": 188,
+          "code": "events.ScheduleEvent(EVENT_SHADOW_WORD_PAIN, 5s, 7s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 191,
+          "code": "DoCastVictim(SPELL_GOUGE, true);"
+        },
+        {
+          "line": 210,
+          "code": "events.ScheduleEvent(EVENT_SUMMON_PROWLERS, 6s, 0, PHASE_ALL);"
+        },
+        {
+          "line": 219,
+          "code": "DoCast(target, SPELL_MARK_OF_ARLOKK, true);"
+        },
+        {
+          "line": 222,
+          "code": "events.ScheduleEvent(EVENT_MARK_OF_ARLOKK, 120s, 130s);"
+        },
+        {
+          "line": 227,
+          "code": "DoCastSelf(SPELL_PANTHER_TRANSFORM); // SPELL_AURA_TRANSFORM"
+        },
+        {
+          "line": 234,
+          "code": "DoCastSelf(SPELL_VANISH_VISUAL);"
+        },
+        {
+          "line": 235,
+          "code": "DoCastSelf(SPELL_VANISH);"
+        },
+        {
+          "line": 236,
+          "code": "events.ScheduleEvent(EVENT_VANISH, 1s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 240,
+          "code": "DoCastSelf(SPELL_SUPER_INVIS);"
+        },
+        {
+          "line": 243,
+          "code": "events.ScheduleEvent(EVENT_VANISH_2, 9s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 246,
+          "code": "DoCastSelf(SPELL_VANISH);"
+        },
+        {
+          "line": 247,
+          "code": "DoCastSelf(SPELL_SUPER_INVIS);"
+        },
+        {
+          "line": 248,
+          "code": "events.ScheduleEvent(EVENT_VISIBLE, 41s, 47s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 257,
+          "code": "events.ScheduleEvent(EVENT_RAVAGE, 10s, 14s, 0, PHASE_TWO);"
+        },
+        {
+          "line": 258,
+          "code": "events.ScheduleEvent(EVENT_TRANSFORM_BACK, 30s, 40s, 0, PHASE_TWO);"
+        },
+        {
+          "line": 263,
+          "code": "DoCastVictim(SPELL_RAVAGE, true);"
+        },
+        {
+          "line": 264,
+          "code": "events.ScheduleEvent(EVENT_RAVAGE, 10s, 14s, 0, PHASE_TWO);"
+        },
+        {
+          "line": 269,
+          "code": "DoCast(me, SPELL_VANISH_VISUAL);"
+        },
+        {
+          "line": 273,
+          "code": "events.ScheduleEvent(EVENT_SHADOW_WORD_PAIN, 4s, 7s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 274,
+          "code": "events.ScheduleEvent(EVENT_GOUGE, 12s, 15s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 275,
+          "code": "events.ScheduleEvent(EVENT_TRANSFORM, 30s, 0, PHASE_ONE);"
+        },
+        {
+          "line": 332,
+          "code": "DoCast(me, SPELL_SNEAK_RANK_1_1);"
+        },
+        {
+          "line": 333,
+          "code": "DoCast(me, SPELL_SNEAK_RANK_1_2);"
+        },
+        {
+          "line": 337,
+          "code": "_events.ScheduleEvent(EVENT_ATTACK, 6s);"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Do not merge stock timers into custom CoA boss scripts without confirming runtime script binding",
+    "Stock IDs are not proof of live Conquest Reborn spell variants"
+  ]
+}

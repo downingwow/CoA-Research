@@ -220,7 +220,7 @@ window.gearPage = async function gearPage(params, token) {
     const setPieceList=Array.isArray(rawSetPieces)?rawSetPieces:(typeof rawSetPieces==='string'?[rawSetPieces]:[]);
     const setPieces=[...setPieceList.map(piece=>typeof piece==='string'?piece:piece?.name||'').filter(Boolean),...setPieceText].filter(piece=>piece!==name);
     const uniqueSetPieces=[...new Set(setPieces)];
-    const setLines=new Set([setProgressLine,...setPieceText,...parsedSetBonuses.map(x=>'('+x.count+') Set: '+x.text)].filter(Boolean));
+    const setLines=new Set([setName,setProgressLine,...setPieceText,...uniqueSetPieces,...setBonuses.map(x=>'('+x.count+') Set: '+x.text),...parsedSetBonuses.map(x=>'('+x.count+') Set: '+x.text)].filter(Boolean));
     const setSection=(setName||uniqueSetPieces.length||setBonuses.length)?'<section class="gear-wow-set"><div class="gear-wow-set-heading">'+(setName?'<strong>'+esc(setName)+'</strong>':'<strong>Item set</strong>')+(setProgress?'<span>('+esc(setProgress)+')</span>':'')+'</div>'+(uniqueSetPieces.length?'<div class="gear-wow-set-pieces">'+uniqueSetPieces.map(piece=>'<div>'+esc(piece)+'</div>').join('')+'</div>':'')+(setBonuses.length?'<div class="gear-wow-set-bonuses">'+setBonuses.map(bonus=>'<div><strong>('+esc(bonus.count)+') Set:</strong> '+esc(bonus.text)+'</div>').join('')+'</div>':'')+'</section>':'';
     const describedDps=description.map(x=>x.match(/^\(?\s*([\d.]+)\s+damage per second\s*\)?$/i)).find(Boolean)?.[1];
     let weapon='';
@@ -233,7 +233,7 @@ window.gearPage = async function gearPage(params, token) {
     }
     let binding=String(data.binding||data.bindType||data.bonding||'');
     if(!binding)binding=description.find(x=>/^Binds?\b/i.test(x))||'';
-    const extras=description.filter(line=>!setLines.has(line)&&!/^Binds?\b/i.test(line)&&!/^ID\s*#?\d+$/i.test(line)&&!/^Item Level\s*\d+$/i.test(line)&&!/^Requires Level\s*\d+$/i.test(line)&&!/^\(?\s*[\d.]+\s+damage per second\s*\)?$/i.test(line)&&!/Damage|Speed\s*[\d.]+/i.test(line)&&!/^\+?\d+\s+/.test(line));
+    const extras=description.filter(line=>!setLines.has(line)&&!/^\(\s*\d+\s*\/\s*\d+\s*\)$/.test(line)&&!/^(\(\d+\)\s*)?Set:/i.test(line)&&!/^Binds?\b/i.test(line)&&!/^ID\s*#?\d+$/i.test(line)&&!/^Item Level\s*\d+$/i.test(line)&&!/^Requires Level\s*\d+$/i.test(line)&&!/^\(?\s*[\d.]+\s+damage per second\s*\)?$/i.test(line)&&!/Damage|Speed\s*[\d.]+/i.test(line)&&!/^\+?\d+\s+/.test(line));
     const bindLine=binding?'<div class="gear-wow-binding">'+esc(binding)+'</div>':'';
     const requirement=data.reqLevel||data.requiredLevel||data.requiredLevelMin||description.find(x=>/^Requires Level\s*\d+/i.test(x));
     const requirementLine=requirement?'<div class="gear-wow-requirement">'+(typeof requirement==='string'?esc(requirement):'Requires Level '+esc(requirement))+'</div>':'';

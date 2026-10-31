@@ -65,7 +65,7 @@
         '',
         '_Submitted from the BoneArchive homepage feedback form._'
       ].filter(Boolean).join('\n');
-      const issueUrl = new URL('https://github.com/downingwow/CoA-Research/issues/new');
+      const issueUrl = new URL('https://github.com/uncle-bone/CoA-Research/issues/new');
       issueUrl.searchParams.set('title', title);
       issueUrl.searchParams.set('body', body);
       window.open(issueUrl.toString(), '_blank', 'noopener,noreferrer');

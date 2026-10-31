@@ -1,0 +1,925 @@
+{
+  "schemaVersion": 1,
+  "source": "https://ascensionsidekick.com/tiers",
+  "sourceName": "Ascension Sidekick",
+  "captured": "2026-10-30",
+  "method": "Sidekick community estimates by content type. Popularity is stated by Sidekick as community interest, not in-game pick rate. These are comparisons, not verified game data.",
+  "columns": [
+    "dungeon",
+    "raid",
+    "arena",
+    "battlegrounds"
+  ],
+  "entries": [
+    {
+      "class": "Felsworn",
+      "spec": "Tyrant",
+      "sourceUrl": "https://ascensionsidekick.com/felsworn/tyrant",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "S",
+        "arena": "S",
+        "battlegrounds": "S"
+      },
+      "popularity": 70,
+      "role": null
+    },
+    {
+      "class": "Felsworn",
+      "spec": "Infernal",
+      "sourceUrl": "https://ascensionsidekick.com/felsworn/infernal",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "S",
+        "arena": "A",
+        "battlegrounds": "S"
+      },
+      "popularity": 80,
+      "role": null
+    },
+    {
+      "class": "Tinker",
+      "spec": "Invention",
+      "sourceUrl": "https://ascensionsidekick.com/tinker/invention",
+      "ratings": {
+        "dungeon": "S",
+        "raid": "S",
+        "arena": "A",
+        "battlegrounds": "A"
+      },
+      "popularity": 55,
+      "role": null
+    },
+    {
+      "class": "Primalist",
+      "spec": "Wildwalker",
+      "sourceUrl": "https://ascensionsidekick.com/primalist/wildwalker",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "B",
+        "arena": "S",
+        "battlegrounds": "S"
+      },
+      "popularity": 80,
+      "role": null
+    },
+    {
+      "class": "Cultist",
+      "spec": "Corruption",
+      "sourceUrl": "https://ascensionsidekick.com/cultist/corruption",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "A",
+        "arena": "S",
+        "battlegrounds": "S"
+      },
+      "popularity": 67,
+      "role": null
+    },
+    {
+      "class": "Tinker",
+      "spec": "Mechanics",
+      "sourceUrl": "https://ascensionsidekick.com/tinker/mechanics",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "B",
+        "arena": "S",
+        "battlegrounds": "S"
+      },
+      "popularity": 57,
+      "role": null
+    },
+    {
+      "class": "Pyromancer",
+      "spec": "Flameweaving",
+      "sourceUrl": "https://ascensionsidekick.com/pyromancer/flameweaving",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "S",
+        "arena": "A",
+        "battlegrounds": "A"
+      },
+      "popularity": 56,
+      "role": null
+    },
+    {
+      "class": "Primalist",
+      "spec": "Grovekeeper",
+      "sourceUrl": "https://ascensionsidekick.com/primalist/grovekeeper",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "A",
+        "arena": "A",
+        "battlegrounds": "S"
+      },
+      "popularity": 54,
+      "role": null
+    },
+    {
+      "class": "Runemaster",
+      "spec": "Riftblade",
+      "sourceUrl": "https://ascensionsidekick.com/runemaster/riftblade",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "A",
+        "arena": "A",
+        "battlegrounds": "A"
+      },
+      "popularity": 77,
+      "role": null
+    },
+    {
+      "class": "Witch Doctor",
+      "spec": "Shadowhunting",
+      "sourceUrl": "https://ascensionsidekick.com/witch-doctor/shadowhunting",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "A",
+        "arena": "A",
+        "battlegrounds": "A"
+      },
+      "popularity": 56,
+      "role": null
+    },
+    {
+      "class": "Witch Doctor",
+      "spec": "Voodoo",
+      "sourceUrl": "https://ascensionsidekick.com/witch-doctor/voodoo",
+      "ratings": {
+        "dungeon": "S",
+        "raid": "A",
+        "arena": "A",
+        "battlegrounds": "B"
+      },
+      "popularity": 54,
+      "role": null
+    },
+    {
+      "class": "Starcaller",
+      "spec": "Sentinel",
+      "sourceUrl": "https://ascensionsidekick.com/starcaller/sentinel",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "A",
+        "arena": "B",
+        "battlegrounds": "A"
+      },
+      "popularity": 77,
+      "role": null
+    },
+    {
+      "class": "Templar",
+      "spec": "Crusader",
+      "sourceUrl": "https://ascensionsidekick.com/templar/crusader",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "S",
+        "arena": "A",
+        "battlegrounds": "B"
+      },
+      "popularity": 63,
+      "role": null
+    },
+    {
+      "class": "Bloodmage",
+      "spec": "Eternal",
+      "sourceUrl": "https://ascensionsidekick.com/bloodmage/eternal",
+      "ratings": {
+        "dungeon": "S",
+        "raid": "A",
+        "arena": "C",
+        "battlegrounds": "A"
+      },
+      "popularity": 62,
+      "role": null
+    },
+    {
+      "class": "Tinker",
+      "spec": "Demolition",
+      "sourceUrl": "https://ascensionsidekick.com/tinker/demolition",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "A",
+        "arena": "A",
+        "battlegrounds": "A"
+      },
+      "popularity": 50,
+      "role": null
+    },
+    {
+      "class": "Starcaller",
+      "spec": "Moon Priest",
+      "sourceUrl": "https://ascensionsidekick.com/starcaller/moon-priest",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "B",
+        "arena": "A",
+        "battlegrounds": "A"
+      },
+      "popularity": 49,
+      "role": null
+    },
+    {
+      "class": "Necromancer",
+      "spec": "Animation",
+      "sourceUrl": "https://ascensionsidekick.com/necromancer/animation",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "B",
+        "arena": "A",
+        "battlegrounds": "A"
+      },
+      "popularity": 66,
+      "role": null
+    },
+    {
+      "class": "Cultist",
+      "spec": "Heretic",
+      "sourceUrl": "https://ascensionsidekick.com/cultist/heretic",
+      "ratings": {
+        "dungeon": "S",
+        "raid": "A",
+        "arena": "C",
+        "battlegrounds": "B"
+      },
+      "popularity": 61,
+      "role": null
+    },
+    {
+      "class": "Bloodmage",
+      "spec": "Fleshweaver",
+      "sourceUrl": "https://ascensionsidekick.com/bloodmage/fleshweaver",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "S",
+        "arena": "C",
+        "battlegrounds": "A"
+      },
+      "popularity": 59,
+      "role": null
+    },
+    {
+      "class": "Templar",
+      "spec": "Oathkeeper",
+      "sourceUrl": "https://ascensionsidekick.com/templar/oathkeeper",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "A",
+        "arena": "C",
+        "battlegrounds": "A"
+      },
+      "popularity": 49,
+      "role": null
+    },
+    {
+      "class": "Witch Hunter",
+      "spec": "Inquisition",
+      "sourceUrl": "https://ascensionsidekick.com/witch-hunter/inquisition",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "S",
+        "arena": "B",
+        "battlegrounds": "B"
+      },
+      "popularity": 47,
+      "role": null
+    },
+    {
+      "class": "Chronomancer",
+      "spec": "Infinite",
+      "sourceUrl": "https://ascensionsidekick.com/chronomancer/infinite",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "B",
+        "arena": "B",
+        "battlegrounds": "B"
+      },
+      "popularity": 85,
+      "role": null
+    },
+    {
+      "class": "Sun Cleric",
+      "spec": "Blessings",
+      "sourceUrl": "https://ascensionsidekick.com/sun-cleric/blessings",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "C",
+        "arena": "A",
+        "battlegrounds": "A"
+      },
+      "popularity": 51,
+      "role": null
+    },
+    {
+      "class": "Starcaller",
+      "spec": "Moon Guard",
+      "sourceUrl": "https://ascensionsidekick.com/starcaller/moon-guard",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "B",
+        "arena": "B",
+        "battlegrounds": "B"
+      },
+      "popularity": 51,
+      "role": null
+    },
+    {
+      "class": "Pyromancer",
+      "spec": "Incineration",
+      "sourceUrl": "https://ascensionsidekick.com/pyromancer/incineration",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "A",
+        "arena": "B",
+        "battlegrounds": "B"
+      },
+      "popularity": 45,
+      "role": null
+    },
+    {
+      "class": "Witch Doctor",
+      "spec": "Brewing",
+      "sourceUrl": "https://ascensionsidekick.com/witch-doctor/brewing",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "C",
+        "arena": "A",
+        "battlegrounds": "A"
+      },
+      "popularity": 40,
+      "role": null
+    },
+    {
+      "class": "Witch Hunter",
+      "spec": "Black Knight",
+      "sourceUrl": "https://ascensionsidekick.com/witch-hunter/black-knight",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "B",
+        "arena": "C",
+        "battlegrounds": "A"
+      },
+      "popularity": 38,
+      "role": null
+    },
+    {
+      "class": "Necromancer",
+      "spec": "Death",
+      "sourceUrl": "https://ascensionsidekick.com/necromancer/death",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "A",
+        "arena": "C",
+        "battlegrounds": "B"
+      },
+      "popularity": 38,
+      "role": null
+    },
+    {
+      "class": "Venomancer",
+      "spec": "Fortitude",
+      "sourceUrl": "https://ascensionsidekick.com/venomancer/fortitude",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "B",
+        "arena": "C",
+        "battlegrounds": "A"
+      },
+      "popularity": 35,
+      "role": null
+    },
+    {
+      "class": "Venomancer",
+      "spec": "Stalking",
+      "sourceUrl": "https://ascensionsidekick.com/venomancer/stalking",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "C",
+        "arena": "A",
+        "battlegrounds": "A"
+      },
+      "popularity": 35,
+      "role": null
+    },
+    {
+      "class": "Sun Cleric",
+      "spec": "Seraphim",
+      "sourceUrl": "https://ascensionsidekick.com/sun-cleric/seraphim",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "A",
+        "arena": "C",
+        "battlegrounds": "B"
+      },
+      "popularity": 34,
+      "role": null
+    },
+    {
+      "class": "Venomancer",
+      "spec": "Vizier",
+      "sourceUrl": "https://ascensionsidekick.com/venomancer/vizier",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "A",
+        "arena": "B",
+        "battlegrounds": "B"
+      },
+      "popularity": 33,
+      "role": null
+    },
+    {
+      "class": "Felsworn",
+      "spec": "Slayer",
+      "sourceUrl": "https://ascensionsidekick.com/felsworn/slayer",
+      "ratings": {
+        "dungeon": "C",
+        "raid": "A",
+        "arena": "B",
+        "battlegrounds": "B"
+      },
+      "popularity": 62,
+      "role": null
+    },
+    {
+      "class": "Ranger",
+      "spec": "Archery",
+      "sourceUrl": "https://ascensionsidekick.com/ranger/archery",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "S",
+        "arena": "D",
+        "battlegrounds": "C"
+      },
+      "popularity": 57,
+      "role": null
+    },
+    {
+      "class": "Bloodmage",
+      "spec": "Accursed",
+      "sourceUrl": "https://ascensionsidekick.com/bloodmage/accursed",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "S",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 43,
+      "role": null
+    },
+    {
+      "class": "Primalist",
+      "spec": "Mountain King",
+      "sourceUrl": "https://ascensionsidekick.com/primalist/mountain-king",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "B",
+        "arena": "B",
+        "battlegrounds": "B"
+      },
+      "popularity": 41,
+      "role": null
+    },
+    {
+      "class": "Sun Cleric",
+      "spec": "Piety",
+      "sourceUrl": "https://ascensionsidekick.com/sun-cleric/piety",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "B",
+        "arena": "B",
+        "battlegrounds": "B"
+      },
+      "popularity": 41,
+      "role": null
+    },
+    {
+      "class": "Stormbringer",
+      "spec": "Lightning",
+      "sourceUrl": "https://ascensionsidekick.com/stormbringer/lightning",
+      "ratings": {
+        "dungeon": "C",
+        "raid": "B",
+        "arena": "A",
+        "battlegrounds": "B"
+      },
+      "popularity": 40,
+      "role": null
+    },
+    {
+      "class": "Cultist",
+      "spec": "Godblade",
+      "sourceUrl": "https://ascensionsidekick.com/cultist/godblade",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "C",
+        "arena": "B",
+        "battlegrounds": "B"
+      },
+      "popularity": 66,
+      "role": null
+    },
+    {
+      "class": "Pyromancer",
+      "spec": "Draconic",
+      "sourceUrl": "https://ascensionsidekick.com/pyromancer/draconic",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "C",
+        "arena": "B",
+        "battlegrounds": "B"
+      },
+      "popularity": 54,
+      "role": null
+    },
+    {
+      "class": "Knight of Xoroth",
+      "spec": "Hellfire",
+      "sourceUrl": "https://ascensionsidekick.com/knight-of-xoroth/hellfire",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "A",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 53,
+      "role": null
+    },
+    {
+      "class": "Barbarian",
+      "spec": "Headhunting",
+      "sourceUrl": "https://ascensionsidekick.com/barbarian/headhunting",
+      "ratings": {
+        "dungeon": "C",
+        "raid": "C",
+        "arena": "B",
+        "battlegrounds": "A"
+      },
+      "popularity": 52,
+      "role": null
+    },
+    {
+      "class": "Runemaster",
+      "spec": "Glyphic",
+      "sourceUrl": "https://ascensionsidekick.com/runemaster/glyphic",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "D",
+        "arena": "B",
+        "battlegrounds": "B"
+      },
+      "popularity": 50,
+      "role": null
+    },
+    {
+      "class": "Stormbringer",
+      "spec": "Maelstrom",
+      "sourceUrl": "https://ascensionsidekick.com/stormbringer/maelstrom",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "D",
+        "arena": "A",
+        "battlegrounds": "B"
+      },
+      "popularity": 46,
+      "role": null
+    },
+    {
+      "class": "Reaper",
+      "spec": "Domination",
+      "sourceUrl": "https://ascensionsidekick.com/reaper/domination",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "B",
+        "arena": "D",
+        "battlegrounds": "B"
+      },
+      "popularity": 43,
+      "role": null
+    },
+    {
+      "class": "Bloodmage",
+      "spec": "Sanguine",
+      "sourceUrl": "https://ascensionsidekick.com/bloodmage/sanguine",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "A",
+        "arena": "D",
+        "battlegrounds": "B"
+      },
+      "popularity": 42,
+      "role": null
+    },
+    {
+      "class": "Guardian",
+      "spec": "Vanguard",
+      "sourceUrl": "https://ascensionsidekick.com/guardian/vanguard",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "C",
+        "arena": "C",
+        "battlegrounds": "B"
+      },
+      "popularity": 40,
+      "role": null
+    },
+    {
+      "class": "Chronomancer",
+      "spec": "Artificer",
+      "sourceUrl": "https://ascensionsidekick.com/chronomancer/artificer",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "A",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 37,
+      "role": null
+    },
+    {
+      "class": "Stormbringer",
+      "spec": "Wind",
+      "sourceUrl": "https://ascensionsidekick.com/stormbringer/wind",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "B",
+        "arena": "C",
+        "battlegrounds": "B"
+      },
+      "popularity": 33,
+      "role": null
+    },
+    {
+      "class": "Runemaster",
+      "spec": "Engravement",
+      "sourceUrl": "https://ascensionsidekick.com/runemaster/engravement",
+      "ratings": {
+        "dungeon": "C",
+        "raid": "C",
+        "arena": "B",
+        "battlegrounds": "B"
+      },
+      "popularity": 100,
+      "role": null
+    },
+    {
+      "class": "Barbarian",
+      "spec": "Brutality",
+      "sourceUrl": "https://ascensionsidekick.com/barbarian/brutality",
+      "ratings": {
+        "dungeon": "C",
+        "raid": "A",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 66,
+      "role": null
+    },
+    {
+      "class": "Knight of Xoroth",
+      "spec": "Defiance",
+      "sourceUrl": "https://ascensionsidekick.com/knight-of-xoroth/defiance",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "C",
+        "arena": "D",
+        "battlegrounds": "B"
+      },
+      "popularity": 63,
+      "role": null
+    },
+    {
+      "class": "Guardian",
+      "spec": "Inspiration",
+      "sourceUrl": "https://ascensionsidekick.com/guardian/inspiration",
+      "ratings": {
+        "dungeon": "C",
+        "raid": "B",
+        "arena": "C",
+        "battlegrounds": "B"
+      },
+      "popularity": 60,
+      "role": null
+    },
+    {
+      "class": "Chronomancer",
+      "spec": "Time",
+      "sourceUrl": "https://ascensionsidekick.com/chronomancer/time",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "D",
+        "arena": "B",
+        "battlegrounds": "B"
+      },
+      "popularity": 54,
+      "role": null
+    },
+    {
+      "class": "Primalist",
+      "spec": "Geomancy",
+      "sourceUrl": "https://ascensionsidekick.com/primalist/geomancy",
+      "ratings": {
+        "dungeon": "C",
+        "raid": "C",
+        "arena": "B",
+        "battlegrounds": "B"
+      },
+      "popularity": 37,
+      "role": null
+    },
+    {
+      "class": "Templar",
+      "spec": "Zealot",
+      "sourceUrl": "https://ascensionsidekick.com/templar/zealot",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "B",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 35,
+      "role": null
+    },
+    {
+      "class": "Venomancer",
+      "spec": "Rot",
+      "sourceUrl": "https://ascensionsidekick.com/venomancer/rot",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "B",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 34,
+      "role": null
+    },
+    {
+      "class": "Knight of Xoroth",
+      "spec": "War",
+      "sourceUrl": "https://ascensionsidekick.com/knight-of-xoroth/war",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "C",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 74,
+      "role": null
+    },
+    {
+      "class": "Sun Cleric",
+      "spec": "Valkyrie",
+      "sourceUrl": "https://ascensionsidekick.com/sun-cleric/valkyrie",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "C",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 55,
+      "role": null
+    },
+    {
+      "class": "Reaper",
+      "spec": "Soul",
+      "sourceUrl": "https://ascensionsidekick.com/reaper/soul",
+      "ratings": {
+        "dungeon": "A",
+        "raid": "C",
+        "arena": "C",
+        "battlegrounds": "D"
+      },
+      "popularity": 54,
+      "role": null
+    },
+    {
+      "class": "Starcaller",
+      "spec": "Warden",
+      "sourceUrl": "https://ascensionsidekick.com/starcaller/warden",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "C",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 44,
+      "role": null
+    },
+    {
+      "class": "Cultist",
+      "spec": "Dreadnought",
+      "sourceUrl": "https://ascensionsidekick.com/cultist/dreadnought",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "C",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 43,
+      "role": null
+    },
+    {
+      "class": "Barbarian",
+      "spec": "Ancestry",
+      "sourceUrl": "https://ascensionsidekick.com/barbarian/ancestry",
+      "ratings": {
+        "dungeon": "C",
+        "raid": "C",
+        "arena": "C",
+        "battlegrounds": "B"
+      },
+      "popularity": 39,
+      "role": null
+    },
+    {
+      "class": "Necromancer",
+      "spec": "Rime",
+      "sourceUrl": "https://ascensionsidekick.com/necromancer/rime",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "C",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 36,
+      "role": null
+    },
+    {
+      "class": "Ranger",
+      "spec": "Farstrider",
+      "sourceUrl": "https://ascensionsidekick.com/ranger/farstrider",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "C",
+        "arena": "D",
+        "battlegrounds": "B"
+      },
+      "popularity": 35,
+      "role": null
+    },
+    {
+      "class": "Guardian",
+      "spec": "Gladiator",
+      "sourceUrl": "https://ascensionsidekick.com/guardian/gladiator",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "D",
+        "arena": "B",
+        "battlegrounds": "C"
+      },
+      "popularity": 31,
+      "role": null
+    },
+    {
+      "class": "Reaper",
+      "spec": "Harvest",
+      "sourceUrl": "https://ascensionsidekick.com/reaper/harvest",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "D",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 66,
+      "role": null
+    },
+    {
+      "class": "Ranger",
+      "spec": "Brigand",
+      "sourceUrl": "https://ascensionsidekick.com/ranger/brigand",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "D",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 49,
+      "role": null
+    },
+    {
+      "class": "Witch Hunter",
+      "spec": "Boltslinger",
+      "sourceUrl": "https://ascensionsidekick.com/witch-hunter/boltslinger",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "D",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 44,
+      "role": null
+    },
+    {
+      "class": "Witch Hunter",
+      "spec": "Houndmaster",
+      "sourceUrl": "https://ascensionsidekick.com/witch-hunter/houndmaster",
+      "ratings": {
+        "dungeon": "B",
+        "raid": "D",
+        "arena": "C",
+        "battlegrounds": "C"
+      },
+      "popularity": 34,
+      "role": null
+    }
+  ]
+}

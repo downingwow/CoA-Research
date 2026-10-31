@@ -73,7 +73,7 @@ async function gearPage(params, token) {
   ];
   const scoreItem = item => {
     const stats = item.stats || {};
-    let score = Object.entries(weights).reduce((sum,[key,value]) => sum + (Number(stats[key]) || 0) * Number(value || 0), 0);
+    const spellAliases = ['spellPower','spellDamage','healingPower'];\n    let score = Object.entries(weights).reduce((sum,[key,value]) => sum + (spellAliases.includes(key) ? 0 : (Number(stats[key]) || 0) * Number(value || 0)), 0);\n    const spellWeight = Math.max(...spellAliases.map(key => Number(weights[key]) || 0));\n    const spellStat = Math.max(...spellAliases.map(key => Number(stats[key]) || 0));\n    score += spellStat * spellWeight;
     const isRange = item.slot === 'Ranged';
     const dpsWeight = isRange ? Number(weights.rangedDps || 0) : Number(weights.weaponDps || 0);
     const dps = isRange ? item.rangedDps : item.weaponDps;

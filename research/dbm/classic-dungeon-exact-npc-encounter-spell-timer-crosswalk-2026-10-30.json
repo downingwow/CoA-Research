@@ -1,0 +1,3327 @@
+{
+  "schema": "coa-research.dbm-dungeon-encounter-spell-join.v1",
+  "date": "2026-10-30",
+  "sourceRepository": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "joinMethod": "Exact NPC ID join between source dungeon encounter crosswalk and parsed SQL boss kit/SmartAI rows; difficulty encounter IDs retained; not an inference from name",
+  "status": "Source-derived mapping, not confirmed live",
+  "warnings": [
+    "Encounter IDs can be duplicated by Heroic/Mythic difficulty; these are not unique boss counts",
+    "Some NPCs may not appear in encounter credit table even though present in dungeon",
+    "SQL source is pending, not proof of deployment",
+    "Do not confuse lastDungeon LFG ID with map ID"
+  ],
+  "counts": {
+    "records": 128,
+    "matched": 113,
+    "unmatched": 15,
+    "distinctMatchedNpcs": 28,
+    "distinctUnmatchedNpcs": 4
+  },
+  "records": [
+    {
+      "npcId": 9156,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        230
+      ],
+      "encounterIds": [
+        1242,
+        2242,
+        36051
+      ],
+      "bossName": "Ambassador Flamelash",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 17,
+      "comment": "Ambassador Flamelash - Fierce Blow (log)"
+    },
+    {
+      "npcId": 9039,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        7000,
+        9000
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        230
+      ],
+      "encounterIds": [
+        1243,
+        36052
+      ],
+      "bossName": "The Seven",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 18,
+      "comment": "Doom'rel - Fierce Blow (log)"
+    },
+    {
+      "npcId": 9039,
+      "kind": "kit",
+      "spellId": 505347,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        8000
+      ],
+      "repeatMs": [
+        20000,
+        22000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        230
+      ],
+      "encounterIds": [
+        1243,
+        36052
+      ],
+      "bossName": "The Seven",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 19,
+      "comment": "Doom'rel - Mystic Thunder (Exiles)"
+    },
+    {
+      "npcId": 9019,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        230
+      ],
+      "encounterIds": [
+        1245,
+        2245
+      ],
+      "bossName": "Emperor Dagran Thaurissan",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 20,
+      "comment": "Emperor Dagran Thaurissan - Fierce Blow (log)"
+    },
+    {
+      "npcId": 9019,
+      "kind": "kit",
+      "spellId": 92603,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        10000,
+        12000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        230
+      ],
+      "encounterIds": [
+        1245,
+        2245
+      ],
+      "bossName": "Emperor Dagran Thaurissan",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 21,
+      "comment": "Emperor Dagran Thaurissan - Dark Iron Hammer (log)"
+    },
+    {
+      "npcId": 9019,
+      "kind": "kit",
+      "spellId": 92606,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        15000,
+        17000
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        230
+      ],
+      "encounterIds": [
+        1245,
+        2245
+      ],
+      "bossName": "Emperor Dagran Thaurissan",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 22,
+      "comment": "Emperor Dagran Thaurissan - Fiery Charge (log)"
+    },
+    {
+      "npcId": 9019,
+      "kind": "kit",
+      "spellId": 381251,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        12000
+      ],
+      "repeatMs": [
+        18000,
+        22000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        230
+      ],
+      "encounterIds": [
+        1245,
+        2245
+      ],
+      "bossName": "Emperor Dagran Thaurissan",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 23,
+      "comment": "Emperor Dagran Thaurissan - Frost Nova (Exiles)"
+    },
+    {
+      "npcId": 9019,
+      "kind": "kit",
+      "spellId": 815637,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        8000
+      ],
+      "repeatMs": [
+        20000,
+        22000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        230
+      ],
+      "encounterIds": [
+        1245,
+        2245
+      ],
+      "bossName": "Emperor Dagran Thaurissan",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 24,
+      "comment": "Emperor Dagran Thaurissan - Chilled Armor (Exiles)"
+    },
+    {
+      "npcId": 9033,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        7449,
+        9450
+      ],
+      "repeatMs": [
+        10000,
+        11000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        230
+      ],
+      "encounterIds": [
+        1236,
+        2236
+      ],
+      "bossName": "General Angerforge",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 25,
+      "comment": "General Angerforge - Fierce Blow (log)"
+    },
+    {
+      "npcId": 9037,
+      "kind": "kit",
+      "spellId": 13737,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        2050,
+        4050
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Gloom'rel",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 26,
+      "comment": "Gloom'rel - Mortal Strike (log)"
+    },
+    {
+      "npcId": 9037,
+      "kind": "kit",
+      "spellId": 15284,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        1549,
+        2050
+      ],
+      "repeatMs": [
+        4300,
+        4800
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Gloom'rel",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 27,
+      "comment": "Gloom'rel - Cleave (log)"
+    },
+    {
+      "npcId": 9037,
+      "kind": "kit",
+      "spellId": 13847,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        3750,
+        5750
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Gloom'rel",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 28,
+      "comment": "Gloom'rel - Recklessness (log)"
+    },
+    {
+      "npcId": 9037,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        7300,
+        9300
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Gloom'rel",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 29,
+      "comment": "Gloom'rel - Fierce Blow (log)"
+    },
+    {
+      "npcId": 9018,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        9000,
+        11000
+      ],
+      "repeatMs": [
+        9000,
+        10000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        230
+      ],
+      "encounterIds": [
+        1227,
+        2227
+      ],
+      "bossName": "High Interrogator Gerstahn",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 30,
+      "comment": "High Interrogator Gerstahn - Fierce Blow (log)"
+    },
+    {
+      "npcId": 9018,
+      "kind": "kit",
+      "spellId": 14033,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        3000,
+        4000
+      ],
+      "repeatMs": [
+        4000,
+        4500
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        230
+      ],
+      "encounterIds": [
+        1227,
+        2227
+      ],
+      "bossName": "High Interrogator Gerstahn",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 31,
+      "comment": "High Interrogator Gerstahn - Mana Burn (manual)"
+    },
+    {
+      "npcId": 9938,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        230
+      ],
+      "encounterIds": [
+        1244,
+        2244,
+        36053
+      ],
+      "bossName": "Magmus",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 32,
+      "comment": "Magmus - Fierce Blow (log)"
+    },
+    {
+      "npcId": 9502,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        230
+      ],
+      "encounterIds": [
+        1239
+      ],
+      "bossName": "Phalanx",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 33,
+      "comment": "Phalanx - Fierce Blow (log)"
+    },
+    {
+      "npcId": 9502,
+      "kind": "kit",
+      "spellId": 17203,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        230
+      ],
+      "encounterIds": [
+        1239
+      ],
+      "bossName": "Phalanx",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 34,
+      "comment": "Phalanx - Fireball Volley (manual)"
+    },
+    {
+      "npcId": 8929,
+      "kind": "kit",
+      "spellId": 10894,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        1300,
+        3300
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Princess Moira Bronzebeard",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 35,
+      "comment": "Princess Moira Bronzebeard - Shadow Word: Pain (log)"
+    },
+    {
+      "npcId": 8929,
+      "kind": "kit",
+      "spellId": 10934,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        4500,
+        6500
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Princess Moira Bronzebeard",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 36,
+      "comment": "Princess Moira Bronzebeard - Smite (log)"
+    },
+    {
+      "npcId": 8929,
+      "kind": "kit",
+      "spellId": 10917,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        22800,
+        24800
+      ],
+      "repeatMs": [
+        25000,
+        27000
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Princess Moira Bronzebeard",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 37,
+      "comment": "Princess Moira Bronzebeard - Flash Heal (log)"
+    },
+    {
+      "npcId": 8929,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Princess Moira Bronzebeard",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 38,
+      "comment": "Princess Moira Bronzebeard - Fierce Blow (log)"
+    },
+    {
+      "npcId": 10363,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8500,
+        10500
+      ],
+      "repeatMs": [
+        9000,
+        10000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1280
+      ],
+      "bossName": "General Drakkisath",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 39,
+      "comment": "General Drakkisath - Fierce Blow (log)"
+    },
+    {
+      "npcId": 10363,
+      "kind": "kit",
+      "spellId": 2102619,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        14600,
+        16600
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1280
+      ],
+      "bossName": "General Drakkisath",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 40,
+      "comment": "General Drakkisath - Thunder Clap (log)"
+    },
+    {
+      "npcId": 10363,
+      "kind": "kit",
+      "spellId": 2102203,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        22000,
+        24000
+      ],
+      "repeatMs": [
+        25000,
+        27000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1280
+      ],
+      "bossName": "General Drakkisath",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 41,
+      "comment": "General Drakkisath - Heatwave (log)"
+    },
+    {
+      "npcId": 10363,
+      "kind": "kit",
+      "spellId": 2102552,
+      "actionType": null,
+      "eventType": 2,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": 30,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1280
+      ],
+      "bossName": "General Drakkisath",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 42,
+      "comment": "General Drakkisath - Enrage (Exiles)"
+    },
+    {
+      "npcId": 10220,
+      "kind": "kit",
+      "spellId": 2100428,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        4000,
+        6000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1274
+      ],
+      "bossName": "Halycon",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 43,
+      "comment": "Halycon - Furious Howl (log)"
+    },
+    {
+      "npcId": 10220,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        7000,
+        9000
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1274
+      ],
+      "bossName": "Halycon",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 44,
+      "comment": "Halycon - Fierce Blow (log)"
+    },
+    {
+      "npcId": 9196,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        7000,
+        9000
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1267
+      ],
+      "bossName": "Highlord Omokk",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 45,
+      "comment": "Highlord Omokk - Fierce Blow (log)"
+    },
+    {
+      "npcId": 9196,
+      "kind": "kit",
+      "spellId": 2100148,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        13600,
+        15600
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1267
+      ],
+      "bossName": "Highlord Omokk",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 46,
+      "comment": "Highlord Omokk - Crush Armor (log)"
+    },
+    {
+      "npcId": 9568,
+      "kind": "kit",
+      "spellId": 2100345,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        10000,
+        12000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1275
+      ],
+      "bossName": "Overlord Wyrmthalak",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 47,
+      "comment": "Overlord Wyrmthalak - Pierce Armor (log)"
+    },
+    {
+      "npcId": 9568,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        7000,
+        9000
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1275
+      ],
+      "bossName": "Overlord Wyrmthalak",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 48,
+      "comment": "Overlord Wyrmthalak - Fierce Blow (log)"
+    },
+    {
+      "npcId": 9816,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1276
+      ],
+      "bossName": "Pyroguard Emberseer",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 49,
+      "comment": "Pyroguard Emberseer - Fierce Blow (log)"
+    },
+    {
+      "npcId": 9816,
+      "kind": "kit",
+      "spellId": 2102189,
+      "actionType": null,
+      "eventType": 4,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1276
+      ],
+      "bossName": "Pyroguard Emberseer",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 50,
+      "comment": "Pyroguard Emberseer - Gathering Heat (Exiles)"
+    },
+    {
+      "npcId": 9816,
+      "kind": "kit",
+      "spellId": 2102825,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        12000
+      ],
+      "repeatMs": [
+        12000,
+        16000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1276
+      ],
+      "bossName": "Pyroguard Emberseer",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 51,
+      "comment": "Pyroguard Emberseer - Immolation (Exiles)"
+    },
+    {
+      "npcId": 9736,
+      "kind": "kit",
+      "spellId": 2102850,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        1000,
+        3000
+      ],
+      "repeatMs": [
+        20000,
+        22000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1272
+      ],
+      "bossName": "Quartermaster Zigris",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 52,
+      "comment": "Quartermaster Zigris - Auto Shot (log)"
+    },
+    {
+      "npcId": 9736,
+      "kind": "kit",
+      "spellId": 2100255,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        2600,
+        4600
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1272
+      ],
+      "bossName": "Quartermaster Zigris",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 53,
+      "comment": "Quartermaster Zigris - Throw Net (log)"
+    },
+    {
+      "npcId": 9736,
+      "kind": "kit",
+      "spellId": 2102851,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        7000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1272
+      ],
+      "bossName": "Quartermaster Zigris",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 54,
+      "comment": "Quartermaster Zigris - Throw Proximity Mine (log)"
+    },
+    {
+      "npcId": 9736,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        7000,
+        9000
+      ],
+      "repeatMs": [
+        7000,
+        8000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1272
+      ],
+      "bossName": "Quartermaster Zigris",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 55,
+      "comment": "Quartermaster Zigris - Fierce Blow (log)"
+    },
+    {
+      "npcId": 10430,
+      "kind": "kit",
+      "spellId": 2102192,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        1000,
+        3000
+      ],
+      "repeatMs": [
+        20000,
+        22000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1279
+      ],
+      "bossName": "The Beast",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 56,
+      "comment": "The Beast - Flame Breath (log)"
+    },
+    {
+      "npcId": 10430,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        9000,
+        11000
+      ],
+      "repeatMs": [
+        9000,
+        10000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1279
+      ],
+      "bossName": "The Beast",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 57,
+      "comment": "The Beast - Fierce Blow (log)"
+    },
+    {
+      "npcId": 10430,
+      "kind": "kit",
+      "spellId": 2102159,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        29000,
+        31000
+      ],
+      "repeatMs": [
+        35000,
+        37000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1279
+      ],
+      "bossName": "The Beast",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 58,
+      "comment": "The Beast - Overrun (log)"
+    },
+    {
+      "npcId": 10430,
+      "kind": "kit",
+      "spellId": 2100205,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        12000
+      ],
+      "repeatMs": [
+        10000,
+        14000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1279
+      ],
+      "bossName": "The Beast",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 59,
+      "comment": "The Beast - Blast Wave (Exiles)"
+    },
+    {
+      "npcId": 10430,
+      "kind": "kit",
+      "spellId": 2100439,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        8000
+      ],
+      "repeatMs": [
+        20000,
+        22000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1279
+      ],
+      "bossName": "The Beast",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 60,
+      "comment": "The Beast - Bellowing Roar (Exiles)"
+    },
+    {
+      "npcId": 9237,
+      "kind": "kit",
+      "spellId": 2100465,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        3550,
+        5550
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1269
+      ],
+      "bossName": "War Master Voone",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 61,
+      "comment": "War Master Voone - Counter Kick (log)"
+    },
+    {
+      "npcId": 9237,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        7449,
+        9450
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1269
+      ],
+      "bossName": "War Master Voone",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 62,
+      "comment": "War Master Voone - Fierce Blow (log)"
+    },
+    {
+      "npcId": 9237,
+      "kind": "kit",
+      "spellId": 15284,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1269
+      ],
+      "bossName": "War Master Voone",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 63,
+      "comment": "War Master Voone - Cleave (manual)"
+    },
+    {
+      "npcId": 9237,
+      "kind": "kit",
+      "spellId": 15615,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        10000,
+        12000
+      ],
+      "repeatMs": [
+        16000,
+        18000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1269
+      ],
+      "bossName": "War Master Voone",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 64,
+      "comment": "War Master Voone - Pummel (manual)"
+    },
+    {
+      "npcId": 9237,
+      "kind": "kit",
+      "spellId": 10966,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        12000,
+        14000
+      ],
+      "repeatMs": [
+        14000,
+        16000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1269
+      ],
+      "bossName": "War Master Voone",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 65,
+      "comment": "War Master Voone - Uppercut (manual)"
+    },
+    {
+      "npcId": 646,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        7550,
+        9550
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1164
+      ],
+      "bossName": "Mr. Smite",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 66,
+      "comment": "Mr. Smite - Fierce Blow (log)"
+    },
+    {
+      "npcId": 646,
+      "kind": "kit",
+      "spellId": 2102553,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        15000,
+        17000
+      ],
+      "repeatMs": [
+        15000,
+        17000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1164
+      ],
+      "bossName": "Mr. Smite",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 67,
+      "comment": "Mr. Smite - Stunning Strike (log)"
+    },
+    {
+      "npcId": 646,
+      "kind": "kit",
+      "spellId": 2102580,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        2600,
+        4600
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1164
+      ],
+      "bossName": "Mr. Smite",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 68,
+      "comment": "Mr. Smite - Rupture (log)"
+    },
+    {
+      "npcId": 646,
+      "kind": "kit",
+      "spellId": 2102576,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        8000
+      ],
+      "repeatMs": [
+        65000,
+        67000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1164
+      ],
+      "bossName": "Mr. Smite",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 69,
+      "comment": "Mr. Smite - Smite Rush (Exiles)"
+    },
+    {
+      "npcId": 646,
+      "kind": "kit",
+      "spellId": 2102577,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        8000
+      ],
+      "repeatMs": [
+        20000,
+        22000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1164
+      ],
+      "bossName": "Mr. Smite",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 70,
+      "comment": "Mr. Smite - Retaliation (Exiles)"
+    },
+    {
+      "npcId": 1853,
+      "kind": "kit",
+      "spellId": 2100397,
+      "actionType": null,
+      "eventType": 2,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": 52,
+      "mapIds": [
+        289
+      ],
+      "encounterIds": [
+        1463,
+        2463
+      ],
+      "bossName": "Darkmaster Gandling",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 71,
+      "comment": "Darkmaster Gandling - Rise! (log)"
+    },
+    {
+      "npcId": 1853,
+      "kind": "kit",
+      "spellId": 2100398,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        1500,
+        2000
+      ],
+      "repeatMs": [
+        3000,
+        3500
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        289
+      ],
+      "encounterIds": [
+        1463,
+        2463
+      ],
+      "bossName": "Darkmaster Gandling",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 72,
+      "comment": "Darkmaster Gandling - Rise! (log)"
+    },
+    {
+      "npcId": 1853,
+      "kind": "kit",
+      "spellId": 2100389,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        1000,
+        1500
+      ],
+      "repeatMs": [
+        2900,
+        3400
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        289
+      ],
+      "encounterIds": [
+        1463,
+        2463
+      ],
+      "bossName": "Darkmaster Gandling",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 73,
+      "comment": "Darkmaster Gandling - Incinerate (log)"
+    },
+    {
+      "npcId": 1853,
+      "kind": "kit",
+      "spellId": 2100393,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        10000,
+        12000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        289
+      ],
+      "encounterIds": [
+        1463,
+        2463
+      ],
+      "bossName": "Darkmaster Gandling",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 74,
+      "comment": "Darkmaster Gandling - Immolate (log)"
+    },
+    {
+      "npcId": 10506,
+      "kind": "kit",
+      "spellId": 2100034,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        3100,
+        3600
+      ],
+      "repeatMs": [
+        3100,
+        3600
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        289
+      ],
+      "encounterIds": [
+        1451,
+        2451
+      ],
+      "bossName": "Kirtonos the Herald",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 75,
+      "comment": "Kirtonos the Herald - Shadow Bolt (log)"
+    },
+    {
+      "npcId": 10506,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        289
+      ],
+      "encounterIds": [
+        1451,
+        2451
+      ],
+      "bossName": "Kirtonos the Herald",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 76,
+      "comment": "Kirtonos the Herald - Fierce Blow (log)"
+    },
+    {
+      "npcId": 10506,
+      "kind": "kit",
+      "spellId": 2100004,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        10000,
+        12000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        289
+      ],
+      "encounterIds": [
+        1451,
+        2451
+      ],
+      "bossName": "Kirtonos the Herald",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 77,
+      "comment": "Kirtonos the Herald - Cleave (log)"
+    },
+    {
+      "npcId": 10436,
+      "kind": "kit",
+      "spellId": 816867,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        10000,
+        12000
+      ],
+      "repeatMs": [
+        10000,
+        12000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        329
+      ],
+      "encounterIds": [
+        1479,
+        2479
+      ],
+      "bossName": "Baroness Anastari",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 78,
+      "comment": "Baroness Anastari - Curse of the Baroness (log)"
+    },
+    {
+      "npcId": 10436,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        329
+      ],
+      "encounterIds": [
+        1479,
+        2479
+      ],
+      "bossName": "Baroness Anastari",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 79,
+      "comment": "Baroness Anastari - Fierce Blow (log)"
+    },
+    {
+      "npcId": 7604,
+      "kind": "kit",
+      "spellId": 975011,
+      "actionType": null,
+      "eventType": 0,
+      "initialMs": [
+        5800,
+        7800
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": 0,
+      "mapIds": [
+        209
+      ],
+      "encounterIds": [
+        2626
+      ],
+      "bossName": "Sergeant Bly",
+      "source": "data/sql/updates/pending_db_world/rev_20261001_10_boss_kits_scripted.sql",
+      "line": 80,
+      "comment": "Sergeant Bly - Fierce Blow (log)"
+    },
+    {
+      "npcId": 639,
+      "kind": "smart",
+      "spellId": 674,
+      "actionType": 11,
+      "eventType": 1,
+      "initialMs": [
+        1000,
+        1000
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1167
+      ],
+      "bossName": "Edwin VanCleef",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 7,
+      "comment": "Edwin VanCleef - Out of Combat - Cast 'Dual Wield' (No Repeat)"
+    },
+    {
+      "npcId": 639,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 1,
+      "eventType": 4,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1167
+      ],
+      "bossName": "Edwin VanCleef",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 8,
+      "comment": "Edwin VanCleef - On Aggro - Say Line 0"
+    },
+    {
+      "npcId": 639,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 1,
+      "eventType": 2,
+      "initialMs": [
+        34,
+        66
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1167
+      ],
+      "bossName": "Edwin VanCleef",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 9,
+      "comment": "Edwin VanCleef - Between 34-66% Health - Say Line 1 (No Repeat)"
+    },
+    {
+      "npcId": 639,
+      "kind": "smart",
+      "spellId": 5200,
+      "actionType": 11,
+      "eventType": 2,
+      "initialMs": [
+        0,
+        50
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1167
+      ],
+      "bossName": "Edwin VanCleef",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 10,
+      "comment": "Edwin VanCleef - Between 0-50% Health - Cast 'VanCleef`s Allies' (No Repeat)"
+    },
+    {
+      "npcId": 639,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 1,
+      "eventType": 61,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1167
+      ],
+      "bossName": "Edwin VanCleef",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 11,
+      "comment": "Edwin VanCleef - Between 0-50% Health - Say Line 2 (No Repeat)"
+    },
+    {
+      "npcId": 639,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 1,
+      "eventType": 2,
+      "initialMs": [
+        0,
+        33
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1167
+      ],
+      "bossName": "Edwin VanCleef",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 12,
+      "comment": "Edwin VanCleef - Between 0-33% Health - Say Line 3 (No Repeat)"
+    },
+    {
+      "npcId": 639,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 1,
+      "eventType": 5,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1167
+      ],
+      "bossName": "Edwin VanCleef",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 13,
+      "comment": "Edwin VanCleef - On Killed Unit - Say Line 4"
+    },
+    {
+      "npcId": 639,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 1,
+      "eventType": 6,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1167
+      ],
+      "bossName": "Edwin VanCleef",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 14,
+      "comment": "Edwin VanCleef - On Just Died - Say Line 5"
+    },
+    {
+      "npcId": 639,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 12,
+      "eventType": 61,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1167
+      ],
+      "bossName": "Edwin VanCleef",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 15,
+      "comment": "Edwin VanCleef - Between 34-66% Health - Summon Buster Call Marker"
+    },
+    {
+      "npcId": 639,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 12,
+      "eventType": 61,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1167
+      ],
+      "bossName": "Edwin VanCleef",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 16,
+      "comment": "Edwin VanCleef - Between 34-66% Health - Summon Buster Call Marker"
+    },
+    {
+      "npcId": 639,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 12,
+      "eventType": 61,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1167
+      ],
+      "bossName": "Edwin VanCleef",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 17,
+      "comment": "Edwin VanCleef - Between 34-66% Health - Summon Buster Call Marker"
+    },
+    {
+      "npcId": 639,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 12,
+      "eventType": 61,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1167
+      ],
+      "bossName": "Edwin VanCleef",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 18,
+      "comment": "Edwin VanCleef - Between 0-33% Health - Summon Buster Call Marker"
+    },
+    {
+      "npcId": 639,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 12,
+      "eventType": 61,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1167
+      ],
+      "bossName": "Edwin VanCleef",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 19,
+      "comment": "Edwin VanCleef - Between 0-33% Health - Summon Buster Call Marker"
+    },
+    {
+      "npcId": 639,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 12,
+      "eventType": 61,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1167
+      ],
+      "bossName": "Edwin VanCleef",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 20,
+      "comment": "Edwin VanCleef - Between 0-33% Health - Summon Buster Call Marker"
+    },
+    {
+      "npcId": 642,
+      "kind": "smart",
+      "spellId": 5141,
+      "actionType": 11,
+      "eventType": 6,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1162
+      ],
+      "bossName": "Sneed",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 23,
+      "comment": "Sneed's Shredder - On Just Died - Cast Eject Sneed"
+    },
+    {
+      "npcId": 642,
+      "kind": "smart",
+      "spellId": 975011,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        8400,
+        8400
+      ],
+      "repeatMs": [
+        7800,
+        7800
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1162
+      ],
+      "bossName": "Sneed",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 24,
+      "comment": "Sneed's Shredder - In Combat - Cast Fierce Blow"
+    },
+    {
+      "npcId": 642,
+      "kind": "smart",
+      "spellId": 2102559,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        12000,
+        15000
+      ],
+      "repeatMs": [
+        20000,
+        25000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1162
+      ],
+      "bossName": "Sneed",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 25,
+      "comment": "Sneed's Shredder - In Combat - Cast Bouncing Saw Blade"
+    },
+    {
+      "npcId": 642,
+      "kind": "smart",
+      "spellId": 2102569,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        8000
+      ],
+      "repeatMs": [
+        15000,
+        20000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1162
+      ],
+      "bossName": "Sneed",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 26,
+      "comment": "Sneed's Shredder - In Combat - Cast Throw Buzzing Saw Blade"
+    },
+    {
+      "npcId": 643,
+      "kind": "smart",
+      "spellId": 6713,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        1000,
+        7000
+      ],
+      "repeatMs": [
+        20000,
+        25000
+      ],
+      "healthPct": null,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Sneed",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 29,
+      "comment": "Sneed - In Combat - Cast Disarm"
+    },
+    {
+      "npcId": 643,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 9,
+      "eventType": 6,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Sneed",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 30,
+      "comment": "Sneed - Open Door on Death"
+    },
+    {
+      "npcId": 643,
+      "kind": "smart",
+      "spellId": 975011,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        8400,
+        8400
+      ],
+      "repeatMs": [
+        7800,
+        7800
+      ],
+      "healthPct": null,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Sneed",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 31,
+      "comment": "Sneed - In Combat - Cast Fierce Blow"
+    },
+    {
+      "npcId": 644,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 1,
+      "eventType": 4,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1161
+      ],
+      "bossName": "Rhahk'zor",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 34,
+      "comment": "Rhahk'Zor - On Aggro - Say Line 0"
+    },
+    {
+      "npcId": 644,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 9,
+      "eventType": 6,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1161
+      ],
+      "bossName": "Rhahk'zor",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 35,
+      "comment": "Rhahk'Zor - On Just Died - Activate Gameobject"
+    },
+    {
+      "npcId": 644,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 34,
+      "eventType": 61,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1161
+      ],
+      "bossName": "Rhahk'zor",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 36,
+      "comment": "Rhahk'Zor - On Just Died - Set Instance Data 0 to 3"
+    },
+    {
+      "npcId": 644,
+      "kind": "smart",
+      "spellId": 975011,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        8400,
+        8400
+      ],
+      "repeatMs": [
+        7800,
+        7800
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1161
+      ],
+      "bossName": "Rhahk'zor",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 37,
+      "comment": "Rhahk'Zor - In Combat - Cast Fierce Blow"
+    },
+    {
+      "npcId": 644,
+      "kind": "smart",
+      "spellId": 2102553,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        12000,
+        16000
+      ],
+      "repeatMs": [
+        15000,
+        20000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1161
+      ],
+      "bossName": "Rhahk'zor",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 38,
+      "comment": "Rhahk'Zor - In Combat - Cast Stunning Strike"
+    },
+    {
+      "npcId": 644,
+      "kind": "smart",
+      "spellId": 2102554,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        15000,
+        20000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1161
+      ],
+      "bossName": "Rhahk'zor",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 39,
+      "comment": "Rhahk'Zor - In Combat - Cast Bladestorm"
+    },
+    {
+      "npcId": 645,
+      "kind": "smart",
+      "spellId": 2102590,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        20000,
+        25000
+      ],
+      "repeatMs": [
+        30000,
+        40000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1165
+      ],
+      "bossName": "Cookie",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 42,
+      "comment": "Cookie - In Combat - Cast Cookie's Cooking"
+    },
+    {
+      "npcId": 645,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 21,
+      "eventType": 4,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1165
+      ],
+      "bossName": "Cookie",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 43,
+      "comment": "Cookie - On Aggro - Stop Combat Movement"
+    },
+    {
+      "npcId": 645,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 97,
+      "eventType": 61,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1165
+      ],
+      "bossName": "Cookie",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 44,
+      "comment": "Cookie - On Aggro - Jump Into Cauldron"
+    },
+    {
+      "npcId": 645,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 22,
+      "eventType": 34,
+      "initialMs": [
+        16,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1165
+      ],
+      "bossName": "Cookie",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 45,
+      "comment": "Cookie - Landed In Cauldron - Set Phase 2"
+    },
+    {
+      "npcId": 645,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 103,
+      "eventType": 61,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1165
+      ],
+      "bossName": "Cookie",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 46,
+      "comment": "Cookie - Landed In Cauldron - Root"
+    },
+    {
+      "npcId": 645,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 22,
+      "eventType": 7,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1165
+      ],
+      "bossName": "Cookie",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 47,
+      "comment": "Cookie - On Evade - Set Phase 0"
+    },
+    {
+      "npcId": 645,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 21,
+      "eventType": 61,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1165
+      ],
+      "bossName": "Cookie",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 48,
+      "comment": "Cookie - On Evade - Allow Combat Movement"
+    },
+    {
+      "npcId": 645,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 103,
+      "eventType": 61,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1165
+      ],
+      "bossName": "Cookie",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 49,
+      "comment": "Cookie - On Evade - Unroot"
+    },
+    {
+      "npcId": 645,
+      "kind": "smart",
+      "spellId": 2102589,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        1500,
+        2500
+      ],
+      "repeatMs": [
+        1600,
+        1700
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1165
+      ],
+      "bossName": "Cookie",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 50,
+      "comment": "Cookie - In Cauldron - Cast Throw Food"
+    },
+    {
+      "npcId": 645,
+      "kind": "smart",
+      "spellId": 2102527,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        12000
+      ],
+      "repeatMs": [
+        12000,
+        18000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1165
+      ],
+      "bossName": "Cookie",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 51,
+      "comment": "Cookie - In Cauldron - Cast Throw Poison Vial"
+    },
+    {
+      "npcId": 647,
+      "kind": "smart",
+      "spellId": 40505,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        1000,
+        7000
+      ],
+      "repeatMs": [
+        10000,
+        15000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1166
+      ],
+      "bossName": "Captain Greenskin",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 54,
+      "comment": "Captain Greenskin - In Combat - Cast Cleave"
+    },
+    {
+      "npcId": 647,
+      "kind": "smart",
+      "spellId": 5208,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        10000,
+        12000
+      ],
+      "repeatMs": [
+        25000,
+        35000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1166
+      ],
+      "bossName": "Captain Greenskin",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 55,
+      "comment": "Captain Greenskin - In Combat - Cast Poisoned Harpoon"
+    },
+    {
+      "npcId": 647,
+      "kind": "smart",
+      "spellId": 975011,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        8400,
+        8400
+      ],
+      "repeatMs": [
+        7800,
+        7800
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1166
+      ],
+      "bossName": "Captain Greenskin",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 56,
+      "comment": "Captain Greenskin - In Combat - Cast Fierce Blow"
+    },
+    {
+      "npcId": 647,
+      "kind": "smart",
+      "spellId": 2101111,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        15000,
+        20000
+      ],
+      "repeatMs": [
+        20000,
+        25000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1166
+      ],
+      "bossName": "Captain Greenskin",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 57,
+      "comment": "Captain Greenskin - In Combat - Cast Frost Nova"
+    },
+    {
+      "npcId": 1763,
+      "kind": "smart",
+      "spellId": 5213,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        1000,
+        6000
+      ],
+      "repeatMs": [
+        15000,
+        25000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1163
+      ],
+      "bossName": "Gilnid",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 60,
+      "comment": "Gilnid - In Combat - Cast Molten Metal"
+    },
+    {
+      "npcId": 1763,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 1,
+      "eventType": 1,
+      "initialMs": [
+        120000,
+        120000
+      ],
+      "repeatMs": [
+        120000,
+        120000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1163
+      ],
+      "bossName": "Gilnid",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 61,
+      "comment": "Gilnid - Out of Combat - Say Line 0"
+    },
+    {
+      "npcId": 1763,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 9,
+      "eventType": 6,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1163
+      ],
+      "bossName": "Gilnid",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 62,
+      "comment": "Gilnid - On Just Died - Activate Gameobject"
+    },
+    {
+      "npcId": 1763,
+      "kind": "smart",
+      "spellId": 975011,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        8400,
+        8400
+      ],
+      "repeatMs": [
+        7800,
+        7800
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1163
+      ],
+      "bossName": "Gilnid",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 63,
+      "comment": "Gilnid - In Combat - Cast Fierce Blow"
+    },
+    {
+      "npcId": 1763,
+      "kind": "smart",
+      "spellId": 2102571,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        10000,
+        14000
+      ],
+      "repeatMs": [
+        18000,
+        24000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        36
+      ],
+      "encounterIds": [
+        1163
+      ],
+      "bossName": "Gilnid",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 64,
+      "comment": "Gilnid - In Combat - Cast Melt Ore"
+    },
+    {
+      "npcId": 10509,
+      "kind": "smart",
+      "spellId": null,
+      "actionType": 41,
+      "eventType": 37,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1143,
+        2143
+      ],
+      "bossName": "Jed Runewatcher",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 67,
+      "comment": "On AI initialize - None: Despawn in 0.5 s"
+    },
+    {
+      "npcId": 10509,
+      "kind": "smart",
+      "spellId": 14516,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        7000
+      ],
+      "repeatMs": [
+        4000,
+        6000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1143,
+        2143
+      ],
+      "bossName": "Jed Runewatcher",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 68,
+      "comment": "Every 4 - 6 seconds (5 - 7s initially)  - Self: Cast spell Strike (14516) on Victim"
+    },
+    {
+      "npcId": 10509,
+      "kind": "smart",
+      "spellId": 11972,
+      "actionType": 11,
+      "eventType": 105,
+      "initialMs": [
+        10000,
+        10000
+      ],
+      "repeatMs": [
+        10000,
+        10000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1143,
+        2143
+      ],
+      "bossName": "Jed Runewatcher",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 69,
+      "comment": "Every 10 seconds  - Self: Cast spell Shield Bash (11972) on Victim"
+    },
+    {
+      "npcId": 10509,
+      "kind": "smart",
+      "spellId": 15749,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        10000,
+        10000
+      ],
+      "repeatMs": [
+        5000,
+        15000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1143,
+        2143
+      ],
+      "bossName": "Jed Runewatcher",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 70,
+      "comment": "Every 5 - 15 seconds (10 - 10s initially)  - Self: Cast spell Shield Charge (15749) on Random hostile"
+    },
+    {
+      "npcId": 10509,
+      "kind": "smart",
+      "spellId": 2102741,
+      "actionType": 11,
+      "eventType": 4,
+      "initialMs": [
+        0,
+        0
+      ],
+      "repeatMs": [
+        0,
+        0
+      ],
+      "healthPct": null,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1143,
+        2143
+      ],
+      "bossName": "Jed Runewatcher",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 71,
+      "comment": "Jed Runewatcher - On Aggro - Cast 'Defensive Stance'"
+    },
+    {
+      "npcId": 10509,
+      "kind": "smart",
+      "spellId": 2102840,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        12000
+      ],
+      "repeatMs": [
+        15000,
+        20000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1143,
+        2143
+      ],
+      "bossName": "Jed Runewatcher",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 72,
+      "comment": "Jed Runewatcher - In Combat - Cast 'Berserker Charge' on Random hostile"
+    },
+    {
+      "npcId": 10509,
+      "kind": "smart",
+      "spellId": 975011,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        7700,
+        9700
+      ],
+      "repeatMs": [
+        8000,
+        9000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1143,
+        2143
+      ],
+      "bossName": "Jed Runewatcher",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 73,
+      "comment": "Jed Runewatcher - In Combat - Cast 'Fierce Blow' on Victim"
+    },
+    {
+      "npcId": 10899,
+      "kind": "smart",
+      "spellId": 15580,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        7000
+      ],
+      "repeatMs": [
+        4000,
+        6000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1142,
+        2142
+      ],
+      "bossName": "Goraluk Anvilcrack",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 76,
+      "comment": "Every 4 - 6 seconds (5 - 7s initially)  - Self: Cast spell Strike (15580) on Victim"
+    },
+    {
+      "npcId": 10899,
+      "kind": "smart",
+      "spellId": 16172,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        10000
+      ],
+      "repeatMs": [
+        20000,
+        20000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1142,
+        2142
+      ],
+      "bossName": "Goraluk Anvilcrack",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 77,
+      "comment": "Every 20 - 20 seconds (5 - 10s initially)  - Self: Cast spell Head Crack (16172) on Victim"
+    },
+    {
+      "npcId": 10899,
+      "kind": "smart",
+      "spellId": 6253,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        10000,
+        10000
+      ],
+      "repeatMs": [
+        10000,
+        10000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1142,
+        2142
+      ],
+      "bossName": "Goraluk Anvilcrack",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 78,
+      "comment": "Every 10 seconds  - Self: Cast spell Backhand (6253) on Victim"
+    },
+    {
+      "npcId": 10899,
+      "kind": "smart",
+      "spellId": 2102553,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        8000,
+        10000
+      ],
+      "repeatMs": [
+        12000,
+        16000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1142,
+        2142
+      ],
+      "bossName": "Goraluk Anvilcrack",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 79,
+      "comment": "Goraluk Anvilcrack - In Combat - Cast 'Stunning Strike' on Victim"
+    },
+    {
+      "npcId": 10899,
+      "kind": "smart",
+      "spellId": 2102138,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        6000,
+        6000
+      ],
+      "repeatMs": [
+        25000,
+        30000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1142,
+        2142
+      ],
+      "bossName": "Goraluk Anvilcrack",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 80,
+      "comment": "Goraluk Anvilcrack - In Combat - Cast 'Enchant Armor - Protection V'"
+    },
+    {
+      "npcId": 10899,
+      "kind": "smart",
+      "spellId": 2102137,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        16000,
+        16000
+      ],
+      "repeatMs": [
+        25000,
+        30000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1142,
+        2142
+      ],
+      "bossName": "Goraluk Anvilcrack",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 81,
+      "comment": "Goraluk Anvilcrack - In Combat - Cast 'Enchant Pickaxe - Efficieny V'"
+    },
+    {
+      "npcId": 10899,
+      "kind": "smart",
+      "spellId": 975011,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        7000
+      ],
+      "repeatMs": [
+        6000,
+        8000
+      ],
+      "healthPct": null,
+      "mapIds": [
+        229
+      ],
+      "encounterIds": [
+        1142,
+        2142
+      ],
+      "bossName": "Goraluk Anvilcrack",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 82,
+      "comment": "Goraluk Anvilcrack - In Combat - Cast 'Fierce Blow' on Victim"
+    },
+    {
+      "npcId": 10814,
+      "kind": "smart",
+      "spellId": 15708,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        12800
+      ],
+      "repeatMs": [
+        13000,
+        13000
+      ],
+      "healthPct": null,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Chromatic Elite Guard",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 86,
+      "comment": "Chromatic Elite Guard - In Combat - Cast 'Mortal Strike' (Normal Dungeon)"
+    },
+    {
+      "npcId": 10814,
+      "kind": "smart",
+      "spellId": 16790,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        5600,
+        15400
+      ],
+      "repeatMs": [
+        11200,
+        25700
+      ],
+      "healthPct": null,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Chromatic Elite Guard",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 87,
+      "comment": "Chromatic Elite Guard - In Combat - Cast 'Stunning Strike' (Normal Dungeon)"
+    },
+    {
+      "npcId": 10814,
+      "kind": "smart",
+      "spellId": 15580,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        12000,
+        20800
+      ],
+      "repeatMs": [
+        9000,
+        9000
+      ],
+      "healthPct": null,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Chromatic Elite Guard",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 88,
+      "comment": "Chromatic Elite Guard - In Combat - Cast 'Strike' (Normal Dungeon)"
+    },
+    {
+      "npcId": 10814,
+      "kind": "smart",
+      "spellId": 975011,
+      "actionType": 11,
+      "eventType": 0,
+      "initialMs": [
+        5000,
+        7000
+      ],
+      "repeatMs": [
+        6000,
+        8000
+      ],
+      "healthPct": null,
+      "mapIds": [],
+      "encounterIds": [],
+      "bossName": "Chromatic Elite Guard",
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "line": 89,
+      "comment": "Chromatic Elite Guard - In Combat - Cast 'Fierce Blow' (Normal Dungeon)"
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "schema": "coa-research.dbm-classic-mechanics-evidence-handoff.v1",
+  "generatedOn": "2026-10-30",
+  "source": "research/dbm/vanilla-eight-dungeon-mechanics-sql-evidence-2026-10-30.json",
+  "scope": "Classic only",
+  "purpose": "Candidate DBM warning events, cast IDs, scripted phase triggers, and testing checklist",
+  "rules": [
+    "Comments describe intended behavior, not confirmed live deployment",
+    "spell_script_names proves pending binding only, not live cast or warning semantics",
+    "No timers or cadence invented from comments",
+    "No player/pet warnings",
+    "Map assignment based on filenames and is not sufficient to activate a module",
+    "Verify spell ID via live combat log and source C++ before warnings"
+  ],
+  "counts": {
+    "sourceMigrations": 8,
+    "spellBindings": 9,
+    "mechanicEvidenceLines": 64
+  },
+  "entries": [
+    {
+      "source": "data/sql/updates/pending_db_world/rev_20260930_70_deadmines_bosses.sql",
+      "mapId": 36,
+      "mapAssignment": "derived from migration filename, needs verification",
+      "scriptBindings": [
+        {
+          "spellId": 2102559,
+          "script": "spell_coa_bouncing_saw_blade"
+        }
+      ],
+      "mechanicEvidence": [
+        {
+          "sourceLine": 1,
+          "sqlOrComment": "-- Deadmines Heroic/Mythic boss fixes (30.09.2026)"
+        },
+        {
+          "sourceLine": 3,
+          "sqlOrComment": "-- Bouncing Saw Blade: 1 target on Normal/Heroic, 3 on Mythic (CoADungeonBossSpells.cpp)"
+        },
+        {
+          "sourceLine": 4,
+          "sqlOrComment": "DELETE FROM `spell_script_names` WHERE `spell_id` = 2102559;"
+        },
+        {
+          "sourceLine": 5,
+          "sqlOrComment": "INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES (2102559, 'spell_coa_bouncing_saw_blade');"
+        },
+        {
+          "sourceLine": 6,
+          "sqlOrComment": "-- Throw Buzzing Saw Blade summons Buzzing Saw Blade (180237), which src/server/coa/AscensionDeadminesBosses.cpp drives."
+        },
+        {
+          "sourceLine": 16,
+          "sqlOrComment": "-- Cannonball target (9780600): Edwin VanCleef calls cannon fire at 75/50/25 % on Heroic/Mythic (one under each player,"
+        },
+        {
+          "sourceLine": 17,
+          "sqlOrComment": "-- four around him). the cannon target marker 255338 (\"[PH] Visual: Target Cannon\", confirmed ingame) warns for 3 seconds, then Ascension's Cannon Shot hits 5 yards (1000 Heroic / 1300 Mythic"
+        }
+      ],
+      "implementationStatus": "candidate evidence only; no active DBM timer until in-game validation"
+    },
+    {
+      "source": "data/sql/updates/pending_db_world/rev_20261002_20_sm_scholo.sql",
+      "mapId": null,
+      "mapAssignment": "multiple dungeons or unresolved",
+      "scriptBindings": [],
+      "mechanicEvidence": [
+        {
+          "sourceLine": 3,
+          "sqlOrComment": "-- Scarlet Monastery Graveyard: Azshir, Ironspine and Scorn at the Ascension positions placed ingame on Mythic,"
+        },
+        {
+          "sourceLine": 7,
+          "sqlOrComment": "-- Scorn (14693) had trash stats on Heroic/Mythic: same as Azshir now (level 63, rare elite, boss damage and health)"
+        }
+      ],
+      "implementationStatus": "candidate evidence only; no active DBM timer until in-game validation"
+    },
+    {
+      "source": "data/sql/updates/pending_db_world/rev_20261003_30_stratholme.sql",
+      "mapId": 329,
+      "mapAssignment": "derived from migration filename, needs verification",
+      "scriptBindings": [],
+      "mechanicEvidence": [
+        {
+          "sourceLine": 3,
+          "sqlOrComment": "-- the cannon platform; about 20k health on Mythic (15.4k Heroic)"
+        },
+        {
+          "sourceLine": 34,
+          "sqlOrComment": "-- The Unforgiven (10516): Mythic 373k (ingame), Heroic /1.30"
+        },
+        {
+          "sourceLine": 37,
+          "sqlOrComment": "(329, 1, 10516, 286923, 'source', 'Heroic from Mythic (03.10.2026); The Unforgiven'),"
+        }
+      ],
+      "implementationStatus": "candidate evidence only; no active DBM timer until in-game validation"
+    },
+    {
+      "source": "data/sql/updates/pending_db_world/rev_20261005_00_dungeon_main_kits_precedence.sql",
+      "mapId": null,
+      "mapAssignment": "multiple dungeons or unresolved",
+      "scriptBindings": [],
+      "mechanicEvidence": [
+        {
+          "sourceLine": 1,
+          "sqlOrComment": "-- Bosses whose Ascension kit main already implemented (Deadmines #6282, Upper Blackrock Spire #6175) fight with"
+        },
+        {
+          "sourceLine": 4,
+          "sqlOrComment": "-- stays Normal only. Jed's Fierce Blow uses the interval from the Ascension combat logs (7.7-9.7 s, then 8-9 s)."
+        },
+        {
+          "sourceLine": 5,
+          "sqlOrComment": "DELETE FROM `smart_scripts` WHERE `entryorguid` = 639 AND `source_type` = 0;"
+        },
+        {
+          "sourceLine": 6,
+          "sqlOrComment": "INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES"
+        },
+        {
+          "sourceLine": 21,
+          "sqlOrComment": "DELETE FROM `smart_scripts` WHERE `entryorguid` = 642 AND `source_type` = 0;"
+        },
+        {
+          "sourceLine": 22,
+          "sqlOrComment": "INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES"
+        },
+        {
+          "sourceLine": 24,
+          "sqlOrComment": "(642, 0, 1, 0, 0, 0, 100, 0, 8400, 8400, 7800, 7800, 0, 0, 11, 975011, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'Sneed''s Shredder - In Combat - Cast Fierce Blow'),"
+        },
+        {
+          "sourceLine": 27,
+          "sqlOrComment": "DELETE FROM `smart_scripts` WHERE `entryorguid` = 643 AND `source_type` = 0;"
+        },
+        {
+          "sourceLine": 28,
+          "sqlOrComment": "INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES"
+        },
+        {
+          "sourceLine": 31,
+          "sqlOrComment": "(643, 0, 2, 0, 0, 0, 100, 0, 8400, 8400, 7800, 7800, 0, 0, 11, 975011, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'Sneed - In Combat - Cast Fierce Blow');"
+        },
+        {
+          "sourceLine": 32,
+          "sqlOrComment": "DELETE FROM `smart_scripts` WHERE `entryorguid` = 644 AND `source_type` = 0;"
+        },
+        {
+          "sourceLine": 33,
+          "sqlOrComment": "INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES"
+        },
+        {
+          "sourceLine": 37,
+          "sqlOrComment": "(644, 0, 4, 0, 0, 0, 100, 0, 8400, 8400, 7800, 7800, 0, 0, 11, 975011, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'Rhahk''Zor - In Combat - Cast Fierce Blow'),"
+        },
+        {
+          "sourceLine": 40,
+          "sqlOrComment": "DELETE FROM `smart_scripts` WHERE `entryorguid` = 645 AND `source_type` = 0;"
+        },
+        {
+          "sourceLine": 41,
+          "sqlOrComment": "INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES"
+        },
+        {
+          "sourceLine": 52,
+          "sqlOrComment": "DELETE FROM `smart_scripts` WHERE `entryorguid` = 647 AND `source_type` = 0;"
+        },
+        {
+          "sourceLine": 53,
+          "sqlOrComment": "INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES"
+        },
+        {
+          "sourceLine": 56,
+          "sqlOrComment": "(647, 0, 2, 0, 0, 0, 100, 0, 8400, 8400, 7800, 7800, 0, 0, 11, 975011, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'Captain Greenskin - In Combat - Cast Fierce Blow'),"
+        },
+        {
+          "sourceLine": 58,
+          "sqlOrComment": "DELETE FROM `smart_scripts` WHERE `entryorguid` = 1763 AND `source_type` = 0;"
+        },
+        {
+          "sourceLine": 59,
+          "sqlOrComment": "INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES"
+        },
+        {
+          "sourceLine": 63,
+          "sqlOrComment": "(1763, 0, 3, 0, 0, 0, 100, 0, 8400, 8400, 7800, 7800, 0, 0, 11, 975011, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'Gilnid - In Combat - Cast Fierce Blow'),"
+        },
+        {
+          "sourceLine": 65,
+          "sqlOrComment": "DELETE FROM `smart_scripts` WHERE `entryorguid` = 10509 AND `source_type` = 0;"
+        },
+        {
+          "sourceLine": 66,
+          "sqlOrComment": "INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES"
+        },
+        {
+          "sourceLine": 73,
+          "sqlOrComment": "(10509, 0, 6, 0, 0, 0, 100, 0, 7700, 9700, 8000, 9000, 0, 0, 11, 975011, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'Jed Runewatcher - In Combat - Cast ''Fierce Blow'' on Victim');"
+        },
+        {
+          "sourceLine": 74,
+          "sqlOrComment": "DELETE FROM `smart_scripts` WHERE `entryorguid` = 10899 AND `source_type` = 0;"
+        },
+        {
+          "sourceLine": 75,
+          "sqlOrComment": "INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES"
+        },
+        {
+          "sourceLine": 82,
+          "sqlOrComment": "(10899, 0, 7, 0, 0, 0, 100, 0, 5000, 7000, 6000, 8000, 0, 0, 11, 975011, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'Goraluk Anvilcrack - In Combat - Cast ''Fierce Blow'' on Victim');"
+        },
+        {
+          "sourceLine": 84,
+          "sqlOrComment": "DELETE FROM `smart_scripts` WHERE `entryorguid` = 10814 AND `source_type` = 0;"
+        },
+        {
+          "sourceLine": 85,
+          "sqlOrComment": "INSERT INTO `smart_scripts` (`entryorguid`, `source_type`, `id`, `link`, `event_type`, `event_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `event_param5`, `event_param6`, `action_type`, `action_param1`, `action_param2`, `action_param3`, `action_param4`, `action_param5`, `action_param6`, `target_type`, `target_param1`, `target_param2`, `target_param3`, `target_param4`, `target_x`, `target_y`, `target_z`, `target_o`, `comment`) VALUES"
+        },
+        {
+          "sourceLine": 89,
+          "sqlOrComment": "(10814, 0, 3, 0, 0, 0, 100, 0, 5000, 7000, 6000, 8000, 0, 0, 11, 975011, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'Chromatic Elite Guard - In Combat - Cast ''Fierce Blow'' (Normal Dungeon)');"
+        },
+        {
+          "sourceLine": 92,
+          "sqlOrComment": "DELETE FROM `coa_dungeon_boss_kit` WHERE `entry` IN (646, 9816, 10363, 10430);"
+        },
+        {
+          "sourceLine": 95,
+          "sqlOrComment": "DELETE FROM `spell_script_names` WHERE `spell_id` = 2102559 AND `ScriptName` = 'spell_coa_bouncing_saw_blade';"
+        }
+      ],
+      "implementationStatus": "candidate evidence only; no active DBM timer until in-game validation"
+    },
+    {
+      "source": "data/sql/updates/pending_db_world/rev_20261002_40_wailing_caverns.sql",
+      "mapId": 43,
+      "mapAssignment": "derived from migration filename, needs verification",
+      "scriptBindings": [
+        {
+          "spellId": 2102624,
+          "script": "spell_coa_skum_overrun"
+        }
+      ],
+      "mechanicEvidence": [
+        {
+          "sourceLine": 1,
+          "sqlOrComment": "-- Skum's Overrun (2102624, a dummy in the DBC): run 25 yards ahead and trample (CoADungeonBossSpells.cpp)"
+        },
+        {
+          "sourceLine": 2,
+          "sqlOrComment": "DELETE FROM `spell_script_names` WHERE `spell_id` = 2102624;"
+        },
+        {
+          "sourceLine": 3,
+          "sqlOrComment": "INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES (2102624, 'spell_coa_skum_overrun');"
+        }
+      ],
+      "implementationStatus": "candidate evidence only; no active DBM timer until in-game validation"
+    },
+    {
+      "source": "data/sql/updates/pending_db_world/rev_20260930_60_bfd_bosses.sql",
+      "mapId": 48,
+      "mapAssignment": "derived from migration filename, needs verification",
+      "scriptBindings": [
+        {
+          "spellId": 2102687,
+          "script": "spell_coa_torrent_spin"
+        }
+      ],
+      "mechanicEvidence": [
+        {
+          "sourceLine": 1,
+          "sqlOrComment": "-- Blackfathom Deeps Heroic/Mythic boss fixes after ingame check (30.09.2026)"
+        },
+        {
+          "sourceLine": 3,
+          "sqlOrComment": "-- Torrent (Ghamoo-ra): the boss spins around itself while the water cone fires (CoADungeonBossSpells.cpp)"
+        },
+        {
+          "sourceLine": 4,
+          "sqlOrComment": "DELETE FROM `spell_script_names` WHERE `spell_id` = 2102687;"
+        },
+        {
+          "sourceLine": 5,
+          "sqlOrComment": "INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES (2102687, 'spell_coa_torrent_spin');"
+        },
+        {
+          "sourceLine": 7,
+          "sqlOrComment": "-- Lorgus Jett: Ascension position placed ingame on Mythic (9780127), Heroic copy (9780128); vanilla spawn stays Normal"
+        },
+        {
+          "sourceLine": 12,
+          "sqlOrComment": "(9780127, 12902, 48, 0, 0, 4, 1, 1, -741.403, -105.815, -30.0953, 3.13432, 604800, 0, 0, 1, 0, 0, 0, 0, 0, '', 0, 0, 'Lorgus Jett - Mythic'),"
+        },
+        {
+          "sourceLine": 13,
+          "sqlOrComment": "(9780128, 12902, 48, 0, 0, 2, 1, 1, -741.403, -105.815, -30.0953, 3.13432, 604800, 0, 0, 1, 0, 0, 0, 0, 0, '', 0, 0, 'Lorgus Jett - Heroic');"
+        }
+      ],
+      "implementationStatus": "candidate evidence only; no active DBM timer until in-game validation"
+    },
+    {
+      "source": "data/sql/updates/pending_db_world/rev_20260930_80_rfc_bosses.sql",
+      "mapId": 389,
+      "mapAssignment": "derived from migration filename, needs verification",
+      "scriptBindings": [
+        {
+          "spellId": 2102516,
+          "script": "spell_coa_massive_fire_nova"
+        },
+        {
+          "spellId": 2102517,
+          "script": "spell_coa_massive_fire_nova"
+        },
+        {
+          "spellId": 2102518,
+          "script": "spell_coa_massive_fire_nova"
+        },
+        {
+          "spellId": 2102519,
+          "script": "spell_coa_massive_fire_nova"
+        }
+      ],
+      "mechanicEvidence": [
+        {
+          "sourceLine": 1,
+          "sqlOrComment": "-- Ragefire Chasm Heroic/Mythic boss fixes after ingame check (30.09.2026)"
+        },
+        {
+          "sourceLine": 3,
+          "sqlOrComment": "-- Massive Fire Nova (Taragaman): cover behind the Earth Pillars (CoADungeonBossSpells.cpp)"
+        },
+        {
+          "sourceLine": 4,
+          "sqlOrComment": "DELETE FROM `spell_script_names` WHERE `spell_id` BETWEEN 2102516 AND 2102519;"
+        },
+        {
+          "sourceLine": 5,
+          "sqlOrComment": "INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES"
+        },
+        {
+          "sourceLine": 30,
+          "sqlOrComment": "-- Jergosh the Invoker: Ascension position placed ingame on Mythic (9780131), Heroic copy (9780132); vanilla spawn stays Normal"
+        },
+        {
+          "sourceLine": 35,
+          "sqlOrComment": "(9780131, 11518, 389, 0, 0, 4, 1, 1, -369.31, 164.843, -21.3015, 4.42987, 604800, 0, 0, 1, 0, 0, 0, 0, 0, '', 0, 0, 'Jergosh the Invoker - Mythic'),"
+        },
+        {
+          "sourceLine": 36,
+          "sqlOrComment": "(9780132, 11518, 389, 0, 0, 2, 1, 1, -369.31, 164.843, -21.3015, 4.42987, 604800, 0, 0, 1, 0, 0, 0, 0, 0, '', 0, 0, 'Jergosh the Invoker - Heroic');"
+        }
+      ],
+      "implementationStatus": "candidate evidence only; no active DBM timer until in-game validation"
+    },
+    {
+      "source": "data/sql/updates/pending_db_world/rev_20261001_30_brs_spells.sql",
+      "mapId": 229,
+      "mapAssignment": "derived from migration filename, needs verification",
+      "scriptBindings": [
+        {
+          "spellId": 2102215,
+          "script": "spell_coa_mothers_milk_spray"
+        },
+        {
+          "spellId": 2102217,
+          "script": "spell_coa_mothers_milk_debuff"
+        }
+      ],
+      "mechanicEvidence": [
+        {
+          "sourceLine": 1,
+          "sqlOrComment": "-- Mother's Milk (Mother Smolderweb): the DBC spells are dummies, CoADungeonBossSpells.cpp makes them work"
+        },
+        {
+          "sourceLine": 2,
+          "sqlOrComment": "DELETE FROM `spell_script_names` WHERE `spell_id` IN (2102215, 2102217);"
+        },
+        {
+          "sourceLine": 3,
+          "sqlOrComment": "INSERT INTO `spell_script_names` (`spell_id`, `ScriptName`) VALUES"
+        }
+      ],
+      "implementationStatus": "candidate evidence only; no active DBM timer until in-game validation"
+    }
+  ]
+}

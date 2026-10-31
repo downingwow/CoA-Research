@@ -23,7 +23,7 @@ export default {
     }
 
     let upstream = await fetch(new Request(target, { method, headers, redirect: "manual" }), {
-      cf: { cacheEverything: true, cacheTtl: 60 }
+      cf: { cacheEverything: true, cacheTtl: 0 }
     });
 
     if (upstream.status === 404 && method === "GET" &&
@@ -40,7 +40,7 @@ export default {
     if (location && location.startsWith(pagesBase)) {
       response.headers.set("location", incoming.origin + location.slice(pagesBase.length));
     }
-    response.headers.set("cache-control", "public, max-age=60");
+    response.headers.set("cache-control", "public, max-age=0, must-revalidate");
     return response;
   }
 };

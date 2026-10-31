@@ -206,7 +206,7 @@ window.gearPage = async function gearPage(params, token) {
     const lines=Object.entries(stats).filter(([key])=>key!=='armor').map(([key,value])=>'<div class="gear-wow-stat">+'+esc(value)+' '+esc(previewStats[key]||key.replace(/([A-Z])/g,' $1').replace(/^./,x=>x.toUpperCase()))+'</div>').join('');
     const armor=Number(stats.armor)>0?'<div class="gear-wow-base-stat">Armor '+esc(stats.armor)+'</div>':'';
     const damage=data.damage||{},min=damage.min??data.minDamage??data.damageMin,max=damage.max??data.maxDamage??data.damageMax,speed=damage.speed??data.weaponSpeed;
-    const description=String(data.description||'').split(/\s*\\|\s*/).map(x=>x.trim()).filter(Boolean);
+    const description=String(data.description||'').split(/\s*\|\s*/).map(x=>x.trim()).filter(Boolean);
     const setProgressLine=description.find(line=>/\(\d+\s*\/\s*\d+\)$/.test(line)&&Number(line.match(/\/(\d+)\)$/)?.[1])>=2&&Number(line.match(/\/(\d+)\)$/)?.[1])<=8)||'';
     const progressMatch=setProgressLine.match(/\((\d+)\s*\/\s*(\d+)\)$/);
     const progressTotal=Number(progressMatch?.[2]||0), progressOwned=Number(progressMatch?.[1]||0);

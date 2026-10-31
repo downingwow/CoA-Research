@@ -1,0 +1,641 @@
+{
+  "schema": "coa-research.dbm-vanilla-dungeon-implementation-manifest.v1",
+  "date": "2026-10-30",
+  "dataSource": "research/dbm/classic-all-19-dungeons-comprehensive-mechanics-and-npc-handoff-2026-10-30.json",
+  "compatibility": "WoW 3.3.5a Conquest Reborn",
+  "sourceOnly": true,
+  "liveVerified": false,
+  "configuration": {
+    "defaultEnableEncounterDetection": true,
+    "defaultEnableUnverifiedPredictiveTimers": false,
+    "defaultEnableCastTriggeredWarnings": true,
+    "enableAutoLearner": true,
+    "protectPlayerPetSpells": true,
+    "avoidDuplicateAlerts": true
+  },
+  "dungeons": [
+    {
+      "mapId": 33,
+      "name": "Shadowfang Keep",
+      "implementationTier": "encounter-roster-only",
+      "bossNpcIds": [
+        3914,
+        3886,
+        3887,
+        4278,
+        4279,
+        4274,
+        3927,
+        4275,
+        14682,
+        3872
+      ],
+      "encounterCount": 10,
+      "exactMechanicRows": 0,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 0,
+      "warningSpellIds": [],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 34,
+      "name": "The Stockade",
+      "implementationTier": "repeat-only",
+      "bossNpcIds": [
+        1696,
+        1666,
+        1717,
+        1716,
+        1663,
+        1720
+      ],
+      "encounterCount": 6,
+      "exactMechanicRows": 0,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 0,
+      "warningSpellIds": [],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner",
+        "cast-triggered-warning"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 36,
+      "name": "The Deadmines",
+      "implementationTier": "timed-candidates",
+      "bossNpcIds": [
+        644,
+        642,
+        1763,
+        646,
+        645,
+        647,
+        639,
+        3586
+      ],
+      "encounterCount": 8,
+      "exactMechanicRows": 48,
+      "provisionalRows": 3,
+      "predictiveTimerCandidates": 21,
+      "warningSpellIds": [
+        975011,
+        2102553,
+        2102580,
+        2102576,
+        2102577,
+        674,
+        5200,
+        5141,
+        2102559,
+        2102569,
+        2102554,
+        2102590,
+        2102589,
+        2102527,
+        40505,
+        5208,
+        2101111,
+        5213,
+        2102571
+      ],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner",
+        "cast-triggered-warning",
+        "experimental-predictive-timers"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 43,
+      "name": "Wailing Caverns",
+      "implementationTier": "encounter-roster-only",
+      "bossNpcIds": [
+        3671,
+        3669,
+        3653,
+        3670,
+        3674,
+        3673,
+        5775,
+        5912
+      ],
+      "encounterCount": 8,
+      "exactMechanicRows": 0,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 0,
+      "warningSpellIds": [],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 47,
+      "name": "Razorfen Kraul",
+      "implementationTier": "encounter-roster-only",
+      "bossNpcIds": [
+        6168,
+        4424,
+        4428,
+        4420,
+        4421,
+        4422,
+        4425,
+        4842
+      ],
+      "encounterCount": 8,
+      "exactMechanicRows": 0,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 0,
+      "warningSpellIds": [],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 48,
+      "name": "Blackfathom Deeps",
+      "implementationTier": "spell-trigger-only",
+      "bossNpcIds": [
+        4887,
+        4831,
+        6243,
+        12902,
+        4830,
+        4832,
+        4829
+      ],
+      "encounterCount": 7,
+      "exactMechanicRows": 0,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 0,
+      "warningSpellIds": [
+        2102687
+      ],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner",
+        "cast-triggered-warning"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 70,
+      "name": "Uldaman",
+      "implementationTier": "encounter-roster-only",
+      "bossNpcIds": [
+        6910,
+        6906,
+        7228,
+        7206,
+        7291,
+        4854,
+        2748,
+        7023
+      ],
+      "encounterCount": 8,
+      "exactMechanicRows": 0,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 0,
+      "warningSpellIds": [],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 90,
+      "name": "Gnomeregan",
+      "implementationTier": "encounter-roster-only",
+      "bossNpcIds": [
+        7079,
+        7361,
+        6235,
+        6229,
+        7800
+      ],
+      "encounterCount": 5,
+      "exactMechanicRows": 0,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 0,
+      "warningSpellIds": [],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 109,
+      "name": "Sunken Temple",
+      "implementationTier": "encounter-roster-only",
+      "bossNpcIds": [
+        5710,
+        5719,
+        5722,
+        5709
+      ],
+      "encounterCount": 4,
+      "exactMechanicRows": 0,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 0,
+      "warningSpellIds": [],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 129,
+      "name": "Razorfen Downs",
+      "implementationTier": "encounter-roster-only",
+      "bossNpcIds": [
+        7355,
+        7357,
+        8567,
+        7358,
+        7356,
+        7354
+      ],
+      "encounterCount": 6,
+      "exactMechanicRows": 0,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 0,
+      "warningSpellIds": [],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 189,
+      "name": "Scarlet Monastery",
+      "implementationTier": "encounter-roster-only",
+      "bossNpcIds": [
+        3983,
+        4543,
+        3974,
+        6487,
+        3975,
+        4542,
+        3977,
+        6489,
+        6490,
+        3976,
+        6488
+      ],
+      "encounterCount": 11,
+      "exactMechanicRows": 0,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 0,
+      "warningSpellIds": [],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 209,
+      "name": "Zul'Farrak",
+      "implementationTier": "timed-candidates",
+      "bossNpcIds": [
+        7795,
+        7273,
+        8127,
+        7272,
+        7271,
+        7796,
+        7275,
+        7267,
+        10082,
+        7604
+      ],
+      "encounterCount": 10,
+      "exactMechanicRows": 1,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 1,
+      "warningSpellIds": [
+        975011
+      ],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner",
+        "cast-triggered-warning",
+        "experimental-predictive-timers"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 229,
+      "name": "Blackrock Spire",
+      "implementationTier": "timed-candidates",
+      "bossNpcIds": [
+        10899,
+        10509,
+        10263,
+        10376,
+        9596,
+        9217,
+        9218,
+        9219,
+        9196,
+        9236,
+        9237,
+        10596,
+        9736,
+        10268,
+        10220,
+        9568,
+        9816,
+        10429,
+        10430,
+        10363
+      ],
+      "encounterCount": 20,
+      "exactMechanicRows": 41,
+      "provisionalRows": 4,
+      "predictiveTimerCandidates": 36,
+      "warningSpellIds": [
+        975011,
+        2102619,
+        2102203,
+        2102552,
+        2100428,
+        2100148,
+        2100345,
+        2102189,
+        2102825,
+        2102850,
+        2100255,
+        2102851,
+        2102192,
+        2102159,
+        2100205,
+        2100439,
+        2100465,
+        15284,
+        15615,
+        10966,
+        14516,
+        11972,
+        15749,
+        2102741,
+        2102840,
+        15580,
+        16172,
+        6253,
+        2102553,
+        2102138,
+        2102137
+      ],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner",
+        "cast-triggered-warning",
+        "experimental-predictive-timers"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 230,
+      "name": "Blackrock Depths",
+      "implementationTier": "timed-candidates",
+      "bossNpcIds": [
+        9018,
+        9025,
+        9319,
+        9024,
+        9017,
+        9041,
+        9056,
+        9016,
+        9033,
+        8983,
+        9537,
+        9502,
+        9543,
+        9499,
+        9156,
+        9039,
+        9938,
+        9019
+      ],
+      "encounterCount": 18,
+      "exactMechanicRows": 14,
+      "provisionalRows": 8,
+      "predictiveTimerCandidates": 14,
+      "warningSpellIds": [
+        975011,
+        505347,
+        92603,
+        92606,
+        381251,
+        815637,
+        14033,
+        17203
+      ],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner",
+        "cast-triggered-warning",
+        "experimental-predictive-timers"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 289,
+      "name": "Scholomance",
+      "implementationTier": "timed-candidates",
+      "bossNpcIds": [
+        14861,
+        10506,
+        10503,
+        11622,
+        10433,
+        10432,
+        10505,
+        11261,
+        10901,
+        10507,
+        10504,
+        10502,
+        1853,
+        10508
+      ],
+      "encounterCount": 14,
+      "exactMechanicRows": 7,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 6,
+      "warningSpellIds": [
+        2100397,
+        2100398,
+        2100389,
+        2100393,
+        2100034,
+        975011,
+        2100004
+      ],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner",
+        "cast-triggered-warning",
+        "experimental-predictive-timers"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 329,
+      "name": "Stratholme",
+      "implementationTier": "timed-candidates",
+      "bossNpcIds": [
+        10809,
+        10558,
+        10808,
+        10997,
+        11032,
+        10811,
+        10813,
+        10436,
+        10437,
+        10438,
+        10435,
+        10439,
+        10440
+      ],
+      "encounterCount": 13,
+      "exactMechanicRows": 2,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 2,
+      "warningSpellIds": [
+        816867,
+        975011
+      ],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner",
+        "cast-triggered-warning",
+        "experimental-predictive-timers"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 349,
+      "name": "Maraudon",
+      "implementationTier": "spell-trigger-only",
+      "bossNpcIds": [
+        13282,
+        12258,
+        12236,
+        12225,
+        12203,
+        13601,
+        13596,
+        12201,
+        13738,
+        13739,
+        12237
+      ],
+      "encounterCount": 11,
+      "exactMechanicRows": 0,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 0,
+      "warningSpellIds": [
+        21833
+      ],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner",
+        "cast-triggered-warning"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 389,
+      "name": "Ragefire Chasm",
+      "implementationTier": "spell-trigger-only",
+      "bossNpcIds": [
+        11517,
+        11520,
+        11518,
+        11519,
+        17830
+      ],
+      "encounterCount": 5,
+      "exactMechanicRows": 0,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 0,
+      "warningSpellIds": [
+        2102516,
+        2102517,
+        2102518,
+        2102519
+      ],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner",
+        "cast-triggered-warning"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    },
+    {
+      "mapId": 429,
+      "name": "Dire Maul",
+      "implementationTier": "spell-trigger-only",
+      "bossNpcIds": [
+        14506,
+        11467,
+        11490,
+        13280,
+        14327,
+        11492,
+        11488,
+        11487,
+        11496,
+        11489,
+        11486,
+        14326,
+        14322,
+        14321,
+        14323,
+        14325,
+        14324,
+        11501
+      ],
+      "encounterCount": 18,
+      "exactMechanicRows": 0,
+      "provisionalRows": 0,
+      "predictiveTimerCandidates": 0,
+      "warningSpellIds": [
+        2100236
+      ],
+      "allowedActions": [
+        "encounter-detection",
+        "autolearner",
+        "cast-triggered-warning"
+      ],
+      "sourceConfidence": "upstream-unverified"
+    }
+  ],
+  "requirements": [
+    "Use boss NPC ID matching and source map ID for encounter scope",
+    "Do not use source encounter IDs as unique per-boss IDs across difficulty variants",
+    "Review nonspell actions and SmartAI event types before creating warnings",
+    "Exclude unverified timers by default or gate them behind experimental toggle",
+    "Do not automatically turn a spell-only record into a predicted countdown",
+    "Do not promise all 19 currently enabled on live CR; test availability in game"
+  ]
+}

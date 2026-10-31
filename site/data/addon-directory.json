@@ -11,140 +11,140 @@
       "name": "DBM-CoA",
       "category": "Boss alerts",
       "summary": "Uncle Bone's CoA encounter alerts and timer project.",
-      "url": "https://github.com/downingwow/DBM-CoA",
+      "url": "https://github.com/uncle-bone/DBM-CoA",
       "hasRelease": true
     },
     {
       "name": "MRT-CoA",
       "category": "Raid coordination",
       "summary": "Uncle Bone's CoA raid coordination project.",
-      "url": "https://github.com/downingwow/MRT-CoA",
+      "url": "https://github.com/uncle-bone/MRT-CoA",
       "hasRelease": true
     },
     {
       "name": "Questie-X",
       "category": "Questing",
       "summary": "Uncle Bone's CoA-focused Questie-X work.",
-      "url": "https://github.com/downingwow/Questie-X",
+      "url": "https://github.com/uncle-bone/Questie-X",
       "hasRelease": true
     },
     {
       "name": "LootCollector",
       "category": "Loot research",
       "summary": "Uncle Bone's Ascension loot and discovery research addon.",
-      "url": "https://github.com/downingwow/LootCollector",
+      "url": "https://github.com/uncle-bone/LootCollector",
       "hasRelease": true
     },
     {
       "name": "BoneUI",
       "category": "Interface",
       "summary": "Uncle Bone's standalone interface project.",
-      "url": "https://github.com/downingwow/BoneUI",
+      "url": "https://github.com/uncle-bone/BoneUI",
       "hasRelease": true
     },
     {
       "name": "ElvUI-CoA",
       "category": "Interface",
       "summary": "Uncle Bone's ElvUI fork for the CoA client.",
-      "url": "https://github.com/downingwow/ElvUI-CoA",
+      "url": "https://github.com/uncle-bone/ElvUI-CoA",
       "hasRelease": true
     },
     {
       "name": "Cell-CoA",
       "category": "Raid frames",
       "summary": "Uncle Bone's Cell raid-frame adaptation.",
-      "url": "https://github.com/downingwow/Cell-CoA",
+      "url": "https://github.com/uncle-bone/Cell-CoA",
       "hasRelease": true
     },
     {
       "name": "Nameplates",
       "category": "Nameplates",
       "summary": "Uncle Bone's CoA nameplate project.",
-      "url": "https://github.com/downingwow/Nameplates",
+      "url": "https://github.com/uncle-bone/Nameplates",
       "hasRelease": true
     },
     {
       "name": "Zygor-CoA",
       "category": "Guides",
       "summary": "Uncle Bone's CoA guide integration project.",
-      "url": "https://github.com/downingwow/Zygor-CoA",
+      "url": "https://github.com/uncle-bone/Zygor-CoA",
       "hasRelease": true
     },
     {
       "name": "NovaInstanceTracker",
       "category": "Instance tracking",
       "summary": "Repository shell for an instance-tracking addon; no source files or release details are published yet.",
-      "url": "https://github.com/downingwow/NovaInstanceTracker",
+      "url": "https://github.com/uncle-bone/NovaInstanceTracker",
       "hasRelease": false
     },
     {
       "name": "Details",
       "category": "Combat analysis",
       "summary": "Details! CoA fork with specialization-aware labels, pet and summon attribution, and combat history. Current release notes still call for live-client validation.",
-      "url": "https://github.com/downingwow/Details",
+      "url": "https://github.com/uncle-bone/Details",
       "hasRelease": true
     },
     {
       "name": "SilverDragon",
       "category": "Rare scanning",
       "summary": "Rare alerts and per-zone sighting history adapted for Conquest Reborn; optional map integrations and ElvUI styling.",
-      "url": "https://github.com/downingwow/SilverDragon",
+      "url": "https://github.com/uncle-bone/SilverDragon",
       "hasRelease": true
     },
     {
       "name": "AtlasLoot-CoA",
       "category": "Loot tables",
       "summary": "AtlasLoot adaptation with a CoA Best-in-Slot browser framework; phase recommendations are not populated yet.",
-      "url": "https://github.com/downingwow/AtlasLoot-CoA",
+      "url": "https://github.com/uncle-bone/AtlasLoot-CoA",
       "hasRelease": true
     },
     {
       "name": "CoA-Item-Search",
       "category": "Item research",
       "summary": "WoW 3.3.5a / Conquest Reborn item search and data-harvesting addon.",
-      "url": "https://github.com/downingwow/CoA-Item-Search",
+      "url": "https://github.com/uncle-bone/CoA-Item-Search",
       "hasRelease": true
     },
     {
       "name": "WeakAuras-CoA",
       "category": "WeakAuras",
       "summary": "Repository for a Conquest Reborn WeakAuras adaptation; source and release details are not documented yet.",
-      "url": "https://github.com/downingwow/WeakAuras-CoA",
+      "url": "https://github.com/uncle-bone/WeakAuras-CoA",
       "hasRelease": true
     },
     {
       "name": "UnclePlus-CoA",
       "category": "Interface",
       "summary": "Conquest Reborn addon package; the repository currently has only a brief project description.",
-      "url": "https://github.com/downingwow/UnclePlus-CoA",
+      "url": "https://github.com/uncle-bone/UnclePlus-CoA",
       "hasRelease": true
     },
     {
       "name": "Refactor-CoA",
       "category": "Utilities",
       "summary": "Conquest Reborn Refactor addon project; feature and installation details are not yet documented.",
-      "url": "https://github.com/downingwow/Refactor-CoA",
+      "url": "https://github.com/uncle-bone/Refactor-CoA",
       "hasRelease": true
     },
     {
       "name": "SexyMap-CoA",
       "category": "Map & minimap",
       "summary": "Conquest Reborn adaptation of SexyMap for minimap styling and layout.",
-      "url": "https://github.com/downingwow/SexyMap-CoA",
+      "url": "https://github.com/uncle-bone/SexyMap-CoA",
       "hasRelease": true
     },
     {
       "name": "VeilForge-CoA",
       "category": "Interface",
       "summary": "Uncle Bone's VeilForge interface addon project for Conquest Reborn.",
-      "url": "https://github.com/downingwow/VeilForge-CoA",
+      "url": "https://github.com/uncle-bone/VeilForge-CoA",
       "hasRelease": true
     },
     {
       "name": "UncleTranslate-CoA",
       "category": "Utilities",
       "summary": "Uncle Bone's localization and translation addon project for Conquest Reborn.",
-      "url": "https://github.com/downingwow/UncleTranslate-CoA",
+      "url": "https://github.com/uncle-bone/UncleTranslate-CoA",
       "hasRelease": false
     }
   ],

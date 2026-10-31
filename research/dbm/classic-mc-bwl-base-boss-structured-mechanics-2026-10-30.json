@@ -1,0 +1,2553 @@
+{
+  "schema": "coa-research.dbm-classic-mc-bwl-structured.v1",
+  "date": "2026-10-30",
+  "sourceRepository": "Conquest-of-AzerothCore/azerothcore-wotlk-coa",
+  "status": "Upstream base scripts, not confirmed live",
+  "limitations": [
+    "Custom CoA module may override base boss scripts",
+    "Not all schedule methods match this parser",
+    "Timer expressions are source evidence, not verified live intervals"
+  ],
+  "counts": {
+    "files": 17,
+    "sourceLines": 5222,
+    "spellDefinitions": 216,
+    "schedules": 132,
+    "casts": 154,
+    "health": 7
+  },
+  "files": [
+    {
+      "zone": "MC",
+      "map": 409,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/MoltenCore/boss_lucifron.cpp",
+      "sourceLines": 78,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_IMPENDING_DOOM",
+          "id": 19702
+        },
+        {
+          "symbol": "SPELL_LUCIFRON_CURSE",
+          "id": 19703
+        },
+        {
+          "symbol": "SPELL_SHADOW_SHOCK",
+          "id": 20603
+        }
+      ],
+      "schedules": [
+        {
+          "line": 43,
+          "event": "EVENT_IMPENDING_DOOM",
+          "method": "ScheduleEvent",
+          "arguments": "6s, 11s"
+        },
+        {
+          "line": 44,
+          "event": "EVENT_LUCIFRON_CURSE",
+          "method": "ScheduleEvent",
+          "arguments": "11s, 14s"
+        },
+        {
+          "line": 45,
+          "event": "EVENT_SHADOW_SHOCK",
+          "method": "ScheduleEvent",
+          "arguments": "5s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 54,
+          "spellSymbol": "SPELL_IMPENDING_DOOM"
+        },
+        {
+          "line": 60,
+          "spellSymbol": "SPELL_LUCIFRON_CURSE"
+        },
+        {
+          "line": 66,
+          "spellSymbol": "SPELL_SHADOW_SHOCK"
+        }
+      ],
+      "health": []
+    },
+    {
+      "zone": "MC",
+      "map": 409,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/MoltenCore/boss_magmadar.cpp",
+      "sourceLines": 155,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_FRENZY",
+          "id": 19451
+        },
+        {
+          "symbol": "SPELL_MAGMA_SPIT",
+          "id": 19449
+        },
+        {
+          "symbol": "SPELL_PANIC",
+          "id": 19408
+        },
+        {
+          "symbol": "SPELL_LAVA_BOMB",
+          "id": 19411
+        },
+        {
+          "symbol": "SPELL_LAVA_BOMB_EFFECT",
+          "id": 20494
+        },
+        {
+          "symbol": "SPELL_LAVA_BOMB_RANGED",
+          "id": 20474
+        },
+        {
+          "symbol": "SPELL_LAVA_BOMB_RANGED_EFFECT",
+          "id": 20495
+        }
+      ],
+      "schedules": [
+        {
+          "line": 57,
+          "event": "EVENT_FRENZY",
+          "method": "ScheduleEvent",
+          "arguments": "8500ms"
+        },
+        {
+          "line": 58,
+          "event": "EVENT_PANIC",
+          "method": "ScheduleEvent",
+          "arguments": "9500ms"
+        },
+        {
+          "line": 59,
+          "event": "EVENT_LAVA_BOMB",
+          "method": "ScheduleEvent",
+          "arguments": "12s"
+        },
+        {
+          "line": 60,
+          "event": "EVENT_LAVA_BOMB_RANGED",
+          "method": "ScheduleEvent",
+          "arguments": "15s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 70,
+          "spellSymbol": "SPELL_FRENZY"
+        },
+        {
+          "line": 76,
+          "spellSymbol": "SPELL_PANIC"
+        },
+        {
+          "line": 83,
+          "spellSymbol": "SPELL_LAVA_BOMB"
+        },
+        {
+          "line": 97,
+          "spellSymbol": "SPELL_LAVA_BOMB_RANGED"
+        }
+      ],
+      "health": []
+    },
+    {
+      "zone": "MC",
+      "map": 409,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/MoltenCore/boss_gehennas.cpp",
+      "sourceLines": 169,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_GEHENNAS_CURSE",
+          "id": 19716
+        },
+        {
+          "symbol": "SPELL_RAIN_OF_FIRE",
+          "id": 19717
+        },
+        {
+          "symbol": "SPELL_SHADOW_BOLT_RANDOM",
+          "id": 19728
+        },
+        {
+          "symbol": "SPELL_SHADOW_BOLT_VICTIM",
+          "id": 19729
+        },
+        {
+          "symbol": "SPELL_CONJURE_FLAME_ORB",
+          "id": 2105417
+        },
+        {
+          "symbol": "SPELL_FLAME_ORB_PULSE",
+          "id": 2105418
+        }
+      ],
+      "schedules": [
+        {
+          "line": 68,
+          "event": "EVENT_GEHENNAS_CURSE",
+          "method": "ScheduleEvent",
+          "arguments": "6s, 9s"
+        },
+        {
+          "line": 69,
+          "event": "EVENT_RAIN_OF_FIRE",
+          "method": "ScheduleEvent",
+          "arguments": "10s"
+        },
+        {
+          "line": 70,
+          "event": "EVENT_SHADOW_BOLT",
+          "method": "ScheduleEvent",
+          "arguments": "3s, 5s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 79,
+          "spellSymbol": "SPELL_GEHENNAS_CURSE"
+        },
+        {
+          "line": 86,
+          "spellSymbol": "SPELL_RAIN_OF_FIRE"
+        },
+        {
+          "line": 95,
+          "spellSymbol": "SPELL_SHADOW_BOLT_RANDOM"
+        },
+        {
+          "line": 97,
+          "spellSymbol": "SPELL_SHADOW_BOLT_VICTIM"
+        },
+        {
+          "line": 101,
+          "spellSymbol": "SPELL_SHADOW_BOLT_VICTIM"
+        },
+        {
+          "line": 120,
+          "spellSymbol": "SPELL_FLAME_ORB_PULSE"
+        }
+      ],
+      "health": []
+    },
+    {
+      "zone": "MC",
+      "map": 409,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/MoltenCore/boss_garr.cpp",
+      "sourceLines": 268,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_ANTIMAGIC_PULSE",
+          "id": 19492
+        },
+        {
+          "symbol": "SPELL_MAGMA_SHACKLES",
+          "id": 19496
+        },
+        {
+          "symbol": "SPELL_SEPARATION_ANXIETY",
+          "id": 23487
+        },
+        {
+          "symbol": "SPELL_FRENZY",
+          "id": 19516
+        },
+        {
+          "symbol": "SPELL_SEPARATION_ANXIETY_MINION",
+          "id": 23492
+        },
+        {
+          "symbol": "SPELL_ERUPTION",
+          "id": 19497
+        },
+        {
+          "symbol": "SPELL_MASSIVE_ERUPTION",
+          "id": 20483
+        },
+        {
+          "symbol": "SPELL_ERUPTION_TRIGGER",
+          "id": 20482
+        },
+        {
+          "symbol": "SPELL_ENRAGE_TRIGGER",
+          "id": 19515
+        },
+        {
+          "symbol": "SPELL_FIERCE_BLOW_COA",
+          "id": 975011
+        }
+      ],
+      "schedules": [
+        {
+          "line": 96,
+          "event": "EVENT_ANTIMAGIC_PULSE",
+          "method": "ScheduleEvent",
+          "arguments": "15s"
+        },
+        {
+          "line": 97,
+          "event": "EVENT_MAGMA_SHACKLES",
+          "method": "ScheduleEvent",
+          "arguments": "10s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 79,
+          "spellSymbol": "SPELL_SEPARATION_ANXIETY"
+        },
+        {
+          "line": 112,
+          "spellSymbol": "SPELL_ERUPTION_TRIGGER"
+        },
+        {
+          "line": 131,
+          "spellSymbol": "SPELL_ANTIMAGIC_PULSE"
+        },
+        {
+          "line": 137,
+          "spellSymbol": "SPELL_MAGMA_SHACKLES"
+        },
+        {
+          "line": 155,
+          "spellSymbol": "SPELL_SEPARATION_ANXIETY_MINION"
+        },
+        {
+          "line": 178,
+          "spellSymbol": "SPELL_FIERCE_BLOW_COA"
+        },
+        {
+          "line": 195,
+          "spellSymbol": "SPELL_ERUPTION"
+        },
+        {
+          "line": 197,
+          "spellSymbol": "SPELL_ENRAGE_TRIGGER"
+        },
+        {
+          "line": 250,
+          "spellSymbol": "SPELL_FRENZY"
+        }
+      ],
+      "health": []
+    },
+    {
+      "zone": "MC",
+      "map": 409,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/MoltenCore/boss_shazzrah.cpp",
+      "sourceLines": 169,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_ARCANE_EXPLOSION",
+          "id": 19712
+        },
+        {
+          "symbol": "SPELL_SHAZZRAH_CURSE",
+          "id": 19713
+        },
+        {
+          "symbol": "SPELL_MAGIC_GROUNDING",
+          "id": 19714
+        },
+        {
+          "symbol": "SPELL_COUNTERSPELL",
+          "id": 19715
+        },
+        {
+          "symbol": "SPELL_SHAZZRAH_GATE_DUMMY",
+          "id": 23138
+        },
+        {
+          "symbol": "SPELL_SHAZZRAH_GATE",
+          "id": 23139
+        }
+      ],
+      "schedules": [
+        {
+          "line": 51,
+          "event": "EVENT_ARCANE_EXPLOSION",
+          "method": "ScheduleEvent",
+          "arguments": "2s, 4s"
+        },
+        {
+          "line": 52,
+          "event": "EVENT_SHAZZRAH_CURSE",
+          "method": "ScheduleEvent",
+          "arguments": "7s,11s"
+        },
+        {
+          "line": 53,
+          "event": "EVENT_MAGIC_GROUNDING",
+          "method": "ScheduleEvent",
+          "arguments": "14s, 19s"
+        },
+        {
+          "line": 54,
+          "event": "EVENT_COUNTERSPELL",
+          "method": "ScheduleEvent",
+          "arguments": "9s, 10s"
+        },
+        {
+          "line": 55,
+          "event": "EVENT_SHAZZRAH_GATE",
+          "method": "ScheduleEvent",
+          "arguments": "30s"
+        },
+        {
+          "line": 90,
+          "event": "EVENT_ARCANE_EXPLOSION",
+          "method": "RescheduleEvent",
+          "arguments": "3s, 6s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 64,
+          "spellSymbol": "SPELL_ARCANE_EXPLOSION"
+        },
+        {
+          "line": 71,
+          "spellSymbol": "SPELL_SHAZZRAH_CURSE"
+        },
+        {
+          "line": 77,
+          "spellSymbol": "SPELL_MAGIC_GROUNDING"
+        },
+        {
+          "line": 83,
+          "spellSymbol": "SPELL_COUNTERSPELL"
+        },
+        {
+          "line": 89,
+          "spellSymbol": "SPELL_SHAZZRAH_GATE_DUMMY"
+        },
+        {
+          "line": 143,
+          "spellSymbol": "SPELL_SHAZZRAH_GATE"
+        },
+        {
+          "line": 144,
+          "spellSymbol": "SPELL_ARCANE_EXPLOSION"
+        }
+      ],
+      "health": []
+    },
+    {
+      "zone": "MC",
+      "map": 409,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/MoltenCore/boss_baron_geddon.cpp",
+      "sourceLines": 213,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_INFERNO",
+          "id": 19695
+        },
+        {
+          "symbol": "SPELL_INFERNO_DUMMY_EFFECT",
+          "id": 19698
+        },
+        {
+          "symbol": "SPELL_IGNITE_MANA",
+          "id": 19659
+        },
+        {
+          "symbol": "SPELL_LIVING_BOMB",
+          "id": 20475
+        },
+        {
+          "symbol": "SPELL_ARMAGEDDON",
+          "id": 20478
+        }
+      ],
+      "schedules": [
+        {
+          "line": 62,
+          "event": "EVENT_INFERNO",
+          "method": "ScheduleEvent",
+          "arguments": "13s, 15s"
+        },
+        {
+          "line": 63,
+          "event": "EVENT_IGNITE_MANA",
+          "method": "ScheduleEvent",
+          "arguments": "7s, 19s"
+        },
+        {
+          "line": 64,
+          "event": "EVENT_LIVING_BOMB",
+          "method": "ScheduleEvent",
+          "arguments": "11s, 16s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 74,
+          "spellSymbol": "SPELL_CAST_OK"
+        },
+        {
+          "line": 88,
+          "spellSymbol": "SPELL_INFERNO"
+        },
+        {
+          "line": 95,
+          "spellSymbol": "SPELL_IGNITE_MANA"
+        },
+        {
+          "line": 103,
+          "spellSymbol": "SPELL_LIVING_BOMB"
+        }
+      ],
+      "health": [
+        {
+          "line": 70,
+          "expression": "if (!armageddonCasted && damage < me->GetHealth() && me->HealthBelowPctDamaged(2, damage))"
+        }
+      ]
+    },
+    {
+      "zone": "MC",
+      "map": 409,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/MoltenCore/boss_golemagg.cpp",
+      "sourceLines": 218,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_PYROBLAST",
+          "id": 20228
+        },
+        {
+          "symbol": "SPELL_EARTHQUAKE",
+          "id": 19798
+        },
+        {
+          "symbol": "SPELL_ATTRACK_RAGER",
+          "id": 20544
+        },
+        {
+          "symbol": "SPELL_MAGMASPLASH",
+          "id": 13879
+        },
+        {
+          "symbol": "SPELL_GOLEMAGG_TRUST_AURA",
+          "id": 20556
+        },
+        {
+          "symbol": "SPELL_DOUBLE_ATTACK",
+          "id": 18943
+        },
+        {
+          "symbol": "SPELL_MANGLE",
+          "id": 19820
+        },
+        {
+          "symbol": "SPELL_FULL_HEAL",
+          "id": 17683
+        },
+        {
+          "symbol": "SPELL_FIERCE_BLOW_COA",
+          "id": 975011
+        }
+      ],
+      "schedules": [],
+      "casts": [
+        {
+          "line": 65,
+          "spellSymbol": "SPELL_MAGMASPLASH"
+        },
+        {
+          "line": 66,
+          "spellSymbol": "SPELL_GOLEMAGG_TRUST_AURA"
+        },
+        {
+          "line": 67,
+          "spellSymbol": "SPELL_DOUBLE_ATTACK"
+        },
+        {
+          "line": 74,
+          "spellSymbol": "SPELL_ATTRACK_RAGER"
+        },
+        {
+          "line": 75,
+          "spellSymbol": "SPELL_EARTHQUAKE"
+        },
+        {
+          "line": 91,
+          "spellSymbol": "SPELL_EARTHQUAKE"
+        },
+        {
+          "line": 105,
+          "spellSymbol": "SPELL_PYROBLAST"
+        },
+        {
+          "line": 140,
+          "spellSymbol": "SPELL_CORE_RAGER_QUIET_SUICIDE"
+        },
+        {
+          "line": 152,
+          "spellSymbol": "SPELL_FULL_HEAL"
+        },
+        {
+          "line": 185,
+          "spellSymbol": "SPELL_MANGLE"
+        },
+        {
+          "line": 195,
+          "spellSymbol": "SPELL_FIERCE_BLOW_COA"
+        }
+      ],
+      "health": [
+        {
+          "line": 72,
+          "expression": "if (!enraged && me->HealthBelowPctDamaged(10, damage))"
+        },
+        {
+          "line": 149,
+          "expression": "if (me->HealthBelowPctDamaged(50, damage))"
+        }
+      ]
+    },
+    {
+      "zone": "MC",
+      "map": 409,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/MoltenCore/boss_sulfuron_harbinger.cpp",
+      "sourceLines": 185,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_DEMORALIZING_SHOUT",
+          "id": 19778
+        },
+        {
+          "symbol": "SPELL_INSPIRE",
+          "id": 19779
+        },
+        {
+          "symbol": "SPELL_KNOCKDOWN",
+          "id": 19780
+        },
+        {
+          "symbol": "SPELL_FLAMESPEAR",
+          "id": 19781
+        },
+        {
+          "symbol": "SPELL_DARK_MENDING",
+          "id": 19775
+        },
+        {
+          "symbol": "SPELL_SHADOW_WORD_PAIN",
+          "id": 19776
+        },
+        {
+          "symbol": "SPELL_DARK_STRIKE",
+          "id": 19777
+        },
+        {
+          "symbol": "SPELL_IMMOLATE",
+          "id": 20294
+        }
+      ],
+      "schedules": [
+        {
+          "line": 57,
+          "event": "EVENT_DEMORALIZING_SHOUT",
+          "method": "ScheduleEvent",
+          "arguments": "6s, 20s"
+        },
+        {
+          "line": 58,
+          "event": "EVENT_INSPIRE",
+          "method": "ScheduleEvent",
+          "arguments": "7s, 10s"
+        },
+        {
+          "line": 59,
+          "event": "EVENT_KNOCKDOWN",
+          "method": "ScheduleEvent",
+          "arguments": "6s"
+        },
+        {
+          "line": 60,
+          "event": "EVENT_FLAMESPEAR",
+          "method": "ScheduleEvent",
+          "arguments": "2s"
+        },
+        {
+          "line": 115,
+          "event": "EVENT_DARK_STRIKE",
+          "method": "ScheduleEvent",
+          "arguments": "4s, 7s"
+        },
+        {
+          "line": 116,
+          "event": "EVENT_DARK_MENDING",
+          "method": "ScheduleEvent",
+          "arguments": "15s, 30s"
+        },
+        {
+          "line": 117,
+          "event": "EVENT_SHADOW_WORD_PAIN",
+          "method": "ScheduleEvent",
+          "arguments": "2s, 4s"
+        },
+        {
+          "line": 118,
+          "event": "EVENT_IMMOLATE",
+          "method": "ScheduleEvent",
+          "arguments": "3500ms, 6s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 69,
+          "spellSymbol": "SPELL_DEMORALIZING_SHOUT"
+        },
+        {
+          "line": 77,
+          "spellSymbol": "SPELL_INSPIRE"
+        },
+        {
+          "line": 79,
+          "spellSymbol": "SPELL_INSPIRE"
+        },
+        {
+          "line": 85,
+          "spellSymbol": "SPELL_KNOCKDOWN"
+        },
+        {
+          "line": 91,
+          "spellSymbol": "SPELL_FLAMESPEAR"
+        },
+        {
+          "line": 137,
+          "spellSymbol": "SPELL_DARK_STRIKE"
+        },
+        {
+          "line": 147,
+          "spellSymbol": "SPELL_DARK_MENDING"
+        },
+        {
+          "line": 156,
+          "spellSymbol": "SPELL_SHADOW_WORD_PAIN"
+        },
+        {
+          "line": 163,
+          "spellSymbol": "SPELL_IMMOLATE"
+        }
+      ],
+      "health": []
+    },
+    {
+      "zone": "MC",
+      "map": 409,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/MoltenCore/boss_majordomo_executus.cpp",
+      "sourceLines": 710,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_MAGIC_REFLECTION",
+          "id": 20619
+        },
+        {
+          "symbol": "SPELL_DAMAGE_REFLECTION",
+          "id": 21075
+        },
+        {
+          "symbol": "SPELL_BLAST_WAVE",
+          "id": 20229
+        },
+        {
+          "symbol": "SPELL_AEGIS_OF_RAGNAROS",
+          "id": 20620
+        },
+        {
+          "symbol": "SPELL_TELEPORT_RANDOM",
+          "id": 20618
+        },
+        {
+          "symbol": "SPELL_TELEPORT_TARGET",
+          "id": 20534
+        },
+        {
+          "symbol": "SPELL_ENCOURAGEMENT",
+          "id": 21086
+        },
+        {
+          "symbol": "SPELL_CHAMPION",
+          "id": 21090
+        },
+        {
+          "symbol": "SPELL_IMMUNE_POLY",
+          "id": 21087
+        },
+        {
+          "symbol": "SPELL_HATE_TO_ZERO",
+          "id": 20538
+        },
+        {
+          "symbol": "SPELL_SEPARATION_ANXIETY",
+          "id": 21094
+        },
+        {
+          "symbol": "SPELL_SEPARATION_ANXIETY_MINION",
+          "id": 21095
+        },
+        {
+          "symbol": "SPELL_FIERCE_BLOW_COA",
+          "id": 975011
+        },
+        {
+          "symbol": "SPELL_TELEPORT_SELF",
+          "id": 19484
+        },
+        {
+          "symbol": "SPELL_SUMMON_RAGNAROS",
+          "id": 19774
+        },
+        {
+          "symbol": "SPELL_ELEMENTAL_FIRE",
+          "id": 19773
+        },
+        {
+          "symbol": "SPELL_RAGNA_EMERGE",
+          "id": 20568
+        },
+        {
+          "symbol": "SPELL_RAGNAROS_FADE",
+          "id": 21107
+        },
+        {
+          "symbol": "SPELL_RAGNAROS_SUBMERGE_EFFECT",
+          "id": 21859
+        }
+      ],
+      "schedules": [
+        {
+          "line": 268,
+          "event": "EVENT_SHIELD_REFLECTION",
+          "method": "ScheduleEvent",
+          "arguments": "30s, PHASE_COMBAT, PHASE_COMBAT"
+        },
+        {
+          "line": 269,
+          "event": "EVENT_TELEPORT_RANDOM",
+          "method": "ScheduleEvent",
+          "arguments": "25s, PHASE_COMBAT, PHASE_COMBAT"
+        },
+        {
+          "line": 270,
+          "event": "EVENT_TELEPORT_TARGET",
+          "method": "ScheduleEvent",
+          "arguments": "15s, PHASE_COMBAT, PHASE_COMBAT"
+        },
+        {
+          "line": 273,
+          "event": "EVENT_SACRIFICIAL_CHAINS",
+          "method": "ScheduleEvent",
+          "arguments": "29s, PHASE_COMBAT, PHASE_COMBAT"
+        },
+        {
+          "line": 277,
+          "event": "EVENT_FIERCE_BLOW_COA",
+          "method": "ScheduleEvent",
+          "arguments": "6s, 10s, PHASE_COMBAT, PHASE_COMBAT"
+        },
+        {
+          "line": 342,
+          "event": "EVENT_DEFEAT_OUTRO_1",
+          "method": "ScheduleEvent",
+          "arguments": "7500ms, PHASE_DEFEAT_OUTRO, PHASE_DEFEAT_OUTRO"
+        },
+        {
+          "line": 453,
+          "event": "EVENT_DEFEAT_OUTRO_2",
+          "method": "ScheduleEvent",
+          "arguments": "8s, PHASE_DEFEAT_OUTRO, PHASE_DEFEAT_OUTRO"
+        },
+        {
+          "line": 459,
+          "event": "EVENT_DEFEAT_OUTRO_3",
+          "method": "ScheduleEvent",
+          "arguments": "21500ms, PHASE_DEFEAT_OUTRO, PHASE_DEFEAT_OUTRO"
+        },
+        {
+          "line": 504,
+          "event": "EVENT_RAGNAROS_SUMMON_3",
+          "method": "ScheduleEvent",
+          "arguments": "16700ms, PHASE_RAGNAROS_SUMMONING, PHASE_RAGNAROS_SUMMONING"
+        },
+        {
+          "line": 505,
+          "event": "EVENT_RAGNAROS_EMERGE",
+          "method": "ScheduleEvent",
+          "arguments": "15s, PHASE_RAGNAROS_SUMMONING, PHASE_RAGNAROS_SUMMONING"
+        },
+        {
+          "line": 514,
+          "event": "EVENT_RAGNAROS_SUMMON_4",
+          "method": "ScheduleEvent",
+          "arguments": "11700ms, PHASE_RAGNAROS_SUMMONING, PHASE_RAGNAROS_SUMMONING"
+        },
+        {
+          "line": 520,
+          "event": "EVENT_RAGNAROS_SUMMON_5",
+          "method": "ScheduleEvent",
+          "arguments": "8700ms, PHASE_RAGNAROS_SUMMONING, PHASE_RAGNAROS_SUMMONING"
+        },
+        {
+          "line": 530,
+          "event": "EVENT_RAGNAROS_SUMMON_6",
+          "method": "ScheduleEvent",
+          "arguments": "16500ms, PHASE_RAGNAROS_SUMMONING, PHASE_RAGNAROS_SUMMONING"
+        },
+        {
+          "line": 563,
+          "event": "EVENT_RAGNAROS_SUMMON_2",
+          "method": "ScheduleEvent",
+          "arguments": "11500ms, PHASE_RAGNAROS_SUMMONING, PHASE_RAGNAROS_SUMMONING"
+        },
+        {
+          "line": 583,
+          "event": "EVENT_RAGNAROS_SUMMON_1",
+          "method": "ScheduleEvent",
+          "arguments": "5s, PHASE_RAGNAROS_SUMMONING, PHASE_RAGNAROS_SUMMONING"
+        }
+      ],
+      "casts": [
+        {
+          "line": 163,
+          "spellSymbol": "SPELL_RAGNAROS_FADE"
+        },
+        {
+          "line": 164,
+          "spellSymbol": "SPELL_RAGNAROS_SUBMERGE_EFFECT"
+        },
+        {
+          "line": 254,
+          "spellSymbol": "SPELL_SEPARATION_ANXIETY"
+        },
+        {
+          "line": 266,
+          "spellSymbol": "SPELL_AEGIS_OF_RAGNAROS"
+        },
+        {
+          "line": 297,
+          "spellSymbol": "SPELL_CHAMPION"
+        },
+        {
+          "line": 302,
+          "spellSymbol": "SPELL_IMMUNE_POLY"
+        },
+        {
+          "line": 320,
+          "spellSymbol": "SPELL_ENCOURAGEMENT"
+        },
+        {
+          "line": 389,
+          "spellSymbol": "SPELL_MAGIC_REFLECTION"
+        },
+        {
+          "line": 393,
+          "spellSymbol": "SPELL_DAMAGE_REFLECTION"
+        },
+        {
+          "line": 402,
+          "spellSymbol": "SPELL_HATE_TO_ZERO"
+        },
+        {
+          "line": 403,
+          "spellSymbol": "SPELL_TELEPORT_RANDOM"
+        },
+        {
+          "line": 411,
+          "spellSymbol": "SPELL_HATE_TO_ZERO"
+        },
+        {
+          "line": 412,
+          "spellSymbol": "SPELL_TELEPORT_TARGET"
+        },
+        {
+          "line": 430,
+          "spellSymbol": "SPELL_FIERCE_BLOW_COA"
+        },
+        {
+          "line": 464,
+          "spellSymbol": "SPELL_TELEPORT_SELF"
+        },
+        {
+          "line": 537,
+          "spellSymbol": "SPELL_ELEMENTAL_FIRE"
+        },
+        {
+          "line": 548,
+          "spellSymbol": "SPELL_RAGNA_EMERGE"
+        },
+        {
+          "line": 562,
+          "spellSymbol": "SPELL_SUMMON_RAGNAROS"
+        },
+        {
+          "line": 603,
+          "spellSymbol": "SPELL_SEPARATION_ANXIETY_MINION"
+        }
+      ],
+      "health": [
+        {
+          "line": 311,
+          "expression": "if (me->GetHealthPct() <= float(MAJORDOMO_DEFEAT_HEALTH_PCT))"
+        }
+      ]
+    },
+    {
+      "zone": "MC",
+      "map": 409,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/MoltenCore/boss_ragnaros.cpp",
+      "sourceLines": 622,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_HAND_OF_RAGNAROS",
+          "id": 2108612
+        },
+        {
+          "symbol": "SPELL_WRATH_OF_RAGNAROS",
+          "id": 2108623
+        },
+        {
+          "symbol": "SPELL_LAVA_BURST",
+          "id": 21908
+        },
+        {
+          "symbol": "SPELL_MAGMA_BLAST",
+          "id": 2108607
+        },
+        {
+          "symbol": "SPELL_MAGMA_BLAST_EFFECT",
+          "id": 2108608
+        },
+        {
+          "symbol": "SPELL_SONS_OF_FLAME_DUMMY",
+          "id": 21108
+        },
+        {
+          "symbol": "SPELL_RAGSUBMERGE",
+          "id": 21107
+        },
+        {
+          "symbol": "SPELL_RAGNA_SUBMERGE_VISUAL",
+          "id": 20567
+        },
+        {
+          "symbol": "SPELL_RAGEMERGE",
+          "id": 20568
+        },
+        {
+          "symbol": "SPELL_RAGNAROS_SUBMERGE_EFFECT",
+          "id": 21859
+        },
+        {
+          "symbol": "SPELL_ELEMENTAL_FIRE_KILL",
+          "id": 19773
+        },
+        {
+          "symbol": "SPELL_SUPER_NOVA_A",
+          "id": 2108627
+        },
+        {
+          "symbol": "SPELL_SUPER_NOVA_B",
+          "id": 2108662
+        },
+        {
+          "symbol": "SPELL_MIGHT_OF_RAGNAROS",
+          "id": 21154
+        },
+        {
+          "symbol": "SPELL_INTENSE_HEAT",
+          "id": 21155
+        },
+        {
+          "symbol": "SPELL_SUMMON_SONS_FLAME",
+          "id": 21108
+        },
+        {
+          "symbol": "SPELL_LAVA_BURST_A",
+          "id": 21886
+        },
+        {
+          "symbol": "SPELL_LAVA_BURST_B",
+          "id": 21900
+        },
+        {
+          "symbol": "SPELL_LAVA_BURST_C",
+          "id": 21901
+        },
+        {
+          "symbol": "SPELL_LAVA_BURST_D",
+          "id": 21902
+        },
+        {
+          "symbol": "SPELL_LAVA_BURST_E",
+          "id": 21903
+        },
+        {
+          "symbol": "SPELL_LAVA_BURST_F",
+          "id": 21905
+        },
+        {
+          "symbol": "SPELL_LAVA_BURST_G",
+          "id": 21906
+        },
+        {
+          "symbol": "SPELL_LAVA_BURST_H",
+          "id": 21907
+        },
+        {
+          "symbol": "SPELL_LAVA_BURST_TRAP",
+          "id": 21158
+        },
+        {
+          "symbol": "SPELL_SUMMON_SON_OF_FLAME_A",
+          "id": 21117
+        },
+        {
+          "symbol": "SPELL_SUMMON_SON_OF_FLAME_B",
+          "id": 21110
+        },
+        {
+          "symbol": "SPELL_SUMMON_SON_OF_FLAME_C",
+          "id": 21111
+        },
+        {
+          "symbol": "SPELL_SUMMON_SON_OF_FLAME_D",
+          "id": 21112
+        },
+        {
+          "symbol": "SPELL_SUMMON_SON_OF_FLAME_E",
+          "id": 21113
+        },
+        {
+          "symbol": "SPELL_SUMMON_SON_OF_FLAME_F",
+          "id": 21114
+        },
+        {
+          "symbol": "SPELL_SUMMON_SON_OF_FLAME_G",
+          "id": 21115
+        },
+        {
+          "symbol": "SPELL_SUMMON_SON_OF_FLAME_H",
+          "id": 21116
+        }
+      ],
+      "schedules": [
+        {
+          "line": 307,
+          "event": "EVENT_LAVA_BURST",
+          "method": "RescheduleEvent",
+          "arguments": "10s, PHASE_EMERGED, PHASE_EMERGED"
+        },
+        {
+          "line": 380,
+          "event": "EVENT_MAGMA_BLAST",
+          "method": "ScheduleEvent",
+          "arguments": "4s, PHASE_EMERGED, PHASE_EMERGED"
+        },
+        {
+          "line": 409,
+          "event": "EVENT_MAGMA_BLAST",
+          "method": "ScheduleEvent",
+          "arguments": "4s, PHASE_EMERGED, PHASE_EMERGED"
+        },
+        {
+          "line": 509,
+          "event": "EVENT_ERUPTION",
+          "method": "RescheduleEvent",
+          "arguments": "15s, PHASE_EMERGED, PHASE_EMERGED"
+        },
+        {
+          "line": 510,
+          "event": "EVENT_WRATH_OF_RAGNAROS",
+          "method": "RescheduleEvent",
+          "arguments": "30s, PHASE_EMERGED, PHASE_EMERGED"
+        },
+        {
+          "line": 511,
+          "event": "EVENT_HAND_OF_RAGNAROS",
+          "method": "RescheduleEvent",
+          "arguments": "25s, PHASE_EMERGED, PHASE_EMERGED"
+        },
+        {
+          "line": 512,
+          "event": "EVENT_LAVA_BURST",
+          "method": "RescheduleEvent",
+          "arguments": "10s, PHASE_EMERGED, PHASE_EMERGED"
+        },
+        {
+          "line": 513,
+          "event": "EVENT_SUPER_NOVA_A",
+          "method": "RescheduleEvent",
+          "arguments": "SUPER_NOVA_A_FIRST, PHASE_EMERGED, PHASE_EMERGED"
+        },
+        {
+          "line": 514,
+          "event": "EVENT_SUPER_NOVA_B",
+          "method": "RescheduleEvent",
+          "arguments": "SUPER_NOVA_B_FIRST, PHASE_EMERGED, PHASE_EMERGED"
+        },
+        {
+          "line": 516,
+          "event": "EVENT_SUBMERGE",
+          "method": "RescheduleEvent",
+          "arguments": "500ms, PHASE_EMERGED, PHASE_EMERGED"
+        },
+        {
+          "line": 517,
+          "event": "EVENT_MIGHT_OF_RAGNAROS",
+          "method": "RescheduleEvent",
+          "arguments": "11s, PHASE_EMERGED, PHASE_EMERGED"
+        },
+        {
+          "line": 518,
+          "event": "EVENT_MELEE_SCAN",
+          "method": "RescheduleEvent",
+          "arguments": "500ms, PHASE_EMERGED, PHASE_EMERGED"
+        }
+      ],
+      "casts": [
+        {
+          "line": 203,
+          "spellSymbol": "SPELL_INTENSE_HEAT"
+        },
+        {
+          "line": 298,
+          "spellSymbol": "SPELL_LAVA_BURST_TRAP"
+        },
+        {
+          "line": 331,
+          "spellSymbol": "SPELL_WRATH_OF_RAGNAROS"
+        },
+        {
+          "line": 342,
+          "spellSymbol": "SPELL_HAND_OF_RAGNAROS"
+        },
+        {
+          "line": 354,
+          "spellSymbol": "SPELL_LAVA_BURST"
+        },
+        {
+          "line": 359,
+          "spellSymbol": "SPELL_SUPER_NOVA_A"
+        },
+        {
+          "line": 365,
+          "spellSymbol": "SPELL_SUPER_NOVA_B"
+        },
+        {
+          "line": 400,
+          "spellSymbol": "SPELL_MAGMA_BLAST"
+        },
+        {
+          "line": 421,
+          "spellSymbol": "SPELL_CAST_OK"
+        },
+        {
+          "line": 449,
+          "spellSymbol": "SPELL_RAGNA_SUBMERGE_VISUAL"
+        },
+        {
+          "line": 454,
+          "spellSymbol": "SPELL_SUMMON_SONS_FLAME"
+        },
+        {
+          "line": 606,
+          "spellSymbol": "SPELL_MAGMA_BLAST_EFFECT"
+        }
+      ],
+      "health": [
+        {
+          "line": 434,
+          "expression": "if (_hasSubmergedTwice || me->GetHealthPct() > threshold)"
+        }
+      ]
+    },
+    {
+      "zone": "BWL",
+      "map": 469,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_razorgore.cpp",
+      "sourceLines": 299,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_MINDCONTROL",
+          "id": 19832
+        },
+        {
+          "symbol": "SPELL_MINDCONTROL_VISUAL",
+          "id": 45537
+        },
+        {
+          "symbol": "SPELL_EGG_DESTROY",
+          "id": 19873
+        },
+        {
+          "symbol": "SPELL_MIND_EXHAUSTION",
+          "id": 23958
+        },
+        {
+          "symbol": "SPELL_CLEAVE",
+          "id": 19632
+        },
+        {
+          "symbol": "SPELL_WARSTOMP",
+          "id": 24375
+        },
+        {
+          "symbol": "SPELL_FIREBALLVOLLEY",
+          "id": 22425
+        },
+        {
+          "symbol": "SPELL_CONFLAGRATION",
+          "id": 23023
+        },
+        {
+          "symbol": "SPELL_EXPLODE_ORB",
+          "id": 20037
+        },
+        {
+          "symbol": "SPELL_EXPLOSION",
+          "id": 20038
+        },
+        {
+          "symbol": "SPELL_WARMING_FLAMES",
+          "id": 23040
+        }
+      ],
+      "schedules": [
+        {
+          "line": 117,
+          "event": "EVENT_CLEAVE",
+          "method": "ScheduleEvent",
+          "arguments": "15s"
+        },
+        {
+          "line": 118,
+          "event": "EVENT_STOMP",
+          "method": "ScheduleEvent",
+          "arguments": "35s"
+        },
+        {
+          "line": 119,
+          "event": "EVENT_FIREBALL",
+          "method": "ScheduleEvent",
+          "arguments": "7s"
+        },
+        {
+          "line": 120,
+          "event": "EVENT_CONFLAGRATION",
+          "method": "ScheduleEvent",
+          "arguments": "12s"
+        },
+        {
+          "line": 224,
+          "event": "EVENT_CLEAVE",
+          "method": "ScheduleEvent",
+          "arguments": "7s, 10s"
+        },
+        {
+          "line": 228,
+          "event": "EVENT_STOMP",
+          "method": "ScheduleEvent",
+          "arguments": "15s, 25s"
+        },
+        {
+          "line": 232,
+          "event": "EVENT_FIREBALL",
+          "method": "ScheduleEvent",
+          "arguments": "12s, 15s"
+        },
+        {
+          "line": 236,
+          "event": "EVENT_CONFLAGRATION",
+          "method": "ScheduleEvent",
+          "arguments": "30s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 131,
+          "spellSymbol": "SPELL_WARMING_FLAMES"
+        },
+        {
+          "line": 159,
+          "spellSymbol": "SPELL_MIND_EXHAUSTION"
+        },
+        {
+          "line": 160,
+          "spellSymbol": "SPELL_MINDCONTROL_VISUAL"
+        },
+        {
+          "line": 202,
+          "spellSymbol": "SPELL_EXPLODE_ORB"
+        },
+        {
+          "line": 203,
+          "spellSymbol": "SPELL_EXPLOSION"
+        },
+        {
+          "line": 223,
+          "spellSymbol": "SPELL_CLEAVE"
+        },
+        {
+          "line": 227,
+          "spellSymbol": "SPELL_WARSTOMP"
+        },
+        {
+          "line": 231,
+          "spellSymbol": "SPELL_FIREBALLVOLLEY"
+        },
+        {
+          "line": 235,
+          "spellSymbol": "SPELL_CONFLAGRATION"
+        },
+        {
+          "line": 262,
+          "spellSymbol": "SPELL_MINDCONTROL"
+        }
+      ],
+      "health": []
+    },
+    {
+      "zone": "BWL",
+      "map": 469,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_vaelastrasz.cpp",
+      "sourceLines": 316,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_ESSENCE_OF_THE_RED",
+          "id": 23513
+        },
+        {
+          "symbol": "SPELL_FLAME_BREATH",
+          "id": 23461
+        },
+        {
+          "symbol": "SPELL_FIRE_NOVA",
+          "id": 23462
+        },
+        {
+          "symbol": "SPELL_TAIL_SWEEP",
+          "id": 15847
+        },
+        {
+          "symbol": "SPELL_CLEAVE",
+          "id": 19983
+        },
+        {
+          "symbol": "SPELL_NEFARIUS_CORRUPTION",
+          "id": 23642
+        },
+        {
+          "symbol": "SPELL_RED_LIGHTNING",
+          "id": 19484
+        },
+        {
+          "symbol": "SPELL_BURNING_ADRENALINE",
+          "id": 18173
+        },
+        {
+          "symbol": "SPELL_BURNING_ADRENALINE_EXPLOSION",
+          "id": 23478
+        },
+        {
+          "symbol": "SPELL_BURNING_ADRENALINE_INSTAKILL",
+          "id": 23644
+        }
+      ],
+      "schedules": [
+        {
+          "line": 121,
+          "event": "EVENT_CLEAVE",
+          "method": "ScheduleEvent",
+          "arguments": "10s"
+        },
+        {
+          "line": 122,
+          "event": "EVENT_FLAME_BREATH",
+          "method": "ScheduleEvent",
+          "arguments": "15s"
+        },
+        {
+          "line": 123,
+          "event": "EVENT_FIRE_NOVA",
+          "method": "ScheduleEvent",
+          "arguments": "5s"
+        },
+        {
+          "line": 124,
+          "event": "EVENT_TAIL_SWEEP",
+          "method": "ScheduleEvent",
+          "arguments": "11s"
+        },
+        {
+          "line": 125,
+          "event": "EVENT_BURNING_ADRENALINE",
+          "method": "ScheduleEvent",
+          "arguments": "15s"
+        },
+        {
+          "line": 210,
+          "event": "EVENT_CLEAVE",
+          "method": "ScheduleEvent",
+          "arguments": "15s"
+        },
+        {
+          "line": 215,
+          "event": "EVENT_FLAME_BREATH",
+          "method": "ScheduleEvent",
+          "arguments": "8s, 14s"
+        },
+        {
+          "line": 219,
+          "event": "EVENT_FIRE_NOVA",
+          "method": "ScheduleEvent",
+          "arguments": "3s, 5s"
+        },
+        {
+          "line": 223,
+          "event": "EVENT_TAIL_SWEEP",
+          "method": "ScheduleEvent",
+          "arguments": "15s"
+        },
+        {
+          "line": 241,
+          "event": "EVENT_BURNING_ADRENALINE",
+          "method": "ScheduleEvent",
+          "arguments": "15s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 117,
+          "spellSymbol": "SPELL_ESSENCE_OF_THE_RED"
+        },
+        {
+          "line": 164,
+          "spellSymbol": "SPELL_NEFARIUS_CORRUPTION"
+        },
+        {
+          "line": 172,
+          "spellSymbol": "SPELL_RED_LIGHTNING"
+        },
+        {
+          "line": 211,
+          "spellSymbol": "SPELL_CLEAVE"
+        },
+        {
+          "line": 214,
+          "spellSymbol": "SPELL_FLAME_BREATH"
+        },
+        {
+          "line": 218,
+          "spellSymbol": "SPELL_FIRE_NOVA"
+        },
+        {
+          "line": 222,
+          "spellSymbol": "SPELL_TAIL_SWEEP"
+        },
+        {
+          "line": 232,
+          "spellSymbol": "SPELL_BURNING_ADRENALINE"
+        },
+        {
+          "line": 238,
+          "spellSymbol": "SPELL_BURNING_ADRENALINE"
+        },
+        {
+          "line": 301,
+          "spellSymbol": "SPELL_BURNING_ADRENALINE_EXPLOSION"
+        },
+        {
+          "line": 302,
+          "spellSymbol": "SPELL_BURNING_ADRENALINE_INSTAKILL"
+        }
+      ],
+      "health": [
+        {
+          "line": 248,
+          "expression": "if (HealthBelowPct(15) && !HasYelled)"
+        }
+      ]
+    },
+    {
+      "zone": "BWL",
+      "map": 469,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_broodlord.cpp",
+      "error": "NOT_FOUND: Error code: NOT_FOUND; Error: GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs."
+    },
+    {
+      "zone": "BWL",
+      "map": 469,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_firemaw.cpp",
+      "sourceLines": 91,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_SHADOWFLAME",
+          "id": 22539
+        },
+        {
+          "symbol": "SPELL_WINGBUFFET",
+          "id": 23339
+        },
+        {
+          "symbol": "SPELL_FLAMEBUFFET",
+          "id": 23341
+        }
+      ],
+      "schedules": [
+        {
+          "line": 44,
+          "event": "EVENT_SHADOWFLAME",
+          "method": "ScheduleEvent",
+          "arguments": "18s"
+        },
+        {
+          "line": 45,
+          "event": "EVENT_WINGBUFFET",
+          "method": "ScheduleEvent",
+          "arguments": "30s"
+        },
+        {
+          "line": 46,
+          "event": "EVENT_FLAMEBUFFET",
+          "method": "ScheduleEvent",
+          "arguments": "5s"
+        },
+        {
+          "line": 65,
+          "event": "EVENT_SHADOWFLAME",
+          "method": "ScheduleEvent",
+          "arguments": "15s, 25s"
+        },
+        {
+          "line": 71,
+          "event": "EVENT_WINGBUFFET",
+          "method": "ScheduleEvent",
+          "arguments": "30s"
+        },
+        {
+          "line": 75,
+          "event": "EVENT_FLAMEBUFFET",
+          "method": "ScheduleEvent",
+          "arguments": "5s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 64,
+          "spellSymbol": "SPELL_SHADOWFLAME"
+        },
+        {
+          "line": 68,
+          "spellSymbol": "SPELL_WINGBUFFET"
+        },
+        {
+          "line": 74,
+          "spellSymbol": "SPELL_FLAMEBUFFET"
+        }
+      ],
+      "health": []
+    },
+    {
+      "zone": "BWL",
+      "map": 469,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_ebonroc.cpp",
+      "sourceLines": 102,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_SHADOWFLAME",
+          "id": 22539
+        },
+        {
+          "symbol": "SPELL_WINGBUFFET",
+          "id": 23339
+        },
+        {
+          "symbol": "SPELL_SHADOWOFEBONROC",
+          "id": 23340
+        }
+      ],
+      "schedules": [
+        {
+          "line": 57,
+          "event": "EVENT_SHADOWFLAME",
+          "method": "ScheduleEvent",
+          "arguments": "18s"
+        },
+        {
+          "line": 58,
+          "event": "EVENT_WINGBUFFET",
+          "method": "ScheduleEvent",
+          "arguments": "30s"
+        },
+        {
+          "line": 59,
+          "event": "EVENT_SHADOWOFEBONROC",
+          "method": "ScheduleEvent",
+          "arguments": "8s, 10s"
+        },
+        {
+          "line": 78,
+          "event": "EVENT_SHADOWFLAME",
+          "method": "ScheduleEvent",
+          "arguments": "15s, 25s"
+        },
+        {
+          "line": 82,
+          "event": "EVENT_WINGBUFFET",
+          "method": "ScheduleEvent",
+          "arguments": "30s"
+        },
+        {
+          "line": 86,
+          "event": "EVENT_SHADOWOFEBONROC",
+          "method": "ScheduleEvent",
+          "arguments": "8s, 10s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 77,
+          "spellSymbol": "SPELL_SHADOWFLAME"
+        },
+        {
+          "line": 81,
+          "spellSymbol": "SPELL_WINGBUFFET"
+        },
+        {
+          "line": 85,
+          "spellSymbol": "SPELL_SHADOWOFEBONROC"
+        }
+      ],
+      "health": []
+    },
+    {
+      "zone": "BWL",
+      "map": 469,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_flamegor.cpp",
+      "sourceLines": 97,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_SHADOWFLAME",
+          "id": 22539
+        },
+        {
+          "symbol": "SPELL_WINGBUFFET",
+          "id": 23339
+        },
+        {
+          "symbol": "SPELL_FRENZY",
+          "id": 23342
+        }
+      ],
+      "schedules": [
+        {
+          "line": 49,
+          "event": "EVENT_SHADOWFLAME",
+          "method": "ScheduleEvent",
+          "arguments": "18s"
+        },
+        {
+          "line": 50,
+          "event": "EVENT_WINGBUFFET",
+          "method": "ScheduleEvent",
+          "arguments": "30s"
+        },
+        {
+          "line": 51,
+          "event": "EVENT_FRENZY",
+          "method": "ScheduleEvent",
+          "arguments": "10s"
+        },
+        {
+          "line": 70,
+          "event": "EVENT_SHADOWFLAME",
+          "method": "ScheduleEvent",
+          "arguments": "15s, 25s"
+        },
+        {
+          "line": 76,
+          "event": "EVENT_WINGBUFFET",
+          "method": "ScheduleEvent",
+          "arguments": "30s"
+        },
+        {
+          "line": 81,
+          "event": "EVENT_FRENZY",
+          "method": "ScheduleEvent",
+          "arguments": "8s, 10s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 69,
+          "spellSymbol": "SPELL_SHADOWFLAME"
+        },
+        {
+          "line": 73,
+          "spellSymbol": "SPELL_WINGBUFFET"
+        },
+        {
+          "line": 80,
+          "spellSymbol": "SPELL_FRENZY"
+        }
+      ],
+      "health": []
+    },
+    {
+      "zone": "BWL",
+      "map": 469,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_chromaggus.cpp",
+      "sourceLines": 329,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_INCINERATE",
+          "id": 23308
+        },
+        {
+          "symbol": "SPELL_TIMELAPSE",
+          "id": 23310
+        },
+        {
+          "symbol": "SPELL_CORROSIVEACID",
+          "id": 23313
+        },
+        {
+          "symbol": "SPELL_IGNITEFLESH",
+          "id": 23315
+        },
+        {
+          "symbol": "SPELL_FROSTBURN",
+          "id": 23187
+        },
+        {
+          "symbol": "SPELL_BROODAF_BLUE",
+          "id": 23153
+        },
+        {
+          "symbol": "SPELL_BROODAF_BLACK",
+          "id": 23154
+        },
+        {
+          "symbol": "SPELL_BROODAF_RED",
+          "id": 23155
+        },
+        {
+          "symbol": "SPELL_BROODAF_BRONZE",
+          "id": 23170
+        },
+        {
+          "symbol": "SPELL_BROODAF_GREEN",
+          "id": 23169
+        },
+        {
+          "symbol": "SPELL_CHROMATIC_MUT_1",
+          "id": 23174
+        },
+        {
+          "symbol": "SPELL_ELEMENTAL_SHIELD",
+          "id": 22276
+        },
+        {
+          "symbol": "SPELL_FRENZY",
+          "id": 23128
+        },
+        {
+          "symbol": "SPELL_ENRAGE",
+          "id": 23537
+        },
+        {
+          "symbol": "SPELL_FIRE_ELEMENTAL_SHIELD",
+          "id": 22277
+        },
+        {
+          "symbol": "SPELL_FROST_ELEMENTAL_SHIELD",
+          "id": 22278
+        },
+        {
+          "symbol": "SPELL_SHADOW_ELEMENTAL_SHIELD",
+          "id": 22279
+        },
+        {
+          "symbol": "SPELL_NATURE_ELEMENTAL_SHIELD",
+          "id": 22280
+        },
+        {
+          "symbol": "SPELL_ARCANE_ELEMENTAL_SHIELD",
+          "id": 22281
+        },
+        {
+          "symbol": "SPELL_RED_BROOD_POWER",
+          "id": 22283
+        },
+        {
+          "symbol": "SPELL_BLUE_BROOD_POWER",
+          "id": 22285
+        },
+        {
+          "symbol": "SPELL_BRONZE_BROOD_POWER",
+          "id": 22286
+        },
+        {
+          "symbol": "SPELL_BLACK_BROOD_POWER",
+          "id": 22287
+        },
+        {
+          "symbol": "SPELL_GREEN_BROOD_POWER",
+          "id": 22288
+        }
+      ],
+      "schedules": [
+        {
+          "line": 104,
+          "event": "EVENT_SHIMMER",
+          "method": "ScheduleEvent",
+          "arguments": "1s"
+        },
+        {
+          "line": 105,
+          "event": "EVENT_BREATH",
+          "method": "ScheduleEvent",
+          "arguments": "30s"
+        },
+        {
+          "line": 106,
+          "event": "EVENT_BREATH",
+          "method": "ScheduleEvent",
+          "arguments": "60s"
+        },
+        {
+          "line": 107,
+          "event": "EVENT_AFFLICTION",
+          "method": "ScheduleEvent",
+          "arguments": "10s"
+        },
+        {
+          "line": 108,
+          "event": "EVENT_FRENZY",
+          "method": "ScheduleEvent",
+          "arguments": "15s"
+        },
+        {
+          "line": 151,
+          "event": "EVENT_SHIMMER",
+          "method": "ScheduleEvent",
+          "arguments": "17s, 25s"
+        },
+        {
+          "line": 157,
+          "event": "EVENT_BREATH",
+          "method": "ScheduleEvent",
+          "arguments": "60s"
+        },
+        {
+          "line": 180,
+          "event": "EVENT_AFFLICTION",
+          "method": "ScheduleEvent",
+          "arguments": "10s"
+        },
+        {
+          "line": 184,
+          "event": "EVENT_FRENZY",
+          "method": "ScheduleEvent",
+          "arguments": "10s, 15s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 149,
+          "spellSymbol": "SPELL_ELEMENTAL_SHIELD"
+        },
+        {
+          "line": 177,
+          "spellSymbol": "SPELL_CHROMATIC_MUT_1"
+        },
+        {
+          "line": 183,
+          "spellSymbol": "SPELL_FRENZY"
+        },
+        {
+          "line": 195,
+          "spellSymbol": "SPELL_ENRAGE"
+        },
+        {
+          "line": 279,
+          "spellSymbol": "SPELL_FIRE_ELEMENTAL_SHIELD"
+        },
+        {
+          "line": 312,
+          "spellSymbol": "SPELL_GREEN_BROOD_POWER"
+        }
+      ],
+      "health": [
+        {
+          "line": 193,
+          "expression": "if (!Enraged && HealthBelowPct(20))"
+        }
+      ]
+    },
+    {
+      "zone": "BWL",
+      "map": 469,
+      "path": "src/server/scripts/EasternKingdoms/BlackrockMountain/BlackwingLair/boss_nefarian.cpp",
+      "sourceLines": 1201,
+      "spellDefinitions": [
+        {
+          "symbol": "SPELL_CHROMATIC_CHAOS",
+          "id": 16337
+        },
+        {
+          "symbol": "SPELL_VAELASTRASZZ_SPAWN",
+          "id": 16354
+        },
+        {
+          "symbol": "SPELL_SHADOWBOLT",
+          "id": 22677
+        },
+        {
+          "symbol": "SPELL_SHADOWBOLT_VOLLEY",
+          "id": 22665
+        },
+        {
+          "symbol": "SPELL_SILENCE",
+          "id": 22666
+        },
+        {
+          "symbol": "SPELL_SHADOW_COMMAND",
+          "id": 22667
+        },
+        {
+          "symbol": "SPELL_FEAR",
+          "id": 22678
+        },
+        {
+          "symbol": "SPELL_SHADOWBLINK",
+          "id": 22664
+        },
+        {
+          "symbol": "SPELL_RAISE_DRAKONID",
+          "id": 23362
+        },
+        {
+          "symbol": "SPELL_SUMMON_DRAKONID_CORPSE",
+          "id": 23363
+        },
+        {
+          "symbol": "SPELL_NEFARIANS_BARRIER",
+          "id": 22663
+        },
+        {
+          "symbol": "SPELL_SPAWN_BLACK_DRAKONID",
+          "id": 22654
+        },
+        {
+          "symbol": "SPELL_SPAWN_RED_DRAKONID",
+          "id": 22655
+        },
+        {
+          "symbol": "SPELL_SPAWN_GREEN_DRAKONID",
+          "id": 22656
+        },
+        {
+          "symbol": "SPELL_SPAWN_BRONZE_DRAKONID",
+          "id": 22657
+        },
+        {
+          "symbol": "SPELL_SPAWN_BLUE_DRAKONID",
+          "id": 22658
+        },
+        {
+          "symbol": "SPELL_SPAWN_CHROMATIC_DRAKONID",
+          "id": 22680
+        },
+        {
+          "symbol": "SPELL_SPAWN_DRAKONID_GEN",
+          "id": 22653
+        },
+        {
+          "symbol": "SPELL_SHADOWFLAME_INITIAL",
+          "id": 22992
+        },
+        {
+          "symbol": "SPELL_SHADOWFLAME",
+          "id": 22539
+        },
+        {
+          "symbol": "SPELL_BELLOWINGROAR",
+          "id": 22686
+        },
+        {
+          "symbol": "SPELL_VEILOFSHADOW",
+          "id": 22687
+        },
+        {
+          "symbol": "SPELL_CLEAVE",
+          "id": 20691
+        },
+        {
+          "symbol": "SPELL_TAILLASH",
+          "id": 23364
+        },
+        {
+          "symbol": "SPELL_MAGE",
+          "id": 23410
+        },
+        {
+          "symbol": "SPELL_WARRIOR",
+          "id": 23397
+        },
+        {
+          "symbol": "SPELL_DRUID",
+          "id": 23398
+        },
+        {
+          "symbol": "SPELL_PRIEST",
+          "id": 23401
+        },
+        {
+          "symbol": "SPELL_PALADIN",
+          "id": 23418
+        },
+        {
+          "symbol": "SPELL_SHAMAN",
+          "id": 23425
+        },
+        {
+          "symbol": "SPELL_WARLOCK",
+          "id": 23427
+        },
+        {
+          "symbol": "SPELL_HUNTER",
+          "id": 23436
+        },
+        {
+          "symbol": "SPELL_ROGUE",
+          "id": 23414
+        },
+        {
+          "symbol": "SPELL_DEATH_KNIGHT",
+          "id": 49576
+        },
+        {
+          "symbol": "SPELL_ROOT_SELF",
+          "id": 17507
+        },
+        {
+          "symbol": "SPELL_POLYMORPH",
+          "id": 23603
+        },
+        {
+          "symbol": "SPELL_BLESSING_PROTECTION",
+          "id": 23415
+        },
+        {
+          "symbol": "SPELL_SUMMON_INFERNALS",
+          "id": 23426
+        },
+        {
+          "symbol": "SPELL_WARRIOR_BERSERK",
+          "id": 2458
+        },
+        {
+          "symbol": "SPELL_CORRUPTED_FIRE_NOVA_TOTEM",
+          "id": 23419
+        },
+        {
+          "symbol": "SPELL_CORRUPTED_STONESKIN_TOTEM",
+          "id": 23420
+        },
+        {
+          "symbol": "SPELL_CORRUPTED_HEALING_TOTEM",
+          "id": 23422
+        },
+        {
+          "symbol": "SPELL_CORRUPTED_WINDFURY_TOTEM",
+          "id": 23423
+        },
+        {
+          "symbol": "SPELL_STONESKIN_EFFECT",
+          "id": 10405
+        },
+        {
+          "symbol": "SPELL_HEALING_EFFECT",
+          "id": 10461
+        },
+        {
+          "symbol": "SPELL_WINDFURY_EFFECT",
+          "id": 8515
+        },
+        {
+          "symbol": "SPELL_FIRE_NOVA_EFFECT",
+          "id": 11307
+        },
+        {
+          "symbol": "SPELL_SHADOWBLINK_TRIGGERED_1",
+          "id": 22668
+        },
+        {
+          "symbol": "SPELL_SHADOWBLINK_TRIGGERED_2",
+          "id": 22669
+        },
+        {
+          "symbol": "SPELL_SHADOWBLINK_TRIGGERED_3",
+          "id": 22670
+        },
+        {
+          "symbol": "SPELL_SHADOWBLINK_TRIGGERED_4",
+          "id": 22671
+        },
+        {
+          "symbol": "SPELL_SHADOWBLINK_TRIGGERED_5",
+          "id": 22672
+        },
+        {
+          "symbol": "SPELL_SHADOWBLINK_TRIGGERED_6",
+          "id": 22673
+        },
+        {
+          "symbol": "SPELL_SHADOWBLINK_TRIGGERED_7",
+          "id": 22674
+        },
+        {
+          "symbol": "SPELL_SHADOWBLINK_TRIGGERED_8",
+          "id": 22675
+        },
+        {
+          "symbol": "SPELL_SHADOWBLINK_TRIGGERED_9",
+          "id": 22676
+        }
+      ],
+      "schedules": [
+        {
+          "line": 366,
+          "event": "EVENT_SHADOWBLINK",
+          "method": "ScheduleEvent",
+          "arguments": "500ms"
+        },
+        {
+          "line": 367,
+          "event": "EVENT_SHADOW_BOLT",
+          "method": "ScheduleEvent",
+          "arguments": "3s"
+        },
+        {
+          "line": 368,
+          "event": "EVENT_SHADOW_BOLT_VOLLEY",
+          "method": "ScheduleEvent",
+          "arguments": "13s, 15s"
+        },
+        {
+          "line": 369,
+          "event": "EVENT_FEAR",
+          "method": "ScheduleEvent",
+          "arguments": "10s, 20s"
+        },
+        {
+          "line": 370,
+          "event": "EVENT_SILENCE",
+          "method": "ScheduleEvent",
+          "arguments": "20s, 25s"
+        },
+        {
+          "line": 371,
+          "event": "EVENT_MIND_CONTROL",
+          "method": "ScheduleEvent",
+          "arguments": "30s, 35s"
+        },
+        {
+          "line": 372,
+          "event": "EVENT_SPAWN_ADDS",
+          "method": "ScheduleEvent",
+          "arguments": "10s"
+        },
+        {
+          "line": 380,
+          "event": "EVENT_PATH_2",
+          "method": "ScheduleEvent",
+          "arguments": "9s"
+        },
+        {
+          "line": 384,
+          "event": "EVENT_SUCCESS_1",
+          "method": "ScheduleEvent",
+          "arguments": "5s"
+        },
+        {
+          "line": 399,
+          "event": "EVENT_CHAOS_1",
+          "method": "ScheduleEvent",
+          "arguments": "7s"
+        },
+        {
+          "line": 407,
+          "event": "EVENT_CHAOS_2",
+          "method": "ScheduleEvent",
+          "arguments": "2s"
+        },
+        {
+          "line": 423,
+          "event": "EVENT_SUCCESS_2",
+          "method": "ScheduleEvent",
+          "arguments": "4s"
+        },
+        {
+          "line": 456,
+          "event": "EVENT_SHADOW_BOLT",
+          "method": "ScheduleEvent",
+          "arguments": "2s, 4s"
+        },
+        {
+          "line": 460,
+          "event": "EVENT_SHADOW_BOLT_VOLLEY",
+          "method": "ScheduleEvent",
+          "arguments": "19s, 25s"
+        },
+        {
+          "line": 464,
+          "event": "EVENT_FEAR",
+          "method": "ScheduleEvent",
+          "arguments": "10s, 20s"
+        },
+        {
+          "line": 468,
+          "event": "EVENT_SILENCE",
+          "method": "ScheduleEvent",
+          "arguments": "14s,23s"
+        },
+        {
+          "line": 472,
+          "event": "EVENT_MIND_CONTROL",
+          "method": "ScheduleEvent",
+          "arguments": "24s, 30s"
+        },
+        {
+          "line": 476,
+          "event": "EVENT_SHADOWBLINK",
+          "method": "ScheduleEvent",
+          "arguments": "30s, 40s"
+        },
+        {
+          "line": 502,
+          "event": "EVENT_START_EVENT",
+          "method": "ScheduleEvent",
+          "arguments": "4s"
+        },
+        {
+          "line": 595,
+          "event": "EVENT_SHADOWFLAME",
+          "method": "ScheduleEvent",
+          "arguments": "12s"
+        },
+        {
+          "line": 596,
+          "event": "EVENT_FEAR",
+          "method": "ScheduleEvent",
+          "arguments": "25s, 35s"
+        },
+        {
+          "line": 597,
+          "event": "EVENT_VEILOFSHADOW",
+          "method": "ScheduleEvent",
+          "arguments": "25s, 35s"
+        },
+        {
+          "line": 598,
+          "event": "EVENT_CLEAVE",
+          "method": "ScheduleEvent",
+          "arguments": "7s"
+        },
+        {
+          "line": 599,
+          "event": "EVENT_TAILLASH",
+          "method": "ScheduleEvent",
+          "arguments": "10s"
+        },
+        {
+          "line": 600,
+          "event": "EVENT_CLASSCALL",
+          "method": "ScheduleEvent",
+          "arguments": "30s, 35s"
+        },
+        {
+          "line": 620,
+          "event": "EVENT_SHADOWFLAME",
+          "method": "ScheduleEvent",
+          "arguments": "12s"
+        },
+        {
+          "line": 624,
+          "event": "EVENT_FEAR",
+          "method": "ScheduleEvent",
+          "arguments": "25s, 35s"
+        },
+        {
+          "line": 628,
+          "event": "EVENT_VEILOFSHADOW",
+          "method": "ScheduleEvent",
+          "arguments": "25s, 35s"
+        },
+        {
+          "line": 632,
+          "event": "EVENT_CLEAVE",
+          "method": "ScheduleEvent",
+          "arguments": "7s"
+        },
+        {
+          "line": 637,
+          "event": "EVENT_TAILLASH",
+          "method": "ScheduleEvent",
+          "arguments": "10s"
+        },
+        {
+          "line": 702,
+          "event": "EVENT_CLASSCALL",
+          "method": "ScheduleEvent",
+          "arguments": "30s, 35s"
+        }
+      ],
+      "casts": [
+        {
+          "line": 339,
+          "spellSymbol": "SPELL_ROOT_SELF"
+        },
+        {
+          "line": 362,
+          "spellSymbol": "SPELL_NEFARIANS_BARRIER"
+        },
+        {
+          "line": 410,
+          "spellSymbol": "SPELL_CHROMATIC_CHAOS"
+        },
+        {
+          "line": 426,
+          "spellSymbol": "SPELL_VAELASTRASZZ_SPAWN"
+        },
+        {
+          "line": 455,
+          "spellSymbol": "SPELL_SHADOWBOLT"
+        },
+        {
+          "line": 459,
+          "spellSymbol": "SPELL_SHADOWBOLT_VOLLEY"
+        },
+        {
+          "line": 463,
+          "spellSymbol": "SPELL_FEAR"
+        },
+        {
+          "line": 467,
+          "spellSymbol": "SPELL_SILENCE"
+        },
+        {
+          "line": 471,
+          "spellSymbol": "SPELL_SHADOW_COMMAND"
+        },
+        {
+          "line": 475,
+          "spellSymbol": "SPELL_SHADOWBLINK"
+        },
+        {
+          "line": 540,
+          "spellSymbol": "SPELL_RAISE_DRAKONID"
+        },
+        {
+          "line": 575,
+          "spellSymbol": "SPELL_SHADOWFLAME_INITIAL"
+        },
+        {
+          "line": 619,
+          "spellSymbol": "SPELL_SHADOWFLAME"
+        },
+        {
+          "line": 623,
+          "spellSymbol": "SPELL_BELLOWINGROAR"
+        },
+        {
+          "line": 627,
+          "spellSymbol": "SPELL_VEILOFSHADOW"
+        },
+        {
+          "line": 631,
+          "spellSymbol": "SPELL_CLEAVE"
+        },
+        {
+          "line": 636,
+          "spellSymbol": "SPELL_TAILLASH"
+        },
+        {
+          "line": 656,
+          "spellSymbol": "SPELL_MAGE"
+        },
+        {
+          "line": 660,
+          "spellSymbol": "SPELL_WARRIOR"
+        },
+        {
+          "line": 664,
+          "spellSymbol": "SPELL_DRUID"
+        },
+        {
+          "line": 668,
+          "spellSymbol": "SPELL_PRIEST"
+        },
+        {
+          "line": 672,
+          "spellSymbol": "SPELL_PALADIN"
+        },
+        {
+          "line": 676,
+          "spellSymbol": "SPELL_SHAMAN"
+        },
+        {
+          "line": 680,
+          "spellSymbol": "SPELL_WARLOCK"
+        },
+        {
+          "line": 684,
+          "spellSymbol": "SPELL_HUNTER"
+        },
+        {
+          "line": 688,
+          "spellSymbol": "SPELL_ROGUE"
+        },
+        {
+          "line": 695,
+          "spellSymbol": "SPELL_DEATH_KNIGHT"
+        },
+        {
+          "line": 828,
+          "spellSymbol": "SPELL_FIRE_NOVA_EFFECT"
+        },
+        {
+          "line": 881,
+          "spellSymbol": "SPELL_SPAWN_DRAKONID_GEN"
+        },
+        {
+          "line": 884,
+          "spellSymbol": "SPELL_SPAWN_CHROMATIC_DRAKONID"
+        },
+        {
+          "line": 907,
+          "spellSymbol": "SPELL_SUMMON_DRAKONID_CORPSE"
+        },
+        {
+          "line": 971,
+          "spellSymbol": "SPELL_SUMMON_INFERNALS"
+        },
+        {
+          "line": 1003,
+          "spellSymbol": "SPELL_POLYMORPH"
+        },
+        {
+          "line": 1027,
+          "spellSymbol": "SPELL_BLESSING_PROTECTION"
+        }
+      ],
+      "health": []
+    }
+  ]
+}

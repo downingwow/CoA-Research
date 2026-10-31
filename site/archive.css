@@ -175,3 +175,5 @@ body{background:radial-gradient(ellipse at 50% -25%,#34302a 0,#151a1c 42rem,#101
 .gear-wow-set-bonuses>div{padding-top:4px;border-top:1px solid #252d3e}
 .gear-wow-set-bonuses strong{color:#d6c7a4;font-weight:600}
 .gear-tooltip{max-height:calc(100vh - 24px)}
+
+.owned-addon-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:auto;padding-top:8px}.owned-addon-download{display:inline-flex;align-items:center;justify-content:center;padding:7px 9px;border:1px solid #8a6841;border-radius:3px;background:#2b261f;color:#edc57f;font-size:10px;font-weight:700}.owned-addon-download:hover{border-color:#d4a15f;background:#352d23;color:#ffe0a5;text-decoration:none}.owned-addon-source{margin-top:0}.owned-addon-no-release{color:#a69f93;font-size:10px}

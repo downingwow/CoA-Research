@@ -200,6 +200,20 @@ window.gearPage = async function gearPage(params, token) {
     const armor=Number(stats.armor)>0?'<div class="gear-wow-base-stat">Armor '+esc(stats.armor)+'</div>':'';
     const damage=data.damage||{},min=damage.min??data.minDamage??data.damageMin,max=damage.max??data.maxDamage??data.damageMax,speed=damage.speed??data.weaponSpeed;
     const description=String(data.description||'').split(/\s*\|\s*/).map(x=>x.trim()).filter(Boolean);
+    const setProgressLine=description.find(line=>/\(\d+\s*\/\s*\d+\)$/.test(line))||'';
+    const setProgress=setProgressLine.match(/\((\d+\s*\/\s*\d+)\)$/)?.[1]||'';
+    const setName=String(data.setName||setProgressLine.replace(/\s*\(\d+\s*\/\s*\d+\)$/, '')||'').trim();
+    const parsedSetBonuses=description.map(line=>{const match=line.match(/^\((\d+)\)\s*Set:\s*(.+)$/i);return match?{count:match[1],text:match[2]}:null;}).filter(Boolean);
+    const setBonusEntries=Object.entries(data.setBonuses||{}).filter(([,text])=>String(text||'').trim()).map(([count,text])=>({count:String(count).replace(/[^0-9]/g,''),text:String(text).trim()}));
+    const setBonuses=setBonusEntries.length?setBonusEntries:parsedSetBonuses;
+    const firstBonusIndex=description.findIndex(line=>/^\(\d+\)\s*Set:/i.test(line));
+    const progressIndex=setProgressLine?description.indexOf(setProgressLine):-1;
+    const setPieceText=description.slice(progressIndex>=0?progressIndex+1:0,firstBonusIndex>=0?firstBonusIndex:description.length);
+    const rawSetPieces=data.setPieces||data.setItems||data.setItemNames||[];
+    const setPieces=[...rawSetPieces.map(piece=>typeof piece==='string'?piece:piece?.name||'').filter(Boolean),...setPieceText].filter(piece=>piece!==name);
+    const uniqueSetPieces=[...new Set(setPieces)];
+    const setLines=new Set([setProgressLine,...setPieceText,...parsedSetBonuses.map(x=>'('+x.count+') Set: '+x.text)].filter(Boolean));
+    const setSection=(setName||uniqueSetPieces.length||setBonuses.length)?'<section class="gear-wow-set"><div class="gear-wow-set-heading">'+(setName?'<strong>'+esc(setName)+'</strong>':'<strong>Item set</strong>')+(setProgress?'<span>('+esc(setProgress)+')</span>':'')+'</div>'+(uniqueSetPieces.length?'<div class="gear-wow-set-pieces">'+uniqueSetPieces.map(piece=>'<div>'+esc(piece)+'</div>').join('')+'</div>':'')+(setBonuses.length?'<div class="gear-wow-set-bonuses">'+setBonuses.map(bonus=>'<div><strong>('+esc(bonus.count)+') Set:</strong> '+esc(bonus.text)+'</div>').join('')+'</div>':'')+'</section>':'';
     const describedDps=description.map(x=>x.match(/^\(?\s*([\d.]+)\s+damage per second\s*\)?$/i)).find(Boolean)?.[1];
     let weapon='';
     if(Number.isFinite(Number(min))&&Number.isFinite(Number(max))){
@@ -211,7 +225,7 @@ window.gearPage = async function gearPage(params, token) {
     }
     let binding=String(data.binding||data.bindType||data.bonding||'');
     if(!binding)binding=description.find(x=>/^Binds?\b/i.test(x))||'';
-    const extras=description.filter(line=>!/^Binds?\b/i.test(line)&&!/^ID\s*#?\d+$/i.test(line)&&!/^Item Level\s*\d+$/i.test(line)&&!/^Requires Level\s*\d+$/i.test(line)&&!/^\(?\s*[\d.]+\s+damage per second\s*\)?$/i.test(line)&&!/Damage|Speed\s*[\d.]+/i.test(line)&&!/^\+?\d+\s+/.test(line));
+    const extras=description.filter(line=>!setLines.has(line)&&!/^Binds?\b/i.test(line)&&!/^ID\s*#?\d+$/i.test(line)&&!/^Item Level\s*\d+$/i.test(line)&&!/^Requires Level\s*\d+$/i.test(line)&&!/^\(?\s*[\d.]+\s+damage per second\s*\)?$/i.test(line)&&!/Damage|Speed\s*[\d.]+/i.test(line)&&!/^\+?\d+\s+/.test(line));
     const bindLine=binding?'<div class="gear-wow-binding">'+esc(binding)+'</div>':'';
     const requirement=data.reqLevel||data.requiredLevel||data.requiredLevelMin||description.find(x=>/^Requires Level\s*\d+/i.test(x));
     const requirementLine=requirement?'<div class="gear-wow-requirement">'+(typeof requirement==='string'?esc(requirement):'Requires Level '+esc(requirement))+'</div>':'';
@@ -220,7 +234,7 @@ window.gearPage = async function gearPage(params, token) {
     const priceLine=Number.isFinite(price)&&price>0?'<div class="gear-wow-price">Sell Price: '+Math.floor(price/10000)+'g '+Math.floor(price%10000/100)+'s '+Math.floor(price%100)+'c</div>':'';
     const phaseLine=phase?'<span class="gear-wow-phase">Phase '+esc(phase)+'</span>':'';
     const recordLink=preserved?.key?'https://ascension-db.ascension-archive.workers.dev/#record='+encodeURIComponent(preserved.key):'https://ascension-db.ascension-archive.workers.dev/#search?kind=planner-item&q='+encodeURIComponent(name);
-    return '<div class="gear-wow-head">'+imageMarkup(item)+'<div class="gear-wow-namebox"><strong class="quality-'+esc(normalize(quality).replace(/[^a-z]/g,''))+'">'+esc(name)+'</strong>'+phaseLine+(level?'<span class="gear-wow-level">Item Level '+esc(level)+'</span>':'')+'</div></div>'+bindLine+'<div class="gear-tooltip-slot"><span>'+esc(type)+'</span><span>'+esc(displaySlot(slot,''))+'</span></div>'+weapon+'<div class="gear-wow-stats">'+lines+armor+'</div>'+requirementLine+effectLines+priceLine+'<div class="gear-wow-archive"><span>'+esc(source)+'</span><span>Item '+esc(data.id||item.id)+'</span></div><div class="gear-preview-score'+(item.scoreIncomplete?' is-partial':'')+'"><span>Historical weighted score</span><b>'+esc(item.score)+(item.scoreIncomplete?' · partial':'')+'</b></div><a class="gear-archive-link" href="'+esc(recordLink)+'" target="_blank" rel="noopener">Open preserved item record ↗</a>'+(item.eligibilityNote?'<small class="gear-conditional-tag">'+esc(item.eligibilityNote)+'</small>':'');
+    return '<div class="gear-wow-head">'+imageMarkup(item)+'<div class="gear-wow-namebox"><strong class="quality-'+esc(normalize(quality).replace(/[^a-z]/g,''))+'">'+esc(name)+'</strong>'+phaseLine+(level?'<span class="gear-wow-level">Item Level '+esc(level)+'</span>':'')+'</div></div>'+bindLine+'<div class="gear-tooltip-slot"><span>'+esc(type)+'</span><span>'+esc(displaySlot(slot,''))+'</span></div>'+weapon+'<div class="gear-wow-stats">'+lines+armor+'</div>'+requirementLine+effectLines+setSection+priceLine+'<div class="gear-wow-archive"><span>'+esc(source)+'</span><span>Item '+esc(data.id||item.id)+'</span></div><div class="gear-preview-score'+(item.scoreIncomplete?' is-partial':'')+'"><span>Historical weighted score</span><b>'+esc(item.score)+(item.scoreIncomplete?' · partial':'')+'</b></div><a class="gear-archive-link" href="'+esc(recordLink)+'" target="_blank" rel="noopener">Open preserved item record ↗</a>'+(item.eligibilityNote?'<small class="gear-conditional-tag">'+esc(item.eligibilityNote)+'</small>':'');
   }
   function placePreview(anchor){
     const rect=anchor.getBoundingClientRect(),width=Math.min(360,innerWidth-24),left=Math.max(12,Math.min(innerWidth-width-12,rect.left));

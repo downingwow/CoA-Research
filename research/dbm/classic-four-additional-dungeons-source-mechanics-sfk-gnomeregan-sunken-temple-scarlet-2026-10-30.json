@@ -1,0 +1,156 @@
+{
+  "schema": "coa-research.dbm-vanilla-previously-uncovered-dungeon-mechanics.v1",
+  "date": "2026-10-30",
+  "status": "Upstream pending SQL evidence, not confirmed deployed live",
+  "newDungeonMapIds": [
+    33,
+    90,
+    109,
+    189
+  ],
+  "mechanics": [
+    {
+      "mapId": 33,
+      "dungeon": "Shadowfang Keep",
+      "npcId": 4278,
+      "boss": "Commander Springvale",
+      "mechanic": "Divine Shield",
+      "trigger": {
+        "kind": "health-at-or-below",
+        "thresholdPct": 33,
+        "once": true
+      },
+      "spellId": null,
+      "source": "data/sql/updates/pending_db_world/rev_20261009_30_sfk_springvale_divine_shield.sql",
+      "lines": [
+        1,
+        6
+      ],
+      "notes": "Replaces old 20–22 second repeat; do not keep old repeating timer. Resolve spell ID from base SmartAI row 9004."
+    },
+    {
+      "mapId": 90,
+      "dungeon": "Gnomeregan",
+      "npcId": null,
+      "boss": "Mekgineer Thermaplugg",
+      "mechanic": "Jackhammer summons three Walking Bombs; fixate random players and explode",
+      "trigger": {
+        "kind": "on-jackhammer",
+        "repeatMs": null
+      },
+      "spellId": 11504,
+      "summonNpcIds": [
+        9780710,
+        9780711,
+        9780712
+      ],
+      "source": "data/sql/updates/pending_db_world/rev_20261002_10_gnomeregan_bombs.sql",
+      "lines": [
+        1,
+        5
+      ],
+      "notes": "11504 is Walking Bomb Effect, NOT Jackhammer. Cast-triggered warnings only."
+    },
+    {
+      "mapId": 109,
+      "dungeon": "Sunken Temple",
+      "npcId": 8440,
+      "boss": "Shade of Hakkar",
+      "mechanic": "Hakkari Bloodkeeper event pacing",
+      "trigger": {
+        "kind": "scripted-event",
+        "rows": [
+          {
+            "id": 19,
+            "initialMs": [
+              15000,
+              15000
+            ],
+            "repeatMs": [
+              60000,
+              60000
+            ]
+          },
+          {
+            "id": 20,
+            "initialMs": [
+              45000,
+              45000
+            ],
+            "repeatMs": [
+              60000,
+              60000
+            ]
+          }
+        ]
+      },
+      "spellId": null,
+      "source": "data/sql/updates/pending_db_world/rev_20261022_70_sunken_temple_hakkar_event_pacing.sql",
+      "lines": [
+        1,
+        10
+      ],
+      "notes": "Source comment describes Bloodkeeper every 30 seconds; SQL rows individually repeat every 60 seconds, offset by 30 seconds. Validate event actions before showing a timer."
+    },
+    {
+      "mapId": 109,
+      "dungeon": "Sunken Temple",
+      "npcId": 8443,
+      "boss": "Avatar of Hakkar",
+      "mechanic": "Activation delay and scripted event pacing",
+      "trigger": {
+        "kind": "scripted-event",
+        "rows": [
+          {
+            "id": 2,
+            "initialMs": [
+              10000,
+              10000
+            ],
+            "repeatMs": null
+          },
+          {
+            "id": 0,
+            "initialMs": [
+              20000,
+              20000
+            ],
+            "repeatMs": null
+          }
+        ]
+      },
+      "spellId": null,
+      "source": "data/sql/updates/pending_db_world/rev_20261022_70_sunken_temple_hakkar_event_pacing.sql",
+      "lines": [
+        1,
+        10
+      ],
+      "notes": "Comment says waits 10 seconds after appearing before attacking; do not equate row 0 with spell without original SmartAI row."
+    },
+    {
+      "mapId": 189,
+      "dungeon": "Scarlet Monastery",
+      "npcId": null,
+      "boss": "High Inquisitor Whitemane",
+      "mechanic": "Fake death at 1 HP and Mograine revival sequence",
+      "trigger": {
+        "kind": "health-and-scripted-phase",
+        "healthValue": 1
+      },
+      "spellId": null,
+      "source": "data/sql/updates/pending_db_world/rev_20261009_40_sm_whitemane_fake_death.sql",
+      "lines": [
+        1,
+        4
+      ],
+      "notes": "Whitemane stays invincible at 1 HP until scripted encounter resolves; avoid announcing boss death on fake death."
+    }
+  ],
+  "notes": [
+    "Adds concrete source mechanics for four previously roster-only maps",
+    "Gnomeregan explosion spell is not Jackhammer cast ID",
+    "Sunken Temple scripted event rows must not be presented as confirmed spell cooldowns",
+    "Springvale Divine Shield is a one-time health threshold, not repeating cooldown",
+    "Scarlet Monastery Whitemane fake death is an encounter phase transition"
+  ]
+}

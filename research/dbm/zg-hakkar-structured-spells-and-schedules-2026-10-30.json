@@ -1,0 +1,218 @@
+{
+  "schema": "coa-research.dbm-classic-boss-structured-source.v1",
+  "boss": "Hakkar",
+  "mapId": 309,
+  "source": "src/server/scripts/EasternKingdoms/ZulGurub/boss_hakkar.cpp",
+  "sourceStatus": "Upstream code, not confirmed live CR",
+  "spells": [
+    {
+      "symbol": "SPELL_BLOOD_SIPHON",
+      "id": 24324
+    },
+    {
+      "symbol": "SPELL_BLOOD_SIPHON_HEAL",
+      "id": 24322
+    },
+    {
+      "symbol": "SPELL_BLOOD_SIPHON_DAMAGE",
+      "id": 24323
+    },
+    {
+      "symbol": "SPELL_CORRUPTED_BLOOD",
+      "id": 24328
+    },
+    {
+      "symbol": "SPELL_CAUSE_INSANITY",
+      "id": 24327
+    },
+    {
+      "symbol": "SPELL_ENRAGE",
+      "id": 24318
+    },
+    {
+      "symbol": "SPELL_ASPECT_OF_JEKLIK",
+      "id": 24687
+    },
+    {
+      "symbol": "SPELL_ASPECT_OF_VENOXIS",
+      "id": 24688
+    },
+    {
+      "symbol": "SPELL_ASPECT_OF_MARLI",
+      "id": 24686
+    },
+    {
+      "symbol": "SPELL_ASPECT_OF_THEKAL",
+      "id": 24689
+    },
+    {
+      "symbol": "SPELL_ASPECT_OF_ARLOKK",
+      "id": 24690
+    },
+    {
+      "symbol": "SPELL_POISONOUS_BLOOD",
+      "id": 24321
+    }
+  ],
+  "schedules": [
+    {
+      "line": 117,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_BLOOD_SIPHON",
+      "args": "90s"
+    },
+    {
+      "line": 118,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_CORRUPTED_BLOOD",
+      "args": "25s"
+    },
+    {
+      "line": 119,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_CAUSE_INSANITY",
+      "args": "17s"
+    },
+    {
+      "line": 120,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_ENRAGE",
+      "args": "1min"
+    },
+    {
+      "line": 122,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_ASPECT_OF_JEKLIK",
+      "args": "21s"
+    },
+    {
+      "line": 124,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_ASPECT_OF_VENOXIS",
+      "args": "14s"
+    },
+    {
+      "line": 126,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_ASPECT_OF_MARLI",
+      "args": "15s"
+    },
+    {
+      "line": 128,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_ASPECT_OF_THEKAL",
+      "args": "10s"
+    },
+    {
+      "line": 130,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_ASPECT_OF_ARLOKK",
+      "args": "18s"
+    },
+    {
+      "line": 157,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_BLOOD_SIPHON",
+      "args": "90s"
+    },
+    {
+      "line": 161,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_CORRUPTED_BLOOD",
+      "args": "30s, 40s"
+    },
+    {
+      "line": 171,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_CAUSE_INSANITY",
+      "args": "35s, 40s"
+    },
+    {
+      "line": 176,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_ENRAGE",
+      "args": "90s"
+    },
+    {
+      "line": 180,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_ASPECT_OF_JEKLIK",
+      "args": "24s"
+    },
+    {
+      "line": 184,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_ASPECT_OF_VENOXIS",
+      "args": "16s, 18s"
+    },
+    {
+      "line": 192,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_ASPECT_OF_MARLI",
+      "args": "45s"
+    },
+    {
+      "line": 196,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_ASPECT_OF_THEKAL",
+      "args": "15s"
+    },
+    {
+      "line": 204,
+      "kind": "ScheduleEvent",
+      "event": "EVENT_ASPECT_OF_ARLOKK",
+      "args": "10s, 15s"
+    }
+  ],
+  "casts": [
+    {
+      "line": 99,
+      "spell": "SPELL_HAKKAR_POWER"
+    },
+    {
+      "line": 156,
+      "spell": "SPELL_BLOOD_SIPHON"
+    },
+    {
+      "line": 160,
+      "spell": "SPELL_CORRUPTED_BLOOD"
+    },
+    {
+      "line": 168,
+      "spell": "SPELL_CAUSE_INSANITY"
+    },
+    {
+      "line": 175,
+      "spell": "SPELL_ENRAGE"
+    },
+    {
+      "line": 179,
+      "spell": "SPELL_ASPECT_OF_JEKLIK"
+    },
+    {
+      "line": 183,
+      "spell": "SPELL_ASPECT_OF_VENOXIS"
+    },
+    {
+      "line": 189,
+      "spell": "SPELL_ASPECT_OF_MARLI"
+    },
+    {
+      "line": 195,
+      "spell": "SPELL_ASPECT_OF_THEKAL"
+    },
+    {
+      "line": 201,
+      "spell": "SPELL_ASPECT_OF_ARLOKK"
+    },
+    {
+      "line": 357,
+      "spell": "SPELL_BLOOD_SIPHON_HEAL"
+    }
+  ],
+  "notes": [
+    "Schedules include initial and repeat events, but are not live-verified timings",
+    "Spell identifiers are source enum definitions, not necessarily castable combat-log IDs",
+    "Aspect events depend on priest boss completion state"
+  ]
+}

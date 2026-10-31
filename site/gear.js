@@ -370,4 +370,5 @@ function paint() {
 }
 
 }
+
 window.gearPage=gearPage;

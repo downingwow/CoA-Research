@@ -11,11 +11,11 @@
     },
     {
       "date": "Oct 30, 2026",
-      "status": "In progress",
-      "title": "Top Builds",
-      "summary": "We’re recovering exact talent allocations from the research archive before publishing ranked builds. Historical gear weights and combat performance are not being treated as build codes.",
+      "status": "Updated",
+      "title": "Community builds added",
+      "summary": "The talent builder now includes 73 archived community builds matched to current trees across 39 specializations. Listings use archived votes and views, not combat rankings; more records are being reviewed.",
       "url": "?view=builder",
-      "linkLabel": "Open talent calculator"
+      "linkLabel": "Browse community builds"
     },
     {
       "date": "Oct 30, 2026",

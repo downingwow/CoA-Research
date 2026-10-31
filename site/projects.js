@@ -94,10 +94,10 @@
     const section = document.createElement('section');
     section.className = 'home-projects';
     section.innerHTML =
-      '<div class="sectionline"><div><span class="eyebrow">THE WORKSHOP · 20 GITHUB REPOSITORIES</span><h2>What I’m working on</h2></div><span class="archive-wordmark">CoA addons · research · experiments</span></div>' +
+      '<div class="sectionline"><div><span class="eyebrow">THE WORKSHOP · 20 ADDON REPOSITORIES + RESEARCH HUB</span><h2>What I’m working on</h2></div><span class="archive-wordmark">CoA addons · research · experiments</span></div>' +
       '<p class="work-intro">A snapshot of the bigger efforts and the wider addon lineup. Test builds and research are labeled honestly; a repository or release does not mean every feature has been validated in game.</p>' +
       '<div class="work-focus-grid">' + focus.map(renderCard).join('') + '</div>' +
-      '<details class="work-more"><summary><span>Browse the rest of the workshop</span><b>13 more repositories · one paused · one scaffold</b></summary>' +
+      '<details class="work-more"><summary><span>Browse the rest of the workshop</span><b>14 more repositories · one paused · one scaffold</b></summary>' +
       '<div class="work-more-body">' + more.map(renderMore).join('') +
       '<aside class="work-research"><strong>Client modernization research</strong><p>Separately comparing newer Wrath client paths, including 3.4.3, as research. This is exploratory work—not a claim that Conquest Reborn runs on a newer client.</p><a href="https://github.com/downingwow/CoA-Research" target="_blank" rel="noopener noreferrer">Research hub ↗</a></aside>' +
       '<p class="work-footnote">Project notes checked against the public repositories and recent development chats on October 31, 2026. For current downloads and exact release status, open each repository.</p></div></details>';

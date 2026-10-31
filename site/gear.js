@@ -1,5 +1,50 @@
 'use strict';
 
+const preservedItemCache=new Map();
+let preservedArchivePromise;
+const preservedArchiveOrigin='https://ascension-public-data.ascension-archive.workers.dev/';
+async function preservedJson(base,path){
+  const key=base+path;
+  if(!preservedItemCache.has(key))preservedItemCache.set(key,(async()=>{
+    const response=await fetch(key);
+    if(!response.ok)throw Error('Preserved item data unavailable');
+    const bytes=await response.arrayBuffer();
+    if(bytes.byteLength>1&&new Uint8Array(bytes,0,2)[0]===31&&new Uint8Array(bytes,0,2)[1]===139){
+      if(!('DecompressionStream'in window))throw Error('This browser cannot read the preserved item data');
+      return new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).json();
+    }
+    return JSON.parse(new TextDecoder().decode(bytes));
+  })().catch(error=>{preservedItemCache.delete(key);throw error;}));
+  return preservedItemCache.get(key);
+}
+async function preservedArchive(){
+  if(!preservedArchivePromise)preservedArchivePromise=(async()=>{
+    const current=await fetch(new URL('catalog/current.json',preservedArchiveOrigin),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Preserved item catalog unavailable');return r.json();});
+    if(current.schema!=='ascension-current-1'||!/^catalog\/snapshots\/[a-f0-9]{64}\/$/.test(current.prefix||''))throw Error('Invalid preserved item catalog');
+    const base=new URL(current.prefix,preservedArchiveOrigin).href;
+    const manifest=await preservedJson(base,'manifest.json');
+    return{base,manifest};
+  })().catch(error=>{preservedArchivePromise=null;throw error;});
+  return preservedArchivePromise;
+}
+async function preservedItem(item){
+  const id=String(item.id||'');
+  if(!/^\d+$/.test(id))return null;
+  const cacheKey='preserved-item:'+id;
+  if(!preservedItemCache.has(cacheKey))preservedItemCache.set(cacheKey,(async()=>{
+    const{base,manifest}=await preservedArchive(),key='id:'+id.slice(0,2);
+    const parts=manifest.search?.[key]?.parts||[];
+    const indexes=await Promise.all(parts.map(path=>preservedJson(base,path)));
+    const match=indexes.flat().find(row=>String(row?.[5])===id&&row?.[2]==='planner-item'&&String(row?.[4]||'').includes('BisBeard'));
+    if(!match)return null;
+    const[recordFile,part,offset]=String(match[0]).split('/');
+    const rows=await preservedJson(base,'records/'+recordFile+'/'+part+'.json.gz');
+    const row=rows[Number(offset)];
+    return row?.[5]?{data:row[5],source:row[4],mode:row[3],key:match[0]}:null;
+  })().catch(error=>{preservedItemCache.delete(cacheKey);return null;}));
+  return preservedItemCache.get(cacheKey);
+}
+
 async function gearPage(params, token) {
   const cls = classFrom(params.get('class'));
   const spec = tabsOf(cls).find(t => String(t.tabId) === params.get('spec')) || tabsOf(cls)[0];
@@ -143,19 +188,58 @@ async function gearPage(params, token) {
     const archive='https://ascension-db.ascension-archive.workers.dev/#search?kind=planner-item&q='+encodeURIComponent(item.name);
     return '<div class="gear-piece-summary">' + imageMarkup(item) + '<div class="gear-piece-copy"><button type="button" class="gear-preview-trigger" data-item-preview="' + esc(itemKey(item)) + '" aria-label="Preview ' + esc(item.name) + ' stats">' + esc(item.name) + '</button><div class="gear-tags"><span>' + esc(item.quality || 'Item') + '</span><span>iLvl ' + esc(item.ilvl || '—') + '</span><span>Weighted score ' + esc(item.score) + (item.scoreIncomplete ? ' · partial' : '') + '</span>' + (item.eligibilityNote ? '<span class="gear-conditional-tag">' + esc(item.eligibilityNote) + '</span>' : '') + '</div><p>' + esc(item.source || 'Source unknown') + '</p><a class="gear-archive-link" href="' + esc(archive) + '" target="_blank" rel="noopener">Search preserved CoA item records ↗</a></div></div><div class="gear-stat-chips">' + stats.slice(0,4).map(([key,value]) => '<span>' + esc(key) + ' <b>' + esc(value) + '</b></span>').join('') + (stats.length > 4 ? '<details><summary>All ' + stats.length + ' stats</summary><div>' + stats.slice(4).map(([key,value]) => '<span>' + esc(key) + ' <b>' + esc(value) + '</b></span>').join('') + '</div></details>' : '') + (item.scoreIncomplete ? '<small class="gear-dps-note">Weapon DPS was not preserved for this candidate, so its displayed score uses recorded stats only.</small>' : '') + '</div>';
   }
+  let activePreviewId='';
+  const previewStats={agility:'Agility',strength:'Strength',intellect:'Intellect',stamina:'Stamina',spirit:'Spirit',attackPower:'Attack power',rangedAttackPower:'Ranged attack power',feralAttackPower:'Feral attack power',spellPower:'Spell power',spellDamage:'Spell power',healingPower:'Healing power',critRating:'Critical strike',hitRating:'Hit rating',hasteRating:'Haste',armorPenetration:'Armor penetration',spellPenetration:'Spell penetration',expertise:'Expertise',defense:'Defense',dodge:'Dodge',parry:'Parry',block:'Block',blockValue:'Block value',shieldBlockValue:'Shield block value',armor:'Armor',fireResist:'Fire resistance',natureResist:'Nature resistance',frostResist:'Frost resistance',shadowResist:'Shadow resistance',arcaneResist:'Arcane resistance'};
+  function tooltipMarkup(item,preserved=null){
+    const data=preserved?.data||{},stats=data.stats&&Object.keys(data.stats).length?data.stats:(item.stats||{});
+    const name=String(data.name||item.name),quality=String(data.quality||item.quality||'Item'),level=data.itemLevel??data.ilvl??item.ilvl,phase=data.phase??item.phase;
+    const type=String(data.type||item.type||''),slot=String(data.slot||item.slot||''),source=String(data.source||item.source||'Source unknown');
+    const lines=Object.entries(stats).filter(([key])=>key!=='armor').map(([key,value])=>'<div class="gear-wow-stat">+'+esc(value)+' '+esc(previewStats[key]||key.replace(/([A-Z])/g,' $1').replace(/^./,x=>x.toUpperCase()))+'</div>').join('');
+    const armor=Number(stats.armor)>0?'<div class="gear-wow-base-stat">Armor '+esc(stats.armor)+'</div>':'';
+    const damage=data.damage||{},min=damage.min??data.minDamage??data.damageMin,max=damage.max??data.maxDamage??data.damageMax,speed=damage.speed??data.weaponSpeed;
+    const description=String(data.description||'').split(/\s*\|\s*/).map(x=>x.trim()).filter(Boolean);
+    const describedDps=description.map(x=>x.match(/^\(?\s*([\d.]+)\s+damage per second\s*\)?$/i)).find(Boolean)?.[1];
+    let weapon='';
+    if(Number.isFinite(Number(min))&&Number.isFinite(Number(max))){
+      const dps=damage.dps??data.dps??describedDps;
+      weapon='<div class="gear-wow-damage"><span>'+esc(min)+' - '+esc(max)+' Damage</span><strong>'+esc(type)+'</strong></div>'+(speed?'<div class="gear-wow-speed">Speed '+esc(Number(speed).toFixed(2))+'</div>':'')+(dps?'<div class="gear-wow-dps">('+esc(dps)+' damage per second)</div>':'');
+    }else{
+      const estimate=slot==='Ranged'?item.rangedDps:item.weaponDps;
+      if(Number(estimate)>0)weapon='<div class="gear-wow-dps gear-wow-estimate">Weapon DPS (estimated): '+esc(estimate)+'</div>';
+    }
+    let binding=String(data.binding||data.bindType||data.bonding||'');
+    if(!binding)binding=description.find(x=>/^Binds?\b/i.test(x))||'';
+    const extras=description.filter(line=>!/^Binds?\b/i.test(line)&&!/^ID\s*#?\d+$/i.test(line)&&!/^Item Level\s*\d+$/i.test(line)&&!/^Requires Level\s*\d+$/i.test(line)&&!/^\(?\s*[\d.]+\s+damage per second\s*\)?$/i.test(line)&&!/Damage|Speed\s*[\d.]+/i.test(line)&&!/^\+?\d+\s+/.test(line));
+    const bindLine=binding?'<div class="gear-wow-binding">'+esc(binding)+'</div>':'';
+    const requirement=data.reqLevel||data.requiredLevel||data.requiredLevelMin||description.find(x=>/^Requires Level\s*\d+/i.test(x));
+    const requirementLine=requirement?'<div class="gear-wow-requirement">'+(typeof requirement==='string'?esc(requirement):'Requires Level '+esc(requirement))+'</div>':'';
+    const effectLines=extras.map(line=>'<div class="'+(/^(Equip|Use|Chance on hit|When hit|Set):/i.test(line)?'gear-wow-effect':'gear-wow-extra')+'">'+esc(line)+'</div>').join('');
+    const price=Number(data.sellPrice??data.sellPriceCopper??data.sell_price);
+    const priceLine=Number.isFinite(price)&&price>0?'<div class="gear-wow-price">Sell Price: '+Math.floor(price/10000)+'g '+Math.floor(price%10000/100)+'s '+Math.floor(price%100)+'c</div>':'';
+    const phaseLine=phase?'<span class="gear-wow-phase">Phase '+esc(phase)+'</span>':'';
+    const recordLink=preserved?.key?'https://ascension-db.ascension-archive.workers.dev/#record='+encodeURIComponent(preserved.key):'https://ascension-db.ascension-archive.workers.dev/#search?kind=planner-item&q='+encodeURIComponent(name);
+    return '<div class="gear-wow-head">'+imageMarkup(item)+'<div class="gear-wow-namebox"><strong class="quality-'+esc(normalize(quality).replace(/[^a-z]/g,''))+'">'+esc(name)+'</strong>'+phaseLine+(level?'<span class="gear-wow-level">Item Level '+esc(level)+'</span>':'')+'</div></div>'+bindLine+'<div class="gear-tooltip-slot"><span>'+esc(type)+'</span><span>'+esc(displaySlot(slot,''))+'</span></div>'+weapon+'<div class="gear-wow-stats">'+lines+armor+'</div>'+requirementLine+effectLines+priceLine+'<div class="gear-wow-archive"><span>'+esc(source)+'</span><span>Item '+esc(data.id||item.id)+'</span></div><div class="gear-preview-score'+(item.scoreIncomplete?' is-partial':'')+'"><span>Historical weighted score</span><b>'+esc(item.score)+(item.scoreIncomplete?' · partial':'')+'</b></div><a class="gear-archive-link" href="'+esc(recordLink)+'" target="_blank" rel="noopener">Open preserved item record ↗</a>'+(item.eligibilityNote?'<small class="gear-conditional-tag">'+esc(item.eligibilityNote)+'</small>':'');
+  }
+  function placePreview(anchor){
+    const rect=anchor.getBoundingClientRect(),width=Math.min(360,innerWidth-24),left=Math.max(12,Math.min(innerWidth-width-12,rect.left));
+    tooltip.style.width=width+'px';tooltip.style.left=left+'px';
+    const height=tooltip.offsetHeight,below=rect.bottom+10;
+    tooltip.style.top=(below+height<=innerHeight-12?below:Math.max(12,rect.top-height-10))+'px';
+  }
   function showPreview(item, anchor) {
     clearTimeout(previewCloseTimer);
-    const archive='https://ascension-db.ascension-archive.workers.dev/#search?kind=planner-item&q='+encodeURIComponent(item.name);
-    const statNames={agility:'Agility',strength:'Strength',intellect:'Intellect',stamina:'Stamina',spirit:'Spirit',attackPower:'Attack power',rangedAttackPower:'Ranged attack power',spellPower:'Spell power',spellDamage:'Spell power',healingPower:'Healing power',critRating:'Critical strike',hitRating:'Hit rating',hasteRating:'Haste',armorPenetration:'Armor penetration',spellPenetration:'Spell penetration',expertise:'Expertise',defense:'Defense',dodge:'Dodge',parry:'Parry',block:'Block',blockValue:'Block value',shieldBlockValue:'Shield block value',armor:'Armor',fireResist:'Fire resistance',natureResist:'Nature resistance',frostResist:'Frost resistance',shadowResist:'Shadow resistance',arcaneResist:'Arcane resistance'};
-    const statLines=Object.entries(item.stats || {}).map(([key,value]) => '<div><span>' + esc(statNames[key]||key.replace(/([A-Z])/g,' $1').replace(/^./,x=>x.toUpperCase())) + '</span><b>' + esc(value) + '</b></div>').join('');
-    const weaponLines=(item.rangedDps?'<div class="gear-preview-estimate"><span>Ranged DPS (estimated)</span><b>'+esc(item.rangedDps)+'</b></div>':'')+(item.weaponDps?'<div class="gear-preview-estimate"><span>Weapon DPS (estimated)</span><b>'+esc(item.weaponDps)+'</b></div>':'');
-    tooltip.innerHTML = '<div class="gear-preview-head">' + imageMarkup(item) + '<div><strong class="quality-' + esc(normalize(item.quality||'').replace(/[^a-z]/g,'')) + '">' + esc(item.name) + '</strong><span>' + esc(item.quality || 'Item') + (item.ilvl?' · Item Level '+esc(item.ilvl):'') + '</span></div></div><div class="gear-tooltip-slot">' + esc(item.type || '') + '<span>' + esc(displaySlot(item.slot,'')) + '</span></div>' + ((statLines||weaponLines)?'<div class="gear-preview-stats">'+statLines+weaponLines+'</div>':'<p>No stat lines were preserved for this record.</p>') + '<div class="gear-tooltip-source"><span>' + esc(item.source || 'Source unknown') + '</span><span>Item ' + esc(item.id) + '</span></div><div class="gear-preview-score' + (item.scoreIncomplete ? ' is-partial' : '') + '" title="Historical candidate score calculated from the preserved profile weights">Historical score <b>' + esc(item.score) + (item.scoreIncomplete ? ' · partial' : '') + '</b></div><a class="gear-archive-link" href="' + esc(archive) + '" target="_blank" rel="noopener">Open preserved item record ↗</a>' + (item.eligibilityNote ? '<small class="gear-conditional-tag">' + esc(item.eligibilityNote) + '</small>' : '');
+    activePreviewId=String(item.id||itemKey(item));
+    const activeId=activePreviewId;
+    tooltip.innerHTML=tooltipMarkup(item);
+    tooltip.hidden=false;
     wireImages(tooltip);
-    tooltip.hidden = false;
-    const rect = anchor.getBoundingClientRect(), width = Math.min(360,innerWidth-24), left = Math.max(12,Math.min(innerWidth-width-12,rect.left));
-    tooltip.style.width = width + 'px'; tooltip.style.left = left + 'px';
-    const height=tooltip.offsetHeight, below=rect.bottom+10;
-    tooltip.style.top = (below+height <= innerHeight-12 ? below : Math.max(12,rect.top-height-10)) + 'px';
+    placePreview(anchor);
+    preservedItem(item).then(preserved=>{
+      if(!preserved||tooltip.hidden||activePreviewId!==activeId)return;
+      tooltip.innerHTML=tooltipMarkup(item,preserved);
+      wireImages(tooltip);
+      placePreview(anchor);
+    });
   }
   const closePreviewSoon = () => { clearTimeout(previewCloseTimer); previewCloseTimer=setTimeout(()=>{tooltip.hidden=true;},180); };
   tooltip.onmouseenter=()=>clearTimeout(previewCloseTimer);

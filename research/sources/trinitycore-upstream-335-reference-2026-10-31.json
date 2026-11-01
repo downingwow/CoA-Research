@@ -1,0 +1,43 @@
+{
+  "title": "TrinityCore upstream reference for CoA research",
+  "added": "2026-10-31",
+  "links": {
+    "website": "https://www.trinitycore.org/",
+    "repository": "https://github.com/TrinityCore/TrinityCore",
+    "branch335": "https://github.com/TrinityCore/TrinityCore/tree/3.3.5",
+    "branchWrathClassic": "https://github.com/TrinityCore/TrinityCore/tree/wotlk_classic",
+    "branchMaster": "https://github.com/TrinityCore/TrinityCore/tree/master"
+  },
+  "snapshot": {
+    "branch335Commit": "9180ccb818605d573e05eae76f1989b78754b4d2",
+    "branchWrathClassicCommit": "12c81a6f86cddbd47710b4e27aeff3f4eb7c4ced",
+    "masterCommit": "761b1a2f5f12744568befb9b94739d97167f0c84"
+  },
+  "primaryUse": "3.3.5 branch as comparative upstream reference for historical Vanilla, Burning Crusade and Wrath data, instance scripts, NPC and spell logic, quests, combat events, SQL and core APIs",
+  "directories": [
+    "src/server/scripts/EasternKingdoms",
+    "src/server/scripts/Kalimdor",
+    "src/server/scripts/Outland",
+    "src/server/scripts/Northrend",
+    "src/server/scripts/Spells",
+    "sql/base",
+    "sql/updates"
+  ],
+  "rules": [
+    "CoA/Conquest Reborn custom code and validated live client observations outrank TrinityCore data",
+    "Do not treat TrinityCore entries, IDs, cooldowns or creature behavior as verified on Conquest Reborn",
+    "Keep exact repo, branch, commit, path, line and verification status for each extracted record",
+    "Prefer branch 3.3.5 when targeting 3.3.5a client; wotlk_classic and master are cross-check references only",
+    "Do not import modern-only or Cataclysm+ mechanics into the 3.3.5a addon datasets",
+    "Confirm redistribution terms and preserve required third-party licenses when importing source code; use links and extracted research facts by default",
+    "Do not automatically deploy or use historical stock boss timers as predictive DBM-CoA timers"
+  ],
+  "plannedApplications": [
+    "DBM-CoA encounter detection, mechanics and evidence-backed timers",
+    "AtlasLoot-CoA loot and creature cross-checks",
+    "Questie-X quests, NPCs and objective behaviors",
+    "Details and WeakAuras spell and combat event cross-checks",
+    "BoneArchive searchable source/provenance references and historical comparisons"
+  ],
+  "status": "Source registered for research; this does not mean an entire TrinityCore source/database mirror was imported or deployed to the website"
+}

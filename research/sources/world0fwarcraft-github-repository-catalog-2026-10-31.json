@@ -1,0 +1,110 @@
+{
+  "schema": "coa-research.upstream-github-organization-catalog.v1",
+  "added": "2026-10-31",
+  "organization": "World0fWarcraft",
+  "url": "https://github.com/World0fWarcraft",
+  "source": "GitHub public repository search of organization",
+  "researchPurpose": "Broad source-discovery hub for historical Vanilla/TBC/Wrath server code, 3.3.5a data, DBC definitions, scripts, tools, UI and database cross-checks",
+  "priority": "Compare against Conquest Reborn custom source and client; not authoritative for live game",
+  "priorityRepositories": [
+    {
+      "name": "wotlk-db",
+      "url": "https://github.com/World0fWarcraft/wotlk-db",
+      "use": "Wrath-era world database comparisons"
+    },
+    {
+      "name": "unified-db-3.3.5a",
+      "url": "https://github.com/World0fWarcraft/unified-db-3.3.5a",
+      "use": "3.3.5a consolidated world database comparison"
+    },
+    {
+      "name": "azerothcore-wotlk",
+      "url": "https://github.com/World0fWarcraft/azerothcore-wotlk",
+      "use": "AzerothCore fork for scripting/API comparisons"
+    },
+    {
+      "name": "TrinityCore",
+      "url": "https://github.com/World0fWarcraft/TrinityCore",
+      "use": "TrinityCore fork; distinguish from canonical TrinityCore project"
+    },
+    {
+      "name": "cmangos-classic",
+      "url": "https://github.com/World0fWarcraft/cmangos-classic",
+      "use": "Vanilla scripts and data historical comparisons"
+    },
+    {
+      "name": "mangos-tbc",
+      "url": "https://github.com/World0fWarcraft/mangos-tbc",
+      "use": "Burning Crusade historical scripts and data"
+    },
+    {
+      "name": "vmangos",
+      "url": "https://github.com/World0fWarcraft/vmangos",
+      "use": "Vanilla core behavior reference"
+    },
+    {
+      "name": "WoWDBDefs",
+      "url": "https://github.com/World0fWarcraft/WoWDBDefs",
+      "use": "DBC/DB2 structure definitions and data decoding"
+    },
+    {
+      "name": "ClientStrings",
+      "url": "https://github.com/World0fWarcraft/ClientStrings",
+      "use": "Client locale strings/name matching"
+    },
+    {
+      "name": "wow-ui-textures",
+      "url": "https://github.com/World0fWarcraft/wow-ui-textures",
+      "use": "UI texture research only; branch and redistribution checks required"
+    },
+    {
+      "name": "QSpellWork",
+      "url": "https://github.com/World0fWarcraft/QSpellWork",
+      "use": "Spell data inspection tooling"
+    },
+    {
+      "name": "WowPacketParser",
+      "url": "https://github.com/World0fWarcraft/WowPacketParser",
+      "use": "Packet parsing and opcode research"
+    },
+    {
+      "name": "Keira3",
+      "url": "https://github.com/World0fWarcraft/Keira3",
+      "use": "Database editing tooling"
+    },
+    {
+      "name": "TrinityCreator",
+      "url": "https://github.com/World0fWarcraft/TrinityCreator",
+      "use": "NPC/item/spell creation tooling"
+    },
+    {
+      "name": "Eluna",
+      "url": "https://github.com/World0fWarcraft/Eluna",
+      "use": "Lua server scripting reference"
+    },
+    {
+      "name": "aowow",
+      "url": "https://github.com/World0fWarcraft/aowow",
+      "use": "Wowhead-style item and NPC database reference"
+    },
+    {
+      "name": "classic-db",
+      "url": "https://github.com/World0fWarcraft/classic-db",
+      "use": "Classic-era world database comparisons"
+    },
+    {
+      "name": "tbc-db",
+      "url": "https://github.com/World0fWarcraft/tbc-db",
+      "use": "TBC world database comparisons"
+    }
+  ],
+  "restrictions": [
+    "Repository membership does not verify correctness, maintenance or compatibility",
+    "No wholesale repository mirror has been imported",
+    "Preserve per-record source repository, branch, revision, path and provenance",
+    "Prefer 3.3.5a-era sources for CoA; do not merge Cataclysm+ mechanics",
+    "Check licenses before redistributing third-party code or assets",
+    "Never use stock timers as verified CoA timers without runtime validation"
+  ],
+  "status": "Organization and selected repository links cataloged; full contents not mirrored"
+}

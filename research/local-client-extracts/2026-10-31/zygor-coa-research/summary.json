@@ -1,0 +1,10 @@
+{
+  "questRecords": 237,
+  "dependencyEdges": 134,
+  "objectiveCoordinateRecords": 41,
+  "questsWithCoordinates": 32,
+  "liveVerified": 0,
+  "generatedGuideSteps": 237,
+  "guideStatus": "draft; coordinates sourced from Questie-X and route order not verified",
+  "scaling": "18-60 only when scaling enabled per user-provided brief; no local detection API verified"
+}

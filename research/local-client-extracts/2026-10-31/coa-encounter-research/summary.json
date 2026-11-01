@@ -1,0 +1,19 @@
+{
+  "scope": "Vanilla + AtlasLoot Classic + named CR customs",
+  "tbcWrath": "excluded",
+  "atlasLootClassicSource": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\AtlasLoot\\Databases\\Items\\Classic\\Instances.lua",
+  "dbmVanillaDungeonModules": 112,
+  "vanillaRosterMaps": 19,
+  "rosterNpcEntries": null,
+  "timingCandidateRows": 80,
+  "timingSpellIds": 54,
+  "difficultyVariants": "not found/encoded in these extracted sources",
+  "liveCRVerifiedRecords": 0,
+  "missingData": [
+    "AtlasLoot instance list not fully resolved to encounter module set",
+    "per-boss live CR ability validation",
+    "difficulty-specific schedules",
+    "phases/warnings/triggers/resets for most bosses",
+    "custom Radiant Spring and Shadowbone Depths data not found in inspected sources"
+  ]
+}

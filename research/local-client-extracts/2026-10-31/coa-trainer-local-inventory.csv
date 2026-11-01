@@ -1,0 +1,8 @@
+"source","file_count","bytes","lua","json","purpose","status"
+"DBM-CoA-Learner","75","19286878","25","6","encounter / spell observation","local source; requires record-level provenance review"
+"Questie-X","558","106788918","408","0","quest addon logic and core","local source; requires record-level provenance review"
+"Questie-X-AscensionDB","18","224131","15","0","Ascension quest data","local source; requires record-level provenance review"
+"Questie-X-CoADB","7","527522","6","0","CoA quest data","local source; requires record-level provenance review"
+"ZygorGuidesViewerRM","922","258258472","492","1","guide routes and objectives","local source; requires record-level provenance review"
+"Ascension_CoATalents","9","114757","6","0","class/spec/talent definitions","local source; requires record-level provenance review"
+"CoA-Research-Offline","5","21777650","0","2","existing reference dataset","policy marks legacy references offline/unverified"

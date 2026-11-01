@@ -1,0 +1,15 @@
+{
+  "mapId": null,
+  "encounter": null,
+  "bossNpcIds": null,
+  "normal": "unverified",
+  "heroic": "unverified",
+  "mythic": "unverified",
+  "mythicPlus": "unverified",
+  "readiness": "candidate data only",
+  "blockers": [
+    "No linked timestamped live log",
+    "difficulty variants unknown",
+    "current CR AI schedule unverified"
+  ]
+}

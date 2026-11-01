@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "dataset": "coa-encounter-npcs.json",
+  "records": [
+    {
+      "instance": "ZulGurub",
+      "npcId": 14517,
+      "name": "High Priestess Jeklik",
+      "classification": "boss",
+      "verification": "INFERRED",
+      "confidence": "server-source candidate; current CR unverified",
+      "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\CoAServerSources.lua",
+      "upstreamSource": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_jeklik.cpp"
+    },
+    {
+      "instance": "ZulGurub",
+      "npcId": 14507,
+      "name": "High Priest Venoxis",
+      "classification": "boss",
+      "verification": "INFERRED",
+      "confidence": "server-source candidate; current CR unverified",
+      "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\CoAServerSources.lua",
+      "upstreamSource": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_venoxis.cpp"
+    },
+    {
+      "instance": "ZulGurub",
+      "npcId": 14510,
+      "name": "High Priestess Mar'li",
+      "classification": "boss",
+      "verification": "INFERRED",
+      "confidence": "server-source candidate; current CR unverified",
+      "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\CoAServerSources.lua",
+      "upstreamSource": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_marli.cpp"
+    },
+    {
+      "instance": "ZulGurub",
+      "npcId": 14834,
+      "name": "Hakkar",
+      "classification": "boss",
+      "verification": "INFERRED",
+      "confidence": "server-source candidate; current CR unverified",
+      "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\CoAServerSources.lua",
+      "upstreamSource": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_hakkar.cpp"
+    }
+  ],
+  "status": "source-derived candidate records; not verified current CR"
+}

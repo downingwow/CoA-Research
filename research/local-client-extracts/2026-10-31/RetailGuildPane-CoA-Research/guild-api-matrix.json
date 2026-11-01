@@ -1,0 +1,2458 @@
+[
+  {
+    "name": "AutoStoreGuildBankItem",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 10,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 15,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "slot",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 16,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "BuyGuildBankTab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 21,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CanEditGuildTabInfo",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 26,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 31,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canEdit",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 36,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CanGuildBankRepair",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 40,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canRepair",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 45,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CanWithdrawGuildBankMoney",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 49,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canWithdraw",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 54,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CloseGuildBankFrame",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 58,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "DepositGuildBankMoney",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 63,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "money",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 68,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetCurrentGuildBankTab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 73,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "currentTab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 78,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildBankItemInfo",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 83,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 88,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "slot",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 89,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "texture",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 94,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "count",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 95,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "locked",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 96,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildBankItemLink",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 100,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 105,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "slot",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 106,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "item",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 111,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildBankMoney",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 115,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "guildBankMoney",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 120,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildBankMoneyTransaction",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 124,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "index",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 129,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "type",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 134,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "name",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 135,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "year",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 136,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "month",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 137,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "day",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 138,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "hour",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 139,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildBankTabCost",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 143,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tabCost",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 148,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildBankTabInfo",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 152,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 157,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "name",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 162,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "icon",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 163,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "isViewable",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 164,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canDeposit",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 165,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "numWithdrawals",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 166,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "remainingWithdrawals",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 167,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildBankTabPermissions",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 171,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 176,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canView",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 181,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canDeposit",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 182,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canUpdateText",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 183,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "numWithdrawls",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 184,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildBankText",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 188,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 193,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "text",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 198,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildBankTransaction",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 202,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 207,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "index",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 208,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "type",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 213,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "name",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 214,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "itemLink",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 215,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "count",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 216,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab1",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 217,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab2",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 218,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "year",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 219,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "month",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 220,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "day",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 221,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "hour",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 222,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildBankWithdrawLimit",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 226,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "goldWithdrawLimit",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 231,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildBankWithdrawMoney",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 235,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "withdrawLimit",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 240,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetNumGuildBankMoneyTransactions",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 244,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "numTransactions",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 249,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetNumGuildBankTabs",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 253,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "numTabs",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 258,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetNumGuildBankTransactions",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 262,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 267,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "numTransactions",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 272,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "PickupGuildBankItem",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 276,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 281,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "slot",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 282,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "PickupGuildBankMoney",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 287,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "amount",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 292,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "QueryGuildBankLog",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 297,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 302,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "QueryGuildBankTab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 307,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 312,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "QueryGuildBankText",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 317,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 322,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "SetCurrentGuildBankTab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 327,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 332,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "SetGuildBankTabPermissions",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 337,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 342,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "permission",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 343,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "enabled",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 344,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "SetGuildBankText",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 349,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 354,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "text",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 355,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "SplitGuildBankItem",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 360,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tab",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 365,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "slot",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 366,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "amount",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 367,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "WithdrawGuildBankMoney",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 372,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canWithdraw",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 377,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildbankbagslotsChanged",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 385,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILDBANKBAGSLOTS_CHANGED",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 387,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildbankframeClosed",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 390,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILDBANKFRAME_CLOSED",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 392,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildbankframeOpened",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 395,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILDBANKFRAME_OPENED",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 397,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildbanklogUpdate",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 400,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILDBANKLOG_UPDATE",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 402,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildbankItemLockChanged",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 405,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILDBANK_ITEM_LOCK_CHANGED",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 407,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildbankTextChanged",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 410,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILDBANK_TEXT_CHANGED",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 412,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildbankUpdateMoney",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 415,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILDBANK_UPDATE_MONEY",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 417,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildbankUpdateTabs",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 420,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILDBANK_UPDATE_TABS",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 422,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildbankUpdateText",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 425,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILDBANK_UPDATE_TEXT",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 427,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildbankUpdateWithdrawmoney",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 430,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILDBANK_UPDATE_WITHDRAWMONEY",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "line": 432,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "Guild",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 3,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "AcceptGuild",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 10,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "BuyGuildCharter",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 15,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "guildName",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 20,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CanEditGuildEvent",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 25,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canEdit",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 30,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CanEditGuildInfo",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 34,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canEdit",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 39,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CanEditMOTD",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 43,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canEdit",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 48,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CanEditOfficerNote",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 52,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canEdit",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 57,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CanEditPublicNote",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 61,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canEdit",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 66,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CanGuildDemote",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 70,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canDemote",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 75,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CanGuildInvite",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 79,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canInvite",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 84,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CanGuildPromote",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 88,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canPromote",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 93,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CanGuildRemove",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 97,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canRemove",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 102,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CanViewOfficerNote",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 106,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canView",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 111,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CloseGuildRegistrar",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 115,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CloseGuildRoster",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 120,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CloseTabardCreation",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 125,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "DeclineGuild",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 130,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildCharterCost",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 135,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "cost",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 140,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildEventInfo",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 144,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "index",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 149,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "type",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 154,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "player1",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 155,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "player2",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 156,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "rank",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 157,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "year",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 158,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "month",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 159,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "day",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 160,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "hour",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 161,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildInfo",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 165,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "unit",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 170,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "name",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 171,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "guildName",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 176,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "guildRankName",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 177,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "guildRankIndex",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 178,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildInfoText",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 182,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "guildInfoText",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 187,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildRosterInfo",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 191,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "index",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 196,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "name",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 201,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "rank",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 202,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "rankIndex",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 203,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "level",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 204,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "class",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 205,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "zone",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 206,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "note",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 207,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "officernote",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 208,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "online",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 209,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "status",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 210,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "classFileName",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 211,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildRosterLastOnline",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 215,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "index",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 220,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "years",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 225,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "months",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 226,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "days",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 227,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "hours",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 228,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildRosterMOTD",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 232,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "guildMOTD",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 237,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildRosterSelection",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 241,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "index",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 246,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildRosterShowOffline",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 250,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "showOffline",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 255,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetGuildTabardFileNames",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 259,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tabardBackgroundUpper",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 264,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tabardBackgroundLower",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 265,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tabardEmblemUpper",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 266,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tabardEmblemLower",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 267,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tabardBorderUpper",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 268,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "tabardBorderLower",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 269,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetNumGuildEvents",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 273,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "numEvents",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 278,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetNumGuildMembers",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 282,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "includeOffline",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 287,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "numGuildMembers",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 292,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetTabardCreationCost",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 296,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "cost",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 301,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GetTabardInfo",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 305,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildControlAddRank",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 310,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "name",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 315,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildControlDelRank",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 320,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "name",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 325,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildControlGetNumRanks",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 330,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "numRanks",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 335,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildControlGetRankFlags",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 339,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildControlGetRankName",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 348,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "rank",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 353,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "rankName",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 358,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildControlSaveRank",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 362,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "name",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 367,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildControlSetRank",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 372,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "rank",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 377,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildControlSetRankFlag",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 382,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "index",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 387,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "enabled",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 388,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildDemote",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 393,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canDemote",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 398,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildDisband",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 402,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildInfo",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 407,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canEdit",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 412,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildInvite",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 416,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canInvite",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 421,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildLeave",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 425,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildPromote",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 430,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "canPromote",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 435,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildRoster",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 439,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildRosterSetOfficerNote",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 444,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "index",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 449,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "note",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 450,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildRosterSetPublicNote",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 455,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "index",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 460,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "note",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 461,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildSetLeader",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 466,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "name",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 471,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildSetMOTD",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 476,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "message",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 481,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildUninvite",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 486,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "name",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 491,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "IsGuildLeader",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 496,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "isLeader",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 501,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "IsInGuild",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 505,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "inGuild",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 510,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "QueryGuildEventLog",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 514,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "SetGuildInfoText",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 519,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "text",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 524,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "SetGuildRosterSelection",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 529,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "index",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 534,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "SetGuildRosterShowOffline",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 539,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "showOffline",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 544,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "SortGuildRoster",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 549,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "type",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 554,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "TurnInGuildCharter",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 559,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "UnitIsInMyGuild",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 564,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "unit",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 569,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "name",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 570,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "inGuild",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 575,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "ChatMsgGuild",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 583,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "CHAT_MSG_GUILD",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 585,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "message",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 588,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "sender",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 589,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "language",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 590,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "channelString",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 591,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "target",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 592,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "flags",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 593,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "unknown",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 594,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "channelNumber",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 595,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "channelName",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 596,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "unknown",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 597,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "counter",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 598,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildtabardUpdate",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 602,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILDTABARD_UPDATE",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 604,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildEventLogUpdate",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 607,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILD_EVENT_LOG_UPDATE",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 609,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildInviteCancel",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 612,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILD_INVITE_CANCEL",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 614,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildInviteRequest",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 617,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILD_INVITE_REQUEST",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 619,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "from",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 622,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "guildname",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 623,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildMotd",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 627,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILD_MOTD",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 629,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "message",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 632,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildRegistrarClosed",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 636,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILD_REGISTRAR_CLOSED",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 638,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildRegistrarShow",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 641,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILD_REGISTRAR_SHOW",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 643,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GuildRosterUpdate",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 646,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "GUILD_ROSTER_UPDATE",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 648,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "update",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 651,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "PlayerGuildUpdate",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 655,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "PLAYER_GUILD_UPDATE",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 657,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  },
+  {
+    "name": "unitID",
+    "availability": "documented in installed APIDocumentation; runtime unverified",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua",
+    "line": 660,
+    "argsAndReturns": "see adjacent API documentation block",
+    "verification": "static documentation only"
+  }
+]

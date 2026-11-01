@@ -1,0 +1,562 @@
+[
+  {
+    "mapId": 36,
+    "npcId": 646,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 646,
+    "spellId": 2102553,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 646,
+    "spellId": 2102580,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 646,
+    "spellId": 2102576,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 646,
+    "spellId": 2102577,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 642,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 642,
+    "spellId": 2102559,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 642,
+    "spellId": 2102569,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 644,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 644,
+    "spellId": 2102553,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 644,
+    "spellId": 2102554,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 645,
+    "spellId": 2102590,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 645,
+    "spellId": 2102589,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 645,
+    "spellId": 2102527,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 647,
+    "spellId": 40505,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 647,
+    "spellId": 5208,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 647,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 647,
+    "spellId": 2101111,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 1763,
+    "spellId": 5213,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 1763,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 36,
+    "npcId": 1763,
+    "spellId": 2102571,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 209,
+    "npcId": 7604,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10363,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10363,
+    "spellId": 2102619,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10363,
+    "spellId": 2102203,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10220,
+    "spellId": 2100428,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10220,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9196,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9196,
+    "spellId": 2100148,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9568,
+    "spellId": 2100345,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9568,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9816,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9816,
+    "spellId": 2102825,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9736,
+    "spellId": 2102850,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9736,
+    "spellId": 2100255,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9736,
+    "spellId": 2102851,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9736,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10430,
+    "spellId": 2102192,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10430,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10430,
+    "spellId": 2102159,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10430,
+    "spellId": 2100205,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10430,
+    "spellId": 2100439,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9237,
+    "spellId": 2100465,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9237,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9237,
+    "spellId": 15284,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9237,
+    "spellId": 15615,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 9237,
+    "spellId": 10966,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10509,
+    "spellId": 14516,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10509,
+    "spellId": 15749,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10509,
+    "spellId": 2102840,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10509,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10899,
+    "spellId": 15580,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10899,
+    "spellId": 16172,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10899,
+    "spellId": 6253,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10899,
+    "spellId": 2102553,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10899,
+    "spellId": 2102138,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10899,
+    "spellId": 2102137,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 229,
+    "npcId": 10899,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 230,
+    "npcId": 9156,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 230,
+    "npcId": 9039,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 230,
+    "npcId": 9039,
+    "spellId": 505347,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 230,
+    "npcId": 9019,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 230,
+    "npcId": 9019,
+    "spellId": 92603,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 230,
+    "npcId": 9019,
+    "spellId": 92606,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 230,
+    "npcId": 9019,
+    "spellId": 381251,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 230,
+    "npcId": 9019,
+    "spellId": 815637,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 230,
+    "npcId": 9033,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 230,
+    "npcId": 9018,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 230,
+    "npcId": 9018,
+    "spellId": 14033,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 230,
+    "npcId": 9938,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 230,
+    "npcId": 9502,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 230,
+    "npcId": 9502,
+    "spellId": 17203,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 289,
+    "npcId": 1853,
+    "spellId": 2100398,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 289,
+    "npcId": 1853,
+    "spellId": 2100389,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 289,
+    "npcId": 1853,
+    "spellId": 2100393,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 289,
+    "npcId": 10506,
+    "spellId": 2100034,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 289,
+    "npcId": 10506,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 289,
+    "npcId": 10506,
+    "spellId": 2100004,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 329,
+    "npcId": 10436,
+    "spellId": 816867,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  },
+  {
+    "mapId": 329,
+    "npcId": 10436,
+    "spellId": 975011,
+    "verification": "INFERRED_source_timer_candidate",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua"
+  }
+]

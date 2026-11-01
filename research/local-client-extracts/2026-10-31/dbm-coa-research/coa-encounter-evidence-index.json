@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "generatedDate": "2026-10-31",
+  "dataset": "coa-encounter-evidence-index.json",
+  "records": [
+    {
+      "kind": "local addon research and observation code",
+      "path": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner",
+      "verification": "local source; individual facts require review"
+    },
+    {
+      "kind": "local ZulGurub module",
+      "path": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-ZG",
+      "verification": "local code; current realm behavior unverified"
+    },
+    {
+      "kind": "legacy NPC reference",
+      "path": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\CoA-Research-Offline\\npcs_reference.json",
+      "verification": "offline only; not CoA facts per local policy"
+    },
+    {
+      "kind": "legacy spell reference",
+      "path": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\CoA-Research-Offline\\spells_reference.json",
+      "verification": "offline only; not CoA facts per local policy"
+    },
+    {
+      "kind": "local map area dataset",
+      "path": "C:\\Games\\Conquest Reborn\\Data\\Content\\WorldMapAreaData.json",
+      "verification": "client data; encounter membership unverified"
+    }
+  ],
+  "status": "empty evidence-backed dataset; no confirmed records supplied in this file"
+}

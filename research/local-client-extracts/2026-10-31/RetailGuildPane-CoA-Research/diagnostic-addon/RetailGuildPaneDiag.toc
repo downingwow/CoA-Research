@@ -1,0 +1,4 @@
+## Interface: 30300
+## Title: RetailGuildPane CoA Diagnostic
+## Notes: Safe read-only guild API probe
+RetailGuildPaneDiag.lua

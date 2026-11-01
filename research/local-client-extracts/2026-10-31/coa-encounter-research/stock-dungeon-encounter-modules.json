@@ -1,0 +1,1234 @@
+[
+  {
+    "sourcePath": "DBM-Party-Vanilla/Mythic_Champion.lua",
+    "module": "Mythic Champion",
+    "npcIds": [
+      "80227"
+    ],
+    "stockTimerConstructorCount": 6,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Angerforge.lua",
+    "module": "Angerforge",
+    "npcIds": [
+      "9033"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Emperor.lua",
+    "module": "Emperor",
+    "npcIds": [
+      "9019"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Panzor.lua",
+    "module": "Panzor",
+    "npcIds": [
+      "8923"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Phalanx.lua",
+    "module": "Phalanx",
+    "npcIds": [
+      "9502"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Grebmar.lua",
+    "module": "Grebmar",
+    "npcIds": [
+      "9319"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Hedrum.lua",
+    "module": "Hedrum",
+    "npcIds": [
+      "9032"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Loregrain.lua",
+    "module": "Loregrain",
+    "npcIds": [
+      "9024"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Gorrosh.lua",
+    "module": "Gorrosh",
+    "npcIds": [
+      "9027"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Verek.lua",
+    "module": "Verek",
+    "npcIds": [
+      "9042"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Stilgiss.lua",
+    "module": "Stilgiss",
+    "npcIds": [
+      "9041"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Argelmach.lua",
+    "module": "Argelmach",
+    "npcIds": [
+      "8983"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Incendius.lua",
+    "module": "Incendius",
+    "npcIds": [
+      "9017"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Okthor.lua",
+    "module": "Okthor",
+    "npcIds": [
+      "9030"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Princess.lua",
+    "module": "Princess",
+    "npcIds": [
+      "8929"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Summonerstomb.lua",
+    "module": "Summonerstomb",
+    "npcIds": [
+      "9034, 9035, 9036, 9037, 9038, 9039, 9040"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Grizzle.lua",
+    "module": "Grizzle",
+    "npcIds": [
+      "9028"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Eviscerator.lua",
+    "module": "Eviscerator",
+    "npcIds": [
+      "9029"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Anubshiah.lua",
+    "module": "Anubshiah",
+    "npcIds": [
+      "9031"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Flamelash.lua",
+    "module": "Flamelash",
+    "npcIds": [
+      "9156"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Plugger.lua",
+    "module": "Plugger",
+    "npcIds": [
+      "9499"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Coren.lua",
+    "module": "Coren",
+    "npcIds": [
+      "23872"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Darkvire.lua",
+    "module": "Darkvire",
+    "npcIds": [
+      "9056"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Roccor.lua",
+    "module": "Roccor",
+    "npcIds": [
+      "9025"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Hurley.lua",
+    "module": "Hurley",
+    "npcIds": [
+      "9537"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Gerstahn.lua",
+    "module": "Gerstahn",
+    "npcIds": [
+      "9018"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Baelgar.lua",
+    "module": "Baelgar",
+    "npcIds": [
+      "9016"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Ribbly.lua",
+    "module": "Ribbly",
+    "npcIds": [
+      "9543"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Magmus.lua",
+    "module": "Magmus",
+    "npcIds": [
+      "9938"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Depths/Theldren.lua",
+    "module": "Theldren",
+    "npcIds": [
+      "16059"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Atiesh.lua",
+    "module": "Atiesh",
+    "npcIds": [
+      "16387"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Hammersmith.lua",
+    "module": "Hammersmith",
+    "npcIds": [
+      "11120"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Barthilas.lua",
+    "module": "Barthilas",
+    "npcIds": [
+      "10435"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/SothosandJarien.lua",
+    "module": "SothosandJarien",
+    "npcIds": [
+      "16101, 16102"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Rivendare.lua",
+    "module": "Rivendare",
+    "npcIds": [
+      "10440"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Balnazzar.lua",
+    "module": "Balnazzar",
+    "npcIds": [
+      "10812, 10813"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Unforgiven.lua",
+    "module": "Unforgiven",
+    "npcIds": [
+      "10516"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Timmy.lua",
+    "module": "Timmy",
+    "npcIds": [
+      "10808"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Forresten.lua",
+    "module": "Forresten",
+    "npcIds": [
+      "10558"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Ramstein.lua",
+    "module": "Ramstein",
+    "npcIds": [
+      "10439"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Siabi.lua",
+    "module": "Siabi",
+    "npcIds": [
+      "11058"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Anastari.lua",
+    "module": "Anastari",
+    "npcIds": [
+      "10436"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Swordsmith.lua",
+    "module": "Swordsmith",
+    "npcIds": [
+      "11121"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Stonespine.lua",
+    "module": "Stonespine",
+    "npcIds": [
+      "10809"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Skul.lua",
+    "module": "Skul",
+    "npcIds": [
+      "10393"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Maleki.lua",
+    "module": "Maleki",
+    "npcIds": [
+      "10438"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Galford.lua",
+    "module": "Galford",
+    "npcIds": [
+      "10811"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Willey.lua",
+    "module": "Willey",
+    "npcIds": [
+      "10997"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Stratholme/Nerubenkan.lua",
+    "module": "Nerubenkan",
+    "npcIds": [
+      "10437"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Doomhowl.lua",
+    "module": "Doomhowl",
+    "npcIds": [
+      "10584"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Crystalfang.lua",
+    "module": "Crystalfang",
+    "npcIds": [
+      "10376"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Valthalak.lua",
+    "module": "Valthalak",
+    "npcIds": [
+      "16042"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Beast.lua",
+    "module": "Beast",
+    "npcIds": [
+      "10430"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Smolderweb.lua",
+    "module": "Smolderweb",
+    "npcIds": [
+      "10596"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Lordmagus.lua",
+    "module": "Lordmagus",
+    "npcIds": [
+      "9217"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Blackhand.lua",
+    "module": "Blackhand",
+    "npcIds": [
+      "10429"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Grayhoof.lua",
+    "module": "Grayhoof",
+    "npcIds": [
+      "16080"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Bashguud.lua",
+    "module": "Bashguud",
+    "npcIds": [
+      "9718"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Drakkisath.lua",
+    "module": "Drakkisath",
+    "npcIds": [
+      "10363"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Anvilcrack.lua",
+    "module": "Anvilcrack",
+    "npcIds": [
+      "10899"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Solakar.lua",
+    "module": "Solakar",
+    "npcIds": [
+      "10264"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Gyth.lua",
+    "module": "Gyth",
+    "npcIds": [
+      "10339"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Omokk.lua",
+    "module": "Omokk",
+    "npcIds": [
+      "9196"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Grimaxe.lua",
+    "module": "Grimaxe",
+    "npcIds": [
+      "9596"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Gizrul.lua",
+    "module": "Gizrul",
+    "npcIds": [
+      "10268"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Halycon.lua",
+    "module": "Halycon",
+    "npcIds": [
+      "10220"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Voone.lua",
+    "module": "Voone",
+    "npcIds": [
+      "9237"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Zigris.lua",
+    "module": "Zigris",
+    "npcIds": [
+      "9736"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Voshgajin.lua",
+    "module": "Voshgajin",
+    "npcIds": [
+      "9236"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/ButcherS.lua",
+    "module": "ButcherS",
+    "npcIds": [
+      "9219"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Wyrmthalak.lua",
+    "module": "Wyrmthalak",
+    "npcIds": [
+      "9568"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Battlelord.lua",
+    "module": "Battlelord",
+    "npcIds": [
+      "9218"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Runewatcher.lua",
+    "module": "Runewatcher",
+    "npcIds": [
+      "10509"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Felguard.lua",
+    "module": "Felguard",
+    "npcIds": [
+      "10263"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Blackrock Spire/Pyroguard.lua",
+    "module": "Pyroguard",
+    "npcIds": [
+      "9816"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Gordok.lua",
+    "module": "Gordok",
+    "npcIds": [
+      "11501, 14324"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Helnurath.lua",
+    "module": "Helnurath",
+    "npcIds": [
+      "14506"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Hydrospawn.lua",
+    "module": "Hydrospawn",
+    "npcIds": [
+      "13280"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Kreeg.lua",
+    "module": "Kreeg",
+    "npcIds": [
+      "14322"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Fengus.lua",
+    "module": "Fengus",
+    "npcIds": [
+      "14321"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Slipkik.lua",
+    "module": "Slipkik",
+    "npcIds": [
+      "14323"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Illyanna.lua",
+    "module": "Illyanna",
+    "npcIds": [
+      "11488"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Alzzin.lua",
+    "module": "Alzzin",
+    "npcIds": [
+      "11492"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Kalendris.lua",
+    "module": "Kalendris",
+    "npcIds": [
+      "11487"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Pimgib.lua",
+    "module": "Pimgib",
+    "npcIds": [
+      "14349"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Tsuzee.lua",
+    "module": "Tsuzee",
+    "npcIds": [
+      "11467"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Moldar.lua",
+    "module": "Moldar",
+    "npcIds": [
+      "14326"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Princet.lua",
+    "module": "Princet",
+    "npcIds": [
+      "11486"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Thimblejack.lua",
+    "module": "Thimblejack",
+    "npcIds": [
+      "14338"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Zevrim.lua",
+    "module": "Zevrim",
+    "npcIds": [
+      "11490"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Kromcrush.lua",
+    "module": "Kromcrush",
+    "npcIds": [
+      "14325"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Pusillin.lua",
+    "module": "Pusillin",
+    "npcIds": [
+      "14354"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Immolthar.lua",
+    "module": "Immolthar",
+    "npcIds": [
+      "11496"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Isalien.lua",
+    "module": "Isalien",
+    "npcIds": [
+      "16097"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Lethtendris.lua",
+    "module": "Lethtendris",
+    "npcIds": [
+      "14327"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Dire Maul/Tendris.lua",
+    "module": "Tendris",
+    "npcIds": [
+      "11489"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/Darkmaster.lua",
+    "module": "Darkmaster",
+    "npcIds": [
+      "1853"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/Vectus.lua",
+    "module": "Vectus",
+    "npcIds": [
+      "10432"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/FTKrastinov.lua",
+    "module": "FTKrastinov",
+    "npcIds": [
+      "11261"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/MBlackpool.lua",
+    "module": "MBlackpool",
+    "npcIds": [
+      "10433"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/BloodSteward.lua",
+    "module": "BloodSteward",
+    "npcIds": [
+      "14861"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/IMalicia.lua",
+    "module": "IMalicia",
+    "npcIds": [
+      "10505"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/Ravenian.lua",
+    "module": "Ravenian",
+    "npcIds": [
+      "10507"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/Kormok.lua",
+    "module": "Kormok",
+    "npcIds": [
+      "16118"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/RFrostwhisper.lua",
+    "module": "RFrostwhisper",
+    "npcIds": [
+      "10508"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/Alexei.lua",
+    "module": "Alexei",
+    "npcIds": [
+      "10504"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/Kirtonos.lua",
+    "module": "Kirtonos",
+    "npcIds": [
+      "10506"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/DKDarkreaver.lua",
+    "module": "DKDarkreaver",
+    "npcIds": [
+      "14516"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/LKPolkelt.lua",
+    "module": "LKPolkelt",
+    "npcIds": [
+      "10901"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/Illucia.lua",
+    "module": "Illucia",
+    "npcIds": [
+      "10502"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/Rattlegore.lua",
+    "module": "Rattlegore",
+    "npcIds": [
+      "11622"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  },
+  {
+    "sourcePath": "DBM-Party-Vanilla/Scholomance/JandiceBarov.lua",
+    "module": "JandiceBarov",
+    "npcIds": [
+      "10503"
+    ],
+    "stockTimerConstructorCount": 0,
+    "classification": "stock-DBM-derived",
+    "verification": "original DBM module source; not proof of CR behavior",
+    "difficulties": "not encoded in extracted audit"
+  }
+]

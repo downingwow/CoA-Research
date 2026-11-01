@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "generatedDate": "2026-10-31",
+  "dataset": "coa-research-gaps.json",
+  "records": [
+    {
+      "status": "UNKNOWN",
+      "id": "trainer_and_encounter_server_data",
+      "gap": "No authoritative current Conquest Reborn encounter server tables or combat log exports were established from this local scan."
+    },
+    {
+      "status": "UNKNOWN",
+      "id": "full_instance_coverage",
+      "gap": "Supported instance roster and encounter coverage need reconciliation with current DBM-CoA source."
+    },
+    {
+      "status": "UNKNOWN",
+      "id": "current_cr_mechanics",
+      "gap": "Historical/upstream mechanics are not sufficient evidence for current Conquest Reborn behavior."
+    },
+    {
+      "status": "needs code audit",
+      "id": "community_protocol",
+      "gap": "DCOAR21 and DCOAL31 wire formats, validation, merging, and persistence need review in learner source."
+    }
+  ],
+  "status": "empty evidence-backed dataset; no confirmed records supplied in this file"
+}

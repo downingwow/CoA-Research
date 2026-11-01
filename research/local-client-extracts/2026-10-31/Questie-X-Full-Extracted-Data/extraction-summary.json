@@ -1,0 +1,25 @@
+{
+  "generated": "2026-10-31",
+  "counts": {
+    "quests": 931,
+    "npcs": 786,
+    "objects": 135,
+    "items": 240,
+    "maps": 172,
+    "classes": 21,
+    "learnedRecords": 0
+  },
+  "processedSources": [
+    "Questie-X-CoADB QuestDB/NpcDB/ObjectDB/ItemDB files",
+    "Questie-X-AscensionDB quest/NPC/object/item DB Lua files",
+    "Questie-X-WotLKDB quest database Lua files",
+    "Data/Content/WorldMapAreaData.json"
+  ],
+  "limitations": [
+    "Some Lua values preserved as rawLuaRecord; relationships not normalized",
+    "Quest giver/objective coordinates not extracted",
+    "No saved variables parsed",
+    "No runtime tests",
+    "availability not inferred"
+  ]
+}

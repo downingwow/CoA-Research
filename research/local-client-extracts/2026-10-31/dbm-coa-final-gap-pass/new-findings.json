@@ -1,0 +1,51 @@
+[
+  {
+    "id": "difficulty-keyed-observations",
+    "finding": "Learned timers keyed by instance type/name/difficulty/NPC/spell",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\LiveLearning.lua",
+    "lines": "37-45",
+    "confidence": "high static"
+  },
+  {
+    "id": "phase-replay",
+    "finding": "phaseStart replays phase-specific abilities; phase changes can be health or spell triggered",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\SourceTimerEngine.lua",
+    "lines": "45-64,73-87",
+    "confidence": "high static"
+  },
+  {
+    "id": "difficulty-getinstanceinfo",
+    "finding": "Adaptive tracker consumes GetInstanceInfo return fields 3 and 8 as difficulty and instance ID",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19AdaptiveEncounters.lua",
+    "lines": "17-20,31-35",
+    "confidence": "high static; meaning runtime unverified"
+  },
+  {
+    "id": "pull-trigger",
+    "finding": "Tracking begins on first qualifying spell event from roster NPC; no immediate pull countdown",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19AdaptiveEncounters.lua",
+    "lines": "48-56",
+    "confidence": "high static"
+  },
+  {
+    "id": "combat-reset",
+    "finding": "Transient state clears on PLAYER_REGEN_ENABLED, zone change, and entering world",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\LiveLearning.lua",
+    "lines": "85-89",
+    "confidence": "high static"
+  },
+  {
+    "id": "noncombat-mechanics",
+    "finding": "Combat-log-only filters miss mechanics with no cast/aura/death event",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\LiveLearning.lua",
+    "lines": "90-93",
+    "confidence": "high static"
+  },
+  {
+    "id": "schedule-ranges",
+    "finding": "Source timer candidates are ranges; no randomization logic in candidate rows",
+    "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\Classic19SourceTimers.lua",
+    "lines": "1-2,5-85",
+    "confidence": "high static"
+  }
+]

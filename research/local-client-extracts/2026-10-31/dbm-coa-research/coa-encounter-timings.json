@@ -1,0 +1,602 @@
+{
+  "schemaVersion": 1,
+  "dataset": "coa-encounter-timings.json",
+  "records": [
+    {
+      "npcId": 14517,
+      "spellId": 12097,
+      "phase": 1,
+      "firstCastSeconds": [
+        5,
+        15
+      ],
+      "repeatSeconds": [
+        20,
+        30
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_jeklik.cpp"
+    },
+    {
+      "npcId": 14517,
+      "spellId": 16098,
+      "phase": 2,
+      "firstCastSeconds": [
+        5,
+        15
+      ],
+      "repeatSeconds": [
+        25,
+        30
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_jeklik.cpp"
+    },
+    {
+      "npcId": 14517,
+      "spellId": 22644,
+      "phase": 1,
+      "firstCastSeconds": [
+        5,
+        15
+      ],
+      "repeatSeconds": [
+        10,
+        20
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_jeklik.cpp"
+    },
+    {
+      "npcId": 14517,
+      "spellId": 22884,
+      "phase": 2,
+      "firstCastSeconds": [
+        25,
+        35
+      ],
+      "repeatSeconds": [
+        35,
+        45
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_jeklik.cpp"
+    },
+    {
+      "npcId": 14517,
+      "spellId": 22911,
+      "phase": 1,
+      "firstCastSeconds": [
+        10,
+        20
+      ],
+      "repeatSeconds": [
+        15,
+        30
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_jeklik.cpp"
+    },
+    {
+      "npcId": 14517,
+      "spellId": 23918,
+      "phase": 1,
+      "firstCastSeconds": [
+        5,
+        15
+      ],
+      "repeatSeconds": [
+        20,
+        30
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_jeklik.cpp"
+    },
+    {
+      "npcId": 14517,
+      "spellId": 23919,
+      "phase": 1,
+      "firstCastSeconds": [
+        20,
+        20
+      ],
+      "repeatSeconds": [
+        20,
+        30
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_jeklik.cpp"
+    },
+    {
+      "npcId": 14517,
+      "spellId": 23952,
+      "phase": 2,
+      "firstCastSeconds": [
+        10,
+        15
+      ],
+      "repeatSeconds": [
+        12,
+        18
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_jeklik.cpp"
+    },
+    {
+      "npcId": 14517,
+      "spellId": 23953,
+      "phase": 2,
+      "firstCastSeconds": [
+        10,
+        30
+      ],
+      "repeatSeconds": [
+        20,
+        40
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_jeklik.cpp"
+    },
+    {
+      "npcId": 14517,
+      "spellId": 23954,
+      "phase": 2,
+      "firstCastSeconds": [
+        25,
+        25
+      ],
+      "repeatSeconds": [
+        25,
+        25
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_jeklik.cpp"
+    },
+    {
+      "npcId": 14507,
+      "spellId": 3391,
+      "phase": 1,
+      "firstCastSeconds": [
+        8,
+        8
+      ],
+      "repeatSeconds": [
+        10,
+        20
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_venoxis.cpp"
+    },
+    {
+      "npcId": 14507,
+      "spellId": 23858,
+      "phase": 1,
+      "firstCastSeconds": [
+        5,
+        15
+      ],
+      "repeatSeconds": [
+        10,
+        24
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_venoxis.cpp"
+    },
+    {
+      "npcId": 14507,
+      "spellId": 23859,
+      "phase": 1,
+      "firstCastSeconds": [
+        35,
+        35
+      ],
+      "repeatSeconds": [
+        15,
+        20
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_venoxis.cpp"
+    },
+    {
+      "npcId": 14507,
+      "spellId": 23860,
+      "phase": 1,
+      "firstCastSeconds": [
+        10,
+        20
+      ],
+      "repeatSeconds": [
+        10,
+        24
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_venoxis.cpp"
+    },
+    {
+      "npcId": 14507,
+      "spellId": 23861,
+      "phase": 2,
+      "firstCastSeconds": [
+        10,
+        10
+      ],
+      "repeatSeconds": [
+        15,
+        20
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_venoxis.cpp"
+    },
+    {
+      "npcId": 14507,
+      "spellId": 23862,
+      "phase": 2,
+      "firstCastSeconds": [
+        5,
+        5
+      ],
+      "repeatSeconds": [
+        5,
+        15
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_venoxis.cpp"
+    },
+    {
+      "npcId": 14507,
+      "spellId": 23866,
+      "phase": 2,
+      "firstCastSeconds": [
+        30,
+        30
+      ],
+      "repeatSeconds": [
+        15,
+        15
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_venoxis.cpp"
+    },
+    {
+      "npcId": 14507,
+      "spellId": 23895,
+      "phase": 1,
+      "firstCastSeconds": [
+        30,
+        30
+      ],
+      "repeatSeconds": [
+        25,
+        30
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_venoxis.cpp"
+    },
+    {
+      "npcId": 14507,
+      "spellId": 23979,
+      "phase": 1,
+      "firstCastSeconds": [
+        15,
+        25
+      ],
+      "repeatSeconds": [
+        12,
+        22
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_venoxis.cpp"
+    },
+    {
+      "npcId": 14510,
+      "spellId": 24082,
+      "phase": 1,
+      "firstCastSeconds": [
+        30,
+        30
+      ],
+      "repeatSeconds": [
+        20,
+        20
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_marli.cpp"
+    },
+    {
+      "npcId": 14510,
+      "spellId": 24099,
+      "phase": 1,
+      "firstCastSeconds": [
+        15,
+        15
+      ],
+      "repeatSeconds": [
+        10,
+        20
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_marli.cpp"
+    },
+    {
+      "npcId": 14510,
+      "spellId": 24109,
+      "phase": 1,
+      "firstCastSeconds": [
+        10,
+        20
+      ],
+      "repeatSeconds": [
+        20,
+        40
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_marli.cpp"
+    },
+    {
+      "npcId": 14510,
+      "spellId": 24110,
+      "phase": 2,
+      "firstCastSeconds": [
+        5,
+        5
+      ],
+      "repeatSeconds": [
+        15,
+        20
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_marli.cpp"
+    },
+    {
+      "npcId": 14510,
+      "spellId": 24111,
+      "phase": 2,
+      "firstCastSeconds": [
+        1,
+        1
+      ],
+      "repeatSeconds": [
+        25,
+        35
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_marli.cpp"
+    },
+    {
+      "npcId": 14510,
+      "spellId": 24112,
+      "phase": 2,
+      "firstCastSeconds": [
+        5,
+        10
+      ],
+      "repeatSeconds": [
+        10,
+        10
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_marli.cpp"
+    },
+    {
+      "npcId": 14510,
+      "spellId": 24300,
+      "phase": 1,
+      "firstCastSeconds": [
+        30,
+        30
+      ],
+      "repeatSeconds": [
+        20,
+        50
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_marli.cpp"
+    },
+    {
+      "npcId": 14834,
+      "spellId": 24318,
+      "phase": 1,
+      "firstCastSeconds": [
+        60,
+        60
+      ],
+      "repeatSeconds": [
+        90,
+        90
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_hakkar.cpp"
+    },
+    {
+      "npcId": 14834,
+      "spellId": 24324,
+      "phase": 1,
+      "firstCastSeconds": [
+        90,
+        90
+      ],
+      "repeatSeconds": [
+        90,
+        90
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_hakkar.cpp"
+    },
+    {
+      "npcId": 14834,
+      "spellId": 24327,
+      "phase": 1,
+      "firstCastSeconds": [
+        17,
+        17
+      ],
+      "repeatSeconds": [
+        35,
+        40
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_hakkar.cpp"
+    },
+    {
+      "npcId": 14834,
+      "spellId": 24328,
+      "phase": 1,
+      "firstCastSeconds": [
+        25,
+        25
+      ],
+      "repeatSeconds": [
+        30,
+        40
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_hakkar.cpp"
+    },
+    {
+      "npcId": 14834,
+      "spellId": 24686,
+      "phase": 1,
+      "firstCastSeconds": [
+        15,
+        15
+      ],
+      "repeatSeconds": [
+        45,
+        45
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_hakkar.cpp"
+    },
+    {
+      "npcId": 14834,
+      "spellId": 24687,
+      "phase": 1,
+      "firstCastSeconds": [
+        21,
+        21
+      ],
+      "repeatSeconds": [
+        24,
+        24
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_hakkar.cpp"
+    },
+    {
+      "npcId": 14834,
+      "spellId": 24688,
+      "phase": 1,
+      "firstCastSeconds": [
+        14,
+        14
+      ],
+      "repeatSeconds": [
+        16,
+        18
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_hakkar.cpp"
+    },
+    {
+      "npcId": 14834,
+      "spellId": 24689,
+      "phase": 1,
+      "firstCastSeconds": [
+        10,
+        10
+      ],
+      "repeatSeconds": [
+        15,
+        15
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_hakkar.cpp"
+    },
+    {
+      "npcId": 14834,
+      "spellId": 24690,
+      "phase": 1,
+      "firstCastSeconds": [
+        18,
+        18
+      ],
+      "repeatSeconds": [
+        10,
+        15
+      ],
+      "sampleCount": null,
+      "timingType": "source-script range",
+      "verification": "INFERRED",
+      "source": "Conquest-of-AzerothCore/azerothcore-wotlk-coa:src/server/scripts/EasternKingdoms/ZulGurub/boss_hakkar.cpp"
+    }
+  ],
+  "status": "source-derived candidate records; not verified current CR"
+}

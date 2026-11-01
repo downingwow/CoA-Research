@@ -1,0 +1,56 @@
+[
+  {
+    "feature": "Roster",
+    "classification": "U",
+    "runtimeStatus": "UNVERIFIED",
+    "note": "See API docs and unresolved questions"
+  },
+  {
+    "feature": "Guild chat",
+    "classification": "U",
+    "runtimeStatus": "UNVERIFIED",
+    "note": "See API docs and unresolved questions"
+  },
+  {
+    "feature": "Guild info",
+    "classification": "U",
+    "runtimeStatus": "UNVERIFIED",
+    "note": "See API docs and unresolved questions"
+  },
+  {
+    "feature": "Guild ranks and permissions",
+    "classification": "U",
+    "runtimeStatus": "UNVERIFIED",
+    "note": "See API docs and unresolved questions"
+  },
+  {
+    "feature": "Guild bank",
+    "classification": "U",
+    "runtimeStatus": "UNVERIFIED",
+    "note": "See API docs and unresolved questions"
+  },
+  {
+    "feature": "Guild calendar/events",
+    "classification": "U",
+    "runtimeStatus": "UNVERIFIED",
+    "note": "See API docs and unresolved questions"
+  },
+  {
+    "feature": "Guild achievements/perks",
+    "classification": "U",
+    "runtimeStatus": "UNVERIFIED",
+    "note": "See API docs and unresolved questions"
+  },
+  {
+    "feature": "Retail Communities navigation",
+    "classification": "U",
+    "runtimeStatus": "UNVERIFIED",
+    "note": "See API docs and unresolved questions"
+  },
+  {
+    "feature": "Retail artwork",
+    "classification": "U",
+    "runtimeStatus": "UNVERIFIED",
+    "note": "See API docs and unresolved questions"
+  }
+]

@@ -1,0 +1,1332 @@
+[
+  {
+    "mapId": 33,
+    "instance": "Shadowfang Keep",
+    "npcId": 3914,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 33,
+    "instance": "Shadowfang Keep",
+    "npcId": 3886,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 33,
+    "instance": "Shadowfang Keep",
+    "npcId": 3887,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 33,
+    "instance": "Shadowfang Keep",
+    "npcId": 4278,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 33,
+    "instance": "Shadowfang Keep",
+    "npcId": 4279,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 33,
+    "instance": "Shadowfang Keep",
+    "npcId": 4274,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 33,
+    "instance": "Shadowfang Keep",
+    "npcId": 3927,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 33,
+    "instance": "Shadowfang Keep",
+    "npcId": 4275,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 33,
+    "instance": "Shadowfang Keep",
+    "npcId": 14682,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 33,
+    "instance": "Shadowfang Keep",
+    "npcId": 3872,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 34,
+    "instance": "The Stockade",
+    "npcId": 1696,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 34,
+    "instance": "The Stockade",
+    "npcId": 1666,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 34,
+    "instance": "The Stockade",
+    "npcId": 1717,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 34,
+    "instance": "The Stockade",
+    "npcId": 1716,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 34,
+    "instance": "The Stockade",
+    "npcId": 1663,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 34,
+    "instance": "The Stockade",
+    "npcId": 1720,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 36,
+    "instance": "The Deadmines",
+    "npcId": 644,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 36,
+    "instance": "The Deadmines",
+    "npcId": 642,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 36,
+    "instance": "The Deadmines",
+    "npcId": 1763,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 36,
+    "instance": "The Deadmines",
+    "npcId": 646,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 36,
+    "instance": "The Deadmines",
+    "npcId": 645,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 36,
+    "instance": "The Deadmines",
+    "npcId": 647,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 36,
+    "instance": "The Deadmines",
+    "npcId": 639,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 36,
+    "instance": "The Deadmines",
+    "npcId": 3586,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 43,
+    "instance": "Wailing Caverns",
+    "npcId": 3671,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 43,
+    "instance": "Wailing Caverns",
+    "npcId": 3669,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 43,
+    "instance": "Wailing Caverns",
+    "npcId": 3653,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 43,
+    "instance": "Wailing Caverns",
+    "npcId": 3670,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 43,
+    "instance": "Wailing Caverns",
+    "npcId": 3674,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 43,
+    "instance": "Wailing Caverns",
+    "npcId": 3673,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 43,
+    "instance": "Wailing Caverns",
+    "npcId": 5775,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 43,
+    "instance": "Wailing Caverns",
+    "npcId": 5912,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 47,
+    "instance": "Razorfen Kraul",
+    "npcId": 6168,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 47,
+    "instance": "Razorfen Kraul",
+    "npcId": 4424,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 47,
+    "instance": "Razorfen Kraul",
+    "npcId": 4428,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 47,
+    "instance": "Razorfen Kraul",
+    "npcId": 4420,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 47,
+    "instance": "Razorfen Kraul",
+    "npcId": 4421,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 47,
+    "instance": "Razorfen Kraul",
+    "npcId": 4422,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 47,
+    "instance": "Razorfen Kraul",
+    "npcId": 4425,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 47,
+    "instance": "Razorfen Kraul",
+    "npcId": 4842,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 48,
+    "instance": "Blackfathom Deeps",
+    "npcId": 4887,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 48,
+    "instance": "Blackfathom Deeps",
+    "npcId": 4831,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 48,
+    "instance": "Blackfathom Deeps",
+    "npcId": 6243,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 48,
+    "instance": "Blackfathom Deeps",
+    "npcId": 12902,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 48,
+    "instance": "Blackfathom Deeps",
+    "npcId": 4830,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 48,
+    "instance": "Blackfathom Deeps",
+    "npcId": 4832,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 48,
+    "instance": "Blackfathom Deeps",
+    "npcId": 4829,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 70,
+    "instance": "Uldaman",
+    "npcId": 6910,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 70,
+    "instance": "Uldaman",
+    "npcId": 6906,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 70,
+    "instance": "Uldaman",
+    "npcId": 7228,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 70,
+    "instance": "Uldaman",
+    "npcId": 7206,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 70,
+    "instance": "Uldaman",
+    "npcId": 7291,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 70,
+    "instance": "Uldaman",
+    "npcId": 4854,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 70,
+    "instance": "Uldaman",
+    "npcId": 2748,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 70,
+    "instance": "Uldaman",
+    "npcId": 7023,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 90,
+    "instance": "Gnomeregan",
+    "npcId": 7079,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 90,
+    "instance": "Gnomeregan",
+    "npcId": 7361,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 90,
+    "instance": "Gnomeregan",
+    "npcId": 6235,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 90,
+    "instance": "Gnomeregan",
+    "npcId": 6229,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 90,
+    "instance": "Gnomeregan",
+    "npcId": 7800,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 109,
+    "instance": "Sunken Temple",
+    "npcId": 5710,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 109,
+    "instance": "Sunken Temple",
+    "npcId": 5719,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 109,
+    "instance": "Sunken Temple",
+    "npcId": 5722,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 109,
+    "instance": "Sunken Temple",
+    "npcId": 5709,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 129,
+    "instance": "Razorfen Downs",
+    "npcId": 7355,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 129,
+    "instance": "Razorfen Downs",
+    "npcId": 7357,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 129,
+    "instance": "Razorfen Downs",
+    "npcId": 8567,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 129,
+    "instance": "Razorfen Downs",
+    "npcId": 7358,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 129,
+    "instance": "Razorfen Downs",
+    "npcId": 7356,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 129,
+    "instance": "Razorfen Downs",
+    "npcId": 7354,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 189,
+    "instance": "Scarlet Monastery",
+    "npcId": 3983,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 189,
+    "instance": "Scarlet Monastery",
+    "npcId": 4543,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 189,
+    "instance": "Scarlet Monastery",
+    "npcId": 3974,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 189,
+    "instance": "Scarlet Monastery",
+    "npcId": 6487,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 189,
+    "instance": "Scarlet Monastery",
+    "npcId": 3975,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 189,
+    "instance": "Scarlet Monastery",
+    "npcId": 4542,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 189,
+    "instance": "Scarlet Monastery",
+    "npcId": 3977,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 189,
+    "instance": "Scarlet Monastery",
+    "npcId": 6489,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 189,
+    "instance": "Scarlet Monastery",
+    "npcId": 6490,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 189,
+    "instance": "Scarlet Monastery",
+    "npcId": 3976,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 189,
+    "instance": "Scarlet Monastery",
+    "npcId": 6488,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 209,
+    "instance": "Zul'Farrak",
+    "npcId": 7795,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 209,
+    "instance": "Zul'Farrak",
+    "npcId": 7273,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 209,
+    "instance": "Zul'Farrak",
+    "npcId": 8127,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 209,
+    "instance": "Zul'Farrak",
+    "npcId": 7272,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 209,
+    "instance": "Zul'Farrak",
+    "npcId": 7271,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 209,
+    "instance": "Zul'Farrak",
+    "npcId": 7796,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 209,
+    "instance": "Zul'Farrak",
+    "npcId": 7275,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 209,
+    "instance": "Zul'Farrak",
+    "npcId": 7267,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 209,
+    "instance": "Zul'Farrak",
+    "npcId": 10082,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 209,
+    "instance": "Zul'Farrak",
+    "npcId": 7604,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 10899,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 10509,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 10263,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 10376,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 9596,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 9217,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 9218,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 9219,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 9196,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 9236,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 9237,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 10596,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 9736,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 10268,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 10220,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 9568,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 9816,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 10429,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 10430,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 229,
+    "instance": "Blackrock Spire",
+    "npcId": 10363,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9018,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9025,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9319,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9024,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9017,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9041,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9056,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9016,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9033,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 8983,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9537,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9502,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9543,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9499,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9156,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9039,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9938,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 230,
+    "instance": "Blackrock Depths",
+    "npcId": 9019,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 289,
+    "instance": "Scholomance",
+    "npcId": 14861,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 289,
+    "instance": "Scholomance",
+    "npcId": 10506,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 289,
+    "instance": "Scholomance",
+    "npcId": 10503,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 289,
+    "instance": "Scholomance",
+    "npcId": 11622,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 289,
+    "instance": "Scholomance",
+    "npcId": 10433,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 289,
+    "instance": "Scholomance",
+    "npcId": 10432,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 289,
+    "instance": "Scholomance",
+    "npcId": 10505,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 289,
+    "instance": "Scholomance",
+    "npcId": 11261,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 289,
+    "instance": "Scholomance",
+    "npcId": 10901,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 289,
+    "instance": "Scholomance",
+    "npcId": 10507,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 289,
+    "instance": "Scholomance",
+    "npcId": 10504,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 289,
+    "instance": "Scholomance",
+    "npcId": 10502,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 289,
+    "instance": "Scholomance",
+    "npcId": 1853,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 289,
+    "instance": "Scholomance",
+    "npcId": 10508,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 329,
+    "instance": "Stratholme",
+    "npcId": 10809,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 329,
+    "instance": "Stratholme",
+    "npcId": 10558,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 329,
+    "instance": "Stratholme",
+    "npcId": 10808,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 329,
+    "instance": "Stratholme",
+    "npcId": 10997,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 329,
+    "instance": "Stratholme",
+    "npcId": 11032,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 329,
+    "instance": "Stratholme",
+    "npcId": 10811,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 329,
+    "instance": "Stratholme",
+    "npcId": 10813,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 329,
+    "instance": "Stratholme",
+    "npcId": 10436,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 329,
+    "instance": "Stratholme",
+    "npcId": 10437,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 329,
+    "instance": "Stratholme",
+    "npcId": 10438,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 329,
+    "instance": "Stratholme",
+    "npcId": 10435,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 329,
+    "instance": "Stratholme",
+    "npcId": 10439,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 329,
+    "instance": "Stratholme",
+    "npcId": 10440,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 349,
+    "instance": "Maraudon",
+    "npcId": 13282,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 349,
+    "instance": "Maraudon",
+    "npcId": 12258,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 349,
+    "instance": "Maraudon",
+    "npcId": 12236,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 349,
+    "instance": "Maraudon",
+    "npcId": 12225,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 349,
+    "instance": "Maraudon",
+    "npcId": 12203,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 349,
+    "instance": "Maraudon",
+    "npcId": 13601,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 349,
+    "instance": "Maraudon",
+    "npcId": 13596,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 349,
+    "instance": "Maraudon",
+    "npcId": 12201,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 349,
+    "instance": "Maraudon",
+    "npcId": 13738,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 349,
+    "instance": "Maraudon",
+    "npcId": 13739,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 349,
+    "instance": "Maraudon",
+    "npcId": 12237,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 389,
+    "instance": "Ragefire Chasm",
+    "npcId": 11517,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 389,
+    "instance": "Ragefire Chasm",
+    "npcId": 11520,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 389,
+    "instance": "Ragefire Chasm",
+    "npcId": 11518,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 389,
+    "instance": "Ragefire Chasm",
+    "npcId": 11519,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 389,
+    "instance": "Ragefire Chasm",
+    "npcId": 17830,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 14506,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 11467,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 11490,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 13280,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 14327,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 11492,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 11488,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 11487,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 11496,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 11489,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 11486,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 14326,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 14322,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 14321,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 14323,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 14325,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 14324,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  },
+  {
+    "mapId": 429,
+    "instance": "Dire Maul",
+    "npcId": 11501,
+    "classification": "boss candidate",
+    "verification": "INFERRED roster ID; no per-ID ability claim"
+  }
+]

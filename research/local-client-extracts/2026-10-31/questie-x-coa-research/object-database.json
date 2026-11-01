@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "artifact": "object-database.json",
+  "scope": "quest objects",
+  "status": "records reside in addon Lua sources",
+  "records": [],
+  "sources": [
+    {
+      "path": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\Questie-X",
+      "files": 558,
+      "bytes": 106788918.0,
+      "lua": 408,
+      "json": 0,
+      "status": "local addon source; scope and provenance require audit"
+    },
+    {
+      "path": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\Questie-X-AscensionDB",
+      "files": 18,
+      "bytes": 224131.0,
+      "lua": 15,
+      "json": 0,
+      "status": "local addon source; scope and provenance require audit"
+    },
+    {
+      "path": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\Questie-X-CoADB",
+      "files": 7,
+      "bytes": 527522.0,
+      "lua": 6,
+      "json": 0,
+      "status": "CoA quest database source; individual current availability needs validation"
+    },
+    {
+      "path": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\Questie-X-WotLKDB",
+      "files": 24,
+      "bytes": 29842583.0,
+      "lua": 21,
+      "json": 0,
+      "status": "local addon source; scope and provenance require audit"
+    },
+    {
+      "path": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\Questie-X-WotLK-Locale",
+      "files": 42,
+      "bytes": 37237380.0,
+      "lua": 36,
+      "json": 0,
+      "status": "local addon source; scope and provenance require audit"
+    },
+    {
+      "path": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\pfQuest-ascension",
+      "files": 23,
+      "bytes": 66688.0,
+      "lua": 18,
+      "json": 0,
+      "status": "local addon source; scope and provenance require audit"
+    },
+    {
+      "path": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\ZygorGuidesViewerRM",
+      "files": 922,
+      "bytes": 258258472.0,
+      "lua": 492,
+      "json": 1,
+      "status": "local addon source; scope and provenance require audit"
+    },
+    {
+      "path": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\CoA-Research-Offline",
+      "files": 5,
+      "bytes": 21777650.0,
+      "lua": 0,
+      "json": 2,
+      "status": "legacy references offline/unverified per policy"
+    },
+    {
+      "path": "C:\\Games\\Conquest Reborn\\Data\\Content\\HandOfFateQuestData.json",
+      "kind": "Ascension quest related data",
+      "status": "game feature dataset; not a complete quest database"
+    },
+    {
+      "path": "C:\\Games\\Conquest Reborn\\Data\\Content\\WorldMapAreaData.json",
+      "kind": "map area data",
+      "status": "not full coordinate transform database"
+    }
+  ],
+  "confidence": "not assessed",
+  "note": "No unsupported quest/NPC/item/map/class facts are fabricated."
+}

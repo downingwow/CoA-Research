@@ -1,0 +1,16 @@
+{
+  "clientBuild": "Commit: d172230978d73fa5792d6e291ca14264991a9e5b\r\nBuild: https://github.com/jealous-sound/coa-vfog/actions/runs/40338642706\r\nConfiguration: Win32 Release\r\nValidation: build, source comments and CPU harness passed.\r\nD3D9 graphics checks and in-game validation were not run.\r\n",
+  "interfaceVersion": 30300,
+  "executables": [
+    "Ascension.exe"
+  ],
+  "architecture": "Win32 per BUILD.txt",
+  "locale": "enUS data folder",
+  "frameXmlExtracted": "not found as loose FrameXML in Interface root",
+  "archiveFiles": 72,
+  "apiDocsGuildFiles": [
+    "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildBankDocumentation.lua",
+    "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\APIDocumentation\\Documentation\\GuildDocumentation.lua"
+  ],
+  "runtimeTested": false
+}

@@ -1,0 +1,8 @@
+{
+  "failedFiles": [],
+  "warnings": [
+    "Unknown or unsupported Lua structures retained as raw record lines.",
+    "Empty relationships/coordinate/learned outputs reflect no parser run on these structures, not proof that source has no records.",
+    "WotLK tables and translations not comprehensively parsed."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "staticPresence": [
+    "Questie-X",
+    "Mapster",
+    "Leatrix_Maps",
+    "DragonUI",
+    "ZygorGuidesViewerRM",
+    "SilverDragon",
+    "DBM-CoA-Learner"
+  ],
+  "runtimeVerified": false,
+  "findings": [],
+  "status": "Installed addon source not yet line-level audited"
+}

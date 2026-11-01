@@ -1,0 +1,16 @@
+{
+  "unresolved": [
+    "No timestamped combat logs/SavedVariables exported in searched paths.",
+    "No authoritative Vanilla/custom dungeon AI scripts beyond limited ZG source schedule.",
+    "No verified spell alias/replacement or difficulty variant table.",
+    "Difficulty API enum semantics unconfirmed on modified client.",
+    "Custom instance roster/map IDs incomplete.",
+    "No live module parity validation."
+  ],
+  "excluded": [
+    "TBC",
+    "Wrath",
+    "The Radiant Spring",
+    "Shadowbone Depths"
+  ]
+}

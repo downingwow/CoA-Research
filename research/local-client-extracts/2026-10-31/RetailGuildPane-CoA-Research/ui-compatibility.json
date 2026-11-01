@@ -1,0 +1,242 @@
+[
+  {
+    "addon": "AtlasLoot",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "AtlasLoot_Cache",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Bagnon_GuildBank",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Cell",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Details",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Details_3DModelsPaths",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Details_ChartViewer",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Details_Compare2",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Details_DataStorage",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Details_DeathGraphs",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Details_EncounterDetails",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Details_RaidCheck",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Details_Streamer",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Details_TargetCaller",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Details_TimeLine",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Details_TinyThreat",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Details_Vanguard",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "DragonUI",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "DragonUI_Options",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Guild_Roster_Manager",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "GuildQuickInvite",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Leatrix_Maps",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Leatrix_Plus",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "LootCollector",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "LootCollector_CustomImport",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "LootCollector_StarterDB",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Mapster",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Questie-X",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Questie-X-AscensionDB",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Questie-X-CoADB",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Questie-X-WotLK-Locale",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "Questie-X-WotLKDB",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "SexyMap",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "WeakAuras",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "WeakAurasArchive",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "WeakAurasModelPaths",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "WeakAurasOptions",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "WeakAurasStopMotion",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "WeakAurasTemplates",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  },
+  {
+    "addon": "ZygorGuidesViewerRM",
+    "installed": true,
+    "compatibility": "UNVERIFIED",
+    "evidence": "directory presence only"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "dataset": "coa-instance-registry.json",
+  "schemaVersion": 1,
+  "records": [
+    {
+      "instance": "ZulGurub",
+      "source": "DBM-CoA-Learner/CoAServerSources.lua",
+      "encounterCount": 4,
+      "verification": "INFERRED; source list includes four boss entries only",
+      "confidence": "medium for source attribution, low for current CR availability"
+    }
+  ]
+}

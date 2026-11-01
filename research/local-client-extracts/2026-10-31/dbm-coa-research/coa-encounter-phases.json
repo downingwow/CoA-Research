@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "dataset": "coa-encounter-phases.json",
+  "records": [
+    {
+      "npcId": 14517,
+      "name": "High Priestess Jeklik",
+      "phase": 2,
+      "transition": "health threshold",
+      "thresholdPercent": 50,
+      "verification": "INFERRED",
+      "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\CoAServerSources.lua"
+    },
+    {
+      "npcId": 14507,
+      "name": "High Priest Venoxis",
+      "phase": 2,
+      "transition": "health threshold",
+      "thresholdPercent": 50,
+      "verification": "INFERRED",
+      "source": "C:\\Games\\Conquest Reborn\\Interface\\AddOns\\DBM-CoA-Learner\\CoAServerSources.lua"
+    }
+  ],
+  "status": "source-derived candidate records; not verified current CR"
+}

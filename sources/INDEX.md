@@ -5,6 +5,7 @@ Last cataloged: 2026-10-29. Dates/counts below describe prior inspections, not a
 ## Official and core adjacent
 | Source | URL | Research use |
 | --- | --- | --- |
+| World0fWarcraft GitHub organization | https://github.com/World0fWarcraft | Broad historical Vanilla/TBC/Wrath emulator, 3.3.5a database, WoWDBDefs, packet and development tools catalog; [selected repositories](../research/sources/world0fwarcraft-github-repository-catalog-2026-10-31.json) |
 | TrinityCore project | https://www.trinitycore.org/ | Official emulator project documentation and background; historical comparative reference, not CoA authoritative data |
 | TrinityCore GitHub (3.3.5 branch) | https://github.com/TrinityCore/TrinityCore/tree/3.3.5 | Compare Vanilla/TBC/Wrath NPCs, spells, quests, instance scripts, world SQL and core APIs against CoA-specific code; [source registration](../research/sources/trinitycore-upstream-335-reference-2026-10-31.json) |
 | CoA AzerothCore repository | https://github.com/Conquest-of-AzerothCore/azerothcore-wotlk-coa | C++ core, modules, world SQL, custom mechanics; contains `modules/mod-ascension`, `modules/mod-spellbook`, `data/coa-world`, `src/server` |
